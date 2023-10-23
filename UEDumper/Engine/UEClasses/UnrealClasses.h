@@ -896,7 +896,8 @@ public:
 		UObject* Object;
 	} Container;
 
-	bool bIsUObject;
+	//TODO: fortnite removed this. Check if this is always present
+	//bool bIsUObject;
 };
 
 // https://github.com/EpicGames/UnrealEngine/blob/4.25/Engine/Source/Runtime/CoreUObject/Public/UObject/Field.h#L351
@@ -921,7 +922,8 @@ public:
 	FName NamePrivate;
 
 	/** Object flags */
-	EObjectFlags FlagsPrivate;
+	//TODO: fortnite removed this. Check if this is always present
+	//EObjectFlags FlagsPrivate;
 
 
 	operator bool() const { return ClassPrivate != nullptr; }
@@ -1012,6 +1014,9 @@ public:
 class FArrayProperty : public FProperty
 {
 public:
+	//TODO: fortnite added this. Check if this is always present
+	char pad[8];
+
 	FProperty* Inner;
 	EArrayPropertyFlags ArrayFlags;
 
