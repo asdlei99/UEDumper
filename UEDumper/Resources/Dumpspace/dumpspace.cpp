@@ -121,6 +121,20 @@ namespace Dumpspace
         
         for(auto& pack : EngineCore::getPackages())
         {
+            auto determineObjectType = [&](const fieldType& type)
+            {
+                std::string typest;
+                if (!type.clickable)
+                    typest = "D";
+                else if (type.name[0] == 'E')
+                    typest = "E";
+                else if (type.name[0] == 'F')
+                    typest = "S";
+                else
+                    typest = "C";
+
+                return typest;
+            };
             auto generateStructsOrClasses = [&](std::vector<EngineStructs::Struct> strucVec) mutable
             {
                 for (auto& struc : strucVec)
@@ -132,7 +146,7 @@ namespace Dumpspace
                     //    AddInheritInfo(j);
                     //}
                     
-                    nlohmann::json members = nlohmann::json::array();
+                    nlohmann::json membersArray = nlohmann::json::array();
                     
                     nlohmann::json inheritInfo = nlohmann::json::array();
                     if (struc.inherited)
@@ -142,71 +156,89 @@ namespace Dumpspace
                     }
                     nlohmann::json inheritInfoDesc;
                     inheritInfoDesc["__InheritInfo"] = inheritInfo;
-                    members.push_back(inheritInfoDesc);
+                    membersArray.push_back(inheritInfoDesc);
 
                     nlohmann::json gSize;
                     gSize["__MDKClassSize"] = struc.size;
-                    members.push_back(gSize);
+                    membersArray.push_back(gSize);
 
                     for (auto& member : struc.definedMembers)
                     {
                         if (member.missed)
                             continue;
 
-                        std::string type;
-                        if (member.type.name[0] == 'F')
-                            type = "S";
-                        else if (member.type.name[0] == 'E')
-                            type = "E";
-                        else if (!member.type.clickable)
-                            type = "D";
-                        else
-                            type = "C";
 
-                        nlohmann::json a;
+                        nlohmann::json jmember;
+
+                        nlohmann::json typeArray = nlohmann::json::array();
+
+                        typeArray.push_back(std::make_tuple(member.type.name, determineObjectType(member.type), member.type.isPointer() ? "*" : ""));
+
+                        for(const auto& subType : member.type.subTypes)
+                        {
+                            typeArray.push_back(std::make_tuple(subType.name, determineObjectType(subType), subType.isPointer() ? "*" : ""));
+                        }
+
+                        //actually no need to use the typearray because bits are literally just unsigned chars or bools but we wanna keep the same style
                         if(member.isBit)
-                            a[member.name + " : 1"] = std::make_tuple(member.type.stringify(), member.offset, member.size, type, member.bitOffset);
+                            jmember[member.name + " : 1"] = std::make_tuple(typeArray, member.offset, member.size, member.bitOffset);
                         else
-                            a[member.name] = std::make_tuple(member.type.stringify(), member.offset, member.size, type);
-                        members.push_back(a);
+                            jmember[member.name] = std::make_tuple(typeArray, member.offset, member.size);
+                        membersArray.push_back(jmember);
                     }
                     nlohmann::json j;
 
-                    j[struc.cppName] = members;
+                    j[struc.cppName] = membersArray;
                     
                     if (struc.isClass)
                         AddClass(j);
                     else
                         AddStruct(j);
 
-                    nlohmann::json functions = nlohmann::json::array();
-
-
-                    for (auto& func : struc.functions)
+                    if(struc.functions.size() > 0)
                     {
-                        nlohmann::json a;
+                        nlohmann::json functions = nlohmann::json::array();
 
-                        std::string function = func.returnType.stringify() + " " + func.cppName + "(";
-                        for(auto& param : func.params)
+
+                        for (auto& func : struc.functions)
                         {
-                            function += std::get<0>(param).stringify();
-                            if (std::get<3>(param) > 1)
-                                function += "*";
-                            else if (std::get<2>(param) & EPropertyFlags::CPF_OutParm)
-                                function += "&";
-                            function += " " + std::get<1>(param) + ", ";
+                            nlohmann::json a;
+
+                            nlohmann::json functionParams = nlohmann::json::array();
+
+                            std::string functionReturnType = determineObjectType(func.returnType);
+
+                            for (auto& param : func.params)
+                            {
+                                std::string type = determineObjectType(std::get<0>(param));
+
+                                nlohmann::json typeArray = nlohmann::json::array();
+
+                                typeArray.push_back(std::make_tuple(std::get<0>(param).name, determineObjectType(std::get<0>(param)), std::get<0>(param).isPointer() ? "*" : ""));
+
+                                for (const auto& subType : std::get<0>(param).subTypes)
+                                {
+                                    typeArray.push_back(std::make_tuple(subType.name, determineObjectType(subType), subType.isPointer() ? "*" : ""));
+                                }
+
+                                std::string functionParamType = "";
+                                if (std::get<3>(param) > 1)
+                                    functionParamType += "*";
+                                else if (std::get<2>(param) & EPropertyFlags::CPF_OutParm)
+                                    functionParamType += "&";
+
+                                functionParams.push_back(std::make_tuple(typeArray, functionParamType, std::get<1>(param)));
+                                
+
+                            }
+                            a[func.cppName] = std::make_tuple(func.returnType.stringify(), functionReturnType, functionParams, func.binaryOffset, func.functionFlags);
+                            functions.push_back(a);
                         }
-                        if(func.params.size() > 0)
-							function = function.erase(function.size() - 2);
+                        nlohmann::json f;
 
-                        function += ")";
-                        a[function] = std::make_tuple(func.binaryOffset, func.functionFlags);
-                        functions.push_back(a);
+                        f[struc.cppName] = functions;
+                        AddFunction(f);
                     }
-                    nlohmann::json f;
-
-                    f[struc.cppName] = functions;
-                    AddFunction(f);
                 }
             };
 

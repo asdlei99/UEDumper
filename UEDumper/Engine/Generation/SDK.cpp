@@ -257,9 +257,6 @@ void SDKGeneration::Generate(int& progressDone, int& totalProgress)
 	totalProgress = 10;
 	progressDone = totalProgress;
 	totalProgress = EngineCore::getPackages().size();
-	const auto path = EngineSettings::getWorkingDirectory() / "SDK";
-	if (!create_directories(path))
-		remove_all(path);
 	for (const auto& package : EngineCore::getPackages())
 	{
         masterHeader << "#include \"" + package.packageName + ".h" + "\"" << std::endl;
@@ -267,7 +264,7 @@ void SDKGeneration::Generate(int& progressDone, int& totalProgress)
         if (package.packageName == "BasicType")
             continue;
 
-		std::ofstream file(path / (package.packageName + ".h"));
+		std::ofstream file(SDKPath / (package.packageName + ".h"));
 		printCredits(file);
 		file << "/// Package " + package.packageName << ".\n\n";
 

@@ -22,6 +22,11 @@ struct fieldType
 	//it makes it possible to click objects e.g in a TArray<x,y> for redirection
 	std::vector<fieldType> subTypes = {};
 
+	bool isPointer() const
+	{
+		return (propertyType == PropertyType::ObjectProperty || propertyType == PropertyType::ClassProperty) && clickable;
+	}
+
 	//essentially for dumps.host
 	std::string stringify() const
 	{
@@ -36,7 +41,7 @@ struct fieldType
 			{
 				typeStr += subTypes[i].name;
 
-				if ((subTypes[i].propertyType == PropertyType::ObjectProperty || subTypes[i].propertyType == PropertyType::ClassProperty) && clickable)
+				if ((subTypes[i].propertyType == PropertyType::ObjectProperty || subTypes[i].propertyType == PropertyType::ClassProperty) && subTypes[i].clickable)
 					typeStr += "*";
 
 				if (i < subTypes.size() - 1)
