@@ -121,20 +121,6 @@ namespace Dumpspace
         
         for(auto& pack : EngineCore::getPackages())
         {
-            auto determineObjectType = [&](const fieldType& type)
-            {
-                std::string typest;
-                if (!type.clickable)
-                    typest = "D";
-                else if (type.name[0] == 'E')
-                    typest = "E";
-                else if (type.name[0] == 'F')
-                    typest = "S";
-                else
-                    typest = "C";
-
-                return typest;
-            };
             auto generateStructsOrClasses = [&](std::vector<EngineStructs::Struct> strucVec) mutable
             {
                 for (auto& struc : strucVec)
@@ -170,20 +156,11 @@ namespace Dumpspace
 
                         nlohmann::json jmember;
 
-                        nlohmann::json typeArray = nlohmann::json::array();
-
-                        typeArray.push_back(std::make_tuple(member.type.name, determineObjectType(member.type), member.type.isPointer() ? "*" : ""));
-
-                        for(const auto& subType : member.type.subTypes)
-                        {
-                            typeArray.push_back(std::make_tuple(subType.name, determineObjectType(subType), subType.isPointer() ? "*" : ""));
-                        }
-
                         //actually no need to use the typearray because bits are literally just unsigned chars or bools but we wanna keep the same style
                         if(member.isBit)
-                            jmember[member.name + " : 1"] = std::make_tuple(typeArray, member.offset, member.size, member.bitOffset);
+                            jmember[member.name + " : 1"] = std::make_tuple(member.type.jsonify(), member.offset, member.size, member.bitOffset);
                         else
-                            jmember[member.name] = std::make_tuple(typeArray, member.offset, member.size);
+                            jmember[member.name] = std::make_tuple(member.type.jsonify(), member.offset, member.size);
                         membersArray.push_back(jmember);
                     }
                     nlohmann::json j;
@@ -206,32 +183,19 @@ namespace Dumpspace
 
                             nlohmann::json functionParams = nlohmann::json::array();
 
-                            std::string functionReturnType = determineObjectType(func.returnType);
-
                             for (auto& param : func.params)
                             {
-                                std::string type = determineObjectType(std::get<0>(param));
-
-                                nlohmann::json typeArray = nlohmann::json::array();
-
-                                typeArray.push_back(std::make_tuple(std::get<0>(param).name, determineObjectType(std::get<0>(param)), std::get<0>(param).isPointer() ? "*" : ""));
-
-                                for (const auto& subType : std::get<0>(param).subTypes)
-                                {
-                                    typeArray.push_back(std::make_tuple(subType.name, determineObjectType(subType), subType.isPointer() ? "*" : ""));
-                                }
-
                                 std::string functionParamType = "";
                                 if (std::get<3>(param) > 1)
                                     functionParamType += "*";
                                 else if (std::get<2>(param) & EPropertyFlags::CPF_OutParm)
                                     functionParamType += "&";
 
-                                functionParams.push_back(std::make_tuple(typeArray, functionParamType, std::get<1>(param)));
+                                functionParams.push_back(std::make_tuple(std::get<0>(param).jsonify(), functionParamType, std::get<1>(param)));
                                 
 
                             }
-                            a[func.cppName] = std::make_tuple(func.returnType.stringify(), functionReturnType, functionParams, func.binaryOffset, func.functionFlags);
+                            a[func.cppName] = std::make_tuple(func.returnType.jsonify(), functionParams, func.binaryOffset, func.functionFlags);
                             functions.push_back(a);
                         }
                         nlohmann::json f;

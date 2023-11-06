@@ -22,9 +22,43 @@ struct fieldType
 	//it makes it possible to click objects e.g in a TArray<x,y> for redirection
 	std::vector<fieldType> subTypes = {};
 
+	/**
+	 * \brief essentially for dumpspace, gets the short type
+	 * \return returns the short type of the fieldType (S, C, E, D)
+	 */
+	std::string getTypeShort() const
+	{
+		std::string typest;
+		if (!clickable) //not clickable? always a D (Default) type
+			typest = "D";
+		else if (name[0] == 'U' || name[0] == 'A')
+			typest = "C";
+		else if (name[0] == 'E') //Enums always start with a E
+			typest = "E";
+		else
+			typest = "S";
+
+		return typest;
+	}
+
 	bool isPointer() const
 	{
 		return (propertyType == PropertyType::ObjectProperty || propertyType == PropertyType::ClassProperty) && clickable;
+	}
+
+	//essentially for dumspace formatting
+	nlohmann::json jsonify() const
+	{
+		//create a array for the fieldType
+		nlohmann::json arr = nlohmann::json::array();
+		arr.push_back(name);
+		arr.push_back(getTypeShort());
+		arr.push_back(isPointer() ? "*" : "");
+		nlohmann::json subTypeArr = nlohmann::json::array();
+		for (auto& subType : subTypes)
+			arr.push_back(subType.jsonify());
+
+		return arr;
 	}
 
 	//essentially for dumps.host
@@ -41,7 +75,7 @@ struct fieldType
 			{
 				typeStr += subTypes[i].name;
 
-				if ((subTypes[i].propertyType == PropertyType::ObjectProperty || subTypes[i].propertyType == PropertyType::ClassProperty) && subTypes[i].clickable)
+				if (subTypes[i].propertyType == PropertyType::ObjectProperty || subTypes[i].propertyType == PropertyType::ClassProperty)
 					typeStr += "*";
 
 				if (i < subTypes.size() - 1)
