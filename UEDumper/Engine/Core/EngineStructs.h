@@ -56,7 +56,9 @@ struct fieldType
 		arr.push_back(isPointer() ? "*" : "");
 		nlohmann::json subTypeArr = nlohmann::json::array();
 		for (auto& subType : subTypes)
-			arr.push_back(subType.jsonify());
+			subTypeArr.push_back(subType.jsonify());
+
+		arr.push_back(subTypeArr);
 
 		return arr;
 	}
