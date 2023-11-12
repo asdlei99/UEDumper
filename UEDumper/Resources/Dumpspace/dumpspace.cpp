@@ -45,7 +45,7 @@ namespace Dumpspace
     void DumpOffsets(const std::filesystem::path& directory) {
         nlohmann::json j;
         j["updated_at"] = dumpTimeStamp;
-        j["offsets"] = nlohmann::json(offsets);
+        j["data"] = nlohmann::json(offsets);
 
         std::ofstream file(directory / "OffsetsInfo.json");
         file << j.dump();
