@@ -12,9 +12,9 @@ namespace Dumpspace
     std::string dumpTimeStamp = {};
 
     // Last std::string isn't used atm, but dumps.host expects it.
-    std::vector<std::tuple<std::string, uintptr_t, std::string>> offsets = {};
+    std::vector<std::pair<std::string, uintptr_t>> offsets = {};
     void AddOffset(const std::string& string, uint64_t offset) {
-        offsets.push_back(std::make_tuple(string, offset, "Offset"));
+        offsets.push_back(std::pair(string, offset));
     }
 
     nlohmann::json classes = nlohmann::json::array();
@@ -35,11 +35,6 @@ namespace Dumpspace
     nlohmann::json enums = nlohmann::json::array();
     void AddEnum(const nlohmann::json& json) {
         enums.push_back(json);
-    }
-
-    nlohmann::json inherits = nlohmann::json::array();
-    void AddInheritInfo(const nlohmann::json& json) {
-        inherits.push_back(json);
     }
 
     void DumpOffsets(const std::filesystem::path& directory) {
@@ -67,11 +62,6 @@ namespace Dumpspace
 
         std::ofstream file(directory / "FunctionsInfo.json");
         file << j.dump();
-    }
-
-    void DumpInheritInfo(const std::filesystem::path& directory) {
-        std::ofstream file(directory / "InheritInfo.json");
-        file << inherits.dump();
     }
 
     void DumpStructs(const std::filesystem::path& directory) {
@@ -102,7 +92,6 @@ namespace Dumpspace
         DumpOffsets(directory);
         DumpClasses(directory);
         DumpFunctions(directory);
-        DumpInheritInfo(directory);
         DumpStructs(directory);
         DumpEnums(directory);
     }
@@ -110,16 +99,16 @@ namespace Dumpspace
     void Generate(int& progressDone, int& totalProgress)
     {
         totalProgress = EngineCore::getOffsets().size() + EngineCore::getPackages().size();
-        for(const auto& offset : EngineCore::getOffsets())
+        for (const auto& offset : EngineCore::getOffsets())
         {
-	        if(offset.flag & OFFSET_DS)
-	        {
+            if (offset.flag & OFFSET_DS)
+            {
                 AddOffset(offset.name, EngineCore::getOffsetAddress(offset) - Memory::getBaseAddress());
-	        }
+            }
             progressDone++;
         }
-        
-        for(auto& pack : EngineCore::getPackages())
+
+        for (auto& pack : EngineCore::getPackages())
         {
             auto generateStructsOrClasses = [&](std::vector<EngineStructs::Struct> strucVec) mutable
             {
@@ -131,13 +120,13 @@ namespace Dumpspace
                     //    j[struc.cppName] = struc.supers[0]->cppName;
                     //    AddInheritInfo(j);
                     //}
-                    
+
                     nlohmann::json membersArray = nlohmann::json::array();
-                    
+
                     nlohmann::json inheritInfo = nlohmann::json::array();
                     if (struc.inherited)
                     {
-                        for(auto& super : struc.supers)
+                        for (auto& super : struc.supers)
                             inheritInfo.push_back(super->cppName);
                     }
                     nlohmann::json inheritInfoDesc;
@@ -157,7 +146,7 @@ namespace Dumpspace
                         nlohmann::json jmember;
 
                         //actually no need to use the typearray because bits are literally just unsigned chars or bools but we wanna keep the same style
-                        if(member.isBit)
+                        if (member.isBit)
                             jmember[member.name + " : 1"] = std::make_tuple(member.type.jsonify(), member.offset, member.size, member.bitOffset);
                         else
                             jmember[member.name] = std::make_tuple(member.type.jsonify(), member.offset, member.size);
@@ -166,13 +155,13 @@ namespace Dumpspace
                     nlohmann::json j;
 
                     j[struc.cppName] = membersArray;
-                    
+
                     if (struc.isClass)
                         AddClass(j);
                     else
                         AddStruct(j);
 
-                    if(struc.functions.size() > 0)
+                    if (struc.functions.size() > 0)
                     {
                         nlohmann::json functions = nlohmann::json::array();
 
@@ -186,13 +175,13 @@ namespace Dumpspace
                             for (auto& param : func.params)
                             {
                                 std::string functionParamType = "";
-                                if (std::get<3>(param) > 1)
-                                    functionParamType += "*";
-                                else if (std::get<2>(param) & EPropertyFlags::CPF_OutParm)
+                                //if (std::get<3>(param) > 1)
+                                //    functionParamType += "*";
+                                if (std::get<2>(param) & EPropertyFlags::CPF_OutParm)
                                     functionParamType += "&";
 
                                 functionParams.push_back(std::make_tuple(std::get<0>(param).jsonify(), functionParamType, std::get<1>(param)));
-                                
+
 
                             }
                             a[func.cppName] = std::make_tuple(func.returnType.jsonify(), functionParams, func.binaryOffset, func.functionFlags);
@@ -208,18 +197,18 @@ namespace Dumpspace
 
             generateStructsOrClasses(pack.structs);
             generateStructsOrClasses(pack.classes);
-	        
-            for(auto& enu : pack.enums)
+
+            for (auto& enu : pack.enums)
             {
                 nlohmann::json members = nlohmann::json::array();
-                for(int i = 0; i < enu.members.size(); i++)
+                for (int i = 0; i < enu.members.size(); i++)
                 {
-                	nlohmann::json a;
-                    a[enu.members[i].first] = std::make_tuple(enu.members[i].second, enu.type);
+                    nlohmann::json a;
+                    a[enu.members[i].first] = enu.members[i].second;
                     members.push_back(a);
                 }
                 nlohmann::json j;
-                j[enu.cppName] = members;
+                j[enu.cppName] = std::make_tuple(members, enu.type);
                 AddEnum(j);
             }
             progressDone++;
