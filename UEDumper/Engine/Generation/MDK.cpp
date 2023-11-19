@@ -483,6 +483,7 @@ void MDKGeneration::generate(int& progressDone, int& totalProgress)
 							continue;
 						}
 						//move up
+						didReordering = true;
 						auto it = *neededIt;
 						orderedStructsAndClasses.erase(neededIt);
 						orderedStructsAndClasses.insert(currentIt, it);
