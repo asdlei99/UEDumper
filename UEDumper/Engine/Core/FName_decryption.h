@@ -29,24 +29,31 @@ static void fname_decrypt(char* inputBuf, int namelength)
 {
     //reversed either by me or credits to the people who post it on uc
 
+    char* v2; // rdi
+    int v4; // ebx
+    unsigned int v5; // er9
+    unsigned int v6; // er8
+    __int64 result; // rax
+    unsigned int v8; // er9
+    int v9; // ecx
 
-    char* v2 = inputBuf; // rdi
-    int v4 = namelength; // ebx
-    int v5; // edx
-    int v6; // ecx
-    int v7; // ecx
-    __int16 v8; // ax
-
-    v5 = 0;
-    v6 = 42;
+    v2 = inputBuf;
+    v4 = namelength;
+    if (!dword_E8A9618)
+        dword_E8A9618 = Memory::read<unsigned int>(Memory::getBaseAddress() + 0x1130D7A4);
+    v5 = dword_E8A9618;
+    v6 = v5 ^ 0x9C677CC5;
+    result = 1041204193 * v5;
+    v8 = v5 % 0x21;
+    v9 = 0;
     if (v4)
     {
         do
         {
-            v7 = v5++ | v6;
-            v8 = v7;
-            v6 = 2 * v7;
-            *v2++ ^= ~v8;
-        } while (v5 < v4);
+            result = v9 + v8;
+            ++v9;
+            v6 += result;
+            *v2++ ^= v6;
+        } while (v9 < v4);
     }
 }
