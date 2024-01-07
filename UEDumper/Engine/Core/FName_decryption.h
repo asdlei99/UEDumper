@@ -30,30 +30,25 @@ static void fname_decrypt(char* inputBuf, int namelength)
     //reversed either by me or credits to the people who post it on uc
 
     char* v2; // rdi
-    int v4; // ebx
-    unsigned int v5; // er9
-    unsigned int v6; // er8
+    int v4; // edx
     __int64 result; // rax
-    unsigned int v8; // er9
-    int v9; // ecx
+    __int64 v6; // r8
+    unsigned int v7; // edx
 
     v2 = inputBuf;
-    v4 = namelength;
-    if (!dword_E8A9618)
-        dword_E8A9618 = Memory::read<unsigned int>(Memory::getBaseAddress() + 0x1130D7A4);
-    v5 = dword_E8A9618;
-    v6 = v5 ^ 0x9C677CC5;
-    result = 1041204193 * v5;
-    v8 = v5 % 0x21;
-    v9 = 0;
-    if (v4)
+    v4 = 14;
+    result = namelength;
+    if (result)
     {
+        v6 = (unsigned int)result;
         do
         {
-            result = v9 + v8;
-            ++v9;
-            v6 += result;
-            *v2++ ^= v6;
-        } while (v9 < v4);
+            v7 = v4 + 45297;
+            *v2 = v7 + ~*v2;
+            result = v7 << 8;
+            ++v2;
+            v4 = result | (v7 >> 8);
+            --v6;
+        } while (v6);
     }
 }
