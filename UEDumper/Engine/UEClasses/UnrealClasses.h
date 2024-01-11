@@ -975,6 +975,7 @@ public:
 
 	int32_t getOffset() const;
 
+	// this generates the field type for the given type. however, this will not add the Objectinfo as this has to be done manually at the very end of generation!
 	fieldType getType();
 
 };

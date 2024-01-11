@@ -357,6 +357,23 @@ bool EngineCore::generateStructOrClass(UStruct* object, std::vector<EngineStruct
 	return true;
 }
 
+template<typename T>
+constexpr uint64_t GetMaxOfType()
+{
+	return (1ull << (sizeof(T) * 0x8ull)) - 1;
+}
+
+std::string setEnumSizeForValue(uint64_t EnumValue)
+{
+	if (EnumValue > GetMaxOfType<uint32_t>())
+		return TYPE_UI64;
+	if (EnumValue > GetMaxOfType<uint16_t>())
+		return TYPE_UI32;
+	if (EnumValue > GetMaxOfType<uint8_t>())
+		return TYPE_UI16;
+	return TYPE_UI8;
+}
+
 bool EngineCore::generateEnum(const UEnum* object, std::vector<EngineStructs::Enum>& data)
 {
 	EngineStructs::Enum eEnum;
@@ -370,15 +387,16 @@ bool EngineCore::generateEnum(const UEnum* object, std::vector<EngineStructs::En
 	if (!names.size())
 		return false;
 
-	for(auto& name : names)
+	for( int i = 0; i < names.size(); i++)
 	{
-		if (name.Value() > maxNum) maxNum = name.Value();
+		auto& name = names[i];
+		if (name.Value() > maxNum && i != names.size() -1) maxNum = name.Value();
 
 		auto fname = FNameToString(name.Key());
 		std::ranges::replace(fname, ':', '_');
 		eEnum.members.push_back(std::pair(fname, name.Value()));
 	}
-	eEnum.type = maxNum > 256 ? TYPE_UI32 : TYPE_UI8;
+	eEnum.type = setEnumSizeForValue(maxNum);
 
 	eEnum.cppName = object->getName();
 
@@ -395,7 +413,7 @@ bool EngineCore::generateFunctions(const UStruct* object, std::vector<EngineStru
 	if (!object->Children)
 		return false;
 #else
-	if (!object->Children || !object->ChildProperties)
+	if (!object->Children)
 		return false;
 
 #endif
@@ -937,13 +955,13 @@ std::vector<EngineStructs::Package>& EngineCore::getPackages()
 }
 
 
-EngineCore::ObjectInfo EngineCore::getInfoOfObject(const std::string& CName)
+const ObjectInfo* EngineCore::getInfoOfObject(const std::string& CName)
 {
 	//in functions we compare packageIndex and objectIndex anyways so the type doesnt matter
 	if(!packageObjectInfos.contains(CName))
-		return { false, ObjectInfo::OI_MAX, nullptr };
+		return nullptr;
 
-	return packageObjectInfos[CName];
+	return &packageObjectInfos[CName];
 }
 
 
@@ -1002,6 +1020,7 @@ void EngineCore::overrideStructMembers(const EngineStructs::Struct& eStruct)
 
 void EngineCore::finishPackages()
 {
+	std::unordered_map<std::string, int> enumMap = {};
 	//were done, now we do packageObjectInfos caching, we couldnt do before because pointers are all on stack data and not in the static package vec
 	for (int i = 0; i < packages.size(); i++)
 	{
@@ -1030,6 +1049,15 @@ void EngineCore::finishPackages()
 					packageObjectInfos.insert(std::pair(func.cppName, ObjectInfo(true, ObjectInfo::OI_Function, &func)));
 
 				}
+
+				for (const auto& var : struc.definedMembers)
+				{
+					if(var.type.propertyType == PropertyType::EnumProperty)
+					{
+						if (!enumMap.contains(var.type.name))
+							enumMap[var.type.name] = var.size;
+					}
+				}
 			}
 		};
 
@@ -1043,6 +1071,9 @@ void EngineCore::finishPackages()
 			enu.owningVectorIndex = j;
 			packageObjectInfos.insert(std::pair(enu.cppName, ObjectInfo(true, ObjectInfo::OI_Enum, &enu)));
 		}
+
+		
+		
 	}
 
 	//we have to loop again for dependency tracking and supers
@@ -1055,11 +1086,87 @@ void EngineCore::finishPackages()
 			for (auto& name : struc->superNames)
 			{
 				const auto info = getInfoOfObject(name);
-				auto superStruc = static_cast<EngineStructs::Struct*>(info.target);
+				if (!info || !info->valid)
+					continue;
+				auto superStruc = static_cast<EngineStructs::Struct*>(info->target);
 				struc->supers.push_back(superStruc);
 				if (superStruc->owningPackage->index != package.index)
 					package.dependencyPackages.insert(superStruc->owningPackage);
 
+			}
+
+			for(auto& var : struc->cookedMembers)
+			{
+				if (!var.type.clickable)
+					continue;
+				const auto info = getInfoOfObject(var.type.name);
+				if (!info || !info->valid)
+					continue;
+
+				var.type.info = info;
+
+				for(auto& subtype : var.type.subTypes)
+				{
+					const auto subInfo = getInfoOfObject(subtype.name);
+					if (!subInfo || !subInfo->valid)
+						continue;
+
+					subtype.info = subInfo;
+
+					if (subtype.propertyType != PropertyType::ObjectProperty && subtype.propertyType != PropertyType::ClassProperty)
+					{
+						//casting is fine even if its a enum as owningpackage is the first package
+						const auto targetStruc = static_cast<EngineStructs::Struct*>(subInfo->target);
+						if (targetStruc->owningPackage->index != package.index)
+							package.dependencyPackages.insert(targetStruc->owningPackage);
+					}
+				}
+
+
+				//casting is fine even if its a enum as owningpackage is the first package
+				const auto targetStruc = static_cast<EngineStructs::Struct*>(info->target);
+				if (targetStruc->owningPackage->index != package.index)
+					package.dependencyPackages.insert(targetStruc->owningPackage);
+			}
+		}
+
+		for(const auto& func : package.functions)
+		{
+			auto& ret = func->returnType;
+			auto addInfoPtr = [&](fieldType& type)
+			{
+				if (type.clickable)
+				{
+					const auto info = getInfoOfObject(type.name);
+					if (info && info->valid)
+						type.info = info;
+				}
+			};
+			addInfoPtr(ret);
+
+			for(auto& param : func->params)
+			{
+				auto& type = std::get<0>(param);
+				addInfoPtr(type);
+			}
+		}
+
+		for (int j = 0; j < package.enums.size(); j++)
+		{
+			auto& enu = package.enums[j];
+			if(enumMap.contains(enu.cppName))
+			{
+				const auto eSize = enumMap[enu.cppName];
+
+				std::string nam = TYPE_UI8;
+				if (eSize == 2)
+					nam = TYPE_UI16;
+				else if (eSize == 4)
+					nam = TYPE_UI32;
+				else if (eSize == 8)
+					nam = TYPE_UI64;
+
+				enu.type = nam;
 			}
 		}
 

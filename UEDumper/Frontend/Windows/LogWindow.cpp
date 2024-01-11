@@ -25,7 +25,8 @@ void windows::LogWindow::Log(logLevels level, const std::string& origin, const c
 	va_list args;
 	va_start(args, fmt);
 	vsprintf_s(logBuffer, 2000, fmt, args);
-	l.message = std::string(logBuffer);
+	memset(l.message, 0, sizeof(l.message));
+	memcpy(l.message, logBuffer, 2000);
 	l.originandTime = "[" + oss.str() + " - " + origin + "]:";
 	
 	logs.push_back(l);
@@ -112,13 +113,13 @@ void windows::LogWindow::render()
 		for (int i = selectedLogRange; i < logSize && i < selectedLogRange + logRange; i++) {
 			const bool is_selected = (selectedLog == i);
 			memset(buf, 0, 2500);
-			sprintf_s(buf, 2500, "%d %s %s", i, logs[i].originandTime.c_str(), logs[i].message.c_str());
+			sprintf_s(buf, 2500, "%d %s %s", i, logs[i].originandTime.c_str(), logs[i].message);
 			if (ImGui::Selectable(buf, is_selected)) {
 				selectedLog = i;
 			}
 			if (is_selected && ImGui::IsItemHovered()) {
 				ImGui::BeginTooltip();
-				ImGui::Text("%s", logs[i].message.c_str());
+				ImGui::Text("%s", logs[i].message);
 				ImGui::EndTooltip();
 			}
 		}

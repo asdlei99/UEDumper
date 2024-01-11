@@ -86,13 +86,13 @@ bool windows::PackageWindow::render()
 				LogWindow::Log(windows::LogWindow::log_2, "PACKAGE", "opening package %d", packagePicked);
 				packagePicked = i;
 				if (packages[i].structs.size() > 0)
-					PackageViewerWindow::createTab(&packages[i].structs[0], EngineCore::ObjectInfo::OI_Struct);
+					PackageViewerWindow::createTab(&packages[i].structs[0], ObjectInfo::OI_Struct);
 				else if (packages[i].classes.size() > 0)
-					PackageViewerWindow::createTab(&packages[i].classes[0], EngineCore::ObjectInfo::OI_Class);
+					PackageViewerWindow::createTab(&packages[i].classes[0], ObjectInfo::OI_Class);
 				else if (packages[i].functions.size() > 0)
-					PackageViewerWindow::createTab(&packages[i].functions[0], EngineCore::ObjectInfo::OI_Function);
+					PackageViewerWindow::createTab(&packages[i].functions[0], ObjectInfo::OI_Function);
 				else if (packages[i].enums.size() > 0)
-					PackageViewerWindow::createTab(&packages[i].enums[0], EngineCore::ObjectInfo::OI_Enum);
+					PackageViewerWindow::createTab(&packages[i].enums[0], ObjectInfo::OI_Enum);
 				else
 					LogWindow::Log(windows::LogWindow::log_2, "PACKAGE", "failed to open package: package is empty!");
 

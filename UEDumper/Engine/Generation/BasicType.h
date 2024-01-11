@@ -41,7 +41,7 @@ inline std::vector<DefinedStruct> basicDefinitions()
     dStruct.name = "TArray";
     dStruct.definition =
 R"(
-template <class T>
+template <class T = char>
 struct TArray
 {
     friend struct FString;
@@ -79,7 +79,7 @@ public:
         return Max - Count;
     }
 
-    FORCEINLINE bool RemoveSingle(const int Index)
+    __forceinline bool RemoveSingle(const int Index)
     {
         if (Index < Count)
         {
@@ -93,7 +93,7 @@ public:
         return false;
     }
 
-    FORCEINLINE void RemoveAt(int Index, int Length = 1)
+    __forceinline void RemoveAt(int Index, int Length = 1)
     {
         for (; Length != 0; --Length)
         {
@@ -322,19 +322,19 @@ public:
     TPair(){};
 
 public:
-    FORCEINLINE KeyType& Key()
+    __forceinline KeyType& Key()
     {
         return First;
     }
-    FORCEINLINE const KeyType& Key() const
+    __forceinline const KeyType& Key() const
     {
         return First;
     }
-    FORCEINLINE ValueType& Value()
+    __forceinline ValueType& Value()
     {
         return Second;
     }
-    FORCEINLINE const ValueType& Value() const
+    __forceinline const ValueType& Value() const
     {
         return Second;
     }
@@ -358,32 +358,32 @@ public:
         return Ptr != nullptr;
     }
 
-    FORCEINLINE explicit operator bool() const
+    __forceinline explicit operator bool() const
     {
         return IsValid();
     }
 
-    FORCEINLINE bool operator!() const
+    __forceinline bool operator!() const
     {
         return !IsValid();
     }
 
-    FORCEINLINE PtrType* operator->() const
+    __forceinline PtrType* operator->() const
     {
         return Ptr;
     }
 
-    FORCEINLINE PtrType& operator*() const
+    __forceinline PtrType& operator*() const
     {
         return *Ptr;
     }
 
-    FORCEINLINE const PtrType*& Get() const
+    __forceinline const PtrType*& Get() const
     {
         return Ptr;
     }
 
-    FORCEINLINE PtrType*& Get()
+    __forceinline PtrType*& Get()
     {
         return Ptr;
     }

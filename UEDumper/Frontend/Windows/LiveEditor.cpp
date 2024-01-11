@@ -76,15 +76,15 @@ void windows::LiveEditor::renderAddAddress()
 				
 			LogWindow::Log(LogWindow::log_0, "LIVE", "Looking for %s...", structName.c_str());
 			const auto info = EngineCore::getInfoOfObject(structName);
-			if(!info)
+			if(!info || !info->valid)
 			{
 				sprintf_s(errorText, "Object not found in the packages!");
 				ImGui::EndDisabled();
 				return;
 			}
 
-			tab.struc = static_cast<EngineStructs::Struct*>(info.target);
-			tab.isClass = info.type == EngineCore::ObjectInfo::OI_Class;
+			tab.struc = static_cast<EngineStructs::Struct*>(info->target);
+			tab.isClass = info->type == ObjectInfo::OI_Class;
 
 			tab.found = true;
 			memset(errorText, 0, sizeof(errorText));
@@ -218,15 +218,15 @@ void windows::LiveEditor::renderAddOffset()
 			if (structName != "nil" && !structName.empty())
 			{
 				const auto info = EngineCore::getInfoOfObject(structName);
-				if (!info)
+				if (!info || !info->valid)
 				{
 					sprintf_s(errorText, "Object not found in the packages!");
 					LogWindow::Log(LogWindow::log_2, "LIVE EDITOR", "Object not found in the packages!");
 					goto failed;
 				}
-				tab.struc = static_cast<EngineStructs::Struct*>(info.target);
+				tab.struc = static_cast<EngineStructs::Struct*>(info->target);
 
-				tab.isClass = info.type == EngineCore::ObjectInfo::OI_Class;
+				tab.isClass = info->type == ObjectInfo::OI_Class;
 
 				tab.origin = std::string(offsetsVec[selector].name) + "->";
 				tab.found = true;
@@ -1117,10 +1117,10 @@ bool windows::LiveEditor::isValidStructName(uint64_t classPointer, const std::st
 			goto tryAgain;
 
 		const auto info = EngineCore::getInfoOfObject(superName);
-		if(!info || !(info.type == EngineCore::ObjectInfo::OI_Class || info.type == EngineCore::ObjectInfo::OI_Struct)) //invalid!
+		if(!info || !info->valid || !(info->type == ObjectInfo::OI_Class || info->type == ObjectInfo::OI_Struct)) //invalid!
 			goto tryAgain;
 
-		outStruct = static_cast<EngineStructs::Struct*>(info.target);
+		outStruct = static_cast<EngineStructs::Struct*>(info->target);
 		
 		//found it! Adding...
 		if(!found)
@@ -1130,10 +1130,10 @@ bool windows::LiveEditor::isValidStructName(uint64_t classPointer, const std::st
 	tryAgain:
 
 	const auto info = EngineCore::getInfoOfObject(CName);
-	if(!info)
+	if(!info || !info->valid)
 		return false;
 
-	outStruct = static_cast<EngineStructs::Struct*>(info.target);
+	outStruct = static_cast<EngineStructs::Struct*>(info->target);
 	
 	return true;
 }
@@ -1141,10 +1141,10 @@ bool windows::LiveEditor::isValidStructName(uint64_t classPointer, const std::st
 bool windows::LiveEditor::isValidEnumName(const std::string& CName, EngineStructs::Enum*& enu)
 {
 	const auto info = EngineCore::getInfoOfObject(CName);
-	if (!info || info.type != EngineCore::ObjectInfo::OI_Enum) //invalid!
+	if (!info || !info->valid || info->type != ObjectInfo::OI_Enum) //invalid!
 		return false;
 
-	enu = static_cast<EngineStructs::Enum*>(info.target);
+	enu = static_cast<EngineStructs::Enum*>(info->target);
 
 	return true;
 
