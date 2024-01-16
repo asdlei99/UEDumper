@@ -26,7 +26,8 @@ public:
 		"Unreal Engine 4.27",
 		"Unreal Engine 5.0",
 		"Unreal Engine 5.1",
-		"Unreal Engine 5.2"
+		"Unreal Engine 5.2",
+		"Unreal Engine 5.3"
 	};
 
 	static const inline char* DumperVersionNames[] = {
@@ -42,6 +43,10 @@ public:
 		"Version 1.5 Release",
 		"Version 1.6 BETA",
 		"Version 1.6 Release",
+		"Version 1.7 BETA",
+		"Version 1.7 Release",
+		"Version 1.8 BETA",
+		"Version 1.8 Release",
 	};
 
 private:
@@ -116,7 +121,7 @@ public:
 	static void setLiveEditor(bool enabled);
 
 	/**
-	 * \brief returns the current live editor status 
+	 * \brief returns the current live editor status
 	 * \return whether the live editor is enabled
 	 */
 	static bool liveEditorEnabled();
@@ -142,7 +147,7 @@ public:
 	static void drawEngineSettings(ImVec2 window, bool* show);
 
 	//all macros defined here
-	
+
 	static inline int _UE_VERSION = 0;
 	static inline int _USE_FNAME_ENCRYPTION = 0;
 	static inline int _WITH_CASE_PRESERVING_NAME = 0;
@@ -179,7 +184,7 @@ public:
 		_UE_BLUEPRINT_EVENTGRAPH_FASTCALLS = UE_BLUEPRINT_EVENTGRAPH_FASTCALLS;
 #if UE_VERSION >= UE_5_00
 		_WITH_LIVE_CODING = WITH_LIVE_CODING;
-		
+
 #endif
 #if UE_VERSION >= UE_4_22
 		_USTRUCT_FAST_ISCHILDOF_IMPL = USTRUCT_FAST_ISCHILDOF_IMPL;
@@ -191,4 +196,3 @@ public:
 #endif
 	}
 };
-

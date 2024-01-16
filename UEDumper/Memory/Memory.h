@@ -56,8 +56,8 @@ private:
 
 	//counter for all writes done
 	inline static int totalWrites = 0;
-	
-	
+
+
 
 public:
 	//add your initializers here
@@ -72,6 +72,13 @@ public:
 	 */
 	static LoadError load(std::string processName);
 
+	/**
+	* \brief REQUIRED! Gets base address from the given process ID
+	* \param processPID target process PID
+	* \return LoadError value
+	*/
+	static LoadError load(int processPID);
+
 	static void checkStatus();
 
 	static MemoryStatus getStatus();
@@ -82,9 +89,9 @@ public:
 	static int getProcessID();
 
 	static int getTotalReads();
-	
+
 	static int getTotalWrites();
-	
+
 
 	/*
 	 * Memory operations here. If you change any params on the templates,
@@ -92,7 +99,7 @@ public:
 	 * In general you dont have to change them.
 	 */
 
-	//read function that gets called from the templates
+	 //read function that gets called from the templates
 	static void read(const void* address, void* buffer, DWORD64 size);
 
 

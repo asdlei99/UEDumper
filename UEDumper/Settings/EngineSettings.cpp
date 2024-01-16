@@ -119,7 +119,7 @@ bool EngineSettings::loadJson(const nlohmann::json& json)
 	{
 		windows::LogWindow::Log(windows::LogWindow::log_2, "ENGINESETTINGS", "The save file was generated with an older "
 																	   "version of the dumper.");
-		windows::LogWindow::Log(windows::LogWindow::log_2, "ENGINESETTINGS", "File has version %d but Dumper has version %d.", ver, DUMPER_VERSION);
+		windows::LogWindow::Log(windows::LogWindow::log_2, "ENGINESETTINGS", "File has version %d but dumper has version %d.", ver, DUMPER_VERSION);
 		return false;
 	}
 

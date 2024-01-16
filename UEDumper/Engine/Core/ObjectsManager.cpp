@@ -10,7 +10,7 @@ void ObjectsManager::verifyUBigObjectSize(UObjectManager::UBigObject* bigObjectP
 	if (requiredSize > UOBJECT_MAX_SIZE)
 	{
 		windows::LogWindow::Log(windows::LogWindow::log_2, "OBJECTSMANAGER",
-			"HARD ERROR! A UObject tried to acces more space (%d) than it can have max (%d). Try increasing UOBJECT_MAX_SIZE", requiredSize, UOBJECT_MAX_SIZE);
+			"HARD ERROR! A UObject tried to access more space (%d) than it can have max (%d). Try increasing UOBJECT_MAX_SIZE", requiredSize, UOBJECT_MAX_SIZE);
 		errorReason = windows::LogWindow::getLastLogMessage();
 		STOP_OPERATION();
 	}
@@ -194,7 +194,7 @@ void ObjectsManager::copyGObjectPtrs(int64_t& finishedBytes, int64_t& totalBytes
 #endif
 
 	status = CS_success;
-	windows::LogWindow::Log(windows::LogWindow::log_0, "OBJECTSMANAGER", "Loaded GObjectPtrArray succesfully!");
+	windows::LogWindow::Log(windows::LogWindow::log_0, "OBJECTSMANAGER", "Loaded GObjectPtrArray successfully!");
 
 	bOperationSuccess = true;
 }
@@ -250,7 +250,7 @@ void ObjectsManager::copyUBigObjects(int64_t& finishedBytes, int64_t& totalBytes
 		finishedBytes += sizeof(UObject);
 	}
 	status = CS_success;
-	windows::LogWindow::Log(windows::LogWindow::log_0, "ENGINECORE", "Loaded UBigObjectArray succesfully!");
+	windows::LogWindow::Log(windows::LogWindow::log_0, "ENGINECORE", "Loaded UBigObjectArray successfully!");
 	bOperationSuccess = true;
 }
 

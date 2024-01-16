@@ -13,19 +13,21 @@ windows::HelloWindow::HelloWindow()
 
 bool windows::HelloWindow::render()
 {
-	if(alreadyCompleted) return true;
+	if (alreadyCompleted) return true;
 
 	static char processName[100] = { 0 };
 	static char projectName[50] = { 0 };
 	static char errorText[100] = { 0 };
 	static bool showEngineInfos = false;
 	static bool createdDir = false;
+	static bool ProcessIDInsteadOfName = false;
+	static bool PIDInHex = true;
 
 	const ImVec2 bigWindow = IGHelper::getWindowSize();
 
-	
+
 	//if we dont show engine infos render the new project child
-	if(!showEngineInfos)
+	if (!showEngineInfos)
 	{
 		constexpr auto childSize = ImVec2(750, 300);
 		ImGui::SetCursorPos(ImVec2(bigWindow.x / 2 - childSize.x / 2, bigWindow.y / 2 - childSize.y / 2));
@@ -41,14 +43,14 @@ bool windows::HelloWindow::render()
 		ImGui::TextColored(IGHelper::Colors::grayedOut, "%22s", EngineSettings::getDumperVersion().c_str());
 		ImGui::SetCursorPos({ posX, 20 });
 		ImGui::BeginChild("NewProjectChild", ImVec2(520, 280), false, ImGuiWindowFlags_NoScrollWithMouse);
-		ImGui::PushItemWidth(400);
+		ImGui::PushItemWidth(373);
 		ImGui::Dummy(ImVec2(0, 20));
 		ImGui::Text("Enter a project name (at least 5 characters)");
 		ImGui::InputTextWithHint("##projectNameInput", "Fortnite 5.0.1", projectName, sizeof(projectName));
 		ImGui::SameLine();
 
 		//only allow any interaction if projectname > 4 and there is no created dir
-		if(!createdDir && (ImGui::Button(merge(ICON_FA_FOLDER, " Create##createProject")) && strlen(projectName) > 4))
+		if (!createdDir && (ImGui::Button(merge(ICON_FA_FOLDER, " Create##createProject")) && strlen(projectName) > 4))
 		{
 			createdDir = EngineSettings::setProjectName(projectName);
 			if (!createdDir)
@@ -56,45 +58,92 @@ bool windows::HelloWindow::render()
 			else
 				memset(errorText, 0, sizeof(errorText));
 		}
-		if(createdDir)
+		if (createdDir)
 		{
 			ImGui::Text("Created!");
 		}
-		
-		ImGui::Text("Enter running UE Game name");
-		ImGui::InputTextWithHint("##gameNameInput", "UEGame-Win64-Shipping.exe", processName, sizeof(processName));
+
 		ImGui::PopItemWidth();
-		ImGui::SameLine();
-		if (Memory::getStatus() != Memory::MemoryStatus::loaded)
+
+		if (ProcessIDInsteadOfName)
 		{
-			if (ImGui::Button(merge(ICON_FA_SEARCH, " Find##FindProcess")))
-			{
+			ImGui::PushItemWidth(280);
+			if (PIDInHex)
+				ImGui::Text("Enter running UE Game PID (hex)");
+			else
+				ImGui::Text("Enter running UE Game PID (decimal)");
+
+			//we still use the procname buff
+			ImGui::InputTextWithHint("##gameNameInput", PIDInHex ? "123ABC" : "123456", processName, sizeof(processName), PIDInHex ? ImGuiInputTextFlags_CharsHexadecimal : ImGuiInputTextFlags_CharsHexadecimal);
+			ImGui::PopItemWidth();
+			ImGui::SameLine();
+			ImGui::BeginDisabled(Memory::getStatus() == Memory::MemoryStatus::loaded);
+			if (ImGui::Button(PIDInHex ? "DEC" : "HEX"))
+				PIDInHex = !PIDInHex;
+
+			ImGui::SameLine();
+			if (ImGui::Button("Name"))
+				ProcessIDInsteadOfName = false;
+			ImGui::EndDisabled();
+
+			auto sPID = std::string(processName);
+			if (sPID.empty())
+				sPID = "0";
+
+			const int PID = std::stoi(sPID, nullptr, PIDInHex ? 16 : 10);
+
+			ImGui::SameLine();
+
+			if (Memory::getStatus() == Memory::MemoryStatus::loaded)
+				ImGui::Text("Loaded!");
+
+			else if (ImGui::Button(merge(ICON_FA_SEARCH, " Find##FindProcess")))
+				Memory::load(PID);
+		}
+
+		else
+		{
+			ImGui::PushItemWidth(350);
+			ImGui::Text("Enter running UE Game name");
+			ImGui::InputTextWithHint("##gameNameInput", "UEGame-Win64-Shipping.exe", processName, sizeof(processName));
+			ImGui::PopItemWidth();
+			ImGui::SameLine();
+
+			ImGui::BeginDisabled(Memory::getStatus() == Memory::MemoryStatus::loaded);
+
+			if (ImGui::Button("PID"))
+				ProcessIDInsteadOfName = true;
+			ImGui::EndDisabled();
+
+			ImGui::SameLine();
+
+			if (Memory::getStatus() == Memory::MemoryStatus::loaded)
+				ImGui::Text("Loaded!");
+
+			else if (ImGui::Button(merge(ICON_FA_SEARCH, " Find##FindProcess")))
 				Memory::load(std::string(processName));
-			}
+
 		}
-		else if (Memory::getStatus() == Memory::MemoryStatus::loaded)
-		{
-			ImGui::Text("Loaded!");
-		}
+
 
 		ImGui::Spacing();
 		if (ImGui::Button("Engine settings"))
 			showEngineInfos = true;
 
-		if(strlen(errorText) > 0)
+		if (strlen(errorText) > 0)
 		{
 			ImGui::PushStyleColor(ImGuiCol_Text, IGHelper::Colors::classOrange);
 			ImGui::TextWrapped(errorText);
 			ImGui::PopStyleColor();
 		}
-		
+
 		if (Memory::getStatus() == Memory::MemoryStatus::loaded)
 		{
 			ImGui::Text("Process ID: 0x%05X", Memory::getProcessID());
 			ImGui::Text("Base Address: 0x%p", Memory::getBaseAddress());
 
 		}
-		if(Memory::getStatus() == Memory::MemoryStatus::loaded && createdDir)
+		if (Memory::getStatus() == Memory::MemoryStatus::loaded && createdDir)
 		{
 			ImGui::SetCursorPosX(40);
 			ImGui::SetCursorPosY(240);
@@ -117,7 +166,7 @@ bool windows::HelloWindow::render()
 		ImGui::SetCursorPos(ImVec2(bigWindow.x / 2 - childSize.x / 2, bigWindow.y / 2 - childSize.y / 2 - 80));
 		EngineSettings::drawEngineSettings(childSize, &showEngineInfos);
 	}
-	
+
 
 	return false;
 }
