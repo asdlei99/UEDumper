@@ -189,6 +189,7 @@
     <ClInclude Include="Engine\enums.h" />
     <ClInclude Include="Engine\Generation\BasicType.h" />
     <ClInclude Include="Engine\Generation\MDK.h" />
+    <ClInclude Include="Engine\Generation\packageSorter.h" />
     <ClInclude Include="Engine\Generation\SDK.h" />
     <ClInclude Include="Engine\Live\LiveMemory.h" />
     <ClInclude Include="Engine\structs.h" />
@@ -215,7 +216,6 @@
     <ClInclude Include="Frontend\Windows\TopRowButtons.h" />
     <ClInclude Include="Memory\driver.h" />
     <ClInclude Include="Memory\Memory.h" />
-    <ClInclude Include="packageSorter.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Resources\AES\AES.h" />
     <ClInclude Include="Resources\Dumpspace\dumpspace.h" />
