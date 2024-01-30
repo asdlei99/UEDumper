@@ -40,11 +40,11 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.TransitionCrowdToTargetParamValue
-	// void TransitionCrowdToTargetParamValue(int32_t DataIndex, float TargetValue, float TimeToTransition);                    // [0xab9898c] Final|Native|Public|BlueprintCallable 
+	// void TransitionCrowdToTargetParamValue(int32_t DataIndex, float TargetValue, float TimeToTransition);                    // [0xab8540c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.SpawnCrowdNow
-	// bool SpawnCrowdNow(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xab98190] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SpawnCrowdNow(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xab84c10] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.SpawnCrowd
-	// bool SpawnCrowd(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, int32_t InBatchSize, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xab978bc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SpawnCrowd(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, int32_t InBatchSize, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xab8433c] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/SparksCommonRuntime.SparksCommonAllPlayersReadyEvent

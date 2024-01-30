@@ -297,9 +297,9 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.MeshTopologySelectionMechanicProperties.SelectAll
-	// void SelectAll();                                                                                                     // [0xaf31788] Final|Native|Public  
+	// void SelectAll();                                                                                                     // [0xaf146cc] Final|Native|Public  
 	// Function /Script/ModelingComponents.MeshTopologySelectionMechanicProperties.InvertSelection
-	// void InvertSelection();                                                                                               // [0xaf3174c] Final|Native|Public  
+	// void InvertSelection();                                                                                               // [0xaf14690] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.GeometrySelectionEditCommandArguments
@@ -497,7 +497,7 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.OctreeDynamicMeshComponent.SetDynamicMesh
-	// void SetDynamicMesh(class UDynamicMesh* NewMesh);                                                                     // [0xaf317c4] Final|Native|Public|BlueprintCallable 
+	// void SetDynamicMesh(class UDynamicMesh* NewMesh);                                                                     // [0xaf14708] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ModelingComponents.LineSetComponent
@@ -549,43 +549,43 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.PreviewGeometry.SetPointSetVisibility
-	// bool SetPointSetVisibility(FString PointSetIdentifier, bool bVisible);                                                // [0xaf8175c] Final|Native|Public  
+	// bool SetPointSetVisibility(FString PointSetIdentifier, bool bVisible);                                                // [0xaf64678] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetPointSetMaterial
-	// bool SetPointSetMaterial(FString PointSetIdentifier, class UMaterialInterface* NewMaterial);                          // [0xaf81088] Final|Native|Public  
+	// bool SetPointSetMaterial(FString PointSetIdentifier, class UMaterialInterface* NewMaterial);                          // [0xaf63fa4] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetLineSetVisibility
-	// bool SetLineSetVisibility(FString LineSetIdentifier, bool bVisible);                                                  // [0xaf809b0] Final|Native|Public  
+	// bool SetLineSetVisibility(FString LineSetIdentifier, bool bVisible);                                                  // [0xaf638cc] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetLineSetMaterial
-	// bool SetLineSetMaterial(FString LineSetIdentifier, class UMaterialInterface* NewMaterial);                            // [0xaf802dc] Final|Native|Public  
+	// bool SetLineSetMaterial(FString LineSetIdentifier, class UMaterialInterface* NewMaterial);                            // [0xaf631f8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetAllPointSetsMaterial
-	// void SetAllPointSetsMaterial(class UMaterialInterface* Material);                                                     // [0xaf8025c] Final|Native|Public  
+	// void SetAllPointSetsMaterial(class UMaterialInterface* Material);                                                     // [0xaf63178] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetAllLineSetsMaterial
-	// void SetAllLineSetsMaterial(class UMaterialInterface* Material);                                                      // [0xaf801dc] Final|Native|Public  
+	// void SetAllLineSetsMaterial(class UMaterialInterface* Material);                                                      // [0xaf630f8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemovePointSet
-	// bool RemovePointSet(FString PointSetIdentifier, bool bDestroy);                                                       // [0xaf7fb04] Final|Native|Public  
+	// bool RemovePointSet(FString PointSetIdentifier, bool bDestroy);                                                       // [0xaf62a20] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveLineSet
-	// bool RemoveLineSet(FString LineSetIdentifier, bool bDestroy);                                                         // [0xaf7f42c] Final|Native|Public  
+	// bool RemoveLineSet(FString LineSetIdentifier, bool bDestroy);                                                         // [0xaf62348] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveAllPointSets
-	// void RemoveAllPointSets(bool bDestroy);                                                                               // [0xaf7f3ac] Final|Native|Public  
+	// void RemoveAllPointSets(bool bDestroy);                                                                               // [0xaf622c8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveAllLineSets
-	// void RemoveAllLineSets(bool bDestroy);                                                                                // [0xaf7f32c] Final|Native|Public  
+	// void RemoveAllLineSets(bool bDestroy);                                                                                // [0xaf62248] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.GetActor
-	// class APreviewGeometryActor* GetActor();                                                                              // [0x7c14f10] Final|Native|Public|Const 
+	// class APreviewGeometryActor* GetActor();                                                                              // [0x7c4ef68] Final|Native|Public|Const 
 	// Function /Script/ModelingComponents.PreviewGeometry.FindTriangleSet
-	// class UTriangleSetComponent* FindTriangleSet(FString TriangleSetIdentifier);                                          // [0xaf7ec00] Final|Native|Public  
+	// class UTriangleSetComponent* FindTriangleSet(FString TriangleSetIdentifier);                                          // [0xaf61b1c] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.FindPointSet
-	// class UPointSetComponent* FindPointSet(FString PointSetIdentifier);                                                   // [0xaf7e550] Final|Native|Public  
+	// class UPointSetComponent* FindPointSet(FString PointSetIdentifier);                                                   // [0xaf6146c] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.FindLineSet
-	// class ULineSetComponent* FindLineSet(FString LineSetIdentifier);                                                      // [0xaf7dea0] Final|Native|Public  
+	// class ULineSetComponent* FindLineSet(FString LineSetIdentifier);                                                      // [0xaf60dbc] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.Disconnect
-	// void Disconnect();                                                                                                    // [0xaf7de8c] Final|Native|Public  
+	// void Disconnect();                                                                                                    // [0xaf60da8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.CreateInWorld
-	// void CreateInWorld(class UWorld* World, FTransform& WithTransform);                                                   // [0xaf7cde4] Final|Native|Public|HasOutParms|HasDefaults 
+	// void CreateInWorld(class UWorld* World, FTransform& WithTransform);                                                   // [0xaf5fd00] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/ModelingComponents.PreviewGeometry.AddTriangleSet
-	// class UTriangleSetComponent* AddTriangleSet(FString TriangleSetIdentifier);                                           // [0xaf7c734] Final|Native|Public  
+	// class UTriangleSetComponent* AddTriangleSet(FString TriangleSetIdentifier);                                           // [0xaf5f650] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.AddPointSet
-	// class UPointSetComponent* AddPointSet(FString PointSetIdentifier);                                                    // [0xaf7c084] Final|Native|Public  
+	// class UPointSetComponent* AddPointSet(FString PointSetIdentifier);                                                    // [0xaf5efa0] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.AddLineSet
-	// class ULineSetComponent* AddLineSet(FString LineSetIdentifier);                                                       // [0xaf7b9d4] Final|Native|Public  
+	// class ULineSetComponent* AddLineSet(FString LineSetIdentifier);                                                       // [0xaf5e8f0] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.MeshElementsVisualizer
@@ -952,13 +952,13 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateTextureObject
-	// FCreateTextureObjectResult CreateTextureObject(FCreateTextureObjectParams& CreateTexParams);                          // [0xaf7d7bc] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateTextureObjectResult CreateTextureObject(FCreateTextureObjectParams& CreateTexParams);                          // [0xaf606d8] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateNewActor
-	// FCreateActorResult CreateNewActor(FCreateActorParams& CreateActorParams);                                             // [0xaf7d6dc] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateActorResult CreateNewActor(FCreateActorParams& CreateActorParams);                                             // [0xaf605f8] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateMeshObject
-	// FCreateMeshObjectResult CreateMeshObject(FCreateMeshObjectParams& CreateMeshParams);                                  // [0xaf7d5e0] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateMeshObjectResult CreateMeshObject(FCreateMeshObjectParams& CreateMeshParams);                                  // [0xaf604fc] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateMaterialObject
-	// FCreateMaterialObjectResult CreateMaterialObject(FCreateMaterialObjectParams& CreateMaterialParams);                  // [0xaf7cf14] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateMaterialObjectResult CreateMaterialObject(FCreateMaterialObjectParams& CreateMaterialParams);                  // [0xaf5fe30] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/ModelingComponents.PreviewMeshActor
@@ -982,11 +982,11 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.ShouldShowPropertySet
-	// bool ShouldShowPropertySet();                                                                                         // [0xaf81e34] Final|Native|Public|Const 
+	// bool ShouldShowPropertySet();                                                                                         // [0xaf64d50] Final|Native|Public|Const 
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.GetOutputTypeNamesFunc
-	// TArray<FString> GetOutputTypeNamesFunc();                                                                             // [0xaf7f310] Final|Native|Public  
+	// TArray<FString> GetOutputTypeNamesFunc();                                                                             // [0xaf6222c] Final|Native|Public  
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.GetCurrentCreateMeshType
-	// ECreateObjectTypeHint GetCurrentCreateMeshType();                                                                     // [0xaf7f2b0] Final|Native|Public|Const 
+	// ECreateObjectTypeHint GetCurrentCreateMeshType();                                                                     // [0xaf621cc] Final|Native|Public|Const 
 };
 
 /// Class /Script/ModelingComponents.OnAcceptHandleSourcesPropertiesSingle
@@ -1010,7 +1010,7 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.PolygroupLayersProperties.GetGroupLayersFunc
-	// TArray<FString> GetGroupLayersFunc();                                                                                 // [0xaf7f2d4] Final|Native|Public  
+	// TArray<FString> GetGroupLayersFunc();                                                                                 // [0xaf621f0] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.WeightMapSetProperties
@@ -1027,7 +1027,7 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.WeightMapSetProperties.GetWeightMapsFunc
-	// TArray<FString> GetWeightMapsFunc();                                                                                  // [0xaf7f2d4] Final|Native|Public  
+	// TArray<FString> GetWeightMapsFunc();                                                                                  // [0xaf621f0] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.GeometrySelectionManager

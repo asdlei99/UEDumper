@@ -154,7 +154,7 @@ public:
 
 	/// Functions
 	// Function /Script/InfernoRuntime.FortCurieVoxelFireNativeFXHandler.OnUserSettingsEffectQualityChanged
-	// void OnUserSettingsEffectQualityChanged();                                                                            // [0xb24bcf4] Final|Native|Private 
+	// void OnUserSettingsEffectQualityChanged();                                                                            // [0xb22c4a8] Final|Native|Private 
 };
 
 /// Class /Script/InfernoRuntime.FortCurieVoxelFireParticleDataInterface

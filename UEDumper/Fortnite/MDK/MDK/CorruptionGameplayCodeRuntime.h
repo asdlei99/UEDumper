@@ -25,19 +25,19 @@ public:
 
 	/// Functions
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortFundingLibrary.WriteTextToBuffer
-	// FString WriteTextToBuffer(FText& Text);                                                                                  // [0xaa07f0c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString WriteTextToBuffer(FText& Text);                                                                                  // [0xa9f5354] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortFundingLibrary.IsOption2ChoiceWinner
-	// bool IsOption2ChoiceWinner(FWarEffortFundingMetadata& MetaData, int32_t ChoiceIndex);                                    // [0xaa07088] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsOption2ChoiceWinner(FWarEffortFundingMetadata& MetaData, int32_t ChoiceIndex);                                    // [0xa9f44d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortFundingLibrary.IsOption1ChoiceWinner
-	// bool IsOption1ChoiceWinner(FWarEffortFundingMetadata& MetaData, int32_t ChoiceIndex);                                    // [0xaa06ec0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsOption1ChoiceWinner(FWarEffortFundingMetadata& MetaData, int32_t ChoiceIndex);                                    // [0xa9f4308] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortFundingLibrary.IsIndexFunded
-	// bool IsIndexFunded(FWarEffortFundingMetadata& MetaData, int32_t Index, TEnumAsByte<EWarEffortFundingStationType> StationType); // [0xaa06a94] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsIndexFunded(FWarEffortFundingMetadata& MetaData, int32_t Index, TEnumAsByte<EWarEffortFundingStationType> StationType); // [0xa9f3edc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortFundingLibrary.GetIndexFundedPercent
-	// float GetIndexFundedPercent(FWarEffortFundingMetadata& MetaData, int32_t Index, TEnumAsByte<EWarEffortFundingStationType> StationType); // [0xaa06818] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetIndexFundedPercent(FWarEffortFundingMetadata& MetaData, int32_t Index, TEnumAsByte<EWarEffortFundingStationType> StationType); // [0xa9f3c60] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortFundingLibrary.DoesChoiceHaveWinner
-	// bool DoesChoiceHaveWinner(FWarEffortFundingMetadata& MetaData, int32_t ChoiceIndex);                                     // [0xaa06584] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool DoesChoiceHaveWinner(FWarEffortFundingMetadata& MetaData, int32_t ChoiceIndex);                                     // [0xa9f39cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortFundingLibrary.AdjustDonation
-	// int32_t AdjustDonation(int32_t DonationAmount, TEnumAsByte<EWarEffortFundingStationType> StationType);                   // [0xaa06464] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t AdjustDonation(int32_t DonationAmount, TEnumAsByte<EWarEffortFundingStationType> StationType);                   // [0xa9f38ac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/CorruptionGameplayCodeRuntime.CorruptionCoverageMap
@@ -52,9 +52,9 @@ public:
 
 	/// Functions
 	// Function /Script/CorruptionGameplayCodeRuntime.CorruptionCoverageMap.UpdateCorruptionCoverageMap
-	// bool UpdateCorruptionCoverageMap(class UObject* WorldContextObject, class UTextureRenderTarget2D* CorruptionRenderTarget, FVector& InTopLeftWorldCoordinate, FVector& InBottomRightWorldCoordinate, float CoverageThreshold, float DebugDrawDuration); // [0xaa07c20] Final|Native|Private|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool UpdateCorruptionCoverageMap(class UObject* WorldContextObject, class UTextureRenderTarget2D* CorruptionRenderTarget, FVector& InTopLeftWorldCoordinate, FVector& InBottomRightWorldCoordinate, float CoverageThreshold, float DebugDrawDuration); // [0xa9f5068] Final|Native|Private|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CorruptionGameplayCodeRuntime.CorruptionCoverageMap.IsLocationCorrupted
-	// bool IsLocationCorrupted(FVector& Location, float Padding);                                                              // [0xaa06d34] Final|Native|Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLocationCorrupted(FVector& Location, float Padding);                                                              // [0xa9f417c] Final|Native|Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CorruptionGameplayCodeRuntime.FortCorruptionSequenceData
@@ -86,9 +86,9 @@ public:
 
 	/// Functions
 	// Function /Script/CorruptionGameplayCodeRuntime.CubeMovementStaticPath.EditorGetCorruptionGenerationData
-	// void EditorGetCorruptionGenerationData(FCubeMovement_CorruptionGenerationData& OutData);                                 // [0xaa06728] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void EditorGetCorruptionGenerationData(FCubeMovement_CorruptionGenerationData& OutData);                                 // [0xa9f3b70] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CorruptionGameplayCodeRuntime.CubeMovementStaticPath.ClearAllGeneratedSplinesAndLockedData
-	// void ClearAllGeneratedSplinesAndLockedData();                                                                            // [0xaa06570] Final|Native|Protected 
+	// void ClearAllGeneratedSplinesAndLockedData();                                                                            // [0xa9f39b8] Final|Native|Protected 
 };
 
 /// Class /Script/CorruptionGameplayCodeRuntime.FortAthenaMutator_WarEffort
@@ -107,17 +107,17 @@ public:
 
 	/// Functions
 	// Function /Script/CorruptionGameplayCodeRuntime.FortAthenaMutator_WarEffort.SetTryBeforeYouBuyItemState
-	// void SetTryBeforeYouBuyItemState(FGameplayTag ItemFundingTag, bool bIsActive);                                           // [0xaa07a10] Final|Native|Public|BlueprintCallable 
+	// void SetTryBeforeYouBuyItemState(FGameplayTag ItemFundingTag, bool bIsActive);                                           // [0xa9f4e58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CorruptionGameplayCodeRuntime.FortAthenaMutator_WarEffort.SetItemFundedState
-	// void SetItemFundedState(FGameplayTag ItemFundingTag, bool bIsActive);                                                    // [0xaa07800] Final|Native|Public|BlueprintCallable 
+	// void SetItemFundedState(FGameplayTag ItemFundingTag, bool bIsActive);                                                    // [0xa9f4c48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CorruptionGameplayCodeRuntime.FortAthenaMutator_WarEffort.SetItemFundedPercent
-	// void SetItemFundedPercent(FGameplayTag ItemFundingTag, float FundingPercent);                                            // [0xaa075fc] Final|Native|Public|BlueprintCallable 
+	// void SetItemFundedPercent(FGameplayTag ItemFundingTag, float FundingPercent);                                            // [0xa9f4a44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CorruptionGameplayCodeRuntime.FortAthenaMutator_WarEffort.SetItemFundedAmount
-	// void SetItemFundedAmount(FGameplayTag ItemFundingTag, int64_t CurrentFundingAmount, int64_t TargetFundingAmount);        // [0xaa07320] Final|Native|Public|BlueprintCallable 
+	// void SetItemFundedAmount(FGameplayTag ItemFundingTag, int64_t CurrentFundingAmount, int64_t TargetFundingAmount);        // [0xa9f4768] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CorruptionGameplayCodeRuntime.FortAthenaMutator_WarEffort.SetFundingManagerReady
-	// void SetFundingManagerReady(bool bIsReady);                                                                              // [0xaa072a0] Final|Native|Public|BlueprintCallable 
+	// void SetFundingManagerReady(bool bIsReady);                                                                              // [0xa9f46e8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CorruptionGameplayCodeRuntime.FortAthenaMutator_WarEffort.OnRep_PreloadedItemList
-	// void OnRep_PreloadedItemList();                                                                                          // [0xaa0728c] Final|Native|Protected 
+	// void OnRep_PreloadedItemList();                                                                                          // [0xa9f46d4] Final|Native|Protected 
 };
 
 /// Class /Script/CorruptionGameplayCodeRuntime.WarEffortMeshActor
@@ -136,11 +136,11 @@ public:
 
 	/// Functions
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortMeshActor.OnRep_CurrentFundingData
-	// void OnRep_CurrentFundingData();                                                                                         // [0xaa07278] Final|Native|Protected 
+	// void OnRep_CurrentFundingData();                                                                                         // [0xa9f46c0] Final|Native|Protected 
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortMeshActor.OnRep_ActiveTryBeforeYouBuyItems
-	// void OnRep_ActiveTryBeforeYouBuyItems();                                                                                 // [0xaa07264] Final|Native|Protected 
+	// void OnRep_ActiveTryBeforeYouBuyItems();                                                                                 // [0xa9f46ac] Final|Native|Protected 
 	// Function /Script/CorruptionGameplayCodeRuntime.WarEffortMeshActor.OnRep_ActiveFundedItems
-	// void OnRep_ActiveFundedItems();                                                                                          // [0xaa07250] Final|Native|Protected 
+	// void OnRep_ActiveFundedItems();                                                                                          // [0xa9f4698] Final|Native|Protected 
 };
 
 /// Struct /Script/CorruptionGameplayCodeRuntime.WarEffortFundingOptionData

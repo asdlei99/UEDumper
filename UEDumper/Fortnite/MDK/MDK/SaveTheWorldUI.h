@@ -41,15 +41,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer.UpdateViewerData
-	// void UpdateViewerData();                                                                                                 // [0xbe38df0] Final|Native|Public|BlueprintCallable 
+	// void UpdateViewerData();                                                                                                 // [0xbdef89c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer.OnTryUpdateUserWidgetColor
-	// void OnTryUpdateUserWidgetColor(class UUserWidget* Widget, FSlateColor OverrideColor);                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnTryUpdateUserWidgetColor(class UUserWidget* Widget, FSlateColor OverrideColor);                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer.OnPlayLayoutOutroAnimation
-	// void OnPlayLayoutOutroAnimation(EViewerNavigationDirection TravelDirection);                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayLayoutOutroAnimation(EViewerNavigationDirection TravelDirection);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer.OnPlayLayoutFadeInAnimation
-	// void OnPlayLayoutFadeInAnimation();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayLayoutFadeInAnimation();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer.HandleLayoutOutroAnimationFinished
-	// void HandleLayoutOutroAnimationFinished();                                                                               // [0xbe33bcc] Final|Native|Public|BlueprintCallable 
+	// void HandleLayoutOutroAnimationFinished();                                                                               // [0xbdea678] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortArmoryScreen
@@ -64,11 +64,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortArmoryScreen.PushItemManagementScreen
-	// void PushItemManagementScreen(EFortFrontendInventoryFilter ItemManagementFilter, class UFortItem* ItemToSelect, bool bShowAutoMulch); // [0xbe37234] Final|Native|Protected|BlueprintCallable 
+	// void PushItemManagementScreen(EFortFrontendInventoryFilter ItemManagementFilter, class UFortItem* ItemToSelect, bool bShowAutoMulch); // [0xbdedce0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortArmoryScreen.PushItemInspectionScreen
-	// void PushItemInspectionScreen(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, class UFortItemTileView* CycleTileView, bool bReadOnly, bool bAllowFavoriting, bool bIsTemporaryItem, bool bAllowRarityUpgrading); // [0xbe3700c] Final|Native|Protected|BlueprintCallable 
+	// void PushItemInspectionScreen(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, class UFortItemTileView* CycleTileView, bool bReadOnly, bool bAllowFavoriting, bool bIsTemporaryItem, bool bAllowRarityUpgrading); // [0xbdedab8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortArmoryScreen.PushHeroLoadoutScreen
-	// void PushHeroLoadoutScreen(class UFortCampaignHeroLoadoutItem* HeroLoadout);                                             // [0xbe36ec4] Final|Native|Protected|BlueprintCallable 
+	// void PushHeroLoadoutScreen(class UFortCampaignHeroLoadoutItem* HeroLoadout);                                             // [0xbded970] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortArmoryScreen_Legacy
@@ -95,13 +95,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCommandScreen.PushItemInspectionScreen
-	// void PushItemInspectionScreen(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, class UFortItemTileView* CycleTileView, bool bReadOnly, bool bAllowFavoriting, bool bIsTemporaryItem, bool bAllowRarityUpgrading); // [0xbe3700c] Final|Native|Protected|BlueprintCallable 
+	// void PushItemInspectionScreen(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, class UFortItemTileView* CycleTileView, bool bReadOnly, bool bAllowFavoriting, bool bIsTemporaryItem, bool bAllowRarityUpgrading); // [0xbdedab8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCommandScreen.PushHeroLoadoutScreen
-	// void PushHeroLoadoutScreen(class UFortCampaignHeroLoadoutItem* HeroLoadout);                                             // [0xbe36ec4] Final|Native|Protected|BlueprintCallable 
+	// void PushHeroLoadoutScreen(class UFortCampaignHeroLoadoutItem* HeroLoadout);                                             // [0xbded970] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCommandScreen.HandleUpgradeInspectHero
-	// void HandleUpgradeInspectHero();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleUpgradeInspectHero();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCommandScreen.HandleShowAllStats
-	// void HandleShowAllStats();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleShowAllStats();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookGenericRewardWidget
@@ -121,19 +121,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookGenericRewardWidget.SetRewardStatus
-	// void SetRewardStatus(ECollectionBookRewardStatus Status);                                                                // [0x7065144] Native|Public|BlueprintCallable 
+	// void SetRewardStatus(ECollectionBookRewardStatus Status);                                                                // [0x70a86a4] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookGenericRewardWidget.SetRewards
-	// void SetRewards(FFortRewardInfo& Rewards);                                                                               // [0xbe388e4] Native|Public|HasOutParms|BlueprintCallable 
+	// void SetRewards(FFortRewardInfo& Rewards);                                                                               // [0xbdef390] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookGenericRewardWidget.SetCurrentItemToDisplay
-	// void SetCurrentItemToDisplay(class UFortItem* ItemToDisplay);                                                            // [0xbe37e04] Native|Protected     
+	// void SetCurrentItemToDisplay(class UFortItem* ItemToDisplay);                                                            // [0xbdee8b0] Native|Protected     
 	// Function /Script/SaveTheWorldUI.FortCollectionBookGenericRewardWidget.OnRewardStatusChanged
-	// void OnRewardStatusChanged(ECollectionBookRewardStatus NewStatus);                                                       // [0xbe361d0] Native|Event|Protected|BlueprintEvent 
+	// void OnRewardStatusChanged(ECollectionBookRewardStatus NewStatus);                                                       // [0xbdecc7c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookGenericRewardWidget.HasRewards
-	// bool HasRewards();                                                                                                       // [0x9f6db48] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasRewards();                                                                                                       // [0x9f6ecc8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookGenericRewardWidget.GetRewardStatus
-	// ECollectionBookRewardStatus GetRewardStatus();                                                                           // [0xa885e70] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ECollectionBookRewardStatus GetRewardStatus();                                                                           // [0xa8782c8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookGenericRewardWidget.ClearRewards
-	// void ClearRewards();                                                                                                     // [0x9982828] Native|Public|BlueprintCallable 
+	// void ClearRewards();                                                                                                     // [0x998bfc0] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookHelpWidget
@@ -158,15 +158,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookItemPopupMenu.HandleItemUpdated
-	// void HandleItemUpdated();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleItemUpdated();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookItemPopupMenu.HandleItemChanged
-	// void HandleItemChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleItemChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookItemPopupMenu.GetHostButton
-	// class UFortCollectionBookSlotButton* GetHostButton();                                                                    // [0xbe32c9c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UFortCollectionBookSlotButton* GetHostButton();                                                                    // [0xbde9748] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookItemPopupMenu.CanItemBeUnslotted
-	// bool CanItemBeUnslotted();                                                                                               // [0xbe32614] Final|Native|Protected|BlueprintCallable 
+	// bool CanItemBeUnslotted();                                                                                               // [0xbde90c0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookItemPopupMenu.CanItemBePurchased
-	// bool CanItemBePurchased();                                                                                               // [0xbe325c0] Final|Native|Protected|BlueprintCallable 
+	// bool CanItemBePurchased();                                                                                               // [0xbde906c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookOverviewWidget
@@ -187,11 +187,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookOverviewWidget.OnDeactivated
-	// void OnDeactivated();                                                                                                    // [0x1555df0] Native|Event|Public|BlueprintEvent 
+	// void OnDeactivated();                                                                                                    // [0x212f900] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookOverviewWidget.OnActivated
-	// void OnActivated();                                                                                                      // [0x1486378] Native|Event|Public|BlueprintEvent 
+	// void OnActivated();                                                                                                      // [0x14b9e3c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookOverviewWidget.HandlePagesChanged
-	// void HandlePagesChanged(class UFortCollectionBookManager* CBManager);                                                    // [0xbe33d18] Final|Native|Private 
+	// void HandlePagesChanged(class UFortCollectionBookManager* CBManager);                                                    // [0xbdea7c4] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookPageCompletionRewardWidget
@@ -224,15 +224,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageDetailsWidget.OnUnslotItemComplete
-	// void OnUnslotItemComplete(class UFortAccountItem* SlottedItem, class UFortAccountItem* OldItem, FName SlotId);           // [0xbe36c3c] Final|Native|Protected 
+	// void OnUnslotItemComplete(class UFortAccountItem* SlottedItem, class UFortAccountItem* OldItem, FName SlotId);           // [0xbded6e8] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageDetailsWidget.OnSlotItemComplete
-	// void OnSlotItemComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                              // [0xbe368a8] Final|Native|Protected 
+	// void OnSlotItemComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                              // [0xbded354] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageDetailsWidget.OnPageProgressionUpdated
-	// void OnPageProgressionUpdated(int32_t TotalFilledSlots, int32_t TotalSlots, EFortCollectionBookState State);             // [0xbe358d8] Native|Event|Protected|BlueprintEvent 
+	// void OnPageProgressionUpdated(int32_t TotalFilledSlots, int32_t TotalSlots, EFortCollectionBookState State);             // [0xbdec384] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageDetailsWidget.OnDetailsPageChanged
-	// void OnDetailsPageChanged(class UFortCollectionBookPage* InNewDetailsPage);                                              // [0x9039b80] Native|Event|Protected|BlueprintEvent 
+	// void OnDetailsPageChanged(class UFortCollectionBookPage* InNewDetailsPage);                                              // [0x905563c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageDetailsWidget.HandleRewardDetailsModalWidgetDeactivated
-	// void HandleRewardDetailsModalWidgetDeactivated(class UCommonActivatablePanelLegacy* DeactivatedPanel);                   // [0xbe3466c] Final|Native|Private 
+	// void HandleRewardDetailsModalWidgetDeactivated(class UCommonActivatablePanelLegacy* DeactivatedPanel);                   // [0xbdeb118] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookPageListWidget
@@ -252,15 +252,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageListWidget.SetupAsPage
-	// void SetupAsPage(class UFortCollectionBookPage* Page);                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetupAsPage(class UFortCollectionBookPage* Page);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageListWidget.SetupAsCategory
-	// void SetupAsCategory(class UFortCollectionBookCategory* Category);                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetupAsCategory(class UFortCollectionBookCategory* Category);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageListWidget.OnSlottedItemOperationComplete
-	// void OnSlottedItemOperationComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                  // [0xbe36960] Final|Native|Protected 
+	// void OnSlottedItemOperationComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                  // [0xbded40c] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageListWidget.OnPageDetailsUpdated
-	// void OnPageDetailsUpdated(int32_t AvailableSlots, int32_t FilledSlots, int32_t TotalSlots, EFortCollectionBookState State); // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPageDetailsUpdated(int32_t AvailableSlots, int32_t FilledSlots, int32_t TotalSlots, EFortCollectionBookState State); // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPageListWidget.OnCategoryDetailsUpdated
-	// void OnCategoryDetailsUpdated(int32_t AvailableSlots, int32_t FilledSlots, int32_t TotalSlots);                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnCategoryDetailsUpdated(int32_t AvailableSlots, int32_t FilledSlots, int32_t TotalSlots);                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookPicker
@@ -278,17 +278,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPicker.ShowMulchDialogForItem
-	// void ShowMulchDialogForItem(class UFortItem* ItemToMulch);                                                               // [0xbe38c14] Final|Native|Public|BlueprintCallable 
+	// void ShowMulchDialogForItem(class UFortItem* ItemToMulch);                                                               // [0xbdef6c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPicker.ShowMulchConfirmationModal
-	// void ShowMulchConfirmationModal();                                                                                       // [0xbe38bf8] Native|Protected|BlueprintCallable 
+	// void ShowMulchConfirmationModal();                                                                                       // [0xbdef6a4] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPicker.OnCollectComplete
-	// void OnCollectComplete();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnCollectComplete();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPicker.NotifyPanelDeactivated
-	// void NotifyPanelDeactivated();                                                                                           // [0xbe34eec] Native|Protected|BlueprintCallable 
+	// void NotifyPanelDeactivated();                                                                                           // [0xbdeb998] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPicker.NotifyPanelActivated
-	// void NotifyPanelActivated();                                                                                             // [0xbe34ed0] Native|Protected|BlueprintCallable 
+	// void NotifyPanelActivated();                                                                                             // [0xbdeb97c] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPicker.HideMulchConfirmationModal
-	// void HideMulchConfirmationModal();                                                                                       // [0xbe34c70] Native|Protected|BlueprintCallable 
+	// void HideMulchConfirmationModal();                                                                                       // [0xbdeb71c] Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel
@@ -312,17 +312,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel.OnSummonInfoPanelExecuted
-	// void OnSummonInfoPanelExecuted(bool& bPassThrough);                                                                      // [0x7062500] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSummonInfoPanelExecuted(bool& bPassThrough);                                                                      // [0x70a5a60] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel.OnInputMethodChanged
-	// void OnInputMethodChanged(ECommonInputType CurrentInputType);                                                            // [0xbe3536c] Final|Native|Protected 
+	// void OnInputMethodChanged(ECommonInputType CurrentInputType);                                                            // [0xbdebe18] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel.OnCollectionBookSectionClicked
-	// void OnCollectionBookSectionClicked(class UFortCollectionBookSection* ClickedSection);                                   // [0x8fc5428] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookSectionClicked(class UFortCollectionBookSection* ClickedSection);                                   // [0x8fe0f50] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel.OnCollectionBookPageSelected
-	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0x9f6e7f4] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0x9f6f974] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel.OnCollectionBookPageClicked
-	// void OnCollectionBookPageClicked(class UFortCollectionBookPage* ClickedPage);                                            // [0xbe350b8] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookPageClicked(class UFortCollectionBookPage* ClickedPage);                                            // [0xbdebb64] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel.OnBackActionExecuted
-	// void OnBackActionExecuted();                                                                                             // [0xbe34f08] Final|Native|Public  
+	// void OnBackActionExecuted();                                                                                             // [0xbdeb9b4] Final|Native|Public  
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel_Legacy
@@ -346,17 +346,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel_Legacy.OnSummonInfoPanelExecuted
-	// void OnSummonInfoPanelExecuted(bool& bPassThrough);                                                                      // [0xa1ed79c] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSummonInfoPanelExecuted(bool& bPassThrough);                                                                      // [0xa1eafe8] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel_Legacy.OnInputMethodChanged
-	// void OnInputMethodChanged(ECommonInputType CurrentInputType);                                                            // [0xbe353f0] Final|Native|Protected 
+	// void OnInputMethodChanged(ECommonInputType CurrentInputType);                                                            // [0xbdebe9c] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel_Legacy.OnCollectionBookSectionClicked
-	// void OnCollectionBookSectionClicked(class UFortCollectionBookSection* ClickedSection);                                   // [0xbe351c0] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookSectionClicked(class UFortCollectionBookSection* ClickedSection);                                   // [0xbdebc6c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel_Legacy.OnCollectionBookPageSelected
-	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0xbe35244] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0xbdebcf0] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel_Legacy.OnCollectionBookPageClicked
-	// void OnCollectionBookPageClicked(class UFortCollectionBookPage* ClickedPage);                                            // [0xbe3513c] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookPageClicked(class UFortCollectionBookPage* ClickedPage);                                            // [0xbdebbe8] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookPrimaryPanel_Legacy.OnBackActionExecuted
-	// void OnBackActionExecuted(bool& bPassThrough);                                                                           // [0xbe34f1c] Final|Native|Public|HasOutParms 
+	// void OnBackActionExecuted(bool& bPassThrough);                                                                           // [0xbdeb9c8] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardDetailInspectWidget
@@ -374,11 +374,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardDetailInspectWidget.SetAssociatedLevel
-	// void SetAssociatedLevel(int32_t Level);                                                                                  // [0xbe37c84] Final|Native|Public|BlueprintCallable 
+	// void SetAssociatedLevel(int32_t Level);                                                                                  // [0xbdee730] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardDetailInspectWidget.OnXPRequiredChanged
-	// void OnXPRequiredChanged(int32_t NewXPRequired);                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnXPRequiredChanged(int32_t NewXPRequired);                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardDetailInspectWidget.GetXPRequired
-	// int32_t GetXPRequired();                                                                                                 // [0xa260600] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetXPRequired();                                                                                                 // [0xa25b450] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardsModalWidget
@@ -401,11 +401,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardsModalWidget.OnSelectedButtonChanged
-	// void OnSelectedButtonChanged(class UCommonButtonLegacy* SelectedButton, int32_t ButtonIndex);                            // [0xbe36350] Final|Native|Protected 
+	// void OnSelectedButtonChanged(class UCommonButtonLegacy* SelectedButton, int32_t ButtonIndex);                            // [0xbdecdfc] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardsModalWidget.OnLevelProgressionSet
-	// void OnLevelProgressionSet(int32_t CurrentLevel, float NextLvlPct, int32_t MaxAchievedLevel);                            // [0xbe356e8] Native|Event|Protected|BlueprintEvent 
+	// void OnLevelProgressionSet(int32_t CurrentLevel, float NextLvlPct, int32_t MaxAchievedLevel);                            // [0xbdec194] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardsModalWidget.InspectItemBP
-	// void InspectItemBP(class UFortItem* Item);                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void InspectItemBP(class UFortItem* Item);                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardsPreviewWidget
@@ -434,7 +434,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressionRewardWidget.SetAssociatedLevel
-	// void SetAssociatedLevel(int32_t Level);                                                                                  // [0xbe37d04] Final|Native|Public|BlueprintCallable 
+	// void SetAssociatedLevel(int32_t Level);                                                                                  // [0xbdee7b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookProgressWidget
@@ -458,19 +458,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressWidget.OnSlottedItemOperationComplete
-	// void OnSlottedItemOperationComplete(class UFortAccountItem* ItemSlotted, FName SlotId);                                  // [0xbe36a24] Final|Native|Protected 
+	// void OnSlottedItemOperationComplete(class UFortAccountItem* ItemSlotted, FName SlotId);                                  // [0xbded4d0] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressWidget.OnInventoryUpdated
-	// void OnInventoryUpdated();                                                                                               // [0xbe354fc] Final|Native|Protected 
+	// void OnInventoryUpdated();                                                                                               // [0xbdebfa8] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressWidget.OnCollectionBookPreviewXPChange
-	// void OnCollectionBookPreviewXPChange(float PreviewCompletionPct);                                                        // [0xb4372d4] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookPreviewXPChange(float PreviewCompletionPct);                                                        // [0xb40d330] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressWidget.OnCollectionBookPageSelected
-	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0x73b87f8] Native|Event|Public|BlueprintEvent 
+	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0x73f5190] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressWidget.OnCollectionBookLevelProgressionChanged
-	// void OnCollectionBookLevelProgressionChanged(float NewCompletionPct);                                                    // [0xbe35034] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookLevelProgressionChanged(float NewCompletionPct);                                                    // [0xbdebae0] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressWidget.OnCollectionBookLevelChanged
-	// void OnCollectionBookLevelChanged(int32_t NewLevel);                                                                     // [0x8b7e9c8] Native|Event|Protected|BlueprintEvent 
+	// void OnCollectionBookLevelChanged(int32_t NewLevel);                                                                     // [0x8b9e8e8] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookProgressWidget.HandleDetailsModalWidgetDeactivated
-	// void HandleDetailsModalWidgetDeactivated(class UCommonActivatablePanelLegacy* DeactivatedPanel);                         // [0xbe33a34] Final|Native|Private 
+	// void HandleDetailsModalWidgetDeactivated(class UCommonActivatablePanelLegacy* DeactivatedPanel);                         // [0xbdea4e0] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookRecycleSlotResultsWidget
@@ -488,7 +488,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookRecycleSlotResultsWidget.SetCurrentItemToRecycle
-	// void SetCurrentItemToRecycle(class UFortAccountItem* InItemToRecycle);                                                   // [0xbe37e88] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentItemToRecycle(class UFortAccountItem* InItemToRecycle);                                                   // [0xbdee934] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookRewardCardWidget
@@ -514,13 +514,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookRewardCardWidget.SetRewards
-	// void SetRewards(FFortRewardInfo& Rewards);                                                                               // [0xbe389dc] Native|Public|HasOutParms|BlueprintCallable 
+	// void SetRewards(FFortRewardInfo& Rewards);                                                                               // [0xbdef488] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookRewardCardWidget.OnDisplayedItemChangedEvent__DelegateSignature
-	// void OnDisplayedItemChangedEvent__DelegateSignature(class UFortItem* DisplayedItem);                                     // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnDisplayedItemChangedEvent__DelegateSignature(class UFortItem* DisplayedItem);                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookRewardCardWidget.HasRewards
-	// bool HasRewards();                                                                                                       // [0x81b8740] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasRewards();                                                                                                       // [0x81f1228] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookRewardCardWidget.ClearRewards
-	// void ClearRewards();                                                                                                     // [0x1486378] Native|Public|BlueprintCallable 
+	// void ClearRewards();                                                                                                     // [0x14b9e3c] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookRewardModalWidget
@@ -554,7 +554,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionCompletionRewardWidget.HandleRewardDetailsModalWidgetDeactivated
-	// void HandleRewardDetailsModalWidgetDeactivated(class UCommonActivatablePanelLegacy* DeactivatedPanel);                   // [0xbe346ec] Final|Native|Private 
+	// void HandleRewardDetailsModalWidgetDeactivated(class UCommonActivatablePanelLegacy* DeactivatedPanel);                   // [0xbdeb198] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookSectionPanel
@@ -605,41 +605,41 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnUnslotItemOperationComplete
-	// void OnUnslotItemOperationComplete(class UFortAccountItem* UnslottedItem, class UFortAccountItem* OldSlottedItem, FName SlotId); // [0xbe36d34] Final|Native|Private 
+	// void OnUnslotItemOperationComplete(class UFortAccountItem* UnslottedItem, class UFortAccountItem* OldSlottedItem, FName SlotId); // [0xbded7e0] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnUnslotItemComplete
-	// void OnUnslotItemComplete(class UFortItem* UnslottedItem, FName SlotId);                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUnslotItemComplete(class UFortItem* UnslottedItem, FName SlotId);                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnUnslotItemActionExecuted
-	// void OnUnslotItemActionExecuted(bool& bPassThrough);                                                                     // [0xbe36bb4] Final|Native|Protected|HasOutParms 
+	// void OnUnslotItemActionExecuted(bool& bPassThrough);                                                                     // [0xbded660] Final|Native|Protected|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnSlottedItemOperationComplete
-	// void OnSlottedItemOperationComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                  // [0xbe36adc] Final|Native|Private 
+	// void OnSlottedItemOperationComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                  // [0xbded588] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnSlotItemActionExecuted
-	// void OnSlotItemActionExecuted(bool& bPassThrough);                                                                       // [0xbe3681c] Final|Native|Protected|HasOutParms 
+	// void OnSlotItemActionExecuted(bool& bPassThrough);                                                                       // [0xbded2c8] Final|Native|Protected|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnSlotButtonSelected
-	// void OnSlotButtonSelected(class UFortCollectionBookSlotButton* SlotButton);                                              // [0xbe3679c] Final|Native|Protected 
+	// void OnSlotButtonSelected(class UFortCollectionBookSlotButton* SlotButton);                                              // [0xbded248] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnSlotButtonHovered
-	// void OnSlotButtonHovered(int32_t ButtonIx);                                                                              // [0xbe36654] Final|Native|Protected 
+	// void OnSlotButtonHovered(int32_t ButtonIx);                                                                              // [0xbded100] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnSlotButtonContextAction
-	// void OnSlotButtonContextAction(EFortCollectionBookPopupButtonType ContextAction);                                        // [0xbe365d4] Final|Native|Protected 
+	// void OnSlotButtonContextAction(EFortCollectionBookPopupButtonType ContextAction);                                        // [0xbded080] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnSectionChanged
-	// void OnSectionChanged(class UFortCollectionBookSection* Section);                                                        // [0x9e119a0] Native|Event|Protected|BlueprintEvent 
+	// void OnSectionChanged(class UFortCollectionBookSection* Section);                                                        // [0x9e16d48] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnResearchItemOperationComplete
-	// void OnResearchItemOperationComplete(class UFortAccountItem* NewItem, FString TemplateId);                               // [0xbe35adc] Final|Native|Private 
+	// void OnResearchItemOperationComplete(class UFortAccountItem* NewItem, FString TemplateId);                               // [0xbdec588] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnResearchItemAction__DelegateSignature
-	// void OnResearchItemAction__DelegateSignature(class UFortItem* SelectedItem, FFortCollectionBookSlotData SlotData);       // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnResearchItemAction__DelegateSignature(class UFortItem* SelectedItem, FFortCollectionBookSlotData SlotData);       // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnPurchaseItemActionExecuted
-	// void OnPurchaseItemActionExecuted(bool& bPassThrough);                                                                   // [0xbe35a54] Final|Native|Protected|HasOutParms 
+	// void OnPurchaseItemActionExecuted(bool& bPassThrough);                                                                   // [0xbdec500] Final|Native|Protected|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnOpenPickerActionExecuted
-	// void OnOpenPickerActionExecuted(bool& bPassThrough);                                                                     // [0xbe35858] Final|Native|Protected|HasOutParms 
+	// void OnOpenPickerActionExecuted(bool& bPassThrough);                                                                     // [0xbdec304] Final|Native|Protected|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnLogAllowedItemsActionExecuted
-	// void OnLogAllowedItemsActionExecuted(bool& bPassThrough);                                                                // [0xbe357e4] Final|Native|Protected|HasOutParms 
+	// void OnLogAllowedItemsActionExecuted(bool& bPassThrough);                                                                // [0xbdec290] Final|Native|Protected|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnItemInspectAction__DelegateSignature
-	// void OnItemInspectAction__DelegateSignature(class UFortItem* SelectedItem, bool EnableItemActions, bool IsPlaceholderItem); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnItemInspectAction__DelegateSignature(class UFortItem* SelectedItem, bool EnableItemActions, bool IsPlaceholderItem); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnItemAction__DelegateSignature
-	// void OnItemAction__DelegateSignature(class UFortItem* SelectedItem);                                                     // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnItemAction__DelegateSignature(class UFortItem* SelectedItem);                                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnInspectActionExecuted
-	// void OnInspectActionExecuted(bool& bPassThrough);                                                                        // [0xbe35474] Final|Native|Protected|HasOutParms 
+	// void OnInspectActionExecuted(bool& bPassThrough);                                                                        // [0xbdebf20] Final|Native|Protected|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionPanel.OnBackActionExecuted
-	// void OnBackActionExecuted(bool& bPassThrough);                                                                           // [0xbe34fa8] Final|Native|Protected|HasOutParms 
+	// void OnBackActionExecuted(bool& bPassThrough);                                                                           // [0xbdeba54] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookSectionTileWidget
@@ -664,11 +664,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionTileWidget.OnSectionSlotUpdate
-	// void OnSectionSlotUpdate(int32_t NumFilledSlots, int32_t NumSlots, EFortCollectionBookState SectionState);               // [0xbe36254] Native|Event|Protected|BlueprintEvent 
+	// void OnSectionSlotUpdate(int32_t NumFilledSlots, int32_t NumSlots, EFortCollectionBookState SectionState);               // [0xbdecd00] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionTileWidget.OnItemUnslotted
-	// void OnItemUnslotted(class UFortAccountItem* ItemUnslotted, class UFortAccountItem* OldSlottedItem, FName SlotId);       // [0xbe355ec] Native|Protected     
+	// void OnItemUnslotted(class UFortAccountItem* ItemUnslotted, class UFortAccountItem* OldSlottedItem, FName SlotId);       // [0xbdec098] Native|Protected     
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSectionTileWidget.OnItemSlotted
-	// void OnItemSlotted(class UFortAccountItem* ItemSlotted, FName SlotId);                                                   // [0xbe35524] Native|Protected     
+	// void OnItemSlotted(class UFortAccountItem* ItemSlotted, FName SlotId);                                                   // [0xbdebfd0] Native|Protected     
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookSlotButton
@@ -685,11 +685,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotButton.PopupMenuClosedWithAction
-	// void PopupMenuClosedWithAction(EFortCollectionBookPopupButtonType Selection);                                            // [0xbe36e2c] Final|Native|Public|BlueprintCallable 
+	// void PopupMenuClosedWithAction(EFortCollectionBookPopupButtonType Selection);                                            // [0xbded8d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotButton.OnSlottedItemUpdated
-	// void OnSlottedItemUpdated();                                                                                             // [0xbe36ba0] Final|Native|Private 
+	// void OnSlottedItemUpdated();                                                                                             // [0xbded64c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotButton.GetPopupMenu
-	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbe32ea8] Final|Native|Private 
+	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbde9954] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookSlotConfirmationModal
@@ -711,11 +711,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotConfirmationModal.OnSlotItemRequestedComplete
-	// void OnSlotItemRequestedComplete();                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSlotItemRequestedComplete();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotConfirmationModal.OnSlotItemRequested
-	// void OnSlotItemRequested();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSlotItemRequested();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotConfirmationModal.HandleSlotItemComplete
-	// void HandleSlotItemComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                          // [0xbe3476c] Final|Native|Private 
+	// void HandleSlotItemComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                          // [0xbdeb218] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookSlotDetailsWidget
@@ -747,11 +747,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotView.OnSlotButtonHovered
-	// void OnSlotButtonHovered(class UCommonButtonLegacy* HoveredButton, int32_t ButtonIdx);                                   // [0xbe366d4] Native|Protected     
+	// void OnSlotButtonHovered(class UCommonButtonLegacy* HoveredButton, int32_t ButtonIdx);                                   // [0xbded180] Native|Protected     
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotView.OnSlotButtonClicked
-	// void OnSlotButtonClicked(class UCommonButtonLegacy* ClickedButton, int32_t ButtonIdx);                                   // [0xbe3650c] Native|Protected     
+	// void OnSlotButtonClicked(class UCommonButtonLegacy* ClickedButton, int32_t ButtonIdx);                                   // [0xbdecfb8] Native|Protected     
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotView.OnSelectedSlotButtonChanged
-	// void OnSelectedSlotButtonChanged(class UCommonButtonLegacy* SelectedButton, int32_t ButtonIdx);                          // [0xbe36444] Native|Protected     
+	// void OnSelectedSlotButtonChanged(class UCommonButtonLegacy* SelectedButton, int32_t ButtonIdx);                          // [0xbdecef0] Native|Protected     
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookSlotWidget
@@ -782,27 +782,27 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.OnItemDestroyed
-	// void OnItemDestroyed();                                                                                                  // [0xbe35510] Final|Native|Private 
+	// void OnItemDestroyed();                                                                                                  // [0xbdebfbc] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.OnItemCardUpdated
-	// void OnItemCardUpdated();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemCardUpdated();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.IsItemSlotted
-	// bool IsItemSlotted();                                                                                                    // [0xa060bf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsItemSlotted();                                                                                                    // [0xa061a84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.HasItemsToSlot
-	// bool HasItemsToSlot();                                                                                                   // [0xbe34b1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasItemsToSlot();                                                                                                   // [0xbdeb5c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.HandleUnslotItemComplete
-	// void HandleUnslotItemComplete(class UFortAccountItem* UnslottedItem, class UFortAccountItem* OldItem, FName SlotId);     // [0xbe348f4] Final|Native|Protected 
+	// void HandleUnslotItemComplete(class UFortAccountItem* UnslottedItem, class UFortAccountItem* OldItem, FName SlotId);     // [0xbdeb3a0] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.HandleSlottedItemOperationComplete
-	// void HandleSlottedItemOperationComplete(class UFortAccountItem* NewItem, FName TemplateId);                              // [0xbe34830] Final|Native|Protected 
+	// void HandleSlottedItemOperationComplete(class UFortAccountItem* NewItem, FName TemplateId);                              // [0xbdeb2dc] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.HandleResearchItemComplete
-	// void HandleResearchItemComplete(class UFortAccountItem* ResearchedItem, FString SlotId);                                 // [0xbe33f78] Final|Native|Protected 
+	// void HandleResearchItemComplete(class UFortAccountItem* ResearchedItem, FString SlotId);                                 // [0xbdeaa24] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.GetSlottedItemRepresentation
-	// class UFortItem* GetSlottedItemRepresentation();                                                                         // [0xb7c1f38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetSlottedItemRepresentation();                                                                         // [0xb790ae8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.GetSlotRowName
-	// FName GetSlotRowName();                                                                                                  // [0x3f1ffc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetSlotRowName();                                                                                                  // [0x3f1227c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.GetNumItemsToSlot
-	// int32_t GetNumItemsToSlot();                                                                                             // [0xbe32e84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumItemsToSlot();                                                                                             // [0xbde9930] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookSlotWidget.FortCollectionBookSlottedItemUpdatedDelegate__DelegateSignature
-	// void FortCollectionBookSlottedItemUpdatedDelegate__DelegateSignature();                                                  // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void FortCollectionBookSlottedItemUpdatedDelegate__DelegateSignature();                                                  // [0x211c0a0] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookWidget
@@ -823,17 +823,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget.RequestToClose
-	// void RequestToClose();                                                                                                   // [0xbe37b60] Final|Native|Protected|BlueprintCallable 
+	// void RequestToClose();                                                                                                   // [0xbdee60c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget.OnPreviewXPChangeRequest
-	// void OnPreviewXPChangeRequest(int32_t XPChange);                                                                         // [0xbe359d4] Final|Native|Protected 
+	// void OnPreviewXPChangeRequest(int32_t XPChange);                                                                         // [0xbdec480] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget.OnCollectionBookSectionCloseRequest
-	// void OnCollectionBookSectionCloseRequest();                                                                              // [0xbe352c8] Final|Native|Protected 
+	// void OnCollectionBookSectionCloseRequest();                                                                              // [0xbdebd74] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget.OnCollectionBookSectionClicked
-	// void OnCollectionBookSectionClicked(class UFortCollectionBookSection* ClickedSection);                                   // [0x9e119a0] Native|Event|Public|BlueprintEvent 
+	// void OnCollectionBookSectionClicked(class UFortCollectionBookSection* ClickedSection);                                   // [0x9e16d48] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget.OnCollectionBookPageSelected
-	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0xbe3513c] Native|Event|Public|BlueprintEvent 
+	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0xbdebbe8] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget.OnCollectionBookPageClicked
-	// void OnCollectionBookPageClicked(class UFortCollectionBookPage* ClickedPage);                                            // [0xbe351c0] Native|Event|Public|BlueprintEvent 
+	// void OnCollectionBookPageClicked(class UFortCollectionBookPage* ClickedPage);                                            // [0xbdebc6c] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCollectionBookWidget_Legacy
@@ -854,17 +854,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget_Legacy.RequestToClose
-	// void RequestToClose();                                                                                                   // [0xbe37ba8] Final|Native|Protected|BlueprintCallable 
+	// void RequestToClose();                                                                                                   // [0xbdee654] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget_Legacy.OnPreviewXPChangeRequest
-	// void OnPreviewXPChangeRequest(int32_t XPChange);                                                                         // [0xbe359d4] Final|Native|Protected 
+	// void OnPreviewXPChangeRequest(int32_t XPChange);                                                                         // [0xbdec480] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget_Legacy.OnCollectionBookSectionCloseRequest
-	// void OnCollectionBookSectionCloseRequest();                                                                              // [0xbe352c8] Final|Native|Protected 
+	// void OnCollectionBookSectionCloseRequest();                                                                              // [0xbdebd74] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget_Legacy.OnCollectionBookSectionClicked
-	// void OnCollectionBookSectionClicked(class UFortCollectionBookSection* ClickedSection);                                   // [0x9e119a0] Native|Event|Public|BlueprintEvent 
+	// void OnCollectionBookSectionClicked(class UFortCollectionBookSection* ClickedSection);                                   // [0x9e16d48] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget_Legacy.OnCollectionBookPageSelected
-	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0xbe3513c] Native|Event|Public|BlueprintEvent 
+	// void OnCollectionBookPageSelected(class UFortCollectionBookPage* SelectedPage);                                          // [0xbdebbe8] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCollectionBookWidget_Legacy.OnCollectionBookPageClicked
-	// void OnCollectionBookPageClicked(class UFortCollectionBookPage* ClickedPage);                                            // [0xbe351c0] Native|Event|Public|BlueprintEvent 
+	// void OnCollectionBookPageClicked(class UFortCollectionBookPage* ClickedPage);                                            // [0xbdebc6c] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortAbilitySystemContext
@@ -879,11 +879,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortAbilitySystemContext.RemoveDelegatesFromWidget
-	// void RemoveDelegatesFromWidget(class UWidget* Widget);                                                                   // [0xbe37acc] Final|Native|Public|BlueprintCallable 
+	// void RemoveDelegatesFromWidget(class UWidget* Widget);                                                                   // [0xbdee578] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAbilitySystemContext.RegisterForAttributeChanged
-	// void RegisterForAttributeChanged(class UWidget* Widget, class UAbilitySystemComponent* ASC, FGameplayAttribute Attribute, FDelegateProperty Callback); // [0xbe37594] Final|Native|Public|BlueprintCallable 
+	// void RegisterForAttributeChanged(class UWidget* Widget, class UAbilitySystemComponent* ASC, FGameplayAttribute Attribute, FDelegateProperty Callback); // [0xbdee040] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAbilitySystemContext.HasMatchingGameplayTag
-	// bool HasMatchingGameplayTag(FGameplayTag TagToCheck);                                                                    // [0xbe34b34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasMatchingGameplayTag(FGameplayTag TagToCheck);                                                                    // [0xbdeb5e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase
@@ -906,19 +906,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase.OnDisplayToast
-	// void OnDisplayToast(bool bDisplayToast);                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnDisplayToast(bool bDisplayToast);                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase.IsTabsLayout
-	// void IsTabsLayout(bool bShouldDisplayTabs);                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void IsTabsLayout(bool bShouldDisplayTabs);                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase.HandleAffiliateButtonClicked
-	// void HandleAffiliateButtonClicked();                                                                                     // [0xbe33874] Final|Native|Public|BlueprintCallable 
+	// void HandleAffiliateButtonClicked();                                                                                     // [0xbdea320] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase.GetWeeklyStoreEndDate
-	// FDateTime GetWeeklyStoreEndDate();                                                                                       // [0xbe3370c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FDateTime GetWeeklyStoreEndDate();                                                                                       // [0xbdea1b8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase.GetStoreCurrencies
-	// TArray<UFortAccountItemDefinition*> GetStoreCurrencies();                                                                // [0xbe33054] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFortAccountItemDefinition*> GetStoreCurrencies();                                                                // [0xbde9b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase.GetSeasonStoreEndDate
-	// FDateTime GetSeasonStoreEndDate();                                                                                       // [0xbe32fe4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FDateTime GetSeasonStoreEndDate();                                                                                       // [0xbde9a90] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase.GetDailyStoreEndDate
-	// FDateTime GetDailyStoreEndDate();                                                                                        // [0xbe328bc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FDateTime GetDailyStoreEndDate();                                                                                        // [0xbde9368] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase_Legacy
@@ -941,19 +941,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase_Legacy.OnDisplayToast
-	// void OnDisplayToast(bool bDisplayToast);                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnDisplayToast(bool bDisplayToast);                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase_Legacy.IsTabsLayout
-	// void IsTabsLayout(bool bShouldDisplayTabs);                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void IsTabsLayout(bool bShouldDisplayTabs);                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase_Legacy.HandleAffiliateButtonClicked
-	// void HandleAffiliateButtonClicked();                                                                                     // [0xbe33874] Final|Native|Public|BlueprintCallable 
+	// void HandleAffiliateButtonClicked();                                                                                     // [0xbdea320] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase_Legacy.GetWeeklyStoreEndDate
-	// FDateTime GetWeeklyStoreEndDate();                                                                                       // [0xbe3370c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FDateTime GetWeeklyStoreEndDate();                                                                                       // [0xbdea1b8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase_Legacy.GetStoreCurrencies
-	// TArray<UFortAccountItemDefinition*> GetStoreCurrencies();                                                                // [0xbe33090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFortAccountItemDefinition*> GetStoreCurrencies();                                                                // [0xbde9b3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase_Legacy.GetSeasonStoreEndDate
-	// FDateTime GetSeasonStoreEndDate();                                                                                       // [0xbe32fe4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FDateTime GetSeasonStoreEndDate();                                                                                       // [0xbde9a90] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortDirectAcquisitionWidgetBase_Legacy.GetDailyStoreEndDate
-	// FDateTime GetDailyStoreEndDate();                                                                                        // [0xbe328bc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FDateTime GetDailyStoreEndDate();                                                                                        // [0xbde9368] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget
@@ -975,23 +975,23 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.SetData
-	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0xbe351c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0xbdebc6c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.SetCurrentSquadId
-	// void SetCurrentSquadId(FName SquadId);                                                                                   // [0xbe37f08] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentSquadId(FName SquadId);                                                                                   // [0xbdee9b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.OnRequestClosePicker
-	// void OnRequestClosePicker();                                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnRequestClosePicker();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.OnRefreshBuildSquadWidget
-	// void OnRefreshBuildSquadWidget();                                                                                        // [0x788579c] Native|Event|Protected|BlueprintEvent 
+	// void OnRefreshBuildSquadWidget();                                                                                        // [0x78c1bf4] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.IsSquadSlotLocked
-	// bool IsSquadSlotLocked(int32_t SlotIndex);                                                                               // [0xbe34dd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSquadSlotLocked(int32_t SlotIndex);                                                                               // [0xbdeb87c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.IsExpeditionValidToStart
-	// bool IsExpeditionValidToStart();                                                                                         // [0xbe34cdc] Final|Native|Public|BlueprintCallable 
+	// bool IsExpeditionValidToStart();                                                                                         // [0xbdeb788] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.HandleRequestStartExpedition
-	// void HandleRequestStartExpedition(bool& bPassThrough);                                                                   // [0xbe33efc] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void HandleRequestStartExpedition(bool& bPassThrough);                                                                   // [0xbdea9a8] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.HandleDifferentSquadSlotSelected
-	// void HandleDifferentSquadSlotSelected(int32_t SquadSlotIndex);                                                           // [0xbe33ab4] Final|Native|Private 
+	// void HandleDifferentSquadSlotSelected(int32_t SquadSlotIndex);                                                           // [0xbdea560] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortExpeditionBuildSquadWidget.ClearTemporaryExpeditionSquadState
-	// void ClearTemporaryExpeditionSquadState(bool bPreviewOnly);                                                              // [0xbe32668] Final|Native|Public|BlueprintCallable 
+	// void ClearTemporaryExpeditionSquadState(bool bPreviewOnly);                                                              // [0xbde9114] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionDetailsWidget
@@ -1010,13 +1010,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionDetailsWidget.SetData
-	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0x7a74a64] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0x7aaec38] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionDetailsWidget.SetCurrentSquadId
-	// void SetCurrentSquadId(FName SquadId);                                                                                   // [0xbe37f9c] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentSquadId(FName SquadId);                                                                                   // [0xbdeea48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionDetailsWidget.RequestAbandonExpedition
-	// void RequestAbandonExpedition();                                                                                         // [0xbe37b4c] Final|Native|Public|BlueprintCallable 
+	// void RequestAbandonExpedition();                                                                                         // [0xbdee5f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionDetailsWidget.HandleAbandonExpeditionCompleted
-	// void HandleAbandonExpeditionCompleted(class UFortExpeditionItem* Expedition, bool bSuccess);                             // [0xbe337bc] Final|Native|Private 
+	// void HandleAbandonExpeditionCompleted(class UFortExpeditionItem* Expedition, bool bSuccess);                             // [0xbdea268] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionExpiresWidget
@@ -1032,9 +1032,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionExpiresWidget.SetData
-	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0x9039b80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0x905563c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionExpiresWidget.OnExpeditionExpirationUpdated
-	// void OnExpeditionExpirationUpdated();                                                                                    // [0x1555df0] Native|Event|Protected|BlueprintEvent 
+	// void OnExpeditionExpirationUpdated();                                                                                    // [0x212f900] Native|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionListItemWidget
@@ -1050,7 +1050,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionListItemWidget.OnItemChanged
-	// void OnItemChanged();                                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemChanged();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionListViewWidget
@@ -1070,9 +1070,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionListViewWidget.SetExpeditionListSortType
-	// void SetExpeditionListSortType(EFortExpeditionListSort InSortType);                                                      // [0xbe386d0] Final|Native|Public|BlueprintCallable 
+	// void SetExpeditionListSortType(EFortExpeditionListSort InSortType);                                                      // [0xbdef17c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionListViewWidget.GetExpeditionListSortName
-	// FText GetExpeditionListSortName();                                                                                       // [0xbe32968] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetExpeditionListSortName();                                                                                       // [0xbde9414] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionMasterWidget
@@ -1101,15 +1101,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionOverviewWidget.UpdateExpeditionTabs
-	// void UpdateExpeditionTabs();                                                                                             // [0xbe38ddc] Final|Native|Protected|BlueprintCallable 
+	// void UpdateExpeditionTabs();                                                                                             // [0xbdef888] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionOverviewWidget.OnExpeditionTabSelected
-	// void OnExpeditionTabSelected(FName& TabNameID);                                                                          // [0xbe352dc] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnExpeditionTabSelected(FName& TabNameID);                                                                          // [0xbdebd88] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionOverviewWidget.OnExpeditionOverviewRefresh
-	// void OnExpeditionOverviewRefresh();                                                                                      // [0x1486378] Native|Event|Protected|BlueprintEvent 
+	// void OnExpeditionOverviewRefresh();                                                                                      // [0x14b9e3c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionOverviewWidget.HandleExpeditionTabSelected
-	// void HandleExpeditionTabSelected(FName TabNameID);                                                                       // [0xbe33b38] Final|Native|Private 
+	// void HandleExpeditionTabSelected(FName TabNameID);                                                                       // [0xbdea5e4] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortExpeditionOverviewWidget.HandleExpeditionTabButtonCreated
-	// void HandleExpeditionTabButtonCreated(FName TabNameID, class UCommonButtonBase* TabButton);                              // [0x8888064] Final|Native|Private 
+	// void HandleExpeditionTabButtonCreated(FName TabNameID, class UCommonButtonBase* TabButton);                              // [0x88ae6c8] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionPickVehicleWidget
@@ -1125,7 +1125,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionPickVehicleWidget.SetData
-	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0x9e119a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0x9e16d48] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionReturnsWidget
@@ -1141,9 +1141,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionReturnsWidget.SetData
-	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0x9039b80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetData(class UFortExpeditionItem* InItem);                                                                         // [0x905563c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionReturnsWidget.OnExpeditionInProgressUpdated
-	// void OnExpeditionInProgressUpdated();                                                                                    // [0x1555df0] Native|Event|Protected|BlueprintEvent 
+	// void OnExpeditionInProgressUpdated();                                                                                    // [0x212f900] Native|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionRewardsWidget
@@ -1161,11 +1161,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionRewardsWidget.RefreshRewardsUI
-	// void RefreshRewardsUI(class UFortExpeditionItem* Expedition, bool bExpeditionSucceeded, TArray<FFortItemInstanceQuantityPair>& Rewards); // [0xbe373e4] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void RefreshRewardsUI(class UFortExpeditionItem* Expedition, bool bExpeditionSucceeded, TArray<FFortItemInstanceQuantityPair>& Rewards); // [0xbdede90] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionRewardsWidget.ProcessNextReward
-	// void ProcessNextReward();                                                                                                // [0xbe36eb0] Final|Native|Public|BlueprintCallable 
+	// void ProcessNextReward();                                                                                                // [0xbded95c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionRewardsWidget.HandleCollectionExpeditionCompleted
-	// void HandleCollectionExpeditionCompleted(bool bMcpSuccess, class UFortExpeditionItem* Expedition, bool bExpeditionSuccess, TArray<FFortItemInstanceQuantityPair>& Rewards); // [0xbe338bc] Final|Native|Protected|HasOutParms 
+	// void HandleCollectionExpeditionCompleted(bool bMcpSuccess, class UFortExpeditionItem* Expedition, bool bExpeditionSuccess, TArray<FFortItemInstanceQuantityPair>& Rewards); // [0xbdea368] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionSummaryWidget
@@ -1195,11 +1195,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionSummaryWidget.UnbindInventoryDelegates
-	// void UnbindInventoryDelegates();                                                                                         // [0xbe38d64] Final|Native|Public|BlueprintCallable 
+	// void UnbindInventoryDelegates();                                                                                         // [0xbdef810] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionSummaryWidget.OnRefreshSummaryWidget
-	// void OnRefreshSummaryWidget();                                                                                           // [0x1555df0] Native|Event|Protected|BlueprintEvent 
+	// void OnRefreshSummaryWidget();                                                                                           // [0x212f900] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortExpeditionSummaryWidget.BindInventoryDelegates
-	// void BindInventoryDelegates();                                                                                           // [0xbe320f4] Final|Native|Public|BlueprintCallable 
+	// void BindInventoryDelegates();                                                                                           // [0xbde8ba0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionUtilities
@@ -1214,33 +1214,33 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.TotalUnseenExpeditionsForTab
-	// int32_t TotalUnseenExpeditionsForTab(class UWidget* Widget, FName& TabNameID);                                           // [0xbe38c94] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int32_t TotalUnseenExpeditionsForTab(class UWidget* Widget, FName& TabNameID);                                           // [0xbdef740] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.IsSquadOnExpedition
-	// bool IsSquadOnExpedition(class UWidget* Widget, FName& SquadId);                                                         // [0xbe34d00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool IsSquadOnExpedition(class UWidget* Widget, FName& SquadId);                                                         // [0xbdeb7ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.GetVehicleTagRequiredForExpedition
-	// FGameplayTag GetVehicleTagRequiredForExpedition(class UFortExpeditionItem* Expedition);                                  // [0xbe33590] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayTag GetVehicleTagRequiredForExpedition(class UFortExpeditionItem* Expedition);                                  // [0xbdea03c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.GetVehicleTagFromSquadId
-	// bool GetVehicleTagFromSquadId(FName& SquadId, FGameplayTag& OutFoundVehicleTag);                                         // [0xbe33478] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetVehicleTagFromSquadId(FName& SquadId, FGameplayTag& OutFoundVehicleTag);                                         // [0xbde9f24] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.GetTotalExpeditionVehiclesAvailable
-	// void GetTotalExpeditionVehiclesAvailable(class UWidget* Widget, class AFortPlayerController* FortPC, int32_t& OutLandVehicles, int32_t& OutLandVehiclesAvailable, int32_t& OutSeaVehicles, int32_t& OutSeaVehiclesAvailable, int32_t& OutAirVehicles, int32_t& OutAirVehiclesAvailable); // [0xbe3314c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetTotalExpeditionVehiclesAvailable(class UWidget* Widget, class AFortPlayerController* FortPC, int32_t& OutLandVehicles, int32_t& OutLandVehiclesAvailable, int32_t& OutSeaVehicles, int32_t& OutSeaVehiclesAvailable, int32_t& OutAirVehicles, int32_t& OutAirVehiclesAvailable); // [0xbde9bf8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.GetMatchedCriteriaTags
-	// void GetMatchedCriteriaTags(class UFortExpeditionItem* Expedition, TArray<UFortItem*>& SlottedItems, TArray<FGameplayTag>& OutMatchedCriteria); // [0xbe32d04] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetMatchedCriteriaTags(class UFortExpeditionItem* Expedition, TArray<UFortItem*>& SlottedItems, TArray<FGameplayTag>& OutMatchedCriteria); // [0xbde97b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.GetExpeditionSquadsThatMatchRequirements
-	// bool GetExpeditionSquadsThatMatchRequirements(FGameplayTagContainer& RequirementTags, class AFortPlayerController* FortPC, TArray<FName>& OutExpeditionSquadIds); // [0xbe32ae0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetExpeditionSquadsThatMatchRequirements(FGameplayTagContainer& RequirementTags, class AFortPlayerController* FortPC, TArray<FName>& OutExpeditionSquadIds); // [0xbde958c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.GetExpeditionSquadPower
-	// float GetExpeditionSquadPower(class AFortPlayerController* FortPC, FName& SquadId);                                      // [0xbe32a10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// float GetExpeditionSquadPower(class AFortPlayerController* FortPC, FName& SquadId);                                      // [0xbde94bc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.GetAllExpeditionSquadIds
-	// void GetAllExpeditionSquadIds(TArray<FName>& OutExpeditionSquadIds);                                                     // [0xbe3282c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetAllExpeditionSquadIds(TArray<FName>& OutExpeditionSquadIds);                                                     // [0xbde92d8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.CalculateTotalPower
-	// float CalculateTotalPower(class AFortPlayerController* FortPC, class UFortExpeditionItem* Expedition, FName& SquadId, TArray<UFortItem*>& SlottedItems); // [0xbe32458] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// float CalculateTotalPower(class AFortPlayerController* FortPC, class UFortExpeditionItem* Expedition, FName& SquadId, TArray<UFortItem*>& SlottedItems); // [0xbde8f04] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.CalculateGlobalAndItemRatingModValuesBP
-	// void CalculateGlobalAndItemRatingModValuesBP(class UFortExpeditionItem* Expedition, TArray<UFortItem*>& SlottedItems, float& GlobalPowerMod, TArray<float>& SlottedItemMods); // [0xbe32230] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void CalculateGlobalAndItemRatingModValuesBP(class UFortExpeditionItem* Expedition, TArray<UFortItem*>& SlottedItems, float& GlobalPowerMod, TArray<float>& SlottedItemMods); // [0xbde8cdc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.CalculateExpeditionPercentageChanceForSuccess
-	// float CalculateExpeditionPercentageChanceForSuccess(class UFortExpeditionItem* Expedition, float TotalPower);            // [0xbe3211c] Final|Native|Static|Public|BlueprintCallable 
+	// float CalculateExpeditionPercentageChanceForSuccess(class UFortExpeditionItem* Expedition, float TotalPower);            // [0xbde8bc8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.AreExpeditionsUnlocked
-	// bool AreExpeditionsUnlocked(class UObject* WorldContextObject, FUniqueNetIdRepl& UniqueID);                              // [0xbe31fa0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool AreExpeditionsUnlocked(class UObject* WorldContextObject, FUniqueNetIdRepl& UniqueID);                              // [0xbde8a4c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortExpeditionUtilities.AreAnyExpeditionsComplete
-	// bool AreAnyExpeditionsComplete(class UWidget* Widget);                                                                   // [0xbe31f20] Final|Native|Static|Public|BlueprintCallable 
+	// bool AreAnyExpeditionsComplete(class UWidget* Widget);                                                                   // [0xbde89cc] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortExpeditionVehicleTileItemWidget
@@ -1271,19 +1271,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortFeatureUnlockWidget.SetData
-	// void SetData(FString ItemTemplateID);                                                                                    // [0xbe3801c] Final|Native|Public|BlueprintCallable 
+	// void SetData(FString ItemTemplateID);                                                                                    // [0xbdeeac8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortFeatureUnlockWidget.RefreshDataBP
-	// void RefreshDataBP();                                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void RefreshDataBP();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortFeatureUnlockWidget.GetVideo
-	// class UMediaSource* GetVideo();                                                                                          // [0xbe336ec] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UMediaSource* GetVideo();                                                                                          // [0xbdea198] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortFeatureUnlockWidget.GetTitle
-	// FText GetTitle();                                                                                                        // [0xbe330cc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FText GetTitle();                                                                                                        // [0xbde9b78] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortFeatureUnlockWidget.GetSmallIcon
-	// TWeakObjectPtr<UTexture2D*> GetSmallIcon();                                                                              // [0xbe33010] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UTexture2D*> GetSmallIcon();                                                                              // [0xbde9abc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortFeatureUnlockWidget.GetLargeIcon
-	// TWeakObjectPtr<UTexture2D*> GetLargeIcon();                                                                              // [0xbe32cc0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UTexture2D*> GetLargeIcon();                                                                              // [0xbde976c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortFeatureUnlockWidget.GetDescription
-	// FText GetDescription();                                                                                                  // [0xbe328e8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FText GetDescription();                                                                                                  // [0xbde9394] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortResultsWidgetSTW
@@ -1304,33 +1304,33 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.TriggerSetupTeleportCameraEvent
-	// void TriggerSetupTeleportCameraEvent();                                                                                  // [0xa1f4a60] Final|Native|Public|BlueprintCallable 
+	// void TriggerSetupTeleportCameraEvent();                                                                                  // [0xa1f22ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.ToggleChat
-	// void ToggleChat(bool bShow);                                                                                             // [0xa1f49ac] Final|Native|Protected|BlueprintCallable 
+	// void ToggleChat(bool bShow);                                                                                             // [0xa1f21f8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.SendEndOfRoundUpVoteAnalytic
-	// void SendEndOfRoundUpVoteAnalytic(FUniqueNetIdRepl& TargetId, FString TargetPlayerName);                                 // [0xa1f209c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SendEndOfRoundUpVoteAnalytic(FUniqueNetIdRepl& TargetId, FString TargetPlayerName);                                 // [0xa1ef8e8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.SendEndOfRoundScreenAnalytic
-	// void SendEndOfRoundScreenAnalytic(FString ScreenName, bool Skipped, float TimeSpent);                                    // [0xa1f195c] Final|Native|Public|BlueprintCallable 
+	// void SendEndOfRoundScreenAnalytic(FString ScreenName, bool Skipped, float TimeSpent);                                    // [0xa1ef1a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.SendEndOfRoundFriendInviteAnalytic
-	// void SendEndOfRoundFriendInviteAnalytic(FUniqueNetIdRepl& TargetId, FString TargetPlayerName);                           // [0xa1f11ec] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SendEndOfRoundFriendInviteAnalytic(FUniqueNetIdRepl& TargetId, FString TargetPlayerName);                           // [0xa1eea38] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.RequestExitZone
-	// void RequestExitZone();                                                                                                  // [0xa1f01d8] Final|Native|Public|BlueprintCallable 
+	// void RequestExitZone();                                                                                                  // [0xa1eda24] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.LogXPData
-	// void LogXPData();                                                                                                        // [0xbe34ebc] Final|Native|Public|BlueprintCallable 
+	// void LogXPData();                                                                                                        // [0xbdeb968] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.IsDataFinalized
-	// bool IsDataFinalized();                                                                                                  // [0xbe34cb8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDataFinalized();                                                                                                  // [0xbdeb764] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.HandlePickerCancel
-	// void HandlePickerCancel(bool& bPassThrough);                                                                             // [0xbe33d94] Native|Protected|HasOutParms|BlueprintCallable 
+	// void HandlePickerCancel(bool& bPassThrough);                                                                             // [0xbdea840] Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.HandleEmoteClicked
-	// void HandleEmoteClicked(bool& bPassThrough);                                                                             // [0x7062500] Native|Protected|HasOutParms|BlueprintCallable 
+	// void HandleEmoteClicked(bool& bPassThrough);                                                                             // [0x70a5a60] Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.GetZoneCompletionResultText
-	// FText GetZoneCompletionResultText();                                                                                     // [0xbe33768] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetZoneCompletionResultText();                                                                                     // [0xbdea214] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.GetZoneCompletionResult
-	// EFortCompletionResult GetZoneCompletionResult();                                                                         // [0xbe33738] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFortCompletionResult GetZoneCompletionResult();                                                                         // [0xbdea1e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.GetTotalMissionPointsEarned
-	// int32_t GetTotalMissionPointsEarned();                                                                                   // [0xbe33454] Final|Native|Public|BlueprintCallable 
+	// int32_t GetTotalMissionPointsEarned();                                                                                   // [0xbde9f00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResultsWidgetSTW.GetRewardsByType
-	// void GetRewardsByType(EFortRewardItemTypeSTW Type, TArray<UFortItem*>& OutRewards);                                      // [0xbe32ecc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetRewardsByType(EFortRewardItemTypeSTW Type, TArray<UFortItem*>& OutRewards);                                      // [0xbde9978] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSTWUIData
@@ -1367,19 +1367,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemAutoMulchActivatablePanel_STW.SetItemManagementScreen
-	// void SetItemManagementScreen(class UFortItemManagementScreen_STW* InItemManagementScreen);                               // [0xa3d9c5c] Final|Native|Public|BlueprintCallable 
+	// void SetItemManagementScreen(class UFortItemManagementScreen_STW* InItemManagementScreen);                               // [0xa3d2b88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemAutoMulchActivatablePanel_STW.SaveSettings
-	// void SaveSettings();                                                                                                     // [0xbe37bf8] Final|Native|Protected|BlueprintCallable 
+	// void SaveSettings();                                                                                                     // [0xbdee6a4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemAutoMulchActivatablePanel_STW.RestoreAutoMulchSettings
-	// void RestoreAutoMulchSettings();                                                                                         // [0xa3d8e50] Final|Native|Protected|BlueprintCallable 
+	// void RestoreAutoMulchSettings();                                                                                         // [0xa3d1d7c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemAutoMulchActivatablePanel_STW.GetMulchCategoriesForInventoryFilter
-	// TArray<EFortAutoMulchCategory> GetMulchCategoriesForInventoryFilter();                                                   // [0xbe32e48] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TArray<EFortAutoMulchCategory> GetMulchCategoriesForInventoryFilter();                                                   // [0xbde98f4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemAutoMulchActivatablePanel_STW.GetFrontendInventoryFilter
-	// EFortFrontendInventoryFilter GetFrontendInventoryFilter();                                                               // [0xbe32c58] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EFortFrontendInventoryFilter GetFrontendInventoryFilter();                                                               // [0xbde9704] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemAutoMulchActivatablePanel_STW.EnterMulchModeForAutoMulch
-	// void EnterMulchModeForAutoMulch();                                                                                       // [0xbe327f0] Final|Native|Protected|BlueprintCallable 
+	// void EnterMulchModeForAutoMulch();                                                                                       // [0xbde929c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemAutoMulchActivatablePanel_STW.CacheAutoMulchSettings
-	// void CacheAutoMulchSettings();                                                                                           // [0xbe32108] Final|Native|Protected|BlueprintCallable 
+	// void CacheAutoMulchSettings();                                                                                           // [0xbde8bb4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW
@@ -1412,35 +1412,35 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.UpdateTierImages
-	// void UpdateTierImages();                                                                                                 // [0xa3db6ac] Final|Native|Protected|BlueprintCallable 
+	// void UpdateTierImages();                                                                                                 // [0xa3d45d8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.SetTargetCraftingTierIndex
-	// void SetTargetCraftingTierIndex(int32_t NewTierIndex);                                                                   // [0xbe38b54] Final|Native|Protected|BlueprintCallable 
+	// void SetTargetCraftingTierIndex(int32_t NewTierIndex);                                                                   // [0xbdef600] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.SetSelectedQuantity_BP
-	// void SetSelectedQuantity_BP(int32_t NewQuantity);                                                                        // [0xbe38ad4] Final|Native|Protected|BlueprintCallable 
+	// void SetSelectedQuantity_BP(int32_t NewQuantity);                                                                        // [0xbdef580] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.SetItemManagementScreen
-	// void SetItemManagementScreen(class UFortItemManagementScreen_STW* InItemManagementScreen);                               // [0xa3d9d5c] Final|Native|Public|BlueprintCallable 
+	// void SetItemManagementScreen(class UFortItemManagementScreen_STW* InItemManagementScreen);                               // [0xa3d2c88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.SetBaseSchematicItem
-	// void SetBaseSchematicItem(class UFortSchematicItem* InBaseItem);                                                         // [0xbe37d84] Final|Native|Public|BlueprintCallable 
+	// void SetBaseSchematicItem(class UFortSchematicItem* InBaseItem);                                                         // [0xbdee830] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.SelectPreviousTier
-	// void SelectPreviousTier();                                                                                               // [0xbe37c4c] Final|Native|Protected|BlueprintCallable 
+	// void SelectPreviousTier();                                                                                               // [0xbdee6f8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.SelectNextTier
-	// void SelectNextTier();                                                                                                   // [0xbe37c0c] Final|Native|Protected|BlueprintCallable 
+	// void SelectNextTier();                                                                                                   // [0xbdee6b8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.OnTargetItemChanged
-	// void OnTargetItemChanged(class UFortSchematicItem* NewTargetItem);                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTargetItemChanged(class UFortSchematicItem* NewTargetItem);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.OnSelectedQuantityChanged
-	// void OnSelectedQuantityChanged(int32_t NewSelectedQuantity);                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSelectedQuantityChanged(int32_t NewSelectedQuantity);                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.OnMaxQuantityChanged
-	// void OnMaxQuantityChanged(int32_t NewMaxQuantity);                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMaxQuantityChanged(int32_t NewMaxQuantity);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.OnBaseItemChanged
-	// void OnBaseItemChanged(class UFortSchematicItem* NewBaseItem);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBaseItemChanged(class UFortSchematicItem* NewBaseItem);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.IncreaseSelectedQuantity
-	// void IncreaseSelectedQuantity();                                                                                         // [0xbe34c8c] Final|Native|Protected|BlueprintCallable 
+	// void IncreaseSelectedQuantity();                                                                                         // [0xbdeb738] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.DecreaseSelectedQuantity
-	// void DecreaseSelectedQuantity();                                                                                         // [0xbe327c8] Final|Native|Protected|BlueprintCallable 
+	// void DecreaseSelectedQuantity();                                                                                         // [0xbde9274] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.CraftTargetItem
-	// void CraftTargetItem();                                                                                                  // [0xbe32758] Final|Native|Protected|BlueprintCallable 
+	// void CraftTargetItem();                                                                                                  // [0xbde9204] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemCraftingOptionsActivatablePanel_STW.CraftAndSlotTargetItem
-	// void CraftAndSlotTargetItem();                                                                                           // [0xbe326e8] Final|Native|Protected|BlueprintCallable 
+	// void CraftAndSlotTargetItem();                                                                                           // [0xbde9194] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW
@@ -1479,107 +1479,107 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.SetupInputHandling
-	// void SetupInputHandling();                                                                                               // [0xbe38be4] Final|Native|Protected|BlueprintCallable 
+	// void SetupInputHandling();                                                                                               // [0xbdef690] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.SetInputActionState
-	// void SetInputActionState(FDataTableRowHandle& RowHandle, bool State);                                                    // [0xbe3875c] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetInputActionState(FDataTableRowHandle& RowHandle, bool State);                                                    // [0xbdef208] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterTransferActions
-	// void RegisterTransferActions();                                                                                          // [0xbe37ab8] Final|Native|Protected|BlueprintCallable 
+	// void RegisterTransferActions();                                                                                          // [0xbdee564] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterSort
-	// void RegisterSort();                                                                                                     // [0xbe37aa4] Final|Native|Protected|BlueprintCallable 
+	// void RegisterSort();                                                                                                     // [0xbdee550] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterRetire
-	// void RegisterRetire();                                                                                                   // [0xbe37a90] Final|Native|Protected|BlueprintCallable 
+	// void RegisterRetire();                                                                                                   // [0xbdee53c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterOpenCustomFilter
-	// void RegisterOpenCustomFilter();                                                                                         // [0xbe37a74] Final|Native|Protected|BlueprintCallable 
+	// void RegisterOpenCustomFilter();                                                                                         // [0xbdee520] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterMulch
-	// void RegisterMulch();                                                                                                    // [0xbe37a60] Final|Native|Protected|BlueprintCallable 
+	// void RegisterMulch();                                                                                                    // [0xbdee50c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterMore
-	// void RegisterMore();                                                                                                     // [0xbe37a4c] Final|Native|Protected|BlueprintCallable 
+	// void RegisterMore();                                                                                                     // [0xbdee4f8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterLeaveInventory
-	// void RegisterLeaveInventory();                                                                                           // [0xbe37a38] Final|Native|Protected|BlueprintCallable 
+	// void RegisterLeaveInventory();                                                                                           // [0xbdee4e4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterInventoryInspect
-	// void RegisterInventoryInspect();                                                                                         // [0xbe37a24] Final|Native|Protected|BlueprintCallable 
+	// void RegisterInventoryInspect();                                                                                         // [0xbdee4d0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterInspectUpgrade
-	// void RegisterInspectUpgrade();                                                                                           // [0xbe37a08] Final|Native|Protected|BlueprintCallable 
+	// void RegisterInspectUpgrade();                                                                                           // [0xbdee4b4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterInspect
-	// void RegisterInspect();                                                                                                  // [0xbe379f4] Final|Native|Protected|BlueprintCallable 
+	// void RegisterInspect();                                                                                                  // [0xbdee4a0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterEquip
-	// void RegisterEquip();                                                                                                    // [0xbe37580] Final|Native|Protected|BlueprintCallable 
+	// void RegisterEquip();                                                                                                    // [0xbdee02c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterDropOrDestroy
-	// void RegisterDropOrDestroy();                                                                                            // [0xbe3756c] Final|Native|Protected|BlueprintCallable 
+	// void RegisterDropOrDestroy();                                                                                            // [0xbdee018] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterCraft
-	// void RegisterCraft();                                                                                                    // [0xbe37558] Final|Native|Protected|BlueprintCallable 
+	// void RegisterCraft();                                                                                                    // [0xbdee004] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterConsumeItem
-	// void RegisterConsumeItem();                                                                                              // [0xbe37544] Final|Native|Protected|BlueprintCallable 
+	// void RegisterConsumeItem();                                                                                              // [0xbdedff0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterCompare
-	// void RegisterCompare();                                                                                                  // [0xbe37528] Final|Native|Protected|BlueprintCallable 
+	// void RegisterCompare();                                                                                                  // [0xbdedfd4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RegisterBack
-	// void RegisterBack();                                                                                                     // [0xbe37514] Final|Native|Protected|BlueprintCallable 
+	// void RegisterBack();                                                                                                     // [0xbdedfc0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RefreshTransferActions
-	// void RefreshTransferActions();                                                                                           // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void RefreshTransferActions();                                                                                           // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RefreshSwitchPanelAction
-	// void RefreshSwitchPanelAction();                                                                                         // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void RefreshSwitchPanelAction();                                                                                         // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RefreshOnNewItemSelected
-	// void RefreshOnNewItemSelected();                                                                                         // [0xbe373d0] Final|Native|Protected|BlueprintCallable 
+	// void RefreshOnNewItemSelected();                                                                                         // [0xbdede7c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RefreshOnMenuChange
-	// void RefreshOnMenuChange();                                                                                              // [0xbe373bc] Final|Native|Protected|BlueprintCallable 
+	// void RefreshOnMenuChange();                                                                                              // [0xbdede68] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RefreshDropAction
-	// void RefreshDropAction();                                                                                                // [0xbe373a8] Final|Native|Protected|BlueprintCallable 
+	// void RefreshDropAction();                                                                                                // [0xbdede54] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RefreshDestroyAction
-	// void RefreshDestroyAction();                                                                                             // [0xbe37358] Final|Native|Protected|BlueprintCallable 
+	// void RefreshDestroyAction();                                                                                             // [0xbdede04] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RefreshCraftActions
-	// void RefreshCraftActions();                                                                                              // [0xbe37344] Final|Native|Protected|BlueprintCallable 
+	// void RefreshCraftActions();                                                                                              // [0xbdeddf0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.RefreshConsumeAction
-	// void RefreshConsumeAction();                                                                                             // [0xbe37330] Final|Native|Protected|BlueprintCallable 
+	// void RefreshConsumeAction();                                                                                             // [0xbdedddc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.MulchQuestComplete
-	// bool MulchQuestComplete();                                                                                               // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// bool MulchQuestComplete();                                                                                               // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleWorldItemsChanged
-	// void HandleWorldItemsChanged();                                                                                          // [0xbe34b08] Final|Native|Protected|BlueprintCallable 
+	// void HandleWorldItemsChanged();                                                                                          // [0xbdeb5b4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleWorldItemListChanged
-	// void HandleWorldItemListChanged(TArray<UFortWorldItem*>& ItemsAdded, TArray<UFortWorldItem*>& ItemsRemoved);             // [0xbe349f4] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void HandleWorldItemListChanged(TArray<UFortWorldItem*>& ItemsAdded, TArray<UFortWorldItem*>& ItemsRemoved);             // [0xbdeb4a0] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleWithdrawAll
-	// void HandleWithdrawAll();                                                                                                // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleWithdrawAll();                                                                                                // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleTransfer
-	// void HandleTransfer();                                                                                                   // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleTransfer();                                                                                                   // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleSwitchPanel
-	// void HandleSwitchPanel();                                                                                                // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleSwitchPanel();                                                                                                // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleSort
-	// void HandleSort();                                                                                                       // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleSort();                                                                                                       // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleQuickbarContentsChanged
-	// void HandleQuickbarContentsChanged(EFortQuickBars QuickbarIndex, TArray<int32_t>& ChangedSlots);                         // [0xbe33e24] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void HandleQuickbarContentsChanged(EFortQuickBars QuickbarIndex, TArray<int32_t>& ChangedSlots);                         // [0xbdea8d0] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleOpenCustomFilter
-	// void HandleOpenCustomFilter();                                                                                           // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleOpenCustomFilter();                                                                                           // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleMulchNative
-	// void HandleMulchNative();                                                                                                // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleMulchNative();                                                                                                // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleMulch
-	// void HandleMulch();                                                                                                      // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleMulch();                                                                                                      // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleMore
-	// void HandleMore();                                                                                                       // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleMore();                                                                                                       // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleItemToDetailTooltipAssetsLoaded
-	// void HandleItemToDetailTooltipAssetsLoaded();                                                                            // [0xbe33bb8] Final|Native|Private 
+	// void HandleItemToDetailTooltipAssetsLoaded();                                                                            // [0xbdea664] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleInspect
-	// void HandleInspect();                                                                                                    // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleInspect();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleEquip
-	// void HandleEquip();                                                                                                      // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleEquip();                                                                                                      // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleDrop
-	// void HandleDrop();                                                                                                       // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleDrop();                                                                                                       // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleDifferentItemToDetailSetBP
-	// void HandleDifferentItemToDetailSetBP();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentItemToDetailSetBP();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleDifferentItemToCompareSetBP
-	// void HandleDifferentItemToCompareSetBP();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentItemToCompareSetBP();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleDestroy
-	// void HandleDestroy();                                                                                                    // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleDestroy();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleCraftingOptions
-	// void HandleCraftingOptions();                                                                                            // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleCraftingOptions();                                                                                            // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleCraft
-	// void HandleCraft();                                                                                                      // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleCraft();                                                                                                      // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleConsumeItemProgressChangedBP
-	// void HandleConsumeItemProgressChangedBP();                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleConsumeItemProgressChangedBP();                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleConsumeItem
-	// void HandleConsumeItem();                                                                                                // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleConsumeItem();                                                                                                // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleCompare
-	// void HandleCompare();                                                                                                    // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleCompare();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemDetailsActivatablePanel_STW.HandleBackNative
-	// void HandleBackNative();                                                                                                 // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleBackNative();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemDetailsModeActivatablePanel_STW
@@ -1595,7 +1595,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemDetailsModeActivatablePanel_STW.HandleOnActiveWidgetChanged
-	// void HandleOnActiveWidgetChanged(class UWidget* ActiveWidget, int32_t ActiveWidgetIndex);                                // [0xbe33c48] Final|Native|Private 
+	// void HandleOnActiveWidgetChanged(class UWidget* ActiveWidget, int32_t ActiveWidgetIndex);                                // [0xbdea6f4] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemCompareModeActivatablePanel_STW
@@ -1637,21 +1637,21 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemManagementCustomFilterModalWidget_STW.ToggleFilter
-	// void ToggleFilter(EFortInventoryCustomFilter Filter);                                                                    // [0xbe61140] Final|Native|Protected|BlueprintCallable 
+	// void ToggleFilter(EFortInventoryCustomFilter Filter);                                                                    // [0xbe17bec] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementCustomFilterModalWidget_STW.OnEndCommitCustomFilter
-	// void OnEndCommitCustomFilter(bool bWasSuccessful);                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEndCommitCustomFilter(bool bWasSuccessful);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementCustomFilterModalWidget_STW.OnCustomFilterSetUpdated
-	// void OnCustomFilterSetUpdated();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnCustomFilterSetUpdated();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementCustomFilterModalWidget_STW.OnBeginCommitCustomFilter
-	// void OnBeginCommitCustomFilter();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBeginCommitCustomFilter();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementCustomFilterModalWidget_STW.IsCustomFilterEnabled
-	// bool IsCustomFilterEnabled(EFortInventoryCustomFilter Filter);                                                           // [0xa351a0c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCustomFilterEnabled(EFortInventoryCustomFilter Filter);                                                           // [0xa34a938] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementCustomFilterModalWidget_STW.EnableAllFilters
-	// void EnableAllFilters();                                                                                                 // [0xbe5bc84] Final|Native|Protected|BlueprintCallable 
+	// void EnableAllFilters();                                                                                                 // [0xbe12730] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementCustomFilterModalWidget_STW.DisableAllFilters
-	// void DisableAllFilters();                                                                                                // [0xbe5ba8c] Final|Native|Protected|BlueprintCallable 
+	// void DisableAllFilters();                                                                                                // [0xbe12538] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementCustomFilterModalWidget_STW.CommitCustomFilters
-	// void CommitCustomFilters();                                                                                              // [0xbe5b788] Final|Native|Protected|BlueprintCallable 
+	// void CommitCustomFilters();                                                                                              // [0xbe12234] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW
@@ -1689,77 +1689,77 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.UpdateSchematicTiles
-	// void UpdateSchematicTiles();                                                                                             // [0xbe61b74] Final|Native|Public|BlueprintCallable 
+	// void UpdateSchematicTiles();                                                                                             // [0xbe18620] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.ToggleTileSize
-	// void ToggleTileSize();                                                                                                   // [0xbe612f4] Final|Native|Public|BlueprintCallable 
+	// void ToggleTileSize();                                                                                                   // [0xbe17da0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.TogglePrioritizeFavorites
-	// void TogglePrioritizeFavorites();                                                                                        // [0xbe611f0] Final|Native|Public|BlueprintCallable 
+	// void TogglePrioritizeFavorites();                                                                                        // [0xbe17c9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.SwitchPanelFocus
-	// void SwitchPanelFocus();                                                                                                 // [0xbe6112c] Final|Native|Public|BlueprintCallable 
+	// void SwitchPanelFocus();                                                                                                 // [0xbe17bd8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.SetSortType
-	// void SetSortType(EInventoryContentSortType SortType);                                                                    // [0xbe608f0] Final|Native|Public|BlueprintCallable 
+	// void SetSortType(EInventoryContentSortType SortType);                                                                    // [0xbe1739c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.SetFilter
-	// void SetFilter(FName FilterName);                                                                                        // [0xbe6000c] Final|Native|Protected|BlueprintCallable 
+	// void SetFilter(FName FilterName);                                                                                        // [0xbe16ab8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.RequestFocusEquipSlots
-	// void RequestFocusEquipSlots();                                                                                           // [0xbe5f500] Final|Native|Public|BlueprintCallable 
+	// void RequestFocusEquipSlots();                                                                                           // [0xbe15fac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.RefreshCraftingSort
-	// void RefreshCraftingSort();                                                                                              // [0xbe5f354] Final|Native|Public|BlueprintCallable 
+	// void RefreshCraftingSort();                                                                                              // [0xbe15e00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.OnMulchRestrictionTextShown
-	// void OnMulchRestrictionTextShown(bool bShown);                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMulchRestrictionTextShown(bool bShown);                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.MarkAllItemsAsSeen
-	// void MarkAllItemsAsSeen();                                                                                               // [0xbe5ecbc] Final|Native|Public|BlueprintCallable 
+	// void MarkAllItemsAsSeen();                                                                                               // [0xbe15768] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.IsSwitchPanelAvailable
-	// bool IsSwitchPanelAvailable();                                                                                           // [0xbe5eb7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSwitchPanelAvailable();                                                                                           // [0xbe15628] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.IsSelectedItem
-	// bool IsSelectedItem(class UFortItem* Item);                                                                              // [0xbe5eac8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSelectedItem(class UFortItem* Item);                                                                              // [0xbe15574] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HasUnlockedStorageSlots
-	// bool HasUnlockedStorageSlots();                                                                                          // [0xa351960] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasUnlockedStorageSlots();                                                                                          // [0xa34a88c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleSetOfItemsToMulchChangedBP
-	// void HandleSetOfItemsToMulchChangedBP();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSetOfItemsToMulchChangedBP();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleQuickBarChangedBP
-	// void HandleQuickBarChangedBP(EFortQuickBars QuickBarType);                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleQuickBarChangedBP(EFortQuickBars QuickBarType);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleItemBeginDrag
-	// void HandleItemBeginDrag(class UObject* Item);                                                                           // [0xbe5e0dc] Final|Native|Public|BlueprintCallable 
+	// void HandleItemBeginDrag(class UObject* Item);                                                                           // [0xbe14b88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleInventoryUpdatedEvent
-	// void HandleInventoryUpdatedEvent();                                                                                      // [0xbe5e0c8] Final|Native|Private 
+	// void HandleInventoryUpdatedEvent();                                                                                      // [0xbe14b74] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleFocusEquipSlotsBP
-	// void HandleFocusEquipSlotsBP();                                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleFocusEquipSlotsBP();                                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleFilterTabSelected
-	// void HandleFilterTabSelected(FName TabNameID);                                                                           // [0xbe5def4] Final|Native|Private 
+	// void HandleFilterTabSelected(FName TabNameID);                                                                           // [0xbe149a0] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleFilterTabButtonCreated
-	// void HandleFilterTabButtonCreated(FName TabNameID, class UCommonButtonBase* TabButton);                                  // [0xa351340] Final|Native|Private 
+	// void HandleFilterTabButtonCreated(FName TabNameID, class UCommonButtonBase* TabButton);                                  // [0xa34a26c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleDifferentSortTypeSetBP
-	// void HandleDifferentSortTypeSetBP();                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentSortTypeSetBP();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleDifferentItemManagementModeSetBP
-	// void HandleDifferentItemManagementModeSetBP();                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentItemManagementModeSetBP();                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleDifferentFrontendInventoryFilterSetBP
-	// void HandleDifferentFrontendInventoryFilterSetBP();                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentFrontendInventoryFilterSetBP();                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleDifferentFilterSetBP
-	// void HandleDifferentFilterSetBP();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentFilterSetBP();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleCustomInventoryFilterChanged
-	// void HandleCustomInventoryFilterChanged();                                                                               // [0xbe5dbf0] Final|Native|Protected 
+	// void HandleCustomInventoryFilterChanged();                                                                               // [0xbe1469c] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleCursorModeChangedBP
-	// void HandleCursorModeChangedBP(bool bCursorModeEnabled, FName ActionName, class UUserWidget* CursorModeContentWidget);   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleCursorModeChangedBP(bool bCursorModeEnabled, FName ActionName, class UUserWidget* CursorModeContentWidget);   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleCursorModeChanged
-	// void HandleCursorModeChanged(bool bCursorModeEnabled, FName ActionName, class UUserWidget* CursorModeContentWidget);     // [0xbe5dae8] Final|Native|Private 
+	// void HandleCursorModeChanged(bool bCursorModeEnabled, FName ActionName, class UUserWidget* CursorModeContentWidget);     // [0xbe14594] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.HandleCraftItemStarted
-	// void HandleCraftItemStarted();                                                                                           // [0xbe5dad4] Final|Native|Private 
+	// void HandleCraftItemStarted();                                                                                           // [0xbe14580] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.GetUpgradeItemDefinitionsForCurrentInventory
-	// TArray<UFortItemDefinition*> GetUpgradeItemDefinitionsForCurrentInventory();                                             // [0xbe5d160] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFortItemDefinition*> GetUpgradeItemDefinitionsForCurrentInventory();                                             // [0xbe13c0c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.GetSupportedSortTypesForCurrentInventory
-	// TArray<EInventoryContentSortType> GetSupportedSortTypesForCurrentInventory();                                            // [0xbe5d124] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TArray<EInventoryContentSortType> GetSupportedSortTypesForCurrentInventory();                                            // [0xbe13bd0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.GetShouldPrioritizeFavorites
-	// bool GetShouldPrioritizeFavorites();                                                                                     // [0xa350d70] Final|Native|Public|BlueprintCallable 
+	// bool GetShouldPrioritizeFavorites();                                                                                     // [0xa349c9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.GetQualifiedFilterDisplayName
-	// FText GetQualifiedFilterDisplayName();                                                                                   // [0xbe5cea0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FText GetQualifiedFilterDisplayName();                                                                                   // [0xbe1394c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.CycleSortType
-	// void CycleSortType();                                                                                                    // [0xbe5ba5c] Final|Native|Public|BlueprintCallable 
+	// void CycleSortType();                                                                                                    // [0xbe12508] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.CanDragItems
-	// bool CanDragItems();                                                                                                     // [0xa3504a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanDragItems();                                                                                                     // [0xa3493f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.AdvanceSelection
-	// void AdvanceSelection();                                                                                                 // [0xbe5b204] Final|Native|Public|BlueprintCallable 
+	// void AdvanceSelection();                                                                                                 // [0xbe11cb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementInventoryPanel_STW.AddItemStackToMulch
-	// void AddItemStackToMulch(class UFortItem* Item, int32_t Count);                                                          // [0xa34fc4c] Final|Native|Protected|BlueprintCallable 
+	// void AddItemStackToMulch(class UFortItem* Item, int32_t Count);                                                          // [0xa348b9c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW
@@ -1785,35 +1785,35 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.UpdateEquipSlotOverlay
-	// void UpdateEquipSlotOverlay(int32_t CurrentSlotIndex);                                                                   // [0xbe61970] Final|Native|Public|BlueprintCallable 
+	// void UpdateEquipSlotOverlay(int32_t CurrentSlotIndex);                                                                   // [0xbe1841c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.PopulateEquipSlotOverlay
-	// void PopulateEquipSlotOverlay();                                                                                         // [0xbe5f2c0] Final|Native|Public|BlueprintCallable 
+	// void PopulateEquipSlotOverlay();                                                                                         // [0xbe15d6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.OnSlotItemComplete
-	// void OnSlotItemComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                              // [0xbe5eda4] Final|Native|Private 
+	// void OnSlotItemComplete(class UFortAccountItem* SlottedItem, FName SlotId);                                              // [0xbe15850] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.IsValidEquipSlotOverlayIndex
-	// bool IsValidEquipSlotOverlayIndex(int32_t SlotIndex);                                                                    // [0xbe5ec28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidEquipSlotOverlayIndex(int32_t SlotIndex);                                                                    // [0xbe156d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.HandleShowRefundIndicatorChanged
-	// void HandleShowRefundIndicatorChanged();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleShowRefundIndicatorChanged();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.HandleShowCollectionBookIndicatorChanged
-	// void HandleShowCollectionBookIndicatorChanged();                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleShowCollectionBookIndicatorChanged();                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.HandleItemMulchStateChanged
-	// void HandleItemMulchStateChanged();                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleItemMulchStateChanged();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.HandleItemChangedBP
-	// void HandleItemChangedBP();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleItemChangedBP();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.HandleHasItemToDetailChanged
-	// void HandleHasItemToDetailChanged();                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleHasItemToDetailChanged();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.HandleHasItemToCompareDetailsWithChanged
-	// void HandleHasItemToCompareDetailsWithChanged();                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleHasItemToCompareDetailsWithChanged();                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.HandleEquipSlotChanged
-	// void HandleEquipSlotChanged(int32_t EquipSlot);                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleEquipSlotChanged(int32_t EquipSlot);                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.HandleDifferentItemManagementModeSetBP
-	// void HandleDifferentItemManagementModeSetBP();                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentItemManagementModeSetBP();                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.GetPopupMenu
-	// class UUserWidget* GetPopupMenu();                                                                                       // [0xa38d900] Final|Native|Private 
+	// class UUserWidget* GetPopupMenu();                                                                                       // [0xa38682c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.GetItemManagementMode
-	// EFortItemManagementMode GetItemManagementMode();                                                                         // [0xbe5cb30] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EFortItemManagementMode GetItemManagementMode();                                                                         // [0xbe135dc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemTileButton_STW.GetHomebaseSquadSlotForItem
-	// FHomebaseSquadSlotId GetHomebaseSquadSlotForItem();                                                                      // [0xa38d534] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FHomebaseSquadSlotId GetHomebaseSquadSlotForItem();                                                                      // [0xa386460] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemManagementItemDetailsPanel_STW
@@ -1831,11 +1831,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemDetailsPanel_STW.HandleHostSet
-	// void HandleHostSet();                                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleHostSet();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemDetailsPanel_STW.HandleHasItemMarkedForMulchingChanged
-	// void HandleHasItemMarkedForMulchingChanged();                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleHasItemMarkedForMulchingChanged();                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementItemDetailsPanel_STW.GetAmmoTypeItemDefinitions
-	// TArray<UFortAmmoItemDefinition*> GetAmmoTypeItemDefinitions();                                                           // [0xa38c700] Final|Native|Static|Protected|BlueprintCallable|BlueprintPure 
+	// TArray<UFortAmmoItemDefinition*> GetAmmoTypeItemDefinitions();                                                           // [0xa38562c] Final|Native|Static|Protected|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemManagementMulchDetailsPanel_STW
@@ -1853,17 +1853,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemManagementMulchDetailsPanel_STW.IsSpaceAvailableForMulch
-	// bool IsSpaceAvailableForMulch();                                                                                         // [0xbe5eb58] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSpaceAvailableForMulch();                                                                                         // [0xbe15604] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementMulchDetailsPanel_STW.HandleSetOfItemsToMulchChangedBP
-	// void HandleSetOfItemsToMulchChangedBP();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSetOfItemsToMulchChangedBP();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementMulchDetailsPanel_STW.HandleHostSet
-	// void HandleHostSet();                                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleHostSet();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementMulchDetailsPanel_STW.GetItemsToMulch
-	// TArray<UFortItem*> GetItemsToMulch();                                                                                    // [0xa38d790] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFortItem*> GetItemsToMulch();                                                                                    // [0xa3866bc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementMulchDetailsPanel_STW.GetItemCountsToMulch
-	// TArray<int32_t> GetItemCountsToMulch();                                                                                  // [0xa38d68c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TArray<int32_t> GetItemCountsToMulch();                                                                                  // [0xa3865b8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementMulchDetailsPanel_STW.CommitMulch
-	// void CommitMulch();                                                                                                      // [0xa38bf90] Final|Native|Protected|BlueprintCallable 
+	// void CommitMulch();                                                                                                      // [0xa384ebc] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemManagementModeDetailsPanel_STW
@@ -1883,11 +1883,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemManagementModeDetailsPanel_STW.HandleHostSet
-	// void HandleHostSet();                                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleHostSet();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementModeDetailsPanel_STW.HandleDifferentItemManagementModeSetBP
-	// void HandleDifferentItemManagementModeSetBP();                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentItemManagementModeSetBP();                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementModeDetailsPanel_STW.GetItemManagementMode
-	// EFortItemManagementMode GetItemManagementMode();                                                                         // [0xbe5cb54] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EFortItemManagementMode GetItemManagementMode();                                                                         // [0xbe13600] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemManagementScreen_STW
@@ -1918,113 +1918,113 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.UpdateSorts
-	// void UpdateSorts();                                                                                                      // [0xbe61b88] Final|Native|Private|BlueprintCallable 
+	// void UpdateSorts();                                                                                                      // [0xbe18634] Final|Native|Private|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.TransferItem
-	// void TransferItem(class UFortItem* Item);                                                                                // [0xbe61308] Final|Native|Public|BlueprintCallable 
+	// void TransferItem(class UFortItem* Item);                                                                                // [0xbe17db4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.ToggleSortAndMoreBlade
-	// void ToggleSortAndMoreBlade();                                                                                           // [0xbe61298] Final|Native|Protected|BlueprintCallable 
+	// void ToggleSortAndMoreBlade();                                                                                           // [0xbe17d44] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.ToggleShowRefundIndicator
-	// void ToggleShowRefundIndicator();                                                                                        // [0xbe6126c] Final|Native|Public|BlueprintCallable 
+	// void ToggleShowRefundIndicator();                                                                                        // [0xbe17d18] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.ToggleShowCollectionBookIndicator
-	// void ToggleShowCollectionBookIndicator();                                                                                // [0xbe61240] Final|Native|Public|BlueprintCallable 
+	// void ToggleShowCollectionBookIndicator();                                                                                // [0xbe17cec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.ShowWarningReadOnlyWIFE
-	// void ShowWarningReadOnlyWIFE(bool Force);                                                                                // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ShowWarningReadOnlyWIFE(bool Force);                                                                                // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.ShowMulchConfirmationModal
-	// void ShowMulchConfirmationModal();                                                                                       // [0xbe61014] Native|Public|BlueprintCallable 
+	// void ShowMulchConfirmationModal();                                                                                       // [0xbe17ac0] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.ShowCustomFilterModal
-	// void ShowCustomFilterModal();                                                                                            // [0xbe60fec] Final|Native|Public|BlueprintCallable 
+	// void ShowCustomFilterModal();                                                                                            // [0xbe17a98] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.SetFrontendInventoryFilter
-	// void SetFrontendInventoryFilter(EFortFrontendInventoryFilter FrontendInventoryFilter);                                   // [0xbe6008c] Final|Native|Public|BlueprintCallable 
+	// void SetFrontendInventoryFilter(EFortFrontendInventoryFilter FrontendInventoryFilter);                                   // [0xbe16b38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.SetConsumeItemRequestInProgress
-	// void SetConsumeItemRequestInProgress(bool InProgress);                                                                   // [0xbe5fef8] Final|Native|Public|BlueprintCallable 
+	// void SetConsumeItemRequestInProgress(bool InProgress);                                                                   // [0xbe169a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.RequestPopupMenuForSelectedItem
-	// void RequestPopupMenuForSelectedItem();                                                                                  // [0xbe5f544] Final|Native|Public|BlueprintCallable 
+	// void RequestPopupMenuForSelectedItem();                                                                                  // [0xbe15ff0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.OpenCraftingOptions
-	// void OpenCraftingOptions(class UFortSchematicItem* SchematicItem);                                                       // [0xbe5ef60] Final|Native|Public|BlueprintCallable 
+	// void OpenCraftingOptions(class UFortSchematicItem* SchematicItem);                                                       // [0xbe15a0c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.OpenAutoMulchOptions
-	// void OpenAutoMulchOptions();                                                                                             // [0xbe5ef4c] Final|Native|Public|BlueprintCallable 
+	// void OpenAutoMulchOptions();                                                                                             // [0xbe159f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.NotifyPanelDeactivated
-	// void NotifyPanelDeactivated();                                                                                           // [0xbe5ed6c] Native|Protected|BlueprintCallable 
+	// void NotifyPanelDeactivated();                                                                                           // [0xbe15818] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.NotifyPanelActivated
-	// void NotifyPanelActivated();                                                                                             // [0xbe5ed34] Native|Protected|BlueprintCallable 
+	// void NotifyPanelActivated();                                                                                             // [0xbe157e0] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.MarkAllItemsAsSeen
-	// void MarkAllItemsAsSeen();                                                                                               // [0xbe5ecd0] Final|Native|Public|BlueprintCallable 
+	// void MarkAllItemsAsSeen();                                                                                               // [0xbe1577c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.IsScreenWIFE
-	// bool IsScreenWIFE();                                                                                                     // [0xbe5eaa4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsScreenWIFE();                                                                                                     // [0xbe15550] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.InspectItem
-	// void InspectItem(class UFortItem* Item);                                                                                 // [0xbe5e858] Final|Native|Public|BlueprintCallable 
+	// void InspectItem(class UFortItem* Item);                                                                                 // [0xbe15304] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HideMulchConfirmationModal
-	// void HideMulchConfirmationModal();                                                                                       // [0xbe5e820] Native|Public|BlueprintCallable 
+	// void HideMulchConfirmationModal();                                                                                       // [0xbe152cc] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HideCustomFilterModal
-	// void HideCustomFilterModal();                                                                                            // [0xbe5e7cc] Final|Native|Public|BlueprintCallable 
+	// void HideCustomFilterModal();                                                                                            // [0xbe15278] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HasItemBeenSeen
-	// bool HasItemBeenSeen(class UFortAccountItem* AccountItem);                                                               // [0x96a320c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasItemBeenSeen(class UFortAccountItem* AccountItem);                                                               // [0x96b4f20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HasDefaultItemsToMulch
-	// bool HasDefaultItemsToMulch();                                                                                           // [0xbe5e7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasDefaultItemsToMulch();                                                                                           // [0xbe1524c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleTransferItemBP
-	// void HandleTransferItemBP(class UFortItem* Item);                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleTransferItemBP(class UFortItem* Item);                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleOpenCraftingOptionsBP
-	// void HandleOpenCraftingOptionsBP(class UFortSchematicItem* SchematicItem);                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleOpenCraftingOptionsBP(class UFortSchematicItem* SchematicItem);                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleOpenAutoMulchOptionsBP
-	// void HandleOpenAutoMulchOptionsBP();                                                                                     // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleOpenAutoMulchOptionsBP();                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleMulchQuantitySelection
-	// void HandleMulchQuantitySelection(class UFortItem* Item);                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleMulchQuantitySelection(class UFortItem* Item);                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleMoreButtonSelected
-	// void HandleMoreButtonSelected(FName MoreNameId, class UCommonButtonBase* NewButton);                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleMoreButtonSelected(FName MoreNameId, class UCommonButtonBase* NewButton);                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleItemToDetailChanged
-	// void HandleItemToDetailChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                          // [0xbe5e248] Final|Native|Private 
+	// void HandleItemToDetailChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                          // [0xbe14cf4] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleItemToCompareWithChanged
-	// void HandleItemToCompareWithChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                     // [0xbe5e15c] Final|Native|Private 
+	// void HandleItemToCompareWithChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                     // [0xbe14c08] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleInspectItemBP
-	// void HandleInspectItemBP(class UFortItem* Item);                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleInspectItemBP(class UFortItem* Item);                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleEquipItemBP
-	// void HandleEquipItemBP(class UFortItem* Item);                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleEquipItemBP(class UFortItem* Item);                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleDropItemBP
-	// void HandleDropItemBP(class UFortItem* Item);                                                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleDropItemBP(class UFortItem* Item);                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleDifferentItemManagementModeSetBP
-	// void HandleDifferentItemManagementModeSetBP();                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleDifferentItemManagementModeSetBP();                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleCraftItemBP
-	// void HandleCraftItemBP(class UFortSchematicItem* SchematicItem, EFortItemTier RequestedTier, int32_t CraftCount);        // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleCraftItemBP(class UFortSchematicItem* SchematicItem, EFortItemTier RequestedTier, int32_t CraftCount);        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleCraftAndSlotItemBP
-	// void HandleCraftAndSlotItemBP(class UFortSchematicItem* SchematicItem, EFortItemTier RequestedTier, int32_t CraftCount); // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleCraftAndSlotItemBP(class UFortSchematicItem* SchematicItem, EFortItemTier RequestedTier, int32_t CraftCount); // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.HandleConsumeItemBP
-	// void HandleConsumeItemBP(class UFortConsumableAccountItem* ConsumableItem);                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleConsumeItemBP(class UFortConsumableAccountItem* ConsumableItem);                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.GuardActionForReadOnlyWIFE
-	// bool GuardActionForReadOnlyWIFE();                                                                                       // [0xbe5d860] Final|Native|Public|BlueprintCallable 
+	// bool GuardActionForReadOnlyWIFE();                                                                                       // [0xbe1430c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.GetShouldShowRefundIndicator
-	// bool GetShouldShowRefundIndicator();                                                                                     // [0xbe5d10c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetShouldShowRefundIndicator();                                                                                     // [0xbe13bb8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.GetShouldShowCollectionBookIndicator
-	// bool GetShouldShowCollectionBookIndicator();                                                                             // [0xbe5d0f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetShouldShowCollectionBookIndicator();                                                                             // [0xbe13ba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.GetItemToDetail
-	// class UFortItem* GetItemToDetail();                                                                                      // [0xbe5cbe4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetItemToDetail();                                                                                      // [0xbe13690] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.GetItemToCompareDetailsWith
-	// class UFortItem* GetItemToCompareDetailsWith();                                                                          // [0xbe5cbc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetItemToCompareDetailsWith();                                                                          // [0xbe1366c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.EquipItem
-	// void EquipItem(class UFortItem* Item);                                                                                   // [0xbe5bffc] Final|Native|Public|BlueprintCallable 
+	// void EquipItem(class UFortItem* Item);                                                                                   // [0xbe12aa8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.EnterMulchModeForAutoMulch
-	// void EnterMulchModeForAutoMulch();                                                                                       // [0xbe5bfe8] Final|Native|Public|BlueprintCallable 
+	// void EnterMulchModeForAutoMulch();                                                                                       // [0xbe12a94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.EnterMulchMode
-	// void EnterMulchMode(class UFortItem* ItemToMulch);                                                                       // [0xbe5be80] Final|Native|Public|BlueprintCallable 
+	// void EnterMulchMode(class UFortItem* ItemToMulch);                                                                       // [0xbe1292c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.EnterDetailsMode
-	// void EnterDetailsMode(class UFortItem* ItemToDetail);                                                                    // [0xbe5be00] Final|Native|Public|BlueprintCallable 
+	// void EnterDetailsMode(class UFortItem* ItemToDetail);                                                                    // [0xbe128ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.EnterComparisonMode
-	// void EnterComparisonMode(class UFortItem* ItemToCompareDetailsWith);                                                     // [0xbe5bcec] Final|Native|Public|BlueprintCallable 
+	// void EnterComparisonMode(class UFortItem* ItemToCompareDetailsWith);                                                     // [0xbe12798] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.DropItem
-	// void DropItem(class UFortItem* Item);                                                                                    // [0xbe5bbe0] Final|Native|Public|BlueprintCallable 
+	// void DropItem(class UFortItem* Item);                                                                                    // [0xbe1268c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.CycleSortType
-	// void CycleSortType();                                                                                                    // [0xbe5ba70] Final|Native|Public|BlueprintCallable 
+	// void CycleSortType();                                                                                                    // [0xbe1251c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.CraftItem
-	// void CraftItem(class UFortSchematicItem* SchematicItem, EFortItemTier RequestedTier, int32_t CraftCount);                // [0xbe5b964] Final|Native|Public|BlueprintCallable 
+	// void CraftItem(class UFortSchematicItem* SchematicItem, EFortItemTier RequestedTier, int32_t CraftCount);                // [0xbe12410] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.CraftAndSlotItem
-	// void CraftAndSlotItem(class UFortSchematicItem* SchematicItem, EFortItemTier RequestedTier, int32_t CraftCount);         // [0xbe5b86c] Final|Native|Public|BlueprintCallable 
+	// void CraftAndSlotItem(class UFortSchematicItem* SchematicItem, EFortItemTier RequestedTier, int32_t CraftCount);         // [0xbe12318] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.ConsumeItem
-	// void ConsumeItem(class UFortConsumableAccountItem* ConsumableItem);                                                      // [0xbe5b7d8] Final|Native|Public|BlueprintCallable 
+	// void ConsumeItem(class UFortConsumableAccountItem* ConsumableItem);                                                      // [0xbe12284] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.CanRequestPopupMenuForSelectedItem
-	// bool CanRequestPopupMenuForSelectedItem();                                                                               // [0xbe5b6a0] Final|Native|Public|BlueprintCallable 
+	// bool CanRequestPopupMenuForSelectedItem();                                                                               // [0xbe1214c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.CanEquipItem
-	// bool CanEquipItem(class UFortItem* Item);                                                                                // [0xa38bccc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanEquipItem(class UFortItem* Item);                                                                                // [0xa384bf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemManagementScreen_STW.CancelInventoryPanelTileViewRefresh
-	// void CancelInventoryPanelTileViewRefresh();                                                                              // [0xbe5b6c0] Final|Native|Protected|BlueprintCallable 
+	// void CancelInventoryPanelTileViewRefresh();                                                                              // [0xbe1216c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.MainMenu_STW
@@ -2061,13 +2061,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.MainMenu_STW.TryShowPrimaryContent
-	// void TryShowPrimaryContent(TWeakObjectPtr<UClass*>& ContentWidgetClass);                                                 // [0xbe61428] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void TryShowPrimaryContent(TWeakObjectPtr<UClass*>& ContentWidgetClass);                                                 // [0xbe17ed4] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.MainMenu_STW.TryShowModal
-	// void TryShowModal(TWeakObjectPtr<UClass*>& ModalWidgetClass);                                                            // [0xbe61388] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void TryShowModal(TWeakObjectPtr<UClass*>& ModalWidgetClass);                                                            // [0xbe17e34] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.MainMenu_STW.ShouldShowLeaveExperienceButton
-	// bool ShouldShowLeaveExperienceButton();                                                                                  // [0xbe60fc8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldShowLeaveExperienceButton();                                                                                  // [0xbe17a74] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.MainMenu_STW.IsActiveTabMainShop
-	// bool IsActiveTabMainShop();                                                                                              // [0xbe5e8d8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActiveTabMainShop();                                                                                              // [0xbe15384] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortUIStateWidget_STWFrontend
@@ -2102,15 +2102,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortUIStateWidget_STWJoinServer.OnShowTutorialDialog
-	// void OnShowTutorialDialog();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnShowTutorialDialog();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUIStateWidget_STWJoinServer.HandleMatchmakingStateChange
-	// void HandleMatchmakingStateChange(TEnumAsByte<EMatchmakingState> OldState, TEnumAsByte<EMatchmakingState> NewState);     // [0xbe5e5b8] Final|Native|Private 
+	// void HandleMatchmakingStateChange(TEnumAsByte<EMatchmakingState> OldState, TEnumAsByte<EMatchmakingState> NewState);     // [0xbe15064] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortUIStateWidget_STWJoinServer.HandleMatchmakingComplete
-	// void HandleMatchmakingComplete(EMatchmakingCompleteResult MatchmakingResult);                                            // [0xbe5e4e8] Final|Native|Private 
+	// void HandleMatchmakingComplete(EMatchmakingCompleteResult MatchmakingResult);                                            // [0xbe14f94] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortUIStateWidget_STWJoinServer.HandleLobbyTimeUpdated
-	// void HandleLobbyTimeUpdated(int32_t TimeRemaining);                                                                      // [0xbe5e468] Final|Native|Private 
+	// void HandleLobbyTimeUpdated(int32_t TimeRemaining);                                                                      // [0xbe14f14] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortUIStateWidget_STWJoinServer.HandleLobbyDisconnected
-	// void HandleLobbyDisconnected();                                                                                          // [0xbe5e454] Final|Native|Private 
+	// void HandleLobbyDisconnected();                                                                                          // [0xbe14f00] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.TopBar_STW
@@ -2131,11 +2131,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.TopBar_STW.SetOnlineFriendsCount
-	// void SetOnlineFriendsCount(int32_t NewOnlineFriendsCount);                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetOnlineFriendsCount(int32_t NewOnlineFriendsCount);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.TopBar_STW.OnSocialMenuOpened
-	// void OnSocialMenuOpened();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSocialMenuOpened();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.TopBar_STW.OnShouldShowPhoenixDisplay
-	// void OnShouldShowPhoenixDisplay(bool bShow, class UFortPhoenixSeasonDisplayInfo* PhoenixDisplayInfo);                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnShouldShowPhoenixDisplay(bool bShow, class UFortPhoenixSeasonDisplayInfo* PhoenixDisplayInfo);                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutGadgetPicker
@@ -2153,9 +2153,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutGadgetPicker.SetTargetLoadoutSlot
-	// void SetTargetLoadoutSlot(class UFortCampaignHeroLoadoutItem* LoadoutItem, int32_t SlotIndex);                           // [0xbe60bd0] Final|Native|Public|BlueprintCallable 
+	// void SetTargetLoadoutSlot(class UFortCampaignHeroLoadoutItem* LoadoutItem, int32_t SlotIndex);                           // [0xbe1767c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutGadgetPicker.HandleDifferentTargetLoadoutSlotSetBP
-	// void HandleDifferentTargetLoadoutSlotSetBP();                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentTargetLoadoutSlotSetBP();                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutHeroPicker
@@ -2175,19 +2175,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutHeroPicker.UpdateFilterTabList
-	// void UpdateFilterTabList(FName PreviouslySelectedTab);                                                                   // [0xbe619f0] Final|Native|Private|BlueprintCallable 
+	// void UpdateFilterTabList(FName PreviouslySelectedTab);                                                                   // [0xbe1849c] Final|Native|Private|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutHeroPicker.SetTargetLoadoutSlot
-	// void SetTargetLoadoutSlot(class UFortCampaignHeroLoadoutItem* LoadoutItem, FName& SlotName);                             // [0xbe60c94] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetTargetLoadoutSlot(class UFortCampaignHeroLoadoutItem* LoadoutItem, FName& SlotName);                             // [0xbe17740] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutHeroPicker.HandleFilterTabSelectedBP
-	// void HandleFilterTabSelectedBP(FName TabID);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleFilterTabSelectedBP(FName TabID);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutHeroPicker.HandleFilterTabSelected
-	// void HandleFilterTabSelected(FName TabID);                                                                               // [0xbe5de74] Final|Native|Private 
+	// void HandleFilterTabSelected(FName TabID);                                                                               // [0xbe14920] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutHeroPicker.HandleDifferentTargetLoadoutSetBP
-	// void HandleDifferentTargetLoadoutSetBP();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentTargetLoadoutSetBP();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutHeroPicker.GetCurrentlySelectedTab
-	// FName GetCurrentlySelectedTab();                                                                                         // [0xbe5c270] Final|Native|Public|BlueprintCallable 
+	// FName GetCurrentlySelectedTab();                                                                                         // [0xbe12d1c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutHeroPicker.AssociateFilterTabList
-	// void AssociateFilterTabList(class UFortTabListWidgetBase_Legacy* ExternalFilterTabList);                                 // [0xbe5b31c] Final|Native|Public|BlueprintCallable 
+	// void AssociateFilterTabList(class UFortTabListWidgetBase_Legacy* ExternalFilterTabList);                                 // [0xbe11dc8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutHeroPickerFunctionLibrary
@@ -2232,43 +2232,43 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.ShowItemDetails
-	// void ShowItemDetails();                                                                                                  // [0xbe61000] Final|Native|Private|BlueprintCallable 
+	// void ShowItemDetails();                                                                                                  // [0xbe17aac] Final|Native|Private|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.SetInputBindings
-	// void SetInputBindings(bool ActivePickerBox, bool CommanderSlot, bool NoneSlot, bool CanClearAll);                        // [0xbe60338] Final|Native|Protected|BlueprintCallable 
+	// void SetInputBindings(bool ActivePickerBox, bool CommanderSlot, bool NoneSlot, bool CanClearAll);                        // [0xbe16de4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.SetHeroLoadout
-	// void SetHeroLoadout(class UFortCampaignHeroLoadoutItem* HeroLoadout);                                                    // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetHeroLoadout(class UFortCampaignHeroLoadoutItem* HeroLoadout);                                                    // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.PushItemInspectionScreen
-	// void PushItemInspectionScreen(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, class UFortItemTileView* CycleTileView, bool bReadOnly, bool bAllowFavoriting, bool bIsTemporaryItem, bool bAllowRarityUpgrading); // [0xbe3700c] Final|Native|Private|BlueprintCallable 
+	// void PushItemInspectionScreen(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, class UFortItemTileView* CycleTileView, bool bReadOnly, bool bAllowFavoriting, bool bIsTemporaryItem, bool bAllowRarityUpgrading); // [0xbdedab8] Final|Native|Private|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.OnVaultItemsViewed
-	// void OnVaultItemsViewed(TArray<UFortItem*>& Items);                                                                      // [0xbe5eeb0] Final|Native|Private|HasOutParms 
+	// void OnVaultItemsViewed(TArray<UFortItem*>& Items);                                                                      // [0xbe1595c] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.OnItemPreviewChanged
-	// void OnItemPreviewChanged(class AActor* NewPrefab, class UFortItem* NewItem);                                            // [0x696d714] Final|Native|Protected 
+	// void OnItemPreviewChanged(class AActor* NewPrefab, class UFortItem* NewItem);                                            // [0x69b67c4] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.IsLoadoutSwitchingAllowed
-	// bool IsLoadoutSwitchingAllowed();                                                                                        // [0xbe5ea44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLoadoutSwitchingAllowed();                                                                                        // [0xbe154f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HideItemDetails
-	// void HideItemDetails();                                                                                                  // [0xbe5e80c] Final|Native|Private|BlueprintCallable 
+	// void HideItemDetails();                                                                                                  // [0xbe152b8] Final|Native|Private|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleToggleDescInputAction
-	// void HandleToggleDescInputAction();                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleToggleDescInputAction();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleShowAllStatsInputAction
-	// void HandleShowAllStatsInputAction();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleShowAllStatsInputAction();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleInspectRootSlotsInputAction
-	// void HandleInspectRootSlotsInputAction();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleInspectRootSlotsInputAction();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleInspectPickerInputAction
-	// void HandleInspectPickerInputAction();                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleInspectPickerInputAction();                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleHelpInputAction
-	// void HandleHelpInputAction();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleHelpInputAction();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleDetailsInputAction
-	// void HandleDetailsInputAction();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDetailsInputAction();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleCyclePickerInputAction
-	// void HandleCyclePickerInputAction();                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleCyclePickerInputAction();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleClearAllInputAction
-	// void HandleClearAllInputAction();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleClearAllInputAction();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.HandleBackInputAction
-	// void HandleBackInputAction();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleBackInputAction();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.GetWidgetForFramingViewedItem
-	// class UWidget* GetWidgetForFramingViewedItem();                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// class UWidget* GetWidgetForFramingViewedItem();                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenBase.GetIsReadOnly
-	// bool GetIsReadOnly();                                                                                                    // [0xbe5cad0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsReadOnly();                                                                                                    // [0xbe1357c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutScreenLegacy
@@ -2283,11 +2283,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenLegacy.SetHeroLoadout
-	// void SetHeroLoadout(class UFortCampaignHeroLoadoutItem* HeroLoadout);                                                    // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetHeroLoadout(class UFortCampaignHeroLoadoutItem* HeroLoadout);                                                    // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenLegacy.IsLoadoutSwitchingAllowed
-	// bool IsLoadoutSwitchingAllowed();                                                                                        // [0xbe5ea44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLoadoutSwitchingAllowed();                                                                                        // [0xbe154f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutScreenLegacy.GetIsReadOnly
-	// bool GetIsReadOnly();                                                                                                    // [0xbe5cad0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsReadOnly();                                                                                                    // [0xbe1357c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutSlotButton
@@ -2308,13 +2308,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutSlotButton.OnRequestChangeHero__DelegateSignature
-	// void OnRequestChangeHero__DelegateSignature(class UFortHeroLoadoutSlotButton* SlotButton);                               // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnRequestChangeHero__DelegateSignature(class UFortHeroLoadoutSlotButton* SlotButton);                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutSlotButton.OnMenuOpenChangedEvent__DelegateSignature
-	// void OnMenuOpenChangedEvent__DelegateSignature(class UFortHeroLoadoutSlotButton* SlotButton, bool bIsMenuOpen);          // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnMenuOpenChangedEvent__DelegateSignature(class UFortHeroLoadoutSlotButton* SlotButton, bool bIsMenuOpen);          // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutSlotButton.IsContextMenuOpen
-	// bool IsContextMenuOpen();                                                                                                // [0xbe5e964] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsContextMenuOpen();                                                                                                // [0xbe15410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutSlotButton.HandleMenuOpenChanged
-	// void HandleMenuOpenChanged(bool bIsMenuOpen);                                                                            // [0xbe5e68c] Final|Native|Private 
+	// void HandleMenuOpenChanged(bool bIsMenuOpen);                                                                            // [0xbe15138] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutTeamPerkPicker
@@ -2330,9 +2330,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutTeamPerkPicker.SetTargetLoadout
-	// void SetTargetLoadout(class UFortCampaignHeroLoadoutItem* LoadoutItem);                                                  // [0xbe60b50] Final|Native|Public|BlueprintCallable 
+	// void SetTargetLoadout(class UFortCampaignHeroLoadoutItem* LoadoutItem);                                                  // [0xbe175fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutTeamPerkPicker.HandleDifferentTargetLoadoutSetBP
-	// void HandleDifferentTargetLoadoutSetBP();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentTargetLoadoutSetBP();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCampaignTabsScreenBase
@@ -2352,17 +2352,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase.UpdateItemShopButtonBang
-	// void UpdateItemShopButtonBang(FName Tab);                                                                                // [0xbe61a70] Native|Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void UpdateItemShopButtonBang(FName Tab);                                                                                // [0xbe1851c] Native|Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase.ShouldShowItemShopBang
-	// bool ShouldShowItemShopBang();                                                                                           // [0xbe60f88] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldShowItemShopBang();                                                                                           // [0xbe17a34] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase.HandleMainTabSelected
-	// void HandleMainTabSelected(FName TabNameID);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleMainTabSelected(FName TabNameID);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase.HandleMainTabCreated
-	// void HandleMainTabCreated(FName TabNameID, class UCommonButtonBase* TabButton);                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleMainTabCreated(FName TabNameID, class UCommonButtonBase* TabButton);                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase.HandleFeatureStateChanged
-	// void HandleFeatureStateChanged(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason Reason); // [0xbe5dc84] Final|Native|Protected 
+	// void HandleFeatureStateChanged(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason Reason); // [0xbe14730] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase.ConstructTabs
-	// void ConstructTabs();                                                                                                    // [0xbe5b7b0] Final|Native|Protected|BlueprintCallable 
+	// void ConstructTabs();                                                                                                    // [0xbe1225c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCampaignTabsScreenBase_Legacy
@@ -2381,15 +2381,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase_Legacy.HandleMainTabSelected
-	// void HandleMainTabSelected(FName TabNameID);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleMainTabSelected(FName TabNameID);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase_Legacy.HandleMainTabCreated
-	// void HandleMainTabCreated(FName TabNameID, class UCommonButtonBase* TabButton);                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleMainTabCreated(FName TabNameID, class UCommonButtonBase* TabButton);                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase_Legacy.HandleFeatureStateChanged
-	// void HandleFeatureStateChanged(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason Reason); // [0xbe5dd7c] Final|Native|Protected 
+	// void HandleFeatureStateChanged(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason Reason); // [0xbe14828] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase_Legacy.HandleFeatureNavigateRequest
-	// void HandleFeatureNavigateRequest(EFortUIFeature Feature);                                                               // [0xbe5dc04] Final|Native|Protected 
+	// void HandleFeatureNavigateRequest(EFortUIFeature Feature);                                                               // [0xbe146b0] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortCampaignTabsScreenBase_Legacy.ConstructTabs
-	// void ConstructTabs();                                                                                                    // [0xbe5b7c4] Final|Native|Protected|BlueprintCallable 
+	// void ConstructTabs();                                                                                                    // [0xbe12270] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.StoreCardObject
@@ -2420,29 +2420,29 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.ShowMulchConfirmationModal
-	// void ShowMulchConfirmationModal();                                                                                       // [0xbe61030] Native|Public|BlueprintCallable 
+	// void ShowMulchConfirmationModal();                                                                                       // [0xbe17adc] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.SetIsInChoiceSelectionMode
-	// void SetIsInChoiceSelectionMode(bool InIsInChoiceSelectionMode);                                                         // [0xbe605f0] Final|Native|Public|BlueprintCallable 
+	// void SetIsInChoiceSelectionMode(bool InIsInChoiceSelectionMode);                                                         // [0xbe1709c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.SetCards
-	// void SetCards(TArray<FCard>& Cards);                                                                                     // [0xbe5f838] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetCards(TArray<FCard>& Cards);                                                                                     // [0xbe162e4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.NotifyPanelDeactivated
-	// void NotifyPanelDeactivated();                                                                                           // [0xbe5ed88] Native|Protected|BlueprintCallable 
+	// void NotifyPanelDeactivated();                                                                                           // [0xbe15834] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.NotifyPanelActivated
-	// void NotifyPanelActivated();                                                                                             // [0xbe5ed50] Native|Protected|BlueprintCallable 
+	// void NotifyPanelActivated();                                                                                             // [0xbe157fc] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.MarkDefaultItemsForMulch
-	// void MarkDefaultItemsForMulch();                                                                                         // [0xbe5ecf8] Final|Native|Public|BlueprintCallable 
+	// void MarkDefaultItemsForMulch();                                                                                         // [0xbe157a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.HideMulchConfirmationModal
-	// void HideMulchConfirmationModal();                                                                                       // [0xbe5e83c] Native|Public|BlueprintCallable 
+	// void HideMulchConfirmationModal();                                                                                       // [0xbe152e8] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.HandleContextMenuOpenChangedBP
-	// void HandleContextMenuOpenChangedBP(bool bIsOpen);                                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleContextMenuOpenChangedBP(bool bIsOpen);                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.HandleContextMenuOpenChanged
-	// void HandleContextMenuOpenChanged(bool bIsOpen);                                                                         // [0xbe5d9d4] Final|Native|Private 
+	// void HandleContextMenuOpenChanged(bool bIsOpen);                                                                         // [0xbe14480] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.GetIsInChoiceSelectionMode
-	// bool GetIsInChoiceSelectionMode();                                                                                       // [0xbe5cab8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsInChoiceSelectionMode();                                                                                       // [0xbe13564] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.FinalizeFavoriteStatus
-	// void FinalizeFavoriteStatus();                                                                                           // [0xbe5c07c] Final|Native|Public|BlueprintCallable 
+	// void FinalizeFavoriteStatus();                                                                                           // [0xbe12b28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary.CloseSummaryScreen
-	// void CloseSummaryScreen();                                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void CloseSummaryScreen();                                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortStoreSummaryItemButton
@@ -2461,17 +2461,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton.UpdateMulchListWithItem
-	// void UpdateMulchListWithItem(bool bAddingItem);                                                                          // [0xbe61af4] Final|Native|Public|BlueprintCallable 
+	// void UpdateMulchListWithItem(bool bAddingItem);                                                                          // [0xbe185a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton.SetStoreCardObject
-	// void SetStoreCardObject(class UStoreCardObject* CardObject);                                                             // [0xbe60970] Final|Native|Public|BlueprintCallable 
+	// void SetStoreCardObject(class UStoreCardObject* CardObject);                                                             // [0xbe1741c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton.HandleMenuOpenChanged
-	// void HandleMenuOpenChanged(bool bIsOpen);                                                                                // [0xbe5e70c] Final|Native|Private 
+	// void HandleMenuOpenChanged(bool bIsOpen);                                                                                // [0xbe151b8] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton.HandleItemMulchStateChanged
-	// void HandleItemMulchStateChanged();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleItemMulchStateChanged();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton.GetStoreCardObject
-	// class UStoreCardObject* GetStoreCardObject();                                                                            // [0x30be484] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UStoreCardObject* GetStoreCardObject();                                                                            // [0x30b6448] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton.GetPopupMenu
-	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbe5cd24] Final|Native|Private 
+	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbe137d0] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortStoreSummaryItemButton_Legacy
@@ -2490,19 +2490,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton_Legacy.UpdateMulchListWithItem
-	// void UpdateMulchListWithItem(bool bAddingItem);                                                                          // [0xbe61af4] Final|Native|Public|BlueprintCallable 
+	// void UpdateMulchListWithItem(bool bAddingItem);                                                                          // [0xbe185a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton_Legacy.SetStoreCardObject
-	// void SetStoreCardObject(class UStoreCardObject* CardObject);                                                             // [0xbe60a60] Final|Native|Public|BlueprintCallable 
+	// void SetStoreCardObject(class UStoreCardObject* CardObject);                                                             // [0xbe1750c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton_Legacy.OnContextMenuOpenChangedEvent__DelegateSignature
-	// void OnContextMenuOpenChangedEvent__DelegateSignature(bool bIsOpen);                                                     // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnContextMenuOpenChangedEvent__DelegateSignature(bool bIsOpen);                                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton_Legacy.HandleMenuOpenChanged
-	// void HandleMenuOpenChanged(bool bIsOpen);                                                                                // [0xbe5e70c] Final|Native|Private 
+	// void HandleMenuOpenChanged(bool bIsOpen);                                                                                // [0xbe151b8] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton_Legacy.HandleItemMulchStateChanged
-	// void HandleItemMulchStateChanged();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleItemMulchStateChanged();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton_Legacy.GetStoreCardObject
-	// class UStoreCardObject* GetStoreCardObject();                                                                            // [0x30be484] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UStoreCardObject* GetStoreCardObject();                                                                            // [0x30b6448] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemButton_Legacy.GetPopupMenu
-	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbe5cd24] Final|Native|Private 
+	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbe137d0] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortStoreSummaryItemPopupMenu
@@ -2517,11 +2517,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemPopupMenu.MulchItem
-	// void MulchItem();                                                                                                        // [0xbe5ed0c] Final|Native|Protected|BlueprintCallable 
+	// void MulchItem();                                                                                                        // [0xbe157b8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemPopupMenu.HandleItemChanged
-	// void HandleItemChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleItemChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemPopupMenu.GetHostButton
-	// class UFortStoreSummaryItemButton* GetHostButton();                                                                      // [0xbe5ca70] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UFortStoreSummaryItemButton* GetHostButton();                                                                      // [0xbe1351c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortStoreSummaryItemPopupMenu_Legacy
@@ -2536,11 +2536,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemPopupMenu_Legacy.MulchItem
-	// void MulchItem();                                                                                                        // [0xbe5ed20] Final|Native|Protected|BlueprintCallable 
+	// void MulchItem();                                                                                                        // [0xbe157cc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemPopupMenu_Legacy.HandleItemChanged
-	// void HandleItemChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleItemChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortStoreSummaryItemPopupMenu_Legacy.GetHostButton
-	// class UFortStoreSummaryItemButton_Legacy* GetHostButton();                                                               // [0xbe5ca94] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UFortStoreSummaryItemButton_Legacy* GetHostButton();                                                               // [0xbe13540] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortStoreSummary_Legacy
@@ -2559,29 +2559,29 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.ShowMulchConfirmationModal
-	// void ShowMulchConfirmationModal();                                                                                       // [0xbe61030] Native|Public|BlueprintCallable 
+	// void ShowMulchConfirmationModal();                                                                                       // [0xbe17adc] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.SetIsInChoiceSelectionMode
-	// void SetIsInChoiceSelectionMode(bool InIsInChoiceSelectionMode);                                                         // [0xbe605f0] Final|Native|Public|BlueprintCallable 
+	// void SetIsInChoiceSelectionMode(bool InIsInChoiceSelectionMode);                                                         // [0xbe1709c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.SetCards
-	// void SetCards(TArray<FCard>& Cards);                                                                                     // [0xbe5f838] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetCards(TArray<FCard>& Cards);                                                                                     // [0xbe162e4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.NotifyPanelDeactivated
-	// void NotifyPanelDeactivated();                                                                                           // [0xbe5ed88] Native|Protected|BlueprintCallable 
+	// void NotifyPanelDeactivated();                                                                                           // [0xbe15834] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.NotifyPanelActivated
-	// void NotifyPanelActivated();                                                                                             // [0xbe5ed50] Native|Protected|BlueprintCallable 
+	// void NotifyPanelActivated();                                                                                             // [0xbe157fc] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.MarkDefaultItemsForMulch
-	// void MarkDefaultItemsForMulch();                                                                                         // [0xbe5ecf8] Final|Native|Public|BlueprintCallable 
+	// void MarkDefaultItemsForMulch();                                                                                         // [0xbe157a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.HideMulchConfirmationModal
-	// void HideMulchConfirmationModal();                                                                                       // [0xbe5e83c] Native|Public|BlueprintCallable 
+	// void HideMulchConfirmationModal();                                                                                       // [0xbe152e8] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.HandleContextMenuOpenChangedBP
-	// void HandleContextMenuOpenChangedBP(bool bIsOpen);                                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleContextMenuOpenChangedBP(bool bIsOpen);                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.HandleContextMenuOpenChanged
-	// void HandleContextMenuOpenChanged(bool bIsOpen);                                                                         // [0xbe5da54] Final|Native|Private 
+	// void HandleContextMenuOpenChanged(bool bIsOpen);                                                                         // [0xbe14500] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.GetIsInChoiceSelectionMode
-	// bool GetIsInChoiceSelectionMode();                                                                                       // [0xbe5cab8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsInChoiceSelectionMode();                                                                                       // [0xbe13564] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.FinalizeFavoriteStatus
-	// void FinalizeFavoriteStatus();                                                                                           // [0xbe5c0cc] Final|Native|Public|BlueprintCallable 
+	// void FinalizeFavoriteStatus();                                                                                           // [0xbe12b78] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStoreSummary_Legacy.CloseSummaryScreen
-	// void CloseSummaryScreen();                                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void CloseSummaryScreen();                                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutGadgetTileBase
@@ -2600,9 +2600,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutGadgetTileBase.SetGadgetToRepresent
-	// void SetGadgetToRepresent(class UFortGadgetItemDefinition* GadgetItemDefinition);                                        // [0xbe6010c] Final|Native|Public|BlueprintCallable 
+	// void SetGadgetToRepresent(class UFortGadgetItemDefinition* GadgetItemDefinition);                                        // [0xbe16bb8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutGadgetTileBase.OnGadgetUpdated
-	// void OnGadgetUpdated(bool bIsValidGadget);                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnGadgetUpdated(bool bIsValidGadget);                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutInGameScreenBase
@@ -2625,9 +2625,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutInGameScreenBase.OnPerkWidgetAdded
-	// void OnPerkWidgetAdded(class UGridSlot* GridSlot);                                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPerkWidgetAdded(class UGridSlot* GridSlot);                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutInGameScreenBase.GetGadgetDefinitionBySlot
-	// class UFortGadgetItemDefinition* GetGadgetDefinitionBySlot(int32_t SlotIndex);                                           // [0xbe5c9e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortGadgetItemDefinition* GetGadgetDefinitionBySlot(int32_t SlotIndex);                                           // [0xbe13490] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroLoadoutPerkTileBase
@@ -2653,7 +2653,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroLoadoutPerkTileBase.OnPerkInitialized
-	// void OnPerkInitialized(EFortHeroPerkDisplayType InPerkType, bool bActive, bool bShowWarning);                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPerkInitialized(EFortHeroPerkDisplayType InPerkType, bool bActive, bool bShowWarning);                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortAlterationModOptinScreenBase
@@ -2669,15 +2669,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortAlterationModOptinScreenBase.SetupItem
-	// void SetupItem(class UFortItem* Item);                                                                                   // [0xbe60f08] Final|Native|Public|BlueprintCallable 
+	// void SetupItem(class UFortItem* Item);                                                                                   // [0xbe179b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAlterationModOptinScreenBase.RequestClose
-	// void RequestClose(bool bCancelled);                                                                                      // [0xbe5f3ac] Final|Native|Protected|BlueprintCallable 
+	// void RequestClose(bool bCancelled);                                                                                      // [0xbe15e58] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAlterationModOptinScreenBase.OnSetupItem
-	// void OnSetupItem();                                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetupItem();                                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationModOptinScreenBase.OnItemConversionComplete
-	// void OnItemConversionComplete();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemConversionComplete();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationModOptinScreenBase.ConvertItemAlterations
-	// void ConvertItemAlterations();                                                                                           // [0xbe5b858] Final|Native|Protected|BlueprintCallable 
+	// void ConvertItemAlterations();                                                                                           // [0xbe12304] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortAlterationModScreenBase
@@ -2700,27 +2700,27 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.SetItemForAlterationsModding
-	// void SetItemForAlterationsModding(class UFortAlterableItem* InAlterableItem);                                            // [0xbe60670] Final|Native|Public|BlueprintCallable 
+	// void SetItemForAlterationsModding(class UFortAlterableItem* InAlterableItem);                                            // [0xbe1711c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.RefreshItemAndAlterationsBP
-	// void RefreshItemAndAlterationsBP();                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void RefreshItemAndAlterationsBP();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.OnItemSlotChanged
-	// void OnItemSlotChanged(bool SelectedSlot);                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemSlotChanged(bool SelectedSlot);                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.OnAlterationOptionChanged
-	// void OnAlterationOptionChanged(class UFortAlterationOption* CurrentAlterationOption);                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnAlterationOptionChanged(class UFortAlterationOption* CurrentAlterationOption);                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.OnAlterationModificationSucess
-	// void OnAlterationModificationSucess(int32_t ModifiedSlotIndex);                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnAlterationModificationSucess(int32_t ModifiedSlotIndex);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.OnAlterationModificationStarted
-	// void OnAlterationModificationStarted();                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnAlterationModificationStarted();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.OnAlterationModificationCompleted
-	// void OnAlterationModificationCompleted();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnAlterationModificationCompleted();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.HandleBackAction
-	// void HandleBackAction(bool& bPassThrough);                                                                               // [0xbe5d948] Final|Native|Private|HasOutParms 
+	// void HandleBackAction(bool& bPassThrough);                                                                               // [0xbe143f4] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.ConfirmSelection
-	// void ConfirmSelection();                                                                                                 // [0xbe5b79c] Final|Native|Protected|BlueprintCallable 
+	// void ConfirmSelection();                                                                                                 // [0xbe12248] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.CancelSelection
-	// void CancelSelection();                                                                                                  // [0xbe5b724] Final|Native|Protected|BlueprintCallable 
+	// void CancelSelection();                                                                                                  // [0xbe121d0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAlterationModScreenBase.AreIngredientRequirementsMent
-	// bool AreIngredientRequirementsMent(TArray<FFortItemQuantityPair>& RequiredIngredients);                                  // [0xbe5b218] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool AreIngredientRequirementsMent(TArray<FFortItemQuantityPair>& RequiredIngredients);                                  // [0xbe11cc4] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemInspectionScreen
@@ -2748,41 +2748,41 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.SetItemToRepresent
-	// void SetItemToRepresent(class UFortItem* Item);                                                                          // [0xbe60770] Final|Native|Protected|BlueprintCallable 
+	// void SetItemToRepresent(class UFortItem* Item);                                                                          // [0xbe1721c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.SetInspectionMode
-	// void SetInspectionMode(EFortItemInspectionMode NewInspectMode);                                                          // [0xbe60570] Final|Native|Protected|BlueprintCallable 
+	// void SetInspectionMode(EFortItemInspectionMode NewInspectMode);                                                          // [0xbe1701c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.SetAttemptingConversion
-	// void SetAttemptingConversion(bool bIsAttemptingConversion);                                                              // [0xbe5f7b0] Final|Native|Public|BlueprintCallable 
+	// void SetAttemptingConversion(bool bIsAttemptingConversion);                                                              // [0xbe1625c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.OpenItemInspect
-	// void OpenItemInspect(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, bool ShouldAllowUpgrading, bool ShouldAllowEvolution, bool ShouldAllowFavorite, bool IsTemporaryItem, bool bAllowRarityUpgrading, int32_t QuantityOverride, class UFortItemTileView* TileViewWidget); // [0xbe5f004] Final|Native|Public|BlueprintCallable 
+	// void OpenItemInspect(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, bool ShouldAllowUpgrading, bool ShouldAllowEvolution, bool ShouldAllowFavorite, bool IsTemporaryItem, bool bAllowRarityUpgrading, int32_t QuantityOverride, class UFortItemTileView* TileViewWidget); // [0xbe15ab0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.IsItemSlottedInCollectionBook
-	// bool IsItemSlottedInCollectionBook(class UFortItem* Item);                                                               // [0xbe5e998] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsItemSlottedInCollectionBook(class UFortItem* Item);                                                               // [0xbe15444] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.HandleItemToInspectDestroyedBP
-	// void HandleItemToInspectDestroyedBP();                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleItemToInspectDestroyedBP();                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.HandleItemToInspectDestroyed
-	// void HandleItemToInspectDestroyed();                                                                                     // [0xbe5e440] Final|Native|Protected 
+	// void HandleItemToInspectDestroyed();                                                                                     // [0xbe14eec] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.HandleItemToInspectChangedBP
-	// void HandleItemToInspectChangedBP(bool bWasFavoritedChanged);                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleItemToInspectChangedBP(bool bWasFavoritedChanged);                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.HandleItemToInspectChanged
-	// void HandleItemToInspectChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                         // [0xbe5e334] Final|Native|Protected 
+	// void HandleItemToInspectChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);                         // [0xbe14de0] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.HandleIsPreviewingChanged
-	// void HandleIsPreviewingChanged();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleIsPreviewingChanged();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.HandleDifferentItemToInspectSetBP
-	// void HandleDifferentItemToInspectSetBP();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentItemToInspectSetBP();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.HandleDifferentInspectionModeSetBP
-	// void HandleDifferentInspectionModeSetBP();                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentInspectionModeSetBP();                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.GetRefundResultItem
-	// class UFortAccountItem* GetRefundResultItem();                                                                           // [0xbe5cf28] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UFortAccountItem* GetRefundResultItem();                                                                           // [0xbe139d4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.GetRefundDescriptionText
-	// FText GetRefundDescriptionText();                                                                                        // [0xbe5cee4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FText GetRefundDescriptionText();                                                                                        // [0xbe13990] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.GetItemQuantityOverride
-	// int32_t GetItemQuantityOverride();                                                                                       // [0xbe5cb84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetItemQuantityOverride();                                                                                       // [0xbe13630] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.GetCycleWidget
-	// class UFortItemInspectCycleWidget* GetCycleWidget();                                                                     // [0xbe5c2b0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UFortItemInspectCycleWidget* GetCycleWidget();                                                                     // [0xbe12d5c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.DoesItemHaveLegacyAlterations
-	// bool DoesItemHaveLegacyAlterations();                                                                                    // [0xbe5bb74] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool DoesItemHaveLegacyAlterations();                                                                                    // [0xbe12620] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortItemInspectionScreen.DoAlterationModification
-	// void DoAlterationModification();                                                                                         // [0xbe5babc] Final|Native|Public|BlueprintCallable 
+	// void DoAlterationModification();                                                                                         // [0xbe12568] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortItemInspectCycleWidget
@@ -2802,21 +2802,21 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortItemInspectCycleWidget.SetupActionHandlers
-	// void SetupActionHandlers();                                                                                              // [0xbe60ef4] Final|Native|Public|BlueprintCallable 
+	// void SetupActionHandlers();                                                                                              // [0xbe179a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectCycleWidget.SetOwningItemInspectScreen
-	// void SetOwningItemInspectScreen(class UFortItemInspectionScreen* ItemInspect);                                           // [0xbe607f0] Final|Native|Public|BlueprintCallable 
+	// void SetOwningItemInspectScreen(class UFortItemInspectionScreen* ItemInspect);                                           // [0xbe1729c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectCycleWidget.SetItemToRepresent
-	// void SetItemToRepresent(class UFortItem* NewItemToRepresent);                                                            // [0xbe606f0] Final|Native|Public|BlueprintCallable 
+	// void SetItemToRepresent(class UFortItem* NewItemToRepresent);                                                            // [0xbe1719c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectCycleWidget.SelectPreviousItem
-	// void SelectPreviousItem();                                                                                               // [0xbe5f798] Final|Native|Public|BlueprintCallable 
+	// void SelectPreviousItem();                                                                                               // [0xbe16244] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectCycleWidget.SelectNextItem
-	// void SelectNextItem();                                                                                                   // [0xbe5f780] Final|Native|Public|BlueprintCallable 
+	// void SelectNextItem();                                                                                                   // [0xbe1622c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectCycleWidget.SelectItemWithOffset
-	// void SelectItemWithOffset(int32_t Offset);                                                                               // [0xbe5f700] Final|Native|Public|BlueprintCallable 
+	// void SelectItemWithOffset(int32_t Offset);                                                                               // [0xbe161ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortItemInspectCycleWidget.OnItemCycled
-	// void OnItemCycled(class UFortItem* OldItem, class UFortItem* NewItem, int32_t OffsetFromPreviousItem);                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemCycled(class UFortItem* OldItem, class UFortItem* NewItem, int32_t OffsetFromPreviousItem);                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortItemInspectCycleWidget.GetItemWithOffset_BP
-	// class UFortItem* GetItemWithOffset_BP(int32_t IndexOffset);                                                              // [0xbe5cc08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetItemWithOffset_BP(int32_t IndexOffset);                                                              // [0xbe136b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortAlterationOption
@@ -2832,19 +2832,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortAlterationOption.Setup
-	// void Setup(FAlterationOption& InAlterationOption, EFortAlterationOptionType InAlterationOptionType);                     // [0xbe60d64] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void Setup(FAlterationOption& InAlterationOption, EFortAlterationOptionType InAlterationOptionType);                     // [0xbe17810] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAlterationOption.OnSetup
-	// void OnSetup();                                                                                                          // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnSetup();                                                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationOption.GetRequiredIngredients
-	// TArray<FFortItemQuantityPair> GetRequiredIngredients();                                                                  // [0xbe5cf4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FFortItemQuantityPair> GetRequiredIngredients();                                                                  // [0xbe139f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortAlterationOption.GetNextPipCount
-	// float GetNextPipCount(float MaxPipCount);                                                                                // [0xbe5cc94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetNextPipCount(float MaxPipCount);                                                                                // [0xbe13740] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortAlterationOption.GetCurrentPipCount
-	// float GetCurrentPipCount(float MaxPipCount);                                                                             // [0xbe5c1e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentPipCount(float MaxPipCount);                                                                             // [0xbe12c8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortAlterationOption.GetAlterationOptionType
-	// EFortAlterationOptionType GetAlterationOptionType();                                                                     // [0xbe5c1c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFortAlterationOptionType GetAlterationOptionType();                                                                     // [0xbe12c74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortAlterationOption.GetAlterationDefinition
-	// class UFortAlterationItemDefinition* GetAlterationDefinition();                                                          // [0xbe5c1a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortAlterationItemDefinition* GetAlterationDefinition();                                                          // [0xbe12c50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortAlterationOptionsBase
@@ -2866,19 +2866,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortAlterationOptionsBase.ProcessAlterationOptions
-	// void ProcessAlterationOptions(bool bIntroAlterations);                                                                   // [0xbe5f2d4] Final|Native|Public|BlueprintCallable 
+	// void ProcessAlterationOptions(bool bIntroAlterations);                                                                   // [0xbe15d80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortAlterationOptionsBase.OnItemChanged
-	// void OnItemChanged(bool bIntroAlterations);                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnItemChanged(bool bIntroAlterations);                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationOptionsBase.OnGenerateOption
-	// void OnGenerateOption(EFortAlterationOptionType OptionType, class UFortAlterationOption* OptionWidget);                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnGenerateOption(EFortAlterationOptionType OptionType, class UFortAlterationOption* OptionWidget);                  // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortAlterationOptionsBase.IsValidAlterationSlot
-	// bool IsValidAlterationSlot();                                                                                            // [0xbe5ebfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidAlterationSlot();                                                                                            // [0xbe156a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortAlterationOptionsBase.HandleAlterationsOptionSelected
-	// void HandleAlterationsOptionSelected(class UCommonButtonLegacy* AlterationOptionButton, int32_t GroupIndex);             // [0xbe5d884] Final|Native|Public  
+	// void HandleAlterationsOptionSelected(class UCommonButtonLegacy* AlterationOptionButton, int32_t GroupIndex);             // [0xbe14330] Final|Native|Public  
 	// Function /Script/SaveTheWorldUI.FortAlterationOptionsBase.HandleAlterationsOptionHovered
-	// void HandleAlterationsOptionHovered(class UCommonButtonLegacy* AlterationOptionButton, int32_t GroupIndex);              // [0xbe5d884] Final|Native|Public  
+	// void HandleAlterationsOptionHovered(class UCommonButtonLegacy* AlterationOptionButton, int32_t GroupIndex);              // [0xbe14330] Final|Native|Public  
 	// Function /Script/SaveTheWorldUI.FortAlterationOptionsBase.DoAlterationOptionsExist
-	// bool DoAlterationOptionsExist(EFortAlterationOptionType OptionType);                                                     // [0xbe5bad0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool DoAlterationOptionsExist(EFortAlterationOptionType OptionType);                                                     // [0xbe1257c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortMissionActivationInfoSTW
@@ -2897,59 +2897,59 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.TimeSecondsToText
-	// FText TimeSecondsToText(float InSeconds);                                                                                // [0xa40b540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText TimeSecondsToText(float InSeconds);                                                                                // [0xa40446c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.SubmitVote
-	// void SubmitVote(EFortVoteType VoteType, bool bApprove);                                                                  // [0xbe6104c] Final|Native|Public|BlueprintCallable 
+	// void SubmitVote(EFortVoteType VoteType, bool bApprove);                                                                  // [0xbe17af8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.RequestVote
-	// void RequestVote(EFortVoteType VoteType, float VoteDuration, float FailedVoteLockOutDuration, EFortVoteArbitratorType ArbitratorType); // [0xbe5f5c4] Final|Native|Public|BlueprintCallable 
+	// void RequestVote(EFortVoteType VoteType, float VoteDuration, float FailedVoteLockOutDuration, EFortVoteArbitratorType ArbitratorType); // [0xbe16070] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.IsVoteLocked
-	// bool IsVoteLocked(EFortVoteType VoteType);                                                                               // [0xa40528c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVoteLocked(EFortVoteType VoteType);                                                                               // [0xa3fe1b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.IsVoteActive
-	// bool IsVoteActive(EFortVoteType VoteType);                                                                               // [0xa405200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVoteActive(EFortVoteType VoteType);                                                                               // [0xa3fe12c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.IsPlayerVoteInstigator
-	// bool IsPlayerVoteInstigator(EFortVoteType VoteType);                                                                     // [0xa405158] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayerVoteInstigator(EFortVoteType VoteType);                                                                     // [0xa3fe084] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.IsAnyVoteActive
-	// bool IsAnyVoteActive();                                                                                                  // [0xa405070] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAnyVoteActive();                                                                                                  // [0xa3fdf9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.HasPlayerVoted
-	// bool HasPlayerVoted(EFortVoteType VoteType);                                                                             // [0xa404f68] Final|Native|Public|BlueprintCallable 
+	// bool HasPlayerVoted(EFortVoteType VoteType);                                                                             // [0xa3fde94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.HandleTeamMemberRemoved
-	// void HandleTeamMemberRemoved(int32_t RemovedIndex);                                                                      // [0xa404d0c] Final|Native|Private 
+	// void HandleTeamMemberRemoved(int32_t RemovedIndex);                                                                      // [0xa3fdc38] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.HandleTeamMemberAdded
-	// void HandleTeamMemberAdded(FFortTeamMemberInfo NewInfo);                                                                 // [0xa404b78] Final|Native|Private 
+	// void HandleTeamMemberAdded(FFortTeamMemberInfo NewInfo);                                                                 // [0xa3fdaa4] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.HandleGameplayVoteUpdated
-	// void HandleGameplayVoteUpdated(EFortVoteType VoteType, EFortVoteStatus VoteStatus, int32_t VoteResult, TArray<FVoter>& Voters); // [0xbe5df74] Final|Native|Private|HasOutParms 
+	// void HandleGameplayVoteUpdated(EFortVoteType VoteType, EFortVoteStatus VoteStatus, int32_t VoteResult, TArray<FVoter>& Voters); // [0xbe14a20] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetVoteTimeRemaining
-	// float GetVoteTimeRemaining(EFortVoteType VoteType);                                                                      // [0xa404344] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetVoteTimeRemaining(EFortVoteType VoteType);                                                                      // [0xa3fd270] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetVoters
-	// TArray<FVoter> GetVoters(EFortVoteType VoteType);                                                                        // [0xa4044a4] Final|Native|Public|BlueprintCallable 
+	// TArray<FVoter> GetVoters(EFortVoteType VoteType);                                                                        // [0xa3fd3d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetVoteCounts
-	// void GetVoteCounts(EFortVoteType VoteType, int32_t& OutYesVoteCount, int32_t& OutNoVoteCount);                           // [0xa4041ec] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetVoteCounts(EFortVoteType VoteType, int32_t& OutYesVoteCount, int32_t& OutNoVoteCount);                           // [0xa3fd118] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetStartObjectiveBluGloRequirement
-	// int32_t GetStartObjectiveBluGloRequirement();                                                                            // [0xa404138] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetStartObjectiveBluGloRequirement();                                                                            // [0xa3fd064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetPrimaryMissionInfo
-	// class UFortMissionInfo* GetPrimaryMissionInfo();                                                                         // [0xa404098] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortMissionInfo* GetPrimaryMissionInfo();                                                                         // [0xa3fcfc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetPrimaryMission
-	// class AFortMission* GetPrimaryMission();                                                                                 // [0xa404074] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortMission* GetPrimaryMission();                                                                                 // [0xa3fcfa0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetMissionVoteType
-	// EFortVoteType GetMissionVoteType();                                                                                      // [0xa403d28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFortVoteType GetMissionVoteType();                                                                                      // [0xa3fcc54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetMissionObjectiveTimeRemaining
-	// float GetMissionObjectiveTimeRemaining();                                                                                // [0xa403d00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMissionObjectiveTimeRemaining();                                                                                // [0xa3fcc2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetLockoutTimeRemaining
-	// FText GetLockoutTimeRemaining(EFortVoteType VoteType);                                                                   // [0xa403bc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetLockoutTimeRemaining(EFortVoteType VoteType);                                                                   // [0xa3fcaf4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetInstigatorId
-	// FUniqueNetIdRepl GetInstigatorId(EFortVoteType VoteType);                                                                // [0xa403b10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FUniqueNetIdRepl GetInstigatorId(EFortVoteType VoteType);                                                                // [0xa3fca3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetIncreaseDifficultyBluGloRequirement
-	// int32_t GetIncreaseDifficultyBluGloRequirement();                                                                        // [0xa403a78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIncreaseDifficultyBluGloRequirement();                                                                        // [0xa3fc9a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetDeltaRewards
-	// void GetDeltaRewards(int32_t BaseDifficultyIncreaseTier, int32_t ComparedDifficultyIncreaseTier, TArray<FFortItemDelta>& DeltaRewards); // [0xa4032b8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetDeltaRewards(int32_t BaseDifficultyIncreaseTier, int32_t ComparedDifficultyIncreaseTier, TArray<FFortItemDelta>& DeltaRewards); // [0xa3fc1e4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetAvailableBluGloCount
-	// int32_t GetAvailableBluGloCount();                                                                                       // [0xa40327c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAvailableBluGloCount();                                                                                       // [0xa3fc1a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.GetArbitratorType
-	// EFortVoteArbitratorType GetArbitratorType(EFortVoteType VoteType);                                                       // [0xa4031e8] Final|Native|Public|BlueprintCallable 
+	// EFortVoteArbitratorType GetArbitratorType(EFortVoteType VoteType);                                                       // [0xa3fc114] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.DoesPrimaryMissionContainTags
-	// bool DoesPrimaryMissionContainTags(FGameplayTagContainer& Tags);                                                         // [0xa4010c4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool DoesPrimaryMissionContainTags(FGameplayTagContainer& Tags);                                                         // [0xa3f9ff0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationInfoSTW.CanRequestVote
-	// bool CanRequestVote(EFortVoteType VoteType);                                                                             // [0xa400dd4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanRequestVote(EFortVoteType VoteType);                                                                             // [0xa3f9d00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortMissionActivationWidgetSTWPanel
@@ -2965,17 +2965,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTWPanel.SetInfoObject
-	// void SetInfoObject(class UFortMissionActivationInfoSTW* NewInfoObject);                                                  // [0xbe6018c] Final|Native|Public|BlueprintCallable 
+	// void SetInfoObject(class UFortMissionActivationInfoSTW* NewInfoObject);                                                  // [0xbe16c38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTWPanel.OnVoteUpdatedBP
-	// void OnVoteUpdatedBP(EFortVoteType VoteType);                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnVoteUpdatedBP(EFortVoteType VoteType);                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTWPanel.OnVoteLockoutChangedBP
-	// void OnVoteLockoutChangedBP(EFortVoteType VoteType, bool bIsLocked);                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnVoteLockoutChangedBP(EFortVoteType VoteType, bool bIsLocked);                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTWPanel.OnMultiplayerChangedBP
-	// void OnMultiplayerChangedBP(bool bIsMultiplayer);                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMultiplayerChangedBP(bool bIsMultiplayer);                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTWPanel.OnActiveVoteChangedBP
-	// void OnActiveVoteChangedBP(EFortVoteType VoteType, bool bIsVoteActive, int32_t VoteResult);                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnActiveVoteChangedBP(EFortVoteType VoteType, bool bIsVoteActive, int32_t VoteResult);                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTWPanel.InfoObjectUpdated
-	// void InfoObjectUpdated();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void InfoObjectUpdated();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW
@@ -2993,21 +2993,21 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW.RequestStartObjectiveState
-	// void RequestStartObjectiveState();                                                                                       // [0xbe5f560] Final|Native|Public|BlueprintCallable 
+	// void RequestStartObjectiveState();                                                                                       // [0xbe1600c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW.RequestDifficultyIncreaseState
-	// void RequestDifficultyIncreaseState();                                                                                   // [0xbe5f488] Final|Native|Public|BlueprintCallable 
+	// void RequestDifficultyIncreaseState();                                                                                   // [0xbe15f34] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW.RequestDefaultState
-	// void RequestDefaultState();                                                                                              // [0xbe5f42c] Final|Native|Public|BlueprintCallable 
+	// void RequestDefaultState();                                                                                              // [0xbe15ed8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW.OnVoteLockoutChangedBP
-	// void OnVoteLockoutChangedBP(EFortVoteType VoteType, bool bIsLocked);                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnVoteLockoutChangedBP(EFortVoteType VoteType, bool bIsLocked);                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW.OnStateUpdated
-	// void OnStateUpdated(EFortMissionActivationWidgetSTWState ActiveState, EFortMissionActivationWidgetSTWState PreviousState); // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStateUpdated(EFortMissionActivationWidgetSTWState ActiveState, EFortMissionActivationWidgetSTWState PreviousState); // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW.OnMultiplayerChangedBP
-	// void OnMultiplayerChangedBP(bool bIsMultiplayer);                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMultiplayerChangedBP(bool bIsMultiplayer);                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW.OnActiveVoteChangedBP
-	// void OnActiveVoteChangedBP(EFortVoteType VoteType, bool bIsVoteActive, int32_t VoteResult);                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnActiveVoteChangedBP(EFortVoteType VoteType, bool bIsVoteActive, int32_t VoteResult);                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortMissionActivationWidgetSTW.GetCurrentState
-	// EFortMissionActivationWidgetSTWState GetCurrentState();                                                                  // [0x6f200a0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EFortMissionActivationWidgetSTWState GetCurrentState();                                                                  // [0x6f661ec] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortOutpostScreen
@@ -3022,7 +3022,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortOutpostScreen.SetInputReflectorBoxVisibility
-	// void SetInputReflectorBoxVisibility(bool bShow);                                                                         // [0xbe6049c] Final|Native|Public|BlueprintCallable 
+	// void SetInputReflectorBoxVisibility(bool bShow);                                                                         // [0xbe16f48] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortCampaignPlayFlow
@@ -3048,27 +3048,27 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.SetCurrentQuest
-	// void SetCurrentQuest(class UFortQuestItem* InCurrentQuest);                                                              // [0xbe5ff8c] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentQuest(class UFortQuestItem* InCurrentQuest);                                                              // [0xbe16a38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.RegisterEndSpokenDialogEvent
-	// void RegisterEndSpokenDialogEvent();                                                                                     // [0xbe5f368] Final|Native|Protected|BlueprintCallable 
+	// void RegisterEndSpokenDialogEvent();                                                                                     // [0xbe15e14] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.OnEndSpokenDialog
-	// void OnEndSpokenDialog();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEndSpokenDialog();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.HandleCurrentQuestChangedBP
-	// void HandleCurrentQuestChangedBP();                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleCurrentQuestChangedBP();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.GetVisibleObjectives
-	// void GetVisibleObjectives(TArray<UFortQuestObjectiveInfo*>& VisibleObjectives);                                          // [0xbe5d1a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetVisibleObjectives(TArray<UFortQuestObjectiveInfo*>& VisibleObjectives);                                          // [0xbe13c4c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.GetRewards
-	// void GetRewards(TArray<FFortItemInstanceQuantityPair>& OutRewards, TArray<FFortItemInstanceQuantityPair>& OutSelectableRewards); // [0xbe5cfe0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetRewards(TArray<FFortItemInstanceQuantityPair>& OutRewards, TArray<FFortItemInstanceQuantityPair>& OutSelectableRewards); // [0xbe13a8c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.GetFutureObjectives
-	// void GetFutureObjectives(TArray<UFortQuestObjectiveInfo*>& FutureObjectives);                                            // [0xbe5c324] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetFutureObjectives(TArray<UFortQuestObjectiveInfo*>& FutureObjectives);                                            // [0xbe12dd0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.GetActiveMissionTileType
-	// EFortTheaterMapTileType GetActiveMissionTileType();                                                                      // [0xbe5c11c] Final|Native|Public|BlueprintCallable 
+	// EFortTheaterMapTileType GetActiveMissionTileType();                                                                      // [0xbe12bc8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.CanPlayQuest
-	// bool CanPlayQuest();                                                                                                     // [0xbe5b67c] Final|Native|Public|BlueprintCallable 
+	// bool CanPlayQuest();                                                                                                     // [0xbe12128] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.CanPartyLeaderPlayQuest
-	// bool CanPartyLeaderPlayQuest();                                                                                          // [0xbe5b658] Final|Native|Public|BlueprintCallable 
+	// bool CanPartyLeaderPlayQuest();                                                                                          // [0xbe12104] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortJournalQuestDetails.CanGotoQuest
-	// bool CanGotoQuest();                                                                                                     // [0xbe5b62c] Final|Native|Public|BlueprintCallable 
+	// bool CanGotoQuest();                                                                                                     // [0xbe120d8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortJournalQuestProgressBar
@@ -3084,7 +3084,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortJournalQuestProgressBar.GetProgressDetails
-	// void GetProgressDetails(FText& OutNumerator, FText& OutDenominator, float& OutFraction);                                 // [0xbe5cd48] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void GetProgressDetails(FText& OutNumerator, FText& OutDenominator, float& OutFraction);                                 // [0xbe137f4] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortLayoutQuestNode
@@ -3128,13 +3128,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortProgressArrowButton.UpdateArrowColor
-	// void UpdateArrowColor(FSlateColor Color, FSlateColor HoverColor);                                                        // [0xbe614c8] Final|Native|Public|BlueprintCallable 
+	// void UpdateArrowColor(FSlateColor Color, FSlateColor HoverColor);                                                        // [0xbe17f74] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortProgressArrowButton.OnShadowColorSet
-	// void OnShadowColorSet();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnShadowColorSet();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortProgressArrowButton.OnIsInteractiveSet
-	// void OnIsInteractiveSet(bool bIsInteractive);                                                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnIsInteractiveSet(bool bIsInteractive);                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortProgressArrowButton.OnArrowColorSet
-	// void OnArrowColorSet();                                                                                                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnArrowColorSet();                                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortProgressArrowButton_Legacy
@@ -3152,13 +3152,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortProgressArrowButton_Legacy.UpdateArrowColor
-	// void UpdateArrowColor(FSlateColor Color, FSlateColor HoverColor);                                                        // [0xbe6171c] Final|Native|Public|BlueprintCallable 
+	// void UpdateArrowColor(FSlateColor Color, FSlateColor HoverColor);                                                        // [0xbe181c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortProgressArrowButton_Legacy.OnShadowColorSet
-	// void OnShadowColorSet();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnShadowColorSet();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortProgressArrowButton_Legacy.OnIsInteractiveSet
-	// void OnIsInteractiveSet(bool bIsInteractive);                                                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnIsInteractiveSet(bool bIsInteractive);                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortProgressArrowButton_Legacy.OnArrowColorSet
-	// void OnArrowColorSet();                                                                                                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnArrowColorSet();                                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestExpiresWidget
@@ -3174,9 +3174,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestExpiresWidget.SetData
-	// void SetData(class UFortQuestItem* InItem);                                                                              // [0x9039b80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetData(class UFortQuestItem* InItem);                                                                              // [0x905563c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestExpiresWidget.OnQuestExpirationUpdated
-	// void OnQuestExpirationUpdated();                                                                                         // [0x1555df0] Native|Event|Protected|BlueprintEvent 
+	// void OnQuestExpirationUpdated();                                                                                         // [0x212f900] Native|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapCosmeticListWidget
@@ -3191,9 +3191,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapCosmeticListWidget.UpdateCosmeticListDisplay
-	// void UpdateCosmeticListDisplay();                                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void UpdateCosmeticListDisplay();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapCosmeticListWidget.GetDisplayItemDefs
-	// TArray<UFortItemDefinition*> GetDisplayItemDefs();                                                                       // [0xbe5c2c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFortItemDefinition*> GetDisplayItemDefs();                                                                       // [0xbe12d74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapDetailsPanelBase
@@ -3211,11 +3211,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapDetailsPanelBase.SetScrollWidget
-	// void SetScrollWidget();                                                                                                  // [0x9982828] Final|Native|Public|BlueprintCallable 
+	// void SetScrollWidget();                                                                                                  // [0x998bfc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapDetailsPanelBase.SetQuestToDisplay
-	// void SetQuestToDisplay(class UFortQuestItemDefinition* QuestDef);                                                        // [0x7a74a64] Final|Native|Public|BlueprintCallable 
+	// void SetQuestToDisplay(class UFortQuestItemDefinition* QuestDef);                                                        // [0x7aaec38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapDetailsPanelBase.HandleQuestsUpdatedInternal
-	// void HandleQuestsUpdatedInternal();                                                                                      // [0xbe5e78c] Final|Native|Private 
+	// void HandleQuestsUpdatedInternal();                                                                                      // [0xbe15238] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapDetailsPanel
@@ -3304,43 +3304,43 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.UpdateGoButtonBangState
-	// void UpdateGoButtonBangState(bool bClear);                                                                               // [0xbe8ebf0] Final|Native|Public|BlueprintCallable 
+	// void UpdateGoButtonBangState(bool bClear);                                                                               // [0xbe45630] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.UpdateCalloutData
-	// void UpdateCalloutData();                                                                                                // [0xbe8ebc8] Final|Native|Public|BlueprintCallable 
+	// void UpdateCalloutData();                                                                                                // [0xbe45608] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.UpdateActiveEvents
-	// void UpdateActiveEvents();                                                                                               // [0xbe8eb50] Final|Native|Public|BlueprintCallable 
+	// void UpdateActiveEvents();                                                                                               // [0xbe45590] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.SetIsFaded
-	// void SetIsFaded(bool Faded);                                                                                             // [0xbe8d714] Final|Native|Public|BlueprintCallable 
+	// void SetIsFaded(bool Faded);                                                                                             // [0xbe44154] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.SetIsExpanded
-	// void SetIsExpanded(bool Expanded);                                                                                       // [0xbe8d614] Final|Native|Public|BlueprintCallable 
+	// void SetIsExpanded(bool Expanded);                                                                                       // [0xbe44054] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.ResetCallout
-	// void ResetCallout();                                                                                                     // [0xbe8c9a0] Final|Native|Public|BlueprintCallable 
+	// void ResetCallout();                                                                                                     // [0xbe433e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.PlayFadeOut
-	// void PlayFadeOut();                                                                                                      // [0xbe8c018] Final|Native|Public|BlueprintCallable 
+	// void PlayFadeOut();                                                                                                      // [0xbe42a58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.PlayFadeIn
-	// void PlayFadeIn();                                                                                                       // [0xbe8bfc0] Final|Native|Public|BlueprintCallable 
+	// void PlayFadeIn();                                                                                                       // [0xbe42a00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.OnResetCallout
-	// void OnResetCallout();                                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnResetCallout();                                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.OnPlayFadeAnimation
-	// void OnPlayFadeAnimation(bool bIsFadeOut);                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayFadeAnimation(bool bIsFadeOut);                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.OnEventIndexChanged
-	// void OnEventIndexChanged();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnEventIndexChanged();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.OnDeactivatePlayAnimation
-	// void OnDeactivatePlayAnimation();                                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnDeactivatePlayAnimation();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.OnActivatePlayAnimation
-	// void OnActivatePlayAnimation();                                                                                          // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnActivatePlayAnimation();                                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.IsCurrentEventUnlocked
-	// bool IsCurrentEventUnlocked();                                                                                           // [0xbe8b438] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCurrentEventUnlocked();                                                                                           // [0xbe41e78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.GetRequiredQuestForCurrentEvent
-	// class UFortQuestItemDefinition* GetRequiredQuestForCurrentEvent();                                                       // [0xbe8a4f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortQuestItemDefinition* GetRequiredQuestForCurrentEvent();                                                       // [0xbe40f30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.GetIsFaded
-	// bool GetIsFaded();                                                                                                       // [0xbe8a0f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsFaded();                                                                                                       // [0xbe40b38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.GetIsExpanded
-	// bool GetIsExpanded();                                                                                                    // [0x8d98ee4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsExpanded();                                                                                                    // [0x8db8188] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.GetEventCount
-	// int32_t GetEventCount();                                                                                                 // [0x3b2ec5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetEventCount();                                                                                                 // [0x3b250f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout.DeactivateCallout
-	// void DeactivateCallout();                                                                                                // [0xbe898f8] Final|Native|Public|BlueprintCallable 
+	// void DeactivateCallout();                                                                                                // [0xbe40338] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy
@@ -3371,43 +3371,43 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.UpdateGoButtonBangState
-	// void UpdateGoButtonBangState(bool bClear);                                                                               // [0xbe8ec94] Final|Native|Public|BlueprintCallable 
+	// void UpdateGoButtonBangState(bool bClear);                                                                               // [0xbe456d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.UpdateCalloutData
-	// void UpdateCalloutData();                                                                                                // [0xbe8ebdc] Final|Native|Public|BlueprintCallable 
+	// void UpdateCalloutData();                                                                                                // [0xbe4561c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.UpdateActiveEvents
-	// void UpdateActiveEvents();                                                                                               // [0xbe8eb8c] Final|Native|Public|BlueprintCallable 
+	// void UpdateActiveEvents();                                                                                               // [0xbe455cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.SetIsFaded
-	// void SetIsFaded(bool Faded);                                                                                             // [0xbe8d794] Final|Native|Public|BlueprintCallable 
+	// void SetIsFaded(bool Faded);                                                                                             // [0xbe441d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.SetIsExpanded
-	// void SetIsExpanded(bool Expanded);                                                                                       // [0xbe8d694] Final|Native|Public|BlueprintCallable 
+	// void SetIsExpanded(bool Expanded);                                                                                       // [0xbe440d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.ResetCallout
-	// void ResetCallout();                                                                                                     // [0xbe8c9b4] Final|Native|Public|BlueprintCallable 
+	// void ResetCallout();                                                                                                     // [0xbe433f4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.PlayFadeOut
-	// void PlayFadeOut();                                                                                                      // [0xbe8c044] Final|Native|Public|BlueprintCallable 
+	// void PlayFadeOut();                                                                                                      // [0xbe42a84] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.PlayFadeIn
-	// void PlayFadeIn();                                                                                                       // [0xbe8bfec] Final|Native|Public|BlueprintCallable 
+	// void PlayFadeIn();                                                                                                       // [0xbe42a2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.OnResetCallout
-	// void OnResetCallout();                                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnResetCallout();                                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.OnPlayFadeAnimation
-	// void OnPlayFadeAnimation(bool bIsFadeOut);                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayFadeAnimation(bool bIsFadeOut);                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.OnEventIndexChanged
-	// void OnEventIndexChanged();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnEventIndexChanged();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.OnDeactivatePlayAnimation
-	// void OnDeactivatePlayAnimation();                                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnDeactivatePlayAnimation();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.OnActivatePlayAnimation
-	// void OnActivatePlayAnimation();                                                                                          // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnActivatePlayAnimation();                                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.IsCurrentEventUnlocked
-	// bool IsCurrentEventUnlocked();                                                                                           // [0xbe8b45c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCurrentEventUnlocked();                                                                                           // [0xbe41e9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.GetRequiredQuestForCurrentEvent
-	// class UFortQuestItemDefinition* GetRequiredQuestForCurrentEvent();                                                       // [0xbe8a52c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortQuestItemDefinition* GetRequiredQuestForCurrentEvent();                                                       // [0xbe40f6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.GetIsFaded
-	// bool GetIsFaded();                                                                                                       // [0xb5309f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsFaded();                                                                                                       // [0xb504f74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.GetIsExpanded
-	// bool GetIsExpanded();                                                                                                    // [0xb530a0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsExpanded();                                                                                                    // [0xb504f8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.GetEventCount
-	// int32_t GetEventCount();                                                                                                 // [0xbe89c24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetEventCount();                                                                                                 // [0xbe40664] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapEventCallout_Legacy.DeactivateCallout
-	// void DeactivateCallout();                                                                                                // [0xbe8990c] Final|Native|Public|BlueprintCallable 
+	// void DeactivateCallout();                                                                                                // [0xbe4034c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapEventDetailsPanel
@@ -3571,9 +3571,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapNodeLayout.HandleQuestIndexSelectionModelIndexChanged
-	// void HandleQuestIndexSelectionModelIndexChanged(bool bUpdateButtonSelection);                                            // [0xbe8b030] Final|Native|Private 
+	// void HandleQuestIndexSelectionModelIndexChanged(bool bUpdateButtonSelection);                                            // [0xbe41a70] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortQuestMapNodeLayout.HandleQuestButtonSelected
-	// void HandleQuestButtonSelected(class UCommonButtonBase* SelectedQuestButton, int32_t ButtonIndex);                       // [0xbe8ae6c] Final|Native|Private 
+	// void HandleQuestButtonSelected(class UCommonButtonBase* SelectedQuestButton, int32_t ButtonIndex);                       // [0xbe418ac] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapNodeLayout_Legacy
@@ -3595,9 +3595,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapNodeLayout_Legacy.HandleQuestIndexSelectionModelIndexChanged
-	// void HandleQuestIndexSelectionModelIndexChanged(bool bUpdateButtonSelection);                                            // [0xbe8b0b0] Final|Native|Private 
+	// void HandleQuestIndexSelectionModelIndexChanged(bool bUpdateButtonSelection);                                            // [0xbe41af0] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortQuestMapNodeLayout_Legacy.HandleQuestButtonSelected
-	// void HandleQuestButtonSelected(class UCommonButtonLegacy* SelectedQuestButton, int32_t ButtonIndex);                     // [0xbe8ae6c] Final|Native|Private 
+	// void HandleQuestButtonSelected(class UCommonButtonLegacy* SelectedQuestButton, int32_t ButtonIndex);                     // [0xbe418ac] Final|Native|Private 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapQuestTile
@@ -3614,11 +3614,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapQuestTile.HandleSelectedChange
-	// void HandleSelectedChange(bool Selected);                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleSelectedChange(bool Selected);                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapQuestTile.HandleQuestDataChangedBP
-	// void HandleQuestDataChangedBP();                                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleQuestDataChangedBP();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapQuestTile.GetQuestNodeData
-	// void GetQuestNodeData(class UFortQuestItemDefinition*& QuestItemDefinition, FFortQuestMapNode& NodeData);                // [0xbe8a3e4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetQuestNodeData(class UFortQuestItemDefinition*& QuestItemDefinition, FFortQuestMapNode& NodeData);                // [0xbe40e24] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapQuestTile_Legacy
@@ -3635,11 +3635,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapQuestTile_Legacy.HandleSelectedChange
-	// void HandleSelectedChange(bool Selected);                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleSelectedChange(bool Selected);                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapQuestTile_Legacy.HandleQuestDataChangedBP
-	// void HandleQuestDataChangedBP();                                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleQuestDataChangedBP();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapQuestTile_Legacy.GetQuestNodeData
-	// void GetQuestNodeData(class UFortQuestItemDefinition*& QuestItemDefinition, FFortQuestMapNode& NodeData);                // [0xbe8a3e4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetQuestNodeData(class UFortQuestItemDefinition*& QuestItemDefinition, FFortQuestMapNode& NodeData);                // [0xbe40e24] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapScreen
@@ -3668,55 +3668,55 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.UpdateQuestMapMode
-	// void UpdateQuestMapMode(EQuestMapScreenMode QuestMapMode);                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void UpdateQuestMapMode(EQuestMapScreenMode QuestMapMode);                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.UpdateInputActionStates
-	// void UpdateInputActionStates(bool bShowingCallout);                                                                      // [0xbe8ed38] Final|Native|Protected|BlueprintCallable 
+	// void UpdateInputActionStates(bool bShowingCallout);                                                                      // [0xbe45778] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.ToggleQuestMapState
-	// void ToggleQuestMapState();                                                                                              // [0xbe8de50] Final|Native|Public|BlueprintCallable 
+	// void ToggleQuestMapState();                                                                                              // [0xbe44890] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.ShowQuestLog
-	// void ShowQuestLog(class UFortQuestItem* QuestItem);                                                                      // [0xbe8ddd0] Final|Native|Protected|BlueprintCallable 
+	// void ShowQuestLog(class UFortQuestItem* QuestItem);                                                                      // [0xbe44810] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.SetQuestMapViewer
-	// void SetQuestMapViewer(class UFortQuestMapViewer* Value);                                                                // [0xbe8daa0] Final|Native|Public|BlueprintCallable 
+	// void SetQuestMapViewer(class UFortQuestMapViewer* Value);                                                                // [0xbe444e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.SetIgnorePageNavigation
-	// void SetIgnorePageNavigation(bool bIgnoreNavigation);                                                                    // [0xbe8d27c] Final|Native|Public|BlueprintCallable 
+	// void SetIgnorePageNavigation(bool bIgnoreNavigation);                                                                    // [0xbe43cbc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.SetBeyondCutoffQuest
-	// void SetBeyondCutoffQuest(bool bBeyondCutoff);                                                                           // [0xbe8ca78] Final|Native|Public|BlueprintCallable 
+	// void SetBeyondCutoffQuest(bool bBeyondCutoff);                                                                           // [0xbe434b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.OnShowCurrentQuestInputActionValueChanged
-	// void OnShowCurrentQuestInputActionValueChanged();                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnShowCurrentQuestInputActionValueChanged();                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.OnEventCalloutExpandChanged
-	// void OnEventCalloutExpandChanged();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnEventCalloutExpandChanged();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.OnEventCalloutButtonClicked
-	// void OnEventCalloutButtonClicked();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnEventCalloutButtonClicked();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.IsEventFlagActive
-	// bool IsEventFlagActive(FString EventFlag);                                                                               // [0xbe8b480] Final|Native|Public|BlueprintCallable 
+	// bool IsEventFlagActive(FString EventFlag);                                                                               // [0xbe41ec0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.IsBeyondQuest
-	// bool IsBeyondQuest(class UFortQuestItemDefinition* QuestDef);                                                            // [0xbe8b3a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBeyondQuest(class UFortQuestItemDefinition* QuestDef);                                                            // [0xbe41de8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.InitializeQuestData
-	// void InitializeQuestData();                                                                                              // [0xbe8b278] Final|Native|Public|BlueprintCallable 
+	// void InitializeQuestData();                                                                                              // [0xbe41cb8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.HandleQuestPageChanged
-	// void HandleQuestPageChanged();                                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleQuestPageChanged();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.HandleQuestIndexSelectionModelChanged
-	// void HandleQuestIndexSelectionModelChanged(bool bUpdateButtonSelection);                                                 // [0xbe8af30] Final|Native|Private 
+	// void HandleQuestIndexSelectionModelChanged(bool bUpdateButtonSelection);                                                 // [0xbe41970] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.HandleQuestDetailsUpdated
-	// void HandleQuestDetailsUpdated(class UFortQuestItem* QuestDefinition);                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleQuestDetailsUpdated(class UFortQuestItem* QuestDefinition);                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.HandleMapViewerNavigationRequest
-	// void HandleMapViewerNavigationRequest(EViewerNavigationDirection Direction);                                             // [0xbe8a7b8] Final|Native|Public|BlueprintCallable 
+	// void HandleMapViewerNavigationRequest(EViewerNavigationDirection Direction);                                             // [0xbe411f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.HandleMapModeSwitch
-	// void HandleMapModeSwitch();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleMapModeSwitch();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.HandleEventQuestMapActivate
-	// void HandleEventQuestMapActivate();                                                                                      // [0xbe8a6d8] Final|Native|Public|BlueprintCallable 
+	// void HandleEventQuestMapActivate();                                                                                      // [0xbe41118] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.HandleEventCalloutDataChangedBP
-	// void HandleEventCalloutDataChangedBP();                                                                                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleEventCalloutDataChangedBP();                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.HandleBackInputAction
-	// void HandleBackInputAction();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleBackInputAction();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.GetCurrentPageCameraMode
-	// EFrontEndCamera GetCurrentPageCameraMode();                                                                              // [0xbe899d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFrontEndCamera GetCurrentPageCameraMode();                                                                              // [0xbe40418] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.GetBeyondCutoffQuest
-	// bool GetBeyondCutoffQuest();                                                                                             // [0x8723b44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBeyondCutoffQuest();                                                                                             // [0x874d86c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.ClaimQuestRewards
-	// void ClaimQuestRewards(class UFortQuestItem* QuestItem);                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ClaimQuestRewards(class UFortQuestItem* QuestItem);                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen.CheckForNewMainQuest
-	// void CheckForNewMainQuest();                                                                                             // [0xbe895b0] Final|Native|Public|BlueprintCallable 
+	// void CheckForNewMainQuest();                                                                                             // [0xbe3fff0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy
@@ -3740,49 +3740,49 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.UpdateQuestMapMode
-	// void UpdateQuestMapMode(EQuestMapScreenMode QuestMapMode);                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void UpdateQuestMapMode(EQuestMapScreenMode QuestMapMode);                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.ToggleQuestMapState
-	// void ToggleQuestMapState();                                                                                              // [0xbe8de70] Final|Native|Public|BlueprintCallable 
+	// void ToggleQuestMapState();                                                                                              // [0xbe448b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.SetQuestMapViewer
-	// void SetQuestMapViewer(class UFortQuestMapViewer_Legacy* Value);                                                         // [0xbe8db20] Final|Native|Public|BlueprintCallable 
+	// void SetQuestMapViewer(class UFortQuestMapViewer_Legacy* Value);                                                         // [0xbe44560] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.SetIgnorePageNavigation
-	// void SetIgnorePageNavigation(bool bIgnoreNavigation);                                                                    // [0xbe8d308] Final|Native|Public|BlueprintCallable 
+	// void SetIgnorePageNavigation(bool bIgnoreNavigation);                                                                    // [0xbe43d48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.SetFindCurrentActionVisibility
-	// void SetFindCurrentActionVisibility(EInputActionState ActionVisibility);                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void SetFindCurrentActionVisibility(EInputActionState ActionVisibility);                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.SetBeyondCutoffQuest
-	// void SetBeyondCutoffQuest(bool bBeyondCutoff);                                                                           // [0xbe8cb10] Final|Native|Public|BlueprintCallable 
+	// void SetBeyondCutoffQuest(bool bBeyondCutoff);                                                                           // [0xbe43550] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.OnEventCalloutExpandChanged
-	// void OnEventCalloutExpandChanged();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnEventCalloutExpandChanged();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.OnEventCalloutButtonClicked
-	// void OnEventCalloutButtonClicked();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnEventCalloutButtonClicked();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.IsEventFlagActive
-	// bool IsEventFlagActive(FString EventFlag);                                                                               // [0xbe8b480] Final|Native|Public|BlueprintCallable 
+	// bool IsEventFlagActive(FString EventFlag);                                                                               // [0xbe41ec0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.IsBeyondQuest
-	// bool IsBeyondQuest(class UFortQuestItemDefinition* QuestDef);                                                            // [0xbe8b3a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBeyondQuest(class UFortQuestItemDefinition* QuestDef);                                                            // [0xbe41de8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.InitializeQuestData
-	// void InitializeQuestData();                                                                                              // [0xbe8b28c] Final|Native|Public|BlueprintCallable 
+	// void InitializeQuestData();                                                                                              // [0xbe41ccc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.HandleRequestCurrentQuestNavigation
-	// void HandleRequestCurrentQuestNavigation();                                                                              // [0xbe8b154] Final|Native|Public|BlueprintCallable 
+	// void HandleRequestCurrentQuestNavigation();                                                                              // [0xbe41b94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.HandleQuestPageChanged
-	// void HandleQuestPageChanged();                                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleQuestPageChanged();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.HandleQuestIndexSelectionModelChanged
-	// void HandleQuestIndexSelectionModelChanged(bool bUpdateButtonSelection);                                                 // [0xbe8afb0] Final|Native|Private 
+	// void HandleQuestIndexSelectionModelChanged(bool bUpdateButtonSelection);                                                 // [0xbe419f0] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.HandleQuestDetailsUpdated
-	// void HandleQuestDetailsUpdated(class UFortQuestItem* QuestDefinition);                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleQuestDetailsUpdated(class UFortQuestItem* QuestDefinition);                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.HandleMapViewerNavigationRequest
-	// void HandleMapViewerNavigationRequest(EViewerNavigationDirection Direction);                                             // [0xbe8a838] Final|Native|Public|BlueprintCallable 
+	// void HandleMapViewerNavigationRequest(EViewerNavigationDirection Direction);                                             // [0xbe41278] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.HandleMapModeSwitch
-	// void HandleMapModeSwitch();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleMapModeSwitch();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.HandleEventQuestMapActivate
-	// void HandleEventQuestMapActivate();                                                                                      // [0xbe8a6ec] Final|Native|Public|BlueprintCallable 
+	// void HandleEventQuestMapActivate();                                                                                      // [0xbe4112c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.HandleEventCalloutDataChangedBP
-	// void HandleEventCalloutDataChangedBP();                                                                                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleEventCalloutDataChangedBP();                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.GetCurrentPageCameraMode
-	// EFrontEndCamera GetCurrentPageCameraMode();                                                                              // [0xbe89a08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFrontEndCamera GetCurrentPageCameraMode();                                                                              // [0xbe40448] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.GetBeyondCutoffQuest
-	// bool GetBeyondCutoffQuest();                                                                                             // [0xbe89920] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBeyondCutoffQuest();                                                                                             // [0xbe40360] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestMapScreen_Legacy.CheckForNewMainQuest
-	// void CheckForNewMainQuest();                                                                                             // [0xbe89604] Final|Native|Public|BlueprintCallable 
+	// void CheckForNewMainQuest();                                                                                             // [0xbe40044] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestMapViewer_Legacy
@@ -3805,15 +3805,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer_Legacy.UpdateViewerData
-	// void UpdateViewerData();                                                                                                 // [0xbe8edb8] Final|Native|Public|BlueprintCallable 
+	// void UpdateViewerData();                                                                                                 // [0xbe457f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer_Legacy.OnTryUpdateUserWidgetColor
-	// void OnTryUpdateUserWidgetColor(class UUserWidget* Widget, FSlateColor OverrideColor);                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnTryUpdateUserWidgetColor(class UUserWidget* Widget, FSlateColor OverrideColor);                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer_Legacy.OnPlayLayoutOutroAnimation
-	// void OnPlayLayoutOutroAnimation(EViewerNavigationDirection TravelDirection);                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayLayoutOutroAnimation(EViewerNavigationDirection TravelDirection);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer_Legacy.OnPlayLayoutFadeInAnimation
-	// void OnPlayLayoutFadeInAnimation();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayLayoutFadeInAnimation();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestMapViewer_Legacy.HandleLayoutOutroAnimationFinished
-	// void HandleLayoutOutroAnimationFinished();                                                                               // [0xbe8a728] Final|Native|Public|BlueprintCallable 
+	// void HandleLayoutOutroAnimationFinished();                                                                               // [0xbe41168] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestPlayButton
@@ -3829,19 +3829,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestPlayButton.OnContentMissing
-	// void OnContentMissing();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnContentMissing();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestPlayButton.HandlePlayerStateChanged
-	// void HandlePlayerStateChanged();                                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandlePlayerStateChanged();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestPlayButton.HandleMatchmakingStarted
-	// void HandleMatchmakingStarted();                                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleMatchmakingStarted();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestPlayButton.HandleMatchmakingComplete
-	// void HandleMatchmakingComplete(EMatchmakingCompleteResult Result);                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleMatchmakingComplete(EMatchmakingCompleteResult Result);                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestPlayButton.HandleLobbyDisconnected
-	// void HandleLobbyDisconnected();                                                                                          // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleLobbyDisconnected();                                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestPlayButton.CanPlayQuest
-	// bool CanPlayQuest();                                                                                                     // [0xbe8958c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPlayQuest();                                                                                                     // [0xbe3ffcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortQuestPlayButton.AttemptToPlayQuest
-	// void AttemptToPlayQuest();                                                                                               // [0xbe894ac] Final|Native|Public|BlueprintCallable 
+	// void AttemptToPlayQuest();                                                                                               // [0xbe3feec] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestTreeItemWidget
@@ -3857,13 +3857,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestTreeItemWidget.SetupAsQuest
-	// void SetupAsQuest(class UFortQuestItem* Category);                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetupAsQuest(class UFortQuestItem* Category);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestTreeItemWidget.SetupAsCategory
-	// void SetupAsCategory(class UFortQuestCategory* Category);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetupAsCategory(class UFortQuestCategory* Category);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestTreeItemWidget.OnQuestsUpdated
-	// void OnQuestsUpdated();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnQuestsUpdated();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestTreeItemWidget.HandleQuestsUpdated
-	// void HandleQuestsUpdated();                                                                                              // [0xbe8b12c] Final|Native|Protected 
+	// void HandleQuestsUpdated();                                                                                              // [0xbe41b6c] Final|Native|Protected 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestTreeItemWidget_Legacy
@@ -3879,13 +3879,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestTreeItemWidget_Legacy.SetupAsQuest
-	// void SetupAsQuest(class UFortQuestItem* Category);                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetupAsQuest(class UFortQuestItem* Category);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestTreeItemWidget_Legacy.SetupAsCategory
-	// void SetupAsCategory(class UFortQuestCategory* Category);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetupAsCategory(class UFortQuestCategory* Category);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestTreeItemWidget_Legacy.OnQuestsUpdated
-	// void OnQuestsUpdated();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnQuestsUpdated();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestTreeItemWidget_Legacy.HandleQuestsUpdated
-	// void HandleQuestsUpdated();                                                                                              // [0xbe8b140] Final|Native|Protected 
+	// void HandleQuestsUpdated();                                                                                              // [0xbe41b80] Final|Native|Protected 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestScreen
@@ -3913,37 +3913,37 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.TriggerClaimRewardEvent
-	// void TriggerClaimRewardEvent(class UFortQuestItem* QuestItem);                                                           // [0xbe8defc] Final|Native|Protected|BlueprintCallable 
+	// void TriggerClaimRewardEvent(class UFortQuestItem* QuestItem);                                                           // [0xbe4493c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.SetInputActionStates
-	// void SetInputActionStates(class UFortQuestItem* QuestItem, bool bIsQuestAudioPlaying, bool bShouldShowPlayQuest, bool bAreQuestItemsDifferent); // [0xbe8d4c4] Final|Native|Protected|BlueprintCallable 
+	// void SetInputActionStates(class UFortQuestItem* QuestItem, bool bIsQuestAudioPlaying, bool bShouldShowPlayQuest, bool bAreQuestItemsDifferent); // [0xbe43f04] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.SetDisableClaimRewardButton
-	// void SetDisableClaimRewardButton(bool bToDisable);                                                                       // [0xbe8cd2c] Final|Native|Protected|BlueprintCallable 
+	// void SetDisableClaimRewardButton(bool bToDisable);                                                                       // [0xbe4376c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.ProcessPendingSeenQuestItems
-	// void ProcessPendingSeenQuestItems();                                                                                     // [0xbe8c0f0] Final|Native|Private|BlueprintCallable 
+	// void ProcessPendingSeenQuestItems();                                                                                     // [0xbe42b30] Final|Native|Private|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.OnContentMissing
-	// void OnContentMissing();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnContentMissing();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_SetInitialQuestToSelect
-	// void BP_SetInitialQuestToSelect(class UFortQuestItem* QuestItem);                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_SetInitialQuestToSelect(class UFortQuestItem* QuestItem);                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandleUnpinQuestAction
-	// void BP_HandleUnpinQuestAction();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleUnpinQuestAction();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandleStopConversationAction
-	// void BP_HandleStopConversationAction();                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleStopConversationAction();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandleReplayOutroAction
-	// void BP_HandleReplayOutroAction();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleReplayOutroAction();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandleReplayIntroAction
-	// void BP_HandleReplayIntroAction();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleReplayIntroAction();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandlePlayQuestAction
-	// void BP_HandlePlayQuestAction();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandlePlayQuestAction();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandlePinQuestAction
-	// void BP_HandlePinQuestAction();                                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandlePinQuestAction();                                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandleClaimRewardAction
-	// void BP_HandleClaimRewardAction();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleClaimRewardAction();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandleBackAction
-	// void BP_HandleBackAction();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleBackAction();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.BP_HandleAbandonQuestAction
-	// void BP_HandleAbandonQuestAction();                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleAbandonQuestAction();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortQuestScreen.AttemptToPlayQuest
-	// void AttemptToPlayQuest(class UFortQuestItem* QuestItem);                                                                // [0xbe894c0] Final|Native|Protected|BlueprintCallable 
+	// void AttemptToPlayQuest(class UFortQuestItem* QuestItem);                                                                // [0xbe3ff00] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortQuestScreen_Legacy
@@ -3958,7 +3958,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortQuestScreen_Legacy.ProcessPendingSeenQuestItems
-	// void ProcessPendingSeenQuestItems();                                                                                     // [0xbe8c0f0] Final|Native|Private|BlueprintCallable 
+	// void ProcessPendingSeenQuestItems();                                                                                     // [0xbe42b30] Final|Native|Private|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortResearchMenuBase
@@ -3974,21 +3974,21 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortResearchMenuBase.UseResearchRespecToken
-	// void UseResearchRespecToken();                                                                                           // [0xbe8edcc] Final|Native|Protected|BlueprintCallable 
+	// void UseResearchRespecToken();                                                                                           // [0xbe4580c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResearchMenuBase.RequestPurchaseResearchLevel
-	// void RequestPurchaseResearchLevel(FString StatId);                                                                       // [0xbe8c260] Final|Native|Protected|BlueprintCallable 
+	// void RequestPurchaseResearchLevel(FString StatId);                                                                       // [0xbe42ca0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResearchMenuBase.OnUseResearchRespecTokenComplete
-	// void OnUseResearchRespecTokenComplete();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUseResearchRespecTokenComplete();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortResearchMenuBase.OnPurchaseResearchLevelStarted
-	// void OnPurchaseResearchLevelStarted();                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPurchaseResearchLevelStarted();                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortResearchMenuBase.OnPurchaseResearchLevelCompleted
-	// void OnPurchaseResearchLevelCompleted();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPurchaseResearchLevelCompleted();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortResearchMenuBase.GetResearchRespecTokenCount
-	// int32_t GetResearchRespecTokenCount();                                                                                   // [0xbe8a568] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetResearchRespecTokenCount();                                                                                   // [0xbe40fa8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchMenuBase.GetClaimableResearchPointEstimate
-	// int32_t GetClaimableResearchPointEstimate();                                                                             // [0xbe89938] Final|Native|Protected|BlueprintCallable 
+	// int32_t GetClaimableResearchPointEstimate();                                                                             // [0xbe40378] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortResearchMenuBase.AreResearchRespecTokensAvailable
-	// bool AreResearchRespecTokensAvailable();                                                                                 // [0xbe89484] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool AreResearchRespecTokensAvailable();                                                                                 // [0xbe3fec4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortResearchStatTileWidget
@@ -4010,29 +4010,29 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.OnStatChanged
-	// void OnStatChanged();                                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStatChanged();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.IsAtMaxResearchLevel
-	// bool IsAtMaxResearchLevel();                                                                                             // [0xbe8b390] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAtMaxResearchLevel();                                                                                             // [0xbe41dd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetStatIdName
-	// FString GetStatIdName();                                                                                                 // [0xbe8a5c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetStatIdName();                                                                                                 // [0xbe41008] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetPersonalStatType
-	// EFortStatType GetPersonalStatType();                                                                                     // [0xbe8a3c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFortStatType GetPersonalStatType();                                                                                     // [0xbe40e04] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetNextTeamStatValueDelta
-	// int32_t GetNextTeamStatValueDelta();                                                                                     // [0xbe8a37c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNextTeamStatValueDelta();                                                                                     // [0xbe40dbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetNextPersonalStatValueDelta
-	// int32_t GetNextPersonalStatValueDelta();                                                                                 // [0xbe8a358] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNextPersonalStatValueDelta();                                                                                 // [0xbe40d98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetNextCombinedStatValueDelta
-	// int32_t GetNextCombinedStatValueDelta();                                                                                 // [0xbe8a310] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNextCombinedStatValueDelta();                                                                                 // [0xbe40d50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetCurrentTeamStatValue
-	// int32_t GetCurrentTeamStatValue();                                                                                       // [0xbe89a74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentTeamStatValue();                                                                                       // [0xbe404b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetCurrentResearchLevel
-	// int32_t GetCurrentResearchLevel();                                                                                       // [0xbe89a5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentResearchLevel();                                                                                       // [0xbe4049c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetCurrentPersonalStatValue
-	// int32_t GetCurrentPersonalStatValue();                                                                                   // [0xbe89a38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentPersonalStatValue();                                                                                   // [0xbe40478] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetCurrentCombinedStatValue
-	// int32_t GetCurrentCombinedStatValue();                                                                                   // [0xbe89990] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentCombinedStatValue();                                                                                   // [0xbe403d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortResearchStatTileWidget.GetCostToIncreaseStat
-	// int32_t GetCostToIncreaseStat();                                                                                         // [0xbe8995c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCostToIncreaseStat();                                                                                         // [0xbe4039c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortRewardNotificationData
@@ -4048,7 +4048,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationData.GetIconBrush
-	// bool GetIconBrush(FSlateBrush& IconBrush, TEnumAsByte<EFortBrushSize> BrushSize);                                        // [0xbe89c3c] Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetIconBrush(FSlateBrush& IconBrush, TEnumAsByte<EFortBrushSize> BrushSize);                                        // [0xbe4067c] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortRewardCollectionBookData
@@ -4076,49 +4076,49 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.TransitionOutBegin
-	// void TransitionOutBegin();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void TransitionOutBegin();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.TransitionOut
-	// void TransitionOut();                                                                                                    // [0xbe8dee8] Final|Native|Public|BlueprintCallable 
+	// void TransitionOut();                                                                                                    // [0xbe44928] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.TransitionInBegin
-	// void TransitionInBegin();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void TransitionInBegin();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.TransitionIn
-	// void TransitionIn();                                                                                                     // [0xbe8de90] Final|Native|Public|BlueprintCallable 
+	// void TransitionIn();                                                                                                     // [0xbe448d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.SetPrimaryActionText
-	// void SetPrimaryActionText(FText Text);                                                                                   // [0xbe8d948] Final|Native|Protected|BlueprintCallable 
+	// void SetPrimaryActionText(FText Text);                                                                                   // [0xbe44388] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.SetPrimaryActionHidden
-	// void SetPrimaryActionHidden();                                                                                           // [0xbe8d918] Final|Native|Protected|BlueprintCallable 
+	// void SetPrimaryActionHidden();                                                                                           // [0xbe44358] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.SetPrimaryActionEnabled
-	// void SetPrimaryActionEnabled(bool bEnabled);                                                                             // [0xbe8d814] Final|Native|Protected|BlueprintCallable 
+	// void SetPrimaryActionEnabled(bool bEnabled);                                                                             // [0xbe44254] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.SetInputActionHandlerState
-	// void SetInputActionHandlerState(class UDataTable* DataTable, FName RowName, EInputActionState State);                    // [0xbe8d394] Final|Native|Protected|BlueprintCallable 
+	// void SetInputActionHandlerState(class UDataTable* DataTable, FName RowName, EInputActionState State);                    // [0xbe43dd4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.RemoveInputActionHandler
-	// void RemoveInputActionHandler(FDataTableRowHandle InputActionRow);                                                       // [0xbe8c120] Final|Native|Protected|BlueprintCallable 
+	// void RemoveInputActionHandler(FDataTableRowHandle InputActionRow);                                                       // [0xbe42b60] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.RemoveAllInputActionHandlers
-	// void RemoveAllInputActionHandlers();                                                                                     // [0xbe8c104] Final|Native|Protected|BlueprintCallable 
+	// void RemoveAllInputActionHandlers();                                                                                     // [0xbe42b44] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.OnPrimaryAction
-	// void OnPrimaryAction();                                                                                                  // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnPrimaryAction();                                                                                                  // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.OnNavigationUp
-	// void OnNavigationUp();                                                                                                   // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnNavigationUp();                                                                                                   // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.OnNavigationRight
-	// void OnNavigationRight();                                                                                                // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnNavigationRight();                                                                                                // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.OnNavigationLeft
-	// void OnNavigationLeft();                                                                                                 // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnNavigationLeft();                                                                                                 // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.OnNavigationDown
-	// void OnNavigationDown();                                                                                                 // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnNavigationDown();                                                                                                 // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.OnDeactivated
-	// void OnDeactivated();                                                                                                    // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnDeactivated();                                                                                                    // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.OnActivated
-	// void OnActivated();                                                                                                      // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnActivated();                                                                                                      // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.IsPrimaryActionHidden
-	// void IsPrimaryActionHidden(bool& bHidden);                                                                               // [0xbe8bb30] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void IsPrimaryActionHidden(bool& bHidden);                                                                               // [0xbe42570] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.IsPrimaryActionEnabled
-	// void IsPrimaryActionEnabled(bool& bEnabled);                                                                             // [0xbe8bb30] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void IsPrimaryActionEnabled(bool& bEnabled);                                                                             // [0xbe42570] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.InspectItem
-	// void InspectItem(class UFortItem* ItemToInspect, int32_t QuantityOverride);                                              // [0xbe8b2a0] Final|Native|Protected|BlueprintCallable 
+	// void InspectItem(class UFortItem* ItemToInspect, int32_t QuantityOverride);                                              // [0xbe41ce0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.Init
-	// void Init(class UFortRewardNotificationWidget* MainWidget);                                                              // [0xbe8b1f8] Final|Native|Public|BlueprintCallable 
+	// void Init(class UFortRewardNotificationWidget* MainWidget);                                                              // [0xbe41c38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationSubWidget.AddInputActionHandler
-	// void AddInputActionHandler(class UDataTable* DataTable, FName RowName, FDelegateProperty CommittedEvent);                // [0xbe89158] Final|Native|Protected|BlueprintCallable 
+	// void AddInputActionHandler(class UDataTable* DataTable, FName RowName, FDelegateProperty CommittedEvent);                // [0xbe3fb98] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortRewardConversationWidget
@@ -4133,9 +4133,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortRewardConversationWidget.IsValidConversation
-	// bool IsValidConversation(class UFortConversation* Conversation);                                                         // [0xbe8be0c] Final|Native|Public|BlueprintCallable 
+	// bool IsValidConversation(class UFortConversation* Conversation);                                                         // [0xbe4284c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardConversationWidget.GetDataFromSentence
-	// void GetDataFromSentence(FFortConversationSentence& Sentence, FText& Text, class UTexture2D*& TalkingHeadTexture);       // [0xbe89a98] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetDataFromSentence(FFortConversationSentence& Sentence, FText& Text, class UTexture2D*& TalkingHeadTexture);       // [0xbe404d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortRewardDifficultyIncrease
@@ -4183,9 +4183,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortRewardExpeditionWidget.OnCollectExpeditionCompleted
-	// void OnCollectExpeditionCompleted(class UFortExpeditionItem* Expedition, bool bSucceeded, TArray<FFortItemInstanceQuantityPair>& Rewards); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnCollectExpeditionCompleted(class UFortExpeditionItem* Expedition, bool bSucceeded, TArray<FFortItemInstanceQuantityPair>& Rewards); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardExpeditionWidget.CollectExpedition
-	// void CollectExpedition(class UFortExpeditionItem* Expedition);                                                           // [0xbe8966c] Final|Native|Public|BlueprintCallable 
+	// void CollectExpedition(class UFortExpeditionItem* Expedition);                                                           // [0xbe400ac] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortRewardGiftBoxData
@@ -4242,9 +4242,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortRewardNewQuestWidget.IsValidConversation
-	// bool IsValidConversation(class UFortConversation* Conversation);                                                         // [0xbe8be0c] Final|Native|Public|BlueprintCallable 
+	// bool IsValidConversation(class UFortConversation* Conversation);                                                         // [0xbe4284c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNewQuestWidget.GetDataFromSentence
-	// void GetDataFromSentence(FFortConversationSentence& Sentence, FText& Text, class UTexture2D*& TalkingHeadTexture);       // [0xbe89a98] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetDataFromSentence(FFortConversationSentence& Sentence, FText& Text, class UTexture2D*& TalkingHeadTexture);       // [0xbe404d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortRewardNotificationWidget
@@ -4264,105 +4264,105 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.ShowMulchConfirmationModal
-	// void ShowMulchConfirmationModal();                                                                                       // [0xbe61030] Native|Public|BlueprintCallable 
+	// void ShowMulchConfirmationModal();                                                                                       // [0xbe17adc] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.SetPrimaryActionText
-	// void SetPrimaryActionText(FText Text);                                                                                   // [0xbe8da04] Final|Native|Public|BlueprintCallable 
+	// void SetPrimaryActionText(FText Text);                                                                                   // [0xbe44444] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.SetPrimaryActionHidden
-	// void SetPrimaryActionHidden();                                                                                           // [0xbe8d934] Final|Native|Public|BlueprintCallable 
+	// void SetPrimaryActionHidden();                                                                                           // [0xbe44374] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.SetPrimaryActionEnabled
-	// void SetPrimaryActionEnabled(bool bEnabled);                                                                             // [0xbe8d898] Final|Native|Public|BlueprintCallable 
+	// void SetPrimaryActionEnabled(bool bEnabled);                                                                             // [0xbe442d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.ResetAllRewardData
-	// void ResetAllRewardData();                                                                                               // [0xbe8c970] Final|Native|Protected|BlueprintCallable 
+	// void ResetAllRewardData();                                                                                               // [0xbe433b0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.PopulateReward
-	// void PopulateReward(class UFortRewardNotificationData* Reward);                                                          // [0xbe8c070] Final|Native|Protected|BlueprintCallable 
+	// void PopulateReward(class UFortRewardNotificationData* Reward);                                                          // [0xbe42ab0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnRewardsScreenClosed
-	// void OnRewardsScreenClosed();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRewardsScreenClosed();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnRewardsClaimFailed
-	// void OnRewardsClaimFailed();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRewardsClaimFailed();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnRewardsClaimed
-	// void OnRewardsClaimed(TArray<FFortItemInstanceQuantityPair>& ItemList);                                                  // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRewardsClaimed(TArray<FFortItemInstanceQuantityPair>& ItemList);                                                  // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnPrimaryActionTextChanged
-	// void OnPrimaryActionTextChanged(FText& Text);                                                                            // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPrimaryActionTextChanged(FText& Text);                                                                            // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnPrimaryActionHidden
-	// void OnPrimaryActionHidden();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPrimaryActionHidden();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnPrimaryActionEnabled
-	// void OnPrimaryActionEnabled();                                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPrimaryActionEnabled();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnPrimaryActionDisabled
-	// void OnPrimaryActionDisabled();                                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPrimaryActionDisabled();                                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnPopulateNewQuestReward
-	// void OnPopulateNewQuestReward(class UFortRewardEpicQuestData* QuestReward);                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPopulateNewQuestReward(class UFortRewardEpicQuestData* QuestReward);                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnPopulateGiftBoxReward
-	// void OnPopulateGiftBoxReward(class UFortRewardGiftBoxData* GiftBoxReward);                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPopulateGiftBoxReward(class UFortRewardGiftBoxData* GiftBoxReward);                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnPopulateExpeditionReward
-	// void OnPopulateExpeditionReward(class UFortRewardExpeditionData* ExpeditionReward);                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPopulateExpeditionReward(class UFortRewardExpeditionData* ExpeditionReward);                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnPopulateChoiceRewards
-	// void OnPopulateChoiceRewards(TArray<FFortItemInstanceQuantityPair>& ItemList);                                           // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPopulateChoiceRewards(TArray<FFortItemInstanceQuantityPair>& ItemList);                                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnNavigationUp
-	// void OnNavigationUp();                                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnNavigationUp();                                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnNavigationRight
-	// void OnNavigationRight();                                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnNavigationRight();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnNavigationLeft
-	// void OnNavigationLeft();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnNavigationLeft();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnNavigationDown
-	// void OnNavigationDown();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnNavigationDown();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.OnMulchCompleted
-	// void OnMulchCompleted();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMulchCompleted();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.NotifyPanelDeactivated
-	// void NotifyPanelDeactivated();                                                                                           // [0xbe5ed88] Native|Protected|BlueprintCallable 
+	// void NotifyPanelDeactivated();                                                                                           // [0xbe15834] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.NotifyPanelActivated
-	// void NotifyPanelActivated();                                                                                             // [0xbe5ed50] Native|Protected|BlueprintCallable 
+	// void NotifyPanelActivated();                                                                                             // [0xbe157fc] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.MarkDefaultItemsForMulch
-	// void MarkDefaultItemsForMulch(TArray<FFortItemInstanceQuantityPair> ItemList);                                           // [0xbe8be94] Final|Native|Protected|BlueprintCallable 
+	// void MarkDefaultItemsForMulch(TArray<FFortItemInstanceQuantityPair> ItemList);                                           // [0xbe428d4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.IsPrimaryActionHidden
-	// void IsPrimaryActionHidden(bool& bHidden);                                                                               // [0xbe8bc50] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void IsPrimaryActionHidden(bool& bHidden);                                                                               // [0xbe42690] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.IsPrimaryActionEnabled
-	// void IsPrimaryActionEnabled(bool& bEnabled);                                                                             // [0xbe8bbc4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void IsPrimaryActionEnabled(bool& bEnabled);                                                                             // [0xbe42604] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.InspectItem
-	// void InspectItem(class UFortItem* ItemToInspect, int32_t QuantityOverride);                                              // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void InspectItem(class UFortItem* ItemToInspect, int32_t QuantityOverride);                                              // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HideMulchConfirmationModal
-	// void HideMulchConfirmationModal();                                                                                       // [0xbe5e83c] Native|Public|BlueprintCallable 
+	// void HideMulchConfirmationModal();                                                                                       // [0xbe152e8] Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnQuestRewardClaimed
-	// void HandleOnQuestRewardClaimed(class UFortQuestItem* Quest, TArray<FFortItemInstanceQuantityPair>& Rewards);            // [0xbe8ac0c] Final|Native|Private|HasOutParms 
+	// void HandleOnQuestRewardClaimed(class UFortQuestItem* Quest, TArray<FFortItemInstanceQuantityPair>& Rewards);            // [0xbe4164c] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnNoQuestRewardsToClaim
-	// void HandleOnNoQuestRewardsToClaim();                                                                                    // [0xbe8ab5c] Final|Native|Private 
+	// void HandleOnNoQuestRewardsToClaim();                                                                                    // [0xbe4159c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnMissionRewardsOpenFailed
-	// void HandleOnMissionRewardsOpenFailed();                                                                                 // [0xbe8ab5c] Final|Native|Private 
+	// void HandleOnMissionRewardsOpenFailed();                                                                                 // [0xbe4159c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnMissionRewardsOpened
-	// void HandleOnMissionRewardsOpened(TArray<FFortItemInstanceQuantityPair>& MissionRewards);                                // [0xbe8ab70] Final|Native|Private|HasOutParms 
+	// void HandleOnMissionRewardsOpened(TArray<FFortItemInstanceQuantityPair>& MissionRewards);                                // [0xbe415b0] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnMissionAlertRewardsOpened
-	// void HandleOnMissionAlertRewardsOpened(TArray<FFortItemInstanceQuantityPair>& AlertRewards);                             // [0xbe8ab70] Final|Native|Private|HasOutParms 
+	// void HandleOnMissionAlertRewardsOpened(TArray<FFortItemInstanceQuantityPair>& AlertRewards);                             // [0xbe415b0] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnItemCacheRewardsClaimFailed
-	// void HandleOnItemCacheRewardsClaimFailed();                                                                              // [0xbe8ab5c] Final|Native|Private 
+	// void HandleOnItemCacheRewardsClaimFailed();                                                                              // [0xbe4159c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnItemCacheRewardsClaimed
-	// void HandleOnItemCacheRewardsClaimed(TArray<FFortItemInstanceQuantityPair>& ClaimedRewards);                             // [0xbe8ab70] Final|Native|Private|HasOutParms 
+	// void HandleOnItemCacheRewardsClaimed(TArray<FFortItemInstanceQuantityPair>& ClaimedRewards);                             // [0xbe415b0] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnDifficultyIncreaseRewardsClaimFailed
-	// void HandleOnDifficultyIncreaseRewardsClaimFailed();                                                                     // [0xbe8ab5c] Final|Native|Private 
+	// void HandleOnDifficultyIncreaseRewardsClaimFailed();                                                                     // [0xbe4159c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnDifficultyIncreaseRewardsClaimed
-	// void HandleOnDifficultyIncreaseRewardsClaimed(TArray<FFortItemInstanceQuantityPair>& DifficultyRewards);                 // [0xbe8ab70] Final|Native|Private|HasOutParms 
+	// void HandleOnDifficultyIncreaseRewardsClaimed(TArray<FFortItemInstanceQuantityPair>& DifficultyRewards);                 // [0xbe415b0] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.HandleOnCollectionBookRewardClaimed
-	// void HandleOnCollectionBookRewardClaimed(FFortCollectionBookRewards RewardClaimed, bool bSuccess, TArray<FFortItemInstanceQuantityPair>& ActualRewards); // [0xbe8a8b8] Final|Native|Private|HasOutParms 
+	// void HandleOnCollectionBookRewardClaimed(FFortCollectionBookRewards RewardClaimed, bool bSuccess, TArray<FFortItemInstanceQuantityPair>& ActualRewards); // [0xbe412f8] Final|Native|Private|HasOutParms 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.BeginCloseRewardsScreen
-	// void BeginCloseRewardsScreen();                                                                                          // [0xbe89540] Final|Native|Public|BlueprintCallable 
+	// void BeginCloseRewardsScreen();                                                                                          // [0xbe3ff80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddQuestData
-	// void AddQuestData(class UFortQuestItem* Quest);                                                                          // [0xbe89404] Final|Native|Protected|BlueprintCallable 
+	// void AddQuestData(class UFortQuestItem* Quest);                                                                          // [0xbe3fe44] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddPhoenixLevelUpRewardData
-	// void AddPhoenixLevelUpRewardData();                                                                                      // [0xbe893f0] Final|Native|Protected|BlueprintCallable 
+	// void AddPhoenixLevelUpRewardData();                                                                                      // [0xbe3fe30] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddMissionData
-	// void AddMissionData();                                                                                                   // [0xbe89368] Final|Native|Protected|BlueprintCallable 
+	// void AddMissionData();                                                                                                   // [0xbe3fda8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddMissionAlertData
-	// void AddMissionAlertData();                                                                                              // [0xbe892e0] Final|Native|Protected|BlueprintCallable 
+	// void AddMissionAlertData();                                                                                              // [0xbe3fd20] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddItemCacheRewardData
-	// void AddItemCacheRewardData(class UFortItem* ItemCache);                                                                 // [0xbe89260] Final|Native|Protected|BlueprintCallable 
+	// void AddItemCacheRewardData(class UFortItem* ItemCache);                                                                 // [0xbe3fca0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddGiftBoxData
-	// void AddGiftBoxData();                                                                                                   // [0xbe890d0] Final|Native|Protected|BlueprintCallable 
+	// void AddGiftBoxData();                                                                                                   // [0xbe3fb10] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddExpeditionData
-	// void AddExpeditionData(class UFortExpeditionItem* ExpeditionItem);                                                       // [0xbe89050] Final|Native|Protected|BlueprintCallable 
+	// void AddExpeditionData(class UFortExpeditionItem* ExpeditionItem);                                                       // [0xbe3fa90] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddEpicQuestData
-	// void AddEpicQuestData(class UFortQuestItem* Quest);                                                                      // [0xbe88fd0] Final|Native|Protected|BlueprintCallable 
+	// void AddEpicQuestData(class UFortQuestItem* Quest);                                                                      // [0xbe3fa10] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddDifficultyIncreaseRewardData
-	// void AddDifficultyIncreaseRewardData();                                                                                  // [0xbe88f48] Final|Native|Protected|BlueprintCallable 
+	// void AddDifficultyIncreaseRewardData();                                                                                  // [0xbe3f988] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortRewardNotificationWidget.AddCollectionBookData
-	// void AddCollectionBookData(FFortCollectionBookRewards& CollectionBookRewards);                                           // [0xbe88ea4] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddCollectionBookData(FFortCollectionBookRewards& CollectionBookRewards);                                           // [0xbe3f8e4] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortRewardPhoenixLevelUpData
@@ -4426,15 +4426,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSelectorButton.TryGetStaticSquadDataBP
-	// bool TryGetStaticSquadDataBP(FHomebaseSquad& OutSquadData);                                                              // [0xbeb03d4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetStaticSquadDataBP(FHomebaseSquad& OutSquadData);                                                              // [0xbe66e14] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSelectorButton.SetIdOfSquadToManageBP
-	// void SetIdOfSquadToManageBP(FName& SquadId);                                                                             // [0xbeaf7f0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadToManageBP(FName& SquadId);                                                                             // [0xbe66230] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSelectorButton.HandleSquadChangedBP
-	// void HandleSquadChangedBP();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSquadChangedBP();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSelectorButton.HandleDifferentSquadSetBP
-	// void HandleDifferentSquadSetBP();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentSquadSetBP();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSelectorButton.GetIdOfSquadToManageBP
-	// FName GetIdOfSquadToManageBP();                                                                                          // [0xbead37c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetIdOfSquadToManageBP();                                                                                          // [0xbe63dbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortDefenderSquadSelectorButton
@@ -4449,9 +4449,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortDefenderSquadSelectorButton.TryGetTheaterUniqueId
-	// bool TryGetTheaterUniqueId(FString& OutTheaterUniqueId, bool& OutIsUnlocked);                                            // [0xbe8e458] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetTheaterUniqueId(FString& OutTheaterUniqueId, bool& OutIsUnlocked);                                            // [0xbe44e98] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortDefenderSquadSelectorButton.TryGetPowerLevel
-	// bool TryGetPowerLevel(int32_t& OutPowerLevel);                                                                           // [0xbe8e150] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool TryGetPowerLevel(int32_t& OutPowerLevel);                                                                           // [0xbe44b90] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadStatDetailsWidget
@@ -4508,73 +4508,73 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.TryGetStaticSquadDataBP
-	// bool TryGetStaticSquadDataBP(FHomebaseSquad& OutSquadData);                                                              // [0xbe8e3a8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetStaticSquadDataBP(FHomebaseSquad& OutSquadData);                                                              // [0xbe44de8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.TryGetSquadTeamAttribute
-	// bool TryGetSquadTeamAttribute(FGameplayAttribute& OutGameplayAttribute);                                                 // [0xbe8e2c8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetSquadTeamAttribute(FGameplayAttribute& OutGameplayAttribute);                                                 // [0xbe44d08] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.TryGetSquadMainAttribute
-	// bool TryGetSquadMainAttribute(FGameplayAttribute& OutGameplayAttribute);                                                 // [0xbe8e1e8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetSquadMainAttribute(FGameplayAttribute& OutGameplayAttribute);                                                 // [0xbe44c28] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.TryGetAttributeValueFromSquad
-	// bool TryGetAttributeValueFromSquad(float& OutValue, FGameplayAttribute& Attribute);                                      // [0xbe8df88] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetAttributeValueFromSquad(float& OutValue, FGameplayAttribute& Attribute);                                      // [0xbe449c8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.ShowWarningReadOnlyWIFE
-	// void ShowWarningReadOnlyWIFE(bool Force);                                                                                // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ShowWarningReadOnlyWIFE(bool Force);                                                                                // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.SetupInputHandlers
-	// void SetupInputHandlers();                                                                                               // [0x788579c] Native|Protected|BlueprintCallable 
+	// void SetupInputHandlers();                                                                                               // [0x78c1bf4] Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.SetIdOfSquadToManageBP
-	// void SetIdOfSquadToManageBP(FName& SquadId);                                                                             // [0xbe8d1ec] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadToManageBP(FName& SquadId);                                                                             // [0xbe43c2c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.SelectSquadWithOffset
-	// void SelectSquadWithOffset(int32_t Offset);                                                                              // [0xbe8c9f8] Final|Native|Public|BlueprintCallable 
+	// void SelectSquadWithOffset(int32_t Offset);                                                                              // [0xbe43438] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.SelectPreviousSquad
-	// void SelectPreviousSquad();                                                                                              // [0xbe8c9e0] Final|Native|Public|BlueprintCallable 
+	// void SelectPreviousSquad();                                                                                              // [0xbe43420] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.SelectNextSquad
-	// void SelectNextSquad();                                                                                                  // [0xbe8c9c8] Final|Native|Public|BlueprintCallable 
+	// void SelectNextSquad();                                                                                                  // [0xbe43408] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.NavigateToSquadSlot
-	// void NavigateToSquadSlot(int32_t SquadSlotIndex);                                                                        // [0xbe8bf40] Final|Native|Public|BlueprintCallable 
+	// void NavigateToSquadSlot(int32_t SquadSlotIndex);                                                                        // [0xbe42980] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.IsScreenWIFE
-	// bool IsScreenWIFE();                                                                                                     // [0xbe8bcdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsScreenWIFE();                                                                                                     // [0xbe4271c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleViewInAll
-	// void HandleViewInAll(int32_t SquadSlotIndex);                                                                            // [0xbe8b17c] Final|Native|Private 
+	// void HandleViewInAll(int32_t SquadSlotIndex);                                                                            // [0xbe41bbc] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleSquadStateChanged
-	// void HandleSquadStateChanged();                                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSquadStateChanged();                                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleSquadSlotPickerShown
-	// void HandleSquadSlotPickerShown();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSquadSlotPickerShown();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleSquadSlotPickerHidden
-	// void HandleSquadSlotPickerHidden();                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSquadSlotPickerHidden();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleShouldAutoSlotSurvivorSquadsChanged
-	// void HandleShouldAutoSlotSurvivorSquadsChanged();                                                                        // [0x788579c] Final|Native|Private 
+	// void HandleShouldAutoSlotSurvivorSquadsChanged();                                                                        // [0x78c1bf4] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleSelectPickerSlotInputAction
-	// void HandleSelectPickerSlotInputAction();                                                                                // [0xbe8b168] Final|Native|Private 
+	// void HandleSelectPickerSlotInputAction();                                                                                // [0xbe41ba8] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandlePreviousSquadInputAction
-	// void HandlePreviousSquadInputAction();                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandlePreviousSquadInputAction();                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandlePickerSelectionCommitted
-	// void HandlePickerSelectionCommitted(class UFortItem* CommittedItem);                                                     // [0xbe8adf0] Final|Native|Private 
+	// void HandlePickerSelectionCommitted(class UFortItem* CommittedItem);                                                     // [0xbe41830] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandlePickerSelectionChanged
-	// void HandlePickerSelectionChanged(class UFortItem* SelectedItem);                                                        // [0xbe8ad70] Final|Native|Private 
+	// void HandlePickerSelectionChanged(class UFortItem* SelectedItem);                                                        // [0xbe417b0] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleOpenSquadSlot
-	// void HandleOpenSquadSlot(int32_t SquadSlotIndex);                                                                        // [0xbe8acf0] Final|Native|Private 
+	// void HandleOpenSquadSlot(int32_t SquadSlotIndex);                                                                        // [0xbe41730] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleNextSquadInputAction
-	// void HandleNextSquadInputAction();                                                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleNextSquadInputAction();                                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleManageInputAction
-	// void HandleManageInputAction();                                                                                          // [0xbe8a7a4] Final|Native|Protected 
+	// void HandleManageInputAction();                                                                                          // [0xbe411e4] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleInventoryInputAction
-	// void HandleInventoryInputAction();                                                                                       // [0xbe8a714] Final|Native|Private 
+	// void HandleInventoryInputAction();                                                                                       // [0xbe41154] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleInspectInputAction
-	// void HandleInspectInputAction();                                                                                         // [0xbe8a700] Final|Native|Private 
+	// void HandleInspectInputAction();                                                                                         // [0xbe41140] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleDifferentSquadSlotSelected
-	// void HandleDifferentSquadSlotSelected(int32_t SquadSlotIndex);                                                           // [0xbe8a654] Native|Protected     
+	// void HandleDifferentSquadSlotSelected(int32_t SquadSlotIndex);                                                           // [0xbe41094] Native|Protected     
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleDifferentSquadSetBP
-	// void HandleDifferentSquadSetBP();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentSquadSetBP();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleCyclePickerSortInputAction
-	// void HandleCyclePickerSortInputAction();                                                                                 // [0xbe8a640] Final|Native|Private 
+	// void HandleCyclePickerSortInputAction();                                                                                 // [0xbe41080] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleClosePickerInputAction
-	// void HandleClosePickerInputAction();                                                                                     // [0xbe8a62c] Final|Native|Private 
+	// void HandleClosePickerInputAction();                                                                                     // [0xbe4106c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.HandleBackInputAction
-	// void HandleBackInputAction();                                                                                            // [0xbe8a618] Final|Native|Protected|BlueprintCallable 
+	// void HandleBackInputAction();                                                                                            // [0xbe41058] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.GetNumUnlockedSquads
-	// int32_t GetNumUnlockedSquads();                                                                                          // [0xbe8a3a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumUnlockedSquads();                                                                                          // [0xbe40de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.GetIdOfSquadToManageBP
-	// FName GetIdOfSquadToManageBP();                                                                                          // [0x33c99f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetIdOfSquadToManageBP();                                                                                          // [0x33c0a70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadManagementScreenBase.ClearSquad
-	// void ClearSquad();                                                                                                       // [0xbe89658] Final|Native|Public|BlueprintCallable 
+	// void ClearSquad();                                                                                                       // [0xbe40098] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHeroSquadManagementScreen
@@ -4591,7 +4591,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortHeroSquadManagementScreen.PlayFeedbackForSlottingPerson
-	// void PlayFeedbackForSlottingPerson(class UFortCharacter* Character, int32_t SlotIndex);                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void PlayFeedbackForSlottingPerson(class UFortCharacter* Character, int32_t SlotIndex);                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadIcon
@@ -4609,9 +4609,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadIcon.SetSquad
-	// void SetSquad(FName& InName);                                                                                            // [0xbe8dd14] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSquad(FName& InName);                                                                                            // [0xbe44754] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadIcon.HandleDifferentSquadSetBP
-	// void HandleDifferentSquadSetBP();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentSquadSetBP();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSquadDetails
@@ -4628,11 +4628,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSquadDetails.SetDefenderSquadInfo
-	// void SetDefenderSquadInfo(FFortLandingPageDefenderSummaryInfo& DefenderSummaryInfo);                                     // [0xbe8cba8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetDefenderSquadInfo(FFortLandingPageDefenderSummaryInfo& DefenderSummaryInfo);                                     // [0xbe435e8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSquadDetails.HandleDefenderSquadInfoSetBP
-	// void HandleDefenderSquadInfoSetBP(FFortLandingPageDefenderSummaryInfo& DefenderSummaryInfo);                             // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleDefenderSquadInfoSetBP(FFortLandingPageDefenderSummaryInfo& DefenderSummaryInfo);                             // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSquadDetails.HandleAddDefenderSquadMemberBP
-	// void HandleAddDefenderSquadMemberBP(FName& SquadId, int32_t Index);                                                      // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleAddDefenderSquadMemberBP(FName& SquadId, int32_t Index);                                                      // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSquadDetailsLocked
@@ -4648,7 +4648,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSquadDetailsLocked.SetDefenderSquadInfo
-	// void SetDefenderSquadInfo(FFortLandingPageDefenderSummaryInfo& DefenderSummaryInfo);                                     // [0xbe8cc44] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetDefenderSquadInfo(FFortLandingPageDefenderSummaryInfo& DefenderSummaryInfo);                                     // [0xbe43684] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSummary
@@ -4663,11 +4663,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSummary.HandleClearDefenderSquadDetailsBP
-	// void HandleClearDefenderSquadDetailsBP();                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleClearDefenderSquadDetailsBP();                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSummary.HandleAddLockedDefenderSquadDetailsBP
-	// void HandleAddLockedDefenderSquadDetailsBP(FFortLandingPageDefenderSummaryInfo DefenderSummaryInfo);                     // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleAddLockedDefenderSquadDetailsBP(FFortLandingPageDefenderSummaryInfo DefenderSummaryInfo);                     // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageDefenderSummary.HandleAddDefenderSquadDetailsBP
-	// void HandleAddDefenderSquadDetailsBP(FFortLandingPageDefenderSummaryInfo DefenderSummaryInfo);                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleAddDefenderSquadDetailsBP(FFortLandingPageDefenderSummaryInfo DefenderSummaryInfo);                           // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadLandingPageSurvivorSummary
@@ -4686,9 +4686,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageSurvivorSummary.HandleClearSetBonusSummaryLineItemsBP
-	// void HandleClearSetBonusSummaryLineItemsBP();                                                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleClearSetBonusSummaryLineItemsBP();                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadLandingPageSurvivorSummary.HandleAddSetBonusSummaryLineItemBP
-	// void HandleAddSetBonusSummaryLineItemBP(FFortAttributeModifierAccumulation AttributeModifierAccumulation);               // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleAddSetBonusSummaryLineItemBP(FFortAttributeModifierAccumulation AttributeModifierAccumulation);               // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadManagementItemViewContextBase
@@ -4755,25 +4755,25 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.TryGetItemToPreviewInSlot
-	// bool TryGetItemToPreviewInSlot(class UFortItem*& OutItemToPreviewInSlot);                                                // [0xbe8e0b8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetItemToPreviewInSlot(class UFortItem*& OutItemToPreviewInSlot);                                                // [0xbe44af8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.SetScrollWidget
-	// void SetScrollWidget();                                                                                                  // [0xbe8dba0] Final|Native|Public|BlueprintCallable 
+	// void SetScrollWidget();                                                                                                  // [0xbe445e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.SetIdOfSquadSlotToManageBP
-	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe8cdac] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe437ec] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.IsSquadSlotLockedBP
-	// bool IsSquadSlotLockedBP();                                                                                              // [0xbe8bd40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSquadSlotLockedBP();                                                                                              // [0xbe42780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.HandleSquadSlotStateChangedBP
-	// void HandleSquadSlotStateChangedBP();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSquadSlotStateChangedBP();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.HandleSquadSlotRestrictionFactorsChangedBP
-	// void HandleSquadSlotRestrictionFactorsChangedBP();                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSquadSlotRestrictionFactorsChangedBP();                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.HandleDifferentSquadSlotSetBP
-	// void HandleDifferentSquadSlotSetBP();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentSquadSlotSetBP();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.GetSlottingRestrictionReasons
-	// TArray<EFortSquadSlottingRestrictionReason> GetSlottingRestrictionReasons();                                             // [0xbe8a58c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<EFortSquadSlottingRestrictionReason> GetSlottingRestrictionReasons();                                             // [0xbe40fcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.GetItemInSquadSlotBP
-	// class UFortItem* GetItemInSquadSlotBP(class ULocalPlayer* LocalPlayer);                                                  // [0xbe8a110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetItemInSquadSlotBP(class ULocalPlayer* LocalPlayer);                                                  // [0xbe40b50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotDetailsPanel.GetIdOfSquadSlotToManageBP
-	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe89d88] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe407c8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotItemDetailElementWidget
@@ -4788,15 +4788,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailElementWidget.SetIdOfSquadSlotToManageBP
-	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe8cebc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe438fc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailElementWidget.IsSquadSlotLockedBP
-	// bool IsSquadSlotLockedBP();                                                                                              // [0xbe8bd84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSquadSlotLockedBP();                                                                                              // [0xbe427c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailElementWidget.HandlePostDifferentSquadSlotSetBP
-	// void HandlePostDifferentSquadSlotSetBP();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandlePostDifferentSquadSlotSetBP();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailElementWidget.GetItemInSquadSlotBP
-	// class UFortItem* GetItemInSquadSlotBP(class ULocalPlayer* LocalPlayer);                                                  // [0xbe8a1c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetItemInSquadSlotBP(class ULocalPlayer* LocalPlayer);                                                  // [0xbe40c08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailElementWidget.GetIdOfSquadSlotToManageBP
-	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe89e64] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe408a4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotItemDetailsHostPanel
@@ -4811,13 +4811,13 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailsHostPanel.SetIdOfSquadSlotToManageBP
-	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe8cfcc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe43a0c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailsHostPanel.IsSquadSlotLockedBP
-	// bool IsSquadSlotLockedBP();                                                                                              // [0xbe8bdc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSquadSlotLockedBP();                                                                                              // [0xbe42808] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailsHostPanel.GetItemInSquadSlotBP
-	// class UFortItem* GetItemInSquadSlotBP(class ULocalPlayer* LocalPlayer);                                                  // [0xbe8a26c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetItemInSquadSlotBP(class ULocalPlayer* LocalPlayer);                                                  // [0xbe40cac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemDetailsHostPanel.GetIdOfSquadSlotToManageBP
-	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe89f40] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe40980] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotItemPicker
@@ -4833,15 +4833,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemPicker.SetSortTypes
-	// void SetSortTypes(FSquadSlotSortTypes SquadSlotSortTypes);                                                               // [0xbe8dbc8] Final|Native|Public|BlueprintCallable 
+	// void SetSortTypes(FSquadSlotSortTypes SquadSlotSortTypes);                                                               // [0xbe44608] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemPicker.SetIdOfSquadSlotToManageBP
-	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe8d0dc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe43b1c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemPicker.GetIdOfSquadSlotToManageBP
-	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe8a01c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe40a5c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemPicker.FortSquadSlotSortChanged__DelegateSignature
-	// void FortSquadSlotSortChanged__DelegateSignature(ESquadSlotSortType CurrentSortType, ESquadSlotType SquadSlotType);      // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void FortSquadSlotSortChanged__DelegateSignature(ESquadSlotSortType CurrentSortType, ESquadSlotType SquadSlotType);      // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemPicker.CycleSortType
-	// void CycleSortType();                                                                                                    // [0xbe898e4] Final|Native|Public|BlueprintCallable 
+	// void CycleSortType();                                                                                                    // [0xbe40324] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotItemPickerTileButton
@@ -4856,11 +4856,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemPickerTileButton.HandleSlottingRestrictionReasonsChanged
-	// void HandleSlottingRestrictionReasonsChanged();                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSlottingRestrictionReasonsChanged();                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemPickerTileButton.HandleItemSlottedToDifferentSquad
-	// void HandleItemSlottedToDifferentSquad(FHomebaseSquadSlotId& SquadSlotId);                                               // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void HandleItemSlottedToDifferentSquad(FHomebaseSquadSlotId& SquadSlotId);                                               // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotItemPickerTileButton.GetSlottingRestrictionReasons
-	// TArray<EFortSquadSlottingRestrictionReason> GetSlottingRestrictionReasons();                                             // [0xbead694] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TArray<EFortSquadSlottingRestrictionReason> GetSlottingRestrictionReasons();                                             // [0xbe640d4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotSelectorPopupMenu
@@ -4876,9 +4876,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorPopupMenu.IsScreenWIFE
-	// bool IsScreenWIFE();                                                                                                     // [0xbe8bcdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsScreenWIFE();                                                                                                     // [0xbe4271c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorPopupMenu.GetHostButton
-	// class UFortSquadSlotSelectorButton* GetHostButton();                                                                     // [0xbead0c8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UFortSquadSlotSelectorButton* GetHostButton();                                                                     // [0xbe63b08] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotSurvivorTraitMatchesDetailWidget
@@ -4899,7 +4899,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSurvivorTraitMatchesDetailWidget.HandleTraitValuesUpdatedBP
-	// void HandleTraitValuesUpdatedBP();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleTraitValuesUpdatedBP();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotSelectorButton
@@ -4919,25 +4919,25 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.ViewInAll
-	// void ViewInAll();                                                                                                        // [0xbeb064c] Final|Native|Public|BlueprintCallable 
+	// void ViewInAll();                                                                                                        // [0xbe6708c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.SquadSlotWidgetUpdated
-	// void SquadSlotWidgetUpdated();                                                                                           // [0x94c78d8] Native|Event|Public|BlueprintEvent 
+	// void SquadSlotWidgetUpdated();                                                                                           // [0x94db98c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.SetIdOfSquadSlotToManageBP
-	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbeaf5d0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe66010] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.OpenSquadSlot
-	// void OpenSquadSlot();                                                                                                    // [0xbeaf120] Final|Native|Public|BlueprintCallable 
+	// void OpenSquadSlot();                                                                                                    // [0xbe65b60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.IsSquadSlotLockedBP
-	// bool IsSquadSlotLockedBP();                                                                                              // [0xbeaee20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSquadSlotLockedBP();                                                                                              // [0xbe65860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.HandlePreDifferentSquadSlotSetBP
-	// void HandlePreDifferentSquadSlotSetBP();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandlePreDifferentSquadSlotSetBP();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.HandlePostDifferentSquadSlotSetBP
-	// void HandlePostDifferentSquadSlotSetBP();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandlePostDifferentSquadSlotSetBP();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.GetPopupMenu
-	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbead61c] Final|Native|Private 
+	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbe6405c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.GetInPreviewMode
-	// bool GetInPreviewMode();                                                                                                 // [0xbead394] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetInPreviewMode();                                                                                                 // [0xbe63dd4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotSelectorButton.GetIdOfSquadSlotToManageBP
-	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbead1c4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe63c04] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotsView
@@ -4963,37 +4963,37 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.TryGetStaticSquadDataBP
-	// bool TryGetStaticSquadDataBP(FHomebaseSquad& OutSquadData);                                                              // [0xbeb04a4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetStaticSquadDataBP(FHomebaseSquad& OutSquadData);                                                              // [0xbe66ee4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.TryGetSelectedSquadSlotSortTypes
-	// bool TryGetSelectedSquadSlotSortTypes(FSquadSlotSortTypes& OutSlotSortTypes);                                            // [0xbeafc6c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool TryGetSelectedSquadSlotSortTypes(FSquadSlotSortTypes& OutSlotSortTypes);                                            // [0xbe666ac] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.SetIsSelectionLocked
-	// void SetIsSelectionLocked(bool ShouldSelectionBeLocked);                                                                 // [0xbeaf990] Final|Native|Public|BlueprintCallable 
+	// void SetIsSelectionLocked(bool ShouldSelectionBeLocked);                                                                 // [0xbe663d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.SetInPreviewMode
-	// void SetInPreviewMode(bool bPreview);                                                                                    // [0xbeaf910] Final|Native|Public|BlueprintCallable 
+	// void SetInPreviewMode(bool bPreview);                                                                                    // [0xbe66350] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.SetIdOfSquadToManageBP
-	// void SetIdOfSquadToManageBP(FName& SquadId);                                                                             // [0xbeaf880] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadToManageBP(FName& SquadId);                                                                             // [0xbe662c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.SelectSlot
-	// void SelectSlot(int32_t SquadSlotIndex);                                                                                 // [0xbeaf1cc] Final|Native|Public|BlueprintCallable 
+	// void SelectSlot(int32_t SquadSlotIndex);                                                                                 // [0xbe65c0c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.OnDifferentSquadSlotSelected__DelegateSignature
-	// void OnDifferentSquadSlotSelected__DelegateSignature(int32_t SquadSlotIndex);                                            // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnDifferentSquadSlotSelected__DelegateSignature(int32_t SquadSlotIndex);                                            // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.HandleSelectedButtonChanged
-	// void HandleSelectedButtonChanged(class UCommonButtonLegacy* SelectedButton, int32_t ButtonIndex);                        // [0xbeaec10] Final|Native|Private 
+	// void HandleSelectedButtonChanged(class UCommonButtonLegacy* SelectedButton, int32_t ButtonIndex);                        // [0xbe65650] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.HandleRequestViewInAll
-	// void HandleRequestViewInAll(int32_t SquadSlotIndex);                                                                     // [0xbeaeb90] Final|Native|Private 
+	// void HandleRequestViewInAll(int32_t SquadSlotIndex);                                                                     // [0xbe655d0] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.HandleRequestOpenSquadSlot
-	// void HandleRequestOpenSquadSlot(int32_t SquadSlotIndex);                                                                 // [0xbeaeb10] Final|Native|Private 
+	// void HandleRequestOpenSquadSlot(int32_t SquadSlotIndex);                                                                 // [0xbe65550] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.HandleHoveredButtonChanged
-	// void HandleHoveredButtonChanged(class UCommonButtonLegacy* HoveredButton, int32_t ButtonIndex);                          // [0xbeae93c] Final|Native|Private 
+	// void HandleHoveredButtonChanged(class UCommonButtonLegacy* HoveredButton, int32_t ButtonIndex);                          // [0xbe6537c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.HandleButtonDoubleClicked
-	// void HandleButtonDoubleClicked(class UCommonButtonLegacy* CommittedButton, int32_t ButtonIndex);                         // [0xbeae734] Final|Native|Private 
+	// void HandleButtonDoubleClicked(class UCommonButtonLegacy* CommittedButton, int32_t ButtonIndex);                         // [0xbe65174] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.HandleButtonClicked
-	// void HandleButtonClicked(class UCommonButtonLegacy* CommittedButton, int32_t ButtonIndex);                               // [0xbeae5bc] Final|Native|Private 
+	// void HandleButtonClicked(class UCommonButtonLegacy* CommittedButton, int32_t ButtonIndex);                               // [0xbe64ffc] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.GetIndexOfSelectedSquadSlot
-	// int32_t GetIndexOfSelectedSquadSlot();                                                                                   // [0xb6d4504] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIndexOfSelectedSquadSlot();                                                                                   // [0xb6a8778] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.GetIdOfSquadToManageBP
-	// FName GetIdOfSquadToManageBP();                                                                                          // [0x9fc3434] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetIdOfSquadToManageBP();                                                                                          // [0x9fc4738] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotsView.CreateAndAddSquadSlotButton
-	// class UFortSquadSlotSelectorButton* CreateAndAddSquadSlotButton(int32_t SquadSlotIndex, FHomebaseSquadSlot& SquadSlotDefinition, class UWidget*& OutSquadSlotButtonHost); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// class UFortSquadSlotSelectorButton* CreateAndAddSquadSlotButton(int32_t SquadSlotIndex, FHomebaseSquadSlot& SquadSlotDefinition, class UWidget*& OutSquadSlotButtonHost); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadSlotWidget
@@ -5011,15 +5011,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadSlotWidget.SetIdOfSquadSlotToManageBP
-	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbeaf6e0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadSlotToManageBP(FName& SquadId, int32_t SquadSlotIndex);                                                 // [0xbe66120] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotWidget.SetCardSize
-	// void SetCardSize(EFortItemCardSize CardSize);                                                                            // [0xbeaf448] Final|Native|Public|BlueprintCallable 
+	// void SetCardSize(EFortItemCardSize CardSize);                                                                            // [0xbe65e88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotWidget.IsSquadSlotLockedBP
-	// bool IsSquadSlotLockedBP();                                                                                              // [0xbeaee44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSquadSlotLockedBP();                                                                                              // [0xbe65884] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotWidget.GetItemInSquadSlotBP
-	// class UFortItem* GetItemInSquadSlotBP(class ULocalPlayer* LocalPlayer);                                                  // [0xbead430] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetItemInSquadSlotBP(class ULocalPlayer* LocalPlayer);                                                  // [0xbe63e70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadSlotWidget.GetIdOfSquadSlotToManageBP
-	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbead2a0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetIdOfSquadSlotToManageBP(FName& OutSquadId, int32_t& OutSquadSlotIndex);                                          // [0xbe63ce0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadStatsWidgetBase
@@ -5036,15 +5036,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadStatsWidgetBase.RequestStatsUpdate
-	// void RequestStatsUpdate();                                                                                               // [0xbeaf1a4] Final|Native|Public|BlueprintCallable 
+	// void RequestStatsUpdate();                                                                                               // [0xbe65be4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadStatsWidgetBase.RequestShowPreviewStats
-	// void RequestShowPreviewStats();                                                                                          // [0xbeaf190] Final|Native|Public|BlueprintCallable 
+	// void RequestShowPreviewStats();                                                                                          // [0xbe65bd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadStatsWidgetBase.HandleSquadSlottingPreviewStateChanged
-	// void HandleSquadSlottingPreviewStateChanged();                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleSquadSlottingPreviewStateChanged();                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadStatsWidgetBase.HandlePowerRatingChanged_BP
-	// void HandlePowerRatingChanged_BP(bool bHasTeamMebers);                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandlePowerRatingChanged_BP(bool bHasTeamMebers);                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadStatsWidgetBase.GetLocalPlayerId
-	// FUniqueNetIdRepl GetLocalPlayerId();                                                                                     // [0xbead500] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FUniqueNetIdRepl GetLocalPlayerId();                                                                                     // [0xbe63f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadStatValueWithIcon
@@ -5064,7 +5064,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadStatValueWithIcon.HandleDifferentAttributeSetBP
-	// void HandleDifferentAttributeSetBP();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentAttributeSetBP();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSquadTypeLandingPageBase
@@ -5084,15 +5084,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSquadTypeLandingPageBase.ShowWarningReadOnlyWIFE
-	// void ShowWarningReadOnlyWIFE(bool Force);                                                                                // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ShowWarningReadOnlyWIFE(bool Force);                                                                                // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSquadTypeLandingPageBase.IsScreenWIFE
-	// bool IsScreenWIFE();                                                                                                     // [0xbe8bcdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsScreenWIFE();                                                                                                     // [0xbe4271c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSquadTypeLandingPageBase.HandlePendingNavigationOp
-	// void HandlePendingNavigationOp();                                                                                        // [0xbeaea04] Final|Native|Protected|BlueprintCallable 
+	// void HandlePendingNavigationOp();                                                                                        // [0xbe65444] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadTypeLandingPageBase.HandleBackInputAction
-	// void HandleBackInputAction(bool& bPassThrough);                                                                          // [0xbeae530] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void HandleBackInputAction(bool& bPassThrough);                                                                          // [0xbe64f70] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSquadTypeLandingPageBase.CreateAndAddSquadButton
-	// class UFortSquadSelectorButton* CreateAndAddSquadButton(FName& SquadId);                                                 // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// class UFortSquadSelectorButton* CreateAndAddSquadButton(FName& SquadId);                                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortStatIcon
@@ -5110,9 +5110,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortStatIcon.SetAttribute
-	// void SetAttribute(FGameplayAttribute& InAttribute);                                                                      // [0xbeaf24c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetAttribute(FGameplayAttribute& InAttribute);                                                                      // [0xbe65c8c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStatIcon.HandleDifferentAttributeSetBP
-	// void HandleDifferentAttributeSetBP();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentAttributeSetBP();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSurvivorSquadManagementScreen
@@ -5128,11 +5128,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadManagementScreen.UpdateCycleButtons
-	// void UpdateCycleButtons();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void UpdateCycleButtons();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadManagementScreen.ShowHelpDialog
-	// void ShowHelpDialog();                                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ShowHelpDialog();                                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadManagementScreen.PlayFeedbackForSlottingPerson
-	// void PlayFeedbackForSlottingPerson(class UFortWorker* Worker, int32_t SlotIndex, FFortSurvivorSquadSlottingFeedbackData& FeedbackData); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void PlayFeedbackForSlottingPerson(class UFortWorker* Worker, int32_t SlotIndex, FFortSurvivorSquadSlottingFeedbackData& FeedbackData); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSurvivorSquadSelectorButton
@@ -5149,11 +5149,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadSelectorButton.TryGetSummaryStats
-	// bool TryGetSummaryStats(FFortSurvivorSquadSelectorButtonSummaryStats& OutSummaryStats);                                  // [0xbeb0574] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool TryGetSummaryStats(FFortSurvivorSquadSelectorButtonSummaryStats& OutSummaryStats);                                  // [0xbe66fb4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadSelectorButton.TryGetSquadMembers
-	// bool TryGetSquadMembers(TArray<UFortWorker*>& OutSquadMembers);                                                          // [0xbeb0328] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool TryGetSquadMembers(TArray<UFortWorker*>& OutSquadMembers);                                                          // [0xbe66d68] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadSelectorButton.TryGetPersonalityMatches
-	// bool TryGetPersonalityMatches(FFortSurvivorSquadSelectorButtonPersonalityMatches& OutPersonalityMatches);                // [0xbeafb84] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool TryGetPersonalityMatches(FFortSurvivorSquadSelectorButtonPersonalityMatches& OutPersonalityMatches);                // [0xbe665c4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchBase
@@ -5169,7 +5169,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchBase.OnStatMatchUpdated
-	// void OnStatMatchUpdated(FFortUISurvivorSquadStatMatch UpdatedMatch);                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStatMatchUpdated(FFortUISurvivorSquadStatMatch UpdatedMatch);                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchesBase
@@ -5187,17 +5187,17 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchesBase.TryGetStaticSquadDataBP
-	// bool TryGetStaticSquadDataBP(FHomebaseSquad& OutSquadData);                                                              // [0xbeb04a4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetStaticSquadDataBP(FHomebaseSquad& OutSquadData);                                                              // [0xbe66ee4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchesBase.SetSummaryView
-	// void SetSummaryView(bool bInSummaryView);                                                                                // [0xb4af650] Final|Native|Public|BlueprintCallable 
+	// void SetSummaryView(bool bInSummaryView);                                                                                // [0xb485640] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchesBase.SetIdOfSquadToManageBP
-	// void SetIdOfSquadToManageBP(FName& SquadId);                                                                             // [0xbeaf880] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetIdOfSquadToManageBP(FName& SquadId);                                                                             // [0xbe662c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchesBase.HandleDifferentSquadSetBP
-	// void HandleDifferentSquadSetBP();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentSquadSetBP();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchesBase.GetIdOfSquadToManageBP
-	// FName GetIdOfSquadToManageBP();                                                                                          // [0x9fc3434] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetIdOfSquadToManageBP();                                                                                          // [0x9fc4738] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadStatMatchesBase.AddStatMatch
-	// void AddStatMatch(class UFortSurvivorSquadStatMatchBase* SetBonus);                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void AddStatMatch(class UFortSurvivorSquadStatMatchBase* SetBonus);                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortSurvivorSquadSummaryStatItem
@@ -5216,7 +5216,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortSurvivorSquadSummaryStatItem.SetAttributeModifierAccumulation
-	// void SetAttributeModifierAccumulation(FFortAttributeModifierAccumulation& Accumulation);                                 // [0xbeaf36c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetAttributeModifierAccumulation(FFortAttributeModifierAccumulation& Accumulation);                                 // [0xbe65dac] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortWorkerSetBonusIcon
@@ -5234,9 +5234,9 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortWorkerSetBonusIcon.SetGameplayTag
-	// void SetGameplayTag(FGameplayTag& InGameplayTag);                                                                        // [0xbeaf4d4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetGameplayTag(FGameplayTag& InGameplayTag);                                                                        // [0xbe65f14] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortWorkerSetBonusIcon.HandleDifferentGameplayTagSetBP
-	// void HandleDifferentGameplayTagSetBP();                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleDifferentGameplayTagSetBP();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortStatsOverviewDetailsBase
@@ -5253,11 +5253,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortStatsOverviewDetailsBase.RequestStatsUpdate
-	// void RequestStatsUpdate();                                                                                               // [0xbeaf1b8] Final|Native|Public|BlueprintCallable 
+	// void RequestStatsUpdate();                                                                                               // [0xbe65bf8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStatsOverviewDetailsBase.ListenForChanges
-	// void ListenForChanges(bool bListen);                                                                                     // [0xbeaee88] Final|Native|Public|BlueprintCallable 
+	// void ListenForChanges(bool bListen);                                                                                     // [0xbe658c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortStatsOverviewDetailsBase.GetLocalPlayerId
-	// FUniqueNetIdRepl GetLocalPlayerId();                                                                                     // [0xbead500] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FUniqueNetIdRepl GetLocalPlayerId();                                                                                     // [0xbe63f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortLlamaStoreData
@@ -5301,19 +5301,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase.SwapToCardEnterState
-	// void SwapToCardEnterState();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SwapToCardEnterState();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase.SetupFocus
-	// void SetupFocus();                                                                                                       // [0xbeafa54] Final|Native|Protected|BlueprintCallable 
+	// void SetupFocus();                                                                                                       // [0xbe66494] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase.OnStoreStateChanged
-	// void OnStoreStateChanged(EFortStoreState NewStoreState);                                                                 // [0xbeaf020] Final|Native|Protected 
+	// void OnStoreStateChanged(EFortStoreState NewStoreState);                                                                 // [0xbe65a60] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase.OnStorePurchaseCompleted
-	// void OnStorePurchaseCompleted();                                                                                         // [0xbeaeff8] Final|Native|Private 
+	// void OnStorePurchaseCompleted();                                                                                         // [0xbe65a38] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase.HandleTencentDetails
-	// void HandleTencentDetails();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleTencentDetails();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase.HandleAddVBucks
-	// void HandleAddVBucks();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleAddVBucks();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase.CreateTencentPuchaseOpenModal
-	// void CreateTencentPuchaseOpenModal();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void CreateTencentPuchaseOpenModal();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortLlamaStoreBase_Legacy
@@ -5337,15 +5337,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase_Legacy.SwapToCardEnterState
-	// void SwapToCardEnterState();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SwapToCardEnterState();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase_Legacy.SetupFocus
-	// void SetupFocus();                                                                                                       // [0xbeafa68] Final|Native|Protected|BlueprintCallable 
+	// void SetupFocus();                                                                                                       // [0xbe664a8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase_Legacy.OnStoreStateChanged
-	// void OnStoreStateChanged(EFortStoreState NewStoreState);                                                                 // [0xbeaf0a0] Final|Native|Protected 
+	// void OnStoreStateChanged(EFortStoreState NewStoreState);                                                                 // [0xbe65ae0] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase_Legacy.OnStorePurchaseCompleted
-	// void OnStorePurchaseCompleted();                                                                                         // [0xbeaf00c] Final|Native|Private 
+	// void OnStorePurchaseCompleted();                                                                                         // [0xbe65a4c] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreBase_Legacy.CreateTencentPuchaseOpenModal
-	// void CreateTencentPuchaseOpenModal();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void CreateTencentPuchaseOpenModal();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortLlamaStoreDetailsBase
@@ -5362,19 +5362,19 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreDetailsBase.StartUpgradingToSilver
-	// void StartUpgradingToSilver();                                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void StartUpgradingToSilver();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreDetailsBase.StartUpgradingToGold
-	// void StartUpgradingToGold();                                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void StartUpgradingToGold();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreDetailsBase.SetScrollWidget
-	// void SetScrollWidget();                                                                                                  // [0xbeafa10] Final|Native|Public|BlueprintCallable 
+	// void SetScrollWidget();                                                                                                  // [0xbe66450] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreDetailsBase.OnOfferInfoChanged
-	// void OnOfferInfoChanged(int32_t CurrentOfferRarity);                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnOfferInfoChanged(int32_t CurrentOfferRarity);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreDetailsBase.GetNotInCollectionBookCount
-	// int32_t GetNotInCollectionBookCount();                                                                                   // [0xa25fb78] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNotInCollectionBookCount();                                                                                   // [0xa25a9c8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreDetailsBase.GetNewItemCount
-	// int32_t GetNewItemCount();                                                                                               // [0xa260600] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNewItemCount();                                                                                               // [0xa25b450] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreDetailsBase.GetChoiceItemCount
-	// int32_t GetChoiceItemCount();                                                                                            // [0xbe89a5c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetChoiceItemCount();                                                                                            // [0xbe4049c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortLlamaStoreInspectionScreen
@@ -5391,11 +5391,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreInspectionScreen.IsItemChoicePack
-	// bool IsItemChoicePack(class UObject* ItemToCheck);                                                                       // [0xbeaed54] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsItemChoicePack(class UObject* ItemToCheck);                                                                       // [0xbe65794] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreInspectionScreen.GetSelectedCardPack
-	// class UFortCardPackItem* GetSelectedCardPack();                                                                          // [0xbead640] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UFortCardPackItem* GetSelectedCardPack();                                                                          // [0xbe64080] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortLlamaStoreInspectionScreen.GetInspectChoiceInputState
-	// EInputActionState GetInspectChoiceInputState();                                                                          // [0xbead3ac] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EInputActionState GetInspectChoiceInputState();                                                                          // [0xbe63dec] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortOpenCardPackModal
@@ -5456,11 +5456,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.StWHUD.NativeHandleWeaponEquipped
-	// void NativeHandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                            // [0xbeaef34] Final|Native|Public  
+	// void NativeHandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                            // [0xbe65974] Final|Native|Public  
 	// Function /Script/SaveTheWorldUI.StWHUD.HandlePickerOpenRequest
-	// void HandlePickerOpenRequest(EFortPickerMode Mode, int32_t InitialOption, bool bIgnoreFirstAccept);                      // [0xbeaea18] Final|Native|Protected 
+	// void HandlePickerOpenRequest(EFortPickerMode Mode, int32_t InitialOption, bool bIgnoreFirstAccept);                      // [0xbe65458] Final|Native|Protected 
 	// Function /Script/SaveTheWorldUI.StWHUD.HandleCursorModeChanged
-	// void HandleCursorModeChanged(bool bCursorModeEnabled, FName ActionName, class UUserWidget* CursorModeContentWidget);     // [0xbeae834] Final|Native|Protected 
+	// void HandleCursorModeChanged(bool bCursorModeEnabled, FName ActionName, class UUserWidget* CursorModeContentWidget);     // [0xbe65274] Final|Native|Protected 
 };
 
 /// Class /Script/SaveTheWorldUI.FortTheaterSelect
@@ -5477,11 +5477,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortTheaterSelect.OnNavigationRight
-	// void OnNavigationRight();                                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnNavigationRight();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortTheaterSelect.OnNavigationLeft
-	// void OnNavigationLeft();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnNavigationLeft();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortTheaterSelect.GetTheaterRecommendedRatingRange
-	// bool GetTheaterRecommendedRatingRange(FString UniqueID, int32_t& Minimum, int32_t& Maximum);                             // [0xbeadd48] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetTheaterRecommendedRatingRange(FString UniqueID, int32_t& Minimum, int32_t& Maximum);                             // [0xbe64788] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortTheaterSelect_Legacy
@@ -5498,11 +5498,11 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortTheaterSelect_Legacy.OnNavigationRight
-	// void OnNavigationRight();                                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnNavigationRight();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortTheaterSelect_Legacy.OnNavigationLeft
-	// void OnNavigationLeft();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnNavigationLeft();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortTheaterSelect_Legacy.GetTheaterRecommendedRatingRange
-	// bool GetTheaterRecommendedRatingRange(FString UniqueID, int32_t& Minimum, int32_t& Maximum);                             // [0xbeadd48] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetTheaterRecommendedRatingRange(FString UniqueID, int32_t& Minimum, int32_t& Maximum);                             // [0xbe64788] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortHomebaseNodeItemTooltip
@@ -5529,15 +5529,15 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortUpgradeDetailsBase.RequestPurchaseNode
-	// void RequestPurchaseNode();                                                                                              // [0xbeaf17c] Final|Native|Protected|BlueprintCallable 
+	// void RequestPurchaseNode();                                                                                              // [0xbe65bbc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortUpgradeDetailsBase.OnUpgradeToDetailChanged
-	// void OnUpgradeToDetailChanged();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpgradeToDetailChanged();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeDetailsBase.OnShowIcon
-	// void OnShowIcon(class UTexture2D* Icon);                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnShowIcon(class UTexture2D* Icon);                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeDetailsBase.OnScreenActive
-	// void OnScreenActive();                                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnScreenActive();                                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeDetailsBase.OnPurchaseComplete
-	// void OnPurchaseComplete();                                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPurchaseComplete();                                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortUpgradeInfo
@@ -5553,43 +5553,43 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.IsUpgradeUnlocked
-	// bool IsUpgradeUnlocked();                                                                                                // [0x975cc40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUpgradeUnlocked();                                                                                                // [0x976c31c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.IsPreviewing
-	// bool IsPreviewing();                                                                                                     // [0xbeaedec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPreviewing();                                                                                                     // [0xbe6582c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetVideo
-	// class UMediaSource* GetVideo();                                                                                          // [0xbeae50c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMediaSource* GetVideo();                                                                                          // [0xbe64f4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetUpgradeUnlockLevel
-	// int32_t GetUpgradeUnlockLevel();                                                                                         // [0x2bfc2c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetUpgradeUnlockLevel();                                                                                         // [0x2c3646c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetTitle
-	// FText GetTitle();                                                                                                        // [0xbeae494] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetTitle();                                                                                                        // [0xbe64ed4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetNextLevelTitle
-	// FText GetNextLevelTitle();                                                                                               // [0xbead5d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetNextLevelTitle();                                                                                               // [0xbe64018] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetNextLevelDescription
-	// FText GetNextLevelDescription();                                                                                         // [0xbead594] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetNextLevelDescription();                                                                                         // [0xbe63fd4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetNextLevel
-	// int32_t GetNextLevel();                                                                                                  // [0xbead570] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNextLevel();                                                                                                  // [0xbe63fb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetMaxLevel
-	// int32_t GetMaxLevel();                                                                                                   // [0xbead558] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxLevel();                                                                                                   // [0xbe63f98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetItemName
-	// FText GetItemName();                                                                                                     // [0xbead4bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetItemName();                                                                                                     // [0xbe63efc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetIcon
-	// TWeakObjectPtr<UTexture2D*> GetIcon(EUpgradeInfoImageSize ImageSize);                                                    // [0xbead114] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UTexture2D*> GetIcon(EUpgradeInfoImageSize ImageSize);                                                    // [0xbe63b54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetDisplayAttributes
-	// bool GetDisplayAttributes(TArray<FFortDisplayAttribute>& OutDisplayAttributes);                                          // [0xbead020] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetDisplayAttributes(TArray<FFortDisplayAttribute>& OutDisplayAttributes);                                          // [0xbe63a60] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetDescription
-	// FText GetDescription();                                                                                                  // [0xbeacfbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetDescription();                                                                                                  // [0xbe639fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetCurrentLevel
-	// int32_t GetCurrentLevel();                                                                                               // [0xbeacfa4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentLevel();                                                                                               // [0xbe639e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.GetCost
-	// int32_t GetCost();                                                                                                       // [0xbeacf18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCost();                                                                                                       // [0xbe63958] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.ForwardPreview
-	// void ForwardPreview();                                                                                                   // [0xbeacedc] Final|Native|Public|BlueprintCallable 
+	// void ForwardPreview();                                                                                                   // [0xbe6391c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.CanPreview
-	// bool CanPreview();                                                                                                       // [0xbeace84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPreview();                                                                                                       // [0xbe638c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.CanAffordUpgrade
-	// bool CanAffordUpgrade();                                                                                                 // [0xbeace70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanAffordUpgrade();                                                                                                 // [0xbe638b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeInfo.BackwardPreview
-	// void BackwardPreview();                                                                                                  // [0xbeace34] Final|Native|Public|BlueprintCallable 
+	// void BackwardPreview();                                                                                                  // [0xbe63874] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SaveTheWorldUI.FortUpgradeScreenBase
@@ -5610,27 +5610,27 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.UseUpgradesRespecToken
-	// void UseUpgradesRespecToken();                                                                                           // [0xbeb0624] Final|Native|Protected|BlueprintCallable 
+	// void UseUpgradesRespecToken();                                                                                           // [0xbe67064] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.TogglePreview
-	// void TogglePreview();                                                                                                    // [0xbeafa7c] Final|Native|Protected|BlueprintCallable 
+	// void TogglePreview();                                                                                                    // [0xbe664bc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.RefreshFocus
-	// void RefreshFocus();                                                                                                     // [0xbeaf154] Final|Native|Protected|BlueprintCallable 
+	// void RefreshFocus();                                                                                                     // [0xbe65b94] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.OnUseUpgradesRespecTokenComplete
-	// void OnUseUpgradesRespecTokenComplete();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUseUpgradesRespecTokenComplete();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.OnUpgradeInfoChanged
-	// void OnUpgradeInfoChanged();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpgradeInfoChanged();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.OnPurchaseNodeComplete
-	// void OnPurchaseNodeComplete();                                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPurchaseNodeComplete();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.IsPreviewing
-	// bool IsPreviewing();                                                                                                     // [0xbeaee00] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPreviewing();                                                                                                     // [0xbe65840] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.HandleTabSelected
-	// void HandleTabSelected(FName TabID);                                                                                     // [0xbeaecd4] Final|Native|Private 
+	// void HandleTabSelected(FName TabID);                                                                                     // [0xbe65714] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.GetUpgradesRespecTokenCount
-	// int32_t GetUpgradesRespecTokenCount();                                                                                   // [0xbeae4e8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetUpgradesRespecTokenCount();                                                                                   // [0xbe64f28] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.CanPreview
-	// bool CanPreview();                                                                                                       // [0xbeacea4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPreview();                                                                                                       // [0xbe638e4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase.AreUpgradesRespecTokensAvailable
-	// bool AreUpgradesRespecTokensAvailable();                                                                                 // [0xbeace0c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool AreUpgradesRespecTokensAvailable();                                                                                 // [0xbe6384c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy
@@ -5651,27 +5651,27 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.UseUpgradesRespecToken
-	// void UseUpgradesRespecToken();                                                                                           // [0xbeb0638] Final|Native|Protected|BlueprintCallable 
+	// void UseUpgradesRespecToken();                                                                                           // [0xbe67078] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.TogglePreview
-	// void TogglePreview();                                                                                                    // [0xbeafb00] Final|Native|Protected|BlueprintCallable 
+	// void TogglePreview();                                                                                                    // [0xbe66540] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.RefreshFocus
-	// void RefreshFocus();                                                                                                     // [0xbeaf168] Final|Native|Protected|BlueprintCallable 
+	// void RefreshFocus();                                                                                                     // [0xbe65ba8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.OnUseUpgradesRespecTokenComplete
-	// void OnUseUpgradesRespecTokenComplete();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUseUpgradesRespecTokenComplete();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.OnUpgradeInfoChanged
-	// void OnUpgradeInfoChanged();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpgradeInfoChanged();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.OnPurchaseNodeComplete
-	// void OnPurchaseNodeComplete();                                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPurchaseNodeComplete();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.IsPreviewing
-	// bool IsPreviewing();                                                                                                     // [0xbeaee00] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPreviewing();                                                                                                     // [0xbe65840] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.HandleTabSelected
-	// void HandleTabSelected(FName TabID);                                                                                     // [0xbeaecd4] Final|Native|Private 
+	// void HandleTabSelected(FName TabID);                                                                                     // [0xbe65714] Final|Native|Private 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.GetUpgradesRespecTokenCount
-	// int32_t GetUpgradesRespecTokenCount();                                                                                   // [0xbeae4e8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetUpgradesRespecTokenCount();                                                                                   // [0xbe64f28] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.CanPreview
-	// bool CanPreview();                                                                                                       // [0xbeacea4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPreview();                                                                                                       // [0xbe638e4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SaveTheWorldUI.FortUpgradeScreenBase_Legacy.AreUpgradesRespecTokensAvailable
-	// bool AreUpgradesRespecTokensAvailable();                                                                                 // [0xbeace0c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool AreUpgradesRespecTokensAvailable();                                                                                 // [0xbe6384c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SaveTheWorldUI.FortUpgradeTileBase
@@ -5687,7 +5687,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortUpgradeTileBase.OnDataRefresh
-	// void OnDataRefresh(bool bUpgrade);                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDataRefresh(bool bUpgrade);                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SaveTheWorldUI.FortUpgradeTileBase_Legacy
@@ -5703,7 +5703,7 @@ public:
 
 	/// Functions
 	// Function /Script/SaveTheWorldUI.FortUpgradeTileBase_Legacy.OnDataRefresh
-	// void OnDataRefresh(bool bUpgrade);                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDataRefresh(bool bUpgrade);                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/SaveTheWorldUI.SquadSlotSortTypes

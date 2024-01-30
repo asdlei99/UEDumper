@@ -82,27 +82,17 @@ public:
 
 	/// Functions
 	// Function /VictoryCrownsGameplay/Items/VictoryCrownFrontEndPawnComponent.VictoryCrownFrontEndPawnComponent_C.UpdateForGCNL
-	// void UpdateForGCNL();                                                                                                    // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void UpdateForGCNL();                                                                                                    // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/Items/VictoryCrownFrontEndPawnComponent.VictoryCrownFrontEndPawnComponent_C.OnStatChanged_80A6FD2F402F11C0D0A207ACE25F03A6
-	// void OnStatChanged_80A6FD2F402F11C0D0A207ACE25F03A6(FName StatName, int32_t StatValue);                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnStatChanged_80A6FD2F402F11C0D0A207ACE25F03A6(FName StatName, int32_t StatValue);                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/Items/VictoryCrownFrontEndPawnComponent.VictoryCrownFrontEndPawnComponent_C.PlaylistChanged
-	// void PlaylistChanged();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void PlaylistChanged();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/Items/VictoryCrownFrontEndPawnComponent.VictoryCrownFrontEndPawnComponent_C.ReceiveEndPlay
-	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                          // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/Items/VictoryCrownFrontEndPawnComponent.VictoryCrownFrontEndPawnComponent_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/Items/VictoryCrownFrontEndPawnComponent.VictoryCrownFrontEndPawnComponent_C.ExecuteUbergraph_VictoryCrownFrontEndPawnComponent
-	// void ExecuteUbergraph_VictoryCrownFrontEndPawnComponent(int32_t EntryPoint);                                             // [0x2177018] Final                
-};
-
-/// Class /VictoryCrownsGameplay/Items/B_CosmeticStatObject_TotalRoyalRoyales.B_CosmeticStatObject_TotalRoyalRoyales_C
-/// Size: 0x0000 (0x0000A0 - 0x0000A0)
-class UB_CosmeticStatObject_TotalRoyalRoyales_C : public UFortCosmeticStatObject_TotalRoyalRoyales
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 160;
-
-public:
+	// void ExecuteUbergraph_VictoryCrownFrontEndPawnComponent(int32_t EntryPoint);                                             // [0x211c0a0] Final                
 };
 
 /// Class /VictoryCrownsGameplay/Items/B_CosmeticStatObject_TotalVictoryCrowns.B_CosmeticStatObject_TotalVictoryCrowns_C
@@ -138,9 +128,9 @@ public:
 
 	/// Functions
 	// Function /VictoryCrownsGameplay/Items/VictoryCrownComponent.VictoryCrownComponent_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/Items/VictoryCrownComponent.VictoryCrownComponent_C.ExecuteUbergraph_VictoryCrownComponent
-	// void ExecuteUbergraph_VictoryCrownComponent(int32_t EntryPoint);                                                         // [0x2177018] Final                
+	// void ExecuteUbergraph_VictoryCrownComponent(int32_t EntryPoint);                                                         // [0x211c0a0] Final                
 };
 
 /// Class /VictoryCrownsGameplay/Items/VictoryCrownGameStateComponent.VictoryCrownGameStateComponent_C
@@ -149,6 +139,16 @@ class UVictoryCrownGameStateComponent_C : public UFortGameStateComponent_Victory
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 248;
+
+public:
+};
+
+/// Class /VictoryCrownsGameplay/Items/B_CosmeticStatObject_TotalRoyalRoyales.B_CosmeticStatObject_TotalRoyalRoyales_C
+/// Size: 0x0000 (0x0000A0 - 0x0000A0)
+class UB_CosmeticStatObject_TotalRoyalRoyales_C : public UFortCosmeticStatObject_TotalRoyalRoyales
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 160;
 
 public:
 };

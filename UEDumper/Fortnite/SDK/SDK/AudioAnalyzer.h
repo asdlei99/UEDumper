@@ -37,9 +37,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioAnalyzer.AudioAnalyzer.StopAnalyzing
-	// void StopAnalyzing(class UObject* WorldContextObject);                                                                // [0xa7d0fb0] Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void StopAnalyzing(class UObject* WorldContextObject);                                                                // [0xa7c8258] Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AudioAnalyzer.AudioAnalyzer.StartAnalyzing
-	// void StartAnalyzing(class UObject* WorldContextObject, class UAudioBus* AudioBusToAnalyze);                           // [0xa7d0bfc] Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void StartAnalyzing(class UObject* WorldContextObject, class UAudioBus* AudioBusToAnalyze);                           // [0xa7c7ea4] Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioAnalyzer.AudioAnalyzerNRTSettings

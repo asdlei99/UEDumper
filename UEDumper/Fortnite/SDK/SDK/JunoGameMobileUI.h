@@ -36,8 +36,8 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameMobileUI.JunoGameDynamicMobileUIDirector.UpdateHUDLayoutContexts
-	// void UpdateHUDLayoutContexts(FGameplayTagContainer ContextsToAdd, FGameplayTagContainer ContextsToRemove);            // [0xbe0cd48] Final|Native|Public|BlueprintCallable 
+	// void UpdateHUDLayoutContexts(FGameplayTagContainer ContextsToAdd, FGameplayTagContainer ContextsToRemove);            // [0xbdc42c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameMobileUI.JunoGameDynamicMobileUIDirector.BP_OnBuildingModeChanged
-	// void BP_OnBuildingModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                 // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void BP_OnBuildingModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                 // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 };
 

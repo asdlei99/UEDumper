@@ -22,6 +22,6 @@ public:
 
 	/// Functions
 	// Function /Script/MotorboatUI.FortAthenaVehicleDashboardWidget_Meatball.GetMeatballVehicle
-	// class AFortMeatballVehicle* GetMeatballVehicle();                                                                        // [0xa910f5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortMeatballVehicle* GetMeatballVehicle();                                                                        // [0xa90338c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

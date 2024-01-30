@@ -26,9 +26,9 @@ public:
 
 	/// Functions
 	// Function /Script/CaretakerRuntime.FortAthenaCaretakerAIController.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* CharacterOwner, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb0f255c] Final|Native|Public  
+	// void OnMovementModeChanged(class ACharacter* CharacterOwner, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb0d524c] Final|Native|Public  
 	// Function /Script/CaretakerRuntime.FortAthenaCaretakerAIController.DebugUpdate
-	// void DebugUpdate(float UpdateInterval);                                                                                  // [0x69d95c4] Final|Native|Public|BlueprintCallable 
+	// void DebugUpdate(float UpdateInterval);                                                                                  // [0x6456a9c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CaretakerRuntime.FortBTTask_CaretakerMoveTo
@@ -104,14 +104,14 @@ public:
 
 	/// Functions
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.SetDelayedMaterialParameters
-	// void SetDelayedMaterialParameters();                                                                                     // [0xb0f2658] Final|Native|Protected|BlueprintCallable 
+	// void SetDelayedMaterialParameters();                                                                                     // [0xb0d5348] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.GetWorldStriderComponent
-	// class UFortAnimWorldStriderComponent* GetWorldStriderComponent();                                                        // [0xb0f2534] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortAnimWorldStriderComponent* GetWorldStriderComponent();                                                        // [0xb0d5224] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.GetWalkSpeedWarpingValue
-	// float GetWalkSpeedWarpingValue();                                                                                        // [0xb0f2508] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWalkSpeedWarpingValue();                                                                                        // [0xb0d51f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.GetWalkPlayRateValue
-	// float GetWalkPlayRateValue();                                                                                            // [0xb0f24e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWalkPlayRateValue();                                                                                            // [0xb0d51d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CaretakerRuntime.FortAIAnimInstance_Caretaker.GetStartAnimPosition
-	// float GetStartAnimPosition();                                                                                            // [0xb0f24bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStartAnimPosition();                                                                                            // [0xb0d51ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

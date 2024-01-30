@@ -48,7 +48,7 @@ public:
 
 	/// Functions
 	// Function /Script/BallisticShieldGameplayRuntime.BallisticShieldWeaponInterface.GetBallisticShieldData
-	// void GetBallisticShieldData(EBallisticShieldPlayerActionState& BallisticShieldPlayerState, float& StaggerBuildupPercent); // [0xa897fa0] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void GetBallisticShieldData(EBallisticShieldPlayerActionState& BallisticShieldPlayerState, float& StaggerBuildupPercent); // [0xa88a3a8] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/BallisticShieldGameplayRuntime.FortMovementMode_ELBShieldSprint

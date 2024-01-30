@@ -38,13 +38,13 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCoreUI.SparksQuestScreenContainer.SetQuestScreenVisible
-	// void SetQuestScreenVisible(bool bVisible);                                                                               // [0xb09ce6c] Final|Native|Protected|BlueprintCallable 
+	// void SetQuestScreenVisible(bool bVisible);                                                                               // [0xb07fbdc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SparksCoreUI.SparksQuestScreenContainer.HandleToggleQuestList
-	// void HandleToggleQuestList(bool bMapVisible);                                                                            // [0xb09ce6c] Final|Native|Protected 
+	// void HandleToggleQuestList(bool bMapVisible);                                                                            // [0xb07fbdc] Final|Native|Protected 
 	// Function /Script/SparksCoreUI.SparksQuestScreenContainer.HandleMapPanelExitButtonPressed
-	// void HandleMapPanelExitButtonPressed();                                                                                  // [0xb09ce58] Final|Native|Protected|BlueprintCallable 
+	// void HandleMapPanelExitButtonPressed();                                                                                  // [0xb07fbc8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SparksCoreUI.SparksQuestScreenContainer.HandleAthenaScreenDeactivated
-	// void HandleAthenaScreenDeactivated();                                                                                    // [0xb09ce40] Final|Native|Protected 
+	// void HandleAthenaScreenDeactivated();                                                                                    // [0xb07fbb0] Final|Native|Protected 
 };
 
 /// Class /Script/SparksCoreUI.SparksSongItemDetailsVM
@@ -59,7 +59,7 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCoreUI.SparksSongItemDetailsVM.OnSongCatalogRetrieved
-	// void OnSongCatalogRetrieved(bool bSuccess);                                                                              // [0xb09ceec] Final|Native|Private 
+	// void OnSongCatalogRetrieved(bool bSuccess);                                                                              // [0xb07fc5c] Final|Native|Private 
 };
 
 /// Class /Script/SparksCoreUI.SparksSongItemVM

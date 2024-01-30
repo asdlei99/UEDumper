@@ -28,15 +28,15 @@ public:
 
 	/// Functions
 	// Function /Script/EyeTracker.EyeTrackerFunctionLibrary.SetEyeTrackedPlayer
-	// void SetEyeTrackedPlayer(class APlayerController* PlayerController);                                                  // [0x5bd0e30] Final|Native|Static|Public|BlueprintCallable 
+	// void SetEyeTrackedPlayer(class APlayerController* PlayerController);                                                  // [0x5c1c510] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/EyeTracker.EyeTrackerFunctionLibrary.IsStereoGazeDataAvailable
-	// bool IsStereoGazeDataAvailable();                                                                                     // [0x5bd0dec] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsStereoGazeDataAvailable();                                                                                     // [0x5c1c4cc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EyeTracker.EyeTrackerFunctionLibrary.IsEyeTrackerConnected
-	// bool IsEyeTrackerConnected();                                                                                         // [0x5bd0da0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsEyeTrackerConnected();                                                                                         // [0x5c1c480] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EyeTracker.EyeTrackerFunctionLibrary.GetStereoGazeData
-	// bool GetStereoGazeData(FEyeTrackerStereoGazeData& OutGazeData);                                                       // [0x5bd0d08] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetStereoGazeData(FEyeTrackerStereoGazeData& OutGazeData);                                                       // [0x5c1c3e8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EyeTracker.EyeTrackerFunctionLibrary.GetGazeData
-	// bool GetGazeData(FEyeTrackerGazeData& OutGazeData);                                                                   // [0x5bd0c10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetGazeData(FEyeTrackerGazeData& OutGazeData);                                                                   // [0x5c1c2f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/EyeTracker.EyeTrackerGazeData

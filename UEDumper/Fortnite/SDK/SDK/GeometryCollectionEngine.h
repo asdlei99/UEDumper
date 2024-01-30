@@ -109,7 +109,7 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionISMPoolSubSystem.OnActorEndPlay
-	// void OnActorEndPlay(class AActor* InSource, TEnumAsByte<EEndPlayReason> Reason);                                      // [0x60a97f0] Final|Native|Protected 
+	// void OnActorEndPlay(class AActor* InSource, TEnumAsByte<EEndPlayReason> Reason);                                      // [0x60f4a8c] Final|Native|Protected 
 };
 
 /// Struct /Script/GeometryCollectionEngine.ChaosCollisionEventRequestSettings
@@ -188,39 +188,39 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents
-	// void SortTrailingEvents(TArray<FChaosTrailingEventData>& TrailingEvents, EChaosTrailingSortMethod SortMethod);        // [0x60ad418] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SortTrailingEvents(TArray<FChaosTrailingEventData>& TrailingEvents, EChaosTrailingSortMethod SortMethod);        // [0x60f86b4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SortRemovalEvents
-	// void SortRemovalEvents(TArray<FChaosRemovalEventData>& RemovalEvents, EChaosRemovalSortMethod SortMethod);            // [0x60acc70] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SortRemovalEvents(TArray<FChaosRemovalEventData>& RemovalEvents, EChaosRemovalSortMethod SortMethod);            // [0x60f7f0c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents
-	// void SortCollisionEvents(TArray<FChaosCollisionEventData>& CollisionEvents, EChaosCollisionSortMethod SortMethod);    // [0x60ac4c8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SortCollisionEvents(TArray<FChaosCollisionEventData>& CollisionEvents, EChaosCollisionSortMethod SortMethod);    // [0x60f7764] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents
-	// void SortBreakingEvents(TArray<FChaosBreakingEventData>& BreakingEvents, EChaosBreakingSortMethod SortMethod);        // [0x60abd20] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SortBreakingEvents(TArray<FChaosBreakingEventData>& BreakingEvents, EChaosBreakingSortMethod SortMethod);        // [0x60f6fbc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings
-	// void SetTrailingEventRequestSettings(FChaosTrailingEventRequestSettings& InSettings);                                 // [0x60abb54] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetTrailingEventRequestSettings(FChaosTrailingEventRequestSettings& InSettings);                                 // [0x60f6df0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled
-	// void SetTrailingEventEnabled(bool bIsEnabled);                                                                        // [0x60abac0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetTrailingEventEnabled(bool bIsEnabled);                                                                        // [0x60f6d5c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetRemovalEventRequestSettings
-	// void SetRemovalEventRequestSettings(FChaosRemovalEventRequestSettings& InSettings);                                   // [0x60ab70c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetRemovalEventRequestSettings(FChaosRemovalEventRequestSettings& InSettings);                                   // [0x60f69a8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetRemovalEventEnabled
-	// void SetRemovalEventEnabled(bool bIsEnabled);                                                                         // [0x60ab678] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetRemovalEventEnabled(bool bIsEnabled);                                                                         // [0x60f6914] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings
-	// void SetCollisionEventRequestSettings(FChaosCollisionEventRequestSettings& InSettings);                               // [0x60aa780] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetCollisionEventRequestSettings(FChaosCollisionEventRequestSettings& InSettings);                               // [0x60f5a1c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled
-	// void SetCollisionEventEnabled(bool bIsEnabled);                                                                       // [0x60aa6f0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetCollisionEventEnabled(bool bIsEnabled);                                                                       // [0x60f598c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings
-	// void SetBreakingEventRequestSettings(FChaosBreakingEventRequestSettings& InSettings);                                 // [0x60aa644] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBreakingEventRequestSettings(FChaosBreakingEventRequestSettings& InSettings);                                 // [0x60f58e0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled
-	// void SetBreakingEventEnabled(bool bIsEnabled);                                                                        // [0x60aa5b0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetBreakingEventEnabled(bool bIsEnabled);                                                                        // [0x60f584c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor
-	// void RemoveGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor);                          // [0x60a9be4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RemoveGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor);                          // [0x60f4e80] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor
-	// void RemoveChaosSolverActor(class AChaosSolverActor* ChaosSolverActor);                                               // [0x5fffda8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RemoveChaosSolverActor(class AChaosSolverActor* ChaosSolverActor);                                               // [0x604b150] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.IsEventListening
-	// bool IsEventListening();                                                                                              // [0x60a97bc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEventListening();                                                                                              // [0x60f4a58] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor
-	// void AddGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor);                             // [0x60a81a8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor);                             // [0x60f3444] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor
-	// void AddChaosSolverActor(class AChaosSolverActor* ChaosSolverActor);                                                  // [0x5fffda8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddChaosSolverActor(class AChaosSolverActor* ChaosSolverActor);                                                  // [0x604b150] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GeometryCollectionEngine.GeometryCollectionActor
@@ -234,7 +234,7 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle
-	// bool RaycastSingle(FVector Start, FVector End, FHitResult& OutHit);                                                   // [0x60a98f0] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool RaycastSingle(FVector Start, FVector End, FHitResult& OutHit);                                                   // [0x60f4b8c] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GeometryCollectionEngine.GeometryCollectionCache
@@ -417,111 +417,111 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetUseStaticMeshCollisionForTraces
-	// void SetUseStaticMeshCollisionForTraces(bool bInUseStaticMeshCollisionForTraces);                                     // [0x60abc80] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetUseStaticMeshCollisionForTraces(bool bInUseStaticMeshCollisionForTraces);                                     // [0x60f6f1c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetUseMaterialDamageModifiers
-	// void SetUseMaterialDamageModifiers(bool bInUseMaterialDamageModifiers);                                               // [0x60abc00] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetUseMaterialDamageModifiers(bool bInUseMaterialDamageModifiers);                                               // [0x60f6e9c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetRestCollection
-	// void SetRestCollection(class UGeometryCollection* RestCollectionIn, bool bApplyAssetDefaults);                        // [0x60ab7ac] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetRestCollection(class UGeometryCollection* RestCollectionIn, bool bApplyAssetDefaults);                        // [0x60f6a48] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetPerParticleCollisionProfileName
-	// void SetPerParticleCollisionProfileName(TArray<int32_t>& BoneIds, FName ProfileName);                                 // [0x60ab4d0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPerParticleCollisionProfileName(TArray<int32_t>& BoneIds, FName ProfileName);                                 // [0x60f676c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetPerLevelCollisionProfileNames
-	// void SetPerLevelCollisionProfileNames(TArray<FName>& ProfileNames);                                                   // [0x60ab434] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPerLevelCollisionProfileNames(TArray<FName>& ProfileNames);                                                   // [0x60f66d0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetOneWayInteractionLevel
-	// void SetOneWayInteractionLevel(int32_t InOneWayInteractionLevel);                                                     // [0x60ab3b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetOneWayInteractionLevel(int32_t InOneWayInteractionLevel);                                                     // [0x60f6650] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyRemovals
-	// void SetNotifyRemovals(bool bNewNotifyRemovals);                                                                      // [0x60ab324] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNotifyRemovals(bool bNewNotifyRemovals);                                                                      // [0x60f65c0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyGlobalRemovals
-	// void SetNotifyGlobalRemovals(bool bNewNotifyGlobalRemovals);                                                          // [0x60ab274] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNotifyGlobalRemovals(bool bNewNotifyGlobalRemovals);                                                          // [0x60f6510] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyGlobalCrumblings
-	// void SetNotifyGlobalCrumblings(bool bNewNotifyGlobalCrumblings, bool bGlobalNewCrumblingEventIncludesChildren);       // [0x60ab164] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNotifyGlobalCrumblings(bool bNewNotifyGlobalCrumblings, bool bGlobalNewCrumblingEventIncludesChildren);       // [0x60f6400] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyGlobalCollision
-	// void SetNotifyGlobalCollision(bool bNewNotifyGlobalCollisions);                                                       // [0x60ab0b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNotifyGlobalCollision(bool bNewNotifyGlobalCollisions);                                                       // [0x60f6350] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyGlobalBreaks
-	// void SetNotifyGlobalBreaks(bool bNewNotifyGlobalBreaks);                                                              // [0x60ab034] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNotifyGlobalBreaks(bool bNewNotifyGlobalBreaks);                                                              // [0x60f62d0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyCrumblings
-	// void SetNotifyCrumblings(bool bNewNotifyCrumblings, bool bNewCrumblingEventIncludesChildren);                         // [0x60aaf1c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNotifyCrumblings(bool bNewNotifyCrumblings, bool bNewCrumblingEventIncludesChildren);                         // [0x60f61b8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks
-	// void SetNotifyBreaks(bool bNewNotifyBreaks);                                                                          // [0x60aae60] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNotifyBreaks(bool bNewNotifyBreaks);                                                                          // [0x60f60fc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetLocalRestTransforms
-	// void SetLocalRestTransforms(TArray<FTransform>& Transforms, bool bOnlyLeaves);                                        // [0x60aaccc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetLocalRestTransforms(TArray<FTransform>& Transforms, bool bOnlyLeaves);                                        // [0x60f5f68] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetGravityGroupIndex
-	// void SetGravityGroupIndex(int32_t InGravityGroupIndex);                                                               // [0x60aac30] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetGravityGroupIndex(int32_t InGravityGroupIndex);                                                               // [0x60f5ecc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetEnableDamageFromCollision
-	// void SetEnableDamageFromCollision(bool bValue);                                                                       // [0x60aab28] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetEnableDamageFromCollision(bool bValue);                                                                       // [0x60f5dc4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetDensityFromPhysicsMaterial
-	// void SetDensityFromPhysicsMaterial(bool bInDensityFromPhysicsMaterial);                                               // [0x60aaaa8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetDensityFromPhysicsMaterial(bool bInDensityFromPhysicsMaterial);                                               // [0x60f5d44] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetDamageThreshold
-	// void SetDamageThreshold(TArray<float>& InDamageThreshold);                                                            // [0x60aa9cc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetDamageThreshold(TArray<float>& InDamageThreshold);                                                            // [0x60f5c68] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetDamagePropagationData
-	// void SetDamagePropagationData(FGeometryCollectionDamagePropagationData& InDamagePropagationData);                     // [0x60aa934] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetDamagePropagationData(FGeometryCollectionDamagePropagationData& InDamagePropagationData);                     // [0x60f5bd0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetDamageModel
-	// void SetDamageModel(EDamageModelTypeEnum InDamageModel);                                                              // [0x60aa8b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetDamageModel(EDamageModelTypeEnum InDamageModel);                                                              // [0x60f5b50] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetAnchoredByTransformedBox
-	// void SetAnchoredByTransformedBox(FBox Box, FTransform Transform, bool bAnchored, int32_t MaxLevel);                   // [0x60aa11c] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetAnchoredByTransformedBox(FBox Box, FTransform Transform, bool bAnchored, int32_t MaxLevel);                   // [0x60f53b8] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetAnchoredByIndex
-	// void SetAnchoredByIndex(int32_t Index, bool bAnchored);                                                               // [0x60aa034] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetAnchoredByIndex(int32_t Index, bool bAnchored);                                                               // [0x60f52d0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetAnchoredByBox
-	// void SetAnchoredByBox(FBox WorldSpaceBox, bool bAnchored, int32_t MaxLevel);                                          // [0x60a9d24] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetAnchoredByBox(FBox WorldSpaceBox, bool bAnchored, int32_t MaxLevel);                                          // [0x60f4fc0] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetAbandonedParticleCollisionProfileName
-	// void SetAbandonedParticleCollisionProfileName(FName CollisionProfile);                                                // [0x60a9c98] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetAbandonedParticleCollisionProfileName(FName CollisionProfile);                                                // [0x60f4f34] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.RemoveAllAnchors
-	// void RemoveAllAnchors();                                                                                              // [0x60a9bd0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RemoveAllAnchors();                                                                                              // [0x60f4e6c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision
-	// void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo& CollisionInfo);                                              // [0x2177018] RequiredAPI|Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo& CollisionInfo);                                              // [0x211c0a0] RequiredAPI|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.OnRep_RepStateData
-	// void OnRep_RepStateData();                                                                                            // [0x60a98dc] Final|RequiredAPI|Native|Protected 
+	// void OnRep_RepStateData();                                                                                            // [0x60f4b78] Final|RequiredAPI|Native|Protected 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.OnRep_RepDynamicData
-	// void OnRep_RepDynamicData();                                                                                          // [0x60a98c8] Final|RequiredAPI|Native|Protected 
+	// void OnRep_RepDynamicData();                                                                                          // [0x60f4b64] Final|RequiredAPI|Native|Protected 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.OnRep_RepData
-	// void OnRep_RepData();                                                                                                 // [0x60a98b4] Final|RequiredAPI|Native|Protected 
+	// void OnRep_RepData();                                                                                                 // [0x60f4b50] Final|RequiredAPI|Native|Protected 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature
-	// void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(class UGeometryCollectionComponent* FracturedComponent); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(class UGeometryCollectionComponent* FracturedComponent); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature
-	// void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(class UGeometryCollectionComponent* FracturedComponent); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(class UGeometryCollectionComponent* FracturedComponent); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.IsRootBroken
-	// bool IsRootBroken();                                                                                                  // [0x60a97d8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRootBroken();                                                                                                  // [0x60f4a74] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetUseStaticMeshCollisionForTraces
-	// bool GetUseStaticMeshCollisionForTraces();                                                                            // [0x60a97a4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetUseStaticMeshCollisionForTraces();                                                                            // [0x60f4a40] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetRootInitialTransform
-	// FTransform GetRootInitialTransform();                                                                                 // [0x60a9748] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetRootInitialTransform();                                                                                 // [0x60f49e4] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetRootIndex
-	// int32_t GetRootIndex();                                                                                               // [0x60a9728] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetRootIndex();                                                                                               // [0x60f49c4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetRootCurrentTransform
-	// FTransform GetRootCurrentTransform();                                                                                 // [0x60a96cc] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetRootCurrentTransform();                                                                                 // [0x60f4968] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetMassAndExtents
-	// void GetMassAndExtents(int32_t ItemIndex, float& OutMass, FBox& OutExtents);                                          // [0x60a95ac] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetMassAndExtents(int32_t ItemIndex, float& OutMass, FBox& OutExtents);                                          // [0x60f4848] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetLocalBounds
-	// FBox GetLocalBounds();                                                                                                // [0x60a956c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox GetLocalBounds();                                                                                                // [0x60f4808] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetInitialLocalRestTransforms
-	// TArray<FTransform> GetInitialLocalRestTransforms();                                                                   // [0x60a952c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FTransform> GetInitialLocalRestTransforms();                                                                   // [0x60f47c8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetInitialLevel
-	// int32_t GetInitialLevel(int32_t ItemIndex);                                                                           // [0x60a94a0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// int32_t GetInitialLevel(int32_t ItemIndex);                                                                           // [0x60f473c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetDebugInfo
-	// FString GetDebugInfo();                                                                                               // [0x60a9460] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// FString GetDebugInfo();                                                                                               // [0x60f46fc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.GetDamageThreshold
-	// TArray<float> GetDamageThreshold();                                                                                   // [0x60a93d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<float> GetDamageThreshold();                                                                                   // [0x60f466c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.CrumbleCluster
-	// void CrumbleCluster(int32_t ItemIndex);                                                                               // [0x60a9350] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void CrumbleCluster(int32_t ItemIndex);                                                                               // [0x60f45ec] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.CrumbleActiveClusters
-	// void CrumbleActiveClusters();                                                                                         // [0x60a933c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void CrumbleActiveClusters();                                                                                         // [0x60f45d8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField
-	// void ApplyPhysicsField(bool Enabled, EGeometryCollectionPhysicsTypeEnum Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field); // [0x60a8fbc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ApplyPhysicsField(bool Enabled, EGeometryCollectionPhysicsTypeEnum Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field); // [0x60f4258] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyLinearVelocity
-	// void ApplyLinearVelocity(int32_t ItemIndex, FVector& LinearVelocity);                                                 // [0x60a8e84] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ApplyLinearVelocity(int32_t ItemIndex, FVector& LinearVelocity);                                                 // [0x60f4120] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField
-	// void ApplyKinematicField(float Radius, FVector Position);                                                             // [0x60a8d00] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void ApplyKinematicField(float Radius, FVector Position);                                                             // [0x60f3f9c] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyInternalStrain
-	// void ApplyInternalStrain(int32_t ItemIndex, FVector& Location, float Radius, int32_t PropagationDepth, float PropagationFactor, float Strain); // [0x60a89cc] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ApplyInternalStrain(int32_t ItemIndex, FVector& Location, float Radius, int32_t PropagationDepth, float PropagationFactor, float Strain); // [0x60f3c68] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyExternalStrain
-	// void ApplyExternalStrain(int32_t ItemIndex, FVector& Location, float Radius, int32_t PropagationDepth, float PropagationFactor, float Strain); // [0x60a8698] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ApplyExternalStrain(int32_t ItemIndex, FVector& Location, float Radius, int32_t PropagationDepth, float PropagationFactor, float Strain); // [0x60f3934] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyBreakingLinearVelocity
-	// void ApplyBreakingLinearVelocity(int32_t ItemIndex, FVector& LinearVelocity);                                         // [0x60a855c] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ApplyBreakingLinearVelocity(int32_t ItemIndex, FVector& LinearVelocity);                                         // [0x60f37f8] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyBreakingAngularVelocity
-	// void ApplyBreakingAngularVelocity(int32_t ItemIndex, FVector& AngularVelocity);                                       // [0x60a8420] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ApplyBreakingAngularVelocity(int32_t ItemIndex, FVector& AngularVelocity);                                       // [0x60f36bc] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyAssetDefaults
-	// void ApplyAssetDefaults();                                                                                            // [0x60a840c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ApplyAssetDefaults();                                                                                            // [0x60f36a8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyAngularVelocity
-	// void ApplyAngularVelocity(int32_t ItemIndex, FVector& AngularVelocity);                                               // [0x60a82d4] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ApplyAngularVelocity(int32_t ItemIndex, FVector& AngularVelocity);                                               // [0x60f3570] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/GeometryCollectionEngine.GeometryCollectionDebugDrawWarningMessage
@@ -792,9 +792,9 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.GeometryCollection.SetEnableNanite
-	// void SetEnableNanite(bool bValue);                                                                                    // [0x60aaba8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetEnableNanite(bool bValue);                                                                                    // [0x60f5e44] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollection.SetConvertVertexColorsToSRGB
-	// void SetConvertVertexColorsToSRGB(bool bValue);                                                                       // [0x60aa82c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetConvertVertexColorsToSRGB(bool bValue);                                                                       // [0x60f5ac8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GeometryCollectionEngine.GeometryCollectionRenderLevelSetActor

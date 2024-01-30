@@ -149,11 +149,11 @@ public:
 
 	/// Functions
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.Update
-	// void Update();                                                                                                        // [0xa907598] Final|Native|Public|BlueprintCallable 
+	// void Update();                                                                                                        // [0xa8f99c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.CacheHoagieVehicle
-	// void CacheHoagieVehicle(class AFortHoagieVehicle* InVehicle);                                                         // [0xa906d94] Final|Native|Public|BlueprintCallable 
+	// void CacheHoagieVehicle(class AFortHoagieVehicle* InVehicle);                                                         // [0xa8f91c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieAudioController.CacheAudioComponents
-	// void CacheAudioComponents(class UFortLayeredAudioComponent* InEngine, class UFortLayeredAudioComponent* InRotor);     // [0xa906c98] Final|Native|Public|BlueprintCallable 
+	// void CacheAudioComponents(class UFortLayeredAudioComponent* InEngine, class UFortLayeredAudioComponent* InRotor);     // [0xa8f90c8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/HoagieRuntime.FortHeliFlightModel
@@ -289,105 +289,105 @@ public:
 
 	/// Functions
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.UpdateHoagieAnimBP
-	// void UpdateHoagieAnimBP();                                                                                            // [0x843a118] Native|Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void UpdateHoagieAnimBP();                                                                                            // [0x846d5f4] Native|Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.UpdateDamageStateNative
-	// void UpdateDamageStateNative(float Damage);                                                                           // [0xa90760c] Final|Native|Protected|BlueprintCallable 
+	// void UpdateDamageStateNative(float Damage);                                                                           // [0xa8f9a3c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.ShowCooldownCue
-	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetTailRotorRotation
-	// void SetTailRotorRotation(float Degrees);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetTailRotorRotation(float Degrees);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetRotorWashActive
-	// void SetRotorWashActive(bool bActive);                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetRotorWashActive(bool bActive);                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.SetMainRotorRotation
-	// void SetMainRotorRotation(float Degrees);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void SetMainRotorRotation(float Degrees);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.ServerUpdateControlState
-	// void ServerUpdateControlState(FReplicatedHeliControlState InControlState);                                            // [0xa907444] Final|Net|Native|Event|Private|NetServer 
+	// void ServerUpdateControlState(FReplicatedHeliControlState InControlState);                                            // [0xa8f9874] Final|Net|Native|Event|Private|NetServer 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnTickRotors
-	// void OnTickRotors(float RotorAngleDegrees);                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTickRotors(float RotorAngleDegrees);                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnStartupEnd
-	// void OnStartupEnd();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStartupEnd();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnStartupBegin
-	// void OnStartupBegin();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStartupBegin();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorsStop
-	// void OnRotorsStop();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRotorsStop();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamagePlayer
-	// void OnRotorDamagePlayer(FHitResult& Impact);                                                                         // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamagePlayer(FHitResult& Impact);                                                                         // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealtOuter
-	// void OnRotorDamageDealtOuter(FHitResult& Impact);                                                                     // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealtOuter(FHitResult& Impact);                                                                     // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealtInner
-	// void OnRotorDamageDealtInner(FHitResult& Impact);                                                                     // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealtInner(FHitResult& Impact);                                                                     // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRotorDamageDealt
-	// void OnRotorDamageDealt(FHitResult& Impact, bool bInner);                                                             // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRotorDamageDealt(FHitResult& Impact, bool bInner);                                                             // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRep_HoagieState
-	// void OnRep_HoagieState();                                                                                             // [0xa9073c4] Final|Native|Protected 
+	// void OnRep_HoagieState();                                                                                             // [0xa8f97f4] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRep_ControlState
-	// void OnRep_ControlState();                                                                                            // [0x32e6c74] Final|Native|Private 
+	// void OnRep_ControlState();                                                                                            // [0x32e4b44] Final|Native|Private 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnRefueledFromEmpty
-	// void OnRefueledFromEmpty();                                                                                           // [0xa9073b0] Final|Native|Protected 
+	// void OnRefueledFromEmpty();                                                                                           // [0xa8f97e0] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnImpactWhileCritical
-	// void OnImpactWhileCritical();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnImpactWhileCritical();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnImpactOtherHoagie
-	// void OnImpactOtherHoagie(FVector& HitLocation, FVector& NormalImpulse);                                               // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnImpactOtherHoagie(FVector& HitLocation, FVector& NormalImpulse);                                               // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnCritRotor
-	// void OnCritRotor(float Damage, FVector& ImpactLocation, class AController* DamageInstigator, class AActor* DamageCauser, bool bMainRotor); // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnCritRotor(float Damage, FVector& ImpactLocation, class AController* DamageInstigator, class AActor* DamageCauser, bool bMainRotor); // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostStarted
-	// void OnBoostStarted();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostStarted();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostReady
-	// void OnBoostReady();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostReady();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostFinished
-	// void OnBoostFinished();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostFinished();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.OnBoostFailed
-	// void OnBoostFailed();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostFailed();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.MulticastRotorImpulse
-	// void MulticastRotorImpulse(FHitResult RotorHit);                                                                      // [0xa907270] Net|NetReliableNative|Event|NetMulticast|Protected|BlueprintCallable 
+	// void MulticastRotorImpulse(FHitResult RotorHit);                                                                      // [0xa8f96a0] Net|NetReliableNative|Event|NetMulticast|Protected|BlueprintCallable 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsStartingUp
-	// bool IsStartingUp();                                                                                                  // [0xa907254] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStartingUp();                                                                                                  // [0xa8f9684] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsShuttingDown
-	// bool IsShuttingDown();                                                                                                // [0xa907234] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsShuttingDown();                                                                                                // [0xa8f9664] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.IsScrapingBottom
-	// bool IsScrapingBottom();                                                                                              // [0xa907210] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsScrapingBottom();                                                                                              // [0xa8f9640] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.HoagieOnDisabledChanged
-	// void HoagieOnDisabledChanged(bool bDisabled);                                                                         // [0xa907190] Final|Native|Protected 
+	// void HoagieOnDisabledChanged(bool bDisabled);                                                                         // [0xa8f95c0] Final|Native|Protected 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetVerticalSpeedKmh
-	// float GetVerticalSpeedKmh();                                                                                          // [0xa907168] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetVerticalSpeedKmh();                                                                                          // [0xa8f9598] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetThrustDirection
-	// FVector GetThrustDirection(bool bWorldSpace);                                                                         // [0xa9070c4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetThrustDirection(bool bWorldSpace);                                                                         // [0xa8f94f4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetStrafeAlpha
-	// float GetStrafeAlpha();                                                                                               // [0xa906f44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStrafeAlpha();                                                                                               // [0xa8f9374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetSteerAlpha
-	// float GetSteerAlpha();                                                                                                // [0xa90709c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSteerAlpha();                                                                                                // [0xa8f94cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetShutdownTimeLeft
-	// float GetShutdownTimeLeft();                                                                                          // [0xa907084] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetShutdownTimeLeft();                                                                                          // [0xa8f94b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorSpeedPercent
-	// float GetRotorSpeedPercent();                                                                                         // [0xa907064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorSpeedPercent();                                                                                         // [0xa8f9494] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorSpeed
-	// float GetRotorSpeed();                                                                                                // [0xa90704c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorSpeed();                                                                                                // [0xa8f947c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorCenterPosition
-	// FVector GetRotorCenterPosition();                                                                                     // [0xa907014] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetRotorCenterPosition();                                                                                     // [0xa8f9444] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetRotorAngleDegrees
-	// float GetRotorAngleDegrees();                                                                                         // [0xa906ffc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotorAngleDegrees();                                                                                         // [0xa8f942c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetMaxBoostCooldown
-	// float GetMaxBoostCooldown();                                                                                          // [0xa906fdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxBoostCooldown();                                                                                          // [0xa8f940c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetMaxAltitude
-	// float GetMaxAltitude();                                                                                               // [0xa906fbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxAltitude();                                                                                               // [0xa8f93ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetLiftAlpha
-	// float GetLiftAlpha();                                                                                                 // [0xa906f94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLiftAlpha();                                                                                                 // [0xa8f93c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetIsEngineOn
-	// bool GetIsEngineOn();                                                                                                 // [0xa906f74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsEngineOn();                                                                                                 // [0xa8f93a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetForwardAlpha
-	// float GetForwardAlpha();                                                                                              // [0xa906f44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetForwardAlpha();                                                                                              // [0xa8f9374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetDistanceToGround
-	// float GetDistanceToGround();                                                                                          // [0xa906f2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDistanceToGround();                                                                                          // [0xa8f935c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostTimeLeft
-	// float GetBoostTimeLeft();                                                                                             // [0xa906f14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostTimeLeft();                                                                                             // [0xa8f9344] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostDuration
-	// float GetBoostDuration();                                                                                             // [0xa906ef4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostDuration();                                                                                             // [0xa8f9324] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostDirection
-	// FVector GetBoostDirection();                                                                                          // [0xa906ecc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetBoostDirection();                                                                                          // [0xa8f92fc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetBoostCooldown
-	// float GetBoostCooldown();                                                                                             // [0xa906eb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostCooldown();                                                                                             // [0xa8f92e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HoagieRuntime.FortHoagieVehicle.GetAltitude
-	// float GetAltitude();                                                                                                  // [0xa906e94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAltitude();                                                                                                  // [0xa8f92c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/HoagieRuntime.FortHoagieVehicleConfigs

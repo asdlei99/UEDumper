@@ -70,7 +70,7 @@ public:
 
 	/// Functions
 	// Function /Script/NetworkPrediction.NetworkPredictionComponent.ServerReceiveClientInput
-	// void ServerReceiveClientInput(FServerReplicationRPCParameter ProxyParameter);                                         // [0x773d374] Net|Native|Event|Protected|NetServer|NetValidate 
+	// void ServerReceiveClientInput(FServerReplicationRPCParameter ProxyParameter);                                         // [0x7779868] Net|Native|Event|Protected|NetServer|NetValidate 
 };
 
 /// Class /Script/NetworkPrediction.NetworkPredictionPhysicsComponent

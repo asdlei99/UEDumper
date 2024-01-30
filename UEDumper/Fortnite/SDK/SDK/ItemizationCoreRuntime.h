@@ -130,7 +130,7 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemPickup.OnRep_ItemDefinition
-	// void OnRep_ItemDefinition();                                                                                          // [0x7fe08e0] Final|Native|Private 
+	// void OnRep_ItemDefinition();                                                                                          // [0x8019e74] Final|Native|Private 
 };
 
 /// Struct /Script/ItemizationCoreRuntime.ItemEntry
@@ -200,13 +200,13 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.Inventory.OnRep_ItemData
-	// void OnRep_ItemData();                                                                                                // [0x7fcc9d0] Final|Native|Protected 
+	// void OnRep_ItemData();                                                                                                // [0x8005f64] Final|Native|Protected 
 	// Function /Script/ItemizationCoreRuntime.Inventory.OnRep_InventoryTotalSlotsOverride
-	// void OnRep_InventoryTotalSlotsOverride();                                                                             // [0x7fcc994] Final|Native|Protected 
+	// void OnRep_InventoryTotalSlotsOverride();                                                                             // [0x8005f28] Final|Native|Protected 
 	// Function /Script/ItemizationCoreRuntime.Inventory.OnRep_InventoryMaxStackSizeOverride
-	// void OnRep_InventoryMaxStackSizeOverride();                                                                           // [0x7fcc96c] Final|Native|Protected 
+	// void OnRep_InventoryMaxStackSizeOverride();                                                                           // [0x8005f00] Final|Native|Protected 
 	// Function /Script/ItemizationCoreRuntime.Inventory.OnRep_InventoryID
-	// void OnRep_InventoryID();                                                                                             // [0x7fcc958] Final|Native|Protected 
+	// void OnRep_InventoryID();                                                                                             // [0x8005eec] Final|Native|Protected 
 };
 
 /// Class /Script/ItemizationCoreRuntime.EquippableInventory
@@ -221,7 +221,7 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.EquippableInventory.OnRep_EquippedItems
-	// void OnRep_EquippedItems();                                                                                           // [0x7fcc944] Final|Native|Private 
+	// void OnRep_EquippedItems();                                                                                           // [0x8005ed8] Final|Native|Private 
 };
 
 /// Class /Script/ItemizationCoreRuntime.InventoryDefinition
@@ -296,17 +296,17 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.InventoryCheatManager.InventorySetEquippedItemActive
-	// void InventorySetEquippedItemActive(int32_t InventoryIndex, int32_t ItemIndex, bool bActive);                         // [0x7fcc7b4] Final|Exec|Native|Public 
+	// void InventorySetEquippedItemActive(int32_t InventoryIndex, int32_t ItemIndex, bool bActive);                         // [0x8005d48] Final|Exec|Native|Public 
 	// Function /Script/ItemizationCoreRuntime.InventoryCheatManager.InventoryRemoveFromItem
-	// void InventoryRemoveFromItem(int32_t InventoryIndex, int32_t ItemIndex, int64_t AmountToRemove);                      // [0x7fcc4d0] Final|Exec|Native|Public 
+	// void InventoryRemoveFromItem(int32_t InventoryIndex, int32_t ItemIndex, int64_t AmountToRemove);                      // [0x8005a64] Final|Exec|Native|Public 
 	// Function /Script/ItemizationCoreRuntime.InventoryCheatManager.InventoryMoveItem
-	// void InventoryMoveItem(int32_t SourceInventoryIndex, int32_t ItemIndex, int32_t TargetInventoryIndex);                // [0x7fcc6d4] Final|Exec|Native|Public 
+	// void InventoryMoveItem(int32_t SourceInventoryIndex, int32_t ItemIndex, int32_t TargetInventoryIndex);                // [0x8005c68] Final|Exec|Native|Public 
 	// Function /Script/ItemizationCoreRuntime.InventoryCheatManager.InventoryMoveAmountOfItem
-	// void InventoryMoveAmountOfItem(int32_t SourceInventoryIndex, int32_t ItemIndex, int32_t TargetInventoryIndex, int64_t AmountToMove); // [0x7fcc5b4] Final|Exec|Native|Public 
+	// void InventoryMoveAmountOfItem(int32_t SourceInventoryIndex, int32_t ItemIndex, int32_t TargetInventoryIndex, int64_t AmountToMove); // [0x8005b48] Final|Exec|Native|Public 
 	// Function /Script/ItemizationCoreRuntime.InventoryCheatManager.InventoryDropItem
-	// void InventoryDropItem(int32_t InventoryIndex, int32_t ItemIndex);                                                    // [0x636c6c8] Final|Exec|Native|Public 
+	// void InventoryDropItem(int32_t InventoryIndex, int32_t ItemIndex);                                                    // [0x63b6e18] Final|Exec|Native|Public 
 	// Function /Script/ItemizationCoreRuntime.InventoryCheatManager.InventoryAddToItem
-	// void InventoryAddToItem(int32_t InventoryIndex, int32_t ItemIndex, int64_t AmountToAdd);                              // [0x7fcc4d0] Final|Exec|Native|Public 
+	// void InventoryAddToItem(int32_t InventoryIndex, int32_t ItemIndex, int64_t AmountToAdd);                              // [0x8005a64] Final|Exec|Native|Public 
 };
 
 /// Class /Script/ItemizationCoreRuntime.InventoryCollection
@@ -323,35 +323,35 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.UnequipItem
-	// bool UnequipItem(FGuid& ItemEntryID);                                                                                 // [0x7fcca3c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool UnequipItem(FGuid& ItemEntryID);                                                                                 // [0x8005fd0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.IsItemEquipped
-	// bool IsItemEquipped(FGuid& ItemEntryID);                                                                              // [0x7fcc894] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool IsItemEquipped(FGuid& ItemEntryID);                                                                              // [0x8005e28] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetItemSlotNumber
-	// int32_t GetItemSlotNumber(FGuid& TargetInventoryID, FGuid& ItemEntryID);                                              // [0x7fcc3d0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetItemSlotNumber(FGuid& TargetInventoryID, FGuid& ItemEntryID);                                              // [0x8005964] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetItemIntAttribute
-	// int64_t GetItemIntAttribute(FGuid& TargetInventoryID, FGuid& ItemEntryID, class UClass*& Attribute);                  // [0x7fcc28c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// int64_t GetItemIntAttribute(FGuid& TargetInventoryID, FGuid& ItemEntryID, class UClass*& Attribute);                  // [0x8005820] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetItemDefinition
-	// class UItemDefinitionBase* GetItemDefinition(FGuid& TargetInventoryID, FGuid& ItemEntryID);                           // [0x7fcc18c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// class UItemDefinitionBase* GetItemDefinition(FGuid& TargetInventoryID, FGuid& ItemEntryID);                           // [0x8005720] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetItemAmountFromInventory
-	// int64_t GetItemAmountFromInventory(class UItemDefinitionBase* ItemDefinition, FGuid& TargetInventoryID);              // [0x7fcc084] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// int64_t GetItemAmountFromInventory(class UItemDefinitionBase* ItemDefinition, FGuid& TargetInventoryID);              // [0x8005618] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetItemAmountFromEntry
-	// int64_t GetItemAmountFromEntry(FGuid& TargetInventoryID, FGuid& ItemEntryID);                                         // [0x7fcbf84] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// int64_t GetItemAmountFromEntry(FGuid& TargetInventoryID, FGuid& ItemEntryID);                                         // [0x8005518] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetItemAmount
-	// int64_t GetItemAmount(class UItemDefinitionBase* ItemDefinition);                                                     // [0x7fcbed4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int64_t GetItemAmount(class UItemDefinitionBase* ItemDefinition);                                                     // [0x8005468] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetInventoryName
-	// FText GetInventoryName(FGuid& TargetInventoryID);                                                                     // [0x7fcbe24] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FText GetInventoryName(FGuid& TargetInventoryID);                                                                     // [0x80053b8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetInventoryListInPickupPriorityForItemDefinition
-	// TArray<FGuid> GetInventoryListInPickupPriorityForItemDefinition(class UItemDefinitionBase* ItemDefinition);           // [0x7fcbd30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FGuid> GetInventoryListInPickupPriorityForItemDefinition(class UItemDefinitionBase* ItemDefinition);           // [0x80052c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetInventoryDefinition
-	// class UInventoryDefinition* GetInventoryDefinition(FGuid& TargetInventoryID);                                         // [0x7fcbc94] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// class UInventoryDefinition* GetInventoryDefinition(FGuid& TargetInventoryID);                                         // [0x8005228] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetInventoriesWithInventoryDefinition
-	// TArray<FGuid> GetInventoriesWithInventoryDefinition(class UInventoryDefinition* InventoryDefinition);                 // [0x7fcbbf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FGuid> GetInventoriesWithInventoryDefinition(class UInventoryDefinition* InventoryDefinition);                 // [0x8005184] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetAllItemsInInventory
-	// bool GetAllItemsInInventory(FGuid& TargetInventoryID, TArray<FGuid>& OutItemEntryIDList);                             // [0x7fcba48] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool GetAllItemsInInventory(FGuid& TargetInventoryID, TArray<FGuid>& OutItemEntryIDList);                             // [0x8004fdc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.GetAllInventoriesInCollection
-	// bool GetAllInventoriesInCollection(TArray<FGuid>& OutInventoryIDList);                                                // [0x7fcb99c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetAllInventoriesInCollection(TArray<FGuid>& OutInventoryIDList);                                                // [0x8004f30] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryCollection.EquipItem
-	// bool EquipItem(FGuid& ItemEntryID);                                                                                   // [0x7fcb8c4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool EquipItem(FGuid& ItemEntryID);                                                                                   // [0x8004e58] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemAttachment
@@ -367,9 +367,9 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemAttachment.OnRep_ItemStateChanged
-	// void OnRep_ItemStateChanged();                                                                                        // [0x7fcc930] Final|Native|Private 
+	// void OnRep_ItemStateChanged();                                                                                        // [0x8005ec4] Final|Native|Private 
 	// Function /Script/ItemizationCoreRuntime.ItemAttachment.OnRep_AttachmentDataChanged
-	// void OnRep_AttachmentDataChanged();                                                                                   // [0x7fcc930] Final|Native|Private 
+	// void OnRep_AttachmentDataChanged();                                                                                   // [0x8005ec4] Final|Native|Private 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemAttribute
@@ -384,9 +384,9 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemAttribute.GetAttributeName
-	// FText GetAttributeName();                                                                                             // [0x7fcbba4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetAttributeName();                                                                                             // [0x8005138] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.ItemAttribute.GetAttributeDescription
-	// FText GetAttributeDescription();                                                                                      // [0x7fcbb58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetAttributeDescription();                                                                                      // [0x80050ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemAttribute_Int
@@ -602,13 +602,13 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemComponent_Core.GetItemType
-	// class UItemType* GetItemType();                                                                                       // [0x7fe088c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UItemType* GetItemType();                                                                                       // [0x8019e20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.ItemComponent_Core.GetItemRarity
-	// class UItemRarity* GetItemRarity();                                                                                   // [0x62d2994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UItemRarity* GetItemRarity();                                                                                   // [0x631d150] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.ItemComponent_Core.GetItemName
-	// FText GetItemName();                                                                                                  // [0x703cf58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetItemName();                                                                                                  // [0x70804e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.ItemComponent_Core.GetItemDescription
-	// FText GetItemDescription();                                                                                           // [0x7fe0828] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetItemDescription();                                                                                           // [0x8019dbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemComponent_DisplayUI
@@ -625,13 +625,13 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemComponent_DisplayUI.GetSmallItemIcon
-	// TWeakObjectPtr<UTexture2D*> GetSmallItemIcon();                                                                       // [0x7fe08bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UTexture2D*> GetSmallItemIcon();                                                                       // [0x8019e50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.ItemComponent_DisplayUI.GetMaterialTextureParameter
-	// FName GetMaterialTextureParameter();                                                                                  // [0x7fe08a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetMaterialTextureParameter();                                                                                  // [0x8019e38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.ItemComponent_DisplayUI.GetItemMaterial
-	// TWeakObjectPtr<UMaterialInterface*> GetItemMaterial();                                                                // [0x7fe0868] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UMaterialInterface*> GetItemMaterial();                                                                // [0x8019dfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.ItemComponent_DisplayUI.GetItemIcon
-	// TWeakObjectPtr<UTexture2D*> GetItemIcon();                                                                            // [0x7fe0844] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UTexture2D*> GetItemIcon();                                                                            // [0x8019dd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemOwnerPoseAsset
@@ -716,7 +716,7 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemDefinitionBase.GetItemComponentByClass
-	// class UItemComponentBase* GetItemComponentByClass(class UClass* ItemComponentClass);                                  // [0x7fdf6d0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UItemComponentBase* GetItemComponentByClass(class UClass* ItemComponentClass);                                  // [0x8018c64] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemDefinition
@@ -739,7 +739,7 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemAbilityConfigurationAsset.Construct
-	// void Construct(class UItemGameplayAbility* Ability);                                                                  // [0x2177018] Event|Public|BlueprintEvent|Const 
+	// void Construct(class UItemGameplayAbility* Ability);                                                                  // [0x211c0a0] Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemGameplayAbility
@@ -758,25 +758,25 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.GetItemDataStringAttributeValue
-	// FString GetItemDataStringAttributeValue(FItemAggregatedData& ItemData, class UClass* AttributeClass);                 // [0x7fe0648] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString GetItemDataStringAttributeValue(FItemAggregatedData& ItemData, class UClass* AttributeClass);                 // [0x8019bdc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.GetItemDataSlot
-	// int32_t GetItemDataSlot(FItemAggregatedData& ItemData);                                                               // [0x7fe0584] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int32_t GetItemDataSlot(FItemAggregatedData& ItemData);                                                               // [0x8019b18] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.GetItemDataItemEntryID
-	// FGuid GetItemDataItemEntryID(FItemAggregatedData& ItemData);                                                          // [0x7fe04c0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FGuid GetItemDataItemEntryID(FItemAggregatedData& ItemData);                                                          // [0x8019a54] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.GetItemDataIntAttributeValue
-	// int64_t GetItemDataIntAttributeValue(FItemAggregatedData& ItemData, class UClass* AttributeClass);                    // [0x7fe02f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int64_t GetItemDataIntAttributeValue(FItemAggregatedData& ItemData, class UClass* AttributeClass);                    // [0x801988c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.GetItemDataDefinition
-	// class UItemDefinitionBase* GetItemDataDefinition(FItemAggregatedData& ItemData);                                      // [0x7fe0224] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UItemDefinitionBase* GetItemDataDefinition(FItemAggregatedData& ItemData);                                      // [0x80197b8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.GetItemDataDecimalAttributeValue
-	// double GetItemDataDecimalAttributeValue(FItemAggregatedData& ItemData, class UClass* AttributeClass);                 // [0x7fe005c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// double GetItemDataDecimalAttributeValue(FItemAggregatedData& ItemData, class UClass* AttributeClass);                 // [0x80195f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.GetItemDataBoolAttributeValue
-	// bool GetItemDataBoolAttributeValue(FItemAggregatedData& ItemData, class UClass* AttributeClass);                      // [0x7fdfe94] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool GetItemDataBoolAttributeValue(FItemAggregatedData& ItemData, class UClass* AttributeClass);                      // [0x8019428] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.GetItemDataAttributeList
-	// TArray<UClass*> GetItemDataAttributeList(FItemAggregatedData& ItemData);                                              // [0x7fdf77c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<UClass*> GetItemDataAttributeList(FItemAggregatedData& ItemData);                                              // [0x8018d10] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.DescribeItemEntryID
-	// FString DescribeItemEntryID(FGuid& ItemEntryID);                                                                      // [0x7fdf470] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FString DescribeItemEntryID(FGuid& ItemEntryID);                                                                      // [0x8018a04] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ItemizationCoreRuntime.ItemizationFunctionLibrary.DescribeInventoryID
-	// FString DescribeInventoryID(FGuid& InventoryID);                                                                      // [0x7fdf470] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FString DescribeInventoryID(FGuid& InventoryID);                                                                      // [0x8018a04] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemizationPickupFunctionLibrary
@@ -788,13 +788,13 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.ItemizationPickupFunctionLibrary.SpawnItemPickupInWorld
-	// class AItemPickup* SpawnItemPickupInWorld(class UObject* WorldContextObject, class UItemDefinitionBase* ItemDefinition, FVector& InPosition, int64_t Amount); // [0x7fe0c0c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class AItemPickup* SpawnItemPickupInWorld(class UObject* WorldContextObject, class UItemDefinitionBase* ItemDefinition, FVector& InPosition, int64_t Amount); // [0x801a1a0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ItemizationCoreRuntime.ItemizationPickupFunctionLibrary.SetDefaultItemPickupMesh
-	// void SetDefaultItemPickupMesh(class UStaticMesh* Mesh);                                                               // [0x7fe0b98] Final|Native|Static|Public|BlueprintCallable 
+	// void SetDefaultItemPickupMesh(class UStaticMesh* Mesh);                                                               // [0x801a12c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ItemizationCoreRuntime.ItemizationPickupFunctionLibrary.SetDefaultItemPickupClass
-	// void SetDefaultItemPickupClass(class UClass* ItemPickupClass);                                                        // [0x7fe0b0c] Final|Native|Static|Public|BlueprintCallable 
+	// void SetDefaultItemPickupClass(class UClass* ItemPickupClass);                                                        // [0x801a0a0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ItemizationCoreRuntime.ItemizationPickupFunctionLibrary.DropItemFromInventoryAsPickup
-	// class AItemPickup* DropItemFromInventoryAsPickup(class AInventoryCollection* Collection, FGuid& InventoryID, FGuid& ItemEntryID); // [0x7fdf51c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// class AItemPickup* DropItemFromInventoryAsPickup(class AInventoryCollection* Collection, FGuid& InventoryID, FGuid& ItemEntryID); // [0x8018ab0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/ItemizationCoreRuntime.ItemRarity
@@ -897,13 +897,13 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreRuntime.InventoryComponent.Server_SetEquippableItemActive
-	// void Server_SetEquippableItemActive(FGuid ItemEntryID, bool bActive);                                                 // [0x7fe08f4] Net|NetReliableNative|Event|Public|NetServer|HasDefaults|BlueprintCallable 
+	// void Server_SetEquippableItemActive(FGuid ItemEntryID, bool bActive);                                                 // [0x8019e88] Net|NetReliableNative|Event|Public|NetServer|HasDefaults|BlueprintCallable 
 	// Function /Script/ItemizationCoreRuntime.InventoryComponent.GetInventoryCollection
-	// class AInventoryCollection* GetInventoryCollection();                                                                 // [0x7fdf6a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AInventoryCollection* GetInventoryCollection();                                                                 // [0x8018c3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreRuntime.InventoryComponent.AddOrResetInventory
-	// void AddOrResetInventory(class UInventoryDefinition* NewInventoryDefinition);                                         // [0x5fffda8] Final|Native|Public|BlueprintCallable 
+	// void AddOrResetInventory(class UInventoryDefinition* NewInventoryDefinition);                                         // [0x604b150] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ItemizationCoreRuntime.InventoryComponent.AddItem
-	// void AddItem(class UItemDefinitionBase* ItemDefinition, int64_t Amount);                                              // [0x7fdf3cc] Final|Native|Public|BlueprintCallable 
+	// void AddItem(class UItemDefinitionBase* ItemDefinition, int64_t Amount);                                              // [0x8018960] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/ItemizationCoreRuntime.ItemAggregatedData

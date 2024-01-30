@@ -22,9 +22,9 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreUI.InventoryCollectionViewModel.InitializeViewModel
-	// void InitializeViewModel(class AInventoryCollection* InventoryCollection, TArray<UInventoryDefinition*>& RelevantInventoryDefinitions); // [0xc350a2c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InitializeViewModel(class AInventoryCollection* InventoryCollection, TArray<UInventoryDefinition*>& RelevantInventoryDefinitions); // [0xc306e4c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ItemizationCoreUI.InventoryCollectionViewModel.GetInventoryViewModels
-	// TArray<UInventoryViewModel*> GetInventoryViewModels();                                                                   // [0xb849634] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UInventoryViewModel*> GetInventoryViewModels();                                                                   // [0xb8149d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ItemizationCoreUI.InventoryItemEntryViewModel
@@ -39,13 +39,13 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreUI.InventoryItemEntryViewModel.IsItemActive
-	// bool IsItemActive();                                                                                                     // [0xc351118] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsItemActive();                                                                                                     // [0xc307538] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreUI.InventoryItemEntryViewModel.GetItemSlotNumber
-	// int32_t GetItemSlotNumber();                                                                                             // [0xc3509c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetItemSlotNumber();                                                                                             // [0xc306de4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreUI.InventoryItemEntryViewModel.GetItemDefinition
-	// class UItemDefinitionBase* GetItemDefinition();                                                                          // [0xc350970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UItemDefinitionBase* GetItemDefinition();                                                                          // [0xc306d90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreUI.InventoryItemEntryViewModel.GetItemAmount
-	// int64_t GetItemAmount();                                                                                                 // [0xc35091c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int64_t GetItemAmount();                                                                                                 // [0xc306d3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ItemizationCoreUI.InventoryViewModel
@@ -61,16 +61,16 @@ public:
 
 	/// Functions
 	// Function /Script/ItemizationCoreUI.InventoryViewModel.GetTotalSlots
-	// int32_t GetTotalSlots();                                                                                                 // [0xc3509e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTotalSlots();                                                                                                 // [0xc306e08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreUI.InventoryViewModel.GetInventoryName
-	// FText GetInventoryName();                                                                                                // [0xc3508e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetInventoryName();                                                                                                // [0xc306d00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreUI.InventoryViewModel.GetInventoryItemEntryViewModels
-	// TArray<UInventoryItemEntryViewModel*> GetInventoryItemEntryViewModels();                                                 // [0xb849634] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UInventoryItemEntryViewModel*> GetInventoryItemEntryViewModels();                                                 // [0xb8149d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreUI.InventoryViewModel.GetInventoryDescription
-	// FText GetInventoryDescription();                                                                                         // [0xc3508a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetInventoryDescription();                                                                                         // [0xc306cc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreUI.InventoryViewModel.GetInventoryDefinition
-	// class UInventoryDefinition* GetInventoryDefinition();                                                                    // [0xc350880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UInventoryDefinition* GetInventoryDefinition();                                                                    // [0xc306ca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ItemizationCoreUI.InventoryViewModel.FindInventoryItemEntryViewModelWithSlotNumber
-	// class UInventoryItemEntryViewModel* FindInventoryItemEntryViewModelWithSlotNumber(int32_t ItemSlotNumber);               // [0xc3507bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UInventoryItemEntryViewModel* FindInventoryItemEntryViewModelWithSlotNumber(int32_t ItemSlotNumber);               // [0xc306bdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

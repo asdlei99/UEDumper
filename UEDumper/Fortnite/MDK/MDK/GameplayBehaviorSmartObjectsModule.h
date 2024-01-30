@@ -41,11 +41,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.UseSmartObjectWithGameplayBehavior
-	// class UAITask_UseGameplayBehaviorSmartObject* UseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7f5e01c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* UseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7f97604] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.UseGameplayBehaviorSmartObject
-	// class UAITask_UseGameplayBehaviorSmartObject* UseGameplayBehaviorSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic); // [0x7f5dd64] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* UseGameplayBehaviorSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic); // [0x7f9734c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.MoveToAndUseSmartObjectWithGameplayBehavior
-	// class UAITask_UseGameplayBehaviorSmartObject* MoveToAndUseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7f5daf0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* MoveToAndUseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7f970d8] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayBehaviorSmartObjectsModule.BTTask_FindAndUseGameplayBehaviorSmartObject
@@ -73,6 +73,6 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayBehaviorSmartObjectsModule.GameplayBehaviorSmartObjectsBlueprintFunctionLibrary.UseGameplayBehaviorSmartObject
-	// bool UseGameplayBehaviorSmartObject(class AActor* Avatar, class AActor* SmartObject);                                    // [0x7f5def0] Final|Native|Static|Public|BlueprintCallable 
+	// bool UseGameplayBehaviorSmartObject(class AActor* Avatar, class AActor* SmartObject);                                    // [0x7f974d8] Final|Native|Static|Public|BlueprintCallable 
 };
 

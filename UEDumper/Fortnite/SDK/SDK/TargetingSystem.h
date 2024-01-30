@@ -44,9 +44,9 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.AbilityTask_PerformTargeting.PerformTargetingRequest
-	// class UAbilityTask_PerformTargeting* PerformTargetingRequest(class UGameplayAbility* OwningAbility, class UTargetingPreset* InTargetingPreset, bool bAllowAsync); // [0x75a1b28] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_PerformTargeting* PerformTargetingRequest(class UGameplayAbility* OwningAbility, class UTargetingPreset* InTargetingPreset, bool bAllowAsync); // [0x75de1b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TargetingSystem.AbilityTask_PerformTargeting.PerformFilteringRequest
-	// class UAbilityTask_PerformTargeting* PerformFilteringRequest(class UGameplayAbility* OwningAbility, class UTargetingPreset* TargetingPreset, TArray<AActor*> InTargets, bool bAllowAsync); // [0x75a16e4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_PerformTargeting* PerformFilteringRequest(class UGameplayAbility* OwningAbility, class UTargetingPreset* TargetingPreset, TArray<AActor*> InTargets, bool bAllowAsync); // [0x75ddd74] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/TargetingSystem.TargetingRequestHandle
@@ -72,11 +72,11 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.AsyncAction_PerformTargeting.PerformTargetingRequest
-	// class UAsyncAction_PerformTargeting* PerformTargetingRequest(class AActor* SourceActor, class UTargetingPreset* TargetingPreset, bool bUseAsyncTargeting); // [0x75a1c58] Final|Native|Static|Public|BlueprintCallable 
+	// class UAsyncAction_PerformTargeting* PerformTargetingRequest(class AActor* SourceActor, class UTargetingPreset* TargetingPreset, bool bUseAsyncTargeting); // [0x75de2e8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TargetingSystem.AsyncAction_PerformTargeting.PerformFilteringRequest
-	// class UAsyncAction_PerformTargeting* PerformFilteringRequest(class AActor* SourceActor, class UTargetingPreset* TargetingPreset, bool bUseAsyncTargeting, TArray<AActor*> InTargets); // [0x75a18ac] Final|Native|Static|Public|BlueprintCallable 
+	// class UAsyncAction_PerformTargeting* PerformFilteringRequest(class AActor* SourceActor, class UTargetingPreset* TargetingPreset, bool bUseAsyncTargeting, TArray<AActor*> InTargets); // [0x75ddf3c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TargetingSystem.AsyncAction_PerformTargeting.GetTargetingHandle
-	// FTargetingRequestHandle GetTargetingHandle();                                                                         // [0x75a0ee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FTargetingRequestHandle GetTargetingHandle();                                                                         // [0x75dd570] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TargetingSystem.TargetingTask
@@ -88,7 +88,7 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.TargetingTask.GetTargetingSubsystem
-	// class UTargetingSubsystem* GetTargetingSubsystem(FTargetingRequestHandle& TargetingHandle);                           // [0x75a1378] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UTargetingSubsystem* GetTargetingSubsystem(FTargetingRequestHandle& TargetingHandle);                           // [0x75dda08] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TargetingSystem.TargetingFilterTask_BasicFilterTemplate
@@ -107,7 +107,7 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.SimpleTargetingFilterTask.BP_ShouldFilterTarget
-	// bool BP_ShouldFilterTarget(FTargetingRequestHandle& TargetingHandle, FTargetingDefaultResultData& TargetData);        // [0x2177018] Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool BP_ShouldFilterTarget(FTargetingRequestHandle& TargetingHandle, FTargetingDefaultResultData& TargetData);        // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/TargetingSystem.SimpleTargetingSelectionTask
@@ -119,11 +119,11 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.SimpleTargetingSelectionTask.SelectTargets
-	// void SelectTargets(FTargetingRequestHandle& TargetingHandle, FTargetingSourceContext& SourceContext);                 // [0x2177018] Event|Public|HasOutParms|BlueprintEvent|Const 
+	// void SelectTargets(FTargetingRequestHandle& TargetingHandle, FTargetingSourceContext& SourceContext);                 // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/TargetingSystem.SimpleTargetingSelectionTask.AddTargetActor
-	// bool AddTargetActor(FTargetingRequestHandle& TargetingHandle, class AActor* Actor);                                   // [0x75a053c] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
+	// bool AddTargetActor(FTargetingRequestHandle& TargetingHandle, class AActor* Actor);                                   // [0x75dcbcc] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/TargetingSystem.SimpleTargetingSelectionTask.AddHitResult
-	// bool AddHitResult(FTargetingRequestHandle& TargetingHandle, FHitResult& HitResult);                                   // [0x75a0404] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
+	// bool AddHitResult(FTargetingRequestHandle& TargetingHandle, FHitResult& HitResult);                                   // [0x75dca94] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
 };
 
 /// Class /Script/TargetingSystem.TargetingSortTask_Base
@@ -144,7 +144,7 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.SimpleTargetingSortTask.BP_GetScoreForTarget
-	// float BP_GetScoreForTarget(FTargetingRequestHandle& TargetingHandle, FTargetingDefaultResultData& TargetData);        // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// float BP_GetScoreForTarget(FTargetingRequestHandle& TargetingHandle, FTargetingDefaultResultData& TargetData);        // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/TargetingSystem.TargetingFilterTask_ActorClass
@@ -195,11 +195,11 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.TargetingSelectionTask_AOE.GetSourceRotation
-	// FQuat GetSourceRotation(FTargetingRequestHandle& TargetingHandle);                                                    // [0x75a0d90] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// FQuat GetSourceRotation(FTargetingRequestHandle& TargetingHandle);                                                    // [0x75dd420] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TargetingSystem.TargetingSelectionTask_AOE.GetSourceOffset
-	// FVector GetSourceOffset(FTargetingRequestHandle& TargetingHandle);                                                    // [0x75a0c30] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// FVector GetSourceOffset(FTargetingRequestHandle& TargetingHandle);                                                    // [0x75dd2c0] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TargetingSystem.TargetingSelectionTask_AOE.GetSourceLocation
-	// FVector GetSourceLocation(FTargetingRequestHandle& TargetingHandle);                                                  // [0x75a0ad0] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// FVector GetSourceLocation(FTargetingRequestHandle& TargetingHandle);                                                  // [0x75dd160] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 };
 
 /// Class /Script/TargetingSystem.TargetingSelectionTask_SourceActor
@@ -230,17 +230,17 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.TargetingSelectionTask_Trace.GetTraceLength
-	// float GetTraceLength(FTargetingRequestHandle& TargetingHandle);                                                       // [0x75a14c0] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// float GetTraceLength(FTargetingRequestHandle& TargetingHandle);                                                       // [0x75ddb50] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/TargetingSystem.TargetingSelectionTask_Trace.GetTraceDirection
-	// FVector GetTraceDirection(FTargetingRequestHandle& TargetingHandle);                                                  // [0x75a1410] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// FVector GetTraceDirection(FTargetingRequestHandle& TargetingHandle);                                                  // [0x75ddaa0] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TargetingSystem.TargetingSelectionTask_Trace.GetSweptTraceRadius
-	// float GetSweptTraceRadius(FTargetingRequestHandle& TargetingHandle);                                                  // [0x75a0e40] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// float GetSweptTraceRadius(FTargetingRequestHandle& TargetingHandle);                                                  // [0x75dd4d0] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/TargetingSystem.TargetingSelectionTask_Trace.GetSourceOffset
-	// FVector GetSourceOffset(FTargetingRequestHandle& TargetingHandle);                                                    // [0x75a0ce0] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// FVector GetSourceOffset(FTargetingRequestHandle& TargetingHandle);                                                    // [0x75dd370] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TargetingSystem.TargetingSelectionTask_Trace.GetSourceLocation
-	// FVector GetSourceLocation(FTargetingRequestHandle& TargetingHandle);                                                  // [0x75a0b80] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// FVector GetSourceLocation(FTargetingRequestHandle& TargetingHandle);                                                  // [0x75dd210] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TargetingSystem.TargetingSelectionTask_Trace.GetAdditionalActorsToIgnore
-	// void GetAdditionalActorsToIgnore(FTargetingRequestHandle& TargetingHandle, TArray<AActor*>& OutAdditionalActorsToIgnore); // [0x75a0994] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void GetAdditionalActorsToIgnore(FTargetingRequestHandle& TargetingHandle, TArray<AActor*>& OutAdditionalActorsToIgnore); // [0x75dd024] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/TargetingSystem.TargetingSubsystem
@@ -255,19 +255,19 @@ public:
 
 	/// Functions
 	// Function /Script/TargetingSystem.TargetingSubsystem.StartAsyncTargetingRequest
-	// FTargetingRequestHandle StartAsyncTargetingRequest(class UTargetingPreset* TargetingPreset, FTargetingSourceContext& InSourceContext, FDelegateProperty CompletionDynamicDelegate); // [0x75a1ed0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FTargetingRequestHandle StartAsyncTargetingRequest(class UTargetingPreset* TargetingPreset, FTargetingSourceContext& InSourceContext, FDelegateProperty CompletionDynamicDelegate); // [0x75de560] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TargetingSystem.TargetingSubsystem.RemoveAsyncTargetingRequestWithHandle
-	// void RemoveAsyncTargetingRequestWithHandle(FTargetingRequestHandle& TargetingHandle);                                 // [0x75a1e44] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveAsyncTargetingRequestWithHandle(FTargetingRequestHandle& TargetingHandle);                                 // [0x75de4d4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TargetingSystem.TargetingSubsystem.OverrideCollisionQueryTaskData
-	// void OverrideCollisionQueryTaskData(FTargetingRequestHandle TargetingHandle, FCollisionQueryTaskData& CollisionQueryDataOverride); // [0x75a1560] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void OverrideCollisionQueryTaskData(FTargetingRequestHandle TargetingHandle, FCollisionQueryTaskData& CollisionQueryDataOverride); // [0x75ddbf0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TargetingSystem.TargetingSubsystem.GetTargetingSourceContext
-	// FTargetingSourceContext GetTargetingSourceContext(FTargetingRequestHandle TargetingHandle);                           // [0x75a1238] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FTargetingSourceContext GetTargetingSourceContext(FTargetingRequestHandle TargetingHandle);                           // [0x75dd8c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TargetingSystem.TargetingSubsystem.GetTargetingResultsActors
-	// void GetTargetingResultsActors(FTargetingRequestHandle TargetingHandle, TArray<AActor*>& Targets);                    // [0x75a1078] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetTargetingResultsActors(FTargetingRequestHandle TargetingHandle, TArray<AActor*>& Targets);                    // [0x75dd708] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TargetingSystem.TargetingSubsystem.GetTargetingResults
-	// void GetTargetingResults(FTargetingRequestHandle TargetingHandle, TArray<FHitResult>& OutTargets);                    // [0x75a0ef4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetTargetingResults(FTargetingRequestHandle TargetingHandle, TArray<FHitResult>& OutTargets);                    // [0x75dd584] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TargetingSystem.TargetingSubsystem.ExecuteTargetingRequest
-	// void ExecuteTargetingRequest(class UTargetingPreset* TargetingPreset, FTargetingSourceContext& InSourceContext, FDelegateProperty CompletionDynamicDelegate); // [0x75a06b8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ExecuteTargetingRequest(class UTargetingPreset* TargetingPreset, FTargetingSourceContext& InSourceContext, FDelegateProperty CompletionDynamicDelegate); // [0x75dcd48] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/TargetingSystem.TargetingFilterTask_SortByDistance

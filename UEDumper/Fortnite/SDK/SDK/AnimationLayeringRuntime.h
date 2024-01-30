@@ -65,15 +65,15 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_UpdateBodyPartWeightsMulti
-	// void BP_BoneMask_UpdateBodyPartWeightsMulti(FBoneMask& BoneMask, TArray<FBoneMaskUpdateMultiParam>& Params);          // [0x7c37404] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_BoneMask_UpdateBodyPartWeightsMulti(FBoneMask& BoneMask, TArray<FBoneMaskUpdateMultiParam>& Params);          // [0x7c70d84] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_UpdateBodyPartWeights
-	// void BP_BoneMask_UpdateBodyPartWeights(FBoneMask& BoneMask, FName Name, float LocalSpaceWeight, float MeshSpaceWeight); // [0x7c370b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_BoneMask_UpdateBodyPartWeights(FBoneMask& BoneMask, FName Name, float LocalSpaceWeight, float MeshSpaceWeight); // [0x7c70a30] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_UpdateBodyPartMeshSpaceWeight
-	// void BP_BoneMask_UpdateBodyPartMeshSpaceWeight(FBoneMask& BoneMask, FName Name, float MeshSpaceWeight);               // [0x7c36e34] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_BoneMask_UpdateBodyPartMeshSpaceWeight(FBoneMask& BoneMask, FName Name, float MeshSpaceWeight);               // [0x7c707b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_UpdateBodyPartLocalSpaceWeight
-	// void BP_BoneMask_UpdateBodyPartLocalSpaceWeight(FBoneMask& BoneMask, FName Name, float LocalSpaceWeight);             // [0x7c36e34] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_BoneMask_UpdateBodyPartLocalSpaceWeight(FBoneMask& BoneMask, FName Name, float LocalSpaceWeight);             // [0x7c707b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_GetBodyPartWeights
-	// void BP_BoneMask_GetBodyPartWeights(FBoneMask& BoneMask, FName Name, float& LocalSpaceWeight, float& MeshSpaceWeight); // [0x7c36b8c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void BP_BoneMask_GetBodyPartWeights(FBoneMask& BoneMask, FName Name, float& LocalSpaceWeight, float& MeshSpaceWeight); // [0x7c7050c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/AnimationLayeringRuntime.BoneMaskEntry

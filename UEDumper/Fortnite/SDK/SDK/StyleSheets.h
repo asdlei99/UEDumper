@@ -184,7 +184,7 @@ public:
 
 	/// Functions
 	// Function /Script/StyleSheets.StylableWidget.BP_OnWidgetStyled
-	// void BP_OnWidgetStyled();                                                                                             // [0x2177018] RequiredAPI|Event|Protected|BlueprintEvent 
+	// void BP_OnWidgetStyled();                                                                                             // [0x211c0a0] RequiredAPI|Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/StyleSheets.WidgetTypeEntry

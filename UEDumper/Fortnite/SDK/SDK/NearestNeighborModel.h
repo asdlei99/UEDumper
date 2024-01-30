@@ -68,7 +68,7 @@ public:
 
 	/// Functions
 	// Function /Script/NearestNeighborModel.NearestNeighborOptimizedNetwork.Empty
-	// void Empty();                                                                                                         // [0x164f368] Native|Public|BlueprintCallable 
+	// void Empty();                                                                                                         // [0x160abec] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/NearestNeighborModel.NearestNeighborOptimizedNetworkInstance
@@ -90,9 +90,9 @@ public:
 
 	/// Functions
 	// Function /Script/NearestNeighborModel.NearestNeighborOptimizedNetworkLoader.LoadOptimizedNetwork
-	// bool LoadOptimizedNetwork(FString OnnxPath);                                                                          // [0x2177018] Event|Public|BlueprintEvent 
+	// bool LoadOptimizedNetwork(FString OnnxPath);                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NearestNeighborModel.NearestNeighborOptimizedNetworkLoader.GetOptimizedNetwork
-	// class UNearestNeighborOptimizedNetwork* GetOptimizedNetwork();                                                        // [0x7c14f10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UNearestNeighborOptimizedNetwork* GetOptimizedNetwork();                                                        // [0x7c4ef68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/NearestNeighborModel.ClothPartData
@@ -131,15 +131,15 @@ public:
 
 	/// Functions
 	// Function /Script/NearestNeighborModel.NearestNeighborModel.GetPCACoeffStart
-	// int32_t GetPCACoeffStart(int32_t PartId);                                                                             // [0xb333c94] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPCACoeffStart(int32_t PartId);                                                                             // [0xb314428] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NearestNeighborModel.NearestNeighborModel.GetPCACoeffNum
-	// int32_t GetPCACoeffNum(int32_t PartId);                                                                               // [0xb333c00] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPCACoeffNum(int32_t PartId);                                                                               // [0xb314394] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NearestNeighborModel.NearestNeighborModel.GetPartNumVerts
-	// int32_t GetPartNumVerts(int32_t PartId);                                                                              // [0xb333d28] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPartNumVerts(int32_t PartId);                                                                              // [0xb3144bc] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NearestNeighborModel.NearestNeighborModel.GetNumParts
-	// int32_t GetNumParts();                                                                                                // [0xb333be8] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumParts();                                                                                                // [0xb31437c] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NearestNeighborModel.NearestNeighborModel.ClipInputs
-	// TArray<float> ClipInputs(TArray<float>& Input);                                                                       // [0xb33398c] Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TArray<float> ClipInputs(TArray<float>& Input);                                                                       // [0xb314120] Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/NearestNeighborModel.NearestNeighborModelInputInfo
@@ -161,7 +161,7 @@ public:
 
 	/// Functions
 	// Function /Script/NearestNeighborModel.NearestNeighborModelInstance.Eval
-	// TArray<float> Eval(TArray<float>& InputData);                                                                         // [0xb333ae4] Final|Native|Private|HasOutParms|BlueprintCallable 
+	// TArray<float> Eval(TArray<float>& InputData);                                                                         // [0xb314278] Final|Native|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/NearestNeighborModel.OptimusSkeletonWithQuatsDataInterface

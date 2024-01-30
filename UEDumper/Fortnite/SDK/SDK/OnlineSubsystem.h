@@ -78,8 +78,8 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
-	// void OnMatchReceivedTurn(FString Match, bool bDidBecomeActive);                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnMatchReceivedTurn(FString Match, bool bDidBecomeActive);                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
-	// void OnMatchEnded(FString Match);                                                                                     // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnMatchEnded(FString Match);                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 

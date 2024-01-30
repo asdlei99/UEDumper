@@ -31,13 +31,20 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_Burt_SprintCharge.GA_Riding_Creature_Burt_SprintCharge_C.K2_ActivateAbility
-	// void K2_ActivateAbility();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_ActivateAbility();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_Burt_SprintCharge.GA_Riding_Creature_Burt_SprintCharge_C.K2_OnEndAbility
-	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_Burt_SprintCharge.GA_Riding_Creature_Burt_SprintCharge_C.FailedToActivatePassiveAbility
-	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_Burt_SprintCharge.GA_Riding_Creature_Burt_SprintCharge_C.ExecuteUbergraph_GA_Riding_Creature_Burt_SprintCharge
-	// void ExecuteUbergraph_GA_Riding_Creature_Burt_SprintCharge(int32_t EntryPoint);                                       // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GA_Riding_Creature_Burt_SprintCharge(int32_t EntryPoint);                                       // [0x211c0a0] Final|HasDefaults    
+};
+
+/// Class /RidingContent/Gameplay/Camera/Riding_PlayerCameraMode_TacticalSprint.Riding_PlayerCameraMode_TacticalSprint_C
+/// Size: 0x0000 (0x001BC0 - 0x001BC0)
+class URiding_PlayerCameraMode_TacticalSprint_C : public UFortCameraMode_Riding
+{ 
+public:
 };
 
 /// Class /RidingContent/Gameplay/General/GA_Riding_Player_StopRidingOnTriggered.GA_Riding_Player_StopRidingOnTriggered_C
@@ -50,14 +57,51 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_StopRidingOnTriggered.GA_Riding_Player_StopRidingOnTriggered_C.K2_ActivateAbilityFromEvent
-	// void K2_ActivateAbilityFromEvent(FGameplayEventData& EventData);                                                      // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void K2_ActivateAbilityFromEvent(FGameplayEventData& EventData);                                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_StopRidingOnTriggered.GA_Riding_Player_StopRidingOnTriggered_C.ExecuteUbergraph_GA_Riding_Player_StopRidingOnTriggered
-	// void ExecuteUbergraph_GA_Riding_Player_StopRidingOnTriggered(int32_t EntryPoint);                                     // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GA_Riding_Player_StopRidingOnTriggered(int32_t EntryPoint);                                     // [0x211c0a0] Final|HasDefaults    
 };
 
-/// Class /RidingContent/Gameplay/Camera/Riding_PlayerCameraMode_TacticalSprint.Riding_PlayerCameraMode_TacticalSprint_C
-/// Size: 0x0000 (0x001BC0 - 0x001BC0)
-class URiding_PlayerCameraMode_TacticalSprint_C : public UFortCameraMode_Riding
+/// Class /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C
+/// Size: 0x0030 (0x000B60 - 0x000B90)
+class UGA_Riding_Player_Petting_C : public UFortGameplayAbility
+{ 
+public:
+	FPointerToUberGraphFrame                           UberGraphFrame;                                             // 0x0B60   (0x0008)  
+	class URidableComponent*                           Active_Ridable;                                             // 0x0B68   (0x0008)  
+	class UClass*                                      GE_PlayerPetting;                                           // 0x0B70   (0x0008)  
+	TArray<FGameplayTag>                               TagsToCancelPetting;                                        // 0x0B78   (0x0010)  
+	class AFortPlayerPawn*                             FortPlayerPawnRider;                                        // 0x0B88   (0x0008)  
+
+
+	/// Functions
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.PettingTelemetry
+	// void PettingTelemetry(class AActor* Owner);                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.GetRiderPettingMontage
+	// void GetRiderPettingMontage(class UAnimMontage*& RiderPettingMontage);                                                // [0x211c0a0] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.OnCancelled_EBEF9ED74121A25C39ABC2B953D1B3F8
+	// void OnCancelled_EBEF9ED74121A25C39ABC2B953D1B3F8();                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.OnInterrupted_EBEF9ED74121A25C39ABC2B953D1B3F8
+	// void OnInterrupted_EBEF9ED74121A25C39ABC2B953D1B3F8();                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.OnBlendOut_EBEF9ED74121A25C39ABC2B953D1B3F8
+	// void OnBlendOut_EBEF9ED74121A25C39ABC2B953D1B3F8();                                                                   // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.OnCompleted_EBEF9ED74121A25C39ABC2B953D1B3F8
+	// void OnCompleted_EBEF9ED74121A25C39ABC2B953D1B3F8();                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.Added_DE1C9DFC4A5B4A7B0E203C8095E1CE5D
+	// void Added_DE1C9DFC4A5B4A7B0E203C8095E1CE5D();                                                                        // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.K2_ActivateAbility
+	// void K2_ActivateAbility();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.K2_OnEndAbility
+	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.FailedToActivatePassiveAbility
+	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.ExecuteUbergraph_GA_Riding_Player_Petting
+	// void ExecuteUbergraph_GA_Riding_Player_Petting(int32_t EntryPoint);                                                   // [0x211c0a0] Final|HasDefaults    
+};
+
+/// Class /RidingContent/Gameplay/General/GE_Riding_Player_Petting.GE_Riding_Player_Petting_C
+/// Size: 0x0000 (0x000A68 - 0x000A68)
+class UGE_Riding_Player_Petting_C : public UGameplayEffect
 { 
 public:
 };
@@ -76,50 +120,6 @@ class URidingCameraMode_C : public UFortCameraMode_Riding
 public:
 };
 
-/// Class /RidingContent/Gameplay/General/GE_Riding_Player_Petting.GE_Riding_Player_Petting_C
-/// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGE_Riding_Player_Petting_C : public UGameplayEffect
-{ 
-public:
-};
-
-/// Class /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C
-/// Size: 0x0030 (0x000B60 - 0x000B90)
-class UGA_Riding_Player_Petting_C : public UFortGameplayAbility
-{ 
-public:
-	FPointerToUberGraphFrame                           UberGraphFrame;                                             // 0x0B60   (0x0008)  
-	class URidableComponent*                           Active_Ridable;                                             // 0x0B68   (0x0008)  
-	class UClass*                                      GE_PlayerPetting;                                           // 0x0B70   (0x0008)  
-	TArray<FGameplayTag>                               TagsToCancelPetting;                                        // 0x0B78   (0x0010)  
-	class AFortPlayerPawn*                             FortPlayerPawnRider;                                        // 0x0B88   (0x0008)  
-
-
-	/// Functions
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.PettingTelemetry
-	// void PettingTelemetry(class AActor* Owner);                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.GetRiderPettingMontage
-	// void GetRiderPettingMontage(class UAnimMontage*& RiderPettingMontage);                                                // [0x2177018] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.OnCancelled_EBEF9ED74121A25C39ABC2B953D1B3F8
-	// void OnCancelled_EBEF9ED74121A25C39ABC2B953D1B3F8();                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.OnInterrupted_EBEF9ED74121A25C39ABC2B953D1B3F8
-	// void OnInterrupted_EBEF9ED74121A25C39ABC2B953D1B3F8();                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.OnBlendOut_EBEF9ED74121A25C39ABC2B953D1B3F8
-	// void OnBlendOut_EBEF9ED74121A25C39ABC2B953D1B3F8();                                                                   // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.OnCompleted_EBEF9ED74121A25C39ABC2B953D1B3F8
-	// void OnCompleted_EBEF9ED74121A25C39ABC2B953D1B3F8();                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.Added_DE1C9DFC4A5B4A7B0E203C8095E1CE5D
-	// void Added_DE1C9DFC4A5B4A7B0E203C8095E1CE5D();                                                                        // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.K2_ActivateAbility
-	// void K2_ActivateAbility();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.K2_OnEndAbility
-	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.FailedToActivatePassiveAbility
-	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x2177018] Event|Public|BlueprintEvent 
-	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Petting.GA_Riding_Player_Petting_C.ExecuteUbergraph_GA_Riding_Player_Petting
-	// void ExecuteUbergraph_GA_Riding_Player_Petting(int32_t EntryPoint);                                                   // [0x2177018] Final|HasDefaults    
-};
-
 /// Class /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden_Passive.GA_Riding_Creature_IsBeingRidden_Passive_C
 /// Size: 0x0008 (0x000EA0 - 0x000EA8)
 class UGA_Riding_Creature_IsBeingRidden_Passive_C : public UGA_NPC_Parent_C
@@ -130,13 +130,13 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden_Passive.GA_Riding_Creature_IsBeingRidden_Passive_C.K2_ActivateAbility
-	// void K2_ActivateAbility();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_ActivateAbility();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden_Passive.GA_Riding_Creature_IsBeingRidden_Passive_C.K2_OnEndAbility
-	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden_Passive.GA_Riding_Creature_IsBeingRidden_Passive_C.FailedToActivatePassiveAbility
-	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden_Passive.GA_Riding_Creature_IsBeingRidden_Passive_C.ExecuteUbergraph_GA_Riding_Creature_IsBeingRidden_Passive
-	// void ExecuteUbergraph_GA_Riding_Creature_IsBeingRidden_Passive(int32_t EntryPoint);                                   // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GA_Riding_Creature_IsBeingRidden_Passive(int32_t EntryPoint);                                   // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/Gameplay/General/GE_Riding_Creatue_IsBeingRidden_Passive.GE_Riding_Creatue_IsBeingRidden_Passive_C
@@ -156,13 +156,13 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden.GA_Riding_Creature_IsBeingRidden_C.K2_ActivateAbility
-	// void K2_ActivateAbility();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_ActivateAbility();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden.GA_Riding_Creature_IsBeingRidden_C.K2_OnEndAbility
-	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden.GA_Riding_Creature_IsBeingRidden_C.FailedToActivatePassiveAbility
-	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_IsBeingRidden.GA_Riding_Creature_IsBeingRidden_C.ExecuteUbergraph_GA_Riding_Creature_IsBeingRidden
-	// void ExecuteUbergraph_GA_Riding_Creature_IsBeingRidden(int32_t EntryPoint);                                           // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GA_Riding_Creature_IsBeingRidden(int32_t EntryPoint);                                           // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/Gameplay/General/GE_Riding_Creatue_IsBeingRidden.GE_Riding_Creatue_IsBeingRidden_C
@@ -191,13 +191,13 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_IsRiding.GA_Riding_Player_IsRiding_C.K2_ActivateAbility
-	// void K2_ActivateAbility();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_ActivateAbility();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_IsRiding.GA_Riding_Player_IsRiding_C.K2_OnEndAbility
-	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_IsRiding.GA_Riding_Player_IsRiding_C.FailedToActivatePassiveAbility
-	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_IsRiding.GA_Riding_Player_IsRiding_C.ExecuteUbergraph_GA_Riding_Player_IsRiding
-	// void ExecuteUbergraph_GA_Riding_Player_IsRiding(int32_t EntryPoint);                                                  // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GA_Riding_Player_IsRiding(int32_t EntryPoint);                                                  // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/Gameplay/General/GE_Riding_Player_IsRiding.GE_Riding_Player_IsRiding_C
@@ -219,9 +219,9 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_EatToRefuel.GA_Riding_Creature_EatToRefuel_C.K2_ActivateAbilityFromEvent
-	// void K2_ActivateAbilityFromEvent(FGameplayEventData& EventData);                                                      // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void K2_ActivateAbilityFromEvent(FGameplayEventData& EventData);                                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Creature_EatToRefuel.GA_Riding_Creature_EatToRefuel_C.ExecuteUbergraph_GA_Riding_Creature_EatToRefuel
-	// void ExecuteUbergraph_GA_Riding_Creature_EatToRefuel(int32_t EntryPoint);                                             // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GA_Riding_Creature_EatToRefuel(int32_t EntryPoint);                                             // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/Gameplay/General/GE_Riding_Creature_Grant_EatToRefuel.GE_Riding_Creature_Grant_EatToRefuel_C
@@ -243,17 +243,17 @@ public:
 
 	/// Functions
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Sprint.GA_Riding_Player_Sprint_C.OnRep_CancelSprintDispatcher
-	// void OnRep_CancelSprintDispatcher();                                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnRep_CancelSprintDispatcher();                                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Sprint.GA_Riding_Player_Sprint_C.Added_BA9D24D64958BB04345A3D89BD7617CA
-	// void Added_BA9D24D64958BB04345A3D89BD7617CA();                                                                        // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Added_BA9D24D64958BB04345A3D89BD7617CA();                                                                        // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Sprint.GA_Riding_Player_Sprint_C.K2_ActivateAbility
-	// void K2_ActivateAbility();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_ActivateAbility();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Sprint.GA_Riding_Player_Sprint_C.K2_OnEndAbility
-	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Sprint.GA_Riding_Player_Sprint_C.FailedToActivatePassiveAbility
-	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void FailedToActivatePassiveAbility(FGameplayAbilityActorInfo ActorInfo);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /RidingContent/Gameplay/General/GA_Riding_Player_Sprint.GA_Riding_Player_Sprint_C.ExecuteUbergraph_GA_Riding_Player_Sprint
-	// void ExecuteUbergraph_GA_Riding_Player_Sprint(int32_t EntryPoint);                                                    // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GA_Riding_Player_Sprint(int32_t EntryPoint);                                                    // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/Gameplay/General/GE_Riding_Player_Sprint.GE_Riding_Player_Sprint_C
@@ -291,13 +291,6 @@ class UCameraShake_Riding_BoarSprintImpact_Default_C : public ULegacyCameraShake
 public:
 };
 
-/// Class /RidingContent/Gameplay/Camera/CameraShakes/CameraShake_Riding_Sprint_Loop.CameraShake_Riding_Sprint_Loop_C
-/// Size: 0x0000 (0x0001F0 - 0x0001F0)
-class UCameraShake_Riding_Sprint_Loop_C : public ULegacyCameraShake
-{ 
-public:
-};
-
 /// Class /RidingContent/Gameplay/Camera/CameraShakes/CameraShake_Riding_Sprint_FOVFlare.CameraShake_Riding_Sprint_FOVFlare_C
 /// Size: 0x0000 (0x0001F0 - 0x0001F0)
 class UCameraShake_Riding_Sprint_FOVFlare_C : public ULegacyCameraShake
@@ -305,9 +298,9 @@ class UCameraShake_Riding_Sprint_FOVFlare_C : public ULegacyCameraShake
 public:
 };
 
-/// Class /Ascender/Gameplay/Ascender/GameplayEffects/GE_Ascender_Descending.GE_Ascender_Descending_C
-/// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGE_Ascender_Descending_C : public UGameplayEffect
+/// Class /RidingContent/Gameplay/Camera/CameraShakes/CameraShake_Riding_Sprint_Loop.CameraShake_Riding_Sprint_Loop_C
+/// Size: 0x0000 (0x0001F0 - 0x0001F0)
+class UCameraShake_Riding_Sprint_Loop_C : public ULegacyCameraShake
 { 
 public:
 };
@@ -315,6 +308,13 @@ public:
 /// Class /Ascender/Gameplay/Ascender/GameplayEffects/GE_Ascender_Ascending.GE_Ascender_Ascending_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
 class UGE_Ascender_Ascending_C : public UGameplayEffect
+{ 
+public:
+};
+
+/// Class /Ascender/Gameplay/Ascender/GameplayEffects/GE_Ascender_Descending.GE_Ascender_Descending_C
+/// Size: 0x0000 (0x000A68 - 0x000A68)
+class UGE_Ascender_Descending_C : public UGameplayEffect
 { 
 public:
 };
@@ -378,89 +378,89 @@ public:
 
 	/// Functions
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.GetAffiliationsToShowFor
-	// TArray<TEnumAsByte<EFortTeamAffiliation>> GetAffiliationsToShowFor();                                                 // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TArray<TEnumAsByte<EFortTeamAffiliation>> GetAffiliationsToShowFor();                                                 // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.ShouldShowSoundIndicator
-	// bool ShouldShowSoundIndicator(class AFortPlayerController* PlayerController);                                         // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldShowSoundIndicator(class AFortPlayerController* PlayerController);                                         // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.GetDynamicDestructionResourceType
-	// EDynamicDestructionResourceType GetDynamicDestructionResourceType();                                                  // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// EDynamicDestructionResourceType GetDynamicDestructionResourceType();                                                  // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.GetDynamicDestructionStaticMeshComponents
-	// void GetDynamicDestructionStaticMeshComponents(TArray<UStaticMeshComponent*>& OutFullFXStaticMeshComponents, TArray<UStaticMeshComponent*>& OutVisibilityOnlyStaticMeshComponents, TArray<UStaticMeshComponent*>& OutShadowProxyStaticMeshComponents); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void GetDynamicDestructionStaticMeshComponents(TArray<UStaticMeshComponent*>& OutFullFXStaticMeshComponents, TArray<UStaticMeshComponent*>& OutVisibilityOnlyStaticMeshComponents, TArray<UStaticMeshComponent*>& OutShadowProxyStaticMeshComponents); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.ShouldUseDynamicDestructionNiagaraSystem
-	// bool ShouldUseDynamicDestructionNiagaraSystem();                                                                      // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldUseDynamicDestructionNiagaraSystem();                                                                      // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.ShouldUseDynamicDestructionMaterial
-	// bool ShouldUseDynamicDestructionMaterial();                                                                           // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldUseDynamicDestructionMaterial();                                                                           // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.OnRep_BeDestroy
-	// void OnRep_BeDestroy();                                                                                               // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnRep_BeDestroy();                                                                                               // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BlueprintCanInteract
-	// bool BlueprintCanInteract(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted, TEnumAsByte<TInteractionType> InteractionType); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool BlueprintCanInteract(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted, TEnumAsByte<TInteractionType> InteractionType); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.CanBeginZiplining
-	// bool CanBeginZiplining(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent);         // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool CanBeginZiplining(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent);         // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.LocalOnFailedInteract
-	// void LocalOnFailedInteract(class AFortPlayerPawn* InteractingPawn);                                                   // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent|Const 
+	// void LocalOnFailedInteract(class AFortPlayerPawn* InteractingPawn);                                                   // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.GetBoundsComponents
-	// void GetBoundsComponents(class AActor* SelfActor, TArray<USceneComponent*>& OutComponents);                           // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void GetBoundsComponents(class AActor* SelfActor, TArray<USceneComponent*>& OutComponents);                           // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.ApplyStructureDamage
-	// void ApplyStructureDamage(class ABuildingSMActor* BuildingActor, class AActor* DamageSource);                         // [0x2177018] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// void ApplyStructureDamage(class ABuildingSMActor* BuildingActor, class AActor* DamageSource);                         // [0x211c0a0] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.AttachCapToEndOfSplineMesh
-	// void AttachCapToEndOfSplineMesh();                                                                                    // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void AttachCapToEndOfSplineMesh();                                                                                    // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.AttemptOverrideZiplineSocketOffset
-	// bool AttemptOverrideZiplineSocketOffset(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent, FVector& BaseSocketOffset, FVector& OutSocketOffset); // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool AttemptOverrideZiplineSocketOffset(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent, FVector& BaseSocketOffset, FVector& OutSocketOffset); // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.CalculateLaunchVelocity
-	// void CalculateLaunchVelocity(class AActor* PlayerPawn, FVector& LaunchVelocity);                                      // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void CalculateLaunchVelocity(class AActor* PlayerPawn, FVector& LaunchVelocity);                                      // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.SetCableTilingBySplineLength
-	// void SetCableTilingBySplineLength();                                                                                  // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetCableTilingBySplineLength();                                                                                  // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.DeactivateCableWobble
-	// void DeactivateCableWobble();                                                                                         // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void DeactivateCableWobble();                                                                                         // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.ActivateCableWobble
-	// void ActivateCableWobble();                                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void ActivateCableWobble();                                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.HotfixEnabled
-	// void HotfixEnabled();                                                                                                 // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void HotfixEnabled();                                                                                                 // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.GetTopComponent
-	// class UPrimitiveComponent* GetTopComponent();                                                                         // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UPrimitiveComponent* GetTopComponent();                                                                         // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.GetHandleComponent
-	// class UPrimitiveComponent* GetHandleComponent();                                                                      // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UPrimitiveComponent* GetHandleComponent();                                                                      // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.GetInteractComponentOverride
-	// class UPrimitiveComponent* GetInteractComponentOverride(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent); // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// class UPrimitiveComponent* GetInteractComponentOverride(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent); // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.PawnIsInHandleRange
-	// bool PawnIsInHandleRange(class AFortPawn* Pawn);                                                                      // [0x2177018] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// bool PawnIsInHandleRange(class AFortPawn* Pawn);                                                                      // [0x211c0a0] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BlueprintGetInteractionString
-	// FText BlueprintGetInteractionString(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// FText BlueprintGetInteractionString(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.GetLastSplinePointIndex
-	// int32_t GetLastSplinePointIndex();                                                                                    // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// int32_t GetLastSplinePointIndex();                                                                                    // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.OnReady_93837FC44A18F6AE57D3478CC43A98AB
-	// void OnReady_93837FC44A18F6AE57D3478CC43A98AB(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void OnReady_93837FC44A18F6AE57D3478CC43A98AB(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BP_HandlePlayerStartedUsingHandle
-	// void BP_HandlePlayerStartedUsingHandle(class AFortPlayerPawn* Player);                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_HandlePlayerStartedUsingHandle(class AFortPlayerPawn* Player);                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BP_HandlePlayerStoppedUsingHandle
-	// void BP_HandlePlayerStoppedUsingHandle(class AFortPlayerPawn* Player);                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_HandlePlayerStoppedUsingHandle(class AFortPlayerPawn* Player);                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BP_HandleStartedLoweringCable
-	// void BP_HandleStartedLoweringCable();                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_HandleStartedLoweringCable();                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BP_HandleStartedLoweringHandle
-	// void BP_HandleStartedLoweringHandle();                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_HandleStartedLoweringHandle();                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BP_HandleStoppedLoweringCable
-	// void BP_HandleStoppedLoweringCable();                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_HandleStoppedLoweringCable();                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BP_HandleStoppedLoweringHandle
-	// void BP_HandleStoppedLoweringHandle();                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_HandleStoppedLoweringHandle();                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.OnZipliningStarted
-	// void OnZipliningStarted(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent);        // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnZipliningStarted(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent);        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.PlayerDescendingStarted
-	// void PlayerDescendingStarted(class AFortPlayerPawn* Sliding Player);                                                  // [0x2177018] Net|NetMulticast|BlueprintCallable|BlueprintEvent 
+	// void PlayerDescendingStarted(class AFortPlayerPawn* Sliding Player);                                                  // [0x211c0a0] Net|NetMulticast|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.BP_HandleUpdatedLoweringCable
-	// void BP_HandleUpdatedLoweringCable();                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_HandleUpdatedLoweringCable();                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.OnZipliningStopped
-	// void OnZipliningStopped(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent, float ZiplineUsageDuration); // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnZipliningStopped(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent, float ZiplineUsageDuration); // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.ShouldPlayWhooshTimer
-	// void ShouldPlayWhooshTimer();                                                                                         // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void ShouldPlayWhooshTimer();                                                                                         // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.OnAscenderSetupComplete_Event
-	// void OnAscenderSetupComplete_Event();                                                                                 // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnAscenderSetupComplete_Event();                                                                                 // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.HandleLinkedActorDestroyed
-	// void HandleLinkedActorDestroyed(class AActor* DamageCauser);                                                          // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void HandleLinkedActorDestroyed(class AActor* DamageCauser);                                                          // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C.ExecuteUbergraph_B_Athena_Zipline_Ascender
-	// void ExecuteUbergraph_B_Athena_Zipline_Ascender(int32_t EntryPoint);                                                  // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_B_Athena_Zipline_Ascender(int32_t EntryPoint);                                                  // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C
@@ -485,41 +485,41 @@ public:
 
 	/// Functions
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.DoFailSafeUnholster
-	// void DoFailSafeUnholster();                                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void DoFailSafeUnholster();                                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.DoUnholster
-	// void DoUnholster();                                                                                                   // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void DoUnholster();                                                                                                   // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.DoHolster
-	// void DoHolster();                                                                                                     // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void DoHolster();                                                                                                     // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.IsPlayerUsingHandle
-	// bool IsPlayerUsingHandle();                                                                                           // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// bool IsPlayerUsingHandle();                                                                                           // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.OnCancelled_899182BF4C098785CCBCFD85AA84455F
-	// void OnCancelled_899182BF4C098785CCBCFD85AA84455F();                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnCancelled_899182BF4C098785CCBCFD85AA84455F();                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.OnInterrupted_899182BF4C098785CCBCFD85AA84455F
-	// void OnInterrupted_899182BF4C098785CCBCFD85AA84455F();                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnInterrupted_899182BF4C098785CCBCFD85AA84455F();                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.OnBlendOut_899182BF4C098785CCBCFD85AA84455F
-	// void OnBlendOut_899182BF4C098785CCBCFD85AA84455F();                                                                   // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnBlendOut_899182BF4C098785CCBCFD85AA84455F();                                                                   // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.OnCompleted_899182BF4C098785CCBCFD85AA84455F
-	// void OnCompleted_899182BF4C098785CCBCFD85AA84455F();                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnCompleted_899182BF4C098785CCBCFD85AA84455F();                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.ZipliningComplete
-	// void ZipliningComplete();                                                                                             // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void ZipliningComplete();                                                                                             // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.SurroundingsCheck_SmashObjects
-	// void SurroundingsCheck_SmashObjects();                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void SurroundingsCheck_SmashObjects();                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.SurroundingsCheck_MotorCheck
-	// void SurroundingsCheck_MotorCheck();                                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void SurroundingsCheck_MotorCheck();                                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.GameplayTagEvent_ZiplineEnter
-	// void GameplayTagEvent_ZiplineEnter(FGameplayEventData& EventData);                                                    // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GameplayTagEvent_ZiplineEnter(FGameplayEventData& EventData);                                                    // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.GameplayTagEvent_ZiplineExit
-	// void GameplayTagEvent_ZiplineExit(FGameplayEventData& EventData);                                                     // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GameplayTagEvent_ZiplineExit(FGameplayEventData& EventData);                                                     // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.FallingTagRemoved
-	// void FallingTagRemoved();                                                                                             // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void FallingTagRemoved();                                                                                             // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.Pre_BeginZiplinging
-	// void Pre_BeginZiplinging();                                                                                           // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Pre_BeginZiplinging();                                                                                           // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.HandleGameplayEventTag
-	// void HandleGameplayEventTag(FGameplayEventData& EventData);                                                           // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void HandleGameplayEventTag(FGameplayEventData& EventData);                                                           // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.ZiplinePostBegin_Event
-	// void ZiplinePostBegin_Event();                                                                                        // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void ZiplinePostBegin_Event();                                                                                        // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/Gameplay/Ascender/GA_Athena_Ascender_Smash.GA_Athena_Ascender_Smash_C.ExecuteUbergraph_GA_Athena_Ascender_Smash
-	// void ExecuteUbergraph_GA_Athena_Ascender_Smash(int32_t EntryPoint);                                                   // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GA_Athena_Ascender_Smash(int32_t EntryPoint);                                                   // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Ascender/Gameplay/Ascender/CameraShake_Ascender_LineAttach1.CameraShake_Ascender_LineAttach1_C

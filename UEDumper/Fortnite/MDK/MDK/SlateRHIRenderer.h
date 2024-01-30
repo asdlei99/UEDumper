@@ -22,7 +22,7 @@ public:
 
 	/// Functions
 	// Function /Script/SlateRHIRenderer.SlateFXSubsystem.GetSlatePostProcessor
-	// class USlateRHIPostBufferProcessor* GetSlatePostProcessor(ESlatePostRT InPostBufferBit);                                 // [0x6012084] Final|Native|Public|BlueprintCallable 
+	// class USlateRHIPostBufferProcessor* GetSlatePostProcessor(ESlatePostRT InPostBufferBit);                                 // [0x605d3bc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SlateRHIRenderer.SlateRHIPostBufferProcessor
@@ -59,9 +59,9 @@ public:
 
 	/// Functions
 	// Function /Script/SlateRHIRenderer.SlateRHIRendererSettings.GetSlatePostSetting
-	// FSlatePostSettings GetSlatePostSetting(ESlatePostRT InPostBufferBit);                                                    // [0x6012114] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FSlatePostSettings GetSlatePostSetting(ESlatePostRT InPostBufferBit);                                                    // [0x605d44c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SlateRHIRenderer.SlateRHIRendererSettings.GetMutableSlatePostSetting
-	// FSlatePostSettings GetMutableSlatePostSetting(ESlatePostRT InPostBufferBit);                                             // [0x6011fdc] Final|Native|Public|BlueprintCallable 
+	// FSlatePostSettings GetMutableSlatePostSetting(ESlatePostRT InPostBufferBit);                                             // [0x605d314] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/SlateRHIRenderer.SlatePostSettings

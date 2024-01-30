@@ -116,39 +116,39 @@ public:
 
 	/// Functions
 	// Function /Script/GrindRailRuntime.FortGrindRail.UpdateTransientComponentTransforms
-	// void UpdateTransientComponentTransforms(TArray<USceneComponent*> TransientSceneComponents);                              // [0xb0b47b4] Final|Native|Protected|BlueprintCallable 
+	// void UpdateTransientComponentTransforms(TArray<USceneComponent*> TransientSceneComponents);                              // [0xb097524] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortGrindRail.ShouldApplyFallDamageImmunity
-	// bool ShouldApplyFallDamageImmunity();                                                                                    // [0x2f18ed4] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldApplyFallDamageImmunity();                                                                                    // [0x2f1d290] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortGrindRail.SetupMeshInfo
-	// void SetupMeshInfo(class USplineMeshComponent* SplineMeshComponent);                                                     // [0xb0b4438] Final|Native|Public|BlueprintCallable 
+	// void SetupMeshInfo(class USplineMeshComponent* SplineMeshComponent);                                                     // [0xb0971a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortGrindRail.OnRep_DisableBooster
-	// void OnRep_DisableBooster();                                                                                             // [0x3521c7c] Final|Native|Protected 
+	// void OnRep_DisableBooster();                                                                                             // [0x3514e28] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortGrindRail.OnPlaylistDataReady
-	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0x3340e98] Final|Native|Protected|HasOutParms 
+	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0x333b574] Final|Native|Protected|HasOutParms 
 	// Function /Script/GrindRailRuntime.FortGrindRail.OnPlayerEndedGrinding
-	// void OnPlayerEndedGrinding(class AFortPlayerPawn* Pawn);                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayerEndedGrinding(class AFortPlayerPawn* Pawn);                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortGrindRail.OnPlayerBeganGrinding
-	// void OnPlayerBeganGrinding(class AFortPlayerPawn* GrindingPawn);                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayerBeganGrinding(class AFortPlayerPawn* GrindingPawn);                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortGrindRail.NativeGetNextPositionToGrind
-	// void NativeGetNextPositionToGrind(float DistanceToTravel, float CurrentDistanceAlongSpline, float RightLeanValue, FVector& OutNextLocation, bool& bGotToEnd, float& NextLocationOnRail, EGrindRailBoosterMode& BoosterMode, bool& bHitObstacle, bool& bNewRail, float& DistanceAlongNewRail, class AFortGrindRail*& TheNewRail, bool& bNewRailReverseDirection); // [0xb0b3e40] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void NativeGetNextPositionToGrind(float DistanceToTravel, float CurrentDistanceAlongSpline, float RightLeanValue, FVector& OutNextLocation, bool& bGotToEnd, float& NextLocationOnRail, EGrindRailBoosterMode& BoosterMode, bool& bHitObstacle, bool& bNewRail, float& DistanceAlongNewRail, class AFortGrindRail*& TheNewRail, bool& bNewRailReverseDirection); // [0xb096bb0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortGrindRail.IsTipCapped
-	// bool IsTipCapped(bool bStartTip);                                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// bool IsTipCapped(bool bStartTip);                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortGrindRail.IsGrindRailEnabled
-	// bool IsGrindRailEnabled();                                                                                               // [0x321ca58] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool IsGrindRailEnabled();                                                                                               // [0x3213b4c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortGrindRail.HasTailConnection
-	// bool HasTailConnection();                                                                                                // [0xb0b3e1c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool HasTailConnection();                                                                                                // [0xb096b8c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortGrindRail.HasHeadConnection
-	// bool HasHeadConnection();                                                                                                // [0xb0b3df8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool HasHeadConnection();                                                                                                // [0xb096b68] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortGrindRail.GetSpeedSettingsOverride
-	// bool GetSpeedSettingsOverride(FGrindRailSpeedSettings& SpeedSettingsOverride);                                           // [0xb0b3c2c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool GetSpeedSettingsOverride(FGrindRailSpeedSettings& SpeedSettingsOverride);                                           // [0xb09699c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/GrindRailRuntime.FortGrindRail.GenerateMeshesAlongSpline
-	// void GenerateMeshesAlongSpline();                                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void GenerateMeshesAlongSpline();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortGrindRail.ForceClearBoosters
-	// void ForceClearBoosters();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ForceClearBoosters();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortGrindRail.BPRerunConstructionScript
-	// void BPRerunConstructionScript();                                                                                        // [0x32e6c74] Final|Native|Public|BlueprintCallable 
+	// void BPRerunConstructionScript();                                                                                        // [0x32e4b44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortGrindRail.AllowSprinting
-	// bool AllowSprinting();                                                                                                   // [0x321ca58] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool AllowSprinting();                                                                                                   // [0x3213b4c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/GrindRailRuntime.FortGrindRailConnector
@@ -261,13 +261,13 @@ public:
 
 	/// Functions
 	// Function /Script/GrindRailRuntime.FortGrindRailLayerAnimInstance.HandleBegunGrinding
-	// void HandleBegunGrinding(bool bWasAlreadyGrinding, bool bWasJumpingFromRail, bool bFromInteraction, FVector PreviousPlayerLocation); // [0x388bd28] Final|Native|Public|HasDefaults 
+	// void HandleBegunGrinding(bool bWasAlreadyGrinding, bool bWasJumpingFromRail, bool bFromInteraction, FVector PreviousPlayerLocation); // [0x28c661c] Final|Native|Public|HasDefaults 
 	// Function /Script/GrindRailRuntime.FortGrindRailLayerAnimInstance.AnimNotify_IdleEnter
-	// void AnimNotify_IdleEnter(class UAnimNotify* Notify);                                                                    // [0xb0b2b80] Final|Native|Public  
+	// void AnimNotify_IdleEnter(class UAnimNotify* Notify);                                                                    // [0xb0958f0] Final|Native|Public  
 	// Function /Script/GrindRailRuntime.FortGrindRailLayerAnimInstance.AnimNotify_EntryExit
-	// void AnimNotify_EntryExit(class UAnimNotify* Notify);                                                                    // [0xb0b2bf0] Final|Native|Public  
+	// void AnimNotify_EntryExit(class UAnimNotify* Notify);                                                                    // [0xb095960] Final|Native|Public  
 	// Function /Script/GrindRailRuntime.FortGrindRailLayerAnimInstance.AnimNotify_EntryEnter
-	// void AnimNotify_EntryEnter(class UAnimNotify* Notify);                                                                   // [0xb0b2b80] Final|Native|Public  
+	// void AnimNotify_EntryEnter(class UAnimNotify* Notify);                                                                   // [0xb0958f0] Final|Native|Public  
 };
 
 /// Class /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding
@@ -358,75 +358,75 @@ public:
 
 	/// Functions
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.SphereTraceForJump
-	// void SphereTraceForJump(FVector& Start, FVector& End, float Radius, bool bDrawDebug, FLinearColor& TraceColor, TArray<FHitResult>& OutHits); // [0xb0b44f8] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void SphereTraceForJump(FVector& Start, FVector& End, float Radius, bool bDrawDebug, FLinearColor& TraceColor, TArray<FHitResult>& OutHits); // [0xb097268] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.RemoveGrindingGameplayCue
-	// void RemoveGrindingGameplayCue(FGameplayTag& tag);                                                                       // [0xb0b4358] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void RemoveGrindingGameplayCue(FGameplayTag& tag);                                                                       // [0xb0970c8] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.RemoveGameplayCue
-	// void RemoveGameplayCue(FGameplayTag& GameplayCueTag);                                                                    // [0xb0b4358] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void RemoveGameplayCue(FGameplayTag& GameplayCueTag);                                                                    // [0xb0970c8] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.PlayJumpOnSound
-	// void PlayJumpOnSound(bool bPlayAudio);                                                                                   // [0x2816ed4] Final|Native|Protected|BlueprintCallable 
+	// void PlayJumpOnSound(bool bPlayAudio);                                                                                   // [0x28c68d4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.OnIgnoredBuildingEndPlay
-	// void OnIgnoredBuildingEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                           // [0xb0b4294] Final|Native|Protected 
+	// void OnIgnoredBuildingEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                           // [0xb097004] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.IsThrowableItem
-	// bool IsThrowableItem(class ABuildingActor* BuildingActor);                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// bool IsThrowableItem(class ABuildingActor* BuildingActor);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.IsDamageableDevice
-	// bool IsDamageableDevice(class ABuildingActor* BuildingActor);                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// bool IsDamageableDevice(class ABuildingActor* BuildingActor);                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.HandleGrindingEnded
-	// void HandleGrindingEnded(class AFortGrindRail* GrindRail);                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleGrindingEnded(class AFortGrindRail* GrindRail);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.HandleGrindingBegun
-	// void HandleGrindingBegun(class AFortGrindRail* GrindRail);                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleGrindingBegun(class AFortGrindRail* GrindRail);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.HandleGameplayCuesOnVehicleHit
-	// void HandleGameplayCuesOnVehicleHit(class AFortAthenaVehicle* AthenaVehicle);                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleGameplayCuesOnVehicleHit(class AFortAthenaVehicle* AthenaVehicle);                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.HandleGameplayCuesOnSprinting
-	// void HandleGameplayCuesOnSprinting(class AFortGrindRail* GrindRail, bool bWantsToGrindSprint);                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleGameplayCuesOnSprinting(class AFortGrindRail* GrindRail, bool bWantsToGrindSprint);                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.HandleGameplayCuesOnRailJump
-	// void HandleGameplayCuesOnRailJump(bool bIsAnchorJumpActive);                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleGameplayCuesOnRailJump(bool bIsAnchorJumpActive);                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.HandleGameplayCuesOnHit
-	// void HandleGameplayCuesOnHit(class AFortGrindRail* GrindRail);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleGameplayCuesOnHit(class AFortGrindRail* GrindRail);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.HandleGameplayCuesOnFeetLanding
-	// void HandleGameplayCuesOnFeetLanding(class AFortGrindRail* GrindRail);                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleGameplayCuesOnFeetLanding(class AFortGrindRail* GrindRail);                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.HandleGameplayCuesOnBoosterModeChange
-	// void HandleGameplayCuesOnBoosterModeChange(class AFortGrindRail* GrindRail, EGrindRailBoosterMode OldBoosterMode, EGrindRailBoosterMode NewBoosterMode); // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleGameplayCuesOnBoosterModeChange(class AFortGrindRail* GrindRail, EGrindRailBoosterMode OldBoosterMode, EGrindRailBoosterMode NewBoosterMode); // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.GetValueAtLevelWithContext
-	// float GetValueAtLevelWithContext(FScalableFloat& Input, float Level);                                                    // [0xb0b3cb4] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float GetValueAtLevelWithContext(FScalableFloat& Input, float Level);                                                    // [0xb096a24] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.GameplayTagCallback_CancelGrinding
-	// void GameplayTagCallback_CancelGrinding(FGameplayTag tag, int32_t NewCount);                                             // [0xb0b3a20] Final|Native|Private|Const 
+	// void GameplayTagCallback_CancelGrinding(FGameplayTag tag, int32_t NewCount);                                             // [0xb096790] Final|Native|Private|Const 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.GameplayTagCallback_BlockSprintingAndHolstering
-	// void GameplayTagCallback_BlockSprintingAndHolstering(FGameplayTag tag, int32_t NewCount);                                // [0xb0b3814] Final|Native|Private 
+	// void GameplayTagCallback_BlockSprintingAndHolstering(FGameplayTag tag, int32_t NewCount);                                // [0xb096584] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.GameplayTagCallback_BlockSprinting
-	// void GameplayTagCallback_BlockSprinting(FGameplayTag tag, int32_t NewCount);                                             // [0xb0b3608] Final|Native|Private 
+	// void GameplayTagCallback_BlockSprinting(FGameplayTag tag, int32_t NewCount);                                             // [0xb096378] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnSprintInputPressed
-	// void EventCallback_OnSprintInputPressed(bool bPressed);                                                                  // [0xb0b3588] Final|Native|Private 
+	// void EventCallback_OnSprintInputPressed(bool bPressed);                                                                  // [0xb0962f8] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnReloadInput
-	// void EventCallback_OnReloadInput();                                                                                      // [0xb0b3574] Final|Native|Private 
+	// void EventCallback_OnReloadInput();                                                                                      // [0xb0962e4] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnPawnLanded
-	// void EventCallback_OnPawnLanded(FHitResult& Hit);                                                                        // [0xb0b349c] Final|Native|Private|HasOutParms 
+	// void EventCallback_OnPawnLanded(FHitResult& Hit);                                                                        // [0xb09620c] Final|Native|Private|HasOutParms 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnJumpInput
-	// void EventCallback_OnJumpInput(bool bPressed);                                                                           // [0xb0b341c] Final|Native|Private 
+	// void EventCallback_OnJumpInput(bool bPressed);                                                                           // [0xb09618c] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnGrindLostStructuralSupport
-	// void EventCallback_OnGrindLostStructuralSupport();                                                                       // [0xb0b3408] Final|Native|Private|Const 
+	// void EventCallback_OnGrindLostStructuralSupport();                                                                       // [0xb096178] Final|Native|Private|Const 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnFeetLanded
-	// void EventCallback_OnFeetLanded();                                                                                       // [0xb0b33f4] Final|Native|Private 
+	// void EventCallback_OnFeetLanded();                                                                                       // [0xb096164] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnEnergyCompletelyDrained
-	// void EventCallback_OnEnergyCompletelyDrained(class UFortComponent_Energy* EnergyComponentDrained);                       // [0xb0b3374] Final|Native|Private 
+	// void EventCallback_OnEnergyCompletelyDrained(class UFortComponent_Energy* EnergyComponentDrained);                       // [0xb0960e4] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnDismountPlayerRequested
-	// void EventCallback_OnDismountPlayerRequested();                                                                          // [0xb0b3360] Final|Native|Private 
+	// void EventCallback_OnDismountPlayerRequested();                                                                          // [0xb0960d0] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnBaseMeshReady
-	// void EventCallback_OnBaseMeshReady(class AFortPlayerPawn* Pawn, class USkeletalMeshComponent* MeshComponent);            // [0xb0b329c] Final|Native|Private 
+	// void EventCallback_OnBaseMeshReady(class AFortPlayerPawn* Pawn, class USkeletalMeshComponent* MeshComponent);            // [0xb09600c] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.EventCallback_OnApplyDamageToDevice
-	// void EventCallback_OnApplyDamageToDevice(class ABuildingActor* BuildingActor);                                           // [0xb0b321c] Final|Native|Private 
+	// void EventCallback_OnApplyDamageToDevice(class ABuildingActor* BuildingActor);                                           // [0xb095f8c] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.DrawDebugHUD
-	// void DrawDebugHUD(class AHUD* HUD, class UCanvas* Canvas);                                                               // [0x696d714] Final|Native|Protected|Const 
+	// void DrawDebugHUD(class AHUD* HUD, class UCanvas* Canvas);                                                               // [0x69b67c4] Final|Native|Protected|Const 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.CalculateRailJump
-	// FFortMovementMode_GrindingRailJumpResult CalculateRailJump(class AFortGrindRail* GrindRail, float CurrentSpeedAlongSpline, FVector CurrentDirectionAlongSpline, float CurrentLeanRight, float CurrentDistanceAlongSpline, FVector NativeLastRailLocation, FVector LeanVectorInWorldSpace); // [0x2177018] Event|Protected|HasDefaults|BlueprintEvent 
+	// FFortMovementMode_GrindingRailJumpResult CalculateRailJump(class AFortGrindRail* GrindRail, float CurrentSpeedAlongSpline, FVector CurrentDirectionAlongSpline, float CurrentLeanRight, float CurrentDistanceAlongSpline, FVector NativeLastRailLocation, FVector LeanVectorInWorldSpace); // [0x211c0a0] Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.CalculateIfCanJumpStraight
-	// bool CalculateIfCanJumpStraight(class AFortGrindRail* GrindRail, FVector& PotentialAnchorPoint, FVector& JumpTravelVector, FVector& CurrentDirectionAlongSpline, FVector& NativeLastRailLocation, float CurrentLeanRight); // [0xb0b2c60] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool CalculateIfCanJumpStraight(class AFortGrindRail* GrindRail, FVector& PotentialAnchorPoint, FVector& JumpTravelVector, FVector& CurrentDirectionAlongSpline, FVector& NativeLastRailLocation, float CurrentLeanRight); // [0xb0959d0] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.ApplyDamageToDevice
-	// void ApplyDamageToDevice(class ABuildingActor* BuildingActor);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ApplyDamageToDevice(class ABuildingActor* BuildingActor);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.AddTemporaryMoveIgnoreActor
-	// void AddTemporaryMoveIgnoreActor(class ABuildingActor* BuildingActor, float IgnoreDuration);                             // [0xb0b2abc] Final|Native|Protected|BlueprintCallable 
+	// void AddTemporaryMoveIgnoreActor(class ABuildingActor* BuildingActor, float IgnoreDuration);                             // [0xb09582c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortMovementMode_ExtLogicGrinding.AddGameplayCue
-	// void AddGameplayCue(FGameplayTag& GameplayCueTag);                                                                       // [0xb0b29f4] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddGameplayCue(FGameplayTag& GameplayCueTag);                                                                       // [0xb095764] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider
@@ -457,51 +457,51 @@ public:
 
 	/// Functions
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.RequestGrindingOnRail
-	// void RequestGrindingOnRail(class AFortGrindRail* GrindRail, float OptionalStartDistance, bool bFromInteraction);         // [0xb0cd144] Final|Native|Public|BlueprintCallable 
+	// void RequestGrindingOnRail(class AFortGrindRail* GrindRail, float OptionalStartDistance, bool bFromInteraction);         // [0xb0afe24] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.OnWalkingBaseChanged
-	// void OnWalkingBaseChanged(class AFortPawn* Pawn, class AActor* NewBase);                                                 // [0x2816904] Final|Native|Private 
+	// void OnWalkingBaseChanged(class AFortPawn* Pawn, class AActor* NewBase);                                                 // [0x28c9360] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.OnPawnLandedCallback
-	// void OnPawnLandedCallback(FHitResult& Hit);                                                                              // [0xb0ccba4] Final|Native|Private|HasOutParms 
+	// void OnPawnLandedCallback(FHitResult& Hit);                                                                              // [0xb0af884] Final|Native|Private|HasOutParms 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* InCharacter, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x15ffcec] Final|Native|Private 
+	// void OnMovementModeChanged(class ACharacter* InCharacter, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x1e05d18] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.IsUsingOriginalGrinding
-	// bool IsUsingOriginalGrinding();                                                                                          // [0xb0ccb80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUsingOriginalGrinding();                                                                                          // [0xb0af860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.IsSprinting
-	// bool IsSprinting();                                                                                                      // [0x2817174] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSprinting();                                                                                                      // [0x28c5e2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.IsGrinding
-	// bool IsGrinding();                                                                                                       // [0x2816cf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsGrinding();                                                                                                       // [0x28c6bf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.HandleGrindStartRequestData
-	// FGrindingRequestCalculationData HandleGrindStartRequestData(class AFortGrindRail* GrindRail, FVector PawnLocation, float StartDistance, FVector LastUpdateVelocity, bool bIsGrinding, bool bStartedFromLand, float CurrentSpeedAlongSpline, FVector CurrentDirection); // [0x2177018] Event|Public|HasDefaults|BlueprintEvent 
+	// FGrindingRequestCalculationData HandleGrindStartRequestData(class AFortGrindRail* GrindRail, FVector PawnLocation, float StartDistance, FVector LastUpdateVelocity, bool bIsGrinding, bool bStartedFromLand, float CurrentSpeedAlongSpline, FVector CurrentDirection); // [0x211c0a0] Event|Public|HasDefaults|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.GetWantsToGrind
-	// bool GetWantsToGrind();                                                                                                  // [0xb0ccb14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetWantsToGrind();                                                                                                  // [0xb0af7f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.GetStartedGrindingFromLand
-	// bool GetStartedGrindingFromLand();                                                                                       // [0xb0cca84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetStartedGrindingFromLand();                                                                                       // [0xb0af764] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.GetCurrentGrindingRailActor
-	// class AFortGrindRail* GetCurrentGrindingRailActor();                                                                     // [0x2817080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortGrindRail* GetCurrentGrindingRailActor();                                                                     // [0x28c5ecc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.GetCurrentBoosterMode
-	// EGrindRailBoosterMode GetCurrentBoosterMode();                                                                           // [0x2817150] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EGrindRailBoosterMode GetCurrentBoosterMode();                                                                           // [0x28c5e50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.Broadcast_FeetLandedEvent
-	// void Broadcast_FeetLandedEvent();                                                                                        // [0x8bcf3ac] Final|Native|Protected|BlueprintCallable 
+	// void Broadcast_FeetLandedEvent();                                                                                        // [0x8bef2cc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.Broadcast_DismountPlayerEvent
-	// void Broadcast_DismountPlayerEvent();                                                                                    // [0xb0cca68] Final|Native|Protected|BlueprintCallable 
+	// void Broadcast_DismountPlayerEvent();                                                                                    // [0xb0af748] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.Broadcast_ApplyDamageToBuildingActorEvent
-	// void Broadcast_ApplyDamageToBuildingActorEvent(class ABuildingActor* BuildingActor);                                     // [0xb0cc9d8] Final|Native|Protected|BlueprintCallable 
+	// void Broadcast_ApplyDamageToBuildingActorEvent(class ABuildingActor* BuildingActor);                                     // [0xb0af6b8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.Broadcast_ADSReleasedEvent
-	// void Broadcast_ADSReleasedEvent();                                                                                       // [0xb0cc9bc] Final|Native|Protected|BlueprintCallable 
+	// void Broadcast_ADSReleasedEvent();                                                                                       // [0xb0af69c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.Broadcast_ADSPressedEvent
-	// void Broadcast_ADSPressedEvent();                                                                                        // [0xb0cc9a0] Final|Native|Protected|BlueprintCallable 
+	// void Broadcast_ADSPressedEvent();                                                                                        // [0xb0af680] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.BP_OnFeetLanded
-	// void BP_OnFeetLanded();                                                                                                  // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void BP_OnFeetLanded();                                                                                                  // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.BP_OnDismount
-	// void BP_OnDismount();                                                                                                    // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void BP_OnDismount();                                                                                                    // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.BP_OnApplyDamageToDevice
-	// void BP_OnApplyDamageToDevice(class ABuildingActor* BuildingActor);                                                      // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void BP_OnApplyDamageToDevice(class ABuildingActor* BuildingActor);                                                      // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.BP_OnADSReleased
-	// void BP_OnADSReleased();                                                                                                 // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void BP_OnADSReleased();                                                                                                 // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.BP_OnADSPressed
-	// void BP_OnADSPressed();                                                                                                  // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void BP_OnADSPressed();                                                                                                  // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindingProvider.BP_CanBeginGrinding
-	// bool BP_CanBeginGrinding();                                                                                              // [0x2177018] Event|Public|BlueprintEvent|Const 
+	// bool BP_CanBeginGrinding();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/GrindRailRuntime.GrindRailEditorComponent
@@ -536,11 +536,11 @@ public:
 
 	/// Functions
 	// Function /Script/GrindRailRuntime.StructurallySupportedSplineComponent.OnStructuralSupportDied
-	// void OnStructuralSupportDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb0ccc7c] Final|Native|Protected|HasDefaults 
+	// void OnStructuralSupportDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb0af95c] Final|Native|Protected|HasDefaults 
 	// Function /Script/GrindRailRuntime.StructurallySupportedSplineComponent.OnDestroyFromStructuralSupport
-	// void OnDestroyFromStructuralSupport(class AActor* SupportActor);                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDestroyFromStructuralSupport(class AActor* SupportActor);                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.StructurallySupportedSplineComponent.Multicast_OnStructuralSupportDied
-	// void Multicast_OnStructuralSupportDied();                                                                                // [0x2555e28] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_OnStructuralSupportDied();                                                                                // [0x212f478] Net|NetReliableNative|Event|NetMulticast|Protected 
 };
 
 /// Class /Script/GrindRailRuntime.FortAthenaAIBotEvaluator_GrindRail
@@ -584,9 +584,9 @@ public:
 
 	/// Functions
 	// Function /Script/GrindRailRuntime.FortGameplayCueNotifyLoop_Grinding.OnForwardChanged
-	// void OnForwardChanged(bool bNewState);                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnForwardChanged(bool bNewState);                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortGameplayCueNotifyLoop_Grinding.CacheReferences
-	// void CacheReferences(class UAudioComponent* InAudioComponent, class UFXSystemComponent* InEffectsComponent, class AFortPlayerPawn* InPlayerPawn, class UFortPawnComponent_GrindingProvider* InGrindingProvider); // [0x2f06004] Final|Native|Public|BlueprintCallable 
+	// void CacheReferences(class UAudioComponent* InAudioComponent, class UFXSystemComponent* InEffectsComponent, class AFortPlayerPawn* InPlayerPawn, class UFortPawnComponent_GrindingProvider* InGrindingProvider); // [0x20fc728] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GrindRailRuntime.FortPawnComponent_GrindRail
@@ -684,103 +684,103 @@ public:
 
 	/// Functions
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.SetMovementStatus
-	// void SetMovementStatus(FVector& NewStatus);                                                                              // [0xb0de954] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetMovementStatus(FVector& NewStatus);                                                                              // [0xb0c1644] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.SetIsSprinting
-	// void SetIsSprinting(bool bNewIsSprinting);                                                                               // [0xb0de8d4] Final|Native|Public|BlueprintCallable 
+	// void SetIsSprinting(bool bNewIsSprinting);                                                                               // [0xb0c15c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.SetGrindDistanceOnSpline
-	// void SetGrindDistanceOnSpline(float NewDistanceOnSpline);                                                                // [0xb0de854] Final|Native|Public|BlueprintCallable 
+	// void SetGrindDistanceOnSpline(float NewDistanceOnSpline);                                                                // [0xb0c1544] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.SetGrindBaseActor
-	// void SetGrindBaseActor(class AActor* NewBaseActor);                                                                      // [0xb0de7d4] Final|Native|Public|BlueprintCallable 
+	// void SetGrindBaseActor(class AActor* NewBaseActor);                                                                      // [0xb0c14c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.ServerUpdateWeaponHolstered
-	// void ServerUpdateWeaponHolstered(bool bNewHolstered, bool bPlayEquipAnim);                                               // [0xb0de70c] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerUpdateWeaponHolstered(bool bNewHolstered, bool bPlayEquipAnim);                                               // [0xb0c13fc] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.ServerBeginGrinding
-	// void ServerBeginGrinding(class AFortGrindRail* GrindRail, float OptionalStartDistance, bool bFromInteraction);           // [0xb0de60c] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerBeginGrinding(class AFortGrindRail* GrindRail, float OptionalStartDistance, bool bFromInteraction);           // [0xb0c12fc] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.RemoveMoveIgnoreActors
-	// void RemoveMoveIgnoreActors();                                                                                           // [0xb0de5f8] Final|Native|Protected|BlueprintCallable 
+	// void RemoveMoveIgnoreActors();                                                                                           // [0xb0c12e8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnRep_IsSprinting
-	// void OnRep_IsSprinting();                                                                                                // [0xb0de5b4] Final|Native|Protected 
+	// void OnRep_IsSprinting();                                                                                                // [0xb0c12a4] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnRep_GrindingRail
-	// void OnRep_GrindingRail();                                                                                               // [0xb0de530] Final|Native|Protected 
+	// void OnRep_GrindingRail();                                                                                               // [0xb0c1220] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnRep_CurrentBoosterMode
-	// void OnRep_CurrentBoosterMode(EGrindRailBoosterMode PreviousBoosterMode);                                                // [0xb0de494] Final|Native|Protected 
+	// void OnRep_CurrentBoosterMode(EGrindRailBoosterMode PreviousBoosterMode);                                                // [0xb0c1184] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnReloadInput
-	// void OnReloadInput();                                                                                                    // [0xb0de480] Final|Native|Protected 
+	// void OnReloadInput();                                                                                                    // [0xb0c1170] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* InCharacter, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x15ffbe8] Final|Native|Protected 
+	// void OnMovementModeChanged(class ACharacter* InCharacter, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x1e05a0c] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnJumpInput
-	// void OnJumpInput(bool bPressed);                                                                                         // [0xb0de400] Final|Native|Protected 
+	// void OnJumpInput(bool bPressed);                                                                                         // [0xb0c10f0] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnIgnoredBuildingEndPlay
-	// void OnIgnoredBuildingEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                           // [0xb0de33c] Final|Native|Protected 
+	// void OnIgnoredBuildingEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                           // [0xb0c102c] Final|Native|Protected 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnGrindLostStructuralSupport
-	// void OnGrindLostStructuralSupport();                                                                                     // [0xb0de328] Final|Native|Private 
+	// void OnGrindLostStructuralSupport();                                                                                     // [0xb0c1018] Final|Native|Private 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.OnBaseMeshReady
-	// void OnBaseMeshReady(class AFortPlayerPawn* Pawn, class USkeletalMeshComponent* MeshComponent);                          // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnBaseMeshReady(class AFortPlayerPawn* Pawn, class USkeletalMeshComponent* MeshComponent);                          // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.NativeIsShooting
-	// bool NativeIsShooting();                                                                                                 // [0xb0de304] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool NativeIsShooting();                                                                                                 // [0xb0c0ff4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.IsWeaponADS
-	// bool IsWeaponADS();                                                                                                      // [0xb0de278] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsWeaponADS();                                                                                                      // [0xb0c0f68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.IsWeaponActive
-	// bool IsWeaponActive();                                                                                                   // [0xb0de2e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsWeaponActive();                                                                                                   // [0xb0c0fd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.IsUsingToggleSprint
-	// bool IsUsingToggleSprint();                                                                                              // [0xb0de218] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUsingToggleSprint();                                                                                              // [0xb0c0f08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.IsUsingFirstPersonCamera
-	// bool IsUsingFirstPersonCamera();                                                                                         // [0xb0de180] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUsingFirstPersonCamera();                                                                                         // [0xb0c0e70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.IsOriginalGrindingSupported
-	// bool IsOriginalGrindingSupported();                                                                                      // [0x2ccb5c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOriginalGrindingSupported();                                                                                      // [0x1e06724] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.IsGrinding
-	// bool IsGrinding();                                                                                                       // [0xb0de168] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsGrinding();                                                                                                       // [0xb0c0e58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.HandleSprintInput
-	// void HandleSprintInput(bool bPressed);                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleSprintInput(bool bPressed);                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.HandleRailJump
-	// void HandleRailJump();                                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleRailJump();                                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.HandleJumpOffEnd
-	// void HandleJumpOffEnd();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleJumpOffEnd();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.HandleHitWhenGrinding
-	// void HandleHitWhenGrinding(FHitResult& Hit);                                                                             // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleHitWhenGrinding(FHitResult& Hit);                                                                             // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.HandleGrindingEndedFromReplication
-	// void HandleGrindingEndedFromReplication();                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleGrindingEndedFromReplication();                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.HandleGrindingEnded
-	// void HandleGrindingEnded();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleGrindingEnded();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.HandleGrindingBegun
-	// void HandleGrindingBegun();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleGrindingBegun();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.HandleGrindFinishedAfterJumping
-	// void HandleGrindFinishedAfterJumping();                                                                                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void HandleGrindFinishedAfterJumping();                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetWantsToGrind
-	// bool GetWantsToGrind();                                                                                                  // [0xb0de120] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetWantsToGrind();                                                                                                  // [0xb0c0e10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetSpeedHardCap
-	// float GetSpeedHardCap();                                                                                                 // [0x9399590] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSpeedHardCap();                                                                                                 // [0x93b0b6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetMovementStatus
-	// FVector GetMovementStatus();                                                                                             // [0xb0de0c0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetMovementStatus();                                                                                             // [0xb0c0db0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetLeanForwardSpeedNormalized
-	// float GetLeanForwardSpeedNormalized();                                                                                   // [0xb0de0a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLeanForwardSpeedNormalized();                                                                                   // [0xb0c0d90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetHorizontalSplineAngleDeltaDegrees
-	// float GetHorizontalSplineAngleDeltaDegrees();                                                                            // [0xb0de088] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHorizontalSplineAngleDeltaDegrees();                                                                            // [0xb0c0d78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetGrindRequestJump
-	// bool GetGrindRequestJump();                                                                                              // [0xb0de040] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetGrindRequestJump();                                                                                              // [0xb0c0d30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetGrindDistanceOnSpline
-	// float GetGrindDistanceOnSpline();                                                                                        // [0xb0de01c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetGrindDistanceOnSpline();                                                                                        // [0xb0c0d0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetGrindBaseActor
-	// class AActor* GetGrindBaseActor();                                                                                       // [0xb0ddfcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetGrindBaseActor();                                                                                       // [0xb0c0cbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetCurrentGrindingRailActor
-	// class AFortGrindRail* GetCurrentGrindingRailActor();                                                                     // [0xb0ddfa8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortGrindRail* GetCurrentGrindingRailActor();                                                                     // [0xb0c0c98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.GetCameraOrientedLeanValues
-	// void GetCameraOrientedLeanValues(float RawLeanForward, float RawLeanRight, float& OrientedLeanForward, float& OrientedLeanRight); // [0xb0dde44] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetCameraOrientedLeanValues(float RawLeanForward, float RawLeanRight, float& OrientedLeanForward, float& OrientedLeanRight); // [0xb0c0b34] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.EndGrinding
-	// void EndGrinding(bool bSetEndMovementMode);                                                                              // [0xb0dddc4] Final|Native|Public|BlueprintCallable 
+	// void EndGrinding(bool bSetEndMovementMode);                                                                              // [0xb0c0ab4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.DrawDebugHUD
-	// void DrawDebugHUD(class AHUD* HUD, class UCanvas* Canvas);                                                               // [0x696d714] Final|Native|Protected|Const 
+	// void DrawDebugHUD(class AHUD* HUD, class UCanvas* Canvas);                                                               // [0x69b67c4] Final|Native|Protected|Const 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.CanBeginGrinding
-	// bool CanBeginGrinding();                                                                                                 // [0x7fa8d90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// bool CanBeginGrinding();                                                                                                 // [0x7fe2384] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.CalculateVelocity
-	// void CalculateVelocity(float DeltaTime, bool bReplayingMovement, FVector& OutVelocity);                                  // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void CalculateVelocity(float DeltaTime, bool bReplayingMovement, FVector& OutVelocity);                                  // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.BeginGrinding
-	// void BeginGrinding(class AFortGrindRail* GrindRail, float OptionalStartDistance, bool bFromInteraction);                 // [0xb0ddcc8] Final|Native|Public|BlueprintCallable 
+	// void BeginGrinding(class AFortGrindRail* GrindRail, float OptionalStartDistance, bool bFromInteraction);                 // [0xb0c09b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.AttemptDestroyVehicleWhileGrinding
-	// bool AttemptDestroyVehicleWhileGrinding(class AFortAthenaVehicle* Vehicle);                                              // [0xb0ddac0] Final|Native|Protected|BlueprintCallable 
+	// bool AttemptDestroyVehicleWhileGrinding(class AFortAthenaVehicle* Vehicle);                                              // [0xb0c07b0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.AddTemporaryMoveIgnoreActor
-	// void AddTemporaryMoveIgnoreActor(class ABuildingActor* BuildingActor, float IgnoreDuration);                             // [0xb0dd9fc] Final|Native|Protected|BlueprintCallable 
+	// void AddTemporaryMoveIgnoreActor(class ABuildingActor* BuildingActor, float IgnoreDuration);                             // [0xb0c06ec] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GrindRailRuntime.FortPawnComponent_GrindRail.AddMoveIgnoreActor
-	// bool AddMoveIgnoreActor(class ABuildingActor* BuildingActor);                                                            // [0xb0dd96c] Final|Native|Protected|BlueprintCallable 
+	// bool AddMoveIgnoreActor(class ABuildingActor* BuildingActor);                                                            // [0xb0c065c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Struct /Script/GrindRailRuntime.FortAnimInput_GrindRail

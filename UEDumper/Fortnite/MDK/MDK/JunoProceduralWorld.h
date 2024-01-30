@@ -44,9 +44,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoBridgePOISelectorComponent.DoSelection
-	// void DoSelection();                                                                                                      // [0xbc844f8] Final|Native|Protected 
+	// void DoSelection();                                                                                                      // [0xbc3ce50] Final|Native|Protected 
 	// Function /Script/JunoProceduralWorld.JunoBridgePOISelectorComponent.BeginBridgeSelection
-	// void BeginBridgeSelection(FJunoBridgePOISelectorParams& Params);                                                         // [0xbc837a4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BeginBridgeSelection(FJunoBridgePOISelectorParams& Params);                                                         // [0xbc3c0fc] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoCaveGeneratorDataMergerInterface
@@ -61,7 +61,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoCaveGeneratorDataMergerInterface.MergeCaveData
-	// void MergeCaveData(FJunoCaveGeneratorData& CaveData);                                                                    // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void MergeCaveData(FJunoCaveGeneratorData& CaveData);                                                                    // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoCaveGeneratorPlayspaceComponent
@@ -80,17 +80,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoCaveGeneratorPlayspaceComponent.SetMergedData
-	// void SetMergedData(FJunoCaveGeneratorData& Data);                                                                        // [0xbc87acc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMergedData(FJunoCaveGeneratorData& Data);                                                                        // [0xbc40424] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveGeneratorPlayspaceComponent.IsNativeCaveGeneratorEnabled
-	// bool IsNativeCaveGeneratorEnabled();                                                                                     // [0xbc863e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsNativeCaveGeneratorEnabled();                                                                                     // [0xbc3ed38] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoCaveGeneratorPlayspaceComponent.GetRootCaveGeneratorComponent
-	// class UJunoCaveGeneratorPlayspaceComponent* GetRootCaveGeneratorComponent(class UObject* WorldContextObject);            // [0xbc862a0] Final|Native|Static|Public|BlueprintCallable 
+	// class UJunoCaveGeneratorPlayspaceComponent* GetRootCaveGeneratorComponent(class UObject* WorldContextObject);            // [0xbc3ebf8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveGeneratorPlayspaceComponent.GetMergedCaveDataRegistryData
-	// void GetMergedCaveDataRegistryData(FDataRegistryType& CaveGeneratorDataRegistry, FJunoCaveGeneratorData& ResourceData, EJunoGetMergedCaveDataRegistryDataResult& Result); // [0xbc860fc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetMergedCaveDataRegistryData(FDataRegistryType& CaveGeneratorDataRegistry, FJunoCaveGeneratorData& ResourceData, EJunoGetMergedCaveDataRegistryDataResult& Result); // [0xbc3ea54] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveGeneratorPlayspaceComponent.GenerateCaveData
-	// bool GenerateCaveData(FJunoCaveGeneratorData& ResourceData, FDataRegistryType& POIDataRegistry, FRandomStream& RandomStream, FJunoCaveSurfaceData& CaveSurfaceData, EJunoBiome Biome, FBox& Bounds, class UClass*& SurfaceTeleporterClass, TArray<FJunoGeneratedCaveShellData>& Shells, TArray<FJunoPOIData>& POIs); // [0xbc8488c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GenerateCaveData(FJunoCaveGeneratorData& ResourceData, FDataRegistryType& POIDataRegistry, FRandomStream& RandomStream, FJunoCaveSurfaceData& CaveSurfaceData, EJunoBiome Biome, FBox& Bounds, class UClass*& SurfaceTeleporterClass, TArray<FJunoGeneratedCaveShellData>& Shells, TArray<FJunoPOIData>& POIs); // [0xbc3d1e4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveGeneratorPlayspaceComponent.GenerateCave
-	// void GenerateCave(class AActor* WorldActor, FRandomStream& RandomStream, FJunoCaveSurfaceData& CaveSurfaceData, EJunoBiome Biome, FBox& Bounds, class UClass*& SurfaceTeleporterClass); // [0xbc845e4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GenerateCave(class AActor* WorldActor, FRandomStream& RandomStream, FJunoCaveSurfaceData& CaveSurfaceData, EJunoBiome Biome, FBox& Bounds, class UClass*& SurfaceTeleporterClass); // [0xbc3cf3c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoLivingWorldStaticPointProvider
@@ -107,7 +107,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoLivingWorldStaticPointProvider.AppendFiltersTags
-	// void AppendFiltersTags(FGameplayTagContainer& Container);                                                                // [0xbcc3600] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AppendFiltersTags(FGameplayTagContainer& Container);                                                                // [0xbc7bf58] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoCaveLivingWorldStaticPointProvider
@@ -127,7 +127,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoCaveLivingWorldStaticPointProvider.GetCaveShellInstanceData
-	// void GetCaveShellInstanceData(FJunoCaveShellInstanceData& Data, EJunoGetCaveShellInstanceDataResult& Result);            // [0xbc855ec] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetCaveShellInstanceData(FJunoCaveShellInstanceData& Data, EJunoGetCaveShellInstanceDataResult& Result);            // [0xbc3df44] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoStreamingGameplayVolume
@@ -147,11 +147,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoStreamingGameplayVolume.Unload
-	// void Unload();                                                                                                           // [0x20abc64] Native|Public|BlueprintCallable 
+	// void Unload();                                                                                                           // [0x20de634] Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoStreamingGameplayVolume.SetBounds
-	// void SetBounds(FVector& Offset, FVector& Extent);                                                                        // [0xbc91cd8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetBounds(FVector& Offset, FVector& Extent);                                                                        // [0xbc4a630] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoStreamingGameplayVolume.Load
-	// void Load();                                                                                                             // [0x67c07c0] Native|Public|BlueprintCallable 
+	// void Load();                                                                                                             // [0x6809dd0] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoCaveShellGameplayVolume
@@ -182,43 +182,43 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.SetCaveSurfaceData
-	// void SetCaveSurfaceData(class AActor* Actor, TArray<FJunoCaveSurfaceData>& CaveSurfaceData);                             // [0xbc879fc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetCaveSurfaceData(class AActor* Actor, TArray<FJunoCaveSurfaceData>& CaveSurfaceData);                             // [0xbc40354] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.QueryCaveSurfaceDataState
-	// void QueryCaveSurfaceDataState(class AActor* Actor, EJunoQueryCaveSurfaceDataStateResult& Result);                       // [0xbc8793c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void QueryCaveSurfaceDataState(class AActor* Actor, EJunoQueryCaveSurfaceDataStateResult& Result);                       // [0xbc40294] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.QueryCaveShellInstanceDataState
-	// EJunoQueryCaveDataResult QueryCaveShellInstanceDataState(class AActor* CaveSlotActor, FGuid& CaveSlotGuid);              // [0xbc87868] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// EJunoQueryCaveDataResult QueryCaveShellInstanceDataState(class AActor* CaveSlotActor, FGuid& CaveSlotGuid);              // [0xbc401c0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.QueryCaveDataStateFromSurfaceData
-	// void QueryCaveDataStateFromSurfaceData(class AActor* POISlotActor, FJunoCaveSurfaceData& SurfaceData, EJunoQueryCaveDataResult& Result, FBox& WorldTileBounds, TArray<FJunoCaveTeleporterLink>& Teleporters); // [0xbc86e8c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void QueryCaveDataStateFromSurfaceData(class AActor* POISlotActor, FJunoCaveSurfaceData& SurfaceData, EJunoQueryCaveDataResult& Result, FBox& WorldTileBounds, TArray<FJunoCaveTeleporterLink>& Teleporters); // [0xbc3f7e4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.QueryCaveDataStateFromActor
-	// void QueryCaveDataStateFromActor(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, EJunoQueryCaveDataResult& Result, FBox& WorldTileBounds, TArray<FJunoCaveTeleporterLink>& Teleporters); // [0xbc864d0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void QueryCaveDataStateFromActor(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, EJunoQueryCaveDataResult& Result, FBox& WorldTileBounds, TArray<FJunoCaveTeleporterLink>& Teleporters); // [0xbc3ee28] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.NeedsCaveShellInstanceData
-	// bool NeedsCaveShellInstanceData(class AActor* CaveSlotActor, FGuid& CaveSlotGuid);                                       // [0xbc863f8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool NeedsCaveShellInstanceData(class AActor* CaveSlotActor, FGuid& CaveSlotGuid);                                       // [0xbc3ed50] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.IsBitSet
-	// bool IsBitSet(int32_t BitMask, int32_t Bit);                                                                             // [0xbc86320] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsBitSet(int32_t BitMask, int32_t Bit);                                                                             // [0xbc3ec78] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.GetCaveSurfaceDataForEntrance
-	// void GetCaveSurfaceDataForEntrance(class AActor* Actor, FGuid& EntranceGuid, FJunoCaveSurfaceData& CaveSurfaceData, int32_t& CaveIndex, EJunoGetCaveSurfaceDataForEntranceResult& Result, bool bWorldTeleporterTransforms); // [0xbc85e34] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetCaveSurfaceDataForEntrance(class AActor* Actor, FGuid& EntranceGuid, FJunoCaveSurfaceData& CaveSurfaceData, int32_t& CaveIndex, EJunoGetCaveSurfaceDataForEntranceResult& Result, bool bWorldTeleporterTransforms); // [0xbc3e78c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.GetCaveShellVolumeFromArea
-	// class AJunoCaveShellGameplayVolume* GetCaveShellVolumeFromArea(class UObject* WorldContextObject, FBox& Area, FName ShellID); // [0xbc85c08] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class AJunoCaveShellGameplayVolume* GetCaveShellVolumeFromArea(class UObject* WorldContextObject, FBox& Area, FName ShellID); // [0xbc3e560] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.GetCaveShellInstanceDataFromArea
-	// void GetCaveShellInstanceDataFromArea(class UObject* WorldContextObject, FBox& Area, FName ShellID, FJunoCaveShellInstanceData& Data, EJunoGetCaveShellInstanceDataResult& Result); // [0xbc859ac] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetCaveShellInstanceDataFromArea(class UObject* WorldContextObject, FBox& Area, FName ShellID, FJunoCaveShellInstanceData& Data, EJunoGetCaveShellInstanceDataResult& Result); // [0xbc3e304] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.GetCaveShellInstanceDataFromActor
-	// void GetCaveShellInstanceDataFromActor(class AActor* CaveShellChildActor, FName ShellID, FJunoCaveShellInstanceData& Data, EJunoGetCaveShellInstanceDataResult& Result); // [0xbc85848] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetCaveShellInstanceDataFromActor(class AActor* CaveShellChildActor, FName ShellID, FJunoCaveShellInstanceData& Data, EJunoGetCaveShellInstanceDataResult& Result); // [0xbc3e1a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.GetCaveShellInstanceData
-	// FJunoCaveShellInstanceData GetCaveShellInstanceData(class AActor* CaveShellChildActor, FName ShellID, bool& Success);    // [0xbc856f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FJunoCaveShellInstanceData GetCaveShellInstanceData(class AActor* CaveShellChildActor, FName ShellID, bool& Success);    // [0xbc3e050] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.GetCaveDataCollectionsFromRegistry
-	// void GetCaveDataCollectionsFromRegistry(FDataRegistryType& DataRegistry, TArray<TWeakObjectPtr<UJunoCaveDataCollectionBase*>>& Array, EJunoGetCaveDataCollectionsFromRegistryResult& Result); // [0xbc854b8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetCaveDataCollectionsFromRegistry(FDataRegistryType& DataRegistry, TArray<TWeakObjectPtr<UJunoCaveDataCollectionBase*>>& Array, EJunoGetCaveDataCollectionsFromRegistryResult& Result); // [0xbc3de10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.GetBestCaveShellFromArea
-	// void GetBestCaveShellFromArea(class UObject* WorldContextObject, FBox& Area, FJunoCave& Cave, FGuid& CaveGuid, FName& ShellID, EJunoGetBestCaveResult& Result); // [0xbc84cb0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetBestCaveShellFromArea(class UObject* WorldContextObject, FBox& Area, FJunoCave& Cave, FGuid& CaveGuid, FName& ShellID, EJunoGetBestCaveResult& Result); // [0xbc3d608] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.ExitsUsedMaskToArray
-	// TArray<int32_t> ExitsUsedMaskToArray(int32_t ExitsUsedMask);                                                             // [0xbc8450c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<int32_t> ExitsUsedMaskToArray(int32_t ExitsUsedMask);                                                             // [0xbc3ce64] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.CreateExitsUsedMaskFromArray
-	// int32_t CreateExitsUsedMaskFromArray(TArray<int32_t>& ExitsUsed);                                                        // [0xbc84444] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int32_t CreateExitsUsedMaskFromArray(TArray<int32_t>& ExitsUsed);                                                        // [0xbc3cd9c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.CreateCaveInstanceDataForSurfaceData
-	// void CreateCaveInstanceDataForSurfaceData(class AActor* POISlotActor, FJunoCaveSurfaceData& SurfaceData, TArray<FJunoGeneratedCaveShellData>& CaveShellData, EJunoCreateCaveResult& Result); // [0xbc84298] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void CreateCaveInstanceDataForSurfaceData(class AActor* POISlotActor, FJunoCaveSurfaceData& SurfaceData, TArray<FJunoGeneratedCaveShellData>& CaveShellData, EJunoCreateCaveResult& Result); // [0xbc3cbf0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.CreateCaveInstanceData
-	// void CreateCaveInstanceData(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, TArray<FJunoGeneratedCaveShellData>& CaveShellData, EJunoCreateCaveResult& Result); // [0xbc84120] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CreateCaveInstanceData(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, TArray<FJunoGeneratedCaveShellData>& CaveShellData, EJunoCreateCaveResult& Result); // [0xbc3ca78] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoCaveBlueprintLibrary.CalculateCaveShellDistance
-	// void CalculateCaveShellDistance(FJunoCave& Cave, FName ShellID_A, FName ShellID_B, int32_t& Distance, EJunoCalculateCaveDistanceResult& Result); // [0xbc8383c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void CalculateCaveShellDistance(FJunoCave& Cave, FName ShellID_A, FName ShellID_B, int32_t& Distance, EJunoCalculateCaveDistanceResult& Result); // [0xbc3c194] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoCaveVolumePlayspaceComponent
@@ -233,13 +233,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoCaveVolumePlayspaceComponent.OnPlayerLeavingCaveVolume
-	// void OnPlayerLeavingCaveVolume(class AFortPlayerPawnAthena* PlayerPawn);                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayerLeavingCaveVolume(class AFortPlayerPawnAthena* PlayerPawn);                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoCaveVolumePlayspaceComponent.OnPlayerEnteringCaveVolume
-	// void OnPlayerEnteringCaveVolume(class AFortPlayerPawnAthena* PlayerPawn);                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayerEnteringCaveVolume(class AFortPlayerPawnAthena* PlayerPawn);                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoCaveVolumePlayspaceComponent.NotifyActorEndOverlap
-	// void NotifyActorEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                     // [0xbc8a22c] Final|Native|Private 
+	// void NotifyActorEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                     // [0xbc42b84] Final|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoCaveVolumePlayspaceComponent.NotifyActorBeginOverlap
-	// void NotifyActorBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                   // [0xbc8a12c] Final|Native|Private 
+	// void NotifyActorBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                   // [0xbc42a84] Final|Native|Private 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoCheatManager_ProceduralWorld
@@ -254,17 +254,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoCheatManager_ProceduralWorld.JunoPOIVolumeDumpAll
-	// void JunoPOIVolumeDumpAll();                                                                                             // [0x32e6c74] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoPOIVolumeDumpAll();                                                                                             // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoCheatManager_ProceduralWorld.JunoPOIVolumeDump
-	// void JunoPOIVolumeDump();                                                                                                // [0x32e6c74] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoPOIVolumeDump();                                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoCheatManager_ProceduralWorld.JunoGoNearActor
-	// void JunoGoNearActor(FString ActorClassName);                                                                            // [0x8bef450] Final|Exec|Native|Private 
+	// void JunoGoNearActor(FString ActorClassName);                                                                            // [0x8c0e6d0] Final|Exec|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoCheatManager_ProceduralWorld.JunoGoBiome
-	// void JunoGoBiome(FName Biome);                                                                                           // [0x86d247c] Final|Exec|Native|Private 
+	// void JunoGoBiome(FName Biome);                                                                                           // [0x86fce54] Final|Exec|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoCheatManager_ProceduralWorld.JunoGoActor
-	// void JunoGoActor(FString ActorClassName);                                                                                // [0x8bef450] Final|Exec|Native|Private 
+	// void JunoGoActor(FString ActorClassName);                                                                                // [0x8c0e6d0] Final|Exec|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoCheatManager_ProceduralWorld.JunoDumpMapTileImages
-	// void JunoDumpMapTileImages();                                                                                            // [0x32e6c74] Final|Exec|Native|Private 
+	// void JunoDumpMapTileImages();                                                                                            // [0x32e4b44] Final|Exec|Native|Private 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoClientInstancedActorSpawnerSubsystem
@@ -315,7 +315,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoGenerateTileInterface.GenerateTile
-	// void GenerateTile(FJunoGenerateTileParams& Params);                                                                      // [0xbc89a38] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GenerateTile(FJunoGenerateTileParams& Params);                                                                      // [0xbc42390] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoGenerateTileCommandlet
@@ -330,7 +330,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoGenerateTileCommandlet.FinishedGenerating
-	// void FinishedGenerating();                                                                                               // [0x32e6c74] Final|Native|Public|BlueprintCallable 
+	// void FinishedGenerating();                                                                                               // [0x32e4b44] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoInstancedActorComponent
@@ -346,9 +346,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoInstancedActorComponent.OnRep_InstanceHandle
-	// void OnRep_InstanceHandle();                                                                                             // [0xbc8a32c] Final|Native|Protected 
+	// void OnRep_InstanceHandle();                                                                                             // [0xbc42c84] Final|Native|Protected 
 	// Function /Script/JunoProceduralWorld.JunoInstancedActorComponent.HasMassEntity
-	// bool HasMassEntity();                                                                                                    // [0xbc8a0f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasMassEntity();                                                                                                    // [0xbc42a4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoInstancedActorData
@@ -374,7 +374,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoInstancedActorData.GetManager
-	// class AJunoInstancedActorManager* GetManager();                                                                          // [0x32b4508] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AJunoInstancedActorManager* GetManager();                                                                          // [0x32af65c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoInstancedActorInitializerProcessor
@@ -569,19 +569,19 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoLifecycleComponent.SetCurrentPhaseByIndex
-	// bool SetCurrentPhaseByIndex(char NewCurrentPhaseIndex, float TimeElapsedInNewPhase, bool bUpdateMass);                   // [0xbc8d400] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// bool SetCurrentPhaseByIndex(char NewCurrentPhaseIndex, float TimeElapsedInNewPhase, bool bUpdateMass);                   // [0xbc45d58] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoLifecycleComponent.OnRep_CurrentPhaseIndex
-	// void OnRep_CurrentPhaseIndex(char PreviousLifecyclePhaseIndex);                                                          // [0xbc8d0c8] Final|Native|Protected 
+	// void OnRep_CurrentPhaseIndex(char PreviousLifecyclePhaseIndex);                                                          // [0xbc45a20] Final|Native|Protected 
 	// Function /Script/JunoProceduralWorld.JunoLifecycleComponent.HasCompletedLifecycle
-	// bool HasCompletedLifecycle();                                                                                            // [0xbc8cf90] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasCompletedLifecycle();                                                                                            // [0xbc458e8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoLifecycleComponent.GetCurrentPhaseTimeElapsed
-	// float GetCurrentPhaseTimeElapsed();                                                                                      // [0xbc8cf68] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentPhaseTimeElapsed();                                                                                      // [0xbc458c0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoLifecycleComponent.GetCurrentPhaseIndex
-	// char GetCurrentPhaseIndex();                                                                                             // [0xbc8cf3c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// char GetCurrentPhaseIndex();                                                                                             // [0xbc45894] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoLifecycleComponent.BP_GetCurrentPhase
-	// bool BP_GetCurrentPhase(FJunoLifecyclePhase& OutCurrentPhase);                                                           // [0xbc8c63c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool BP_GetCurrentPhase(FJunoLifecyclePhase& OutCurrentPhase);                                                           // [0xbc44f94] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoLifecycleComponent.ApplyCurrentPhaseOverrides
-	// void ApplyCurrentPhaseOverrides();                                                                                       // [0xbc8c628] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ApplyCurrentPhaseOverrides();                                                                                       // [0xbc44f80] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoLifecycleProcessor
@@ -698,7 +698,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoMinimapGenerator.CreatePackageAndSaveTexture2D
-	// class UPackage* CreatePackageAndSaveTexture2D(class UTextureRenderTarget2D* RenderTarget, FString PackageName);          // [0xbc8c84c] Final|Native|Protected|BlueprintCallable 
+	// class UPackage* CreatePackageAndSaveTexture2D(class UTextureRenderTarget2D* RenderTarget, FString PackageName);          // [0xbc451a4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoOutOfBoundsTile
@@ -742,13 +742,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoPCGVolume.IsSpawnerBusy
-	// bool IsSpawnerBusy();                                                                                                    // [0xbc8d094] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSpawnerBusy();                                                                                                    // [0xbc459ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoPCGVolume.IsGeneratorBusy
-	// bool IsGeneratorBusy();                                                                                                  // [0xbc8cfbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsGeneratorBusy();                                                                                                  // [0xbc45914] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoPCGVolume.CalculateCompressedDataSize
-	// int32_t CalculateCompressedDataSize();                                                                                   // [0xbc8c804] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t CalculateCompressedDataSize();                                                                                   // [0xbc4515c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoPCGVolume.CalcCompressedObjectCount
-	// int32_t CalcCompressedObjectCount();                                                                                     // [0xbc8c7e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t CalcCompressedObjectCount();                                                                                     // [0xbc45138] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoPOIPreselectorComponent
@@ -767,11 +767,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoPOIPreselectorComponent.OnWorldTileContentsAvailable
-	// void OnWorldTileContentsAvailable();                                                                                     // [0xbc8d3ec] Final|Native|Protected 
+	// void OnWorldTileContentsAvailable();                                                                                     // [0xbc45d44] Final|Native|Protected 
 	// Function /Script/JunoProceduralWorld.JunoPOIPreselectorComponent.OnSpawnPositionSet
-	// void OnSpawnPositionSet(FUniqueNetIdRepl ID, FVector Location);                                                          // [0xbc8d164] Final|Native|Protected|HasDefaults 
+	// void OnSpawnPositionSet(FUniqueNetIdRepl ID, FVector Location);                                                          // [0xbc45abc] Final|Native|Protected|HasDefaults 
 	// Function /Script/JunoProceduralWorld.JunoPOIPreselectorComponent.BeginPreselection
-	// void BeginPreselection();                                                                                                // [0xbc8c7cc] Final|Native|Public|BlueprintCallable 
+	// void BeginPreselection();                                                                                                // [0xbc45124] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoCaveGeneratorInterface
@@ -786,7 +786,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoCaveGeneratorInterface.GenerateCave
-	// void GenerateCave(FJunoCaveSurfaceData& CaveSurfaceData, EJunoBiome Biome, int32_t CaveIndex, FBox& Bounds);             // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void GenerateCave(FJunoCaveSurfaceData& CaveSurfaceData, EJunoBiome Biome, int32_t CaveIndex, FBox& Bounds);             // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoPOISelectorComponent
@@ -807,17 +807,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoPOISelectorComponent.TriggerCaveGeneration
-	// void TriggerCaveGeneration();                                                                                            // [0xbc8d4fc] Final|Native|Public|BlueprintCallable 
+	// void TriggerCaveGeneration();                                                                                            // [0xbc45e54] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOISelectorComponent.IsPOIPreselectorActorReady
-	// bool IsPOIPreselectorActorReady(class AActor* Actor);                                                                    // [0xbc8d008] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsPOIPreselectorActorReady(class AActor* Actor);                                                                    // [0xbc45960] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOISelectorComponent.IsNativePOISelectorEnabled
-	// bool IsNativePOISelectorEnabled();                                                                                       // [0xbc8cff0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsNativePOISelectorEnabled();                                                                                       // [0xbc45948] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoPOISelectorComponent.DoSelection
-	// void DoSelection();                                                                                                      // [0xbc8cf28] Final|Native|Protected 
+	// void DoSelection();                                                                                                      // [0xbc45880] Final|Native|Protected 
 	// Function /Script/JunoProceduralWorld.JunoPOISelectorComponent.CaveGridResolution
-	// int32_t CaveGridResolution();                                                                                            // [0xbc8c828] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t CaveGridResolution();                                                                                            // [0xbc45180] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoPOISelectorComponent.BeginPOISelection
-	// void BeginPOISelection(FJunoPOISelectorParams& Params);                                                                  // [0xbc8c710] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BeginPOISelection(FJunoPOISelectorParams& Params);                                                                  // [0xbc45068] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary
@@ -832,39 +832,39 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.UnionActorBounds
-	// FBox UnionActorBounds(TArray<AActor*>& Actors);                                                                          // [0xbc92004] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FBox UnionActorBounds(TArray<AActor*>& Actors);                                                                          // [0xbc4a95c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.SetGridCellSize
-	// void SetGridCellSize(class AActor* WorldContextObject, FName GridName, float CellSize, float LoadingRange, FVector2D Origin); // [0xbc91e38] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void SetGridCellSize(class AActor* WorldContextObject, FName GridName, float CellSize, float LoadingRange, FVector2D Origin); // [0xbc4a790] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.SetBoxBrushSize
-	// void SetBoxBrushSize(class AActor* Volume, FVector& Size);                                                               // [0x919f5f8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetBoxBrushSize(class AActor* Volume, FVector& Size);                                                               // [0x91b8390] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.SaveCurrentLevelAs
-	// bool SaveCurrentLevelAs(FString NewPackageName);                                                                         // [0x80ba8b4] Final|Native|Static|Public|BlueprintCallable 
+	// bool SaveCurrentLevelAs(FString NewPackageName);                                                                         // [0x80f3e40] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.RunParallelCommandlets
-	// void RunParallelCommandlets(FText& DialogueTitle, TArray<FString>& Commands, int32_t MaxProcesses);                      // [0xbc91b2c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RunParallelCommandlets(FText& DialogueTitle, TArray<FString>& Commands, int32_t MaxProcesses);                      // [0xbc4a484] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.JunoCreateLevel
-	// void JunoCreateLevel(FJunoCreateLevelParams& Params, TWeakObjectPtr<UWorld*>& CreatedLevel, EJunoCreateLevelResult& Result); // [0xbc91858] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void JunoCreateLevel(FJunoCreateLevelParams& Params, TWeakObjectPtr<UWorld*>& CreatedLevel, EJunoCreateLevelResult& Result); // [0xbc4a1b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.GetJunoWorldRegistry
-	// class UJunoWorldRegistryManager* GetJunoWorldRegistry(class UObject* WorldContextObject);                                // [0xbc917d8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UJunoWorldRegistryManager* GetJunoWorldRegistry(class UObject* WorldContextObject);                                // [0xbc4a130] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.FindNextMatchingPOIResourceEx
-	// void FindNextMatchingPOIResourceEx(FJunoRandomTableKeysIterator& Iterator, class UDataTable* DataTable, EJunoPOISize Size, EJunoBiome Biome, FPCGJunoWorldTilePOI& FoundPOI, EJunoFindNextMatchingPOIResourceResult& Result); // [0xbc911f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void FindNextMatchingPOIResourceEx(FJunoRandomTableKeysIterator& Iterator, class UDataTable* DataTable, EJunoPOISize Size, EJunoBiome Biome, FPCGJunoWorldTilePOI& FoundPOI, EJunoFindNextMatchingPOIResourceResult& Result); // [0xbc49b50] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.FindNextMatchingPOIResource
-	// void FindNextMatchingPOIResource(FJunoRandomTableKeysIterator& Iterator, class UDataTable* DataTable, EJunoPOISize SlotPOISize, TArray<FName>& SlotTags, FPCGJunoWorldTilePOI& FoundPOI, EJunoFindNextMatchingPOIResourceResult& Result, bool bRemoveFromIterator); // [0xbc90d78] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void FindNextMatchingPOIResource(FJunoRandomTableKeysIterator& Iterator, class UDataTable* DataTable, EJunoPOISize SlotPOISize, TArray<FName>& SlotTags, FPCGJunoWorldTilePOI& FoundPOI, EJunoFindNextMatchingPOIResourceResult& Result, bool bRemoveFromIterator); // [0xbc496d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.FindAllResourcesInFolder
-	// void FindAllResourcesInFolder(FString Folder, class UClass* AssetClass, TArray<FSoftObjectPath>& OutPaths);              // [0xbc90058] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void FindAllResourcesInFolder(FString Folder, class UClass* AssetClass, TArray<FSoftObjectPath>& OutPaths);              // [0xbc489b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.EnableLandscapeNaniteSkirts
-	// void EnableLandscapeNaniteSkirts(class ALandscape* Landscape, bool bEnable, float SkirtDepth);                           // [0xbc8ff74] Final|Native|Static|Public|BlueprintCallable 
+	// void EnableLandscapeNaniteSkirts(class ALandscape* Landscape, bool bEnable, float SkirtDepth);                           // [0xbc488cc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.DisableLandscapeEditLayers
-	// void DisableLandscapeEditLayers(class ALandscape* Landscape);                                                            // [0x5fffda8] Final|Native|Static|Public|BlueprintCallable 
+	// void DisableLandscapeEditLayers(class ALandscape* Landscape);                                                            // [0x604b150] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.DeterministicShuffleKeys
-	// TArray<FName> DeterministicShuffleKeys(FRandomStream& RandomSource, TArray<FName>& Array);                               // [0xbc8fe28] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// TArray<FName> DeterministicShuffleKeys(FRandomStream& RandomSource, TArray<FName>& Array);                               // [0xbc48780] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.CreateJunoWPLevelFromActors
-	// void CreateJunoWPLevelFromActors(FString LevelPackageName, TArray<AActor*>& Actors, TWeakObjectPtr<UWorld*>& CreatedLevel, bool bUseWorldPartition, FName GridName, float LoadingRange, int32_t WorldPartitionGridCellSize, FVector2D WorldPartitionGridCellOrigin, class UHLODLayer* DefaultHLODLayer, EWorldPartitionServerStreamingMode ServerStreamingMode, EWorldPartitionServerStreamingOutMode ServerStreamingOutMode); // [0xbc8f01c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CreateJunoWPLevelFromActors(FString LevelPackageName, TArray<AActor*>& Actors, TWeakObjectPtr<UWorld*>& CreatedLevel, bool bUseWorldPartition, FName GridName, float LoadingRange, int32_t WorldPartitionGridCellSize, FVector2D WorldPartitionGridCellOrigin, class UHLODLayer* DefaultHLODLayer, EWorldPartitionServerStreamingMode ServerStreamingMode, EWorldPartitionServerStreamingOutMode ServerStreamingOutMode); // [0xbc47974] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.CreateJunoRandomTableKeysIterator
-	// FJunoRandomTableKeysIterator CreateJunoRandomTableKeysIterator(FRandomStream& RandomStream, TArray<FName>& Keys);        // [0xbc8eef0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FJunoRandomTableKeysIterator CreateJunoRandomTableKeysIterator(FRandomStream& RandomStream, TArray<FName>& Keys);        // [0xbc47848] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.CompareTagSets
-	// void CompareTagSets(TSet<FName>& Source, TSet<FName>& Target, EJunoCompareTagSetsResult& Result);                        // [0xbc8ec88] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void CompareTagSets(TSet<FName>& Source, TSet<FName>& Target, EJunoCompareTagSetsResult& Result);                        // [0xbc475e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoProceduralWorldBlueprintLibrary.CalcPOISizeExtent
-	// FVector CalcPOISizeExtent(EJunoPOISize Size);                                                                            // [0xbc8ebf4] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector CalcPOISizeExtent(EJunoPOISize Size);                                                                            // [0xbc4754c] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoProceduralWorldDeveloperSettings
@@ -988,25 +988,25 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.ValidateSavedTiles
-	// void ValidateSavedTiles();                                                                                               // [0x32e6c74] Final|Native|Static|Public|BlueprintCallable 
+	// void ValidateSavedTiles();                                                                                               // [0x32e4b44] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.OnProxyDestroyed
-	// void OnProxyDestroyed(class AActor* DestroyedActor);                                                                     // [0xbc91aac] Final|Native|Private 
+	// void OnProxyDestroyed(class AActor* DestroyedActor);                                                                     // [0xbc4a404] Final|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.OnCellUnload
-	// void OnCellUnload(class UJunoDynamicRuntimeCell* Cell);                                                                  // [0xbc91a2c] Final|Native|Public  
+	// void OnCellUnload(class UJunoDynamicRuntimeCell* Cell);                                                                  // [0xbc4a384] Final|Native|Public  
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.OnCellLoad
-	// void OnCellLoad(class UJunoDynamicRuntimeCell* Cell);                                                                    // [0x5fffda8] Final|Native|Public  
+	// void OnCellLoad(class UJunoDynamicRuntimeCell* Cell);                                                                    // [0x604b150] Final|Native|Public  
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.OnCellDeactivate
-	// void OnCellDeactivate(class UJunoDynamicRuntimeCell* Cell);                                                              // [0x5fffda8] Final|Native|Public  
+	// void OnCellDeactivate(class UJunoDynamicRuntimeCell* Cell);                                                              // [0x604b150] Final|Native|Public  
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.OnCellActivate
-	// void OnCellActivate(class UJunoDynamicRuntimeCell* Cell);                                                                // [0xbc919ac] Final|Native|Public  
+	// void OnCellActivate(class UJunoDynamicRuntimeCell* Cell);                                                                // [0xbc4a304] Final|Native|Public  
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.GetInterpolatedOceanInformation
-	// TArray<FJunoTerrainOceanInformation> GetInterpolatedOceanInformation(FVector Location, bool& OutLocationIsOcean);        // [0xbc9162c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FJunoTerrainOceanInformation> GetInterpolatedOceanInformation(FVector Location, bool& OutLocationIsOcean);        // [0xbc49f84] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.ForceSaveForMissingLayers
-	// void ForceSaveForMissingLayers();                                                                                        // [0x32e6c74] Final|Native|Static|Public|BlueprintCallable 
+	// void ForceSaveForMissingLayers();                                                                                        // [0x32e4b44] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.FixupWorldLandscapeWeightmapLayers
-	// void FixupWorldLandscapeWeightmapLayers(class UObject* WorldContextObject);                                              // [0x5fffda8] Final|Native|Static|Public|BlueprintCallable 
+	// void FixupWorldLandscapeWeightmapLayers(class UObject* WorldContextObject);                                              // [0x604b150] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoTerrainGenerationSystem.FixupAllJunoLandscapeWeightmapLayers
-	// void FixupAllJunoLandscapeWeightmapLayers();                                                                             // [0x32e6c74] Final|Native|Static|Public|BlueprintCallable 
+	// void FixupAllJunoLandscapeWeightmapLayers();                                                                             // [0x32e4b44] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoTerrainSystemAssets
@@ -1093,15 +1093,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoTileSubsystem.OnCellUnload
-	// void OnCellUnload(class UJunoDynamicRuntimeCell* Cell);                                                                  // [0xbc9d530] Final|Native|Public  
+	// void OnCellUnload(class UJunoDynamicRuntimeCell* Cell);                                                                  // [0xbc55e88] Final|Native|Public  
 	// Function /Script/JunoProceduralWorld.JunoTileSubsystem.OnCellLoad
-	// void OnCellLoad(class UJunoDynamicRuntimeCell* Cell);                                                                    // [0x5fffda8] Final|Native|Public  
+	// void OnCellLoad(class UJunoDynamicRuntimeCell* Cell);                                                                    // [0x604b150] Final|Native|Public  
 	// Function /Script/JunoProceduralWorld.JunoTileSubsystem.OnCellDeactivate
-	// void OnCellDeactivate(class UJunoDynamicRuntimeCell* Cell);                                                              // [0x5fffda8] Final|Native|Public  
+	// void OnCellDeactivate(class UJunoDynamicRuntimeCell* Cell);                                                              // [0x604b150] Final|Native|Public  
 	// Function /Script/JunoProceduralWorld.JunoTileSubsystem.OnCellActivate
-	// void OnCellActivate(class UJunoDynamicRuntimeCell* Cell);                                                                // [0xbc9d4b0] Final|Native|Public  
+	// void OnCellActivate(class UJunoDynamicRuntimeCell* Cell);                                                                // [0xbc55e08] Final|Native|Public  
 	// Function /Script/JunoProceduralWorld.JunoTileSubsystem.HandlePossessedPawnChanged
-	// void HandlePossessedPawnChanged(class APawn* OldPawn, class APawn* Pawn);                                                // [0xbc9d328] Final|Native|Private 
+	// void HandlePossessedPawnChanged(class APawn* OldPawn, class APawn* Pawn);                                                // [0xbc55c80] Final|Native|Private 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoWaterSplineInjector
@@ -1116,9 +1116,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoWaterSplineInjector.InjectSplineGuideIntoWaterBody
-	// void InjectSplineGuideIntoWaterBody(FJunoWaterSplineInjectorParams& Params);                                             // [0xbc9d3ec] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InjectSplineGuideIntoWaterBody(FJunoWaterSplineInjectorParams& Params);                                             // [0xbc55d44] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoWaterSplineInjector.ForceWaterUpdate
-	// void ForceWaterUpdate();                                                                                                 // [0x32e6c74] Final|Native|Public|BlueprintCallable 
+	// void ForceWaterUpdate();                                                                                                 // [0x32e4b44] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoWorldLocalEnvironmentComponent
@@ -1137,7 +1137,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoWorldLocalEnvironmentComponent.OnRep_ServerBiome
-	// void OnRep_ServerBiome();                                                                                                // [0xbc9d5b0] Final|Native|Private 
+	// void OnRep_ServerBiome();                                                                                                // [0xbc55f08] Final|Native|Private 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoWorldTilePlayspaceComponent
@@ -1167,17 +1167,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoWorldTile.OnUnloadBegin
-	// void OnUnloadBegin(class ULevel* Level);                                                                                 // [0xbc9d5e4] Final|Native|Private 
+	// void OnUnloadBegin(class ULevel* Level);                                                                                 // [0xbc55f3c] Final|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoWorldTile.IsTestLevelWorldTile
-	// bool IsTestLevelWorldTile();                                                                                             // [0x2f18ed4] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTestLevelWorldTile();                                                                                             // [0x2f1d290] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoWorldTile.GetJunoWorldTileTransform
-	// void GetJunoWorldTileTransform(class AActor* ActorInWorldTile, FTransform& Transform, EJunoGetWorldTileTransformResult& Result); // [0xbc9d150] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetJunoWorldTileTransform(class AActor* ActorInWorldTile, FTransform& Transform, EJunoGetWorldTileTransformResult& Result); // [0xbc55aa8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoWorldTile.GetJunoWorldTileBounds
-	// void GetJunoWorldTileBounds(class AActor* ActorInWorldTile, FBox& TileBounds, EJunoGetWorldTileBoundsResult& Result);    // [0xbc9cff4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetJunoWorldTileBounds(class AActor* ActorInWorldTile, FBox& TileBounds, EJunoGetWorldTileBoundsResult& Result);    // [0xbc5594c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoWorldTile.ClientOnAllLevelsLoaded
-	// void ClientOnAllLevelsLoaded();                                                                                          // [0x1594258] Final|Native|Private 
+	// void ClientOnAllLevelsLoaded();                                                                                          // [0x2a27ecc] Final|Native|Private 
 	// Function /Script/JunoProceduralWorld.JunoWorldTile.ArePositionsInSameWorldTile
-	// bool ArePositionsInSameWorldTile(class UObject* WorldContextObject, FVector& LocationA, FVector& LocationB);             // [0xbc9cdb0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool ArePositionsInSameWorldTile(class UObject* WorldContextObject, FVector& LocationA, FVector& LocationB);             // [0xbc55708] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoWorldTileDebugger
@@ -1213,9 +1213,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoWorldTileControllerComponent.ServerCheckWorldTileState
-	// void ServerCheckWorldTileState();                                                                                        // [0x8384348] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerCheckWorldTileState();                                                                                        // [0x83b8590] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/JunoProceduralWorld.JunoWorldTileControllerComponent.ClientCheckWorldTileState
-	// void ClientCheckWorldTileState(TArray<FJunoDebugWorldTileState> WorldTileState);                                         // [0xbc9cf64] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientCheckWorldTileState(TArray<FJunoDebugWorldTileState> WorldTileState);                                         // [0xbc558bc] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoCaveDataCollectionBase
@@ -1287,21 +1287,21 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionBase.UseReservedArea
-	// bool UseReservedArea(class UObject* WorldContextObject, FName& AreaName, TMap<FName, FBox2D>& AreaTiles, TArray<FPCGJunoWorldTile>& OutNewTiles); // [0xbca2998] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// bool UseReservedArea(class UObject* WorldContextObject, FName& AreaName, TMap<FName, FBox2D>& AreaTiles, TArray<FPCGJunoWorldTile>& OutNewTiles); // [0xbc5b2f0] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionBase.UpdateTile
-	// bool UpdateTile(class UObject* WorldContextObject, FPCGJunoWorldTile& CurrentTile, FPCGJunoWorldTile& OutUpdatedTile);   // [0xbca2828] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// bool UpdateTile(class UObject* WorldContextObject, FPCGJunoWorldTile& CurrentTile, FPCGJunoWorldTile& OutUpdatedTile);   // [0xbc5b180] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionBase.Setup
-	// void Setup(class UObject* WorldContextObject);                                                                           // [0x7062adc] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Setup(class UObject* WorldContextObject);                                                                           // [0x70a603c] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionBase.GetDebugLevelLocation
-	// FVector GetDebugLevelLocation(class UObject* WorldContextObject);                                                        // [0xbca0aa8] RequiredAPI|Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// FVector GetDebugLevelLocation(class UObject* WorldContextObject);                                                        // [0xbc59400] RequiredAPI|Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionBase.ChooseTile
-	// void ChooseTile(class UObject* WorldContextObject, FVector& Position, FPCGJunoWorldTile& OutSelectedTile);               // [0xbc9fc64] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void ChooseTile(class UObject* WorldContextObject, FVector& Position, FPCGJunoWorldTile& OutSelectedTile);               // [0xbc585bc] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionBase.ChooseStartTile
-	// bool ChooseStartTile(class UObject* WorldContextObject, FVector& StartTileLocation);                                     // [0x91a2ac0] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// bool ChooseStartTile(class UObject* WorldContextObject, FVector& StartTileLocation);                                     // [0x91bb858] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionBase.ChooseOutOfBoundsTile
-	// void ChooseOutOfBoundsTile(class UObject* WorldContextObject, FPCGJunoWorldTile& OutSelectedTile);                       // [0xbc9fb70] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ChooseOutOfBoundsTile(class UObject* WorldContextObject, FPCGJunoWorldTile& OutSelectedTile);                       // [0xbc584c8] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionBase.ChooseDebugTile
-	// void ChooseDebugTile(class UObject* WorldContextObject, FVector& Position, FPCGJunoWorldTile& OutSelectedTile);          // [0xbc9f9f4] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void ChooseDebugTile(class UObject* WorldContextObject, FVector& Position, FPCGJunoWorldTile& OutSelectedTile);          // [0xbc5834c] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoWorldTileSelectionForced
@@ -1333,7 +1333,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoWorldTileSelectionAgatha.GenerateCornersForUI
-	// void GenerateCornersForUI(class UObject* WorldContextObject, TArray<EJunoBiome>& Corners);                               // [0xbca03bc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void GenerateCornersForUI(class UObject* WorldContextObject, TArray<EJunoBiome>& Corners);                               // [0xbc58d14] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoWorldTileSelectionBeryl
@@ -1412,35 +1412,35 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.StartPathfinder
-	// void StartPathfinder(FVector A, FVector B, bool bFindNearestValidLocationForA, bool bFindNearestValidLocationForB);      // [0xbca2444] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void StartPathfinder(FVector A, FVector B, bool bFindNearestValidLocationForA, bool bFindNearestValidLocationForB);      // [0xbc5ad9c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.SetDestinationActuallyReached
-	// void SetDestinationActuallyReached(FVector Location);                                                                    // [0xbca2304] Final|Native|Protected|HasDefaults|BlueprintCallable 
+	// void SetDestinationActuallyReached(FVector Location);                                                                    // [0xbc5ac5c] Final|Native|Protected|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.SetDestination
-	// void SetDestination(FVector Location);                                                                                   // [0xbca21cc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetDestination(FVector Location);                                                                                   // [0xbc5ab24] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.ProjectLocation
-	// FVector ProjectLocation(FVector Location, bool& bOutIsValidLocation);                                                    // [0xbca1f10] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector ProjectLocation(FVector Location, bool& bOutIsValidLocation);                                                    // [0xbc5a868] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.OnStartPathfinder
-	// void OnStartPathfinder(FVector A, FVector B);                                                                            // [0x2177018] Event|Public|HasDefaults|BlueprintEvent 
+	// void OnStartPathfinder(FVector A, FVector B);                                                                            // [0x211c0a0] Event|Public|HasDefaults|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.OnInitialize
-	// void OnInitialize(class ALandscapeProxy* InLandscapeProxy, class ALandmassProceduralRoute* InRoute, FLandmassPathfinderRules Rules, class ALandmassProceduralRoute* InBlockingRoute); // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnInitialize(class ALandscapeProxy* InLandscapeProxy, class ALandmassProceduralRoute* InRoute, FLandmassPathfinderRules Rules, class ALandmassProceduralRoute* InBlockingRoute); // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.K2_StepPathfinder
-	// EPushFrontierResult K2_StepPathfinder(TArray<FVector>& OutLocations, TArray<float>& OutCosts, TArray<bool>& bOutIsSnapped, TArray<EPathfinderNodeState>& OutNodeStates); // [0xbca13d0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// EPushFrontierResult K2_StepPathfinder(TArray<FVector>& OutLocations, TArray<float>& OutCosts, TArray<bool>& bOutIsSnapped, TArray<EPathfinderNodeState>& OutNodeStates); // [0xbc59d28] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.K2_GetPriorityList
-	// void K2_GetPriorityList(TArray<FVector>& Locations, TArray<float>& Costs);                                               // [0xbca1280] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void K2_GetPriorityList(TArray<FVector>& Locations, TArray<float>& Costs);                                               // [0xbc59bd8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.IsTargetLocationValid
-	// bool IsTargetLocationValid(FVector TargetLocation);                                                                      // [0xbca1128] Native|Event|Public|HasDefaults|BlueprintEvent 
+	// bool IsTargetLocationValid(FVector TargetLocation);                                                                      // [0xbc59a80] Native|Event|Public|HasDefaults|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.Initialize
-	// bool Initialize(class ALandscapeProxy* LandscapeProxy, class ALandmassProceduralRoute* InRoute, FLandmassPathfinderRules Rules, TArray<ULandmassPathfinder*> InBackStopPaths, class ALandmassProceduralRoute* InBlockingRoute); // [0xbca0d2c] Final|Native|Public|BlueprintCallable 
+	// bool Initialize(class ALandscapeProxy* LandscapeProxy, class ALandmassProceduralRoute* InRoute, FLandmassPathfinderRules Rules, TArray<ULandmassPathfinder*> InBackStopPaths, class ALandmassProceduralRoute* InBlockingRoute); // [0xbc59684] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.GetLandscapeBox
-	// FBox GetLandscapeBox();                                                                                                  // [0xbca0b68] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox GetLandscapeBox();                                                                                                  // [0xbc594c0] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.GetIsInitialized
-	// bool GetIsInitialized();                                                                                                 // [0xbca0b50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsInitialized();                                                                                                 // [0xbc594a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.FindNearestValidLocation
-	// bool FindNearestValidLocation(FVector InLocation, FVector& OutValidLocation, bool bShouldProject);                       // [0xbca00a8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool FindNearestValidLocation(FVector InLocation, FVector& OutValidLocation, bool bShouldProject);                       // [0xbc58a00] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.ExecutePathfinderSync
-	// void ExecutePathfinderSync(FVector A, FVector B, TArray<FVector>& Locations, TArray<float>& Costs);                      // [0xbc9fde0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ExecutePathfinderSync(FVector A, FVector B, TArray<FVector>& Locations, TArray<float>& Costs);                      // [0xbc58738] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassPathfinder.AdditionalPushFrontierResultCondition
-	// EPushFrontierResult AdditionalPushFrontierResultCondition(EPushFrontierResult ResultFromLastPush, FLandmassPathfinderRules InCurrentRules, FVector InHome, FVector InDestination, FVector InCurrentLocation, int32_t InCurrentPushSteps, float InCurrentCost, bool& bShouldUseBestNodeInsteadOfMostRecentNode); // [0xbc9f2e4] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// EPushFrontierResult AdditionalPushFrontierResultCondition(EPushFrontierResult ResultFromLastPush, FLandmassPathfinderRules InCurrentRules, FVector InHome, FVector InDestination, FVector InCurrentLocation, int32_t InCurrentPushSteps, float InCurrentCost, bool& bShouldUseBestNodeInsteadOfMostRecentNode); // [0xbc57c3c] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralWorld.PathfinderGuideSetsDataAsset
@@ -1456,13 +1456,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.PathfinderGuideSetsDataAsset.SaveCurveSetFromSplintComponents
-	// void SaveCurveSetFromSplintComponents(TArray<USplineComponent*> SourceComponents, int32_t Index);                        // [0xbca20c0] Final|Native|Public|BlueprintCallable 
+	// void SaveCurveSetFromSplintComponents(TArray<USplineComponent*> SourceComponents, int32_t Index);                        // [0xbc5aa18] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.PathfinderGuideSetsDataAsset.LoadCurveSetAndAddSplineComponentsToActor
-	// bool LoadCurveSetAndAddSplineComponentsToActor(class AActor* InActor, int32_t Index);                                    // [0xbca1bcc] Final|Native|Public|BlueprintCallable 
+	// bool LoadCurveSetAndAddSplineComponentsToActor(class AActor* InActor, int32_t Index);                                    // [0xbc5a524] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.PathfinderGuideSetsDataAsset.GetRandomGuideSetFromSeed
-	// FPathfinderGuideSet GetRandomGuideSetFromSeed(int32_t Seed);                                                             // [0xbca0c48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPathfinderGuideSet GetRandomGuideSetFromSeed(int32_t Seed);                                                             // [0xbc595a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.PathfinderGuideSetsDataAsset.GetRandomGuideSet
-	// FPathfinderGuideSet GetRandomGuideSet();                                                                                 // [0xbca0bb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPathfinderGuideSet GetRandomGuideSet();                                                                                 // [0xbc59508] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoProceduralWorld.PCGJunoActorBoundsToPointSettings
@@ -1604,11 +1604,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoCaveVolume.RetrievePointProviders
-	// void RetrievePointProviders(TArray<AJunoCaveLivingWorldStaticPointProvider*>& OutPointProviders);                        // [0xbcc4e54] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void RetrievePointProviders(TArray<AJunoCaveLivingWorldStaticPointProvider*>& OutPointProviders);                        // [0xbc7d7ac] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoCaveVolume.OnPlayerLeavingCaveVolume
-	// void OnPlayerLeavingCaveVolume(class AFortPlayerPawnAthena* PlayerPawn);                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayerLeavingCaveVolume(class AFortPlayerPawnAthena* PlayerPawn);                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.JunoCaveVolume.OnPlayerEnteringCaveVolume
-	// void OnPlayerEnteringCaveVolume(class AFortPlayerPawnAthena* PlayerPawn);                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayerEnteringCaveVolume(class AFortPlayerPawnAthena* PlayerPawn);                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoLevelInstance
@@ -1624,7 +1624,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoLevelInstance.GetActorsInLevel
-	// TArray<AActor*> GetActorsInLevel();                                                                                      // [0xbcc4214] Final|Native|Public|BlueprintCallable 
+	// TArray<AActor*> GetActorsInLevel();                                                                                      // [0xbc7cb6c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoLivingWorldStaticPointProviderCluster
@@ -1644,7 +1644,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoLivingWorldStaticPointProviderCluster.OnCurrentPlaylistLoaded
-	// void OnCurrentPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContextTags);                            // [0xbcc49a8] Final|Native|Protected|HasOutParms 
+	// void OnCurrentPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContextTags);                            // [0xbc7d300] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoPOIGameplayVolume
@@ -1690,25 +1690,25 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.SetPOISlotMetaDatas
-	// void SetPOISlotMetaDatas(class AActor* POISlotActor, TArray<FJunoPOIManagerSlot>& POISlots, FJunoPOISlotMetaData& POISlotMetaData, EJunoSetSlotPOIMetaDataResult& Result); // [0xbcc5510] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetPOISlotMetaDatas(class AActor* POISlotActor, TArray<FJunoPOIManagerSlot>& POISlots, FJunoPOISlotMetaData& POISlotMetaData, EJunoSetSlotPOIMetaDataResult& Result); // [0xbc7de68] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.QueryPOIState
-	// void QueryPOIState(class AActor* POISlotActor, FGuid& POISlotGuid, EQueryPOIStateResult& Result, FJunoPOISlotMetaData& POISlotMetaData, FBox& WorldTileBounds); // [0xbcc4c90] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void QueryPOIState(class AActor* POISlotActor, FGuid& POISlotGuid, EQueryPOIStateResult& Result, FJunoPOISlotMetaData& POISlotMetaData, FBox& WorldTileBounds); // [0xbc7d5e8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.QueryCavePOIState
-	// void QueryCavePOIState(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, FGuid& CaveShellGuid, EQueryPOIStateResult& Result, FBox& WorldTileBounds); // [0xbcc4aa4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void QueryCavePOIState(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, FGuid& CaveShellGuid, EQueryPOIStateResult& Result, FBox& WorldTileBounds); // [0xbc7d3fc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.MarkPOISlotUnused
-	// void MarkPOISlotUnused(class AActor* POISlotActor, FGuid& POISlotGuid, EJunoMarkSlotPOIUnusedResult& Result);            // [0xbcc4898] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void MarkPOISlotUnused(class AActor* POISlotActor, FGuid& POISlotGuid, EJunoMarkSlotPOIUnusedResult& Result);            // [0xbc7d1f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.MarkCavePOISlotUnused
-	// void MarkCavePOISlotUnused(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, FGuid& CaveShellGuid, EJunoMarkSlotPOIUnusedResult& Result); // [0xbcc4728] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void MarkCavePOISlotUnused(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, FGuid& CaveShellGuid, EJunoMarkSlotPOIUnusedResult& Result); // [0xbc7d080] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.GetMatchingPOIsFromDataRegistry
-	// void GetMatchingPOIsFromDataRegistry(FDataRegistryType& DataRegistry, TSet<FName>& Tags, TSet<EJunoPOISize>& Sizes, TSet<EJunoBiome>& Biomes, TArray<FPCGJunoWorldTilePOI>& Array, EJunoGetMatchingPOIsFromDataRegistryResult& Result, EJunoWorldTilePOIType Type); // [0xbcc42a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetMatchingPOIsFromDataRegistry(FDataRegistryType& DataRegistry, TSet<FName>& Tags, TSet<EJunoPOISize>& Sizes, TSet<EJunoBiome>& Biomes, TArray<FPCGJunoWorldTilePOI>& Array, EJunoGetMatchingPOIsFromDataRegistryResult& Result, EJunoWorldTilePOIType Type); // [0xbc7cbf8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.FindBestPOISlots
-	// void FindBestPOISlots(TArray<FJunoPOIManagerSlot>& PotentialSlots, TArray<FJunoPOIManagerSlot>& AdditionalCompareSlots, int32_t DesiredNumber, double DesiredMinDistance, TArray<FJunoPOIManagerSlot>& Result, TArray<FJunoPOIManagerSlot>& Remainder, FBox& WorldTileBounds, EJunoBiome Biome, bool bEnforceMinDistance); // [0xbcc3cb8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void FindBestPOISlots(TArray<FJunoPOIManagerSlot>& PotentialSlots, TArray<FJunoPOIManagerSlot>& AdditionalCompareSlots, int32_t DesiredNumber, double DesiredMinDistance, TArray<FJunoPOIManagerSlot>& Result, TArray<FJunoPOIManagerSlot>& Remainder, FBox& WorldTileBounds, EJunoBiome Biome, bool bEnforceMinDistance); // [0xbc7c610] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.CreateRarePOIs
-	// void CreateRarePOIs(class AActor* Actor, FRandomStream& RandomStream, FDataRegistryType& DataRegistry, TArray<FJunoPOIManagerSlot>& PotentialSlots, TArray<FJunoPOIManagerSlot>& UsedSlots, EGeneratePOIResult& Result); // [0xbcc3a88] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CreateRarePOIs(class AActor* Actor, FRandomStream& RandomStream, FDataRegistryType& DataRegistry, TArray<FJunoPOIManagerSlot>& PotentialSlots, TArray<FJunoPOIManagerSlot>& UsedSlots, EGeneratePOIResult& Result); // [0xbc7c3e0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.CreatePOI
-	// void CreatePOI(class AActor* POISlotActor, FGuid& POISlotGuid, FJunoPOIData& Data, EGeneratePOIResult& Result);          // [0xbcc38d8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CreatePOI(class AActor* POISlotActor, FGuid& POISlotGuid, FJunoPOIData& Data, EGeneratePOIResult& Result);          // [0xbc7c230] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.JunoPOIBlueprintLibrary.CreateCavePOI
-	// void CreateCavePOI(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, FGuid& CaveShellGuid, FJunoPOIData& Data, EGeneratePOIResult& Result); // [0xbcc36bc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CreateCavePOI(class AActor* CaveSlotActor, FGuid& CaveSlotGuid, FGuid& CaveShellGuid, FJunoPOIData& Data, EGeneratePOIResult& Result); // [0xbc7c014] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoProceduralFoundation
@@ -1723,7 +1723,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoProceduralFoundation.AddAdditionalWorld
-	// void AddAdditionalWorld(TWeakObjectPtr<UWorld*>& World);                                                                 // [0xbcc3560] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddAdditionalWorld(TWeakObjectPtr<UWorld*>& World);                                                                 // [0xbc7beb8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoStaticMeshPoolActor
@@ -1818,15 +1818,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.LandmassCluster.K2_AddConnection
-	// bool K2_AddConnection(class AActor* LeafActorA, class AActor* LeafActorB);                                               // [0xbd34338] Final|Native|Public|BlueprintCallable 
+	// bool K2_AddConnection(class AActor* LeafActorA, class AActor* LeafActorB);                                               // [0xbcecc48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassCluster.InitializeDentrogram
-	// void InitializeDentrogram(TArray<AActor*> InActors, TArray<FDendrogramLeafAttributes>& InAttributes);                    // [0xbd32e98] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InitializeDentrogram(TArray<AActor*> InActors, TArray<FDendrogramLeafAttributes>& InAttributes);                    // [0xbceb7a8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassCluster.GetTopLevel
-	// int32_t GetTopLevel();                                                                                                   // [0xbd318dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTopLevel();                                                                                                   // [0xbcea1ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassCluster.GetLeafCount
-	// int32_t GetLeafCount();                                                                                                  // [0x2bfc2c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetLeafCount();                                                                                                  // [0x2c3646c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassCluster.GetClustersAtLevel
-	// TArray<FDendrogramClusterOutput> GetClustersAtLevel(int32_t InLevel);                                                    // [0xbd30c58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDendrogramClusterOutput> GetClustersAtLevel(int32_t InLevel);                                                    // [0xbce9568] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoProceduralWorld.LandmassFunctionLibrary
@@ -1841,35 +1841,35 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.SetStaticMeshAffectDistanceField
-	// void SetStaticMeshAffectDistanceField(class UStaticMeshComponent* Mesh, bool bNewValue);                                 // [0xbd34f88] Final|Native|Static|Public|BlueprintCallable 
+	// void SetStaticMeshAffectDistanceField(class UStaticMeshComponent* Mesh, bool bNewValue);                                 // [0xbced898] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.SetControlPointWidth
-	// void SetControlPointWidth(class ULandscapeSplineControlPoint* InControlPoint, float InWidth);                            // [0xbd34d5c] Final|Native|Static|Public|BlueprintCallable 
+	// void SetControlPointWidth(class ULandscapeSplineControlPoint* InControlPoint, float InWidth);                            // [0xbced66c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.SetControlPointSideFalloff
-	// void SetControlPointSideFalloff(class ULandscapeSplineControlPoint* InControlPoint, float InSideFalloff);                // [0xbd34ca8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetControlPointSideFalloff(class ULandscapeSplineControlPoint* InControlPoint, float InSideFalloff);                // [0xbced5b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.SetControlPointRotation
-	// void SetControlPointRotation(class ULandscapeSplineControlPoint* InControlPoint, FRotator InRotation);                   // [0xbd34b34] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void SetControlPointRotation(class ULandscapeSplineControlPoint* InControlPoint, FRotator InRotation);                   // [0xbced444] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.SetControlPointLocation
-	// void SetControlPointLocation(class ULandscapeSplineControlPoint* InControlPoint, FVector InLocation);                    // [0xbd349c0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void SetControlPointLocation(class ULandscapeSplineControlPoint* InControlPoint, FVector InLocation);                    // [0xbced2d0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.SetControlPointLayerWidthRatio
-	// void SetControlPointLayerWidthRatio(class ULandscapeSplineControlPoint* InControlPoint, float InLayerWidthRatio);        // [0xbd3490c] Final|Native|Static|Public|BlueprintCallable 
+	// void SetControlPointLayerWidthRatio(class ULandscapeSplineControlPoint* InControlPoint, float InLayerWidthRatio);        // [0xbced21c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.ProjectLocationOnLandscape
-	// FVector ProjectLocationOnLandscape(class ALandscapeProxy* LandscapeProxy, FVector Location, bool& bIsValidLocation);     // [0xbd34638] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector ProjectLocationOnLandscape(class ALandscapeProxy* LandscapeProxy, FVector Location, bool& bIsValidLocation);     // [0xbcecf48] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.LevelInstanceSetAndUpdateWorldAsset
-	// void LevelInstanceSetAndUpdateWorldAsset(class ALevelInstance* LevelInstance, TWeakObjectPtr<UWorld*>& WorldAsset);      // [0xbd34560] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void LevelInstanceSetAndUpdateWorldAsset(class ALevelInstance* LevelInstance, TWeakObjectPtr<UWorld*>& WorldAsset);      // [0xbcece70] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.GetLandscapeHeightAtLocation
-	// float GetLandscapeHeightAtLocation(class ALandscapeProxy* LandscapeProxy, FVector Location, bool& bIsValidLocation);     // [0xbd31524] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// float GetLandscapeHeightAtLocation(class ALandscapeProxy* LandscapeProxy, FVector Location, bool& bIsValidLocation);     // [0xbce9e34] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.GetLandscapeGradientAtLocation
-	// FVector2D GetLandscapeGradientAtLocation(class ALandscapeProxy* LandscapeProxy, FVector Location);                       // [0xbd31398] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector2D GetLandscapeGradientAtLocation(class ALandscapeProxy* LandscapeProxy, FVector Location);                       // [0xbce9ca8] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.GetControlPointWidth
-	// float GetControlPointWidth(class ULandscapeSplineControlPoint* InControlPoint);                                          // [0xbd30f04] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetControlPointWidth(class ULandscapeSplineControlPoint* InControlPoint);                                          // [0xbce9814] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.GetControlPointSideFalloff
-	// float GetControlPointSideFalloff(class ULandscapeSplineControlPoint* InControlPoint);                                    // [0xbd30e88] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetControlPointSideFalloff(class ULandscapeSplineControlPoint* InControlPoint);                                    // [0xbce9798] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.GetControlPointRotation
-	// FRotator GetControlPointRotation(class ULandscapeSplineControlPoint* InControlPoint);                                    // [0xbd30e00] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FRotator GetControlPointRotation(class ULandscapeSplineControlPoint* InControlPoint);                                    // [0xbce9710] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.GetControlPointLocation
-	// FVector GetControlPointLocation(class ULandscapeSplineControlPoint* InControlPoint);                                     // [0xbd30d78] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetControlPointLocation(class ULandscapeSplineControlPoint* InControlPoint);                                     // [0xbce9688] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.LandmassFunctionLibrary.GetControlPointLayerWidthRatio
-	// float GetControlPointLayerWidthRatio(class ULandscapeSplineControlPoint* InControlPoint);                                // [0xbd30cfc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetControlPointLayerWidthRatio(class ULandscapeSplineControlPoint* InControlPoint);                                // [0xbce960c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoProceduralWorld.LandmassProceduralRoadGenRules
@@ -1897,7 +1897,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.ProceduralRouteDefinition.FindLocationClosestToWorldLocation
-	// FVector FindLocationClosestToWorldLocation(FVector& WorldLocation, float& OutDistanceSqr);                               // [0xbd2f598] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector FindLocationClosestToWorldLocation(FVector& WorldLocation, float& OutDistanceSqr);                               // [0xbce7ea8] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoProceduralWorld.LandmassProceduralRoute
@@ -1924,59 +1924,59 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.WakeUpDormantRoute
-	// bool WakeUpDormantRoute();                                                                                               // [0xbd351ac] Native|Public|BlueprintCallable 
+	// bool WakeUpDormantRoute();                                                                                               // [0xbcedabc] Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.StartRoute
-	// void StartRoute();                                                                                                       // [0x305e6b0] Native|Public|BlueprintCallable 
+	// void StartRoute();                                                                                                       // [0x3052978] Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.SetWidthForLastAddedPoint
-	// void SetWidthForLastAddedPoint(float NewWidth);                                                                          // [0xbd35114] Native|Public|BlueprintCallable 
+	// void SetWidthForLastAddedPoint(float NewWidth);                                                                          // [0xbceda24] Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.SetWidthAtPointIndex
-	// void SetWidthAtPointIndex(int32_t Index, float NewWidth);                                                                // [0xbd3504c] Native|Public|BlueprintCallable 
+	// void SetWidthAtPointIndex(int32_t Index, float NewWidth);                                                                // [0xbced95c] Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.SetEditorTickEnabled
-	// void SetEditorTickEnabled(bool bEnabled);                                                                                // [0xbd34e10] Final|Native|Public|BlueprintCallable 
+	// void SetEditorTickEnabled(bool bEnabled);                                                                                // [0xbced720] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.SetCurrentRouteGenerationState
-	// void SetCurrentRouteGenerationState(ERouteGenerationState InState);                                                      // [0xabb4760] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentRouteGenerationState(ERouteGenerationState InState);                                                      // [0xaba1208] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.ResetAllAndInitialize
-	// bool ResetAllAndInitialize(bool bResetAllLandscapeSplines);                                                              // [0xbd34874] Native|Public|BlueprintCallable 
+	// bool ResetAllAndInitialize(bool bResetAllLandscapeSplines);                                                              // [0xbced184] Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.RasterizeAllPendingRoutesToRouteGrid
-	// void RasterizeAllPendingRoutesToRouteGrid();                                                                             // [0xbd34810] Final|Native|Public|BlueprintCallable 
+	// void RasterizeAllPendingRoutesToRouteGrid();                                                                             // [0xbced120] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.PutIntoDormancy
-	// bool PutIntoDormancy();                                                                                                  // [0x99c61dc] Native|Public|BlueprintCallable 
+	// bool PutIntoDormancy();                                                                                                  // [0x99cf548] Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.OnGenerationFinished
-	// void OnGenerationFinished();                                                                                             // [0xbd34624] Final|Native|Public|BlueprintCallable 
+	// void OnGenerationFinished();                                                                                             // [0xbcecf34] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.IsInsideOcean
-	// bool IsInsideOcean(FVector Location);                                                                                    // [0xbd34228] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInsideOcean(FVector Location);                                                                                    // [0xbcecb38] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.IsInsideLake
-	// bool IsInsideLake(FVector Location, class AWaterBody* InLake, float Dilation);                                           // [0xbd33f40] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInsideLake(FVector Location, class AWaterBody* InLake, float Dilation);                                           // [0xbcec850] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.IsInsideAnyLakeAccurate
-	// bool IsInsideAnyLakeAccurate(FVector Location);                                                                          // [0xbd33df0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInsideAnyLakeAccurate(FVector Location);                                                                          // [0xbcec700] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.IsInsideAnyLake
-	// bool IsInsideAnyLake(FVector Location, float Tolerance);                                                                 // [0xbd33bc8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInsideAnyLake(FVector Location, float Tolerance);                                                                 // [0xbcec4d8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.InitLandmassClusterLeavesOnly
-	// void InitLandmassClusterLeavesOnly(TArray<FDendrogramLeafAttributes>& InLeafAttributes);                                 // [0xbd327c4] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void InitLandmassClusterLeavesOnly(TArray<FDendrogramLeafAttributes>& InLeafAttributes);                                 // [0xbceb0d4] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.InitLandmassCluster
-	// void InitLandmassCluster(TArray<AActor*> InActors, TArray<FDendrogramLeafAttributes>& InLeafAttributes);                 // [0xbd31a94] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void InitLandmassCluster(TArray<AActor*> InActors, TArray<FDendrogramLeafAttributes>& InLeafAttributes);                 // [0xbcea3a4] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.GetRouteDefinitions
-	// TArray<UProceduralRouteDefinition*> GetRouteDefinitions();                                                               // [0xbd3186c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UProceduralRouteDefinition*> GetRouteDefinitions();                                                               // [0xbcea17c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.GetLandmassCluster
-	// class ULandmassCluster* GetLandmassCluster();                                                                            // [0xb86ec28] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ULandmassCluster* GetLandmassCluster();                                                                            // [0xb837b34] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.GetCurrentRouteGenerationState
-	// ERouteGenerationState GetCurrentRouteGenerationState();                                                                  // [0x33ed628] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ERouteGenerationState GetCurrentRouteGenerationState();                                                                  // [0x33e462c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.GenerateCluster
-	// bool GenerateCluster();                                                                                                  // [0xbd2f77c] Final|Native|Public|BlueprintCallable 
+	// bool GenerateCluster();                                                                                                  // [0xbce808c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.FinishRoute
-	// bool FinishRoute(int32_t& OutRouteIndex);                                                                                // [0xbd2f6dc] Native|Public|HasOutParms|BlueprintCallable 
+	// bool FinishRoute(int32_t& OutRouteIndex);                                                                                // [0xbce7fec] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.CustomTick
-	// void CustomTick(float DeltaSeconds);                                                                                     // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void CustomTick(float DeltaSeconds);                                                                                     // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.ClearCreatedLandscapeSplines
-	// bool ClearCreatedLandscapeSplines();                                                                                     // [0xbd2f1d8] Native|Public|BlueprintCallable 
+	// bool ClearCreatedLandscapeSplines();                                                                                     // [0xbce7ae8] Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.BeginGeneratePCG
-	// void BeginGeneratePCG(TArray<FLandmassPCGRouteInput>& Inputs);                                                           // [0xbd2f13c] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void BeginGeneratePCG(TArray<FLandmassPCGRouteInput>& Inputs);                                                           // [0xbce7a4c] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.AddControlPoint
-	// bool AddControlPoint(FVector WorldPosition);                                                                             // [0xbd2efe4] Native|Public|HasDefaults|BlueprintCallable 
+	// bool AddControlPoint(FVector WorldPosition);                                                                             // [0xbce78f4] Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.AddConnection
-	// bool AddConnection(class AActor* LeafActorA, class AActor* LeafActorB);                                                  // [0xbd2ef1c] Final|Native|Protected|BlueprintCallable 
+	// bool AddConnection(class AActor* LeafActorA, class AActor* LeafActorB);                                                  // [0xbce782c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.LandmassProceduralRoute.AddAvoidancePrimitive
-	// void AddAvoidancePrimitive(FRouteAvoidancePrimitive InPrimitive);                                                        // [0xbd2edb0] Final|Native|Public|BlueprintCallable 
+	// void AddAvoidancePrimitive(FRouteAvoidancePrimitive InPrimitive);                                                        // [0xbce76c0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.ProceduralRiverDefinition
@@ -1994,9 +1994,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.ProceduralRiverDefinition.GetWaterSpline
-	// class UWaterSplineComponent* GetWaterSpline();                                                                           // [0xbd31a54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWaterSplineComponent* GetWaterSpline();                                                                           // [0xbcea364] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.ProceduralRiverDefinition.GetWaterBodyActor
-	// class AWaterBody* GetWaterBodyActor();                                                                                   // [0x6061644] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AWaterBody* GetWaterBodyActor();                                                                                   // [0x60ac8e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoProceduralWorld.ProceduralRivers
@@ -2017,39 +2017,39 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.VisualizeAnchors
-	// void VisualizeAnchors();                                                                                                 // [0x32e6c74] Final|Native|Public|BlueprintCallable 
+	// void VisualizeAnchors();                                                                                                 // [0x32e4b44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.SurfaceLocationOverride
-	// FVector SurfaceLocationOverride(FVector InLocation, bool& bOutIsOverriden);                                              // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// FVector SurfaceLocationOverride(FVector InLocation, bool& bOutIsOverriden);                                              // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.StartRiverGeneration
-	// void StartRiverGeneration();                                                                                             // [0xbd35198] Final|Native|Public|BlueprintCallable 
+	// void StartRiverGeneration();                                                                                             // [0xbcedaa8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.SetRiverTier
-	// void SetRiverTier(ELandmassRiverTier InRiverTier);                                                                       // [0xbd34e90] Final|Native|Public|BlueprintCallable 
+	// void SetRiverTier(ELandmassRiverTier InRiverTier);                                                                       // [0xbced7a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.RebuildLastRiver
-	// void RebuildLastRiver();                                                                                                 // [0xbd34824] Final|Native|Public|BlueprintCallable 
+	// void RebuildLastRiver();                                                                                                 // [0xbced134] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.InitializeNeighborGrid
-	// bool InitializeNeighborGrid();                                                                                           // [0xbd33b80] Final|Native|Public|BlueprintCallable 
+	// bool InitializeNeighborGrid();                                                                                           // [0xbcec490] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.HaltRiverGeneration
-	// void HaltRiverGeneration();                                                                                              // [0xbd31a7c] Final|Native|Public|BlueprintCallable 
+	// void HaltRiverGeneration();                                                                                              // [0xbcea38c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetVelocityScalarAtDistanceAlongSpline
-	// float GetVelocityScalarAtDistanceAlongSpline(class UWaterSplineComponent* WaterSplineComponent, float DistanceAlongSpline); // [0xbd3194c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetVelocityScalarAtDistanceAlongSpline(class UWaterSplineComponent* WaterSplineComponent, float DistanceAlongSpline); // [0xbcea25c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetRiverMergeSearchNeighborGridSize
-	// float GetRiverMergeSearchNeighborGridSize();                                                                             // [0xbd3182c] Final|Native|Public|BlueprintCallable 
+	// float GetRiverMergeSearchNeighborGridSize();                                                                             // [0xbcea13c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetRiverDefinitions
-	// TArray<UProceduralRiverDefinition*> GetRiverDefinitions();                                                               // [0xbd317c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UProceduralRiverDefinition*> GetRiverDefinitions();                                                               // [0xbcea0d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetProceduralRiverActorTag
-	// FName GetProceduralRiverActorTag();                                                                                      // [0xbd316e4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FName GetProceduralRiverActorTag();                                                                                      // [0xbce9ff4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetHalfWidthAtDistanceAlongSpline
-	// float GetHalfWidthAtDistanceAlongSpline(class UWaterSplineComponent* WaterSplineComponent, float DistanceAlongSpline);   // [0xbd31290] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetHalfWidthAtDistanceAlongSpline(class UWaterSplineComponent* WaterSplineComponent, float DistanceAlongSpline);   // [0xbce9ba0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetGenerationRules
-	// bool GetGenerationRules(ELandmassRiverTier InRiverTier, FProceduralRiverGenRules& OutRules);                             // [0xbd31088] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetGenerationRules(ELandmassRiverTier InRiverTier, FProceduralRiverGenRules& OutRules);                             // [0xbce9998] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetDepthAtDistanceAlongSpline
-	// float GetDepthAtDistanceAlongSpline(class UWaterSplineComponent* WaterSplineComponent, float DistanceAlongSpline);       // [0xbd30f80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetDepthAtDistanceAlongSpline(class UWaterSplineComponent* WaterSplineComponent, float DistanceAlongSpline);       // [0xbce9890] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetAvailableTargetAnchors
-	// TArray<FProceduralRiverAnchor> GetAvailableTargetAnchors();                                                              // [0xbd305d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FProceduralRiverAnchor> GetAvailableTargetAnchors();                                                              // [0xbce8ee8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetAvailableSourceAnchors
-	// TArray<FProceduralRiverAnchor> GetAvailableSourceAnchors();                                                              // [0xbd2ff58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FProceduralRiverAnchor> GetAvailableSourceAnchors();                                                              // [0xbce8868] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.ProceduralRivers.GetAudioIntensityAtDistanceAlongSpline
-	// float GetAudioIntensityAtDistanceAlongSpline(class UWaterSplineComponent* WaterSplineComponent, float DistanceAlongSpline); // [0xbd2fe50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetAudioIntensityAtDistanceAlongSpline(class UWaterSplineComponent* WaterSplineComponent, float DistanceAlongSpline); // [0xbce8760] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoProceduralWorld.ProceduralRoadDefinition
@@ -2091,33 +2091,33 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.UpdateLandscapeSplines
-	// void UpdateLandscapeSplines();                                                                                           // [0x32e6c74] Final|Native|Protected|BlueprintCallable 
+	// void UpdateLandscapeSplines();                                                                                           // [0x32e4b44] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.SetRoadTier
-	// void SetRoadTier(ELandmassRoadTier InRoadTier);                                                                          // [0xbd34f0c] Final|Native|Public|BlueprintCallable 
+	// void SetRoadTier(ELandmassRoadTier InRoadTier);                                                                          // [0xbced81c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.RemoveHardTurnControlPoint
-	// void RemoveHardTurnControlPoint();                                                                                       // [0xbd3483c] Final|Native|Protected|BlueprintCallable 
+	// void RemoveHardTurnControlPoint();                                                                                       // [0xbced14c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.K2_GetRoadGridDataAtLocation
-	// TArray<FVector> K2_GetRoadGridDataAtLocation(FVector InLocation);                                                        // [0xbd343fc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// TArray<FVector> K2_GetRoadGridDataAtLocation(FVector InLocation);                                                        // [0xbcecd0c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.InitializeNeighborGrid
-	// bool InitializeNeighborGrid();                                                                                           // [0xbd33ba4] Final|Native|Public|BlueprintCallable 
+	// bool InitializeNeighborGrid();                                                                                           // [0xbcec4b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.GetRoadMergeSearchNeighborGridSize
-	// float GetRoadMergeSearchNeighborGridSize();                                                                              // [0xbd3184c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRoadMergeSearchNeighborGridSize();                                                                              // [0xbcea15c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.GetRoadDefinitions
-	// TArray<UProceduralRoadDefinition*> GetRoadDefinitions();                                                                 // [0xbd317c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UProceduralRoadDefinition*> GetRoadDefinitions();                                                                 // [0xbcea0d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.GetProceduralRoadLoopAnchorTag
-	// FName GetProceduralRoadLoopAnchorTag(int32_t LoopIndex);                                                                 // [0xbd3173c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FName GetProceduralRoadLoopAnchorTag(int32_t LoopIndex);                                                                 // [0xbcea04c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.GetProceduralRoadActorTag
-	// FName GetProceduralRoadActorTag();                                                                                       // [0xbd31710] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FName GetProceduralRoadActorTag();                                                                                       // [0xbcea020] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.GetGenerationRules
-	// bool GetGenerationRules(ELandmassRoadTier InRoadTier, FProceduralRoadGenRules& OutRules);                                // [0xbd31194] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetGenerationRules(ELandmassRoadTier InRoadTier, FProceduralRoadGenRules& OutRules);                                // [0xbce9aa4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.GetAllControlPoints
-	// TArray<ULandscapeSplineControlPoint*> GetAllControlPoints();                                                             // [0xbd2f7a8] Final|Native|Public|BlueprintCallable 
+	// TArray<ULandscapeSplineControlPoint*> GetAllControlPoints();                                                             // [0xbce80b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.EvaluateRouteAtLength
-	// FSegmentInterpResult EvaluateRouteAtLength(class UProceduralRoadDefinition* InRoute, float InLength, bool bTransformToWorld); // [0xbd2f384] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FSegmentInterpResult EvaluateRouteAtLength(class UProceduralRoadDefinition* InRoute, float InLength, bool bTransformToWorld); // [0xbce7c94] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.EnableOverrideGenRules
-	// void EnableOverrideGenRules(FProceduralRoadGenRules InOverrideGenRules);                                                 // [0xbd2f218] Final|Native|Public|BlueprintCallable 
+	// void EnableOverrideGenRules(FProceduralRoadGenRules InOverrideGenRules);                                                 // [0xbce7b28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoProceduralWorld.ProceduralRoads.DisableOverrideGenRules
-	// void DisableOverrideGenRules();                                                                                          // [0xbd2f200] Final|Native|Public|BlueprintCallable 
+	// void DisableOverrideGenRules();                                                                                          // [0xbce7b10] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.PCGAddLandscapeLayerWeightsSettings
@@ -2435,7 +2435,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoLivingWorldLightStaticPointProvider.AppendFiltersTags
-	// void AppendFiltersTags(FGameplayTagContainer& Container);                                                                // [0xbd7d45c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AppendFiltersTags(FGameplayTagContainer& Container);                                                                // [0xbd35d6c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoProceduralWorld.JunoWorldRegistryActorComponent
@@ -2463,21 +2463,21 @@ public:
 
 	/// Functions
 	// Function /Script/JunoProceduralWorld.JunoWorldRegistryManager.GetWorldDebugInfoText
-	// void GetWorldDebugInfoText(class AFortPlayerPawn* PlayerPawn, FJunoDebugWorldInfoResult& WorldDebugInfo);                // [0xbd7e440] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetWorldDebugInfoText(class AFortPlayerPawn* PlayerPawn, FJunoDebugWorldInfoResult& WorldDebugInfo);                // [0xbd36d50] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoWorldRegistryManager.GetWorldBounds
-	// FBoxSphereBounds GetWorldBounds();                                                                                       // [0xbd7e3f0] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBoxSphereBounds GetWorldBounds();                                                                                       // [0xbd36d00] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoWorldRegistryManager.GetWorldAnalyticsInfo
-	// void GetWorldAnalyticsInfo(class UObject* WorldContextObject, FVector& WorldLocation, FJunoWorldAnalyticsInfoResult& WorldAnalyticsInfo); // [0xbd7dc6c] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetWorldAnalyticsInfo(class UObject* WorldContextObject, FVector& WorldLocation, FJunoWorldAnalyticsInfoResult& WorldAnalyticsInfo); // [0xbd3657c] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoWorldRegistryManager.GetTileMiniMapTexture
-	// TWeakObjectPtr<UTexture2D*> GetTileMiniMapTexture(class UObject* WorldContextObject, FVector& WorldLocation);            // [0xbd7db30] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UTexture2D*> GetTileMiniMapTexture(class UObject* WorldContextObject, FVector& WorldLocation);            // [0xbd36440] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoWorldRegistryManager.GetTileForLocation
-	// class AJunoWorldTile* GetTileForLocation(class UObject* WorldContextObject, FVector& WorldLocation);                     // [0xbd7da28] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// class AJunoWorldTile* GetTileForLocation(class UObject* WorldContextObject, FVector& WorldLocation);                     // [0xbd36338] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoWorldRegistryManager.GetNormalizedTileLocation
-	// bool GetNormalizedTileLocation(class UObject* WorldContextObject, FVector& WorldLocation, FVector& OutResult);           // [0xbd7d880] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool GetNormalizedTileLocation(class UObject* WorldContextObject, FVector& WorldLocation, FVector& OutResult);           // [0xbd36190] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoProceduralWorld.JunoWorldRegistryManager.GetClosestEntryUsingTagQuery
-	// FJunoWorldRegistryEntry GetClosestEntryUsingTagQuery(EJunoWorldRegistryType EntryType, FGameplayTagQuery& TagQuery, FVector& QueryLocation); // [0xbd7d64c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FJunoWorldRegistryEntry GetClosestEntryUsingTagQuery(EJunoWorldRegistryType EntryType, FGameplayTagQuery& TagQuery, FVector& QueryLocation); // [0xbd35f5c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoProceduralWorld.JunoWorldRegistryManager.GetBiomeAtLocation
-	// void GetBiomeAtLocation(FVector& Location, FJunoBiomeInfoQueryResult& OutResult);                                        // [0xbd7d518] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetBiomeAtLocation(FVector& Location, FJunoBiomeInfoQueryResult& OutResult);                                        // [0xbd35e28] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoProceduralWorld.JunoBridgePOISelectorParams

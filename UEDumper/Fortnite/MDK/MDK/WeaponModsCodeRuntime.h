@@ -26,9 +26,9 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsCodeRuntime.FortModStation_WeaponUICapture.RefreshCaptureWhenPSOPrecachingDone
-	// void RefreshCaptureWhenPSOPrecachingDone(class UMeshComponent* PreviewMeshComponent);                                    // [0xa8c0960] Final|Native|Protected|BlueprintCallable 
+	// void RefreshCaptureWhenPSOPrecachingDone(class UMeshComponent* PreviewMeshComponent);                                    // [0xa8b2d68] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/WeaponModsCodeRuntime.FortModStation_WeaponUICapture.OnRefreshCapture
-	// void OnRefreshCapture();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRefreshCapture();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/WeaponModsCodeRuntime.FortWeaponModManagementComponent
@@ -44,13 +44,13 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModManagementComponent.WeaponModSlotsChangedDelegate__DelegateSignature
-	// void WeaponModSlotsChangedDelegate__DelegateSignature(class AFortWeapon* Weapon);                                        // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void WeaponModSlotsChangedDelegate__DelegateSignature(class AFortWeapon* Weapon);                                        // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModManagementComponent.ServerRequestRemoveModFromWeaponToInventory
-	// void ServerRequestRemoveModFromWeaponToInventory(class UFortWeaponModItemDefinition* WeaponModDef, FGuid WeaponItemGuid); // [0xa8c1010] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
+	// void ServerRequestRemoveModFromWeaponToInventory(class UFortWeaponModItemDefinition* WeaponModDef, FGuid WeaponItemGuid); // [0xa8b3418] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModManagementComponent.ServerRequestAddModToWeaponFromInventory
-	// void ServerRequestAddModToWeaponFromInventory(FGuid WeaponModItemGUID, FGuid WeaponItemGuid);                            // [0xa8c0dd8] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
+	// void ServerRequestAddModToWeaponFromInventory(FGuid WeaponModItemGUID, FGuid WeaponItemGuid);                            // [0xa8b31e0] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModManagementComponent.HandleWeaponUnequip
-	// void HandleWeaponUnequip(class AFortWeapon* Weapon);                                                                     // [0xa8c06f4] Final|Native|Private 
+	// void HandleWeaponUnequip(class AFortWeapon* Weapon);                                                                     // [0xa8b2afc] Final|Native|Private 
 };
 
 /// Class /Script/WeaponModsCodeRuntime.FortWeaponModStationBase
@@ -99,33 +99,33 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.StartInteractWithWorkbenchActor
-	// void StartInteractWithWorkbenchActor(class AFortWeaponModStationBase* NewInteractingWeaponModStation);                   // [0xa8c1218] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void StartInteractWithWorkbenchActor(class AFortWeaponModStationBase* NewInteractingWeaponModStation);                   // [0xa8b3620] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.ServerStopInteractWithWorkbenchActor
-	// void ServerStopInteractWithWorkbenchActor(class AFortWeaponModStationBase* NewInteractingWeaponModStation);              // [0xa8c1194] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerStopInteractWithWorkbenchActor(class AFortWeaponModStationBase* NewInteractingWeaponModStation);              // [0xa8b359c] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.ServerPurchaseWeaponModForWeapon
-	// void ServerPurchaseWeaponModForWeapon(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon);         // [0xa8c0d10] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerPurchaseWeaponModForWeapon(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon);         // [0xa8b3118] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.ServerPurchaseRemoveMod
-	// void ServerPurchaseRemoveMod(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon);                  // [0xa8c0c48] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerPurchaseRemoveMod(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon);                  // [0xa8b3050] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.OnStopInteractWithWorkbenchActorDelegate__DelegateSignature
-	// void OnStopInteractWithWorkbenchActorDelegate__DelegateSignature(class AFortWeaponModStationBase* WeaponModStation);     // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnStopInteractWithWorkbenchActorDelegate__DelegateSignature(class AFortWeaponModStationBase* WeaponModStation);     // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.OnStartInteractWithWorkbenchActorDelegate__DelegateSignature
-	// void OnStartInteractWithWorkbenchActorDelegate__DelegateSignature(class AFortWeaponModStationBase* NewInteractingWeaponModStation); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnStartInteractWithWorkbenchActorDelegate__DelegateSignature(class AFortWeaponModStationBase* NewInteractingWeaponModStation); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.OnLocalModPurchaseStarted__DelegateSignature
-	// void OnLocalModPurchaseStarted__DelegateSignature(FFortLocalModPurchaseEventParams& EventParams);                        // [0x2177018] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnLocalModPurchaseStarted__DelegateSignature(FFortLocalModPurchaseEventParams& EventParams);                        // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.LocalPurchaseWeaponModForWeapon
-	// void LocalPurchaseWeaponModForWeapon(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon);          // [0xa8c0898] RequiredAPI|Native|Event|Public|BlueprintEvent 
+	// void LocalPurchaseWeaponModForWeapon(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon);          // [0xa8b2ca0] RequiredAPI|Native|Event|Public|BlueprintEvent 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.LocalPurchaseRemoveMod
-	// void LocalPurchaseRemoveMod(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon);                   // [0xa8c07d0] RequiredAPI|Native|Event|Public|BlueprintEvent 
+	// void LocalPurchaseRemoveMod(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon);                   // [0xa8b2bd8] RequiredAPI|Native|Event|Public|BlueprintEvent 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.DoesCurrentWorkbenchHaveModsForWeapon
-	// bool DoesCurrentWorkbenchHaveModsForWeapon(class AFortWeapon* Weapon);                                                   // [0xa8c0570] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool DoesCurrentWorkbenchHaveModsForWeapon(class AFortWeapon* Weapon);                                                   // [0xa8b2978] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.ClientStartInteractWithWorkbenchActor
-	// void ClientStartInteractWithWorkbenchActor(class AFortWeaponModStationBase* NewInteractingWeaponModStation);             // [0xa8c04ec] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientStartInteractWithWorkbenchActor(class AFortWeaponModStationBase* NewInteractingWeaponModStation);             // [0xa8b28f4] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.ClientNotifyServerForcedInteractOver
-	// void ClientNotifyServerForcedInteractOver();                                                                             // [0x81b738c] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientNotifyServerForcedInteractOver();                                                                             // [0x81efe74] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.CanPlayerAffordRemoveModFromWeapon
-	// bool CanPlayerAffordRemoveModFromWeapon(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon, class AController* Controller); // [0xa8c03ec] Native|Event|Public|BlueprintEvent|Const 
+	// bool CanPlayerAffordRemoveModFromWeapon(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon, class AController* Controller); // [0xa8b27f4] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/WeaponModsCodeRuntime.FortWeaponModStationComponent.CanPlayerAffordModForWeapon
-	// bool CanPlayerAffordModForWeapon(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon, class AController* Controller); // [0xa8c02ec] Native|Event|Public|BlueprintEvent|Const 
+	// bool CanPlayerAffordModForWeapon(class UFortWeaponModItemDefinition* WeaponMod, class AFortWeapon* Weapon, class AController* Controller); // [0xa8b26f4] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/WeaponModsCodeRuntime.FortPickupInteractOverrideComponent_WeaponMods
@@ -140,7 +140,7 @@ public:
 
 	/// Functions
 	// Function /Script/WeaponModsCodeRuntime.FortPickupInteractOverrideComponent_WeaponMods.ServerApplyWeaponModFromPickup
-	// void ServerApplyWeaponModFromPickup(class AFortPickup* Pickup, class UFortWeaponModItemDefinition* WeaponModDef, class AFortWeapon* Weapon); // [0xa8c0b4c] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerApplyWeaponModFromPickup(class AFortPickup* Pickup, class UFortWeaponModItemDefinition* WeaponModDef, class AFortWeapon* Weapon); // [0xa8b2f54] Net|NetReliableNative|Event|Protected|NetServer 
 };
 
 /// Struct /Script/WeaponModsCodeRuntime.FortLocalModPurchaseEventParams

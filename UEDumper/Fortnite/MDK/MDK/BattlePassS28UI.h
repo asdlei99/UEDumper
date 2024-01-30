@@ -45,7 +45,7 @@ public:
 
 	/// Functions
 	// Function /Script/BattlePassS28UI.BattlePassLandingPageS28.OnBattlePassSubscriptionAllowed
-	// void OnBattlePassSubscriptionAllowed(bool bSubscriptionAllowed);                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnBattlePassSubscriptionAllowed(bool bSubscriptionAllowed);                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/BattlePassS28UI.BattlePassRewardPageS28
@@ -77,17 +77,17 @@ public:
 
 	/// Functions
 	// Function /Script/BattlePassS28UI.BattlePassRewardPageS28.OnPageChanged
-	// void OnPageChanged(int32_t PageNumber, int32_t RewardPageTotal);                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPageChanged(int32_t PageNumber, int32_t RewardPageTotal);                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassRewardPageS28.OnLoadingScreenSelectedChanged
-	// void OnLoadingScreenSelectedChanged(bool bIsSelected);                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnLoadingScreenSelectedChanged(bool bIsSelected);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassRewardPageS28.OnInputMethodChanged
-	// void OnInputMethodChanged(ECommonInputType InputType);                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInputMethodChanged(ECommonInputType InputType);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassRewardPageS28.OnInitForPageType
-	// void OnInitForPageType(ERewardPageType InRewardPageType);                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnInitForPageType(ERewardPageType InRewardPageType);                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassRewardPageS28.HandleRewardTracksBoundaryNavigation
-	// class UWidget* HandleRewardTracksBoundaryNavigation(EUINavigation InNavigation);                                         // [0xa8f34b4] Final|Native|Private 
+	// class UWidget* HandleRewardTracksBoundaryNavigation(EUINavigation InNavigation);                                         // [0xa8e58e4] Final|Native|Private 
 	// Function /Script/BattlePassS28UI.BattlePassRewardPageS28.GetRewardPageBackgroundData
-	// FVaultWorldBackgroundData GetRewardPageBackgroundData();                                                                 // [0xa8f31d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVaultWorldBackgroundData GetRewardPageBackgroundData();                                                                 // [0xa8e5604] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/BattlePassS28UI.BattlePassScreenS28
@@ -156,69 +156,69 @@ public:
 
 	/// Functions
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OverviewShowAnimationFinished
-	// void OverviewShowAnimationFinished();                                                                                    // [0x32e6c74] Final|Native|Public|BlueprintCallable 
+	// void OverviewShowAnimationFinished();                                                                                    // [0x32e4b44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnUpdateStatusBar
-	// void OnUpdateStatusBar(FText& StatusText, EBattlePassStatusBarTypeS28& BarType);                                         // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnUpdateStatusBar(FText& StatusText, EBattlePassStatusBarTypeS28& BarType);                                         // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnUpdateOwnedOrEquippedTag
-	// void OnUpdateOwnedOrEquippedTag(FText& StatusText);                                                                      // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnUpdateOwnedOrEquippedTag(FText& StatusText);                                                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnUpdateBattlePassRequiredBar
-	// void OnUpdateBattlePassRequiredBar(bool bPassRequiredVisible);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateBattlePassRequiredBar(bool bPassRequiredVisible);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnTransitionItemDetails
-	// void OnTransitionItemDetails(bool bTransitionForward);                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransitionItemDetails(bool bTransitionForward);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetWeeklyRewardsInfo
-	// void OnSetWeeklyRewardsInfo(FTimespan& DelayTimespan, int32_t AvailableRewards, int32_t OwnedRewards, int32_t TotalRewards, int32_t AvailablePages, int32_t CompletedPages, int32_t TotalPages); // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSetWeeklyRewardsInfo(FTimespan& DelayTimespan, int32_t AvailableRewards, int32_t OwnedRewards, int32_t TotalRewards, int32_t AvailablePages, int32_t CompletedPages, int32_t TotalPages); // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetWarningToolTip
-	// void OnSetWarningToolTip(ERewardWarningTooltipType28& WarningTooltipType, FText& Description);                           // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetWarningToolTip(ERewardWarningTooltipType28& WarningTooltipType, FText& Description);                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetResourcePrice
-	// void OnSetResourcePrice(int32_t Cost, class UFortPersistentResourceItemDefinition* PersistentResource);                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetResourcePrice(int32_t Cost, class UFortPersistentResourceItemDefinition* PersistentResource);                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetQuestRewardsInfo
-	// void OnSetQuestRewardsInfo(FTimespan& DelayTimespan, int32_t OwnedRewards, int32_t TotalRewards, int32_t CompletedPages, int32_t TotalPages); // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSetQuestRewardsInfo(FTimespan& DelayTimespan, int32_t OwnedRewards, int32_t TotalRewards, int32_t CompletedPages, int32_t TotalPages); // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetPrerequisiteInfo
-	// void OnSetPrerequisiteInfo(FText& Description, int32_t CurrentAmount, int32_t NeededAmount, EBattlePassRewardPrerequisiteType PrerequisiteType, bool bShowPrerequisiteLock); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetPrerequisiteInfo(FText& Description, int32_t CurrentAmount, int32_t NeededAmount, EBattlePassRewardPrerequisiteType PrerequisiteType, bool bShowPrerequisiteLock); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetItemPrice
-	// void OnSetItemPrice(int32_t Cost, EBattlePassCurrencyType CurrencyType);                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetItemPrice(int32_t Cost, EBattlePassCurrencyType CurrencyType);                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetEquipButtonEnable
-	// void OnSetEquipButtonEnable(bool bIsEnable);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetEquipButtonEnable(bool bIsEnable);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetCrewInfo
-	// void OnSetCrewInfo(bool bIsNextMonthRewards, FText& MonthText, FTimespan& NextMonthlyRewardTimespan, FText& CharacterDisplayName, FText& CharacterDescription); // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSetCrewInfo(bool bIsNextMonthRewards, FText& MonthText, FTimespan& NextMonthlyRewardTimespan, FText& CharacterDisplayName, FText& CharacterDescription); // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetCoverPageData
-	// void OnSetCoverPageData(FText& Title, FText& Description, bool bPageComplete);                                           // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetCoverPageData(FText& Title, FText& Description, bool bPageComplete);                                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetBonusRewardsInfo
-	// void OnSetBonusRewardsInfo(bool bIsUnlocked, int32_t OwnedRewards, int32_t TotalRewards, int32_t CompletedPages, int32_t TotalPages, int32_t ClaimedOutfits, int32_t TotalOutfits); // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetBonusRewardsInfo(bool bIsUnlocked, int32_t OwnedRewards, int32_t TotalRewards, int32_t CompletedPages, int32_t TotalPages, int32_t ClaimedOutfits, int32_t TotalOutfits); // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetBonusInfo
-	// void OnSetBonusInfo(ECosmeticCompatibleMode& BonusInfoType, bool Claimed, FText& Description, class UTexture2D* PreviewTexture); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetBonusInfo(ECosmeticCompatibleMode& BonusInfoType, bool Claimed, FText& Description, class UTexture2D* PreviewTexture); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnSetBaseRewardsInfo
-	// void OnSetBaseRewardsInfo(int32_t OwnedRewards, int32_t TotalRewards, int32_t CompletedPages, int32_t TotalPages);       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetBaseRewardsInfo(int32_t OwnedRewards, int32_t TotalRewards, int32_t CompletedPages, int32_t TotalPages);       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnItemVmCardUpdate
-	// void OnItemVmCardUpdate(FExpandedItemVM ItemVMs, class UAthenaSeasonItemEntryBase* EntrySelected);                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemVmCardUpdate(FExpandedItemVM ItemVMs, class UAthenaSeasonItemEntryBase* EntrySelected);                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnItemDelayed
-	// void OnItemDelayed(FTimespan Delay);                                                                                     // [0x2177018] Event|Protected|HasDefaults|BlueprintEvent 
+	// void OnItemDelayed(FTimespan Delay);                                                                                     // [0x211c0a0] Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnInsufficientResource
-	// void OnInsufficientResource(class UFortPersistentResourceItemDefinition* PersistentResource);                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInsufficientResource(class UFortPersistentResourceItemDefinition* PersistentResource);                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnInsufficientFunds
-	// void OnInsufficientFunds(EBattlePassCurrencyType CurrencyType);                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInsufficientFunds(EBattlePassCurrencyType CurrencyType);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnGameModeCompatibilityTagUpdate
-	// void OnGameModeCompatibilityTagUpdate(class UFortItemDefinition* ItemDefinition);                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnGameModeCompatibilityTagUpdate(class UFortItemDefinition* ItemDefinition);                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnBattlePassOwned
-	// void OnBattlePassOwned();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBattlePassOwned();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.OnBattlePassGiftingAllowed
-	// void OnBattlePassGiftingAllowed(bool bGiftingAllowed);                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBattlePassGiftingAllowed(bool bGiftingAllowed);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.IsSeasonalCustomizationItemOwned
-	// bool IsSeasonalCustomizationItemOwned();                                                                                 // [0xa8f356c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSeasonalCustomizationItemOwned();                                                                                 // [0xa8e599c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.HandleSwitcherVisibilityShown
-	// void HandleSwitcherVisibilityShown();                                                                                    // [0xa8f3544] Final|Native|Public|BlueprintCallable 
+	// void HandleSwitcherVisibilityShown();                                                                                    // [0xa8e5974] Final|Native|Public|BlueprintCallable 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.HandleItemVMCardClicked
-	// void HandleItemVMCardClicked(class UFortItemVM* ItemVM, class UAthenaSeasonItemEntryBase* EntrySelected);                // [0xa8f33f0] Final|Native|Public|BlueprintCallable 
+	// void HandleItemVMCardClicked(class UFortItemVM* ItemVM, class UAthenaSeasonItemEntryBase* EntrySelected);                // [0xa8e5820] Final|Native|Public|BlueprintCallable 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.HandleFullScreenMapToggled
-	// void HandleFullScreenMapToggled(bool bMapVisible);                                                                       // [0xa8f3370] Final|Native|Private 
+	// void HandleFullScreenMapToggled(bool bMapVisible);                                                                       // [0xa8e57a0] Final|Native|Private 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.HandleClaimRewardComplete
-	// void HandleClaimRewardComplete(bool bSuccess, TArray<FString>& OfferTemplateIdList);                                     // [0xa8f3284] Final|Native|Private|HasOutParms 
+	// void HandleClaimRewardComplete(bool bSuccess, TArray<FString>& OfferTemplateIdList);                                     // [0xa8e56b4] Final|Native|Private|HasOutParms 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.GoBackOneScreen
-	// void GoBackOneScreen();                                                                                                  // [0xa8f3270] Final|Native|Public|BlueprintCallable 
+	// void GoBackOneScreen();                                                                                                  // [0xa8e56a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.GetQuestPageDelay
-	// FTimespan GetQuestPageDelay();                                                                                           // [0xa8f31a8] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTimespan GetQuestPageDelay();                                                                                           // [0xa8e55d8] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/BattlePassS28UI.BattlePassScreenS28.GetEquipButtonEnable
-	// bool GetEquipButtonEnable();                                                                                             // [0xa8f318c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetEquipButtonEnable();                                                                                             // [0xa8e55bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/BattlePassS28UI.FortBattlePassCustomSkinPageS28
@@ -249,9 +249,9 @@ public:
 
 	/// Functions
 	// Function /Script/BattlePassS28UI.FortBattlePassResourcesWidgetS28.OnStylePointsRewardsSet
-	// void OnStylePointsRewardsSet(int32_t Rewards);                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStylePointsRewardsSet(int32_t Rewards);                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.FortBattlePassResourcesWidgetS28.OnBattleStarRewardsSet
-	// void OnBattleStarRewardsSet(int32_t Rewards);                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBattleStarRewardsSet(int32_t Rewards);                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/BattlePassS28UI.FortBattlePassTutorialTooltipS28
@@ -267,11 +267,11 @@ public:
 
 	/// Functions
 	// Function /Script/BattlePassS28UI.FortBattlePassTutorialTooltipS28.ShowTooltip
-	// void ShowTooltip();                                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ShowTooltip();                                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/BattlePassS28UI.FortBattlePassTutorialTooltipS28.SetText
-	// void SetText(FText Text);                                                                                                // [0xa8d19a0] Final|Native|Public|BlueprintCallable 
+	// void SetText(FText Text);                                                                                                // [0xa8c3da8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/BattlePassS28UI.FortBattlePassTutorialTooltipS28.HideTooltip
-	// void HideTooltip();                                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HideTooltip();                                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Enum /Script/BattlePassS28UI.EBattlePassStatusBarTypeS28

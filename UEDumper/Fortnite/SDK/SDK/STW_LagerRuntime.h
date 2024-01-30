@@ -25,6 +25,6 @@ public:
 
 	/// Functions
 	// Function /Script/STW_LagerRuntime.FortQuestLivingWorldVolume.HandlePIEQuestsUpdated
-	// void HandlePIEQuestsUpdated();                                                                                        // [0x32e6c74] Final|Native|Protected 
+	// void HandlePIEQuestsUpdated();                                                                                        // [0x32e4b44] Final|Native|Protected 
 };
 

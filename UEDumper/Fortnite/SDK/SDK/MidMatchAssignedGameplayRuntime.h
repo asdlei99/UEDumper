@@ -50,11 +50,11 @@ public:
 
 	/// Functions
 	// Function /Script/MidMatchAssignedGameplayRuntime.FortGameStateComponent_AssignedObjective.StartAssignedObjectives
-	// void StartAssignedObjectives();                                                                                       // [0x32e6c74] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void StartAssignedObjectives();                                                                                       // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/MidMatchAssignedGameplayRuntime.FortGameStateComponent_AssignedObjective.OnAssignedObjectiveReady
-	// void OnAssignedObjectiveReady(FFortAssignedObjectiveData& ObjectiveData);                                             // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnAssignedObjectiveReady(FFortAssignedObjectiveData& ObjectiveData);                                             // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/MidMatchAssignedGameplayRuntime.FortGameStateComponent_AssignedObjective.CalculateSquadAvgLocation
-	// FVector CalculateSquadAvgLocation(char SquadId, class UObject* WorldContextObject);                                   // [0xaa1ae44] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector CalculateSquadAvgLocation(char SquadId, class UObject* WorldContextObject);                                   // [0xaa0828c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/MidMatchAssignedGameplayRuntime.FortQueryContext_SpawnedObjectiveLocations

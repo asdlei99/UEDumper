@@ -35,9 +35,9 @@ public:
 
 	/// Functions
 	// Function /Script/WindRuntime.WindCheatManager.ReleaseBalloonOnSelf
-	// void ReleaseBalloonOnSelf(int32_t NumBalloons);                                                                       // [0x664cbb0] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
+	// void ReleaseBalloonOnSelf(int32_t NumBalloons);                                                                       // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
 	// Function /Script/WindRuntime.WindCheatManager.InflateBalloonOnSelf
-	// void InflateBalloonOnSelf(int32_t NumBalloons);                                                                       // [0x664cbb0] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
+	// void InflateBalloonOnSelf(int32_t NumBalloons);                                                                       // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
 };
 
 /// Class /Script/WindRuntime.WindField
@@ -56,19 +56,19 @@ public:
 
 	/// Functions
 	// Function /Script/WindRuntime.WindField.SetActive
-	// void SetActive(bool bInIsActive);                                                                                     // [0xb4a440c] Final|Native|Public|BlueprintCallable 
+	// void SetActive(bool bInIsActive);                                                                                     // [0xb47a3fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.RemoveIgnoredActor
-	// void RemoveIgnoredActor(class AActor* Actor);                                                                         // [0xb4a4308] Final|Native|Public|BlueprintCallable 
+	// void RemoveIgnoredActor(class AActor* Actor);                                                                         // [0xb47a2f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.RemoveCollider
-	// void RemoveCollider(class UShapeComponent* ShapeComponent);                                                           // [0xb4a41c0] Final|Native|Public|BlueprintCallable 
+	// void RemoveCollider(class UShapeComponent* ShapeComponent);                                                           // [0xb47a1b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.OnEndOverlap
-	// void OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xb4a406c] Native|Protected     
+	// void OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xb47a05c] Native|Protected     
 	// Function /Script/WindRuntime.WindField.OnBeginOverlap
-	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb4a3e34] Native|Protected|HasOutParms 
+	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb479e24] Native|Protected|HasOutParms 
 	// Function /Script/WindRuntime.WindField.AddIgnoredActor
-	// void AddIgnoredActor(class AActor* Actor);                                                                            // [0xb4a3818] Final|Native|Public|BlueprintCallable 
+	// void AddIgnoredActor(class AActor* Actor);                                                                            // [0xb479808] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.AddCollider
-	// void AddCollider(class UShapeComponent* ShapeComponent);                                                              // [0xb4a3798] Final|Native|Public|BlueprintCallable 
+	// void AddCollider(class UShapeComponent* ShapeComponent);                                                              // [0xb479788] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/WindRuntime.LinearWindField
@@ -263,19 +263,19 @@ public:
 
 	/// Functions
 	// Function /Script/WindRuntime.WindSplineComponent.OnRep_TargetData
-	// void OnRep_TargetData();                                                                                              // [0xb4a41ac] Final|Native|Protected 
+	// void OnRep_TargetData();                                                                                              // [0xb47a19c] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.OnRep_Blockages
-	// void OnRep_Blockages();                                                                                               // [0xb4a41ac] Final|Native|Protected 
+	// void OnRep_Blockages();                                                                                               // [0xb47a19c] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.GetWindDataAtLocation
-	// void GetWindDataAtLocation(FVector& InTargetLocation, FVector& OutDirection, float& OutAttenuation);                  // [0xb4a3c8c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void GetWindDataAtLocation(FVector& InTargetLocation, FVector& OutDirection, float& OutAttenuation);                  // [0xb479c7c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.GetTargetingRadius
-	// float GetTargetingRadius();                                                                                           // [0xb4a3c58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTargetingRadius();                                                                                           // [0xb479c48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.GetClosestActiveLocations
-	// void GetClosestActiveLocations(FVector& InTargetLocation, bool& bIsClosestPointActive, FVector& ClosestPointOnSpline, TArray<FVector>& ClosestActiveLocations); // [0xb4a3a4c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void GetClosestActiveLocations(FVector& InTargetLocation, bool& bIsClosestPointActive, FVector& ClosestPointOnSpline, TArray<FVector>& ClosestActiveLocations); // [0xb479a3c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.Enable
-	// void Enable();                                                                                                        // [0xb4a39f8] Final|Native|Protected 
+	// void Enable();                                                                                                        // [0xb4799e8] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.Disable
-	// void Disable();                                                                                                       // [0xb4a39e4] Final|Native|Protected 
+	// void Disable();                                                                                                       // [0xb4799d4] Final|Native|Protected 
 };
 
 /// Struct /Script/WindRuntime.RootMotionSource_ConstantWindForce

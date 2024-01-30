@@ -21,10 +21,10 @@ public:
 
 	/// Functions
 	// Function /Script/UACCommon.UACNetworkComponent.SendPacketToServer
-	// void SendPacketToServer(char EnhPacketType, TArray<char> Data);                                                          // [0x7c61d20] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void SendPacketToServer(char EnhPacketType, TArray<char> Data);                                                          // [0x7c9b650] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/UACCommon.UACNetworkComponent.SendPacketToClient
-	// void SendPacketToClient(char EnhPacketType, TArray<char> Data);                                                          // [0x7c61c48] Net|NetReliableNative|Event|Protected|NetClient 
+	// void SendPacketToClient(char EnhPacketType, TArray<char> Data);                                                          // [0x7c9b578] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/UACCommon.UACNetworkComponent.SendClientHello
-	// void SendClientHello(uint32_t SessionKey);                                                                               // [0x7c61b14] Net|NetReliableNative|Event|Public|NetClient 
+	// void SendClientHello(uint32_t SessionKey);                                                                               // [0x7c9b444] Net|NetReliableNative|Event|Public|NetClient 
 };
 

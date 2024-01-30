@@ -24,11 +24,11 @@ public:
 
 	/// Functions
 	// Function /Script/HeistBasesGameplayRuntime.FortGameStateComponent_HeistDisplayCaseItemManager.IsDataReady
-	// bool IsDataReady();                                                                                                   // [0xb20779c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDataReady();                                                                                                   // [0xb1e7f50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HeistBasesGameplayRuntime.FortGameStateComponent_HeistDisplayCaseItemManager.HandlePlaylistDataReady
-	// void HandlePlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb207680] Final|Native|Private|HasOutParms 
+	// void HandlePlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb1e7e34] Final|Native|Private|HasOutParms 
 	// Function /Script/HeistBasesGameplayRuntime.FortGameStateComponent_HeistDisplayCaseItemManager.GetDisplayCaseItem
-	// class UFortWorldItemDefinition* GetDisplayCaseItem(FGameplayTag DisplayCaseGroupTag);                                 // [0xb207544] Final|Native|Public|BlueprintCallable 
+	// class UFortWorldItemDefinition* GetDisplayCaseItem(FGameplayTag DisplayCaseGroupTag);                                 // [0xb1e7cf8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/HeistBasesGameplayRuntime.FortHeistDisplayCase
@@ -47,9 +47,9 @@ public:
 
 	/// Functions
 	// Function /Script/HeistBasesGameplayRuntime.FortHeistDisplayCase.OnServerNotifyStartDisplayCaseLongUse
-	// void OnServerNotifyStartDisplayCaseLongUse(class AFortPlayerPawn* InteractingPawn);                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnServerNotifyStartDisplayCaseLongUse(class AFortPlayerPawn* InteractingPawn);                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/HeistBasesGameplayRuntime.FortHeistDisplayCase.OnServerNotifyEndDisplayCaseLongUse
-	// void OnServerNotifyEndDisplayCaseLongUse(class AFortPlayerPawn* InteractingPawn, bool bUseCompleted);                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnServerNotifyEndDisplayCaseLongUse(class AFortPlayerPawn* InteractingPawn, bool bUseCompleted);                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/HeistBasesGameplayRuntime.FortHeistDisplayCaseItemDataTableRow

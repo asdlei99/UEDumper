@@ -11,13 +11,6 @@
 /// dependency: FortniteUI
 /// dependency: ValetUI
 
-/// Class /RidingContent/HUD/BBE_Crouch.BBE_Crouch_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_Crouch_C : public UFortMobileActionButtonBehaviorExtension
-{ 
-public:
-};
-
 /// Class /RidingContent/HUD/BBE_Sprint.BBE_Sprint_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UBBE_Sprint_C : public UFortMobileActionButtonBehaviorExtension
@@ -32,6 +25,20 @@ class UBBE_RiderEmote_C : public UFortMobileActionButtonBehaviorExtension
 public:
 };
 
+/// Class /RidingContent/HUD/BBE_Crouch.BBE_Crouch_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_Crouch_C : public UFortMobileActionButtonBehaviorExtension
+{ 
+public:
+};
+
+/// Class /RidingContent/HUD/BBE_ThrowConsumableRiding.BBE_ThrowConsumableRiding_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_ThrowConsumableRiding_C : public UFortMobileActionButtonBehaviorExtension
+{ 
+public:
+};
+
 /// Class /RidingContent/HUD/BBE_RiderExit.BBE_RiderExit_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UBBE_RiderExit_C : public UFortMobileActionButtonBehaviorExtension
@@ -42,13 +49,6 @@ public:
 /// Class /RidingContent/HUD/BBE_RiderUse.BBE_RiderUse_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UBBE_RiderUse_C : public UFortMobileActionButtonBehaviorExtension
-{ 
-public:
-};
-
-/// Class /RidingContent/HUD/BBE_ThrowConsumableRiding.BBE_ThrowConsumableRiding_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_ThrowConsumableRiding_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };
@@ -95,16 +95,16 @@ class UBBE_SportbikeBoost_C : public UFortMobileActionButtonBehaviorExtension
 public:
 };
 
-/// Class /Nevada/HUD/BBE_NevadaSwitchSeat.BBE_NevadaSwitchSeat_C
+/// Class /Nevada/HUD/BBE_NevadaHonk.BBE_NevadaHonk_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_NevadaSwitchSeat_C : public UFortMobileActionButtonBehaviorExtension
+class UBBE_NevadaHonk_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };
 
-/// Class /Nevada/HUD/BBE_NevadaHonk.BBE_NevadaHonk_C
+/// Class /Nevada/HUD/BBE_NevadaSwitchSeat.BBE_NevadaSwitchSeat_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_NevadaHonk_C : public UFortMobileActionButtonBehaviorExtension
+class UBBE_NevadaSwitchSeat_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };
@@ -123,16 +123,16 @@ class UBBE_VehicleExit_C : public UFortMobileActionButtonBehaviorExtension
 public:
 };
 
-/// Class /Nevada/HUD/BBE_VehicleBoost.BBE_VehicleBoost_C
+/// Class /Nevada/HUD/BBE_NevadaEnergyCanon.BBE_NevadaEnergyCanon_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_VehicleBoost_C : public UFortMobileActionButtonBehaviorExtension
+class UBBE_NevadaEnergyCanon_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };
 
-/// Class /Nevada/HUD/BBE_NevadaEnergyCanon.BBE_NevadaEnergyCanon_C
+/// Class /Nevada/HUD/BBE_VehicleBoost.BBE_VehicleBoost_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_NevadaEnergyCanon_C : public UFortMobileActionButtonBehaviorExtension
+class UBBE_VehicleBoost_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };
@@ -147,6 +147,13 @@ public:
 /// Class /Nevada/HUD/BB_NevadaMoveUp.BB_NevadaMoveUp_C
 /// Size: 0x0000 (0x000138 - 0x000138)
 class UBB_NevadaMoveUp_C : public UFortMobileActionButtonBehavior
+{ 
+public:
+};
+
+/// Class /Tank/HUD/BBE_TankBoost.BBE_TankBoost_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_TankBoost_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };
@@ -172,9 +179,9 @@ class UBBE_TankTargetADS_C : public UFortMobileActionButtonBehaviorExtension
 public:
 };
 
-/// Class /Tank/HUD/BBE_TankBoost.BBE_TankBoost_C
+/// Class /Tank/HUD/BBE_TankBuildMode.BBE_TankBuildMode_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_TankBoost_C : public UFortMobileActionButtonBehaviorExtension
+class UBBE_TankBuildMode_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };
@@ -182,13 +189,6 @@ public:
 /// Class /Tank/HUD/BBE_TankSwitchSeat.BBE_TankSwitchSeat_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UBBE_TankSwitchSeat_C : public UFortMobileActionButtonBehaviorExtension
-{ 
-public:
-};
-
-/// Class /Tank/HUD/BBE_TankBuildMode.BBE_TankBuildMode_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_TankBuildMode_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };

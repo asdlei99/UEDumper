@@ -35,30 +35,30 @@ public:
 
 	/// Functions
 	// Function /Script/TankUI.TankVehicleReticle.SetupVehicleFromBP
-	// void SetupVehicleFromBP(class AActor* NewVehicle);                                                                    // [0xb267c18] Final|Native|Protected|BlueprintCallable 
+	// void SetupVehicleFromBP(class AActor* NewVehicle);                                                                    // [0xb2483cc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TankUI.TankVehicleReticle.OnTreadEnabledChanged
-	// void OnTreadEnabledChanged(bool bEnabled, TEnumAsByte<ETreadSide> Side);                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTreadEnabledChanged(bool bEnabled, TEnumAsByte<ETreadSide> Side);                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnTankTurretAimYawValueChanged
-	// void OnTankTurretAimYawValueChanged(float Value);                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTankTurretAimYawValueChanged(float Value);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnTankTurretAimPitchValueChanged
-	// void OnTankTurretAimPitchValueChanged(float pitch, float PitchPercent);                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTankTurretAimPitchValueChanged(float pitch, float PitchPercent);                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnTankTargetingReleased
-	// void OnTankTargetingReleased();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTankTargetingReleased();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnTankTargetingPressed
-	// void OnTankTargetingPressed();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTankTargetingPressed();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnTankRotationValueChanged
-	// void OnTankRotationValueChanged(float TankValue, float TurretValue);                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTankRotationValueChanged(float TankValue, float TurretValue);                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnTankHatchHealthChanged
-	// void OnTankHatchHealthChanged(float HatchHealth, float HatchHealthMax, bool bNewlyDisabled, bool bNewlyEnabled);      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTankHatchHealthChanged(float HatchHealth, float HatchHealthMax, bool bNewlyDisabled, bool bNewlyEnabled);      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnTankEngineHealthChanged
-	// void OnTankEngineHealthChanged(float EngineHealth, float EngineHealthMax, bool bNewlyDisabled, bool bNewlyEnabled);   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTankEngineHealthChanged(float EngineHealth, float EngineHealthMax, bool bNewlyDisabled, bool bNewlyEnabled);   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnTankDistanceUpdate
-	// void OnTankDistanceUpdate(float Distance, float DistancePercent);                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTankDistanceUpdate(float Distance, float DistancePercent);                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.OnCannonFired
-	// void OnCannonFired(float RateTime);                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnCannonFired(float RateTime);                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankUI.TankVehicleReticle.HandleOnEquipMountedWeapon
-	// void HandleOnEquipMountedWeapon(class AFortWeaponRanged* EquippedMountedWeapon);                                      // [0xb267b98] Final|Native|Private 
+	// void HandleOnEquipMountedWeapon(class AFortWeaponRanged* EquippedMountedWeapon);                                      // [0xb24834c] Final|Native|Private 
 	// Function /Script/TankUI.TankVehicleReticle.HandleOnDamageablePartHealthChanged
-	// void HandleOnDamageablePartHealthChanged(FVehicleDamageablePartConfig& PartConfig, FVehicleDamageablePart& Part, bool bNewlyDisabled, bool bNewlyEnabled); // [0xb2678b0] Final|Native|Private|HasOutParms 
+	// void HandleOnDamageablePartHealthChanged(FVehicleDamageablePartConfig& PartConfig, FVehicleDamageablePart& Part, bool bNewlyDisabled, bool bNewlyEnabled); // [0xb248064] Final|Native|Private|HasOutParms 
 };
 

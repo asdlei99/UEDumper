@@ -40,11 +40,11 @@ public:
 
 	/// Functions
 	// Function /Irwin/GameplayCues/GCNL_Irwin_Slide.GCNL_Irwin_Slide_C.OnLoopingStartGeneric
-	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Irwin/GameplayCues/GCNL_Irwin_Slide.GCNL_Irwin_Slide_C.OnRemovalGeneric
-	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Irwin/GameplayCues/GCNL_Irwin_Slide.GCNL_Irwin_Slide_C.ExecuteUbergraph_GCNL_Irwin_Slide
-	// void ExecuteUbergraph_GCNL_Irwin_Slide(int32_t EntryPoint);                                                              // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCNL_Irwin_Slide(int32_t EntryPoint);                                                              // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Irwin/GameplayCues/GCN_Irwin_PlayerInteraction_Tamed.GCN_Irwin_PlayerInteraction_Tamed_C
@@ -60,7 +60,7 @@ public:
 
 	/// Functions
 	// Function /Irwin/GameplayCues/GCN_Irwin_PlayerInteraction_Tamed.GCN_Irwin_PlayerInteraction_Tamed_C.OnBurstNiagara
-	// void OnBurstNiagara(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UNiagaraComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// void OnBurstNiagara(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UNiagaraComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Irwin/GameplayCues/GCN_Irwin_PlayerInteraction_Untamed.GCN_Irwin_PlayerInteraction_Untamed_C
@@ -76,7 +76,7 @@ public:
 
 	/// Functions
 	// Function /Irwin/GameplayCues/GCN_Irwin_PlayerInteraction_Untamed.GCN_Irwin_PlayerInteraction_Untamed_C.OnBurstNiagara
-	// void OnBurstNiagara(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UNiagaraComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// void OnBurstNiagara(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UNiagaraComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /RidingContent/GameplayCues/GCN_Riding_JumpOnCreature.GCN_Riding_JumpOnCreature_C
@@ -107,13 +107,13 @@ public:
 
 	/// Functions
 	// Function /RidingContent/GameplayCues/GCN_BurtCharging_Player_Latent.GCN_BurtCharging_Player_Latent_C.OnExecute
-	// bool OnExecute(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                              // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// bool OnExecute(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                              // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCN_BurtCharging_Player_Latent.GCN_BurtCharging_Player_Latent_C.ExecuteBoostLogic
-	// void ExecuteBoostLogic();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void ExecuteBoostLogic();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCN_BurtCharging_Player_Latent.GCN_BurtCharging_Player_Latent_C.BoostEndEvent
-	// void BoostEndEvent();                                                                                                    // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void BoostEndEvent();                                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCN_BurtCharging_Player_Latent.GCN_BurtCharging_Player_Latent_C.ExecuteUbergraph_GCN_BurtCharging_Player_Latent
-	// void ExecuteUbergraph_GCN_BurtCharging_Player_Latent(int32_t EntryPoint);                                                // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCN_BurtCharging_Player_Latent(int32_t EntryPoint);                                                // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/GameplayCues/GCNL_RidingSprint_SpeedLines.GCNL_RidingSprint_SpeedLines_C
@@ -131,11 +131,11 @@ public:
 
 	/// Functions
 	// Function /RidingContent/GameplayCues/GCNL_RidingSprint_SpeedLines.GCNL_RidingSprint_SpeedLines_C.OnApplicationGeneric
-	// void OnApplicationGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnApplicationGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_RidingSprint_SpeedLines.GCNL_RidingSprint_SpeedLines_C.OnRemovalGeneric
-	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_RidingSprint_SpeedLines.GCNL_RidingSprint_SpeedLines_C.ExecuteUbergraph_GCNL_RidingSprint_SpeedLines
-	// void ExecuteUbergraph_GCNL_RidingSprint_SpeedLines(int32_t EntryPoint);                                                  // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCNL_RidingSprint_SpeedLines(int32_t EntryPoint);                                                  // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/GameplayCues/GCN_Riding_BoarSprintImpact_Pawn.GCN_Riding_BoarSprintImpact_Pawn_C
@@ -188,29 +188,29 @@ public:
 
 	/// Functions
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.CalculateVelocityParam
-	// void CalculateVelocityParam();                                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void CalculateVelocityParam();                                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.WhileActive
-	// bool WhileActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// bool WhileActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.OnLoopingStartGeneric
-	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.OnRemovalGeneric
-	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.PlayerRidingGCNLStarted
-	// void PlayerRidingGCNLStarted();                                                                                          // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void PlayerRidingGCNLStarted();                                                                                          // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.PlayerRidingDCNLEnded
-	// void PlayerRidingDCNLEnded();                                                                                            // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void PlayerRidingDCNLEnded();                                                                                            // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.OnJumpApex
-	// void OnJumpApex();                                                                                                       // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnJumpApex();                                                                                                       // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.SetUpRidableAudioEvents
-	// void SetUpRidableAudioEvents();                                                                                          // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void SetUpRidableAudioEvents();                                                                                          // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.StartLoopingAudio
-	// void StartLoopingAudio();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void StartLoopingAudio();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_PlayerIsRiding.GCNL_PlayerIsRiding_C.ExecuteUbergraph_GCNL_PlayerIsRiding
-	// void ExecuteUbergraph_GCNL_PlayerIsRiding(int32_t EntryPoint);                                                           // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCNL_PlayerIsRiding(int32_t EntryPoint);                                                           // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/GameplayCues/GCN_Riding_MountLanded_Default.GCN_Riding_MountLanded_Default_C
@@ -259,11 +259,11 @@ public:
 
 	/// Functions
 	// Function /RidingContent/GameplayCues/GCNL_Riding_Sprint_CameraShake.GCNL_Riding_Sprint_CameraShake_C.OnRemove
-	// bool OnRemove(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                               // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// bool OnRemove(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                               // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_Riding_Sprint_CameraShake.GCNL_Riding_Sprint_CameraShake_C.OnLoopingStartGeneric
-	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /RidingContent/GameplayCues/GCNL_Riding_Sprint_CameraShake.GCNL_Riding_Sprint_CameraShake_C.ExecuteUbergraph_GCNL_Riding_Sprint_CameraShake
-	// void ExecuteUbergraph_GCNL_Riding_Sprint_CameraShake(int32_t EntryPoint);                                                // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCNL_Riding_Sprint_CameraShake(int32_t EntryPoint);                                                // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Energy/GameplayCues/GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount.GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount_C
@@ -281,13 +281,13 @@ public:
 
 	/// Functions
 	// Function /Energy/GameplayCues/GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount.GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount_C.Added_7482F31A49360978B87F339D76FC2BB7
-	// void Added_7482F31A49360978B87F339D76FC2BB7();                                                                           // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Added_7482F31A49360978B87F339D76FC2BB7();                                                                           // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Energy/GameplayCues/GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount.GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount_C.Removed_AD34CCD44592FD2F05DB47BDF9413ACC
-	// void Removed_AD34CCD44592FD2F05DB47BDF9413ACC();                                                                         // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Removed_AD34CCD44592FD2F05DB47BDF9413ACC();                                                                         // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Energy/GameplayCues/GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount.GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount_C.OnApplicationGeneric
-	// void OnApplicationGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnApplicationGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Energy/GameplayCues/GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount.GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount_C.ExecuteUbergraph_GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount
-	// void ExecuteUbergraph_GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount(int32_t EntryPoint);                         // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCNL_Athena_Energy_ConstantRegen_Active_WildlifeMount(int32_t EntryPoint);                         // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /RidingContent/GameplayCues/GCN_Riding_BoarSprintImpact_BuildDestroyed.GCN_Riding_BoarSprintImpact_BuildDestroyed_C
@@ -312,33 +312,7 @@ public:
 
 	/// Functions
 	// Function /Irwin/GameplayCues/GCN_Irwin_SprintImpact.GCN_Irwin_SprintImpact_C.OnBurstGeneric
-	// void OnBurstGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
-};
-
-/// Class /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C
-/// Size: 0x0028 (0x0009B0 - 0x0009D8)
-class AGCNL_Ascender_Descent_C : public AFortGameplayCueNotify_Loop
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2520;
-
-public:
-	SMember(FPointerToUberGraphFrame)                  UberGraphFrame                                              OFFSET(getStruct<T>, {0x9B0, 8, 0, 0})
-	SMember(FTimerHandle)                              SoundVisualizerHandle                                       OFFSET(getStruct<T>, {0x9B8, 8, 0, 0})
-	CMember(class AActor*)                             My_Target                                                   OFFSET(get<T>, {0x9C0, 8, 0, 0})
-	CMember(class UAudioComponent*)                    AudioComponent                                              OFFSET(get<T>, {0x9C8, 8, 0, 0})
-	CMember(class UTexture*)                           Override_Icon                                               OFFSET(get<T>, {0x9D0, 8, 0, 0})
-
-
-	/// Functions
-	// Function /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C.OnLoopingStartGeneric
-	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
-	// Function /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C.VisualizeAudio
-	// void VisualizeAudio();                                                                                                   // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C.OnRemovalGeneric
-	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
-	// Function /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C.ExecuteUbergraph_GCNL_Ascender_Descent
-	// void ExecuteUbergraph_GCNL_Ascender_Descent(int32_t EntryPoint);                                                         // [0x2177018] Final|HasDefaults    
+	// void OnBurstGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Ascender/GameplayCues/GCNL_Ascender_Ascent.GCNL_Ascender_Ascent_C
@@ -361,15 +335,41 @@ public:
 
 	/// Functions
 	// Function /Ascender/GameplayCues/GCNL_Ascender_Ascent.GCNL_Ascender_Ascent_C.OnApplicationGeneric
-	// void OnApplicationGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnApplicationGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Ascender/GameplayCues/GCNL_Ascender_Ascent.GCNL_Ascender_Ascent_C.OnRemovalGeneric
-	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Ascender/GameplayCues/GCNL_Ascender_Ascent.GCNL_Ascender_Ascent_C.OnLoopingStartGeneric
-	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Ascender/GameplayCues/GCNL_Ascender_Ascent.GCNL_Ascender_Ascent_C.CameraShakeTimer
-	// void CameraShakeTimer();                                                                                                 // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void CameraShakeTimer();                                                                                                 // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Ascender/GameplayCues/GCNL_Ascender_Ascent.GCNL_Ascender_Ascent_C.ExecuteUbergraph_GCNL_Ascender_Ascent
-	// void ExecuteUbergraph_GCNL_Ascender_Ascent(int32_t EntryPoint);                                                          // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCNL_Ascender_Ascent(int32_t EntryPoint);                                                          // [0x211c0a0] Final|HasDefaults    
+};
+
+/// Class /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C
+/// Size: 0x0028 (0x0009B0 - 0x0009D8)
+class AGCNL_Ascender_Descent_C : public AFortGameplayCueNotify_Loop
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 2520;
+
+public:
+	SMember(FPointerToUberGraphFrame)                  UberGraphFrame                                              OFFSET(getStruct<T>, {0x9B0, 8, 0, 0})
+	SMember(FTimerHandle)                              SoundVisualizerHandle                                       OFFSET(getStruct<T>, {0x9B8, 8, 0, 0})
+	CMember(class AActor*)                             My_Target                                                   OFFSET(get<T>, {0x9C0, 8, 0, 0})
+	CMember(class UAudioComponent*)                    AudioComponent                                              OFFSET(get<T>, {0x9C8, 8, 0, 0})
+	CMember(class UTexture*)                           Override_Icon                                               OFFSET(get<T>, {0x9D0, 8, 0, 0})
+
+
+	/// Functions
+	// Function /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C.OnLoopingStartGeneric
+	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
+	// Function /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C.VisualizeAudio
+	// void VisualizeAudio();                                                                                                   // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C.OnRemovalGeneric
+	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
+	// Function /Ascender/GameplayCues/GCNL_Ascender_Descent.GCNL_Ascender_Descent_C.ExecuteUbergraph_GCNL_Ascender_Descent
+	// void ExecuteUbergraph_GCNL_Ascender_Descent(int32_t EntryPoint);                                                         // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Ascender/GameplayCues/GCN_Ascender_SpeedLines.GCN_Ascender_SpeedLines_C
@@ -385,7 +385,7 @@ public:
 
 	/// Functions
 	// Function /Ascender/GameplayCues/GCN_Ascender_SpeedLines.GCN_Ascender_SpeedLines_C.OnBurst
-	// void OnBurst(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UParticleSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// void OnBurst(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UParticleSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /Ascender/GameplayCues/GC_Ascender_LinkToDestroyed.GC_Ascender_LinkToDestroyed_C
@@ -400,7 +400,7 @@ public:
 
 	/// Functions
 	// Function /Ascender/GameplayCues/GC_Ascender_LinkToDestroyed.GC_Ascender_LinkToDestroyed_C.OnBurstGeneric
-	// void OnBurstGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
+	// void OnBurstGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Class /VehicleCosmetics/GameplayCues/GCNL_VehicleCosmetics_CosmeticSwap.GCNL_VehicleCosmetics_CosmeticSwap_C
@@ -426,19 +426,19 @@ public:
 
 	/// Functions
 	// Function /VehicleCosmetics/GameplayCues/GCNL_VehicleCosmetics_CosmeticSwap.GCNL_VehicleCosmetics_CosmeticSwap_C.Material Switch
-	// void Material Switch(bool Restore Original, TScriptInterface<Class> Vehicle);                                            // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void Material Switch(bool Restore Original, TScriptInterface<Class> Vehicle);                                            // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /VehicleCosmetics/GameplayCues/GCNL_VehicleCosmetics_CosmeticSwap.GCNL_VehicleCosmetics_CosmeticSwap_C.Sweep Car to Normal__FinishedFunc
-	// void Sweep Car to Normal__FinishedFunc();                                                                                // [0x2177018] BlueprintEvent       
+	// void Sweep Car to Normal__FinishedFunc();                                                                                // [0x211c0a0] BlueprintEvent       
 	// Function /VehicleCosmetics/GameplayCues/GCNL_VehicleCosmetics_CosmeticSwap.GCNL_VehicleCosmetics_CosmeticSwap_C.Sweep Car to Normal__UpdateFunc
-	// void Sweep Car to Normal__UpdateFunc();                                                                                  // [0x2177018] BlueprintEvent       
+	// void Sweep Car to Normal__UpdateFunc();                                                                                  // [0x211c0a0] BlueprintEvent       
 	// Function /VehicleCosmetics/GameplayCues/GCNL_VehicleCosmetics_CosmeticSwap.GCNL_VehicleCosmetics_CosmeticSwap_C.OnRemovalGeneric
-	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /VehicleCosmetics/GameplayCues/GCNL_VehicleCosmetics_CosmeticSwap.GCNL_VehicleCosmetics_CosmeticSwap_C.OnLoopingStartGeneric
-	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /VehicleCosmetics/GameplayCues/GCNL_VehicleCosmetics_CosmeticSwap.GCNL_VehicleCosmetics_CosmeticSwap_C.KeepCheckingForWheels
-	// void KeepCheckingForWheels();                                                                                            // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void KeepCheckingForWheels();                                                                                            // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /VehicleCosmetics/GameplayCues/GCNL_VehicleCosmetics_CosmeticSwap.GCNL_VehicleCosmetics_CosmeticSwap_C.ExecuteUbergraph_GCNL_VehicleCosmetics_CosmeticSwap
-	// void ExecuteUbergraph_GCNL_VehicleCosmetics_CosmeticSwap(int32_t EntryPoint);                                            // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCNL_VehicleCosmetics_CosmeticSwap(int32_t EntryPoint);                                            // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /VictoryCrownsGameplay/GameplayCues/GCNL_Athena_VictoryCrown_CrownWearer_Looping.GCNL_Athena_VictoryCrown_CrownWearer_Looping_C
@@ -458,12 +458,12 @@ public:
 
 	/// Functions
 	// Function /VictoryCrownsGameplay/GameplayCues/GCNL_Athena_VictoryCrown_CrownWearer_Looping.GCNL_Athena_VictoryCrown_CrownWearer_Looping_C.AVIndicatorLoop
-	// void AVIndicatorLoop();                                                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void AVIndicatorLoop();                                                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/GameplayCues/GCNL_Athena_VictoryCrown_CrownWearer_Looping.GCNL_Athena_VictoryCrown_CrownWearer_Looping_C.OnRemovalGeneric
-	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnRemovalGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents, class ULegacyCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/GameplayCues/GCNL_Athena_VictoryCrown_CrownWearer_Looping.GCNL_Athena_VictoryCrown_CrownWearer_Looping_C.OnLoopingStartGeneric
-	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnLoopingStartGeneric(class AActor* MyTarget, FGameplayCueParameters& Parameters, TArray<UFXSystemComponent*>& ParticleComponents, TArray<UAudioComponent*>& AudioComponents); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /VictoryCrownsGameplay/GameplayCues/GCNL_Athena_VictoryCrown_CrownWearer_Looping.GCNL_Athena_VictoryCrown_CrownWearer_Looping_C.ExecuteUbergraph_GCNL_Athena_VictoryCrown_CrownWearer_Looping
-	// void ExecuteUbergraph_GCNL_Athena_VictoryCrown_CrownWearer_Looping(int32_t EntryPoint);                                  // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_GCNL_Athena_VictoryCrown_CrownWearer_Looping(int32_t EntryPoint);                                  // [0x211c0a0] Final|HasDefaults    
 };
 

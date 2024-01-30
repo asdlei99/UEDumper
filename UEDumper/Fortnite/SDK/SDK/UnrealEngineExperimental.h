@@ -43,29 +43,29 @@ public:
 
 	/// Functions
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.SetDebugDrawEnabled
-	// void SetDebugDrawEnabled(bool bEnabled, uint32_t ChannelId);                                                          // [0x70eb4f0] RequiredAPI|Net|NetReliableNative|Event|NetMulticast|Public 
+	// void SetDebugDrawEnabled(bool bEnabled, uint32_t ChannelId);                                                          // [0x712e988] RequiredAPI|Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.Reset
-	// void Reset(uint32_t ChannelId);                                                                                       // [0x70eb3bc] RequiredAPI|Net|NetReliableNative|Event|Public|NetClient|Const 
+	// void Reset(uint32_t ChannelId);                                                                                       // [0x712e854] RequiredAPI|Net|NetReliableNative|Event|Public|NetClient|Const 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.DrawDebugSphereInternal
-	// void DrawDebugSphereInternal(FVector Center, float Radius, int32_t Segments, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x70eabc4] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
+	// void DrawDebugSphereInternal(FVector Center, float Radius, int32_t Segments, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x712e05c] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.DrawDebugPointInternal
-	// void DrawDebugPointInternal(FVector Position, float Size, FColor Color, bool bPersistentLines, float Lifetime, uint32_t ChannelId, uint32_t InstanceID); // [0x70ea584] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
+	// void DrawDebugPointInternal(FVector Position, float Size, FColor Color, bool bPersistentLines, float Lifetime, uint32_t ChannelId, uint32_t InstanceID); // [0x712da1c] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.DrawDebugLineInternal
-	// void DrawDebugLineInternal(FVector LineStart, FVector LineEnd, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x70e9e68] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
+	// void DrawDebugLineInternal(FVector LineStart, FVector LineEnd, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x712d300] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.DrawDebugDirectionalArrowInternal
-	// void DrawDebugDirectionalArrowInternal(FVector LineStart, FVector LineEnd, float ArrowSize, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x70e9670] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
+	// void DrawDebugDirectionalArrowInternal(FVector LineStart, FVector LineEnd, float ArrowSize, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x712cb08] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.DrawDebugCylinderInternal
-	// void DrawDebugCylinderInternal(FVector Start, FVector End, float Radius, int32_t Segments, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x70e8da4] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
+	// void DrawDebugCylinderInternal(FVector Start, FVector End, float Radius, int32_t Segments, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x712c23c] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.DrawDebugConeInternal
-	// void DrawDebugConeInternal(FVector Origin, FVector Direction, float Length, float AngleWidth, float AngleHeight, int32_t NumSides, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x70e8324] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
+	// void DrawDebugConeInternal(FVector Origin, FVector Direction, float Length, float AngleWidth, float AngleHeight, int32_t NumSides, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x712b7bc] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.DrawDebugCapsuleInternal
-	// void DrawDebugCapsuleInternal(FVector Center, float HalfHeight, float Radius, FQuat Rotation, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x70e7a54] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
+	// void DrawDebugCapsuleInternal(FVector Center, float HalfHeight, float Radius, FQuat Rotation, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x712aeec] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.DrawDebugBoxInternal
-	// void DrawDebugBoxInternal(FVector Center, FVector Extent, FQuat Rotation, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x70e7260] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
+	// void DrawDebugBoxInternal(FVector Center, FVector Extent, FQuat Rotation, FColor Color, bool bPersistentLines, float Lifetime, float Thickness, uint32_t ChannelId, uint32_t InstanceID); // [0x712a6f8] Net|NetReliableNative|Event|Protected|HasDefaults|NetClient 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.ClearChannel
-	// void ClearChannel(uint32_t ChannelId);                                                                                // [0x70e712c] RequiredAPI|Net|NetReliableNative|Event|Public|NetClient|Const 
+	// void ClearChannel(uint32_t ChannelId);                                                                                // [0x712a5c4] RequiredAPI|Net|NetReliableNative|Event|Public|NetClient|Const 
 	// Function /Script/UnrealEngineExperimental.ControllerComponentDebugDraw.Clear
-	// void Clear(uint32_t ChannelId, uint32_t InstanceID);                                                                  // [0x70e6f1c] RequiredAPI|Net|NetReliableNative|Event|Public|NetClient|Const 
+	// void Clear(uint32_t ChannelId, uint32_t InstanceID);                                                                  // [0x712a3b4] RequiredAPI|Net|NetReliableNative|Event|Public|NetClient|Const 
 };
 
 /// Struct /Script/UnrealEngineExperimental.ScriptDiagnosticSourceLocation

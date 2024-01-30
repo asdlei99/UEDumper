@@ -220,9 +220,9 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableObjectInstanceUsage.UpdateSkeletalMeshAsyncResult
-	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);       // [0x6ffbc80] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);       // [0x7041dcc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstanceUsage.UpdateSkeletalMeshAsync
-	// void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);                                                                  // [0x6ffba6c] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);                                                                  // [0x7041bb8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CustomizableObject.CustomizableObjectPrivate
@@ -264,9 +264,9 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsyncResult
-	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);       // [0x6ffbd80] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);       // [0x7041ecc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsync
-	// void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);                                                                  // [0x6ffbae8] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);                                                                  // [0x7041c34] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CustomizableObject.CustomizableSystemImageProvider
@@ -566,55 +566,55 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableObject.IsParameterMultidimensional
-	// bool IsParameterMultidimensional(FString InParameterName);                                                            // [0x6ff1b70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsParameterMultidimensional(FString InParameterName);                                                            // [0x7037cbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.IsCompiled
-	// bool IsCompiled();                                                                                                    // [0x6ff1494] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCompiled();                                                                                                    // [0x70375e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex
-	// FParameterUIData GetStateUIMetadataFromIndex(int32_t StateIndex);                                                     // [0x6ff0574] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FParameterUIData GetStateUIMetadataFromIndex(int32_t StateIndex);                                                     // [0x70366c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateUIMetadata
-	// FParameterUIData GetStateUIMetadata(FString StateName);                                                               // [0x6fefe8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FParameterUIData GetStateUIMetadata(FString StateName);                                                               // [0x7035fd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateParameterName
-	// FString GetStateParameterName(FString StateName, int32_t ParameterIndex);                                             // [0x6fef74c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetStateParameterName(FString StateName, int32_t ParameterIndex);                                             // [0x7035898] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateParameterCount
-	// int32_t GetStateParameterCount(FString StateName);                                                                    // [0x6fef064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetStateParameterCount(FString StateName);                                                                    // [0x70351b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateName
-	// FString GetStateName(int32_t StateIndex);                                                                             // [0x6feefc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetStateName(int32_t StateIndex);                                                                             // [0x703510c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateCount
-	// int32_t GetStateCount();                                                                                              // [0x6feefa0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetStateCount();                                                                                              // [0x70350ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetProjectorParameterDefaultValue
-	// void GetProjectorParameterDefaultValue(FString InParameterName, FVector3f& OutPos, FVector3f& OutDirection, FVector3f& OutUp, FVector3f& OutScale, float& OutAngle, ECustomizableObjectProjectorType& OutType); // [0x6feb968] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetProjectorParameterDefaultValue(FString InParameterName, FVector3f& OutPos, FVector3f& OutDirection, FVector3f& OutUp, FVector3f& OutScale, float& OutAngle, ECustomizableObjectProjectorType& OutType); // [0x7031ab4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex
-	// FParameterUIData GetParameterUIMetadataFromIndex(int32_t ParamIndex);                                                 // [0x6feaacc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FParameterUIData GetParameterUIMetadataFromIndex(int32_t ParamIndex);                                                 // [0x7030c18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterUIMetadata
-	// FParameterUIData GetParameterUIMetadata(FString ParamName);                                                           // [0x6fea3e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FParameterUIData GetParameterUIMetadata(FString ParamName);                                                           // [0x7030530] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterTypeByName
-	// EMutableParameterType GetParameterTypeByName(FString Name);                                                           // [0x6fe9d34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMutableParameterType GetParameterTypeByName(FString Name);                                                           // [0x702fe80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterType
-	// EMutableParameterType GetParameterType(int32_t ParamIndex);                                                           // [0x6fe9ca8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMutableParameterType GetParameterType(int32_t ParamIndex);                                                           // [0x702fdf4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterName
-	// FString GetParameterName(int32_t ParamIndex);                                                                         // [0x6fe9c14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetParameterName(int32_t ParamIndex);                                                                         // [0x702fd60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterDescriptionCount
-	// int32_t GetParameterDescriptionCount(FString ParamName);                                                              // [0x6fe9574] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetParameterDescriptionCount(FString ParamName);                                                              // [0x702f6c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterCount
-	// int32_t GetParameterCount();                                                                                          // [0x6fe8e98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetParameterCount();                                                                                          // [0x702efe4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetIntParameterNumOptions
-	// int32_t GetIntParameterNumOptions(int32_t ParamIndex);                                                                // [0x6fe7f18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIntParameterNumOptions(int32_t ParamIndex);                                                                // [0x702e064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetIntParameterDefaultValue
-	// int32_t GetIntParameterDefaultValue(FString InParameterName);                                                         // [0x6fe7868] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIntParameterDefaultValue(FString InParameterName);                                                         // [0x702d9b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetIntParameterAvailableOption
-	// FString GetIntParameterAvailableOption(int32_t ParamIndex, int32_t K);                                                // [0x6fe77a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetIntParameterAvailableOption(int32_t ParamIndex, int32_t K);                                                // [0x702d8ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetFloatParameterDefaultValue
-	// float GetFloatParameterDefaultValue(FString InParameterName);                                                         // [0x6fe6320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloatParameterDefaultValue(FString InParameterName);                                                         // [0x702c46c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetComponentCount
-	// int32_t GetComponentCount();                                                                                          // [0x6fe62a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetComponentCount();                                                                                          // [0x702c3f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetColorParameterDefaultValue
-	// FLinearColor GetColorParameterDefaultValue(FString InParameterName);                                                  // [0x6fe5568] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FLinearColor GetColorParameterDefaultValue(FString InParameterName);                                                  // [0x702b6b4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetBoolParameterDefaultValue
-	// bool GetBoolParameterDefaultValue(FString InParameterName);                                                           // [0x6fe4798] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBoolParameterDefaultValue(FString InParameterName);                                                           // [0x702a8e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.FindParameter
-	// int32_t FindParameter(FString Name);                                                                                  // [0x6fe3198] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindParameter(FString Name);                                                                                  // [0x70292e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.CreateInstance
-	// class UCustomizableObjectInstance* CreateInstance();                                                                  // [0x6fe1ca4] Final|Native|Public|BlueprintCallable 
+	// class UCustomizableObjectInstance* CreateInstance();                                                                  // [0x7027df0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CustomizableObject.DGGUI
@@ -626,9 +626,9 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObject.DGGUI.SetCustomizableObjectInstanceUsage
-	// void SetCustomizableObjectInstanceUsage(class UCustomizableObjectInstanceUsage* CustomizableObjectInstanceUsage);     // [0x2177018] Event|Public|BlueprintEvent 
+	// void SetCustomizableObjectInstanceUsage(class UCustomizableObjectInstanceUsage* CustomizableObjectInstanceUsage);     // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/CustomizableObject.DGGUI.GetCustomizableObjectInstanceUsage
-	// class UCustomizableObjectInstanceUsage* GetCustomizableObjectInstanceUsage();                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// class UCustomizableObjectInstanceUsage* GetCustomizableObjectInstanceUsage();                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/CustomizableObject.CustomizableObjectBoolParameterValue
@@ -747,173 +747,173 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsyncResult
-	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);       // [0x6ffbb64] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);       // [0x7041cb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsync
-	// void UpdateSkeletalMeshAsync(bool bIgnoreCloseDist, bool bForceHighPriority);                                         // [0x6ffb9a8] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsync(bool bIgnoreCloseDist, bool bForceHighPriority);                                         // [0x7041af4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption
-	// void SetVectorParameterSelectedOption(FString VectorParamName, FLinearColor& VectorValue);                            // [0x6ffb2cc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVectorParameterSelectedOption(FString VectorParamName, FLinearColor& VectorValue);                            // [0x7041418] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetTextureParameterSelectedOption
-	// void SetTextureParameterSelectedOption(FString TextureParamName, FString TextureValue, int32_t RangeIndex);           // [0x6ffaba4] Final|Native|Public|BlueprintCallable 
+	// void SetTextureParameterSelectedOption(FString TextureParamName, FString TextureValue, int32_t RangeIndex);           // [0x7040cf0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetReplacePhysicsAssets
-	// void SetReplacePhysicsAssets(bool bReplaceEnabled);                                                                   // [0x6ffab24] Final|Native|Public|BlueprintCallable 
+	// void SetReplacePhysicsAssets(bool bReplaceEnabled);                                                                   // [0x7040c70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetRandomValuesFromStream
-	// void SetRandomValuesFromStream(FRandomStream& Stream);                                                                // [0x6ffaa94] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetRandomValuesFromStream(FRandomStream& Stream);                                                                // [0x7040be0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetRandomValues
-	// void SetRandomValues();                                                                                               // [0x6ffaa5c] Final|Native|Public|BlueprintCallable 
+	// void SetRandomValues();                                                                                               // [0x7040ba8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorValue
-	// void SetProjectorValue(FString ProjectorParamName, FVector& OutPos, FVector& OutDirection, FVector& OutUp, FVector& OutScale, float OutAngle, int32_t RangeIndex); // [0x6ffa0b0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorValue(FString ProjectorParamName, FVector& OutPos, FVector& OutDirection, FVector& OutUp, FVector& OutScale, float OutAngle, int32_t RangeIndex); // [0x70401fc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorUp
-	// void SetProjectorUp(FString ProjectorParamName, FVector& Up, int32_t RangeIndex);                                     // [0x6ff9914] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorUp(FString ProjectorParamName, FVector& Up, int32_t RangeIndex);                                     // [0x703fa60] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorScale
-	// void SetProjectorScale(FString ProjectorParamName, FVector& Scale, int32_t RangeIndex);                               // [0x6ff9178] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorScale(FString ProjectorParamName, FVector& Scale, int32_t RangeIndex);                               // [0x703f2c4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorPosition
-	// void SetProjectorPosition(FString ProjectorParamName, FVector3f& Pos, int32_t RangeIndex);                            // [0x6ff89a4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorPosition(FString ProjectorParamName, FVector3f& Pos, int32_t RangeIndex);                            // [0x703eaf0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorDirection
-	// void SetProjectorDirection(FString ProjectorParamName, FVector& Direction, int32_t RangeIndex);                       // [0x6ff8208] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorDirection(FString ProjectorParamName, FVector& Direction, int32_t RangeIndex);                       // [0x703e354] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorAngle
-	// void SetProjectorAngle(FString ProjectorParamName, float Angle, int32_t RangeIndex);                                  // [0x6ff7afc] Final|Native|Public|BlueprintCallable 
+	// void SetProjectorAngle(FString ProjectorParamName, float Angle, int32_t RangeIndex);                                  // [0x703dc48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetObject
-	// void SetObject(class UCustomizableObject* InObject);                                                                  // [0x6ff7a7c] Final|Native|Public|BlueprintCallable 
+	// void SetObject(class UCustomizableObject* InObject);                                                                  // [0x703dbc8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetIntParameterSelectedOption
-	// void SetIntParameterSelectedOption(FString ParamName, FString SelectedOptionName, int32_t RangeIndex);                // [0x6ff7354] Final|Native|Public|BlueprintCallable 
+	// void SetIntParameterSelectedOption(FString ParamName, FString SelectedOptionName, int32_t RangeIndex);                // [0x703d4a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetFloatParameterSelectedOption
-	// void SetFloatParameterSelectedOption(FString FloatParamName, float FloatValue, int32_t RangeIndex);                   // [0x6ff6c48] Final|Native|Public|BlueprintCallable 
+	// void SetFloatParameterSelectedOption(FString FloatParamName, float FloatValue, int32_t RangeIndex);                   // [0x703cd94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetCurrentState
-	// void SetCurrentState(FString StateName);                                                                              // [0x6ff6598] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentState(FString StateName);                                                                              // [0x703c6e4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption
-	// void SetColorParameterSelectedOption(FString ColorParamName, FLinearColor& ColorValue);                               // [0x6ff5ea8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetColorParameterSelectedOption(FString ColorParamName, FLinearColor& ColorValue);                               // [0x703bff4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetBuildParameterRelevancy
-	// void SetBuildParameterRelevancy(bool Value);                                                                          // [0x6ff5e28] Final|Native|Public|BlueprintCallable 
+	// void SetBuildParameterRelevancy(bool Value);                                                                          // [0x703bf74] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetBuildParameterDecorations
-	// void SetBuildParameterDecorations(bool Value);                                                                        // [0x5fe71f4] Final|Native|Public|BlueprintCallable 
+	// void SetBuildParameterDecorations(bool Value);                                                                        // [0x60325ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetBoolParameterSelectedOption
-	// void SetBoolParameterSelectedOption(FString BoolParamName, bool BoolValue);                                           // [0x6ff5750] Final|Native|Public|BlueprintCallable 
+	// void SetBoolParameterSelectedOption(FString BoolParamName, bool BoolValue);                                           // [0x703b89c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.RemoveValueFromProjectorRange
-	// int32_t RemoveValueFromProjectorRange(FString ParamName);                                                             // [0x6ff5068] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveValueFromProjectorRange(FString ParamName);                                                             // [0x703b1b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.RemoveValueFromIntRange
-	// int32_t RemoveValueFromIntRange(FString ParamName);                                                                   // [0x6ff49ac] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveValueFromIntRange(FString ParamName);                                                                   // [0x703aaf8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.RemoveValueFromFloatRange
-	// int32_t RemoveValueFromFloatRange(FString ParamName);                                                                 // [0x6ff42a0] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveValueFromFloatRange(FString ParamName);                                                                 // [0x703a3ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.RemoveMultilayerProjector
-	// void RemoveMultilayerProjector(FName& ProjectorParamName);                                                            // [0x6ff4210] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveMultilayerProjector(FName& ProjectorParamName);                                                            // [0x703a35c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorUpdateVirtualLayer
-	// void MultilayerProjectorUpdateVirtualLayer(FName& ProjectorParamName, FName& ID, FMultilayerProjectorVirtualLayer& Layer); // [0x6ff3ac0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorUpdateVirtualLayer(FName& ProjectorParamName, FName& ID, FMultilayerProjectorVirtualLayer& Layer); // [0x7039c0c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorUpdateLayer
-	// void MultilayerProjectorUpdateLayer(FName& ProjectorParamName, int32_t Index, FMultilayerProjectorLayer& Layer);      // [0x6ff3360] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorUpdateLayer(FName& ProjectorParamName, int32_t Index, FMultilayerProjectorLayer& Layer);      // [0x70394ac] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorRemoveVirtualLayer
-	// void MultilayerProjectorRemoveVirtualLayer(FName& ProjectorParamName, FName& ID);                                     // [0x6ff3234] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorRemoveVirtualLayer(FName& ProjectorParamName, FName& ID);                                     // [0x7039380] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorRemoveLayerAt
-	// void MultilayerProjectorRemoveLayerAt(FName& ProjectorParamName, int32_t Index);                                      // [0x6ff30d4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorRemoveLayerAt(FName& ProjectorParamName, int32_t Index);                                      // [0x7039220] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorNumLayers
-	// int32_t MultilayerProjectorNumLayers(FName& ProjectorParamName);                                                      // [0x6ff2ff4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t MultilayerProjectorNumLayers(FName& ProjectorParamName);                                                      // [0x7039140] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorGetVirtualLayers
-	// TArray<FName> MultilayerProjectorGetVirtualLayers(FName& ProjectorParamName);                                         // [0x6ff2ef0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> MultilayerProjectorGetVirtualLayers(FName& ProjectorParamName);                                         // [0x703903c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorGetVirtualLayer
-	// FMultilayerProjectorVirtualLayer MultilayerProjectorGetVirtualLayer(FName& ProjectorParamName, FName& ID);            // [0x6ff2dd0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FMultilayerProjectorVirtualLayer MultilayerProjectorGetVirtualLayer(FName& ProjectorParamName, FName& ID);            // [0x7038f1c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorGetLayer
-	// FMultilayerProjectorLayer MultilayerProjectorGetLayer(FName& ProjectorParamName, int32_t Index);                      // [0x6ff2c7c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FMultilayerProjectorLayer MultilayerProjectorGetLayer(FName& ProjectorParamName, int32_t Index);                      // [0x7038dc8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorFindOrCreateVirtualLayer
-	// FMultilayerProjectorVirtualLayer MultilayerProjectorFindOrCreateVirtualLayer(FName& ProjectorParamName, FName& ID);   // [0x6ff2b5c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FMultilayerProjectorVirtualLayer MultilayerProjectorFindOrCreateVirtualLayer(FName& ProjectorParamName, FName& ID);   // [0x7038ca8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorCreateVirtualLayer
-	// void MultilayerProjectorCreateVirtualLayer(FName& ProjectorParamName, FName& ID);                                     // [0x6ff2a30] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorCreateVirtualLayer(FName& ProjectorParamName, FName& ID);                                     // [0x7038b7c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorCreateLayer
-	// void MultilayerProjectorCreateLayer(FName& ProjectorParamName, int32_t Index);                                        // [0x6ff28d0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorCreateLayer(FName& ProjectorParamName, int32_t Index);                                        // [0x7038a1c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.IsParamMultidimensional
-	// bool IsParamMultidimensional(FString ParamName);                                                                      // [0x6ff14b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsParamMultidimensional(FString ParamName);                                                                      // [0x7037600] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.IsParameterRelevant
-	// bool IsParameterRelevant(FString ParamName);                                                                          // [0x6ff2220] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsParameterRelevant(FString ParamName);                                                                          // [0x703836c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.HasAnySkeletalMesh
-	// bool HasAnySkeletalMesh();                                                                                            // [0x6ff1470] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasAnySkeletalMesh();                                                                                            // [0x70375bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.HasAnyParameters
-	// bool HasAnyParameters();                                                                                              // [0x6ff1420] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasAnyParameters();                                                                                              // [0x703756c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetVectorParameters
-	// TArray<FCustomizableObjectVectorParameterValue> GetVectorParameters();                                                // [0x6ff1404] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectVectorParameterValue> GetVectorParameters();                                                // [0x7037550] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetTextureValueRange
-	// int32_t GetTextureValueRange(FString ParamName);                                                                      // [0x6ff0d30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTextureValueRange(FString ParamName);                                                                      // [0x7036e7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetTextureParameterSelectedOption
-	// FName GetTextureParameterSelectedOption(FString TextureParamName, int32_t RangeIndex);                                // [0x6ff0634] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetTextureParameterSelectedOption(FString TextureParamName, int32_t RangeIndex);                                // [0x7036780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetTextureParameters
-	// TArray<FCustomizableObjectTextureParameterValue> GetTextureParameters();                                              // [0x6ff0d14] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectTextureParameterValue> GetTextureParameters();                                              // [0x7036e60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetSkeletalMesh
-	// class USkeletalMesh* GetSkeletalMesh(int32_t ComponentIndex);                                                         // [0x6feef14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMesh* GetSkeletalMesh(int32_t ComponentIndex);                                                         // [0x7035060] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorValueRange
-	// int32_t GetProjectorValueRange(FString ParamName);                                                                    // [0x6fee840] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetProjectorValueRange(FString ParamName);                                                                    // [0x703498c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorValue
-	// void GetProjectorValue(FString ProjectorParamName, FVector& OutPos, FVector& OutDirection, FVector& OutUp, FVector& OutScale, float& OutAngle, ECustomizableObjectProjectorType& OutType, int32_t RangeIndex); // [0x6feddf8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetProjectorValue(FString ProjectorParamName, FVector& OutPos, FVector& OutDirection, FVector& OutUp, FVector& OutScale, float& OutAngle, ECustomizableObjectProjectorType& OutType, int32_t RangeIndex); // [0x7033f44] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorUp
-	// FVector GetProjectorUp(FString ParamName, int32_t RangeIndex);                                                        // [0x6fed704] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetProjectorUp(FString ParamName, int32_t RangeIndex);                                                        // [0x7033850] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorScale
-	// FVector GetProjectorScale(FString ParamName, int32_t RangeIndex);                                                     // [0x6fed010] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetProjectorScale(FString ParamName, int32_t RangeIndex);                                                     // [0x703315c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorPosition
-	// FVector GetProjectorPosition(FString ParamName, int32_t RangeIndex);                                                  // [0x6fec91c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetProjectorPosition(FString ParamName, int32_t RangeIndex);                                                  // [0x7032a68] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType
-	// ECustomizableObjectProjectorType GetProjectorParameterType(FString ParamName, int32_t RangeIndex);                    // [0x6fec228] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ECustomizableObjectProjectorType GetProjectorParameterType(FString ParamName, int32_t RangeIndex);                    // [0x7032374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorParameters
-	// TArray<FCustomizableObjectProjectorParameterValue> GetProjectorParameters();                                          // [0x6fec900] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectProjectorParameterValue> GetProjectorParameters();                                          // [0x7032a4c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorDirection
-	// FVector GetProjectorDirection(FString ParamName, int32_t RangeIndex);                                                 // [0x6feb274] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetProjectorDirection(FString ParamName, int32_t RangeIndex);                                                 // [0x70313c0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorAngle
-	// float GetProjectorAngle(FString ParamName, int32_t RangeIndex);                                                       // [0x6feab98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetProjectorAngle(FString ParamName, int32_t RangeIndex);                                                       // [0x7030ce4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetParameterDescription
-	// class UTexture2D* GetParameterDescription(FString ParamName, int32_t DescIndex);                                      // [0x6fe8eb0] Final|Native|Public|BlueprintCallable 
+	// class UTexture2D* GetParameterDescription(FString ParamName, int32_t DescIndex);                                      // [0x702effc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetNumComponents
-	// int32_t GetNumComponents();                                                                                           // [0x6fe8e78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumComponents();                                                                                           // [0x702efc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetMergedAssetUserData
-	// TSet<UAssetUserData*> GetMergedAssetUserData(int32_t ComponentIndex);                                                 // [0x6fe8d74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TSet<UAssetUserData*> GetMergedAssetUserData(int32_t ComponentIndex);                                                 // [0x702eec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetIntValueRange
-	// int32_t GetIntValueRange(FString ParamName);                                                                          // [0x6fe86a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIntValueRange(FString ParamName);                                                                          // [0x702e7ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetIntParameterSelectedOption
-	// FString GetIntParameterSelectedOption(FString ParamName, int32_t RangeIndex);                                         // [0x6fe7fa4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetIntParameterSelectedOption(FString ParamName, int32_t RangeIndex);                                         // [0x702e0f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetIntParameters
-	// TArray<FCustomizableObjectIntParameterValue> GetIntParameters();                                                      // [0x6fe8684] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectIntParameterValue> GetIntParameters();                                                      // [0x702e7d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetFloatValueRange
-	// int32_t GetFloatValueRange(FString ParamName);                                                                        // [0x6fe70cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetFloatValueRange(FString ParamName);                                                                        // [0x702d218] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetFloatParameterSelectedOption
-	// float GetFloatParameterSelectedOption(FString FloatParamName, int32_t RangeIndex);                                    // [0x6fe69d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloatParameterSelectedOption(FString FloatParamName, int32_t RangeIndex);                                    // [0x702cb20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetFloatParameters
-	// TArray<FCustomizableObjectFloatParameterValue> GetFloatParameters();                                                  // [0x6fe70b0] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectFloatParameterValue> GetFloatParameters();                                                  // [0x702d1fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetCustomizableObject
-	// class UCustomizableObject* GetCustomizableObject();                                                                   // [0x6fe6308] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCustomizableObject* GetCustomizableObject();                                                                   // [0x702c454] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetCurrentState
-	// FString GetCurrentState();                                                                                            // [0x6fe62c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetCurrentState();                                                                                            // [0x702c414] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption
-	// FLinearColor GetColorParameterSelectedOption(FString ColorParamName);                                                 // [0x6fe5c08] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FLinearColor GetColorParameterSelectedOption(FString ColorParamName);                                                 // [0x702bd54] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetBuildParameterRelevancy
-	// bool GetBuildParameterRelevancy();                                                                                    // [0x6fe5550] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBuildParameterRelevancy();                                                                                    // [0x702b69c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetBuildParameterDecorations
-	// bool GetBuildParameterDecorations();                                                                                  // [0x2f18ed4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBuildParameterDecorations();                                                                                  // [0x2f1d290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetBoolParameterSelectedOption
-	// bool GetBoolParameterSelectedOption(FString BoolParamName);                                                           // [0x6fe4e48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBoolParameterSelectedOption(FString BoolParamName);                                                           // [0x702af94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetBoolParameters
-	// TArray<FCustomizableObjectBoolParameterValue> GetBoolParameters();                                                    // [0x6fe5534] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectBoolParameterValue> GetBoolParameters();                                                    // [0x702b680] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetAnimBP
-	// class UClass* GetAnimBP(int32_t ComponentIndex, FName& Slot);                                                         // [0x6fe4698] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetAnimBP(int32_t ComponentIndex, FName& Slot);                                                         // [0x702a7e4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetAnimationGameplayTags
-	// FGameplayTagContainer GetAnimationGameplayTags();                                                                     // [0x6fe4774] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetAnimationGameplayTags();                                                                     // [0x702a8c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.ForEachAnimInstance
-	// void ForEachAnimInstance(int32_t ComponentIndex, FDelegateProperty Delegate);                                         // [0x6fe45c0] Final|Native|Public|BlueprintCallable|Const 
+	// void ForEachAnimInstance(int32_t ComponentIndex, FDelegateProperty Delegate);                                         // [0x702a70c] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindVectorParameterNameIndex
-	// int32_t FindVectorParameterNameIndex(FString ParamName);                                                              // [0x6fe3f04] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindVectorParameterNameIndex(FString ParamName);                                                              // [0x702a050] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindProjectorParameterNameIndex
-	// int32_t FindProjectorParameterNameIndex(FString ParamName);                                                           // [0x6fe3848] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindProjectorParameterNameIndex(FString ParamName);                                                           // [0x7029994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindIntParameterNameIndex
-	// int32_t FindIntParameterNameIndex(FString ParamName);                                                                 // [0x6fe2adc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindIntParameterNameIndex(FString ParamName);                                                                 // [0x7028c28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindFloatParameterNameIndex
-	// int32_t FindFloatParameterNameIndex(FString ParamName);                                                               // [0x6fe2420] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindFloatParameterNameIndex(FString ParamName);                                                               // [0x702856c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindBoolParameterNameIndex
-	// int32_t FindBoolParameterNameIndex(FString ParamName);                                                                // [0x6fe1d64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindBoolParameterNameIndex(FString ParamName);                                                                // [0x7027eb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.CreateMultiLayerProjector
-	// bool CreateMultiLayerProjector(FName& ProjectorParamName);                                                            // [0x6fe1cc8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool CreateMultiLayerProjector(FName& ProjectorParamName);                                                            // [0x7027e14] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.CloneStatic
-	// class UCustomizableObjectInstance* CloneStatic(class UObject* Outer);                                                 // [0x6fe1c00] Final|Native|Public|BlueprintCallable 
+	// class UCustomizableObjectInstance* CloneStatic(class UObject* Outer);                                                 // [0x7027d4c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.Clone
-	// class UCustomizableObjectInstance* Clone();                                                                           // [0x6fe1bac] Final|Native|Public|BlueprintCallable 
+	// class UCustomizableObjectInstance* Clone();                                                                           // [0x7027cf8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.AddValueToProjectorRange
-	// int32_t AddValueToProjectorRange(FString ParamName);                                                                  // [0x6fe14f0] Final|Native|Public|BlueprintCallable 
+	// int32_t AddValueToProjectorRange(FString ParamName);                                                                  // [0x702763c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.AddValueToIntRange
-	// int32_t AddValueToIntRange(FString ParamName);                                                                        // [0x6fe0e34] Final|Native|Public|BlueprintCallable 
+	// int32_t AddValueToIntRange(FString ParamName);                                                                        // [0x7026f80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.AddValueToFloatRange
-	// int32_t AddValueToFloatRange(FString ParamName);                                                                      // [0x6fe073c] Final|Native|Public|BlueprintCallable 
+	// int32_t AddValueToFloatRange(FString ParamName);                                                                      // [0x7026888] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CustomizableObject.MutableTextureMipDataProviderFactory
@@ -957,25 +957,25 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmediately
-	// void SetReleaseMutableTexturesImmediately(bool bReleaseTextures);                                                     // [0x700d3fc] Final|Native|Public|BlueprintCallable 
+	// void SetReleaseMutableTexturesImmediately(bool bReleaseTextures);                                                     // [0x70534c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.IsUpdating
-	// bool IsUpdating(class UCustomizableObjectInstance* Instance);                                                         // [0x700d2b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUpdating(class UCustomizableObjectInstance* Instance);                                                         // [0x7053380] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetTotalInstances
-	// int32_t GetTotalInstances();                                                                                          // [0x700d294] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTotalInstances();                                                                                          // [0x705335c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetTextureMemoryUsed
-	// int32_t GetTextureMemoryUsed();                                                                                       // [0x700d280] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTextureMemoryUsed();                                                                                       // [0x7053348] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetPluginVersion
-	// FString GetPluginVersion();                                                                                           // [0x700d234] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetPluginVersion();                                                                                           // [0x70532fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetNumPendingInstances
-	// int32_t GetNumPendingInstances();                                                                                     // [0x700d1f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumPendingInstances();                                                                                     // [0x70532bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetNumInstances
-	// int32_t GetNumInstances();                                                                                            // [0x700d1a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumInstances();                                                                                            // [0x7053268] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetInstanceChecked
-	// class UCustomizableObjectSystem* GetInstanceChecked();                                                                // [0x700d17c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCustomizableObjectSystem* GetInstanceChecked();                                                                // [0x7053244] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetInstance
-	// class UCustomizableObjectSystem* GetInstance();                                                                       // [0x700d17c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCustomizableObjectSystem* GetInstance();                                                                       // [0x7053244] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetAverageBuildTime
-	// int32_t GetAverageBuildTime();                                                                                        // [0x700d118] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAverageBuildTime();                                                                                        // [0x70531e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CustomizableObject.CustomizableSkeletalMeshActor

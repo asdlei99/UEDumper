@@ -25,10 +25,10 @@ public:
 
 	/// Functions
 	// Function /Script/DynamicAthenaHUD.DynamicAthenaHUDDirector.HandleExitingVehicle
-	// void HandleExitingVehicle();                                                                                             // [0xb1b3fd0] Final|Native|Private 
+	// void HandleExitingVehicle();                                                                                             // [0xb195f04] Final|Native|Private 
 	// Function /Script/DynamicAthenaHUD.DynamicAthenaHUDDirector.HandleEnteringVehicle
-	// void HandleEnteringVehicle();                                                                                            // [0xb1b3fbc] Final|Native|Private 
+	// void HandleEnteringVehicle();                                                                                            // [0xb195ef0] Final|Native|Private 
 	// Function /Script/DynamicAthenaHUD.DynamicAthenaHUDDirector.HandleCreativeQuickbarEquippedChanged
-	// void HandleCreativeQuickbarEquippedChanged(bool bIsQuickbarEquipped);                                                    // [0xb1b3f3c] Final|Native|Private 
+	// void HandleCreativeQuickbarEquippedChanged(bool bIsQuickbarEquipped);                                                    // [0xb195e70] Final|Native|Private 
 };
 

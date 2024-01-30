@@ -69,7 +69,7 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityActorComponent.OnRep_ActorComponent
-	// void OnRep_ActorComponent();                                                                                             // [0x1f99360] Final|Native|Private 
+	// void OnRep_ActorComponent();                                                                                             // [0x1f80fe8] Final|Native|Private 
 };
 
 /// Class /Script/EntityActor.EntityActorSubsystem
@@ -97,9 +97,9 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityDynamicActivationComponent.OnRep_TransitionTarget
-	// void OnRep_TransitionTarget();                                                                                           // [0x736b2ac] Final|Native|Private 
+	// void OnRep_TransitionTarget();                                                                                           // [0x73a9b4c] Final|Native|Private 
 	// Function /Script/EntityActor.EntityDynamicActivationComponent.OnEnabledChanged
-	// void OnEnabledChanged(bool bIsEnabled);                                                                                  // [0x736ab48] Final|Native|Public  
+	// void OnEnabledChanged(bool bIsEnabled);                                                                                  // [0x73a93e8] Final|Native|Public  
 };
 
 /// Class /Script/EntityActor.EntityToActorAdapterComponent
@@ -138,17 +138,17 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityActorCollisionComponent.OnRep_PrimitiveComponent
-	// void OnRep_PrimitiveComponent();                                                                                         // [0x736b20c] Final|Native|Private 
+	// void OnRep_PrimitiveComponent();                                                                                         // [0x73a9aac] Final|Native|Private 
 	// Function /Script/EntityActor.EntityActorCollisionComponent.OnRep_CollisionProfileName
-	// void OnRep_CollisionProfileName();                                                                                       // [0x736b20c] Final|Native|Private 
+	// void OnRep_CollisionProfileName();                                                                                       // [0x73a9aac] Final|Native|Private 
 	// Function /Script/EntityActor.EntityActorCollisionComponent.OnNativeComponentHit
-	// void OnNativeComponentHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x736af4c] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnNativeComponentHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x73a97ec] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/EntityActor.EntityActorCollisionComponent.OnNativeComponentEndOverlap
-	// void OnNativeComponentEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x736ae10] Final|Native|Private 
+	// void OnNativeComponentEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x73a96b0] Final|Native|Private 
 	// Function /Script/EntityActor.EntityActorCollisionComponent.OnNativeComponentBeginOverlap
-	// void OnNativeComponentBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x736abc8] Final|Native|Private|HasOutParms 
+	// void OnNativeComponentBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x73a9468] Final|Native|Private|HasOutParms 
 	// Function /Script/EntityActor.EntityActorCollisionComponent.OnEnabledChanged
-	// void OnEnabledChanged(bool bIsEnabled);                                                                                  // [0x736aac8] Final|Native|Private 
+	// void OnEnabledChanged(bool bIsEnabled);                                                                                  // [0x73a9368] Final|Native|Private 
 };
 
 /// Class /Script/EntityActor.EntityActorPlayerComponent
@@ -166,7 +166,7 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityActorPlayerComponent.OnRep_PlayerId
-	// void OnRep_PlayerId();                                                                                                   // [0x1f99360] Native|Protected     
+	// void OnRep_PlayerId();                                                                                                   // [0x1f80fe8] Native|Protected     
 };
 
 /// Class /Script/EntityActor.EntityActorSkeletalMeshRenderComponent
@@ -197,11 +197,11 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityActorStaticMeshRenderComponent.OnRep_MeshMaterials
-	// void OnRep_MeshMaterials();                                                                                              // [0x736b280] Final|Native|Private 
+	// void OnRep_MeshMaterials();                                                                                              // [0x73a9b20] Final|Native|Private 
 	// Function /Script/EntityActor.EntityActorStaticMeshRenderComponent.OnRep_MaxDrawDistance
-	// void OnRep_MaxDrawDistance();                                                                                            // [0x736b264] Final|Native|Private 
+	// void OnRep_MaxDrawDistance();                                                                                            // [0x73a9b04] Final|Native|Private 
 	// Function /Script/EntityActor.EntityActorStaticMeshRenderComponent.OnRep_EnableCollision
-	// void OnRep_EnableCollision();                                                                                            // [0x736b250] Final|Native|Private 
+	// void OnRep_EnableCollision();                                                                                            // [0x73a9af0] Final|Native|Private 
 };
 
 /// Class /Script/EntityActor.EntityActorTextDisplayComponent
@@ -220,39 +220,39 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.SetWorldSize
-	// void SetWorldSize(float Value);                                                                                          // [0x736bbcc] Final|Native|Public  
+	// void SetWorldSize(float Value);                                                                                          // [0x73aa46c] Final|Native|Public  
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.SetVerticalAlignment
-	// void SetVerticalAlignment(TEnumAsByte<EVerticalTextAligment> Value);                                                     // [0x736bb44] Final|Native|Public  
+	// void SetVerticalAlignment(TEnumAsByte<EVerticalTextAligment> Value);                                                     // [0x73aa3e4] Final|Native|Public  
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.SetTextRenderColor
-	// void SetTextRenderColor(FColor Value);                                                                                   // [0x736ba18] Final|Native|Public|HasDefaults 
+	// void SetTextRenderColor(FColor Value);                                                                                   // [0x73aa2b8] Final|Native|Public|HasDefaults 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.SetText
-	// void SetText(FText Text);                                                                                                // [0x736b97c] Final|Native|Public  
+	// void SetText(FText Text);                                                                                                // [0x73aa21c] Final|Native|Public  
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.SetRelativeScale
-	// void SetRelativeScale(FVector RelativeScale);                                                                            // [0x736b83c] Final|Native|Public|HasDefaults 
+	// void SetRelativeScale(FVector RelativeScale);                                                                            // [0x73aa0dc] Final|Native|Public|HasDefaults 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.SetRelativeRotation
-	// void SetRelativeRotation(FRotator RelativeRotation);                                                                     // [0x736b6fc] Final|Native|Public|HasDefaults 
+	// void SetRelativeRotation(FRotator RelativeRotation);                                                                     // [0x73a9f9c] Final|Native|Public|HasDefaults 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.SetRelativeLocation
-	// void SetRelativeLocation(FVector RelativeLocation);                                                                      // [0x736b5bc] Final|Native|Public|HasDefaults 
+	// void SetRelativeLocation(FVector RelativeLocation);                                                                      // [0x73a9e5c] Final|Native|Public|HasDefaults 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.SetHorizontalAlignment
-	// void SetHorizontalAlignment(TEnumAsByte<EHorizTextAligment> Value);                                                      // [0x736b534] Final|Native|Public  
+	// void SetHorizontalAlignment(TEnumAsByte<EHorizTextAligment> Value);                                                      // [0x73a9dd4] Final|Native|Public  
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.OnRep_WorldSize
-	// void OnRep_WorldSize();                                                                                                  // [0x736b2c0] Final|Native|Private 
+	// void OnRep_WorldSize();                                                                                                  // [0x73a9b60] Final|Native|Private 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.OnRep_TextRenderColor
-	// void OnRep_TextRenderColor();                                                                                            // [0x736b294] Final|Native|Private 
+	// void OnRep_TextRenderColor();                                                                                            // [0x73a9b34] Final|Native|Private 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.OnRep_DisplayText
-	// void OnRep_DisplayText();                                                                                                // [0x736b23c] Final|Native|Private 
+	// void OnRep_DisplayText();                                                                                                // [0x73a9adc] Final|Native|Private 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.GetWorldSize
-	// float GetWorldSize();                                                                                                    // [0x736aa80] Final|Native|Public|Const 
+	// float GetWorldSize();                                                                                                    // [0x73a9320] Final|Native|Public|Const 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.GetVerticalAlignment
-	// TEnumAsByte<EVerticalTextAligment> GetVerticalAlignment();                                                               // [0x736aa44] Final|Native|Public  
+	// TEnumAsByte<EVerticalTextAligment> GetVerticalAlignment();                                                               // [0x73a92e4] Final|Native|Public  
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.GetTextRenderColor
-	// FColor GetTextRenderColor();                                                                                             // [0x736aa00] Final|Native|Public|HasDefaults|Const 
+	// FColor GetTextRenderColor();                                                                                             // [0x73a92a0] Final|Native|Public|HasDefaults|Const 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.GetText
-	// FText GetText();                                                                                                         // [0x736a98c] Final|Native|Public|Const 
+	// FText GetText();                                                                                                         // [0x73a922c] Final|Native|Public|Const 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.GetRelativeLocation
-	// FVector GetRelativeLocation();                                                                                           // [0x736a93c] Final|Native|Public|HasDefaults 
+	// FVector GetRelativeLocation();                                                                                           // [0x73a91dc] Final|Native|Public|HasDefaults 
 	// Function /Script/EntityActor.EntityActorTextDisplayComponent.GetHorizontalAlignment
-	// TEnumAsByte<EHorizTextAligment> GetHorizontalAlignment();                                                                // [0x736a900] Final|Native|Public  
+	// TEnumAsByte<EHorizTextAligment> GetHorizontalAlignment();                                                                // [0x73a91a0] Final|Native|Public  
 };
 
 /// Class /Script/EntityActor.EntityActorPositionComponent
@@ -268,7 +268,7 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityActorPositionComponent.OnRootComponentChanged
-	// void OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent);                              // [0x736b2dc] Final|Native|Private 
+	// void OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent);                              // [0x73a9b7c] Final|Native|Private 
 };
 
 /// Class /Script/EntityActor.EntityActorRotationComponent
@@ -284,7 +284,7 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityActorRotationComponent.OnRootComponentChanged
-	// void OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent);                              // [0x736b3a4] Final|Native|Private 
+	// void OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent);                              // [0x73a9c44] Final|Native|Private 
 };
 
 /// Class /Script/EntityActor.EntityActorScaleComponent
@@ -300,7 +300,7 @@ public:
 
 	/// Functions
 	// Function /Script/EntityActor.EntityActorScaleComponent.OnRootComponentChanged
-	// void OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent);                              // [0x736b46c] Final|Native|Private 
+	// void OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent);                              // [0x73a9d0c] Final|Native|Private 
 };
 
 /// Enum /Script/EntityActor.EEntityActorReplicationOverrideType

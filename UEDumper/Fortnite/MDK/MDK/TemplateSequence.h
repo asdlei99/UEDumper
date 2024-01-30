@@ -185,15 +185,15 @@ public:
 
 	/// Functions
 	// Function /Script/TemplateSequence.TemplateSequenceActor.SetSequence
-	// void SetSequence(class UTemplateSequence* InSequence);                                                                   // [0x78c7988] Final|Native|Public|BlueprintCallable 
+	// void SetSequence(class UTemplateSequence* InSequence);                                                                   // [0x7903db8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TemplateSequence.TemplateSequenceActor.SetBinding
-	// void SetBinding(class AActor* Actor, bool bOverridesDefault);                                                            // [0x78c77f0] Final|Native|Public|BlueprintCallable 
+	// void SetBinding(class AActor* Actor, bool bOverridesDefault);                                                            // [0x7903c20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TemplateSequence.TemplateSequenceActor.LoadSequence
-	// class UTemplateSequence* LoadSequence();                                                                                 // [0x78c77cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTemplateSequence* LoadSequence();                                                                                 // [0x7903bfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TemplateSequence.TemplateSequenceActor.GetSequencePlayer
-	// class UTemplateSequencePlayer* GetSequencePlayer();                                                                      // [0x78c7780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTemplateSequencePlayer* GetSequencePlayer();                                                                      // [0x7903bb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TemplateSequence.TemplateSequenceActor.GetSequence
-	// class UTemplateSequence* GetSequence();                                                                                  // [0x78c775c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTemplateSequence* GetSequence();                                                                                  // [0x7903b8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TemplateSequence.TemplateSequencePlayer
@@ -208,7 +208,7 @@ public:
 
 	/// Functions
 	// Function /Script/TemplateSequence.TemplateSequencePlayer.CreateTemplateSequencePlayer
-	// class UTemplateSequencePlayer* CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, FMovieSceneSequencePlaybackSettings Settings, class ATemplateSequenceActor*& OutActor); // [0x78c6ffc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UTemplateSequencePlayer* CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, FMovieSceneSequencePlaybackSettings Settings, class ATemplateSequenceActor*& OutActor); // [0x790342c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/TemplateSequence.SequenceCameraShakeTestUtil
@@ -223,11 +223,11 @@ public:
 
 	/// Functions
 	// Function /Script/TemplateSequence.SequenceCameraShakeTestUtil.GetPostProcessBlendCache
-	// bool GetPostProcessBlendCache(class APlayerController* PlayerController, int32_t PPIndex, FPostProcessSettings& OutPPSettings, float& OutPPBlendWeight); // [0x78c754c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool GetPostProcessBlendCache(class APlayerController* PlayerController, int32_t PPIndex, FPostProcessSettings& OutPPSettings, float& OutPPBlendWeight); // [0x790397c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/TemplateSequence.SequenceCameraShakeTestUtil.GetLastFrameCameraCachePOV
-	// FMinimalViewInfo GetLastFrameCameraCachePOV(class APlayerController* PlayerController);                                  // [0x78c7474] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMinimalViewInfo GetLastFrameCameraCachePOV(class APlayerController* PlayerController);                                  // [0x79038a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TemplateSequence.SequenceCameraShakeTestUtil.GetCameraCachePOV
-	// FMinimalViewInfo GetCameraCachePOV(class APlayerController* PlayerController);                                           // [0x78c739c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMinimalViewInfo GetCameraCachePOV(class APlayerController* PlayerController);                                           // [0x79037cc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TemplateSequence.TemplateSequenceTrack

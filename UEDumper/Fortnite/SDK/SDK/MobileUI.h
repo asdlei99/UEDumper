@@ -24,7 +24,7 @@ public:
 
 	/// Functions
 	// Function /PlayerAugmentsUI/MobileUI/HLT/Widgets/WBP_Mobile_Augment_Selection_Proxy.WBP_Mobile_Augment_Selection_Proxy_C.ExecuteUbergraph_WBP_Mobile_Augment_Selection_Proxy
-	// void ExecuteUbergraph_WBP_Mobile_Augment_Selection_Proxy(int32_t EntryPoint);                                         // [0x2177018] Final                
+	// void ExecuteUbergraph_WBP_Mobile_Augment_Selection_Proxy(int32_t EntryPoint);                                         // [0x211c0a0] Final                
 };
 
 /// Class /PlayerAugmentsUI/MobileUI/HLT/BB_AugmentsList.BB_AugmentsList_C
@@ -48,16 +48,16 @@ class UWBP_Mobile_Augment_Selection_Preview_C : public UHUDLayoutToolV2_WidgetPr
 public:
 };
 
-/// Class /PlayerAugmentsUI/MobileUI/HLT/BBE_AugmentRotate.BBE_AugmentRotate_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_AugmentRotate_C : public UFortMobileActionButtonBehaviorExtension
+/// Class /PlayerAugmentsUI/MobileUI/HLT/BB_RerollAugment.BB_RerollAugment_C
+/// Size: 0x0000 (0x000140 - 0x000140)
+class UBB_RerollAugment_C : public UFortMobileActionButtonBehavior_RerollAugments
 { 
 public:
 };
 
-/// Class /PlayerAugmentsUI/MobileUI/HLT/BB_RerollAugment.BB_RerollAugment_C
-/// Size: 0x0000 (0x000140 - 0x000140)
-class UBB_RerollAugment_C : public UFortMobileActionButtonBehavior_RerollAugments
+/// Class /PlayerAugmentsUI/MobileUI/HLT/BBE_AugmentRotate.BBE_AugmentRotate_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_AugmentRotate_C : public UFortMobileActionButtonBehaviorExtension
 { 
 public:
 };
@@ -94,8 +94,8 @@ public:
 
 	/// Functions
 	// Function /PlayerAugmentsUI/MobileUI/HLT/Widgets/WBP_Mobile_Augment_SelectionTimer.WBP_Mobile_Augment_SelectionTimer_C.BP_OnHUDElementVisibilityChanged
-	// void BP_OnHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer, bool bIsSelectionItemEquipped, bool bForceCollapse); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnHUDElementVisibilityChanged(FGameplayTagContainer& HiddenElementTagContainer, bool bIsSelectionItemEquipped, bool bForceCollapse); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /PlayerAugmentsUI/MobileUI/HLT/Widgets/WBP_Mobile_Augment_SelectionTimer.WBP_Mobile_Augment_SelectionTimer_C.ExecuteUbergraph_WBP_Mobile_Augment_SelectionTimer
-	// void ExecuteUbergraph_WBP_Mobile_Augment_SelectionTimer(int32_t EntryPoint);                                          // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_WBP_Mobile_Augment_SelectionTimer(int32_t EntryPoint);                                          // [0x211c0a0] Final|HasDefaults    
 };
 

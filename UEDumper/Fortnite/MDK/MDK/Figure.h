@@ -21,7 +21,7 @@ public:
 	CMember(TArray<int32_t>)                           BeardPoses                                                  OFFSET(get<T>, {0x30, 16, 0, 0})
 	CMember(TArray<int32_t>)                           BeardBeanPoses                                              OFFSET(get<T>, {0x40, 16, 0, 0})
 	CMember(TArray<FTransform>)                        BeardBean                                                   OFFSET(get<T>, {0x50, 16, 0, 0})
-	CMember(TArray<FTransform>)                        beard                                                       OFFSET(get<T>, {0x60, 16, 0, 0})
+	CMember(TArray<FTransform>)                        Beard                                                       OFFSET(get<T>, {0x60, 16, 0, 0})
 	DMember(bool)                                      Transform_Beard                                             OFFSET(get<bool>, {0x70, 1, 0, 0})
 	DMember(bool)                                      Scale_Bean                                                  OFFSET(get<bool>, {0x71, 1, 0, 0})
 	DMember(bool)                                      Transform_Bean                                              OFFSET(get<bool>, {0x72, 1, 0, 0})

@@ -89,23 +89,23 @@ public:
 
 	/// Functions
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.UpdateSkeletalMeshComponent
-	// void UpdateSkeletalMeshComponent();                                                                                   // [0xb31d9bc] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshComponent();                                                                                   // [0xb2fe150] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.SetWeight
-	// void SetWeight(float NormalizedWeightValue);                                                                          // [0x6e86c58] Final|Native|Public|BlueprintCallable 
+	// void SetWeight(float NormalizedWeightValue);                                                                          // [0x6ecce38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.SetQualityLevel
-	// void SetQualityLevel(int32_t InQualityLevel);                                                                         // [0xb31d938] Final|Native|Public|BlueprintCallable 
+	// void SetQualityLevel(int32_t InQualityLevel);                                                                         // [0xb2fe0cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.SetDeformerAsset
-	// void SetDeformerAsset(class UMLDeformerAsset* InDeformerAsset);                                                       // [0x6965e0c] Final|Native|Public|BlueprintCallable 
+	// void SetDeformerAsset(class UMLDeformerAsset* InDeformerAsset);                                                       // [0x69aeebc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.GetWeight
-	// float GetWeight();                                                                                                    // [0x87833c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWeight();                                                                                                    // [0x87aa8e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.GetSkeletalMeshComponent
-	// class USkeletalMeshComponent* GetSkeletalMeshComponent();                                                             // [0x62ec914] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetSkeletalMeshComponent();                                                             // [0x6337064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.GetQualityLevel
-	// int32_t GetQualityLevel();                                                                                            // [0x9947184] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetQualityLevel();                                                                                            // [0x99508f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.GetDeformerAsset
-	// class UMLDeformerAsset* GetDeformerAsset();                                                                           // [0x8d27550] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMLDeformerAsset* GetDeformerAsset();                                                                           // [0x8d468dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MLDeformerFramework.MLDeformerComponent.FindSkeletalMeshComponent
-	// class USkeletalMeshComponent* FindSkeletalMeshComponent(class UMLDeformerAsset* Asset);                               // [0xb31d36c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* FindSkeletalMeshComponent(class UMLDeformerAsset* Asset);                               // [0xb2fdb00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MLDeformerFramework.MLDeformerComponentSource
@@ -209,15 +209,15 @@ public:
 
 	/// Functions
 	// Function /Script/MLDeformerFramework.MLDeformerMorphModel.SetMorphTargetsMinMaxWeights
-	// void SetMorphTargetsMinMaxWeights(TArray<float>& MinValues, TArray<float>& MaxValues);                                // [0xb31d7ac] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMorphTargetsMinMaxWeights(TArray<float>& MinValues, TArray<float>& MaxValues);                                // [0xb2fdf40] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MLDeformerFramework.MLDeformerMorphModel.SetMorphTargetsMaxWeights
-	// void SetMorphTargetsMaxWeights(TArray<float>& MaxWeights);                                                            // [0x8786054] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMorphTargetsMaxWeights(TArray<float>& MaxWeights);                                                            // [0x87ad570] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MLDeformerFramework.MLDeformerMorphModel.SetMorphTargetsErrorOrder
-	// void SetMorphTargetsErrorOrder(TArray<int32_t>& MorphTargetOrder, TArray<float>& ErrorValues);                        // [0xb31d648] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMorphTargetsErrorOrder(TArray<int32_t>& MorphTargetOrder, TArray<float>& ErrorValues);                        // [0xb2fdddc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MLDeformerFramework.MLDeformerMorphModel.SetMorphTargetDeltas
-	// void SetMorphTargetDeltas(TArray<FVector3f>& Deltas);                                                                 // [0xb31d5a8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMorphTargetDeltas(TArray<FVector3f>& Deltas);                                                                 // [0xb2fdd3c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MLDeformerFramework.MLDeformerMorphModel.SetMorphTargetDeltaFloats
-	// void SetMorphTargetDeltaFloats(TArray<float>& Deltas);                                                                // [0xb31d4c8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMorphTargetDeltaFloats(TArray<float>& Deltas);                                                                // [0xb2fdc5c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/MLDeformerFramework.MLDeformerMorphModelInputInfo

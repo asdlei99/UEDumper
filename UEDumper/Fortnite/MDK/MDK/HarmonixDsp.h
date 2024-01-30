@@ -23,13 +23,13 @@ public:
 
 	/// Functions
 	// Function /Script/HarmonixDsp.FusionPatch.ReleaseLoadedAudio
-	// void ReleaseLoadedAudio();                                                                                               // [0xaa62c38] Final|Native|Public|BlueprintCallable 
+	// void ReleaseLoadedAudio();                                                                                               // [0xaa4ffc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HarmonixDsp.FusionPatch.LoadAudioForPlayback
-	// void LoadAudioForPlayback(FDelegateProperty OnLoadComplete);                                                             // [0xaa62ba4] Final|Native|Public|BlueprintCallable 
+	// void LoadAudioForPlayback(FDelegateProperty OnLoadComplete);                                                             // [0xaa4ff2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HarmonixDsp.FusionPatch.IsAudioLoadedForPlayback
-	// bool IsAudioLoadedForPlayback();                                                                                         // [0xaa62b80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAudioLoadedForPlayback();                                                                                         // [0xaa4ff08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HarmonixDsp.FusionPatch.CancelAudioLoadRequest
-	// void CancelAudioLoadRequest();                                                                                           // [0xaa62b6c] Final|Native|Public|BlueprintCallable 
+	// void CancelAudioLoadRequest();                                                                                           // [0xaa4fef4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/HarmonixDsp.StretcherAndPitchShifterConfig

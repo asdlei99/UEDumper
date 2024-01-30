@@ -102,37 +102,37 @@ public:
 
 	/// Functions
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.UpdateSnowAndDirtParams
-	// void UpdateSnowAndDirtParams(float NormalizedForwardSpeed);                                                           // [0xa910c54] Final|Native|Protected|BlueprintCallable 
+	// void UpdateSnowAndDirtParams(float NormalizedForwardSpeed);                                                           // [0xa903084] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.StopTurnRumble
-	// void StopTurnRumble();                                                                                                // [0xa910c40] Final|Native|Protected|BlueprintCallable 
+	// void StopTurnRumble();                                                                                                // [0xa903070] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.StopLandRumble
-	// void StopLandRumble();                                                                                                // [0xa910c2c] Final|Native|Protected|BlueprintCallable 
+	// void StopLandRumble();                                                                                                // [0xa90305c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.StopDriverCameraShake
-	// void StopDriverCameraShake();                                                                                         // [0xa910c18] Final|Native|Protected|BlueprintCallable 
+	// void StopDriverCameraShake();                                                                                         // [0xa903048] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.SmashedThroughBuildingPiece
-	// void SmashedThroughBuildingPiece(FVector& ImpactPoint, FVector& ImpactNormal, class ABuildingActor* BuildingHitActor); // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void SmashedThroughBuildingPiece(FVector& ImpactPoint, FVector& ImpactNormal, class ABuildingActor* BuildingHitActor); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.ShowCooldownCue
-	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                    // [0x2177018] Event|Public|BlueprintEvent 
+	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.OnBoostStarted
-	// void OnBoostStarted();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostStarted();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.OnBoostReady
-	// void OnBoostReady();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostReady();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.OnBoostFinished
-	// void OnBoostFinished();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostFinished();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.OnBoostFailed
-	// void OnBoostFailed();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostFailed();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.LandShakeEnd
-	// void LandShakeEnd();                                                                                                  // [0xa910c04] Final|Native|Protected|BlueprintCallable 
+	// void LandShakeEnd();                                                                                                  // [0xa903034] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.GetSeatRotation
-	// FQuat GetSeatRotation();                                                                                              // [0xa910bdc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FQuat GetSeatRotation();                                                                                              // [0xa90300c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.GetSeatOffset
-	// FVector GetSeatOffset();                                                                                              // [0xa910bb4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetSeatOffset();                                                                                              // [0xa902fe4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.GetBoostCharge
-	// float GetBoostCharge();                                                                                               // [0xa910b8c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostCharge();                                                                                               // [0xa902fbc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.CacheGroundFXComponent
-	// void CacheGroundFXComponent(class UNiagaraComponent* InGroundFXComponent);                                            // [0xa910b00] Final|Native|Public|BlueprintCallable 
+	// void CacheGroundFXComponent(class UNiagaraComponent* InGroundFXComponent);                                            // [0xa902f30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.CacheAudioPointers
-	// void CacheAudioPointers(class UFortVehicleAudioVoice* InAudioEngineUp, class UFortVehicleAudioVoice* InAudioEngineDown, class UFortVehicleAudioVoice* InAudioWakeTurn, class UFortVehicleAudioVoice* InAudioWakeSpeed, class UFortVehicleAudioVoice* InAudioScrape, class UFortVehicleAudioVoice* InAudioEngineOutOfFuel); // [0xa910884] Final|Native|Public|BlueprintCallable 
+	// void CacheAudioPointers(class UFortVehicleAudioVoice* InAudioEngineUp, class UFortVehicleAudioVoice* InAudioEngineDown, class UFortVehicleAudioVoice* InAudioWakeTurn, class UFortVehicleAudioVoice* InAudioWakeSpeed, class UFortVehicleAudioVoice* InAudioScrape, class UFortVehicleAudioVoice* InAudioEngineOutOfFuel); // [0xa902cb4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MotorboatRuntime.FortMeatballVehicleConfigs

@@ -419,19 +419,19 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetTags
-	// void SetTags(FZoneGraphTagMask NewTags);                                                                              // [0xa6e9584] Final|Native|Public|BlueprintCallable 
+	// void SetTags(FZoneGraphTagMask NewTags);                                                                              // [0xa6e1ff8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetShapeType
-	// void SetShapeType(FZoneShapeType Type);                                                                               // [0x626e360] Final|Native|Public|BlueprintCallable 
+	// void SetShapeType(FZoneShapeType Type);                                                                               // [0x62b92fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetReverseLaneProfile
-	// bool SetReverseLaneProfile(bool bReverse);                                                                            // [0xa6e94f8] Final|Native|Public|BlueprintCallable 
+	// bool SetReverseLaneProfile(bool bReverse);                                                                            // [0xa6e1f6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetPolygonRoutingType
-	// void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType);                                                     // [0xa6e947c] Final|Native|Public|BlueprintCallable 
+	// void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType);                                                     // [0xa6e1ef0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.IsLaneProfileReversed
-	// bool IsLaneProfileReversed();                                                                                         // [0xa6e9464] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLaneProfileReversed();                                                                                         // [0xa6e1ed8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.GetTags
-	// FZoneGraphTagMask GetTags();                                                                                          // [0xa6e944c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FZoneGraphTagMask GetTags();                                                                                          // [0xa6e1ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.GetShapeType
-	// FZoneShapeType GetShapeType();                                                                                        // [0x6267214] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FZoneShapeType GetShapeType();                                                                                        // [0x62b21b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/ZoneGraph.ZoneGraphBuilderRegisteredComponent

@@ -156,9 +156,9 @@ public:
 
 	/// Functions
 	// Function /Script/KatanaGameplayRuntime.KatanaTargetingComponent.PerformPrimaryAttackTargeting
-	// FVector PerformPrimaryAttackTargeting(EFortKatanaPrimaryAttackVariation AttackVariation);                             // [0xa9b0e1c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector PerformPrimaryAttackTargeting(EFortKatanaPrimaryAttackVariation AttackVariation);                             // [0xa9a1f18] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/KatanaGameplayRuntime.KatanaTargetingComponent.PerformDashTargeting
-	// bool PerformDashTargeting(FFortKatanaDashTargetingInfo& OutDashTargetingInfo);                                        // [0xa9b0d3c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool PerformDashTargeting(FFortKatanaDashTargetingInfo& OutDashTargetingInfo);                                        // [0xa9a1e38] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/KatanaGameplayRuntime.AbilityTask_ApplyRootMotion_KatanaDashForce
@@ -172,7 +172,7 @@ public:
 
 	/// Functions
 	// Function /Script/KatanaGameplayRuntime.AbilityTask_ApplyRootMotion_KatanaDashForce.ApplyRootMotion_KatanaDashForce
-	// class UAbilityTask_ApplyRootMotion_KatanaDashForce* ApplyRootMotion_KatanaDashForce(class UGameplayAbility* InOwningAbility, FName InTaskInstanceName, FVector InTargetLocation, float InDuration, float InHeightAboveGround, bool bInSetNewMovementMode, TEnumAsByte<EMovementMode> InMovementMode, bool bInRestrictSpeedToExpected, class UCurveVector* InPathOffsetCurve, ERootMotionFinishVelocityMode InVelocityOnFinishMode, FVector InSetVelocityOnFinish, float InClampVelocityOnFinish); // [0xa9b0380] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotion_KatanaDashForce* ApplyRootMotion_KatanaDashForce(class UGameplayAbility* InOwningAbility, FName InTaskInstanceName, FVector InTargetLocation, float InDuration, float InHeightAboveGround, bool bInSetNewMovementMode, TEnumAsByte<EMovementMode> InMovementMode, bool bInRestrictSpeedToExpected, class UCurveVector* InPathOffsetCurve, ERootMotionFinishVelocityMode InVelocityOnFinishMode, FVector InSetVelocityOnFinish, float InClampVelocityOnFinish); // [0xa9a147c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/KatanaGameplayRuntime.FortKatanaPrimaryAttackVariationInfo

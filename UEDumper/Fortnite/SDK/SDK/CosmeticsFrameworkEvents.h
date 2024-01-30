@@ -27,7 +27,7 @@ public:
 
 	/// Functions
 	// Function /Script/CosmeticsFrameworkEvents.CosmeticsEventRegistrar.RegisterOnCosmeticApplicationCompleted_BP
-	// FCosmeticsEventHandle RegisterOnCosmeticApplicationCompleted_BP(FDelegateProperty& Delegate, int32_t Flags);          // [0x7c25910] Native|Public|HasOutParms|BlueprintCallable 
+	// FCosmeticsEventHandle RegisterOnCosmeticApplicationCompleted_BP(FDelegateProperty& Delegate, int32_t Flags);          // [0x7c5f8fc] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/CosmeticsFrameworkEvents.CosmeticsFinishable

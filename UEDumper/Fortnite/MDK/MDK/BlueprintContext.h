@@ -30,6 +30,6 @@ public:
 
 	/// Functions
 	// Function /Script/BlueprintContext.BlueprintContextLibrary.GetContext
-	// class USubsystem* GetContext(class UObject* ContextObject, class UClass* Class);                                         // [0x29c3f30] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class USubsystem* GetContext(class UObject* ContextObject, class UClass* Class);                                         // [0x2a0755c] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 

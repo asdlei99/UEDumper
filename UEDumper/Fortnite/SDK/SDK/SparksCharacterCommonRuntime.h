@@ -40,7 +40,7 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCharacterCommonRuntime.SparksAnimationSubsystem.GetLoadedSparksAnimations
-	// class USparksInstrumentAnimations* GetLoadedSparksAnimations();                                                       // [0xb09eaa8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class USparksInstrumentAnimations* GetLoadedSparksAnimations();                                                       // [0xb081818] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SparksCharacterCommonRuntime.SparksBaseLayerAnimInstance
@@ -72,13 +72,13 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCharacterCommonRuntime.SparksBaseLayerAnimInstance.SetIsRoaming
-	// void SetIsRoaming(bool bInIsRoaming);                                                                                 // [0xb09f0b0] Final|Native|Public|BlueprintCallable 
+	// void SetIsRoaming(bool bInIsRoaming);                                                                                 // [0xb081e20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksBaseLayerAnimInstance.OnInstrumentPSCInitialized
-	// void OnInstrumentPSCInitialized(class USparksInstrumentAnimPlayerStateComponent* NewInstrumentPSC);                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnInstrumentPSCInitialized(class USparksInstrumentAnimPlayerStateComponent* NewInstrumentPSC);                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/SparksCharacterCommonRuntime.SparksBaseLayerAnimInstance.GetIsRoaming
-	// bool GetIsRoaming();                                                                                                  // [0xb09ea6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsRoaming();                                                                                                  // [0xb0817dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksBaseLayerAnimInstance.GetAnimatableState
-	// ESparksAnimatableState GetAnimatableState();                                                                          // [0xb09ea54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESparksAnimatableState GetAnimatableState();                                                                          // [0xb0817c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimations
@@ -92,7 +92,7 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimations.GetAnimClassForInstrument
-	// class UClass* GetAnimClassForInstrument(ESparksInstrumentType Instrument);                                            // [0xb09e9c8] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UClass* GetAnimClassForInstrument(ESparksInstrumentType Instrument);                                            // [0xb081738] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimInstance
@@ -135,48 +135,48 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.UnlinkInstrumentAnimationLayer
-	// void UnlinkInstrumentAnimationLayer();                                                                                // [0xb09f2f8] Final|Native|Public|BlueprintCallable 
+	// void UnlinkInstrumentAnimationLayer();                                                                                // [0xb082068] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.SwapCosmeticInstrument
-	// void SwapCosmeticInstrument(ESparksInstrumentType NewInstrumentType);                                                 // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SwapCosmeticInstrument(ESparksInstrumentType NewInstrumentType);                                                 // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.SetMusicClock
-	// void SetMusicClock(class UMusicClockComponent* NewMusicClock);                                                        // [0xb09f278] Final|Native|Public|BlueprintCallable 
+	// void SetMusicClock(class UMusicClockComponent* NewMusicClock);                                                        // [0xb081fe8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.SetMidiEventDriver
-	// void SetMidiEventDriver(TScriptInterface<Class> NewMidiEventDriver);                                                  // [0xb09f134] Final|Native|Public|BlueprintCallable 
+	// void SetMidiEventDriver(TScriptInterface<Class> NewMidiEventDriver);                                                  // [0xb081ea4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.SetCosmeticInstrumentType
-	// void SetCosmeticInstrumentType(ESparksInstrumentType NewCosmeticInstrumentType);                                      // [0xb09f030] Final|Native|Public|BlueprintCallable 
+	// void SetCosmeticInstrumentType(ESparksInstrumentType NewCosmeticInstrumentType);                                      // [0xb081da0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.SetCanPlayMidiAnimations
-	// void SetCanPlayMidiAnimations(bool bNewCanPlayMidiAnimations);                                                        // [0xb09ef88] Final|Native|Public|BlueprintCallable 
+	// void SetCanPlayMidiAnimations(bool bNewCanPlayMidiAnimations);                                                        // [0xb081cf8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.SetAnimatableState
-	// void SetAnimatableState(ESparksAnimatableState NewAnimatableState);                                                   // [0xb09ef08] Final|Native|Public|BlueprintCallable 
+	// void SetAnimatableState(ESparksAnimatableState NewAnimatableState);                                                   // [0xb081c78] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.PlayerHasTrackInstrument
-	// bool PlayerHasTrackInstrument(ESparksInstrumentType InstrumentType);                                                  // [0xb09ee5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool PlayerHasTrackInstrument(ESparksInstrumentType InstrumentType);                                                  // [0xb081bcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.PlayerHasCosmeticInstrument
-	// bool PlayerHasCosmeticInstrument(ESparksInstrumentType InstrumentType);                                               // [0xb09edcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool PlayerHasCosmeticInstrument(ESparksInstrumentType InstrumentType);                                               // [0xb081b3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.OverridePlayspace
-	// void OverridePlayspace(class ASparksMusicPlayspace* Playspace);                                                       // [0xb09ed50] Final|Native|Public|BlueprintCallable 
+	// void OverridePlayspace(class ASparksMusicPlayspace* Playspace);                                                       // [0xb081ac0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.LinkInstrumentAnimationLayer
-	// void LinkInstrumentAnimationLayer(class USparksInstrumentAnimations* Animations);                                     // [0xb09eb34] Final|Native|Public|BlueprintCallable 
+	// void LinkInstrumentAnimationLayer(class USparksInstrumentAnimations* Animations);                                     // [0xb0818a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.IsUsable
-	// bool IsUsable();                                                                                                      // [0x2177018] Event|Public|BlueprintEvent|Const 
+	// bool IsUsable();                                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.IsInstrumentAnimationLayerLinked
-	// bool IsInstrumentAnimationLayerLinked();                                                                              // [0xb09eb08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInstrumentAnimationLayerLinked();                                                                              // [0xb081878] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.GetTrackInstrumentType
-	// ESparksInstrumentType GetTrackInstrumentType();                                                                       // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// ESparksInstrumentType GetTrackInstrumentType();                                                                       // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.GetSparksPlayspace
-	// class ASparksMusicPlayspace* GetSparksPlayspace();                                                                    // [0x32c49dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ASparksMusicPlayspace* GetSparksPlayspace();                                                                    // [0x32c2c44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.GetMusicClock
-	// class UMusicClockComponent* GetMusicClock();                                                                          // [0x8f2c4e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMusicClockComponent* GetMusicClock();                                                                          // [0x8f4a678] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.GetMidiEventDriver
-	// TScriptInterface<Class> GetMidiEventDriver();                                                                         // [0xb09eacc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TScriptInterface<Class> GetMidiEventDriver();                                                                         // [0xb08183c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.GetLinkedInstrumentAnimationLayer
-	// class USparksBaseLayerAnimInstance* GetLinkedInstrumentAnimationLayer();                                              // [0xb09ea84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USparksBaseLayerAnimInstance* GetLinkedInstrumentAnimationLayer();                                              // [0xb0817f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.GetInstrumentAnimations
-	// class USparksInstrumentAnimations* GetInstrumentAnimations();                                                         // [0x62ec914] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USparksInstrumentAnimations* GetInstrumentAnimations();                                                         // [0x6337064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.GetCosmeticInstrumentType
-	// ESparksInstrumentType GetCosmeticInstrumentType();                                                                    // [0x97211fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESparksInstrumentType GetCosmeticInstrumentType();                                                                    // [0x973146c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.GetAnimatableState
-	// ESparksAnimatableState GetAnimatableState();                                                                          // [0x97211e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESparksAnimatableState GetAnimatableState();                                                                          // [0x9731454] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCharacterCommonRuntime.SparksInstrumentAnimPlayerStateComponent.CanPlayMidiAnimations
-	// bool CanPlayMidiAnimations();                                                                                         // [0x9721214] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPlayMidiAnimations();                                                                                         // [0x9731484] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

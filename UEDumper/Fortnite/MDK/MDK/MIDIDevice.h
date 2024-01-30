@@ -62,25 +62,25 @@ public:
 
 	/// Functions
 	// Function /Script/MIDIDevice.MIDIDeviceManager.ShutDownAllMIDIDevices
-	// void ShutDownAllMIDIDevices();                                                                                           // [0xc224f90] Final|Native|Static|Public|BlueprintCallable 
+	// void ShutDownAllMIDIDevices();                                                                                           // [0xc1db774] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.GetMIDIOutputDeviceIDByName
-	// void GetMIDIOutputDeviceIDByName(FString DeviceName, int32_t& DeviceID);                                                 // [0xc224104] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetMIDIOutputDeviceIDByName(FString DeviceName, int32_t& DeviceID);                                                 // [0xc1da8e8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.GetMIDIInputDeviceIDByName
-	// void GetMIDIInputDeviceIDByName(FString DeviceName, int32_t& DeviceID);                                                  // [0xc223a10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetMIDIInputDeviceIDByName(FString DeviceName, int32_t& DeviceID);                                                  // [0xc1da1f4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.GetDefaultMIDIOutputDeviceID
-	// void GetDefaultMIDIOutputDeviceID(int32_t& DeviceID);                                                                    // [0xc223968] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetDefaultMIDIOutputDeviceID(int32_t& DeviceID);                                                                    // [0xc1da14c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.GetDefaultMIDIInputDeviceID
-	// void GetDefaultMIDIInputDeviceID(int32_t& DeviceID);                                                                     // [0xc2238c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetDefaultMIDIInputDeviceID(int32_t& DeviceID);                                                                     // [0xc1da0a4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.FindMIDIDevices
-	// void FindMIDIDevices(TArray<FFoundMIDIDevice>& OutMIDIDevices);                                                          // [0xc223834] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void FindMIDIDevices(TArray<FFoundMIDIDevice>& OutMIDIDevices);                                                          // [0xc1da018] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.FindAllMIDIDeviceInfo
-	// void FindAllMIDIDeviceInfo(TArray<FMIDIDeviceInfo>& OutMIDIInputDevices, TArray<FMIDIDeviceInfo>& OutMIDIOutputDevices); // [0xc223720] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void FindAllMIDIDeviceInfo(TArray<FMIDIDeviceInfo>& OutMIDIInputDevices, TArray<FMIDIDeviceInfo>& OutMIDIOutputDevices); // [0xc1d9f04] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.CreateMIDIDeviceOutputController
-	// class UMIDIDeviceOutputController* CreateMIDIDeviceOutputController(int32_t DeviceID);                                   // [0xc2236a0] Final|Native|Static|Public|BlueprintCallable 
+	// class UMIDIDeviceOutputController* CreateMIDIDeviceOutputController(int32_t DeviceID);                                   // [0xc1d9e84] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.CreateMIDIDeviceInputController
-	// class UMIDIDeviceInputController* CreateMIDIDeviceInputController(int32_t DeviceID, int32_t MIDIBufferSize);             // [0xc2235e0] Final|Native|Static|Public|BlueprintCallable 
+	// class UMIDIDeviceInputController* CreateMIDIDeviceInputController(int32_t DeviceID, int32_t MIDIBufferSize);             // [0xc1d9dc4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceManager.CreateMIDIDeviceController
-	// class UMIDIDeviceController* CreateMIDIDeviceController(int32_t DeviceID, int32_t MIDIBufferSize);                       // [0xc223520] Final|Native|Static|Public|BlueprintCallable 
+	// class UMIDIDeviceController* CreateMIDIDeviceController(int32_t DeviceID, int32_t MIDIBufferSize);                       // [0xc1d9d04] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/MIDIDevice.MIDIDeviceOutputController
@@ -97,21 +97,21 @@ public:
 
 	/// Functions
 	// Function /Script/MIDIDevice.MIDIDeviceOutputController.SendMIDIProgramChange
-	// void SendMIDIProgramChange(int32_t Channel, int32_t ProgramNumber);                                                      // [0xc224ecc] Final|Native|Public|BlueprintCallable 
+	// void SendMIDIProgramChange(int32_t Channel, int32_t ProgramNumber);                                                      // [0xc1db6b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceOutputController.SendMIDIPitchBend
-	// void SendMIDIPitchBend(int32_t Channel, int32_t pitch);                                                                  // [0xc224de4] Final|Native|Public|BlueprintCallable 
+	// void SendMIDIPitchBend(int32_t Channel, int32_t pitch);                                                                  // [0xc1db5c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceOutputController.SendMIDINoteOn
-	// void SendMIDINoteOn(int32_t Channel, int32_t Note, int32_t Velocity);                                                    // [0xc224ce8] Final|Native|Public|BlueprintCallable 
+	// void SendMIDINoteOn(int32_t Channel, int32_t Note, int32_t Velocity);                                                    // [0xc1db4cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceOutputController.SendMIDINoteOff
-	// void SendMIDINoteOff(int32_t Channel, int32_t Note, int32_t Velocity);                                                   // [0xc224bec] Final|Native|Public|BlueprintCallable 
+	// void SendMIDINoteOff(int32_t Channel, int32_t Note, int32_t Velocity);                                                   // [0xc1db3d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceOutputController.SendMIDINoteAftertouch
-	// void SendMIDINoteAftertouch(int32_t Channel, int32_t Note, float Amount);                                                // [0xc224af0] Final|Native|Public|BlueprintCallable 
+	// void SendMIDINoteAftertouch(int32_t Channel, int32_t Note, float Amount);                                                // [0xc1db2d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceOutputController.SendMIDIEvent
-	// void SendMIDIEvent(EMIDIEventType EventType, int32_t Channel, int32_t data1, int32_t data2);                             // [0xc2249b8] Final|Native|Public|BlueprintCallable 
+	// void SendMIDIEvent(EMIDIEventType EventType, int32_t Channel, int32_t data1, int32_t data2);                             // [0xc1db19c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceOutputController.SendMIDIControlChange
-	// void SendMIDIControlChange(int32_t Channel, int32_t Type, int32_t Value);                                                // [0xc2248bc] Final|Native|Public|BlueprintCallable 
+	// void SendMIDIControlChange(int32_t Channel, int32_t Type, int32_t Value);                                                // [0xc1db0a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MIDIDevice.MIDIDeviceOutputController.SendMIDIChannelAftertouch
-	// void SendMIDIChannelAftertouch(int32_t Channel, float Amount);                                                           // [0xc2247f8] Final|Native|Public|BlueprintCallable 
+	// void SendMIDIChannelAftertouch(int32_t Channel, float Amount);                                                           // [0xc1dafdc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/MIDIDevice.FoundMIDIDevice

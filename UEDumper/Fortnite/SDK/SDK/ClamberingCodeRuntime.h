@@ -134,9 +134,9 @@ public:
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.FortMovementMode_ExtClambering.BP_GetClamberLocation
-	// FVector BP_GetClamberLocation();                                                                                      // [0x199552c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector BP_GetClamberLocation();                                                                                      // [0x3046e6c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.FortMovementMode_ExtClambering.BP_GetAnimationMontageInformation
-	// void BP_GetAnimationMontageInformation(FClamberMontageInput& Context, class UAnimMontage*& AnimMontage, FName& StartSectionName, FName& MontageMiddleSectionName); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void BP_GetAnimationMontageInformation(FClamberMontageInput& Context, class UAnimMontage*& AnimMontage, FName& StartSectionName, FName& MontageMiddleSectionName); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/ClamberingCodeRuntime.InstancedLedgeActor
@@ -150,9 +150,9 @@ public:
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.InstancedLedgeActor.BP_OnRemoveInstance
-	// void BP_OnRemoveInstance(FTransform& LedgeTransform, int32_t InstanceIndex);                                          // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void BP_OnRemoveInstance(FTransform& LedgeTransform, int32_t InstanceIndex);                                          // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.InstancedLedgeActor.BP_OnAddInstance
-	// void BP_OnAddInstance(FTransform& LedgeTransform, int32_t InstanceIndex);                                             // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void BP_OnAddInstance(FTransform& LedgeTransform, int32_t InstanceIndex);                                             // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/ClamberingCodeRuntime.LedgeLaunchWorldSubsystem
@@ -170,7 +170,7 @@ public:
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.LedgeLaunchWorldSubsystem.OnWallDied
-	// void OnWallDied(float Damage, FGameplayTagContainer& DamageTags, FVector Momentum, FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, FGameplayEffectContextHandle EffectContext); // [0x2f2ac50] Final|Native|Protected|HasOutParms|HasDefaults 
+	// void OnWallDied(float Damage, FGameplayTagContainer& DamageTags, FVector Momentum, FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, FGameplayEffectContextHandle EffectContext); // [0x2f2fb80] Final|Native|Protected|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/ClamberingCodeRuntime.PBWLedgeConfigurationData
@@ -369,75 +369,75 @@ public:
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.UnregisterMutatorUpdatedDelegate
-	// void UnregisterMutatorUpdatedDelegate();                                                                              // [0xa8e7560] Final|Native|Protected 
+	// void UnregisterMutatorUpdatedDelegate();                                                                              // [0xa8d9990] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.ShouldShowClamberIndicator
-	// bool ShouldShowClamberIndicator();                                                                                    // [0xa8e753c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldShowClamberIndicator();                                                                                    // [0xa8d996c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.SetTutorialModeEnabled
-	// void SetTutorialModeEnabled(bool bEnabled);                                                                           // [0xa8e74bc] Final|Native|Public|BlueprintCallable 
+	// void SetTutorialModeEnabled(bool bEnabled);                                                                           // [0xa8d98ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.ServerStartClambering
-	// void ServerStartClambering(FReplicatedClamberingTargetingData InReplicatedTargetingData, double ClientLastTeleportTime); // [0xa8e7234] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerStartClambering(FReplicatedClamberingTargetingData InReplicatedTargetingData, double ClientLastTeleportTime); // [0xa8d9664] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.RegisterMutatorUpdatedDelegate
-	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                       // [0xa8e7030] Final|Native|Protected 
+	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                       // [0xa8d9460] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnRep_ReplicatedTargetingData
-	// void OnRep_ReplicatedTargetingData();                                                                                 // [0xa8e6f28] Final|Native|Protected 
+	// void OnRep_ReplicatedTargetingData();                                                                                 // [0xa8d9358] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnRep_ReplicatedLastTeleportTime
-	// void OnRep_ReplicatedLastTeleportTime();                                                                              // [0x2240050] Final|Native|Protected 
+	// void OnRep_ReplicatedLastTeleportTime();                                                                              // [0x2200480] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnRep_ReplicatedClamberingState
-	// void OnRep_ReplicatedClamberingState();                                                                               // [0x22404bc] Final|Native|Protected 
+	// void OnRep_ReplicatedClamberingState();                                                                               // [0x2200744] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                    // [0x2240d84] Final|Native|Protected 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                    // [0x2d7fb98] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                              // [0x3255af4] Final|Native|Protected 
+	// void OnMutatorUpdated();                                                                                              // [0x1e7939c] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.NetMulticast_ClamberingLedgeFailed
-	// void NetMulticast_ClamberingLedgeFailed(EClamberingFailedReason FailedReason, EClamberingState FailedState);          // [0xa8e6e60] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_ClamberingLedgeFailed(EClamberingFailedReason FailedReason, EClamberingState FailedState);          // [0xa8d9290] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.IsTutorialModeEnabled
-	// bool IsTutorialModeEnabled();                                                                                         // [0xa8e6e3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTutorialModeEnabled();                                                                                         // [0xa8d926c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.IsClamberingEnabled
-	// bool IsClamberingEnabled();                                                                                           // [0xa8e6e18] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsClamberingEnabled();                                                                                           // [0xa8d9248] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.IsAutoClamberingEnabled
-	// bool IsAutoClamberingEnabled();                                                                                       // [0xa8e6df4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAutoClamberingEnabled();                                                                                       // [0xa8d9224] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleTargetingDataValid
-	// void HandleTargetingDataValid(FClamberingTargetingData& TargetingData);                                               // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void HandleTargetingDataValid(FClamberingTargetingData& TargetingData);                                               // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleTargetingDataInvalid
-	// void HandleTargetingDataInvalid();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleTargetingDataInvalid();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleTargetActorHealthChanged
-	// void HandleTargetActorHealthChanged();                                                                                // [0xa8e6de0] Final|Native|Protected 
+	// void HandleTargetActorHealthChanged();                                                                                // [0xa8d9210] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleTargetActorDestroyed
-	// void HandleTargetActorDestroyed(class AActor* Actor);                                                                 // [0xa8e6d60] Final|Native|Protected 
+	// void HandleTargetActorDestroyed(class AActor* Actor);                                                                 // [0xa8d9190] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerTeleported
-	// void HandleOwnerTeleported(class AFortPawn* TeleportedOwner);                                                         // [0x3aff70c] Final|Native|Protected|BlueprintCallable 
+	// void HandleOwnerTeleported(class AFortPawn* TeleportedOwner);                                                         // [0x3af62f4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerMovementModeChanged
-	// void HandleOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0x154abf8] Final|Native|Protected 
+	// void HandleOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0x1e05b10] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerJumpInput
-	// void HandleOwnerJumpInput(bool bPressed);                                                                             // [0xa8e6ce0] Final|Native|Protected 
+	// void HandleOwnerJumpInput(bool bPressed);                                                                             // [0xa8d9110] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerDied
-	// void HandleOwnerDied(class AFortPawn* DeadPawn);                                                                      // [0xa8e6c60] Final|Native|Protected 
+	// void HandleOwnerDied(class AFortPawn* DeadPawn);                                                                      // [0xa8d9090] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerDBNO
-	// void HandleOwnerDBNO();                                                                                               // [0x22400f0] Final|Native|Protected 
+	// void HandleOwnerDBNO();                                                                                               // [0x2200520] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerASCInvalidated
-	// void HandleOwnerASCInvalidated();                                                                                     // [0x224012c] Final|Native|Protected 
+	// void HandleOwnerASCInvalidated();                                                                                     // [0x220055c] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleOwnerASCInitialized
-	// void HandleOwnerASCInitialized(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* AffectedPawn); // [0x3275fec] Final|Native|Protected 
+	// void HandleOwnerASCInitialized(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* AffectedPawn); // [0x3271288] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleClamberingTargetOutOfActivationRange
-	// void HandleClamberingTargetOutOfActivationRange();                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleClamberingTargetOutOfActivationRange();                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.HandleClamberingTargetInActivationRange
-	// void HandleClamberingTargetInActivationRange();                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleClamberingTargetInActivationRange();                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.DrawDebugHUD
-	// void DrawDebugHUD(class AHUD* HUD, class UCanvas* Canvas);                                                            // [0x696d714] Final|Native|Protected 
+	// void DrawDebugHUD(class AHUD* HUD, class UCanvas* Canvas);                                                            // [0x69b67c4] Final|Native|Protected 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_TutorialModeEnabled
-	// void BP_TutorialModeEnabled();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent|Const 
+	// void BP_TutorialModeEnabled();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_TutorialModeDisabled
-	// void BP_TutorialModeDisabled();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent|Const 
+	// void BP_TutorialModeDisabled();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_IsValidTargetActor
-	// void BP_IsValidTargetActor(class AActor* TargetActor, bool& bIsValidTargetActor);                                     // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_IsValidTargetActor(class AActor* TargetActor, bool& bIsValidTargetActor);                                     // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_HandleSynchedActionStarted
-	// void BP_HandleSynchedActionStarted(FSynchedActionInfo& SynchedActionInfo);                                            // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_HandleSynchedActionStarted(FSynchedActionInfo& SynchedActionInfo);                                            // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_HandleClamberingStateChanged
-	// void BP_HandleClamberingStateChanged(EClamberingState OldClamberingState, EClamberingState NewClamberingState);       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleClamberingStateChanged(EClamberingState OldClamberingState, EClamberingState NewClamberingState);       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_CanStartTargeting
-	// void BP_CanStartTargeting(bool& bCanStartTargeting);                                                                  // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartTargeting(bool& bCanStartTargeting);                                                                  // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/ClamberingCodeRuntime.ClamberingComponent.BP_CanStartClambering
-	// void BP_CanStartClambering(bool& bCanStartClambering);                                                                // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartClambering(bool& bCanStartClambering);                                                                // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/ClamberingCodeRuntime.ClamberingLibrary
@@ -449,7 +449,7 @@ public:
 
 	/// Functions
 	// Function /Script/ClamberingCodeRuntime.ClamberingLibrary.PerformClamberingTargeting
-	// bool PerformClamberingTargeting(class ACharacter* Character, FClamberingTargetingData& OutTargetingData);             // [0xa8e6f3c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool PerformClamberingTargeting(class ACharacter* Character, FClamberingTargetingData& OutTargetingData);             // [0xa8d936c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/ClamberingCodeRuntime.FortMovementMode_ClamberingRuntimeData

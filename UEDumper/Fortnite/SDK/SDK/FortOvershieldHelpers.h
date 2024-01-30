@@ -19,9 +19,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortOvershieldHelpers.FortOvershieldHelperComponent.ClearOvershieldListenerDelegates
-	// void ClearOvershieldListenerDelegates(class UGameplayAbility* OwningAbility);                                         // [0xb68eb78] Final|Native|Static|Public|BlueprintCallable 
+	// void ClearOvershieldListenerDelegates(class UGameplayAbility* OwningAbility);                                         // [0xb662dc4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/FortOvershieldHelpers.FortOvershieldHelperComponent.AssignOvershieldListenerDelegates
-	// void AssignOvershieldListenerDelegates(class UGameplayAbility* OwningAbility, FFortOvershieldDelegateContainer Delegates); // [0xb68e9dc] Final|Native|Static|Public|BlueprintCallable 
+	// void AssignOvershieldListenerDelegates(class UGameplayAbility* OwningAbility, FFortOvershieldDelegateContainer Delegates); // [0xb662c28] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/FortOvershieldHelpers.FortOvershieldDelegateContainer

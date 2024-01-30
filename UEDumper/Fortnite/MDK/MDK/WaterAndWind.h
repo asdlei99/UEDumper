@@ -22,7 +22,7 @@ public:
 
 	/// Functions
 	// Function /Game/WaterAndWind/AnimNotifies/AnimNotify_PlayPlayerLandsWindEffect.AnimNotify_PlayPlayerLandsWindEffect_C.Received_Notify
-	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, FAnimNotifyEventReference& EventReference); // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 };
 
 /// Struct /Game/WaterAndWind/Blueprint/ArrayOfWaterMeshWaterBlueprintPairs.ArrayOfWaterMeshWaterBlueprintPairs

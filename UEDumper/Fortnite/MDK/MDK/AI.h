@@ -58,9 +58,9 @@ public:
 
 	/// Functions
 	// Function /Game/AI/AIBlueprintInterface/BPI_HuskDance.BPI_HuskDance_C.OnEndDance
-	// void OnEndDance();                                                                                                       // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void OnEndDance();                                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/AI/AIBlueprintInterface/BPI_HuskDance.BPI_HuskDance_C.OnBeginDance
-	// void OnBeginDance();                                                                                                     // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void OnBeginDance();                                                                                                     // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/AI/NavAreas/FortNavArea_JumpDown.FortNavArea_JumpDown_C
@@ -85,9 +85,9 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Interfaces/Fauna_Idle_AnimInterface.Fauna_Idle_AnimInterface_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Interfaces/Fauna_Idle_AnimInterface.Fauna_Idle_AnimInterface_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C
@@ -303,21 +303,21 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x2177018] HasOutParms|BlueprintCallable 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x211c0a0] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x2177018] HasOutParms|BlueprintCallable 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x211c0a0] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                    // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                    // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3
-	// void EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3(); // [0x2177018] BlueprintEvent       
+	// void EvaluateGraphExposedInputs_ExecuteUbergraph_Burt_AnimBP_AnimGraphNode_BlendSpacePlayer_2DD8FBAB4C767B0770C81BBB25A41BD3(); // [0x211c0a0] BlueprintEvent       
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_FallExit
-	// void AnimNotify_FallExit();                                                                                              // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_FallExit();                                                                                              // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_LandAddExit
-	// void AnimNotify_LandAddExit();                                                                                           // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandAddExit();                                                                                           // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.AnimNotify_LandEnter
-	// void AnimNotify_LandEnter();                                                                                             // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandEnter();                                                                                             // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Prey/Burt/Animations/Burt_AnimBP.Burt_AnimBP_C.ExecuteUbergraph_Burt_AnimBP
-	// void ExecuteUbergraph_Burt_AnimBP(int32_t EntryPoint);                                                                   // [0x2177018] Final                
+	// void ExecuteUbergraph_Burt_AnimBP(int32_t EntryPoint);                                                                   // [0x211c0a0] Final                
 };
 
 /// Class /Irwin/AI/Interfaces/Fauna_Jump_AnimInterface.Fauna_Jump_AnimInterface_C
@@ -332,7 +332,7 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Interfaces/Fauna_Jump_AnimInterface.Fauna_Jump_AnimInterface_C.Fauna Jump
-	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                                  // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                                  // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C
@@ -578,21 +578,21 @@ public:
 
 	/// Functions
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna Jump
-	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                                  // [0x2177018] HasOutParms|BlueprintCallable 
+	// void Fauna Jump(FPoseLink& Fauna Jump);                                                                                  // [0x211c0a0] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna IdleTurn
-	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x2177018] HasOutParms|BlueprintCallable 
+	// void Fauna IdleTurn(FPoseLink InPose IdleTurn, FPoseLink& Fauna IdleTurn);                                               // [0x211c0a0] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.Fauna Idle
-	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x2177018] HasOutParms|BlueprintCallable 
+	// void Fauna Idle(FPoseLink InPose Idle, FPoseLink& Fauna Idle);                                                           // [0x211c0a0] HasOutParms|BlueprintCallable 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimGraph
-	// void AnimGraph(FPoseLink& AnimGraph);                                                                                    // [0x2177018] HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AnimGraph(FPoseLink& AnimGraph);                                                                                    // [0x211c0a0] HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_FallExit
-	// void AnimNotify_FallExit();                                                                                              // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_FallExit();                                                                                              // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_LandAddExit
-	// void AnimNotify_LandAddExit();                                                                                           // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandAddExit();                                                                                           // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.AnimNotify_LandEnter
-	// void AnimNotify_LandEnter();                                                                                             // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void AnimNotify_LandEnter();                                                                                             // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Irwin/AI/Predators/Grandma/Animations/Grandma_AnimBP.Grandma_AnimBP_C.ExecuteUbergraph_Grandma_AnimBP
-	// void ExecuteUbergraph_Grandma_AnimBP(int32_t EntryPoint);                                                                // [0x2177018] Final                
+	// void ExecuteUbergraph_Grandma_AnimBP(int32_t EntryPoint);                                                                // [0x211c0a0] Final                
 };
 
 /// Class /Irwin/AI/Prey/Burt/Abilities/GE_RidingSprint_PawnDmg.GE_RidingSprint_PawnDmg_C

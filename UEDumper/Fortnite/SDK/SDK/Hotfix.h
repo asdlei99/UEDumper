@@ -65,7 +65,7 @@ public:
 
 	/// Functions
 	// Function /Script/Hotfix.OnlineHotfixManager.StartHotfixProcess
-	// void StartHotfixProcess();                                                                                            // [0x644f19c] Native|Public|BlueprintCallable 
+	// void StartHotfixProcess();                                                                                            // [0x6498438] Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/Hotfix.UpdateContextDefinition

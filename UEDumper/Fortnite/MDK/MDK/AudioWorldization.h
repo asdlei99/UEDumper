@@ -85,21 +85,21 @@ public:
 
 	/// Functions
 	// Function /Script/AudioWorldization.AudioWorldizationSubsystem.SetWorldizationSettings
-	// void SetWorldizationSettings(FAudioWorldizationSettings& InSettings);                                                    // [0x7ff4944] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetWorldizationSettings(FAudioWorldizationSettings& InSettings);                                                    // [0x802ded8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioWorldization.AudioWorldizationSubsystem.SetEnabled
-	// void SetEnabled(bool bNewEnabled);                                                                                       // [0x7ff48c4] Final|Native|Public|BlueprintCallable 
+	// void SetEnabled(bool bNewEnabled);                                                                                       // [0x802de58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioWorldization.AudioWorldizationSubsystem.SetDefaultSettings
-	// void SetDefaultSettings();                                                                                               // [0x7ff48b0] Final|Native|Public|BlueprintCallable 
+	// void SetDefaultSettings();                                                                                               // [0x802de44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioWorldization.AudioWorldizationSubsystem.RemoveWorldizationSettings
-	// void RemoveWorldizationSettings(FName InIdentifier);                                                                     // [0x7ff4830] Final|Native|Public|BlueprintCallable 
+	// void RemoveWorldizationSettings(FName InIdentifier);                                                                     // [0x802ddc4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioWorldization.AudioWorldizationSubsystem.RemoveEffectSendOverride
-	// void RemoveEffectSendOverride(FName InIdentifier);                                                                       // [0x7ff4830] Final|Native|Public|BlueprintCallable 
+	// void RemoveEffectSendOverride(FName InIdentifier);                                                                       // [0x802ddc4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioWorldization.AudioWorldizationSubsystem.OverrideEffectSends
-	// void OverrideEffectSends(FName InIdentifier, TArray<FAudioWorldizationSend>& InSends);                                   // [0x7ff4754] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OverrideEffectSends(FName InIdentifier, TArray<FAudioWorldizationSend>& InSends);                                   // [0x802dce8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioWorldization.AudioWorldizationSubsystem.GetWallDistanceRatio
-	// float GetWallDistanceRatio();                                                                                            // [0x7ff472c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWallDistanceRatio();                                                                                            // [0x802dcc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioWorldization.AudioWorldizationSubsystem.GetEnclosureFactor
-	// float GetEnclosureFactor();                                                                                              // [0x7ff4704] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEnclosureFactor();                                                                                              // [0x802dc98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AudioWorldization.AudioWorldizationTraceDirectionPolicyBase

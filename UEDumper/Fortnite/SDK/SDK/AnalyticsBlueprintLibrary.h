@@ -18,63 +18,63 @@ public:
 
 	/// Functions
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSessionWithAttributes
-	// bool StartSessionWithAttributes(TArray<FAnalyticsEventAttr>& Attributes);                                             // [0x7d90830] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool StartSessionWithAttributes(TArray<FAnalyticsEventAttr>& Attributes);                                             // [0x7dca130] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSession
-	// bool StartSession();                                                                                                  // [0x7d907b8] Final|Native|Static|Public|BlueprintCallable 
+	// bool StartSession();                                                                                                  // [0x7dca0b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetUserId
-	// void SetUserId(FString UserId);                                                                                       // [0x7d900d8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetUserId(FString UserId);                                                                                       // [0x7dc99d8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetSessionId
-	// void SetSessionId(FString SessionId);                                                                                 // [0x7d8f9f8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetSessionId(FString SessionId);                                                                                 // [0x7dc92f8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetLocation
-	// void SetLocation(FString Location);                                                                                   // [0x7d8f318] Final|Native|Static|Public|BlueprintCallable 
+	// void SetLocation(FString Location);                                                                                   // [0x7dc8c18] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetGender
-	// void SetGender(FString Gender);                                                                                       // [0x7d8ec38] Final|Native|Static|Public|BlueprintCallable 
+	// void SetGender(FString Gender);                                                                                       // [0x7dc8538] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetBuildInfo
-	// void SetBuildInfo(FString BuildInfo);                                                                                 // [0x7d8e558] Final|Native|Static|Public|BlueprintCallable 
+	// void SetBuildInfo(FString BuildInfo);                                                                                 // [0x7dc7e58] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetAge
-	// void SetAge(int32_t Age);                                                                                             // [0x7d8e4a8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetAge(int32_t Age);                                                                                             // [0x7dc7da8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchaseWithAttributes
-	// void RecordSimpleItemPurchaseWithAttributes(FString ItemId, int32_t ItemQuantity, TArray<FAnalyticsEventAttr>& Attributes); // [0x7d8dd80] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RecordSimpleItemPurchaseWithAttributes(FString ItemId, int32_t ItemQuantity, TArray<FAnalyticsEventAttr>& Attributes); // [0x7dc7680] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchase
-	// void RecordSimpleItemPurchase(FString ItemId, int32_t ItemQuantity);                                                  // [0x7d8d6b0] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordSimpleItemPurchase(FString ItemId, int32_t ItemQuantity);                                                  // [0x7dc6fb0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchaseWithAttributes
-	// void RecordSimpleCurrencyPurchaseWithAttributes(FString GameCurrencyType, int32_t GameCurrencyAmount, TArray<FAnalyticsEventAttr>& Attributes); // [0x7d8cf88] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RecordSimpleCurrencyPurchaseWithAttributes(FString GameCurrencyType, int32_t GameCurrencyAmount, TArray<FAnalyticsEventAttr>& Attributes); // [0x7dc6888] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchase
-	// void RecordSimpleCurrencyPurchase(FString GameCurrencyType, int32_t GameCurrencyAmount);                              // [0x7d8c868] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordSimpleCurrencyPurchase(FString GameCurrencyType, int32_t GameCurrencyAmount);                              // [0x7dc6168] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithFullHierarchyAndAttributes
-	// void RecordProgressWithFullHierarchyAndAttributes(FString ProgressType, TArray<FString>& ProgressNames, TArray<FAnalyticsEventAttr>& Attributes); // [0x7d8c114] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RecordProgressWithFullHierarchyAndAttributes(FString ProgressType, TArray<FString>& ProgressNames, TArray<FAnalyticsEventAttr>& Attributes); // [0x7dc5a14] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithAttributes
-	// void RecordProgressWithAttributes(FString ProgressType, FString ProgressName, TArray<FAnalyticsEventAttr>& Attributes); // [0x7d8b9d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RecordProgressWithAttributes(FString ProgressType, FString ProgressName, TArray<FAnalyticsEventAttr>& Attributes); // [0x7dc52d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgress
-	// void RecordProgress(FString ProgressType, FString ProgressName);                                                      // [0x7d8b298] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordProgress(FString ProgressType, FString ProgressName);                                                      // [0x7dc4b98] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordItemPurchase
-	// void RecordItemPurchase(FString ItemId, FString Currency, int32_t PerItemCost, int32_t ItemQuantity);                 // [0x7d8ab38] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordItemPurchase(FString ItemId, FString Currency, int32_t PerItemCost, int32_t ItemQuantity);                 // [0x7dc4438] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttributes
-	// void RecordEventWithAttributes(FString EventName, TArray<FAnalyticsEventAttr>& Attributes);                           // [0x7d8a448] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RecordEventWithAttributes(FString EventName, TArray<FAnalyticsEventAttr>& Attributes);                           // [0x7dc3d48] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttribute
-	// void RecordEventWithAttribute(FString EventName, FString AttributeName, FString AttributeValue);                      // [0x7d89d0c] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordEventWithAttribute(FString EventName, FString AttributeName, FString AttributeValue);                      // [0x7dc360c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEvent
-	// void RecordEvent(FString EventName);                                                                                  // [0x7d89624] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordEvent(FString EventName);                                                                                  // [0x7dc2f24] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordErrorWithAttributes
-	// void RecordErrorWithAttributes(FString Error, TArray<FAnalyticsEventAttr>& Attributes);                               // [0x7d88f34] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RecordErrorWithAttributes(FString Error, TArray<FAnalyticsEventAttr>& Attributes);                               // [0x7dc2834] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordError
-	// void RecordError(FString Error);                                                                                      // [0x7d88850] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordError(FString Error);                                                                                      // [0x7dc2150] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyPurchase
-	// void RecordCurrencyPurchase(FString GameCurrencyType, int32_t GameCurrencyAmount, FString RealCurrencyType, float RealMoneyCost, FString PaymentProvider); // [0x7d880a0] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordCurrencyPurchase(FString GameCurrencyType, int32_t GameCurrencyAmount, FString RealCurrencyType, float RealMoneyCost, FString PaymentProvider); // [0x7dc19a0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGivenWithAttributes
-	// void RecordCurrencyGivenWithAttributes(FString GameCurrencyType, int32_t GameCurrencyAmount, TArray<FAnalyticsEventAttr>& Attributes); // [0x7d87978] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RecordCurrencyGivenWithAttributes(FString GameCurrencyType, int32_t GameCurrencyAmount, TArray<FAnalyticsEventAttr>& Attributes); // [0x7dc1278] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGiven
-	// void RecordCurrencyGiven(FString GameCurrencyType, int32_t GameCurrencyAmount);                                       // [0x7d87254] Final|Native|Static|Public|BlueprintCallable 
+	// void RecordCurrencyGiven(FString GameCurrencyType, int32_t GameCurrencyAmount);                                       // [0x7dc0b54] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.MakeEventAttribute
-	// FAnalyticsEventAttr MakeEventAttribute(FString AttributeName, FString AttributeValue);                                // [0x7d86b14] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FAnalyticsEventAttr MakeEventAttribute(FString AttributeName, FString AttributeValue);                                // [0x7dc0414] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetUserId
-	// FString GetUserId();                                                                                                  // [0x7d8648c] Final|Native|Static|Public|BlueprintCallable 
+	// FString GetUserId();                                                                                                  // [0x7dbfd8c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetSessionId
-	// FString GetSessionId();                                                                                               // [0x7d85e04] Final|Native|Static|Public|BlueprintCallable 
+	// FString GetSessionId();                                                                                               // [0x7dbf704] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.FlushEvents
-	// void FlushEvents();                                                                                                   // [0x7d85da0] Final|Native|Static|Public|BlueprintCallable 
+	// void FlushEvents();                                                                                                   // [0x7dbf6a0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.EndSession
-	// void EndSession();                                                                                                    // [0x7d85d3c] Final|Native|Static|Public|BlueprintCallable 
+	// void EndSession();                                                                                                    // [0x7dbf63c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AnalyticsBlueprintLibrary.AnalyticsEventAttr

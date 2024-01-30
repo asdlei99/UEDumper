@@ -21,6 +21,6 @@ public:
 
 	/// Functions
 	// Function /Script/WolfCodeRuntime.FortCheatManager_Wolf.WolfEnable
-	// void WolfEnable(bool bEnable);                                                                                           // [0x5fe71f4] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void WolfEnable(bool bEnable);                                                                                           // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 

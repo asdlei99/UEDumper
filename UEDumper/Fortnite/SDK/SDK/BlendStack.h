@@ -20,13 +20,13 @@ public:
 
 	/// Functions
 	// Function /Script/BlendStack.BlendStackAnimNodeLibrary.ForceBlendNextUpdate
-	// void ForceBlendNextUpdate(FBlendStackAnimNodeReference& BlendStackNode);                                              // [0x7c2b5d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ForceBlendNextUpdate(FBlendStackAnimNodeReference& BlendStackNode);                                              // [0x7c655bc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/BlendStack.BlendStackAnimNodeLibrary.ConvertToBlendStackNodePure
-	// void ConvertToBlendStackNodePure(FAnimNodeReference& Node, FBlendStackAnimNodeReference& BlendStackNode, bool& Result); // [0x7c2b458] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToBlendStackNodePure(FAnimNodeReference& Node, FBlendStackAnimNodeReference& BlendStackNode, bool& Result); // [0x7c65444] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/BlendStack.BlendStackAnimNodeLibrary.ConvertToBlendStackNode
-	// FBlendStackAnimNodeReference ConvertToBlendStackNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x7c2b32c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FBlendStackAnimNodeReference ConvertToBlendStackNode(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0x7c65318] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/BlendStack.BlendStackAnimNodeLibrary.BlendTo
-	// void BlendTo(FAnimUpdateContext& Context, FBlendStackAnimNodeReference& BlendStackNode, class UAnimationAsset* AnimationAsset, float AnimationTime, bool bLoop, bool bMirrored, float BlendTime, FVector BlendParameters, float WantedPlayRate); // [0x7c2ab8c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void BlendTo(FAnimUpdateContext& Context, FBlendStackAnimNodeReference& BlendStackNode, class UAnimationAsset* AnimationAsset, float AnimationTime, bool bLoop, bool bMirrored, float BlendTime, FVector BlendParameters, float WantedPlayRate); // [0x7c64b78] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/BlendStack.BlendStackAnimNodeReference

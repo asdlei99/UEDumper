@@ -145,7 +145,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameFeatures.GameFeatureData.GetPluginName
-	// void GetPluginName(class UGameFeatureData* GFD, FString& PluginName);                                                 // [0x6d2d390] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetPluginName(class UGameFeatureData* GFD, FString& PluginName);                                                 // [0x6d7582c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/GameFeatures.GameFeaturePluginStateMachineProperties

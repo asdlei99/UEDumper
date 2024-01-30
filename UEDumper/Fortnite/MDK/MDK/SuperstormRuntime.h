@@ -54,9 +54,9 @@ public:
 
 	/// Functions
 	// Function /Script/SuperstormRuntime.TempestLightningComponent.GetLightningRadius
-	// float GetLightningRadius();                                                                                              // [0xb462950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLightningRadius();                                                                                              // [0xb438940] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SuperstormRuntime.TempestLightningComponent.GetCloudHeight
-	// float GetCloudHeight();                                                                                                  // [0xb46291c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCloudHeight();                                                                                                  // [0xb43890c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SuperstormRuntime.TempestTornadoForcesComponent
@@ -92,9 +92,9 @@ public:
 
 	/// Functions
 	// Function /Script/SuperstormRuntime.TempestTornadoForcesComponent.OnVehicleInTornadoPlayerExit
-	// void OnVehicleInTornadoPlayerExit(class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle); // [0xb462a14] Final|Native|Private 
+	// void OnVehicleInTornadoPlayerExit(class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle); // [0xb438a04] Final|Native|Private 
 	// Function /Script/SuperstormRuntime.TempestTornadoForcesComponent.IsActorInTornado
-	// bool IsActorInTornado(class AActor* Actor);                                                                              // [0xb462984] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActorInTornado(class AActor* Actor);                                                                              // [0xb438974] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SuperstormRuntime.TornadoRadialForce

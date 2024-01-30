@@ -31,29 +31,29 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.Update
-	// void Update(FAudioMotorSimInputContext Input);                                                                        // [0xa80467c] Native|Public|BlueprintCallable 
+	// void Update(FAudioMotorSimInputContext Input);                                                                        // [0xa7fb778] Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.StopOutput
-	// void StopOutput();                                                                                                    // [0x1555df0] Native|Public|BlueprintCallable 
+	// void StopOutput();                                                                                                    // [0x212f900] Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.StartOutput
-	// void StartOutput();                                                                                                   // [0x6e4de20] Native|Public|BlueprintCallable 
+	// void StartOutput();                                                                                                   // [0x6e94000] Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.Reset
-	// void Reset();                                                                                                         // [0x15560c8] Native|Public|BlueprintCallable 
+	// void Reset();                                                                                                         // [0x219df9c] Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.RemoveMotorSimComponent
-	// void RemoveMotorSimComponent(TScriptInterface<Class> InComponent);                                                    // [0xa8044b8] Final|Native|Public|BlueprintCallable 
+	// void RemoveMotorSimComponent(TScriptInterface<Class> InComponent);                                                    // [0xa7fb5b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.RemoveMotorAudioComponent
-	// void RemoveMotorAudioComponent(TScriptInterface<Class> InComponent);                                                  // [0xa804364] Final|Native|Public|BlueprintCallable 
+	// void RemoveMotorAudioComponent(TScriptInterface<Class> InComponent);                                                  // [0xa7fb460] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.GetRuntimeInfo
-	// FAudioMotorSimRuntimeContext GetRuntimeInfo();                                                                        // [0xa804340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FAudioMotorSimRuntimeContext GetRuntimeInfo();                                                                        // [0xa7fb43c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.GetRpm
-	// float GetRpm();                                                                                                       // [0x6367514] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRpm();                                                                                                       // [0x63b1c64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.GetGear
-	// int32_t GetGear();                                                                                                    // [0x35abb94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetGear();                                                                                                    // [0x35a13ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.GetCachedInputData
-	// FAudioMotorSimInputContext GetCachedInputData();                                                                      // [0xa804300] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FAudioMotorSimInputContext GetCachedInputData();                                                                      // [0xa7fb3fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.AddMotorSimComponent
-	// void AddMotorSimComponent(TScriptInterface<Class> InComponent, int32_t SortOrder);                                    // [0xf7e8ec] Final|Native|Public|BlueprintCallable 
+	// void AddMotorSimComponent(TScriptInterface<Class> InComponent, int32_t SortOrder);                                    // [0x1e6e674] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorModelComponent.AddMotorAudioComponent
-	// void AddMotorAudioComponent(TScriptInterface<Class> InComponent);                                                     // [0x1555f38] Final|Native|Public|BlueprintCallable 
+	// void AddMotorAudioComponent(TScriptInterface<Class> InComponent);                                                     // [0x219e004] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioMotorSim.AudioMotorSim
@@ -65,9 +65,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMotorSim.AudioMotorSim.Reset
-	// void Reset();                                                                                                         // [0x334e86c] Native|Public|BlueprintCallable 
+	// void Reset();                                                                                                         // [0x3346b94] Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorSim.GetEnabled
-	// bool GetEnabled();                                                                                                    // [0x2a50c94] Native|Public|BlueprintCallable 
+	// bool GetEnabled();                                                                                                    // [0x2a89fe4] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioMotorSim.AudioMotorSimComponent
@@ -82,11 +82,11 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMotorSim.AudioMotorSimComponent.SetEnabled
-	// void SetEnabled(bool bNewEnabled);                                                                                    // [0xa8045fc] Final|Native|Public|BlueprintCallable 
+	// void SetEnabled(bool bNewEnabled);                                                                                    // [0xa7fb6f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMotorSim.AudioMotorSimComponent.BP_Update
-	// bool BP_Update(FAudioMotorSimInputContext& Input, FAudioMotorSimRuntimeContext& RuntimeInfo);                         // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// bool BP_Update(FAudioMotorSimInputContext& Input, FAudioMotorSimRuntimeContext& RuntimeInfo);                         // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AudioMotorSim.AudioMotorSimComponent.BP_Reset
-	// void BP_Reset();                                                                                                      // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void BP_Reset();                                                                                                      // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/AudioMotorSim.AudioMotorSimOutput

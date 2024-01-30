@@ -58,32 +58,32 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.Stop
-	// void Stop();                                                                                                          // [0xb4ee830] Final|Native|Public|BlueprintCallable 
+	// void Stop();                                                                                                          // [0xb4c3540] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.SetSequence
-	// void SetSequence(class ULevelSequence* Sequence);                                                                     // [0xb4ee7b0] Final|Native|Public|BlueprintCallable 
+	// void SetSequence(class ULevelSequence* Sequence);                                                                     // [0xb4c34c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.SetPlayRate
-	// void SetPlayRate(float PlayRate);                                                                                     // [0xb4ee630] Final|Native|Public|BlueprintCallable 
+	// void SetPlayRate(float PlayRate);                                                                                     // [0xb4c3340] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.SetPlaybackTime
-	// void SetPlaybackTime(float Time);                                                                                     // [0xb4ee730] Final|Native|Public|BlueprintCallable 
+	// void SetPlaybackTime(float Time);                                                                                     // [0xb4c3440] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.SetPlaybackFrame
-	// void SetPlaybackFrame(int32_t Frame);                                                                                 // [0xb4ee6b0] Final|Native|Public|BlueprintCallable 
+	// void SetPlaybackFrame(int32_t Frame);                                                                                 // [0xb4c33c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.Play
-	// void Play();                                                                                                          // [0xb4ee61c] Final|Native|Public|BlueprintCallable 
+	// void Play();                                                                                                          // [0xb4c332c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.Pause
-	// void Pause();                                                                                                         // [0xb4ee608] Final|Native|Public|BlueprintCallable 
+	// void Pause();                                                                                                         // [0xb4c3318] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.OnSequenceFinished
-	// void OnSequenceFinished();                                                                                            // [0xb4ee5f4] Final|Native|Protected 
+	// void OnSequenceFinished();                                                                                            // [0xb4c3304] Final|Native|Protected 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.HandleSequencePlayerCreated
-	// void HandleSequencePlayerCreated(class ULevelSequencePlayer* Player);                                                 // [0x887342c] Native|Event|Protected|BlueprintEvent 
+	// void HandleSequencePlayerCreated(class ULevelSequencePlayer* Player);                                                 // [0x889a2c4] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.GoToEndAndStop
-	// void GoToEndAndStop();                                                                                                // [0xb4ee5e0] Final|Native|Public|BlueprintCallable 
+	// void GoToEndAndStop();                                                                                                // [0xb4c32f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.GetSequencePlayer
-	// class UMovieSceneSequencePlayer* GetSequencePlayer();                                                                 // [0xb4ee5c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMovieSceneSequencePlayer* GetSequencePlayer();                                                                 // [0xb4c32d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.GetPlayRate
-	// float GetPlayRate();                                                                                                  // [0xb4ee54c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPlayRate();                                                                                                  // [0xb4c325c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.GetPlaybackTime
-	// float GetPlaybackTime();                                                                                              // [0xb4ee598] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPlaybackTime();                                                                                              // [0xb4c32a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_CinematicSequence.CinematicSequenceDeviceBase.GetPlaybackFrame
-	// int32_t GetPlaybackFrame();                                                                                           // [0xb4ee574] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPlaybackFrame();                                                                                           // [0xb4c3284] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

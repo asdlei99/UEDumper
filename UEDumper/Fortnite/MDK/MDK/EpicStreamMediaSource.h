@@ -54,39 +54,39 @@ public:
 
 	/// Functions
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.UpdateStreamUrlArguments
-	// void UpdateStreamUrlArguments();                                                                                         // [0x7b57ebc] Final|Native|Public|BlueprintCallable 
+	// void UpdateStreamUrlArguments();                                                                                         // [0x7b920e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.UpdatePlayerOptions
-	// FMediaPlayerOptions UpdatePlayerOptions(FMediaPlayerOptions PlayerOptions);                                              // [0x7b57d40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FMediaPlayerOptions UpdatePlayerOptions(FMediaPlayerOptions PlayerOptions);                                              // [0x7b91f64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.ShouldStreamBePlaying
-	// bool ShouldStreamBePlaying(class UObject* WorldContextObject, class UPrimitiveComponent* PrimitiveComponent, float CullRadius); // [0x7b57b3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldStreamBePlaying(class UObject* WorldContextObject, class UPrimitiveComponent* PrimitiveComponent, float CullRadius); // [0x7b91d60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.ShouldProtectPlayerFromContent
-	// UCPTypes ShouldProtectPlayerFromContent();                                                                               // [0x63096d8] Native|Public|BlueprintCallable|BlueprintPure 
+	// UCPTypes ShouldProtectPlayerFromContent();                                                                               // [0x6353e50] Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.SetUrl
-	// void SetUrl(FString& InURL);                                                                                             // [0x7b57480] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetUrl(FString& InURL);                                                                                             // [0x7b916a4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.SetSyncTimes
-	// void SetSyncTimes(FDateTime InNowTime, FDateTime InStartTime, bool DynamicStart, float InOffset_s, float InDelay_s);     // [0x7b56fec] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetSyncTimes(FDateTime InNowTime, FDateTime InStartTime, bool DynamicStart, float InOffset_s, float InDelay_s);     // [0x7b91210] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.SetPlaybackStartTime
-	// void SetPlaybackStartTime(float StartTime);                                                                              // [0x7b56f6c] Final|Native|Public|BlueprintCallable 
+	// void SetPlaybackStartTime(float StartTime);                                                                              // [0x7b91190] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.SetLocalizedOverlaysV2
-	// void SetLocalizedOverlaysV2(class UEpicMediaDownloadLocalizedOverlays* InOverlays);                                      // [0x7b56ee0] Final|Native|Public|BlueprintCallable 
+	// void SetLocalizedOverlaysV2(class UEpicMediaDownloadLocalizedOverlays* InOverlays);                                      // [0x7b91104] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.RequestVideoUrl
-	// void RequestVideoUrl(class APlayerController* FortPC);                                                                   // [0x7b56e64] Final|Native|Public|BlueprintCallable 
+	// void RequestVideoUrl(class APlayerController* FortPC);                                                                   // [0x7b91088] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.ReinstateSharing
-	// void ReinstateSharing();                                                                                                 // [0x1f5bf84] Native|Public|BlueprintCallable 
+	// void ReinstateSharing();                                                                                                 // [0x1e093d0] Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.MetadataResultHandler
-	// void MetadataResultHandler(FEpicMediaMetadataExt& MetaData, bool bSuccess);                                              // [0x2ca6bc0] Final|Native|Public|HasOutParms 
+	// void MetadataResultHandler(FEpicMediaMetadataExt& MetaData, bool bSuccess);                                              // [0x2cccde0] Final|Native|Public|HasOutParms 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.IsScreenRecordingInProgress
-	// bool IsScreenRecordingInProgress();                                                                                      // [0x2f18ed4] Final|Native|Public|BlueprintCallable 
+	// bool IsScreenRecordingInProgress();                                                                                      // [0x2f1d290] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.HasLocalFilePlayback
-	// bool HasLocalFilePlayback();                                                                                             // [0x7b56df0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasLocalFilePlayback();                                                                                             // [0x7b91014] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.ForceSegmentCaching
-	// void ForceSegmentCaching(bool bForce);                                                                                   // [0x7b56d70] Final|Native|Public|BlueprintCallable 
+	// void ForceSegmentCaching(bool bForce);                                                                                   // [0x7b90f94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.DisableSharing
-	// void DisableSharing();                                                                                                   // [0x11cd8f8] Native|Public|BlueprintCallable 
+	// void DisableSharing();                                                                                                   // [0x1efdc98] Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.ClearSyncTimes
-	// void ClearSyncTimes();                                                                                                   // [0x7b56d5c] Final|Native|Public|BlueprintCallable 
+	// void ClearSyncTimes();                                                                                                   // [0x7b90f80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicStreamMediaSource.EpicStreamMediaSource.CancelVideoUrlRequest
-	// void CancelVideoUrlRequest(bool bInCancelled);                                                                           // [0x7b56cdc] Final|Native|Public|BlueprintCallable 
+	// void CancelVideoUrlRequest(bool bInCancelled);                                                                           // [0x7b90f00] Final|Native|Public|BlueprintCallable 
 };
 
 /// Enum /Script/EpicStreamMediaSource.UCPTypes

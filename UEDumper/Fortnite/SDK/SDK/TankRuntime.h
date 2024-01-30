@@ -156,7 +156,7 @@ public:
 
 	/// Functions
 	// Function /Script/TankRuntime.FortTankVehicleAnimInstance.UpdateMIDEngineProperties
-	// void UpdateMIDEngineProperties(float DeltaSeconds, float EngineHealthRatio);                                          // [0xb2667f8] Final|Native|Private|BlueprintCallable 
+	// void UpdateMIDEngineProperties(float DeltaSeconds, float EngineHealthRatio);                                          // [0xb246fac] Final|Native|Private|BlueprintCallable 
 };
 
 /// Struct /Script/TankRuntime.TankAudioUpdateContext
@@ -219,13 +219,13 @@ public:
 
 	/// Functions
 	// Function /Script/TankRuntime.FortTankVehicleAudioController.PlayTurningOneShot
-	// void PlayTurningOneShot();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void PlayTurningOneShot();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankRuntime.FortTankVehicleAudioController.PlayDecelOneShot
-	// void PlayDecelOneShot();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void PlayDecelOneShot();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankRuntime.FortTankVehicleAudioController.PlayAccelOneShot
-	// void PlayAccelOneShot();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void PlayAccelOneShot();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/TankRuntime.FortTankVehicleAudioController.GetTankVehicleActor
-	// class AFortTankVehicle* GetTankVehicleActor();                                                                        // [0xb2667b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortTankVehicle* GetTankVehicleActor();                                                                        // [0xb246f68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/TankRuntime.TankAnimAimingData

@@ -27,21 +27,21 @@ public:
 
 	/// Functions
 	// Function /Script/LandscapePatch.LandscapePatchComponent.SetPatchManager
-	// void SetPatchManager(class ALandscapePatchManager* NewPatchManager);                                                     // [0xc3196b0] Native|Public|BlueprintCallable 
+	// void SetPatchManager(class ALandscapePatchManager* NewPatchManager);                                                     // [0xc2cfb3c] Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapePatchComponent.SetLandscape
-	// void SetLandscape(class ALandscape* NewLandscape);                                                                       // [0xc31962c] Native|Public|BlueprintCallable 
+	// void SetLandscape(class ALandscape* NewLandscape);                                                                       // [0xc2cfab8] Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapePatchComponent.SetIsEnabled
-	// void SetIsEnabled(bool bEnabledIn);                                                                                      // [0xc3195a4] Final|Native|Public|BlueprintCallable 
+	// void SetIsEnabled(bool bEnabledIn);                                                                                      // [0xc2cfa30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapePatchComponent.RequestLandscapeUpdate
-	// void RequestLandscapeUpdate(bool bInUserTriggeredUpdate);                                                                // [0x5fe71f4] Final|Native|Public|BlueprintCallable 
+	// void RequestLandscapeUpdate(bool bInUserTriggeredUpdate);                                                                // [0x60325ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapePatchComponent.MoveToTop
-	// void MoveToTop();                                                                                                        // [0xc318f70] Final|Native|Protected 
+	// void MoveToTop();                                                                                                        // [0xc2cf3fc] Final|Native|Protected 
 	// Function /Script/LandscapePatch.LandscapePatchComponent.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0xc318f48] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                        // [0xc2cf3d4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LandscapePatch.LandscapePatchComponent.GetPatchManager
-	// class ALandscapePatchManager* GetPatchManager();                                                                         // [0xc318cf8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ALandscapePatchManager* GetPatchManager();                                                                         // [0xc2cf184] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LandscapePatch.LandscapePatchComponent.GetLandscapeHeightmapCoordsToWorld
-	// FTransform GetLandscapeHeightmapCoordsToWorld();                                                                         // [0xc318c7c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLandscapeHeightmapCoordsToWorld();                                                                         // [0xc2cf108] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/LandscapePatch.LandscapeCircleHeightPatch
@@ -163,75 +163,75 @@ public:
 
 	/// Functions
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SnapToLandscape
-	// void SnapToLandscape();                                                                                                  // [0x32e6c74] Final|Native|Protected|BlueprintCallable 
+	// void SnapToLandscape();                                                                                                  // [0x32e4b44] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetZeroHeightMeaning
-	// void SetZeroHeightMeaning(ELandscapeTextureHeightPatchZeroHeightMeaning ZeroHeightMeaningIn);                            // [0xc319e74] Final|Native|Public|BlueprintCallable 
+	// void SetZeroHeightMeaning(ELandscapeTextureHeightPatchZeroHeightMeaning ZeroHeightMeaningIn);                            // [0xc2d0300] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetWeightPatchTextureAsset
-	// void SetWeightPatchTextureAsset(FName& InWeightmapLayerName, class UTexture* TextureIn);                                 // [0xc319d68] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetWeightPatchTextureAsset(FName& InWeightmapLayerName, class UTexture* TextureIn);                                 // [0xc2d01f4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetWeightPatchSourceMode
-	// void SetWeightPatchSourceMode(FName& InWeightmapLayerName, ELandscapeTexturePatchSourceMode NewMode);                    // [0xc319c54] Native|Public|HasOutParms|BlueprintCallable 
+	// void SetWeightPatchSourceMode(FName& InWeightmapLayerName, ELandscapeTexturePatchSourceMode NewMode);                    // [0xc2d00e0] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetWeightPatchBlendModeOverride
-	// void SetWeightPatchBlendModeOverride(FName& InWeightmapLayerName, ELandscapeTexturePatchBlendMode BlendMode);            // [0xc319b40] Native|Public|HasOutParms|BlueprintCallable 
+	// void SetWeightPatchBlendModeOverride(FName& InWeightmapLayerName, ELandscapeTexturePatchBlendMode BlendMode);            // [0xc2cffcc] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetUseAlphaChannelForWeightPatch
-	// void SetUseAlphaChannelForWeightPatch(FName& InWeightmapLayerName, bool bUseAlphaChannel);                               // [0xc319a2c] Native|Public|HasOutParms|BlueprintCallable 
+	// void SetUseAlphaChannelForWeightPatch(FName& InWeightmapLayerName, bool bUseAlphaChannel);                               // [0xc2cfeb8] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetUseAlphaChannelForHeight
-	// void SetUseAlphaChannelForHeight(bool bUse);                                                                             // [0xc3199ac] Final|Native|Public|BlueprintCallable 
+	// void SetUseAlphaChannelForHeight(bool bUse);                                                                             // [0xc2cfe38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetUnscaledCoverage
-	// void SetUnscaledCoverage(FVector2D Coverage);                                                                            // [0xc319870] Native|Public|HasDefaults|BlueprintCallable 
+	// void SetUnscaledCoverage(FVector2D Coverage);                                                                            // [0xc2cfcfc] Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetResolution
-	// void SetResolution(FVector2D ResolutionIn);                                                                              // [0xc319734] Native|Public|HasDefaults|BlueprintCallable 
+	// void SetResolution(FVector2D ResolutionIn);                                                                              // [0xc2cfbc0] Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetHeightTextureAsset
-	// void SetHeightTextureAsset(class UTexture* TextureIn);                                                                   // [0xc319518] Final|Native|Public|BlueprintCallable 
+	// void SetHeightTextureAsset(class UTexture* TextureIn);                                                                   // [0xc2cf9a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetHeightSourceMode
-	// void SetHeightSourceMode(ELandscapeTexturePatchSourceMode NewMode);                                                      // [0xc319494] Native|Public|BlueprintCallable 
+	// void SetHeightSourceMode(ELandscapeTexturePatchSourceMode NewMode);                                                      // [0xc2cf920] Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetHeightRenderTargetFormat
-	// void SetHeightRenderTargetFormat(TEnumAsByte<ETextureRenderTargetFormat> Format);                                        // [0xc319414] Final|Native|Public|BlueprintCallable 
+	// void SetHeightRenderTargetFormat(TEnumAsByte<ETextureRenderTargetFormat> Format);                                        // [0xc2cf8a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetHeightEncodingSettings
-	// void SetHeightEncodingSettings(FLandscapeTexturePatchEncodingSettings& Settings);                                        // [0xc319380] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetHeightEncodingSettings(FLandscapeTexturePatchEncodingSettings& Settings);                                        // [0xc2cf80c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetHeightEncodingMode
-	// void SetHeightEncodingMode(ELandscapeTextureHeightPatchEncoding EncodingMode);                                           // [0xc319304] Final|Native|Public|BlueprintCallable 
+	// void SetHeightEncodingMode(ELandscapeTextureHeightPatchEncoding EncodingMode);                                           // [0xc2cf790] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetFalloff
-	// void SetFalloff(float FalloffIn);                                                                                        // [0xc319284] Final|Native|Public|BlueprintCallable 
+	// void SetFalloff(float FalloffIn);                                                                                        // [0xc2cf710] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetEditVisibilityLayer
-	// void SetEditVisibilityLayer(FName& InWeightmapLayerName, bool bEditVisibilityLayer);                                     // [0xc319170] Native|Public|HasOutParms|BlueprintCallable 
+	// void SetEditVisibilityLayer(FName& InWeightmapLayerName, bool bEditVisibilityLayer);                                     // [0xc2cf5fc] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.SetBlendMode
-	// void SetBlendMode(ELandscapeTexturePatchBlendMode BlendModeIn);                                                          // [0xc3190f4] Final|Native|Public|BlueprintCallable 
+	// void SetBlendMode(ELandscapeTexturePatchBlendMode BlendModeIn);                                                          // [0xc2cf580] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.ResetHeightEncodingMode
-	// void ResetHeightEncodingMode(ELandscapeTextureHeightPatchEncoding EncodingMode);                                         // [0xc31902c] Final|Native|Public|BlueprintCallable 
+	// void ResetHeightEncodingMode(ELandscapeTextureHeightPatchEncoding EncodingMode);                                         // [0xc2cf4b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.RemoveWeightPatch
-	// void RemoveWeightPatch(FName& InWeightmapLayerName);                                                                     // [0xc318f9c] Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveWeightPatch(FName& InWeightmapLayerName);                                                                     // [0xc2cf428] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.RemoveAllWeightPatches
-	// void RemoveAllWeightPatches();                                                                                           // [0xc318f84] Native|Public|BlueprintCallable 
+	// void RemoveAllWeightPatches();                                                                                           // [0xc2cf410] Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.ReinitializeWeights
-	// void ReinitializeWeights();                                                                                              // [0x32e6c74] Final|Native|Protected 
+	// void ReinitializeWeights();                                                                                              // [0x32e4b44] Final|Native|Protected 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.ReinitializeHeight
-	// void ReinitializeHeight();                                                                                               // [0x32e6c74] Final|Native|Protected 
+	// void ReinitializeHeight();                                                                                               // [0x32e4b44] Final|Native|Protected 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetWeightPatchSourceMode
-	// ELandscapeTexturePatchSourceMode GetWeightPatchSourceMode(FName& InWeightmapLayerName);                                  // [0xc318ea8] Native|Public|HasOutParms|BlueprintCallable 
+	// ELandscapeTexturePatchSourceMode GetWeightPatchSourceMode(FName& InWeightmapLayerName);                                  // [0xc2cf334] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetWeightPatchRenderTarget
-	// class UTextureRenderTarget2D* GetWeightPatchRenderTarget(FName& InWeightmapLayerName);                                   // [0xc318e08] Native|Public|HasOutParms|BlueprintCallable 
+	// class UTextureRenderTarget2D* GetWeightPatchRenderTarget(FName& InWeightmapLayerName);                                   // [0xc2cf294] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetUnscaledCoverage
-	// FVector2D GetUnscaledCoverage();                                                                                         // [0xc318dd4] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetUnscaledCoverage();                                                                                         // [0xc2cf260] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetResolution
-	// FVector2D GetResolution();                                                                                               // [0xc318da0] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetResolution();                                                                                               // [0xc2cf22c] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetPatchToWorldTransform
-	// FTransform GetPatchToWorldTransform();                                                                                   // [0xc318d20] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetPatchToWorldTransform();                                                                                   // [0xc2cf1ac] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetInitResolutionFromLandscape
-	// bool GetInitResolutionFromLandscape(float ResolutionMultiplier, FVector2D& ResolutionOut);                               // [0xc318b9c] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool GetInitResolutionFromLandscape(float ResolutionMultiplier, FVector2D& ResolutionOut);                               // [0xc2cf028] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetHeightSourceMode
-	// ELandscapeTexturePatchSourceMode GetHeightSourceMode();                                                                  // [0xc318b74] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ELandscapeTexturePatchSourceMode GetHeightSourceMode();                                                                  // [0xc2cf000] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetHeightRenderTarget
-	// class UTextureRenderTarget2D* GetHeightRenderTarget(bool bMarkDirty);                                                    // [0xc318adc] Native|Public|BlueprintCallable 
+	// class UTextureRenderTarget2D* GetHeightRenderTarget(bool bMarkDirty);                                                    // [0xc2cef68] Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetFullUnscaledWorldSize
-	// FVector2D GetFullUnscaledWorldSize();                                                                                    // [0xc318aa8] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetFullUnscaledWorldSize();                                                                                    // [0xc2cef34] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.GetAllWeightPatchLayerNames
-	// TArray<FName> GetAllWeightPatchLayerNames();                                                                             // [0xc318a68] Final|Native|Public|BlueprintCallable 
+	// TArray<FName> GetAllWeightPatchLayerNames();                                                                             // [0xc2ceef4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.DisableAllWeightPatches
-	// void DisableAllWeightPatches();                                                                                          // [0xc318a50] Native|Public|BlueprintCallable 
+	// void DisableAllWeightPatches();                                                                                          // [0xc2ceedc] Native|Public|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.ClearWeightPatchBlendModeOverride
-	// void ClearWeightPatchBlendModeOverride(FName& InWeightmapLayerName);                                                     // [0xc3189c0] Native|Public|HasOutParms|BlueprintCallable 
+	// void ClearWeightPatchBlendModeOverride(FName& InWeightmapLayerName);                                                     // [0xc2cee4c] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LandscapePatch.LandscapeTexturePatch.AddWeightPatch
-	// void AddWeightPatch(FName& InWeightmapLayerName, ELandscapeTexturePatchSourceMode SourceMode, bool bUseAlphaChannel);    // [0xc318834] Native|Public|HasOutParms|BlueprintCallable 
+	// void AddWeightPatch(FName& InWeightmapLayerName, ELandscapeTexturePatchSourceMode SourceMode, bool bUseAlphaChannel);    // [0xc2cecc0] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/LandscapePatch.LandscapePatchComponentInstanceData

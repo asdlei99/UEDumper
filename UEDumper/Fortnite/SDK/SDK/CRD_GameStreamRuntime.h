@@ -25,17 +25,17 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.RemoveFromEndGameQueue
-	// void RemoveFromEndGameQueue();                                                                                        // [0x32e6c74] Final|Native|Public|BlueprintCallable 
+	// void RemoveFromEndGameQueue();                                                                                        // [0x32e4b44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.OnMinigameStateChanged
-	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                      // [0x86509ec] Final|Native|Private 
+	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                      // [0x867f720] Final|Native|Private 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.IsWithinPublishedPlayspace
-	// bool IsWithinPublishedPlayspace();                                                                                    // [0x2f18ed4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsWithinPublishedPlayspace();                                                                                    // [0x2f1d290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.Init
-	// void Init(class UFortMinigameLogicComponent* InMinigameLogicComponent);                                               // [0x5fffda8] Final|Native|Public|BlueprintCallable 
+	// void Init(class UFortMinigameLogicComponent* InMinigameLogicComponent);                                               // [0x604b150] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.CreativeGameStreamDeviceComponentSignature__DelegateSignature
-	// void CreativeGameStreamDeviceComponentSignature__DelegateSignature(class UCreativeGameStreamDeviceComponent* CreativeGameStreamDeviceComponent); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void CreativeGameStreamDeviceComponentSignature__DelegateSignature(class UCreativeGameStreamDeviceComponent* CreativeGameStreamDeviceComponent); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceComponent.AddToEndGameQueue
-	// void AddToEndGameQueue();                                                                                             // [0x32e6c74] Final|Native|Public|BlueprintCallable 
+	// void AddToEndGameQueue();                                                                                             // [0x32e4b44] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceCoordinatorComponent
@@ -49,6 +49,6 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_GameStreamRuntime.CreativeGameStreamDeviceCoordinatorComponent.OnMinigameStateChanged
-	// void OnMinigameStateChanged(class AFortMinigame* InMinigame, EFortMinigameState NewMinigameState);                    // [0x86509ec] Final|Native|Private 
+	// void OnMinigameStateChanged(class AFortMinigame* InMinigame, EFortMinigameState NewMinigameState);                    // [0x867f720] Final|Native|Private 
 };
 

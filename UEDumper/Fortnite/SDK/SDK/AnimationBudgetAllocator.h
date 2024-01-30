@@ -18,9 +18,9 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationBudgetAllocator.AnimationBudgetBlueprintLibrary.SetAnimationBudgetParameters
-	// void SetAnimationBudgetParameters(class UObject* WorldContextObject, FAnimationBudgetAllocatorParameters& InParameters); // [0x6f226d8] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void SetAnimationBudgetParameters(class UObject* WorldContextObject, FAnimationBudgetAllocatorParameters& InParameters); // [0x6f68824] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationBudgetAllocator.AnimationBudgetBlueprintLibrary.EnableAnimationBudget
-	// void EnableAnimationBudget(class UObject* WorldContextObject, bool bEnabled);                                         // [0x6f225d0] Final|Native|Static|Private|BlueprintCallable 
+	// void EnableAnimationBudget(class UObject* WorldContextObject, bool bEnabled);                                         // [0x6f6871c] Final|Native|Static|Private|BlueprintCallable 
 };
 
 /// Class /Script/AnimationBudgetAllocator.SkeletalMeshComponentBudgeted
@@ -37,7 +37,7 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationBudgetAllocator.SkeletalMeshComponentBudgeted.SetAutoRegisterWithBudgetAllocator
-	// void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator);                                     // [0x6f22808] Final|Native|Public|BlueprintCallable 
+	// void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator);                                     // [0x6f68954] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AnimationBudgetAllocator.AnimationBudgetAllocatorParameters

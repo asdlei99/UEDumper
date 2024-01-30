@@ -218,85 +218,85 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.UnregisterAudioBusFromSubmix
-	// void UnregisterAudioBusFromSubmix(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class UAudioBus* AudioBus); // [0x62a61fc] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void UnregisterAudioBusFromSubmix(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class UAudioBus* AudioBus); // [0x62f112c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.TrimAudioCache
-	// float TrimAudioCache(float InMegabytesToFree);                                                                        // [0x62a6178] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// float TrimAudioCache(float InMegabytesToFree);                                                                        // [0x62f10a8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.SwapAudioOutputDevice
-	// void SwapAudioOutputDevice(class UObject* WorldContextObject, FString NewDeviceId, FDelegateProperty& OnCompletedDeviceSwap); // [0x62a5a40] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SwapAudioOutputDevice(class UObject* WorldContextObject, FString NewDeviceId, FDelegateProperty& OnCompletedDeviceSwap); // [0x62f0970] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.StopRecordingOutput
-	// class USoundWave* StopRecordingOutput(class UObject* WorldContextObject, EAudioRecordingExportType ExportType, FString Name, FString Path, class USoundSubmix* SubmixToRecord, class USoundWave* ExistingSoundWaveToOverwrite); // [0x62a5268] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class USoundWave* StopRecordingOutput(class UObject* WorldContextObject, EAudioRecordingExportType ExportType, FString Name, FString Path, class USoundSubmix* SubmixToRecord, class USoundWave* ExistingSoundWaveToOverwrite); // [0x62f0198] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.StopAudioBus
-	// void StopAudioBus(class UObject* WorldContextObject, class UAudioBus* AudioBus);                                      // [0x62a5154] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void StopAudioBus(class UObject* WorldContextObject, class UAudioBus* AudioBus);                                      // [0x62f0084] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.StopAnalyzingOutput
-	// void StopAnalyzingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToStopAnalyzing);               // [0x62a5068] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void StopAnalyzingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToStopAnalyzing);               // [0x62eff98] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.StartRecordingOutput
-	// void StartRecordingOutput(class UObject* WorldContextObject, float ExpectedDuration, class USoundSubmix* SubmixToRecord); // [0x62a4f70] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void StartRecordingOutput(class UObject* WorldContextObject, float ExpectedDuration, class USoundSubmix* SubmixToRecord); // [0x62efea0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.StartAudioBus
-	// void StartAudioBus(class UObject* WorldContextObject, class UAudioBus* AudioBus);                                     // [0x62a4e50] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void StartAudioBus(class UObject* WorldContextObject, class UAudioBus* AudioBus);                                     // [0x62efd80] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.StartAnalyzingOutput
-	// void StartAnalyzingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToAnalyze, EFFTSize FFTSize, EFFTPeakInterpolationMethod InterpolationMethod, EFFTWindowType WindowType, float HopSize, EAudioSpectrumType SpectrumType); // [0x62a4c48] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void StartAnalyzingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToAnalyze, EFFTSize FFTSize, EFFTPeakInterpolationMethod InterpolationMethod, EFFTWindowType WindowType, float HopSize, EAudioSpectrumType SpectrumType); // [0x62efb78] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.SetSubmixEffectChainOverride
-	// void SetSubmixEffectChainOverride(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, TArray<USoundEffectSubmixPreset*> SubmixEffectPresetChain, float FadeTimeSec); // [0x62a44b8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void SetSubmixEffectChainOverride(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, TArray<USoundEffectSubmixPreset*> SubmixEffectPresetChain, float FadeTimeSec); // [0x62ef3e8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.SetBypassSourceEffectChainEntry
-	// void SetBypassSourceEffectChainEntry(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int32_t EntryIndex, bool bBypassed); // [0x62a42d0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void SetBypassSourceEffectChainEntry(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int32_t EntryIndex, bool bBypassed); // [0x62ef200] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.ResumeRecordingOutput
-	// void ResumeRecordingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToPause);                     // [0x62a421c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void ResumeRecordingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToPause);                     // [0x62ef14c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.ReplaceSubmixEffect
-	// void ReplaceSubmixEffect(class UObject* WorldContextObject, class USoundSubmix* InSoundSubmix, int32_t SubmixChainIndex, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62a4050] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void ReplaceSubmixEffect(class UObject* WorldContextObject, class USoundSubmix* InSoundSubmix, int32_t SubmixChainIndex, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62eef80] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.ReplaceSoundEffectSubmix
-	// void ReplaceSoundEffectSubmix(class UObject* WorldContextObject, class USoundSubmix* InSoundSubmix, int32_t SubmixChainIndex, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62a4050] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void ReplaceSoundEffectSubmix(class UObject* WorldContextObject, class USoundSubmix* InSoundSubmix, int32_t SubmixChainIndex, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62eef80] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.RemoveSubmixEffectPresetAtIndex
-	// void RemoveSubmixEffectPresetAtIndex(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, int32_t SubmixChainIndex); // [0x62a3f58] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RemoveSubmixEffectPresetAtIndex(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, int32_t SubmixChainIndex); // [0x62eee88] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.RemoveSubmixEffectPreset
-	// void RemoveSubmixEffectPreset(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62a3e60] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RemoveSubmixEffectPreset(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62eed90] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.RemoveSubmixEffectAtIndex
-	// void RemoveSubmixEffectAtIndex(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, int32_t SubmixChainIndex); // [0x62a3f58] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RemoveSubmixEffectAtIndex(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, int32_t SubmixChainIndex); // [0x62eee88] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.RemoveSubmixEffect
-	// void RemoveSubmixEffect(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62a3e60] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RemoveSubmixEffect(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62eed90] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.RemoveSourceEffectFromPresetChain
-	// void RemoveSourceEffectFromPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int32_t EntryIndex); // [0x62a3c8c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RemoveSourceEffectFromPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int32_t EntryIndex); // [0x62eebbc] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.RemoveMasterSubmixEffect
-	// void RemoveMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62a3b78] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RemoveMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62eeaa8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.RegisterAudioBusToSubmix
-	// void RegisterAudioBusToSubmix(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class UAudioBus* AudioBus); // [0x62a3a80] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RegisterAudioBusToSubmix(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class UAudioBus* AudioBus); // [0x62ee9b0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.PrimeSoundForPlayback
-	// void PrimeSoundForPlayback(class USoundWave* SoundWave, FDelegateProperty OnLoadCompletion);                          // [0x62a38f8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void PrimeSoundForPlayback(class USoundWave* SoundWave, FDelegateProperty OnLoadCompletion);                          // [0x62ee828] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.PrimeSoundCueForPlayback
-	// void PrimeSoundCueForPlayback(class USoundCue* SoundCue);                                                             // [0x62a388c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void PrimeSoundCueForPlayback(class USoundCue* SoundCue);                                                             // [0x62ee7bc] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.PauseRecordingOutput
-	// void PauseRecordingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToPause);                      // [0x62a37d8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void PauseRecordingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToPause);                      // [0x62ee708] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.MakePresetSpectralAnalysisBandSettings
-	// TArray<FSoundSubmixSpectralAnalysisBandSettings> MakePresetSpectralAnalysisBandSettings(EAudioSpectrumBandPresetType InBandPresetType, int32_t InNumBands, int32_t InAttackTimeMsec, int32_t InReleaseTimeMsec); // [0x62a3678] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FSoundSubmixSpectralAnalysisBandSettings> MakePresetSpectralAnalysisBandSettings(EAudioSpectrumBandPresetType InBandPresetType, int32_t InNumBands, int32_t InAttackTimeMsec, int32_t InReleaseTimeMsec); // [0x62ee5a8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.MakeMusicalSpectralAnalysisBandSettings
-	// TArray<FSoundSubmixSpectralAnalysisBandSettings> MakeMusicalSpectralAnalysisBandSettings(int32_t InNumSemitones, EMusicalNoteName InStartingMusicalNote, int32_t InStartingOctave, int32_t InAttackTimeMsec, int32_t InReleaseTimeMsec); // [0x62a34d4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FSoundSubmixSpectralAnalysisBandSettings> MakeMusicalSpectralAnalysisBandSettings(int32_t InNumSemitones, EMusicalNoteName InStartingMusicalNote, int32_t InStartingOctave, int32_t InAttackTimeMsec, int32_t InReleaseTimeMsec); // [0x62ee404] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.MakeFullSpectrumSpectralAnalysisBandSettings
-	// TArray<FSoundSubmixSpectralAnalysisBandSettings> MakeFullSpectrumSpectralAnalysisBandSettings(int32_t InNumBands, float InMinimumFrequency, float InMaximumFrequency, int32_t InAttackTimeMsec, int32_t InReleaseTimeMsec); // [0x62a3330] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FSoundSubmixSpectralAnalysisBandSettings> MakeFullSpectrumSpectralAnalysisBandSettings(int32_t InNumBands, float InMinimumFrequency, float InMaximumFrequency, int32_t InAttackTimeMsec, int32_t InReleaseTimeMsec); // [0x62ee260] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.IsAudioBusActive
-	// bool IsAudioBusActive(class UObject* WorldContextObject, class UAudioBus* AudioBus);                                  // [0x62a321c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// bool IsAudioBusActive(class UObject* WorldContextObject, class UAudioBus* AudioBus);                                  // [0x62ee14c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.GetPhaseForFrequencies
-	// void GetPhaseForFrequencies(class UObject* WorldContextObject, TArray<float>& Frequencies, TArray<float>& Phases, class USoundSubmix* SubmixToAnalyze); // [0x62a2f84] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetPhaseForFrequencies(class UObject* WorldContextObject, TArray<float>& Frequencies, TArray<float>& Phases, class USoundSubmix* SubmixToAnalyze); // [0x62edeb4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.GetNumberOfEntriesInSourceEffectChain
-	// int32_t GetNumberOfEntriesInSourceEffectChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain); // [0x62a2e68] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// int32_t GetNumberOfEntriesInSourceEffectChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain); // [0x62edd98] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.GetMagnitudeForFrequencies
-	// void GetMagnitudeForFrequencies(class UObject* WorldContextObject, TArray<float>& Frequencies, TArray<float>& Magnitudes, class USoundSubmix* SubmixToAnalyze); // [0x62a2bd0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetMagnitudeForFrequencies(class UObject* WorldContextObject, TArray<float>& Frequencies, TArray<float>& Magnitudes, class USoundSubmix* SubmixToAnalyze); // [0x62edb00] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.GetCurrentAudioOutputDeviceName
-	// void GetCurrentAudioOutputDeviceName(class UObject* WorldContextObject, FDelegateProperty& OnObtainCurrentDeviceEvent); // [0x62a2af8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetCurrentAudioOutputDeviceName(class UObject* WorldContextObject, FDelegateProperty& OnObtainCurrentDeviceEvent); // [0x62eda28] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.GetAvailableAudioOutputDevices
-	// void GetAvailableAudioOutputDevices(class UObject* WorldContextObject, FDelegateProperty& OnObtainDevicesEvent);      // [0x62a2a20] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetAvailableAudioOutputDevices(class UObject* WorldContextObject, FDelegateProperty& OnObtainDevicesEvent);      // [0x62ed950] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.Conv_AudioOutputDeviceInfoToString
-	// FString Conv_AudioOutputDeviceInfoToString(FAudioOutputDeviceInfo& Info);                                             // [0x62a2968] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString Conv_AudioOutputDeviceInfoToString(FAudioOutputDeviceInfo& Info);                                             // [0x62ed898] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.ClearSubmixEffects
-	// void ClearSubmixEffects(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix);                          // [0x62a28a8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void ClearSubmixEffects(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix);                          // [0x62ed7d8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.ClearSubmixEffectChainOverride
-	// void ClearSubmixEffectChainOverride(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, float FadeTimeSec); // [0x62a27b0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void ClearSubmixEffectChainOverride(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, float FadeTimeSec); // [0x62ed6e0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.ClearMasterSubmixEffects
-	// void ClearMasterSubmixEffects(class UObject* WorldContextObject);                                                     // [0x62a2714] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void ClearMasterSubmixEffects(class UObject* WorldContextObject);                                                     // [0x62ed644] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.AddSubmixEffect
-	// int32_t AddSubmixEffect(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62a2580] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// int32_t AddSubmixEffect(class UObject* WorldContextObject, class USoundSubmix* SoundSubmix, class USoundEffectSubmixPreset* SubmixEffectPreset); // [0x62ed4b0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.AddSourceEffectToPresetChain
-	// void AddSourceEffectToPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, FSourceEffectChainEntry Entry); // [0x62a230c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void AddSourceEffectToPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, FSourceEffectChainEntry Entry); // [0x62ed23c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect
-	// void AddMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset);    // [0x62a215c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void AddMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset);    // [0x62ed08c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioMixer.SynthSound
@@ -348,39 +348,39 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMixer.SynthComponent.Stop
-	// void Stop();                                                                                                          // [0x1555780] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void Stop();                                                                                                          // [0x39ad548] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.Start
-	// void Start();                                                                                                         // [0xf7d540] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void Start();                                                                                                         // [0x1e1ebd0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetVolumeMultiplier
-	// void SetVolumeMultiplier(float VolumeMultiplier);                                                                     // [0x1da293c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetVolumeMultiplier(float VolumeMultiplier);                                                                     // [0x1900d94] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetSubmixSend
-	// void SetSubmixSend(class USoundSubmixBase* Submix, float SendLevel);                                                  // [0x62b6e34] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSubmixSend(class USoundSubmixBase* Submix, float SendLevel);                                                  // [0x6301cd4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetSourceBusSendPreEffect
-	// void SetSourceBusSendPreEffect(class USoundSourceBus* SoundSourceBus, float SourceBusSendLevel);                      // [0x62b6d6c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSourceBusSendPreEffect(class USoundSourceBus* SoundSourceBus, float SourceBusSendLevel);                      // [0x6301c0c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetSourceBusSendPostEffect
-	// void SetSourceBusSendPostEffect(class USoundSourceBus* SoundSourceBus, float SourceBusSendLevel);                     // [0x62b6ca4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSourceBusSendPostEffect(class USoundSourceBus* SoundSourceBus, float SourceBusSendLevel);                     // [0x6301b44] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetOutputToBusOnly
-	// void SetOutputToBusOnly(bool bInOutputToBusOnly);                                                                     // [0x62b5f78] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetOutputToBusOnly(bool bInOutputToBusOnly);                                                                     // [0x6300e18] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetModulationRouting
-	// void SetModulationRouting(TSet<USoundModulatorBase*>& Modulators, EModulationDestination Destination, EModulationRouting RoutingMethod); // [0x62b5cb0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetModulationRouting(TSet<USoundModulatorBase*>& Modulators, EModulationDestination Destination, EModulationRouting RoutingMethod); // [0x6300b50] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetLowPassFilterFrequency
-	// void SetLowPassFilterFrequency(float InLowPassFilterFrequency);                                                       // [0x62b59ac] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetLowPassFilterFrequency(float InLowPassFilterFrequency);                                                       // [0x630084c] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetLowPassFilterEnabled
-	// void SetLowPassFilterEnabled(bool InLowPassFilterEnabled);                                                            // [0x62b5928] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetLowPassFilterEnabled(bool InLowPassFilterEnabled);                                                            // [0x63007c8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetAudioBusSendPreEffect
-	// void SetAudioBusSendPreEffect(class UAudioBus* AudioBus, float AudioBusSendLevel);                                    // [0x62b5508] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetAudioBusSendPreEffect(class UAudioBus* AudioBus, float AudioBusSendLevel);                                    // [0x63003a8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.SetAudioBusSendPostEffect
-	// void SetAudioBusSendPostEffect(class UAudioBus* AudioBus, float AudioBusSendLevel);                                   // [0x62b5440] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetAudioBusSendPostEffect(class UAudioBus* AudioBus, float AudioBusSendLevel);                                   // [0x63002e0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SynthComponent.IsPlaying
-	// bool IsPlaying();                                                                                                     // [0x1da3df4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlaying();                                                                                                     // [0x19005d4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMixer.SynthComponent.GetModulators
-	// TSet<USoundModulatorBase*> GetModulators(EModulationDestination Destination);                                         // [0x62b45b8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure 
+	// TSet<USoundModulatorBase*> GetModulators(EModulationDestination Destination);                                         // [0x62ff458] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AudioMixer.SynthComponent.FadeOut
-	// void FadeOut(float FadeOutDuration, float FadeVolumeLevel, EAudioFaderCurve FadeCurve);                               // [0x2391cd4] Final|RequiredAPI|Native|Public|BlueprintCallable|Const 
+	// void FadeOut(float FadeOutDuration, float FadeVolumeLevel, EAudioFaderCurve FadeCurve);                               // [0x1e1b824] Final|RequiredAPI|Native|Public|BlueprintCallable|Const 
 	// Function /Script/AudioMixer.SynthComponent.FadeIn
-	// void FadeIn(float FadeInDuration, float FadeVolumeLevel, float StartTime, EAudioFaderCurve FadeCurve);                // [0x33abe70] Final|RequiredAPI|Native|Public|BlueprintCallable|Const 
+	// void FadeIn(float FadeInDuration, float FadeVolumeLevel, float StartTime, EAudioFaderCurve FadeCurve);                // [0x33a3ec4] Final|RequiredAPI|Native|Public|BlueprintCallable|Const 
 	// Function /Script/AudioMixer.SynthComponent.AdjustVolume
-	// void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel, EAudioFaderCurve FadeCurve);                   // [0x62b31dc] Final|RequiredAPI|Native|Public|BlueprintCallable|Const 
+	// void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel, EAudioFaderCurve FadeCurve);                   // [0x62fe07c] Final|RequiredAPI|Native|Public|BlueprintCallable|Const 
 };
 
 /// Struct /Script/AudioMixer.SubmixEffectDynamicProcessorFilterSettings
@@ -435,13 +435,13 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
-	// void SetSettings(FSubmixEffectDynamicsProcessorSettings& Settings);                                                   // [0x62b6278] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSettings(FSubmixEffectDynamicsProcessorSettings& Settings);                                                   // [0x6301118] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix
-	// void SetExternalSubmix(class USoundSubmix* Submix);                                                                   // [0x62b5850] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetExternalSubmix(class USoundSubmix* Submix);                                                                   // [0x63006f0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SubmixEffectDynamicsProcessorPreset.SetAudioBus
-	// void SetAudioBus(class UAudioBus* AudioBus);                                                                          // [0x62b5360] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetAudioBus(class UAudioBus* AudioBus);                                                                          // [0x6300200] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SubmixEffectDynamicsProcessorPreset.ResetKey
-	// void ResetKey();                                                                                                      // [0x62b4f48] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ResetKey();                                                                                                      // [0x62ffde8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AudioMixer.SubmixEffectEQBand
@@ -473,7 +473,7 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
-	// void SetSettings(FSubmixEffectSubmixEQSettings& InSettings);                                                          // [0x62b6450] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSettings(FSubmixEffectSubmixEQSettings& InSettings);                                                          // [0x63012f0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/AudioMixer.SubmixEffectReverbSettings
@@ -512,9 +512,9 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
-	// void SetSettingsWithReverbEffect(class UReverbEffect* InReverbEffect, float WetLevel, float DryLevel);                // [0x62b6b10] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSettingsWithReverbEffect(class UReverbEffect* InReverbEffect, float WetLevel, float DryLevel);                // [0x63019b0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.SubmixEffectReverbPreset.SetSettings
-	// void SetSettings(FSubmixEffectReverbSettings& InSettings);                                                            // [0x62b6370] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSettings(FSubmixEffectReverbSettings& InSettings);                                                            // [0x6301210] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AudioMixer.AudioGenerator
@@ -535,59 +535,59 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMixer.QuartzClockHandle.UnsubscribeFromTimeDivision
-	// void UnsubscribeFromTimeDivision(class UObject* WorldContextObject, EQuartzCommandQuantization InQuantizationBoundary, class UQuartzClockHandle*& ClockHandle); // [0x62b7b80] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void UnsubscribeFromTimeDivision(class UObject* WorldContextObject, EQuartzCommandQuantization InQuantizationBoundary, class UQuartzClockHandle*& ClockHandle); // [0x6302a20] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.UnsubscribeFromAllTimeDivisions
-	// void UnsubscribeFromAllTimeDivisions(class UObject* WorldContextObject, class UQuartzClockHandle*& ClockHandle);      // [0x62b7ab4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void UnsubscribeFromAllTimeDivisions(class UObject* WorldContextObject, class UQuartzClockHandle*& ClockHandle);      // [0x6302954] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.SubscribeToQuantizationEvent
-	// void SubscribeToQuantizationEvent(class UObject* WorldContextObject, EQuartzCommandQuantization InQuantizationBoundary, FDelegateProperty& OnQuantizationEvent, class UQuartzClockHandle*& ClockHandle); // [0x62b7940] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SubscribeToQuantizationEvent(class UObject* WorldContextObject, EQuartzCommandQuantization InQuantizationBoundary, FDelegateProperty& OnQuantizationEvent, class UQuartzClockHandle*& ClockHandle); // [0x63027e0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.SubscribeToAllQuantizationEvents
-	// void SubscribeToAllQuantizationEvents(class UObject* WorldContextObject, FDelegateProperty& OnQuantizationEvent, class UQuartzClockHandle*& ClockHandle); // [0x62b7814] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SubscribeToAllQuantizationEvents(class UObject* WorldContextObject, FDelegateProperty& OnQuantizationEvent, class UQuartzClockHandle*& ClockHandle); // [0x63026b4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.StopClock
-	// void StopClock(class UObject* WorldContextObject, bool CancelPendingEvents, class UQuartzClockHandle*& ClockHandle);  // [0x62b7704] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void StopClock(class UObject* WorldContextObject, bool CancelPendingEvents, class UQuartzClockHandle*& ClockHandle);  // [0x63025a4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.StartOtherClock
-	// void StartOtherClock(class UObject* WorldContextObject, FName OtherClockName, FQuartzQuantizationBoundary InQuantizationBoundary, FDelegateProperty& InDelegate); // [0x62b74c8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void StartOtherClock(class UObject* WorldContextObject, FName OtherClockName, FQuartzQuantizationBoundary InQuantizationBoundary, FDelegateProperty& InDelegate); // [0x6302368] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.StartClock
-	// void StartClock(class UObject* WorldContextObject, class UQuartzClockHandle*& ClockHandle);                           // [0x62b73f8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void StartClock(class UObject* WorldContextObject, class UQuartzClockHandle*& ClockHandle);                           // [0x6302298] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.SetTicksPerSecond
-	// void SetTicksPerSecond(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float TicksPerSecond); // [0x62b7178] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetTicksPerSecond(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float TicksPerSecond); // [0x6302018] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.SetThirtySecondNotesPerMinute
-	// void SetThirtySecondNotesPerMinute(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float ThirtySecondsNotesPerMinute); // [0x62b6ef8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetThirtySecondNotesPerMinute(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float ThirtySecondsNotesPerMinute); // [0x6301d98] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.SetSecondsPerTick
-	// void SetSecondsPerTick(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float SecondsPerTick); // [0x62b5ff8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSecondsPerTick(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float SecondsPerTick); // [0x6300e98] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.SetMillisecondsPerTick
-	// void SetMillisecondsPerTick(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float MillisecondsPerTick); // [0x62b5a30] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMillisecondsPerTick(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float MillisecondsPerTick); // [0x63008d0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.SetBeatsPerMinute
-	// void SetBeatsPerMinute(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float BeatsPerMinute); // [0x62b55d0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBeatsPerMinute(class UObject* WorldContextObject, FQuartzQuantizationBoundary& QuantizationBoundary, FDelegateProperty& Delegate, class UQuartzClockHandle*& ClockHandle, float BeatsPerMinute); // [0x6300470] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.ResumeClock
-	// void ResumeClock(class UObject* WorldContextObject, class UQuartzClockHandle*& ClockHandle);                          // [0x62b5294] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResumeClock(class UObject* WorldContextObject, class UQuartzClockHandle*& ClockHandle);                          // [0x6300134] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.ResetTransportQuantized
-	// void ResetTransportQuantized(class UObject* WorldContextObject, FQuartzQuantizationBoundary InQuantizationBoundary, FDelegateProperty& InDelegate, class UQuartzClockHandle*& ClockHandle); // [0x62b5040] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResetTransportQuantized(class UObject* WorldContextObject, FQuartzQuantizationBoundary InQuantizationBoundary, FDelegateProperty& InDelegate, class UQuartzClockHandle*& ClockHandle); // [0x62ffee0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.ResetTransport
-	// void ResetTransport(class UObject* WorldContextObject, FDelegateProperty& InDelegate);                                // [0x62b4f5c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResetTransport(class UObject* WorldContextObject, FDelegateProperty& InDelegate);                                // [0x62ffdfc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.PauseClock
-	// void PauseClock(class UObject* WorldContextObject, class UQuartzClockHandle*& ClockHandle);                           // [0x62b4e7c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void PauseClock(class UObject* WorldContextObject, class UQuartzClockHandle*& ClockHandle);                           // [0x62ffd1c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.NotifyOnQuantizationBoundary
-	// void NotifyOnQuantizationBoundary(class UObject* WorldContextObject, FQuartzQuantizationBoundary InQuantizationBoundary, FDelegateProperty& InDelegate, float InMsOffset); // [0x62b4b94] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void NotifyOnQuantizationBoundary(class UObject* WorldContextObject, FQuartzQuantizationBoundary InQuantizationBoundary, FDelegateProperty& InDelegate, float InMsOffset); // [0x62ffa34] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.IsClockRunning
-	// bool IsClockRunning(class UObject* WorldContextObject);                                                               // [0x62b4a20] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool IsClockRunning(class UObject* WorldContextObject);                                                               // [0x62ff8c0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetTicksPerSecond
-	// float GetTicksPerSecond(class UObject* WorldContextObject);                                                           // [0x62b4994] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTicksPerSecond(class UObject* WorldContextObject);                                                           // [0x62ff834] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetThirtySecondNotesPerMinute
-	// float GetThirtySecondNotesPerMinute(class UObject* WorldContextObject);                                               // [0x62b4908] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetThirtySecondNotesPerMinute(class UObject* WorldContextObject);                                               // [0x62ff7a8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetSecondsPerTick
-	// float GetSecondsPerTick(class UObject* WorldContextObject);                                                           // [0x62b487c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSecondsPerTick(class UObject* WorldContextObject);                                                           // [0x62ff71c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetMillisecondsPerTick
-	// float GetMillisecondsPerTick(class UObject* WorldContextObject);                                                      // [0x62b452c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMillisecondsPerTick(class UObject* WorldContextObject);                                                      // [0x62ff3cc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetEstimatedRunTime
-	// float GetEstimatedRunTime(class UObject* WorldContextObject);                                                         // [0x62b42b8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetEstimatedRunTime(class UObject* WorldContextObject);                                                         // [0x62ff158] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetDurationOfQuantizationTypeInSeconds
-	// float GetDurationOfQuantizationTypeInSeconds(class UObject* WorldContextObject, EQuartzCommandQuantization& QuantizationType, float Multiplier); // [0x62b3e40] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// float GetDurationOfQuantizationTypeInSeconds(class UObject* WorldContextObject, EQuartzCommandQuantization& QuantizationType, float Multiplier); // [0x62fece0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetCurrentTimestamp
-	// FQuartzTransportTimeStamp GetCurrentTimestamp(class UObject* WorldContextObject);                                     // [0x62b3da8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// FQuartzTransportTimeStamp GetCurrentTimestamp(class UObject* WorldContextObject);                                     // [0x62fec48] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetBeatsPerMinute
-	// float GetBeatsPerMinute(class UObject* WorldContextObject);                                                           // [0x62b3c18] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBeatsPerMinute(class UObject* WorldContextObject);                                                           // [0x62feab8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AudioMixer.QuartzClockHandle.GetBeatProgressPercent
-	// float GetBeatProgressPercent(EQuartzCommandQuantization QuantizationBoundary, float PhaseOffset, float MsOffset);     // [0x62b3b1c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetBeatProgressPercent(EQuartzCommandQuantization QuantizationBoundary, float PhaseOffset, float MsOffset);     // [0x62fe9bc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AudioMixer.QuartzSubsystem
@@ -600,43 +600,43 @@ public:
 
 	/// Functions
 	// Function /Script/AudioMixer.QuartzSubsystem.IsQuartzEnabled
-	// bool IsQuartzEnabled();                                                                                               // [0x321ca58] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool IsQuartzEnabled();                                                                                               // [0x3213b4c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.IsClockRunning
-	// bool IsClockRunning(class UObject* WorldContextObject, FName ClockName);                                              // [0x62b4aac] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool IsClockRunning(class UObject* WorldContextObject, FName ClockName);                                              // [0x62ff94c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetRoundTripMinLatency
-	// float GetRoundTripMinLatency(class UObject* WorldContextObject);                                                      // [0x62b47d4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetRoundTripMinLatency(class UObject* WorldContextObject);                                                      // [0x62ff674] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetRoundTripMaxLatency
-	// float GetRoundTripMaxLatency(class UObject* WorldContextObject);                                                      // [0x62b4744] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetRoundTripMaxLatency(class UObject* WorldContextObject);                                                      // [0x62ff5e4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetRoundTripAverageLatency
-	// float GetRoundTripAverageLatency(class UObject* WorldContextObject);                                                  // [0x62b46b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetRoundTripAverageLatency(class UObject* WorldContextObject);                                                  // [0x62ff554] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetHandleForClock
-	// class UQuartzClockHandle* GetHandleForClock(class UObject* WorldContextObject, FName ClockName);                      // [0x62b4468] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UQuartzClockHandle* GetHandleForClock(class UObject* WorldContextObject, FName ClockName);                      // [0x62ff308] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetGameThreadToAudioRenderThreadMinLatency
-	// float GetGameThreadToAudioRenderThreadMinLatency(class UObject* WorldContextObject);                                  // [0x62b43d8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetGameThreadToAudioRenderThreadMinLatency(class UObject* WorldContextObject);                                  // [0x62ff278] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetGameThreadToAudioRenderThreadMaxLatency
-	// float GetGameThreadToAudioRenderThreadMaxLatency(class UObject* WorldContextObject);                                  // [0x62b43d8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetGameThreadToAudioRenderThreadMaxLatency(class UObject* WorldContextObject);                                  // [0x62ff278] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetGameThreadToAudioRenderThreadAverageLatency
-	// float GetGameThreadToAudioRenderThreadAverageLatency(class UObject* WorldContextObject);                              // [0x62b4348] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetGameThreadToAudioRenderThreadAverageLatency(class UObject* WorldContextObject);                              // [0x62ff1e8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetEstimatedClockRunTime
-	// float GetEstimatedClockRunTime(class UObject* WorldContextObject, FName& InClockName);                                // [0x62b41ec] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// float GetEstimatedClockRunTime(class UObject* WorldContextObject, FName& InClockName);                                // [0x62ff08c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetDurationOfQuantizationTypeInSeconds
-	// float GetDurationOfQuantizationTypeInSeconds(class UObject* WorldContextObject, FName ClockName, EQuartzCommandQuantization& QuantizationType, float Multiplier); // [0x62b3ff8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// float GetDurationOfQuantizationTypeInSeconds(class UObject* WorldContextObject, FName ClockName, EQuartzCommandQuantization& QuantizationType, float Multiplier); // [0x62fee98] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetCurrentClockTimestamp
-	// FQuartzTransportTimeStamp GetCurrentClockTimestamp(class UObject* WorldContextObject, FName& InClockName);            // [0x62b3ca4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// FQuartzTransportTimeStamp GetCurrentClockTimestamp(class UObject* WorldContextObject, FName& InClockName);            // [0x62feb44] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetAudioRenderThreadToGameThreadMinLatency
-	// float GetAudioRenderThreadToGameThreadMinLatency();                                                                   // [0x62b3af0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetAudioRenderThreadToGameThreadMinLatency();                                                                   // [0x62fe990] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetAudioRenderThreadToGameThreadMaxLatency
-	// float GetAudioRenderThreadToGameThreadMaxLatency();                                                                   // [0x62b3ac8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetAudioRenderThreadToGameThreadMaxLatency();                                                                   // [0x62fe968] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.GetAudioRenderThreadToGameThreadAverageLatency
-	// float GetAudioRenderThreadToGameThreadAverageLatency();                                                               // [0x62b3a9c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// float GetAudioRenderThreadToGameThreadAverageLatency();                                                               // [0x62fe93c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.DoesClockExist
-	// bool DoesClockExist(class UObject* WorldContextObject, FName ClockName);                                              // [0x62b39b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool DoesClockExist(class UObject* WorldContextObject, FName ClockName);                                              // [0x62fe854] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.DeleteClockByName
-	// void DeleteClockByName(class UObject* WorldContextObject, FName ClockName);                                           // [0x62b38f0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void DeleteClockByName(class UObject* WorldContextObject, FName ClockName);                                           // [0x62fe790] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.DeleteClockByHandle
-	// void DeleteClockByHandle(class UObject* WorldContextObject, class UQuartzClockHandle*& InClockHandle);                // [0x62b3820] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeleteClockByHandle(class UObject* WorldContextObject, class UQuartzClockHandle*& InClockHandle);                // [0x62fe6c0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AudioMixer.QuartzSubsystem.CreateNewClock
-	// class UQuartzClockHandle* CreateNewClock(class UObject* WorldContextObject, FName ClockName, FQuartzClockSettings InSettings, bool bOverrideSettingsIfClockExists, bool bUseAudioEngineClockManager); // [0x62b32d8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UQuartzClockHandle* CreateNewClock(class UObject* WorldContextObject, FName ClockName, FQuartzClockSettings InSettings, bool bOverrideSettingsIfClockExists, bool bUseAudioEngineClockManager); // [0x62fe178] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AudioMixer.AudioOutputDeviceInfo

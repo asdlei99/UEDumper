@@ -36,7 +36,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMCalibrationRuntime.BeatmatchCalibrationHelper.CalcCalibrationResult
-	// void CalcCalibrationResult(TArray<float>& Samples, float BPS, ECalibrationState& ResultingState, float& ResultMs);    // [0xac78be4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CalcCalibrationResult(TArray<float>& Samples, float BPS, ECalibrationState& ResultingState, float& ResultMs);    // [0xac5bb2c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/FMCalibrationRuntime.FMCalibrationControllerComponent
@@ -63,65 +63,65 @@ public:
 
 	/// Functions
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SetVideoLatencyMs
-	// void SetVideoLatencyMs(float LatencyMs);                                                                              // [0xac793b4] Final|Native|Public|BlueprintCallable 
+	// void SetVideoLatencyMs(float LatencyMs);                                                                              // [0xac5c2fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SetIsPreambleDisabled
-	// void SetIsPreambleDisabled(bool bPreambleDisabled);                                                                   // [0xac79344] Final|Native|Public|BlueprintCallable 
+	// void SetIsPreambleDisabled(bool bPreambleDisabled);                                                                   // [0xac5c28c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SetIsCalibrationDebugEnabled
-	// void SetIsCalibrationDebugEnabled(bool bCalibrationDebugEnabled);                                                     // [0xac792d4] Final|Native|Public|BlueprintCallable 
+	// void SetIsCalibrationDebugEnabled(bool bCalibrationDebugEnabled);                                                     // [0xac5c21c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SetIsCalibrated
-	// void SetIsCalibrated(bool bCalibrated);                                                                               // [0xac79264] Final|Native|Public|BlueprintCallable 
+	// void SetIsCalibrated(bool bCalibrated);                                                                               // [0xac5c1ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SetIsAutolaunchDisabled
-	// void SetIsAutolaunchDisabled(bool bAutolaunchDisabled);                                                               // [0xac791f4] Final|Native|Public|BlueprintCallable 
+	// void SetIsAutolaunchDisabled(bool bAutolaunchDisabled);                                                               // [0xac5c13c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SetHasTalkedWithRoadie
-	// void SetHasTalkedWithRoadie(bool bHasTalkedWithRoadie);                                                               // [0xac79184] Final|Native|Public|BlueprintCallable 
+	// void SetHasTalkedWithRoadie(bool bHasTalkedWithRoadie);                                                               // [0xac5c0cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SetAudioLatencyMs
-	// void SetAudioLatencyMs(float LatencyMs);                                                                              // [0xac79114] Final|Native|Public|BlueprintCallable 
+	// void SetAudioLatencyMs(float LatencyMs);                                                                              // [0xac5c05c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SendToggleModalMessage
-	// void SendToggleModalMessage(class AActor* ContextActor, bool UsePreamble, bool bIsAutoLaunch);                        // [0xac78fe4] Final|Native|Public|BlueprintCallable 
+	// void SendToggleModalMessage(class AActor* ContextActor, bool UsePreamble, bool bIsAutoLaunch);                        // [0xac5bf2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.SaveCalibrationLocalToDevice
-	// void SaveCalibrationLocalToDevice();                                                                                  // [0xac78fd0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SaveCalibrationLocalToDevice();                                                                                  // [0xac5bf18] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnLatencyMsUpdated__DelegateSignature
-	// void OnLatencyMsUpdated__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, float LatencyMs); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnLatencyMsUpdated__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, float LatencyMs); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnIsPreambleDisabledUpdated__DelegateSignature
-	// void OnIsPreambleDisabledUpdated__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool IsPreambleDisabled); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnIsPreambleDisabledUpdated__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool IsPreambleDisabled); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnIsCalibrationDebugEnabled__DelegateSignature
-	// void OnIsCalibrationDebugEnabled__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool IsCalibrationDebugEnabled); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnIsCalibrationDebugEnabled__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool IsCalibrationDebugEnabled); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnIsCalibratedUpdated__DelegateSignature
-	// void OnIsCalibratedUpdated__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool IsCalibrated); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnIsCalibratedUpdated__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool IsCalibrated); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnIsAutolaunchDisabledUpdated__DelegateSignature
-	// void OnIsAutolaunchDisabledUpdated__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool IsAutolaunchDisabled); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnIsAutolaunchDisabledUpdated__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool IsAutolaunchDisabled); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnHasTalkedWithRoadie__DelegateSignature
-	// void OnHasTalkedWithRoadie__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool HasTalkedWithRoadie); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnHasTalkedWithRoadie__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool HasTalkedWithRoadie); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnCalibrationRequestOpenModal__DelegateSignature
-	// void OnCalibrationRequestOpenModal__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool UsePreamble); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnCalibrationRequestOpenModal__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, bool UsePreamble); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnCalibrationRegisterPreamble__DelegateSignature
-	// void OnCalibrationRegisterPreamble__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, FGameplayTag PreambleGameplayTag); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnCalibrationRegisterPreamble__DelegateSignature(class UFMCalibrationControllerComponent* CalibrationControllerComponent, FGameplayTag PreambleGameplayTag); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnCalibrationDataSaved__DelegateSignature
-	// void OnCalibrationDataSaved__DelegateSignature();                                                                     // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnCalibrationDataSaved__DelegateSignature();                                                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.OnCalibrationDataLoaded__DelegateSignature
-	// void OnCalibrationDataLoaded__DelegateSignature();                                                                    // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnCalibrationDataLoaded__DelegateSignature();                                                                    // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.LoadCalibrationLocalToDevice
-	// void LoadCalibrationLocalToDevice();                                                                                  // [0xac78fbc] Final|Native|Public|BlueprintCallable 
+	// void LoadCalibrationLocalToDevice();                                                                                  // [0xac5bf04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.IsCalibrationDataOnLatestVersion
-	// bool IsCalibrationDataOnLatestVersion();                                                                              // [0xac78fa0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCalibrationDataOnLatestVersion();                                                                              // [0xac5bee8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.IsCalibrationDataLoaded
-	// bool IsCalibrationDataLoaded();                                                                                       // [0xac78f88] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCalibrationDataLoaded();                                                                                       // [0xac5bed0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.GetVideoLatencyMs
-	// float GetVideoLatencyMs();                                                                                            // [0xac78f60] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetVideoLatencyMs();                                                                                            // [0xac5bea8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.GetIsPreambleDisabled
-	// bool GetIsPreambleDisabled();                                                                                         // [0xac78f3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsPreambleDisabled();                                                                                         // [0xac5be84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.GetIsCalibrationDebugEnabled
-	// bool GetIsCalibrationDebugEnabled();                                                                                  // [0xac78f18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsCalibrationDebugEnabled();                                                                                  // [0xac5be60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.GetIsCalibrated
-	// bool GetIsCalibrated();                                                                                               // [0xac78ef4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsCalibrated();                                                                                               // [0xac5be3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.GetIsAutolaunchDisabled
-	// bool GetIsAutolaunchDisabled();                                                                                       // [0xac78ed0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsAutolaunchDisabled();                                                                                       // [0xac5be18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.GetHasTalkedWithRoadie
-	// bool GetHasTalkedWithRoadie();                                                                                        // [0xac78eac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetHasTalkedWithRoadie();                                                                                        // [0xac5bdf4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.GetAudioLatencyMs
-	// float GetAudioLatencyMs();                                                                                            // [0xac78e84] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAudioLatencyMs();                                                                                            // [0xac5bdcc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCalibrationRuntime.FMCalibrationControllerComponent.DisplayCalibrationWidget
-	// void DisplayCalibrationWidget();                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void DisplayCalibrationWidget();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FMCalibrationRuntime.FMCalibrationSaveData

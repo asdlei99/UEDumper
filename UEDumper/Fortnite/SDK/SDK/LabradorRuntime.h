@@ -72,10 +72,10 @@ public:
 
 	/// Functions
 	// Function /Script/LabradorRuntime.FortLabradorComponent_Telemetry.OnWakeUp
-	// void OnWakeUp(class AActor* GoalActor);                                                                               // [0xb16fdd4] Final|Native|Public|BlueprintCallable 
+	// void OnWakeUp(class AActor* GoalActor);                                                                               // [0xb152380] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LabradorRuntime.FortLabradorComponent_Telemetry.OnTeleport
-	// void OnTeleport();                                                                                                    // [0xb16fdbc] Final|Native|Public|BlueprintCallable 
+	// void OnTeleport();                                                                                                    // [0xb152368] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LabradorRuntime.FortLabradorComponent_Telemetry.OnDamaged
-	// void OnDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb16f924] Final|Native|Private|HasDefaults 
+	// void OnDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb151ed0] Final|Native|Private|HasDefaults 
 };
 

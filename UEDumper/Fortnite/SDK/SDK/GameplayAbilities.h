@@ -728,7 +728,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync.EndAction
-	// void EndAction();                                                                                                     // [0x3c42338] Native|Public|BlueprintCallable 
+	// void EndAction();                                                                                                     // [0x3c36b90] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagCountChanged
@@ -742,9 +742,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagCountChanged.WaitGameplayTagCountChangedOnActor
-	// class UAbilityAsync_WaitGameplayTagCountChanged* WaitGameplayTagCountChangedOnActor(class AActor* TargetActor, FGameplayTag tag); // [0x72b4878] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityAsync_WaitGameplayTagCountChanged* WaitGameplayTagCountChangedOnActor(class AActor* TargetActor, FGameplayTag tag); // [0x72f783c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagCountChanged.AsyncWaitGameplayTagCountDelegate__DelegateSignature
-	// void AsyncWaitGameplayTagCountDelegate__DelegateSignature(int32_t TagCount);                                          // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void AsyncWaitGameplayTagCountDelegate__DelegateSignature(int32_t TagCount);                                          // [0x211c0a0] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask
@@ -774,15 +774,15 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_PlayAnimAndWait.OnMontageInterrupted
-	// void OnMontageInterrupted();                                                                                          // [0x72b3c54] Final|Native|Public  
+	// void OnMontageInterrupted();                                                                                          // [0x72f6c18] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_PlayAnimAndWait.OnMontageEnded
-	// void OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted);                                                  // [0x72b3b8c] Final|Native|Public  
+	// void OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted);                                                  // [0x72f6b50] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_PlayAnimAndWait.OnMontageBlendingOut
-	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                            // [0x72b3ac4] Final|Native|Public  
+	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                            // [0x72f6a88] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_PlayAnimAndWait.OnMontageBlendedIn
-	// void OnMontageBlendedIn(class UAnimMontage* Montage);                                                                 // [0x72b3a44] Final|Native|Public  
+	// void OnMontageBlendedIn(class UAnimMontage* Montage);                                                                 // [0x72f6a08] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_PlayAnimAndWait.CreatePlayAnimAndWaitProxy
-	// class UAbilityTask_PlayAnimAndWait* CreatePlayAnimAndWaitProxy(class UGameplayAbility* OwningAbility, FName TaskInstanceName, class UAnimSequence* AnimSequence, FName SlotName, float BlendInTime, float BlendOutTime, float InPlayRate, float StartTimeSeconds, bool bStopWhenAbilityEnds, float AnimRootMotionTranslationScale); // [0x72b1738] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_PlayAnimAndWait* CreatePlayAnimAndWaitProxy(class UGameplayAbility* OwningAbility, FName TaskInstanceName, class UAnimSequence* AnimSequence, FName SlotName, float BlendInTime, float BlendOutTime, float InPlayRate, float StartTimeSeconds, bool bStopWhenAbilityEnds, float AnimRootMotionTranslationScale); // [0x72f46fc] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayTagCountChanged
@@ -798,7 +798,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayTagCountChanged.WaitGameplayTagCountChange
-	// class UAbilityTask_WaitGameplayTagCountChanged* WaitGameplayTagCountChange(class UGameplayAbility* OwningAbility, FGameplayTag tag, class AActor* InOptionalExternalTarget); // [0x72b4640] Final|Native|Static|Protected|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayTagCountChanged* WaitGameplayTagCountChange(class UGameplayAbility* OwningAbility, FGameplayTag tag, class AActor* InOptionalExternalTarget); // [0x72f7604] Final|Native|Static|Protected|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AdditionalEffectsGameplayEffectComponent
@@ -906,9 +906,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitAttributeChanged.WaitForAttributeChanged
-	// class UAbilityAsync_WaitAttributeChanged* WaitForAttributeChanged(class AActor* TargetActor, FGameplayAttribute Attribute, bool OnlyTriggerOnce); // [0x29c0ab4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityAsync_WaitAttributeChanged* WaitForAttributeChanged(class AActor* TargetActor, FGameplayAttribute Attribute, bool OnlyTriggerOnce); // [0x2a054b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitAttributeChanged.AsyncWaitAttributeChangedDelegate__DelegateSignature
-	// void AsyncWaitAttributeChangedDelegate__DelegateSignature(FGameplayAttribute Attribute, float NewValue, float OldValue); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void AsyncWaitAttributeChangedDelegate__DelegateSignature(FGameplayAttribute Attribute, float NewValue, float OldValue); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/GameplayAbilities.AbilityAsync_WaitGameplayEffectApplied
@@ -922,9 +922,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayEffectApplied.WaitGameplayEffectAppliedToActor
-	// class UAbilityAsync_WaitGameplayEffectApplied* WaitGameplayEffectAppliedToActor(class AActor* TargetActor, FGameplayTargetDataFilterHandle SourceFilter, FGameplayTagRequirements SourceTagRequirements, FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, bool ListenForPeriodicEffect); // [0x72b3fd4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityAsync_WaitGameplayEffectApplied* WaitGameplayEffectAppliedToActor(class AActor* TargetActor, FGameplayTargetDataFilterHandle SourceFilter, FGameplayTagRequirements SourceTagRequirements, FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, bool ListenForPeriodicEffect); // [0x72f6f98] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayEffectApplied.OnAppliedDelegate__DelegateSignature
-	// void OnAppliedDelegate__DelegateSignature(class AActor* Source, FGameplayEffectSpecHandle SpecHandle, FActiveGameplayEffectHandle ActiveHandle); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnAppliedDelegate__DelegateSignature(class AActor* Source, FGameplayEffectSpecHandle SpecHandle, FActiveGameplayEffectHandle ActiveHandle); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/GameplayAbilities.AbilityAsync_WaitGameplayEvent
@@ -938,9 +938,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayEvent.WaitGameplayEventToActor
-	// class UAbilityAsync_WaitGameplayEvent* WaitGameplayEventToActor(class AActor* TargetActor, FGameplayTag EventTag, bool OnlyTriggerOnce, bool OnlyMatchExact); // [0x29c122c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityAsync_WaitGameplayEvent* WaitGameplayEventToActor(class AActor* TargetActor, FGameplayTag EventTag, bool OnlyTriggerOnce, bool OnlyMatchExact); // [0x2a05c30] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayEvent.EventReceivedDelegate__DelegateSignature
-	// void EventReceivedDelegate__DelegateSignature(FGameplayEventData Payload);                                            // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void EventReceivedDelegate__DelegateSignature(FGameplayEventData Payload);                                            // [0x211c0a0] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/GameplayAbilities.AbilityAsync_WaitGameplayTag
@@ -953,7 +953,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayTag.AsyncWaitGameplayTagDelegate__DelegateSignature
-	// void AsyncWaitGameplayTagDelegate__DelegateSignature();                                                               // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void AsyncWaitGameplayTagDelegate__DelegateSignature();                                                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagAdded
@@ -966,7 +966,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagAdded.WaitGameplayTagAddToActor
-	// class UAbilityAsync_WaitGameplayTagAdded* WaitGameplayTagAddToActor(class AActor* TargetActor, FGameplayTag tag, bool OnlyTriggerOnce); // [0x29c17a0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityAsync_WaitGameplayTagAdded* WaitGameplayTagAddToActor(class AActor* TargetActor, FGameplayTag tag, bool OnlyTriggerOnce); // [0x2a061a4] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagRemoved
@@ -979,7 +979,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagRemoved.WaitGameplayTagRemoveFromActor
-	// class UAbilityAsync_WaitGameplayTagRemoved* WaitGameplayTagRemoveFromActor(class AActor* TargetActor, FGameplayTag tag, bool OnlyTriggerOnce); // [0x29c1508] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityAsync_WaitGameplayTagRemoved* WaitGameplayTagRemoveFromActor(class AActor* TargetActor, FGameplayTag tag, bool OnlyTriggerOnce); // [0x2a05f0c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagQuery
@@ -993,7 +993,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityAsync_WaitGameplayTagQuery.WaitGameplayTagQueryOnActor
-	// class UAbilityAsync_WaitGameplayTagQuery* WaitGameplayTagQueryOnActor(class AActor* TargetActor, FGameplayTagQuery TagQuery, EWaitGameplayTagQueryTriggerCondition TriggerCondition, bool bOnlyTriggerOnce); // [0x29c0dec] Final|Native|Static|Protected|BlueprintCallable 
+	// class UAbilityAsync_WaitGameplayTagQuery* WaitGameplayTagQueryOnActor(class AActor* TargetActor, FGameplayTagQuery TagQuery, EWaitGameplayTagQueryTriggerCondition TriggerCondition, bool bOnlyTriggerOnce); // [0x2a057f0] Final|Native|Static|Protected|BlueprintCallable 
 };
 
 /// Struct /Script/GameplayAbilities.PredictionKey
@@ -1107,117 +1107,117 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayAbility.SetShouldBlockOtherAbilities
-	// void SetShouldBlockOtherAbilities(bool bShouldBlockAbilities);                                                        // [0x72b3f50] Native|Public|BlueprintCallable 
+	// void SetShouldBlockOtherAbilities(bool bShouldBlockAbilities);                                                        // [0x72f6f14] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.SetCanBeCanceled
-	// void SetCanBeCanceled(bool bCanBeCanceled);                                                                           // [0x72b3ecc] Native|Public|BlueprintCallable 
+	// void SetCanBeCanceled(bool bCanBeCanceled);                                                                           // [0x72f6e90] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.SendGameplayEvent
-	// void SendGameplayEvent(FGameplayTag EventTag, FGameplayEventData Payload);                                            // [0x72b3c68] Native|Protected|BlueprintCallable 
+	// void SendGameplayEvent(FGameplayTag EventTag, FGameplayEventData Payload);                                            // [0x72f6c2c] Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.RemoveGrantedByEffect
-	// void RemoveGrantedByEffect();                                                                                         // [0x6453198] Native|Public|BlueprintCallable 
+	// void RemoveGrantedByEffect();                                                                                         // [0x649c434] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.MontageStop
-	// void MontageStop(float OverrideBlendOutTime);                                                                         // [0x72b39c4] Final|Native|Protected|BlueprintCallable 
+	// void MontageStop(float OverrideBlendOutTime);                                                                         // [0x72f6988] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.MontageSetNextSectionName
-	// void MontageSetNextSectionName(FName FromSectionName, FName ToSectionName);                                           // [0x72b38e4] Final|Native|Protected|BlueprintCallable 
+	// void MontageSetNextSectionName(FName FromSectionName, FName ToSectionName);                                           // [0x72f68a8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.MontageJumpToSection
-	// void MontageJumpToSection(FName SectionName);                                                                         // [0x72b3844] Final|Native|Protected|BlueprintCallable 
+	// void MontageJumpToSection(FName SectionName);                                                                         // [0x72f6808] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.MakeTargetLocationInfoFromOwnerSkeletalMeshComponent
-	// FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerSkeletalMeshComponent(FName SocketName);         // [0x72b3758] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerSkeletalMeshComponent(FName SocketName);         // [0x72f671c] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.GameplayAbility.MakeTargetLocationInfoFromOwnerActor
-	// FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerActor();                                         // [0x72b36a4] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerActor();                                         // [0x72f6668] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.GameplayAbility.MakeOutgoingGameplayEffectSpec
-	// FGameplayEffectSpecHandle MakeOutgoingGameplayEffectSpec(class UClass* GameplayEffectClass, float Level);             // [0x72b35a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayEffectSpecHandle MakeOutgoingGameplayEffectSpec(class UClass* GameplayEffectClass, float Level);             // [0x72f6568] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_ShouldAbilityRespondToEvent
-	// bool K2_ShouldAbilityRespondToEvent(FGameplayAbilityActorInfo ActorInfo, FGameplayEventData Payload);                 // [0x2177018] Event|Protected|BlueprintEvent|Const 
+	// bool K2_ShouldAbilityRespondToEvent(FGameplayAbilityActorInfo ActorInfo, FGameplayEventData Payload);                 // [0x211c0a0] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_RemoveGameplayCue
-	// void K2_RemoveGameplayCue(FGameplayTag GameplayCueTag);                                                               // [0x72b3470] Native|Protected|BlueprintCallable 
+	// void K2_RemoveGameplayCue(FGameplayTag GameplayCueTag);                                                               // [0x72f6434] Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_OnEndAbility
-	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_OnEndAbility(bool bWasCancelled);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_HasAuthority
-	// bool K2_HasAuthority();                                                                                               // [0x72b3454] Final|Native|Public|BlueprintCallable|Const 
+	// bool K2_HasAuthority();                                                                                               // [0x72f6418] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_ExecuteGameplayCueWithParams
-	// void K2_ExecuteGameplayCueWithParams(FGameplayTag GameplayCueTag, FGameplayCueParameters& GameplayCueParameters);     // [0x72b3280] Native|Protected|HasOutParms|BlueprintCallable 
+	// void K2_ExecuteGameplayCueWithParams(FGameplayTag GameplayCueTag, FGameplayCueParameters& GameplayCueParameters);     // [0x72f6244] Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_ExecuteGameplayCue
-	// void K2_ExecuteGameplayCue(FGameplayTag GameplayCueTag, FGameplayEffectContextHandle Context);                        // [0x72b2fd8] Native|Protected|BlueprintCallable 
+	// void K2_ExecuteGameplayCue(FGameplayTag GameplayCueTag, FGameplayEffectContextHandle Context);                        // [0x72f5f9c] Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_EndAbilityLocally
-	// void K2_EndAbilityLocally();                                                                                          // [0x72b2fc0] Native|Protected|BlueprintCallable 
+	// void K2_EndAbilityLocally();                                                                                          // [0x72f5f84] Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_EndAbility
-	// void K2_EndAbility();                                                                                                 // [0x72b2fa8] Native|Protected|BlueprintCallable 
+	// void K2_EndAbility();                                                                                                 // [0x72f5f6c] Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_CommitExecute
-	// void K2_CommitExecute();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void K2_CommitExecute();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_CommitAbilityCost
-	// bool K2_CommitAbilityCost(bool BroadcastCommitEvent);                                                                 // [0x72b2f10] Native|Public|BlueprintCallable 
+	// bool K2_CommitAbilityCost(bool BroadcastCommitEvent);                                                                 // [0x72f5ed4] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_CommitAbilityCooldown
-	// bool K2_CommitAbilityCooldown(bool BroadcastCommitEvent, bool ForceCooldown);                                         // [0x72b2e34] Native|Public|BlueprintCallable 
+	// bool K2_CommitAbilityCooldown(bool BroadcastCommitEvent, bool ForceCooldown);                                         // [0x72f5df8] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_CommitAbility
-	// bool K2_CommitAbility();                                                                                              // [0x62d2a14] Native|Public|BlueprintCallable 
+	// bool K2_CommitAbility();                                                                                              // [0x631d1d0] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_CheckAbilityCost
-	// bool K2_CheckAbilityCost();                                                                                           // [0x72b2e0c] Native|Public|BlueprintCallable 
+	// bool K2_CheckAbilityCost();                                                                                           // [0x72f5dd0] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_CheckAbilityCooldown
-	// bool K2_CheckAbilityCooldown();                                                                                       // [0x72b2de4] Native|Public|BlueprintCallable 
+	// bool K2_CheckAbilityCooldown();                                                                                       // [0x72f5da8] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_CancelAbility
-	// void K2_CancelAbility();                                                                                              // [0x72b2d88] Final|Native|Public|BlueprintCallable 
+	// void K2_CancelAbility();                                                                                              // [0x72f5d4c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_CanActivateAbility
-	// bool K2_CanActivateAbility(FGameplayAbilityActorInfo ActorInfo, FGameplayAbilitySpecHandle Handle, FGameplayTagContainer& RelevantTags); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// bool K2_CanActivateAbility(FGameplayAbilityActorInfo ActorInfo, FGameplayAbilitySpecHandle Handle, FGameplayTagContainer& RelevantTags); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectSpecToTarget
-	// TArray<FActiveGameplayEffectHandle> K2_ApplyGameplayEffectSpecToTarget(FGameplayEffectSpecHandle EffectSpecHandle, FGameplayAbilityTargetDataHandle TargetData); // [0x72b2a90] Final|Native|Protected|BlueprintCallable 
+	// TArray<FActiveGameplayEffectHandle> K2_ApplyGameplayEffectSpecToTarget(FGameplayEffectSpecHandle EffectSpecHandle, FGameplayAbilityTargetDataHandle TargetData); // [0x72f5a54] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectSpecToOwner
-	// FActiveGameplayEffectHandle K2_ApplyGameplayEffectSpecToOwner(FGameplayEffectSpecHandle EffectSpecHandle);            // [0x72b28cc] Final|Native|Protected|BlueprintCallable 
+	// FActiveGameplayEffectHandle K2_ApplyGameplayEffectSpecToOwner(FGameplayEffectSpecHandle EffectSpecHandle);            // [0x72f5890] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_AddGameplayCueWithParams
-	// void K2_AddGameplayCueWithParams(FGameplayTag GameplayCueTag, FGameplayCueParameters& GameplayCueParameter, bool bRemoveOnAbilityEnd); // [0x72b2614] Native|Protected|HasOutParms|BlueprintCallable 
+	// void K2_AddGameplayCueWithParams(FGameplayTag GameplayCueTag, FGameplayCueParameters& GameplayCueParameter, bool bRemoveOnAbilityEnd); // [0x72f55d8] Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_AddGameplayCue
-	// void K2_AddGameplayCue(FGameplayTag GameplayCueTag, FGameplayEffectContextHandle Context, bool bRemoveOnAbilityEnd);  // [0x72b2290] Native|Protected|BlueprintCallable 
+	// void K2_AddGameplayCue(FGameplayTag GameplayCueTag, FGameplayEffectContextHandle Context, bool bRemoveOnAbilityEnd);  // [0x72f5254] Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_ActivateAbilityFromEvent
-	// void K2_ActivateAbilityFromEvent(FGameplayEventData& EventData);                                                      // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void K2_ActivateAbilityFromEvent(FGameplayEventData& EventData);                                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbility.K2_ActivateAbility
-	// void K2_ActivateAbility();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_ActivateAbility();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbility.IsLocallyControlled
-	// bool IsLocallyControlled();                                                                                           // [0x72b226c] Final|Native|Public|BlueprintCallable|Const 
+	// bool IsLocallyControlled();                                                                                           // [0x72f5230] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.InvalidateClientPredictionKey
-	// void InvalidateClientPredictionKey();                                                                                 // [0x72b2210] Final|Native|Public|BlueprintCallable|Const 
+	// void InvalidateClientPredictionKey();                                                                                 // [0x72f51d4] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetSourceObject_BP
-	// class UObject* GetSourceObject_BP(FGameplayAbilitySpecHandle Handle, FGameplayAbilityActorInfo& ActorInfo);           // [0x72b2070] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UObject* GetSourceObject_BP(FGameplayAbilitySpecHandle Handle, FGameplayAbilityActorInfo& ActorInfo);           // [0x72f5034] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetOwningComponentFromActorInfo
-	// class USkeletalMeshComponent* GetOwningComponentFromActorInfo();                                                      // [0x72b2038] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetOwningComponentFromActorInfo();                                                      // [0x72f4ffc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetOwningActorFromActorInfo
-	// class AActor* GetOwningActorFromActorInfo();                                                                          // [0x72b2014] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetOwningActorFromActorInfo();                                                                          // [0x72f4fd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetGrantedByEffectContext
-	// FGameplayEffectContextHandle GetGrantedByEffectContext();                                                             // [0x72b1fd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayEffectContextHandle GetGrantedByEffectContext();                                                             // [0x72f4f9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetCurrentSourceObject
-	// class UObject* GetCurrentSourceObject();                                                                              // [0x72b1fb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UObject* GetCurrentSourceObject();                                                                              // [0x72f4f78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetCurrentMontage
-	// class UAnimMontage* GetCurrentMontage();                                                                              // [0x72b1f9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAnimMontage* GetCurrentMontage();                                                                              // [0x72f4f60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetCooldownTimeRemaining
-	// float GetCooldownTimeRemaining();                                                                                     // [0x72b1f60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownTimeRemaining();                                                                                     // [0x72f4f24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetContextFromOwner
-	// FGameplayEffectContextHandle GetContextFromOwner(FGameplayAbilityTargetDataHandle OptionalTargetData);                // [0x72b1dd8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayEffectContextHandle GetContextFromOwner(FGameplayAbilityTargetDataHandle OptionalTargetData);                // [0x72f4d9c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetAvatarActorFromActorInfo
-	// class AActor* GetAvatarActorFromActorInfo();                                                                          // [0x72b1db4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetAvatarActorFromActorInfo();                                                                          // [0x72f4d78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetActorInfo
-	// FGameplayAbilityActorInfo GetActorInfo();                                                                             // [0x72b1d80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayAbilityActorInfo GetActorInfo();                                                                             // [0x72f4d44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetAbilitySystemComponentFromActorInfo
-	// class UAbilitySystemComponent* GetAbilitySystemComponentFromActorInfo();                                              // [0x72b1d5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAbilitySystemComponent* GetAbilitySystemComponentFromActorInfo();                                              // [0x72f4d20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetAbilityLevel_BP
-	// int32_t GetAbilityLevel_BP(FGameplayAbilitySpecHandle Handle, FGameplayAbilityActorInfo& ActorInfo);                  // [0x72b1bbc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAbilityLevel_BP(FGameplayAbilitySpecHandle Handle, FGameplayAbilityActorInfo& ActorInfo);                  // [0x72f4b80] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.GetAbilityLevel
-	// int32_t GetAbilityLevel();                                                                                            // [0x72b1b98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAbilityLevel();                                                                                            // [0x72f4b5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayAbility.EndTaskByInstanceName
-	// void EndTaskByInstanceName(FName InstanceName);                                                                       // [0x72b1a98] Final|Native|Protected|BlueprintCallable 
+	// void EndTaskByInstanceName(FName InstanceName);                                                                       // [0x72f4a5c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.EndAbilityState
-	// void EndAbilityState(FName OptionalStateNameToEnd);                                                                   // [0x72b1a18] Final|Native|Protected|BlueprintCallable 
+	// void EndAbilityState(FName OptionalStateNameToEnd);                                                                   // [0x72f49dc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.ConfirmTaskByInstanceName
-	// void ConfirmTaskByInstanceName(FName InstanceName, bool bEndTask);                                                    // [0x72b1674] Final|Native|Protected|BlueprintCallable 
+	// void ConfirmTaskByInstanceName(FName InstanceName, bool bEndTask);                                                    // [0x72f4638] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.CancelTaskByInstanceName
-	// void CancelTaskByInstanceName(FName InstanceName);                                                                    // [0x72b15f4] Final|Native|Protected|BlueprintCallable 
+	// void CancelTaskByInstanceName(FName InstanceName);                                                                    // [0x72f45b8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithHandle
-	// void BP_RemoveGameplayEffectFromOwnerWithHandle(FActiveGameplayEffectHandle Handle, int32_t StacksToRemove);          // [0x72b13e4] Final|Native|Protected|BlueprintCallable 
+	// void BP_RemoveGameplayEffectFromOwnerWithHandle(FActiveGameplayEffectHandle Handle, int32_t StacksToRemove);          // [0x72f43a8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithGrantedTags
-	// void BP_RemoveGameplayEffectFromOwnerWithGrantedTags(FGameplayTagContainer WithGrantedTags, int32_t StacksToRemove);  // [0x72b11b0] Final|Native|Protected|BlueprintCallable 
+	// void BP_RemoveGameplayEffectFromOwnerWithGrantedTags(FGameplayTagContainer WithGrantedTags, int32_t StacksToRemove);  // [0x72f4174] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithAssetTags
-	// void BP_RemoveGameplayEffectFromOwnerWithAssetTags(FGameplayTagContainer WithAssetTags, int32_t StacksToRemove);      // [0x72b0f7c] Final|Native|Protected|BlueprintCallable 
+	// void BP_RemoveGameplayEffectFromOwnerWithAssetTags(FGameplayTagContainer WithAssetTags, int32_t StacksToRemove);      // [0x72f3f40] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.BP_ApplyGameplayEffectToTarget
-	// TArray<FActiveGameplayEffectHandle> BP_ApplyGameplayEffectToTarget(FGameplayAbilityTargetDataHandle TargetData, class UClass* GameplayEffectClass, int32_t GameplayEffectLevel, int32_t Stacks); // [0x72b0b3c] Final|Native|Protected|BlueprintCallable 
+	// TArray<FActiveGameplayEffectHandle> BP_ApplyGameplayEffectToTarget(FGameplayAbilityTargetDataHandle TargetData, class UClass* GameplayEffectClass, int32_t GameplayEffectLevel, int32_t Stacks); // [0x72f3b00] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayAbility.BP_ApplyGameplayEffectToOwner
-	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectToOwner(class UClass* GameplayEffectClass, int32_t GameplayEffectLevel, int32_t Stacks); // [0x72b0a14] Final|Native|Protected|BlueprintCallable 
+	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectToOwner(class UClass* GameplayEffectClass, int32_t GameplayEffectLevel, int32_t Stacks); // [0x72f39d8] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Struct /Script/GameplayAbilities.GameplayAbilityBindInfo
@@ -1290,9 +1290,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayAbilityTargetActor.ConfirmTargeting
-	// void ConfirmTargeting();                                                                                              // [0x3144604] Native|Public        
+	// void ConfirmTargeting();                                                                                              // [0x313f930] Native|Public        
 	// Function /Script/GameplayAbilities.GameplayAbilityTargetActor.CancelTargeting
-	// void CancelTargeting();                                                                                               // [0x1b77684] Native|Public        
+	// void CancelTargeting();                                                                                               // [0xf41b30] Native|Public        
 };
 
 /// Class /Script/GameplayAbilities.GameplayAbilityTargetActor_Trace
@@ -1359,17 +1359,17 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayAbilityWorldReticle.SetReticleMaterialParamVector
-	// void SetReticleMaterialParamVector(FName ParamName, FVector Value);                                                   // [0x2177018] Event|Public|HasDefaults|BlueprintEvent 
+	// void SetReticleMaterialParamVector(FName ParamName, FVector Value);                                                   // [0x211c0a0] Event|Public|HasDefaults|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbilityWorldReticle.SetReticleMaterialParamFloat
-	// void SetReticleMaterialParamFloat(FName ParamName, float Value);                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void SetReticleMaterialParamFloat(FName ParamName, float Value);                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbilityWorldReticle.OnValidTargetChanged
-	// void OnValidTargetChanged(bool bNewValue);                                                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnValidTargetChanged(bool bNewValue);                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbilityWorldReticle.OnTargetingAnActor
-	// void OnTargetingAnActor(bool bNewValue);                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnTargetingAnActor(bool bNewValue);                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbilityWorldReticle.OnParametersInitialized
-	// void OnParametersInitialized();                                                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnParametersInitialized();                                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayAbilityWorldReticle.FaceTowardSource
-	// void FaceTowardSource(bool bFaceIn2D);                                                                                // [0x72b1b18] Final|Native|Public|BlueprintCallable 
+	// void FaceTowardSource(bool bFaceIn2D);                                                                                // [0x72f4adc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.GameplayAbilityWorldReticle_ActorVisualization
@@ -1433,7 +1433,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionConstantForce.ApplyRootMotionConstantForce
-	// class UAbilityTask_ApplyRootMotionConstantForce* ApplyRootMotionConstantForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FVector WorldDirection, float Strength, float duration, bool bIsAdditive, class UCurveFloat* StrengthOverTime, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, bool bEnableGravity); // [0x72f7794] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotionConstantForce* ApplyRootMotionConstantForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FVector WorldDirection, float Strength, float duration, bool bIsAdditive, class UCurveFloat* StrengthOverTime, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, bool bEnableGravity); // [0x733897c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_ApplyRootMotionJumpForce
@@ -1457,11 +1457,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionJumpForce.OnLandedCallback
-	// void OnLandedCallback(FHitResult& Hit);                                                                               // [0x730b8bc] Final|Native|Public|HasOutParms 
+	// void OnLandedCallback(FHitResult& Hit);                                                                               // [0x734caa4] Final|Native|Public|HasOutParms 
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionJumpForce.Finish
-	// void Finish();                                                                                                        // [0x73027e4] Final|Native|Public|BlueprintCallable 
+	// void Finish();                                                                                                        // [0x73439cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionJumpForce.ApplyRootMotionJumpForce
-	// class UAbilityTask_ApplyRootMotionJumpForce* ApplyRootMotionJumpForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FRotator Rotation, float Distance, float Height, float duration, float MinimumLandedTriggerTime, bool bFinishOnLanded, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, class UCurveVector* PathOffsetCurve, class UCurveFloat* TimeMappingCurve); // [0x72f803c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotionJumpForce* ApplyRootMotionJumpForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FRotator Rotation, float Distance, float Height, float duration, float MinimumLandedTriggerTime, bool bFinishOnLanded, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, class UCurveVector* PathOffsetCurve, class UCurveFloat* TimeMappingCurve); // [0x7339224] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce
@@ -1496,15 +1496,15 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.OnTargetActorSwapped
-	// void OnTargetActorSwapped(class AActor* OriginalTarget, class AActor* NewTarget);                                     // [0x730bd1c] Final|Native|Public  
+	// void OnTargetActorSwapped(class AActor* OriginalTarget, class AActor* NewTarget);                                     // [0x734cf04] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.OnRep_TargetLocation
-	// void OnRep_TargetLocation();                                                                                          // [0x730bc20] Final|Native|Protected 
+	// void OnRep_TargetLocation();                                                                                          // [0x734ce08] Final|Native|Protected 
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.ApplyRootMotionMoveToTargetDataActorForce
-	// class UAbilityTask_ApplyRootMotionMoveToActorForce* ApplyRootMotionMoveToTargetDataActorForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FGameplayAbilityTargetDataHandle TargetDataHandle, int32_t TargetDataIndex, int32_t TargetActorIndex, FVector TargetLocationOffset, ERootMotionMoveToActorTargetOffsetType OffsetAlignment, float duration, class UCurveFloat* TargetLerpSpeedHorizontal, class UCurveFloat* TargetLerpSpeedVertical, bool bSetNewMovementMode, TEnumAsByte<EMovementMode> MovementMode, bool bRestrictSpeedToExpected, class UCurveVector* PathOffsetCurve, class UCurveFloat* TimeMappingCurve, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, bool bDisableDestinationReachedInterrupt, float ReachedDestinationDistance); // [0x72fb0dc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotionMoveToActorForce* ApplyRootMotionMoveToTargetDataActorForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FGameplayAbilityTargetDataHandle TargetDataHandle, int32_t TargetDataIndex, int32_t TargetActorIndex, FVector TargetLocationOffset, ERootMotionMoveToActorTargetOffsetType OffsetAlignment, float duration, class UCurveFloat* TargetLerpSpeedHorizontal, class UCurveFloat* TargetLerpSpeedVertical, bool bSetNewMovementMode, TEnumAsByte<EMovementMode> MovementMode, bool bRestrictSpeedToExpected, class UCurveVector* PathOffsetCurve, class UCurveFloat* TimeMappingCurve, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, bool bDisableDestinationReachedInterrupt, float ReachedDestinationDistance); // [0x733c2c4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.ApplyRootMotionMoveToComponentForce
-	// class UAbilityTask_ApplyRootMotionMoveToActorForce* ApplyRootMotionMoveToComponentForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, class USceneComponent* TargetComponent, FVector TargetComponentRelativeLocation, FVector TargetLocationOffset, ERootMotionMoveToActorTargetOffsetType OffsetAlignment, float duration, class UCurveFloat* TargetLerpSpeedHorizontal, class UCurveFloat* TargetLerpSpeedVertical, bool bSetNewMovementMode, TEnumAsByte<EMovementMode> MovementMode, bool bRestrictSpeedToExpected, class UCurveVector* PathOffsetCurve, class UCurveFloat* TimeMappingCurve, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, bool bDisableDestinationReachedInterrupt, float ReachedDestinationDistance); // [0x72f98e4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotionMoveToActorForce* ApplyRootMotionMoveToComponentForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, class USceneComponent* TargetComponent, FVector TargetComponentRelativeLocation, FVector TargetLocationOffset, ERootMotionMoveToActorTargetOffsetType OffsetAlignment, float duration, class UCurveFloat* TargetLerpSpeedHorizontal, class UCurveFloat* TargetLerpSpeedVertical, bool bSetNewMovementMode, TEnumAsByte<EMovementMode> MovementMode, bool bRestrictSpeedToExpected, class UCurveVector* PathOffsetCurve, class UCurveFloat* TimeMappingCurve, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, bool bDisableDestinationReachedInterrupt, float ReachedDestinationDistance); // [0x733aacc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.ApplyRootMotionMoveToActorForce
-	// class UAbilityTask_ApplyRootMotionMoveToActorForce* ApplyRootMotionMoveToActorForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, class AActor* TargetActor, FVector TargetLocationOffset, ERootMotionMoveToActorTargetOffsetType OffsetAlignment, float duration, class UCurveFloat* TargetLerpSpeedHorizontal, class UCurveFloat* TargetLerpSpeedVertical, bool bSetNewMovementMode, TEnumAsByte<EMovementMode> MovementMode, bool bRestrictSpeedToExpected, class UCurveVector* PathOffsetCurve, class UCurveFloat* TimeMappingCurve, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, bool bDisableDestinationReachedInterrupt, float ReachedDestinationDistance); // [0x72f8aa4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotionMoveToActorForce* ApplyRootMotionMoveToActorForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, class AActor* TargetActor, FVector TargetLocationOffset, ERootMotionMoveToActorTargetOffsetType OffsetAlignment, float duration, class UCurveFloat* TargetLerpSpeedHorizontal, class UCurveFloat* TargetLerpSpeedVertical, bool bSetNewMovementMode, TEnumAsByte<EMovementMode> MovementMode, bool bRestrictSpeedToExpected, class UCurveVector* PathOffsetCurve, class UCurveFloat* TimeMappingCurve, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish, bool bDisableDestinationReachedInterrupt, float ReachedDestinationDistance); // [0x7339c8c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_ApplyRootMotionMoveToForce
@@ -1527,7 +1527,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionMoveToForce.ApplyRootMotionMoveToForce
-	// class UAbilityTask_ApplyRootMotionMoveToForce* ApplyRootMotionMoveToForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FVector TargetLocation, float duration, bool bSetNewMovementMode, TEnumAsByte<EMovementMode> MovementMode, bool bRestrictSpeedToExpected, class UCurveVector* PathOffsetCurve, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish); // [0x72fa814] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotionMoveToForce* ApplyRootMotionMoveToForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FVector TargetLocation, float duration, bool bSetNewMovementMode, TEnumAsByte<EMovementMode> MovementMode, bool bRestrictSpeedToExpected, class UCurveVector* PathOffsetCurve, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish); // [0x733b9fc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_ApplyRootMotionRadialForce
@@ -1554,7 +1554,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_ApplyRootMotionRadialForce.ApplyRootMotionRadialForce
-	// class UAbilityTask_ApplyRootMotionRadialForce* ApplyRootMotionRadialForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FVector Location, class AActor* LocationActor, float Strength, float duration, float Radius, bool bIsPush, bool bIsAdditive, bool bNoZForce, class UCurveFloat* StrengthDistanceFalloff, class UCurveFloat* StrengthOverTime, bool bUseFixedWorldDirection, FRotator FixedWorldDirection, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish); // [0x72fc1e0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotionRadialForce* ApplyRootMotionRadialForce(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FVector Location, class AActor* LocationActor, float Strength, float duration, float Radius, bool bIsPush, bool bIsAdditive, bool bNoZForce, class UCurveFloat* StrengthDistanceFalloff, class UCurveFloat* StrengthOverTime, bool bUseFixedWorldDirection, FRotator FixedWorldDirection, ERootMotionFinishVelocityMode VelocityOnFinishMode, FVector SetVelocityOnFinish, float ClampVelocityOnFinish); // [0x733d3c8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_MoveToLocation
@@ -1574,7 +1574,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_MoveToLocation.MoveToLocation
-	// class UAbilityTask_MoveToLocation* MoveToLocation(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FVector Location, float duration, class UCurveFloat* OptionalInterpolationCurve, class UCurveVector* OptionalVectorInterpolationCurve); // [0x7308ca4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_MoveToLocation* MoveToLocation(class UGameplayAbility* OwningAbility, FName TaskInstanceName, FVector Location, float duration, class UCurveFloat* OptionalInterpolationCurve, class UCurveVector* OptionalVectorInterpolationCurve); // [0x7349e8c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_NetworkSyncPoint
@@ -1588,9 +1588,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_NetworkSyncPoint.WaitNetSync
-	// class UAbilityTask_NetworkSyncPoint* WaitNetSync(class UGameplayAbility* OwningAbility, EAbilityTaskNetSyncType SyncType); // [0x73176e8] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_NetworkSyncPoint* WaitNetSync(class UGameplayAbility* OwningAbility, EAbilityTaskNetSyncType SyncType); // [0x73588d0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_NetworkSyncPoint.OnSignalCallback
-	// void OnSignalCallback();                                                                                              // [0x730bc44] Final|Native|Public  
+	// void OnSignalCallback();                                                                                              // [0x734ce2c] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_PlayMontageAndWait
@@ -1615,15 +1615,15 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageInterrupted
-	// void OnMontageInterrupted();                                                                                          // [0x730b0f8] Final|Native|Public  
+	// void OnMontageInterrupted();                                                                                          // [0x734c2e0] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageEnded
-	// void OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted);                                                  // [0x72b3b8c] Final|Native|Public  
+	// void OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted);                                                  // [0x72f6b50] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageBlendingOut
-	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                            // [0x730b9d0] Final|Native|Public  
+	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                            // [0x734cbb8] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_PlayMontageAndWait.OnGameplayAbilityCancelled
-	// void OnGameplayAbilityCancelled();                                                                                    // [0x730b0f8] Final|Native|Public  
+	// void OnGameplayAbilityCancelled();                                                                                    // [0x734c2e0] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_PlayMontageAndWait.CreatePlayMontageAndWaitProxy
-	// class UAbilityTask_PlayMontageAndWait* CreatePlayMontageAndWaitProxy(class UGameplayAbility* OwningAbility, FName TaskInstanceName, class UAnimMontage* MontageToPlay, float Rate, FName StartSection, bool bStopWhenAbilityEnds, float AnimRootMotionTranslationScale, float StartTimeSeconds, bool bAllowInterruptAfterBlendOut); // [0x72ff324] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_PlayMontageAndWait* CreatePlayMontageAndWaitProxy(class UGameplayAbility* OwningAbility, FName TaskInstanceName, class UAnimMontage* MontageToPlay, float Rate, FName StartSection, bool bStopWhenAbilityEnds, float AnimRootMotionTranslationScale, float StartTimeSeconds, bool bAllowInterruptAfterBlendOut); // [0x734050c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_Repeat
@@ -1638,7 +1638,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_Repeat.RepeatAction
-	// class UAbilityTask_Repeat* RepeatAction(class UGameplayAbility* OwningAbility, float TimeBetweenActions, int32_t TotalActionCount); // [0x730c870] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_Repeat* RepeatAction(class UGameplayAbility* OwningAbility, float TimeBetweenActions, int32_t TotalActionCount); // [0x734da58] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_SpawnActor
@@ -1653,11 +1653,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_SpawnActor.SpawnActor
-	// class UAbilityTask_SpawnActor* SpawnActor(class UGameplayAbility* OwningAbility, FGameplayAbilityTargetDataHandle TargetData, class UClass* Class); // [0x730fd1c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_SpawnActor* SpawnActor(class UGameplayAbility* OwningAbility, FGameplayAbilityTargetDataHandle TargetData, class UClass* Class); // [0x7350f04] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_SpawnActor.FinishSpawningActor
-	// void FinishSpawningActor(class UGameplayAbility* OwningAbility, FGameplayAbilityTargetDataHandle TargetData, class AActor* SpawnedActor); // [0x73027f8] Final|Native|Public|BlueprintCallable 
+	// void FinishSpawningActor(class UGameplayAbility* OwningAbility, FGameplayAbilityTargetDataHandle TargetData, class AActor* SpawnedActor); // [0x73439e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_SpawnActor.BeginSpawningActor
-	// bool BeginSpawningActor(class UGameplayAbility* OwningAbility, FGameplayAbilityTargetDataHandle TargetData, class UClass* Class, class AActor*& SpawnedActor); // [0x72fda18] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool BeginSpawningActor(class UGameplayAbility* OwningAbility, FGameplayAbilityTargetDataHandle TargetData, class UClass* Class, class AActor*& SpawnedActor); // [0x733ec00] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_StartAbilityState
@@ -1672,7 +1672,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_StartAbilityState.StartAbilityState
-	// class UAbilityTask_StartAbilityState* StartAbilityState(class UGameplayAbility* OwningAbility, FName StateName, bool bEndCurrentState); // [0x730ffbc] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_StartAbilityState* StartAbilityState(class UGameplayAbility* OwningAbility, FName StateName, bool bEndCurrentState); // [0x73511a4] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_VisualizeTargeting
@@ -1686,13 +1686,13 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_VisualizeTargeting.VisualizeTargetingUsingActor
-	// class UAbilityTask_VisualizeTargeting* VisualizeTargetingUsingActor(class UGameplayAbility* OwningAbility, class AGameplayAbilityTargetActor* TargetActor, FName TaskInstanceName, float duration); // [0x731140c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_VisualizeTargeting* VisualizeTargetingUsingActor(class UGameplayAbility* OwningAbility, class AGameplayAbilityTargetActor* TargetActor, FName TaskInstanceName, float duration); // [0x73525f4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_VisualizeTargeting.VisualizeTargeting
-	// class UAbilityTask_VisualizeTargeting* VisualizeTargeting(class UGameplayAbility* OwningAbility, class UClass* Class, FName TaskInstanceName, float duration); // [0x73112ac] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_VisualizeTargeting* VisualizeTargeting(class UGameplayAbility* OwningAbility, class UClass* Class, FName TaskInstanceName, float duration); // [0x7352494] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_VisualizeTargeting.FinishSpawningActor
-	// void FinishSpawningActor(class UGameplayAbility* OwningAbility, class AGameplayAbilityTargetActor* SpawnedActor);     // [0x7302a88] Final|Native|Public|BlueprintCallable 
+	// void FinishSpawningActor(class UGameplayAbility* OwningAbility, class AGameplayAbilityTargetActor* SpawnedActor);     // [0x7343c70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_VisualizeTargeting.BeginSpawningActor
-	// bool BeginSpawningActor(class UGameplayAbility* OwningAbility, class UClass* Class, class AGameplayAbilityTargetActor*& SpawnedActor); // [0x72fdd0c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool BeginSpawningActor(class UGameplayAbility* OwningAbility, class UClass* Class, class AGameplayAbilityTargetActor*& SpawnedActor); // [0x733eef4] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitAbilityActivate
@@ -1706,13 +1706,13 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAbilityActivate.WaitForAbilityActivateWithTagRequirements
-	// class UAbilityTask_WaitAbilityActivate* WaitForAbilityActivateWithTagRequirements(class UGameplayAbility* OwningAbility, FGameplayTagRequirements TagRequirements, bool IncludeTriggeredAbilities, bool TriggerOnce); // [0x7311c4c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAbilityActivate* WaitForAbilityActivateWithTagRequirements(class UGameplayAbility* OwningAbility, FGameplayTagRequirements TagRequirements, bool IncludeTriggeredAbilities, bool TriggerOnce); // [0x7352e34] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAbilityActivate.WaitForAbilityActivate_Query
-	// class UAbilityTask_WaitAbilityActivate* WaitForAbilityActivate_Query(class UGameplayAbility* OwningAbility, FGameplayTagQuery Query, bool IncludeTriggeredAbilities, bool TriggerOnce); // [0x7312018] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAbilityActivate* WaitForAbilityActivate_Query(class UGameplayAbility* OwningAbility, FGameplayTagQuery Query, bool IncludeTriggeredAbilities, bool TriggerOnce); // [0x7353200] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAbilityActivate.WaitForAbilityActivate
-	// class UAbilityTask_WaitAbilityActivate* WaitForAbilityActivate(class UGameplayAbility* OwningAbility, FGameplayTag WithTag, FGameplayTag WithoutTag, bool IncludeTriggeredAbilities, bool TriggerOnce); // [0x7311854] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAbilityActivate* WaitForAbilityActivate(class UGameplayAbility* OwningAbility, FGameplayTag WithTag, FGameplayTag WithoutTag, bool IncludeTriggeredAbilities, bool TriggerOnce); // [0x7352a3c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAbilityActivate.OnAbilityActivate
-	// void OnAbilityActivate(class UGameplayAbility* ActivatedAbility);                                                     // [0x730ad34] Final|Native|Public  
+	// void OnAbilityActivate(class UGameplayAbility* ActivatedAbility);                                                     // [0x734bf1c] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitAbilityCommit
@@ -1726,11 +1726,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAbilityCommit.WaitForAbilityCommit_Query
-	// class UAbilityTask_WaitAbilityCommit* WaitForAbilityCommit_Query(class UGameplayAbility* OwningAbility, FGameplayTagQuery Query, bool TriggerOnce); // [0x731268c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAbilityCommit* WaitForAbilityCommit_Query(class UGameplayAbility* OwningAbility, FGameplayTagQuery Query, bool TriggerOnce); // [0x7353874] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAbilityCommit.WaitForAbilityCommit
-	// class UAbilityTask_WaitAbilityCommit* WaitForAbilityCommit(class UGameplayAbility* OwningAbility, FGameplayTag WithTag, FGameplayTag WithoutTage, bool TriggerOnce); // [0x731237c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAbilityCommit* WaitForAbilityCommit(class UGameplayAbility* OwningAbility, FGameplayTag WithTag, FGameplayTag WithoutTage, bool TriggerOnce); // [0x7353564] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAbilityCommit.OnAbilityCommit
-	// void OnAbilityCommit(class UGameplayAbility* ActivatedAbility);                                                       // [0x730adb4] Final|Native|Public  
+	// void OnAbilityCommit(class UGameplayAbility* ActivatedAbility);                                                       // [0x734bf9c] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitAttributeChange
@@ -1745,9 +1745,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAttributeChange.WaitForAttributeChangeWithComparison
-	// class UAbilityTask_WaitAttributeChange* WaitForAttributeChangeWithComparison(class UGameplayAbility* OwningAbility, FGameplayAttribute InAttribute, FGameplayTag InWithTag, FGameplayTag InWithoutTag, TEnumAsByte<EWaitAttributeChangeComparison> InComparisonType, float InComparisonValue, bool TriggerOnce, class AActor* OptionalExternalOwner); // [0x7313a18] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAttributeChange* WaitForAttributeChangeWithComparison(class UGameplayAbility* OwningAbility, FGameplayAttribute InAttribute, FGameplayTag InWithTag, FGameplayTag InWithoutTag, TEnumAsByte<EWaitAttributeChangeComparison> InComparisonType, float InComparisonValue, bool TriggerOnce, class AActor* OptionalExternalOwner); // [0x7354c00] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAttributeChange.WaitForAttributeChange
-	// class UAbilityTask_WaitAttributeChange* WaitForAttributeChange(class UGameplayAbility* OwningAbility, FGameplayAttribute Attribute, FGameplayTag WithSrcTag, FGameplayTag WithoutSrcTag, bool TriggerOnce, class AActor* OptionalExternalOwner); // [0x7312918] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAttributeChange* WaitForAttributeChange(class UGameplayAbility* OwningAbility, FGameplayAttribute Attribute, FGameplayTag WithSrcTag, FGameplayTag WithoutSrcTag, bool TriggerOnce, class AActor* OptionalExternalOwner); // [0x7353b00] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitAttributeChangeRatioThreshold
@@ -1762,7 +1762,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAttributeChangeRatioThreshold.WaitForAttributeChangeRatioThreshold
-	// class UAbilityTask_WaitAttributeChangeRatioThreshold* WaitForAttributeChangeRatioThreshold(class UGameplayAbility* OwningAbility, FGameplayAttribute AttributeNumerator, FGameplayAttribute AttributeDenominator, TEnumAsByte<EWaitAttributeChangeComparison> ComparisonType, float ComparisonValue, bool bTriggerOnce, class AActor* OptionalExternalOwner); // [0x7312e3c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAttributeChangeRatioThreshold* WaitForAttributeChangeRatioThreshold(class UGameplayAbility* OwningAbility, FGameplayAttribute AttributeNumerator, FGameplayAttribute AttributeDenominator, TEnumAsByte<EWaitAttributeChangeComparison> ComparisonType, float ComparisonValue, bool bTriggerOnce, class AActor* OptionalExternalOwner); // [0x7354024] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitAttributeChangeThreshold
@@ -1777,7 +1777,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitAttributeChangeThreshold.WaitForAttributeChangeThreshold
-	// class UAbilityTask_WaitAttributeChangeThreshold* WaitForAttributeChangeThreshold(class UGameplayAbility* OwningAbility, FGameplayAttribute Attribute, TEnumAsByte<EWaitAttributeChangeComparison> ComparisonType, float ComparisonValue, bool bTriggerOnce, class AActor* OptionalExternalOwner); // [0x73134e8] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitAttributeChangeThreshold* WaitForAttributeChangeThreshold(class UGameplayAbility* OwningAbility, FGameplayAttribute Attribute, TEnumAsByte<EWaitAttributeChangeComparison> ComparisonType, float ComparisonValue, bool bTriggerOnce, class AActor* OptionalExternalOwner); // [0x73546d0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitCancel
@@ -1791,11 +1791,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitCancel.WaitCancel
-	// class UAbilityTask_WaitCancel* WaitCancel(class UGameplayAbility* OwningAbility);                                     // [0x7311544] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitCancel* WaitCancel(class UGameplayAbility* OwningAbility);                                     // [0x735272c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitCancel.OnLocalCancelCallback
-	// void OnLocalCancelCallback();                                                                                         // [0x730b994] Final|Native|Public  
+	// void OnLocalCancelCallback();                                                                                         // [0x734cb7c] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_WaitCancel.OnCancelCallback
-	// void OnCancelCallback();                                                                                              // [0x730b03c] Final|Native|Public  
+	// void OnCancelCallback();                                                                                              // [0x734c224] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitConfirm
@@ -1809,9 +1809,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitConfirm.WaitConfirm
-	// class UAbilityTask_WaitConfirm* WaitConfirm(class UGameplayAbility* OwningAbility);                                   // [0x7311604] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitConfirm* WaitConfirm(class UGameplayAbility* OwningAbility);                                   // [0x73527ec] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitConfirm.OnConfirmCallback
-	// void OnConfirmCallback(class UGameplayAbility* InAbility);                                                            // [0x730b064] Final|Native|Public  
+	// void OnConfirmCallback(class UGameplayAbility* InAbility);                                                            // [0x734c24c] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitConfirmCancel
@@ -1826,15 +1826,15 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitConfirmCancel.WaitConfirmCancel
-	// class UAbilityTask_WaitConfirmCancel* WaitConfirmCancel(class UGameplayAbility* OwningAbility);                       // [0x73116c4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitConfirmCancel* WaitConfirmCancel(class UGameplayAbility* OwningAbility);                       // [0x73528ac] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitConfirmCancel.OnLocalConfirmCallback
-	// void OnLocalConfirmCallback();                                                                                        // [0x730b9bc] Final|Native|Public  
+	// void OnLocalConfirmCallback();                                                                                        // [0x734cba4] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_WaitConfirmCancel.OnLocalCancelCallback
-	// void OnLocalCancelCallback();                                                                                         // [0x730b9a8] Final|Native|Public  
+	// void OnLocalCancelCallback();                                                                                         // [0x734cb90] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_WaitConfirmCancel.OnConfirmCallback
-	// void OnConfirmCallback();                                                                                             // [0x730b0e4] Final|Native|Public  
+	// void OnConfirmCallback();                                                                                             // [0x734c2cc] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_WaitConfirmCancel.OnCancelCallback
-	// void OnCancelCallback();                                                                                              // [0x730b050] Final|Native|Public  
+	// void OnCancelCallback();                                                                                              // [0x734c238] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitDelay
@@ -1848,7 +1848,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitDelay.WaitDelay
-	// class UAbilityTask_WaitDelay* WaitDelay(class UGameplayAbility* OwningAbility, float Time);                           // [0x7311784] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitDelay* WaitDelay(class UGameplayAbility* OwningAbility, float Time);                           // [0x735296c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectApplied
@@ -1863,7 +1863,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectApplied.OnApplyGameplayEffectCallback
-	// void OnApplyGameplayEffectCallback(class UAbilitySystemComponent* Target, FGameplayEffectSpec& SpecApplied, FActiveGameplayEffectHandle ActiveHandle); // [0x730ae34] Final|Native|Public|HasOutParms 
+	// void OnApplyGameplayEffectCallback(class UAbilitySystemComponent* Target, FGameplayEffectSpec& SpecApplied, FActiveGameplayEffectHandle ActiveHandle); // [0x734c01c] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self
@@ -1877,9 +1877,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self.WaitGameplayEffectAppliedToSelf_Query
-	// class UAbilityTask_WaitGameplayEffectApplied_Self* WaitGameplayEffectAppliedToSelf_Query(class UGameplayAbility* OwningAbility, FGameplayTargetDataFilterHandle SourceFilter, FGameplayTagQuery SourceTagQuery, FGameplayTagQuery TargetTagQuery, bool TriggerOnce, class AActor* OptionalExternalOwner, bool ListenForPeriodicEffect); // [0x7314bf0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayEffectApplied_Self* WaitGameplayEffectAppliedToSelf_Query(class UGameplayAbility* OwningAbility, FGameplayTargetDataFilterHandle SourceFilter, FGameplayTagQuery SourceTagQuery, FGameplayTagQuery TargetTagQuery, bool TriggerOnce, class AActor* OptionalExternalOwner, bool ListenForPeriodicEffect); // [0x7355dd8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self.WaitGameplayEffectAppliedToSelf
-	// class UAbilityTask_WaitGameplayEffectApplied_Self* WaitGameplayEffectAppliedToSelf(class UGameplayAbility* OwningAbility, FGameplayTargetDataFilterHandle SourceFilter, FGameplayTagRequirements SourceTagRequirements, FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, class AActor* OptionalExternalOwner, bool ListenForPeriodicEffect); // [0x7314488] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayEffectApplied_Self* WaitGameplayEffectAppliedToSelf(class UGameplayAbility* OwningAbility, FGameplayTargetDataFilterHandle SourceFilter, FGameplayTagRequirements SourceTagRequirements, FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, class AActor* OptionalExternalOwner, bool ListenForPeriodicEffect); // [0x7355670] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target
@@ -1893,9 +1893,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target.WaitGameplayEffectAppliedToTarget_Query
-	// class UAbilityTask_WaitGameplayEffectApplied_Target* WaitGameplayEffectAppliedToTarget_Query(class UGameplayAbility* OwningAbility, FGameplayTargetDataFilterHandle SourceFilter, FGameplayTagQuery SourceTagQuery, FGameplayTagQuery TargetTagQuery, bool TriggerOnce, class AActor* OptionalExternalOwner, bool ListenForPeriodicEffect); // [0x7315a74] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayEffectApplied_Target* WaitGameplayEffectAppliedToTarget_Query(class UGameplayAbility* OwningAbility, FGameplayTargetDataFilterHandle SourceFilter, FGameplayTagQuery SourceTagQuery, FGameplayTagQuery TargetTagQuery, bool TriggerOnce, class AActor* OptionalExternalOwner, bool ListenForPeriodicEffect); // [0x7356c5c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target.WaitGameplayEffectAppliedToTarget
-	// class UAbilityTask_WaitGameplayEffectApplied_Target* WaitGameplayEffectAppliedToTarget(class UGameplayAbility* OwningAbility, FGameplayTargetDataFilterHandle TargetFilter, FGameplayTagRequirements SourceTagRequirements, FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, class AActor* OptionalExternalOwner, bool ListenForPeriodicEffects); // [0x731530c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayEffectApplied_Target* WaitGameplayEffectAppliedToTarget(class UGameplayAbility* OwningAbility, FGameplayTargetDataFilterHandle TargetFilter, FGameplayTagRequirements SourceTagRequirements, FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, class AActor* OptionalExternalOwner, bool ListenForPeriodicEffects); // [0x73564f4] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectBlockedImmunity
@@ -1911,7 +1911,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectBlockedImmunity.WaitGameplayEffectBlockedByImmunity
-	// class UAbilityTask_WaitGameplayEffectBlockedImmunity* WaitGameplayEffectBlockedByImmunity(class UGameplayAbility* OwningAbility, FGameplayTagRequirements SourceTagRequirements, FGameplayTagRequirements TargetTagRequirements, class AActor* OptionalExternalTarget, bool OnlyTriggerOnce); // [0x7316190] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayEffectBlockedImmunity* WaitGameplayEffectBlockedByImmunity(class UGameplayAbility* OwningAbility, FGameplayTagRequirements SourceTagRequirements, FGameplayTagRequirements TargetTagRequirements, class AActor* OptionalExternalTarget, bool OnlyTriggerOnce); // [0x7357378] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved
@@ -1926,9 +1926,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved.WaitForGameplayEffectRemoved
-	// class UAbilityTask_WaitGameplayEffectRemoved* WaitForGameplayEffectRemoved(class UGameplayAbility* OwningAbility, FActiveGameplayEffectHandle Handle); // [0x73140f8] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayEffectRemoved* WaitForGameplayEffectRemoved(class UGameplayAbility* OwningAbility, FActiveGameplayEffectHandle Handle); // [0x73552e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved.OnGameplayEffectRemoved
-	// void OnGameplayEffectRemoved(FGameplayEffectRemovalInfo& InGameplayEffectRemovalInfo);                                // [0x730b10c] Final|Native|Public|HasOutParms 
+	// void OnGameplayEffectRemoved(FGameplayEffectRemovalInfo& InGameplayEffectRemovalInfo);                                // [0x734c2f4] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectStackChange
@@ -1943,9 +1943,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectStackChange.WaitForGameplayEffectStackChange
-	// class UAbilityTask_WaitGameplayEffectStackChange* WaitForGameplayEffectStackChange(class UGameplayAbility* OwningAbility, FActiveGameplayEffectHandle Handle); // [0x7314260] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayEffectStackChange* WaitForGameplayEffectStackChange(class UGameplayAbility* OwningAbility, FActiveGameplayEffectHandle Handle); // [0x7355448] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEffectStackChange.OnGameplayEffectStackChange
-	// void OnGameplayEffectStackChange(FActiveGameplayEffectHandle Handle, int32_t NewCount, int32_t OldCount);             // [0x730b21c] Final|Native|Public  
+	// void OnGameplayEffectStackChange(FActiveGameplayEffectHandle Handle, int32_t NewCount, int32_t OldCount);             // [0x734c404] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayEvent
@@ -1961,7 +1961,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayEvent.WaitGameplayEvent
-	// class UAbilityTask_WaitGameplayEvent* WaitGameplayEvent(class UGameplayAbility* OwningAbility, FGameplayTag EventTag, class AActor* OptionalExternalTarget, bool OnlyTriggerOnce, bool OnlyMatchExact); // [0x7316684] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayEvent* WaitGameplayEvent(class UGameplayAbility* OwningAbility, FGameplayTag EventTag, class AActor* OptionalExternalTarget, bool OnlyTriggerOnce, bool OnlyMatchExact); // [0x735786c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayTag
@@ -1976,7 +1976,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayTag.GameplayTagCallback
-	// void GameplayTagCallback(FGameplayTag tag, int32_t NewCount);                                                         // [0x7302fdc] Native|Public        
+	// void GameplayTagCallback(FGameplayTag tag, int32_t NewCount);                                                         // [0x73441c4] Native|Public        
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayTagAdded
@@ -1989,7 +1989,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayTagAdded.WaitGameplayTagAdd
-	// class UAbilityTask_WaitGameplayTagAdded* WaitGameplayTagAdd(class UGameplayAbility* OwningAbility, FGameplayTag tag, class AActor* InOptionalExternalTarget, bool OnlyTriggerOnce); // [0x7316a7c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayTagAdded* WaitGameplayTagAdd(class UGameplayAbility* OwningAbility, FGameplayTag tag, class AActor* InOptionalExternalTarget, bool OnlyTriggerOnce); // [0x7357c64] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayTagRemoved
@@ -2002,7 +2002,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayTagRemoved.WaitGameplayTagRemove
-	// class UAbilityTask_WaitGameplayTagRemoved* WaitGameplayTagRemove(class UGameplayAbility* OwningAbility, FGameplayTag tag, class AActor* InOptionalExternalTarget, bool OnlyTriggerOnce); // [0x73171c4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayTagRemoved* WaitGameplayTagRemove(class UGameplayAbility* OwningAbility, FGameplayTag tag, class AActor* InOptionalExternalTarget, bool OnlyTriggerOnce); // [0x73583ac] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitGameplayTagQuery
@@ -2018,9 +2018,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayTagQuery.WaitGameplayTagQuery
-	// class UAbilityTask_WaitGameplayTagQuery* WaitGameplayTagQuery(class UGameplayAbility* OwningAbility, FGameplayTagQuery TagQuery, class AActor* InOptionalExternalTarget, EWaitGameplayTagQueryTriggerCondition TriggerCondition, bool bOnlyTriggerOnce); // [0x7316d90] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitGameplayTagQuery* WaitGameplayTagQuery(class UGameplayAbility* OwningAbility, FGameplayTagQuery TagQuery, class AActor* InOptionalExternalTarget, EWaitGameplayTagQueryTriggerCondition TriggerCondition, bool bOnlyTriggerOnce); // [0x7357f78] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitGameplayTagQuery.UpdateTargetTags
-	// void UpdateTargetTags(FGameplayTag tag, int32_t NewCount);                                                            // [0x73110a0] Final|Native|Protected 
+	// void UpdateTargetTags(FGameplayTag tag, int32_t NewCount);                                                            // [0x7352288] Final|Native|Protected 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitInputPress
@@ -2034,9 +2034,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitInputPress.WaitInputPress
-	// class UAbilityTask_WaitInputPress* WaitInputPress(class UGameplayAbility* OwningAbility, bool bTestAlreadyPressed);   // [0x73174d8] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitInputPress* WaitInputPress(class UGameplayAbility* OwningAbility, bool bTestAlreadyPressed);   // [0x73586c0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitInputPress.OnPressCallback
-	// void OnPressCallback();                                                                                               // [0x730bbe0] Final|Native|Public  
+	// void OnPressCallback();                                                                                               // [0x734cdc8] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitInputRelease
@@ -2050,9 +2050,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitInputRelease.WaitInputRelease
-	// class UAbilityTask_WaitInputRelease* WaitInputRelease(class UGameplayAbility* OwningAbility, bool bTestAlreadyReleased); // [0x73175e0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitInputRelease* WaitInputRelease(class UGameplayAbility* OwningAbility, bool bTestAlreadyReleased); // [0x73587c8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitInputRelease.OnReleaseCallback
-	// void OnReleaseCallback();                                                                                             // [0x730bbf4] Final|Native|Public  
+	// void OnReleaseCallback();                                                                                             // [0x734cddc] Final|Native|Public  
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitMovementModeChange
@@ -2066,9 +2066,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitMovementModeChange.OnMovementModeChange
-	// void OnMovementModeChange(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x730ba98] Final|Native|Public  
+	// void OnMovementModeChange(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x734cc80] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilityTask_WaitMovementModeChange.CreateWaitMovementModeChange
-	// class UAbilityTask_WaitMovementModeChange* CreateWaitMovementModeChange(class UGameplayAbility* OwningAbility, TEnumAsByte<EMovementMode> NewMode); // [0x72ff5b4] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitMovementModeChange* CreateWaitMovementModeChange(class UGameplayAbility* OwningAbility, TEnumAsByte<EMovementMode> NewMode); // [0x734079c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitOverlap
@@ -2081,9 +2081,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitOverlap.WaitForOverlap
-	// class UAbilityTask_WaitOverlap* WaitForOverlap(class UGameplayAbility* OwningAbility);                                // [0x73143c8] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitOverlap* WaitForOverlap(class UGameplayAbility* OwningAbility);                                // [0x73555b0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitOverlap.OnHitCallback
-	// void OnHitCallback(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x730b4fc] Final|Native|Public|HasOutParms|HasDefaults 
+	// void OnHitCallback(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x734c6e4] Final|Native|Public|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitTargetData
@@ -2100,21 +2100,21 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitTargetData.WaitTargetDataUsingActor
-	// class UAbilityTask_WaitTargetData* WaitTargetDataUsingActor(class UGameplayAbility* OwningAbility, FName TaskInstanceName, TEnumAsByte<EGameplayTargetingConfirmation> ConfirmationType, class AGameplayAbilityTargetActor* TargetActor); // [0x7317960] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitTargetData* WaitTargetDataUsingActor(class UGameplayAbility* OwningAbility, FName TaskInstanceName, TEnumAsByte<EGameplayTargetingConfirmation> ConfirmationType, class AGameplayAbilityTargetActor* TargetActor); // [0x7358b48] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitTargetData.WaitTargetData
-	// class UAbilityTask_WaitTargetData* WaitTargetData(class UGameplayAbility* OwningAbility, FName TaskInstanceName, TEnumAsByte<EGameplayTargetingConfirmation> ConfirmationType, class UClass* Class); // [0x73177ec] Final|Native|Static|Public|BlueprintCallable 
+	// class UAbilityTask_WaitTargetData* WaitTargetData(class UGameplayAbility* OwningAbility, FName TaskInstanceName, TEnumAsByte<EGameplayTargetingConfirmation> ConfirmationType, class UClass* Class); // [0x73589d4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReplicatedCancelledCallback
-	// void OnTargetDataReplicatedCancelledCallback();                                                                       // [0x1f99360] Native|Public        
+	// void OnTargetDataReplicatedCancelledCallback();                                                                       // [0x1f80fe8] Native|Public        
 	// Function /Script/GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReplicatedCallback
-	// void OnTargetDataReplicatedCallback(FGameplayAbilityTargetDataHandle& Data, FGameplayTag ActivationTag);              // [0x730bfb4] Native|Public|HasOutParms 
+	// void OnTargetDataReplicatedCallback(FGameplayAbilityTargetDataHandle& Data, FGameplayTag ActivationTag);              // [0x734d19c] Native|Public|HasOutParms 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReadyCallback
-	// void OnTargetDataReadyCallback(FGameplayAbilityTargetDataHandle& Data);                                               // [0x730beec] Native|Public|HasOutParms 
+	// void OnTargetDataReadyCallback(FGameplayAbilityTargetDataHandle& Data);                                               // [0x734d0d4] Native|Public|HasOutParms 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataCancelledCallback
-	// void OnTargetDataCancelledCallback(FGameplayAbilityTargetDataHandle& Data);                                           // [0x730be24] Native|Public|HasOutParms 
+	// void OnTargetDataCancelledCallback(FGameplayAbilityTargetDataHandle& Data);                                           // [0x734d00c] Native|Public|HasOutParms 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitTargetData.FinishSpawningActor
-	// void FinishSpawningActor(class UGameplayAbility* OwningAbility, class AGameplayAbilityTargetActor* SpawnedActor);     // [0x7302bd4] Native|Public|BlueprintCallable 
+	// void FinishSpawningActor(class UGameplayAbility* OwningAbility, class AGameplayAbilityTargetActor* SpawnedActor);     // [0x7343dbc] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilityTask_WaitTargetData.BeginSpawningActor
-	// bool BeginSpawningActor(class UGameplayAbility* OwningAbility, class UClass* Class, class AGameplayAbilityTargetActor*& SpawnedActor); // [0x72fde38] Native|Public|HasOutParms|BlueprintCallable 
+	// bool BeginSpawningActor(class UGameplayAbility* OwningAbility, class UClass* Class, class AGameplayAbilityTargetActor*& SpawnedActor); // [0x733f020] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilityTask_WaitVelocityChange
@@ -2129,7 +2129,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilityTask_WaitVelocityChange.CreateWaitVelocityChange
-	// class UAbilityTask_WaitVelocityChange* CreateWaitVelocityChange(class UGameplayAbility* OwningAbility, FVector Direction, float MinimumMagnitude); // [0x72ff6b8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_WaitVelocityChange* CreateWaitVelocityChange(class UGameplayAbility* OwningAbility, FVector Direction, float MinimumMagnitude); // [0x73408a0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.AbilitySystemBlueprintLibrary
@@ -2141,183 +2141,183 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasOrigin
-	// bool TargetDataHasOrigin(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                                // [0x73105e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool TargetDataHasOrigin(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                                // [0x73517c8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasHitResult
-	// bool TargetDataHasHitResult(FGameplayAbilityTargetDataHandle& HitResult, int32_t Index);                              // [0x731043c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool TargetDataHasHitResult(FGameplayAbilityTargetDataHandle& HitResult, int32_t Index);                              // [0x7351624] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasEndPoint
-	// bool TargetDataHasEndPoint(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                              // [0x7310298] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool TargetDataHasEndPoint(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                              // [0x7351480] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasActor
-	// bool TargetDataHasActor(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                                 // [0x73100f4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool TargetDataHasActor(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                                 // [0x73512dc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.SetStackCountToMax
-	// FGameplayEffectSpecHandle SetStackCountToMax(FGameplayEffectSpecHandle SpecHandle);                                   // [0x730fad8] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle SetStackCountToMax(FGameplayEffectSpecHandle SpecHandle);                                   // [0x7350cc0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.SetStackCount
-	// FGameplayEffectSpecHandle SetStackCount(FGameplayEffectSpecHandle SpecHandle, int32_t StackCount);                    // [0x730f82c] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle SetStackCount(FGameplayEffectSpecHandle SpecHandle, int32_t StackCount);                    // [0x7350a14] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.SetDuration
-	// FGameplayEffectSpecHandle SetDuration(FGameplayEffectSpecHandle SpecHandle, float duration);                          // [0x730f588] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle SetDuration(FGameplayEffectSpecHandle SpecHandle, float duration);                          // [0x7350770] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.SendGameplayEventToActor
-	// void SendGameplayEventToActor(class AActor* Actor, FGameplayTag EventTag, FGameplayEventData Payload);                // [0x2b9e33c] Final|Native|Static|Public|BlueprintCallable 
+	// void SendGameplayEventToActor(class AActor* Actor, FGameplayTag EventTag, FGameplayEventData Payload);                // [0x2bcb210] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.RemoveLooseGameplayTags
-	// bool RemoveLooseGameplayTags(class AActor* Actor, FGameplayTagContainer& GameplayTags, bool bShouldReplicate);        // [0x2b9e138] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool RemoveLooseGameplayTags(class AActor* Actor, FGameplayTagContainer& GameplayTags, bool bShouldReplicate);        // [0x2bcb00c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.NotEqual_GameplayAttributeGameplayAttribute
-	// bool NotEqual_GameplayAttributeGameplayAttribute(FGameplayAttribute AttributeA, FGameplayAttribute AttributeB);       // [0x730aa74] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool NotEqual_GameplayAttributeGameplayAttribute(FGameplayAttribute AttributeA, FGameplayAttribute AttributeB);       // [0x734bc5c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.NotEqual_GameplayAbilitySpecHandle
-	// bool NotEqual_GameplayAbilitySpecHandle(FGameplayAbilitySpecHandle& A, FGameplayAbilitySpecHandle& B);                // [0x730a98c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool NotEqual_GameplayAbilitySpecHandle(FGameplayAbilitySpecHandle& A, FGameplayAbilitySpecHandle& B);                // [0x734bb74] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.NotEqual_ActiveGameplayEffectHandle
-	// bool NotEqual_ActiveGameplayEffectHandle(FActiveGameplayEffectHandle& A, FActiveGameplayEffectHandle& B);             // [0x730a89c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool NotEqual_ActiveGameplayEffectHandle(FActiveGameplayEffectHandle& A, FActiveGameplayEffectHandle& B);             // [0x734ba84] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.MakeSpecHandle
-	// FGameplayEffectSpecHandle MakeSpecHandle(class UGameplayEffect* InGameplayEffect, class AActor* InInstigator, class AActor* InEffectCauser, float InLevel); // [0x7308b50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FGameplayEffectSpecHandle MakeSpecHandle(class UGameplayEffect* InGameplayEffect, class AActor* InInstigator, class AActor* InEffectCauser, float InLevel); // [0x7349d38] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.MakeGameplayCueParameters
-	// FGameplayCueParameters MakeGameplayCueParameters(float NormalizedMagnitude, float RawMagnitude, FGameplayEffectContextHandle EffectContext, FGameplayTag MatchedTagName, FGameplayTag OriginalTag, FGameplayTagContainer AggregatedSourceTags, FGameplayTagContainer AggregatedTargetTags, FVector Location, FVector Normal, class AActor* Instigator, class AActor* EffectCauser, class UObject* SourceObject, class UPhysicalMaterial* PhysicalMaterial, int32_t GameplayEffectLevel, int32_t AbilityLevel, class USceneComponent* TargetAttachComponent, bool bReplicateLocationWhenUsingMinimalRepProxy); // [0x1bd8074] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FGameplayCueParameters MakeGameplayCueParameters(float NormalizedMagnitude, float RawMagnitude, FGameplayEffectContextHandle EffectContext, FGameplayTag MatchedTagName, FGameplayTag OriginalTag, FGameplayTagContainer AggregatedSourceTags, FGameplayTagContainer AggregatedTargetTags, FVector Location, FVector Normal, class AActor* Instigator, class AActor* EffectCauser, class UObject* SourceObject, class UPhysicalMaterial* PhysicalMaterial, int32_t GameplayEffectLevel, int32_t AbilityLevel, class USceneComponent* TargetAttachComponent, bool bReplicateLocationWhenUsingMinimalRepProxy); // [0x21f9d9c] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.MakeFilterHandle
-	// FGameplayTargetDataFilterHandle MakeFilterHandle(FGameplayTargetDataFilter Filter, class AActor* FilterActor);        // [0x730866c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FGameplayTargetDataFilterHandle MakeFilterHandle(FGameplayTargetDataFilter Filter, class AActor* FilterActor);        // [0x7349854] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.IsValid
-	// bool IsValid(FGameplayAttribute Attribute);                                                                           // [0x7308160] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsValid(FGameplayAttribute Attribute);                                                                           // [0x7349348] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.IsInstigatorLocallyControlledPlayer
-	// bool IsInstigatorLocallyControlledPlayer(FGameplayCueParameters Parameters);                                          // [0x7307ffc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsInstigatorLocallyControlledPlayer(FGameplayCueParameters Parameters);                                          // [0x73491e4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.IsInstigatorLocallyControlled
-	// bool IsInstigatorLocallyControlled(FGameplayCueParameters Parameters);                                                // [0x7307e98] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsInstigatorLocallyControlled(FGameplayCueParameters Parameters);                                                // [0x7349080] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.HasHitResult
-	// bool HasHitResult(FGameplayCueParameters Parameters);                                                                 // [0x7307c00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool HasHitResult(FGameplayCueParameters Parameters);                                                                 // [0x7348de8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataOrigin
-	// FTransform GetTargetDataOrigin(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                          // [0x7307a08] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetTargetDataOrigin(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                          // [0x7348bf0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataEndPointTransform
-	// FTransform GetTargetDataEndPointTransform(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);               // [0x7307828] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetTargetDataEndPointTransform(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);               // [0x7348a10] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataEndPoint
-	// FVector GetTargetDataEndPoint(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                           // [0x7307670] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetTargetDataEndPoint(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                           // [0x7348858] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetOrigin
-	// FVector GetOrigin(FGameplayCueParameters Parameters);                                                                 // [0x7307508] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetOrigin(FGameplayCueParameters Parameters);                                                                 // [0x73486f0] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetModifiedAttributeMagnitude
-	// float GetModifiedAttributeMagnitude(FGameplayEffectSpecHandle SpecHandle, FGameplayAttribute Attribute);              // [0x7307218] Final|Native|Static|Public|BlueprintCallable 
+	// float GetModifiedAttributeMagnitude(FGameplayEffectSpecHandle SpecHandle, FGameplayAttribute Attribute);              // [0x7348400] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetInstigatorTransform
-	// FTransform GetInstigatorTransform(FGameplayCueParameters Parameters);                                                 // [0x730708c] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetInstigatorTransform(FGameplayCueParameters Parameters);                                                 // [0x7348274] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetInstigatorActor
-	// class AActor* GetInstigatorActor(FGameplayCueParameters Parameters);                                                  // [0x7306f34] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AActor* GetInstigatorActor(FGameplayCueParameters Parameters);                                                  // [0x734811c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetHitResultFromTargetData
-	// FHitResult GetHitResultFromTargetData(FGameplayAbilityTargetDataHandle& HitResult, int32_t Index);                    // [0x7306cf0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FHitResult GetHitResultFromTargetData(FGameplayAbilityTargetDataHandle& HitResult, int32_t Index);                    // [0x7347ed8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetHitResult
-	// FHitResult GetHitResult(FGameplayCueParameters Parameters);                                                           // [0x7306b14] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FHitResult GetHitResult(FGameplayCueParameters Parameters);                                                           // [0x7347cfc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayEffectUIData
-	// class UGameplayEffectUIData* GetGameplayEffectUIData(class UClass* EffectClass, class UClass* DataType);              // [0x7306830] Final|Native|Static|Public|BlueprintCallable 
+	// class UGameplayEffectUIData* GetGameplayEffectUIData(class UClass* EffectClass, class UClass* DataType);              // [0x7347a18] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayEffectFromActiveEffectHandle
-	// class UGameplayEffect* GetGameplayEffectFromActiveEffectHandle(FActiveGameplayEffectHandle& ActiveHandle);            // [0x73064f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UGameplayEffect* GetGameplayEffectFromActiveEffectHandle(FActiveGameplayEffectHandle& ActiveHandle);            // [0x73476d8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayCueEndLocationAndNormal
-	// bool GetGameplayCueEndLocationAndNormal(class AActor* TargetActor, FGameplayCueParameters Parameters, FVector& Location, FVector& Normal); // [0x7305ed4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool GetGameplayCueEndLocationAndNormal(class AActor* TargetActor, FGameplayCueParameters Parameters, FVector& Location, FVector& Normal); // [0x73470bc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayCueDirection
-	// bool GetGameplayCueDirection(class AActor* TargetActor, FGameplayCueParameters Parameters, FVector& Direction);       // [0x7305c40] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool GetGameplayCueDirection(class AActor* TargetActor, FGameplayCueParameters Parameters, FVector& Direction);       // [0x7346e28] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayAbilityFromSpecHandle
-	// class UGameplayAbility* GetGameplayAbilityFromSpecHandle(class UAbilitySystemComponent* AbilitySystem, FGameplayAbilitySpecHandle& AbilitySpecHandle, bool& bIsInstance); // [0x7305904] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UGameplayAbility* GetGameplayAbilityFromSpecHandle(class UAbilitySystemComponent* AbilitySystem, FGameplayAbilitySpecHandle& AbilitySpecHandle, bool& bIsInstance); // [0x7346aec] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent
-	// float GetFloatAttributeFromAbilitySystemComponent(class UAbilitySystemComponent* AbilitySystem, FGameplayAttribute Attribute, bool& bSuccessfullyFoundAttribute); // [0x73056f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetFloatAttributeFromAbilitySystemComponent(class UAbilitySystemComponent* AbilitySystem, FGameplayAttribute Attribute, bool& bSuccessfullyFoundAttribute); // [0x73468d8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttributeBaseFromAbilitySystemComponent
-	// float GetFloatAttributeBaseFromAbilitySystemComponent(class UAbilitySystemComponent* AbilitySystemComponent, FGameplayAttribute Attribute, bool& bSuccessfullyFoundAttribute); // [0x73054dc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetFloatAttributeBaseFromAbilitySystemComponent(class UAbilitySystemComponent* AbilitySystemComponent, FGameplayAttribute Attribute, bool& bSuccessfullyFoundAttribute); // [0x73466c4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttributeBase
-	// float GetFloatAttributeBase(class AActor* Actor, FGameplayAttribute Attribute, bool& bSuccessfullyFoundAttribute);    // [0x73052c8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetFloatAttributeBase(class AActor* Actor, FGameplayAttribute Attribute, bool& bSuccessfullyFoundAttribute);    // [0x73464b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttribute
-	// float GetFloatAttribute(class AActor* Actor, FGameplayAttribute Attribute, bool& bSuccessfullyFoundAttribute);        // [0x73050b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetFloatAttribute(class AActor* Actor, FGameplayAttribute Attribute, bool& bSuccessfullyFoundAttribute);        // [0x734629c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetEffectContext
-	// FGameplayEffectContextHandle GetEffectContext(FGameplayEffectSpecHandle SpecHandle);                                  // [0x7304ef4] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectContextHandle GetEffectContext(FGameplayEffectSpecHandle SpecHandle);                                  // [0x73460dc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetDebugStringFromGameplayAttribute
-	// FString GetDebugStringFromGameplayAttribute(FGameplayAttribute& Attribute);                                           // [0x7304804] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString GetDebugStringFromGameplayAttribute(FGameplayAttribute& Attribute);                                           // [0x73459ec] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetDataCountFromTargetData
-	// int32_t GetDataCountFromTargetData(FGameplayAbilityTargetDataHandle& TargetData);                                     // [0x7304744] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int32_t GetDataCountFromTargetData(FGameplayAbilityTargetDataHandle& TargetData);                                     // [0x734592c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetAllLinkedGameplayEffectSpecHandles
-	// TArray<FGameplayEffectSpecHandle> GetAllLinkedGameplayEffectSpecHandles(FGameplayEffectSpecHandle SpecHandle);        // [0x73044e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FGameplayEffectSpecHandle> GetAllLinkedGameplayEffectSpecHandles(FGameplayEffectSpecHandle SpecHandle);        // [0x73456c8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetAllActorsFromTargetData
-	// TArray<AActor*> GetAllActorsFromTargetData(FGameplayAbilityTargetDataHandle& TargetData);                             // [0x73042f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<AActor*> GetAllActorsFromTargetData(FGameplayAbilityTargetDataHandle& TargetData);                             // [0x73454e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorsFromTargetData
-	// TArray<AActor*> GetActorsFromTargetData(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                 // [0x7304094] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<AActor*> GetActorsFromTargetData(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index);                 // [0x734527c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorCount
-	// int32_t GetActorCount(FGameplayCueParameters Parameters);                                                             // [0x7303f3c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetActorCount(FGameplayCueParameters Parameters);                                                             // [0x7345124] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorByIndex
-	// class AActor* GetActorByIndex(FGameplayCueParameters Parameters, int32_t Index);                                      // [0x7303ce8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AActor* GetActorByIndex(FGameplayCueParameters Parameters, int32_t Index);                                      // [0x7344ed0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectTotalDuration
-	// float GetActiveGameplayEffectTotalDuration(FActiveGameplayEffectHandle ActiveHandle);                                 // [0x7303bb4] Final|Native|Static|Public|BlueprintCallable 
+	// float GetActiveGameplayEffectTotalDuration(FActiveGameplayEffectHandle ActiveHandle);                                 // [0x7344d9c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectStartTime
-	// float GetActiveGameplayEffectStartTime(FActiveGameplayEffectHandle ActiveHandle);                                     // [0x7303a80] Final|Native|Static|Public|BlueprintCallable 
+	// float GetActiveGameplayEffectStartTime(FActiveGameplayEffectHandle ActiveHandle);                                     // [0x7344c68] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectStackLimitCount
-	// int32_t GetActiveGameplayEffectStackLimitCount(FActiveGameplayEffectHandle ActiveHandle);                             // [0x730394c] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetActiveGameplayEffectStackLimitCount(FActiveGameplayEffectHandle ActiveHandle);                             // [0x7344b34] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectStackCount
-	// int32_t GetActiveGameplayEffectStackCount(FActiveGameplayEffectHandle ActiveHandle);                                  // [0x7303818] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetActiveGameplayEffectStackCount(FActiveGameplayEffectHandle ActiveHandle);                                  // [0x7344a00] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectRemainingDuration
-	// float GetActiveGameplayEffectRemainingDuration(class UObject* WorldContextObject, FActiveGameplayEffectHandle ActiveHandle); // [0x73036b0] Final|Native|Static|Public|BlueprintCallable 
+	// float GetActiveGameplayEffectRemainingDuration(class UObject* WorldContextObject, FActiveGameplayEffectHandle ActiveHandle); // [0x7344898] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectExpectedEndTime
-	// float GetActiveGameplayEffectExpectedEndTime(FActiveGameplayEffectHandle ActiveHandle);                               // [0x730357c] Final|Native|Static|Public|BlueprintCallable 
+	// float GetActiveGameplayEffectExpectedEndTime(FActiveGameplayEffectHandle ActiveHandle);                               // [0x7344764] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectDebugString
-	// FString GetActiveGameplayEffectDebugString(FActiveGameplayEffectHandle ActiveHandle);                                 // [0x7303434] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FString GetActiveGameplayEffectDebugString(FActiveGameplayEffectHandle ActiveHandle);                                 // [0x734461c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.GetAbilitySystemComponent
-	// class UAbilitySystemComponent* GetAbilitySystemComponent(class AActor* Actor);                                        // [0x2b9e588] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UAbilitySystemComponent* GetAbilitySystemComponent(class AActor* Actor);                                        // [0x2bcb458] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.ForwardGameplayCueToTarget
-	// void ForwardGameplayCueToTarget(TScriptInterface<Class> TargetCueInterface, TEnumAsByte<EGameplayCueEvent> EventType, FGameplayCueParameters Parameters); // [0x7302c9c] Final|Native|Static|Public|BlueprintCallable 
+	// void ForwardGameplayCueToTarget(TScriptInterface<Class> TargetCueInterface, TEnumAsByte<EGameplayCueEvent> EventType, FGameplayCueParameters Parameters); // [0x7343e84] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.FilterTargetData
-	// FGameplayAbilityTargetDataHandle FilterTargetData(FGameplayAbilityTargetDataHandle& TargetDataHandle, FGameplayTargetDataFilterHandle ActorFilterClass); // [0x7301fa0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FGameplayAbilityTargetDataHandle FilterTargetData(FGameplayAbilityTargetDataHandle& TargetDataHandle, FGameplayTargetDataFilterHandle ActorFilterClass); // [0x7343188] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EvaluateAttributeValueWithTagsAndBase
-	// float EvaluateAttributeValueWithTagsAndBase(class UAbilitySystemComponent* AbilitySystem, FGameplayAttribute Attribute, FGameplayTagContainer& SourceTags, FGameplayTagContainer& TargetTags, float BaseValue, bool& bSuccess); // [0x7301a98] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float EvaluateAttributeValueWithTagsAndBase(class UAbilitySystemComponent* AbilitySystem, FGameplayAttribute Attribute, FGameplayTagContainer& SourceTags, FGameplayTagContainer& TargetTags, float BaseValue, bool& bSuccess); // [0x7342c80] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EvaluateAttributeValueWithTags
-	// float EvaluateAttributeValueWithTags(class UAbilitySystemComponent* AbilitySystem, FGameplayAttribute Attribute, FGameplayTagContainer& SourceTags, FGameplayTagContainer& TargetTags, bool& bSuccess); // [0x7301664] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float EvaluateAttributeValueWithTags(class UAbilitySystemComponent* AbilitySystem, FGameplayAttribute Attribute, FGameplayTagContainer& SourceTags, FGameplayTagContainer& TargetTags, bool& bSuccess); // [0x734284c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute
-	// bool EqualEqual_GameplayAttributeGameplayAttribute(FGameplayAttribute AttributeA, FGameplayAttribute AttributeB);     // [0x73013a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool EqualEqual_GameplayAttributeGameplayAttribute(FGameplayAttribute AttributeA, FGameplayAttribute AttributeB);     // [0x734258c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EqualEqual_GameplayAbilitySpecHandle
-	// bool EqualEqual_GameplayAbilitySpecHandle(FGameplayAbilitySpecHandle& A, FGameplayAbilitySpecHandle& B);              // [0x73012bc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool EqualEqual_GameplayAbilitySpecHandle(FGameplayAbilitySpecHandle& A, FGameplayAbilitySpecHandle& B);              // [0x73424a4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EqualEqual_ActiveGameplayEffectHandle
-	// bool EqualEqual_ActiveGameplayEffectHandle(FActiveGameplayEffectHandle& A, FActiveGameplayEffectHandle& B);           // [0x73011cc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool EqualEqual_ActiveGameplayEffectHandle(FActiveGameplayEffectHandle& A, FActiveGameplayEffectHandle& B);           // [0x73423b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextSetOrigin
-	// void EffectContextSetOrigin(FGameplayEffectContextHandle EffectContext, FVector Origin);                              // [0x7300f18] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void EffectContextSetOrigin(FGameplayEffectContextHandle EffectContext, FVector Origin);                              // [0x7342100] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextIsValid
-	// bool EffectContextIsValid(FGameplayEffectContextHandle EffectContext);                                                // [0x7300cf4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool EffectContextIsValid(FGameplayEffectContextHandle EffectContext);                                                // [0x7341edc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextIsInstigatorLocallyControlled
-	// bool EffectContextIsInstigatorLocallyControlled(FGameplayEffectContextHandle EffectContext);                          // [0x7300acc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool EffectContextIsInstigatorLocallyControlled(FGameplayEffectContextHandle EffectContext);                          // [0x7341cb4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextHasHitResult
-	// bool EffectContextHasHitResult(FGameplayEffectContextHandle EffectContext);                                           // [0x73008a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool EffectContextHasHitResult(FGameplayEffectContextHandle EffectContext);                                           // [0x7341a8c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetSourceObject
-	// class UObject* EffectContextGetSourceObject(FGameplayEffectContextHandle EffectContext);                              // [0x7300680] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UObject* EffectContextGetSourceObject(FGameplayEffectContextHandle EffectContext);                              // [0x7341868] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetOriginalInstigatorActor
-	// class AActor* EffectContextGetOriginalInstigatorActor(FGameplayEffectContextHandle EffectContext);                    // [0x730045c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AActor* EffectContextGetOriginalInstigatorActor(FGameplayEffectContextHandle EffectContext);                    // [0x7341644] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetOrigin
-	// FVector EffectContextGetOrigin(FGameplayEffectContextHandle EffectContext);                                           // [0x3ab6ec8] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector EffectContextGetOrigin(FGameplayEffectContextHandle EffectContext);                                           // [0x3aac698] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetInstigatorActor
-	// class AActor* EffectContextGetInstigatorActor(FGameplayEffectContextHandle EffectContext);                            // [0x29b505c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AActor* EffectContextGetInstigatorActor(FGameplayEffectContextHandle EffectContext);                            // [0x39e5f2c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetHitResult
-	// FHitResult EffectContextGetHitResult(FGameplayEffectContextHandle EffectContext);                                     // [0x327f274] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FHitResult EffectContextGetHitResult(FGameplayEffectContextHandle EffectContext);                                     // [0x327976c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetEffectCauser
-	// class AActor* EffectContextGetEffectCauser(FGameplayEffectContextHandle EffectContext);                               // [0x7300238] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AActor* EffectContextGetEffectCauser(FGameplayEffectContextHandle EffectContext);                               // [0x7341420] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextAddHitResult
-	// void EffectContextAddHitResult(FGameplayEffectContextHandle EffectContext, FHitResult HitResult, bool bReset);        // [0x72ffe2c] Final|Native|Static|Public|BlueprintCallable 
+	// void EffectContextAddHitResult(FGameplayEffectContextHandle EffectContext, FHitResult HitResult, bool bReset);        // [0x7341014] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.DoesTargetDataContainActor
-	// bool DoesTargetDataContainActor(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index, class AActor* Actor);    // [0x72ffba4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool DoesTargetDataContainActor(FGameplayAbilityTargetDataHandle& TargetData, int32_t Index, class AActor* Actor);    // [0x7340d8c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.DoesGameplayCueMeetTagRequirements
-	// bool DoesGameplayCueMeetTagRequirements(FGameplayCueParameters Parameters, FGameplayTagRequirements& SourceTagReqs, FGameplayTagRequirements& TargetTagReqs); // [0x72ff910] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool DoesGameplayCueMeetTagRequirements(FGameplayCueParameters Parameters, FGameplayTagRequirements& SourceTagReqs, FGameplayTagRequirements& TargetTagReqs); // [0x7340af8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.CloneSpecHandle
-	// FGameplayEffectSpecHandle CloneSpecHandle(class AActor* InNewInstigator, class AActor* InEffectCauser, FGameplayEffectSpecHandle GameplayEffectSpecHandle_Clone); // [0x72ff0e8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FGameplayEffectSpecHandle CloneSpecHandle(class AActor* InNewInstigator, class AActor* InEffectCauser, FGameplayEffectSpecHandle GameplayEffectSpecHandle_Clone); // [0x73402d0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.BreakGameplayCueParameters
-	// void BreakGameplayCueParameters(FGameplayCueParameters& Parameters, float& NormalizedMagnitude, float& RawMagnitude, FGameplayEffectContextHandle& EffectContext, FGameplayTag& MatchedTagName, FGameplayTag& OriginalTag, FGameplayTagContainer& AggregatedSourceTags, FGameplayTagContainer& AggregatedTargetTags, FVector& Location, FVector& Normal, class AActor*& Instigator, class AActor*& EffectCauser, class UObject*& SourceObject, class UPhysicalMaterial*& PhysicalMaterial, int32_t& GameplayEffectLevel, int32_t& AbilityLevel, class USceneComponent*& TargetAttachComponent, bool& bReplicateLocationWhenUsingMinimalRepProxy); // [0x1b7f10c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void BreakGameplayCueParameters(FGameplayCueParameters& Parameters, float& NormalizedMagnitude, float& RawMagnitude, FGameplayEffectContextHandle& EffectContext, FGameplayTag& MatchedTagName, FGameplayTag& OriginalTag, FGameplayTagContainer& AggregatedSourceTags, FGameplayTagContainer& AggregatedTargetTags, FVector& Location, FVector& Normal, class AActor*& Instigator, class AActor*& EffectCauser, class UObject*& SourceObject, class UPhysicalMaterial*& PhysicalMaterial, int32_t& GameplayEffectLevel, int32_t& AbilityLevel, class USceneComponent*& TargetAttachComponent, bool& bReplicateLocationWhenUsingMinimalRepProxy); // [0x1d70658] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AssignTagSetByCallerMagnitude
-	// FGameplayEffectSpecHandle AssignTagSetByCallerMagnitude(FGameplayEffectSpecHandle SpecHandle, FGameplayTag DataTag, float Magnitude); // [0x72fd380] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle AssignTagSetByCallerMagnitude(FGameplayEffectSpecHandle SpecHandle, FGameplayTag DataTag, float Magnitude); // [0x733e568] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AssignSetByCallerMagnitude
-	// FGameplayEffectSpecHandle AssignSetByCallerMagnitude(FGameplayEffectSpecHandle SpecHandle, FName DataName, float Magnitude); // [0x72fd008] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle AssignSetByCallerMagnitude(FGameplayEffectSpecHandle SpecHandle, FName DataName, float Magnitude); // [0x733e1f0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AppendTargetDataHandle
-	// FGameplayAbilityTargetDataHandle AppendTargetDataHandle(FGameplayAbilityTargetDataHandle TargetHandle, FGameplayAbilityTargetDataHandle& HandleToAdd); // [0x72f75a8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FGameplayAbilityTargetDataHandle AppendTargetDataHandle(FGameplayAbilityTargetDataHandle TargetHandle, FGameplayAbilityTargetDataHandle& HandleToAdd); // [0x7338790] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AddLooseGameplayTags
-	// bool AddLooseGameplayTags(class AActor* Actor, FGameplayTagContainer& GameplayTags, bool bShouldReplicate);           // [0x2b9df08] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool AddLooseGameplayTags(class AActor* Actor, FGameplayTagContainer& GameplayTags, bool bShouldReplicate);           // [0x2bcadd0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AddLinkedGameplayEffectSpec
-	// FGameplayEffectSpecHandle AddLinkedGameplayEffectSpec(FGameplayEffectSpecHandle SpecHandle, FGameplayEffectSpecHandle LinkedGameplayEffectSpec); // [0x72f7284] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle AddLinkedGameplayEffectSpec(FGameplayEffectSpecHandle SpecHandle, FGameplayEffectSpecHandle LinkedGameplayEffectSpec); // [0x733846c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AddLinkedGameplayEffect
-	// FGameplayEffectSpecHandle AddLinkedGameplayEffect(FGameplayEffectSpecHandle SpecHandle, class UClass* LinkedGameplayEffect); // [0x72f6fcc] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle AddLinkedGameplayEffect(FGameplayEffectSpecHandle SpecHandle, class UClass* LinkedGameplayEffect); // [0x73381b4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AddGrantedTags
-	// FGameplayEffectSpecHandle AddGrantedTags(FGameplayEffectSpecHandle SpecHandle, FGameplayTagContainer NewGameplayTags); // [0x72f6cf0] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle AddGrantedTags(FGameplayEffectSpecHandle SpecHandle, FGameplayTagContainer NewGameplayTags); // [0x7337ed8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AddGrantedTag
-	// FGameplayEffectSpecHandle AddGrantedTag(FGameplayEffectSpecHandle SpecHandle, FGameplayTag NewGameplayTag);           // [0x72f6a44] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle AddGrantedTag(FGameplayEffectSpecHandle SpecHandle, FGameplayTag NewGameplayTag);           // [0x7337c2c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AddAssetTags
-	// FGameplayEffectSpecHandle AddAssetTags(FGameplayEffectSpecHandle SpecHandle, FGameplayTagContainer NewGameplayTags);  // [0x72f6768] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle AddAssetTags(FGameplayEffectSpecHandle SpecHandle, FGameplayTagContainer NewGameplayTags);  // [0x7337950] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AddAssetTag
-	// FGameplayEffectSpecHandle AddAssetTag(FGameplayEffectSpecHandle SpecHandle, FGameplayTag NewGameplayTag);             // [0x72f64bc] Final|Native|Static|Public|BlueprintCallable 
+	// FGameplayEffectSpecHandle AddAssetTag(FGameplayEffectSpecHandle SpecHandle, FGameplayTag NewGameplayTag);             // [0x73376a4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromLocations
-	// FGameplayAbilityTargetDataHandle AbilityTargetDataFromLocations(FGameplayAbilityTargetingLocationInfo& SourceLocation, FGameplayAbilityTargetingLocationInfo& TargetLocation); // [0x72f638c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FGameplayAbilityTargetDataHandle AbilityTargetDataFromLocations(FGameplayAbilityTargetingLocationInfo& SourceLocation, FGameplayAbilityTargetingLocationInfo& TargetLocation); // [0x7337574] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromHitResult
-	// FGameplayAbilityTargetDataHandle AbilityTargetDataFromHitResult(FHitResult& HitResult);                               // [0x3085138] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FGameplayAbilityTargetDataHandle AbilityTargetDataFromHitResult(FHitResult& HitResult);                               // [0x30798e8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromActorArray
-	// FGameplayAbilityTargetDataHandle AbilityTargetDataFromActorArray(TArray<AActor*>& ActorArray, bool OneTargetPerHandle); // [0x72f61f4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FGameplayAbilityTargetDataHandle AbilityTargetDataFromActorArray(TArray<AActor*>& ActorArray, bool OneTargetPerHandle); // [0x73373dc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromActor
-	// FGameplayAbilityTargetDataHandle AbilityTargetDataFromActor(class AActor* Actor);                                     // [0x72f6140] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FGameplayAbilityTargetDataHandle AbilityTargetDataFromActor(class AActor* Actor);                                     // [0x7337328] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/GameplayAbilities.AttributeDefaults
@@ -2618,189 +2618,189 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.UpdateActiveGameplayEffectSetByCallerMagnitudes
-	// void UpdateActiveGameplayEffectSetByCallerMagnitudes(FActiveGameplayEffectHandle ActiveHandle, TMap<FGameplayTag, float>& NewSetByCallerValues); // [0x7310ebc] BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void UpdateActiveGameplayEffectSetByCallerMagnitudes(FActiveGameplayEffectHandle ActiveHandle, TMap<FGameplayTag, float>& NewSetByCallerValues); // [0x73520a4] BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.UpdateActiveGameplayEffectSetByCallerMagnitude
-	// void UpdateActiveGameplayEffectSetByCallerMagnitude(FActiveGameplayEffectHandle ActiveHandle, FGameplayTag SetByCallerTag, float NewValue); // [0x7310bdc] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void UpdateActiveGameplayEffectSetByCallerMagnitude(FActiveGameplayEffectHandle ActiveHandle, FGameplayTag SetByCallerTag, float NewValue); // [0x7351dc4] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.TryActivateAbilityByClass
-	// bool TryActivateAbilityByClass(class UClass* InAbilityToActivate, bool bAllowRemoteActivation);                       // [0x7310af4] Final|Native|Public|BlueprintCallable 
+	// bool TryActivateAbilityByClass(class UClass* InAbilityToActivate, bool bAllowRemoteActivation);                       // [0x7351cdc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.TryActivateAbility
-	// bool TryActivateAbility(FGameplayAbilitySpecHandle AbilityToActivate, bool bAllowRemoteActivation);                   // [0x73108d8] Final|Native|Public|BlueprintCallable 
+	// bool TryActivateAbility(FGameplayAbilitySpecHandle AbilityToActivate, bool bAllowRemoteActivation);                   // [0x7351ac0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.TryActivateAbilitiesByTag
-	// bool TryActivateAbilitiesByTag(FGameplayTagContainer& GameplayTagContainer, bool bAllowRemoteActivation);             // [0x7310784] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool TryActivateAbilitiesByTag(FGameplayTagContainer& GameplayTagContainer, bool bAllowRemoteActivation);             // [0x735196c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.TargetConfirm
-	// void TargetConfirm();                                                                                                 // [0x2d4cc00] Native|Public|BlueprintCallable 
+	// void TargetConfirm();                                                                                                 // [0x2d6d564] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.TargetCancel
-	// void TargetCancel();                                                                                                  // [0x199a1d4] Native|Public|BlueprintCallable 
+	// void TargetCancel();                                                                                                  // [0xf55fcc] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.SetUserAbilityActivationInhibited
-	// void SetUserAbilityActivationInhibited(bool NewInhibit);                                                              // [0x730fc98] Native|Public|BlueprintCallable 
+	// void SetUserAbilityActivationInhibited(bool NewInhibit);                                                              // [0x7350e80] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.SetActiveGameplayEffectLevelUsingQuery
-	// void SetActiveGameplayEffectLevelUsingQuery(FGameplayEffectQuery Query, int32_t NewLevel);                            // [0x730f32c] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetActiveGameplayEffectLevelUsingQuery(FGameplayEffectQuery Query, int32_t NewLevel);                            // [0x7350514] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.SetActiveGameplayEffectLevel
-	// void SetActiveGameplayEffectLevel(FActiveGameplayEffectHandle ActiveHandle, int32_t NewLevel);                        // [0x730f118] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetActiveGameplayEffectLevel(FActiveGameplayEffectHandle ActiveHandle, int32_t NewLevel);                        // [0x7350300] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerTryActivateAbilityWithEventData
-	// void ServerTryActivateAbilityWithEventData(FGameplayAbilitySpecHandle AbilityToActivate, bool InputPressed, FPredictionKey PredictionKey, FGameplayEventData TriggerEventData); // [0x730ec84] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerTryActivateAbilityWithEventData(FGameplayAbilitySpecHandle AbilityToActivate, bool InputPressed, FPredictionKey PredictionKey, FGameplayEventData TriggerEventData); // [0x734fe6c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerTryActivateAbility
-	// void ServerTryActivateAbility(FGameplayAbilitySpecHandle AbilityToActivate, bool InputPressed, FPredictionKey PredictionKey); // [0x730e940] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerTryActivateAbility(FGameplayAbilitySpecHandle AbilityToActivate, bool InputPressed, FPredictionKey PredictionKey); // [0x734fb28] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedTargetDataCancelled
-	// void ServerSetReplicatedTargetDataCancelled(FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey, FPredictionKey CurrentPredictionKey); // [0x730e5c4] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerSetReplicatedTargetDataCancelled(FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey, FPredictionKey CurrentPredictionKey); // [0x734f7ac] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedTargetData
-	// void ServerSetReplicatedTargetData(FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey, FGameplayAbilityTargetDataHandle ReplicatedTargetDataHandle, FGameplayTag ApplicationTag, FPredictionKey CurrentPredictionKey); // [0x730e068] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerSetReplicatedTargetData(FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey, FGameplayAbilityTargetDataHandle ReplicatedTargetDataHandle, FGameplayTag ApplicationTag, FPredictionKey CurrentPredictionKey); // [0x734f250] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedEventWithPayload
-	// void ServerSetReplicatedEventWithPayload(TEnumAsByte<EAbilityGenericReplicatedEvent> EventType, FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey, FPredictionKey CurrentPredictionKey, FVector_NetQuantize100 VectorPayload); // [0x730db94] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerSetReplicatedEventWithPayload(TEnumAsByte<EAbilityGenericReplicatedEvent> EventType, FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey, FPredictionKey CurrentPredictionKey, FVector_NetQuantize100 VectorPayload); // [0x734ed7c] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedEvent
-	// void ServerSetReplicatedEvent(TEnumAsByte<EAbilityGenericReplicatedEvent> EventType, FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey, FPredictionKey CurrentPredictionKey); // [0x730d7e4] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerSetReplicatedEvent(TEnumAsByte<EAbilityGenericReplicatedEvent> EventType, FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey, FPredictionKey CurrentPredictionKey); // [0x734e9cc] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerSetInputReleased
-	// void ServerSetInputReleased(FGameplayAbilitySpecHandle AbilityHandle);                                                // [0x730d698] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerSetInputReleased(FGameplayAbilitySpecHandle AbilityHandle);                                                // [0x734e880] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerSetInputPressed
-	// void ServerSetInputPressed(FGameplayAbilitySpecHandle AbilityHandle);                                                 // [0x730d54c] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerSetInputPressed(FGameplayAbilitySpecHandle AbilityHandle);                                                 // [0x734e734] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerPrintDebug_RequestWithStrings
-	// void ServerPrintDebug_RequestWithStrings(TArray<FString> Strings);                                                    // [0x730d498] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerPrintDebug_RequestWithStrings(TArray<FString> Strings);                                                    // [0x734e680] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerPrintDebug_Request
-	// void ServerPrintDebug_Request();                                                                                      // [0x730d44c] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerPrintDebug_Request();                                                                                      // [0x734e634] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerEndAbility
-	// void ServerEndAbility(FGameplayAbilitySpecHandle AbilityToEnd, FGameplayAbilityActivationInfo ActivationInfo, FPredictionKey PredictionKey); // [0x730d0d8] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerEndAbility(FGameplayAbilitySpecHandle AbilityToEnd, FGameplayAbilityActivationInfo ActivationInfo, FPredictionKey PredictionKey); // [0x734e2c0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageSetPlayRate
-	// void ServerCurrentMontageSetPlayRate(class UAnimSequenceBase* ClientAnimation, float InPlayRate);                     // [0x730cfec] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerCurrentMontageSetPlayRate(class UAnimSequenceBase* ClientAnimation, float InPlayRate);                     // [0x734e1d4] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageSetNextSectionName
-	// void ServerCurrentMontageSetNextSectionName(class UAnimSequenceBase* ClientAnimation, float ClientPosition, FName SectionName, FName NextSectionName); // [0x730ce78] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerCurrentMontageSetNextSectionName(class UAnimSequenceBase* ClientAnimation, float ClientPosition, FName SectionName, FName NextSectionName); // [0x734e060] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageJumpToSectionName
-	// void ServerCurrentMontageJumpToSectionName(class UAnimSequenceBase* ClientAnimation, FName SectionName);              // [0x730cd8c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerCurrentMontageJumpToSectionName(class UAnimSequenceBase* ClientAnimation, FName SectionName);              // [0x734df74] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerCancelAbility
-	// void ServerCancelAbility(FGameplayAbilitySpecHandle AbilityToCancel, FGameplayAbilityActivationInfo ActivationInfo);  // [0x730cb2c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerCancelAbility(FGameplayAbilitySpecHandle AbilityToCancel, FGameplayAbilityActivationInfo ActivationInfo);  // [0x734dd14] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ServerAbilityRPCBatch
-	// void ServerAbilityRPCBatch(FServerAbilityRPCBatch BatchInfo);                                                         // [0x730c968] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerAbilityRPCBatch(FServerAbilityRPCBatch BatchInfo);                                                         // [0x734db50] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.RemoveActiveGameplayEffectBySourceEffect
-	// void RemoveActiveGameplayEffectBySourceEffect(class UClass* GameplayEffect, class UAbilitySystemComponent* InstigatorAbilitySystemComponent, int32_t StacksToRemove); // [0x730c750] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void RemoveActiveGameplayEffectBySourceEffect(class UClass* GameplayEffect, class UAbilitySystemComponent* InstigatorAbilitySystemComponent, int32_t StacksToRemove); // [0x734d938] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.RemoveActiveGameplayEffect
-	// bool RemoveActiveGameplayEffect(FActiveGameplayEffectHandle Handle, int32_t StacksToRemove);                          // [0x730c52c] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// bool RemoveActiveGameplayEffect(FActiveGameplayEffectHandle Handle, int32_t StacksToRemove);                          // [0x734d714] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithTags
-	// int32_t RemoveActiveEffectsWithTags(FGameplayTagContainer Tags);                                                      // [0x39b8f2c] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveActiveEffectsWithTags(FGameplayTagContainer Tags);                                                      // [0x39af294] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithSourceTags
-	// int32_t RemoveActiveEffectsWithSourceTags(FGameplayTagContainer Tags);                                                // [0x730c3c8] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveActiveEffectsWithSourceTags(FGameplayTagContainer Tags);                                                // [0x734d5b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithGrantedTags
-	// int32_t RemoveActiveEffectsWithGrantedTags(FGameplayTagContainer Tags);                                               // [0x329fb4c] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveActiveEffectsWithGrantedTags(FGameplayTagContainer Tags);                                               // [0x3299a58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithAppliedTags
-	// int32_t RemoveActiveEffectsWithAppliedTags(FGameplayTagContainer Tags);                                               // [0x730c264] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveActiveEffectsWithAppliedTags(FGameplayTagContainer Tags);                                               // [0x734d44c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ReleaseInputID
-	// void ReleaseInputID(int32_t InputID);                                                                                 // [0x730c1e0] Final|Native|Public|BlueprintCallable 
+	// void ReleaseInputID(int32_t InputID);                                                                                 // [0x734d3c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.PressInputID
-	// void PressInputID(int32_t InputID);                                                                                   // [0x730c15c] Final|Native|Public|BlueprintCallable 
+	// void PressInputID(int32_t InputID);                                                                                   // [0x734d344] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnSpawnedAttributesEndPlayed
-	// void OnSpawnedAttributesEndPlayed(class AActor* InActor, TEnumAsByte<EEndPlayReason> EndPlayReason);                  // [0x730bc58] Final|Native|Public  
+	// void OnSpawnedAttributesEndPlayed(class AActor* InActor, TEnumAsByte<EEndPlayReason> EndPlayReason);                  // [0x734ce40] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnRep_SpawnedAttributes
-	// void OnRep_SpawnedAttributes(TArray<UAttributeSet*>& PreviousSpawnedAttributes);                                      // [0x3047a50] Final|Native|Private|HasOutParms 
+	// void OnRep_SpawnedAttributes(TArray<UAttributeSet*>& PreviousSpawnedAttributes);                                      // [0x27c1c80] Final|Native|Private|HasOutParms 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnRep_ServerDebugString
-	// void OnRep_ServerDebugString();                                                                                       // [0x65bb804] Native|Public        
+	// void OnRep_ServerDebugString();                                                                                       // [0x6604b40] Native|Public        
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnRep_ReplicatedAnimMontage
-	// void OnRep_ReplicatedAnimMontage();                                                                                   // [0x730bc08] Native|Protected     
+	// void OnRep_ReplicatedAnimMontage();                                                                                   // [0x734cdf0] Native|Protected     
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnRep_OwningActor
-	// void OnRep_OwningActor();                                                                                             // [0x316c940] Final|Native|Public  
+	// void OnRep_OwningActor();                                                                                             // [0x2a83e9c] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnRep_ClientDebugString
-	// void OnRep_ClientDebugString();                                                                                       // [0x3afa5cc] Native|Public        
+	// void OnRep_ClientDebugString();                                                                                       // [0x3af112c] Native|Public        
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnRep_ActivateAbilities
-	// void OnRep_ActivateAbilities();                                                                                       // [0x1ef9904] Native|Protected     
+	// void OnRep_ActivateAbilities();                                                                                       // [0x1aaa1a8] Native|Protected     
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnOwnerActorDestroyed
-	// void OnOwnerActorDestroyed(class AActor* InActor);                                                                    // [0x3099248] Final|Native|Public  
+	// void OnOwnerActorDestroyed(class AActor* InActor);                                                                    // [0x308e8d4] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.OnAvatarActorDestroyed
-	// void OnAvatarActorDestroyed(class AActor* InActor);                                                                   // [0x2ddb9f0] Final|Native|Public  
+	// void OnAvatarActorDestroyed(class AActor* InActor);                                                                   // [0x2deabe4] Final|Native|Public  
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCuesExecuted_WithParams
-	// void NetMulticast_InvokeGameplayCuesExecuted_WithParams(FGameplayTagContainer GameplayCueTags, FPredictionKey PredictionKey, FGameplayCueParameters GameplayCueParameters); // [0x730a524] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCuesExecuted_WithParams(FGameplayTagContainer GameplayCueTags, FPredictionKey PredictionKey, FGameplayCueParameters GameplayCueParameters); // [0x734b70c] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCuesExecuted
-	// void NetMulticast_InvokeGameplayCuesExecuted(FGameplayTagContainer GameplayCueTags, FPredictionKey PredictionKey, FGameplayEffectContextHandle EffectContext); // [0x730a154] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCuesExecuted(FGameplayTagContainer GameplayCueTags, FPredictionKey PredictionKey, FGameplayEffectContextHandle EffectContext); // [0x734b33c] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCuesAddedAndWhileActive_WithParams
-	// void NetMulticast_InvokeGameplayCuesAddedAndWhileActive_WithParams(FGameplayTagContainer GameplayCueTags, FPredictionKey PredictionKey, FGameplayCueParameters GameplayCueParameters); // [0x7309ddc] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCuesAddedAndWhileActive_WithParams(FGameplayTagContainer GameplayCueTags, FPredictionKey PredictionKey, FGameplayCueParameters GameplayCueParameters); // [0x734afc4] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted_WithParams
-	// void NetMulticast_InvokeGameplayCueExecuted_WithParams(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayCueParameters GameplayCueParameters); // [0x2e23218] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCueExecuted_WithParams(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayCueParameters GameplayCueParameters); // [0x2e1ed04] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted_FromSpec
-	// void NetMulticast_InvokeGameplayCueExecuted_FromSpec(FGameplayEffectSpecForRPC Spec, FPredictionKey PredictionKey);   // [0x301659c] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCueExecuted_FromSpec(FGameplayEffectSpecForRPC Spec, FPredictionKey PredictionKey);   // [0x3010a9c] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted
-	// void NetMulticast_InvokeGameplayCueExecuted(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayEffectContextHandle EffectContext); // [0x7309a34] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCueExecuted(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayEffectContextHandle EffectContext); // [0x734ac1c] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAddedAndWhileActive_WithParams
-	// void NetMulticast_InvokeGameplayCueAddedAndWhileActive_WithParams(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayCueParameters GameplayCueParameters); // [0x73096d8] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCueAddedAndWhileActive_WithParams(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayCueParameters GameplayCueParameters); // [0x734a8c0] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec
-	// void NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec(FGameplayEffectSpecForRPC Spec, FPredictionKey PredictionKey); // [0x7309488] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec(FGameplayEffectSpecForRPC Spec, FPredictionKey PredictionKey); // [0x734a670] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAdded_WithParams
-	// void NetMulticast_InvokeGameplayCueAdded_WithParams(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayCueParameters Parameters); // [0x34ea584] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCueAdded_WithParams(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayCueParameters Parameters); // [0x34dd4a8] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAdded
-	// void NetMulticast_InvokeGameplayCueAdded(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayEffectContextHandle EffectContext); // [0x73090e0] Net|Native|Event|NetMulticast|Public 
+	// void NetMulticast_InvokeGameplayCueAdded(FGameplayTag GameplayCueTag, FPredictionKey PredictionKey, FGameplayEffectContextHandle EffectContext); // [0x734a2c8] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.MakeOutgoingSpec
-	// FGameplayEffectSpecHandle MakeOutgoingSpec(class UClass* GameplayEffectClass, float Level, FGameplayEffectContextHandle Context); // [0x73088cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayEffectSpecHandle MakeOutgoingSpec(class UClass* GameplayEffectClass, float Level, FGameplayEffectContextHandle Context); // [0x7349ab4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.MakeEffectContext
-	// FGameplayEffectContextHandle MakeEffectContext();                                                                     // [0x730862c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayEffectContextHandle MakeEffectContext();                                                                     // [0x7349814] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.K2_InitStats
-	// void K2_InitStats(class UClass* Attributes, class UDataTable* DataTable);                                             // [0x7308540] Final|Native|Public|BlueprintCallable 
+	// void K2_InitStats(class UClass* Attributes, class UDataTable* DataTable);                                             // [0x7349728] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.K2_GiveAbilityAndActivateOnce
-	// FGameplayAbilitySpecHandle K2_GiveAbilityAndActivateOnce(class UClass* AbilityClass, int32_t Level, int32_t InputID); // [0x730841c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// FGameplayAbilitySpecHandle K2_GiveAbilityAndActivateOnce(class UClass* AbilityClass, int32_t Level, int32_t InputID); // [0x7349604] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.K2_GiveAbility
-	// FGameplayAbilitySpecHandle K2_GiveAbility(class UClass* AbilityClass, int32_t Level, int32_t InputID);                // [0x73082f8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// FGameplayAbilitySpecHandle K2_GiveAbility(class UClass* AbilityClass, int32_t Level, int32_t InputID);                // [0x73494e0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.IsGameplayCueActive
-	// bool IsGameplayCueActive(FGameplayTag GameplayCueTag);                                                                // [0x7307d58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsGameplayCueActive(FGameplayTag GameplayCueTag);                                                                // [0x7348f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.InputConfirm
-	// void InputConfirm();                                                                                                  // [0x354217c] Final|Native|Public|BlueprintCallable 
+	// void InputConfirm();                                                                                                  // [0x35361a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.InputCancel
-	// void InputCancel();                                                                                                   // [0x1999ea8] Final|Native|Public|BlueprintCallable 
+	// void InputCancel();                                                                                                   // [0xf55cc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetUserAbilityActivationInhibited
-	// bool GetUserAbilityActivationInhibited();                                                                             // [0x7307be8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetUserAbilityActivationInhibited();                                                                             // [0x7348dd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetGameplayTagCount
-	// int32_t GetGameplayTagCount(FGameplayTag GameplayTag);                                                                // [0x73069d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetGameplayTagCount(FGameplayTag GameplayTag);                                                                // [0x7347bc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetGameplayEffectMagnitude
-	// float GetGameplayEffectMagnitude(FActiveGameplayEffectHandle Handle, FGameplayAttribute Attribute);                   // [0x73065bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetGameplayEffectMagnitude(FActiveGameplayEffectHandle Handle, FGameplayAttribute Attribute);                   // [0x73477a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetGameplayEffectCount_IfLoaded
-	// int32_t GetGameplayEffectCount_IfLoaded(TWeakObjectPtr<UClass*> SoftSourceGameplayEffect, class UAbilitySystemComponent* OptionalInstigatorFilterComponent, bool bEnforceOnGoingCheck); // [0x7306374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetGameplayEffectCount_IfLoaded(TWeakObjectPtr<UClass*> SoftSourceGameplayEffect, class UAbilitySystemComponent* OptionalInstigatorFilterComponent, bool bEnforceOnGoingCheck); // [0x734755c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetGameplayEffectCount
-	// int32_t GetGameplayEffectCount(class UClass* SourceGameplayEffect, class UAbilitySystemComponent* OptionalInstigatorFilterComponent, bool bEnforceOnGoingCheck); // [0x7306250] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetGameplayEffectCount(class UClass* SourceGameplayEffect, class UAbilitySystemComponent* OptionalInstigatorFilterComponent, bool bEnforceOnGoingCheck); // [0x7347438] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetGameplayAttributeValue
-	// float GetGameplayAttributeValue(FGameplayAttribute Attribute, bool& bFound);                                          // [0x7305a64] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float GetGameplayAttributeValue(FGameplayAttribute Attribute, bool& bFound);                                          // [0x7346c4c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetAttributeSet
-	// class UAttributeSet* GetAttributeSet(class UClass* AttributeSetClass);                                                // [0x73046a0] Final|Native|Public|BlueprintCallable|Const 
+	// class UAttributeSet* GetAttributeSet(class UClass* AttributeSetClass);                                                // [0x7345888] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetAllAttributes
-	// void GetAllAttributes(TArray<FGameplayAttribute>& OutAttributes);                                                     // [0x73043d4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetAllAttributes(TArray<FGameplayAttribute>& OutAttributes);                                                     // [0x73455bc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetAllAbilities
-	// void GetAllAbilities(TArray<FGameplayAbilitySpecHandle>& OutAbilityHandles);                                          // [0x730425c] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void GetAllAbilities(TArray<FGameplayAbilitySpecHandle>& OutAbilityHandles);                                          // [0x7345444] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetActiveEffectsWithAllTags
-	// TArray<FActiveGameplayEffectHandle> GetActiveEffectsWithAllTags(FGameplayTagContainer Tags);                          // [0x73032b4] Final|Native|Public|BlueprintCallable|Const 
+	// TArray<FActiveGameplayEffectHandle> GetActiveEffectsWithAllTags(FGameplayTagContainer Tags);                          // [0x734449c] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.GetActiveEffects
-	// TArray<FActiveGameplayEffectHandle> GetActiveEffects(FGameplayEffectQuery& Query);                                    // [0x73031ec] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// TArray<FActiveGameplayEffectHandle> GetActiveEffects(FGameplayEffectQuery& Query);                                    // [0x73443d4] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.FindAllAbilitiesWithTags
-	// void FindAllAbilitiesWithTags(TArray<FGameplayAbilitySpecHandle>& OutAbilityHandles, FGameplayTagContainer Tags, bool bExactMatch); // [0x730254c] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void FindAllAbilitiesWithTags(TArray<FGameplayAbilitySpecHandle>& OutAbilityHandles, FGameplayTagContainer Tags, bool bExactMatch); // [0x7343734] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.FindAllAbilitiesWithInputID
-	// void FindAllAbilitiesWithInputID(TArray<FGameplayAbilitySpecHandle>& OutAbilityHandles, int32_t InputID);             // [0x73023bc] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void FindAllAbilitiesWithInputID(TArray<FGameplayAbilitySpecHandle>& OutAbilityHandles, int32_t InputID);             // [0x73435a4] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.FindAllAbilitiesMatchingQuery
-	// void FindAllAbilitiesMatchingQuery(TArray<FGameplayAbilitySpecHandle>& OutAbilityHandles, FGameplayTagQuery Query);   // [0x73021e8] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void FindAllAbilitiesMatchingQuery(TArray<FGameplayAbilitySpecHandle>& OutAbilityHandles, FGameplayTagQuery Query);   // [0x73433d0] Final|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClientTryActivateAbility
-	// void ClientTryActivateAbility(FGameplayAbilitySpecHandle AbilityToActivate);                                          // [0x72fefb4] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientTryActivateAbility(FGameplayAbilitySpecHandle AbilityToActivate);                                          // [0x734019c] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClientSetReplicatedEvent
-	// void ClientSetReplicatedEvent(TEnumAsByte<EAbilityGenericReplicatedEvent> EventType, FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey); // [0x72fed48] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientSetReplicatedEvent(TEnumAsByte<EAbilityGenericReplicatedEvent> EventType, FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey); // [0x733ff30] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClientPrintDebug_Response
-	// void ClientPrintDebug_Response(TArray<FString> Strings, int32_t GameFlags);                                           // [0x72fec74] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientPrintDebug_Response(TArray<FString> Strings, int32_t GameFlags);                                           // [0x733fe5c] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClientEndAbility
-	// void ClientEndAbility(FGameplayAbilitySpecHandle AbilityToEnd, FGameplayAbilityActivationInfo ActivationInfo);        // [0x72fea4c] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientEndAbility(FGameplayAbilitySpecHandle AbilityToEnd, FGameplayAbilityActivationInfo ActivationInfo);        // [0x733fc34] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClientCancelAbility
-	// void ClientCancelAbility(FGameplayAbilitySpecHandle AbilityToCancel, FGameplayAbilityActivationInfo ActivationInfo);  // [0x72fe824] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientCancelAbility(FGameplayAbilitySpecHandle AbilityToCancel, FGameplayAbilityActivationInfo ActivationInfo);  // [0x733fa0c] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClientActivateAbilitySucceedWithEventData
-	// void ClientActivateAbilitySucceedWithEventData(FGameplayAbilitySpecHandle AbilityToActivate, FPredictionKey PredictionKey, FGameplayEventData TriggerEventData); // [0x72fe4cc] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientActivateAbilitySucceedWithEventData(FGameplayAbilitySpecHandle AbilityToActivate, FPredictionKey PredictionKey, FGameplayEventData TriggerEventData); // [0x733f6b4] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClientActivateAbilitySucceed
-	// void ClientActivateAbilitySucceed(FGameplayAbilitySpecHandle AbilityToActivate, FPredictionKey PredictionKey);        // [0x72fe2a0] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientActivateAbilitySucceed(FGameplayAbilitySpecHandle AbilityToActivate, FPredictionKey PredictionKey);        // [0x733f488] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClientActivateAbilityFailed
-	// void ClientActivateAbilityFailed(FGameplayAbilitySpecHandle AbilityToActivate, int16_t PredictionKey);                // [0x72fe08c] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientActivateAbilityFailed(FGameplayAbilitySpecHandle AbilityToActivate, int16_t PredictionKey);                // [0x733f274] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClearAllAbilitiesWithInputID
-	// void ClearAllAbilitiesWithInputID(int32_t InputID);                                                                   // [0x72fe00c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ClearAllAbilitiesWithInputID(int32_t InputID);                                                                   // [0x733f1f4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClearAllAbilities
-	// void ClearAllAbilities();                                                                                             // [0x72fdff8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ClearAllAbilities();                                                                                             // [0x733f1e0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.ClearAbility
-	// void ClearAbility(FGameplayAbilitySpecHandle& Handle);                                                                // [0x72fdf6c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void ClearAbility(FGameplayAbilitySpecHandle& Handle);                                                                // [0x733f154] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectToTarget
-	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectToTarget(class UClass* GameplayEffectClass, class UAbilitySystemComponent* Target, float Level, FGameplayEffectContextHandle Context); // [0x288b014] Final|Native|Public|BlueprintCallable 
+	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectToTarget(class UClass* GameplayEffectClass, class UAbilitySystemComponent* Target, float Level, FGameplayEffectContextHandle Context); // [0x273cdd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectToSelf
-	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectToSelf(class UClass* GameplayEffectClass, float Level, FGameplayEffectContextHandle EffectContext); // [0x288aba8] Final|Native|Public|BlueprintCallable 
+	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectToSelf(class UClass* GameplayEffectClass, float Level, FGameplayEffectContextHandle EffectContext); // [0x273ca0c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToTarget
-	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToTarget(FGameplayEffectSpecHandle& SpecHandle, class UAbilitySystemComponent* Target); // [0x72fd830] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToTarget(FGameplayEffectSpecHandle& SpecHandle, class UAbilitySystemComponent* Target); // [0x733ea18] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToSelf
-	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToSelf(FGameplayEffectSpecHandle& SpecHandle);                  // [0x72fd6f8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToSelf(FGameplayEffectSpecHandle& SpecHandle);                  // [0x733e8e0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.AbilityConfirmOrCancel__DelegateSignature
-	// void AbilityConfirmOrCancel__DelegateSignature();                                                                     // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void AbilityConfirmOrCancel__DelegateSignature();                                                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/GameplayAbilities.AbilitySystemComponent.AbilityAbilityKey__DelegateSignature
-	// void AbilityAbilityKey__DelegateSignature(int32_t InputID);                                                           // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void AbilityAbilityKey__DelegateSignature(int32_t InputID);                                                           // [0x211c0a0] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/GameplayAbilities.AbilitySystemDebugHUDExtension
@@ -2985,13 +2985,13 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayCueFunctionLibrary.RemoveGameplayCueOnActor
-	// void RemoveGameplayCueOnActor(class AActor* Target, FGameplayTag GameplayCueTag, FGameplayCueParameters& Parameters); // [0x36472ec] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void RemoveGameplayCueOnActor(class AActor* Target, FGameplayTag GameplayCueTag, FGameplayCueParameters& Parameters); // [0x363bf58] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayCueFunctionLibrary.MakeGameplayCueParametersFromHitResult
-	// FGameplayCueParameters MakeGameplayCueParametersFromHitResult(FHitResult& HitResult);                                 // [0x35f70e4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FGameplayCueParameters MakeGameplayCueParametersFromHitResult(FHitResult& HitResult);                                 // [0x35eae54] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayAbilities.GameplayCueFunctionLibrary.ExecuteGameplayCueOnActor
-	// void ExecuteGameplayCueOnActor(class AActor* Target, FGameplayTag GameplayCueTag, FGameplayCueParameters& Parameters); // [0x2eb6130] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ExecuteGameplayCueOnActor(class AActor* Target, FGameplayTag GameplayCueTag, FGameplayCueParameters& Parameters); // [0x2eba1d8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayCueFunctionLibrary.AddGameplayCueOnActor
-	// void AddGameplayCueOnActor(class AActor* Target, FGameplayTag GameplayCueTag, FGameplayCueParameters& Parameters);    // [0x3647590] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddGameplayCueOnActor(class AActor* Target, FGameplayTag GameplayCueTag, FGameplayCueParameters& Parameters);    // [0x363c1fc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.GameplayCueInterface
@@ -3003,9 +3003,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayCueInterface.ForwardGameplayCueToParent
-	// void ForwardGameplayCueToParent();                                                                                    // [0x2f603f4] BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void ForwardGameplayCueToParent();                                                                                    // [0x2f5eb10] BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayAbilities.GameplayCueInterface.BlueprintCustomHandler
-	// void BlueprintCustomHandler(TEnumAsByte<EGameplayCueEvent> EventType, FGameplayCueParameters& Parameters);            // [0x2177018] BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent 
+	// void BlueprintCustomHandler(TEnumAsByte<EGameplayCueEvent> EventType, FGameplayCueParameters& Parameters);            // [0x211c0a0] BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/GameplayAbilities.GameplayCueObjectLibrary
@@ -3103,19 +3103,19 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Actor.WhileActive
-	// bool WhileActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                         // [0x1d060cc] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// bool WhileActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                         // [0x191d83c] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Actor.OnRemove
-	// bool OnRemove(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x1d05610] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// bool OnRemove(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x191cd4c] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Actor.OnOwnerDestroyed
-	// void OnOwnerDestroyed(class AActor* DestroyedActor);                                                                  // [0x31176a8] Native|Public        
+	// void OnOwnerDestroyed(class AActor* DestroyedActor);                                                                  // [0x3111da0] Native|Public        
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Actor.OnExecute
-	// bool OnExecute(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                           // [0x2c0f218] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// bool OnExecute(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                           // [0x2c3c054] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Actor.OnActive
-	// bool OnActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x1d06224] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// bool OnActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x191d994] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Actor.K2_HandleGameplayCue
-	// void K2_HandleGameplayCue(class AActor* MyTarget, TEnumAsByte<EGameplayCueEvent> EventType, FGameplayCueParameters& Parameters); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void K2_HandleGameplayCue(class AActor* MyTarget, TEnumAsByte<EGameplayCueEvent> EventType, FGameplayCueParameters& Parameters); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Actor.K2_EndGameplayCue
-	// void K2_EndGameplayCue();                                                                                             // [0x20abc64] Native|Public|BlueprintCallable 
+	// void K2_EndGameplayCue();                                                                                             // [0x20de634] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.GameplayCueNotify_Static
@@ -3131,15 +3131,15 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Static.WhileActive
-	// bool WhileActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                         // [0x30c2938] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool WhileActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                         // [0x30b981c] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Static.OnRemove
-	// bool OnRemove(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x30e8448] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool OnRemove(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x30e0ec4] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Static.OnExecute
-	// bool OnExecute(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                           // [0x1d05204] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool OnExecute(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                           // [0x191c940] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Static.OnActive
-	// bool OnActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x2feebc4] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool OnActive(class AActor* MyTarget, FGameplayCueParameters& Parameters);                                            // [0x2ff05a8] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Static.K2_HandleGameplayCue
-	// void K2_HandleGameplayCue(class AActor* MyTarget, TEnumAsByte<EGameplayCueEvent> EventType, FGameplayCueParameters& Parameters); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent|Const 
+	// void K2_HandleGameplayCue(class AActor* MyTarget, TEnumAsByte<EGameplayCueEvent> EventType, FGameplayCueParameters& Parameters); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Struct /Script/GameplayAbilities.GameplayCueNotify_SpawnCondition
@@ -3310,7 +3310,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Burst.OnBurst
-	// void OnBurst(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void OnBurst(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Struct /Script/GameplayAbilities.GameplayCueNotify_SpawnResult
@@ -3339,7 +3339,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayCueNotify_BurstLatent.OnBurst
-	// void OnBurst(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnBurst(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/GameplayAbilities.GameplayCueNotify_HitImpact
@@ -3383,13 +3383,13 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Looping.OnRemoval
-	// void OnRemoval(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRemoval(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Looping.OnRecurring
-	// void OnRecurring(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRecurring(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Looping.OnLoopingStart
-	// void OnLoopingStart(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnLoopingStart(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/GameplayAbilities.GameplayCueNotify_Looping.OnApplication
-	// void OnApplication(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnApplication(class AActor* Target, FGameplayCueParameters& Parameters, FGameplayCueNotify_SpawnResult& SpawnResults); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/GameplayAbilities.GameplayCueNotifyData
@@ -3443,7 +3443,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayEffectCustomApplicationRequirement.CanApplyGameplayEffect
-	// bool CanApplyGameplayEffect(class UGameplayEffect* GameplayEffect, FGameplayEffectSpec& Spec, class UAbilitySystemComponent* ASC); // [0x736149c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool CanApplyGameplayEffect(class UGameplayEffect* GameplayEffect, FGameplayEffectSpec& Spec, class UAbilitySystemComponent* ASC); // [0x739fd3c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/GameplayAbilities.GameplayEffectExecutionCalculation
@@ -3457,7 +3457,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayEffectExecutionCalculation.Execute
-	// void Execute(FGameplayEffectCustomExecutionParameters& ExecutionParams, FGameplayEffectCustomExecutionOutput& OutExecutionOutput); // [0x73616a8] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// void Execute(FGameplayEffectCustomExecutionParameters& ExecutionParams, FGameplayEffectCustomExecutionOutput& OutExecutionOutput); // [0x739ff48] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/GameplayAbilities.GameplayModMagnitudeCalculation
@@ -3471,25 +3471,25 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.K2_GetCapturedAttributeMagnitude
-	// float K2_GetCapturedAttributeMagnitude(FGameplayEffectSpec& EffectSpec, FGameplayAttribute Attribute, FGameplayTagContainer& SourceTags, FGameplayTagContainer& TargetTags); // [0x7361fdc] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
+	// float K2_GetCapturedAttributeMagnitude(FGameplayEffectSpec& EffectSpec, FGameplayAttribute Attribute, FGameplayTagContainer& SourceTags, FGameplayTagContainer& TargetTags); // [0x73a087c] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.GetTargetSpecTags
-	// FGameplayTagContainer GetTargetSpecTags(FGameplayEffectSpec& EffectSpec);                                             // [0x7361f10] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetTargetSpecTags(FGameplayEffectSpec& EffectSpec);                                             // [0x73a07b0] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.GetTargetAggregatedTags
-	// FGameplayTagContainer GetTargetAggregatedTags(FGameplayEffectSpec& EffectSpec);                                       // [0x7361de0] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
+	// FGameplayTagContainer GetTargetAggregatedTags(FGameplayEffectSpec& EffectSpec);                                       // [0x73a0680] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.GetTargetActorTags
-	// FGameplayTagContainer GetTargetActorTags(FGameplayEffectSpec& EffectSpec);                                            // [0x7361d14] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetTargetActorTags(FGameplayEffectSpec& EffectSpec);                                            // [0x73a05b4] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.GetSourceSpecTags
-	// FGameplayTagContainer GetSourceSpecTags(FGameplayEffectSpec& EffectSpec);                                             // [0x7361c48] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetSourceSpecTags(FGameplayEffectSpec& EffectSpec);                                             // [0x73a04e8] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.GetSourceAggregatedTags
-	// FGameplayTagContainer GetSourceAggregatedTags(FGameplayEffectSpec& EffectSpec);                                       // [0x7361b18] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
+	// FGameplayTagContainer GetSourceAggregatedTags(FGameplayEffectSpec& EffectSpec);                                       // [0x73a03b8] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.GetSourceActorTags
-	// FGameplayTagContainer GetSourceActorTags(FGameplayEffectSpec& EffectSpec);                                            // [0x7361a50] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetSourceActorTags(FGameplayEffectSpec& EffectSpec);                                            // [0x73a02f0] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.GetSetByCallerMagnitudeByTag
-	// float GetSetByCallerMagnitudeByTag(FGameplayEffectSpec& EffectSpec, FGameplayTag& tag);                               // [0x73618f8] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
+	// float GetSetByCallerMagnitudeByTag(FGameplayEffectSpec& EffectSpec, FGameplayTag& tag);                               // [0x73a0198] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.GetSetByCallerMagnitudeByName
-	// float GetSetByCallerMagnitudeByName(FGameplayEffectSpec& EffectSpec, FName& MagnitudeName);                           // [0x73617dc] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
+	// float GetSetByCallerMagnitudeByName(FGameplayEffectSpec& EffectSpec, FName& MagnitudeName);                           // [0x73a007c] Final|Native|Protected|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/GameplayAbilities.GameplayModMagnitudeCalculation.CalculateBaseMagnitude
-	// float CalculateBaseMagnitude(FGameplayEffectSpec& Spec);                                                              // [0x73613d0] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// float CalculateBaseMagnitude(FGameplayEffectSpec& Spec);                                                              // [0x739fc70] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Struct /Script/GameplayAbilities.GameplayTagReponsePair
@@ -3523,7 +3523,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.GameplayTagReponseTable.TagResponseEvent
-	// void TagResponseEvent(FGameplayTag tag, int32_t NewCount, class UAbilitySystemComponent* ASC, int32_t idx);           // [0x7362338] Final|Native|Protected 
+	// void TagResponseEvent(FGameplayTag tag, int32_t NewCount, class UAbilitySystemComponent* ASC, int32_t idx);           // [0x73a0bd8] Final|Native|Protected 
 };
 
 /// Struct /Script/GameplayAbilities.MovieSceneGameplayCueKey
@@ -3580,7 +3580,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayAbilities.MovieSceneGameplayCueTrack.SetSequencerTrackHandler
-	// void SetSequencerTrackHandler(FDelegateProperty InGameplayCueTrackHandler);                                           // [0x73622b8] Final|Native|Static|Public|BlueprintCallable 
+	// void SetSequencerTrackHandler(FDelegateProperty InGameplayCueTrackHandler);                                           // [0x73a0b58] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayAbilities.TickableAttributeSetInterface

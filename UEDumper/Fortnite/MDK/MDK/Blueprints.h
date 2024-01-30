@@ -25,29 +25,29 @@ public:
 
 	/// Functions
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.InstantTransitionToSelected
-	// void InstantTransitionToSelected(class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext);                    // [0x2177018] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void InstantTransitionToSelected(class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext);                    // [0x211c0a0] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.InstantTransitionToEnabled
-	// void InstantTransitionToEnabled(class UMaterialInstanceDynamic* Mid, bool IsSelected, class UObject* __WorldContext);    // [0x2177018] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void InstantTransitionToEnabled(class UMaterialInstanceDynamic* Mid, bool IsSelected, class UObject* __WorldContext);    // [0x211c0a0] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.InstantTransitionToDisabled
-	// void InstantTransitionToDisabled(class UMaterialInstanceDynamic* Mid, bool IsSelected, class UObject* __WorldContext);   // [0x2177018] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void InstantTransitionToDisabled(class UMaterialInstanceDynamic* Mid, bool IsSelected, class UObject* __WorldContext);   // [0x211c0a0] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.TransitionToDeselectedFocused
-	// void TransitionToDeselectedFocused(class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext);                  // [0x2177018] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void TransitionToDeselectedFocused(class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext);                  // [0x211c0a0] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.TransitionToDeselectedIdle
-	// void TransitionToDeselectedIdle(class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext);                     // [0x2177018] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void TransitionToDeselectedIdle(class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext);                     // [0x211c0a0] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.SetGridSlotNudge
-	// void SetGridSlotNudge(class UWidget* Widget, FVector2D Nudge, class UObject* __WorldContext);                            // [0x2177018] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void SetGridSlotNudge(class UWidget* Widget, FVector2D Nudge, class UObject* __WorldContext);                            // [0x211c0a0] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.SetGridSlotPadding
-	// void SetGridSlotPadding(class UWidget* Widget, FMargin Padding, class UObject* __WorldContext);                          // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetGridSlotPadding(class UWidget* Widget, FMargin Padding, class UObject* __WorldContext);                          // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.SetGridSlotLayer
-	// void SetGridSlotLayer(class UWidget* Widget, int32_t Layer, class UObject* __WorldContext);                              // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetGridSlotLayer(class UWidget* Widget, int32_t Layer, class UObject* __WorldContext);                              // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.SetGridSlotAlignment
-	// void SetGridSlotAlignment(class UWidget* Widget, TEnumAsByte<EHorizontalAlignment> Horizontal, TEnumAsByte<EVerticalAlignment> Vertical, class UObject* __WorldContext); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetGridSlotAlignment(class UWidget* Widget, TEnumAsByte<EHorizontalAlignment> Horizontal, TEnumAsByte<EVerticalAlignment> Vertical, class UObject* __WorldContext); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.SetGridSlotColumnAndRow
-	// void SetGridSlotColumnAndRow(class UWidget* Widget, int32_t Row, int32_t Row Span, int32_t Column, int32_t Column Span, class UObject* __WorldContext); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetGridSlotColumnAndRow(class UWidget* Widget, int32_t Row, int32_t Row Span, int32_t Column, int32_t Column Span, class UObject* __WorldContext); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.RemoveWidget
-	// void RemoveWidget(class UWidget* Widget, class UObject* __WorldContext);                                                 // [0x2177018] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void RemoveWidget(class UWidget* Widget, class UObject* __WorldContext);                                                 // [0x211c0a0] Static|Public|BlueprintCallable|BlueprintEvent 
 	// Function /FortUILibrary/Blueprints/UIKit_FunctionLibrary.UIKit_FunctionLibrary_C.Copy MID Parameter Overrides
-	// void Copy MID Parameter Overrides(class UMaterialInstanceDynamic* Target MID, class UMaterialInstanceDynamic* Source MID, class UObject* __WorldContext); // [0x2177018] Static|Public|BlueprintCallable|BlueprintEvent 
+	// void Copy MID Parameter Overrides(class UMaterialInstanceDynamic* Target MID, class UMaterialInstanceDynamic* Source MID, class UObject* __WorldContext); // [0x211c0a0] Static|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Blueprints/Camera/FirstPerson/PlayerCameraMode1P.PlayerCameraMode1P_C
@@ -72,19 +72,19 @@ public:
 
 	/// Functions
 	// Function /Game/Blueprints/InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingLeft_End
-	// void MeleeSwingLeft_End();                                                                                               // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void MeleeSwingLeft_End();                                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingRight_End
-	// void MeleeSwingRight_End();                                                                                              // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void MeleeSwingRight_End();                                                                                              // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/InterfacePlayerPawn.InterfacePlayerPawn_C.FootStepRight
-	// void FootStepRight();                                                                                                    // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void FootStepRight();                                                                                                    // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/InterfacePlayerPawn.InterfacePlayerPawn_C.FootStepLeft
-	// void FootStepLeft();                                                                                                     // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void FootStepLeft();                                                                                                     // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/InterfacePlayerPawn.InterfacePlayerPawn_C.Melee_Effect_Color
-	// void Melee_Effect_Color(FVector& Melee_Color_Set);                                                                       // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Melee_Effect_Color(FVector& Melee_Color_Set);                                                                       // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingLeft
-	// void MeleeSwingLeft(bool First Left);                                                                                    // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void MeleeSwingLeft(bool First Left);                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingRight
-	// void MeleeSwingRight(bool First Right);                                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void MeleeSwingRight(bool First Right);                                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCameraModeBase.Athena_PlayerCameraModeBase_C
@@ -197,56 +197,6 @@ class Uv2_PlayerCameraModeBase_C : public UFortCameraMode_ThirdPerson
 public:
 };
 
-/// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeRanged.v2_PlayerCameraModeRanged_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv2_PlayerCameraModeRanged_C : public Uv2_PlayerCameraModeBase_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCamera_DBNO.Athena_PlayerCamera_DBNO_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class UAthena_PlayerCamera_DBNO_C : public UAthena_PlayerCameraModeBase_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCameraMode_WaterSprintBoost.Athena_PlayerCameraMode_WaterSprintBoost_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class UAthena_PlayerCameraMode_WaterSprintBoost_C : public UAthena_PlayerCameraModeBase_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeBase.v1_PlayerCameraModeBase_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv1_PlayerCameraModeBase_C : public UFortCameraMode_ThirdPerson
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeMelee.v1_PlayerCameraModeMelee_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv1_PlayerCameraModeMelee_C : public Uv1_PlayerCameraModeBase_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
 /// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeBase.v3_PlayerCameraModeBase_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
 class Uv3_PlayerCameraModeBase_C : public UFortCameraMode_ThirdPerson
@@ -267,79 +217,9 @@ class Uv3_PlayerCameraModeRanged_C : public Uv3_PlayerCameraModeBase_C
 public:
 };
 
-/// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeTargetingVeryShortRange.v3_PlayerCameraModeTargetingVeryShortRange_C
+/// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeRanged.v2_PlayerCameraModeRanged_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv3_PlayerCameraModeTargetingVeryShortRange_C : public Uv3_PlayerCameraModeRanged_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/Original/Targeting3PCamera_LongRange.Targeting3PCamera_LongRange_C
-/// Size: 0x0000 (0x0001F0 - 0x0001F0)
-class UTargeting3PCamera_LongRange_C : public UFort3PCam_Targeting
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 496;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/StW/STW_PlayerCameraModeMelee.STW_PlayerCameraModeMelee_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class USTW_PlayerCameraModeMelee_C : public UAthena_PlayerCameraModeMelee_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeTargetingVeryShortRange.v1_PlayerCameraModeTargetingVeryShortRange_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv1_PlayerCameraModeTargetingVeryShortRange_C : public Uv1_PlayerCameraModeBase_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeMelee.v3_PlayerCameraModeMelee_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv3_PlayerCameraModeMelee_C : public Uv3_PlayerCameraModeBase_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/StW/STW_PlayerCameraModeBase.STW_PlayerCameraModeBase_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class USTW_PlayerCameraModeBase_C : public USTW_PlayerCameraModeMelee_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/v3_MPR/PlayerCameraMode_DBNO.PlayerCameraMode_DBNO_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class UPlayerCameraMode_DBNO_C : public Uv3_PlayerCameraModeBase_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeTargetingScope.v1_PlayerCameraModeTargetingScope_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv1_PlayerCameraModeTargetingScope_C : public Uv1_PlayerCameraModeBase_C
+class Uv2_PlayerCameraModeRanged_C : public Uv2_PlayerCameraModeBase_C
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 7072;
@@ -350,6 +230,26 @@ public:
 /// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCameraMode_RespawnedAir.Athena_PlayerCameraMode_RespawnedAir_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
 class UAthena_PlayerCameraMode_RespawnedAir_C : public UFortCameraMode_RespawnedAir
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeBase.v1_PlayerCameraModeBase_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class Uv1_PlayerCameraModeBase_C : public UFortCameraMode_ThirdPerson
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeTargetingScope.v1_PlayerCameraModeTargetingScope_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class Uv1_PlayerCameraModeTargetingScope_C : public Uv1_PlayerCameraModeBase_C
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 7072;
@@ -397,12 +297,12 @@ class Uv1_PlayerCameraModeTargetingRifle_C : public Uv1_PlayerCameraModeBase_C
 public:
 };
 
-/// Class /Game/Blueprints/Camera/Original/Default3PCamera.Default3PCamera_C
-/// Size: 0x0000 (0x0001F0 - 0x0001F0)
-class UDefault3PCamera_C : public UFort3PCam_Default
+/// Class /Game/Blueprints/Camera/v3_MPR/PlayerCameraMode_DBNO.PlayerCameraMode_DBNO_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class UPlayerCameraMode_DBNO_C : public Uv3_PlayerCameraModeBase_C
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 496;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
 
 public:
 };
@@ -427,9 +327,9 @@ class UTargeting3PCamera_C : public UFort3PCam_Targeting
 public:
 };
 
-/// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeTargetingRifle.v2_PlayerCameraModeTargetingRifle_C
+/// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeTargetingScope.v2_PlayerCameraModeTargetingScope_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv2_PlayerCameraModeTargetingRifle_C : public Uv2_PlayerCameraModeRanged_C
+class Uv2_PlayerCameraModeTargetingScope_C : public Uv2_PlayerCameraModeRanged_C
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 7072;
@@ -447,12 +347,32 @@ class UAthena_PlayerCameraHoisted_C : public UAthena_PlayerCameraModeBase_C
 public:
 };
 
+/// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeTargetingRifle.v2_PlayerCameraModeTargetingRifle_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class Uv2_PlayerCameraModeTargetingRifle_C : public Uv2_PlayerCameraModeRanged_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
 /// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeTargetingScope.v3_PlayerCameraModeTargetingScope_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
 class Uv3_PlayerCameraModeTargetingScope_C : public Uv3_PlayerCameraModeRanged_C
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Original/Default3PCamera.Default3PCamera_C
+/// Size: 0x0000 (0x0001F0 - 0x0001F0)
+class UDefault3PCamera_C : public UFort3PCam_Default
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 496;
 
 public:
 };
@@ -487,9 +407,9 @@ class UAthena_PlayerCameraModeSkydiveDive_C : public UAthena_PlayerCameraModeBas
 public:
 };
 
-/// Class /Game/Blueprints/Camera/Original/Targeting3PCamera_Scope.Targeting3PCamera_Scope_C
+/// Class /Game/Blueprints/Camera/Original/Targeting3PCamera_MidRange.Targeting3PCamera_MidRange_C
 /// Size: 0x0000 (0x0001F0 - 0x0001F0)
-class UTargeting3PCamera_Scope_C : public UFort3PCam_Targeting
+class UTargeting3PCamera_MidRange_C : public UFort3PCam_Targeting
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 496;
@@ -507,16 +427,6 @@ class UAthena_PlayerCameraModeSkydiveGlide_C : public UAthena_PlayerCameraModeBa
 public:
 };
 
-/// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeTargetingRifle.v3_PlayerCameraModeTargetingRifle_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv3_PlayerCameraModeTargetingRifle_C : public Uv3_PlayerCameraModeRanged_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
 /// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeTargetingPistol.v3_PlayerCameraModeTargetingPistol_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
 class Uv3_PlayerCameraModeTargetingPistol_C : public Uv3_PlayerCameraModeRanged_C
@@ -527,19 +437,9 @@ class Uv3_PlayerCameraModeTargetingPistol_C : public Uv3_PlayerCameraModeRanged_
 public:
 };
 
-/// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeTargetingScope.v2_PlayerCameraModeTargetingScope_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv2_PlayerCameraModeTargetingScope_C : public Uv2_PlayerCameraModeRanged_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/Original/Targeting3PCamera_MidRange.Targeting3PCamera_MidRange_C
+/// Class /Game/Blueprints/Camera/Original/Targeting3PCamera_Scope.Targeting3PCamera_Scope_C
 /// Size: 0x0000 (0x0001F0 - 0x0001F0)
-class UTargeting3PCamera_MidRange_C : public UFort3PCam_Targeting
+class UTargeting3PCamera_Scope_C : public UFort3PCam_Targeting
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 496;
@@ -547,9 +447,9 @@ class UTargeting3PCamera_MidRange_C : public UFort3PCam_Targeting
 public:
 };
 
-/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeRanged.v1_PlayerCameraModeRanged_C
+/// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeTargetingRifle.v3_PlayerCameraModeTargetingRifle_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv1_PlayerCameraModeRanged_C : public Uv1_PlayerCameraModeBase_C
+class Uv3_PlayerCameraModeTargetingRifle_C : public Uv3_PlayerCameraModeRanged_C
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 7072;
@@ -567,19 +467,9 @@ class UAthena_PlayerCameraModeSkydiveParachute_C : public UAthena_PlayerCameraMo
 public:
 };
 
-/// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCameraModeTargetingTethered.Athena_PlayerCameraModeTargetingTethered_C
+/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeRanged.v1_PlayerCameraModeRanged_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class UAthena_PlayerCameraModeTargetingTethered_C : public UAthena_PlayerCameraModeRangedTargeting_C
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7072;
-
-public:
-};
-
-/// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeTargetingVeryShortRange.v2_PlayerCameraModeTargetingVeryShortRange_C
-/// Size: 0x0000 (0x001BA0 - 0x001BA0)
-class Uv2_PlayerCameraModeTargetingVeryShortRange_C : public Uv2_PlayerCameraModeRanged_C
+class Uv1_PlayerCameraModeRanged_C : public Uv1_PlayerCameraModeBase_C
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 7072;
@@ -597,9 +487,119 @@ class UAthena_PlayerCameraFocalPoint_C : public UFortCameraMode_FocalPoint
 public:
 };
 
+/// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeTargetingVeryShortRange.v2_PlayerCameraModeTargetingVeryShortRange_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class Uv2_PlayerCameraModeTargetingVeryShortRange_C : public Uv2_PlayerCameraModeRanged_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
 /// Class /Game/Blueprints/Camera/v2_OverShoulder/v2_PlayerCameraModeMelee.v2_PlayerCameraModeMelee_C
 /// Size: 0x0000 (0x001BA0 - 0x001BA0)
 class Uv2_PlayerCameraModeMelee_C : public Uv2_PlayerCameraModeBase_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCameraMode_WaterSprintBoost.Athena_PlayerCameraMode_WaterSprintBoost_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class UAthena_PlayerCameraMode_WaterSprintBoost_C : public UAthena_PlayerCameraModeBase_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCamera_DBNO.Athena_PlayerCamera_DBNO_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class UAthena_PlayerCamera_DBNO_C : public UAthena_PlayerCameraModeBase_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeTargetingVeryShortRange.v3_PlayerCameraModeTargetingVeryShortRange_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class Uv3_PlayerCameraModeTargetingVeryShortRange_C : public Uv3_PlayerCameraModeRanged_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Original/Ranged3PCamera.Ranged3PCamera_C
+/// Size: 0x0000 (0x0001F0 - 0x0001F0)
+class URanged3PCamera_C : public UFort3PCam_Default
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 496;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeTargetingVeryShortRange.v1_PlayerCameraModeTargetingVeryShortRange_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class Uv1_PlayerCameraModeTargetingVeryShortRange_C : public Uv1_PlayerCameraModeBase_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/StW/STW_PlayerCameraModeMelee.STW_PlayerCameraModeMelee_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class USTW_PlayerCameraModeMelee_C : public UAthena_PlayerCameraModeMelee_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Laurent_v1/v1_PlayerCameraModeMelee.v1_PlayerCameraModeMelee_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class Uv1_PlayerCameraModeMelee_C : public Uv1_PlayerCameraModeBase_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/Original/Targeting3PCamera_LongRange.Targeting3PCamera_LongRange_C
+/// Size: 0x0000 (0x0001F0 - 0x0001F0)
+class UTargeting3PCamera_LongRange_C : public UFort3PCam_Targeting
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 496;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/StW/STW_PlayerCameraModeBase.STW_PlayerCameraModeBase_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class USTW_PlayerCameraModeBase_C : public USTW_PlayerCameraModeMelee_C
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
+
+public:
+};
+
+/// Class /Game/Blueprints/Camera/v3_MPR/v3_PlayerCameraModeMelee.v3_PlayerCameraModeMelee_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class Uv3_PlayerCameraModeMelee_C : public Uv3_PlayerCameraModeBase_C
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 7072;
@@ -617,12 +617,12 @@ class UHoverboardCameraMode_C : public UFortHoverboardCameraMode
 public:
 };
 
-/// Class /Game/Blueprints/Camera/Original/Ranged3PCamera.Ranged3PCamera_C
-/// Size: 0x0000 (0x0001F0 - 0x0001F0)
-class URanged3PCamera_C : public UFort3PCam_Default
+/// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCameraModeTargetingTethered.Athena_PlayerCameraModeTargetingTethered_C
+/// Size: 0x0000 (0x001BA0 - 0x001BA0)
+class UAthena_PlayerCameraModeTargetingTethered_C : public UAthena_PlayerCameraModeRangedTargeting_C
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 496;
+	static inline constexpr uint64_t __MDKClassSize = 7072;
 
 public:
 };
@@ -668,11 +668,11 @@ public:
 
 	/// Functions
 	// Function /FortWater/Blueprints/LandscapeWaterInfo.LandscapeWaterInfo_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /FortWater/Blueprints/LandscapeWaterInfo.LandscapeWaterInfo_C.Set Flood Water Level
-	// void Set Flood Water Level();                                                                                            // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Set Flood Water Level();                                                                                            // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /FortWater/Blueprints/LandscapeWaterInfo.LandscapeWaterInfo_C.ExecuteUbergraph_LandscapeWaterInfo
-	// void ExecuteUbergraph_LandscapeWaterInfo(int32_t EntryPoint);                                                            // [0x2177018] Final                
+	// void ExecuteUbergraph_LandscapeWaterInfo(int32_t EntryPoint);                                                            // [0x211c0a0] Final                
 };
 
 /// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCameraMode_HidingProp_Teleport.Athena_PlayerCameraMode_HidingProp_Teleport_C
@@ -706,19 +706,19 @@ public:
 
 	/// Functions
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_TeleportationDrone.BP_TeleportationDrone_C.Get Spawn Animation
-	// class UAnimationAsset* Get Spawn Animation();                                                                            // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UAnimationAsset* Get Spawn Animation();                                                                            // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_TeleportationDrone.BP_TeleportationDrone_C.PlaySpawnAnim
-	// void PlaySpawnAnim();                                                                                                    // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void PlaySpawnAnim();                                                                                                    // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_TeleportationDrone.BP_TeleportationDrone_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_TeleportationDrone.BP_TeleportationDrone_C.OnSpawnOutAnimEnded
-	// void OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool bInterrupted);                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool bInterrupted);                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_TeleportationDrone.BP_TeleportationDrone_C.ReceiveEndPlay
-	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_TeleportationDrone.BP_TeleportationDrone_C.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_TeleportationDrone.BP_TeleportationDrone_C.ExecuteUbergraph_BP_TeleportationDrone
-	// void ExecuteUbergraph_BP_TeleportationDrone(int32_t EntryPoint);                                                         // [0x2177018] Final                
+	// void ExecuteUbergraph_BP_TeleportationDrone(int32_t EntryPoint);                                                         // [0x211c0a0] Final                
 };
 
 /// Class /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C
@@ -749,27 +749,27 @@ public:
 
 	/// Functions
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.Added Death Audio
-	// void Added Death Audio(class USoundBase* Sound to Spawn);                                                                // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void Added Death Audio(class USoundBase* Sound to Spawn);                                                                // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.Decoy FX Parameters
-	// void Decoy FX Parameters(TArray<FParticleSysParam>& Instance Parameters);                                                // [0x2177018] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void Decoy FX Parameters(TArray<FParticleSysParam>& Instance Parameters);                                                // [0x211c0a0] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.NPC FX Parameters
-	// void NPC FX Parameters(TArray<FParticleSysParam>& Instance Parameters);                                                  // [0x2177018] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void NPC FX Parameters(TArray<FParticleSysParam>& Instance Parameters);                                                  // [0x211c0a0] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.NotifyTeleportFinishedTriggered
-	// void NotifyTeleportFinishedTriggered();                                                                                  // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void NotifyTeleportFinishedTriggered();                                                                                  // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.PlaySpawnAnim
-	// void PlaySpawnAnim();                                                                                                    // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void PlaySpawnAnim();                                                                                                    // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.InitDrone
-	// void InitDrone();                                                                                                        // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void InitDrone();                                                                                                        // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.OnSpawnOutAnimEnded
-	// void OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool bInterrupted);                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool bInterrupted);                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.ExecuteUbergraph_BP_VictoryDrone
-	// void ExecuteUbergraph_BP_VictoryDrone(int32_t EntryPoint);                                                               // [0x2177018] Final                
+	// void ExecuteUbergraph_BP_VictoryDrone(int32_t EntryPoint);                                                               // [0x211c0a0] Final                
 	// Function /Game/Blueprints/Adventures/SpawnTeleporter/BP_VictoryDrone.BP_VictoryDrone_C.SpawnOutAnimEndedDispatcher__DelegateSignature
-	// void SpawnOutAnimEndedDispatcher__DelegateSignature(class ABP_VictoryDrone_C* Drone);                                    // [0x2177018] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void SpawnOutAnimEndedDispatcher__DelegateSignature(class ABP_VictoryDrone_C* Drone);                                    // [0x211c0a0] Public|Delegate|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Blueprints/Camera/Athena/Athena_PlayerCameraMode_Harveting_1blade_1P.Athena_PlayerCameraMode_Harveting_1blade_1P_C

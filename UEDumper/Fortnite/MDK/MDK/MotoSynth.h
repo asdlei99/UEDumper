@@ -52,13 +52,13 @@ public:
 
 	/// Functions
 	// Function /Script/MotoSynth.SynthComponentMoto.SetSettings
-	// void SetSettings(FMotoSynthRuntimeSettings& InSettings);                                                                 // [0xa7c2d18] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSettings(FMotoSynthRuntimeSettings& InSettings);                                                                 // [0xa7b9fc0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MotoSynth.SynthComponentMoto.SetRPM
-	// void SetRPM(float InRPM, float InTimeSec);                                                                               // [0xa7c2c54] Final|Native|Public|BlueprintCallable 
+	// void SetRPM(float InRPM, float InTimeSec);                                                                               // [0xa7b9efc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotoSynth.SynthComponentMoto.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0xa7c2c38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                        // [0xa7b9ee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotoSynth.SynthComponentMoto.GetRPMRange
-	// void GetRPMRange(float& OutMinRPM, float& OutMaxRPM);                                                                    // [0xa7c2b60] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetRPMRange(float& OutMinRPM, float& OutMaxRPM);                                                                    // [0xa7b9e08] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/MotoSynth.MotoSynthRuntimeSettings

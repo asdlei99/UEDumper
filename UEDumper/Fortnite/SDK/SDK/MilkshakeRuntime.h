@@ -74,15 +74,15 @@ public:
 
 	/// Functions
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.UpdateNearbyBuildingActors
-	// void UpdateNearbyBuildingActors();                                                                                    // [0xb2775c4] Final|Native|Private 
+	// void UpdateNearbyBuildingActors();                                                                                    // [0xb257d80] Final|Native|Private 
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.UnregisterEarthquake
-	// void UnregisterEarthquake(class AMilkshakeEarthquakeActor* Earthquake);                                               // [0xb277544] Final|Native|Public|BlueprintCallable 
+	// void UnregisterEarthquake(class AMilkshakeEarthquakeActor* Earthquake);                                               // [0xb257d00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.SpawnBuildingDamageFX
-	// void SpawnBuildingDamageFX();                                                                                         // [0xb277530] Final|Native|Private 
+	// void SpawnBuildingDamageFX();                                                                                         // [0xb257cec] Final|Native|Private 
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.RegisterEarthquake
-	// void RegisterEarthquake(class AMilkshakeEarthquakeActor* Earthquake);                                                 // [0xb277430] Final|Native|Public|BlueprintCallable 
+	// void RegisterEarthquake(class AMilkshakeEarthquakeActor* Earthquake);                                                 // [0xb257bec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeControllerComponent.PlayForceFeedback
-	// void PlayForceFeedback();                                                                                             // [0xb27741c] Final|Native|Private 
+	// void PlayForceFeedback();                                                                                             // [0xb257bd8] Final|Native|Private 
 };
 
 /// Class /Script/MilkshakeRuntime.MilkshakeEarthquakeActor
@@ -97,15 +97,15 @@ public:
 
 	/// Functions
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.RemoveNullsFromAsyncOverlappedActors
-	// void RemoveNullsFromAsyncOverlappedActors();                                                                          // [0x32e6c74] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void RemoveNullsFromAsyncOverlappedActors();                                                                          // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.RemoveAsyncOverlappedActorsOutsideRadius
-	// void RemoveAsyncOverlappedActorsOutsideRadius();                                                                      // [0x32e6c74] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void RemoveAsyncOverlappedActorsOutsideRadius();                                                                      // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.OnActorRemovedFromAsyncOverlappedActors
-	// void OnActorRemovedFromAsyncOverlappedActors(class AActor* RemovedActor);                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnActorRemovedFromAsyncOverlappedActors(class AActor* RemovedActor);                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.GetRadius
-	// float GetRadius();                                                                                                    // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// float GetRadius();                                                                                                    // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/MilkshakeRuntime.MilkshakeEarthquakeActor.GetNormalizedMagnitudeAtLocation
-	// float GetNormalizedMagnitudeAtLocation(FVector Location);                                                             // [0x2177018] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// float GetNormalizedMagnitudeAtLocation(FVector Location);                                                             // [0x211c0a0] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/MilkshakeRuntime.MilkshakeFieldSystemActor
@@ -126,6 +126,6 @@ public:
 
 	/// Functions
 	// Function /Script/MilkshakeRuntime.MilkshakeFieldSystemActor.SetStrength
-	// void SetStrength(float InStrength);                                                                                   // [0xb2774b0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetStrength(float InStrength);                                                                                   // [0xb257c6c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 

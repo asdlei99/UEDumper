@@ -113,27 +113,27 @@ public:
 
 	/// Functions
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdateTurnAngleStored
-	// void UpdateTurnAngleStored();                                                                                         // [0x644ece8] Native|Event|Public|BlueprintEvent 
+	// void UpdateTurnAngleStored();                                                                                         // [0x6497f84] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdateSwimmingYaw
-	// void UpdateSwimmingYaw();                                                                                             // [0x644ed18] Native|Event|Public|BlueprintEvent 
+	// void UpdateSwimmingYaw();                                                                                             // [0x6497fb4] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdateRidingMovePlayRate
-	// void UpdateRidingMovePlayRate();                                                                                      // [0xa76e884] Native|Event|Public|BlueprintEvent 
+	// void UpdateRidingMovePlayRate();                                                                                      // [0xa7672f8] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdatePlayLandAdditive
-	// void UpdatePlayLandAdditive();                                                                                        // [0xa76e86c] Native|Event|Public|BlueprintEvent 
+	// void UpdatePlayLandAdditive();                                                                                        // [0xa7672e0] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdateFootPhaseStop
-	// void UpdateFootPhaseStop();                                                                                           // [0x6453f00] Native|Event|Public|BlueprintEvent 
+	// void UpdateFootPhaseStop();                                                                                           // [0x649d19c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdateBoostPlayRate
-	// void UpdateBoostPlayRate();                                                                                           // [0xa76e6cc] Native|Event|Public|BlueprintEvent 
+	// void UpdateBoostPlayRate();                                                                                           // [0xa767140] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdateBodyRoll
-	// void UpdateBodyRoll();                                                                                                // [0x644ed00] Native|Event|Public|BlueprintEvent 
+	// void UpdateBodyRoll();                                                                                                // [0x6497f9c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdateBackwardVelocity
-	// void UpdateBackwardVelocity();                                                                                        // [0xa76e688] Native|Event|Public|BlueprintEvent 
+	// void UpdateBackwardVelocity();                                                                                        // [0xa7670fc] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.UpdateBackwardsPlayRate
-	// void UpdateBackwardsPlayRate();                                                                                       // [0x644ecd0] Native|Event|Public|BlueprintEvent 
+	// void UpdateBackwardsPlayRate();                                                                                       // [0x6497f6c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.FinishFootPhaseStopUpdate
-	// void FinishFootPhaseStopUpdate();                                                                                     // [0x644e9c0] Native|Event|Public|BlueprintEvent 
+	// void FinishFootPhaseStopUpdate();                                                                                     // [0x6497c5c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance.CalculateLookAtAlpha
-	// void CalculateLookAtAlpha(bool bForceDisableLookAt, float DeltaSeconds);                                              // [0xa76e490] Final|Native|Public|BlueprintCallable 
+	// void CalculateLookAtAlpha(bool bForceDisableLookAt, float DeltaSeconds);                                              // [0xa766f04] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/IrwinRuntime.FortAIFaunaAnimInstance_Burt
@@ -308,39 +308,39 @@ public:
 
 	/// Functions
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateStateVariables
-	// void UpdateStateVariables(bool bAccelerating);                                                                        // [0xa76e8c4] Final|Native|Public|BlueprintCallable 
+	// void UpdateStateVariables(bool bAccelerating);                                                                        // [0xa767338] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateShouldPlayFullBodyInPlace
-	// void UpdateShouldPlayFullBodyInPlace();                                                                               // [0xa76e89c] Final|Native|Public|BlueprintCallable 
+	// void UpdateShouldPlayFullBodyInPlace();                                                                               // [0xa767310] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateMovingRates
-	// void UpdateMovingRates();                                                                                             // [0xa76e844] Final|Native|Public|BlueprintCallable 
+	// void UpdateMovingRates();                                                                                             // [0xa7672b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateMeshScale
-	// void UpdateMeshScale();                                                                                               // [0xa76e820] Final|Native|Public|BlueprintCallable 
+	// void UpdateMeshScale();                                                                                               // [0xa767294] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateLocomotionPoseAlpha
-	// void UpdateLocomotionPoseAlpha();                                                                                     // [0xa76e7f4] Final|Native|Public|BlueprintCallable 
+	// void UpdateLocomotionPoseAlpha();                                                                                     // [0xa767268] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateIdleStartTurn
-	// void UpdateIdleStartTurn();                                                                                           // [0xa76e750] Final|Native|Public|BlueprintCallable 
+	// void UpdateIdleStartTurn();                                                                                           // [0xa7671c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateEnableSniffAdditive
-	// void UpdateEnableSniffAdditive();                                                                                     // [0xa76e72c] Final|Native|Public|BlueprintCallable 
+	// void UpdateEnableSniffAdditive();                                                                                     // [0xa7671a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateEnableAlertAdditive
-	// void UpdateEnableAlertAdditive();                                                                                     // [0xa76e6e4] Final|Native|Public|BlueprintCallable 
+	// void UpdateEnableAlertAdditive();                                                                                     // [0xa767158] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.UpdateBlinkAlpha
-	// void UpdateBlinkAlpha();                                                                                              // [0xa76e6a0] Final|Native|Public|BlueprintCallable 
+	// void UpdateBlinkAlpha();                                                                                              // [0xa767114] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.DetermineShouldPlayFullBodyInPlace
-	// bool DetermineShouldPlayFullBodyInPlace();                                                                            // [0xa76e664] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool DetermineShouldPlayFullBodyInPlace();                                                                            // [0xa7670d8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.DetermineIdleStartTurn
-	// bool DetermineIdleStartTurn();                                                                                        // [0xa76e5f8] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool DetermineIdleStartTurn();                                                                                        // [0xa76706c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.DetermineEnableSniffAdditive
-	// bool DetermineEnableSniffAdditive();                                                                                  // [0xa76e5d8] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool DetermineEnableSniffAdditive();                                                                                  // [0xa76704c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.DetermineEnableAlertAdditive
-	// bool DetermineEnableAlertAdditive();                                                                                  // [0xa76e598] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool DetermineEnableAlertAdditive();                                                                                  // [0xa76700c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.CalculateWalkRunPlayRate
-	// float CalculateWalkRunPlayRate();                                                                                     // [0xa76e574] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float CalculateWalkRunPlayRate();                                                                                     // [0xa766fe8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.CalculateMeshScale
-	// float CalculateMeshScale();                                                                                           // [0xa76e554] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float CalculateMeshScale();                                                                                           // [0xa766fc8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.CalculateLocomotionPoseAlpha
-	// float CalculateLocomotionPoseAlpha();                                                                                 // [0xa76e468] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float CalculateLocomotionPoseAlpha();                                                                                 // [0xa766edc] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma.CalculateBlinkAlpha
-	// float CalculateBlinkAlpha();                                                                                          // [0xa76e418] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float CalculateBlinkAlpha();                                                                                          // [0xa766e8c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/IrwinRuntime.FortAIFaunaAnimInstance_Grandma_Hitchhiker
@@ -573,23 +573,23 @@ public:
 
 	/// Functions
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.UpdateStateVariables
-	// void UpdateStateVariables();                                                                                          // [0xa76e944] Final|Native|Public|BlueprintCallable 
+	// void UpdateStateVariables();                                                                                          // [0xa7673b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.UpdateLocomotionPoseAdditiveAlpha
-	// void UpdateLocomotionPoseAdditiveAlpha();                                                                             // [0xa76e7c8] Final|Native|Public|BlueprintCallable 
+	// void UpdateLocomotionPoseAdditiveAlpha();                                                                             // [0xa76723c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.UpdateIsFullBodyInPlace
-	// void UpdateIsFullBodyInPlace();                                                                                       // [0xa76e7a0] Final|Native|Public|BlueprintCallable 
+	// void UpdateIsFullBodyInPlace();                                                                                       // [0xa767214] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.UpdateIdleStartTurn
-	// void UpdateIdleStartTurn();                                                                                           // [0xa76e778] Final|Native|Public|BlueprintCallable 
+	// void UpdateIdleStartTurn();                                                                                           // [0xa7671ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.UpdateEnableHeadTiltDownAdditive
-	// void UpdateEnableHeadTiltDownAdditive();                                                                              // [0xa76e708] Final|Native|Public|BlueprintCallable 
+	// void UpdateEnableHeadTiltDownAdditive();                                                                              // [0xa76717c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.DetermineIsFullBodyInPlace
-	// bool DetermineIsFullBodyInPlace();                                                                                    // [0xa76e640] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool DetermineIsFullBodyInPlace();                                                                                    // [0xa7670b4] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.DetermineIdleStartTurn
-	// bool DetermineIdleStartTurn();                                                                                        // [0xa76e61c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool DetermineIdleStartTurn();                                                                                        // [0xa767090] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.DetermineEnableHeadTiltDownAdditive
-	// bool DetermineEnableHeadTiltDownAdditive();                                                                           // [0xa76e5b8] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool DetermineEnableHeadTiltDownAdditive();                                                                           // [0xa76702c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/IrwinRuntime.FortAIFaunaAnimInstance_Robert.CalculateLocomotionPoseAdditiveAlpha
-	// float CalculateLocomotionPoseAdditiveAlpha();                                                                         // [0xa76e440] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float CalculateLocomotionPoseAdditiveAlpha();                                                                         // [0xa766eb4] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/IrwinRuntime.FortAIFaunaAnimInstance_Smackie

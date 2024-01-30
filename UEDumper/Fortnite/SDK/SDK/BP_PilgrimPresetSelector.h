@@ -21,12 +21,12 @@ public:
 
 	/// Functions
 	// Function /PilgrimCore/BP_PilgrimPresetSelector.BP_PilgrimPresetSelector_C.OnComplete_274EE33944C9AE07DF8BE0B56A5DE4BC
-	// void OnComplete_274EE33944C9AE07DF8BE0B56A5DE4BC(class UUserWidget* UserWidget);                                      // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnComplete_274EE33944C9AE07DF8BE0B56A5DE4BC(class UUserWidget* UserWidget);                                      // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /PilgrimCore/BP_PilgrimPresetSelector.BP_PilgrimPresetSelector_C.DialogResult_4F9481524E7A6435C967A0AEA571B86B
-	// void DialogResult_4F9481524E7A6435C967A0AEA571B86B(EFortDialogResult Result, FName ResultName);                       // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void DialogResult_4F9481524E7A6435C967A0AEA571B86B(EFortDialogResult Result, FName ResultName);                       // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /PilgrimCore/BP_PilgrimPresetSelector.BP_PilgrimPresetSelector_C.OnPresetSelectionRequested
-	// void OnPresetSelectionRequested(class APlayerController* Player);                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPresetSelectionRequested(class APlayerController* Player);                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /PilgrimCore/BP_PilgrimPresetSelector.BP_PilgrimPresetSelector_C.ExecuteUbergraph_BP_PilgrimPresetSelector
-	// void ExecuteUbergraph_BP_PilgrimPresetSelector(int32_t EntryPoint);                                                   // [0x2177018] Final                
+	// void ExecuteUbergraph_BP_PilgrimPresetSelector(int32_t EntryPoint);                                                   // [0x211c0a0] Final                
 };
 

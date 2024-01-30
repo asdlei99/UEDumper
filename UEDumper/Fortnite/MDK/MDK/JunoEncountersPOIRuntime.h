@@ -126,9 +126,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPrefab.OnRep_EncounterShouldBeLoaded
-	// void OnRep_EncounterShouldBeLoaded();                                                                                    // [0x88882e8] Final|Native|Private 
+	// void OnRep_EncounterShouldBeLoaded();                                                                                    // [0x88ae94c] Final|Native|Private 
 	// Function /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPrefab.OnRep_EncounterInitialized
-	// void OnRep_EncounterInitialized();                                                                                       // [0xbd815e8] Final|Native|Private 
+	// void OnRep_EncounterInitialized();                                                                                       // [0xbd39ed0] Final|Native|Private 
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterSpawner

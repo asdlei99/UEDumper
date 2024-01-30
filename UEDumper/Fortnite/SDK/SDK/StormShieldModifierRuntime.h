@@ -62,20 +62,20 @@ public:
 
 	/// Functions
 	// Function /Script/StormShieldModifierRuntime.FortAthenaMutator_SplitStorm.UpdateProxyCenterAndRadius
-	// void UpdateProxyCenterAndRadius();                                                                                    // [0x32e6c74] Final|Native|Private 
+	// void UpdateProxyCenterAndRadius();                                                                                    // [0x32e4b44] Final|Native|Private 
 	// Function /Script/StormShieldModifierRuntime.FortAthenaMutator_SplitStorm.StartProxyUpdateTimer
-	// void StartProxyUpdateTimer();                                                                                         // [0x32e6c74] Final|Native|Private 
+	// void StartProxyUpdateTimer();                                                                                         // [0x32e4b44] Final|Native|Private 
 	// Function /Script/StormShieldModifierRuntime.FortAthenaMutator_SplitStorm.SetSafeZoneProxyPhase
-	// void SetSafeZoneProxyPhase(ESplitStormProxyPhase NewPhase);                                                           // [0x80ccad8] Final|Native|Protected|BlueprintCallable 
+	// void SetSafeZoneProxyPhase(ESplitStormProxyPhase NewPhase);                                                           // [0x8106064] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/StormShieldModifierRuntime.FortAthenaMutator_SplitStorm.SetProxyRadius
-	// void SetProxyRadius(float NewRadius);                                                                                 // [0xb447920] Native|Event|Protected|BlueprintEvent 
+	// void SetProxyRadius(float NewRadius);                                                                                 // [0xb41d910] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/StormShieldModifierRuntime.FortAthenaMutator_SplitStorm.SetProxyCenter
-	// void SetProxyCenter(FVector NewCenter);                                                                               // [0xb4477dc] Native|Event|Protected|HasDefaults|BlueprintEvent 
+	// void SetProxyCenter(FVector NewCenter);                                                                               // [0xb41d7cc] Native|Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/StormShieldModifierRuntime.FortAthenaMutator_SplitStorm.OnSafeZonePhaseChanged
-	// void OnSafeZonePhaseChanged();                                                                                        // [0x32e6c74] Final|Native|Private 
+	// void OnSafeZonePhaseChanged();                                                                                        // [0x32e4b44] Final|Native|Private 
 	// Function /Script/StormShieldModifierRuntime.FortAthenaMutator_SplitStorm.OnSafeZoneIndicatorSpawned
-	// void OnSafeZoneIndicatorSpawned(FFortSafeZoneIndicatorUpdatedEvent& Event);                                           // [0x80ccb3c] Final|Native|Private|HasOutParms 
+	// void OnSafeZoneIndicatorSpawned(FFortSafeZoneIndicatorUpdatedEvent& Event);                                           // [0x81060c8] Final|Native|Private|HasOutParms 
 	// Function /Script/StormShieldModifierRuntime.FortAthenaMutator_SplitStorm.OnRep_CurrentProxyCircle
-	// void OnRep_CurrentProxyCircle();                                                                                      // [0xb447748] Final|Native|Private 
+	// void OnRep_CurrentProxyCircle();                                                                                      // [0xb41d738] Final|Native|Private 
 };
 

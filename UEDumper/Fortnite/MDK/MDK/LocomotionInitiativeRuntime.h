@@ -35,7 +35,7 @@ public:
 
 	/// Functions
 	// Function /Script/LocomotionInitiativeRuntime.FortLocomotionLayerMaskDataAsset.ApplyTo
-	// void ApplyTo(FFortLocomotionLayerMaskDataSet& DataAsset);                                                                // [0xb25db08] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void ApplyTo(FFortLocomotionLayerMaskDataSet& DataAsset);                                                                // [0xb23e2bc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingAnimInstance
@@ -50,7 +50,7 @@ public:
 
 	/// Functions
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingAnimInstance.GetProceduralLayeringAnimInstance
-	// class UAnimInstance* GetProceduralLayeringAnimInstance();                                                                // [0xb25db9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAnimInstance* GetProceduralLayeringAnimInstance();                                                                // [0xb23e350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance
@@ -128,11 +128,11 @@ public:
 
 	/// Functions
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.OnUpdateMotionMatchingState
-	// void OnUpdateMotionMatchingState(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                 // [0x1a04b6c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnUpdateMotionMatchingState(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                 // [0x17ce51c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.OnUpdateMotionMatching
-	// void OnUpdateMotionMatching(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                      // [0x1a03ce4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnUpdateMotionMatching(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                      // [0x17d10e0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.GetMotionMatchingBlendProfile
-	// class UBlendProfile* GetMotionMatchingBlendProfile();                                                                    // [0x2827428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UBlendProfile* GetMotionMatchingBlendProfile();                                                                    // [0x28a8f98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/LocomotionInitiativeRuntime.LocomotionInitiativeComponent

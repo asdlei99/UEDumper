@@ -26,25 +26,25 @@ public:
 
 	/// Functions
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnVehicleStateChanged
-	// void OnVehicleStateChanged(ENevadaFlightStates VehicleState);                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnVehicleStateChanged(ENevadaFlightStates VehicleState);                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnTractorBeamEnabledChanged
-	// void OnTractorBeamEnabledChanged(bool bEnabled);                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamEnabledChanged(bool bEnabled);                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnTractorBeamDetached
-	// void OnTractorBeamDetached();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamDetached();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnTractorBeamDeactivated
-	// void OnTractorBeamDeactivated(float Cooldown);                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamDeactivated(float Cooldown);                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnTractorBeamChargeStarted
-	// void OnTractorBeamChargeStarted();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamChargeStarted();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnTractorBeamAttached
-	// void OnTractorBeamAttached();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamAttached();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnTractorBeamActivated
-	// void OnTractorBeamActivated();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamActivated();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnEnergyCanonFired
-	// void OnEnergyCanonFired(float Cooldown);                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnergyCanonFired(float Cooldown);                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnEnergyCannonEnabledChanged
-	// void OnEnergyCannonEnabledChanged(bool bEnabled);                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnergyCannonEnabledChanged(bool bEnabled);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.FortNevadaVehicleReticle.OnBatteryChanged
-	// void OnBatteryChanged(float BatteryLevel);                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBatteryChanged(float BatteryLevel);                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/NevadaUI.NevadaTargetIndicator
@@ -56,8 +56,8 @@ public:
 
 	/// Functions
 	// Function /Script/NevadaUI.NevadaTargetIndicator.OnTractorBeamAttached
-	// void OnTractorBeamAttached(bool bAttached);                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamAttached(bool bAttached);                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaUI.NevadaTargetIndicator.OnTractorBeamActivated
-	// void OnTractorBeamActivated(bool bActivated);                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamActivated(bool bActivated);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 

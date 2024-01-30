@@ -182,71 +182,71 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.SetTrackTypeTagAtIndex
-	// void SetTrackTypeTagAtIndex(int32_t SplineIndex, FGameplayTag& tag);                                                  // [0xb6d5484] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetTrackTypeTagAtIndex(int32_t SplineIndex, FGameplayTag& tag);                                                  // [0xb6a96f8] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.RebuildTrack
-	// void RebuildTrack();                                                                                                  // [0xb6d5470] Final|Native|Public  
+	// void RebuildTrack();                                                                                                  // [0xb6a96e4] Final|Native|Public  
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.PreSplineSegmentGenerated
-	// void PreSplineSegmentGenerated(class UDelMarTrackSplineComponent* SplineComp, int32_t PointIndex);                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void PreSplineSegmentGenerated(class UDelMarTrackSplineComponent* SplineComp, int32_t PointIndex);                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.PostSplineSegmentGenerated
-	// void PostSplineSegmentGenerated(class UDelMarTrackSplineComponent* SplineComp, int32_t PointIndex);                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void PostSplineSegmentGenerated(class UDelMarTrackSplineComponent* SplineComp, int32_t PointIndex);                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.OnSplinePointRemoved
-	// void OnSplinePointRemoved(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                          // [0xb6d53ac] Final|Native|Protected 
+	// void OnSplinePointRemoved(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                          // [0xb6a9620] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.OnSplinePointChanged
-	// void OnSplinePointChanged(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                          // [0xb6d52e8] Final|Native|Protected 
+	// void OnSplinePointChanged(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                          // [0xb6a955c] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.OnSplinePointAdded
-	// void OnSplinePointAdded(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                            // [0xb6d5224] Final|Native|Protected 
+	// void OnSplinePointAdded(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                            // [0xb6a9498] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.OnSplineClosedLoopChanged
-	// void OnSplineClosedLoopChanged(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                     // [0xb6d5160] Final|Native|Protected 
+	// void OnSplineClosedLoopChanged(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                     // [0xb6a93d4] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.OnMetadataChanged
-	// void OnMetadataChanged(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                             // [0xb6d509c] Final|Native|Protected 
+	// void OnMetadataChanged(class UDelMarTrackSplineComponent* InSpline, int32_t SplineIndex);                             // [0xb6a9310] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.IsTrackable
-	// bool IsTrackable();                                                                                                   // [0xb6d4d1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTrackable();                                                                                                   // [0xb6a8f90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.IsSecondary
-	// bool IsSecondary();                                                                                                   // [0xb6d4c00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSecondary();                                                                                                   // [0xb6a8e74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.IsPrimary
-	// bool IsPrimary();                                                                                                     // [0xb6d4bdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPrimary();                                                                                                     // [0xb6a8e50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.IsPointInOOBTube
-	// bool IsPointInOOBTube(FVector& Point);                                                                                // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool IsPointInOOBTube(FVector& Point);                                                                                // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.IsDistanceWithinRange
-	// bool IsDistanceWithinRange(float InDistance, float StartDistance, float EndDistance);                                 // [0xb6d4adc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDistanceWithinRange(float InDistance, float StartDistance, float EndDistance);                                 // [0xb6a8d50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.IsCosmetic
-	// bool IsCosmetic();                                                                                                    // [0xb6d4ab8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCosmetic();                                                                                                    // [0xb6a8d2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.InitializeSpline
-	// void InitializeSpline();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void InitializeSpline();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetTransitionSegmentClass
-	// class UClass* GetTransitionSegmentClass(int32_t FromSplineIndex, int32_t ToSplineIndex);                              // [0xb6d48e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetTransitionSegmentClass(int32_t FromSplineIndex, int32_t ToSplineIndex);                              // [0xb6a8b5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetStartCapClass
-	// class UClass* GetStartCapClass(int32_t SplineIndex);                                                                  // [0xb6d485c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetStartCapClass(int32_t SplineIndex);                                                                  // [0xb6a8ad0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetSegmentTrackTypeTag
-	// FGameplayTag GetSegmentTrackTypeTag(int32_t SplineIndex);                                                             // [0xb6d4734] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetSegmentTrackTypeTag(int32_t SplineIndex);                                                             // [0xb6a89a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetSegmentClassAtSplinePoint
-	// class UClass* GetSegmentClassAtSplinePoint(int32_t SplineIndex);                                                      // [0xb6d46a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetSegmentClassAtSplinePoint(int32_t SplineIndex);                                                      // [0xb6a891c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetPreviousSplineSegment
-	// int32_t GetPreviousSplineSegment(int32_t InSplineSegmentIndex);                                                       // [0xb6d4534] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPreviousSplineSegment(int32_t InSplineSegmentIndex);                                                       // [0xb6a87a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetPreviousSplinePoint
-	// int32_t GetPreviousSplinePoint(int32_t InSplinePoint);                                                                // [0xb6d4534] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPreviousSplinePoint(int32_t InSplinePoint);                                                                // [0xb6a87a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetNextSplineSegment
-	// int32_t GetNextSplineSegment(int32_t InSplineSegmentIndex);                                                           // [0xb6d4474] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNextSplineSegment(int32_t InSplineSegmentIndex);                                                           // [0xb6a86e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetNextSplinePoint
-	// int32_t GetNextSplinePoint(int32_t InSplinePoint);                                                                    // [0xb6d43e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNextSplinePoint(int32_t InSplinePoint);                                                                    // [0xb6a8658] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetMetaDataAtSplinePoint
-	// FDelMarSplinePointMetaData GetMetaDataAtSplinePoint(int32_t SplineIndex);                                             // [0xb6d4350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDelMarSplinePointMetaData GetMetaDataAtSplinePoint(int32_t SplineIndex);                                             // [0xb6a85c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetLoopDistance
-	// float GetLoopDistance(float InTotalDistance);                                                                         // [0xb6d42bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLoopDistance(float InTotalDistance);                                                                         // [0xb6a8530] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetForwardDistance
-	// float GetForwardDistance(float Start, float End);                                                                     // [0xb6d41f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetForwardDistance(float Start, float End);                                                                     // [0xb6a8464] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetEndCapClass
-	// class UClass* GetEndCapClass(int32_t SplineIndex);                                                                    // [0xb6d4164] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetEndCapClass(int32_t SplineIndex);                                                                    // [0xb6a83d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetDistanceRangeFromPointRange
-	// FDelMarTrackPointDistanceRange GetDistanceRangeFromPointRange(FDelMarTrackPointIndexRange& InRange);                  // [0xb6d40cc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FDelMarTrackPointDistanceRange GetDistanceRangeFromPointRange(FDelMarTrackPointIndexRange& InRange);                  // [0xb6a8340] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.GetAllTrackSegmentActors
-	// TArray<ADelMarTrackSegmentBase*> GetAllTrackSegmentActors();                                                          // [0xb6d3a18] Final|Native|Public|BlueprintCallable 
+	// TArray<ADelMarTrackSegmentBase*> GetAllTrackSegmentActors();                                                          // [0xb6a7c8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.ForceValidTrack
-	// bool ForceValidTrack();                                                                                               // [0xb6d3a00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ForceValidTrack();                                                                                               // [0xb6a7c74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.ForceValidOOBTube
-	// bool ForceValidOOBTube();                                                                                             // [0x9f6c284] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ForceValidOOBTube();                                                                                             // [0x9f6d404] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBase.ConvertTrackTagsToV2
-	// void ConvertTrackTagsToV2();                                                                                          // [0xb6d3924] Final|Native|Public  
+	// void ConvertTrackTagsToV2();                                                                                          // [0xb6a7b98] Final|Native|Public  
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrack
@@ -273,23 +273,23 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.SplitTrackAtPoint
-	// bool SplitTrackAtPoint(int32_t SplitAtPoint);                                                                         // [0xb6d55b4] Final|Native|Public|BlueprintCallable 
+	// bool SplitTrackAtPoint(int32_t SplitAtPoint);                                                                         // [0xb6a9828] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.MergeTrack
-	// bool MergeTrack(class ADelMarTrack* OtherTrack, bool MergeToEndPoint, bool CopyFromStartPoint);                       // [0xb6d4d40] Final|Native|Public|BlueprintCallable 
+	// bool MergeTrack(class ADelMarTrack* OtherTrack, bool MergeToEndPoint, bool CopyFromStartPoint);                       // [0xb6a8fb4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.GetSecondaryStartTrack
-	// class ADelMarTrack* GetSecondaryStartTrack();                                                                         // [0xb6d4690] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarTrack* GetSecondaryStartTrack();                                                                         // [0xb6a8904] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.GetSecondaryEndTrack
-	// class ADelMarTrack* GetSecondaryEndTrack();                                                                           // [0x3f2fdac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarTrack* GetSecondaryEndTrack();                                                                           // [0x3f21d5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.GetPrimaryStartDistance
-	// float GetPrimaryStartDistance();                                                                                      // [0x65ad8c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPrimaryStartDistance();                                                                                      // [0x65f6c04] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.GetPrimaryEndDistance
-	// float GetPrimaryEndDistance();                                                                                        // [0xb6d4678] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPrimaryEndDistance();                                                                                        // [0xb6a88ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.GetPrimaryDistance
-	// float GetPrimaryDistance(float DistanceOnThisTrack);                                                                  // [0xb6d45c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPrimaryDistance(float DistanceOnThisTrack);                                                                  // [0xb6a8838] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.GetParentStartDistance
-	// float GetParentStartDistance();                                                                                       // [0xb6d451c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetParentStartDistance();                                                                                       // [0xb6a8790] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrack.GetParentEndDistance
-	// float GetParentEndDistance();                                                                                         // [0xb6d4504] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetParentEndDistance();                                                                                         // [0xb6a8778] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrackBlueprintFunctionLibrary
@@ -301,9 +301,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBlueprintFunctionLibrary.TrackPositionDebugDrawEnabled
-	// bool TrackPositionDebugDrawEnabled();                                                                                 // [0xb6d5640] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool TrackPositionDebugDrawEnabled();                                                                                 // [0xb6a98b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackBlueprintFunctionLibrary.IsTrackRadiusCheckDisabled
-	// bool IsTrackRadiusCheckDisabled();                                                                                    // [0xb6d4d00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsTrackRadiusCheckDisabled();                                                                                    // [0xb6a8f74] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrackCustomizationInterface
@@ -332,11 +332,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSegmentBase.GetSplineMeshComponent
-	// class USplineMeshComponent* GetSplineMeshComponent();                                                                 // [0x15feb98] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class USplineMeshComponent* GetSplineMeshComponent();                                                                 // [0x1699b90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSegmentBase.GetSplineDistanceRange
-	// FDelMarTrackPointDistanceRange GetSplineDistanceRange();                                                              // [0xb6df3e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDelMarTrackPointDistanceRange GetSplineDistanceRange();                                                              // [0xb6b365c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSegmentBase.ContainsDistanceAlongSpline
-	// bool ContainsDistanceAlongSpline(float DistanceAlongSpline);                                                          // [0xb6df230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ContainsDistanceAlongSpline(float DistanceAlongSpline);                                                          // [0xb6b34a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrackCustomSegment
@@ -420,27 +420,27 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.OnPostContructedOOBTube
-	// void OnPostContructedOOBTube();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPostContructedOOBTube();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.OnConstructTubeMesh
-	// void OnConstructTubeMesh(class USplineMeshComponent* TubeMeshComponent, bool bIsTransitionMesh, bool bIsTransitionIn); // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnConstructTubeMesh(class USplineMeshComponent* TubeMeshComponent, bool bIsTransitionMesh, bool bIsTransitionIn); // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.OnAttachedTrackPointRemoved
-	// void OnAttachedTrackPointRemoved(class UDelMarTrackSplineComponent* InSpline, int32_t PointIndex);                    // [0xb6d4fd8] Final|Native|Private 
+	// void OnAttachedTrackPointRemoved(class UDelMarTrackSplineComponent* InSpline, int32_t PointIndex);                    // [0xb6a924c] Final|Native|Private 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.OnAttachedTrackPointChanged
-	// void OnAttachedTrackPointChanged(class UDelMarTrackSplineComponent* InSpline, int32_t PointIndex);                    // [0xb6d4f14] Final|Native|Private 
+	// void OnAttachedTrackPointChanged(class UDelMarTrackSplineComponent* InSpline, int32_t PointIndex);                    // [0xb6a9188] Final|Native|Private 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.OnAttachedTrackPointAdded
-	// void OnAttachedTrackPointAdded(class UDelMarTrackSplineComponent* InSpline, int32_t PointIndex);                      // [0xb6d4e50] Final|Native|Private 
+	// void OnAttachedTrackPointAdded(class UDelMarTrackSplineComponent* InSpline, int32_t PointIndex);                      // [0xb6a90c4] Final|Native|Private 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.IsSplinePointOffset
-	// bool IsSplinePointOffset(int32_t PointIndex);                                                                         // [0xb6d4c24] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSplinePointOffset(int32_t PointIndex);                                                                         // [0xb6a8e98] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.IsAttachedToSecondaryTrack
-	// bool IsAttachedToSecondaryTrack();                                                                                    // [0xb6d4a7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAttachedToSecondaryTrack();                                                                                    // [0xb6a8cf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.IsAttachedToPrimaryTrack
-	// bool IsAttachedToPrimaryTrack();                                                                                      // [0xb6d4a38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAttachedToPrimaryTrack();                                                                                      // [0xb6a8cac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.HasTubeMeshAtDistance
-	// bool HasTubeMeshAtDistance(float InDistance);                                                                         // [0xb6d49a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasTubeMeshAtDistance(float InDistance);                                                                         // [0xb6a8c1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.GetSplinePointTagAtIndex
-	// FGameplayTag GetSplinePointTagAtIndex(int32_t PointIndex);                                                            // [0xb6d47c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetSplinePointTagAtIndex(int32_t PointIndex);                                                            // [0xb6a8a38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTube.DetermineTubeMeshTransitionType
-	// EDelMarTrackOobTubeTransitionType DetermineTubeMeshTransitionType(int32_t CurrentPointIndex, int32_t NextPointIndex); // [0xb6d3938] Native|Event|Protected|BlueprintEvent|Const 
+	// EDelMarTrackOobTubeTransitionType DetermineTubeMeshTransitionType(int32_t CurrentPointIndex, int32_t NextPointIndex); // [0xb6a7bac] Native|Event|Protected|BlueprintEvent|Const 
 };
 
 /// Struct /Script/DelMarTrackRuntime.DelMarTrackOobTubePointMetaData
@@ -487,23 +487,23 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetSplineVisualizationOffset
-	// double GetSplineVisualizationOffset();                                                                                // [0xb6df4c0] Native|Event|Public|BlueprintEvent|Const 
+	// double GetSplineVisualizationOffset();                                                                                // [0xb6b3734] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetSplineMetadata
-	// FDelMarTrackOobTubePointMetaData GetSplineMetadata(int32_t PointIndex);                                               // [0xb6df410] Native|Event|Public|BlueprintEvent|Const 
+	// FDelMarTrackOobTubePointMetaData GetSplineMetadata(int32_t PointIndex);                                               // [0xb6b3684] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetSplineComponent
-	// class USplineComponent* GetSplineComponent();                                                                         // [0x65ad8a0] Native|Event|Public|BlueprintEvent|Const 
+	// class USplineComponent* GetSplineComponent();                                                                         // [0x65f6bdc] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetSmallestSubsectionLength
-	// double GetSmallestSubsectionLength();                                                                                 // [0xb6df3bc] Native|Event|Public|BlueprintEvent|Const 
+	// double GetSmallestSubsectionLength();                                                                                 // [0xb6b3630] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetOobTubeActor
-	// class AActor* GetOobTubeActor();                                                                                      // [0x7d99ed8] Native|Event|Public|BlueprintEvent|Const 
+	// class AActor* GetOobTubeActor();                                                                                      // [0x7dd37d8] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetMinimumMeshScale
-	// double GetMinimumMeshScale();                                                                                         // [0xb6df2fc] Native|Event|Public|BlueprintEvent|Const 
+	// double GetMinimumMeshScale();                                                                                         // [0xb6b3570] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetDefaultTransitionMeshLength
-	// double GetDefaultTransitionMeshLength();                                                                              // [0xb6df2d0] Native|Event|Public|BlueprintEvent|Const 
+	// double GetDefaultTransitionMeshLength();                                                                              // [0xb6b3544] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetDefaultSubsectionCount
-	// int32_t GetDefaultSubsectionCount();                                                                                  // [0x636e828] Native|Event|Public|BlueprintEvent|Const 
+	// int32_t GetDefaultSubsectionCount();                                                                                  // [0x63b8f78] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeProxy.GetAttachedTrack
-	// class ADelMarTrack* GetAttachedTrack();                                                                               // [0x2e5a158] Native|Event|Public|BlueprintEvent|Const 
+	// class ADelMarTrack* GetAttachedTrack();                                                                               // [0x2e4f8bc] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrackOobTubeCollectionProxy
@@ -516,11 +516,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeCollectionProxy.RegisterOobTube
-	// void RegisterOobTube(class AActor* OobTubeActor);                                                                     // [0xa61cef4] Native|Event|Public|BlueprintEvent 
+	// void RegisterOobTube(class AActor* OobTubeActor);                                                                     // [0xa615968] Native|Event|Public|BlueprintEvent 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeCollectionProxy.GetOobTubeProxy
-	// class UDelMarTrackOobTubeProxy* GetOobTubeProxy(int32_t OobTubeIndex);                                                // [0xb6df328] Native|Event|Public|BlueprintEvent 
+	// class UDelMarTrackOobTubeProxy* GetOobTubeProxy(int32_t OobTubeIndex);                                                // [0xb6b359c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackOobTubeCollectionProxy.GetNumOobTubeProxies
-	// int32_t GetNumOobTubeProxies();                                                                                       // [0x6358b48] Native|Event|Public|BlueprintEvent|Const 
+	// int32_t GetNumOobTubeProxies();                                                                                       // [0x63a3298] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Struct /Script/DelMarTrackRuntime.DelMarTrackPaletteTrackTypeEntry
@@ -550,7 +550,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPaletteTrackType.AddSegmentClassActorToStyle
-	// void AddSegmentClassActorToStyle(FGameplayTag& StyleTag, class UClass* SegmentClass);                                 // [0xb6df0dc] Final|Native|Private|HasOutParms|BlueprintCallable 
+	// void AddSegmentClassActorToStyle(FGameplayTag& StyleTag, class UClass* SegmentClass);                                 // [0xb6b3350] Final|Native|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/DelMarTrackRuntime.DelMarTrackPaletteTransitionEntry_v2
@@ -617,21 +617,21 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPerformanceScrubber.UpdateSplines
-	// TArray<FString> UpdateSplines();                                                                                      // [0xb6df658] Final|Native|Protected|BlueprintCallable 
+	// TArray<FString> UpdateSplines();                                                                                      // [0xb6b38cc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPerformanceScrubber.TimelineTickFloatCallback
-	// void TimelineTickFloatCallback(float Progress);                                                                       // [0xb6df5d8] Final|Native|Protected 
+	// void TimelineTickFloatCallback(float Progress);                                                                       // [0xb6b384c] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPerformanceScrubber.TimelineTickCallback
-	// void TimelineTickCallback();                                                                                          // [0xb6df5b4] Final|Native|Protected 
+	// void TimelineTickCallback();                                                                                          // [0xb6b3828] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPerformanceScrubber.TimelineFinishedCallback
-	// void TimelineFinishedCallback();                                                                                      // [0xb6df57c] Final|Native|Protected 
+	// void TimelineFinishedCallback();                                                                                      // [0xb6b37f0] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPerformanceScrubber.ReceiveRuntimeTrackScrubbingStart
-	// void ReceiveRuntimeTrackScrubbingStart();                                                                             // [0xb6df558] Final|Native|Protected 
+	// void ReceiveRuntimeTrackScrubbingStart();                                                                             // [0xb6b37cc] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPerformanceScrubber.ReceiveRuntimeTrackScrubbingSpeed
-	// void ReceiveRuntimeTrackScrubbingSpeed();                                                                             // [0xb6df4ec] Final|Native|Protected 
+	// void ReceiveRuntimeTrackScrubbingSpeed();                                                                             // [0xb6b3760] Final|Native|Protected 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPerformanceScrubber.ClientStopScrub
-	// void ClientStopScrub();                                                                                               // [0x2bfc0a0] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientStopScrub();                                                                                               // [0x2c35ff0] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPerformanceScrubber.ClientStartScrub
-	// void ClientStartScrub();                                                                                              // [0x1b779b8] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientStartScrub();                                                                                              // [0xf424fc] Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrackRoadProp
@@ -731,49 +731,49 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.SetActiveTrack
-	// void SetActiveTrack(class ADelMarTrackBase* Track, int32_t TrackSegmentIndex, bool bForce);                           // [0xb6f2090] Final|Native|Public|BlueprintCallable 
+	// void SetActiveTrack(class ADelMarTrackBase* Track, int32_t TrackSegmentIndex, bool bForce);                           // [0xb6c6304] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.IsTouchingTrack
-	// bool IsTouchingTrack();                                                                                               // [0x9e9fcc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTouchingTrack();                                                                                               // [0x9ea2a3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.IsOnPrimaryTrack
-	// bool IsOnPrimaryTrack();                                                                                              // [0xb6f2048] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOnPrimaryTrack();                                                                                              // [0xb6c62bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.HasValidPosition
-	// bool HasValidPosition();                                                                                              // [0x606162c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasValidPosition();                                                                                              // [0x60ac8c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetWorldUpVectorAlongSpline
-	// FVector GetWorldUpVectorAlongSpline();                                                                                // [0xb6f1d44] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetWorldUpVectorAlongSpline();                                                                                // [0xb6c5fb8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetWorldTransformAlongSpline
-	// FTransform GetWorldTransformAlongSpline();                                                                            // [0xb6f1cc8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetWorldTransformAlongSpline();                                                                            // [0xb6c5f3c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetWorldRightVectorAlongSpline
-	// FVector GetWorldRightVectorAlongSpline();                                                                             // [0xb6f1c48] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetWorldRightVectorAlongSpline();                                                                             // [0xb6c5ebc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetWorldLocationAlongSpline
-	// FVector GetWorldLocationAlongSpline();                                                                                // [0xb6f1c10] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetWorldLocationAlongSpline();                                                                                // [0xb6c5e84] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetWorldDirectionAlongSpline
-	// FVector GetWorldDirectionAlongSpline();                                                                               // [0xb6f1bd8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetWorldDirectionAlongSpline();                                                                               // [0xb6c5e4c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetTrackRadius
-	// float GetTrackRadius(class ADelMarTrackBase* InTrack, float InDistanceAlongTrack);                                    // [0xb6f1ad0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTrackRadius(class ADelMarTrackBase* InTrack, float InDistanceAlongTrack);                                    // [0xb6c5d44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetRawDistanceAlongSpline
-	// float GetRawDistanceAlongSpline();                                                                                    // [0x914d0d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRawDistanceAlongSpline();                                                                                    // [0x9168a08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetRawClosestSplineLocation
-	// FVector GetRawClosestSplineLocation();                                                                                // [0xb6f14b4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetRawClosestSplineLocation();                                                                                // [0xb6c5728] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetPrimaryWorldLocationAlongSpline
-	// FVector GetPrimaryWorldLocationAlongSpline();                                                                         // [0xb6f147c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetPrimaryWorldLocationAlongSpline();                                                                         // [0xb6c56f0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetPrimaryTrack
-	// class ADelMarTrackBase* GetPrimaryTrack();                                                                            // [0xb6f1458] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarTrackBase* GetPrimaryTrack();                                                                            // [0xb6c56cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetPrimaryDistance
-	// float GetPrimaryDistance();                                                                                           // [0xb6f1430] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPrimaryDistance();                                                                                           // [0xb6c56a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetLastKnowGoodSplineLocation
-	// FVector GetLastKnowGoodSplineLocation();                                                                              // [0xb6f117c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetLastKnowGoodSplineLocation();                                                                              // [0xb6c53f0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetDistanceAlongSpline
-	// float GetDistanceAlongSpline();                                                                                       // [0x9d9f934] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDistanceAlongSpline();                                                                                       // [0x9da4c34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetActiveTrackRadius
-	// float GetActiveTrackRadius();                                                                                         // [0xb6f108c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActiveTrackRadius();                                                                                         // [0xb6c5300] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetActiveTrackPosition
-	// FTrackPosition GetActiveTrackPosition();                                                                              // [0xb6f1028] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FTrackPosition GetActiveTrackPosition();                                                                              // [0xb6c529c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetActiveTrackDistance
-	// float GetActiveTrackDistance();                                                                                       // [0x9d9f934] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActiveTrackDistance();                                                                                       // [0x9da4c34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetActiveTrack
-	// class ADelMarTrackBase* GetActiveTrack();                                                                             // [0x32c6804] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarTrackBase* GetActiveTrack();                                                                             // [0x32c5154] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPositionComponent.GetActiveSegmentIndex
-	// int32_t GetActiveSegmentIndex();                                                                                      // [0xb6f1010] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetActiveSegmentIndex();                                                                                      // [0xb6c5284] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrackVehiclePositionComponent
@@ -850,7 +850,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackPrefabSegment.GetSockets
-	// TArray<FString> GetSockets();                                                                                         // [0xb6f18a0] Final|Native|Private|Const 
+	// TArray<FString> GetSockets();                                                                                         // [0xb6c5b14] Final|Native|Private|Const 
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrackSegmentInterface
@@ -907,45 +907,45 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.IsDistanceWithinRange
-	// bool IsDistanceWithinRange(float InDistance, float StartDistance, float EndDistance);                                 // [0xb6f1f4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDistanceWithinRange(float InDistance, float StartDistance, float EndDistance);                                 // [0xb6c61c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.IsDistanceBehindOtherDistance
-	// bool IsDistanceBehindOtherDistance(float Distance, float DistanceToCheck);                                            // [0xb6f1e88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDistanceBehindOtherDistance(float Distance, float DistanceToCheck);                                            // [0xb6c60fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.IsDistanceAheadOfOtherDistance
-	// bool IsDistanceAheadOfOtherDistance(float Distance, float DistanceToCheck);                                           // [0xb6f1dc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDistanceAheadOfOtherDistance(float Distance, float DistanceToCheck);                                           // [0xb6c6038] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetSplinePointClosestToWorldLocation
-	// int32_t GetSplinePointClosestToWorldLocation(FVector& WorldLocation);                                                 // [0xb6f19fc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSplinePointClosestToWorldLocation(FVector& WorldLocation);                                                 // [0xb6c5c70] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetSplinePointClosestToDistanceAlongSpline
-	// int32_t GetSplinePointClosestToDistanceAlongSpline(float DistanceAlongSpline);                                        // [0xb6f196c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSplinePointClosestToDistanceAlongSpline(float DistanceAlongSpline);                                        // [0xb6c5be0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetSplinePointAtDistanceAlongSpline
-	// int32_t GetSplinePointAtDistanceAlongSpline(float DistanceAlongSpline);                                               // [0xb6f18dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSplinePointAtDistanceAlongSpline(float DistanceAlongSpline);                                               // [0xb6c5b50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetRotationalMinimalUpVectorAtSplinePoint
-	// FVector GetRotationalMinimalUpVectorAtSplinePoint(int32_t SplinePoint, TEnumAsByte<ESplineCoordinateSpace> CoordinateSpace); // [0xb6f17d0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetRotationalMinimalUpVectorAtSplinePoint(int32_t SplinePoint, TEnumAsByte<ESplineCoordinateSpace> CoordinateSpace); // [0xb6c5a44] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetRotationalMinimalUpVectorAtDistanceAlongSpline
-	// FVector GetRotationalMinimalUpVectorAtDistanceAlongSpline(float DistanceAlongSpline, TEnumAsByte<ESplineCoordinateSpace> CoordinateSpace); // [0xb6f15ac] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetRotationalMinimalUpVectorAtDistanceAlongSpline(float DistanceAlongSpline, TEnumAsByte<ESplineCoordinateSpace> CoordinateSpace); // [0xb6c5820] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetRotationalMinimalFrames
-	// TArray<FDelMarRotationalMinimalFrame> GetRotationalMinimalFrames();                                                   // [0xb6f1534] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarRotationalMinimalFrame> GetRotationalMinimalFrames();                                                   // [0xb6c57a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetPreviousSplineSegment
-	// int32_t GetPreviousSplineSegment(int32_t InSplineSegmentIndex);                                                       // [0xb6f13a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPreviousSplineSegment(int32_t InSplineSegmentIndex);                                                       // [0xb6c5618] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetPreviousSplinePoint
-	// int32_t GetPreviousSplinePoint(int32_t InSplinePoint);                                                                // [0xb6f13a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPreviousSplinePoint(int32_t InSplinePoint);                                                                // [0xb6c5618] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetNextSplineSegment
-	// int32_t GetNextSplineSegment(int32_t InSplineSegmentIndex);                                                           // [0xb6f1318] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNextSplineSegment(int32_t InSplineSegmentIndex);                                                           // [0xb6c558c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetNextSplinePoint
-	// int32_t GetNextSplinePoint(int32_t InSplinePoint);                                                                    // [0xb6f128c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNextSplinePoint(int32_t InSplinePoint);                                                                    // [0xb6c5500] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetLoopDistance
-	// float GetLoopDistance(float InTotalDistance);                                                                         // [0xb6f11fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLoopDistance(float InTotalDistance);                                                                         // [0xb6c5470] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.GetForwardDistance
-	// float GetForwardDistance(float Start, float End);                                                                     // [0xb6f10b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetForwardDistance(float Start, float End);                                                                     // [0xb6c5328] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.FindInputKeyForSegmentClosestToWorldPlane
-	// float FindInputKeyForSegmentClosestToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal, int32_t SegmentIndex); // [0xb6f0e14] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// float FindInputKeyForSegmentClosestToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal, int32_t SegmentIndex); // [0xb6c5088] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.FindInputKeyForNeighboringSegmentClosestToWorldPlane
-	// float FindInputKeyForNeighboringSegmentClosestToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal, int32_t SegmentIndex, int32_t& OutClosestSegmentIndex); // [0xb6f0c18] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// float FindInputKeyForNeighboringSegmentClosestToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal, int32_t SegmentIndex, int32_t& OutClosestSegmentIndex); // [0xb6c4e8c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.FindInputKeyClosestToWorldPlane
-	// float FindInputKeyClosestToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal);                          // [0xb6f0ab0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// float FindInputKeyClosestToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal);                          // [0xb6c4d24] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.FindClosestLocationToWorldPlane
-	// FVector FindClosestLocationToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal, TEnumAsByte<ESplineCoordinateSpace> CoordinateSpace); // [0xb6f0884] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector FindClosestLocationToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal, TEnumAsByte<ESplineCoordinateSpace> CoordinateSpace); // [0xb6c4af8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarTrackRuntime.DelMarTrackSplineComponent.FindClosestLocationForSegmentToWorldPlane
-	// FVector FindClosestLocationForSegmentToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal, int32_t SegmentIndex, TEnumAsByte<ESplineCoordinateSpace> CoordinateSpace); // [0xb6f0610] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector FindClosestLocationForSegmentToWorldPlane(FVector& WorldPlaneOrigin, FVector& WorldPlaneNormal, int32_t SegmentIndex, TEnumAsByte<ESplineCoordinateSpace> CoordinateSpace); // [0xb6c4884] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarTrackRuntime.DelMarTrackSplineMeshSegment

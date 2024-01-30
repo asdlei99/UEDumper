@@ -135,33 +135,33 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.StartMobEncounter
-	// bool StartMobEncounter(FGameplayTag& MobIdentifier);                                                                  // [0xb1ba968] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StartMobEncounter(FGameplayTag& MobIdentifier);                                                                  // [0xb19c89c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.ResumeMobEncounter
-	// void ResumeMobEncounter(FGameplayTag& MobIdentifier);                                                                 // [0xb1ba8a0] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResumeMobEncounter(FGameplayTag& MobIdentifier);                                                                 // [0xb19c7d4] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.PauseMobEncounter
-	// void PauseMobEncounter(FGameplayTag& MobIdentifier);                                                                  // [0xb1ba7d8] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void PauseMobEncounter(FGameplayTag& MobIdentifier);                                                                  // [0xb19c70c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobPawnEndPlay
-	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0xb1ba64c] Final|Native|Private 
+	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0xb19c580] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobActorSpawn
-	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                     // [0xb1ba38c] Final|Native|Private 
+	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                     // [0xb19c2c0] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobActorDied
-	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb1b9eb8] Final|Native|Private|HasDefaults 
+	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb19bdec] Final|Native|Private|HasDefaults 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterStarted__DelegateSignature
-	// void OnEncounterStarted__DelegateSignature(FGameplayTag MobIdentifier);                                               // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnEncounterStarted__DelegateSignature(FGameplayTag MobIdentifier);                                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterResumed__DelegateSignature
-	// void OnEncounterResumed__DelegateSignature(FGameplayTag MobIdentifier);                                               // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnEncounterResumed__DelegateSignature(FGameplayTag MobIdentifier);                                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterPaused__DelegateSignature
-	// void OnEncounterPaused__DelegateSignature(FGameplayTag MobIdentifier);                                                // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnEncounterPaused__DelegateSignature(FGameplayTag MobIdentifier);                                                // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterEnded__DelegateSignature
-	// void OnEncounterEnded__DelegateSignature(FGameplayTag MobIdentifier);                                                 // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnEncounterEnded__DelegateSignature(FGameplayTag MobIdentifier);                                                 // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterActorSpawned__DelegateSignature
-	// void OnEncounterActorSpawned__DelegateSignature(FGameplayTag MobIdentifier, class AActor* SpawnedActor);              // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnEncounterActorSpawned__DelegateSignature(FGameplayTag MobIdentifier, class AActor* SpawnedActor);              // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterActorDead__DelegateSignature
-	// void OnEncounterActorDead__DelegateSignature(FGameplayTag MobIdentifier, class AActor* DamagedActor, class AActor* DamageCauser); // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnEncounterActorDead__DelegateSignature(FGameplayTag MobIdentifier, class AActor* DamagedActor, class AActor* DamageCauser); // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.EndMobEncounter
-	// void EndMobEncounter(FGameplayTag& MobIdentifier);                                                                    // [0xb1b9df0] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void EndMobEncounter(FGameplayTag& MobIdentifier);                                                                    // [0xb19bd24] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.EndAndCleanupAllMobEncounters
-	// void EndAndCleanupAllMobEncounters();                                                                                 // [0xb1b9ddc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void EndAndCleanupAllMobEncounters();                                                                                 // [0xb19bd10] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/EncountersRuntime.EncounterWorldConditionSchema
@@ -188,11 +188,11 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobPawnEndPlay
-	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0xb1cd1e8] Final|Native|Public  
+	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0xb1ad9e4] Final|Native|Public  
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobActorSpawn
-	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                     // [0xb1cd064] Final|Native|Public  
+	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                     // [0xb1ad860] Final|Native|Public  
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobActorDied
-	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb1ccaf0] Final|Native|Public|HasDefaults 
+	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb1ad2ec] Final|Native|Public|HasDefaults 
 };
 
 /// Class /Script/EncountersRuntime.SpawnActorTaskHelper
@@ -231,7 +231,7 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterBlueprintLibrary.GetRelevantMobManagerComponentForActor
-	// class UEncounterMobManagerComponent* GetRelevantMobManagerComponentForActor(class AActor* Actor);                     // [0xb1cc05c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UEncounterMobManagerComponent* GetRelevantMobManagerComponentForActor(class AActor* Actor);                     // [0xb1ac858] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/EncountersRuntime.EncounterFactionData
@@ -262,9 +262,9 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterGameplayVolume.OnCleanup
-	// void OnCleanup();                                                                                                     // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnCleanup();                                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/EncountersRuntime.EncounterGameplayVolume.IsDoneCleaningUp
-	// bool IsDoneCleaningUp();                                                                                              // [0xa8070c0] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsDoneCleaningUp();                                                                                              // [0xa7fe16c] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/EncountersRuntime.EncounterItem
@@ -372,37 +372,37 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.SetPersistentValue
-	// void SetPersistentValue(FGameplayTag& Identifier, int32_t Value);                                                     // [0xb1cd3ec] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPersistentValue(FGameplayTag& Identifier, int32_t Value);                                                     // [0xb1adbe8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.RemoveExplicitContributor
-	// void RemoveExplicitContributor(class AFortPlayerController* Contributor);                                             // [0xb1cd354] Final|Native|Public|BlueprintCallable 
+	// void RemoveExplicitContributor(class AFortPlayerController* Contributor);                                             // [0xb1adb50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.OnStateTreeStatusChanged
-	// void OnStateTreeStatusChanged(EStateTreeRunStatus Status);                                                            // [0xb1cd2d4] Final|Native|Private 
+	// void OnStateTreeStatusChanged(EStateTreeRunStatus Status);                                                            // [0xb1adad0] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.HandleEncounterSuccess
-	// void HandleEncounterSuccess(int32_t RewardIndex);                                                                     // [0xb1cca70] Final|Native|Public|BlueprintCallable 
+	// void HandleEncounterSuccess(int32_t RewardIndex);                                                                     // [0xb1ad26c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.HandleEncounterFailure
-	// void HandleEncounterFailure(int32_t RewardIndex);                                                                     // [0xb1cc9f0] Final|Native|Public|BlueprintCallable 
+	// void HandleEncounterFailure(int32_t RewardIndex);                                                                     // [0xb1ad1ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_TagQuery
-	// FGameplayTagQuery GetVariable_TagQuery(FGameplayTag& VarName);                                                        // [0xb1cc8fc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagQuery GetVariable_TagQuery(FGameplayTag& VarName);                                                        // [0xb1ad0f8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_LWMEncounter
-	// class UFortAthenaLivingWorldEncounter* GetVariable_LWMEncounter(FGameplayTag& VarName);                               // [0xb1cc824] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UFortAthenaLivingWorldEncounter* GetVariable_LWMEncounter(FGameplayTag& VarName);                               // [0xb1ad020] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_ItemDefinition
-	// class UFortWorldItemDefinition* GetVariable_ItemDefinition(FGameplayTag& VarName);                                    // [0xb1cc74c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UFortWorldItemDefinition* GetVariable_ItemDefinition(FGameplayTag& VarName);                                    // [0xb1acf48] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Int
-	// int32_t GetVariable_Int(FGameplayTag& VarName);                                                                       // [0xb1cc678] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVariable_Int(FGameplayTag& VarName);                                                                       // [0xb1ace74] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_GameplayTagContainer
-	// FGameplayTagContainer GetVariable_GameplayTagContainer(FGameplayTag& VarName);                                        // [0xb1cc58c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetVariable_GameplayTagContainer(FGameplayTag& VarName);                                        // [0xb1acd88] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_GameplayTag
-	// FGameplayTag GetVariable_GameplayTag(FGameplayTag& VarName);                                                          // [0xb1cc4bc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetVariable_GameplayTag(FGameplayTag& VarName);                                                          // [0xb1accb8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Float
-	// float GetVariable_Float(FGameplayTag& VarName);                                                                       // [0xb1cc3e4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float GetVariable_Float(FGameplayTag& VarName);                                                                       // [0xb1acbe0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Bool
-	// bool GetVariable_Bool(FGameplayTag& VarName);                                                                         // [0xb1cc310] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetVariable_Bool(FGameplayTag& VarName);                                                                         // [0xb1acb0c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_ActorClass
-	// TWeakObjectPtr<UClass*> GetVariable_ActorClass(FGameplayTag& VarName);                                                // [0xb1cc21c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UClass*> GetVariable_ActorClass(FGameplayTag& VarName);                                                // [0xb1aca18] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetPersistentValue
-	// int32_t GetPersistentValue(FGameplayTag& Identifier);                                                                 // [0xb1cbfac] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPersistentValue(FGameplayTag& Identifier);                                                                 // [0xb1ac7a8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.AddExplicitContributor
-	// void AddExplicitContributor(class AFortPlayerController* Contributor);                                                // [0xb1cbf10] Final|Native|Public|BlueprintCallable 
+	// void AddExplicitContributor(class AFortPlayerController* Contributor);                                                // [0xb1ac70c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/EncountersRuntime.EncounterPatrolPathPointProvider
@@ -453,7 +453,7 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.FortCheatManager_Encounters.EncountersDump
-	// void EncountersDump();                                                                                                // [0x32e6c74] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void EncountersDump();                                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Struct /Script/EncountersRuntime.EncounterPrefabInfo
@@ -481,7 +481,7 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.LivingWorldEncounterPrefab.OnRep_EncounterDefinition
-	// void OnRep_EncounterDefinition();                                                                                     // [0x88882e8] Final|Native|Private 
+	// void OnRep_EncounterDefinition();                                                                                     // [0x88ae94c] Final|Native|Private 
 };
 
 /// Class /Script/EncountersRuntime.FortVerbProcessor_EncounterCompleted

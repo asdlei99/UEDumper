@@ -19,7 +19,7 @@ public:
 	TArray<int32_t>                                    BeardPoses;                                                 // 0x0030   (0x0010)  
 	TArray<int32_t>                                    BeardBeanPoses;                                             // 0x0040   (0x0010)  
 	TArray<FTransform>                                 BeardBean;                                                  // 0x0050   (0x0010)  
-	TArray<FTransform>                                 beard;                                                      // 0x0060   (0x0010)  
+	TArray<FTransform>                                 Beard;                                                      // 0x0060   (0x0010)  
 	bool                                               Transform_Beard;                                            // 0x0070   (0x0001)  
 	bool                                               Scale_Bean;                                                 // 0x0071   (0x0001)  
 	bool                                               Transform_Bean;                                             // 0x0072   (0x0001)  

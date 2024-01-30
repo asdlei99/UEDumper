@@ -79,7 +79,7 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.TurnGeneratorInterface.GetTurn
-	// FRotator GetTurn(FRotator TargetOrientation, FMoverTickStartData& FullStartState, FMoverDefaultSyncState& MoverState, FMoverTimeStep& TimeStep, FProposedMove& ProposedMove, class UMoverBlackboard* SimBlackboard); // [0x7fa874c] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// FRotator GetTurn(FRotator TargetOrientation, FMoverTickStartData& FullStartState, FMoverDefaultSyncState& MoverState, FMoverTimeStep& TimeStep, FProposedMove& ProposedMove, class UMoverBlackboard* SimBlackboard); // [0x7fe1d40] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/Mover.LinearTurnGenerator
@@ -129,7 +129,7 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.MoverBasePawn.GetMoverComponent
-	// class UMoverComponent* GetMoverComponent();                                                                           // [0x7fa85ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMoverComponent* GetMoverComponent();                                                                           // [0x7fe1ba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Mover.MoverBlackboard
@@ -149,15 +149,15 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.MoverDataModelBlueprintLibrary.GetVelocityFromSyncState
-	// FVector GetVelocityFromSyncState(FMoverDefaultSyncState& SyncState);                                                  // [0x7fa8b9c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetVelocityFromSyncState(FMoverDefaultSyncState& SyncState);                                                  // [0x7fe2190] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MoverDataModelBlueprintLibrary.GetOrientationFromSyncState
-	// FRotator GetOrientationFromSyncState(FMoverDefaultSyncState& SyncState);                                              // [0x7fa85c4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FRotator GetOrientationFromSyncState(FMoverDefaultSyncState& SyncState);                                              // [0x7fe1bb8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MoverDataModelBlueprintLibrary.GetMoveDirectionIntentFromSyncState
-	// FVector GetMoveDirectionIntentFromSyncState(FMoverDefaultSyncState& SyncState);                                       // [0x7fa8290] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetMoveDirectionIntentFromSyncState(FMoverDefaultSyncState& SyncState);                                       // [0x7fe1884] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MoverDataModelBlueprintLibrary.GetMoveDirectionIntentFromInputs
-	// FVector GetMoveDirectionIntentFromInputs(FKinematicDefaultInputs& Inputs);                                            // [0x7fa81a8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetMoveDirectionIntentFromInputs(FKinematicDefaultInputs& Inputs);                                            // [0x7fe179c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MoverDataModelBlueprintLibrary.GetLocationFromSyncState
-	// FVector GetLocationFromSyncState(FMoverDefaultSyncState& SyncState);                                                  // [0x7fa80f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetLocationFromSyncState(FMoverDefaultSyncState& SyncState);                                                  // [0x7fe16e4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/Mover.MoverDebugComponent
@@ -178,17 +178,17 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.MoverDebugComponent.SetHistoryTracking
-	// void SetHistoryTracking(float SecondsToTrack, float SamplesPerSecond);                                                // [0x7faa9b8] Final|Native|Public|BlueprintCallable 
+	// void SetHistoryTracking(float SecondsToTrack, float SamplesPerSecond);                                                // [0x7fe3fac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Mover.MoverDebugComponent.OnMovementSimTick
-	// void OnMovementSimTick(FMoverTimeStep& TimeStep);                                                                     // [0x7faa138] Final|Native|Private|HasOutParms 
+	// void OnMovementSimTick(FMoverTimeStep& TimeStep);                                                                     // [0x7fe372c] Final|Native|Private|HasOutParms 
 	// Function /Script/Mover.MoverDebugComponent.OnMovementSimRollback
-	// void OnMovementSimRollback(FMoverTimeStep& NewTimeStep, FMoverTimeStep& InvalidatedTimeStep);                         // [0x7faa028] Final|Native|Private|HasOutParms 
+	// void OnMovementSimRollback(FMoverTimeStep& NewTimeStep, FMoverTimeStep& InvalidatedTimeStep);                         // [0x7fe361c] Final|Native|Private|HasOutParms 
 	// Function /Script/Mover.MoverDebugComponent.OnHistoryTrackingRollback
-	// void OnHistoryTrackingRollback(FMoverTimeStep& NewTimeStep, FMoverTimeStep& InvalidatedTimeStep);                     // [0x7fa9f18] Final|Native|Protected|HasOutParms 
+	// void OnHistoryTrackingRollback(FMoverTimeStep& NewTimeStep, FMoverTimeStep& InvalidatedTimeStep);                     // [0x7fe350c] Final|Native|Protected|HasOutParms 
 	// Function /Script/Mover.MoverDebugComponent.GetPastTrajectory
-	// TArray<FTrajectorySampleInfo> GetPastTrajectory();                                                                    // [0x7fa867c] Final|Native|Public|BlueprintCallable|Const 
+	// TArray<FTrajectorySampleInfo> GetPastTrajectory();                                                                    // [0x7fe1c70] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/Mover.MoverDebugComponent.GetFutureTrajectory
-	// TArray<FTrajectorySampleInfo> GetFutureTrajectory(float FutureSeconds, float SamplesPerSecond);                       // [0x7fa7fb0] Final|Native|Public|BlueprintCallable|Const 
+	// TArray<FTrajectorySampleInfo> GetFutureTrajectory(float FutureSeconds, float SamplesPerSecond);                       // [0x7fe15a4] Final|Native|Public|BlueprintCallable|Const 
 };
 
 /// Class /Script/Mover.MoverDeveloperSettings
@@ -225,7 +225,7 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.MoverInputProducerInterface.ProduceInput
-	// void ProduceInput(int32_t SimTimeMs, FMoverInputCmdContext& InputCmdResult);                                          // [0x7faa684] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void ProduceInput(int32_t SimTimeMs, FMoverInputCmdContext& InputCmdResult);                                          // [0x7fe3c78] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/Mover.MoverDataCollectionLibrary
@@ -237,9 +237,9 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.MoverDataCollectionLibrary.K2_GetDataFromCollection
-	// void K2_GetDataFromCollection(bool& DidSucceed, FMoverDataCollection& Collection, int32_t& TargetAsRawBytes);         // [0x7fa96dc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void K2_GetDataFromCollection(bool& DidSucceed, FMoverDataCollection& Collection, int32_t& TargetAsRawBytes);         // [0x7fe2cd0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.MoverDataCollectionLibrary.K2_AddDataToCollection
-	// void K2_AddDataToCollection(FMoverDataCollection& Collection, int32_t& SourceAsRawBytes);                             // [0x7fa9430] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void K2_AddDataToCollection(FMoverDataCollection& Collection, int32_t& SourceAsRawBytes);                             // [0x7fe2a24] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/Mover.PhysicsCharacterMovementModeInterface
@@ -260,19 +260,19 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.BaseMovementMode.K2_OnUnregistered
-	// void K2_OnUnregistered();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_OnUnregistered();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/Mover.BaseMovementMode.K2_OnSimulationTick
-	// FMoverTickEndData K2_OnSimulationTick(FSimulationTickParams& Params);                                                 // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// FMoverTickEndData K2_OnSimulationTick(FSimulationTickParams& Params);                                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/Mover.BaseMovementMode.K2_OnRegistered
-	// void K2_OnRegistered(FName ModeName);                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void K2_OnRegistered(FName ModeName);                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/Mover.BaseMovementMode.K2_OnGenerateMove
-	// FProposedMove K2_OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep);                           // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// FProposedMove K2_OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep);                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/Mover.BaseMovementMode.GetMoverComponent
-	// class UMoverComponent* GetMoverComponent();                                                                           // [0x32b4508] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMoverComponent* GetMoverComponent();                                                                           // [0x32af65c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.BaseMovementMode.GetBlackboard_Mutable
-	// class UMoverBlackboard* GetBlackboard_Mutable();                                                                      // [0x7fa7f90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMoverBlackboard* GetBlackboard_Mutable();                                                                      // [0x7fe1584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.BaseMovementMode.GetBlackboard
-	// class UMoverBlackboard* GetBlackboard();                                                                              // [0x7fa7f90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMoverBlackboard* GetBlackboard();                                                                              // [0x7fe1584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Mover.FallingMode
@@ -294,11 +294,11 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.FallingMode.ProcessLanded
-	// void ProcessLanded(FFloorCheckResult& FloorResult, FVector& Velocity, FRelativeBaseInfo& BaseInfo, FMoverTickEndData& TickEndData); // [0x7faa3f8] Native|Protected|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void ProcessLanded(FFloorCheckResult& FloorResult, FVector& Velocity, FRelativeBaseInfo& BaseInfo, FMoverTickEndData& TickEndData); // [0x7fe39ec] Native|Protected|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.FallingMode.OnSimulationTick
-	// void OnSimulationTick(FSimulationTickParams& Params, FMoverTickEndData& OutputState);                                 // [0x7faa250] Native|Public|HasOutParms|BlueprintCallable 
+	// void OnSimulationTick(FSimulationTickParams& Params, FMoverTickEndData& OutputState);                                 // [0x7fe3844] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.FallingMode.OnGenerateMove
-	// void OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep, FProposedMove& OutProposedMove);       // [0x7fa9da0] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep, FProposedMove& OutProposedMove);       // [0x7fe3394] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Mover.FlyingMode
@@ -311,9 +311,9 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.FlyingMode.OnSimulationTick
-	// void OnSimulationTick(FSimulationTickParams& Params, FMoverTickEndData& OutputState);                                 // [0x7faa250] Native|Public|HasOutParms|BlueprintCallable 
+	// void OnSimulationTick(FSimulationTickParams& Params, FMoverTickEndData& OutputState);                                 // [0x7fe3844] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.FlyingMode.OnGenerateMove
-	// void OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep, FProposedMove& OutProposedMove);       // [0x7fa9da0] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep, FProposedMove& OutProposedMove);       // [0x7fe3394] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Mover.SwimmingMode
@@ -326,9 +326,9 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.SwimmingMode.OnSimulationTick
-	// void OnSimulationTick(FSimulationTickParams& Params, FMoverTickEndData& OutputState);                                 // [0x7faa250] Native|Public|HasOutParms|BlueprintCallable 
+	// void OnSimulationTick(FSimulationTickParams& Params, FMoverTickEndData& OutputState);                                 // [0x7fe3844] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.SwimmingMode.OnGenerateMove
-	// void OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep, FProposedMove& OutProposedMove);       // [0x7fa9da0] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep, FProposedMove& OutProposedMove);       // [0x7fe3394] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Mover.WalkingMode
@@ -342,9 +342,9 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.WalkingMode.OnSimulationTick
-	// void OnSimulationTick(FSimulationTickParams& Params, FMoverTickEndData& OutputState);                                 // [0x7faa250] Native|Public|HasOutParms|BlueprintCallable 
+	// void OnSimulationTick(FSimulationTickParams& Params, FMoverTickEndData& OutputState);                                 // [0x7fe3844] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.WalkingMode.OnGenerateMove
-	// void OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep, FProposedMove& OutProposedMove);       // [0x7fa9da0] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void OnGenerateMove(FMoverTickStartData& StartState, FMoverTimeStep& TimeStep, FProposedMove& OutProposedMove);       // [0x7fe3394] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Mover.MovementBaseUtils
@@ -356,33 +356,33 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.MovementBaseUtils.TransformWorldRotatorToBased
-	// bool TransformWorldRotatorToBased(class UPrimitiveComponent* MovementBase, FName BoneName, FRotator WorldSpaceRotator, FRotator& OutLocalRotator); // [0x7faca88] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool TransformWorldRotatorToBased(class UPrimitiveComponent* MovementBase, FName BoneName, FRotator WorldSpaceRotator, FRotator& OutLocalRotator); // [0x7fe607c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformWorldLocationToBased
-	// bool TransformWorldLocationToBased(class UPrimitiveComponent* MovementBase, FName BoneName, FVector WorldSpaceLocation, FVector& OutLocalLocation); // [0x7fac7f4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool TransformWorldLocationToBased(class UPrimitiveComponent* MovementBase, FName BoneName, FVector WorldSpaceLocation, FVector& OutLocalLocation); // [0x7fe5de8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformWorldDirectionToBased
-	// bool TransformWorldDirectionToBased(class UPrimitiveComponent* MovementBase, FName BoneName, FVector WorldSpaceDirection, FVector& OutLocalDirection); // [0x7fac560] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool TransformWorldDirectionToBased(class UPrimitiveComponent* MovementBase, FName BoneName, FVector WorldSpaceDirection, FVector& OutLocalDirection); // [0x7fe5b54] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformRotatorToWorld
-	// void TransformRotatorToWorld(FQuat BaseQuat, FRotator LocalRotator, FRotator& OutWorldSpaceRotator);                  // [0x7fac298] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void TransformRotatorToWorld(FQuat BaseQuat, FRotator LocalRotator, FRotator& OutWorldSpaceRotator);                  // [0x7fe588c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformRotatorToLocal
-	// void TransformRotatorToLocal(FQuat BaseQuat, FRotator WorldSpaceRotator, FRotator& OutLocalRotator);                  // [0x7fabfd0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void TransformRotatorToLocal(FQuat BaseQuat, FRotator WorldSpaceRotator, FRotator& OutLocalRotator);                  // [0x7fe55c4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformLocationToWorld
-	// void TransformLocationToWorld(FVector BasePos, FQuat BaseQuat, FVector LocalLocation, FVector& OutLocationWorldSpace); // [0x7fabbe4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void TransformLocationToWorld(FVector BasePos, FQuat BaseQuat, FVector LocalLocation, FVector& OutLocationWorldSpace); // [0x7fe51d8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformLocationToLocal
-	// void TransformLocationToLocal(FVector BasePos, FQuat BaseQuat, FVector WorldSpaceLocation, FVector& OutLocalLocation); // [0x7fab7f8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void TransformLocationToLocal(FVector BasePos, FQuat BaseQuat, FVector WorldSpaceLocation, FVector& OutLocalLocation); // [0x7fe4dec] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformDirectionToWorld
-	// void TransformDirectionToWorld(FQuat BaseQuat, FVector LocalDirection, FVector& OutDirectionWorldSpace);              // [0x7fab4f4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void TransformDirectionToWorld(FQuat BaseQuat, FVector LocalDirection, FVector& OutDirectionWorldSpace);              // [0x7fe4ae8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformDirectionToLocal
-	// void TransformDirectionToLocal(FQuat BaseQuat, FVector WorldSpaceDirection, FVector& OutLocalDirection);              // [0x7fab1f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void TransformDirectionToLocal(FQuat BaseQuat, FVector WorldSpaceDirection, FVector& OutLocalDirection);              // [0x7fe47e4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformBasedRotatorToWorld
-	// bool TransformBasedRotatorToWorld(class UPrimitiveComponent* MovementBase, FName BoneName, FRotator LocalRotator, FRotator& OutWorldSpaceRotator); // [0x7faafa4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool TransformBasedRotatorToWorld(class UPrimitiveComponent* MovementBase, FName BoneName, FRotator LocalRotator, FRotator& OutWorldSpaceRotator); // [0x7fe4598] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformBasedLocationToWorld
-	// bool TransformBasedLocationToWorld(class UPrimitiveComponent* MovementBase, FName BoneName, FVector LocalLocation, FVector& OutLocationWorldSpace); // [0x7faad10] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool TransformBasedLocationToWorld(class UPrimitiveComponent* MovementBase, FName BoneName, FVector LocalLocation, FVector& OutLocationWorldSpace); // [0x7fe4304] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.TransformBasedDirectionToWorld
-	// bool TransformBasedDirectionToWorld(class UPrimitiveComponent* MovementBase, FName BoneName, FVector LocalDirection, FVector& OutDirectionWorldSpace); // [0x7faaa7c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool TransformBasedDirectionToWorld(class UPrimitiveComponent* MovementBase, FName BoneName, FVector LocalDirection, FVector& OutDirectionWorldSpace); // [0x7fe4070] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.IsADynamicBase
-	// bool IsADynamicBase(class UPrimitiveComponent* MovementBase);                                                         // [0x7fa8d04] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsADynamicBase(class UPrimitiveComponent* MovementBase);                                                         // [0x7fe22f8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Mover.MovementBaseUtils.GetMovementBaseTransform
-	// bool GetMovementBaseTransform(class UPrimitiveComponent* MovementBase, FName BoneName, FVector& OutLocation, FQuat& OutQuat); // [0x7fa83b4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GetMovementBaseTransform(class UPrimitiveComponent* MovementBase, FName BoneName, FVector& OutLocation, FQuat& OutQuat); // [0x7fe19a8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/Mover.MovementUtils
@@ -394,43 +394,43 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.MovementUtils.TryWalkToSlideAlongSurface
-	// float TryWalkToSlideAlongSurface(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, class UMoverComponent* MoverComponent, FVector& Delta, float PctOfDeltaToMove, FQuat Rotation, FVector& Normal, FHitResult& Hit, bool bHandleImpact, FMovementRecord& MoveRecord, float MaxWalkSlopeCosine); // [0x7faf290] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float TryWalkToSlideAlongSurface(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, class UMoverComponent* MoverComponent, FVector& Delta, float PctOfDeltaToMove, FQuat Rotation, FVector& Normal, FHitResult& Hit, bool bHandleImpact, FMovementRecord& MoveRecord, float MaxWalkSlopeCosine); // [0x7fe8884] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.TrySafeMoveUpdatedComponent
-	// bool TrySafeMoveUpdatedComponent(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, FVector& Delta, FQuat& NewRotation, bool bSweep, FHitResult& OutHit, ETeleportType Teleport, FMovementRecord& MoveRecord); // [0x7fae7e0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool TrySafeMoveUpdatedComponent(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, FVector& Delta, FQuat& NewRotation, bool bSweep, FHitResult& OutHit, ETeleportType Teleport, FMovementRecord& MoveRecord); // [0x7fe7dd4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.TryMoveToSlideAlongSurface
-	// float TryMoveToSlideAlongSurface(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, class UMoverComponent* MoverComponent, FVector& Delta, float PctOfDeltaToMove, FQuat Rotation, FVector& Normal, FHitResult& Hit, bool bHandleImpact, FMovementRecord& MoveRecord); // [0x7fadbd0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float TryMoveToSlideAlongSurface(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, class UMoverComponent* MoverComponent, FVector& Delta, float PctOfDeltaToMove, FQuat Rotation, FVector& Normal, FHitResult& Hit, bool bHandleImpact, FMovementRecord& MoveRecord); // [0x7fe71c4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.TryMoveToFallAlongSurface
-	// float TryMoveToFallAlongSurface(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, class UMoverComponent* MoverComponent, FVector& Delta, float PctOfDeltaToMove, FQuat Rotation, FVector& Normal, FHitResult& Hit, bool bHandleImpact, float FloorSweepDistance, float MaxWalkSlopeCosine, FFloorCheckResult& OutFloorResult, FMovementRecord& MoveRecord); // [0x7facdb8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float TryMoveToFallAlongSurface(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, class UMoverComponent* MoverComponent, FVector& Delta, float PctOfDeltaToMove, FQuat Rotation, FVector& Normal, FHitResult& Hit, bool bHandleImpact, float FloorSweepDistance, float MaxWalkSlopeCosine, FFloorCheckResult& OutFloorResult, FMovementRecord& MoveRecord); // [0x7fe63ac] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.IsValidLandingSpot
-	// bool IsValidLandingSpot(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, FVector& Location, FHitResult& Hit, float FloorSweepDistance, float MaxWalkSlopeCosine, FFloorCheckResult& OutFloorResult); // [0x7fa9100] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool IsValidLandingSpot(class USceneComponent* UpdatedComponent, class UPrimitiveComponent* UpdatedPrimitive, FVector& Location, FHitResult& Hit, float FloorSweepDistance, float MaxWalkSlopeCosine, FFloorCheckResult& OutFloorResult); // [0x7fe26f4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.IsHitSurfaceWalkable
-	// bool IsHitSurfaceWalkable(FHitResult& Hit, float MaxWalkSlopeCosine);                                                 // [0x7fa8f40] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool IsHitSurfaceWalkable(FHitResult& Hit, float MaxWalkSlopeCosine);                                                 // [0x7fe2534] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.IsExceedingMaxSpeed
-	// bool IsExceedingMaxSpeed(FVector& Velocity, float InMaxSpeed);                                                        // [0x7fa8db8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool IsExceedingMaxSpeed(FVector& Velocity, float InMaxSpeed);                                                        // [0x7fe23ac] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ConstrainToPlane
-	// FVector ConstrainToPlane(FVector& Vector, FPlane& MovementPlane, bool bMaintainMagnitude);                            // [0x7fa7a38] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector ConstrainToPlane(FVector& Vector, FPlane& MovementPlane, bool bMaintainMagnitude);                            // [0x7fe102c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeVelocityFromPositions
-	// FVector ComputeVelocityFromPositions(FVector& FromPos, FVector& ToPos, float DeltaSeconds);                           // [0x7fa783c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector ComputeVelocityFromPositions(FVector& FromPos, FVector& ToPos, float DeltaSeconds);                           // [0x7fe0e30] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeVelocityFromGravity
-	// FVector ComputeVelocityFromGravity(FVector& GravityAccel, float DeltaSeconds);                                        // [0x7fa76d4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector ComputeVelocityFromGravity(FVector& GravityAccel, float DeltaSeconds);                                        // [0x7fe0cc8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeVelocity
-	// FVector ComputeVelocity(FComputeVelocityParams& InParams);                                                            // [0x7fa75f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector ComputeVelocity(FComputeVelocityParams& InParams);                                                            // [0x7fe0be4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeSlideDelta
-	// FVector ComputeSlideDelta(FVector& Delta, float PctOfDeltaToMove, FVector& Normal, FHitResult& Hit);                  // [0x7fa738c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector ComputeSlideDelta(FVector& Delta, float PctOfDeltaToMove, FVector& Normal, FHitResult& Hit);                  // [0x7fe0980] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeDirectionIntent
-	// FVector ComputeDirectionIntent(FVector& MoveInput, EMoveInputType MoveInputType);                                     // [0x7fa7224] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector ComputeDirectionIntent(FVector& MoveInput, EMoveInputType MoveInputType);                                     // [0x7fe0818] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeDeflectedMoveOntoRamp
-	// FVector ComputeDeflectedMoveOntoRamp(FVector& OrigMoveDelta, FHitResult& RampHitResult, float MaxWalkSlopeCosine, bool bHitFromLineTrace); // [0x7fa6f8c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector ComputeDeflectedMoveOntoRamp(FVector& OrigMoveDelta, FHitResult& RampHitResult, float MaxWalkSlopeCosine, bool bHitFromLineTrace); // [0x7fe0580] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeControlledGroundMove
-	// FProposedMove ComputeControlledGroundMove(FGroundMoveParams& InParams);                                               // [0x7fa6ea0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FProposedMove ComputeControlledGroundMove(FGroundMoveParams& InParams);                                               // [0x7fe0494] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeControlledFreeMove
-	// FProposedMove ComputeControlledFreeMove(FFreeMoveParams& InParams);                                                   // [0x7fa6db4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FProposedMove ComputeControlledFreeMove(FFreeMoveParams& InParams);                                                   // [0x7fe03a8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.ComputeAngularVelocity
-	// FRotator ComputeAngularVelocity(FRotator& From, FRotator& To, float DeltaSeconds, float TurningRateLimit);            // [0x7fa6bb8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FRotator ComputeAngularVelocity(FRotator& From, FRotator& To, float DeltaSeconds, float TurningRateLimit);            // [0x7fe01ac] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.CanStepUpOnHitSurface
-	// bool CanStepUpOnHitSurface(FHitResult& Hit);                                                                          // [0x7fa6ae4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool CanStepUpOnHitSurface(FHitResult& Hit);                                                                          // [0x7fe00d8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.MovementUtils.CanEscapeGravity
-	// bool CanEscapeGravity(FVector& PriorVelocity, FVector& NewVelocity, FVector& GravityAccel, float DeltaSeconds);       // [0x7fa6880] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool CanEscapeGravity(FVector& PriorVelocity, FVector& NewVelocity, FVector& GravityAccel, float DeltaSeconds);       // [0x7fdfe74] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/Mover.PlayMoverMontageCallbackProxy
@@ -442,9 +442,9 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.PlayMoverMontageCallbackProxy.OnMoverMontageEnded
-	// void OnMoverMontageEnded(FName IgnoredNotifyName);                                                                    // [0x7faa1d4] Final|Native|Protected 
+	// void OnMoverMontageEnded(FName IgnoredNotifyName);                                                                    // [0x7fe37c8] Final|Native|Protected 
 	// Function /Script/Mover.PlayMoverMontageCallbackProxy.CreateProxyObjectForPlayMoverMontage
-	// class UPlayMoverMontageCallbackProxy* CreateProxyObjectForPlayMoverMontage(class UMoverComponent* InMoverComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, FName StartingSection); // [0x7fa7c4c] Final|Native|Static|Public|BlueprintCallable 
+	// class UPlayMoverMontageCallbackProxy* CreateProxyObjectForPlayMoverMontage(class UMoverComponent* InMoverComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, FName StartingSection); // [0x7fe1240] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/Mover.MovementSettingsInterface
@@ -500,57 +500,57 @@ public:
 
 	/// Functions
 	// Function /Script/Mover.MoverComponent.TryGetFloorCheckHitResult
-	// bool TryGetFloorCheckHitResult(FHitResult& OutHitResult);                                                             // [0x7faccd4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetFloorCheckHitResult(FHitResult& OutHitResult);                                                             // [0x7fe62c8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.SetGravityOverride
-	// void SetGravityOverride(bool bOverrideGravity, FVector GravityAcceleration);                                          // [0x7faa838] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetGravityOverride(bool bOverrideGravity, FVector GravityAcceleration);                                          // [0x7fe3e2c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/Mover.MoverComponent.QueueNextMode
-	// void QueueNextMode(FName DesiredModeName, bool bShouldReenter);                                                       // [0x7faa770] Final|Native|Public|BlueprintCallable 
+	// void QueueNextMode(FName DesiredModeName, bool bShouldReenter);                                                       // [0x7fe3d64] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Mover.MoverComponent.PhysicsVolumeChanged
-	// void PhysicsVolumeChanged(class APhysicsVolume* NewVolume);                                                           // [0x7faa374] Native|Protected     
+	// void PhysicsVolumeChanged(class APhysicsVolume* NewVolume);                                                           // [0x7fe3968] Native|Protected     
 	// Function /Script/Mover.MoverComponent.OnBeginOverlap
-	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x7fa9b68] Native|Public|HasOutParms 
+	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x7fe315c] Native|Public|HasOutParms 
 	// Function /Script/Mover.MoverComponent.K2_QueueLayeredMove
-	// void K2_QueueLayeredMove(int32_t& MoveAsRawData);                                                                     // [0x7fa9998] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void K2_QueueLayeredMove(int32_t& MoveAsRawData);                                                                     // [0x7fe2f8c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.MoverComponent.IsSlopeSliding
-	// bool IsSlopeSliding();                                                                                                // [0x7fa90d8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSlopeSliding();                                                                                                // [0x7fe26cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.IsOnGround
-	// bool IsOnGround();                                                                                                    // [0x7fa90b0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOnGround();                                                                                                    // [0x7fe26a4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.IsFalling
-	// bool IsFalling();                                                                                                     // [0x15f8d00] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFalling();                                                                                                     // [0x20c5e38] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.IsAirborne
-	// bool IsAirborne();                                                                                                    // [0x7fa8d90] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAirborne();                                                                                                    // [0x7fe2384] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.HasValidCachedState
-	// bool HasValidCachedState();                                                                                           // [0x7fa8cec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasValidCachedState();                                                                                           // [0x7fe22e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.HasValidCachedInputCmd
-	// bool HasValidCachedInputCmd();                                                                                        // [0x3453084] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasValidCachedInputCmd();                                                                                        // [0x3447584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.HandleImpact
-	// void HandleImpact(FMoverOnImpactParams& ImpactParams);                                                                // [0x7fa8c54] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void HandleImpact(FMoverOnImpactParams& ImpactParams);                                                                // [0x7fe2248] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Mover.MoverComponent.GetVelocity
-	// FVector GetVelocity();                                                                                                // [0x7fa8b64] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetVelocity();                                                                                                // [0x7fe2158] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.GetUpDirection
-	// FVector GetUpDirection();                                                                                             // [0x7fa8b2c] Final|Native|Public|HasDefaults|BlueprintCallable|Const 
+	// FVector GetUpDirection();                                                                                             // [0x7fe2120] Final|Native|Public|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/Mover.MoverComponent.GetTargetOrientation
-	// FRotator GetTargetOrientation();                                                                                      // [0x7fa8714] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRotator GetTargetOrientation();                                                                                      // [0x7fe1d08] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.GetSyncState
-	// FMoverSyncState GetSyncState();                                                                                       // [0x7fa86b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FMoverSyncState GetSyncState();                                                                                       // [0x7fe1cac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.GetMovementModeName
-	// FName GetMovementModeName();                                                                                          // [0x7fa8580] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetMovementModeName();                                                                                          // [0x7fe1b74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.GetMovementIntent
-	// FVector GetMovementIntent();                                                                                          // [0x7fa8548] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetMovementIntent();                                                                                          // [0x7fe1b3c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.GetMovementBaseBoneName
-	// FName GetMovementBaseBoneName();                                                                                      // [0x7fa836c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetMovementBaseBoneName();                                                                                      // [0x7fe1960] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.GetMovementBase
-	// class UPrimitiveComponent* GetMovementBase();                                                                         // [0x7fa8348] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPrimitiveComponent* GetMovementBase();                                                                         // [0x7fe193c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.GetLastInputCmd
-	// FMoverInputCmdContext GetLastInputCmd();                                                                              // [0x7fa80c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FMoverInputCmdContext GetLastInputCmd();                                                                              // [0x7fe16b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.GetGravityAcceleration
-	// FVector GetGravityAcceleration();                                                                                     // [0x7fa808c] Final|Native|Public|HasDefaults|BlueprintCallable|Const 
+	// FVector GetGravityAcceleration();                                                                                     // [0x7fe1680] Final|Native|Public|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/Mover.MoverComponent.FindSharedSettings_Mutable_BP
-	// class UObject* FindSharedSettings_Mutable_BP(class UClass* SharedSetting);                                            // [0x7fa7e84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UObject* FindSharedSettings_Mutable_BP(class UClass* SharedSetting);                                            // [0x7fe1478] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.FindSharedSettings_BP
-	// class UObject* FindSharedSettings_BP(class UClass* SharedSetting);                                                    // [0x7fa7e84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UObject* FindSharedSettings_BP(class UClass* SharedSetting);                                                    // [0x7fe1478] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Mover.MoverComponent.FindMovementMode
-	// class UBaseMovementMode* FindMovementMode(class UClass* MovementMode);                                                // [0x7fa7dc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UBaseMovementMode* FindMovementMode(class UClass* MovementMode);                                                // [0x7fe13bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Mover.PhysicsDrivenFallingMode

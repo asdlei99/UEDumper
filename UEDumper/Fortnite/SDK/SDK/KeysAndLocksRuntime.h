@@ -19,10 +19,10 @@ public:
 
 	/// Functions
 	// Function /Script/KeysAndLocksRuntime.FortKeysAndLocksDisplayCase.NativeLockChildActorsPassAllRequirements
-	// bool NativeLockChildActorsPassAllRequirements(TArray<UChildActorComponent*>& LockChildActors, class UFortWorldItemDefinition* ItemDefinition); // [0xa9a8ebc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool NativeLockChildActorsPassAllRequirements(TArray<UChildActorComponent*>& LockChildActors, class UFortWorldItemDefinition* ItemDefinition); // [0xa999fb8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/KeysAndLocksRuntime.FortKeysAndLocksDisplayCase.NativeCalculateLockInteractStrings
-	// void NativeCalculateLockInteractStrings(TArray<FFortItemEntry>& Loot, TArray<FText>& RarityTexts, class UFortWorldItemDefinition* ItemDefinition, bool bShowCount, FText& HaveKey, FText& NeedKey, class UFortWeaponModSetData* WeaponModSetData); // [0xa9a8a64] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void NativeCalculateLockInteractStrings(TArray<FFortItemEntry>& Loot, TArray<FText>& RarityTexts, class UFortWorldItemDefinition* ItemDefinition, bool bShowCount, FText& HaveKey, FText& NeedKey, class UFortWeaponModSetData* WeaponModSetData); // [0xa999b60] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/KeysAndLocksRuntime.FortKeysAndLocksDisplayCase.GetLockChildActorsNativeHelper
-	// void GetLockChildActorsNativeHelper(TArray<UChildActorComponent*>& LockChildActors);                                  // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void GetLockChildActorsNativeHelper(TArray<UChildActorComponent*>& LockChildActors);                                  // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 };
 

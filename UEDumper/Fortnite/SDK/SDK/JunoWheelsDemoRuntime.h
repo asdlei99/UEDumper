@@ -28,18 +28,18 @@ public:
 
 	/// Functions
 	// Function /Script/JunoWheelsDemoRuntime.JunoWheelActor.SetAssociatedItem
-	// void SetAssociatedItem(class UFortItemDefinition* ItemDefinition);                                                    // [0xbe0da44] Native|Public|BlueprintCallable 
+	// void SetAssociatedItem(class UFortItemDefinition* ItemDefinition);                                                    // [0xbdc4fbc] Native|Public|BlueprintCallable 
 	// Function /Script/JunoWheelsDemoRuntime.JunoWheelActor.OnHeldObjectPickedUp
-	// void OnHeldObjectPickedUp();                                                                                          // [0xbe0da30] Final|Native|Private 
+	// void OnHeldObjectPickedUp();                                                                                          // [0xbdc4fa8] Final|Native|Private 
 	// Function /Script/JunoWheelsDemoRuntime.JunoWheelActor.HandleOutOfHealth
-	// void HandleOutOfHealth(float InDamage, FGameplayTagContainer& InTags, FGameplayEffectContextHandle& InEffectContext, class AController* InEventInstigator, class AActor* InDamageCauser); // [0xb47e444] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleOutOfHealth(float InDamage, FGameplayTagContainer& InTags, FGameplayEffectContextHandle& InEffectContext, class AController* InEventInstigator, class AActor* InDamageCauser); // [0xb454434] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoWheelsDemoRuntime.JunoWheelActor.HandleDamaged
-	// void HandleDamaged(float Damage, FGameplayTagContainer& InTags, FGameplayEffectContextHandle& EffectContext, class AController* EventInstigator, class AActor* DamageCauser); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleDamaged(float Damage, FGameplayTagContainer& InTags, FGameplayEffectContextHandle& EffectContext, class AController* EventInstigator, class AActor* DamageCauser); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoWheelsDemoRuntime.JunoWheelActor.GetMaxHealth
-	// float GetMaxHealth();                                                                                                 // [0xbe0da00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxHealth();                                                                                                 // [0xbdc4f78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoWheelsDemoRuntime.JunoWheelActor.GetHealth
-	// float GetHealth();                                                                                                    // [0xbe0d9d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealth();                                                                                                    // [0xbdc4f48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoWheelsDemoRuntime.JunoWheelActor.AttachToUsingCachedData
-	// bool AttachToUsingCachedData(class UPrimitiveComponent* InAttachComponent);                                           // [0xbe0d940] Final|Native|Public|BlueprintCallable 
+	// bool AttachToUsingCachedData(class UPrimitiveComponent* InAttachComponent);                                           // [0xbdc4eb8] Final|Native|Public|BlueprintCallable 
 };
 

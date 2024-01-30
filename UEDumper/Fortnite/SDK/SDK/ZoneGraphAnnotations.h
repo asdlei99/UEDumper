@@ -77,7 +77,7 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraphAnnotations.ZoneGraphAnnotationTestingActor.Trigger
-	// void Trigger();                                                                                                       // [0xa701be0] Final|Native|Public|BlueprintCallable 
+	// void Trigger();                                                                                                       // [0xa6fa654] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotation
@@ -115,7 +115,7 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotationBPLibrary.TriggerDanger
-	// void TriggerDanger(class UObject* WorldContextObject, class AActor* Instigator, FVector Position, float Radius, float duration); // [0xa701c3c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void TriggerDanger(class UObject* WorldContextObject, class AActor* Instigator, FVector Position, float Radius, float duration); // [0xa6fa6b0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/ZoneGraphAnnotations.ZoneGraphAnnotationEventBase

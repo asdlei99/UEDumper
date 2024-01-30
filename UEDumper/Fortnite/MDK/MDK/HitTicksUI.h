@@ -57,16 +57,16 @@ public:
 
 	/// Functions
 	// Function /Script/HitTicksUI.FortUserWidget_HitTicks.UpdateTickMarkerOpacity
-	// void UpdateTickMarkerOpacity(float NewOpacity);                                                                          // [0xb21dad4] Final|Native|Protected|BlueprintCallable 
+	// void UpdateTickMarkerOpacity(float NewOpacity);                                                                          // [0xb1fe288] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/HitTicksUI.FortUserWidget_HitTicks.OnShieldBreak
-	// void OnShieldBreak(bool bInOverShield);                                                                                  // [0xb21da54] Final|Native|Protected 
+	// void OnShieldBreak(bool bInOverShield);                                                                                  // [0xb1fe208] Final|Native|Protected 
 	// Function /Script/HitTicksUI.FortUserWidget_HitTicks.OnReticleSettingsChanged
-	// void OnReticleSettingsChanged();                                                                                         // [0xb21da20] Final|Native|Protected|BlueprintCallable 
+	// void OnReticleSettingsChanged();                                                                                         // [0xb1fe1d4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/HitTicksUI.FortUserWidget_HitTicks.OnPawnSet
-	// void OnPawnSet();                                                                                                        // [0xb21da0c] Final|Native|Protected|BlueprintCallable 
+	// void OnPawnSet();                                                                                                        // [0xb1fe1c0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/HitTicksUI.FortUserWidget_HitTicks.OnDisplayHitNotify
-	// void OnDisplayHitNotify(double InDamage, bool bInCritical, bool bInFatal, bool bInShield, class AActor* InPawn, FVector HitLocation, FGameplayTagContainer Tags); // [0xb21d530] Final|Native|Protected|HasDefaults|BlueprintCallable 
+	// void OnDisplayHitNotify(double InDamage, bool bInCritical, bool bInFatal, bool bInShield, class AActor* InPawn, FVector HitLocation, FGameplayTagContainer Tags); // [0xb1fdce4] Final|Native|Protected|HasDefaults|BlueprintCallable 
 	// Function /Script/HitTicksUI.FortUserWidget_HitTicks.HudScaleChanged
-	// void HudScaleChanged();                                                                                                  // [0xb21d51c] Final|Native|Protected|BlueprintCallable 
+	// void HudScaleChanged();                                                                                                  // [0xb1fdcd0] Final|Native|Protected|BlueprintCallable 
 };
 

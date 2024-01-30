@@ -92,7 +92,7 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicleAnimInstance.CollectConditionsFromDriver
-	// void CollectConditionsFromDriver();                                                                                   // [0xb0e6190] Final|Native|Public|BlueprintCallable 
+	// void CollectConditionsFromDriver();                                                                                   // [0xb0c8e80] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider
@@ -234,31 +234,31 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartWheelie
-	// void HandleStartWheelie();                                                                                            // [0xb0e641c] Final|Native|Public  
+	// void HandleStartWheelie();                                                                                            // [0xb0c910c] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartStoppie
-	// void HandleStartStoppie();                                                                                            // [0xb0e6404] Final|Native|Public  
+	// void HandleStartStoppie();                                                                                            // [0xb0c90f4] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartChargingJump
-	// void HandleStartChargingJump();                                                                                       // [0xb0e63ec] Final|Native|Public  
+	// void HandleStartChargingJump();                                                                                       // [0xb0c90dc] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartAirTrick
-	// void HandleStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                      // [0xb0e6370] Final|Native|Public  
+	// void HandleStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                      // [0xb0c9060] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleReleaseWheelie
-	// void HandleReleaseWheelie();                                                                                          // [0xb0e6358] Final|Native|Public  
+	// void HandleReleaseWheelie();                                                                                          // [0xb0c9048] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleReleaseStoppie
-	// void HandleReleaseStoppie();                                                                                          // [0xb0e6340] Final|Native|Public  
+	// void HandleReleaseStoppie();                                                                                          // [0xb0c9030] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleJump
-	// void HandleJump(float InJumpChargeFactor);                                                                            // [0xb0e62bc] Final|Native|Public  
+	// void HandleJump(float InJumpChargeFactor);                                                                            // [0xb0c8fac] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleFinishAirTrick
-	// void HandleFinishAirTrick();                                                                                          // [0xb0e62a4] Final|Native|Public  
+	// void HandleFinishAirTrick();                                                                                          // [0xb0c8f94] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleChargingJump
-	// void HandleChargingJump(float InJumpChargeFactor);                                                                    // [0xb0e6224] Final|Native|Public  
+	// void HandleChargingJump(float InJumpChargeFactor);                                                                    // [0xb0c8f14] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleCancelChargingJump
-	// void HandleCancelChargingJump();                                                                                      // [0xb0e620c] Final|Native|Public  
+	// void HandleCancelChargingJump();                                                                                      // [0xb0c8efc] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.CollapsedAimYawSmoothed
-	// void CollapsedAimYawSmoothed(float DeltaSeconds);                                                                     // [0xb0e6110] Final|Native|Public|BlueprintCallable 
+	// void CollapsedAimYawSmoothed(float DeltaSeconds);                                                                     // [0xb0c8e00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.CalculateNoiseAlpha
-	// void CalculateNoiseAlpha();                                                                                           // [0xb0e6054] Final|Native|Public|BlueprintCallable 
+	// void CalculateNoiseAlpha();                                                                                           // [0xb0c8d44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.AnimNotify_JumpEntered
-	// void AnimNotify_JumpEntered();                                                                                        // [0xb0e6034] Final|Native|Public  
+	// void AnimNotify_JumpEntered();                                                                                        // [0xb0c8d24] Final|Native|Public  
 };
 
 /// Class /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleDriver
@@ -465,67 +465,67 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.ServerEjectAllPlayers
-	// void ServerEjectAllPlayers();                                                                                         // [0x947db2c] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerEjectAllPlayers();                                                                                         // [0x9492990] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.OnRep_IsBoostAttacking
-	// void OnRep_IsBoostAttacking();                                                                                        // [0xb0e64a0] Final|Native|Protected 
+	// void OnRep_IsBoostAttacking();                                                                                        // [0xb0c9190] Final|Native|Protected 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.OnPlayerWeaponChanged
-	// void OnPlayerWeaponChanged(class AFortWeapon* InNewWeapon, class AFortWeapon* InPrevWeapon);                          // [0x2528174] Final|Native|Public  
+	// void OnPlayerWeaponChanged(class AFortWeapon* InNewWeapon, class AFortWeapon* InPrevWeapon);                          // [0x1e6a148] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleWheelie__DelegateSignature
-	// void MotorcycleWheelie__DelegateSignature();                                                                          // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void MotorcycleWheelie__DelegateSignature();                                                                          // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleSuperSlidingChanged__DelegateSignature
-	// void MotorcycleSuperSlidingChanged__DelegateSignature(bool bIsSuperSliding);                                          // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void MotorcycleSuperSlidingChanged__DelegateSignature(bool bIsSuperSliding);                                          // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleStoppie__DelegateSignature
-	// void MotorcycleStoppie__DelegateSignature();                                                                          // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void MotorcycleStoppie__DelegateSignature();                                                                          // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleStartAirTrick__DelegateSignature
-	// void MotorcycleStartAirTrick__DelegateSignature(EFortMotorcycleAirTrickType TrickType);                               // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void MotorcycleStartAirTrick__DelegateSignature(EFortMotorcycleAirTrickType TrickType);                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleJump__DelegateSignature
-	// void MotorcycleJump__DelegateSignature(float JumpChargeFactor);                                                       // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void MotorcycleJump__DelegateSignature(float JumpChargeFactor);                                                       // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleInventoryMode__DelegateSignature
-	// void MotorcycleInventoryMode__DelegateSignature(bool IsInInventoryMode);                                              // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void MotorcycleInventoryMode__DelegateSignature(bool IsInInventoryMode);                                              // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleChargingJump__DelegateSignature
-	// void MotorcycleChargingJump__DelegateSignature();                                                                     // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void MotorcycleChargingJump__DelegateSignature();                                                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleAirTrick__DelegateSignature
-	// void MotorcycleAirTrick__DelegateSignature();                                                                         // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void MotorcycleAirTrick__DelegateSignature();                                                                         // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsSuperSliding
-	// bool IsSuperSliding();                                                                                                // [0xb0e647c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSuperSliding();                                                                                                // [0xb0c916c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsPowerSliding
-	// bool IsPowerSliding();                                                                                                // [0xb0e6458] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPowerSliding();                                                                                                // [0xb0c9148] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsInInventoryMode
-	// bool IsInInventoryMode();                                                                                             // [0xb0e6434] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInInventoryMode();                                                                                             // [0xb0c9124] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetSurfaceTypeVehicleOn
-	// TEnumAsByte<EPhysicalSurface> GetSurfaceTypeVehicleOn();                                                              // [0xb0e61f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TEnumAsByte<EPhysicalSurface> GetSurfaceTypeVehicleOn();                                                              // [0xb0c8ee4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetLeanAngleDegrees
-	// float GetLeanAngleDegrees();                                                                                          // [0xb0e61cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLeanAngleDegrees();                                                                                          // [0xb0c8ebc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetAverageSpringNormal
-	// FVector GetAverageSpringNormal();                                                                                     // [0xb0e61a4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetAverageSpringNormal();                                                                                     // [0xb0c8e94] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.ChangeBoostAttackState
-	// void ChangeBoostAttackState(bool bNewIsBoostAttacking);                                                               // [0xb0e6068] Final|Native|Public|BlueprintCallable 
+	// void ChangeBoostAttackState(bool bNewIsBoostAttacking);                                                               // [0xb0c8d58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartWheelie
-	// void BP_OnStartWheelie();                                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnStartWheelie();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartStoppie
-	// void BP_OnStartStoppie();                                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnStartStoppie();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartChargingJump
-	// void BP_OnStartChargingJump();                                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnStartChargingJump();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartAirTrick
-	// void BP_OnStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnReleaseWheelie
-	// void BP_OnReleaseWheelie();                                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnReleaseWheelie();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnReleaseStoppie
-	// void BP_OnReleaseStoppie();                                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnReleaseStoppie();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnLandWheelie
-	// void BP_OnLandWheelie();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnLandWheelie();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnLandStoppie
-	// void BP_OnLandStoppie();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnLandStoppie();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnJump
-	// void BP_OnJump(float JumpChargeFactor);                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnJump(float JumpChargeFactor);                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnFinishAirTrick
-	// void BP_OnFinishAirTrick();                                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnFinishAirTrick();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnFailWheelie
-	// void BP_OnFailWheelie();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnFailWheelie();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnChargingJump
-	// void BP_OnChargingJump(float JumpChargeFactor);                                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnChargingJump(float JumpChargeFactor);                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnCancelChargingJump
-	// void BP_OnCancelChargingJump();                                                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnCancelChargingJump();                                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/MotorcycleRuntime.MotorcycleWheel

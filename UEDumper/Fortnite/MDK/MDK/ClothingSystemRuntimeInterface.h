@@ -73,35 +73,35 @@ public:
 
 	/// Functions
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.SetNumSubsteps
-	// void SetNumSubsteps(int32_t NumSubsteps);                                                                                // [0x2d6234c] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNumSubsteps(int32_t NumSubsteps);                                                                                // [0x2d7e454] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.SetNumIterations
-	// void SetNumIterations(int32_t NumIterations);                                                                            // [0x2d622c8] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetNumIterations(int32_t NumIterations);                                                                            // [0x2d7e3d0] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.SetMaxNumIterations
-	// void SetMaxNumIterations(int32_t MaxNumIterations);                                                                      // [0x5bc92fc] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetMaxNumIterations(int32_t MaxNumIterations);                                                                      // [0x5c149dc] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.SetAnimDriveSpringStiffness
-	// void SetAnimDriveSpringStiffness(float InStiffness);                                                                     // [0x5bc9278] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetAnimDriveSpringStiffness(float InStiffness);                                                                     // [0x5c14958] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.PhysicsAssetUpdated
-	// void PhysicsAssetUpdated();                                                                                              // [0x11cd8f8] RequiredAPI|Native|Public|BlueprintCallable 
+	// void PhysicsAssetUpdated();                                                                                              // [0x1efdc98] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.GetSimulationTime
-	// float GetSimulationTime();                                                                                               // [0x5bc9260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSimulationTime();                                                                                               // [0x5c14940] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.GetNumSubsteps
-	// int32_t GetNumSubsteps();                                                                                                // [0x5bc9248] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumSubsteps();                                                                                                // [0x5c14928] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.GetNumKinematicParticles
-	// int32_t GetNumKinematicParticles();                                                                                      // [0x5bc9234] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumKinematicParticles();                                                                                      // [0x5c14914] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.GetNumIterations
-	// int32_t GetNumIterations();                                                                                              // [0x5bc921c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumIterations();                                                                                              // [0x5c148fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.GetNumDynamicParticles
-	// int32_t GetNumDynamicParticles();                                                                                        // [0x5bc9204] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumDynamicParticles();                                                                                        // [0x5c148e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.GetNumCloths
-	// int32_t GetNumCloths();                                                                                                  // [0x5bc91f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumCloths();                                                                                                  // [0x5c148d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.GetClothingInteractor
-	// class UClothingInteractor* GetClothingInteractor(FString ClothingAssetName);                                             // [0x324b1e4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClothingInteractor* GetClothingInteractor(FString ClothingAssetName);                                             // [0x324415c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.EnableGravityOverride
-	// void EnableGravityOverride(FVector& InVector);                                                                           // [0x5bc9128] RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void EnableGravityOverride(FVector& InVector);                                                                           // [0x5c14808] RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.DisableGravityOverride
-	// void DisableGravityOverride();                                                                                           // [0x11cac68] RequiredAPI|Native|Public|BlueprintCallable 
+	// void DisableGravityOverride();                                                                                           // [0x21c958c] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ClothingSystemRuntimeInterface.ClothingSimulationInteractor.ClothConfigUpdated
-	// void ClothConfigUpdated();                                                                                               // [0x1f5bf84] RequiredAPI|Native|Public|BlueprintCallable 
+	// void ClothConfigUpdated();                                                                                               // [0x1e093d0] RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ClothingSystemRuntimeInterface.ClothPhysicalMeshDataBase_Legacy

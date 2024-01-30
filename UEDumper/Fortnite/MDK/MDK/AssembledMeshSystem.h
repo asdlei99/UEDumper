@@ -78,17 +78,17 @@ public:
 
 	/// Functions
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.SetMeshPart
-	// void SetMeshPart(class UAssembledMeshSchema* InMeshPart);                                                                // [0x7014988] Final|Native|Private|BlueprintCallable 
+	// void SetMeshPart(class UAssembledMeshSchema* InMeshPart);                                                                // [0x7059fb4] Final|Native|Private|BlueprintCallable 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.OnRep_MeshParts
-	// void OnRep_MeshParts();                                                                                                  // [0x2a2fc8c] Native|Protected     
+	// void OnRep_MeshParts();                                                                                                  // [0x351e7b8] Native|Protected     
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GetMeshPart
-	// class UAssembledMeshSchema* GetMeshPart();                                                                               // [0x665ff84] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// class UAssembledMeshSchema* GetMeshPart();                                                                               // [0x66a91a4] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GetAttachToComponent
-	// class USkeletalMeshComponent* GetAttachToComponent();                                                                    // [0x38af330] Native|Event|Protected|BlueprintEvent 
+	// class USkeletalMeshComponent* GetAttachToComponent();                                                                    // [0x38a57d8] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GatherAndAssignAssembledMeshParts
-	// void GatherAndAssignAssembledMeshParts();                                                                                // [0x15560c8] Native|Public        
+	// void GatherAndAssignAssembledMeshParts();                                                                                // [0x219df9c] Native|Public        
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.CustomizationCompleted
-	// void CustomizationCompleted(int32_t PartIndex);                                                                          // [0x7014904] Native|Protected     
+	// void CustomizationCompleted(int32_t PartIndex);                                                                          // [0x7059f30] Native|Protected     
 };
 
 /// Struct /Script/AssembledMeshSystem.AssembledComponentReferences

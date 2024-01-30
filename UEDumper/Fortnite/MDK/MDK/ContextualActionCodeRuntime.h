@@ -35,7 +35,7 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.FortMovementMode_ExtLogicBaseSwinging.OnOwnerDBNO
-	// void OnOwnerDBNO();                                                                                                      // [0xb189cd0] Final|Native|Protected 
+	// void OnOwnerDBNO();                                                                                                      // [0xb16bc04] Final|Native|Protected 
 };
 
 /// Class /Script/ContextualActionCodeRuntime.FortMovementMode_ExtLogicSwingingObject
@@ -114,9 +114,9 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.FortSwingingObject.OnStartSwing_BP
-	// void OnStartSwing_BP(class AFortPlayerPawn* AttachedActor);                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStartSwing_BP(class AFortPlayerPawn* AttachedActor);                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.FortSwingingObject.OnEndSwing_BP
-	// void OnEndSwing_BP(class AFortPlayerPawn* AttachedActor);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEndSwing_BP(class AFortPlayerPawn* AttachedActor);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/ContextualActionCodeRuntime.FortSwingingRope
@@ -157,35 +157,35 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.TryHijack
-	// bool TryHijack(class AActor* VehicleTarget, FInteractionType& InteractionType);                                          // [0xb18a158] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool TryHijack(class AActor* VehicleTarget, FInteractionType& InteractionType);                                          // [0xb16c08c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.OnStartHijack
-	// void OnStartHijack(class AActor* VehicleTarget);                                                                         // [0x9039b80] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void OnStartHijack(class AActor* VehicleTarget);                                                                         // [0x905563c] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.OnCompleteHijack
-	// void OnCompleteHijack();                                                                                                 // [0x1555df0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void OnCompleteHijack();                                                                                                 // [0x212f900] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.HandleOwnerJumpInput
-	// void HandleOwnerJumpInput(bool bPressed);                                                                                // [0xb189910] Final|Native|Private 
+	// void HandleOwnerJumpInput(bool bPressed);                                                                                // [0xb16b844] Final|Native|Private 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.EjectHijacker
-	// void EjectHijacker(class AActor* DamageCauser, float Damage, FVector EventLocation);                                     // [0xb189618] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void EjectHijacker(class AActor* DamageCauser, float Damage, FVector EventLocation);                                     // [0xb16b54c] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.CancelHijack_Server
-	// void CancelHijack_Server();                                                                                              // [0x15560c8] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void CancelHijack_Server();                                                                                              // [0x219df9c] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.CancelHijack_NetMulticast
-	// void CancelHijack_NetMulticast();                                                                                        // [0x2555e28] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void CancelHijack_NetMulticast();                                                                                        // [0x212f478] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnStartHijack
-	// void BP_OnStartHijack();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_OnStartHijack();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnHijackInterrupted
-	// void BP_OnHijackInterrupted();                                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_OnHijackInterrupted();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnHijackCancelled
-	// void BP_OnHijackCancelled();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_OnHijackCancelled();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnCompleteHijack
-	// void BP_OnCompleteHijack();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_OnCompleteHijack();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_OnCleanup
-	// void BP_OnCleanup();                                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_OnCleanup();                                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_GetThrownVelocity
-	// void BP_GetThrownVelocity(class AActor* DamageCauser, float Damage, FVector& EventLocation, FVector& OutVelocity);       // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// void BP_GetThrownVelocity(class AActor* DamageCauser, float Damage, FVector& EventLocation, FVector& OutVelocity);       // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_CanStartHijack
-	// void BP_CanStartHijack(bool& OutCanStartHijack);                                                                         // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartHijack(bool& OutCanStartHijack);                                                                         // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/ContextualActionCodeRuntime.HijackerComponent.BP_CanCompleteHijack
-	// void BP_CanCompleteHijack(bool& OutCanCompleteHijack);                                                                   // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanCompleteHijack(bool& OutCanCompleteHijack);                                                                   // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/ContextualActionCodeRuntime.Hijack_InteractionOverrideComponent
@@ -234,37 +234,37 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.TestToggleGravity_Server
-	// void TestToggleGravity_Server();                                                                                         // [0x9982828] Net|NetReliableNative|Event|Protected|NetServer 
+	// void TestToggleGravity_Server();                                                                                         // [0x998bfc0] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.TestToggleGravity
-	// void TestToggleGravity();                                                                                                // [0xb18a108] Final|Native|Public|BlueprintCallable 
+	// void TestToggleGravity();                                                                                                // [0xb16c03c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.StartRappellingSwing_Server
-	// void StartRappellingSwing_Server();                                                                                      // [0x6e4de20] Net|NetReliableNative|Event|Protected|NetServer 
+	// void StartRappellingSwing_Server();                                                                                      // [0x6e94000] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.StartRappelling_Server
-	// void StartRappelling_Server(FVector NewGravityDirection, FVector ClientRappellingEdge, FVector ClientRappellingNormal);  // [0xb189e20] Net|NetReliableNative|Event|Protected|NetServer|HasDefaults 
+	// void StartRappelling_Server(FVector NewGravityDirection, FVector ClientRappellingEdge, FVector ClientRappellingNormal);  // [0xb16bd54] Net|NetReliableNative|Event|Protected|NetServer|HasDefaults 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.StartRappelling
-	// void StartRappelling();                                                                                                  // [0xb189e0c] Final|Native|Public|BlueprintCallable 
+	// void StartRappelling();                                                                                                  // [0xb16bd40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.RappellingCorrectFallingRotation_Client
-	// void RappellingCorrectFallingRotation_Client();                                                                          // [0x2555e28] Net|NetReliableNative|Event|Protected|NetClient 
+	// void RappellingCorrectFallingRotation_Client();                                                                          // [0x212f478] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnValidTargeting
-	// void OnValidTargeting();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnValidTargeting();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnStartRappelling
-	// void OnStartRappelling();                                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnStartRappelling();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnRep_RappellingState
-	// void OnRep_RappellingState();                                                                                            // [0xb189de0] Final|Native|Protected 
+	// void OnRep_RappellingState();                                                                                            // [0xb16bd14] Final|Native|Protected 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnOwnerMovementModeChanged
-	// void OnOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb189ce4] Final|Native|Protected 
+	// void OnOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb16bc18] Final|Native|Protected 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnInvalidTargeting
-	// void OnInvalidTargeting();                                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnInvalidTargeting();                                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnEndRappelling
-	// void OnEndRappelling();                                                                                                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnEndRappelling();                                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.OnCapsuleHit
-	// void OnCapsuleHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0xb189a10] Final|Native|Protected|HasOutParms|HasDefaults 
+	// void OnCapsuleHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0xb16b944] Final|Native|Protected|HasOutParms|HasDefaults 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.EndRappellingSwing_Server
-	// void EndRappellingSwing_Server();                                                                                        // [0x15560c8] Net|NetReliableNative|Event|Protected|NetServer 
+	// void EndRappellingSwing_Server();                                                                                        // [0x219df9c] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.EndRappelling_Server
-	// void EndRappelling_Server();                                                                                             // [0x1555df0] Net|NetReliableNative|Event|Protected|NetServer 
+	// void EndRappelling_Server();                                                                                             // [0x212f900] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.RappellingComponent.EndRappelling
-	// void EndRappelling();                                                                                                    // [0xb1897b8] Final|Native|Public|BlueprintCallable 
+	// void EndRappelling();                                                                                                    // [0xb16b6ec] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ContextualActionCodeRuntime.RappellingSwingMovementControls
@@ -315,23 +315,23 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.OnRep_SwingingObject
-	// void OnRep_SwingingObject();                                                                                             // [0xb189df8] Final|Native|Private 
+	// void OnRep_SwingingObject();                                                                                             // [0xb16bd2c] Final|Native|Private 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.HandleOwnerJumpInput
-	// void HandleOwnerJumpInput(bool bPressed);                                                                                // [0xb189990] Final|Native|Private 
+	// void HandleOwnerJumpInput(bool bPressed);                                                                                // [0xb16b8c4] Final|Native|Private 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.GetSwingDeltaAngle
-	// void GetSwingDeltaAngle(FRotator& OutSwingRotation, FRotator& OutDeltaRotation);                                         // [0xb189830] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetSwingDeltaAngle(FRotator& OutSwingRotation, FRotator& OutDeltaRotation);                                         // [0xb16b764] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.GetAimRotation
-	// FRotator GetAimRotation();                                                                                               // [0xb1897cc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRotator GetAimRotation();                                                                                               // [0xb16b700] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.DetachFromObject_Server
-	// void DetachFromObject_Server(bool bJumpExit);                                                                            // [0xa8650f0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void DetachFromObject_Server(bool bJumpExit);                                                                            // [0xa857548] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.BP_OnStartSwing
-	// void BP_OnStartSwing();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_OnStartSwing();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.BP_OnEndSwing
-	// void BP_OnEndSwing();                                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_OnEndSwing();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.BP_CanStartSwing
-	// void BP_CanStartSwing(class AFortSwingingObject* SwingTarget, bool& bCanStartSwing);                                     // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartSwing(class AFortSwingingObject* SwingTarget, bool& bCanStartSwing);                                     // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/ContextualActionCodeRuntime.SwingingObjectComponent.AttachToObject_Server
-	// void AttachToObject_Server(class AFortSwingingObject* Object);                                                           // [0x6965e0c] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void AttachToObject_Server(class AFortSwingingObject* Object);                                                           // [0x69aeebc] Final|Net|NetReliableNative|Event|Private|NetServer 
 };
 
 /// Struct /Script/ContextualActionCodeRuntime.FortMovementMode_SwingingObjectRuntimeData

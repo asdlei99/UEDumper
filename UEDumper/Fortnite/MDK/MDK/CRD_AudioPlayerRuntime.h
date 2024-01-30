@@ -44,43 +44,43 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.StopAudio
-	// void StopAudio(class AController* Player);                                                                               // [0x5fffda8] Final|Native|Public|BlueprintCallable 
+	// void StopAudio(class AController* Player);                                                                               // [0x604b150] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.SetProperties
-	// void SetProperties(TWeakObjectPtr<USoundBase*>& Audio, float Volume, float PlaybackSpeed, float NewFadeInDuration, float NewFadeOutDuration, bool bEnableVolumeAttenuation, bool bEnableSpatialization, float StereoSpread, EAttenuationDistanceModel DistanceModel, float AttenuationMinDistance, float AttenuationFalloffDistance, bool bNewSyncPlayerAudio, bool bNewRestartAudioOnPlay, int32_t NewCanBeHeardBy, int32_t NewPlayLocation, int32_t NewAutoplayOptions); // [0xb4de8c0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetProperties(TWeakObjectPtr<USoundBase*>& Audio, float Volume, float PlaybackSpeed, float NewFadeInDuration, float NewFadeOutDuration, bool bEnableVolumeAttenuation, bool bEnableSpatialization, float StereoSpread, EAttenuationDistanceModel DistanceModel, float AttenuationMinDistance, float AttenuationFalloffDistance, bool bNewSyncPlayerAudio, bool bNewRestartAudioOnPlay, int32_t NewCanBeHeardBy, int32_t NewPlayLocation, int32_t NewAutoplayOptions); // [0xb4b35d0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.RetryUpdateAutoplayStatusOnMinigameAdd
-	// void RetryUpdateAutoplayStatusOnMinigameAdd(class AFortMinigame* Minigame);                                              // [0x5fffda8] Final|Native|Private 
+	// void RetryUpdateAutoplayStatusOnMinigameAdd(class AFortMinigame* Minigame);                                              // [0x604b150] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.RetryClientPlayAudio
-	// void RetryClientPlayAudio(FCreativeAudioPlayerData& InstigatorData);                                                     // [0xb4de7f0] Final|Native|Private|HasOutParms 
+	// void RetryClientPlayAudio(FCreativeAudioPlayerData& InstigatorData);                                                     // [0xb4b3500] Final|Native|Private|HasOutParms 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.ResetDevice
-	// void ResetDevice();                                                                                                      // [0xb4de454] Final|Native|Public|BlueprintCallable 
+	// void ResetDevice();                                                                                                      // [0xb4b3164] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.PlayAudio
-	// void PlayAudio(class AController* Player);                                                                               // [0x5fffda8] Final|Native|Public|BlueprintCallable 
+	// void PlayAudio(class AController* Player);                                                                               // [0x604b150] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnRep_ServerInstigatorData
-	// void OnRep_ServerInstigatorData();                                                                                       // [0xb4de76c] Final|Native|Private 
+	// void OnRep_ServerInstigatorData();                                                                                       // [0xb4b347c] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnRep_RegisteredPlayerIds
-	// void OnRep_RegisteredPlayerIds();                                                                                        // [0xb4de758] Final|Native|Private 
+	// void OnRep_RegisteredPlayerIds();                                                                                        // [0xb4b3468] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnProxyDataChanged
-	// void OnProxyDataChanged(class ACreativePlayerReplicationProxy* ProxyData);                                               // [0xb4de6d8] Final|Native|Private 
+	// void OnProxyDataChanged(class ACreativePlayerReplicationProxy* ProxyData);                                               // [0xb4b33e8] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnPlayerUnregistered
-	// void OnPlayerUnregistered(class AFortPlayerState* PlayerState);                                                          // [0x6965e0c] Final|Native|Private 
+	// void OnPlayerUnregistered(class AFortPlayerState* PlayerState);                                                          // [0x69aeebc] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnPlayerRemoved
-	// void OnPlayerRemoved(FUniqueNetIdRepl NetId, bool bIsLocalPlayer);                                                       // [0xb4de468] Final|Native|Private 
+	// void OnPlayerRemoved(FUniqueNetIdRepl NetId, bool bIsLocalPlayer);                                                       // [0xb4b3178] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnPlayerRegistered
-	// void OnPlayerRegistered(class AFortPlayerState* PlayerState);                                                            // [0x67c0c88] Final|Native|Private 
+	// void OnPlayerRegistered(class AFortPlayerState* PlayerState);                                                            // [0x680a298] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnPlayerAdded
-	// void OnPlayerAdded(FUniqueNetIdRepl NetId, bool bIsLocalPlayer);                                                         // [0x80b9360] Final|Native|Private 
+	// void OnPlayerAdded(FUniqueNetIdRepl NetId, bool bIsLocalPlayer);                                                         // [0x80f28d4] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnMinigameStateChanged
-	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                         // [0x86509ec] Final|Native|Private 
+	// void OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                         // [0x867f720] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnMinigameStarted
-	// void OnMinigameStarted();                                                                                                // [0x32e6c74] Final|Native|Private 
+	// void OnMinigameStarted();                                                                                                // [0x32e4b44] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnMinigameEnded
-	// void OnMinigameEnded();                                                                                                  // [0xb4de454] Final|Native|Private 
+	// void OnMinigameEnded();                                                                                                  // [0xb4b3164] Final|Native|Private 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnEnabledStateChanged
-	// void OnEnabledStateChanged(bool bIsEnabled);                                                                             // [0x5fe71f4] Final|Native|Public|BlueprintCallable 
+	// void OnEnabledStateChanged(bool bIsEnabled);                                                                             // [0x60325ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnAudioLoadComplete
-	// void OnAudioLoadComplete(FSoftObjectPath Audio);                                                                         // [0xb4ddce4] Final|Native|Private|HasDefaults 
+	// void OnAudioLoadComplete(FSoftObjectPath Audio);                                                                         // [0xb4b29f4] Final|Native|Private|HasDefaults 
 	// Function /Script/CRD_AudioPlayerRuntime.CreativeAudioComponent.OnAllPlayersUnregistered
-	// void OnAllPlayersUnregistered();                                                                                         // [0x6e4de20] Final|Native|Private 
+	// void OnAllPlayersUnregistered();                                                                                         // [0x6e94000] Final|Native|Private 
 };
 
 /// Class /Script/CRD_AudioPlayerRuntime.CreativeAudioPlayerReplicationProxy

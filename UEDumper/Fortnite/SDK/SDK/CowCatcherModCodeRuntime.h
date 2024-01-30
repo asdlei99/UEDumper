@@ -20,8 +20,8 @@ public:
 
 	/// Functions
 	// Function /Script/CowCatcherModCodeRuntime.CowCatcherBarricadeBase.OnPlacementBlockedByPawnChanged
-	// void OnPlacementBlockedByPawnChanged(bool bBlockedByPawn);                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPlacementBlockedByPawnChanged(bool bBlockedByPawn);                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/CowCatcherModCodeRuntime.CowCatcherBarricadeBase.BeginCheckingForTouchingPawns
-	// void BeginCheckingForTouchingPawns();                                                                                 // [0xb0e2c64] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void BeginCheckingForTouchingPawns();                                                                                 // [0xb0c5954] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 };
 

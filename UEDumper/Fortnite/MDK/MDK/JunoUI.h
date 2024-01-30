@@ -45,13 +45,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBangWidget.SetBangVisibility
-	// void SetBangVisibility(bool bVisible);                                                                                   // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetBangVisibility(bool bVisible);                                                                                   // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBangWidget.SetBangCount
-	// void SetBangCount(int32_t NewCount);                                                                                     // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetBangCount(int32_t NewCount);                                                                                     // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBangWidget.OnFreeBuildToggled
-	// void OnFreeBuildToggled(bool bFreeBuildEnabled);                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnFreeBuildToggled(bool bFreeBuildEnabled);                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBangWidget.IsFreeBuildEnabled
-	// bool IsFreeBuildEnabled();                                                                                               // [0xbdb5f20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFreeBuildEnabled();                                                                                               // [0xbd6e7d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoBedAssignmentListEntry
@@ -67,7 +67,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBedAssignmentListEntry.OnBedAssignmentObjectSet
-	// void OnBedAssignmentObjectSet(class UJunoBedAssignmentListObject* NewBedAssignmentListObject);                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBedAssignmentObjectSet(class UJunoBedAssignmentListObject* NewBedAssignmentListObject);                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoBedAssignmentListObject
@@ -85,13 +85,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBedAssignmentListObject.IsPlayer
-	// bool IsPlayer();                                                                                                         // [0xbdb5f50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayer();                                                                                                         // [0xbd6e800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoBedAssignmentListObject.GetNPCIcon
-	// TWeakObjectPtr<UTexture2D*> GetNPCIcon();                                                                                // [0xbdb5cf8] Final|Native|Public|BlueprintCallable 
+	// TWeakObjectPtr<UTexture2D*> GetNPCIcon();                                                                                // [0xbd6e5a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoBedAssignmentListObject.GetNPCGameplayTag
-	// FGameplayTag GetNPCGameplayTag();                                                                                        // [0x699aae0] Final|Native|Public|BlueprintCallable 
+	// FGameplayTag GetNPCGameplayTag();                                                                                        // [0x69e3b64] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoBedAssignmentListObject.GetNPCDisplayName
-	// FText GetNPCDisplayName();                                                                                               // [0xbdb5cac] Final|Native|Public|BlueprintCallable 
+	// FText GetNPCDisplayName();                                                                                               // [0xbd6e55c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoBiomeUIData
@@ -107,9 +107,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBiomeUIData.GetJunoBIomeUIData
-	// class UJunoBiomeUIData* GetJunoBIomeUIData();                                                                            // [0xbdb5c6c] Final|Native|Static|Public|BlueprintCallable 
+	// class UJunoBiomeUIData* GetJunoBIomeUIData();                                                                            // [0xbd6e51c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoBiomeUIData.FindBiomeTypeUIData
-	// bool FindBiomeTypeUIData(EJunoBiome& Biome, FJunoBiomeUIDisplayData& OutBiomeUIDisplayData);                             // [0xbdb5abc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool FindBiomeTypeUIData(EJunoBiome& Biome, FJunoBiomeUIDisplayData& OutBiomeUIDisplayData);                             // [0xbd6e36c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoBuildingBarAssignScreen
@@ -126,7 +126,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBuildingBarAssignScreen.SetRecipeToAssign
-	// void SetRecipeToAssign(FName InRecipeToAssign);                                                                          // [0xbdb61a8] Final|Native|Public|BlueprintCallable 
+	// void SetRecipeToAssign(FName InRecipeToAssign);                                                                          // [0xbd6ea58] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoBuildingBarHud
@@ -156,9 +156,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBuildingBarHudSlot.OnSelectionChanged
-	// void OnSelectionChanged(bool bInSelected, FJunoBuildingSlotData& BuildingSlotInitData);                                  // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSelectionChanged(bool bInSelected, FJunoBuildingSlotData& BuildingSlotInitData);                                  // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBuildingBarHudSlot.OnBuildingSlotPinned
-	// void OnBuildingSlotPinned(bool bIsPinned);                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnBuildingSlotPinned(bool bIsPinned);                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoBuildingBarMenu
@@ -188,9 +188,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBuildingBarMenuSlot.OnLeavePreview
-	// void OnLeavePreview();                                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnLeavePreview();                                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBuildingBarMenuSlot.OnEnterPreview
-	// void OnEnterPreview(FJunoBuildingSlotData& InPreviewSlotData);                                                           // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnEnterPreview(FJunoBuildingSlotData& InPreviewSlotData);                                                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoBuildingDisplaySlot
@@ -206,9 +206,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBuildingDisplaySlot.OnSetBuildingSlotInitData
-	// void OnSetBuildingSlotInitData(FJunoBuildingSlotData& BuildingSlotInitData);                                             // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetBuildingSlotInitData(FJunoBuildingSlotData& BuildingSlotInitData);                                             // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBuildingDisplaySlot.OnSelectionChanged
-	// void OnSelectionChanged(bool bInSelected);                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSelectionChanged(bool bInSelected);                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoBuildingIngredientsGroup
@@ -225,9 +225,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBuildingIngredientsGroup.OnRecipeDisplayDataChanged
-	// void OnRecipeDisplayDataChanged(FText& RecipeDisplayName, class UJunoBuildInstructionsItemDefinition* BuildingItemDefinition); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnRecipeDisplayDataChanged(FText& RecipeDisplayName, class UJunoBuildInstructionsItemDefinition* BuildingItemDefinition); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBuildingIngredientsGroup.OnCanCraftChanged
-	// void OnCanCraftChanged(bool bCanCraft);                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnCanCraftChanged(bool bCanCraft);                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoBuildingMemoryComponent
@@ -259,15 +259,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoRecipeDetailsWidget.UpdateRecipeFocus
-	// void UpdateRecipeFocus(FName& Recipe);                                                                                   // [0xbdc7374] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void UpdateRecipeFocus(FName& Recipe);                                                                                   // [0xbd7fc24] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoUI.JunoRecipeDetailsWidget.SetCraftingObject
-	// void SetCraftingObject(class AActor* InCraftingObject);                                                                  // [0xbdc70a0] Final|Native|Public|BlueprintCallable 
+	// void SetCraftingObject(class AActor* InCraftingObject);                                                                  // [0xbd7f950] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoRecipeDetailsWidget.OnSetRecipeDetails
-	// void OnSetRecipeDetails(FText& Name, EJunoKnowledgeState KnowledgeState, int32_t CraftCount, class UFortItemDefinition* CraftedItemDef, FText& SourceName, FSlateBrush SourceIcon); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetRecipeDetails(FText& Name, EJunoKnowledgeState KnowledgeState, int32_t CraftCount, class UFortItemDefinition* CraftedItemDef, FText& SourceName, FSlateBrush SourceIcon); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeDetailsWidget.HandleInventoryChanged
-	// void HandleInventoryChanged(FJunoItemSlot& Item, EJunoItemChangeType ChangeType);                                        // [0xbdc6448] Final|Native|Protected|HasOutParms 
+	// void HandleInventoryChanged(FJunoItemSlot& Item, EJunoItemChangeType ChangeType);                                        // [0xbd7ecf8] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoUI.JunoRecipeDetailsWidget.HandleCraftingSuccess
-	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbdc624c] Final|Native|Protected|HasOutParms 
+	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbd7eafc] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/JunoUI.JunoBuildingRecipeDetails
@@ -285,11 +285,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBuildingRecipeDetails.SetGuidedBuildIngredientsToPreviewCount
-	// void SetGuidedBuildIngredientsToPreviewCount(int32_t InGuidedBuildIngredientsToPreviewCount);                            // [0xbdb612c] Final|Native|Public|BlueprintCallable 
+	// void SetGuidedBuildIngredientsToPreviewCount(int32_t InGuidedBuildIngredientsToPreviewCount);                            // [0xbd6e9dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoBuildingRecipeDetails.OnLoadingBuildingActorAssetComplete
-	// void OnLoadingBuildingActorAssetComplete(FJunoGuidedBuildingUIData GuidedBuildingUIData);                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnLoadingBuildingActorAssetComplete(FJunoGuidedBuildingUIData GuidedBuildingUIData);                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBuildingRecipeDetails.OnLoadingBuildingActorAsset
-	// void OnLoadingBuildingActorAsset();                                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnLoadingBuildingActorAsset();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoConversationMarker
@@ -310,19 +310,19 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoConversationMarker.SetNPCStatus
-	// void SetNPCStatus(FJunoNPCStateUIData& NPCStateData);                                                                    // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetNPCStatus(FJunoNPCStateUIData& NPCStateData);                                                                    // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationMarker.OnParticipantNameChanged
-	// void OnParticipantNameChanged(FText& InParticipantName);                                                                 // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnParticipantNameChanged(FText& InParticipantName);                                                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationMarker.OnMessageUpdated
-	// void OnMessageUpdated(FText& MessageText);                                                                               // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnMessageUpdated(FText& MessageText);                                                                               // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationMarker.OnConversationInteractionUpdated
-	// void OnConversationInteractionUpdated(EDialogMarkerInteractionState NewInteractionState, bool bNewCanInteract);          // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void OnConversationInteractionUpdated(EDialogMarkerInteractionState NewInteractionState, bool bNewCanInteract);          // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationMarker.OnCanInteract
-	// bool OnCanInteract();                                                                                                    // [0xbdb5f70] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool OnCanInteract();                                                                                                    // [0xbd6e820] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoConversationMarker.GetInteractionState
-	// EDialogMarkerInteractionState GetInteractionState();                                                                     // [0xbdb5c54] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EDialogMarkerInteractionState GetInteractionState();                                                                     // [0xbd6e504] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoConversationMarker.ClearNPCStatus
-	// void ClearNPCStatus();                                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ClearNPCStatus();                                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoConversationOption
@@ -338,13 +338,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoConversationOption.OnDisplayItemDefLoaded
-	// void OnDisplayItemDefLoaded(class UFortItemDefinition* ResolvedItemDef);                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDisplayItemDefLoaded(class UFortItemDefinition* ResolvedItemDef);                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationOption.OnDisplayAssetLoaded
-	// void OnDisplayAssetLoaded(class UObject* ResolvedAsset);                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDisplayAssetLoaded(class UObject* ResolvedAsset);                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationOption.OnConversationOptionUpdated
-	// void OnConversationOptionUpdated(FClientConversationOptionEntry& InOption);                                              // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnConversationOptionUpdated(FClientConversationOptionEntry& InOption);                                              // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationOption.GetConversationOption
-	// FClientConversationOptionEntry GetConversationOption();                                                                  // [0xbdb5c20] Final|Native|Public|BlueprintCallable 
+	// FClientConversationOptionEntry GetConversationOption();                                                                  // [0xbd6e4d0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoConversationScreen
@@ -364,17 +364,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoConversationScreen.OnParticipantIconChanged
-	// void OnParticipantIconChanged(TWeakObjectPtr<UTexture2D*>& Icon);                                                        // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnParticipantIconChanged(TWeakObjectPtr<UTexture2D*>& Icon);                                                        // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationScreen.OnConversationStarted
-	// void OnConversationStarted();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnConversationStarted();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationScreen.OnConversationOptionsUpdated
-	// void OnConversationOptionsUpdated();                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnConversationOptionsUpdated();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationScreen.OnConversationMessageUpdated
-	// void OnConversationMessageUpdated(FClientConversationMessage& ConversationMessage);                                      // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnConversationMessageUpdated(FClientConversationMessage& ConversationMessage);                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoConversationScreen.HandleParticipantIconChanged
-	// void HandleParticipantIconChanged(TWeakObjectPtr<UTexture2D*>& Icon);                                                    // [0xbdb5e80] Final|Native|Private|HasOutParms 
+	// void HandleParticipantIconChanged(TWeakObjectPtr<UTexture2D*>& Icon);                                                    // [0xbd6e730] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoUI.JunoConversationScreen.EndConversation
-	// void EndConversation();                                                                                                  // [0xbdb5aa8] Final|Native|Protected|BlueprintCallable 
+	// void EndConversation();                                                                                                  // [0xbd6e358] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoDebugWatermark
@@ -389,9 +389,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoDebugWatermark.ShouldShowSeed
-	// bool ShouldShowSeed();                                                                                                   // [0xbdb6228] Final|Native|Public|BlueprintCallable 
+	// bool ShouldShowSeed();                                                                                                   // [0xbd6ead8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoDebugWatermark.GetWorldID
-	// FString GetWorldID();                                                                                                    // [0xbdb5d98] Final|Native|Public|BlueprintCallable|Const 
+	// FString GetWorldID();                                                                                                    // [0xbd6e648] Final|Native|Public|BlueprintCallable|Const 
 };
 
 /// Class /Script/JunoUI.JunoDynamicControlPromptsWidget
@@ -407,9 +407,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoDynamicControlPromptsWidget.InitializeEntry
-	// void InitializeEntry(FJunoInputAlternateDisplayText& DisplayText, class UUserWidget* EntryWidget);                       // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void InitializeEntry(FJunoInputAlternateDisplayText& DisplayText, class UUserWidget* EntryWidget);                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoDynamicControlPromptsWidget.AddEntry
-	// void AddEntry(FJunoInputAlternateDisplayText& DisplayText);                                                              // [0xbdb5998] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddEntry(FJunoInputAlternateDisplayText& DisplayText);                                                              // [0xbd6e248] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoEnchantmentScreen
@@ -434,35 +434,35 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoEnchantmentScreen.SelectInventorySlot
-	// void SelectInventorySlot(class UJunoInventorySlot* InventorySlot);                                                       // [0xbdb5fcc] Final|Native|Private 
+	// void SelectInventorySlot(class UJunoInventorySlot* InventorySlot);                                                       // [0xbd6e87c] Final|Native|Private 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.RequestBackout
-	// void RequestBackout();                                                                                                   // [0xbdb5f88] Final|Native|Protected|BlueprintCallable 
+	// void RequestBackout();                                                                                                   // [0xbd6e838] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnRecipeEntrySelected
-	// void OnRecipeEntrySelected(class UFortAlterationItemDefinition* PreviewEnchantment);                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRecipeEntrySelected(class UFortAlterationItemDefinition* PreviewEnchantment);                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnRecipeEntryHovered
-	// void OnRecipeEntryHovered(class UFortAlterationItemDefinition* PreviewEnchantment);                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRecipeEntryHovered(class UFortAlterationItemDefinition* PreviewEnchantment);                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnItemEnchanted
-	// void OnItemEnchanted(class UFortItem* Item, class UFortItemDefinition* PreviewAlteration, int32_t UpdatedAlterationIndex); // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemEnchanted(class UFortItem* Item, class UFortItemDefinition* PreviewAlteration, int32_t UpdatedAlterationIndex); // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnInventoryItemHovered
-	// void OnInventoryItemHovered(class UFortItem* HoveredInventoryItem);                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInventoryItemHovered(class UFortItem* HoveredInventoryItem);                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnInventoryItemChosen
-	// void OnInventoryItemChosen(class UFortItem* ChosenInventoryItem);                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInventoryItemChosen(class UFortItem* ChosenInventoryItem);                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnInputMethodChanged
-	// void OnInputMethodChanged(ECommonInputType NewInputType);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInputMethodChanged(ECommonInputType NewInputType);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnEnchantmentStationHeaderData
-	// void OnEnchantmentStationHeaderData(FJunoCraftingStationUIDataEntry& InEntry);                                           // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnEnchantmentStationHeaderData(FJunoCraftingStationUIDataEntry& InEntry);                                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnEnchantButtonStateChanged
-	// void OnEnchantButtonStateChanged(EJunoEnchantButtonState InButtonState);                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnchantButtonStateChanged(EJunoEnchantButtonState InButtonState);                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnEnchantableItemSlotsCreated
-	// void OnEnchantableItemSlotsCreated(bool bNothingToEnchant);                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnchantableItemSlotsCreated(bool bNothingToEnchant);                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.OnDisabledInventoryItemHovered
-	// void OnDisabledInventoryItemHovered();                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDisabledInventoryItemHovered();                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.HandleCraftingSuccess
-	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbdb5dd8] Final|Native|Private|HasOutParms 
+	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbd6e688] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.GetCurrentScreenState
-	// EJunoEnchantmentScreenState GetCurrentScreenState();                                                                     // [0xbdb5c3c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EJunoEnchantmentScreenState GetCurrentScreenState();                                                                     // [0xbd6e4ec] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoEnchantmentScreen.CancelEnchanting
-	// void CancelEnchanting();                                                                                                 // [0xbdb5a34] Final|Native|Protected|BlueprintCallable 
+	// void CancelEnchanting();                                                                                                 // [0xbd6e2e4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoEnchantmentsWidget
@@ -479,13 +479,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoEnchantmentsWidget.SetUpdatedEnchantmentIndex
-	// void SetUpdatedEnchantmentIndex(int32_t UpdatedIndex);                                                                   // [0xbdb7ef4] Final|Native|Public|BlueprintCallable 
+	// void SetUpdatedEnchantmentIndex(int32_t UpdatedIndex);                                                                   // [0xbd707a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoEnchantmentsWidget.SetRepresentedItem
-	// void SetRepresentedItem(class UFortItem* InRepresentedItem);                                                             // [0xbdb7d10] Final|Native|Public|BlueprintCallable 
+	// void SetRepresentedItem(class UFortItem* InRepresentedItem);                                                             // [0xbd705c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoEnchantmentsWidget.SetPreviewEnchantment
-	// void SetPreviewEnchantment(class UFortAlterationItemDefinition* InEnchantment);                                          // [0xbdb7c3c] Final|Native|Public|BlueprintCallable 
+	// void SetPreviewEnchantment(class UFortAlterationItemDefinition* InEnchantment);                                          // [0xbd704ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoEnchantmentsWidget.OnEnchantmentsUpdated
-	// void OnEnchantmentsUpdated(bool bHasEnchantments);                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnchantmentsUpdated(bool bHasEnchantments);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoEnchantmentWidget
@@ -502,7 +502,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoEnchantmentWidget.OnRepresentedItemChanged
-	// void OnRepresentedItemChanged();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRepresentedItemChanged();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoFullScreenMap
@@ -549,9 +549,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoFullScreenMap.ResetFocusToPlayer
-	// void ResetFocusToPlayer();                                                                                               // [0xbdb7c18] Final|Native|Protected|BlueprintCallable 
+	// void ResetFocusToPlayer();                                                                                               // [0xbd704c8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoFullScreenMap.IsMapTabAllowed
-	// bool IsMapTabAllowed();                                                                                                  // [0xbdb77b4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsMapTabAllowed();                                                                                                  // [0xbd70064] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoHudMenuBaseInitData
@@ -581,7 +581,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoHudMenuBase.OnInitDataSet
-	// void OnInitDataSet(class UJunoHudMenuBaseInitData* InInitData);                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInitDataSet(class UJunoHudMenuBaseInitData* InInitData);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoHudMenuContentInterface
@@ -606,7 +606,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoHUDMenuTabButton.GetNumUnviewedItems
-	// int32_t GetNumUnviewedItems();                                                                                           // [0x700d280] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// int32_t GetNumUnviewedItems();                                                                                           // [0x7053348] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoIngredientWidget
@@ -624,11 +624,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoIngredientWidget.OnSetIngredientData
-	// void OnSetIngredientData(TWeakObjectPtr<UTexture2D*>& Icon, EFortRarity ItemRarity, int32_t EntryIndex, FText& ItemDescription); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetIngredientData(TWeakObjectPtr<UTexture2D*>& Icon, EFortRarity ItemRarity, int32_t EntryIndex, FText& ItemDescription); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoIngredientWidget.OnSetIngredientCounts
-	// void OnSetIngredientCounts(int32_t OwnedCount, int32_t RequiredCount);                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetIngredientCounts(int32_t OwnedCount, int32_t RequiredCount);                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoIngredientWidget.OnSetHasEnough
-	// void OnSetHasEnough(bool bHasEnough);                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetHasEnough(bool bHasEnough);                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoInventoryUIData
@@ -658,15 +658,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoItemSpawnerEntrySlot.UpdateItemDisplay
-	// void UpdateItemDisplay(class UFortItemDefinition* FortItemDefinition);                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void UpdateItemDisplay(class UFortItemDefinition* FortItemDefinition);                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoItemSpawnerEntrySlot.OnLeaveContextMenuMode
-	// void OnLeaveContextMenuMode();                                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnLeaveContextMenuMode();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoItemSpawnerEntrySlot.OnEnterContextMenuMode
-	// void OnEnterContextMenuMode(bool bIsCurrentlySelectedSlot);                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnterContextMenuMode(bool bIsCurrentlySelectedSlot);                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoItemSpawnerEntrySlot.HandleOnMenuOpenChanged
-	// void HandleOnMenuOpenChanged(bool bIsOpen);                                                                              // [0xbdb76b4] Final|Native|Private 
+	// void HandleOnMenuOpenChanged(bool bIsOpen);                                                                              // [0xbd6ff64] Final|Native|Private 
 	// Function /Script/JunoUI.JunoItemSpawnerEntrySlot.GetContextMenu
-	// class UUserWidget* GetContextMenu();                                                                                     // [0xbdb765c] Final|Native|Private 
+	// class UUserWidget* GetContextMenu();                                                                                     // [0xbd6ff0c] Final|Native|Private 
 };
 
 /// Class /Script/JunoUI.JunoItemSpawnerSubCategoryHeader
@@ -707,9 +707,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoItemSpawnerScreen.UpdateItemDetails
-	// void UpdateItemDetails(class UFortItemDefinition* FortItemDefinition);                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void UpdateItemDetails(class UFortItemDefinition* FortItemDefinition);                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoItemSpawnerScreen.HandleTabSelected
-	// void HandleTabSelected(FName TabID);                                                                                     // [0xbdb7734] Final|Native|Private 
+	// void HandleTabSelected(FName TabID);                                                                                     // [0xbd6ffe4] Final|Native|Private 
 };
 
 /// Class /Script/JunoUI.JunoItemSpawnerListEntry
@@ -810,9 +810,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoSelectionModal.OnSetTitleAndDescription
-	// void OnSetTitleAndDescription(FText& Title, FText& Description);                                                         // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnSetTitleAndDescription(FText& Title, FText& Description);                                                         // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoSelectionModal.OnSelectionButtonCreated
-	// void OnSelectionButtonCreated(class UCommonButtonBase* NewButton, FText& SelectionTitle);                                // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnSelectionButtonCreated(class UCommonButtonBase* NewButton, FText& SelectionTitle);                                // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoNPCStatusWidgetBase
@@ -827,9 +827,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoNPCStatusWidgetBase.OnActorHealthChanged
-	// void OnActorHealthChanged(float NewHealth, float NewMaxHealth);                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnActorHealthChanged(float NewHealth, float NewMaxHealth);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoNPCStatusWidgetBase.InitializeHealthBar
-	// void InitializeHealthBar(float StartingHealth, float StartingMaxHealth);                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void InitializeHealthBar(float StartingHealth, float StartingMaxHealth);                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoPlayerAvatarContainer
@@ -845,9 +845,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoPlayerAvatarContainer.RepresentRemotePlayer
-	// void RepresentRemotePlayer(FUniqueNetIdRepl& UniqueID, class UFortPlayerAvatarViewModel* InPlayerAvatarViewModel);       // [0xbdb79e8] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void RepresentRemotePlayer(FUniqueNetIdRepl& UniqueID, class UFortPlayerAvatarViewModel* InPlayerAvatarViewModel);       // [0xbd70298] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoUI.JunoPlayerAvatarContainer.RepresentLocalPlayer
-	// void RepresentLocalPlayer(class UFortPlayerAvatarViewModel* InPlayerAvatarViewModel);                                    // [0xbdb78c8] Final|Native|Protected|BlueprintCallable 
+	// void RepresentLocalPlayer(class UFortPlayerAvatarViewModel* InPlayerAvatarViewModel);                                    // [0xbd70178] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoPlayerInventoryContainer
@@ -877,9 +877,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoPlayerManagementScreen.OpenSidebar
-	// void OpenSidebar();                                                                                                      // [0xbdb7844] Final|Native|Public|BlueprintCallable 
+	// void OpenSidebar();                                                                                                      // [0xbd700f4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoPlayerManagementScreen.HandleBackButtonClicked
-	// void HandleBackButtonClicked();                                                                                          // [0xbdb7680] Final|Native|Public|BlueprintCallable 
+	// void HandleBackButtonClicked();                                                                                          // [0xbd6ff30] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoQuickBuildRadialPicker
@@ -897,11 +897,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoQuickBuildRadialPicker.OnQuickBuildSlotSelected
-	// void OnQuickBuildSlotSelected(FJunoQuickBuildSlotData& SelectedQuickBuildSlotData);                                      // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnQuickBuildSlotSelected(FJunoQuickBuildSlotData& SelectedQuickBuildSlotData);                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoQuickBuildRadialPicker.CancelSelection
-	// void CancelSelection();                                                                                                  // [0x3b2f124] Final|Native|Protected|BlueprintCallable 
+	// void CancelSelection();                                                                                                  // [0x3b255c0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoQuickBuildRadialPicker.ApplyCurrentSelection
-	// void ApplyCurrentSelection();                                                                                            // [0xbdb7640] Final|Native|Protected|BlueprintCallable 
+	// void ApplyCurrentSelection();                                                                                            // [0xbd6fef0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoRecipeFilterButton
@@ -935,31 +935,31 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoRecipeListEntry.ViewRecipe
-	// void ViewRecipe();                                                                                                       // [0xbdc7400] Final|Native|Protected|BlueprintCallable 
+	// void ViewRecipe();                                                                                                       // [0xbd7fcb0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoRecipeListEntry.SetPartsRemaining
-	// void SetPartsRemaining(FJunoGuidedBuildRemainingPartsInfo& RemainingParts);                                              // [0xbdc71a0] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetPartsRemaining(FJunoGuidedBuildRemainingPartsInfo& RemainingParts);                                              // [0xbd7fa50] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.OnUpdateListEntryVisuals
-	// void OnUpdateListEntryVisuals();                                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnUpdateListEntryVisuals();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.OnSetRecipeInfo
-	// void OnSetRecipeInfo(class UFortItemDefinition* CraftedItemDef, int32_t CraftCount, FSlateBrush& SourceIcon);            // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetRecipeInfo(class UFortItemDefinition* CraftedItemDef, int32_t CraftCount, FSlateBrush& SourceIcon);            // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.OnRecipePinned
-	// void OnRecipePinned(bool bIsPinned);                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRecipePinned(bool bIsPinned);                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.OnRecipeHasBeenViewed
-	// void OnRecipeHasBeenViewed(bool bHasBeenViewed);                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRecipeHasBeenViewed(bool bHasBeenViewed);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.OnLeaveContextMenuMode
-	// void OnLeaveContextMenuMode(bool bUnselectSlot);                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnLeaveContextMenuMode(bool bUnselectSlot);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.OnInitWidgetComplete
-	// void OnInitWidgetComplete();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInitWidgetComplete();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.OnEnterContextMenuMode
-	// void OnEnterContextMenuMode(bool bIsCurrentlySelectedSlot);                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnterContextMenuMode(bool bIsCurrentlySelectedSlot);                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.OnCurrentStageUpdate
-	// void OnCurrentStageUpdate(FGuidedBuildingUpdate& UpdateData);                                                            // [0xbdc6ea4] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnCurrentStageUpdate(FGuidedBuildingUpdate& UpdateData);                                                            // [0xbd7f754] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoRecipeListEntry.GetPopupMenu
-	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbdc5cd8] Final|Native|Protected 
+	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbd7e588] Final|Native|Protected 
 	// Function /Script/JunoUI.JunoRecipeListEntry.GetKnowledgeState
-	// EJunoKnowledgeState GetKnowledgeState();                                                                                 // [0xbdc5b84] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// EJunoKnowledgeState GetKnowledgeState();                                                                                 // [0xbd7e434] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoUI.JunoRecipeListEntry.GetCanCraft
-	// bool GetCanCraft();                                                                                                      // [0xbdc5b6c] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// bool GetCanCraft();                                                                                                      // [0xbd7e41c] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoUI.JunoRecipeHeaderWidget
@@ -999,17 +999,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoStandaloneCraftingContainer.OnUpdateCraftingStationAttachedRecipe
-	// void OnUpdateCraftingStationAttachedRecipe(FText& NewAttachedRecipe);                                                    // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnUpdateCraftingStationAttachedRecipe(FText& NewAttachedRecipe);                                                    // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoStandaloneCraftingContainer.OnSetCraftingStationUIEntry
-	// void OnSetCraftingStationUIEntry(FJunoCraftingStationUIDataEntry CraftingStationUIEntry);                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetCraftingStationUIEntry(FJunoCraftingStationUIDataEntry CraftingStationUIEntry);                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoStandaloneCraftingContainer.OnRecipeCraftingComplete
-	// void OnRecipeCraftingComplete(class UFortItemDefinition* Item);                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRecipeCraftingComplete(class UFortItemDefinition* Item);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoStandaloneCraftingContainer.HandleCraftingSuccess
-	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbdc62f4] Final|Native|Private|HasOutParms 
+	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbd7eba4] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoUI.JunoStandaloneCraftingContainer.HandleCraftingStationRecipeChanged
-	// void HandleCraftingStationRecipeChanged(FName FormulaRowName);                                                           // [0xbdc61cc] Final|Native|Private 
+	// void HandleCraftingStationRecipeChanged(FName FormulaRowName);                                                           // [0xbd7ea7c] Final|Native|Private 
 	// Function /Script/JunoUI.JunoStandaloneCraftingContainer.HandleCraftingObjectEndPlay
-	// void HandleCraftingObjectEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                        // [0xbdc6110] Final|Native|Private 
+	// void HandleCraftingObjectEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                        // [0xbd7e9c0] Final|Native|Private 
 };
 
 /// Class /Script/JunoUI.JunoStationUpgradeScreen
@@ -1030,11 +1030,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoStationUpgradeScreen.OnUpdateCraftButton
-	// void OnUpdateCraftButton(EJunoCraftButtonState InButtonState, bool bIsStationUpgrade);                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateCraftButton(EJunoCraftButtonState InButtonState, bool bIsStationUpgrade);                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoStationUpgradeScreen.OnSetCurrentCraftingRecipeIcon
-	// void OnSetCurrentCraftingRecipeIcon(TWeakObjectPtr<UTexture2D*>& UpgradeIcon);                                           // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetCurrentCraftingRecipeIcon(TWeakObjectPtr<UTexture2D*>& UpgradeIcon);                                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoStationUpgradeScreen.HandleCraftingSuccess
-	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbdc639c] Native|Protected|HasOutParms 
+	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbd7ec4c] Native|Protected|HasOutParms 
 };
 
 /// Class /Script/JunoUI.JunoUIFunctionLibrary
@@ -1049,19 +1049,19 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoUIFunctionLibrary.RemoveModalScene
-	// void RemoveModalScene(class APlayerController* PlayerController);                                                        // [0xbdc6f38] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RemoveModalScene(class APlayerController* PlayerController);                                                        // [0xbd7f7e8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoUIFunctionLibrary.NumUnviewedRecipesInCategory
-	// int32_t NumUnviewedRecipesInCategory(class AFortPlayerController* PlayerController, class AActor* CraftingObject, FGameplayTag& CategoryTag, FGameplayTag& SubCategoryTag, bool bOnlyKnownRecipes); // [0xbdc6b68] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int32_t NumUnviewedRecipesInCategory(class AFortPlayerController* PlayerController, class AActor* CraftingObject, FGameplayTag& CategoryTag, FGameplayTag& SubCategoryTag, bool bOnlyKnownRecipes); // [0xbd7f418] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoUI.JunoUIFunctionLibrary.NumUnviewedItemsInInventory
-	// int32_t NumUnviewedItemsInInventory(class AFortPlayerController* PlayerController);                                      // [0xbdc682c] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t NumUnviewedItemsInInventory(class AFortPlayerController* PlayerController);                                      // [0xbd7f0dc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoUI.JunoUIFunctionLibrary.NumUnviewedItemsInGroup
-	// int32_t NumUnviewedItemsInGroup(class AFortPlayerController* PlayerController, FGameplayTag& GroupTag);                  // [0xbdc6688] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int32_t NumUnviewedItemsInGroup(class AFortPlayerController* PlayerController, FGameplayTag& GroupTag);                  // [0xbd7ef38] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoUI.JunoUIFunctionLibrary.GetRecipesFromCraftingObject
-	// TArray<FName> GetRecipesFromCraftingObject(class AFortPlayerController* PlayerController, class AActor* CraftingObject, FGameplayTag& CategoryTag, FGameplayTag& SubCategoryTag, bool bOnlyKnownRecipes); // [0xbdc5e24] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FName> GetRecipesFromCraftingObject(class AFortPlayerController* PlayerController, class AActor* CraftingObject, FGameplayTag& CategoryTag, FGameplayTag& SubCategoryTag, bool bOnlyKnownRecipes); // [0xbd7e6d4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoUI.JunoUIFunctionLibrary.GetRecipeCategoryUIData
-	// FJunoCraftingCategoryUIDataEntry GetRecipeCategoryUIData(FGameplayTag& CategoryTag);                                     // [0xbdc5cfc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FJunoCraftingCategoryUIDataEntry GetRecipeCategoryUIData(FGameplayTag& CategoryTag);                                     // [0xbd7e5ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoUI.JunoUIFunctionLibrary.AddModalScene
-	// void AddModalScene(class APlayerController* PlayerController, FJunoModalSceneOperation& ModalScene);                     // [0xbdc5aa8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddModalScene(class APlayerController* PlayerController, FJunoModalSceneOperation& ModalScene);                     // [0xbd7e358] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoUIGameFeatureData
@@ -1093,7 +1093,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoVillageAwesomePointsIngredientWidget.SetAwesomePointsInfo
-	// void SetAwesomePointsInfo(int32_t CurrentAwesomePoints, int32_t RequiredAwesomePoints, int32_t InEntryIndex);            // [0xbdc6fa8] Native|Event|Public|BlueprintEvent 
+	// void SetAwesomePointsInfo(int32_t CurrentAwesomePoints, int32_t RequiredAwesomePoints, int32_t InEntryIndex);            // [0xbd7f858] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoVillageMenuInitData
@@ -1124,7 +1124,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoVillageMenuContainer.OnAwesomeLevelChanged
-	// void OnAwesomeLevelChanged(FJunoAwesomeLevelChangeData& LevelChangeData);                                                // [0xbdc6e20] Final|Native|Protected|HasOutParms 
+	// void OnAwesomeLevelChanged(FJunoAwesomeLevelChangeData& LevelChangeData);                                                // [0xbd7f6d0] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/JunoUI.JunoVillageRewardEntry
@@ -1141,7 +1141,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoVillageRewardEntry.SetVillageRewardEntryInfo
-	// void SetVillageRewardEntryInfo(FJunoVillageRewardEntryInfo& InVillageRewardEntryInfo, FJunoVillageUIData& InParentVillageUIData); // [0xbdc723c] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void SetVillageRewardEntryInfo(FJunoVillageRewardEntryInfo& InVillageRewardEntryInfo, FJunoVillageUIData& InParentVillageUIData); // [0xbd7faec] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoWorldManagementUIComponent
@@ -1166,7 +1166,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoWorldSettingsScreen.HandleBackButtonClicked
-	// void HandleBackButtonClicked();                                                                                          // [0xbdb7680] Final|Native|Public|BlueprintCallable 
+	// void HandleBackButtonClicked();                                                                                          // [0xbd6ff30] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.GridListDataInterface
@@ -1221,7 +1221,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoAdjustableInventorySlot.OnButtonsStateUpdated
-	// void OnButtonsStateUpdated();                                                                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnButtonsStateUpdated();                                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoInventorySlot
@@ -1246,39 +1246,39 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoInventorySlot.ShowItemDetails
-	// void ShowItemDetails(bool bShow);                                                                                        // [0x2177018] Event|Public|BlueprintEvent 
+	// void ShowItemDetails(bool bShow);                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnStackCountChanged
-	// void OnStackCountChanged(int32_t StackCount, int32_t MaxStackCount);                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStackCountChanged(int32_t StackCount, int32_t MaxStackCount);                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnShowSelected
-	// void OnShowSelected(bool bInSelected);                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnShowSelected(bool bInSelected);                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnPreviewImageChanged
-	// void OnPreviewImageChanged(TWeakObjectPtr<UTexture2D*>& SlotImage, bool bIsValidItem, TWeakObjectPtr<UObject*>& InInventoryGroupIcon, TWeakObjectPtr<UTexture2D*>& InMatchingItemIcon, EFortRarity ItemRarity); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPreviewImageChanged(TWeakObjectPtr<UTexture2D*>& SlotImage, bool bIsValidItem, TWeakObjectPtr<UObject*>& InInventoryGroupIcon, TWeakObjectPtr<UTexture2D*>& InMatchingItemIcon, EFortRarity ItemRarity); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnLeaveSwappingMode
-	// void OnLeaveSwappingMode();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnLeaveSwappingMode();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnLeaveContextMenuMode
-	// void OnLeaveContextMenuMode(bool bUnselectSlot);                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnLeaveContextMenuMode(bool bUnselectSlot);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnItemHasBeenViewed
-	// void OnItemHasBeenViewed(bool bHasBeenPreviouslyViewed);                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemHasBeenViewed(bool bHasBeenPreviouslyViewed);                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnEnterSwappingMode
-	// void OnEnterSwappingMode(EJunoSwapItemType InSwapItemType, class UFortItem* Item);                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnterSwappingMode(EJunoSwapItemType InSwapItemType, class UFortItem* Item);                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnEnterContextMenuMode
-	// void OnEnterContextMenuMode(bool bIsCurrentlySelectedSlot);                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnterContextMenuMode(bool bIsCurrentlySelectedSlot);                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnEnchantmentsChanged
-	// void OnEnchantmentsChanged(int32_t TotalSlots, int32_t OccupiedSlots);                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnchantmentsChanged(int32_t TotalSlots, int32_t OccupiedSlots);                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnEnabledForScreenChanged
-	// void OnEnabledForScreenChanged(bool bEnabledForScreen);                                                                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnEnabledForScreenChanged(bool bEnabledForScreen);                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.OnDurabilityChanged
-	// void OnDurabilityChanged(float CurrentDurability, float MaxDurability, float NormalizedDurability, bool bFromItemInitializtion); // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDurabilityChanged(float CurrentDurability, float MaxDurability, float NormalizedDurability, bool bFromItemInitializtion); // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlot.HandleOnMenuOpenChanged
-	// void HandleOnMenuOpenChanged(bool bIsOpen);                                                                              // [0xbdc6608] Final|Native|Private 
+	// void HandleOnMenuOpenChanged(bool bIsOpen);                                                                              // [0xbd7eeb8] Final|Native|Private 
 	// Function /Script/JunoUI.JunoInventorySlot.GetSlotTags
-	// FGameplayTagContainer GetSlotTags();                                                                                     // [0xbdc60cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetSlotTags();                                                                                     // [0xbd7e97c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoInventorySlot.GetRepresentedItem
-	// class UFortItem* GetRepresentedItem();                                                                                   // [0xbdc60b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetRepresentedItem();                                                                                   // [0xbd7e964] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoInventorySlot.GetPopupMenu
-	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbdc5cb4] Final|Native|Private 
+	// class UUserWidget* GetPopupMenu();                                                                                       // [0xbd7e564] Final|Native|Private 
 	// Function /Script/JunoUI.JunoInventorySlot.GetMatchingItemGameplayTags
-	// FGameplayTagContainer GetMatchingItemGameplayTags();                                                                     // [0xbdc5b9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetMatchingItemGameplayTags();                                                                     // [0xbd7e44c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoInventorySlotsInfo
@@ -1294,11 +1294,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoInventorySlotsInfo.OnInventorySlotChanged
-	// void OnInventorySlotChanged();                                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInventorySlotChanged();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventorySlotsInfo.GetNumInventorySlots
-	// int32_t GetNumInventorySlots(bool bOccupied);                                                                            // [0xbdc5c24] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumInventorySlots(bool bOccupied);                                                                            // [0xbd7e4d4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoInventorySlotsInfo.GetMaxInventorySlotsAvailable
-	// int32_t GetMaxInventorySlotsAvailable();                                                                                 // [0xbdc5bd8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxInventorySlotsAvailable();                                                                                 // [0xbd7e488] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoCraftingCategoryUIData
@@ -1328,7 +1328,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoRecipeListObject.GetIsRecipeBeingCrafted
-	// bool GetIsRecipeBeingCrafted();                                                                                          // [0xb8c2bc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsRecipeBeingCrafted();                                                                                          // [0xb88bad4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoRecipeScreenBase
@@ -1357,7 +1357,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoRecipeScreenBase.OnRecipeListUpdated
-	// void OnRecipeListUpdated();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRecipeListUpdated();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoUIGameFeatureAction_AddHUDMenuTab
@@ -1415,31 +1415,31 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoBuildingScreen.OnSecondaryCategoriesChanged
-	// void OnSecondaryCategoriesChanged(bool bHasSecondaryCategories);                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSecondaryCategoriesChanged(bool bHasSecondaryCategories);                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBuildingScreen.OnRecipeHovered
-	// void OnRecipeHovered();                                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnRecipeHovered();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoBuildingScreen.OnGuidedBuildingSnapsUpdated
-	// void OnGuidedBuildingSnapsUpdated(TArray<int32_t>& UpdatedSnaps);                                                        // [0xbdfc6f8] Final|Native|Private|HasOutParms 
+	// void OnGuidedBuildingSnapsUpdated(TArray<int32_t>& UpdatedSnaps);                                                        // [0xbdb4510] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoUI.JunoBuildingScreen.OnGuidedBuildingSetComplete
-	// void OnGuidedBuildingSetComplete(FGuidedBuildingUpdate& UpdateData);                                                     // [0xbdfc674] Final|Native|Private|HasOutParms 
+	// void OnGuidedBuildingSetComplete(FGuidedBuildingUpdate& UpdateData);                                                     // [0xbdb448c] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoUI.JunoBuildingScreen.HasPreviewRecipe
-	// bool HasPreviewRecipe();                                                                                                 // [0xbdfc49c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool HasPreviewRecipe();                                                                                                 // [0xbdb42b4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoBuildingScreen.HandleSecondaryTabTransitionComplete
-	// void HandleSecondaryTabTransitionComplete();                                                                             // [0xbdfc478] Final|Native|Protected|BlueprintCallable 
+	// void HandleSecondaryTabTransitionComplete();                                                                             // [0xbdb4290] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoBuildingScreen.HandleSecondaryCategorySelected
-	// void HandleSecondaryCategorySelected(FName TabID);                                                                       // [0xbdfc3f8] Final|Native|Private 
+	// void HandleSecondaryCategorySelected(FName TabID);                                                                       // [0xbdb4210] Final|Native|Private 
 	// Function /Script/JunoUI.JunoBuildingScreen.HandlePrimaryCategorySelected
-	// void HandlePrimaryCategorySelected(FName TabID);                                                                         // [0xbdfc364] Final|Native|Private 
+	// void HandlePrimaryCategorySelected(FName TabID);                                                                         // [0xbdb417c] Final|Native|Private 
 	// Function /Script/JunoUI.JunoBuildingScreen.HandleBackClicked
-	// void HandleBackClicked();                                                                                                // [0x7885e24] Native|Protected|BlueprintCallable 
+	// void HandleBackClicked();                                                                                                // [0x78c227c] Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoBuildingScreen.GetWidgetFromItem
-	// class UJunoRecipeListEntry* GetWidgetFromItem(class UObject* Item);                                                      // [0xbdfc11c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UJunoRecipeListEntry* GetWidgetFromItem(class UObject* Item);                                                      // [0xbdb3f34] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoBuildingScreen.GetSecondaryCategoryUIData
-	// bool GetSecondaryCategoryUIData(FName PrimaryTabId, FName SecondaryTabId, FJunoCraftingSubCategoryUIDataEntry& OutSecondaryCategoryUIData); // [0xbdfbff4] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetSecondaryCategoryUIData(FName PrimaryTabId, FName SecondaryTabId, FJunoCraftingSubCategoryUIDataEntry& OutSecondaryCategoryUIData); // [0xbdb3e0c] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoBuildingScreen.GetPrimaryCategoryUIData
-	// bool GetPrimaryCategoryUIData(FName PrimaryTabId, FJunoCraftingCategoryUIDataEntry& OutPrimaryCategoryUIData);           // [0xbdfbee4] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetPrimaryCategoryUIData(FName PrimaryTabId, FJunoCraftingCategoryUIDataEntry& OutPrimaryCategoryUIData);           // [0xbdb3cfc] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoBuildingScreen.GetCraftingObject
-	// class AActor* GetCraftingObject();                                                                                       // [0xbdfbebc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetCraftingObject();                                                                                       // [0xbdb3cd4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoCraftingScreen
@@ -1477,25 +1477,25 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoCraftingScreen.OnWithdrawStateUpdated
-	// void OnWithdrawStateUpdated(bool bWithdrawEnabled);                                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnWithdrawStateUpdated(bool bWithdrawEnabled);                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoCraftingScreen.OnUpdateSelectRecipeButton
-	// void OnUpdateSelectRecipeButton(ESelectRecipeButtonState InButtonState);                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateSelectRecipeButton(ESelectRecipeButtonState InButtonState);                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoCraftingScreen.OnUpdatePassiveCraftingProgress
-	// void OnUpdatePassiveCraftingProgress(int32_t ItemsToCraft);                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdatePassiveCraftingProgress(int32_t ItemsToCraft);                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoCraftingScreen.OnUpdateCraftingStationInventoryState
-	// void OnUpdateCraftingStationInventoryState(ECraftingStationsInventoryState StationInventoryState);                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateCraftingStationInventoryState(ECraftingStationsInventoryState StationInventoryState);                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoCraftingScreen.OnUpdateCraftButton
-	// void OnUpdateCraftButton(EJunoCraftButtonState InButtonState);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateCraftButton(EJunoCraftButtonState InButtonState);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoCraftingScreen.OnPassiveScreenFocusChange
-	// void OnPassiveScreenFocusChange(bool bInputSlotsFocused);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPassiveScreenFocusChange(bool bInputSlotsFocused);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoCraftingScreen.HandleCraftingSuccess
-	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbdfc2bc] Final|Native|Protected|HasOutParms 
+	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                          // [0xbdb40d4] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoUI.JunoCraftingScreen.HandleCategorySelected
-	// void HandleCategorySelected(FName TabID);                                                                                // [0xbdfc23c] Final|Native|Protected 
+	// void HandleCategorySelected(FName TabID);                                                                                // [0xbdb4054] Final|Native|Protected 
 	// Function /Script/JunoUI.JunoCraftingScreen.HandleAttachNewRecipeConfirmed
-	// void HandleAttachNewRecipeConfirmed();                                                                                   // [0xbdfc228] Final|Native|Private 
+	// void HandleAttachNewRecipeConfirmed();                                                                                   // [0xbdb4040] Final|Native|Private 
 	// Function /Script/JunoUI.JunoCraftingScreen.HandleAttachNewRecipeCancelled
-	// void HandleAttachNewRecipeCancelled();                                                                                   // [0xbdfc214] Final|Native|Private 
+	// void HandleAttachNewRecipeCancelled();                                                                                   // [0xbdb402c] Final|Native|Private 
 };
 
 /// Class /Script/JunoUI.JunoInventoryGroup
@@ -1516,7 +1516,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoInventoryGroup.OnSetGroupName
-	// void OnSetGroupName(FText& InGroupName);                                                                                 // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetGroupName(FText& InGroupName);                                                                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoInventoryScreen
@@ -1563,15 +1563,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoInventoryScreen.OnSlotItemSelected
-	// void OnSlotItemSelected(class UFortItem* Item);                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSlotItemSelected(class UFortItem* Item);                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventoryScreen.OnMoveAllItemsStatusChanged
-	// void OnMoveAllItemsStatusChanged(bool bStarted);                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMoveAllItemsStatusChanged(bool bStarted);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventoryScreen.OnMergeAllItemsStatusChanged
-	// void OnMergeAllItemsStatusChanged(bool bStarted);                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMergeAllItemsStatusChanged(bool bStarted);                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventoryScreen.OnInventoryObjectUpdated
-	// void OnInventoryObjectUpdated(bool bInventoryObjectPresent);                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInventoryObjectUpdated(bool bInventoryObjectPresent);                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInventoryScreen.GetCurrentModalOperation
-	// EJunoInventoryModalOperation GetCurrentModalOperation();                                                                 // [0xa6e9464] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EJunoInventoryModalOperation GetCurrentModalOperation();                                                                 // [0xa6e1ed8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoHudMenu
@@ -1587,7 +1587,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoHudMenu.ShouldShowPlayersTab
-	// bool ShouldShowPlayersTab();                                                                                             // [0xbdb6228] Final|Native|Public|BlueprintCallable|Const 
+	// bool ShouldShowPlayersTab();                                                                                             // [0xbd6ead8] Final|Native|Public|BlueprintCallable|Const 
 };
 
 /// Class /Script/JunoUI.JunoInventoryDragAndDropHandler
@@ -1621,7 +1621,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoMapMarkerCustomizationEntry.OnEntryInitialized
-	// void OnEntryInitialized(FJunoMapMarkerEntryInitData EntryInitData);                                                      // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEntryInitialized(FJunoMapMarkerEntryInitData EntryInitData);                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoMapMarkerCustomizationScreen
@@ -1647,9 +1647,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoMapMarkerCustomizationScreen.SetPreviewMarkerMaterial
-	// void SetPreviewMarkerMaterial();                                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void SetPreviewMarkerMaterial();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoUI.JunoMapMarkerCustomizationScreen.SetMarkerNameText
-	// void SetMarkerNameText(FText& Name);                                                                                     // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void SetMarkerNameText(FText& Name);                                                                                     // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoVillageScreenBase
@@ -1670,15 +1670,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoVillageScreenBase.OnVillageDataChanged
-	// void OnVillageDataChanged();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnVillageDataChanged();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoVillageScreenBase.OnAwesomePointsModified
-	// void OnAwesomePointsModified(FJunoAwesomePointModificationData& PointModificationData);                                  // [0xbdfc54c] Native|Protected|HasOutParms 
+	// void OnAwesomePointsModified(FJunoAwesomePointModificationData& PointModificationData);                                  // [0xbdb4364] Native|Protected|HasOutParms 
 	// Function /Script/JunoUI.JunoVillageScreenBase.OnAwesomeLevelChanged
-	// void OnAwesomeLevelChanged(FJunoAwesomeLevelChangeData& LevelChangeData);                                                // [0xbdfc4b8] Native|Protected|HasOutParms 
+	// void OnAwesomeLevelChanged(FJunoAwesomeLevelChangeData& LevelChangeData);                                                // [0xbdb42d0] Native|Protected|HasOutParms 
 	// Function /Script/JunoUI.JunoVillageScreenBase.BP_OnAwesomePointsChanged
-	// void BP_OnAwesomePointsChanged(FJunoAwesomePointModificationData& Data);                                                 // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnAwesomePointsChanged(FJunoAwesomePointModificationData& Data);                                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoVillageScreenBase.BP_OnAwesomeLevelChanged
-	// void BP_OnAwesomeLevelChanged(FJunoAwesomeLevelChangeData& Data);                                                        // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnAwesomeLevelChanged(FJunoAwesomeLevelChangeData& Data);                                                        // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoVillageDetailsScreen
@@ -1704,11 +1704,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoVillageDetailsScreen.OnEntryHovered
-	// void OnEntryHovered(class UJunoVillageRewardEntry* Entry);                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEntryHovered(class UJunoVillageRewardEntry* Entry);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoVillageDetailsScreen.HandleRemoveVillageConfirmed
-	// void HandleRemoveVillageConfirmed();                                                                                     // [0xbdfc3e4] Final|Native|Protected 
+	// void HandleRemoveVillageConfirmed();                                                                                     // [0xbdb41fc] Final|Native|Protected 
 	// Function /Script/JunoUI.JunoVillageDetailsScreen.HandleRemoveVillageCancelled
-	// void HandleRemoveVillageCancelled();                                                                                     // [0xbdfc214] Final|Native|Protected 
+	// void HandleRemoveVillageCancelled();                                                                                     // [0xbdb402c] Final|Native|Protected 
 };
 
 /// Class /Script/JunoUI.JunoVillageUIDataAsset
@@ -1724,7 +1724,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoVillageUIDataAsset.FindPerkImage
-	// TWeakObjectPtr<UTexture2D*> FindPerkImage(FGameplayTagContainer& InTagContainer);                                        // [0xbdfbde0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TWeakObjectPtr<UTexture2D*> FindPerkImage(FGameplayTagContainer& InTagContainer);                                        // [0xbdb3bf8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoUI.JunoVillageUpgradeCelebrationScreen
@@ -1754,7 +1754,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoVillageUpgradeScreen.OnUpgrade
-	// void OnUpgrade();                                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpgrade();                                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoGuidedBuildingHudBar
@@ -1791,21 +1791,21 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoGuidedBuildingHudStateWidget.ShowWidget
-	// void ShowWidget();                                                                                                       // [0x9ea0e14] Native|Event|Protected|BlueprintEvent 
+	// void ShowWidget();                                                                                                       // [0x9ea3b88] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoGuidedBuildingHudStateWidget.OnStageComplete
-	// void OnStageComplete(FGuidedBuildingUpdate& UpdateData);                                                                 // [0xbdfc954] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnStageComplete(FGuidedBuildingUpdate& UpdateData);                                                                 // [0xbdb476c] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoGuidedBuildingHudStateWidget.OnSnapsUpdated
-	// void OnSnapsUpdated(TArray<int32_t>& UpdatedSnaps);                                                                      // [0xbdfc8b4] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSnapsUpdated(TArray<int32_t>& UpdatedSnaps);                                                                      // [0xbdb46cc] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoGuidedBuildingHudStateWidget.OnSetComplete
-	// void OnSetComplete(FGuidedBuildingUpdate& UpdateData);                                                                   // [0xbdfc820] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetComplete(FGuidedBuildingUpdate& UpdateData);                                                                   // [0xbdb4638] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoGuidedBuildingHudStateWidget.OnSectionComplete
-	// void OnSectionComplete(FGuidedBuildingUpdate& UpdateData);                                                               // [0xbdfc78c] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSectionComplete(FGuidedBuildingUpdate& UpdateData);                                                               // [0xbdb45a4] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoGuidedBuildingHudStateWidget.OnCurrentStageUpdate
-	// void OnCurrentStageUpdate(FGuidedBuildingUpdate& UpdateData);                                                            // [0xbdfc5e0] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnCurrentStageUpdate(FGuidedBuildingUpdate& UpdateData);                                                            // [0xbdb43f8] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoGuidedBuildingHudStateWidget.OnAutoHideTimereFinished
-	// void OnAutoHideTimereFinished();                                                                                         // [0x1555df0] Native|Event|Protected|BlueprintEvent 
+	// void OnAutoHideTimereFinished();                                                                                         // [0x212f900] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoGuidedBuildingHudStateWidget.HideWidget
-	// void HideWidget();                                                                                                       // [0xb7c3b48] Native|Event|Protected|BlueprintEvent 
+	// void HideWidget();                                                                                                       // [0xb792568] Native|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoEquipmentWidget
@@ -1822,7 +1822,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoEquipmentWidget.OnSlotItemChanged
-	// void OnSlotItemChanged(EJunoItemChangeType ChangeType, class UFortItem* SlotItem);                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSlotItemChanged(EJunoItemChangeType ChangeType, class UFortItem* SlotItem);                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoGliderWidget
@@ -1873,9 +1873,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoInteractionIndicatorWidget.OnShowPickup
-	// void OnShowPickup(class AFortPickup* InCurrentPickup);                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnShowPickup(class AFortPickup* InCurrentPickup);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoInteractionIndicatorWidget.OnShowBasicInteraction
-	// void OnShowBasicInteraction(FText& Description, FLinearColor DescriptionColor, int32_t InteractionCount);                // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnShowBasicInteraction(FText& Description, FLinearColor DescriptionColor, int32_t InteractionCount);                // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoLocalPlayerViewModel
@@ -1916,9 +1916,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoNotificationWidget.OnNotificationFinished
-	// void OnNotificationFinished();                                                                                           // [0xbe0bb48] Final|Native|Protected|BlueprintCallable 
+	// void OnNotificationFinished();                                                                                           // [0xbdc312c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoNotificationWidget.BP_DisplayNotification
-	// void BP_DisplayNotification(FJunoNotificationData& NotificationData);                                                    // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_DisplayNotification(FJunoNotificationData& NotificationData);                                                    // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoNotificationHostWidget
@@ -1961,7 +1961,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoOffhandWidgetSlot.OnSlotItemChanged
-	// void OnSlotItemChanged(EJunoItemChangeType ChangeType, class UFortItem* SlotItem);                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSlotItemChanged(EJunoItemChangeType ChangeType, class UFortItem* SlotItem);                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoPickupStream
@@ -1981,15 +1981,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoPickupStream.RefreshPickupEntry
-	// void RefreshPickupEntry(class UUserWidget* EntryWidget, TWeakObjectPtr<UTexture2D*>& Icon, FText& DisplayName, int32_t Count, int32_t TotalInventoryCount, EFortRarity ItemRarity, EJunoPickupStreamAnim AnimType); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void RefreshPickupEntry(class UUserWidget* EntryWidget, TWeakObjectPtr<UTexture2D*>& Icon, FText& DisplayName, int32_t Count, int32_t TotalInventoryCount, EFortRarity ItemRarity, EJunoPickupStreamAnim AnimType); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPickupStream.OnHideExpiredPickup
-	// void OnHideExpiredPickup(class UUserWidget* EntryWidget);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnHideExpiredPickup(class UUserWidget* EntryWidget);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPickupStream.OnActivePickupsPresent
-	// void OnActivePickupsPresent(bool bHasActivePickups);                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnActivePickupsPresent(bool bHasActivePickups);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPickupStream.HandleItemPickedUp
-	// void HandleItemPickedUp(class UFortWorldItem* WorldItem, int32_t Count);                                                 // [0xbe0b9c4] Final|Native|Protected 
+	// void HandleItemPickedUp(class UFortWorldItem* WorldItem, int32_t Count);                                                 // [0xbdc2fa8] Final|Native|Protected 
 	// Function /Script/JunoUI.JunoPickupStream.HandleEntryHideAnimComplete
-	// void HandleEntryHideAnimComplete(class UUserWidget* EntryWidget);                                                        // [0xbe0b944] Final|Native|Protected|BlueprintCallable 
+	// void HandleEntryHideAnimComplete(class UUserWidget* EntryWidget);                                                        // [0xbdc2f28] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoUI.JunoPlayerHitpointWidget
@@ -2009,15 +2009,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoPlayerHitpointWidget.OnValueChangedWithReason
-	// void OnValueChangedWithReason(EFortHitPointModificationReason Reason);                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnValueChangedWithReason(EFortHitPointModificationReason Reason);                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPlayerHitpointWidget.OnMaxValueChanged
-	// void OnMaxValueChanged(float Value);                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMaxValueChanged(float Value);                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPlayerHitpointWidget.OnDeltaChanged
-	// void OnDeltaChanged();                                                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDeltaChanged();                                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPlayerHitpointWidget.GetLastValuePercentage
-	// float GetLastValuePercentage();                                                                                          // [0xbe0b8c8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetLastValuePercentage();                                                                                          // [0xbdc2eac] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoUI.JunoPlayerHitpointWidget.GetCurrentValuePercentage
-	// float GetCurrentValuePercentage();                                                                                       // [0xbe0b898] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentValuePercentage();                                                                                       // [0xbdc2e7c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoPlayerIndicatorWidget
@@ -2035,15 +2035,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoPlayerIndicatorWidget.OnPlayerDataUpdated
-	// void OnPlayerDataUpdated(FJunoPlayerIndicatorData& PlayerIndicatorData);                                                 // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPlayerDataUpdated(FJunoPlayerIndicatorData& PlayerIndicatorData);                                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPlayerIndicatorWidget.OnInFocusStateChanged
-	// void OnInFocusStateChanged(bool bInInFocus);                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInFocusStateChanged(bool bInInFocus);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPlayerIndicatorWidget.OnClampedStatusChanged
-	// void OnClampedStatusChanged(bool bInIsClamped);                                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnClampedStatusChanged(bool bInIsClamped);                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoPlayerIndicatorWidget.HandlePlayerStatePawnDied
-	// void HandlePlayerStatePawnDied(FPawnDamageData& PawnDamageInfo);                                                         // [0xbe0ba88] Final|Native|Private|HasOutParms 
+	// void HandlePlayerStatePawnDied(FPawnDamageData& PawnDamageInfo);                                                         // [0xbdc306c] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoUI.JunoPlayerIndicatorWidget.HandleCurrentPawnChanged
-	// void HandleCurrentPawnChanged();                                                                                         // [0xbe0b930] Final|Native|Private 
+	// void HandleCurrentPawnChanged();                                                                                         // [0xbdc2f14] Final|Native|Private 
 };
 
 /// Class /Script/JunoUI.JunoQuickbar
@@ -2060,7 +2060,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoQuickbar.OnQuickbarSlotChanged
-	// void OnQuickbarSlotChanged(int32_t SelectedSlotIndex);                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnQuickbarSlotChanged(int32_t SelectedSlotIndex);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoUI.JunoQuickbarMobileContainer
@@ -2091,17 +2091,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoQuickbarSlot.OnSlotItemChangeFailed
-	// void OnSlotItemChangeFailed();                                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnSlotItemChangeFailed();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/JunoUI.JunoQuickbarSlot.OnSlotItemChanged
-	// void OnSlotItemChanged(EJunoItemChangeType ChangeType);                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSlotItemChanged(EJunoItemChangeType ChangeType);                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoQuickbarSlot.OnSlotInitialized
-	// void OnSlotInitialized();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSlotInitialized();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoQuickbarSlot.OnSetQuickbarSlotSelected
-	// void OnSetQuickbarSlotSelected(bool bInSelected, FText& ItemName);                                                       // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetQuickbarSlotSelected(bool bInSelected, FText& ItemName);                                                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoUI.JunoQuickbarSlot.OnPrebuildStateChanged
-	// void OnPrebuildStateChanged(bool bInEnabled);                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPrebuildStateChanged(bool bInEnabled);                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoQuickbarSlot.GetSlotItem
-	// class UFortItem* GetSlotItem();                                                                                          // [0xbe0b910] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItem* GetSlotItem();                                                                                          // [0xbdc2ef4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoDynamicUIDirector
@@ -2128,17 +2128,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoUI.JunoDynamicUIDirector.StartRegisteringUI
-	// void StartRegisteringUI();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void StartRegisteringUI();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoDynamicUIDirector.OpenStandaloneMenuScene
-	// void OpenStandaloneMenuScene(FJunoWidgetSceneAndIndex WidgetSceneAndIndex, class UObject* BoundObject);                  // [0xbe0bd90] Final|Native|Protected|BlueprintCallable 
+	// void OpenStandaloneMenuScene(FJunoWidgetSceneAndIndex WidgetSceneAndIndex, class UObject* BoundObject);                  // [0xbdc3374] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoDynamicUIDirector.OpenHudMenuScene
-	// void OpenHudMenuScene(FJunoWidgetSceneAndIndex WidgetSceneAndIndex, class UJunoHudMenuBaseInitData* HudMenuData);        // [0xbe0bb5c] Final|Native|Protected|BlueprintCallable 
+	// void OpenHudMenuScene(FJunoWidgetSceneAndIndex WidgetSceneAndIndex, class UJunoHudMenuBaseInitData* HudMenuData);        // [0xbdc3140] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoUI.JunoDynamicUIDirector.OnShouldShowMobileHUDChanged
-	// void OnShouldShowMobileHUDChanged();                                                                                     // [0x2177018] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void OnShouldShowMobileHUDChanged();                                                                                     // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoUI.JunoDynamicUIDirector.OnEnteredConversation
-	// void OnEnteredConversation();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnEnteredConversation();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoUI.JunoDynamicUIDirector.GetShouldShowMobileHUD
-	// bool GetShouldShowMobileHUD();                                                                                           // [0xbe0b8f8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool GetShouldShowMobileHUD();                                                                                           // [0xbdc2edc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoUI.JunoNullHUD

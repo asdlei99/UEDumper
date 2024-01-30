@@ -33,9 +33,9 @@ public:
 
 	/// Functions
 	// Function /Script/VaultingCodeRuntime.FortMovementMode_ExtLogicHurdle.BP_GetAnimationMontageInformation
-	// void BP_GetAnimationMontageInformation(FSynchedActionInfo SynchedActionInfo, EHurdleType Type, bool bIsNarrowOpening, bool bIsCrouched, class UAnimMontage*& AnimMontage, FName& StartSectionName, FName& MontageMiddleSectionName); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void BP_GetAnimationMontageInformation(FSynchedActionInfo SynchedActionInfo, EHurdleType Type, bool bIsNarrowOpening, bool bIsCrouched, class UAnimMontage*& AnimMontage, FName& StartSectionName, FName& MontageMiddleSectionName); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/VaultingCodeRuntime.FortMovementMode_ExtLogicHurdle.BP_DestroyProp
-	// void BP_DestroyProp(class ABuildingProp* BuildPropToDestroy);                                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_DestroyProp(class ABuildingProp* BuildPropToDestroy);                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/VaultingCodeRuntime.HurdleNavLinkProcessor
@@ -93,49 +93,49 @@ public:
 
 	/// Functions
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.UnregisterMutatorUpdatedDelegate
-	// void UnregisterMutatorUpdatedDelegate();                                                                                 // [0xa8e7560] Final|Native|Protected 
+	// void UnregisterMutatorUpdatedDelegate();                                                                                 // [0xa8d9990] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.ShouldShowHurdleIndicator
-	// bool ShouldShowHurdleIndicator();                                                                                        // [0xb46e868] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldShowHurdleIndicator();                                                                                        // [0xb444858] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.ServerStartHurdle
-	// void ServerStartHurdle(FReplicatedHurdleTargetingData InReplicatedTargetingData, double ClientLastTeleportTime);         // [0xb46e59c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerStartHurdle(FReplicatedHurdleTargetingData InReplicatedTargetingData, double ClientLastTeleportTime);         // [0xb44458c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.RegisterMutatorUpdatedDelegate
-	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                          // [0xb46e398] Final|Native|Protected 
+	// void RegisterMutatorUpdatedDelegate(class APawn* AffectedPawn);                                                          // [0xb444388] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.OnRep_ReplicatedLastTeleportTime
-	// void OnRep_ReplicatedLastTeleportTime();                                                                                 // [0x2c1425c] Final|Native|Protected 
+	// void OnRep_ReplicatedLastTeleportTime();                                                                                 // [0x2c42378] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.OnRep_ReplicatedHurdleState
-	// void OnRep_ReplicatedHurdleState();                                                                                      // [0xb46e030] Final|Native|Protected 
+	// void OnRep_ReplicatedHurdleState();                                                                                      // [0xb444020] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0xb46df38] Final|Native|Protected 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0xb443f28] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                                 // [0xb46df24] Final|Native|Protected 
+	// void OnMutatorUpdated();                                                                                                 // [0xb443f14] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.IsUsingGamepad
-	// bool IsUsingGamepad();                                                                                                   // [0xb46deac] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUsingGamepad();                                                                                                   // [0xb443e9c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.HandleTargetingDataValid
-	// void HandleTargetingDataValid(FHurdleTargetingData& TargetingData);                                                      // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void HandleTargetingDataValid(FHurdleTargetingData& TargetingData);                                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.HandleTargetingDataInvalid
-	// void HandleTargetingDataInvalid(FHurdleTargetingData& TargetingData);                                                    // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void HandleTargetingDataInvalid(FHurdleTargetingData& TargetingData);                                                    // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.HandleOwnerTeleported
-	// void HandleOwnerTeleported(class AFortPawn* TeleportedOwner);                                                            // [0x3aff66c] Final|Native|Protected 
+	// void HandleOwnerTeleported(class AFortPawn* TeleportedOwner);                                                            // [0x3af6254] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.HandleOwnerMovementModeChanged
-	// void HandleOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0x294ade8] Final|Native|Protected 
+	// void HandleOwnerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0x1e05904] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.HandleOwnerJumpInput
-	// void HandleOwnerJumpInput(bool bPressed);                                                                                // [0xb46de2c] Final|Native|Protected 
+	// void HandleOwnerJumpInput(bool bPressed);                                                                                // [0xb443e1c] Final|Native|Protected 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.HandleNavLinkMoveStarted
-	// void HandleNavLinkMoveStarted(FVector LinkEndPoint);                                                                     // [0xb46dcec] Final|Native|Protected|HasDefaults 
+	// void HandleNavLinkMoveStarted(FVector LinkEndPoint);                                                                     // [0xb443cdc] Final|Native|Protected|HasDefaults 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.GetHurdleHighlightTransform
-	// FTransform GetHurdleHighlightTransform();                                                                                // [0xb46dc90] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetHurdleHighlightTransform();                                                                                // [0xb443c80] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.BP_UseAutoHurdle
-	// bool BP_UseAutoHurdle();                                                                                                 // [0xb46dc1c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool BP_UseAutoHurdle();                                                                                                 // [0xb443c0c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.BP_IsTacticalSprinting
-	// bool BP_IsTacticalSprinting();                                                                                           // [0xb46dbbc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool BP_IsTacticalSprinting();                                                                                           // [0xb443bac] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.BP_HandleSpringJump
-	// void BP_HandleSpringJump();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleSpringJump();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.BP_HandleHurdleStarted
-	// void BP_HandleHurdleStarted(FHurdleTargetingData& TargetingData, FSynchedActionInfo& SynchedActionInfo);                 // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_HandleHurdleStarted(FHurdleTargetingData& TargetingData, FSynchedActionInfo& SynchedActionInfo);                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.BP_HandleHurdleEnded
-	// void BP_HandleHurdleEnded();                                                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_HandleHurdleEnded();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/VaultingCodeRuntime.HurdleComponent.BP_CanStartHurdle
-	// void BP_CanStartHurdle(bool& OutCanStartHurdle);                                                                         // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void BP_CanStartHurdle(bool& OutCanStartHurdle);                                                                         // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/VaultingCodeRuntime.HurdleLibrary
@@ -150,7 +150,7 @@ public:
 
 	/// Functions
 	// Function /Script/VaultingCodeRuntime.HurdleLibrary.PerformHurdleTargeting
-	// bool PerformHurdleTargeting(class ACharacter* Character, FHurdleInputConfigCache& HurdleInputConfig, FHurdleTargetingData& OutTargetingData, bool bIsAutoHurdle, FVector OverrideAimDirection); // [0xb46e058] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool PerformHurdleTargeting(class ACharacter* Character, FHurdleInputConfigCache& HurdleInputConfig, FHurdleTargetingData& OutTargetingData, bool bIsAutoHurdle, FVector OverrideAimDirection); // [0xb444048] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/VaultingCodeRuntime.FortMovementMode_HurdleRuntimeData

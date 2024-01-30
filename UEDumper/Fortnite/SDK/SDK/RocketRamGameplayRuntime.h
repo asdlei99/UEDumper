@@ -28,7 +28,7 @@ public:
 
 	/// Functions
 	// Function /Script/RocketRamGameplayRuntime.AbilityTask_ApplyRootMotion_RocketRam.ApplyRootMotion_RocketRam
-	// class UAbilityTask_ApplyRootMotion_RocketRam* ApplyRootMotion_RocketRam(class UGameplayAbility* InOwningAbility, FName InTaskInstanceName, float InDuration, FVector InInitialDirection, float InMinSpeed, float InMaxSpeed, class UCurveFloat* InSpeedCurve, float InFloorTraceHeight, class UCurveVector* InPathOffsetCurve, ERootMotionFinishVelocityMode InVelocityOnFinishMode, FVector InSetVelocityOnFinish, float InClampVelocityOnFinish); // [0xb22b034] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAbilityTask_ApplyRootMotion_RocketRam* ApplyRootMotion_RocketRam(class UGameplayAbility* InOwningAbility, FName InTaskInstanceName, float InDuration, FVector InInitialDirection, float InMinSpeed, float InMaxSpeed, class UCurveFloat* InSpeedCurve, float InFloorTraceHeight, class UCurveVector* InPathOffsetCurve, ERootMotionFinishVelocityMode InVelocityOnFinishMode, FVector InSetVelocityOnFinish, float InClampVelocityOnFinish); // [0xb20b7e8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/RocketRamGameplayRuntime.RocketRamItemLayerAnimInstance

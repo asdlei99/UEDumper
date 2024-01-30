@@ -54,9 +54,9 @@ public:
 	SMember(FMargin)                                   Margin                                                      OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_1eb86950b9ea4c2f
+/// Struct /Engine/Transient.PropertyBag_3ba6b772326dd435
 /// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_1eb86950b9ea4c2f : public MDKBase
+class FPropertyBag_3ba6b772326dd435 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -92,9 +92,9 @@ public:
 	SMember(FMargin)                                   Margin                                                      OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_7c180a2da50520c3
+/// Struct /Engine/Transient.PropertyBag_ecf5c755635a777d
 /// Size: 0x0004 (0x000000 - 0x000004)
-class FPropertyBag_7c180a2da50520c3 : public MDKBase
+class FPropertyBag_ecf5c755635a777d : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -104,9 +104,9 @@ public:
 	DMember(float)                                     Font_Size                                                   OFFSET(get<float>, {0x0, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_3f575e7f170ea07b
+/// Struct /Engine/Transient.PropertyBag_a46c1339c900084b
 /// Size: 0x0004 (0x000000 - 0x000004)
-class FPropertyBag_3f575e7f170ea07b : public MDKBase
+class FPropertyBag_a46c1339c900084b : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -116,9 +116,9 @@ public:
 	SMember(FName)                                     Font_TypefaceFontName                                       OFFSET(getStruct<T>, {0x0, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_3b275ebd49bb8a32
+/// Struct /Engine/Transient.PropertyBag_4681491f684a3575
 /// Size: 0x001C (0x000000 - 0x00001C)
-class FPropertyBag_3b275ebd49bb8a32 : public MDKBase
+class FPropertyBag_4681491f684a3575 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -133,9 +133,9 @@ public:
 	DMember(float)                                     Font_SkewAmount                                             OFFSET(get<float>, {0x18, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_78a041c03555e01e
+/// Struct /Engine/Transient.PropertyBag_59663f99456f1b4c
 /// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_78a041c03555e01e : public MDKBase
+class FPropertyBag_59663f99456f1b4c : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -146,9 +146,9 @@ public:
 	DMember(int32_t)                                   Font_LetterSpacing                                          OFFSET(get<int32_t>, {0x4, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_c51152f2f0adef5d
+/// Struct /Engine/Transient.PropertyBag_f000d945505d49ef
 /// Size: 0x000C (0x000000 - 0x00000C)
-class FPropertyBag_c51152f2f0adef5d : public MDKBase
+class FPropertyBag_f000d945505d49ef : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -160,9 +160,9 @@ public:
 	DMember(int32_t)                                   Font_LetterSpacing                                          OFFSET(get<int32_t>, {0x8, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_723fa99cbf9544c8
+/// Struct /Engine/Transient.PropertyBag_ba2e90b9d93c41a2
 /// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_723fa99cbf9544c8 : public MDKBase
+class FPropertyBag_ba2e90b9d93c41a2 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -173,9 +173,9 @@ public:
 	DMember(int32_t)                                   Font_LetterSpacing                                          OFFSET(get<int32_t>, {0x4, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_a7ae8babf8692733
+/// Struct /Engine/Transient.PropertyBag_dac94b7ec6202da5
 /// Size: 0x0009 (0x000000 - 0x000009)
-class FPropertyBag_a7ae8babf8692733 : public MDKBase
+class FPropertyBag_dac94b7ec6202da5 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -187,9 +187,9 @@ public:
 	CMember(ETextTransformPolicy)                      TextTransformPolicy                                         OFFSET(get<T>, {0x8, 1, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_2a7a742581e2515d
+/// Struct /Engine/Transient.PropertyBag_d306bcd68f816b69
 /// Size: 0x0004 (0x000000 - 0x000004)
-class FPropertyBag_2a7a742581e2515d : public MDKBase
+class FPropertyBag_d306bcd68f816b69 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -199,9 +199,9 @@ public:
 	DMember(float)                                     Font_Size                                                   OFFSET(get<float>, {0x0, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_f6cd4a9269f01ad8
+/// Struct /Engine/Transient.PropertyBag_14eaf7ece10bf3e8
 /// Size: 0x0004 (0x000000 - 0x000004)
-class FPropertyBag_f6cd4a9269f01ad8 : public MDKBase
+class FPropertyBag_14eaf7ece10bf3e8 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -211,9 +211,9 @@ public:
 	DMember(float)                                     Font_Size                                                   OFFSET(get<float>, {0x0, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_59fab09b0abd5c5c
+/// Struct /Engine/Transient.PropertyBag_1a9664da03bb03a2
 /// Size: 0x0014 (0x000000 - 0x000014)
-class FPropertyBag_59fab09b0abd5c5c : public MDKBase
+class FPropertyBag_1a9664da03bb03a2 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -226,9 +226,9 @@ public:
 	DMember(float)                                     Font_SkewAmount                                             OFFSET(get<float>, {0x10, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_1f09a5b30f08bb17
+/// Struct /Engine/Transient.PropertyBag_1fe8926875373c91
 /// Size: 0x0004 (0x000000 - 0x000004)
-class FPropertyBag_1f09a5b30f08bb17 : public MDKBase
+class FPropertyBag_1fe8926875373c91 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -238,9 +238,112 @@ public:
 	SMember(FName)                                     Font_TypefaceFontName                                       OFFSET(getStruct<T>, {0x0, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_b3b0feaa3606b92b
+/// Struct /Engine/Transient.PropertyBag_37bdbf30236ec933
+/// Size: 0x0008 (0x000000 - 0x000008)
+class FPropertyBag_37bdbf30236ec933 : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 8;
+
+public:
+	CMember(class USoundBase*)                         MatchMakingSucceededSound                                   OFFSET(get<T>, {0x0, 8, 0, 0})
+};
+
+/// Struct /Engine/Transient.PropertyBag_ef784dd8262d89d2
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FPropertyBag_ef784dd8262d89d2 : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	DMember(float)                                     SecondsPriorToTransSound                                    OFFSET(get<float>, {0x0, 4, 0, 0})
+	CMember(class USoundBase*)                         TransitionSound                                             OFFSET(get<T>, {0x8, 8, 0, 0})
+};
+
+/// Struct /Engine/Transient.PropertyBag_793ae256b45e5624
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FPropertyBag_793ae256b45e5624 : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	CMember(class USoundBase*)                         MTXOfferTileIntroWhoosh                                     OFFSET(get<T>, {0x0, 8, 0, 0})
+	CMember(class USoundBase*)                         ShopRowWhooshIn                                             OFFSET(get<T>, {0x8, 8, 0, 0})
+};
+
+/// Struct /Engine/Transient.PropertyBag_387af51fb0ee4dea
+/// Size: 0x0008 (0x000000 - 0x000008)
+class FPropertyBag_387af51fb0ee4dea : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 8;
+
+public:
+	CMember(class USoundBase*)                         ShopRowWhooshIn                                             OFFSET(get<T>, {0x0, 8, 0, 0})
+};
+
+/// Struct /Engine/Transient.PropertyBag_a771253926a1104e
+/// Size: 0x0008 (0x000000 - 0x000008)
+class FPropertyBag_a771253926a1104e : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 8;
+
+public:
+	CMember(class USoundBase*)                         LockerCategoryWhooshSound                                   OFFSET(get<T>, {0x0, 8, 0, 0})
+};
+
+/// Struct /Engine/Transient.PropertyBag_258a81de738c247f
+/// Size: 0x0020 (0x000000 - 0x000020)
+class FPropertyBag_258a81de738c247f : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 32;
+
+public:
+	CMember(class USoundBase*)                         BannerAppearSound                                           OFFSET(get<T>, {0x0, 8, 0, 0})
+	CMember(class USoundBase*)                         BannerAwaySound                                             OFFSET(get<T>, {0x8, 8, 0, 0})
+	CMember(class USoundBase*)                         IntroSound                                                  OFFSET(get<T>, {0x10, 8, 0, 0})
+	CMember(class USoundBase*)                         OutroSound                                                  OFFSET(get<T>, {0x18, 8, 0, 0})
+};
+
+/// Struct /Engine/Transient.PropertyBag_e9500e50887a2dc9
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FPropertyBag_e9500e50887a2dc9 : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	CMember(class USoundBase*)                         ShopIntroWhooshSound                                        OFFSET(get<T>, {0x0, 8, 0, 0})
+	CMember(class USoundBase*)                         ContentWhoosh_RetractSound                                  OFFSET(get<T>, {0x8, 8, 0, 0})
+};
+
+/// Struct /Engine/Transient.PropertyBag_8de32bd69c48641a
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FPropertyBag_8de32bd69c48641a : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	CMember(class USoundBase*)                         ErrorWindowAppearSound                                      OFFSET(get<T>, {0x0, 8, 0, 0})
+	CMember(class USoundBase*)                         ErrorWindowAwaySound                                        OFFSET(get<T>, {0x8, 8, 0, 0})
+};
+
+/// Struct /Engine/Transient.PropertyBag_1030d64e37ecd7a0
 /// Size: 0x02AC (0x000000 - 0x0002AC)
-class FPropertyBag_b3b0feaa3606b92b : public MDKBase
+class FPropertyBag_1030d64e37ecd7a0 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -267,9 +370,9 @@ public:
 	DMember(int32_t)                                   SmallHeight                                                 OFFSET(get<int32_t>, {0x2A8, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_521b65a3a02501c5
+/// Struct /Engine/Transient.PropertyBag_9b4aae3a683cc931
 /// Size: 0x0040 (0x000000 - 0x000040)
-class FPropertyBag_521b65a3a02501c5 : public MDKBase
+class FPropertyBag_9b4aae3a683cc931 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -286,9 +389,9 @@ public:
 	CMember(class UMaterialInstance*)                  BorderMaterial                                              OFFSET(get<T>, {0x38, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_415224967cb1b25a
+/// Struct /Engine/Transient.PropertyBag_43b96145e22382f1
 /// Size: 0x0040 (0x000000 - 0x000040)
-class FPropertyBag_415224967cb1b25a : public MDKBase
+class FPropertyBag_43b96145e22382f1 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -305,9 +408,9 @@ public:
 	CMember(class UMaterialInstance*)                  QuietOutlineMaterial                                        OFFSET(get<T>, {0x38, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_9fcc02f4cd533d3e
+/// Struct /Engine/Transient.PropertyBag_f670d3026ebc627
 /// Size: 0x0078 (0x000000 - 0x000078)
-class FPropertyBag_9fcc02f4cd533d3e : public MDKBase
+class FPropertyBag_f670d3026ebc627 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -321,112 +424,9 @@ public:
 	SMember(FSlateFontInfo)                            GamepadPromptFont                                           OFFSET(getStruct<T>, {0x20, 88, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_734b42cb1386f44a
+/// Struct /Engine/Transient.PropertyBag_34f86d8ee4f971fd
 /// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_734b42cb1386f44a : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 8;
-
-public:
-	CMember(class USoundBase*)                         MatchMakingSucceededSound                                   OFFSET(get<T>, {0x0, 8, 0, 0})
-};
-
-/// Struct /Engine/Transient.PropertyBag_4530c92c15d7d34e
-/// Size: 0x0010 (0x000000 - 0x000010)
-class FPropertyBag_4530c92c15d7d34e : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 16;
-
-public:
-	DMember(float)                                     SecondsPriorToTransSound                                    OFFSET(get<float>, {0x0, 4, 0, 0})
-	CMember(class USoundBase*)                         TransitionSound                                             OFFSET(get<T>, {0x8, 8, 0, 0})
-};
-
-/// Struct /Engine/Transient.PropertyBag_dbd12eee6c885c63
-/// Size: 0x0010 (0x000000 - 0x000010)
-class FPropertyBag_dbd12eee6c885c63 : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 16;
-
-public:
-	CMember(class USoundBase*)                         MTXOfferTileIntroWhoosh                                     OFFSET(get<T>, {0x0, 8, 0, 0})
-	CMember(class USoundBase*)                         ShopRowWhooshIn                                             OFFSET(get<T>, {0x8, 8, 0, 0})
-};
-
-/// Struct /Engine/Transient.PropertyBag_3e8449df0104b653
-/// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_3e8449df0104b653 : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 8;
-
-public:
-	CMember(class USoundBase*)                         ShopRowWhooshIn                                             OFFSET(get<T>, {0x0, 8, 0, 0})
-};
-
-/// Struct /Engine/Transient.PropertyBag_528dd23eca1b086e
-/// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_528dd23eca1b086e : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 8;
-
-public:
-	CMember(class USoundBase*)                         LockerCategoryWhooshSound                                   OFFSET(get<T>, {0x0, 8, 0, 0})
-};
-
-/// Struct /Engine/Transient.PropertyBag_deb44cecaa900ae8
-/// Size: 0x0020 (0x000000 - 0x000020)
-class FPropertyBag_deb44cecaa900ae8 : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 32;
-
-public:
-	CMember(class USoundBase*)                         BannerAppearSound                                           OFFSET(get<T>, {0x0, 8, 0, 0})
-	CMember(class USoundBase*)                         BannerAwaySound                                             OFFSET(get<T>, {0x8, 8, 0, 0})
-	CMember(class USoundBase*)                         IntroSound                                                  OFFSET(get<T>, {0x10, 8, 0, 0})
-	CMember(class USoundBase*)                         OutroSound                                                  OFFSET(get<T>, {0x18, 8, 0, 0})
-};
-
-/// Struct /Engine/Transient.PropertyBag_48cfbe9b26b59748
-/// Size: 0x0010 (0x000000 - 0x000010)
-class FPropertyBag_48cfbe9b26b59748 : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 16;
-
-public:
-	CMember(class USoundBase*)                         ShopIntroWhooshSound                                        OFFSET(get<T>, {0x0, 8, 0, 0})
-	CMember(class USoundBase*)                         ContentWhoosh_RetractSound                                  OFFSET(get<T>, {0x8, 8, 0, 0})
-};
-
-/// Struct /Engine/Transient.PropertyBag_859991c4ae766396
-/// Size: 0x0010 (0x000000 - 0x000010)
-class FPropertyBag_859991c4ae766396 : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 16;
-
-public:
-	CMember(class USoundBase*)                         ErrorWindowAppearSound                                      OFFSET(get<T>, {0x0, 8, 0, 0})
-	CMember(class USoundBase*)                         ErrorWindowAwaySound                                        OFFSET(get<T>, {0x8, 8, 0, 0})
-};
-
-/// Struct /Engine/Transient.PropertyBag_54064870c3770cd7
-/// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_54064870c3770cd7 : public MDKBase
+class FPropertyBag_34f86d8ee4f971fd : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -436,9 +436,9 @@ public:
 	CMember(class USoundBase*)                         PressedSound                                                OFFSET(get<T>, {0x0, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_8be6df46aa3256f0
+/// Struct /Engine/Transient.PropertyBag_842b26be7e4f4c6
 /// Size: 0x0028 (0x000000 - 0x000028)
-class FPropertyBag_8be6df46aa3256f0 : public MDKBase
+class FPropertyBag_842b26be7e4f4c6 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -452,9 +452,9 @@ public:
 	CMember(class USoundBase*)                         HoldCompletedSound                                          OFFSET(get<T>, {0x20, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_bd78389cad4d80dd
+/// Struct /Engine/Transient.PropertyBag_5e2e1e1b91841810
 /// Size: 0x0030 (0x000000 - 0x000030)
-class FPropertyBag_bd78389cad4d80dd : public MDKBase
+class FPropertyBag_5e2e1e1b91841810 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -465,9 +465,9 @@ public:
 	SMember(FSlateSound)                               HoveredSlateSoundOverride                                   OFFSET(getStruct<T>, {0x18, 24, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_9fb949bdeafd3856
+/// Struct /Engine/Transient.PropertyBag_fd20b0c83fc0aee8
 /// Size: 0x0020 (0x000000 - 0x000020)
-class FPropertyBag_9fb949bdeafd3856 : public MDKBase
+class FPropertyBag_fd20b0c83fc0aee8 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -480,9 +480,9 @@ public:
 	CMember(class USoundBase*)                         HoldCompletedSound                                          OFFSET(get<T>, {0x18, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_16f1700737d05ae0
+/// Struct /Engine/Transient.PropertyBag_a689741fbbdbc904
 /// Size: 0x0018 (0x000000 - 0x000018)
-class FPropertyBag_16f1700737d05ae0 : public MDKBase
+class FPropertyBag_a689741fbbdbc904 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -494,9 +494,9 @@ public:
 	CMember(class USoundBase*)                         BlockOutlineHoverSound                                      OFFSET(get<T>, {0x10, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_9ece6724b0ad55a1
+/// Struct /Engine/Transient.PropertyBag_d92c7320cc2d5bc0
 /// Size: 0x0048 (0x000000 - 0x000048)
-class FPropertyBag_9ece6724b0ad55a1 : public MDKBase
+class FPropertyBag_d92c7320cc2d5bc0 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -510,9 +510,9 @@ public:
 	CMember(class USoundBase*)                         ActivityBrowserTileHoverSound                               OFFSET(get<T>, {0x40, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_a0a865abc2bfa3b9
+/// Struct /Engine/Transient.PropertyBag_88a0dde3d183ff8d
 /// Size: 0x0010 (0x000000 - 0x000010)
-class FPropertyBag_a0a865abc2bfa3b9 : public MDKBase
+class FPropertyBag_88a0dde3d183ff8d : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -523,9 +523,9 @@ public:
 	CMember(class USoundBase*)                         HoveredSound                                                OFFSET(get<T>, {0x8, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_39f66925334b085d
+/// Struct /Engine/Transient.PropertyBag_43f1ef6b5fcc5bef
 /// Size: 0x0030 (0x000000 - 0x000030)
-class FPropertyBag_39f66925334b085d : public MDKBase
+class FPropertyBag_43f1ef6b5fcc5bef : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -540,9 +540,9 @@ public:
 	CMember(class USoundBase*)                         HoldCompletedSound                                          OFFSET(get<T>, {0x28, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_29d35a4b7705ae8a
+/// Struct /Engine/Transient.PropertyBag_5e9c71013d0c1845
 /// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_29d35a4b7705ae8a : public MDKBase
+class FPropertyBag_5e9c71013d0c1845 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -552,9 +552,9 @@ public:
 	CMember(class USoundBase*)                         ListEntryHoveredSound                                       OFFSET(get<T>, {0x0, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_1c161f9d99175658
+/// Struct /Engine/Transient.PropertyBag_ed83acae228913a6
 /// Size: 0x0030 (0x000000 - 0x000030)
-class FPropertyBag_1c161f9d99175658 : public MDKBase
+class FPropertyBag_ed83acae228913a6 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -565,9 +565,9 @@ public:
 	SMember(FSlateSound)                               HoveredSlateSoundOverride                                   OFFSET(getStruct<T>, {0x18, 24, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_6f701cdf1508f25f
+/// Struct /Engine/Transient.PropertyBag_9cc24cb83be9867a
 /// Size: 0x0020 (0x000000 - 0x000020)
-class FPropertyBag_6f701cdf1508f25f : public MDKBase
+class FPropertyBag_9cc24cb83be9867a : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -580,9 +580,9 @@ public:
 	CMember(class USoundBase*)                         CompleteSound                                               OFFSET(get<T>, {0x18, 8, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_506ae6cfe3eab58b
+/// Struct /Engine/Transient.PropertyBag_ebca105dc384385e
 /// Size: 0x0090 (0x000000 - 0x000090)
-class FPropertyBag_506ae6cfe3eab58b : public MDKBase
+class FPropertyBag_ebca105dc384385e : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -621,9 +621,9 @@ public:
 	DMember(float)                                     SmallSecondaryFont_SkewAmount                               OFFSET(get<float>, {0x8C, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_ca40bc0bbdff4337
+/// Struct /Engine/Transient.PropertyBag_bd486df911f09922
 /// Size: 0x0018 (0x000000 - 0x000018)
-class FPropertyBag_ca40bc0bbdff4337 : public MDKBase
+class FPropertyBag_bd486df911f09922 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -637,9 +637,9 @@ public:
 	DMember(float)                                     Font_SkewAmount                                             OFFSET(get<float>, {0x14, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_31de08d0942ed207
+/// Struct /Engine/Transient.PropertyBag_83cfe8b63b4e0dbb
 /// Size: 0x0030 (0x000000 - 0x000030)
-class FPropertyBag_31de08d0942ed207 : public MDKBase
+class FPropertyBag_83cfe8b63b4e0dbb : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -658,9 +658,9 @@ public:
 	DMember(float)                                     TabFont_SkewAmount                                          OFFSET(get<float>, {0x2C, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_d769f7773ed7774e
+/// Struct /Engine/Transient.PropertyBag_b76f8e40dbfb67d3
 /// Size: 0x0018 (0x000000 - 0x000018)
-class FPropertyBag_d769f7773ed7774e : public MDKBase
+class FPropertyBag_b76f8e40dbfb67d3 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -674,9 +674,9 @@ public:
 	DMember(float)                                     SmallPrimaryFont_SkewAmount                                 OFFSET(get<float>, {0x14, 4, 0, 0})
 };
 
-/// Struct /Engine/Transient.PropertyBag_b910df7dfde230b2
+/// Struct /Engine/Transient.PropertyBag_b907c5fd75bb4347
 /// Size: 0x0008 (0x000000 - 0x000008)
-class FPropertyBag_b910df7dfde230b2 : public MDKBase
+class FPropertyBag_b907c5fd75bb4347 : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;

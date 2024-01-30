@@ -20,37 +20,37 @@ public:
 
 	/// Functions
 	// Function /Script/DLSSBlueprint.DLSSLibrary.SetDLSSSharpness
-	// void SetDLSSSharpness(float Sharpness);                                                                                  // [0xc2fda0c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void SetDLSSSharpness(float Sharpness);                                                                                  // [0xc2b3e98] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.SetDLSSMode
-	// void SetDLSSMode(class UObject* WorldContextObject, UDLSSMode DLSSMode);                                                 // [0xc2fd95c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void SetDLSSMode(class UObject* WorldContextObject, UDLSSMode DLSSMode);                                                 // [0xc2b3de8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.QueryDLSSSupport
-	// UDLSSSupport QueryDLSSSupport();                                                                                         // [0xc2fd938] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// UDLSSSupport QueryDLSSSupport();                                                                                         // [0xc2b3dc4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.IsDLSSSupported
-	// bool IsDLSSSupported();                                                                                                  // [0xc2fd914] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsDLSSSupported();                                                                                                  // [0xc2b3da0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.IsDLSSModeSupported
-	// bool IsDLSSModeSupported(UDLSSMode DLSSMode);                                                                            // [0xc2fd894] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsDLSSModeSupported(UDLSSMode DLSSMode);                                                                            // [0xc2b3d20] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.IsDLSSEnabled
-	// bool IsDLSSEnabled();                                                                                                    // [0xc2fd870] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsDLSSEnabled();                                                                                                    // [0xc2b3cfc] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.IsDLAAEnabled
-	// bool IsDLAAEnabled();                                                                                                    // [0xc2fd7e8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsDLAAEnabled();                                                                                                    // [0xc2b3c74] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.GetSupportedDLSSModes
-	// TArray<UDLSSMode> GetSupportedDLSSModes();                                                                               // [0xc2fd77c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<UDLSSMode> GetSupportedDLSSModes();                                                                               // [0xc2b3c08] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.GetDLSSSharpness
-	// float GetDLSSSharpness();                                                                                                // [0xc2fd6f4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetDLSSSharpness();                                                                                                // [0xc2b3b80] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.GetDLSSScreenPercentageRange
-	// void GetDLSSScreenPercentageRange(float& MinScreenPercentage, float& MaxScreenPercentage);                               // [0xc2fd61c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetDLSSScreenPercentageRange(float& MinScreenPercentage, float& MaxScreenPercentage);                               // [0xc2b3aa8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.GetDLSSModeInformation
-	// void GetDLSSModeInformation(UDLSSMode DLSSMode, FVector2D ScreenResolution, bool& bIsSupported, float& OptimalScreenPercentage, bool& bIsFixedScreenPercentage, float& MinScreenPercentage, float& MaxScreenPercentage, float& OptimalSharpness); // [0xc2fd178] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void GetDLSSModeInformation(UDLSSMode DLSSMode, FVector2D ScreenResolution, bool& bIsSupported, float& OptimalScreenPercentage, bool& bIsFixedScreenPercentage, float& MinScreenPercentage, float& MaxScreenPercentage, float& OptimalSharpness); // [0xc2b3604] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.GetDLSSMode
-	// UDLSSMode GetDLSSMode();                                                                                                 // [0xc2fd154] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// UDLSSMode GetDLSSMode();                                                                                                 // [0xc2b35e0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.GetDLSSMinimumDriverVersion
-	// void GetDLSSMinimumDriverVersion(int32_t& MinDriverVersionMajor, int32_t& MinDriverVersionMinor);                        // [0xc2fd054] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetDLSSMinimumDriverVersion(int32_t& MinDriverVersionMajor, int32_t& MinDriverVersionMinor);                        // [0xc2b34e0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.GetDefaultDLSSMode
-	// UDLSSMode GetDefaultDLSSMode();                                                                                          // [0xc2fd71c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// UDLSSMode GetDefaultDLSSMode();                                                                                          // [0xc2b3ba8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.EnableDLSS
-	// void EnableDLSS(bool bEnabled);                                                                                          // [0xc2fcfe4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void EnableDLSS(bool bEnabled);                                                                                          // [0xc2b3470] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DLSSBlueprint.DLSSLibrary.EnableDLAA
-	// void EnableDLAA(bool bEnabled);                                                                                          // [0xc2fcf74] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void EnableDLAA(bool bEnabled);                                                                                          // [0xc2b3400] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 };
 
 /// Enum /Script/DLSSBlueprint.UDLSSSupport

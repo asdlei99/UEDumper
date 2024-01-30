@@ -90,17 +90,17 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.SetState_GT
-	// void SetState_GT(FDagwoodInPersistent& In);                                                                              // [0xa803e00] Final|Native|Public|HasOutParms 
+	// void SetState_GT(FDagwoodInPersistent& In);                                                                              // [0xa7faefc] Final|Native|Public|HasOutParms 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.SetPendingInputCmd
-	// void SetPendingInputCmd(FFortDagwoodCmd& In);                                                                            // [0xa8039ec] Final|Native|Public|HasOutParms 
+	// void SetPendingInputCmd(FFortDagwoodCmd& In);                                                                            // [0xa7faae8] Final|Native|Public|HasOutParms 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.OnGeneratedLocalInputCmd__DelegateSignature
-	// void OnGeneratedLocalInputCmd__DelegateSignature();                                                                      // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnGeneratedLocalInputCmd__DelegateSignature();                                                                      // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.GetState_PT
-	// FDagwoodState_PT GetState_PT();                                                                                          // [0xa802f0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDagwoodState_PT GetState_PT();                                                                                          // [0xa7fa008] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.GetState_GT
-	// FDagwoodInPersistent GetState_GT();                                                                                      // [0xa802ea0] Final|Native|Public|Const 
+	// FDagwoodInPersistent GetState_GT();                                                                                      // [0xa7f9f9c] Final|Native|Public|Const 
 	// Function /Script/ValetRuntime.DagwoodNetworkPhysicsComponent.GetPendingInputCmd
-	// FFortDagwoodCmd GetPendingInputCmd();                                                                                    // [0xa802e6c] Final|Native|Public|Const 
+	// FFortDagwoodCmd GetPendingInputCmd();                                                                                    // [0xa7f9f68] Final|Native|Public|Const 
 };
 
 /// Class /Script/ValetRuntime.NetworkPhysicsManager
@@ -127,7 +127,7 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortAthenaMutator_OverrideValetVehicleParameters.OnPlaylistLoaded
-	// void OnPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContainerTags);                                 // [0x80d1bb8] Final|Native|Public|HasOutParms 
+	// void OnPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContainerTags);                                 // [0x810b144] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/ValetRuntime.FortCameraMode_Dagwood
@@ -167,9 +167,9 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortContextualTutorial_VehicleValetLowFuel.HandleVehicleStateChanged
-	// void HandleVehicleStateChanged(class AFortPlayerPawn* PlayerPawn, class AActor* NewVehicle, class AActor* OldVehicle);   // [0xa8030e8] Final|Native|Private 
+	// void HandleVehicleStateChanged(class AFortPlayerPawn* PlayerPawn, class AActor* NewVehicle, class AActor* OldVehicle);   // [0xa7fa1e4] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortContextualTutorial_VehicleValetLowFuel.HandleStartSkydivingForActivation
-	// void HandleStartSkydivingForActivation();                                                                                // [0xa8030d4] Final|Native|Private 
+	// void HandleStartSkydivingForActivation();                                                                                // [0xa7fa1d0] Final|Native|Private 
 };
 
 /// Class /Script/ValetRuntime.FortDagwoodModsConfigs
@@ -303,97 +303,97 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.StartFade
-	// void StartFade();                                                                                                        // [0xa803fc8] Final|Native|Public|BlueprintCallable 
+	// void StartFade();                                                                                                        // [0xa7fb0c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetValetAudioController
-	// void SetValetAudioController(class AFortValetAudioController* ValetAudio);                                               // [0xa803ec8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetValetAudioController(class AFortValetAudioController* ValetAudio);                                               // [0xa7fafc4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeSpringsInfoOnServer
-	// void SetRuntimeSpringsInfoOnServer(FRuntimeSpringsInfo& SpringsInfo);                                                    // [0xa803d64] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetRuntimeSpringsInfoOnServer(FRuntimeSpringsInfo& SpringsInfo);                                                    // [0xa7fae60] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeGravityOnServer
-	// void SetRuntimeGravityOnServer(float GravMult);                                                                          // [0xa803cd4] Final|Native|Protected|BlueprintCallable 
+	// void SetRuntimeGravityOnServer(float GravMult);                                                                          // [0xa7fadd0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeFuelInfoOnServer
-	// void SetRuntimeFuelInfoOnServer(FRuntimeFuelInfo& FuelInfo);                                                             // [0xa803c24] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetRuntimeFuelInfoOnServer(FRuntimeFuelInfo& FuelInfo);                                                             // [0xa7fad20] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeDriveInfoOnServer
-	// void SetRuntimeDriveInfoOnServer(float MaxIncline, float MaxTilt);                                                       // [0xa803b48] Final|Native|Protected|BlueprintCallable 
+	// void SetRuntimeDriveInfoOnServer(float MaxIncline, float MaxTilt);                                                       // [0xa7fac44] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetRuntimeBoostInfoOnServer
-	// void SetRuntimeBoostInfoOnServer(FRuntimeBoostInfo& BoostInfo);                                                          // [0xa803a94] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetRuntimeBoostInfoOnServer(FRuntimeBoostInfo& BoostInfo);                                                          // [0xa7fab90] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SetDamageInfoOnServer
-	// void SetDamageInfoOnServer(bool bInDamageFriendlyVehicles, bool bInDamageOtherVehicles, bool bInDamageOwnVehicle, bool bInDamageAllowedFromOtherVehicle); // [0xa803884] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void SetDamageInfoOnServer(bool bInDamageFriendlyVehicles, bool bInDamageOtherVehicles, bool bInDamageOwnVehicle, bool bInDamageAllowedFromOtherVehicle); // [0xa7fa980] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.ServerSetFadeDuration
-	// void ServerSetFadeDuration(float NewFadeDuration);                                                                       // [0x69d95c4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ServerSetFadeDuration(float NewFadeDuration);                                                                       // [0x6456a9c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.ServerSelfDestructActivated
-	// void ServerSelfDestructActivated();                                                                                      // [0x947db2c] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSelfDestructActivated();                                                                                      // [0x9492990] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.SelfDestructCleanup
-	// void SelfDestructCleanup();                                                                                              // [0xa803870] Final|Native|Public  
+	// void SelfDestructCleanup();                                                                                              // [0xa7fa96c] Final|Native|Public  
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnTickAudioFade
-	// void OnTickAudioFade(float FadeParam);                                                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnTickAudioFade(float FadeParam);                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnTickAudioController
-	// void OnTickAudioController(float DeltaTime);                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnTickAudioController(float DeltaTime);                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnStopHandbrake
-	// void OnStopHandbrake();                                                                                                  // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnStopHandbrake();                                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnStartHandbrake
-	// void OnStartHandbrake();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnStartHandbrake();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnServerAltInteract
-	// void OnServerAltInteract(class AFortPawn* Pawn);                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnServerAltInteract(class AFortPawn* Pawn);                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_ServerRepWheelData
-	// void OnRep_ServerRepWheelData(TArray<FAttachedWheel>& PrevWheelData);                                                    // [0xa8034b4] Final|Native|Private|HasOutParms 
+	// void OnRep_ServerRepWheelData(TArray<FAttachedWheel>& PrevWheelData);                                                    // [0xa7fa5b0] Final|Native|Private|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_RandSeed
-	// void OnRep_RandSeed();                                                                                                   // [0x3402f68] Final|Native|Private 
+	// void OnRep_RandSeed();                                                                                                   // [0x33f9898] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_PoppedTireReaction
-	// void OnRep_PoppedTireReaction();                                                                                         // [0xa803498] Final|Native|Private 
+	// void OnRep_PoppedTireReaction();                                                                                         // [0xa7fa594] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_IsInoperable
-	// void OnRep_IsInoperable();                                                                                               // [0xa803484] Final|Native|Private 
+	// void OnRep_IsInoperable();                                                                                               // [0xa7fa580] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_FakeTires
-	// void OnRep_FakeTires(TArray<ETireStates>& PrevTireStates);                                                               // [0xa8033e8] Final|Native|Private|HasOutParms 
+	// void OnRep_FakeTires(TArray<ETireStates>& PrevTireStates);                                                               // [0xa7fa4e4] Final|Native|Private|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnRep_DagwoodRuntimeModifiers
-	// void OnRep_DagwoodRuntimeModifiers(FDagwoodRuntimeModifiers& PrevMods);                                                  // [0x3206e88] Final|Native|Private|HasOutParms 
+	// void OnRep_DagwoodRuntimeModifiers(FDagwoodRuntimeModifiers& PrevMods);                                                  // [0x1cc9f50] Final|Native|Private|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnInoperableChanged
-	// void OnInoperableChanged(bool bInoperable);                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnInoperableChanged(bool bInoperable);                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnHoldSelfDestructStopped
-	// void OnHoldSelfDestructStopped(class AFortPawn* DriverPawn);                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnHoldSelfDestructStopped(class AFortPawn* DriverPawn);                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnHoldSelfDestructStarted
-	// void OnHoldSelfDestructStarted(class AFortPawn* DriverPawn, float ExitDuration);                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnHoldSelfDestructStarted(class AFortPawn* DriverPawn, float ExitDuration);                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnFlipImpactDamage
-	// void OnFlipImpactDamage();                                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnFlipImpactDamage();                                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnDestroyedPropFromCollision
-	// void OnDestroyedPropFromCollision(class ABuildingActor* BuildingHitActor);                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDestroyedPropFromCollision(class ABuildingActor* BuildingHitActor);                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnClientBeginAltInteract
-	// void OnClientBeginAltInteract(class AFortPawn* Pawn);                                                                    // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnClientBeginAltInteract(class AFortPawn* Pawn);                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnBoostReady
-	// void OnBoostReady();                                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostReady();                                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.OnBoostFailed
-	// void OnBoostFailed();                                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnBoostFailed();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.NativeCalculateAccelRumbleIntensity
-	// float NativeCalculateAccelRumbleIntensity(float MaxIntensity);                                                           // [0xa80335c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float NativeCalculateAccelRumbleIntensity(float MaxIntensity);                                                           // [0xa7fa458] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.MakeOperable
-	// void MakeOperable(bool bAddGas);                                                                                         // [0x5fe71f4] Final|Native|Public|BlueprintCallable 
+	// void MakeOperable(bool bAddGas);                                                                                         // [0x60325ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.MakeInoperable
-	// void MakeInoperable();                                                                                                   // [0xa80333c] Native|Public|BlueprintCallable 
+	// void MakeInoperable();                                                                                                   // [0xa7fa438] Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.IsTireSkidding
-	// bool IsTireSkidding(float MinSpeedForSkid, float AngleForSkid, float SpeedForPeelout, float SpeedForBraking);            // [0xa8031f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTireSkidding(float MinSpeedForSkid, float AngleForSkid, float SpeedForPeelout, float SpeedForBraking);            // [0xa7fa2f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.IsOnLandscape
-	// bool IsOnLandscape();                                                                                                    // [0xa8031e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOnLandscape();                                                                                                    // [0xa7fa2dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.IsNativeBPTickEnabled
-	// bool IsNativeBPTickEnabled();                                                                                            // [0x321ca58] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsNativeBPTickEnabled();                                                                                            // [0x3213b4c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.HandleCurrentPlaylistLoaded
-	// void HandleCurrentPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContextTags);                        // [0x1db2620] Final|Native|Protected|HasOutParms 
+	// void HandleCurrentPlaylistLoaded(FName PlaylistName, FGameplayTagContainer& PlaylistContextTags);                        // [0x35d2368] Final|Native|Protected|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetTireSurface
-	// ETireSurfaces GetTireSurface(EVehicleWheelLocations TireIndex);                                                          // [0xa803048] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ETireSurfaces GetTireSurface(EVehicleWheelLocations TireIndex);                                                          // [0xa7fa144] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetTireHealthPercent
-	// float GetTireHealthPercent(EVehicleWheelLocations TireIndex);                                                            // [0xa802fb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTireHealthPercent(EVehicleWheelLocations TireIndex);                                                            // [0xa7fa0ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetMiddleAxleForwardAdjust
-	// float GetMiddleAxleForwardAdjust();                                                                                      // [0xa802e44] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetMiddleAxleForwardAdjust();                                                                                      // [0xa7f9f40] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetCurrentDagwoodRuntimeProperties
-	// FDagwoodRuntimeModifiers GetCurrentDagwoodRuntimeProperties();                                                           // [0xa802e28] Final|Native|Public|BlueprintCallable 
+	// FDagwoodRuntimeModifiers GetCurrentDagwoodRuntimeProperties();                                                           // [0xa7f9f24] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.GetBumpiness
-	// float GetBumpiness();                                                                                                    // [0xa802e10] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetBumpiness();                                                                                                    // [0xa7f9f0c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.ForwardOrReverseInputPressed
-	// bool ForwardOrReverseInputPressed();                                                                                     // [0xa802dec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ForwardOrReverseInputPressed();                                                                                     // [0xa7f9ee8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.CleanupLoopingPooledFX
-	// void CleanupLoopingPooledFX();                                                                                           // [0xa802dd4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void CleanupLoopingPooledFX();                                                                                           // [0xa7f9ed0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.ApplyRuntimeModifiers
-	// void ApplyRuntimeModifiers();                                                                                            // [0xa802cc0] Final|Native|Private 
+	// void ApplyRuntimeModifiers();                                                                                            // [0xa7f9dbc] Final|Native|Private 
 	// Function /Script/ValetRuntime.FortDagwoodVehicle.AddRuntimeGearsInfoOnServer
-	// void AddRuntimeGearsInfoOnServer(FRuntimeGearInfo& GearInfo);                                                            // [0xa802c2c] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddRuntimeGearsInfoOnServer(FRuntimeGearInfo& GearInfo);                                                            // [0xa7f9d28] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/ValetRuntime.FortDagwoodVehicleAnimInstance
@@ -561,13 +561,13 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortDagwoodVehicleManager.UpdatePropReplacement
-	// void UpdatePropReplacement();                                                                                            // [0x32e6c74] Final|Native|Public  
+	// void UpdatePropReplacement();                                                                                            // [0x32e4b44] Final|Native|Public  
 	// Function /Script/ValetRuntime.FortDagwoodVehicleManager.OnVehicleSpawnsUpdated
-	// void OnVehicleSpawnsUpdated(class UFortVehicleItemDefinition* VehicleItemDef, TArray<AActor*>& SpawnedVehicles, int32_t NewVehicleCount); // [0xa8036c8] Final|Native|Public|HasOutParms 
+	// void OnVehicleSpawnsUpdated(class UFortVehicleItemDefinition* VehicleItemDef, TArray<AActor*>& SpawnedVehicles, int32_t NewVehicleCount); // [0xa7fa7c4] Final|Native|Public|HasOutParms 
 	// Function /Script/ValetRuntime.FortDagwoodVehicleManager.OnVehicleSpawned
-	// void OnVehicleSpawned(class AFortAthenaVehicle* Vehicle);                                                                // [0xa80364c] Final|Native|Public  
+	// void OnVehicleSpawned(class AFortAthenaVehicle* Vehicle);                                                                // [0xa7fa748] Final|Native|Public  
 	// Function /Script/ValetRuntime.FortDagwoodVehicleManager.CustomHandleActorStreamedInEditor
-	// void CustomHandleActorStreamedInEditor(class AActor* SourceActor);                                                       // [0x5fffda8] Final|Native|Public  
+	// void CustomHandleActorStreamedInEditor(class AActor* SourceActor);                                                       // [0x604b150] Final|Native|Public  
 };
 
 /// Class /Script/ValetRuntime.FortValetAudioController
@@ -641,13 +641,13 @@ public:
 
 	/// Functions
 	// Function /Script/ValetRuntime.FortValetAudioController.Update_Native
-	// void Update_Native();                                                                                                    // [0xa803ff8] Final|Native|Public|BlueprintCallable 
+	// void Update_Native();                                                                                                    // [0xa7fb0f4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortValetAudioController.OnTireModApplied
-	// void OnTireModApplied(FTireInfo& AppliedTireMod);                                                                        // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnTireModApplied(FTireInfo& AppliedTireMod);                                                                        // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/ValetRuntime.FortValetAudioController.OnSuspensionCollision_Native
-	// void OnSuspensionCollision_Native(bool& OutResult, float& OutMagnitude);                                                 // [0xa803574] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnSuspensionCollision_Native(bool& OutResult, float& OutMagnitude);                                                 // [0xa7fa670] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ValetRuntime.FortValetAudioController.CacheValetVehicle
-	// void CacheValetVehicle(class AFortDagwoodVehicle* InVehicle);                                                            // [0xa802cd4] Final|Native|Public|BlueprintCallable 
+	// void CacheValetVehicle(class AFortDagwoodVehicle* InVehicle);                                                            // [0xa7f9dd0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ValetRuntime.FortValetGameFeatureData

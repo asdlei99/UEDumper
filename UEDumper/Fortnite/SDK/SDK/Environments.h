@@ -14,65 +14,6 @@
 /// dependency: FortniteUI
 /// dependency: UMG
 
-/// Class /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C
-/// Size: 0x00D0 (0x000290 - 0x000360)
-class AVaultCharacterLightingBP_C : public AActor
-{ 
-public:
-	FPointerToUberGraphFrame                           UberGraphFrame;                                             // 0x0290   (0x0008)  
-	class UArrowComponent*                             Arrow1;                                                     // 0x0298   (0x0008)  
-	class USpotLightComponent*                         KeyLight4;                                                  // 0x02A0   (0x0008)  
-	class USpotLightComponent*                         KeyLight3;                                                  // 0x02A8   (0x0008)  
-	class USpotLightComponent*                         KeyLight2;                                                  // 0x02B0   (0x0008)  
-	class UPostProcessComponent*                       PostProcess_Mobile;                                         // 0x02B8   (0x0008)  
-	class UPostProcessComponent*                       PostProcess_LOWPC;                                          // 0x02C0   (0x0008)  
-	class USkyLightComponent*                          SkyLight_LOWPC;                                             // 0x02C8   (0x0008)  
-	class UDirectionalLightComponent*                  DirectionalLight_LOWPC;                                     // 0x02D0   (0x0008)  
-	class UArrowComponent*                             Arrow;                                                      // 0x02D8   (0x0008)  
-	class UDirectionalLightComponent*                  DirectionalLightMobile;                                     // 0x02E0   (0x0008)  
-	class USkyLightComponent*                          SkyLightLowMobil;                                           // 0x02E8   (0x0008)  
-	class USkyLightComponent*                          SkyLight;                                                   // 0x02F0   (0x0008)  
-	class USpotLightComponent*                         RimLowerRight;                                              // 0x02F8   (0x0008)  
-	class USpotLightComponent*                         RimLeft;                                                    // 0x0300   (0x0008)  
-	class USpotLightComponent*                         RimTopRight;                                                // 0x0308   (0x0008)  
-	class USpotLightComponent*                         RimBottomLeft;                                              // 0x0310   (0x0008)  
-	class USpotLightComponent*                         KeyLight;                                                   // 0x0318   (0x0008)  
-	class USpotLightComponent*                         Bounce;                                                     // 0x0320   (0x0008)  
-	class USpotLightComponent*                         BounceRear;                                                 // 0x0328   (0x0008)  
-	class USceneComponent*                             SharedRoot;                                                 // 0x0330   (0x0008)  
-	bool                                               DebugMobile_Lighting;                                       // 0x0338   (0x0001)  
-	bool                                               DebugLightingPC;                                            // 0x0339   (0x0001)  
-	bool                                               IsActive;                                                   // 0x033A   (0x0001)  
-	bool                                               AlwaysOn;                                                   // 0x033B   (0x0001)  
-	bool                                               DebugLighting_LOWDetailPC;                                  // 0x033C   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x033D   (0x0003)  MISSED
-	FLinearColor                                       MPC_ManualSunlightVector;                                   // 0x0340   (0x0010)  
-	FLinearColor                                       MPC_ManualSunlightColor;                                    // 0x0350   (0x0010)  
-
-
-	/// Functions
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.SwitchPCLighting_LOWDetail
-	// void SwitchPCLighting_LOWDetail(bool Visibility);                                                                     // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.SwitchPCLighting
-	// void SwitchPCLighting(bool Visibility);                                                                               // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.SwitchMobileLighting
-	// void SwitchMobileLighting(bool Visibilty);                                                                            // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.UpdateSettings
-	// void UpdateSettings();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.ToggleLighting
-	// void ToggleLighting();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.OVERRIDELIGHTING
-	// void OVERRIDELIGHTING();                                                                                              // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.LightControl
-	// void LightControl(bool NewParam);                                                                                     // [0x2177018] BlueprintCallable|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
-	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.ExecuteUbergraph_VaultCharacterLightingBP
-	// void ExecuteUbergraph_VaultCharacterLightingBP(int32_t EntryPoint);                                                   // [0x2177018] Final                
-};
-
 /// Class /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultWorld.VaultWorld_C
 /// Size: 0x0009 (0x000340 - 0x000349)
 class AVaultWorld_C : public AFortItemPreviewWorld
@@ -84,15 +25,15 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultWorld.VaultWorld_C.Assign Background Dynamic Materials
-	// void Assign Background Dynamic Materials(class AStaticMeshActor* TargetBackground);                                   // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void Assign Background Dynamic Materials(class AStaticMeshActor* TargetBackground);                                   // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultWorld.VaultWorld_C.GetVaultRotator
-	// void GetVaultRotator(class AVaultRotator_C*& VaultRotator);                                                           // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GetVaultRotator(class AVaultRotator_C*& VaultRotator);                                                           // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultWorld.VaultWorld_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultWorld.VaultWorld_C.OnNewSceneBackgroundChildActor
-	// void OnNewSceneBackgroundChildActor(class AFortStaticMeshActor* NewActor);                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnNewSceneBackgroundChildActor(class AFortStaticMeshActor* NewActor);                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultWorld.VaultWorld_C.ExecuteUbergraph_VaultWorld
-	// void ExecuteUbergraph_VaultWorld(int32_t EntryPoint);                                                                 // [0x2177018] Final                
+	// void ExecuteUbergraph_VaultWorld(int32_t EntryPoint);                                                                 // [0x211c0a0] Final                
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C
@@ -133,49 +74,49 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.TransitionBackgroundBackward
-	// void TransitionBackgroundBackward(double Backward, double PreTransitionOffset, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void TransitionBackgroundBackward(double Backward, double PreTransitionOffset, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.TransitionBackgroundForward
-	// void TransitionBackgroundForward(double Forward, double PreTransitionOffset, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void TransitionBackgroundForward(double Forward, double PreTransitionOffset, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.SetupBackgroundMaterial
-	// void SetupBackgroundMaterial(class UTexture2D*& TextureBackground, FVaultWorldBackgroundData& BackgroundInfo, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetupBackgroundMaterial(class UTexture2D*& TextureBackground, FVaultWorldBackgroundData& BackgroundInfo, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.TransitionForward__FinishedFunc
-	// void TransitionForward__FinishedFunc();                                                                               // [0x2177018] BlueprintEvent       
+	// void TransitionForward__FinishedFunc();                                                                               // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.TransitionForward__UpdateFunc
-	// void TransitionForward__UpdateFunc();                                                                                 // [0x2177018] BlueprintEvent       
+	// void TransitionForward__UpdateFunc();                                                                                 // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.TransitionBackward__FinishedFunc
-	// void TransitionBackward__FinishedFunc();                                                                              // [0x2177018] BlueprintEvent       
+	// void TransitionBackward__FinishedFunc();                                                                              // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.TransitionBackward__UpdateFunc
-	// void TransitionBackward__UpdateFunc();                                                                                // [0x2177018] BlueprintEvent       
+	// void TransitionBackward__UpdateFunc();                                                                                // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.Background-Effects__FinishedFunc
-	// void Background-Effects__FinishedFunc();                                                                              // [0x2177018] BlueprintEvent       
+	// void Background-Effects__FinishedFunc();                                                                              // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.Background-Effects__UpdateFunc
-	// void Background-Effects__UpdateFunc();                                                                                // [0x2177018] BlueprintEvent       
+	// void Background-Effects__UpdateFunc();                                                                                // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.Floor-Visibility__FinishedFunc
-	// void Floor-Visibility__FinishedFunc();                                                                                // [0x2177018] BlueprintEvent       
+	// void Floor-Visibility__FinishedFunc();                                                                                // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.Floor-Visibility__UpdateFunc
-	// void Floor-Visibility__UpdateFunc();                                                                                  // [0x2177018] BlueprintEvent       
+	// void Floor-Visibility__UpdateFunc();                                                                                  // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.ItemDetails__FinishedFunc
-	// void ItemDetails__FinishedFunc();                                                                                     // [0x2177018] BlueprintEvent       
+	// void ItemDetails__FinishedFunc();                                                                                     // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.ItemDetails__UpdateFunc
-	// void ItemDetails__UpdateFunc();                                                                                       // [0x2177018] BlueprintEvent       
+	// void ItemDetails__UpdateFunc();                                                                                       // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.OnTransitionBackground
-	// void OnTransitionBackground(bool bPlayForward, EBackgroundIntensityLevel IntensityTransition);                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransitionBackground(bool bPlayForward, EBackgroundIntensityLevel IntensityTransition);                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.OnSetupBackground
-	// void OnSetupBackground(class UTexture2D* LoadedBackgroundTexture, FVaultWorldBackgroundData& BackgroundInfo);         // [0x2177018] HasOutParms|BlueprintEvent 
+	// void OnSetupBackground(class UTexture2D* LoadedBackgroundTexture, FVaultWorldBackgroundData& BackgroundInfo);         // [0x211c0a0] HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.OnUpdateDisplay
-	// void OnUpdateDisplay(bool bShowFloor, bool bShowEffects);                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateDisplay(bool bShowFloor, bool bShowEffects);                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.OnInitialBackgroundTransition
-	// void OnInitialBackgroundTransition();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInitialBackgroundTransition();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.OnTransitionItemDetails
-	// void OnTransitionItemDetails(bool bShowItemDetails);                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransitionItemDetails(bool bShowItemDetails);                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.OnUpdateMaterialIndex
-	// void OnUpdateMaterialIndex(int32_t MaterialIndex);                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateMaterialIndex(int32_t MaterialIndex);                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/SpecialEventVaultWorld.SpecialEventVaultWorld_C.ExecuteUbergraph_SpecialEventVaultWorld
-	// void ExecuteUbergraph_SpecialEventVaultWorld(int32_t EntryPoint);                                                     // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_SpecialEventVaultWorld(int32_t EntryPoint);                                                     // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C
@@ -235,53 +176,53 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.LightControl
-	// void LightControl(bool Active);                                                                                       // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void LightControl(bool Active);                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.SwitchPCLighting
-	// void SwitchPCLighting(bool Visibility);                                                                               // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchPCLighting(bool Visibility);                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.SwitchPCLighting_LOWDetail
-	// void SwitchPCLighting_LOWDetail(bool Visibility);                                                                     // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchPCLighting_LOWDetail(bool Visibility);                                                                     // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.SwitchMobileLighting
-	// void SwitchMobileLighting(bool Visibility);                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchMobileLighting(bool Visibility);                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.MoveOutLeft__FinishedFunc
-	// void MoveOutLeft__FinishedFunc();                                                                                     // [0x2177018] BlueprintEvent       
+	// void MoveOutLeft__FinishedFunc();                                                                                     // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.MoveOutLeft__UpdateFunc
-	// void MoveOutLeft__UpdateFunc();                                                                                       // [0x2177018] BlueprintEvent       
+	// void MoveOutLeft__UpdateFunc();                                                                                       // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.MoveInLeft__FinishedFunc
-	// void MoveInLeft__FinishedFunc();                                                                                      // [0x2177018] BlueprintEvent       
+	// void MoveInLeft__FinishedFunc();                                                                                      // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.MoveInLeft__UpdateFunc
-	// void MoveInLeft__UpdateFunc();                                                                                        // [0x2177018] BlueprintEvent       
+	// void MoveInLeft__UpdateFunc();                                                                                        // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.MoveInRight__FinishedFunc
-	// void MoveInRight__FinishedFunc();                                                                                     // [0x2177018] BlueprintEvent       
+	// void MoveInRight__FinishedFunc();                                                                                     // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.MoveInRight__UpdateFunc
-	// void MoveInRight__UpdateFunc();                                                                                       // [0x2177018] BlueprintEvent       
+	// void MoveInRight__UpdateFunc();                                                                                       // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.MoveOutRight__FinishedFunc
-	// void MoveOutRight__FinishedFunc();                                                                                    // [0x2177018] BlueprintEvent       
+	// void MoveOutRight__FinishedFunc();                                                                                    // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.MoveOutRight__UpdateFunc
-	// void MoveOutRight__UpdateFunc();                                                                                      // [0x2177018] BlueprintEvent       
+	// void MoveOutRight__UpdateFunc();                                                                                      // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.Timeline_0__FinishedFunc
-	// void Timeline_0__FinishedFunc();                                                                                      // [0x2177018] BlueprintEvent       
+	// void Timeline_0__FinishedFunc();                                                                                      // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.Timeline_0__UpdateFunc
-	// void Timeline_0__UpdateFunc();                                                                                        // [0x2177018] BlueprintEvent       
+	// void Timeline_0__UpdateFunc();                                                                                        // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.Timeline_1__FinishedFunc
-	// void Timeline_1__FinishedFunc();                                                                                      // [0x2177018] BlueprintEvent       
+	// void Timeline_1__FinishedFunc();                                                                                      // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.Timeline_1__UpdateFunc
-	// void Timeline_1__UpdateFunc();                                                                                        // [0x2177018] BlueprintEvent       
+	// void Timeline_1__UpdateFunc();                                                                                        // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.OnReadyToSwap
-	// void OnReadyToSwap(class UFortAccountItemDefinition* PrimaryRequestedItem, FSceneTransitionOptions& Options);         // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnReadyToSwap(class UFortAccountItemDefinition* PrimaryRequestedItem, FSceneTransitionOptions& Options);         // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.OnNewSceneRequested
-	// void OnNewSceneRequested(class UFortAccountItemDefinition* PrimaryRequestedItem, FSceneTransitionOptions& TransitionOptions); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnNewSceneRequested(class UFortAccountItemDefinition* PrimaryRequestedItem, FSceneTransitionOptions& TransitionOptions); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.UpdateSettings
-	// void UpdateSettings();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void UpdateSettings();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.OnTargetZoomLevelSet
-	// void OnTargetZoomLevelSet(float TargetZoomLevel);                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTargetZoomLevelSet(float TargetZoomLevel);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.OnTargetRotationOffsetSet
-	// void OnTargetRotationOffsetSet(FRotator& TargetRotationOffset);                                                       // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnTargetRotationOffsetSet(FRotator& TargetRotationOffset);                                                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.ExecuteUbergraph_ItemPreviewSideSwap
-	// void ExecuteUbergraph_ItemPreviewSideSwap(int32_t EntryPoint);                                                        // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_ItemPreviewSideSwap(int32_t EntryPoint);                                                        // [0x211c0a0] Final|HasDefaults    
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewSideSwap.ItemPreviewSideSwap_C.On New Item Spawned__DelegateSignature
-	// void On New Item Spawned__DelegateSignature(bool Should Show Floor);                                                  // [0x2177018] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void On New Item Spawned__DelegateSignature(bool Should Show Floor);                                                  // [0x211c0a0] Public|Delegate|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C
@@ -345,67 +286,67 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.Set Backgrounds Scalar Value
-	// void Set Backgrounds Scalar Value(FName Param, double FloatValue);                                                    // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void Set Backgrounds Scalar Value(FName Param, double FloatValue);                                                    // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.PageTransitionIntensityUpdate
-	// void PageTransitionIntensityUpdate(class UMaterialInstanceDynamic* MID_Background, class UMaterialInstanceDynamic* MID_Floor); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void PageTransitionIntensityUpdate(class UMaterialInstanceDynamic* MID_Background, class UMaterialInstanceDynamic* MID_Floor); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.TransitionBackgroundBackward
-	// void TransitionBackgroundBackward(double Backward, double Fade, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void TransitionBackgroundBackward(double Backward, double Fade, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.TransitionBackgroundForward
-	// void TransitionBackgroundForward(double Forward, double Fade, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void TransitionBackgroundForward(double Forward, double Fade, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.SetupBackgroundMaterial
-	// void SetupBackgroundMaterial(class UTexture2D*& TextureBackground, FVaultWorldBackgroundData& BackgroundInfo, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetupBackgroundMaterial(class UTexture2D*& TextureBackground, FVaultWorldBackgroundData& BackgroundInfo, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.TransitionForward__FinishedFunc
-	// void TransitionForward__FinishedFunc();                                                                               // [0x2177018] BlueprintEvent       
+	// void TransitionForward__FinishedFunc();                                                                               // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.TransitionForward__UpdateFunc
-	// void TransitionForward__UpdateFunc();                                                                                 // [0x2177018] BlueprintEvent       
+	// void TransitionForward__UpdateFunc();                                                                                 // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.TransitionBackward__FinishedFunc
-	// void TransitionBackward__FinishedFunc();                                                                              // [0x2177018] BlueprintEvent       
+	// void TransitionBackward__FinishedFunc();                                                                              // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.TransitionBackward__UpdateFunc
-	// void TransitionBackward__UpdateFunc();                                                                                // [0x2177018] BlueprintEvent       
+	// void TransitionBackward__UpdateFunc();                                                                                // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.Background-Effects__FinishedFunc
-	// void Background-Effects__FinishedFunc();                                                                              // [0x2177018] BlueprintEvent       
+	// void Background-Effects__FinishedFunc();                                                                              // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.Background-Effects__UpdateFunc
-	// void Background-Effects__UpdateFunc();                                                                                // [0x2177018] BlueprintEvent       
+	// void Background-Effects__UpdateFunc();                                                                                // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.Floor-Visibility__FinishedFunc
-	// void Floor-Visibility__FinishedFunc();                                                                                // [0x2177018] BlueprintEvent       
+	// void Floor-Visibility__FinishedFunc();                                                                                // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.Floor-Visibility__UpdateFunc
-	// void Floor-Visibility__UpdateFunc();                                                                                  // [0x2177018] BlueprintEvent       
+	// void Floor-Visibility__UpdateFunc();                                                                                  // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.ItemDetails__FinishedFunc
-	// void ItemDetails__FinishedFunc();                                                                                     // [0x2177018] BlueprintEvent       
+	// void ItemDetails__FinishedFunc();                                                                                     // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.ItemDetails__UpdateFunc
-	// void ItemDetails__UpdateFunc();                                                                                       // [0x2177018] BlueprintEvent       
+	// void ItemDetails__UpdateFunc();                                                                                       // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.IconDissolve__FinishedFunc
-	// void IconDissolve__FinishedFunc();                                                                                    // [0x2177018] BlueprintEvent       
+	// void IconDissolve__FinishedFunc();                                                                                    // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.IconDissolve__UpdateFunc
-	// void IconDissolve__UpdateFunc();                                                                                      // [0x2177018] BlueprintEvent       
+	// void IconDissolve__UpdateFunc();                                                                                      // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.ItemDetailsIntensity__FinishedFunc
-	// void ItemDetailsIntensity__FinishedFunc();                                                                            // [0x2177018] BlueprintEvent       
+	// void ItemDetailsIntensity__FinishedFunc();                                                                            // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.ItemDetailsIntensity__UpdateFunc
-	// void ItemDetailsIntensity__UpdateFunc();                                                                              // [0x2177018] BlueprintEvent       
+	// void ItemDetailsIntensity__UpdateFunc();                                                                              // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.BackgroundIntenstiy__FinishedFunc
-	// void BackgroundIntenstiy__FinishedFunc();                                                                             // [0x2177018] BlueprintEvent       
+	// void BackgroundIntenstiy__FinishedFunc();                                                                             // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.BackgroundIntenstiy__UpdateFunc
-	// void BackgroundIntenstiy__UpdateFunc();                                                                               // [0x2177018] BlueprintEvent       
+	// void BackgroundIntenstiy__UpdateFunc();                                                                               // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.OnTransitionBackground
-	// void OnTransitionBackground(bool bPlayForward, EBackgroundIntensityLevel IntensityTransition);                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransitionBackground(bool bPlayForward, EBackgroundIntensityLevel IntensityTransition);                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.OnUpdateDisplay
-	// void OnUpdateDisplay(bool bShowFloor, bool bShowEffects);                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateDisplay(bool bShowFloor, bool bShowEffects);                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.OnInitialBackgroundTransition
-	// void OnInitialBackgroundTransition();                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInitialBackgroundTransition();                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.OnTransitionItemDetails
-	// void OnTransitionItemDetails(bool bShowItemDetails);                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransitionItemDetails(bool bShowItemDetails);                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.OnIntensityChange
-	// void OnIntensityChange(bool bToLowIntensity);                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnIntensityChange(bool bToLowIntensity);                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.OnSetupTextureBackground
-	// void OnSetupTextureBackground(class UTexture2D* LoadedBackgroundTexture, FVaultWorldBackgroundData& BackgroundInfo);  // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetupTextureBackground(class UTexture2D* LoadedBackgroundTexture, FVaultWorldBackgroundData& BackgroundInfo);  // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.OnSetupMaterialBackground
-	// void OnSetupMaterialBackground(class UMaterialInterface* LoadedBackgroundMaterial, FVaultWorldBackgroundData& BackgroundInfo); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetupMaterialBackground(class UMaterialInterface* LoadedBackgroundMaterial, FVaultWorldBackgroundData& BackgroundInfo); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/BattlePassVaultWorld.BattlePassVaultWorld_C.ExecuteUbergraph_BattlePassVaultWorld
-	// void ExecuteUbergraph_BattlePassVaultWorld(int32_t EntryPoint);                                                       // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_BattlePassVaultWorld(int32_t EntryPoint);                                                       // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C
@@ -463,57 +404,57 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.PlaySoundWhenEnabled
-	// void PlaySoundWhenEnabled(class USoundBase* sound);                                                                   // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void PlaySoundWhenEnabled(class USoundBase* sound);                                                                   // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.SetBackgroundColor
-	// void SetBackgroundColor(FLinearColor RGBA0, FLinearColor RGBA1);                                                      // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetBackgroundColor(FLinearColor RGBA0, FLinearColor RGBA1);                                                      // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.ToggleBackgroundText
-	// void ToggleBackgroundText(bool bDisplayText);                                                                         // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void ToggleBackgroundText(bool bDisplayText);                                                                         // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.LightControl
-	// void LightControl(bool Active);                                                                                       // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void LightControl(bool Active);                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.SwitchPCLighting
-	// void SwitchPCLighting(bool Visibility);                                                                               // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchPCLighting(bool Visibility);                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.SwitchPCLighting_LOWDetail
-	// void SwitchPCLighting_LOWDetail(bool Visibility);                                                                     // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchPCLighting_LOWDetail(bool Visibility);                                                                     // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.SwitchMobileLighting
-	// void SwitchMobileLighting(bool Visibility);                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchMobileLighting(bool Visibility);                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.SetBackgroundString
-	// void SetBackgroundString(FText CustomText);                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetBackgroundString(FText CustomText);                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.CameraTurn_0_to_180__FinishedFunc
-	// void CameraTurn_0_to_180__FinishedFunc();                                                                             // [0x2177018] BlueprintEvent       
+	// void CameraTurn_0_to_180__FinishedFunc();                                                                             // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.CameraTurn_0_to_180__UpdateFunc
-	// void CameraTurn_0_to_180__UpdateFunc();                                                                               // [0x2177018] BlueprintEvent       
+	// void CameraTurn_0_to_180__UpdateFunc();                                                                               // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.CameraTurn_180_to_360__FinishedFunc
-	// void CameraTurn_180_to_360__FinishedFunc();                                                                           // [0x2177018] BlueprintEvent       
+	// void CameraTurn_180_to_360__FinishedFunc();                                                                           // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.CameraTurn_180_to_360__UpdateFunc
-	// void CameraTurn_180_to_360__UpdateFunc();                                                                             // [0x2177018] BlueprintEvent       
+	// void CameraTurn_180_to_360__UpdateFunc();                                                                             // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.Timeline_Zoom__FinishedFunc
-	// void Timeline_Zoom__FinishedFunc();                                                                                   // [0x2177018] BlueprintEvent       
+	// void Timeline_Zoom__FinishedFunc();                                                                                   // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.Timeline_Zoom__UpdateFunc
-	// void Timeline_Zoom__UpdateFunc();                                                                                     // [0x2177018] BlueprintEvent       
+	// void Timeline_Zoom__UpdateFunc();                                                                                     // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.Timeline_YawRotation__FinishedFunc
-	// void Timeline_YawRotation__FinishedFunc();                                                                            // [0x2177018] BlueprintEvent       
+	// void Timeline_YawRotation__FinishedFunc();                                                                            // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.Timeline_YawRotation__UpdateFunc
-	// void Timeline_YawRotation__UpdateFunc();                                                                              // [0x2177018] BlueprintEvent       
+	// void Timeline_YawRotation__UpdateFunc();                                                                              // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.UpdateSettings
-	// void UpdateSettings();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void UpdateSettings();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.OnCameraTransitionReady
-	// void OnCameraTransitionReady(bool bPrimaryToSecondary, class UFortAccountItemDefinition* PrimaryRequestedItem, FSceneTransitionOptions& Options); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnCameraTransitionReady(bool bPrimaryToSecondary, class UFortAccountItemDefinition* PrimaryRequestedItem, FSceneTransitionOptions& Options); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.OnTargetZoomLevelSet
-	// void OnTargetZoomLevelSet(float TargetZoomLevel);                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTargetZoomLevelSet(float TargetZoomLevel);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.OnSetBackgroundMessageText
-	// void OnSetBackgroundMessageText(FText& BackgroundMessageText);                                                        // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetBackgroundMessageText(FText& BackgroundMessageText);                                                        // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.OnUpdateBackgroundColor
-	// void OnUpdateBackgroundColor(bool bEnableAutotestBackground);                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateBackgroundColor(bool bEnableAutotestBackground);                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.OnTargetRotationOffsetSet
-	// void OnTargetRotationOffsetSet(FRotator& TargetRotationOffset);                                                       // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnTargetRotationOffsetSet(FRotator& TargetRotationOffset);                                                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.OnTargetRotationOffsetCanceled
-	// void OnTargetRotationOffsetCanceled();                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTargetRotationOffsetCanceled();                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.OnTargetZoomLevelCanceled
-	// void OnTargetZoomLevelCanceled();                                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTargetZoomLevelCanceled();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultRotator.VaultRotator_C.ExecuteUbergraph_VaultRotator
-	// void ExecuteUbergraph_VaultRotator(int32_t EntryPoint);                                                               // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_VaultRotator(int32_t EntryPoint);                                                               // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/ItemPreview/VaultSceneSinglePedestal.VaultSceneSinglePedestal_C
@@ -534,11 +475,11 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewPedestal.ItemPreviewPedestal_C.Remove Floor
-	// void Remove Floor(class AFortItemPreviewActor* Preview);                                                              // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void Remove Floor(class AFortItemPreviewActor* Preview);                                                              // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewPedestal.ItemPreviewPedestal_C.OnItemDisplayed
-	// void OnItemDisplayed(EFortItemType ItemType);                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemDisplayed(EFortItemType ItemType);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemPreviewPedestal.ItemPreviewPedestal_C.ExecuteUbergraph_ItemPreviewPedestal
-	// void ExecuteUbergraph_ItemPreviewPedestal(int32_t EntryPoint);                                                        // [0x2177018] Final                
+	// void ExecuteUbergraph_ItemPreviewPedestal(int32_t EntryPoint);                                                        // [0x211c0a0] Final                
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C
@@ -579,41 +520,41 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.UpdateFloorVisibility
-	// void UpdateFloorVisibility();                                                                                         // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateFloorVisibility();                                                                                         // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.SwitchErebusLighting
-	// void SwitchErebusLighting(bool Visibility);                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchErebusLighting(bool Visibility);                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.UpdateLightingScale
-	// void UpdateLightingScale();                                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateLightingScale();                                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.SetFloorEnabled
-	// void SetFloorEnabled(bool Floor Enabled);                                                                             // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetFloorEnabled(bool Floor Enabled);                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.LightControl
-	// void LightControl(bool Active);                                                                                       // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void LightControl(bool Active);                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.SwitchPCLighting
-	// void SwitchPCLighting(bool Visibility);                                                                               // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchPCLighting(bool Visibility);                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.SwitchMobileLighting
-	// void SwitchMobileLighting(bool NewParam);                                                                             // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchMobileLighting(bool NewParam);                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.HandleLightingScale
-	// void HandleLightingScale();                                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void HandleLightingScale();                                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.OnSetFloorMaterial
-	// void OnSetFloorMaterial(class UMaterialInterface* InMaterialInstance);                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnSetFloorMaterial(class UMaterialInterface* InMaterialInstance);                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.OnUpdateFloorMaterial
-	// void OnUpdateFloorMaterial(bool bEnableAutotestBackground);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateFloorMaterial(bool bEnableAutotestBackground);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.OnItemsPendingTransitionOut
-	// void OnItemsPendingTransitionOut(FStateTransitionControllerHandle& TransitionController);                             // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnItemsPendingTransitionOut(FStateTransitionControllerHandle& TransitionController);                             // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.Internal_ItemsPendingTransitionOutComplete
-	// void Internal_ItemsPendingTransitionOutComplete(FStateTransitionControllerHandle TransitionController);               // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Internal_ItemsPendingTransitionOutComplete(FStateTransitionControllerHandle TransitionController);               // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.OnItemsPendingTransitionOut_SpawnResOutEffects
-	// void OnItemsPendingTransitionOut_SpawnResOutEffects();                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnItemsPendingTransitionOut_SpawnResOutEffects();                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.FinishShowingResOutEffects
-	// void FinishShowingResOutEffects();                                                                                    // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void FinishShowingResOutEffects();                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp
-	// void OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp();                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp();                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.UpdateSettings
-	// void UpdateSettings();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void UpdateSettings();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.OnPreviewVisualsSpawned
-	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/WrapPreview.WrapPreview_C.ExecuteUbergraph_WrapPreview
-	// void ExecuteUbergraph_WrapPreview(int32_t EntryPoint);                                                                // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_WrapPreview(int32_t EntryPoint);                                                                // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C
@@ -674,71 +615,130 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.IsSkyDiveContrailItem
-	// void IsSkyDiveContrailItem(bool& bSuccess);                                                                           // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void IsSkyDiveContrailItem(bool& bSuccess);                                                                           // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OutroAndDestroyLoadingEffects
-	// void OutroAndDestroyLoadingEffects();                                                                                 // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void OutroAndDestroyLoadingEffects();                                                                                 // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.HandleLightingSettingsChanged
-	// void HandleLightingSettingsChanged();                                                                                 // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void HandleLightingSettingsChanged();                                                                                 // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.DestroyLoadingEffects
-	// void DestroyLoadingEffects();                                                                                         // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void DestroyLoadingEffects();                                                                                         // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SpawnLoadingEffects
-	// void SpawnLoadingEffects();                                                                                           // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SpawnLoadingEffects();                                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SetupLighting
-	// void SetupLighting();                                                                                                 // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetupLighting();                                                                                                 // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SpawnResInEffects
-	// void SpawnResInEffects();                                                                                             // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SpawnResInEffects();                                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SetupFloor
-	// void SetupFloor();                                                                                                    // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetupFloor();                                                                                                    // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.Get LOD Streaming Safety Duration
-	// void Get LOD Streaming Safety Duration();                                                                             // [0x2177018] Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void Get LOD Streaming Safety Duration();                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SwitchErebusLighting
-	// void SwitchErebusLighting(bool Visibility);                                                                           // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SwitchErebusLighting(bool Visibility);                                                                           // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SetFloorEnabled
-	// void SetFloorEnabled(bool Show Floor);                                                                                // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetFloorEnabled(bool Show Floor);                                                                                // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.LightControl
-	// void LightControl(bool Active);                                                                                       // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void LightControl(bool Active);                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SwitchPCLighting
-	// void SwitchPCLighting(bool Visibility);                                                                               // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchPCLighting(bool Visibility);                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SwitchMobileLighting
-	// void SwitchMobileLighting(bool NewParam);                                                                             // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchMobileLighting(bool NewParam);                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.RezInMaterialEffectTimeLine__FinishedFunc
-	// void RezInMaterialEffectTimeLine__FinishedFunc();                                                                     // [0x2177018] BlueprintEvent       
+	// void RezInMaterialEffectTimeLine__FinishedFunc();                                                                     // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.RezInMaterialEffectTimeLine__UpdateFunc
-	// void RezInMaterialEffectTimeLine__UpdateFunc();                                                                       // [0x2177018] BlueprintEvent       
+	// void RezInMaterialEffectTimeLine__UpdateFunc();                                                                       // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.RezInMaterialEffectTimeLine2__FinishedFunc
-	// void RezInMaterialEffectTimeLine2__FinishedFunc();                                                                    // [0x2177018] BlueprintEvent       
+	// void RezInMaterialEffectTimeLine2__FinishedFunc();                                                                    // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.RezInMaterialEffectTimeLine2__UpdateFunc
-	// void RezInMaterialEffectTimeLine2__UpdateFunc();                                                                      // [0x2177018] BlueprintEvent       
+	// void RezInMaterialEffectTimeLine2__UpdateFunc();                                                                      // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.SpawnSoundPlayback
-	// void SpawnSoundPlayback();                                                                                            // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void SpawnSoundPlayback();                                                                                            // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnUpdateFloorMaterial
-	// void OnUpdateFloorMaterial(bool bEnableAutotestBackground);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateFloorMaterial(bool bEnableAutotestBackground);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnItemsPendingTransitionOut
-	// void OnItemsPendingTransitionOut(FStateTransitionControllerHandle& TransitionController);                             // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnItemsPendingTransitionOut(FStateTransitionControllerHandle& TransitionController);                             // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.Internal_ItemsPendingTransitionOutComplete
-	// void Internal_ItemsPendingTransitionOutComplete(FStateTransitionControllerHandle TransitionController);               // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Internal_ItemsPendingTransitionOutComplete(FStateTransitionControllerHandle TransitionController);               // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnItemsPendingTransitionOut_SpawnResOutEffects
-	// void OnItemsPendingTransitionOut_SpawnResOutEffects();                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnItemsPendingTransitionOut_SpawnResOutEffects();                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.FinishShowingResOutEffects
-	// void FinishShowingResOutEffects();                                                                                    // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void FinishShowingResOutEffects();                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp
-	// void OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp();                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp();                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnSetFloorMaterial
-	// void OnSetFloorMaterial(class UMaterialInterface* InMaterialInstance);                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnSetFloorMaterial(class UMaterialInterface* InMaterialInstance);                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnPreviewVisualsSpawned
-	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnAllLODStreamingComplete
-	// void OnAllLODStreamingComplete();                                                                                     // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnAllLODStreamingComplete();                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnPreviewVisualsBeginLoading
-	// void OnPreviewVisualsBeginLoading();                                                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPreviewVisualsBeginLoading();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.OnCurrentVisualsCleanedUp
-	// void OnCurrentVisualsCleanedUp();                                                                                     // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnCurrentVisualsCleanedUp();                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.Backup_LODStreamingFailed
-	// void Backup_LODStreamingFailed();                                                                                     // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Backup_LODStreamingFailed();                                                                                     // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.RezInMaterialEffect
-	// void RezInMaterialEffect();                                                                                           // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void RezInMaterialEffect();                                                                                           // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/ItemPreview/ItemOnPawnPreview.ItemOnPawnPreview_C.ExecuteUbergraph_ItemOnPawnPreview
-	// void ExecuteUbergraph_ItemOnPawnPreview(int32_t EntryPoint);                                                          // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_ItemOnPawnPreview(int32_t EntryPoint);                                                          // [0x211c0a0] Final|HasDefaults    
+};
+
+/// Class /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C
+/// Size: 0x00D0 (0x000290 - 0x000360)
+class AVaultCharacterLightingBP_C : public AActor
+{ 
+public:
+	FPointerToUberGraphFrame                           UberGraphFrame;                                             // 0x0290   (0x0008)  
+	class UArrowComponent*                             Arrow1;                                                     // 0x0298   (0x0008)  
+	class USpotLightComponent*                         KeyLight4;                                                  // 0x02A0   (0x0008)  
+	class USpotLightComponent*                         KeyLight3;                                                  // 0x02A8   (0x0008)  
+	class USpotLightComponent*                         KeyLight2;                                                  // 0x02B0   (0x0008)  
+	class UPostProcessComponent*                       PostProcess_Mobile;                                         // 0x02B8   (0x0008)  
+	class UPostProcessComponent*                       PostProcess_LOWPC;                                          // 0x02C0   (0x0008)  
+	class USkyLightComponent*                          SkyLight_LOWPC;                                             // 0x02C8   (0x0008)  
+	class UDirectionalLightComponent*                  DirectionalLight_LOWPC;                                     // 0x02D0   (0x0008)  
+	class UArrowComponent*                             Arrow;                                                      // 0x02D8   (0x0008)  
+	class UDirectionalLightComponent*                  DirectionalLightMobile;                                     // 0x02E0   (0x0008)  
+	class USkyLightComponent*                          SkyLightLowMobil;                                           // 0x02E8   (0x0008)  
+	class USkyLightComponent*                          SkyLight;                                                   // 0x02F0   (0x0008)  
+	class USpotLightComponent*                         RimLowerRight;                                              // 0x02F8   (0x0008)  
+	class USpotLightComponent*                         RimLeft;                                                    // 0x0300   (0x0008)  
+	class USpotLightComponent*                         RimTopRight;                                                // 0x0308   (0x0008)  
+	class USpotLightComponent*                         RimBottomLeft;                                              // 0x0310   (0x0008)  
+	class USpotLightComponent*                         KeyLight;                                                   // 0x0318   (0x0008)  
+	class USpotLightComponent*                         Bounce;                                                     // 0x0320   (0x0008)  
+	class USpotLightComponent*                         BounceRear;                                                 // 0x0328   (0x0008)  
+	class USceneComponent*                             SharedRoot;                                                 // 0x0330   (0x0008)  
+	bool                                               DebugMobile_Lighting;                                       // 0x0338   (0x0001)  
+	bool                                               DebugLightingPC;                                            // 0x0339   (0x0001)  
+	bool                                               IsActive;                                                   // 0x033A   (0x0001)  
+	bool                                               AlwaysOn;                                                   // 0x033B   (0x0001)  
+	bool                                               DebugLighting_LOWDetailPC;                                  // 0x033C   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x033D   (0x0003)  MISSED
+	FLinearColor                                       MPC_ManualSunlightVector;                                   // 0x0340   (0x0010)  
+	FLinearColor                                       MPC_ManualSunlightColor;                                    // 0x0350   (0x0010)  
+
+
+	/// Functions
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.SwitchPCLighting_LOWDetail
+	// void SwitchPCLighting_LOWDetail(bool Visibility);                                                                     // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.SwitchPCLighting
+	// void SwitchPCLighting(bool Visibility);                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.SwitchMobileLighting
+	// void SwitchMobileLighting(bool Visibilty);                                                                            // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.UserConstructionScript
+	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.UpdateSettings
+	// void UpdateSettings();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.ToggleLighting
+	// void ToggleLighting();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.OVERRIDELIGHTING
+	// void OVERRIDELIGHTING();                                                                                              // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.LightControl
+	// void LightControl(bool NewParam);                                                                                     // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.ReceiveBeginPlay
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterLightingBP.VaultCharacterLightingBP_C.ExecuteUbergraph_VaultCharacterLightingBP
+	// void ExecuteUbergraph_VaultCharacterLightingBP(int32_t EntryPoint);                                                   // [0x211c0a0] Final                
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C
@@ -818,83 +818,83 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResetPreScaleLocations
-	// void ResetPreScaleLocations();                                                                                        // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void ResetPreScaleLocations();                                                                                        // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.RestoreTeleportMIDsInProgress
-	// void RestoreTeleportMIDsInProgress(class AFortPlayerPawn* Pawn);                                                      // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void RestoreTeleportMIDsInProgress(class AFortPlayerPawn* Pawn);                                                      // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.HandlePartyMemberInProgressDisplayChanges
-	// void HandlePartyMemberInProgressDisplayChanges(class AFortPlayerPawn* Pawn);                                          // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void HandlePartyMemberInProgressDisplayChanges(class AFortPlayerPawn* Pawn);                                          // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.PartyMemberInProgressCheck
-	// void PartyMemberInProgressCheck(class AFortPlayerPawn* Pawn);                                                         // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void PartyMemberInProgressCheck(class AFortPlayerPawn* Pawn);                                                         // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetPrefabActorForCurrentDisplayedItem
-	// class AActor* GetPrefabActorForCurrentDisplayedItem();                                                                // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
+	// class AActor* GetPrefabActorForCurrentDisplayedItem();                                                                // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.PostSetupPrefabVisuals
-	// void PostSetupPrefabVisuals();                                                                                        // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void PostSetupPrefabVisuals();                                                                                        // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetMeshForCurrentDisplayedItem
-	// void GetMeshForCurrentDisplayedItem(class UMeshComponent*& OutDisplayedMesh);                                         // [0x2177018] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void GetMeshForCurrentDisplayedItem(class UMeshComponent*& OutDisplayedMesh);                                         // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetItemDefinitionToShow
-	// void GetItemDefinitionToShow(class UFortItemDefinition*& ItemDefinition);                                             // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void GetItemDefinitionToShow(class UFortItemDefinition*& ItemDefinition);                                             // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetUIOverrideVisuals
-	// void SetUIOverrideVisuals(class UTexture2D* Large Texture, class UFortItemDefinition* Item, EFortRarity Rarity);      // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetUIOverrideVisuals(class UTexture2D* Large Texture, class UFortItemDefinition* Item, EFortRarity Rarity);      // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetWeaponPlacementTransform
-	// FTransform GetWeaponPlacementTransform();                                                                             // [0x2177018] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// FTransform GetWeaponPlacementTransform();                                                                             // [0x211c0a0] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.UpdatePreviewMeshTransforms
-	// void UpdatePreviewMeshTransforms();                                                                                   // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void UpdatePreviewMeshTransforms();                                                                                   // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetItemPreviewOffset
-	// FTransform GetItemPreviewOffset(class UFortItemDefinition* ItemDefinition);                                           // [0x2177018] Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// FTransform GetItemPreviewOffset(class UFortItemDefinition* ItemDefinition);                                           // [0x211c0a0] Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetPreviewMeshWorldTransform
-	// FTransform GetPreviewMeshWorldTransform();                                                                            // [0x2177018] Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// FTransform GetPreviewMeshWorldTransform();                                                                            // [0x211c0a0] Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetupStaticMeshVisuals
-	// void SetupStaticMeshVisuals(class UStaticMesh* NewMesh);                                                              // [0x2177018] Private|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetupStaticMeshVisuals(class UStaticMesh* NewMesh);                                                              // [0x211c0a0] Private|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetupSkeletalMeshVisuals
-	// void SetupSkeletalMeshVisuals(class USkeletalMesh* NewMesh);                                                          // [0x2177018] Private|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetupSkeletalMeshVisuals(class USkeletalMesh* NewMesh);                                                          // [0x211c0a0] Private|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResetVisuals
-	// void ResetVisuals();                                                                                                  // [0x2177018] Private|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void ResetVisuals();                                                                                                  // [0x211c0a0] Private|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ScaleAnimLevel__FinishedFunc
-	// void ScaleAnimLevel__FinishedFunc();                                                                                  // [0x2177018] BlueprintEvent       
+	// void ScaleAnimLevel__FinishedFunc();                                                                                  // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ScaleAnimLevel__UpdateFunc
-	// void ScaleAnimLevel__UpdateFunc();                                                                                    // [0x2177018] BlueprintEvent       
+	// void ScaleAnimLevel__UpdateFunc();                                                                                    // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ScaleAnimEvolve__FinishedFunc
-	// void ScaleAnimEvolve__FinishedFunc();                                                                                 // [0x2177018] BlueprintEvent       
+	// void ScaleAnimEvolve__FinishedFunc();                                                                                 // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ScaleAnimEvolve__UpdateFunc
-	// void ScaleAnimEvolve__UpdateFunc();                                                                                   // [0x2177018] BlueprintEvent       
+	// void ScaleAnimEvolve__UpdateFunc();                                                                                   // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.HoloMatColorPulse__FinishedFunc
-	// void HoloMatColorPulse__FinishedFunc();                                                                               // [0x2177018] BlueprintEvent       
+	// void HoloMatColorPulse__FinishedFunc();                                                                               // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.HoloMatColorPulse__UpdateFunc
-	// void HoloMatColorPulse__UpdateFunc();                                                                                 // [0x2177018] BlueprintEvent       
+	// void HoloMatColorPulse__UpdateFunc();                                                                                 // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.Completed_01D864884864692DBB7035B0996A5437
-	// void Completed_01D864884864692DBB7035B0996A5437(class UFortItem* Item, FGuid RequestID);                              // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Completed_01D864884864692DBB7035B0996A5437(class UFortItem* Item, FGuid RequestID);                              // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ShowItem
-	// void ShowItem(class UFortItem* ItemToView, FGuid& RequestID);                                                         // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void ShowItem(class UFortItem* ItemToView, FGuid& RequestID);                                                         // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.PlayLevelUpEffect
-	// void PlayLevelUpEffect();                                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void PlayLevelUpEffect();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.PlayEvolutionEffect
-	// void PlayEvolutionEffect();                                                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void PlayEvolutionEffect();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.CelebrateWithFX
-	// void CelebrateWithFX();                                                                                               // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void CelebrateWithFX();                                                                                               // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.PerformScaleMeshFX
-	// void PerformScaleMeshFX();                                                                                            // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void PerformScaleMeshFX();                                                                                            // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.HandleLoadingAssetsForItemCompleted
-	// void HandleLoadingAssetsForItemCompleted(class UFortItem* ItemWhoseAssetsWereLoaded, TArray<UObject*>& LoadedAssets, FGuid& RequestID); // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleLoadingAssetsForItemCompleted(class UFortItem* ItemWhoseAssetsWereLoaded, TArray<UObject*>& LoadedAssets, FGuid& RequestID); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.Set Character Parts Visibility
-	// void Set Character Parts Visibility(bool NewVisible);                                                                 // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Set Character Parts Visibility(bool NewVisible);                                                                 // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.CharacterCustomizationFinished
-	// void CharacterCustomizationFinished(class AFortPlayerPawn* Pawn);                                                     // [0x2177018] Event|Public|BlueprintEvent 
+	// void CharacterCustomizationFinished(class AFortPlayerPawn* Pawn);                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.OnPlayerPawnAddedToLobby
-	// void OnPlayerPawnAddedToLobby(class AFortPlayerPawn* Pawn);                                                           // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnPlayerPawnAddedToLobby(class AFortPlayerPawn* Pawn);                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResOutPawnFromLobby
-	// void ResOutPawnFromLobby(class AFortPlayerPawn* Pawn, int32_t PartyIndex);                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void ResOutPawnFromLobby(class AFortPlayerPawn* Pawn, int32_t PartyIndex);                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetupPrefabVisuals
-	// void SetupPrefabVisuals();                                                                                            // [0x2177018] Event|Public|BlueprintEvent 
+	// void SetupPrefabVisuals();                                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.OnEmoteSetupFinished
-	// void OnEmoteSetupFinished();                                                                                          // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnEmoteSetupFinished();                                                                                          // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.OnMeshLODStreamingFinished
-	// void OnMeshLODStreamingFinished();                                                                                    // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnMeshLODStreamingFinished();                                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/PartyDisplayManagerBP.PartyDisplayManagerBP_C.ExecuteUbergraph_PartyDisplayManagerBP
-	// void ExecuteUbergraph_PartyDisplayManagerBP(int32_t EntryPoint);                                                      // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_PartyDisplayManagerBP(int32_t EntryPoint);                                                      // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/CameraAnimationTransition.CameraAnimationTransition_C
@@ -911,13 +911,13 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/CameraAnimationTransition.CameraAnimationTransition_C.CanChangeCamera
-	// void CanChangeCamera(EFrontEndCamera FromCamera, EFrontEndCamera ToCamera, bool& CanChangeCamera);                    // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void CanChangeCamera(EFrontEndCamera FromCamera, EFrontEndCamera ToCamera, bool& CanChangeCamera);                    // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/CameraAnimationTransition.CameraAnimationTransition_C.MoveCameraUp
-	// void MoveCameraUp();                                                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void MoveCameraUp();                                                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/CameraAnimationTransition.CameraAnimationTransition_C.MoveCameraDown
-	// void MoveCameraDown();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void MoveCameraDown();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/CameraAnimationTransition.CameraAnimationTransition_C.ExecuteUbergraph_CameraAnimationTransition
-	// void ExecuteUbergraph_CameraAnimationTransition(int32_t EntryPoint);                                                  // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_CameraAnimationTransition(int32_t EntryPoint);                                                  // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C
@@ -947,21 +947,21 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.SetVisiblityofDetailSpecificMeshes
-	// void SetVisiblityofDetailSpecificMeshes();                                                                            // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetVisiblityofDetailSpecificMeshes();                                                                            // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.SetVisiblityofSceneLighting
-	// void SetVisiblityofSceneLighting(bool Activate);                                                                      // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void SetVisiblityofSceneLighting(bool Activate);                                                                      // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.EnableLobbySetLighting
-	// void EnableLobbySetLighting();                                                                                        // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void EnableLobbySetLighting();                                                                                        // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.DisableLobbySetLighting
-	// void DisableLobbySetLighting();                                                                                       // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void DisableLobbySetLighting();                                                                                       // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.UpdateSettings
-	// void UpdateSettings();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void UpdateSettings();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.ExecuteUbergraph_BP_FortniteLobbyLightSwitcher
-	// void ExecuteUbergraph_BP_FortniteLobbyLightSwitcher(int32_t EntryPoint);                                              // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_BP_FortniteLobbyLightSwitcher(int32_t EntryPoint);                                              // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C
@@ -977,15 +977,15 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.BP_OnActivated
-	// void BP_OnActivated(class AFortPlayerController* PlayerController);                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnActivated(class AFortPlayerController* PlayerController);                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.BP_OnDeactivated
-	// void BP_OnDeactivated(class AFortPlayerController* PlayerController);                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnDeactivated(class AFortPlayerController* PlayerController);                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.Reset Location
-	// void Reset Location();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Reset Location();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.ManualActivate
-	// void ManualActivate();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void ManualActivate();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.ExecuteUbergraph_FortnitePartyBackdrop_Camera
-	// void ExecuteUbergraph_FortnitePartyBackdrop_Camera(int32_t EntryPoint);                                               // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_FortnitePartyBackdrop_Camera(int32_t EntryPoint);                                               // [0x211c0a0] Final|HasDefaults    
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/BP_DetailLevelMesh.BP_DetailLevelMesh_C
@@ -1002,7 +1002,7 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_DetailLevelMesh.BP_DetailLevelMesh_C.ExecuteUbergraph_BP_DetailLevelMesh
-	// void ExecuteUbergraph_BP_DetailLevelMesh(int32_t EntryPoint);                                                         // [0x2177018] Final                
+	// void ExecuteUbergraph_BP_DetailLevelMesh(int32_t EntryPoint);                                                         // [0x211c0a0] Final                
 };
 
 /// Class /Game/Environments/FrontEnd/BackPlates/LobbyActorDirector.LobbyActorDirector_C
@@ -1018,7 +1018,7 @@ class AVaultWeaponPlacementHelper_C : public AActor
 { 
 public:
 	FPointerToUberGraphFrame                           UberGraphFrame;                                             // 0x0290   (0x0008)  
-	class UStaticMeshComponent*                        CUBE;                                                       // 0x0298   (0x0008)  
+	class UStaticMeshComponent*                        Cube;                                                       // 0x0298   (0x0008)  
 	class UParticleSystemComponent*                    PS_NoPlayer_Sparkle;                                        // 0x02A0   (0x0008)  
 	class UParticleSystemComponent*                    PS_NoPlayer_Swirl02;                                        // 0x02A8   (0x0008)  
 	class UParticleSystemComponent*                    PS_NoPlayer_Swirl01;                                        // 0x02B0   (0x0008)  
@@ -1030,21 +1030,21 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.GetFrontendAnimInstance
-	// void GetFrontendAnimInstance();                                                                                       // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void GetFrontendAnimInstance();                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnFrontEndCameraChanged
-	// void OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera);                                   // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera);                                   // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.Initialize
-	// void Initialize();                                                                                                    // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void Initialize();                                                                                                    // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.InitializeContextEvents
-	// void InitializeContextEvents();                                                                                       // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void InitializeContextEvents();                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.ItemRez
-	// void ItemRez();                                                                                                       // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void ItemRez();                                                                                                       // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.ExecuteUbergraph_VaultWeaponPlacementHelper
-	// void ExecuteUbergraph_VaultWeaponPlacementHelper(int32_t EntryPoint);                                                 // [0x2177018] Final                
+	// void ExecuteUbergraph_VaultWeaponPlacementHelper(int32_t EntryPoint);                                                 // [0x211c0a0] Final                
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.NewEventDispatcher_0__DelegateSignature
-	// void NewEventDispatcher_0__DelegateSignature();                                                                       // [0x2177018] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void NewEventDispatcher_0__DelegateSignature();                                                                       // [0x211c0a0] Public|Delegate|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C
@@ -1066,19 +1066,19 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.UpdatePosition For Camera
-	// void UpdatePosition For Camera(EFrontEndCamera FrontendCamera);                                                       // [0x2177018] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void UpdatePosition For Camera(EFrontEndCamera FrontendCamera);                                                       // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x2177018] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.SubGameChanged_Event
-	// void SubGameChanged_Event(ESubGame SubGame);                                                                          // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void SubGameChanged_Event(ESubGame SubGame);                                                                          // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.OnFrontEndCameraChanged
-	// void OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera);                                   // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera);                                   // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.ExecuteUbergraph_VaultCharacterPlacementHelper
-	// void ExecuteUbergraph_VaultCharacterPlacementHelper(int32_t EntryPoint);                                              // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_VaultCharacterPlacementHelper(int32_t EntryPoint);                                              // [0x211c0a0] Final|HasDefaults    
 	// Function /Game/Environments/FrontEnd/Blueprints/VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.OnZoomLevelUpdated__DelegateSignature
-	// void OnZoomLevelUpdated__DelegateSignature(double CurrentZoomLevel);                                                  // [0x2177018] Public|Delegate|BlueprintCallable|BlueprintEvent 
+	// void OnZoomLevelUpdated__DelegateSignature(double CurrentZoomLevel);                                                  // [0x211c0a0] Public|Delegate|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/BackgroundString/UI_Background_Strings.UI_Background_Strings_C
@@ -1093,11 +1093,11 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/BackgroundString/UI_Background_Strings.UI_Background_Strings_C.PreConstruct
-	// void PreConstruct(bool IsDesignTime);                                                                                 // [0x2177018] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void PreConstruct(bool IsDesignTime);                                                                                 // [0x211c0a0] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BackgroundString/UI_Background_Strings.UI_Background_Strings_C.Construct
-	// void Construct();                                                                                                     // [0x2177018] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Construct();                                                                                                     // [0x211c0a0] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BackgroundString/UI_Background_Strings.UI_Background_Strings_C.ExecuteUbergraph_UI_Background_Strings
-	// void ExecuteUbergraph_UI_Background_Strings(int32_t EntryPoint);                                                      // [0x2177018] Final                
+	// void ExecuteUbergraph_UI_Background_Strings(int32_t EntryPoint);                                                      // [0x211c0a0] Final                
 };
 
 /// Class /Game/Environments/FrontEnd/BackPlates/CMSLobbyDirector.CMSLobbyDirector_C
@@ -1119,11 +1119,11 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_CharacterRimlightDisabler.BP_CharacterRimlightDisabler_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_CharacterRimlightDisabler.BP_CharacterRimlightDisabler_C.ReceiveEndPlay
-	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/BP_CharacterRimlightDisabler.BP_CharacterRimlightDisabler_C.ExecuteUbergraph_BP_CharacterRimlightDisabler
-	// void ExecuteUbergraph_BP_CharacterRimlightDisabler(int32_t EntryPoint);                                               // [0x2177018] Final                
+	// void ExecuteUbergraph_BP_CharacterRimlightDisabler(int32_t EntryPoint);                                               // [0x211c0a0] Final                
 };
 
 /// Class /Game/Environments/FrontEnd/BackPlates/Blueprint/BP_Background_Raytracing.BP_Background_Raytracing_C
@@ -1144,7 +1144,7 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/BackPlates/Blueprint/BP_Background_Raytracing.BP_Background_Raytracing_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C
@@ -1161,24 +1161,24 @@ public:
 
 	/// Functions
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.HandleMousePress
-	// void HandleMousePress();                                                                                              // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void HandleMousePress();                                                                                              // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.HandleMouseRelease
-	// void HandleMouseRelease();                                                                                            // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void HandleMouseRelease();                                                                                            // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent
-	// void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent(FKey Key);                                                        // [0x2177018] BlueprintEvent       
+	// void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent(FKey Key);                                                        // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent
-	// void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent(FKey Key);                                                        // [0x2177018] BlueprintEvent       
+	// void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent(FKey Key);                                                        // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent
-	// void InpActEvt_RightMouseButton_K2Node_InputKeyEvent(FKey Key);                                                       // [0x2177018] BlueprintEvent       
+	// void InpActEvt_RightMouseButton_K2Node_InputKeyEvent(FKey Key);                                                       // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent
-	// void InpActEvt_RightMouseButton_K2Node_InputKeyEvent(FKey Key);                                                       // [0x2177018] BlueprintEvent       
+	// void InpActEvt_RightMouseButton_K2Node_InputKeyEvent(FKey Key);                                                       // [0x211c0a0] BlueprintEvent       
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.BP_OnActivated
-	// void BP_OnActivated(class AFortPlayerController* PlayerController);                                                   // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnActivated(class AFortPlayerController* PlayerController);                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.BP_OnDeactivated
-	// void BP_OnDeactivated(class AFortPlayerController* PlayerController);                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_OnDeactivated(class AFortPlayerController* PlayerController);                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Game/Environments/FrontEnd/Blueprints/FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.ExecuteUbergraph_FortnitePartyHeroSelect_Camera
-	// void ExecuteUbergraph_FortnitePartyHeroSelect_Camera(int32_t EntryPoint);                                             // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_FortnitePartyHeroSelect_Camera(int32_t EntryPoint);                                             // [0x211c0a0] Final|HasDefaults    
 };
 

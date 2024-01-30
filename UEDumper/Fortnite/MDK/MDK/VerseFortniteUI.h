@@ -29,37 +29,37 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.MultiplyIntegers
-	// int64_t MultiplyIntegers(int64_t A, int64_t B, bool bInvertB);                                                           // [0xc325ff4] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// int64_t MultiplyIntegers(int64_t A, int64_t B, bool bInvertB);                                                           // [0xc2dc480] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.MultiplyIntDouble
-	// double MultiplyIntDouble(int64_t A, bool bInvertA, double B, bool bInvertB);                                             // [0xc325e6c] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// double MultiplyIntDouble(int64_t A, bool bInvertA, double B, bool bInvertB);                                             // [0xc2dc2f8] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.MultiplyDoubles
-	// double MultiplyDoubles(double A, bool bInvertA, double B, bool bInvertB);                                                // [0xc325d1c] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// double MultiplyDoubles(double A, bool bInvertA, double B, bool bInvertB);                                                // [0xc2dc1a8] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.MakeTransform
-	// FWidgetTransform MakeTransform(FVector2D Translation, FVector2D Scale, FVector2D Shear, double Angle);                   // [0xc325940] Final|Native|Static|Private|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FWidgetTransform MakeTransform(FVector2D Translation, FVector2D Scale, FVector2D Shear, double Angle);                   // [0xc2dbdcc] Final|Native|Static|Private|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.MakeImageBrushFromTexture
-	// FSlateBrush MakeImageBrushFromTexture(class UTexture2D* Image, FVector2D ImageSize, FLinearColor LinearColor, TEnumAsByte<ESlateBrushTileType> TileType); // [0xc3255e4] Final|Native|Static|Private|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FSlateBrush MakeImageBrushFromTexture(class UTexture2D* Image, FVector2D ImageSize, FLinearColor LinearColor, TEnumAsByte<ESlateBrushTileType> TileType); // [0xc2dba70] Final|Native|Static|Private|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.InvertBool
-	// bool InvertBool(bool bValue);                                                                                            // [0xc325568] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// bool InvertBool(bool bValue);                                                                                            // [0xc2db9f4] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.Conv_IntToText
-	// FText Conv_IntToText(int64_t Value, bool bAlwaysSign, bool bUseGrouping, int64_t MinimumIntegralDigits, int64_t MaximumIntegralDigits); // [0xc324f9c] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// FText Conv_IntToText(int64_t Value, bool bAlwaysSign, bool bUseGrouping, int64_t MinimumIntegralDigits, int64_t MaximumIntegralDigits); // [0xc2db428] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.Conv_IntegerToBoolSimple
-	// bool Conv_IntegerToBoolSimple(int64_t Value);                                                                            // [0xc325250] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// bool Conv_IntegerToBoolSimple(int64_t Value);                                                                            // [0xc2db6dc] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.Conv_IntegerToBoolInterval
-	// bool Conv_IntegerToBoolInterval(int64_t Value, int64_t InclusiveLowerBound, int64_t InclusiveUpperBound);                // [0xc325154] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// bool Conv_IntegerToBoolInterval(int64_t Value, int64_t InclusiveLowerBound, int64_t InclusiveUpperBound);                // [0xc2db5e0] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.Conv_DoubleToText
-	// FText Conv_DoubleToText(double Value, TEnumAsByte<ERoundingMode> RoundingMode, bool bAlwaysSign, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits); // [0xc324d14] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// FText Conv_DoubleToText(double Value, TEnumAsByte<ERoundingMode> RoundingMode, bool bAlwaysSign, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits); // [0xc2db1a0] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.Conv_DoubleToBoolSimple
-	// bool Conv_DoubleToBoolSimple(double Value);                                                                              // [0xc324c80] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// bool Conv_DoubleToBoolSimple(double Value);                                                                              // [0xc2db10c] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.Conv_DoubleToBoolInterval
-	// bool Conv_DoubleToBoolInterval(double Value, double InclusiveLowerBound, double InclusiveUpperBound);                    // [0xc324b6c] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// bool Conv_DoubleToBoolInterval(double Value, double InclusiveLowerBound, double InclusiveUpperBound);                    // [0xc2daff8] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.Conv_BoolToSlateVisibility
-	// ESlateVisibility Conv_BoolToSlateVisibility(bool bIsVisible, ESlateVisibility TrueVisibility, ESlateVisibility FalseVisibility); // [0x31fcc14] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// ESlateVisibility Conv_BoolToSlateVisibility(bool bIsVisible, ESlateVisibility TrueVisibility, ESlateVisibility FalseVisibility); // [0x31f4dcc] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.AddIntegers
-	// int64_t AddIntegers(int64_t A, bool bNegateA, int64_t B, bool bNegateB);                                                 // [0xc324a24] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// int64_t AddIntegers(int64_t A, bool bNegateA, int64_t B, bool bNegateB);                                                 // [0xc2daeb0] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.AddIntDouble
-	// double AddIntDouble(int64_t A, bool bNegateA, double B, bool bNegateB);                                                  // [0xc3248cc] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// double AddIntDouble(int64_t A, bool bNegateA, double B, bool bNegateB);                                                  // [0xc2dad58] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIAllowedConversionLibrary.AddDoubles
-	// double AddDoubles(double A, bool bNegateA, double B, bool bNegateB);                                                     // [0xc324760] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// double AddDoubles(double A, bool bNegateA, double B, bool bNegateB);                                                     // [0xc2dabec] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/VerseFortniteUI.VerseFortniteUIConversionLibrary
@@ -167,11 +167,11 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkButton_Base.ServerClick
-	// void ServerClick(class APlayerController* PlayerController);                                                             // [0x6309444] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerClick(class APlayerController* PlayerController);                                                             // [0x6353bbc] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkButton_Base.OnRep_Message
-	// void OnRep_Message();                                                                                                    // [0xc326128] Final|Native|Private 
+	// void OnRep_Message();                                                                                                    // [0xc2dc5b4] Final|Native|Private 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkButton_Base.GetText
-	// FText GetText();                                                                                                         // [0xa68f094] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetText();                                                                                                         // [0xa687b08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/VerseFortniteUI.VerseFortniteUIFrameworkButton_Loud
@@ -216,9 +216,9 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkText_Base.ServerTextCommitted
-	// void ServerTextCommitted(class APlayerController* PlayerController, FText NewText);                                      // [0xc326230] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerTextCommitted(class APlayerController* PlayerController, FText NewText);                                      // [0xc2dc6bc] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkText_Base.ExecuteServerTextCommitted
-	// void ExecuteServerTextCommitted(FText& InText, TEnumAsByte<ETextCommit> InCommitMethod);                                 // [0xc3252c4] Final|Native|Public|HasOutParms 
+	// void ExecuteServerTextCommitted(FText& InText, TEnumAsByte<ETextCommit> InCommitMethod);                                 // [0xc2db750] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/VerseFortniteUI.VerseFortniteUIFrameworkTextBlock
@@ -267,35 +267,35 @@ public:
 
 	/// Functions
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.SetValue
-	// bool SetValue(float InValue);                                                                                            // [0xc3265d0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// bool SetValue(float InValue);                                                                                            // [0xc2dca5c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.SetStepSize
-	// void SetStepSize(float InMinValue);                                                                                      // [0xc326548] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetStepSize(float InMinValue);                                                                                      // [0xc2dc9d4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.SetMinValue
-	// void SetMinValue(float InMinValue);                                                                                      // [0xc3264c8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetMinValue(float InMinValue);                                                                                      // [0xc2dc954] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.SetMaxValue
-	// void SetMaxValue(float InMaxValue);                                                                                      // [0xc326448] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetMaxValue(float InMaxValue);                                                                                      // [0xc2dc8d4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.ServerValueChanged
-	// void ServerValueChanged(class APlayerController* PlayerController, float InNewValue, int32_t InClientID, int32_t InServerID); // [0xc326308] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerValueChanged(class APlayerController* PlayerController, float InNewValue, int32_t InClientID, int32_t InServerID); // [0xc2dc794] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.OnRep_Value
-	// void OnRep_Value();                                                                                                      // [0xc3261b4] Final|Native|Private 
+	// void OnRep_Value();                                                                                                      // [0xc2dc640] Final|Native|Private 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.OnRep_StepSize
-	// void OnRep_StepSize();                                                                                                   // [0xc32618c] Final|Native|Private 
+	// void OnRep_StepSize();                                                                                                   // [0xc2dc618] Final|Native|Private 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.OnRep_MinValue
-	// void OnRep_MinValue();                                                                                                   // [0xc326164] Final|Native|Private 
+	// void OnRep_MinValue();                                                                                                   // [0xc2dc5f0] Final|Native|Private 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.OnRep_MaxValue
-	// void OnRep_MaxValue();                                                                                                   // [0xc326100] Final|Native|Private 
+	// void OnRep_MaxValue();                                                                                                   // [0xc2dc58c] Final|Native|Private 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.HandleValueChanged
-	// void HandleValueChanged(float NewValue);                                                                                 // [0xc3254e8] Final|Native|Private 
+	// void HandleValueChanged(float NewValue);                                                                                 // [0xc2db974] Final|Native|Private 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.GetValue
-	// float GetValue();                                                                                                        // [0x6367514] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetValue();                                                                                                        // [0x63b1c64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.GetStepSize
-	// float GetStepSize();                                                                                                     // [0x9ba8204] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStepSize();                                                                                                     // [0x9baf600] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.GetMinValue
-	// float GetMinValue();                                                                                                     // [0x9947184] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMinValue();                                                                                                     // [0x99508f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.GetMaxValue
-	// float GetMaxValue();                                                                                                     // [0x6966340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxValue();                                                                                                     // [0x69af3f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VerseFortniteUI.VerseFortniteUIFrameworkSlider.ExecuteServerValueChanged
-	// void ExecuteServerValueChanged(float InNewValue, int32_t InClientID, int32_t InServerID);                                // [0xc3253f0] Final|Native|Public  
+	// void ExecuteServerValueChanged(float InNewValue, int32_t InClientID, int32_t InServerID);                                // [0xc2db87c] Final|Native|Public  
 };
 
 /// Struct /Script/VerseFortniteUI.VerseFortniteUIPresenterElement

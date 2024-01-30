@@ -154,13 +154,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetSoftRemovedReasons
-	// FGameplayTagContainer GetSoftRemovedReasons();                                                                           // [0xbc1b350] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetSoftRemovedReasons();                                                                           // [0xbbd9514] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetAIRoleDisplayText
-	// FText GetAIRoleDisplayText();                                                                                            // [0xbc1b324] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetAIRoleDisplayText();                                                                                            // [0xbbd94e8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetAIRole
-	// FGameplayTag GetAIRole();                                                                                                // [0x6266ea8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetAIRole();                                                                                                // [0x62b1e44] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.ConvertAIRoleToDisplayText
-	// FText ConvertAIRoleToDisplayText(FGameplayTag& AIRole);                                                                  // [0xbc1b244] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FText ConvertAIRoleToDisplayText(FGameplayTag& AIRole);                                                                  // [0xbbd9408] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoAIRuntime.JunoAIInventoryComponent
@@ -322,7 +322,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.PlayspaceComponent_Root_JunoAIManagement.HandleFTUENPCSpawned
-	// void HandleFTUENPCSpawned(class AActor* FTUENPC);                                                                        // [0xbc31860] Final|Native|Private 
+	// void HandleFTUENPCSpawned(class AActor* FTUENPC);                                                                        // [0xbbeb608] Final|Native|Private 
 };
 
 /// Class /Script/JunoAIRuntime.JunoAISafetyBubbleComponent
@@ -340,7 +340,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAISafetyBubbleComponent.OnTimeOfDayPhaseChanged
-	// void OnTimeOfDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation);           // [0xbc318e0] Final|Native|Protected 
+	// void OnTimeOfDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation);           // [0xbbeb688] Final|Native|Protected 
 };
 
 /// Class /Script/JunoAIRuntime.EnvQueryTest_JunoIsNearBuilding
@@ -390,11 +390,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableHostileCreatures
-	// void JunoEnableHostileCreatures(bool bEnable);                                                                           // [0x5fe71f4] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableHostileCreatures(bool bEnable);                                                                           // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableFriendlyNPCs
-	// void JunoEnableFriendlyNPCs(bool bEnable);                                                                               // [0x5fe71f4] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableFriendlyNPCs(bool bEnable);                                                                               // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableFriendlyCreatures
-	// void JunoEnableFriendlyCreatures(bool bEnable);                                                                          // [0x5fe71f4] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableFriendlyCreatures(bool bEnable);                                                                          // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 };
 
 /// Class /Script/JunoAIRuntime.PlayspaceComponent_JunoAISafetyBubble

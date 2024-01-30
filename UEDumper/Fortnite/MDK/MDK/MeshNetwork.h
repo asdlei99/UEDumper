@@ -27,17 +27,17 @@ public:
 
 	/// Functions
 	// Function /Script/MeshNetwork.MeshBeaconClient.ServerUpdateMultipleLevelsVisibility
-	// void ServerUpdateMultipleLevelsVisibility(TArray<FUpdateLevelVisibilityLevelInfo> LevelVisibilities);                    // [0x7bb4254] Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerUpdateMultipleLevelsVisibility(TArray<FUpdateLevelVisibilityLevelInfo> LevelVisibilities);                    // [0x7bee254] Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/MeshNetwork.MeshBeaconClient.ServerUpdateLevelVisibility
-	// void ServerUpdateLevelVisibility(FUpdateLevelVisibilityLevelInfo LevelVisibility);                                       // [0x7bb40f8] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerUpdateLevelVisibility(FUpdateLevelVisibilityLevelInfo LevelVisibility);                                       // [0x7bee0f8] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/MeshNetwork.MeshBeaconClient.ServerSetClientId
-	// void ServerSetClientId(FString NewClientId);                                                                             // [0x7bb4040] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerSetClientId(FString NewClientId);                                                                             // [0x7bee040] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/MeshNetwork.MeshBeaconClient.OnRep_ParentIds
-	// void OnRep_ParentIds();                                                                                                  // [0x7bb402c] Final|Native|Protected 
+	// void OnRep_ParentIds();                                                                                                  // [0x7bee02c] Final|Native|Protected 
 	// Function /Script/MeshNetwork.MeshBeaconClient.OnRep_MeshPingTime
-	// void OnRep_MeshPingTime();                                                                                               // [0x277a7d0] Native|Protected     
+	// void OnRep_MeshPingTime();                                                                                               // [0x2801fe4] Native|Protected     
 	// Function /Script/MeshNetwork.MeshBeaconClient.OnRep_ConnectedToRoot
-	// void OnRep_ConnectedToRoot();                                                                                            // [0x7bb4018] Final|Native|Protected 
+	// void OnRep_ConnectedToRoot();                                                                                            // [0x7bee018] Final|Native|Protected 
 };
 
 /// Class /Script/MeshNetwork.MeshBeaconHost
@@ -97,9 +97,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshNetwork.MeshNetworkComponent.IsConnectedToMeshRoot
-	// bool IsConnectedToMeshRoot();                                                                                            // [0x7bb3fcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsConnectedToMeshRoot();                                                                                            // [0x7bedfcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshNetwork.MeshNetworkComponent.GetMeshNetworkNodeType
-	// EMeshNetworkNodeType GetMeshNetworkNodeType();                                                                           // [0x7bb3374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMeshNetworkNodeType GetMeshNetworkNodeType();                                                                           // [0x7bed374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MeshNetwork.MeshNetworkSubsystem
@@ -123,23 +123,23 @@ public:
 
 	/// Functions
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.SetMetaDataWithKey
-	// void SetMetaDataWithKey(FName Key, FMeshMetaDataStruct& MetaData);                                                       // [0x7bb4358] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMetaDataWithKey(FName Key, FMeshMetaDataStruct& MetaData);                                                       // [0x7bee358] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.SetMetaData
-	// void SetMetaData(FMeshMetaDataStruct& MetaData);                                                                         // [0x6062cdc] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMetaData(FMeshMetaDataStruct& MetaData);                                                                         // [0x60adf78] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetMetaDataWithKey
-	// bool GetMetaDataWithKey(FName Key, FMeshMetaDataStruct& MetaData);                                                       // [0x7bb3398] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetMetaDataWithKey(FName Key, FMeshMetaDataStruct& MetaData);                                                       // [0x7bed398] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetMetadata
-	// void GetMetadata(FMeshMetaDataStruct& MetaData);                                                                         // [0x6062cdc] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetMetadata(FMeshMetaDataStruct& MetaData);                                                                         // [0x60adf78] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetMeshNetworkNodeType
-	// EMeshNetworkNodeType GetMeshNetworkNodeType();                                                                           // [0x7a6ace8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMeshNetworkNodeType GetMeshNetworkNodeType();                                                                           // [0x7aa4ed4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetGameServerNodeType
-	// EMeshNetworkNodeType GetGameServerNodeType();                                                                            // [0x7bb335c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMeshNetworkNodeType GetGameServerNodeType();                                                                            // [0x7bed35c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.GetConnectedToRoot
-	// bool GetConnectedToRoot();                                                                                               // [0x7bb3344] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetConnectedToRoot();                                                                                               // [0x7bed344] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.EnableMeshReplication
-	// void EnableMeshReplication(class AActor* Actor, class UClass* MeshComponentClass);                                       // [0x7bb3278] Final|Native|Public|BlueprintCallable 
+	// void EnableMeshReplication(class AActor* Actor, class UClass* MeshComponentClass);                                       // [0x7bed278] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MeshNetwork.MeshNetworkSubsystem.DisableMeshReplication
-	// void DisableMeshReplication(class AActor* Actor);                                                                        // [0x7bb3208] Final|Native|Public|BlueprintCallable 
+	// void DisableMeshReplication(class AActor* Actor);                                                                        // [0x7bed208] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MeshNetwork.MeshReplicationGraphConnection

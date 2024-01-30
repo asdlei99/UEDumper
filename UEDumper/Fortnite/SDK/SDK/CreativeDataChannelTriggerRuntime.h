@@ -50,11 +50,11 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTarget.TestCreativeDataChannelTarget
-	// void TestCreativeDataChannelTarget(FCreativeDataChannelEvents TestEvents);                                            // [0xb51bd7c] Final|Native|Public|BlueprintCallable 
+	// void TestCreativeDataChannelTarget(FCreativeDataChannelEvents TestEvents);                                            // [0xb4f0a20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTarget.OnRep_Events
-	// void OnRep_Events();                                                                                                  // [0x32e6c74] Final|Native|Public  
+	// void OnRep_Events();                                                                                                  // [0x32e4b44] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTarget.FireEvent
-	// void FireEvent(FName EventName);                                                                                      // [0x2177018] Event|Public|BlueprintEvent 
+	// void FireEvent(FName EventName);                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/CreativeDataChannelTriggerRuntime.CDCInt
@@ -221,40 +221,40 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.ReportServerStateStreamError
-	// void ReportServerStateStreamError(FString Error, FString UID, FString URL);                                           // [0xb51b5f0] Final|Native|Public|BlueprintCallable 
+	// void ReportServerStateStreamError(FString Error, FString UID, FString URL);                                           // [0xb4f0294] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_VersionByte
-	// void OnRep_VersionByte();                                                                                             // [0xb51b5b8] Final|Native|Public  
+	// void OnRep_VersionByte();                                                                                             // [0xb4f025c] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_TeamNames
-	// void OnRep_TeamNames();                                                                                               // [0xb51b550] Final|Native|Public  
+	// void OnRep_TeamNames();                                                                                               // [0xb4f01f4] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_SeriesState
-	// void OnRep_SeriesState();                                                                                             // [0xb51b518] Final|Native|Public  
+	// void OnRep_SeriesState();                                                                                             // [0xb4f01bc] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_ScoreTotal
-	// void OnRep_ScoreTotal();                                                                                              // [0xb51b4b4] Final|Native|Public  
+	// void OnRep_ScoreTotal();                                                                                              // [0xb4f0158] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_ScoreTeam
-	// void OnRep_ScoreTeam();                                                                                               // [0xb51b4a0] Final|Native|Public  
+	// void OnRep_ScoreTeam();                                                                                               // [0xb4f0144] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_ScoreboardTimeLeft
-	// void OnRep_ScoreboardTimeLeft();                                                                                      // [0xb51b4dc] Final|Native|Public  
+	// void OnRep_ScoreboardTimeLeft();                                                                                      // [0xb4f0180] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_ScoreboardBestOf
-	// void OnRep_ScoreboardBestOf();                                                                                        // [0xb51b4c8] Final|Native|Public  
+	// void OnRep_ScoreboardBestOf();                                                                                        // [0xb4f016c] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_PlayerNames
-	// void OnRep_PlayerNames();                                                                                             // [0xb51b48c] Final|Native|Public  
+	// void OnRep_PlayerNames();                                                                                             // [0xb4f0130] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_PlayerCoords
-	// void OnRep_PlayerCoords();                                                                                            // [0xb51b478] Final|Native|Public  
+	// void OnRep_PlayerCoords();                                                                                            // [0xb4f011c] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_PlayerBoostCollected
-	// void OnRep_PlayerBoostCollected();                                                                                    // [0xb51b464] Final|Native|Public  
+	// void OnRep_PlayerBoostCollected();                                                                                    // [0xb4f0108] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_PlayerBoost
-	// void OnRep_PlayerBoost();                                                                                             // [0xb51b450] Final|Native|Public  
+	// void OnRep_PlayerBoost();                                                                                             // [0xb4f00f4] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_Overtime
-	// void OnRep_Overtime();                                                                                                // [0xb51b418] Final|Native|Public  
+	// void OnRep_Overtime();                                                                                                // [0xb4f00bc] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_MediaStop
-	// void OnRep_MediaStop();                                                                                               // [0xb51b3e0] Final|Native|Public  
+	// void OnRep_MediaStop();                                                                                               // [0xb4f0084] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_MediaStart
-	// void OnRep_MediaStart();                                                                                              // [0xb51b3cc] Final|Native|Public  
+	// void OnRep_MediaStart();                                                                                              // [0xb4f0070] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_MatchState
-	// void OnRep_MatchState();                                                                                              // [0xb51b394] Final|Native|Public  
+	// void OnRep_MatchState();                                                                                              // [0xb4f0038] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_FinaleState
-	// void OnRep_FinaleState();                                                                                             // [0xb51b35c] Final|Native|Public  
+	// void OnRep_FinaleState();                                                                                             // [0xb4f0000] Final|Native|Public  
 	// Function /Script/CreativeDataChannelTriggerRuntime.CreativeDataChannelTargetRL.OnRep_BallCoords
-	// void OnRep_BallCoords();                                                                                              // [0xb51b348] Final|Native|Public  
+	// void OnRep_BallCoords();                                                                                              // [0xb4effec] Final|Native|Public  
 };
 

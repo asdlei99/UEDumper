@@ -32,10 +32,10 @@ public:
 
 	/// Functions
 	// Function /Script/CorruptionGameplayCodeUI.FortPowerupReticleExtensionWidget.GetOverheatingMaxValue
-	// float GetOverheatingMaxValue();                                                                                       // [0xaa09824] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetOverheatingMaxValue();                                                                                       // [0xa9f6c6c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CorruptionGameplayCodeUI.FortPowerupReticleExtensionWidget.GetCurrentOverheatValue
-	// float GetCurrentOverheatValue();                                                                                      // [0xaa097fc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentOverheatValue();                                                                                      // [0xa9f6c44] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CorruptionGameplayCodeUI.FortPowerupReticleExtensionWidget.GetCurrentOverheatPercent
-	// float GetCurrentOverheatPercent();                                                                                    // [0xaa097d4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentOverheatPercent();                                                                                    // [0xa9f6c1c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 

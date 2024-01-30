@@ -38,11 +38,11 @@ public:
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.IsValidTarget
-	// bool IsValidTarget(class AActor* OwningPlayer, class AActor* PotentialTarget, FGameplayTagContainer& ReasonForFailure);  // [0xb4d2fb8] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool IsValidTarget(class AActor* OwningPlayer, class AActor* PotentialTarget, FGameplayTagContainer& ReasonForFailure);  // [0xb4a7cc8] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.FindTargetProjectile
-	// bool FindTargetProjectile(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd, float TargetingRadius);    // [0xb4d29bc] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool FindTargetProjectile(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd, float TargetingRadius);    // [0xb4a76cc] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.GravityGunTargetTrackingComponent.FindTargetActor
-	// void FindTargetActor(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd);                                // [0xb4d2820] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void FindTargetActor(class AActor* OwningPlayer, FVector& TraceStart, FVector& TraceEnd);                                // [0xb4a7530] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/MotherGameplayRuntime.FortCabbageIglooVehicle
@@ -105,15 +105,15 @@ public:
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropPreviewPosition
-	// void UpdatePropPreviewPosition(class USceneComponent* PropPreviewComponent, float DeltaTime, class AFortPawn* AttachPawn, FName AttachSocket, class USkeletalMeshComponent* WeaponMesh, FVector& DesiredRelativeTransform, float MinimumZOffset, FRotator& RelativeRotation, FVector& CachedScale, float InterpSpeed); // [0xb4d3314] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdatePropPreviewPosition(class USceneComponent* PropPreviewComponent, float DeltaTime, class AFortPawn* AttachPawn, FName AttachSocket, class USkeletalMeshComponent* WeaponMesh, FVector& DesiredRelativeTransform, float MinimumZOffset, FRotator& RelativeRotation, FVector& CachedScale, float InterpSpeed); // [0xb4a8024] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropIndexEventState
-	// void UpdatePropIndexEventState(class AActor* ContextActor, FPaddleGingerPropData& Payload);                              // [0xb4d320c] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void UpdatePropIndexEventState(class AActor* ContextActor, FPaddleGingerPropData& Payload);                              // [0xb4a7f1c] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.UpdatePropActivatedEventState
-	// void UpdatePropActivatedEventState(class AActor* ContextActor, FPaddleGingerPropActivatedData& Payload);                 // [0xb4d310c] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void UpdatePropActivatedEventState(class AActor* ContextActor, FPaddleGingerPropActivatedData& Payload);                 // [0xb4a7e1c] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.ClearPropIndexEventState
-	// void ClearPropIndexEventState(class AActor* ContextActor);                                                               // [0xb4d2794] Final|Native|Static|Private|BlueprintCallable 
+	// void ClearPropIndexEventState(class AActor* ContextActor);                                                               // [0xb4a74a4] Final|Native|Static|Private|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.PropGunFunctionLibrary.ClearPropActivatedEventState
-	// void ClearPropActivatedEventState(class AActor* ContextActor);                                                           // [0xb4d2708] Final|Native|Static|Private|BlueprintCallable 
+	// void ClearPropActivatedEventState(class AActor* ContextActor);                                                           // [0xb4a7418] Final|Native|Static|Private|BlueprintCallable 
 };
 
 /// Class /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp
@@ -134,11 +134,11 @@ public:
 
 	/// Functions
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.UpdateAimEndPoint
-	// void UpdateAimEndPoint();                                                                                                // [0xb4d30f8] Final|Native|Public|BlueprintCallable 
+	// void UpdateAimEndPoint();                                                                                                // [0xb4a7e08] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.OnEndPointUpdated
-	// void OnEndPointUpdated(FVector& FoundPoint);                                                                             // [0x2177018] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnEndPointUpdated(FVector& FoundPoint);                                                                             // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MotherGameplayRuntime.ReactorGradeGameplayCue_ChargeUp.GetFoundEndPoint
-	// FVector GetFoundEndPoint();                                                                                              // [0xb4d2f90] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetFoundEndPoint();                                                                                              // [0xb4a7ca0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/MotherGameplayRuntime.GravyGoblinActivatable_Event

@@ -34,7 +34,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortConversationOptionBrief.ConfigureBP
-	// void ConfigureBP(FConversationContext& ClientContext, FClientConversationOptionEntry& OptionEntry, int32_t SelectedIndex); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ConfigureBP(FConversationContext& ClientContext, FClientConversationOptionEntry& OptionEntry, int32_t SelectedIndex); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortItemTransactionBrief
@@ -49,7 +49,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortItemTransactionBrief.OnTransactionInfoReceived
-	// void OnTransactionInfoReceived(class UFortItem* Item);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransactionInfoReceived(class UFortItem* Item);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortApplyAbilityBrief
@@ -63,9 +63,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortApplyAbilityBrief.OnUnableToPurchase
-	// void OnUnableToPurchase(EPreventAbilityUseReason Reason);                                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUnableToPurchase(EPreventAbilityUseReason Reason);                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortApplyAbilityBrief.OnAbleToPurchase
-	// void OnAbleToPurchase();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnAbleToPurchase();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortBasicBrief
@@ -77,7 +77,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortBasicBrief.OnChoiceTextReceived
-	// void OnChoiceTextReceived(FText& Text);                                                                               // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnChoiceTextReceived(FText& Text);                                                                               // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortBasicItemBrief
@@ -94,13 +94,13 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortBasicItemBrief.OnUpdateDescriptionText
-	// void OnUpdateDescriptionText(FText& DescriptionText);                                                                 // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnUpdateDescriptionText(FText& DescriptionText);                                                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortBasicItemBrief.OnUnableToUse
-	// void OnUnableToUse(FText& Reason);                                                                                    // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnUnableToUse(FText& Reason);                                                                                    // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortBasicItemBrief.OnItemInfoReceived
-	// void OnItemInfoReceived(class UFortItem* Item, int32_t StackSize);                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemInfoReceived(class UFortItem* Item, int32_t StackSize);                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortBasicItemBrief.OnAbleToUse
-	// void OnAbleToUse(bool bShowWarningMessage);                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnAbleToUse(bool bShowWarningMessage);                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortBuyBrief
@@ -112,9 +112,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortBuyBrief.OnPurchaseDataReceived
-	// void OnPurchaseDataReceived(int32_t StackSize, int32_t RemainingForSale);                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnPurchaseDataReceived(int32_t StackSize, int32_t RemainingForSale);                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortBuyBrief.OnDisplayUnavailability
-	// void OnDisplayUnavailability(ECannotBuyReason CannotBuyReason);                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnDisplayUnavailability(ECannotBuyReason CannotBuyReason);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortConversationMarker
@@ -145,15 +145,15 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortConversationMarker.OnSetIndicatedActor
-	// void OnSetIndicatedActor(class AActor* NewIndicatorActor);                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetIndicatedActor(class AActor* NewIndicatorActor);                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationMarker.OnMessageShownOverActor
-	// void OnMessageShownOverActor(class AActor* OverActor);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMessageShownOverActor(class AActor* OverActor);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationMarker.OnInteractionRangeChanged
-	// void OnInteractionRangeChanged(EInteractionRange TargetInteractionRange);                                             // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInteractionRangeChanged(EInteractionRange TargetInteractionRange);                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationMarker.OnConversationActorProximityChanged
-	// void OnConversationActorProximityChanged(EInteractionRange TargetInteractionRange, class UFortNonPlayerConversationParticipantComponent* ConversationComponent); // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnConversationActorProximityChanged(EInteractionRange TargetInteractionRange, class UFortNonPlayerConversationParticipantComponent* ConversationComponent); // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationMarker.OnCanInteract
-	// void OnCanInteract(bool bCanInteract);                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnCanInteract(bool bCanInteract);                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortConversationMessageWidget
@@ -165,15 +165,15 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortConversationMessageWidget.SetPreviewMessage
-	// void SetPreviewMessage(FText& MessageToSet);                                                                          // [0xa92c208] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPreviewMessage(FText& MessageToSet);                                                                          // [0xa91e638] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FortniteConversationUI.FortConversationMessageWidget.OnPreviewMessageSet
-	// void OnPreviewMessageSet(FText& PreviewText);                                                                         // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnPreviewMessageSet(FText& PreviewText);                                                                         // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationMessageWidget.OnMessageShown
-	// void OnMessageShown();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMessageShown();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationMessageWidget.OnMessageHidden
-	// void OnMessageHidden();                                                                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnMessageHidden();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationMessageWidget.OnMainMessageSet
-	// void OnMainMessageSet(FText& NPCName, FText& MessageBody);                                                            // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnMainMessageSet(FText& NPCName, FText& MessageBody);                                                            // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortConversationOption
@@ -193,19 +193,19 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortConversationOption.OnSetupPivotFromRadialInformation
-	// void OnSetupPivotFromRadialInformation(int32_t NumElements, int32_t ItemIndex);                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetupPivotFromRadialInformation(int32_t NumElements, int32_t ItemIndex);                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationOption.OnSetupFromItemDef
-	// void OnSetupFromItemDef(class UFortItem* Item);                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetupFromItemDef(class UFortItem* Item);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationOption.OnSetupFromDisplayAsset
-	// void OnSetupFromDisplayAsset(class UObject* DisplayAsset);                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetupFromDisplayAsset(class UObject* DisplayAsset);                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationOption.OnOptionConfirmed
-	// void OnOptionConfirmed();                                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnOptionConfirmed();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationOption.IsLocked
-	// bool IsLocked();                                                                                                      // [0xa92c1bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLocked();                                                                                                      // [0xa91e5ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FortniteConversationUI.FortConversationOption.IsAvailable
-	// bool IsAvailable();                                                                                                   // [0xa92c198] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAvailable();                                                                                                   // [0xa91e5c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FortniteConversationUI.FortConversationOption.GetUnlockLevel
-	// int32_t GetUnlockLevel();                                                                                             // [0xa92be10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetUnlockLevel();                                                                                             // [0xa91e240] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FortniteConversationUI.FortConversationOptionsPanel
@@ -220,7 +220,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortConversationOptionsPanel.AddChildToDynamicPanel
-	// class UPanelSlot* AddChildToDynamicPanel(class UWidget* Content);                                                     // [0xa92b58c] Final|Native|Public|BlueprintCallable 
+	// class UPanelSlot* AddChildToDynamicPanel(class UWidget* Content);                                                     // [0xa91d9bc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FortniteConversationUI.FortConversationScreen
@@ -264,19 +264,19 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortConversationScreen.ShouldBlockOptionIntroAnim
-	// bool ShouldBlockOptionIntroAnim();                                                                                    // [0xa92c2a4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldBlockOptionIntroAnim();                                                                                    // [0xa91e6d4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FortniteConversationUI.FortConversationScreen.OnSelectedItemAvailabilityChanged
-	// void OnSelectedItemAvailabilityChanged(bool bIsAvailable);                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSelectedItemAvailabilityChanged(bool bIsAvailable);                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationScreen.OnOptionsPopulated
-	// void OnOptionsPopulated();                                                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnOptionsPopulated();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationScreen.OnItemSelected
-	// void OnItemSelected(int32_t OriginalIndex);                                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnItemSelected(int32_t OriginalIndex);                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationScreen.OnConversationStarted
-	// void OnConversationStarted();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnConversationStarted();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationScreen.OnConversationOptionUnavailable
-	// void OnConversationOptionUnavailable(class UFortRadialSlot* SelectedEntry);                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnConversationOptionUnavailable(class UFortRadialSlot* SelectedEntry);                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortConversationScreen.EndConversation
-	// void EndConversation();                                                                                               // [0x2a2fc8c] Native|Protected     
+	// void EndConversation();                                                                                               // [0x351e7b8] Native|Protected     
 };
 
 /// Class /Script/FortniteConversationUI.FortDataDrivenServiceBrief
@@ -294,11 +294,11 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortDataDrivenServiceBrief.OnUnableToPurchase
-	// void OnUnableToPurchase(FText& Reason);                                                                               // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnUnableToPurchase(FText& Reason);                                                                               // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortDataDrivenServiceBrief.OnTransactionInfoReceived
-	// void OnTransactionInfoReceived(class UFortItem* Item);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransactionInfoReceived(class UFortItem* Item);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortDataDrivenServiceBrief.OnAbleToPurchase
-	// void OnAbleToPurchase();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnAbleToPurchase();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortDuelBrief
@@ -313,7 +313,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortDuelBrief.DisplayLootItems
-	// void DisplayLootItems(TArray<UFortItem*>& Items);                                                                     // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void DisplayLootItems(TArray<UFortItem*>& Items);                                                                     // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortHireBrief
@@ -327,7 +327,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortHireBrief.HandleNPCDismissal
-	// void HandleNPCDismissal(bool bAtMaxNPCNum, bool bWillDismissNPCAtHire);                                               // [0x2177018] Event|Protected|BlueprintEvent 
+	// void HandleNPCDismissal(bool bAtMaxNPCNum, bool bWillDismissNPCAtHire);                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortIntelBrief
@@ -356,13 +356,13 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortItemFundBrief.OnProgressUpdated
-	// void OnProgressUpdated(float CurrentFundingFraction);                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnProgressUpdated(float CurrentFundingFraction);                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortItemFundBrief.OnIntializationComplete
-	// void OnIntializationComplete();                                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnIntializationComplete();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortItemFundBrief.InitializeFromContext
-	// void InitializeFromContext(FConversationContext& ConversationContext);                                                // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void InitializeFromContext(FConversationContext& ConversationContext);                                                // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortItemFundBrief.GetDataForKey
-	// FText GetDataForKey(FString Key, bool bUseIndexAdjustment);                                                           // [0xa92b6fc] Final|Native|Private|BlueprintCallable 
+	// FText GetDataForKey(FString Key, bool bUseIndexAdjustment);                                                           // [0xa91db2c] Final|Native|Private|BlueprintCallable 
 };
 
 /// Class /Script/FortniteConversationUI.FortSingleItemFundBrief
@@ -387,7 +387,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortMultiItemFundBrief.UpdateSelectedVisuals
-	// void UpdateSelectedVisuals(int32_t SelectedIndex);                                                                    // [0x2177018] Event|Public|BlueprintEvent 
+	// void UpdateSelectedVisuals(int32_t SelectedIndex);                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortNPCTextDisplay
@@ -401,9 +401,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortNPCTextDisplay.OnTextUpdated
-	// void OnTextUpdated();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTextUpdated();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortNPCTextDisplay.OnItemNameUpdated
-	// void OnItemNameUpdated(FString ItemName);                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnItemNameUpdated(FString ItemName);                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortPlayerConversationUIComponent
@@ -425,7 +425,7 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortPlayerConversationUIComponent.OnMinigameStarted
-	// void OnMinigameStarted();                                                                                             // [0xa92c1f4] Final|Native|Private 
+	// void OnMinigameStarted();                                                                                             // [0xa91e624] Final|Native|Private 
 };
 
 /// Class /Script/FortniteConversationUI.FortQuestBrief
@@ -445,9 +445,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortQuestBrief.OnQuestInformationRecieved
-	// void OnQuestInformationRecieved(FText& Objective, FFortRarityItemData& RarityData, FGameplayTag& CategoryTag, int32_t XPReward, int32_t MoneyReward); // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnQuestInformationRecieved(FText& Objective, FFortRarityItemData& RarityData, FGameplayTag& CategoryTag, int32_t XPReward, int32_t MoneyReward); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortQuestBrief.OnQuestExpirationTimeSet
-	// void OnQuestExpirationTimeSet(bool bDisplayExpirationTime);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnQuestExpirationTimeSet(bool bDisplayExpirationTime);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortShowFutureStormCircleBrief
@@ -461,9 +461,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortShowFutureStormCircleBrief.OnUnableToPurchase
-	// void OnUnableToPurchase(EPreventUseStormCircleServiceReason Reason);                                                  // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUnableToPurchase(EPreventUseStormCircleServiceReason Reason);                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortShowFutureStormCircleBrief.OnAbleToPurchase
-	// void OnAbleToPurchase();                                                                                              // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnAbleToPurchase();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.FortSingleOrMultiItemFundBrief
@@ -491,11 +491,11 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortTransactionStrip.OnTransactionInfoReceived
-	// void OnTransactionInfoReceived(FFortServiceTransactionInfo& TransactionInfo);                                         // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnTransactionInfoReceived(FFortServiceTransactionInfo& TransactionInfo);                                         // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortTransactionStrip.OnSetTransactionCostVisibility
-	// void OnSetTransactionCostVisibility(bool bVisible);                                                                   // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnSetTransactionCostVisibility(bool bVisible);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortTransactionStrip.HandleOnItemCountChanged
-	// void HandleOnItemCountChanged(TScriptInterface<Class> InventoryOwner, class UFortItemDefinition* Definition, int32_t Delta); // [0xa92bea0] Final|Native|Private 
+	// void HandleOnItemCountChanged(TScriptInterface<Class> InventoryOwner, class UFortItemDefinition* Definition, int32_t Delta); // [0xa91e2d0] Final|Native|Private 
 };
 
 /// Class /Script/FortniteConversationUI.FortUpgradeBrief
@@ -507,9 +507,9 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.FortUpgradeBrief.OnUpgradeInfoReceived
-	// void OnUpgradeInfoReceived(class UFortItem* CurrentWeapon);                                                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpgradeInfoReceived(class UFortItem* CurrentWeapon);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/FortniteConversationUI.FortUpgradeBrief.OnUnableToUpgrade
-	// void OnUnableToUpgrade(EFortWeaponUpgradeInteractionResult CannotUpgradeCause);                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUnableToUpgrade(EFortWeaponUpgradeInteractionResult CannotUpgradeCause);                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/FortniteConversationUI.MobileConversationScreen
@@ -527,6 +527,6 @@ public:
 
 	/// Functions
 	// Function /Script/FortniteConversationUI.MobileConversationScreen.OnHandleConfirmClicked
-	// void OnHandleConfirmClicked();                                                                                        // [0xa92c1e0] Final|Native|Protected 
+	// void OnHandleConfirmClicked();                                                                                        // [0xa91e610] Final|Native|Protected 
 };
 

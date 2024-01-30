@@ -167,99 +167,99 @@ public:
 
 	/// Functions
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.SetTractorBeamInactive
-	// void SetTractorBeamInactive();                                                                                        // [0xb5eca90] Final|Native|Protected|BlueprintCallable 
+	// void SetTractorBeamInactive();                                                                                        // [0xb5c0f88] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.SetTractorBeamEnabled
-	// void SetTractorBeamEnabled(bool bEnabled);                                                                            // [0x5fe71f4] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetTractorBeamEnabled(bool bEnabled);                                                                            // [0x60325ec] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.SetCannonEnabled
-	// void SetCannonEnabled(bool bEnabled);                                                                                 // [0x5fe71f4] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetCannonEnabled(bool bEnabled);                                                                                 // [0x60325ec] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.SetAttachedPawnAddedVelocity
-	// void SetAttachedPawnAddedVelocity(FVector& AddedVelocity);                                                            // [0xb5ec9cc] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetAttachedPawnAddedVelocity(FVector& AddedVelocity);                                                            // [0xb5c0ec4] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnTractorBeamDetached
-	// void OnTractorBeamDetached(class AActor* DetachedActor, FVector& LastBeamPosition);                                   // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnTractorBeamDetached(class AActor* DetachedActor, FVector& LastBeamPosition);                                   // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnTractorBeamDeactivated
-	// void OnTractorBeamDeactivated(FVector& LastBeamPosition);                                                             // [0x2177018] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnTractorBeamDeactivated(FVector& LastBeamPosition);                                                             // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnTractorBeamChargeStarted
-	// void OnTractorBeamChargeStarted();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamChargeStarted();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnTractorBeamAttached
-	// void OnTractorBeamAttached();                                                                                         // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamAttached();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnTractorBeamActivated
-	// void OnTractorBeamActivated();                                                                                        // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTractorBeamActivated();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnTargetedActorChanged
-	// void OnTargetedActorChanged(class AActor* NewTargetedActor);                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTargetedActorChanged(class AActor* NewTargetedActor);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnStartDescend
-	// void OnStartDescend();                                                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStartDescend();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnStartAscend
-	// void OnStartAscend();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnStartAscend();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnRep_TractorBeamState
-	// void OnRep_TractorBeamState(TEnumAsByte<ETractorBeamState> PreviousState);                                            // [0xb5ec940] Final|Native|Protected 
+	// void OnRep_TractorBeamState(TEnumAsByte<ETractorBeamState> PreviousState);                                            // [0xb5c0e38] Final|Native|Protected 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnRep_TractorBeamChargeStarted
-	// void OnRep_TractorBeamChargeStarted();                                                                                // [0xb5ec8e4] Final|Native|Public  
+	// void OnRep_TractorBeamChargeStarted();                                                                                // [0xb5c0ddc] Final|Native|Public  
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnRep_TractorBeamAttached
-	// void OnRep_TractorBeamAttached();                                                                                     // [0xb5ec8d0] Final|Native|Protected 
+	// void OnRep_TractorBeamAttached();                                                                                     // [0xb5c0dc8] Final|Native|Protected 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnRep_TargetedActorChanged
-	// void OnRep_TargetedActorChanged();                                                                                    // [0xb5ec894] Final|Native|Public  
+	// void OnRep_TargetedActorChanged();                                                                                    // [0xb5c0d8c] Final|Native|Public  
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnRep_ReplicatedTargetedActors
-	// void OnRep_ReplicatedTargetedActors();                                                                                // [0xb5ec810] Final|Native|Public  
+	// void OnRep_ReplicatedTargetedActors();                                                                                // [0xb5c0d08] Final|Native|Public  
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnRep_NevadaState
-	// void OnRep_NevadaState(FNevadaState& PrevState);                                                                      // [0xb5ec770] Final|Native|Protected|HasOutParms 
+	// void OnRep_NevadaState(FNevadaState& PrevState);                                                                      // [0xb5c0c68] Final|Native|Protected|HasOutParms 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnRebootStarted
-	// void OnRebootStarted();                                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnRebootStarted();                                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnRebootFinished
-	// void OnRebootFinished();                                                                                              // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnRebootFinished();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnOutOfBattery
-	// void OnOutOfBattery();                                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnOutOfBattery();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnNewVehicleState
-	// void OnNewVehicleState(ENevadaFlightStates NewVehicleState);                                                          // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnNewVehicleState(ENevadaFlightStates NewVehicleState);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnCrashingStarted
-	// void OnCrashingStarted();                                                                                             // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnCrashingStarted();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnCrashedImpact
-	// void OnCrashedImpact();                                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnCrashedImpact();                                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnBoostStarted
-	// void OnBoostStarted();                                                                                                // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnBoostStarted();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnBoostFinished
-	// void OnBoostFinished();                                                                                               // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnBoostFinished();                                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnBoostChargeRefilled
-	// void OnBoostChargeRefilled();                                                                                         // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnBoostChargeRefilled();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnBatteryRegen
-	// void OnBatteryRegen(float Newcharge);                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void OnBatteryRegen(float Newcharge);                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnAttachedActorDied
-	// void OnAttachedActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb5ec30c] Final|Native|Public|HasDefaults 
+	// void OnAttachedActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb5c0804] Final|Native|Public|HasDefaults 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.OnAttachedActorDestroyed
-	// void OnAttachedActorDestroyed(class AActor* DestroyedActor);                                                          // [0xb5ec290] Final|Native|Public  
+	// void OnAttachedActorDestroyed(class AActor* DestroyedActor);                                                          // [0xb5c0788] Final|Native|Public  
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.NativeToggleCockpit
-	// void NativeToggleCockpit(bool bEnable);                                                                               // [0xb5ec210] Final|Native|Public|BlueprintCallable 
+	// void NativeToggleCockpit(bool bEnable);                                                                               // [0xb5c0708] Final|Native|Public|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.IsTractorBeamDisrupted
-	// bool IsTractorBeamDisrupted();                                                                                        // [0xb5ec1a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTractorBeamDisrupted();                                                                                        // [0xb5c0698] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.IsTractorBeamAttached
-	// bool IsTractorBeamAttached();                                                                                         // [0xb5ec17c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTractorBeamAttached();                                                                                         // [0xb5c0674] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.IsTractorBeamActive
-	// bool IsTractorBeamActive();                                                                                           // [0xb5ec15c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTractorBeamActive();                                                                                           // [0xb5c0654] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetTractorBeamAttachLocation
-	// FVector GetTractorBeamAttachLocation();                                                                               // [0xb5ec0a4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetTractorBeamAttachLocation();                                                                               // [0xb5c059c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetNumRebootsAvailable
-	// int32_t GetNumRebootsAvailable();                                                                                     // [0xb5ec08c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumRebootsAvailable();                                                                                     // [0xb5c0584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetEnergyCanonChargePercent
-	// float GetEnergyCanonChargePercent();                                                                                  // [0xb5ec064] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetEnergyCanonChargePercent();                                                                                  // [0xb5c055c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetDriverSeatRotationAnimParams
-	// void GetDriverSeatRotationAnimParams(float& OutLeftRight, float& OutForwardBack);                                     // [0xb5ebf88] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetDriverSeatRotationAnimParams(float& OutLeftRight, float& OutForwardBack);                                     // [0xb5c0480] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetCurrentVehicleState
-	// ENevadaFlightStates GetCurrentVehicleState();                                                                         // [0xb5ebf70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ENevadaFlightStates GetCurrentVehicleState();                                                                         // [0xb5c0468] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetBoostChargeTimeRemaining
-	// float GetBoostChargeTimeRemaining();                                                                                  // [0xb5ebf24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostChargeTimeRemaining();                                                                                  // [0xb5c041c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetBoostChargesAvailable
-	// int32_t GetBoostChargesAvailable();                                                                                   // [0xb5ebf58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetBoostChargesAvailable();                                                                                   // [0xb5c0450] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetBoostChargeProgress
-	// float GetBoostChargeProgress();                                                                                       // [0xb5ebf04] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostChargeProgress();                                                                                       // [0xb5c03fc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetBatteryCharge
-	// float GetBatteryCharge();                                                                                             // [0xb5ebedc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBatteryCharge();                                                                                             // [0xb5c03d4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.GetAudioController
-	// class AFortNevadaAudioController* GetAudioController();                                                               // [0xb5ebec4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AFortNevadaAudioController* GetAudioController();                                                               // [0xb5c03bc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.EnablePilotBubbleCollisionOnServer
-	// void EnablePilotBubbleCollisionOnServer(bool bNewCollisionEnabled);                                                   // [0x5fe71f4] Final|Native|Protected|BlueprintCallable 
+	// void EnablePilotBubbleCollisionOnServer(bool bNewCollisionEnabled);                                                   // [0x60325ec] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.DisruptTractorBeam
-	// void DisruptTractorBeam();                                                                                            // [0xb5ebe70] Final|Native|Protected|BlueprintCallable 
+	// void DisruptTractorBeam();                                                                                            // [0xb5c0368] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaVehicle.AddPhysicsImpulseToTractorBeamAttachedActor
-	// void AddPhysicsImpulseToTractorBeamAttachedActor(FVector& Impulse, FName BoneName, bool bVelChange);                  // [0xb5ebbe8] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void AddPhysicsImpulseToTractorBeamAttachedActor(FVector& Impulse, FName BoneName, bool bVelChange);                  // [0xb5c00e0] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/NevadaRuntime.FortNevadaVehicleAnimInstance
@@ -406,17 +406,17 @@ public:
 
 	/// Functions
 	// Function /Script/NevadaRuntime.FortNevadaAudioController.Update
-	// void Update();                                                                                                        // [0xb5ecaa4] Final|Native|Public  
+	// void Update();                                                                                                        // [0xb5c0f9c] Final|Native|Public  
 	// Function /Script/NevadaRuntime.FortNevadaAudioController.Init
-	// void Init(class AFortNevadaVehicle* InVehicle);                                                                       // [0xb5ec0dc] Final|Native|Public  
+	// void Init(class AFortNevadaVehicle* InVehicle);                                                                       // [0xb5c05d4] Final|Native|Public  
 	// Function /Script/NevadaRuntime.FortNevadaAudioController.GetVehicleActor
-	// class AFortNevadaVehicle* GetVehicleActor();                                                                          // [0xa4f3c54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortNevadaVehicle* GetVehicleActor();                                                                          // [0xa4ec958] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NevadaRuntime.FortNevadaAudioController.CacheReferences
-	// void CacheReferences(class UFortLayeredAudioComponent* InLayeredAudioComponent);                                      // [0xb5ebde4] Final|Native|Public|BlueprintCallable 
+	// void CacheReferences(class UFortLayeredAudioComponent* InLayeredAudioComponent);                                      // [0xb5c02dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/NevadaRuntime.FortNevadaAudioController.BP_Update
-	// void BP_Update();                                                                                                     // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_Update();                                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /Script/NevadaRuntime.FortNevadaAudioController.BP_Init
-	// void BP_Init();                                                                                                       // [0x2177018] Event|Public|BlueprintEvent 
+	// void BP_Init();                                                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/NevadaRuntime.NevadaMoveModeConfig

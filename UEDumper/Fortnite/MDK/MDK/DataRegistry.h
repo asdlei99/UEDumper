@@ -129,31 +129,31 @@ public:
 
 	/// Functions
 	// Function /Script/DataRegistry.DataRegistrySubsystem.NotEqual_DataRegistryType
-	// bool NotEqual_DataRegistryType(FDataRegistryType A, FDataRegistryType B);                                                // [0x66a2810] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool NotEqual_DataRegistryType(FDataRegistryType A, FDataRegistryType B);                                                // [0x66eba30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.NotEqual_DataRegistryId
-	// bool NotEqual_DataRegistryId(FDataRegistryId A, FDataRegistryId B);                                                      // [0x66a25ec] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool NotEqual_DataRegistryId(FDataRegistryId A, FDataRegistryId B);                                                      // [0x66eb80c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.IsValidDataRegistryType
-	// bool IsValidDataRegistryType(FDataRegistryType DataRegistryType);                                                        // [0x6683634] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsValidDataRegistryType(FDataRegistryType DataRegistryType);                                                        // [0x66cc854] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.IsValidDataRegistryId
-	// bool IsValidDataRegistryId(FDataRegistryId DataRegistryId);                                                              // [0x66834f4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsValidDataRegistryId(FDataRegistryId DataRegistryId);                                                              // [0x66cc714] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.GetCachedItemFromLookupBP
-	// bool GetCachedItemFromLookupBP(FDataRegistryId ItemId, FDataRegistryLookup& ResolvedLookup, FTableRowBase& OutItem);     // [0x6d0ec00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetCachedItemFromLookupBP(FDataRegistryId ItemId, FDataRegistryLookup& ResolvedLookup, FTableRowBase& OutItem);     // [0x6d5709c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.GetCachedItemBP
-	// bool GetCachedItemBP(FDataRegistryId ItemId, FTableRowBase& OutItem);                                                    // [0x6d0e938] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetCachedItemBP(FDataRegistryId ItemId, FTableRowBase& OutItem);                                                    // [0x6d56dd4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.FindCachedItemBP
-	// void FindCachedItemBP(FDataRegistryId ItemId, EDataRegistrySubsystemGetItemResult& OutResult, FTableRowBase& OutItem);   // [0x6d0e62c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void FindCachedItemBP(FDataRegistryId ItemId, EDataRegistrySubsystemGetItemResult& OutResult, FTableRowBase& OutItem);   // [0x6d56ac8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.EvaluateDataRegistryCurve
-	// void EvaluateDataRegistryCurve(FDataRegistryId ItemId, float InputValue, float DefaultValue, EDataRegistrySubsystemGetItemResult& OutResult, float& OutValue); // [0x6d0e278] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void EvaluateDataRegistryCurve(FDataRegistryId ItemId, float InputValue, float DefaultValue, EDataRegistrySubsystemGetItemResult& OutResult, float& OutValue); // [0x6d56714] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.EqualEqual_DataRegistryType
-	// bool EqualEqual_DataRegistryType(FDataRegistryType A, FDataRegistryType B);                                              // [0x6669d50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool EqualEqual_DataRegistryType(FDataRegistryType A, FDataRegistryType B);                                              // [0x66b2f70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.EqualEqual_DataRegistryId
-	// bool EqualEqual_DataRegistryId(FDataRegistryId A, FDataRegistryId B);                                                    // [0x6669b24] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool EqualEqual_DataRegistryId(FDataRegistryId A, FDataRegistryId B);                                                    // [0x66b2d44] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.Conv_DataRegistryTypeToString
-	// FString Conv_DataRegistryTypeToString(FDataRegistryType DataRegistryType);                                               // [0x6654a60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FString Conv_DataRegistryTypeToString(FDataRegistryType DataRegistryType);                                               // [0x630aba4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.Conv_DataRegistryIdToString
-	// FString Conv_DataRegistryIdToString(FDataRegistryId DataRegistryId);                                                     // [0x6d0e128] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FString Conv_DataRegistryIdToString(FDataRegistryId DataRegistryId);                                                     // [0x6d565c4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DataRegistry.DataRegistrySubsystem.AcquireItemBP
-	// bool AcquireItemBP(FDataRegistryId ItemId, FDelegateProperty AcquireCallback);                                           // [0x6d0df08] Final|Native|Static|Public|BlueprintCallable 
+	// bool AcquireItemBP(FDataRegistryId ItemId, FDelegateProperty AcquireCallback);                                           // [0x6d563a4] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/DataRegistry.DataRegistryLookup

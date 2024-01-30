@@ -294,7 +294,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmetics.FortCustomizableObjectParameterVariant.ApplyVariants
-	// void ApplyVariants(class AActor* Actor, FFortAthenaLoadout& Loadout);                                                 // [0x9d491b8] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void ApplyVariants(class AActor* Actor, FFortAthenaLoadout& Loadout);                                                 // [0x9d4e6ac] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/MeshCosmetics.CustomizableObjectSprayVariantFixedProperties
@@ -376,7 +376,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmetics.MeshCosmeticTagInterface.OnPostCustomizationAnimGameplayTags_BP
-	// void OnPostCustomizationAnimGameplayTags_BP(FGameplayTagContainer& GameplayTags);                                     // [0x2177018] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnPostCustomizationAnimGameplayTags_BP(FGameplayTagContainer& GameplayTags);                                     // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableInstanceLODManagement

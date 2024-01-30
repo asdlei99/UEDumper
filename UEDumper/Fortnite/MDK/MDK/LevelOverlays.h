@@ -43,48 +43,48 @@ public:
 
 	/// Functions
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.TransitionBackgroundBackward
-	// void TransitionBackgroundBackward(double Backward, double PreTransitionOffset, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void TransitionBackgroundBackward(double Backward, double PreTransitionOffset, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.TransitionBackgroundForward
-	// void TransitionBackgroundForward(double Forward, double PreTransitionOffset, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void TransitionBackgroundForward(double Forward, double PreTransitionOffset, double FXTransitionFade, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.SetupBackgroundMaterial
-	// void SetupBackgroundMaterial(class UTexture2D*& TextureBackground, FVaultWorldBackgroundData& BackgroundInfo, class UMaterialInstanceDynamic* Mid); // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetupBackgroundMaterial(class UTexture2D*& TextureBackground, FVaultWorldBackgroundData& BackgroundInfo, class UMaterialInstanceDynamic* Mid); // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                           // [0x2177018] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                           // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.TransitionForward__FinishedFunc
-	// void TransitionForward__FinishedFunc();                                                                                  // [0x2177018] BlueprintEvent       
+	// void TransitionForward__FinishedFunc();                                                                                  // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.TransitionForward__UpdateFunc
-	// void TransitionForward__UpdateFunc();                                                                                    // [0x2177018] BlueprintEvent       
+	// void TransitionForward__UpdateFunc();                                                                                    // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.TransitionBackward__FinishedFunc
-	// void TransitionBackward__FinishedFunc();                                                                                 // [0x2177018] BlueprintEvent       
+	// void TransitionBackward__FinishedFunc();                                                                                 // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.TransitionBackward__UpdateFunc
-	// void TransitionBackward__UpdateFunc();                                                                                   // [0x2177018] BlueprintEvent       
+	// void TransitionBackward__UpdateFunc();                                                                                   // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.Background-Effects__FinishedFunc
-	// void Background-Effects__FinishedFunc();                                                                                 // [0x2177018] BlueprintEvent       
+	// void Background-Effects__FinishedFunc();                                                                                 // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.Background-Effects__UpdateFunc
-	// void Background-Effects__UpdateFunc();                                                                                   // [0x2177018] BlueprintEvent       
+	// void Background-Effects__UpdateFunc();                                                                                   // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.Floor-Visibility__FinishedFunc
-	// void Floor-Visibility__FinishedFunc();                                                                                   // [0x2177018] BlueprintEvent       
+	// void Floor-Visibility__FinishedFunc();                                                                                   // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.Floor-Visibility__UpdateFunc
-	// void Floor-Visibility__UpdateFunc();                                                                                     // [0x2177018] BlueprintEvent       
+	// void Floor-Visibility__UpdateFunc();                                                                                     // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.ItemDetails__FinishedFunc
-	// void ItemDetails__FinishedFunc();                                                                                        // [0x2177018] BlueprintEvent       
+	// void ItemDetails__FinishedFunc();                                                                                        // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.ItemDetails__UpdateFunc
-	// void ItemDetails__UpdateFunc();                                                                                          // [0x2177018] BlueprintEvent       
+	// void ItemDetails__UpdateFunc();                                                                                          // [0x211c0a0] BlueprintEvent       
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.OnTransitionBackground
-	// void OnTransitionBackground(bool bPlayForward, EBackgroundIntensityLevel IntensityTransition);                           // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransitionBackground(bool bPlayForward, EBackgroundIntensityLevel IntensityTransition);                           // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.OnSetupBackground
-	// void OnSetupBackground(class UTexture2D* LoadedBackgroundTexture, FVaultWorldBackgroundData& BackgroundInfo);            // [0x2177018] HasOutParms|BlueprintEvent 
+	// void OnSetupBackground(class UTexture2D* LoadedBackgroundTexture, FVaultWorldBackgroundData& BackgroundInfo);            // [0x211c0a0] HasOutParms|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x2177018] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.OnUpdateDisplay
-	// void OnUpdateDisplay(bool bShowFloor, bool bShowEffects);                                                                // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateDisplay(bool bShowFloor, bool bShowEffects);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.OnInitialBackgroundTransition
-	// void OnInitialBackgroundTransition();                                                                                    // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnInitialBackgroundTransition();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.OnTransitionItemDetails
-	// void OnTransitionItemDetails(bool bShowItemDetails);                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnTransitionItemDetails(bool bShowItemDetails);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.OnUpdateMaterialIndex
-	// void OnUpdateMaterialIndex(int32_t MaterialIndex);                                                                       // [0x2177018] Event|Protected|BlueprintEvent 
+	// void OnUpdateMaterialIndex(int32_t MaterialIndex);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /PilgrimEventScreen/LevelOverlays/PilgrimEventScreenEventVaultWorld.PilgrimEventScreenEventVaultWorld_C.ExecuteUbergraph_PilgrimEventScreenEventVaultWorld
-	// void ExecuteUbergraph_PilgrimEventScreenEventVaultWorld(int32_t EntryPoint);                                             // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_PilgrimEventScreenEventVaultWorld(int32_t EntryPoint);                                             // [0x211c0a0] Final|HasDefaults    
 };
 

@@ -22,11 +22,11 @@ public:
 
 	/// Functions
 	// Function /Script/AIDebuggerRuntime.AIDebuggerCheatManager.StartAIDebugger
-	// void StartAIDebugger(FString AIDebuggerSoftClassPath);                                                                   // [0x8bef450] Final|Exec|Native|Public 
+	// void StartAIDebugger(FString AIDebuggerSoftClassPath);                                                                   // [0x8c0e6d0] Final|Exec|Native|Public 
 	// Function /Script/AIDebuggerRuntime.AIDebuggerCheatManager.NextNavMesh
-	// void NextNavMesh();                                                                                                      // [0x32e6c74] Final|Exec|Native|Public 
+	// void NextNavMesh();                                                                                                      // [0x32e4b44] Final|Exec|Native|Public 
 	// Function /Script/AIDebuggerRuntime.AIDebuggerCheatManager.EnableNavMeshVisualizer
-	// void EnableNavMeshVisualizer(bool bEnable);                                                                              // [0x5fe71f4] Final|Exec|Native|Public 
+	// void EnableNavMeshVisualizer(bool bEnable);                                                                              // [0x60325ec] Final|Exec|Native|Public 
 };
 
 /// Class /Script/AIDebuggerRuntime.AIDebuggerRendererComponent
@@ -60,19 +60,19 @@ public:
 
 	/// Functions
 	// Function /Script/AIDebuggerRuntime.FortControllerComponent_AIDebugger.VisualizeNextNavMesh
-	// void VisualizeNextNavMesh();                                                                                             // [0x8384348] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void VisualizeNextNavMesh();                                                                                             // [0x83b8590] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/AIDebuggerRuntime.FortControllerComponent_AIDebugger.VisualizeNavMeshID
-	// void VisualizeNavMeshID(int32_t NavMeshID);                                                                              // [0x8575e94] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void VisualizeNavMeshID(int32_t NavMeshID);                                                                              // [0x85a7ffc] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/AIDebuggerRuntime.FortControllerComponent_AIDebugger.SetVisualizationEnable
-	// void SetVisualizationEnable(EAIDebuggerVisualization VisualizationType, bool bEnable);                                   // [0xa76b174] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void SetVisualizationEnable(EAIDebuggerVisualization VisualizationType, bool bEnable);                                   // [0xa763be8] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/AIDebuggerRuntime.FortControllerComponent_AIDebugger.OnRep_EnabledVisualizers
-	// void OnRep_EnabledVisualizers();                                                                                         // [0xa76b138] Final|Native|Public  
+	// void OnRep_EnabledVisualizers();                                                                                         // [0xa763bac] Final|Native|Public  
 	// Function /Script/AIDebuggerRuntime.FortControllerComponent_AIDebugger.OnPlayerExitedIsland
-	// void OnPlayerExitedIsland(FEventMessageTag Channel, FPlayerExitSpatialActorContextWithPawn& PlayerExitSpatialActorContext); // [0xa76afb4] Final|Native|Public|HasOutParms 
+	// void OnPlayerExitedIsland(FEventMessageTag Channel, FPlayerExitSpatialActorContextWithPawn& PlayerExitSpatialActorContext); // [0xa763a28] Final|Native|Public|HasOutParms 
 	// Function /Script/AIDebuggerRuntime.FortControllerComponent_AIDebugger.IsVisualizationEnabled
-	// bool IsVisualizationEnabled(EAIDebuggerVisualization VisualizationType);                                                 // [0xa76af24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVisualizationEnabled(EAIDebuggerVisualization VisualizationType);                                                 // [0xa763998] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AIDebuggerRuntime.FortControllerComponent_AIDebugger.GetOrCreateRenderer
-	// class UAIDebuggerRendererComponent* GetOrCreateRenderer();                                                               // [0xa76af00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAIDebuggerRendererComponent* GetOrCreateRenderer();                                                               // [0xa763974] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Enum /Script/AIDebuggerRuntime.EAIDebuggerVisualization

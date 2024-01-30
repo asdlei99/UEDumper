@@ -33,42 +33,42 @@ public:
 
 	/// Functions
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.InitPreview
-	// void InitPreview();                                                                                                      // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void InitPreview();                                                                                                      // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.ForceStopPreviewImmediate
-	// void ForceStopPreviewImmediate();                                                                                        // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void ForceStopPreviewImmediate();                                                                                        // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.StopPreviewingSong
-	// void StopPreviewingSong(bool WithFadeout, FName SongShortName);                                                          // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void StopPreviewingSong(bool WithFadeout, FName SongShortName);                                                          // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.IsPlayingPreview
-	// void IsPlayingPreview(FName Song, bool& Is Playing Or Pending, bool& Is Playing, bool& Is Pending);                      // [0x2177018] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void IsPlayingPreview(FName Song, bool& Is Playing Or Pending, bool& Is Playing, bool& Is Pending);                      // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.StopPreview
-	// void StopPreview(bool WithFadeout);                                                                                      // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void StopPreview(bool WithFadeout);                                                                                      // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.Clear Current Preview and Start Pending Preview
-	// void Clear Current Preview and Start Pending Preview();                                                                  // [0x2177018] Protected|BlueprintCallable|BlueprintEvent 
+	// void Clear Current Preview and Start Pending Preview();                                                                  // [0x211c0a0] Protected|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.StartPreview
-	// void StartPreview(FName SongShortName);                                                                                  // [0x2177018] Public|BlueprintCallable|BlueprintEvent 
+	// void StartPreview(FName SongShortName);                                                                                  // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.Fade Out And Stop
-	// void Fade Out And Stop();                                                                                                // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void Fade Out And Stop();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.VideoOnClosed_Event
-	// void VideoOnClosed_Event();                                                                                              // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void VideoOnClosed_Event();                                                                                              // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.VideoOnSuccess_Event
-	// void VideoOnSuccess_Event();                                                                                             // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void VideoOnSuccess_Event();                                                                                             // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.OnPlaybackResumed_Event
-	// void OnPlaybackResumed_Event();                                                                                          // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnPlaybackResumed_Event();                                                                                          // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.FadeOutAtLoop
-	// void FadeOutAtLoop();                                                                                                    // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void FadeOutAtLoop();                                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.FadeInAfterLoop
-	// void FadeInAfterLoop();                                                                                                  // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void FadeInAfterLoop();                                                                                                  // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.VideoOnTerminalError_Event
-	// void VideoOnTerminalError_Event(EBaseMediaTerminalErrorReason Reason);                                                   // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void VideoOnTerminalError_Event(EBaseMediaTerminalErrorReason Reason);                                                   // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.OnVideoResumed
-	// void OnVideoResumed();                                                                                                   // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void OnVideoResumed();                                                                                                   // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.ReceiveEndPlay
-	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                          // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.DoneFadingOutForStop
-	// void DoneFadingOutForStop();                                                                                             // [0x2177018] BlueprintCallable|BlueprintEvent 
+	// void DoneFadingOutForStop();                                                                                             // [0x211c0a0] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                                 // [0x2177018] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
 	// Function /SparksCore/Audio/BPC_SparksSongPreviewer.BPC_SparksSongPreviewer_C.ExecuteUbergraph_BPC_SparksSongPreviewer
-	// void ExecuteUbergraph_BPC_SparksSongPreviewer(int32_t EntryPoint);                                                       // [0x2177018] Final|HasDefaults    
+	// void ExecuteUbergraph_BPC_SparksSongPreviewer(int32_t EntryPoint);                                                       // [0x211c0a0] Final|HasDefaults    
 };
 

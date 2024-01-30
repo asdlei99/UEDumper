@@ -20,6 +20,6 @@ public:
 
 	/// Functions
 	// Function /Script/VolumetricRegion.VolumetricRegionNativeComponent.RefreshTrackedActors
-	// void RefreshTrackedActors(class UPlayspaceComponent_SpatialActorTracker* InPlaySpaceComponent_SpatialActorTracker);      // [0xb4a44a0] Final|Native|Protected|BlueprintCallable 
+	// void RefreshTrackedActors(class UPlayspaceComponent_SpatialActorTracker* InPlaySpaceComponent_SpatialActorTracker);      // [0xb47a490] Final|Native|Protected|BlueprintCallable 
 };
 

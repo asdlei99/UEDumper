@@ -57,13 +57,13 @@ public:
 
 	/// Functions
 	// Function /Script/TypedElementFramework.TypedElementHandleLibrary.Release
-	// void Release(FScriptTypedElementHandle& ElementHandle);                                                               // [0x5b37a70] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void Release(FScriptTypedElementHandle& ElementHandle);                                                               // [0x5b82f5c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementHandleLibrary.NotEqual
-	// bool NotEqual(FScriptTypedElementHandle& LHS, FScriptTypedElementHandle& RHS);                                        // [0x5b377a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool NotEqual(FScriptTypedElementHandle& LHS, FScriptTypedElementHandle& RHS);                                        // [0x5b82c8c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/TypedElementFramework.TypedElementHandleLibrary.IsSet
-	// bool IsSet(FScriptTypedElementHandle& ElementHandle);                                                                 // [0x5b37390] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsSet(FScriptTypedElementHandle& ElementHandle);                                                                 // [0x5b8287c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/TypedElementFramework.TypedElementHandleLibrary.Equal
-	// bool Equal(FScriptTypedElementHandle& LHS, FScriptTypedElementHandle& RHS);                                           // [0x5b36170] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool Equal(FScriptTypedElementHandle& LHS, FScriptTypedElementHandle& RHS);                                           // [0x5b8165c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TypedElementFramework.TypedElementListLibrary
@@ -75,45 +75,45 @@ public:
 
 	/// Functions
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Shrink
-	// void Shrink(FScriptTypedElementListProxy ElementList);                                                                // [0x5b383f0] Final|Native|Static|Public|BlueprintCallable 
+	// void Shrink(FScriptTypedElementListProxy ElementList);                                                                // [0x5b838dc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Reset
-	// void Reset(FScriptTypedElementListProxy ElementList);                                                                 // [0x5b37fb0] Final|Native|Static|Public|BlueprintCallable 
+	// void Reset(FScriptTypedElementListProxy ElementList);                                                                 // [0x5b8349c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Reserve
-	// void Reserve(FScriptTypedElementListProxy ElementList, int32_t Size);                                                 // [0x5b37d30] Final|Native|Static|Public|BlueprintCallable 
+	// void Reserve(FScriptTypedElementListProxy ElementList, int32_t Size);                                                 // [0x5b8321c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Remove
-	// bool Remove(FScriptTypedElementListProxy ElementList, FScriptTypedElementHandle& ElementHandle);                      // [0x5b37b14] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool Remove(FScriptTypedElementListProxy ElementList, FScriptTypedElementHandle& ElementHandle);                      // [0x5b83000] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Num
-	// int32_t Num(FScriptTypedElementListProxy ElementList);                                                                // [0x5b378cc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t Num(FScriptTypedElementListProxy ElementList);                                                                // [0x5b82db8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.IsValidIndex
-	// bool IsValidIndex(FScriptTypedElementListProxy ElementList, int32_t Index);                                           // [0x5b37440] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsValidIndex(FScriptTypedElementListProxy ElementList, int32_t Index);                                           // [0x5b8292c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.HasElementsOfType
-	// bool HasElementsOfType(FScriptTypedElementListProxy ElementList, FName ElementTypeName);                              // [0x5b37104] Final|Native|Static|Public|BlueprintCallable 
+	// bool HasElementsOfType(FScriptTypedElementListProxy ElementList, FName ElementTypeName);                              // [0x5b825f0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.HasElements
-	// bool HasElements(FScriptTypedElementListProxy ElementList, class UClass* BaseInterfaceType);                          // [0x5b36e68] Final|Native|Static|Public|BlueprintCallable 
+	// bool HasElements(FScriptTypedElementListProxy ElementList, class UClass* BaseInterfaceType);                          // [0x5b82354] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.GetElementInterface
-	// class UObject* GetElementInterface(FScriptTypedElementListProxy ElementList, FScriptTypedElementHandle& ElementHandle, class UClass* BaseInterfaceType); // [0x5b368b8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UObject* GetElementInterface(FScriptTypedElementListProxy ElementList, FScriptTypedElementHandle& ElementHandle, class UClass* BaseInterfaceType); // [0x5b81da4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.GetElementHandles
-	// TArray<FScriptTypedElementHandle> GetElementHandles(FScriptTypedElementListProxy ElementList, class UClass* BaseInterfaceType); // [0x5b36604] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FScriptTypedElementHandle> GetElementHandles(FScriptTypedElementListProxy ElementList, class UClass* BaseInterfaceType); // [0x5b81af0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.GetElementHandleAt
-	// FScriptTypedElementHandle GetElementHandleAt(FScriptTypedElementListProxy ElementList, int32_t Index);                // [0x5b36370] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FScriptTypedElementHandle GetElementHandleAt(FScriptTypedElementListProxy ElementList, int32_t Index);                // [0x5b8185c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Empty
-	// void Empty(FScriptTypedElementListProxy ElementList, int32_t Slack);                                                  // [0x5b35ef0] Final|Native|Static|Public|BlueprintCallable 
+	// void Empty(FScriptTypedElementListProxy ElementList, int32_t Slack);                                                  // [0x5b813dc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.CreateScriptElementList
-	// FScriptTypedElementListProxy CreateScriptElementList(class UTypedElementRegistry* Registry);                          // [0x5b35e48] Final|Native|Static|Public|BlueprintCallable 
+	// FScriptTypedElementListProxy CreateScriptElementList(class UTypedElementRegistry* Registry);                          // [0x5b81334] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.CountElementsOfType
-	// int32_t CountElementsOfType(FScriptTypedElementListProxy ElementList, FName ElementTypeName);                         // [0x5b35bbc] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t CountElementsOfType(FScriptTypedElementListProxy ElementList, FName ElementTypeName);                         // [0x5b810a8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.CountElements
-	// int32_t CountElements(FScriptTypedElementListProxy ElementList, class UClass* BaseInterfaceType);                     // [0x5b35920] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t CountElements(FScriptTypedElementListProxy ElementList, class UClass* BaseInterfaceType);                     // [0x5b80e0c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Contains
-	// bool Contains(FScriptTypedElementListProxy ElementList, FScriptTypedElementHandle& ElementHandle);                    // [0x5b35704] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool Contains(FScriptTypedElementListProxy ElementList, FScriptTypedElementHandle& ElementHandle);                    // [0x5b80bf0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Clone
-	// FScriptTypedElementListProxy Clone(FScriptTypedElementListProxy ElementList);                                         // [0x5b35548] Final|Native|Static|Public|BlueprintCallable 
+	// FScriptTypedElementListProxy Clone(FScriptTypedElementListProxy ElementList);                                         // [0x5b80a34] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.AppendList
-	// void AppendList(FScriptTypedElementListProxy ElementList, FScriptTypedElementListProxy OtherElementList);             // [0x5b3524c] Final|Native|Static|Public|BlueprintCallable 
+	// void AppendList(FScriptTypedElementListProxy ElementList, FScriptTypedElementListProxy OtherElementList);             // [0x5b80738] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Append
-	// void Append(FScriptTypedElementListProxy ElementList, TArray<FScriptTypedElementHandle>& ElementHandles);             // [0x5b35050] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void Append(FScriptTypedElementListProxy ElementList, TArray<FScriptTypedElementHandle>& ElementHandles);             // [0x5b8053c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TypedElementListLibrary.Add
-	// bool Add(FScriptTypedElementListProxy ElementList, FScriptTypedElementHandle& ElementHandle);                         // [0x5b34e34] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool Add(FScriptTypedElementListProxy ElementList, FScriptTypedElementHandle& ElementHandle);                         // [0x5b80320] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/TypedElementFramework.TypedElementCounterInterface
@@ -133,9 +133,9 @@ public:
 
 	/// Functions
 	// Function /Script/TypedElementFramework.TypedElementRegistry.GetInstance
-	// class UTypedElementRegistry* GetInstance();                                                                           // [0x5b36d90] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UTypedElementRegistry* GetInstance();                                                                           // [0x5b8227c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TypedElementFramework.TypedElementRegistry.GetElementInterface
-	// class UObject* GetElementInterface(FScriptTypedElementHandle& InElementHandle, class UClass* InBaseInterfaceType);    // [0x5b36bc0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UObject* GetElementInterface(FScriptTypedElementHandle& InElementHandle, class UClass* InBaseInterfaceType);    // [0x5b820ac] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TypedElementFramework.TestTypedElementInterfaceA
@@ -147,9 +147,9 @@ public:
 
 	/// Functions
 	// Function /Script/TypedElementFramework.TestTypedElementInterfaceA.SetDisplayName
-	// bool SetDisplayName(FScriptTypedElementHandle& InElementHandle, FText InNewName, bool bNotify);                       // [0x5b38150] Native|Public|HasOutParms|BlueprintCallable 
+	// bool SetDisplayName(FScriptTypedElementHandle& InElementHandle, FText InNewName, bool bNotify);                       // [0x5b8363c] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TypedElementFramework.TestTypedElementInterfaceA.GetDisplayName
-	// FText GetDisplayName(FScriptTypedElementHandle& InElementHandle);                                                     // [0x5b3629c] Native|Public|HasOutParms|BlueprintCallable 
+	// FText GetDisplayName(FScriptTypedElementHandle& InElementHandle);                                                     // [0x5b81788] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/TypedElementFramework.TestTypedElementInterfaceB
@@ -161,7 +161,7 @@ public:
 
 	/// Functions
 	// Function /Script/TypedElementFramework.TestTypedElementInterfaceB.MarkAsTested
-	// bool MarkAsTested(FScriptTypedElementHandle& InElementHandle);                                                        // [0x5b36db4] Native|Public|HasOutParms|BlueprintCallable 
+	// bool MarkAsTested(FScriptTypedElementHandle& InElementHandle);                                                        // [0x5b822a0] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/TypedElementFramework.TestTypedElementInterfaceC
@@ -173,7 +173,7 @@ public:
 
 	/// Functions
 	// Function /Script/TypedElementFramework.TestTypedElementInterfaceC.GetIsTested
-	// bool GetIsTested(FScriptTypedElementHandle& InElementHandle);                                                         // [0x5b36db4] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsTested(FScriptTypedElementHandle& InElementHandle);                                                         // [0x5b822a0] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TypedElementFramework.TestTypedElementInterfaceA_ImplTyped

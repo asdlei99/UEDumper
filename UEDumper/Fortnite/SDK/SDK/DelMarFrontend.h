@@ -26,9 +26,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarFrontend.DelMarFrontendCheatManager.DelMarResetNux
-	// void DelMarResetNux();                                                                                                // [0x32e6c74] Final|Exec|Native|Protected 
+	// void DelMarResetNux();                                                                                                // [0x32e4b44] Final|Exec|Native|Protected 
 	// Function /Script/DelMarFrontend.DelMarFrontendCheatManager.DelMarMarkTutorialPlayed
-	// void DelMarMarkTutorialPlayed();                                                                                      // [0x32e6c74] Final|Exec|Native|Protected 
+	// void DelMarMarkTutorialPlayed();                                                                                      // [0x32e4b44] Final|Exec|Native|Protected 
 };
 
 /// Class /Script/DelMarFrontend.DelMarFrontendExperienceFlow
@@ -113,6 +113,6 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarFrontend.DelMarFrontendRuntimeOptions.GetDelMarFrontendRuntimeOptions
-	// class UDelMarFrontendRuntimeOptions* GetDelMarFrontendRuntimeOptions();                                               // [0xb889514] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UDelMarFrontendRuntimeOptions* GetDelMarFrontendRuntimeOptions();                                               // [0xb852420] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 

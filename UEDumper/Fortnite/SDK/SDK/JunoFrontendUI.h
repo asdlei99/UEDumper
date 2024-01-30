@@ -81,18 +81,18 @@ public:
 
 	/// Functions
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.StartMatchmakingInModeratorMode
-	// void StartMatchmakingInModeratorMode(FString InWorldId);                                                              // [0xbdaeeec] Final|Native|Public|BlueprintCallable 
+	// void StartMatchmakingInModeratorMode(FString InWorldId);                                                              // [0xbd6779c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.RemoveSelectedWorldFromList
-	// void RemoveSelectedWorldFromList();                                                                                   // [0xbdaeed8] Final|Native|Public|BlueprintCallable 
+	// void RemoveSelectedWorldFromList();                                                                                   // [0xbd67788] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.InitWorldData
-	// void InitWorldData(TWeakObjectPtr<UDataTable*>& InSettingDataTable, TWeakObjectPtr<UDataTable*>& InWorldImageDataTable); // [0xbdaedc0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InitWorldData(TWeakObjectPtr<UDataTable*>& InSettingDataTable, TWeakObjectPtr<UDataTable*>& InWorldImageDataTable); // [0xbd67670] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.GetIsCreateFlowSelected
-	// bool GetIsCreateFlowSelected();                                                                                       // [0xbdaed78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsCreateFlowSelected();                                                                                       // [0xbd67628] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.FetchWorldData
-	// void FetchWorldData();                                                                                                // [0xbdaed64] Final|Native|Public|BlueprintCallable 
+	// void FetchWorldData();                                                                                                // [0xbd67614] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.EnableDataRefresh
-	// void EnableDataRefresh();                                                                                             // [0xbdaed50] Final|Native|Public|BlueprintCallable 
+	// void EnableDataRefresh();                                                                                             // [0xbd67600] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoFrontendUI.JunoWorldManagementViewModel.DisableDataRefresh
-	// void DisableDataRefresh();                                                                                            // [0xbdaed3c] Final|Native|Public|BlueprintCallable 
+	// void DisableDataRefresh();                                                                                            // [0xbd675ec] Final|Native|Public|BlueprintCallable 
 };
 

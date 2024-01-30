@@ -36,9 +36,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState
-	// void UpdateWorldLocalState(bool bWorldIn);                                                                               // [0xaed7d78] Final|Native|Public  
+	// void UpdateWorldLocalState(bool bWorldIn);                                                                               // [0xaebad84] Final|Native|Public  
 	// Function /Script/InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
-	// void UpdateHoverState(bool bHoveringIn);                                                                                 // [0xaed7af8] Final|Native|Public  
+	// void UpdateHoverState(bool bHoveringIn);                                                                                 // [0xaebab04] Final|Native|Public  
 };
 
 /// Class /Script/InteractiveToolsFramework.InteractiveCommandArguments
@@ -1084,9 +1084,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoTransformSource.SetTransform
-	// void SetTransform(FTransform& NewTransform);                                                                             // [0xaed7710] Native|Public|HasOutParms|HasDefaults 
+	// void SetTransform(FTransform& NewTransform);                                                                             // [0xaeba71c] Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/InteractiveToolsFramework.GizmoTransformSource.GetTransform
-	// FTransform GetTransform();                                                                                               // [0xaed7584] Native|Public|HasDefaults|Const 
+	// FTransform GetTransform();                                                                                               // [0xaeba590] Native|Public|HasDefaults|Const 
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoAxisSource
@@ -1101,13 +1101,13 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.HasTangentVectors
-	// bool HasTangentVectors();                                                                                                // [0x2a50c94] Native|Public|Const  
+	// bool HasTangentVectors();                                                                                                // [0x2a89fe4] Native|Public|Const  
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetTangentVectors
-	// void GetTangentVectors(FVector& TangentXOut, FVector& TangentYOut);                                                      // [0xaed7420] Native|Public|HasOutParms|HasDefaults|Const 
+	// void GetTangentVectors(FVector& TangentXOut, FVector& TangentYOut);                                                      // [0xaeba42c] Native|Public|HasOutParms|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetOrigin
-	// FVector GetOrigin();                                                                                                     // [0xaed73b8] Native|Public|HasDefaults|Const 
+	// FVector GetOrigin();                                                                                                     // [0xaeba3c4] Native|Public|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetDirection
-	// FVector GetDirection();                                                                                                  // [0xaed7380] Native|Public|HasDefaults|Const 
+	// FVector GetDirection();                                                                                                  // [0xaeba38c] Native|Public|HasDefaults|Const 
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoClickTarget
@@ -1122,9 +1122,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoClickTarget.UpdateInteractingState
-	// void UpdateInteractingState(bool bInteracting);                                                                          // [0xaed7cf4] Native|Public        
+	// void UpdateInteractingState(bool bInteracting);                                                                          // [0xaebad00] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickTarget.UpdateHoverState
-	// void UpdateHoverState(bool bHovering);                                                                                   // [0x8127fcc] Native|Public        
+	// void UpdateHoverState(bool bHovering);                                                                                   // [0x8161558] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoClickMultiTarget
@@ -1139,11 +1139,11 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateInteractingState
-	// void UpdateInteractingState(bool bInteracting, uint32_t InPartIdentifier);                                               // [0xaed7b80] Native|Public        
+	// void UpdateInteractingState(bool bInteracting, uint32_t InPartIdentifier);                                               // [0xaebab8c] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHoverState
-	// void UpdateHoverState(bool bHovering, uint32_t InPartIdentifier);                                                        // [0xaed7984] Native|Public        
+	// void UpdateHoverState(bool bHovering, uint32_t InPartIdentifier);                                                        // [0xaeba990] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHittableState
-	// void UpdateHittableState(bool bHittable, uint32_t InPartIdentifier);                                                     // [0xaed7810] Native|Public        
+	// void UpdateHittableState(bool bHittable, uint32_t InPartIdentifier);                                                     // [0xaeba81c] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoRenderTarget
@@ -1168,7 +1168,7 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoRenderMultiTarget.UpdateVisibilityState
-	// void UpdateVisibilityState(bool bVisible, uint32_t InPartIdentifier);                                                    // [0xaed7984] Native|Public        
+	// void UpdateVisibilityState(bool bVisible, uint32_t InPartIdentifier);                                                    // [0xaeba990] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoStateTarget
@@ -1183,9 +1183,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoStateTarget.EndUpdate
-	// void EndUpdate();                                                                                                        // [0x334e86c] Native|Public        
+	// void EndUpdate();                                                                                                        // [0x3346b94] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoStateTarget.BeginUpdate
-	// void BeginUpdate();                                                                                                      // [0x30e8658] Native|Public        
+	// void BeginUpdate();                                                                                                      // [0x30e10d4] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoFloatParameterSource
@@ -1200,13 +1200,13 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
-	// void SetParameter(float NewValue);                                                                                       // [0xaed7604] Native|Public        
+	// void SetParameter(float NewValue);                                                                                       // [0xaeba610] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
-	// float GetParameter();                                                                                                    // [0x80e07f4] Native|Public|Const  
+	// float GetParameter();                                                                                                    // [0x8119d80] Native|Public|Const  
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.EndModify
-	// void EndModify();                                                                                                        // [0x8ea2ad0] Native|Public        
+	// void EndModify();                                                                                                        // [0x8ec1414] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.BeginModify
-	// void BeginModify();                                                                                                      // [0x334e86c] Native|Public        
+	// void BeginModify();                                                                                                      // [0x3346b94] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoVec2ParameterSource
@@ -1221,13 +1221,13 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
-	// void SetParameter(FVector2D& NewValue);                                                                                  // [0xaed7688] Native|Public|HasOutParms|HasDefaults 
+	// void SetParameter(FVector2D& NewValue);                                                                                  // [0xaeba694] Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.GetParameter
-	// FVector2D GetParameter();                                                                                                // [0xaed73f0] Native|Public|HasDefaults|Const 
+	// FVector2D GetParameter();                                                                                                // [0xaeba3fc] Native|Public|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.EndModify
-	// void EndModify();                                                                                                        // [0x8ea2ad0] Native|Public        
+	// void EndModify();                                                                                                        // [0x8ec1414] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.BeginModify
-	// void BeginModify();                                                                                                      // [0x334e86c] Native|Public        
+	// void BeginModify();                                                                                                      // [0x3346b94] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoLineHandleComponent

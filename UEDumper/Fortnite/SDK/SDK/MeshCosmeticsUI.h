@@ -54,11 +54,11 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmeticsUI.FortVariantRedirectorTile.OnVariantChangedEvent__DelegateSignature
-	// void OnVariantChangedEvent__DelegateSignature(FMcpVariantChannelInfo& InChannelInfo);                                 // [0x2177018] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnVariantChangedEvent__DelegateSignature(FMcpVariantChannelInfo& InChannelInfo);                                 // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/MeshCosmeticsUI.FortVariantRedirectorTile.HandleBoundaryNavigation
-	// class UWidget* HandleBoundaryNavigation(EUINavigation InNavigation);                                                  // [0xb2525f4] Final|Native|Private 
+	// class UWidget* HandleBoundaryNavigation(EUINavigation InNavigation);                                                  // [0xb232da8] Final|Native|Private 
 	// Function /Script/MeshCosmeticsUI.FortVariantRedirectorTile.GetButtonToFocus
-	// class UWidget* GetButtonToFocus();                                                                                    // [0xb2525cc] Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UWidget* GetButtonToFocus();                                                                                    // [0xb232d80] Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MeshCosmeticsUI.FortVariantSprayCustomizerConfig
@@ -115,9 +115,9 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizer.BP_SetVariantEditorMode
-	// void BP_SetVariantEditorMode(bool bIsLockerMode);                                                                     // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_SetVariantEditorMode(bool bIsLockerMode);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizer.BP_SetChannelSlotIcon
-	// void BP_SetChannelSlotIcon(TWeakObjectPtr<UObject*>& ChannelSlotIcon);                                                // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_SetChannelSlotIcon(TWeakObjectPtr<UObject*>& ChannelSlotIcon);                                                // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/MeshCosmeticsUI.FortVariantSprayCustomizerSetting
@@ -132,11 +132,11 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizerSetting.HandleSliderValueChanged
-	// void HandleSliderValueChanged(float NormalizedValue);                                                                 // [0xb252684] Final|Native|Private 
+	// void HandleSliderValueChanged(float NormalizedValue);                                                                 // [0xb232e38] Final|Native|Private 
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizerSetting.BP_OnSetConstraints
-	// void BP_OnSetConstraints(FFloatRange& Constraints);                                                                   // [0x2177018] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnSetConstraints(FFloatRange& Constraints);                                                                   // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/MeshCosmeticsUI.FortVariantSprayCustomizerSetting.BP_OnChangeValue
-	// void BP_OnChangeValue(float Value, float NormalizedValue);                                                            // [0x2177018] Event|Protected|BlueprintEvent 
+	// void BP_OnChangeValue(float Value, float NormalizedValue);                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/MeshCosmeticsUI.FortVariantSprayCustomizerChannelOptions

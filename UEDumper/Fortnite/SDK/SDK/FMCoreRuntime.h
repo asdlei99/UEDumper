@@ -110,17 +110,17 @@ public:
 
 	/// Functions
 	// Function /Script/FMCoreRuntime.FMCoreMusicFunctionLibrary.SnapToScale
-	// FMidiNote SnapToScale(FMidiNote Note, EMusicKey Key, EMusicKeyMode KeyMode);                                          // [0xaa316d8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMidiNote SnapToScale(FMidiNote Note, EMusicKey Key, EMusicKeyMode KeyMode);                                          // [0xaa1ea60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMCoreRuntime.FMCoreMusicFunctionLibrary.GetMidiNoteFromScale
-	// FMidiNote GetMidiNoteFromScale(EMusicKey Key, int32_t Octave, EMusicInterval Interval);                               // [0xaa2ef90] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMidiNote GetMidiNoteFromScale(EMusicKey Key, int32_t Octave, EMusicInterval Interval);                               // [0xaa1c318] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMCoreRuntime.FMCoreMusicFunctionLibrary.GetIntervalStepInScale
-	// int32_t GetIntervalStepInScale(EMusicInterval Interval, EMusicKeyMode KeyMode);                                       // [0xaa2eed0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetIntervalStepInScale(EMusicInterval Interval, EMusicKeyMode KeyMode);                                       // [0xaa1c258] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMCoreRuntime.FMCoreMusicFunctionLibrary.GetIntervalForNote
-	// EMusicInterval GetIntervalForNote(FMidiNote Note, EMusicKey Key);                                                     // [0xaa2ecac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// EMusicInterval GetIntervalForNote(FMidiNote Note, EMusicKey Key);                                                     // [0xaa1c034] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMCoreRuntime.FMCoreMusicFunctionLibrary.GetIntervalAtStepInScale
-	// EMusicInterval GetIntervalAtStepInScale(int32_t ScaleStep, EMusicKeyMode KeyMode);                                    // [0xaa2ebec] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// EMusicInterval GetIntervalAtStepInScale(int32_t ScaleStep, EMusicKeyMode KeyMode);                                    // [0xaa1bf74] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMCoreRuntime.FMCoreMusicFunctionLibrary.GetDegreeShiftFromProgression
-	// int32_t GetDegreeShiftFromProgression(EHarmonicProgression Progression);                                              // [0xaa2eb6c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetDegreeShiftFromProgression(EHarmonicProgression Progression);                                              // [0xaa1bef4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/FMCoreRuntime.FMCoreTimeSignature
@@ -165,47 +165,47 @@ public:
 
 	/// Functions
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.TriggerTimeSignatureChange
-	// void TriggerTimeSignatureChange(int32_t Numerator, int32_t Denominator);                                              // [0xaa31c48] Final|Native|Public|BlueprintCallable 
+	// void TriggerTimeSignatureChange(int32_t Numerator, int32_t Denominator);                                              // [0xaa1efd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.TriggerTempoChange
-	// void TriggerTempoChange(int32_t BPM, bool bLocalChangeOnly);                                                          // [0xaa31b84] Final|Native|Public|BlueprintCallable 
+	// void TriggerTempoChange(int32_t BPM, bool bLocalChangeOnly);                                                          // [0xaa1ef0c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.TriggerSpeedChange
-	// void TriggerSpeedChange(float Speed, bool bLocalChangeOnly);                                                          // [0xaa31abc] Final|Native|Public|BlueprintCallable 
+	// void TriggerSpeedChange(float Speed, bool bLocalChangeOnly);                                                          // [0xaa1ee44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.TriggerModeChange
-	// void TriggerModeChange(EMusicKeyMode InMode);                                                                         // [0xaa31a3c] Final|Native|Public|BlueprintCallable 
+	// void TriggerModeChange(EMusicKeyMode InMode);                                                                         // [0xaa1edc4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.TriggerKeyChange
-	// void TriggerKeyChange(EMusicKey InKey);                                                                               // [0xaa319bc] Final|Native|Public|BlueprintCallable 
+	// void TriggerKeyChange(EMusicKey InKey);                                                                               // [0xaa1ed44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnTimeSignatureChanged__DelegateSignature
-	// void OnTimeSignatureChanged__DelegateSignature(FFMCoreTimeSignature TimeSignature);                                   // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnTimeSignatureChanged__DelegateSignature(FFMCoreTimeSignature TimeSignature);                                   // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnTempoChanged__DelegateSignature
-	// void OnTempoChanged__DelegateSignature(int32_t CurrentTempo);                                                         // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnTempoChanged__DelegateSignature(int32_t CurrentTempo);                                                         // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnSpeedChanged__DelegateSignature
-	// void OnSpeedChanged__DelegateSignature(float CurrentSpeed);                                                           // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnSpeedChanged__DelegateSignature(float CurrentSpeed);                                                           // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnRep_ServerTimeSignatureChanged
-	// void OnRep_ServerTimeSignatureChanged();                                                                              // [0xaa30fe0] Final|Native|Private 
+	// void OnRep_ServerTimeSignatureChanged();                                                                              // [0xaa1e368] Final|Native|Private 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnRep_ServerTempoChanged
-	// void OnRep_ServerTempoChanged();                                                                                      // [0xaa30fac] Final|Native|Private 
+	// void OnRep_ServerTempoChanged();                                                                                      // [0xaa1e334] Final|Native|Private 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnRep_ServerSpeedChanged
-	// void OnRep_ServerSpeedChanged();                                                                                      // [0xaa30f74] Final|Native|Private 
+	// void OnRep_ServerSpeedChanged();                                                                                      // [0xaa1e2fc] Final|Native|Private 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnRep_ServerModeChanged
-	// void OnRep_ServerModeChanged();                                                                                       // [0xaa30f40] Final|Native|Private 
+	// void OnRep_ServerModeChanged();                                                                                       // [0xaa1e2c8] Final|Native|Private 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnRep_ServerKeyChanged
-	// void OnRep_ServerKeyChanged();                                                                                        // [0xaa30f0c] Final|Native|Private 
+	// void OnRep_ServerKeyChanged();                                                                                        // [0xaa1e294] Final|Native|Private 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnModeChanged__DelegateSignature
-	// void OnModeChanged__DelegateSignature(EMusicKeyMode CurrentMode);                                                     // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnModeChanged__DelegateSignature(EMusicKeyMode CurrentMode);                                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.OnKeyChanged__DelegateSignature
-	// void OnKeyChanged__DelegateSignature(EMusicKey CurrentKey);                                                           // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnKeyChanged__DelegateSignature(EMusicKey CurrentKey);                                                           // [0x211c0a0] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.GetCurrentTimeSignature
-	// FFMCoreTimeSignature GetCurrentTimeSignature();                                                                       // [0xaa2eb54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFMCoreTimeSignature GetCurrentTimeSignature();                                                                       // [0xaa1bedc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.GetCurrentTempo
-	// int32_t GetCurrentTempo();                                                                                            // [0x7061cf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentTempo();                                                                                            // [0x70a5258] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.GetCurrentSpeed
-	// float GetCurrentSpeed();                                                                                              // [0x7061868] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentSpeed();                                                                                              // [0x70a4dc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.GetCurrentKeyMode
-	// EMusicKeyMode GetCurrentKeyMode();                                                                                    // [0xaa2eb3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMusicKeyMode GetCurrentKeyMode();                                                                                    // [0xaa1bec4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.GetCurrentKey
-	// EMusicKey GetCurrentKey();                                                                                            // [0xaa2eb24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMusicKey GetCurrentKey();                                                                                            // [0xaa1beac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMCoreRuntime.FMCoreMusicManagerComponent.GetCurrentAudioState
-	// void GetCurrentAudioState(EMusicKey& OutKey, EMusicKeyMode& OutKeyMode, int32_t& OutTempo);                           // [0xaa2e9ec] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetCurrentAudioState(EMusicKey& OutKey, EMusicKeyMode& OutKeyMode, int32_t& OutTempo);                           // [0xaa1bd74] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FMCoreRuntime.FMPlayspaceScopedSystemComponent
@@ -218,7 +218,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMCoreRuntime.FMPlayspaceScopedSystemComponent.OnAddedToPlayspaceSystemManager__DelegateSignature
-	// void OnAddedToPlayspaceSystemManager__DelegateSignature(bool Success);                                                // [0x2177018] MulticastDelegate|Public|Delegate 
+	// void OnAddedToPlayspaceSystemManager__DelegateSignature(bool Success);                                                // [0x211c0a0] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/FMCoreRuntime.FMPlayspaceScopedSystemManager
@@ -233,11 +233,11 @@ public:
 
 	/// Functions
 	// Function /Script/FMCoreRuntime.FMPlayspaceScopedSystemManager.MulticastNewSystemCreated
-	// void MulticastNewSystemCreated(class AActor* PlayspaceActor, class UClass* SystemClass, class AActor* CreatedActor);  // [0xaa30de8] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void MulticastNewSystemCreated(class AActor* PlayspaceActor, class UClass* SystemClass, class AActor* CreatedActor);  // [0xaa1e170] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/FMCoreRuntime.FMPlayspaceScopedSystemManager.GetSystemForActorIfExistsBP
-	// void GetSystemForActorIfExistsBP(class UClass* SystemClass, class AActor* Requester, class AActor*& OutActor, ESystemGetResult& OutWasValid); // [0xaa2f23c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetSystemForActorIfExistsBP(class UClass* SystemClass, class AActor* Requester, class AActor*& OutActor, ESystemGetResult& OutWasValid); // [0xaa1c5c4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FMCoreRuntime.FMPlayspaceScopedSystemManager.GetOrCreateSystemForActorBP
-	// void GetOrCreateSystemForActorBP(class UClass* SystemClass, class AActor* Requester, class AActor*& OutActor, ESystemGetResult& OutWasValid); // [0xaa2f088] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetOrCreateSystemForActorBP(class UClass* SystemClass, class AActor* Requester, class AActor*& OutActor, ESystemGetResult& OutWasValid); // [0xaa1c410] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/FMCoreRuntime.FMUEFNConsumerInterface
@@ -249,9 +249,9 @@ public:
 
 	/// Functions
 	// Function /Script/FMCoreRuntime.FMUEFNConsumerInterface.OnTerminatingLinkCode
-	// void OnTerminatingLinkCode(FString LinkCode);                                                                         // [0xaa31018] Native|Event|Public|BlueprintEvent 
+	// void OnTerminatingLinkCode(FString LinkCode);                                                                         // [0xaa1e3a0] Native|Event|Public|BlueprintEvent 
 	// Function /Script/FMCoreRuntime.FMUEFNConsumerInterface.IsLinkCodeInUse
-	// bool IsLinkCodeInUse(FString LinkCode);                                                                               // [0xaa30730] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsLinkCodeInUse(FString LinkCode);                                                                               // [0xaa1dab8] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/FMCoreRuntime.FMUEFNResolver
@@ -271,11 +271,11 @@ public:
 
 	/// Functions
 	// Function /Script/FMCoreRuntime.FMUEFNResolver.ReduceLoadedGFPs
-	// void ReduceLoadedGFPs();                                                                                              // [0xaa316c4] Final|Native|Private 
+	// void ReduceLoadedGFPs();                                                                                              // [0xaa1ea4c] Final|Native|Private 
 	// Function /Script/FMCoreRuntime.FMUEFNResolver.HandleResolveComplete
-	// void HandleResolveComplete(bool bSuccess, FString LinkCode, TArray<FString>& PluginURLs, bool bIsPersistent);         // [0xaa2ff00] Final|Native|Private|HasOutParms 
+	// void HandleResolveComplete(bool bSuccess, FString LinkCode, TArray<FString>& PluginURLs, bool bIsPersistent);         // [0xaa1d288] Final|Native|Private|HasOutParms 
 	// Function /Script/FMCoreRuntime.FMUEFNResolver.HandleGameFeatureLoadComplete
-	// void HandleGameFeatureLoadComplete(bool bSuccess, FString LinkCode, FString PluginURL, bool bIsPersistent);           // [0xaa2f784] Final|Native|Private 
+	// void HandleGameFeatureLoadComplete(bool bSuccess, FString LinkCode, FString PluginURL, bool bIsPersistent);           // [0xaa1cb0c] Final|Native|Private 
 };
 
 /// Struct /Script/FMCoreRuntime.FMPlayspaceSystemInfo
