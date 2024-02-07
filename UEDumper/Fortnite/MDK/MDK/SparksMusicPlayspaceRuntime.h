@@ -28,9 +28,9 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMusicPlayspaceRuntime.PlayspaceComponent_LipSyncAssetManager.TryGetLipSyncAnimAssetForPlayer
-	// TWeakObjectPtr<UAnimSequence*> TryGetLipSyncAnimAssetForPlayer(class APlayerState* PlayerState);                         // [0xab816ac] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UAnimSequence*> TryGetLipSyncAnimAssetForPlayer(class APlayerState* PlayerState);                         // [0xad5f2c0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.PlayspaceComponent_LipSyncAssetManager.LipSyncAnimDecidedDelegate__DelegateSignature
-	// void LipSyncAnimDecidedDelegate__DelegateSignature(TWeakObjectPtr<UAnimSequence*> LipSyncAnimSequence, TArray<APlayerState*>& PlayerStates); // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void LipSyncAnimDecidedDelegate__DelegateSignature(TWeakObjectPtr<UAnimSequence*> LipSyncAnimSequence, TArray<APlayerState*>& PlayerStates); // [0x2047e54] MulticastDelegate|Public|Delegate|HasOutParms 
 };
 
 /// Class /Script/SparksMusicPlayspaceRuntime.PlayspaceComponent_SparksPerfMem
@@ -45,9 +45,9 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMusicPlayspaceRuntime.PlayspaceComponent_SparksPerfMem.StopTrackingServerPerf
-	// void StopTrackingServerPerf();                                                                                           // [0xab814d8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void StopTrackingServerPerf();                                                                                           // [0xad5f06c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SparksMusicPlayspaceRuntime.PlayspaceComponent_SparksPerfMem.StartTrackingServerPerf
-	// void StartTrackingServerPerf(FSparksServerPerfMemSettings& Settings);                                                    // [0xab8143c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void StartTrackingServerPerf(FSparksServerPerfMemSettings& Settings);                                                    // [0xad5efd0] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceInteractorInterface
@@ -62,13 +62,13 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceInteractorInterface.ExitedSparksMusicPlayspace
-	// void ExitedSparksMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                                 // [0x80f25e8] Native|Event|Public|BlueprintEvent 
+	// void ExitedSparksMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                                 // [0x8089964] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceInteractorInterface.EnteredSparksMusicPlayspace
-	// void EnteredSparksMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                                // [0x811e3ac] Native|Event|Public|BlueprintEvent 
+	// void EnteredSparksMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                                // [0x80baa04] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceInteractorInterface.DoesSparksMusicPlayspaceInteratorHaveTag
-	// bool DoesSparksMusicPlayspaceInteratorHaveTag(FGameplayTag& tag);                                                        // [0xab8070c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool DoesSparksMusicPlayspaceInteratorHaveTag(FGameplayTag& tag);                                                        // [0xad5de70] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceInteractorInterface.AllowedToEnterMusicPlayspace
-	// bool AllowedToEnterMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                               // [0x8d205c4] Native|Event|Public|BlueprintEvent|Const 
+	// bool AllowedToEnterMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                               // [0x8d3eef4] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayerInterface
@@ -83,15 +83,15 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayerInterface.SparksMusicPlayerRemovedFromMusicPlayspace
-	// void SparksMusicPlayerRemovedFromMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                 // [0x211c0a0] Event|Public|BlueprintEvent|Const 
+	// void SparksMusicPlayerRemovedFromMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                 // [0x2047e54] Event|Public|BlueprintEvent|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayerInterface.SparksMusicPlayerAddedToMusicPlayspace
-	// void SparksMusicPlayerAddedToMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                     // [0x211c0a0] Event|Public|BlueprintEvent|Const 
+	// void SparksMusicPlayerAddedToMusicPlayspace(class ASparksMusicPlayspace* Playspace);                                     // [0x2047e54] Event|Public|BlueprintEvent|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayerInterface.ShouldAutoRegister
-	// bool ShouldAutoRegister();                                                                                               // [0xab81418] Native|Event|Public|BlueprintEvent|Const 
+	// bool ShouldAutoRegister();                                                                                               // [0xad5efac] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayerInterface.IsSparksMusicPlayerPlayingWithKey
-	// bool IsSparksMusicPlayerPlayingWithKey();                                                                                // [0x812ebe8] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsSparksMusicPlayerPlayingWithKey();                                                                                // [0xa9a94c8] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayerInterface.IsSparksMusicPlayerPlaying
-	// bool IsSparksMusicPlayerPlaying();                                                                                       // [0xab81094] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsSparksMusicPlayerPlaying();                                                                                       // [0xad5ea54] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace
@@ -117,53 +117,53 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.TryGetMusicKeyAndMode
-	// bool TryGetMusicKeyAndMode(EMusicKey& OutMusicKey, EMusicKeyMode& OutMusicKeyMode);                                      // [0xab81870] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool TryGetMusicKeyAndMode(EMusicKey& OutMusicKey, EMusicKeyMode& OutMusicKeyMode);                                      // [0xad5f504] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.TryGetMidiEventDrivers
-	// TArray<TScriptInterface<Class>> TryGetMidiEventDrivers();                                                                // [0xab81800] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<TScriptInterface<Class>> TryGetMidiEventDrivers();                                                                // [0xad5f494] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.TryGetMidiEventDriverForPlayerState
-	// TScriptInterface<Class> TryGetMidiEventDriverForPlayerState(class APlayerState* PlayerState);                            // [0xab81760] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TScriptInterface<Class> TryGetMidiEventDriverForPlayerState(class APlayerState* PlayerState);                            // [0xad5f3b4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.RemoveMusicPlayer
-	// bool RemoveMusicPlayer(class UObject* MusicPlayer, class AActor* ForActor);                                              // [0xab81354] Final|Native|Public|BlueprintCallable 
+	// bool RemoveMusicPlayer(class UObject* MusicPlayer, class AActor* ForActor);                                              // [0xad5ee5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.RemoveInteractor
-	// bool RemoveInteractor(class UObject* Interactor, class AActor* ForActor);                                                // [0xab81290] Final|Native|Public|BlueprintCallable 
+	// bool RemoveInteractor(class UObject* Interactor, class AActor* ForActor);                                                // [0xad5ed0c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.OnMeasureEvent
-	// void OnMeasureEvent(int32_t MeasureNumber);                                                                              // [0xab8117c] Native|Protected     
+	// void OnMeasureEvent(int32_t MeasureNumber);                                                                              // [0xad5ebb8] Native|Protected     
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.OnBeatEvent
-	// void OnBeatEvent(int32_t BeatNumber, int32_t BeatInBar);                                                                 // [0xab810b8] Native|Protected     
+	// void OnBeatEvent(int32_t BeatNumber, int32_t BeatInBar);                                                                 // [0xad5ea78] Native|Protected     
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.MidiEventDriverChangedDelegate__DelegateSignature
-	// void MidiEventDriverChangedDelegate__DelegateSignature(TScriptInterface<Class> MidiEventDriver);                         // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MidiEventDriverChangedDelegate__DelegateSignature(TScriptInterface<Class> MidiEventDriver);                         // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.MidiEventDataParsedDelegate__DelegateSignature
-	// void MidiEventDataParsedDelegate__DelegateSignature(TScriptInterface<Class> MidiEventDriver, class UParsedMidiEventData* ParsedMidiEventData); // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MidiEventDataParsedDelegate__DelegateSignature(TScriptInterface<Class> MidiEventDriver, class UParsedMidiEventData* ParsedMidiEventData); // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.IsAnyMusicPlayingWithKey
-	// bool IsAnyMusicPlayingWithKey();                                                                                         // [0xab8106c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAnyMusicPlayingWithKey();                                                                                         // [0xad5ea2c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.IsAnyMusicPlaying
-	// bool IsAnyMusicPlaying();                                                                                                // [0xab81044] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAnyMusicPlaying();                                                                                                // [0xad5ea04] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.GetSparksMusicPlayspaceOfClassByLocation
-	// class ASparksMusicPlayspace* GetSparksMusicPlayspaceOfClassByLocation(class UClass* PlayspaceType, class UObject* WorldContextObject, FVector& Location, bool bMatchChildTypes); // [0xab80d90] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// class ASparksMusicPlayspace* GetSparksMusicPlayspaceOfClassByLocation(class UClass* PlayspaceType, class UObject* WorldContextObject, FVector& Location, bool bMatchChildTypes); // [0xad5e6d0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.GetSparksMusicPlayspaceOfClass
-	// class ASparksMusicPlayspace* GetSparksMusicPlayspaceOfClass(class UClass* PlayspaceType, class UObject* WorldContextObject, class AActor* Actor, bool bMatchChildTypes); // [0xab809ec] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ASparksMusicPlayspace* GetSparksMusicPlayspaceOfClass(class UClass* PlayspaceType, class UObject* WorldContextObject, class AActor* Actor, bool bMatchChildTypes); // [0xad5e150] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.GetMusicPlayers
-	// TArray<UObject*> GetMusicPlayers();                                                                                      // [0xab809ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UObject*> GetMusicPlayers();                                                                                      // [0xad5e110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.GetAllPlayerPawns
-	// TArray<APawn*> GetAllPlayerPawns();                                                                                      // [0xab80820] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<APawn*> GetAllPlayerPawns();                                                                                      // [0xad5df84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.GetAllPlayerControllers
-	// TArray<AController*> GetAllPlayerControllers();                                                                          // [0xab807e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AController*> GetAllPlayerControllers();                                                                          // [0xad5df48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.DoesPlayerHaveInstrument
-	// bool DoesPlayerHaveInstrument(class APlayerState* PlayerState, ESparksInstrumentType InstrumentType);                    // [0xab80640] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool DoesPlayerHaveInstrument(class APlayerState* PlayerState, ESparksInstrumentType InstrumentType);                    // [0xad5dd18] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.BPEvent_OnUserRemoved
-	// void BPEvent_OnUserRemoved(FPlayspaceUser& User, class APlayerState* PlayerState);                                       // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
+	// void BPEvent_OnUserRemoved(FPlayspaceUser& User, class APlayerState* PlayerState);                                       // [0x2047e54] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.BPEvent_OnUserAdded
-	// void BPEvent_OnUserAdded(FPlayspaceUser& User, class APlayerState* PlayerState);                                         // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
+	// void BPEvent_OnUserAdded(FPlayspaceUser& User, class APlayerState* PlayerState);                                         // [0x2047e54] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.BPEvent_OnIntialized
-	// void BPEvent_OnIntialized();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BPEvent_OnIntialized();                                                                                             // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.BP_GetOwnedEventRouter
-	// class UGameplayEventRouterComponent* BP_GetOwnedEventRouter();                                                           // [0xab80614] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UGameplayEventRouterComponent* BP_GetOwnedEventRouter();                                                           // [0xad5dcec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.BP_GetAllPlayerStates
-	// TArray<APlayerState*> BP_GetAllPlayerStates();                                                                           // [0xab805c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<APlayerState*> BP_GetAllPlayerStates();                                                                           // [0xad5dca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.AddMusicPlayer
-	// bool AddMusicPlayer(class UObject* Interactor, class AActor* ForActor);                                                  // [0xab80504] Final|Native|Public|BlueprintCallable 
+	// bool AddMusicPlayer(class UObject* Interactor, class AActor* ForActor);                                                  // [0xad5db50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspace.AddInteractor
-	// bool AddInteractor(class UObject* Interactor, class AActor* ForActor);                                                   // [0xab80440] Final|Native|Public|BlueprintCallable 
+	// bool AddInteractor(class UObject* Interactor, class AActor* ForActor);                                                   // [0xad5da00] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState
@@ -181,25 +181,25 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.TriggerTempoChange
-	// void TriggerTempoChange(int32_t BPM);                                                                                    // [0xab8162c] Final|Native|Public|BlueprintCallable 
+	// void TriggerTempoChange(int32_t BPM);                                                                                    // [0xad5f200] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.TriggerModeChange
-	// void TriggerModeChange(EMusicKeyMode InMode);                                                                            // [0xab815ac] Final|Native|Public|BlueprintCallable 
+	// void TriggerModeChange(EMusicKeyMode InMode);                                                                            // [0xad5f140] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.TriggerKeyChange
-	// void TriggerKeyChange(EMusicKey InKey);                                                                                  // [0xab8152c] Final|Native|Public|BlueprintCallable 
+	// void TriggerKeyChange(EMusicKey InKey);                                                                                  // [0xad5f080] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.OnRep_OnTempoChanged
-	// void OnRep_OnTempoChanged();                                                                                             // [0xab81260] Final|Native|Protected 
+	// void OnRep_OnTempoChanged();                                                                                             // [0xad5ecdc] Final|Native|Protected 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.OnRep_OnModeChanged
-	// void OnRep_OnModeChanged();                                                                                              // [0xab81230] Final|Native|Protected 
+	// void OnRep_OnModeChanged();                                                                                              // [0xad5ecac] Final|Native|Protected 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.OnRep_OnKeyChanged
-	// void OnRep_OnKeyChanged();                                                                                               // [0xab81200] Final|Native|Protected 
+	// void OnRep_OnKeyChanged();                                                                                               // [0xad5ec7c] Final|Native|Protected 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.GetCurrentTempo
-	// int32_t GetCurrentTempo();                                                                                               // [0x9b7f608] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentTempo();                                                                                               // [0x9ca6c90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.GetCurrentKeyMode
-	// EMusicKeyMode GetCurrentKeyMode();                                                                                       // [0xab80994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMusicKeyMode GetCurrentKeyMode();                                                                                       // [0xad5e0f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.GetCurrentKey
-	// EMusicKey GetCurrentKey();                                                                                               // [0x8109240] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMusicKey GetCurrentKey();                                                                                               // [0x80a279c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMusicPlayspaceRuntime.SparksMusicPlayspaceAudioState.GetCurrentAudioState
-	// void GetCurrentAudioState(EMusicKey& OutKey, EMusicKeyMode& OutKeyMode, int32_t& OutTempo);                              // [0xab8085c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetCurrentAudioState(EMusicKey& OutKey, EMusicKeyMode& OutKeyMode, int32_t& OutTempo);                              // [0xad5dfc0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/SparksMusicPlayspaceRuntime.SparksPlayspaceInteractor

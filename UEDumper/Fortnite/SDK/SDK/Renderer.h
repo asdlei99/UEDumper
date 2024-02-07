@@ -25,23 +25,23 @@ enum class ESparseVolumeTexturePreviewAttribute : uint8_t
 };
 
 /// Class /Script/Renderer.SparseVolumeTextureViewerComponent
-/// Size: 0x0040 (0x000570 - 0x0005B0)
+/// Size: 0x0040 (0x000500 - 0x000540)
 class USparseVolumeTextureViewerComponent : public UPrimitiveComponent
 { 
 public:
-	class USparseVolumeTexture*                        SparseVolumeTexturePreview;                                 // 0x0570   (0x0008)  
-	bool                                               bAnimate : 1;                                               // 0x0578:0 (0x0001)  
-	bool                                               bReversePlayback : 1;                                       // 0x0578:1 (0x0001)  
-	bool                                               bBlockingStreamingRequests : 1;                             // 0x0578:2 (0x0001)  
-	unsigned char                                      UnknownData00_4[0x3];                                       // 0x0579   (0x0003)  MISSED
-	float                                              AnimationFrame;                                             // 0x057C   (0x0004)  
-	float                                              FrameRate;                                                  // 0x0580   (0x0004)  
-	float                                              AnimationTime;                                              // 0x0584   (0x0004)  
-	SDK_UNDEFINED(1,14945) /* TEnumAsByte<ESparseVolumeTexturePreviewAttribute> */ __um(PreviewAttribute);         // 0x0588   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0589   (0x0003)  MISSED
-	int32_t                                            MipLevel;                                                   // 0x058C   (0x0004)  
-	float                                              Extinction;                                                 // 0x0590   (0x0004)  
-	unsigned char                                      UnknownData02_6[0x1C];                                      // 0x0594   (0x001C)  MISSED
+	class USparseVolumeTexture*                        SparseVolumeTexturePreview;                                 // 0x0500   (0x0008)  
+	bool                                               bAnimate : 1;                                               // 0x0508:0 (0x0001)  
+	bool                                               bReversePlayback : 1;                                       // 0x0508:1 (0x0001)  
+	bool                                               bBlockingStreamingRequests : 1;                             // 0x0508:2 (0x0001)  
+	unsigned char                                      UnknownData00_4[0x3];                                       // 0x0509   (0x0003)  MISSED
+	float                                              AnimationFrame;                                             // 0x050C   (0x0004)  
+	float                                              FrameRate;                                                  // 0x0510   (0x0004)  
+	float                                              AnimationTime;                                              // 0x0514   (0x0004)  
+	SDK_UNDEFINED(1,15040) /* TEnumAsByte<ESparseVolumeTexturePreviewAttribute> */ __um(PreviewAttribute);         // 0x0518   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0519   (0x0003)  MISSED
+	int32_t                                            MipLevel;                                                   // 0x051C   (0x0004)  
+	float                                              Extinction;                                                 // 0x0520   (0x0004)  
+	unsigned char                                      UnknownData02_6[0x1C];                                      // 0x0524   (0x001C)  MISSED
 };
 
 /// Class /Script/Renderer.SparseVolumeTextureViewer

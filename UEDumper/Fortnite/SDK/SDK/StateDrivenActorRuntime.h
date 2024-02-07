@@ -46,51 +46,51 @@ public:
 	TArray<FGameplayTagQuery>                          VariableTagQueries;                                         // 0x00D8   (0x0010)  
 	TArray<float>                                      VariableFloats;                                             // 0x00E8   (0x0010)  
 	unsigned char                                      UnknownData01_5[0xE8];                                      // 0x00F8   (0x00E8)  MISSED
-	SDK_UNDEFINED(8,13989) /* TWeakObjectPtr<UStaticMeshComponent*> */ __um(MeshComponentPtr);                     // 0x01E0   (0x0008)  
-	SDK_UNDEFINED(8,13990) /* TWeakObjectPtr<USphereComponent*> */ __um(OverlapComponentPtr);                      // 0x01E8   (0x0008)  
+	SDK_UNDEFINED(8,14101) /* TWeakObjectPtr<UStaticMeshComponent*> */ __um(MeshComponentPtr);                     // 0x01E0   (0x0008)  
+	SDK_UNDEFINED(8,14102) /* TWeakObjectPtr<USphereComponent*> */ __um(OverlapComponentPtr);                      // 0x01E8   (0x0008)  
 	FFortItemEntry                                     SlottedItemEntry;                                           // 0x01F0   (0x01A8)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0398   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.TriggerCustomEvent
-	// void TriggerCustomEvent(FGameplayTag& EventTag);                                                                      // [0x87ad11c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TriggerCustomEvent(FGameplayTag& EventTag);                                                                      // [0x875a8ec] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.SetCurrentState
-	// void SetCurrentState(FStateDrivenState& InCurrentState);                                                              // [0xb41ade8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetCurrentState(FStateDrivenState& InCurrentState);                                                              // [0xb653378] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.PopSlottedItem
-	// void PopSlottedItem();                                                                                                // [0x32e4b44] Final|Native|Public|BlueprintCallable 
+	// void PopSlottedItem();                                                                                                // [0x307d48c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.PlayBurstGameplayCue
-	// void PlayBurstGameplayCue(FGameplayTag GameplayCueTag);                                                               // [0xb41acb8] Final|Native|Public|BlueprintCallable|Const 
+	// void PlayBurstGameplayCue(FGameplayTag GameplayCueTag);                                                               // [0xb653288] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.OnSetupOverlapEventSettings
-	// void OnSetupOverlapEventSettings();                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnSetupOverlapEventSettings();                                                                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.OnSetupInteractionEventSettings
-	// void OnSetupInteractionEventSettings();                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnSetupInteractionEventSettings();                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.OnSetupDamageEventSettings
-	// void OnSetupDamageEventSettings();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnSetupDamageEventSettings();                                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.OnResetCollisionSettings
-	// void OnResetCollisionSettings();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnResetCollisionSettings();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.OnMulticastStateTreeEvent
-	// void OnMulticastStateTreeEvent(FGameplayTag TransitionTag, FGameplayCueTag BurstGameplayCueTag);                      // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnMulticastStateTreeEvent(FGameplayTag TransitionTag, FGameplayCueTag BurstGameplayCueTag);                      // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.OnHandleStateTreeEvent
-	// void OnHandleStateTreeEvent(FGameplayTag TransitionTag, FGameplayCueTag BurstGameplayCueTag);                         // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnHandleStateTreeEvent(FGameplayTag TransitionTag, FGameplayCueTag BurstGameplayCueTag);                         // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.HandleInteraction
-	// void HandleInteraction(class ABuildingActor* SelfActor, class AFortPawn* InteractingPawn);                            // [0x69b67c4] Final|Native|Private 
+	// void HandleInteraction(class ABuildingActor* SelfActor, class AFortPawn* InteractingPawn);                            // [0x6714940] Final|Native|Private 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.HandleEndOverlap
-	// void HandleEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x8109954] Final|Native|Private 
+	// void HandleEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x80a31a8] Final|Native|Private 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.HandleDied
-	// void HandleDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0x867d2f0] Final|Native|Private|HasDefaults 
+	// void HandleDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0x86210f0] Final|Native|Private|HasDefaults 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.HandleDamaged
-	// void HandleDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0x867d2f0] Final|Native|Private|HasDefaults 
+	// void HandleDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0x86210f0] Final|Native|Private|HasDefaults 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.HandleBeginOverlap
-	// void HandleBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x81094d8] Final|Native|Private|HasOutParms 
+	// void HandleBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x80a2ab8] Final|Native|Private|HasOutParms 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.GetSlottedItemEntry
-	// FFortItemEntry GetSlottedItemEntry();                                                                                 // [0xb41ac9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFortItemEntry GetSlottedItemEntry();                                                                                 // [0xb65326c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.GetSlottedItemDisplayName
-	// FText GetSlottedItemDisplayName();                                                                                    // [0xb41ac58] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetSlottedItemDisplayName();                                                                                    // [0xb653228] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.GetInteractionString
-	// FText GetInteractionString(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted); // [0xb41ab74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetInteractionString(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted); // [0xb6530b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/StateDrivenActorRuntime.FortActorComponent_StateDriven.GetFailedInteractionString
-	// FText GetFailedInteractionString(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted); // [0xb41aa90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetFailedInteractionString(class AFortPawn* InteractingPawn, TEnumAsByte<EInteractionBeingAttempted> InteractionBeingAttempted); // [0xb652f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/StateDrivenActorRuntime.StateDrivenStateTransitions
@@ -106,16 +106,16 @@ struct FStateDrivenStateTransitions
 /// Size: 0x00E0 (0x000000 - 0x0000E0)
 struct FStateDrivenState
 { 
-	SDK_UNDEFINED(16,13991) /* FString */              __um(DevNotes);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14103) /* FString */              __um(DevNotes);                                             // 0x0000   (0x0010)  
 	class UStaticMesh*                                 StaticMesh;                                                 // 0x0010   (0x0008)  
 	bool                                               bApplyMeshTransform;                                        // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0019   (0x0007)  MISSED
 	FTransform                                         StaticMeshTransform;                                        // 0x0020   (0x0060)  
-	SDK_UNDEFINED(16,13992) /* TArray<TWeakObjectPtr<UMaterialInstance*>> */ __um(MaterialInstances);              // 0x0080   (0x0010)  
+	SDK_UNDEFINED(16,14104) /* TArray<TWeakObjectPtr<UMaterialInstance*>> */ __um(MaterialInstances);              // 0x0080   (0x0010)  
 	FGameplayCueTag                                    LoopingGameplayCueTag;                                      // 0x0090   (0x0004)  
 	float                                              OverlapRadius;                                              // 0x0094   (0x0004)  
-	SDK_UNDEFINED(24,13993) /* FText */                __um(InteractionStringOverride);                            // 0x0098   (0x0018)  
-	SDK_UNDEFINED(24,13994) /* FText */                __um(InteractionFailedStringOverride);                      // 0x00B0   (0x0018)  
+	SDK_UNDEFINED(24,14105) /* FText */                __um(InteractionStringOverride);                            // 0x0098   (0x0018)  
+	SDK_UNDEFINED(24,14106) /* FText */                __um(InteractionFailedStringOverride);                      // 0x00B0   (0x0018)  
 	TArray<FStateDrivenStateTransitions>               Transitions;                                                // 0x00C8   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00D8   (0x0008)  MISSED
 };
@@ -152,7 +152,7 @@ struct FStateDrivenEvent_BeginOverlap : FStateDrivenEvent
 struct FStateDrivenEvent_InteractionBase : FStateDrivenEvent
 { 
 	FStateDrivenTagQuery                               PlayerTagQuery;                                             // 0x0028   (0x0018)  
-	SDK_UNDEFINED(24,13995) /* FText */                __um(InteractionStringOverride);                            // 0x0040   (0x0018)  
+	SDK_UNDEFINED(24,14107) /* FText */                __um(InteractionStringOverride);                            // 0x0040   (0x0018)  
 };
 
 /// Struct /Script/StateDrivenActorRuntime.StateDrivenEvent_Conversation
@@ -160,7 +160,7 @@ struct FStateDrivenEvent_InteractionBase : FStateDrivenEvent
 struct FStateDrivenEvent_Conversation : FStateDrivenEvent_InteractionBase
 { 
 	FGameplayTag                                       ConversationEntryTag;                                       // 0x0058   (0x0004)  
-	SDK_UNDEFINED(8,13996) /* TWeakObjectPtr<UFortNonPlayerConversationParticipantComponent*> */ __um(ConversationComponentPtr); // 0x005C   (0x0008)  
+	SDK_UNDEFINED(8,14108) /* TWeakObjectPtr<UFortNonPlayerConversationParticipantComponent*> */ __um(ConversationComponentPtr); // 0x005C   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0064   (0x0004)  MISSED
 };
 
@@ -186,7 +186,7 @@ struct FStateDrivenEvent_DamageInstance : FStateDrivenEvent
 /// Size: 0x0028 (0x000058 - 0x000080)
 struct FStateDrivenEvent_DepositResource : FStateDrivenEvent_InteractionBase
 { 
-	SDK_UNDEFINED(32,13997) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(DepositItem);                          // 0x0058   (0x0020)  
+	SDK_UNDEFINED(32,14109) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(DepositItem);                          // 0x0058   (0x0020)  
 	int32_t                                            DepositAmount;                                              // 0x0078   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x007C   (0x0004)  MISSED
 };

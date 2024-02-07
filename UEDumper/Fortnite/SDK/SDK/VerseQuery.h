@@ -50,8 +50,8 @@ public:
 class UCoreEntityLevelPlayspaceAssociationComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(8,9252) /* TWeakObjectPtr<AGameplayVolume*> */ __um(Volume);                                     // 0x00A0   (0x0008)  
-	SDK_UNDEFINED(8,9253) /* TWeakObjectPtr<APlayspace*> */ __um(Playspace);                                       // 0x00A8   (0x0008)  
+	SDK_UNDEFINED(8,9274) /* TWeakObjectPtr<AGameplayVolume*> */ __um(Volume);                                     // 0x00A0   (0x0008)  
+	SDK_UNDEFINED(8,9275) /* TWeakObjectPtr<APlayspace*> */ __um(Playspace);                                       // 0x00A8   (0x0008)  
 };
 
 /// Class /Script/VerseQuery.CoreEntityRegistry

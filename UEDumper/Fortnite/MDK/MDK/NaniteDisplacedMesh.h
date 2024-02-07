@@ -19,14 +19,14 @@ public:
 };
 
 /// Class /Script/NaniteDisplacedMesh.NaniteDisplacedMeshComponent
-/// Size: 0x0010 (0x000630 - 0x000640)
+/// Size: 0x0010 (0x0005C0 - 0x0005D0)
 class UNaniteDisplacedMeshComponent : public UStaticMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1600;
+	static inline constexpr uint64_t __MDKClassSize = 1488;
 
 public:
-	CMember(class UNaniteDisplacedMesh*)               DisplacedMesh                                               OFFSET(get<T>, {0x630, 8, 0, 0})
+	CMember(class UNaniteDisplacedMesh*)               DisplacedMesh                                               OFFSET(get<T>, {0x5C0, 8, 0, 0})
 };
 
 /// Struct /Script/NaniteDisplacedMesh.NaniteDisplacedMeshDisplacementMap

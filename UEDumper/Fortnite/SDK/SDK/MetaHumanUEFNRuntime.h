@@ -41,10 +41,10 @@ enum class EMetaHumanBodyType : uint8_t
 class UGameFeatureAction_MetaHuman : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(80,14608) /* TMap<EMetaHumanBodyType, TWeakObjectPtr<UClass*>> */ __um(BodyPostAnimBPs);         // 0x0028   (0x0050)  
-	SDK_UNDEFINED(32,14609) /* TWeakObjectPtr<UClass*> */ __um(Face_AnimBP);                                       // 0x0078   (0x0020)  
-	SDK_UNDEFINED(32,14610) /* TWeakObjectPtr<UClass*> */ __um(Face_PostAnimBP);                                   // 0x0098   (0x0020)  
-	SDK_UNDEFINED(32,14611) /* TWeakObjectPtr<UClass*> */ __um(RigidBodyAnimBP);                                   // 0x00B8   (0x0020)  
+	SDK_UNDEFINED(80,14737) /* TMap<EMetaHumanBodyType, TWeakObjectPtr<UClass*>> */ __um(BodyPostAnimBPs);         // 0x0028   (0x0050)  
+	SDK_UNDEFINED(32,14738) /* TWeakObjectPtr<UClass*> */ __um(Face_AnimBP);                                       // 0x0078   (0x0020)  
+	SDK_UNDEFINED(32,14739) /* TWeakObjectPtr<UClass*> */ __um(Face_PostAnimBP);                                   // 0x0098   (0x0020)  
+	SDK_UNDEFINED(32,14740) /* TWeakObjectPtr<UClass*> */ __um(RigidBodyAnimBP);                                   // 0x00B8   (0x0020)  
 };
 
 /// Class /Script/MetaHumanUEFNRuntime.MetaHumanComponent

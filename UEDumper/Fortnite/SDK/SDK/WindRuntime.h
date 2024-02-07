@@ -16,10 +16,12 @@
 /// dependency: NetCore
 
 /// Class /Script/WindRuntime.FortPlayerWindTunnelAnimInstance
-/// Size: 0x0000 (0x001620 - 0x001620)
+/// Size: 0x0010 (0x001620 - 0x001630)
 class UFortPlayerWindTunnelAnimInstance : public UFortPlayerAnimInstanceProxy
 { 
 public:
+	bool                                               bApplyWindSlideAdditive : 1;                                // 0x1620:0 (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x1621   (0x000F)  MISSED
 };
 
 /// Class /Script/WindRuntime.WindCheatManager
@@ -35,9 +37,9 @@ public:
 
 	/// Functions
 	// Function /Script/WindRuntime.WindCheatManager.ReleaseBalloonOnSelf
-	// void ReleaseBalloonOnSelf(int32_t NumBalloons);                                                                       // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
+	// void ReleaseBalloonOnSelf(int32_t NumBalloons);                                                                       // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
 	// Function /Script/WindRuntime.WindCheatManager.InflateBalloonOnSelf
-	// void InflateBalloonOnSelf(int32_t NumBalloons);                                                                       // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
+	// void InflateBalloonOnSelf(int32_t NumBalloons);                                                                       // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
 };
 
 /// Class /Script/WindRuntime.WindField
@@ -56,19 +58,19 @@ public:
 
 	/// Functions
 	// Function /Script/WindRuntime.WindField.SetActive
-	// void SetActive(bool bInIsActive);                                                                                     // [0xb47a3fc] Final|Native|Public|BlueprintCallable 
+	// void SetActive(bool bInIsActive);                                                                                     // [0xb6b53a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.RemoveIgnoredActor
-	// void RemoveIgnoredActor(class AActor* Actor);                                                                         // [0xb47a2f8] Final|Native|Public|BlueprintCallable 
+	// void RemoveIgnoredActor(class AActor* Actor);                                                                         // [0xb6b525c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.RemoveCollider
-	// void RemoveCollider(class UShapeComponent* ShapeComponent);                                                           // [0xb47a1b0] Final|Native|Public|BlueprintCallable 
+	// void RemoveCollider(class UShapeComponent* ShapeComponent);                                                           // [0xb6b50d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.OnEndOverlap
-	// void OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xb47a05c] Native|Protected     
+	// void OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xb6b4e84] Native|Protected     
 	// Function /Script/WindRuntime.WindField.OnBeginOverlap
-	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb479e24] Native|Protected|HasOutParms 
+	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb6b4b08] Native|Protected|HasOutParms 
 	// Function /Script/WindRuntime.WindField.AddIgnoredActor
-	// void AddIgnoredActor(class AActor* Actor);                                                                            // [0xb479808] Final|Native|Public|BlueprintCallable 
+	// void AddIgnoredActor(class AActor* Actor);                                                                            // [0xb6b44ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.AddCollider
-	// void AddCollider(class UShapeComponent* ShapeComponent);                                                              // [0xb479788] Final|Native|Public|BlueprintCallable 
+	// void AddCollider(class UShapeComponent* ShapeComponent);                                                              // [0xb6b43ec] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/WindRuntime.LinearWindField
@@ -141,7 +143,7 @@ struct FWindSplineTagBasedForceModifiers
 /// Size: 0x001C (0x00000C - 0x000028)
 struct FWindSplineTargetDatum : FFastArraySerializerItem
 { 
-	SDK_UNDEFINED(8,15354) /* TWeakObjectPtr<AActor*> */ __um(Target);                                             // 0x000C   (0x0008)  
+	SDK_UNDEFINED(8,15449) /* TWeakObjectPtr<AActor*> */ __um(Target);                                             // 0x000C   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x14];                                      // 0x0014   (0x0014)  MISSED
 };
 
@@ -195,87 +197,87 @@ struct FWindSplineMeshData
 };
 
 /// Class /Script/WindRuntime.WindSplineComponent
-/// Size: 0x0DF0 (0x000670 - 0x001460)
+/// Size: 0x0DF0 (0x000600 - 0x0013F0)
 class UWindSplineComponent : public USplineComponent
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x20];                                      // 0x0670   (0x0020)  MISSED
-	FScalableFloat                                     DisableSafeZonePhaseIndex;                                  // 0x0690   (0x0028)  
-	class UStaticMesh*                                 StaticMesh;                                                 // 0x06B8   (0x0008)  
-	class UStaticMesh*                                 StartStaticMesh;                                            // 0x06C0   (0x0008)  
-	class UStaticMesh*                                 EndStaticMesh;                                              // 0x06C8   (0x0008)  
-	SDK_UNDEFINED(1,15355) /* TEnumAsByte<ESplineMeshAxis> */ __um(MeshForwardAxis);                               // 0x06D0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x06D1   (0x0007)  MISSED
-	FScalableFloat                                     MeshRollVariance;                                           // 0x06D8   (0x0028)  
-	FName                                              ActiveSectionStartMaterialParamName;                        // 0x0700   (0x0004)  
-	FName                                              ActiveSectionEndMaterialParamName;                          // 0x0704   (0x0004)  
-	FScalableFloat                                     TargetingRefreshRate;                                       // 0x0708   (0x0028)  
-	FScalableFloat                                     TargetingRadius;                                            // 0x0730   (0x0028)  
-	SDK_UNDEFINED(16,15356) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(TargetObjectTypes);                   // 0x0758   (0x0010)  
-	FGameplayTagQuery                                  TargetTagQuery;                                             // 0x0768   (0x0048)  
-	FGameplayTagQuery                                  BlockageTagQuery;                                           // 0x07B0   (0x0048)  
-	FScalableFloat                                     BlockageSubdivisions;                                       // 0x07F8   (0x0028)  
-	TArray<FWindSplineTargetEffects>                   TargetEffects;                                              // 0x0820   (0x0010)  
-	SDK_UNDEFINED(80,15357) /* TMap<EFortPhysicsObjectType, FScalableFloat> */ __um(ObjectTypeToMaxTargetCount);   // 0x0830   (0x0050)  
-	FScalableFloat                                     MaxTargetCountReachedExpelDuration;                         // 0x0880   (0x0028)  
-	FScalableFloat                                     SkydivingLandingAngle;                                      // 0x08A8   (0x0028)  
-	FScalableFloat                                     RampUpSpeed;                                                // 0x08D0   (0x0028)  
-	FScalableFloat                                     RampDownSpeed;                                              // 0x08F8   (0x0028)  
-	FScalableFloat                                     ForwardForceFallOffStartDistance;                           // 0x0920   (0x0028)  
-	FScalableFloat                                     ForwardForceMagnitude;                                      // 0x0948   (0x0028)  
-	FScalableFloat                                     ReverseForceMagnitude;                                      // 0x0970   (0x0028)  
-	FScalableFloat                                     ForwardForceDistanceFallOffExponent;                        // 0x0998   (0x0028)  
-	FScalableFloat                                     InwardForceInnerRadius;                                     // 0x09C0   (0x0028)  
-	FScalableFloat                                     InwardForceOuterRadiusAcceleration;                         // 0x09E8   (0x0028)  
-	FScalableFloat                                     InwardForceInnerRadiusDeceleration;                         // 0x0A10   (0x0028)  
-	FScalableFloat                                     InwardForceInnerRadiusSpeedThreshold;                       // 0x0A38   (0x0028)  
-	FScalableFloat                                     InwardForceOuterRadiusSpeedThreshold;                       // 0x0A60   (0x0028)  
-	FScalableFloat                                     InwardForceMaxReductionFromSteering;                        // 0x0A88   (0x0028)  
-	FScalableFloat                                     InwardForceMaxMultiplierWhenSteering;                       // 0x0AB0   (0x0028)  
-	FScalableFloat                                     InwardForceMaxSteerAngle;                                   // 0x0AD8   (0x0028)  
-	FScalableFloat                                     InwardForceLowVelocityThreshold;                            // 0x0B00   (0x0028)  
-	FScalableFloat                                     InwardForceLowVelocityMinValue;                             // 0x0B28   (0x0028)  
-	FScalableFloat                                     InwardForceSteeringReduceAccelerationPower;                 // 0x0B50   (0x0028)  
-	FScalableFloat                                     InwardForceSteeringReduceDecelerationPower;                 // 0x0B78   (0x0028)  
-	SDK_UNDEFINED(80,15358) /* TMap<EFortPhysicsSimSize, FWindSplineForceModifiers> */ __um(SizeForceModifiers);   // 0x0BA0   (0x0050)  
-	SDK_UNDEFINED(80,15359) /* TMap<EFortPhysicsObjectType, FWindSplineForceModifiers> */ __um(ObjectTypeForceModifiers); // 0x0BF0   (0x0050)  
-	TArray<FWindSplineTagBasedForceModifiers>          QueryBasedForceModifiers;                                   // 0x0C40   (0x0010)  
-	FGameplayTagQuery                                  PawnSkydivingTimeLimitQuery;                                // 0x0C50   (0x0048)  
-	FScalableFloat                                     PawnSkydivingTimeLimit;                                     // 0x0C98   (0x0028)  
-	FScalableFloat                                     PawnSkydivingMinDistanceAboveGround;                        // 0x0CC0   (0x0028)  
-	FScalableFloat                                     AutoWakeUpPhysicsObjects;                                   // 0x0CE8   (0x0028)  
-	FScalableFloat                                     FieldMagnitudeBase;                                         // 0x0D10   (0x0028)  
-	FScalableFloat                                     FieldMinMagnitudeAfterFalloff;                              // 0x0D38   (0x0028)  
-	FScalableFloat                                     FieldMaxMagnitudeAfterFalloff;                              // 0x0D60   (0x0028)  
-	class UClass*                                      PlayerWindAnimationLayer;                                   // 0x0D88   (0x0008)  
-	SDK_UNDEFINED(16,15360) /* FMulticastInlineDelegate */ __um(OnWindSplineDisabled);                             // 0x0D90   (0x0010)  
-	SDK_UNDEFINED(16,15361) /* FMulticastInlineDelegate */ __um(OnWindSplineEnabled);                              // 0x0DA0   (0x0010)  
-	FWindSplineTargetData                              TargetData;                                                 // 0x0DB0   (0x01B8)  
-	FWindSplineBlockageArray                           Blockages;                                                  // 0x0F68   (0x0118)  
-	class UFieldSystemComponent*                       FieldSystemComponent;                                       // 0x1080   (0x0008)  
-	class UUniformVector*                              UniformVector;                                              // 0x1088   (0x0008)  
-	class UBoxFalloff*                                 BoxFalloff;                                                 // 0x1090   (0x0008)  
-	class UOperatorField*                              BoxOperatorField;                                           // 0x1098   (0x0008)  
-	TArray<FWindSplineMeshData>                        MeshDataArray;                                              // 0x10A0   (0x0010)  
-	TArray<class UFXSystemComponent*>                  FXComponents;                                               // 0x10B0   (0x0010)  
-	unsigned char                                      UnknownData02_6[0x3A0];                                     // 0x10C0   (0x03A0)  MISSED
+	unsigned char                                      UnknownData00_2[0x20];                                      // 0x0600   (0x0020)  MISSED
+	FScalableFloat                                     DisableSafeZonePhaseIndex;                                  // 0x0620   (0x0028)  
+	class UStaticMesh*                                 StaticMesh;                                                 // 0x0648   (0x0008)  
+	class UStaticMesh*                                 StartStaticMesh;                                            // 0x0650   (0x0008)  
+	class UStaticMesh*                                 EndStaticMesh;                                              // 0x0658   (0x0008)  
+	SDK_UNDEFINED(1,15450) /* TEnumAsByte<ESplineMeshAxis> */ __um(MeshForwardAxis);                               // 0x0660   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0661   (0x0007)  MISSED
+	FScalableFloat                                     MeshRollVariance;                                           // 0x0668   (0x0028)  
+	FName                                              ActiveSectionStartMaterialParamName;                        // 0x0690   (0x0004)  
+	FName                                              ActiveSectionEndMaterialParamName;                          // 0x0694   (0x0004)  
+	FScalableFloat                                     TargetingRefreshRate;                                       // 0x0698   (0x0028)  
+	FScalableFloat                                     TargetingRadius;                                            // 0x06C0   (0x0028)  
+	SDK_UNDEFINED(16,15451) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(TargetObjectTypes);                   // 0x06E8   (0x0010)  
+	FGameplayTagQuery                                  TargetTagQuery;                                             // 0x06F8   (0x0048)  
+	FGameplayTagQuery                                  BlockageTagQuery;                                           // 0x0740   (0x0048)  
+	FScalableFloat                                     BlockageSubdivisions;                                       // 0x0788   (0x0028)  
+	TArray<FWindSplineTargetEffects>                   TargetEffects;                                              // 0x07B0   (0x0010)  
+	SDK_UNDEFINED(80,15452) /* TMap<EFortPhysicsObjectType, FScalableFloat> */ __um(ObjectTypeToMaxTargetCount);   // 0x07C0   (0x0050)  
+	FScalableFloat                                     MaxTargetCountReachedExpelDuration;                         // 0x0810   (0x0028)  
+	FScalableFloat                                     SkydivingLandingAngle;                                      // 0x0838   (0x0028)  
+	FScalableFloat                                     RampUpSpeed;                                                // 0x0860   (0x0028)  
+	FScalableFloat                                     RampDownSpeed;                                              // 0x0888   (0x0028)  
+	FScalableFloat                                     ForwardForceFallOffStartDistance;                           // 0x08B0   (0x0028)  
+	FScalableFloat                                     ForwardForceMagnitude;                                      // 0x08D8   (0x0028)  
+	FScalableFloat                                     ReverseForceMagnitude;                                      // 0x0900   (0x0028)  
+	FScalableFloat                                     ForwardForceDistanceFallOffExponent;                        // 0x0928   (0x0028)  
+	FScalableFloat                                     InwardForceInnerRadius;                                     // 0x0950   (0x0028)  
+	FScalableFloat                                     InwardForceOuterRadiusAcceleration;                         // 0x0978   (0x0028)  
+	FScalableFloat                                     InwardForceInnerRadiusDeceleration;                         // 0x09A0   (0x0028)  
+	FScalableFloat                                     InwardForceInnerRadiusSpeedThreshold;                       // 0x09C8   (0x0028)  
+	FScalableFloat                                     InwardForceOuterRadiusSpeedThreshold;                       // 0x09F0   (0x0028)  
+	FScalableFloat                                     InwardForceMaxReductionFromSteering;                        // 0x0A18   (0x0028)  
+	FScalableFloat                                     InwardForceMaxMultiplierWhenSteering;                       // 0x0A40   (0x0028)  
+	FScalableFloat                                     InwardForceMaxSteerAngle;                                   // 0x0A68   (0x0028)  
+	FScalableFloat                                     InwardForceLowVelocityThreshold;                            // 0x0A90   (0x0028)  
+	FScalableFloat                                     InwardForceLowVelocityMinValue;                             // 0x0AB8   (0x0028)  
+	FScalableFloat                                     InwardForceSteeringReduceAccelerationPower;                 // 0x0AE0   (0x0028)  
+	FScalableFloat                                     InwardForceSteeringReduceDecelerationPower;                 // 0x0B08   (0x0028)  
+	SDK_UNDEFINED(80,15453) /* TMap<EFortPhysicsSimSize, FWindSplineForceModifiers> */ __um(SizeForceModifiers);   // 0x0B30   (0x0050)  
+	SDK_UNDEFINED(80,15454) /* TMap<EFortPhysicsObjectType, FWindSplineForceModifiers> */ __um(ObjectTypeForceModifiers); // 0x0B80   (0x0050)  
+	TArray<FWindSplineTagBasedForceModifiers>          QueryBasedForceModifiers;                                   // 0x0BD0   (0x0010)  
+	FGameplayTagQuery                                  PawnSkydivingTimeLimitQuery;                                // 0x0BE0   (0x0048)  
+	FScalableFloat                                     PawnSkydivingTimeLimit;                                     // 0x0C28   (0x0028)  
+	FScalableFloat                                     PawnSkydivingMinDistanceAboveGround;                        // 0x0C50   (0x0028)  
+	FScalableFloat                                     AutoWakeUpPhysicsObjects;                                   // 0x0C78   (0x0028)  
+	FScalableFloat                                     FieldMagnitudeBase;                                         // 0x0CA0   (0x0028)  
+	FScalableFloat                                     FieldMinMagnitudeAfterFalloff;                              // 0x0CC8   (0x0028)  
+	FScalableFloat                                     FieldMaxMagnitudeAfterFalloff;                              // 0x0CF0   (0x0028)  
+	class UClass*                                      PlayerWindAnimationLayer;                                   // 0x0D18   (0x0008)  
+	SDK_UNDEFINED(16,15455) /* FMulticastInlineDelegate */ __um(OnWindSplineDisabled);                             // 0x0D20   (0x0010)  
+	SDK_UNDEFINED(16,15456) /* FMulticastInlineDelegate */ __um(OnWindSplineEnabled);                              // 0x0D30   (0x0010)  
+	FWindSplineTargetData                              TargetData;                                                 // 0x0D40   (0x01B8)  
+	FWindSplineBlockageArray                           Blockages;                                                  // 0x0EF8   (0x0118)  
+	class UFieldSystemComponent*                       FieldSystemComponent;                                       // 0x1010   (0x0008)  
+	class UUniformVector*                              UniformVector;                                              // 0x1018   (0x0008)  
+	class UBoxFalloff*                                 BoxFalloff;                                                 // 0x1020   (0x0008)  
+	class UOperatorField*                              BoxOperatorField;                                           // 0x1028   (0x0008)  
+	TArray<FWindSplineMeshData>                        MeshDataArray;                                              // 0x1030   (0x0010)  
+	TArray<class UFXSystemComponent*>                  FXComponents;                                               // 0x1040   (0x0010)  
+	unsigned char                                      UnknownData02_6[0x3A0];                                     // 0x1050   (0x03A0)  MISSED
 
 
 	/// Functions
 	// Function /Script/WindRuntime.WindSplineComponent.OnRep_TargetData
-	// void OnRep_TargetData();                                                                                              // [0xb47a19c] Final|Native|Protected 
+	// void OnRep_TargetData();                                                                                              // [0xb6b50c0] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.OnRep_Blockages
-	// void OnRep_Blockages();                                                                                               // [0xb47a19c] Final|Native|Protected 
+	// void OnRep_Blockages();                                                                                               // [0xb6b50c0] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.GetWindDataAtLocation
-	// void GetWindDataAtLocation(FVector& InTargetLocation, FVector& OutDirection, float& OutAttenuation);                  // [0xb479c7c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void GetWindDataAtLocation(FVector& InTargetLocation, FVector& OutDirection, float& OutAttenuation);                  // [0xb6b4960] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.GetTargetingRadius
-	// float GetTargetingRadius();                                                                                           // [0xb479c48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTargetingRadius();                                                                                           // [0xb6b492c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.GetClosestActiveLocations
-	// void GetClosestActiveLocations(FVector& InTargetLocation, bool& bIsClosestPointActive, FVector& ClosestPointOnSpline, TArray<FVector>& ClosestActiveLocations); // [0xb479a3c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void GetClosestActiveLocations(FVector& InTargetLocation, bool& bIsClosestPointActive, FVector& ClosestPointOnSpline, TArray<FVector>& ClosestActiveLocations); // [0xb6b4720] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.Enable
-	// void Enable();                                                                                                        // [0xb4799e8] Final|Native|Protected 
+	// void Enable();                                                                                                        // [0xb6b46cc] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.Disable
-	// void Disable();                                                                                                       // [0xb4799d4] Final|Native|Protected 
+	// void Disable();                                                                                                       // [0xb6b46b8] Final|Native|Protected 
 };
 
 /// Struct /Script/WindRuntime.RootMotionSource_ConstantWindForce

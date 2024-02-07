@@ -36,14 +36,14 @@ public:
 	float                                              CardWidthOverride;                                          // 0x1538   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x153C   (0x0004)  MISSED
 	class UCommonTextBlock*                            Text_Name;                                                  // 0x1540   (0x0008)  
-	SDK_UNDEFINED(16,11545) /* TArray<FString> */      __um(LootEntryItemTypesToExclude);                          // 0x1548   (0x0010)  
-	SDK_UNDEFINED(16,11546) /* TArray<FString> */      __um(LootEntryItemTypesToCombine);                          // 0x1558   (0x0010)  
+	SDK_UNDEFINED(16,11578) /* TArray<FString> */      __um(LootEntryItemTypesToExclude);                          // 0x1548   (0x0010)  
+	SDK_UNDEFINED(16,11579) /* TArray<FString> */      __um(LootEntryItemTypesToCombine);                          // 0x1558   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x1568   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryEntryBase.UpdateItemList
-	// void UpdateItemList(TArray<UFortCosmeticItemCard*>& ItemCards);                                                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void UpdateItemList(TArray<UFortCosmeticItemCard*>& ItemCards);                                                       // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/AnnualRefundTokenUI.FortPurchaseHistoryEntry
@@ -55,11 +55,11 @@ public:
 
 	/// Functions
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryEntry.SetupItemCard
-	// void SetupItemCard(class UFortCosmeticItemCard* ItemCard, class UFortItem* Item);                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void SetupItemCard(class UFortCosmeticItemCard* ItemCard, class UFortItem* Item);                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryEntry.SetPurchaseText
-	// void SetPurchaseText(FText& PurchaseDateText, FText& RefundDateText, bool bHasBeenRefunded, EFortPurchaseHistoryRefundType RefundType); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetPurchaseText(FText& PurchaseDateText, FText& RefundDateText, bool bHasBeenRefunded, EFortPurchaseHistoryRefundType RefundType); // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryEntry.OnSetHistory
-	// void OnSetHistory(bool bHasBeenRefunded, bool bIsCancelPurchaseEligible, bool bIsTokenlessRefund, bool bPlayerHasTokens, bool bNonRefundable, bool IsPartOfABundle, bool IsNextRefundable, int32_t IndexInBundle, int32_t NumPurchasesInBundle); // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnSetHistory(bool bHasBeenRefunded, bool bIsCancelPurchaseEligible, bool bIsTokenlessRefund, bool bPlayerHasTokens, bool bNonRefundable, bool IsPartOfABundle, bool IsNextRefundable, int32_t IndexInBundle, int32_t NumPurchasesInBundle); // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/AnnualRefundTokenUI.FortPurchaseHistoryBundleEntry
@@ -71,7 +71,7 @@ public:
 
 	/// Functions
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryBundleEntry.SetExpandButtonText
-	// void SetExpandButtonText(int32_t NumPurchases);                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void SetExpandButtonText(int32_t NumPurchases);                                                                       // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/AnnualRefundTokenUI.FortPurchaseHistoryListView
@@ -102,11 +102,11 @@ public:
 
 	/// Functions
 	// Function /Script/AnnualRefundTokenUI.FortAnnualRefundTicket.OnUpdatePendingState
-	// void OnUpdatePendingState(bool bIsPending);                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnUpdatePendingState(bool bIsPending);                                                                           // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortAnnualRefundTicket.OnUpdateAvailableState
-	// void OnUpdateAvailableState(bool bIsAvailable);                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnUpdateAvailableState(bool bIsAvailable);                                                                       // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortAnnualRefundTicket.OnPlayLockingAnimation
-	// void OnPlayLockingAnimation();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnPlayLockingAnimation();                                                                                        // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/AnnualRefundTokenUI.FortAnnualRefundTokenData
@@ -114,7 +114,7 @@ public:
 class UFortAnnualRefundTokenData : public UFortGameFeatureData
 { 
 public:
-	SDK_UNDEFINED(32,11547) /* TWeakObjectPtr<UClass*> */ __um(PurchaseHistoryScreenClass);                        // 0x0530   (0x0020)  
+	SDK_UNDEFINED(32,11580) /* TWeakObjectPtr<UClass*> */ __um(PurchaseHistoryScreenClass);                        // 0x0530   (0x0020)  
 };
 
 /// Class /Script/AnnualRefundTokenUI.FortPurchaseHistoryScreen
@@ -124,8 +124,8 @@ class UFortPurchaseHistoryScreen : public UFortActivatablePanel
 public:
 	FDataTableRowHandle                                BackAction;                                                 // 0x0570   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x0580   (0x0018)  MISSED
-	SDK_UNDEFINED(32,11548) /* TWeakObjectPtr<UClass*> */ __um(RefundConfirmationClass);                           // 0x0598   (0x0020)  
-	SDK_UNDEFINED(32,11549) /* TWeakObjectPtr<UClass*> */ __um(DirectPurchaseInfoModalClass);                      // 0x05B8   (0x0020)  
+	SDK_UNDEFINED(32,11581) /* TWeakObjectPtr<UClass*> */ __um(RefundConfirmationClass);                           // 0x0598   (0x0020)  
+	SDK_UNDEFINED(32,11582) /* TWeakObjectPtr<UClass*> */ __um(DirectPurchaseInfoModalClass);                      // 0x05B8   (0x0020)  
 	class UCommonAnimatedSwitcher*                     Switcher_MainContent;                                       // 0x05D8   (0x0008)  
 	class UFortPurchaseHistoryTreeView*                TreeView_Purchases;                                         // 0x05E0   (0x0008)  
 	class UCommonButtonBase*                           Button_CloseTouch;                                          // 0x05E8   (0x0008)  
@@ -149,15 +149,15 @@ public:
 
 	/// Functions
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryScreen.OnPopulateView
-	// void OnPopulateView();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPopulateView();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryScreen.OnNoPurchasesAvailable
-	// void OnNoPurchasesAvailable();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnNoPurchasesAvailable();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryScreen.OnEndRefundSubmission
-	// void OnEndRefundSubmission();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnEndRefundSubmission();                                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryScreen.OnBeginRefundSubmission
-	// void OnBeginRefundSubmission();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnBeginRefundSubmission();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortPurchaseHistoryScreen.BP_IsShowingPurchases
-	// bool BP_IsShowingPurchases();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// bool BP_IsShowingPurchases();                                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/AnnualRefundTokenUI.FortRefundConfirmation
@@ -179,9 +179,9 @@ public:
 
 	/// Functions
 	// Function /Script/AnnualRefundTokenUI.FortRefundConfirmation.BP_UpdateRefundType
-	// void BP_UpdateRefundType(EFortPurchaseHistoryRefundType RefundType, bool bBundledRefund);                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_UpdateRefundType(EFortPurchaseHistoryRefundType RefundType, bool bBundledRefund);                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/AnnualRefundTokenUI.FortRefundConfirmation.BP_UpdateItemsList
-	// void BP_UpdateItemsList(TArray<UFortItemDefinition*>& SelectedItemDefs, int32_t TotalMtxPaid);                        // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_UpdateItemsList(TArray<UFortItemDefinition*>& SelectedItemDefs, int32_t TotalMtxPaid);                        // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/AnnualRefundTokenUI.PurchaseHistoryBundleEntry
@@ -189,6 +189,6 @@ public:
 struct FPurchaseHistoryBundleEntry
 { 
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0000   (0x0010)  MISSED
-	SDK_UNDEFINED(16,11550) /* FString */              __um(ID);                                                   // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,11583) /* FString */              __um(ID);                                                   // 0x0010   (0x0010)  
 };
 

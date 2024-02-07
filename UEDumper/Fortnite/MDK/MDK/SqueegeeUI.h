@@ -14,75 +14,75 @@
 /// dependency: UMG
 
 /// Class /Script/SqueegeeUI.FortContentGateDetailsWidget
-/// Size: 0x0008 (0x000300 - 0x000308)
+/// Size: 0x0008 (0x000308 - 0x000310)
 class UFortContentGateDetailsWidget : public UFortSqueegeeWidget
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 776;
+	static inline constexpr uint64_t __MDKClassSize = 784;
 
 public:
-	CMember(class UFortContentGateRatingWidget*)       ContentGateRatingWidget                                     OFFSET(get<T>, {0x300, 8, 0, 0})
+	CMember(class UFortContentGateRatingWidget*)       ContentGateRatingWidget                                     OFFSET(get<T>, {0x308, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentGateDetailsWidget.OnShowGamemodeDescription
-	// void OnShowGamemodeDescription(FString ActivityTitle);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnShowGamemodeDescription(FString ActivityTitle);                                                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentGateRatingWidget
-/// Size: 0x0000 (0x000300 - 0x000300)
+/// Size: 0x0000 (0x000308 - 0x000308)
 class UFortContentGateRatingWidget : public UFortSqueegeeWidget
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 768;
+	static inline constexpr uint64_t __MDKClassSize = 776;
 
 public:
 
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentGateRatingWidget.OnStyleUpdated
-	// void OnStyleUpdated(FSqueegeeStyleParams& StyleParams);                                                                  // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnStyleUpdated(FSqueegeeStyleParams& StyleParams);                                                                  // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentGateRatingWidget.OnLabelUpdated
-	// void OnLabelUpdated(bool bLabelEnabled, FText& LabelText, FText& LabelNumber);                                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnLabelUpdated(bool bLabelEnabled, FText& LabelText, FText& LabelNumber);                                           // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementDetails
-/// Size: 0x0038 (0x000300 - 0x000338)
+/// Size: 0x0038 (0x000308 - 0x000340)
 class UFortContentManagementDetails : public UFortSqueegeeWidget
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 824;
+	static inline constexpr uint64_t __MDKClassSize = 832;
 
 public:
-	CMember(class UFortContentGateRatingWidget*)       ContentGateRatingWidget                                     OFFSET(get<T>, {0x300, 8, 0, 0})
+	CMember(class UFortContentGateRatingWidget*)       ContentGateRatingWidget                                     OFFSET(get<T>, {0x308, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnShowWeaponData
-	// void OnShowWeaponData();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnShowWeaponData();                                                                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnShowActivityData
-	// void OnShowActivityData(FText& ActivityDisplayName, FText& ActivityDescription, FString CreatorName, FText& LinkCode, bool IsCreative, FDateTime& UnlockTime, class UFortGameActivity* GameActivity); // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnShowActivityData(FText& ActivityDisplayName, FText& ActivityDescription, FString CreatorName, FText& LinkCode, bool IsCreative, FDateTime& UnlockTime, class UFortGameActivity* GameActivity); // [0x2047e54] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementDetails.OnPreviewImageChanged
-	// void OnPreviewImageChanged(bool bIsLoading, class UTexture* Texture);                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPreviewImageChanged(bool bIsLoading, class UTexture* Texture);                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementButton
-/// Size: 0x0020 (0x001490 - 0x0014B0)
+/// Size: 0x0030 (0x001490 - 0x0014C0)
 class UFortContentManagementButton : public UCommonButtonBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5296;
+	static inline constexpr uint64_t __MDKClassSize = 5312;
 
 public:
 
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnShowGameActivity
-	// void OnShowGameActivity(class UFortGameActivity* NewGameActivity);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnShowGameActivity(class UFortGameActivity* NewGameActivity);                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnShowError
-	// void OnShowError(FText& ErrorText);                                                                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnShowError(FText& ErrorText);                                                                                      // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementButton.OnChangeManagementState
-	// void OnChangeManagementState(EFortContentManagementState NewState);                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnChangeManagementState(EFortContentManagementState NewState);                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementLabelWidget
@@ -97,7 +97,7 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementLabelWidget.OnSetLabel
-	// void OnSetLabel(FText& InText);                                                                                          // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnSetLabel(FText& InText);                                                                                          // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementEntryLabelObject
@@ -132,28 +132,28 @@ public:
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementList
-/// Size: 0x0080 (0x000300 - 0x000380)
+/// Size: 0x0080 (0x000308 - 0x000388)
 class UFortContentManagementList : public UFortSqueegeeWidget
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 896;
+	static inline constexpr uint64_t __MDKClassSize = 904;
 
 public:
-	SMember(FText)                                     WeaponLabelText                                             OFFSET(getStruct<T>, {0x300, 24, 0, 0})
-	SMember(FText)                                     GameModeLabelText                                           OFFSET(getStruct<T>, {0x318, 24, 0, 0})
-	CMember(class UFortContentManagementListView*)     ContentManagementListView                                   OFFSET(get<T>, {0x330, 8, 0, 0})
-	CMember(TArray<class UFortGameActivity*>)          CachedActivities                                            OFFSET(get<T>, {0x350, 16, 0, 0})
+	SMember(FText)                                     WeaponLabelText                                             OFFSET(getStruct<T>, {0x308, 24, 0, 0})
+	SMember(FText)                                     GameModeLabelText                                           OFFSET(getStruct<T>, {0x320, 24, 0, 0})
+	CMember(class UFortContentManagementListView*)     ContentManagementListView                                   OFFSET(get<T>, {0x338, 8, 0, 0})
+	CMember(TArray<class UFortGameActivity*>)          CachedActivities                                            OFFSET(get<T>, {0x358, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementList.ResetUnlockList
-	// void ResetUnlockList();                                                                                                  // [0xb4177c4] Final|Native|Protected|BlueprintCallable 
+	// void ResetUnlockList();                                                                                                  // [0xb64fafc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SqueegeeUI.FortContentManagementList.RequestNextUnlockPage
-	// void RequestNextUnlockPage();                                                                                            // [0xb4177b0] Final|Native|Protected|BlueprintCallable 
+	// void RequestNextUnlockPage();                                                                                            // [0xb64fae8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SqueegeeUI.FortContentManagementList.OnNextUnlockPageRequestCompleted
-	// void OnNextUnlockPageRequestCompleted(bool bSuccess);                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnNextUnlockPageRequestCompleted(bool bSuccess);                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SqueegeeUI.FortContentManagementList.CanRequestNextUnlockPage
-	// bool CanRequestNextUnlockPage();                                                                                         // [0xb417778] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanRequestNextUnlockPage();                                                                                         // [0xb64fab0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SqueegeeUI.FortContentManagementScreen
@@ -171,7 +171,7 @@ public:
 
 	/// Functions
 	// Function /Script/SqueegeeUI.FortContentManagementScreen.ExitScreen
-	// void ExitScreen();                                                                                                       // [0xb41779c] Final|Native|Protected|BlueprintCallable 
+	// void ExitScreen();                                                                                                       // [0xb64fad4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/SqueegeeUI.SqueegeeUIGameFeatureAction

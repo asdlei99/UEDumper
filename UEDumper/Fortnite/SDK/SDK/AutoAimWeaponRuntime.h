@@ -23,13 +23,13 @@ public:
 
 	/// Functions
 	// Function /Script/AutoAimWeaponRuntime.AutoAimWeaponKismetLibrary.GetAutoAimWeaponPawnComponent
-	// class UAutoAimWeaponPawnComponent* GetAutoAimWeaponPawnComponent(class AFortPawn* SourcePawn);                        // [0x2e51744] Final|Native|Static|Public|BlueprintCallable 
+	// class UAutoAimWeaponPawnComponent* GetAutoAimWeaponPawnComponent(class AFortPawn* SourcePawn);                        // [0x2f73a8c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AutoAimWeaponRuntime.AutoAimWeaponKismetLibrary.FindBestAutoAimTarget
-	// void FindBestAutoAimTarget(class AFortPawn*& OutTargetPawn, float& OutReticleDistance, class AFortPlayerPawn* SourcePawn, float ReticleSize, float Range); // [0xb24d9d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void FindBestAutoAimTarget(class AFortPawn*& OutTargetPawn, float& OutReticleDistance, class AFortPlayerPawn* SourcePawn, float ReticleSize, float Range); // [0xb479858] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AutoAimWeaponRuntime.AutoAimWeaponKismetLibrary.DoesAutoAimWeaponReticleIntersectTarget
-	// bool DoesAutoAimWeaponReticleIntersectTarget(float& OutReticleDistance, class AFortPawn* SourcePawn, class AFortPawn* TargetPawn, float ReticleSize); // [0xb24d7a8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool DoesAutoAimWeaponReticleIntersectTarget(float& OutReticleDistance, class AFortPawn* SourcePawn, class AFortPawn* TargetPawn, float ReticleSize); // [0xb479630] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AutoAimWeaponRuntime.AutoAimWeaponKismetLibrary.DoesAutoAimWeaponHaveLineOfSight
-	// bool DoesAutoAimWeaponHaveLineOfSight(class AFortPawn* SourcePawn, class AFortPawn* TargetPawn);                      // [0xb24d6d4] Final|Native|Static|Public|BlueprintCallable 
+	// bool DoesAutoAimWeaponHaveLineOfSight(class AFortPawn* SourcePawn, class AFortPawn* TargetPawn);                      // [0xb4794e0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AutoAimWeaponRuntime.AutoAimWeaponBoneSegmentData
@@ -55,18 +55,18 @@ public:
 	float                                              ProgressTowardNextLockOn;                                   // 0x0170   (0x0004)  
 	int32_t                                            CurrentLockOnCount;                                         // 0x0174   (0x0004)  
 	float                                              TargetToReticleDistanceNormalized;                          // 0x0178   (0x0004)  
-	SDK_UNDEFINED(8,11684) /* TWeakObjectPtr<AFortPawn*> */ __um(LockOnTarget);                                    // 0x017C   (0x0008)  
+	SDK_UNDEFINED(8,11721) /* TWeakObjectPtr<AFortPawn*> */ __um(LockOnTarget);                                    // 0x017C   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0184   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/AutoAimWeaponRuntime.AutoAimWeaponPawnComponent.GetTargetToReticleDistanceNormalized
-	// float GetTargetToReticleDistanceNormalized();                                                                         // [0x62b2060] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTargetToReticleDistanceNormalized();                                                                         // [0x5fc36d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AutoAimWeaponRuntime.AutoAimWeaponPawnComponent.GetLockOnTargetLocation
-	// bool GetLockOnTargetLocation(FVector& OutLockTargetLocation);                                                         // [0x2e4ff9c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool GetLockOnTargetLocation(FVector& OutLockTargetLocation);                                                         // [0x2ea7f40] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/AutoAimWeaponRuntime.AutoAimWeaponPawnComponent.GetLockOnProgress
-	// float GetLockOnProgress();                                                                                            // [0x2d8164c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLockOnProgress();                                                                                            // [0x2e05f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AutoAimWeaponRuntime.AutoAimWeaponPawnComponent.GetCurrentLockOnCount
-	// int32_t GetCurrentLockOnCount();                                                                                      // [0xb24dda8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentLockOnCount();                                                                                      // [0xb479c8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

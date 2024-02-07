@@ -15,13 +15,13 @@
 class USlateFXSubsystem : public UEngineSubsystem
 { 
 public:
-	SDK_UNDEFINED(80,15162) /* TMap<ESlatePostRT, USlateRHIPostBufferProcessor*> */ __um(SlatePostBufferProcessors); // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,15257) /* TMap<ESlatePostRT, USlateRHIPostBufferProcessor*> */ __um(SlatePostBufferProcessors); // 0x0030   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x0080   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/SlateRHIRenderer.SlateFXSubsystem.GetSlatePostProcessor
-	// class USlateRHIPostBufferProcessor* GetSlatePostProcessor(ESlatePostRT InPostBufferBit);                              // [0x605d3bc] Final|Native|Public|BlueprintCallable 
+	// class USlateRHIPostBufferProcessor* GetSlatePostProcessor(ESlatePostRT InPostBufferBit);                              // [0x5d63fa0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SlateRHIRenderer.SlateRHIPostBufferProcessor
@@ -45,14 +45,14 @@ public:
 class USlateRHIRendererSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(80,15163) /* TMap<ESlatePostRT, FSlatePostSettings> */ __um(SlatePostSettings);                  // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,15258) /* TMap<ESlatePostRT, FSlatePostSettings> */ __um(SlatePostSettings);                  // 0x0030   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/SlateRHIRenderer.SlateRHIRendererSettings.GetSlatePostSetting
-	// FSlatePostSettings GetSlatePostSetting(ESlatePostRT InPostBufferBit);                                                 // [0x605d44c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FSlatePostSettings GetSlatePostSetting(ESlatePostRT InPostBufferBit);                                                 // [0x5d64070] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SlateRHIRenderer.SlateRHIRendererSettings.GetMutableSlatePostSetting
-	// FSlatePostSettings GetMutableSlatePostSetting(ESlatePostRT InPostBufferBit);                                          // [0x605d314] Final|Native|Public|BlueprintCallable 
+	// FSlatePostSettings GetMutableSlatePostSetting(ESlatePostRT InPostBufferBit);                                          // [0x5d63eb8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/SlateRHIRenderer.SlatePostSettings
@@ -62,7 +62,7 @@ struct FSlatePostSettings
 	bool                                               bEnabled : 1;                                               // 0x0000:0 (0x0001)  
 	unsigned char                                      UnknownData00_4[0x7];                                       // 0x0001   (0x0007)  MISSED
 	class UClass*                                      PostProcessorClass;                                         // 0x0008   (0x0008)  
-	SDK_UNDEFINED(16,15164) /* FString */              __um(PathToSlatePostRT);                                    // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,15259) /* FString */              __um(PathToSlatePostRT);                                    // 0x0010   (0x0010)  
 	class UTextureRenderTarget2D*                      CachedSlatePostRT;                                          // 0x0020   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0028   (0x0008)  MISSED
 };

@@ -59,8 +59,8 @@ enum class ESongSortDirection : uint8_t
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FSparksSongQuicksilverTrack
 { 
-	SDK_UNDEFINED(16,13586) /* FString */              __um(Part);                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13587) /* TArray<FString> */      __um(Channels);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13641) /* FString */              __um(Part);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13642) /* TArray<FString> */      __um(Channels);                                             // 0x0010   (0x0010)  
 	TArray<float>                                      Vols;                                                       // 0x0020   (0x0010)  
 };
 
@@ -68,8 +68,8 @@ struct FSparksSongQuicksilverTrack
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FSparksSongQuicksilverInfo
 { 
-	SDK_UNDEFINED(16,13588) /* FString */              __um(SongID);                                               // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13589) /* FString */              __um(PreviewID);                                            // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13643) /* FString */              __um(SongID);                                               // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13644) /* FString */              __um(PreviewID);                                            // 0x0010   (0x0010)  
 	TArray<FSparksSongQuicksilverTrack>                Tracks;                                                     // 0x0020   (0x0010)  
 };
 
@@ -91,11 +91,11 @@ struct FSparksSongIntensityInfo
 /// Size: 0x0168 (0x000000 - 0x000168)
 struct FSparksSongCatalogEntry
 { 
-	SDK_UNDEFINED(16,13590) /* FString */              __um(SongUID);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13591) /* FString */              __um(ShortName);                                            // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,13592) /* FString */              __um(Title);                                                // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,13593) /* FString */              __um(Artist);                                               // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,13594) /* FString */              __um(Album);                                                // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,13645) /* FString */              __um(SongUID);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13646) /* FString */              __um(ShortName);                                            // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13647) /* FString */              __um(Title);                                                // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,13648) /* FString */              __um(Artist);                                               // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,13649) /* FString */              __um(Album);                                                // 0x0040   (0x0010)  
 	TArray<ESparksGenre>                               Genre;                                                      // 0x0050   (0x0010)  
 	int32_t                                            duration;                                                   // 0x0060   (0x0004)  
 	int32_t                                            ReleaseYear;                                                // 0x0064   (0x0004)  
@@ -109,12 +109,12 @@ struct FSparksSongCatalogEntry
 	ESparksInstrumentType                              StartingInstrumentDrums;                                    // 0x007A   (0x0001)  
 	ESparksInstrumentType                              StartingInstrumentVocals;                                   // 0x007B   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x007C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13595) /* FString */              __um(JamLinkCode);                                          // 0x0080   (0x0010)  
-	SDK_UNDEFINED(16,13596) /* FString */              __um(McpTemplateId);                                        // 0x0090   (0x0010)  
-	SDK_UNDEFINED(16,13597) /* FString */              __um(AlbumArtUrl);                                          // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,13598) /* FString */              __um(MidiUrl);                                              // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,13650) /* FString */              __um(JamLinkCode);                                          // 0x0080   (0x0010)  
+	SDK_UNDEFINED(16,13651) /* FString */              __um(McpTemplateId);                                        // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,13652) /* FString */              __um(AlbumArtUrl);                                          // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,13653) /* FString */              __um(MidiUrl);                                              // 0x00B0   (0x0010)  
 	TArray<char>                                       MidiData;                                                   // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,13599) /* FString */              __um(LipSyncUrl);                                           // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,13654) /* FString */              __um(LipSyncUrl);                                           // 0x00D0   (0x0010)  
 	TArray<char>                                       LipSyncData;                                                // 0x00E0   (0x0010)  
 	FGameplayTagContainer                              GameplayTagContainer;                                       // 0x00F0   (0x0020)  
 	FSparksSongQuicksilverInfo                         QuicksilverInfo;                                            // 0x0110   (0x0030)  
@@ -131,22 +131,22 @@ public:
 	bool                                               bFromHotfix;                                                // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0xF];                                       // 0x0029   (0x000F)  MISSED
 	FSparksSongCatalogEntry                            DataEntry;                                                  // 0x0038   (0x0168)  
-	SDK_UNDEFINED(16,13600) /* FMulticastInlineDelegate */ __um(OnSongConsolidated);                               // 0x01A0   (0x0010)  
+	SDK_UNDEFINED(16,13655) /* FMulticastInlineDelegate */ __um(OnSongConsolidated);                               // 0x01A0   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/SparksCMS.CatalogData.IsFromHotfix
-	// bool IsFromHotfix();                                                                                                  // [0x3b24640] Final|Native|Public|BlueprintCallable 
+	// bool IsFromHotfix();                                                                                                  // [0x38b7f1c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.CatalogData.IsEnabledForPilgrim
-	// bool IsEnabledForPilgrim();                                                                                           // [0xaa40d6c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabledForPilgrim();                                                                                           // [0xac18ef4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.IsEnabledForJam
-	// bool IsEnabledForJam();                                                                                               // [0xaa40d48] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabledForJam();                                                                                               // [0xac18ed0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.IsEnabled
-	// bool IsEnabled();                                                                                                     // [0xaa40d24] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                     // [0xac18eac] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.ConsolidateData
-	// void ConsolidateData();                                                                                               // [0xaa3f0cc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ConsolidateData();                                                                                               // [0xac17108] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.CatalogData.ClearConsolidatedData
-	// void ClearConsolidatedData();                                                                                         // [0xaa3f0b8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ClearConsolidatedData();                                                                                         // [0xac170f4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SparksCMS.SparksSongCatalog
@@ -155,26 +155,26 @@ class USparksSongCatalog : public UGameInstanceSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x58];                                      // 0x0030   (0x0058)  MISSED
-	SDK_UNDEFINED(80,13601) /* TMap<FString, UCatalogData*> */ __um(Catalog);                                      // 0x0088   (0x0050)  
+	SDK_UNDEFINED(80,13656) /* TMap<FString, UCatalogData*> */ __um(Catalog);                                      // 0x0088   (0x0050)  
 	TArray<class UCatalogData*>                        CatalogObjectPool;                                          // 0x00D8   (0x0010)  
 	class UUpdateManager*                              HFManager;                                                  // 0x00E8   (0x0008)  
-	SDK_UNDEFINED(16,13602) /* FMulticastInlineDelegate */ __um(OnSongCatalogRetrieved);                           // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,13657) /* FMulticastInlineDelegate */ __um(OnSongCatalogRetrieved);                           // 0x00F0   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/SparksCMS.SparksSongCatalog.SetCMSSuffix
-	// void SetCMSSuffix(FString InCMSSuffix);                                                                               // [0xaa40e08] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetCMSSuffix(FString InCMSSuffix);                                                                               // [0xac19028] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.RequestSongCatalog
-	// void RequestSongCatalog();                                                                                            // [0xaa40df4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RequestSongCatalog();                                                                                            // [0xac19014] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.OnCalendarActiveEventsChanged
-	// void OnCalendarActiveEventsChanged(TArray<FString>& ActiveEventFlags);                                                // [0x361708c] Final|Native|Protected|HasOutParms 
+	// void OnCalendarActiveEventsChanged(TArray<FString>& ActiveEventFlags);                                                // [0xac18f7c] Final|Native|Protected|HasOutParms 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongList
-	// void GetSongList(ESongSortMethod SortMethod, ESongSortDirection SortDirection, FGameplayTagQuery& TagQuery, TArray<UCatalogData*>& OutResults); // [0xaa40588] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetSongList(ESongSortMethod SortMethod, ESongSortDirection SortDirection, FGameplayTagQuery& TagQuery, TArray<UCatalogData*>& OutResults); // [0xac1868c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByUID
-	// class UCatalogData* GetSongByUID(FString InUID);                                                                      // [0xaa3fed8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByUID(FString InUID);                                                                      // [0xac17f98] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByTemplateID
-	// class UCatalogData* GetSongByTemplateID(FString InTemplateId);                                                        // [0xaa3f790] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByTemplateID(FString InTemplateId);                                                        // [0xac17810] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByShortName
-	// class UCatalogData* GetSongByShortName(FString InShortName);                                                          // [0xaa3f0e0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByShortName(FString InShortName);                                                          // [0xac1711c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 

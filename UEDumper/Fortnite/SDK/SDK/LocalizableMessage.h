@@ -13,7 +13,7 @@
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FLocalizableMessageParameterEntry
 { 
-	SDK_UNDEFINED(16,2587) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2580) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
 	FInstancedStruct                                   Value;                                                      // 0x0010   (0x0010)  
 };
 
@@ -21,8 +21,8 @@ struct FLocalizableMessageParameterEntry
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FLocalizableMessage
 { 
-	SDK_UNDEFINED(16,2588) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2589) /* FString */               __um(DefaultText);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2581) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2582) /* FString */               __um(DefaultText);                                          // 0x0010   (0x0010)  
 	TArray<FLocalizableMessageParameterEntry>          Substitutions;                                              // 0x0020   (0x0010)  
 };
 
@@ -44,7 +44,7 @@ struct FLocalizableMessageParameterFloat
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FLocalizableMessageParameterString
 { 
-	SDK_UNDEFINED(16,2590) /* FString */               __um(Value);                                                // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2583) /* FString */               __um(Value);                                                // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/LocalizableMessage.LocalizableMessageParameterMessage

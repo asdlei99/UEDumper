@@ -15,7 +15,7 @@
 class UVerseAgent : public UVersePersistentVarWeakMapKey
 { 
 public:
-	SDK_UNDEFINED(8,9254) /* TWeakObjectPtr<AController*> */ __um(Controller);                                     // 0x0028   (0x0008)  
+	SDK_UNDEFINED(8,9276) /* TWeakObjectPtr<AController*> */ __um(Controller);                                     // 0x0028   (0x0008)  
 };
 
 /// Class /Script/VerseSimulation.VerseTeam
@@ -30,7 +30,7 @@ public:
 class UVerseSimulationSubsystem : public UWorldSubsystem
 { 
 public:
-	SDK_UNDEFINED(80,9255) /* TMap<TWeakObjectPtr<AController*>, UVerseAgent*> */ __um(TrackedAgents);             // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,9277) /* TMap<TWeakObjectPtr<AController*>, UVerseAgent*> */ __um(TrackedAgents);             // 0x0030   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0080   (0x0010)  MISSED
 };
 

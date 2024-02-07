@@ -23,26 +23,26 @@
 /// dependency: WorldConditions
 
 /// Class /Script/JunoAIRuntime.JunoAIBotController
-/// Size: 0x01F0 (0x001750 - 0x001940)
+/// Size: 0x0200 (0x001750 - 0x001950)
 class AJunoAIBotController : public AFortAthenaAIBotController
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 6464;
+	static inline constexpr uint64_t __MDKClassSize = 6480;
 
 public:
 	CMember(class UJunoAIInventoryComponent*)          JunoAIInventoryComponent                                    OFFSET(get<T>, {0x1750, 8, 0, 0})
 	CMember(TArray<FItemAndCount>)                     DefaultItemsToAdd                                           OFFSET(get<T>, {0x1758, 16, 0, 0})
-	DMember(bool)                                      bRequiresPersistentInventory                                OFFSET(get<bool>, {0x17E0, 1, 0, 0})
-	SMember(FScalableFloat)                            EnableDurabilityOnInventory                                 OFFSET(getStruct<T>, {0x17E8, 40, 0, 0})
-	SMember(FScalableFloat)                            UseRoleCheckForDurability                                   OFFSET(getStruct<T>, {0x1810, 40, 0, 0})
-	SMember(FGameplayTagQuery)                         RequiredRoleForDurability                                   OFFSET(getStruct<T>, {0x1838, 72, 0, 0})
-	DMember(bool)                                      bUseFocusedActorEyeLocationForFocalPoint                    OFFSET(get<bool>, {0x1880, 1, 0, 0})
-	DMember(bool)                                      bUseValidItemsPerType                                       OFFSET(get<bool>, {0x1881, 1, 0, 0})
-	SMember(FScalableFloat)                            EffectivenessMultiplierForWeaponSelectionOnPickedOrAddedItem OFFSET(getStruct<T>, {0x1888, 40, 0, 0})
-	CMember(TMap<FGameplayTag, UDataTable*>)           ValidItemsTablePerType                                      OFFSET(get<T>, {0x18B0, 80, 0, 0})
-	CMember(class UFortItemDefinition*)                AutomaticallyEquippedWeaponOnDurabilityBreak                OFFSET(get<T>, {0x1900, 8, 0, 0})
-	SMember(FScalableFloat)                            DurabilityMultiplier                                        OFFSET(getStruct<T>, {0x1908, 40, 0, 0})
-	SMember(FGameplayTag)                              TagToApplyWhenAddingFallbackItemForDurabilityBreak          OFFSET(getStruct<T>, {0x1930, 4, 0, 0})
+	DMember(bool)                                      bRequiresPersistentInventory                                OFFSET(get<bool>, {0x17F0, 1, 0, 0})
+	SMember(FScalableFloat)                            EnableDurabilityOnInventory                                 OFFSET(getStruct<T>, {0x17F8, 40, 0, 0})
+	SMember(FScalableFloat)                            UseRoleCheckForDurability                                   OFFSET(getStruct<T>, {0x1820, 40, 0, 0})
+	SMember(FGameplayTagQuery)                         RequiredRoleForDurability                                   OFFSET(getStruct<T>, {0x1848, 72, 0, 0})
+	DMember(bool)                                      bUseFocusedActorEyeLocationForFocalPoint                    OFFSET(get<bool>, {0x1890, 1, 0, 0})
+	DMember(bool)                                      bUseValidItemsPerType                                       OFFSET(get<bool>, {0x1891, 1, 0, 0})
+	SMember(FScalableFloat)                            EffectivenessMultiplierForWeaponSelectionOnPickedOrAddedItem OFFSET(getStruct<T>, {0x1898, 40, 0, 0})
+	CMember(TMap<FGameplayTag, UDataTable*>)           ValidItemsTablePerType                                      OFFSET(get<T>, {0x18C0, 80, 0, 0})
+	CMember(class UFortItemDefinition*)                AutomaticallyEquippedWeaponOnDurabilityBreak                OFFSET(get<T>, {0x1910, 8, 0, 0})
+	SMember(FScalableFloat)                            DurabilityMultiplier                                        OFFSET(getStruct<T>, {0x1918, 40, 0, 0})
+	SMember(FGameplayTag)                              TagToApplyWhenAddingFallbackItemForDurabilityBreak          OFFSET(getStruct<T>, {0x1940, 4, 0, 0})
 };
 
 /// Class /Script/JunoAIRuntime.JunoAIBotEvaluator_FallbackBehavior
@@ -154,13 +154,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetSoftRemovedReasons
-	// FGameplayTagContainer GetSoftRemovedReasons();                                                                           // [0xbbd9514] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetSoftRemovedReasons();                                                                           // [0xbee5970] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetAIRoleDisplayText
-	// FText GetAIRoleDisplayText();                                                                                            // [0xbbd94e8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetAIRoleDisplayText();                                                                                            // [0xbee593c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetAIRole
-	// FGameplayTag GetAIRole();                                                                                                // [0x62b1e44] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetAIRole();                                                                                                // [0x5fc34bc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.ConvertAIRoleToDisplayText
-	// FText ConvertAIRoleToDisplayText(FGameplayTag& AIRole);                                                                  // [0xbbd9408] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FText ConvertAIRoleToDisplayText(FGameplayTag& AIRole);                                                                  // [0xbee585c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoAIRuntime.JunoAIInventoryComponent
@@ -194,15 +194,15 @@ public:
 };
 
 /// Class /Script/JunoAIRuntime.JunoBTTask_FTUENPC
-/// Size: 0x0008 (0x0000C8 - 0x0000D0)
+/// Size: 0x0008 (0x0000E8 - 0x0000F0)
 class UJunoBTTask_FTUENPC : public UFortBTTask_ExecuteGameplayAbility
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 208;
+	static inline constexpr uint64_t __MDKClassSize = 240;
 
 public:
-	SMember(FName)                                     FTUENPCStatusKeyName                                        OFFSET(getStruct<T>, {0xC8, 4, 0, 0})
-	SMember(FName)                                     ShouldTeleportKeyName                                       OFFSET(getStruct<T>, {0xCC, 4, 0, 0})
+	SMember(FName)                                     FTUENPCStatusKeyName                                        OFFSET(getStruct<T>, {0xE8, 4, 0, 0})
+	SMember(FName)                                     ShouldTeleportKeyName                                       OFFSET(getStruct<T>, {0xEC, 4, 0, 0})
 };
 
 /// Class /Script/JunoAIRuntime.JunoBTTask_ReactToVerb
@@ -248,29 +248,30 @@ public:
 };
 
 /// Class /Script/JunoAIRuntime.JunoCampAIManagementComponent
-/// Size: 0x06E8 (0x0000A0 - 0x000788)
+/// Size: 0x0728 (0x0000A0 - 0x0007C8)
 class UJunoCampAIManagementComponent : public UJunoCampComponentBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1928;
+	static inline constexpr uint64_t __MDKClassSize = 1992;
 
 public:
-	CMember(TArray<TScriptInterface<Class>>)           PointProviders                                              OFFSET(get<T>, {0x1A0, 16, 0, 0})
-	CMember(class UFortAthenaLivingWorldEncounterInstance*) Encounter                                              OFFSET(get<T>, {0x1B0, 8, 0, 0})
-	SMember(FJunoAICampManagementVisitorsConfigurationDigested) VisitorsConfigurationDigested                      OFFSET(getStruct<T>, {0x1B8, 24, 0, 0})
-	SMember(FJunoAICampManagementVisitorsPickingConfiguration) CachedVisitorsPickingConfigurationAtCurrentAwesomenessLevel OFFSET(getStruct<T>, {0x1D0, 32, 0, 0})
-	SMember(FJunoAICampManagementLWMConfiguration)     LWMConfiguration                                            OFFSET(getStruct<T>, {0x1F8, 928, 0, 0})
-	SMember(FJunoAICampManagementVisitorsConfiguration) VisitorsConfiguration                                      OFFSET(getStruct<T>, {0x598, 48, 0, 0})
-	CMember(TMap<int32_t, FDataTableRowHandle>)        AwesomenessLevelToVisitorsPickingConfiguration              OFFSET(get<T>, {0x5C8, 80, 0, 0})
-	CMember(TMap<int32_t, UDataTable*>)                AwesomenessLevelToNPCRewards                                OFFSET(get<T>, {0x618, 80, 0, 0})
-	SMember(FScalableFloat)                            InitialIngameHoursDelayBeforeFirstRewardRoll                OFFSET(getStruct<T>, {0x668, 40, 0, 0})
-	SMember(FScalableFloat)                            MinimumIngameHoursBetweenRewardRolls                        OFFSET(getStruct<T>, {0x690, 40, 0, 0})
-	SMember(FScalableFloat)                            PassiveResourceGatheringTime                                OFFSET(getStruct<T>, {0x6B8, 40, 0, 0})
-	SMember(FScalableFloat)                            MultiplierForSimulatedGeneration                            OFFSET(getStruct<T>, {0x6E0, 40, 0, 0})
-	SMember(FScalableFloat)                            MaximumAllocableSOPerAIForSimulation                        OFFSET(getStruct<T>, {0x708, 40, 0, 0})
-	SMember(FNavAgentSelector)                         SupportedAgents                                             OFFSET(getStruct<T>, {0x730, 4, 0, 0})
-	SMember(FScalableFloat)                            ShouldCheckWCForRemoteRecruitment                           OFFSET(getStruct<T>, {0x738, 40, 0, 0})
-	SMember(FScalableFloat)                            RequireNPCToBeInVisitorsListForRemoteRecruitment            OFFSET(getStruct<T>, {0x760, 40, 0, 0})
+	CMember(TArray<TScriptInterface<Class>>)           PointProviders                                              OFFSET(get<T>, {0x1B8, 16, 0, 0})
+	CMember(class UFortAthenaLivingWorldEncounterInstance*) Encounter                                              OFFSET(get<T>, {0x1C8, 8, 0, 0})
+	SMember(FJunoAICampManagementVisitorsConfigurationDigested) VisitorsConfigurationDigested                      OFFSET(getStruct<T>, {0x1D0, 24, 0, 0})
+	SMember(FJunoAICampManagementVisitorsPickingConfiguration) CachedVisitorsPickingConfigurationAtCurrentAwesomenessLevel OFFSET(getStruct<T>, {0x1E8, 32, 0, 0})
+	SMember(FJunoAICampManagementLWMConfiguration)     LWMConfiguration                                            OFFSET(getStruct<T>, {0x210, 928, 0, 0})
+	SMember(FJunoAICampManagementVisitorsConfiguration) VisitorsConfiguration                                      OFFSET(getStruct<T>, {0x5B0, 48, 0, 0})
+	CMember(TMap<int32_t, FDataTableRowHandle>)        AwesomenessLevelToVisitorsPickingConfiguration              OFFSET(get<T>, {0x5E0, 80, 0, 0})
+	CMember(TMap<int32_t, UDataTable*>)                AwesomenessLevelToNPCRewards                                OFFSET(get<T>, {0x630, 80, 0, 0})
+	SMember(FScalableFloat)                            InitialIngameHoursDelayBeforeFirstRewardRoll                OFFSET(getStruct<T>, {0x680, 40, 0, 0})
+	SMember(FScalableFloat)                            MinimumIngameHoursBetweenRewardRolls                        OFFSET(getStruct<T>, {0x6A8, 40, 0, 0})
+	SMember(FScalableFloat)                            PassiveResourceGatheringTime                                OFFSET(getStruct<T>, {0x6D0, 40, 0, 0})
+	SMember(FScalableFloat)                            MultiplierForSimulatedGeneration                            OFFSET(getStruct<T>, {0x6F8, 40, 0, 0})
+	SMember(FScalableFloat)                            MaximumAllocableSOPerAIForSimulation                        OFFSET(getStruct<T>, {0x720, 40, 0, 0})
+	SMember(FNavAgentSelector)                         SupportedAgents                                             OFFSET(getStruct<T>, {0x748, 4, 0, 0})
+	SMember(FScalableFloat)                            ShouldCheckWCForRemoteRecruitment                           OFFSET(getStruct<T>, {0x750, 40, 0, 0})
+	SMember(FScalableFloat)                            RequireNPCToBeInVisitorsListForRemoteRecruitment            OFFSET(getStruct<T>, {0x778, 40, 0, 0})
+	SMember(FScalableFloat)                            SpawnDelayFromCampSpawn                                     OFFSET(getStruct<T>, {0x7A0, 40, 0, 0})
 };
 
 /// Class /Script/JunoAIRuntime.JunoCaveLivingWorldEventData
@@ -322,7 +323,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.PlayspaceComponent_Root_JunoAIManagement.HandleFTUENPCSpawned
-	// void HandleFTUENPCSpawned(class AActor* FTUENPC);                                                                        // [0xbbeb608] Final|Native|Private 
+	// void HandleFTUENPCSpawned(class AActor* FTUENPC);                                                                        // [0xbef83a8] Final|Native|Private 
 };
 
 /// Class /Script/JunoAIRuntime.JunoAISafetyBubbleComponent
@@ -340,7 +341,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAISafetyBubbleComponent.OnTimeOfDayPhaseChanged
-	// void OnTimeOfDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation);           // [0xbbeb688] Final|Native|Protected 
+	// void OnTimeOfDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation);           // [0xbef86b8] Final|Native|Protected 
 };
 
 /// Class /Script/JunoAIRuntime.EnvQueryTest_JunoIsNearBuilding
@@ -369,13 +370,14 @@ public:
 };
 
 /// Class /Script/JunoAIRuntime.JunoAIBotEvaluator_ReactToVerb
-/// Size: 0x0000 (0x0003F0 - 0x0003F0)
+/// Size: 0x0010 (0x0003F0 - 0x000400)
 class UJunoAIBotEvaluator_ReactToVerb : public UFortAthenaAIBotEvaluator_ReactToVerb
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1008;
+	static inline constexpr uint64_t __MDKClassSize = 1024;
 
 public:
+	SMember(FName)                                     MoodReactionTagKeyName                                      OFFSET(getStruct<T>, {0x3F0, 4, 0, 0})
 };
 
 /// Class /Script/JunoAIRuntime.JunoAICheatManager
@@ -390,11 +392,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableHostileCreatures
-	// void JunoEnableHostileCreatures(bool bEnable);                                                                           // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableHostileCreatures(bool bEnable);                                                                           // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableFriendlyNPCs
-	// void JunoEnableFriendlyNPCs(bool bEnable);                                                                               // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableFriendlyNPCs(bool bEnable);                                                                               // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableFriendlyCreatures
-	// void JunoEnableFriendlyCreatures(bool bEnable);                                                                          // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableFriendlyCreatures(bool bEnable);                                                                          // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 };
 
 /// Class /Script/JunoAIRuntime.PlayspaceComponent_JunoAISafetyBubble
@@ -410,34 +412,35 @@ public:
 };
 
 /// Class /Script/JunoAIRuntime.AITask_JunoMoveTo
-/// Size: 0x0010 (0x000118 - 0x000128)
+/// Size: 0x0018 (0x000118 - 0x000130)
 class UAITask_JunoMoveTo : public UAITask_MoveTo
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 296;
+	static inline constexpr uint64_t __MDKClassSize = 304;
 
 public:
-	SMember(FJunoMoveConfig)                           MoveConfig                                                  OFFSET(getStruct<T>, {0x118, 8, 0, 0})
-	CMember(TWeakObjectPtr<AActor*>)                   BlockedByActor                                              OFFSET(get<T>, {0x120, 8, 0, 0})
+	SMember(FJunoMoveConfig)                           MoveConfig                                                  OFFSET(getStruct<T>, {0x118, 12, 0, 0})
+	CMember(TWeakObjectPtr<AActor*>)                   BlockedByActor                                              OFFSET(get<T>, {0x124, 8, 0, 0})
 };
 
 /// Class /Script/JunoAIRuntime.BTTask_JunoMoveTo
-/// Size: 0x00B8 (0x0000B0 - 0x000168)
-class UBTTask_JunoMoveTo : public UBTTask_MoveTo
+/// Size: 0x00B8 (0x0000C0 - 0x000178)
+class UBTTask_JunoMoveTo : public UFortAthenaBTTask_MoveTo
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 360;
+	static inline constexpr uint64_t __MDKClassSize = 376;
 
 public:
-	DMember(bool)                                      bOnUnreachableGoalFindBlockingBuilding                      OFFSET(get<bool>, {0xB0, 1, 1, 0})
-	DMember(bool)                                      bAssignFoundBlockingBuildingAsTarget                        OFFSET(get<bool>, {0xB0, 1, 1, 1})
-	SMember(FScalableFloat)                            BlockingBuildingTraceDistance                               OFFSET(getStruct<T>, {0xB8, 40, 0, 0})
-	SMember(FScalableFloat)                            BlockingBuildingTraceCooldown                               OFFSET(getStruct<T>, {0xE0, 40, 0, 0})
-	SMember(FBlackboardKeySelector)                    BlockedByBuildingKeySelector                                OFFSET(getStruct<T>, {0x108, 40, 0, 0})
-	SMember(FBlackboardKeySelector)                    LastBlockingBuildingTraceTimeKeySelector                    OFFSET(getStruct<T>, {0x130, 40, 0, 0})
-	DMember(bool)                                      bApplyCostLimit                                             OFFSET(get<bool>, {0x158, 1, 1, 0})
-	DMember(float)                                     PathingCostLimitFactor                                      OFFSET(get<float>, {0x15C, 4, 0, 0})
-	DMember(float)                                     PathingMinimumCostLimit                                     OFFSET(get<float>, {0x160, 4, 0, 0})
+	DMember(bool)                                      bOnUnreachableGoalFindBlockingBuilding                      OFFSET(get<bool>, {0xC0, 1, 1, 0})
+	DMember(bool)                                      bAssignFoundBlockingBuildingAsTarget                        OFFSET(get<bool>, {0xC0, 1, 1, 1})
+	SMember(FScalableFloat)                            BlockingBuildingTraceDistance                               OFFSET(getStruct<T>, {0xC8, 40, 0, 0})
+	SMember(FScalableFloat)                            BlockingBuildingTraceCooldown                               OFFSET(getStruct<T>, {0xF0, 40, 0, 0})
+	SMember(FBlackboardKeySelector)                    BlockedByBuildingKeySelector                                OFFSET(getStruct<T>, {0x118, 40, 0, 0})
+	SMember(FBlackboardKeySelector)                    LastBlockingBuildingTraceTimeKeySelector                    OFFSET(getStruct<T>, {0x140, 40, 0, 0})
+	CMember(TEnumAsByte<EPathObstacleAction>)          PathObstacleAction                                          OFFSET(get<T>, {0x168, 1, 0, 0})
+	DMember(bool)                                      bApplyCostLimit                                             OFFSET(get<bool>, {0x16C, 1, 1, 0})
+	DMember(float)                                     PathingCostLimitFactor                                      OFFSET(get<float>, {0x170, 4, 0, 0})
+	DMember(float)                                     PathingMinimumCostLimit                                     OFFSET(get<float>, {0x174, 4, 0, 0})
 };
 
 /// Class /Script/JunoAIRuntime.JunoWorldCondition_AIWorldSettings_State
@@ -451,25 +454,26 @@ public:
 };
 
 /// Struct /Script/JunoAIRuntime.JunoNPCValidItemRow
-/// Size: 0x0010 (0x000008 - 0x000018)
+/// Size: 0x0020 (0x000008 - 0x000028)
 class FJunoNPCValidItemRow : public FTableRowBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 24;
+	static inline constexpr uint64_t __MDKClassSize = 40;
 
 public:
 	CMember(class UFortItemDefinition*)                ValidItem                                                   OFFSET(get<T>, {0x8, 8, 0, 0})
-	DMember(bool)                                      bCanBeEquippedAsMainWeapon                                  OFFSET(get<bool>, {0x10, 1, 0, 0})
+	SMember(FString)                                   ValidItemPersistentName                                     OFFSET(getStruct<T>, {0x10, 16, 0, 0})
+	DMember(bool)                                      bCanBeEquippedAsMainWeapon                                  OFFSET(get<bool>, {0x20, 1, 0, 0})
 };
 
 /// Struct /Script/JunoAIRuntime.JunoNPCValidItems
-/// Size: 0x0060 (0x000000 - 0x000060)
+/// Size: 0x0070 (0x000000 - 0x000070)
 class FJunoNPCValidItems : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 96;
+	static inline constexpr uint64_t __MDKClassSize = 112;
 
 public:
 };
@@ -904,12 +908,12 @@ public:
 };
 
 /// Struct /Script/JunoAIRuntime.JunoMoveConfig
-/// Size: 0x0008 (0x000000 - 0x000008)
+/// Size: 0x000C (0x000000 - 0x00000C)
 class FJunoMoveConfig : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 8;
+	static inline constexpr uint64_t __MDKClassSize = 12;
 
 public:
 };

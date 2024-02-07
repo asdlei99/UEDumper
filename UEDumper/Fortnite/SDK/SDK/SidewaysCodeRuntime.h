@@ -33,7 +33,7 @@ public:
 
 	/// Functions
 	// Function /Script/SidewaysCodeRuntime.SidewaysCheatManager.SetSidewaysState
-	// void SetSidewaysState(ESidewaysState SidewaysState);                                                                  // [0x8106064] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetSidewaysState(ESidewaysState SidewaysState);                                                                  // [0x809f754] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Class /Script/SidewaysCodeRuntime.FortControllerComponent_Sideways
@@ -68,21 +68,21 @@ public:
 	ESidewaysState                                     SidewaysState;                                              // 0x00A0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x00A1   (0x0007)  MISSED
 	class ASidewaysPlayspace*                          SidewaysPlayspace;                                          // 0x00A8   (0x0008)  
-	SDK_UNDEFINED(16,15157) /* FMulticastInlineDelegate */ __um(OnSidewaysStateChangedDelegate);                   // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,15252) /* FMulticastInlineDelegate */ __um(OnSidewaysStateChangedDelegate);                   // 0x00B0   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00C0   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/SidewaysCodeRuntime.SidewaysStateComponent.SetSidewaysState
-	// void SetSidewaysState(ESidewaysState NewState, class ASidewaysPlayspace* NewSidewaysPlayspace);                       // [0xa9aa048] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetSidewaysState(ESidewaysState NewState, class ASidewaysPlayspace* NewSidewaysPlayspace);                       // [0xab7ced8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SidewaysCodeRuntime.SidewaysStateComponent.OnRep_SidewaysState
-	// void OnRep_SidewaysState(ESidewaysState LastSidewaysState);                                                           // [0xa9a9f58] Final|Native|Protected 
+	// void OnRep_SidewaysState(ESidewaysState LastSidewaysState);                                                           // [0xab7cda8] Final|Native|Protected 
 	// Function /Script/SidewaysCodeRuntime.SidewaysStateComponent.OnRep_SidewaysPlayspace
-	// void OnRep_SidewaysPlayspace(class ASidewaysPlayspace* NewSidewaysPlayspace);                                         // [0x680a298] Final|Native|Protected 
+	// void OnRep_SidewaysPlayspace(class ASidewaysPlayspace* NewSidewaysPlayspace);                                         // [0x654eda8] Final|Native|Protected 
 	// Function /Script/SidewaysCodeRuntime.SidewaysStateComponent.HandleSidewaysStateChanged
-	// void HandleSidewaysStateChanged(class ASidewaysPlayspace* NewSidewaysPlayspace, ESidewaysState OldState, ESidewaysState NewState); // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void HandleSidewaysStateChanged(class ASidewaysPlayspace* NewSidewaysPlayspace, ESidewaysState OldState, ESidewaysState NewState); // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SidewaysCodeRuntime.SidewaysStateComponent.GetSidewaysState
-	// ESidewaysState GetSidewaysState();                                                                                    // [0x8109240] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESidewaysState GetSidewaysState();                                                                                    // [0x80a279c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SidewaysCodeRuntime.SidewaysStateComponent_Player
@@ -90,7 +90,7 @@ public:
 class USidewaysStateComponent_Player : public USidewaysStateComponent
 { 
 public:
-	SDK_UNDEFINED(32,15158) /* TWeakObjectPtr<UMaterialParameterCollection*> */ __um(SidewaysMaterialParameterCollection); // 0x00C8   (0x0020)  
+	SDK_UNDEFINED(32,15253) /* TWeakObjectPtr<UMaterialParameterCollection*> */ __um(SidewaysMaterialParameterCollection); // 0x00C8   (0x0020)  
 	FName                                              SidewaysBubbleLocationParameterNamesForLocalPlayers;        // 0x00E8   (0x0008)  
 	FName                                              SidewaysBubbleRadiusParameterNamesForLocalPlayers;          // 0x00F0   (0x0008)  
 	float                                              ExtraCorruptionRadius;                                      // 0x00F8   (0x0004)  
@@ -105,7 +105,7 @@ public:
 class USidewaysFeatureAction_HoldGlobalData : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(32,15159) /* TWeakObjectPtr<UMaterialParameterCollection*> */ __um(SidewaysMaterialParameterCollection); // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,15254) /* TWeakObjectPtr<UMaterialParameterCollection*> */ __um(SidewaysMaterialParameterCollection); // 0x0028   (0x0020)  
 	FName                                              SidewaysBubbleLocationParameterNamesForLocalPlayers;        // 0x0048   (0x0008)  
 	FName                                              SidewaysBubbleRadiusParameterNamesForLocalPlayers;          // 0x0050   (0x0008)  
 };
@@ -119,7 +119,7 @@ public:
 
 	/// Functions
 	// Function /Script/SidewaysCodeRuntime.SidewaysLibrary.GetSidewaysStateComponent
-	// class USidewaysStateComponent* GetSidewaysStateComponent(class AActor* Owner);                                        // [0xa9a9ec4] Final|Native|Static|Public|BlueprintCallable 
+	// class USidewaysStateComponent* GetSidewaysStateComponent(class AActor* Owner);                                        // [0xab7ccd4] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/SidewaysCodeRuntime.SidewaysPlayspace
@@ -131,9 +131,9 @@ public:
 
 	/// Functions
 	// Function /Script/SidewaysCodeRuntime.SidewaysPlayspace.RefreshActorsInSideways
-	// void RefreshActorsInSideways();                                                                                       // [0xa9a9fd8] Final|Native|Public|BlueprintCallable 
+	// void RefreshActorsInSideways();                                                                                       // [0xab7ce68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SidewaysCodeRuntime.SidewaysPlayspace.NotifySizeChanged
-	// void NotifySizeChanged();                                                                                             // [0xa9a9f44] Final|Native|Public|BlueprintCallable 
+	// void NotifySizeChanged();                                                                                             // [0xab7cd94] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SidewaysCodeRuntime.SidewaysVolume

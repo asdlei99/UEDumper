@@ -24,7 +24,7 @@ public:
 
 	/// Functions
 	// Function /Script/Hotfix.OnlineHotfixManager.StartHotfixProcess
-	// void StartHotfixProcess();                                                                                               // [0x6498438] Native|Public|BlueprintCallable 
+	// void StartHotfixProcess();                                                                                               // [0x61cb940] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Hotfix.UpdateManager

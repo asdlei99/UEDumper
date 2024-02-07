@@ -12,14 +12,14 @@
 /// dependency: ZoneGraph
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphAnnotationComponent
-/// Size: 0x0020 (0x0005C0 - 0x0005E0)
+/// Size: 0x0020 (0x000550 - 0x000570)
 class UZoneGraphAnnotationComponent : public UDebugDrawComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1504;
+	static inline constexpr uint64_t __MDKClassSize = 1392;
 
 public:
-	DMember(bool)                                      bEnableDebugDrawing                                         OFFSET(get<bool>, {0x5D8, 1, 0, 0})
+	DMember(bool)                                      bEnableDebugDrawing                                         OFFSET(get<bool>, {0x568, 1, 0, 0})
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphAnnotationSubsystem
@@ -47,14 +47,14 @@ public:
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphAnnotationTestingComponent
-/// Size: 0x0010 (0x0005C0 - 0x0005D0)
+/// Size: 0x0010 (0x000550 - 0x000560)
 class UZoneGraphAnnotationTestingComponent : public UDebugDrawComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1488;
+	static inline constexpr uint64_t __MDKClassSize = 1376;
 
 public:
-	CMember(TArray<class UZoneGraphAnnotationTest*>)   Tests                                                       OFFSET(get<T>, {0x5C0, 16, 0, 0})
+	CMember(TArray<class UZoneGraphAnnotationTest*>)   Tests                                                       OFFSET(get<T>, {0x550, 16, 0, 0})
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphAnnotationTestingActor
@@ -70,23 +70,23 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraphAnnotations.ZoneGraphAnnotationTestingActor.Trigger
-	// void Trigger();                                                                                                          // [0xa6fa654] Final|Native|Public|BlueprintCallable 
+	// void Trigger();                                                                                                          // [0xa8aa8f0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotation
-/// Size: 0x0070 (0x0005E0 - 0x000650)
+/// Size: 0x0070 (0x000570 - 0x0005E0)
 class UZoneGraphDisturbanceAnnotation : public UZoneGraphAnnotationComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1616;
+	static inline constexpr uint64_t __MDKClassSize = 1504;
 
 public:
-	SMember(FZoneGraphTag)                             DangerAnnotationTag                                         OFFSET(getStruct<T>, {0x5E0, 1, 0, 0})
-	SMember(FZoneGraphTag)                             ObstacleAnnotationTag                                       OFFSET(getStruct<T>, {0x5E1, 1, 0, 0})
-	SMember(FZoneGraphTagFilter)                       AffectedLaneTags                                            OFFSET(getStruct<T>, {0x5E4, 12, 0, 0})
-	SMember(FZoneGraphTagFilter)                       EscapeLaneTags                                              OFFSET(getStruct<T>, {0x5F0, 12, 0, 0})
-	DMember(float)                                     IdealSpanLength                                             OFFSET(get<float>, {0x5FC, 4, 0, 0})
-	CMember(class UZoneGraphSubsystem*)                ZoneGraphSubsystem                                          OFFSET(get<T>, {0x640, 8, 0, 0})
+	SMember(FZoneGraphTag)                             DangerAnnotationTag                                         OFFSET(getStruct<T>, {0x570, 1, 0, 0})
+	SMember(FZoneGraphTag)                             ObstacleAnnotationTag                                       OFFSET(getStruct<T>, {0x571, 1, 0, 0})
+	SMember(FZoneGraphTagFilter)                       AffectedLaneTags                                            OFFSET(getStruct<T>, {0x574, 12, 0, 0})
+	SMember(FZoneGraphTagFilter)                       EscapeLaneTags                                              OFFSET(getStruct<T>, {0x580, 12, 0, 0})
+	DMember(float)                                     IdealSpanLength                                             OFFSET(get<float>, {0x58C, 4, 0, 0})
+	CMember(class UZoneGraphSubsystem*)                ZoneGraphSubsystem                                          OFFSET(get<T>, {0x5D0, 8, 0, 0})
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotationTest
@@ -114,7 +114,7 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotationBPLibrary.TriggerDanger
-	// void TriggerDanger(class UObject* WorldContextObject, class AActor* Instigator, FVector Position, float Radius, float duration); // [0xa6fa6b0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void TriggerDanger(class UObject* WorldContextObject, class AActor* Instigator, FVector Position, float Radius, float duration); // [0xa8aa94c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/ZoneGraphAnnotations.RegisteredZoneGraphAnnotation

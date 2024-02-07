@@ -22,13 +22,13 @@ enum class EZoneGraphObstacleDisturbanceAreaAction : uint8_t
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphAnnotationComponent
-/// Size: 0x0020 (0x0005C0 - 0x0005E0)
+/// Size: 0x0020 (0x000550 - 0x000570)
 class UZoneGraphAnnotationComponent : public UDebugDrawComponent
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x18];                                      // 0x05C0   (0x0018)  MISSED
-	bool                                               bEnableDebugDrawing;                                        // 0x05D8   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x7];                                       // 0x05D9   (0x0007)  MISSED
+	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0550   (0x0018)  MISSED
+	bool                                               bEnableDebugDrawing;                                        // 0x0568   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0569   (0x0007)  MISSED
 };
 
 /// Struct /Script/ZoneGraphAnnotations.RegisteredZoneGraphAnnotation
@@ -60,11 +60,11 @@ public:
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphAnnotationTestingComponent
-/// Size: 0x0010 (0x0005C0 - 0x0005D0)
+/// Size: 0x0010 (0x000550 - 0x000560)
 class UZoneGraphAnnotationTestingComponent : public UDebugDrawComponent
 { 
 public:
-	TArray<class UZoneGraphAnnotationTest*>            Tests;                                                      // 0x05C0   (0x0010)  
+	TArray<class UZoneGraphAnnotationTest*>            Tests;                                                      // 0x0550   (0x0010)  
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphAnnotationTestingActor
@@ -77,23 +77,23 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraphAnnotations.ZoneGraphAnnotationTestingActor.Trigger
-	// void Trigger();                                                                                                       // [0xa6fa654] Final|Native|Public|BlueprintCallable 
+	// void Trigger();                                                                                                       // [0xa8aa8f0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotation
-/// Size: 0x0070 (0x0005E0 - 0x000650)
+/// Size: 0x0070 (0x000570 - 0x0005E0)
 class UZoneGraphDisturbanceAnnotation : public UZoneGraphAnnotationComponent
 { 
 public:
-	FZoneGraphTag                                      DangerAnnotationTag;                                        // 0x05E0   (0x0001)  
-	FZoneGraphTag                                      ObstacleAnnotationTag;                                      // 0x05E1   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x05E2   (0x0002)  MISSED
-	FZoneGraphTagFilter                                AffectedLaneTags;                                           // 0x05E4   (0x000C)  
-	FZoneGraphTagFilter                                EscapeLaneTags;                                             // 0x05F0   (0x000C)  
-	float                                              IdealSpanLength;                                            // 0x05FC   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x40];                                      // 0x0600   (0x0040)  MISSED
-	class UZoneGraphSubsystem*                         ZoneGraphSubsystem;                                         // 0x0640   (0x0008)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0648   (0x0008)  MISSED
+	FZoneGraphTag                                      DangerAnnotationTag;                                        // 0x0570   (0x0001)  
+	FZoneGraphTag                                      ObstacleAnnotationTag;                                      // 0x0571   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0572   (0x0002)  MISSED
+	FZoneGraphTagFilter                                AffectedLaneTags;                                           // 0x0574   (0x000C)  
+	FZoneGraphTagFilter                                EscapeLaneTags;                                             // 0x0580   (0x000C)  
+	float                                              IdealSpanLength;                                            // 0x058C   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x40];                                      // 0x0590   (0x0040)  MISSED
+	class UZoneGraphSubsystem*                         ZoneGraphSubsystem;                                         // 0x05D0   (0x0008)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x05D8   (0x0008)  MISSED
 };
 
 /// Class /Script/ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotationTest
@@ -115,7 +115,7 @@ public:
 
 	/// Functions
 	// Function /Script/ZoneGraphAnnotations.ZoneGraphDisturbanceAnnotationBPLibrary.TriggerDanger
-	// void TriggerDanger(class UObject* WorldContextObject, class AActor* Instigator, FVector Position, float Radius, float duration); // [0xa6fa6b0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void TriggerDanger(class UObject* WorldContextObject, class AActor* Instigator, FVector Position, float Radius, float duration); // [0xa8aa94c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/ZoneGraphAnnotations.ZoneGraphAnnotationEventBase

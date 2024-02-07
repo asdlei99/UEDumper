@@ -27,7 +27,7 @@ enum class EHandleEvent : uint8_t
 struct FConstraintsInWorld
 { 
 	class UWorld*                                      World;                                                      // 0x0000   (0x0008)  
-	SDK_UNDEFINED(16,1349) /* TArray<TWeakObjectPtr<UTickableConstraint*>> */ __um(Constraints);                   // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1351) /* TArray<TWeakObjectPtr<UTickableConstraint*>> */ __um(Constraints);                   // 0x0008   (0x0010)  
 };
 
 /// Class /Script/Constraints.ConstraintSubsystem
@@ -35,17 +35,17 @@ struct FConstraintsInWorld
 class UConstraintSubsystem : public UEngineSubsystem
 { 
 public:
-	SDK_UNDEFINED(1,1350) /* FMulticastSparseDelegate */ __um(OnConstraintAddedToSystem_BP);                       // 0x0030   (0x0001)  
-	SDK_UNDEFINED(1,1351) /* FMulticastSparseDelegate */ __um(OnConstraintRemovedFromSystem_BP);                   // 0x0031   (0x0001)  
+	SDK_UNDEFINED(1,1352) /* FMulticastSparseDelegate */ __um(OnConstraintAddedToSystem_BP);                       // 0x0030   (0x0001)  
+	SDK_UNDEFINED(1,1353) /* FMulticastSparseDelegate */ __um(OnConstraintRemovedFromSystem_BP);                   // 0x0031   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0032   (0x0006)  MISSED
 	TArray<FConstraintsInWorld>                        ConstraintsInWorld;                                         // 0x0038   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/Constraints.ConstraintSubsystem.OnConstraintRemovedFromSystem__DelegateSignature
-	// void OnConstraintRemovedFromSystem__DelegateSignature(class UConstraintSubsystem* Mananger, class UTickableConstraint* Constraint, bool bDoNotCompensate); // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnConstraintRemovedFromSystem__DelegateSignature(class UConstraintSubsystem* Mananger, class UTickableConstraint* Constraint, bool bDoNotCompensate); // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/Constraints.ConstraintSubsystem.OnConstraintAddedToSystem__DelegateSignature
-	// void OnConstraintAddedToSystem__DelegateSignature(class UConstraintSubsystem* Mananger, class UTickableConstraint* Constraint); // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnConstraintAddedToSystem__DelegateSignature(class UConstraintSubsystem* Mananger, class UTickableConstraint* Constraint); // [0x2047e54] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/Constraints.ConstraintsActor
@@ -71,17 +71,17 @@ public:
 class UConstraintsManager : public UObject
 { 
 public:
-	SDK_UNDEFINED(1,1352) /* FMulticastSparseDelegate */ __um(OnConstraintAdded_BP);                               // 0x0028   (0x0001)  
-	SDK_UNDEFINED(1,1353) /* FMulticastSparseDelegate */ __um(OnConstraintRemoved_BP);                             // 0x0029   (0x0001)  
+	SDK_UNDEFINED(1,1354) /* FMulticastSparseDelegate */ __um(OnConstraintAdded_BP);                               // 0x0028   (0x0001)  
+	SDK_UNDEFINED(1,1355) /* FMulticastSparseDelegate */ __um(OnConstraintRemoved_BP);                             // 0x0029   (0x0001)  
 	unsigned char                                      UnknownData00_5[0xE];                                       // 0x002A   (0x000E)  MISSED
 	TArray<class UTickableConstraint*>                 Constraints;                                                // 0x0038   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/Constraints.ConstraintsManager.OnConstraintRemoved__DelegateSignature
-	// void OnConstraintRemoved__DelegateSignature(class UConstraintsManager* Mananger, class UTickableConstraint* Constraint, bool bDoNotCompensate); // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnConstraintRemoved__DelegateSignature(class UConstraintsManager* Mananger, class UTickableConstraint* Constraint, bool bDoNotCompensate); // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/Constraints.ConstraintsManager.OnConstraintAdded__DelegateSignature
-	// void OnConstraintAdded__DelegateSignature(class UConstraintsManager* Mananger, class UTickableConstraint* Constraint); // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnConstraintAdded__DelegateSignature(class UConstraintsManager* Mananger, class UTickableConstraint* Constraint); // [0x2047e54] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/Constraints.ConstraintsScriptingLibrary
@@ -93,19 +93,19 @@ public:
 
 	/// Functions
 	// Function /Script/Constraints.ConstraintsScriptingLibrary.RemoveThisConstraint
-	// bool RemoveThisConstraint(class UWorld* InWorld, class UTickableConstraint* InTickableConstraint);                    // [0x615b124] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// bool RemoveThisConstraint(class UWorld* InWorld, class UTickableConstraint* InTickableConstraint);                    // [0x5e66170] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Constraints.ConstraintsScriptingLibrary.RemoveConstraint
-	// bool RemoveConstraint(class UWorld* InWorld, int32_t InIndex);                                                        // [0x615b054] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// bool RemoveConstraint(class UWorld* InWorld, int32_t InIndex);                                                        // [0x5e66024] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Constraints.ConstraintsScriptingLibrary.GetConstraintsArray
-	// TArray<UTickableConstraint*> GetConstraintsArray(class UWorld* InWorld);                                              // [0x615af9c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// TArray<UTickableConstraint*> GetConstraintsArray(class UWorld* InWorld);                                              // [0x5e65f2c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Constraints.ConstraintsScriptingLibrary.CreateTransformableHandle
-	// class UTransformableHandle* CreateTransformableHandle(class UWorld* InWorld, class UObject* InObject, FName& InAttachmentName); // [0x615ae9c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UTransformableHandle* CreateTransformableHandle(class UWorld* InWorld, class UObject* InObject, FName& InAttachmentName); // [0x5e65da8] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Constraints.ConstraintsScriptingLibrary.CreateTransformableComponentHandle
-	// class UTransformableComponentHandle* CreateTransformableComponentHandle(class UWorld* InWorld, class USceneComponent* InSceneComponent, FName& InSocketName); // [0x615ace4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UTransformableComponentHandle* CreateTransformableComponentHandle(class UWorld* InWorld, class USceneComponent* InSceneComponent, FName& InSocketName); // [0x5e65b68] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Constraints.ConstraintsScriptingLibrary.CreateFromType
-	// class UTickableTransformConstraint* CreateFromType(class UWorld* InWorld, ETransformConstraintType InType);           // [0x615aa00] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UTickableTransformConstraint* CreateFromType(class UWorld* InWorld, ETransformConstraintType InType);           // [0x5e65804] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Constraints.ConstraintsScriptingLibrary.AddConstraint
-	// bool AddConstraint(class UWorld* InWorld, class UTransformableHandle* InParentHandle, class UTransformableHandle* InChildHandle, class UTickableTransformConstraint* InConstraint, bool bMaintainOffset); // [0x615a884] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// bool AddConstraint(class UWorld* InWorld, class UTransformableHandle* InParentHandle, class UTransformableHandle* InChildHandle, class UTickableTransformConstraint* InConstraint, bool bMaintainOffset); // [0x5e65554] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/Constraints.TransformableHandle
@@ -122,7 +122,7 @@ public:
 class UTransformableComponentHandle : public UTransformableHandle
 { 
 public:
-	SDK_UNDEFINED(8,1354) /* TWeakObjectPtr<USceneComponent*> */ __um(Component);                                  // 0x0058   (0x0008)  
+	SDK_UNDEFINED(8,1356) /* TWeakObjectPtr<USceneComponent*> */ __um(Component);                                  // 0x0058   (0x0008)  
 	FName                                              SocketName;                                                 // 0x0060   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0064   (0x0004)  MISSED
 };

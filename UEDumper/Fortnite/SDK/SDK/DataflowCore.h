@@ -19,7 +19,7 @@ public:
 	FLinearColor                                       ManagedArrayCollectionPinTypeColor;                         // 0x0040   (0x0010)  
 	FLinearColor                                       BoxPinTypeColor;                                            // 0x0050   (0x0010)  
 	FLinearColor                                       SpherePinTypeColor;                                         // 0x0060   (0x0010)  
-	SDK_UNDEFINED(80,11744) /* TMap<FName, FNodeColors> */ __um(NodeColorsMap);                                    // 0x0070   (0x0050)  
+	SDK_UNDEFINED(80,11781) /* TMap<FName, FNodeColors> */ __um(NodeColorsMap);                                    // 0x0070   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x00C0   (0x0018)  MISSED
 };
 
@@ -59,7 +59,7 @@ struct FDataflowOverrideNode : FDataflowNode
 { 
 	FName                                              Key;                                                        // 0x00E8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00EC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11745) /* FString */              __um(Default);                                              // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,11782) /* FString */              __um(Default);                                              // 0x00F0   (0x0010)  
 	bool                                               IsOverriden;                                                // 0x0100   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0101   (0x0007)  MISSED
 };

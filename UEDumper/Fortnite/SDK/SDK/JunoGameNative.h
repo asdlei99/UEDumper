@@ -21,6 +21,7 @@
 /// dependency: Engine
 /// dependency: EnhancedInput
 /// dependency: FortGameplayGraph
+/// dependency: FortImGuiCore
 /// dependency: FortniteAI
 /// dependency: FortniteGame
 /// dependency: FortniteGameFramework
@@ -32,9 +33,10 @@
 /// dependency: GameplayStateMachine
 /// dependency: GameplayTags
 /// dependency: GeometryCollectionEngine
+/// dependency: ItemizationCoreRuntime
 /// dependency: JunoWorldManagement
 /// dependency: MassEntity
-/// dependency: McpProfileSysCore
+/// dependency: McpProfileSys
 /// dependency: MeshNetwork
 /// dependency: ModularGameplay
 /// dependency: NavigationSystem
@@ -176,6 +178,17 @@ enum class EJunoCompassDirection : uint8_t
 	EJunoCompassDirection__Max                                                       = 9
 };
 
+/// Enum /Script/JunoGameNative.EJunoTrackedActorRefreshReason
+/// Size: 0x05
+enum class EJunoTrackedActorRefreshReason : uint8_t
+{
+	EJunoTrackedActorRefreshReason__LocationChanged                                  = 0,
+	EJunoTrackedActorRefreshReason__NetRelDistanceChanged                            = 1,
+	EJunoTrackedActorRefreshReason__NumberOfRelevantActorsChanged                    = 2,
+	EJunoTrackedActorRefreshReason__Unknown                                          = 3,
+	EJunoTrackedActorRefreshReason__EJunoTrackedActorRefreshReason_MAX               = 4
+};
+
 /// Enum /Script/JunoGameNative.EChaosEventSize
 /// Size: 0x06
 enum class EChaosEventSize : uint8_t
@@ -199,6 +212,16 @@ enum class EJunoContactDirection : uint8_t
 	EJunoContactDirection__PosZ                                                      = 4,
 	EJunoContactDirection__NegZ                                                      = 5,
 	EJunoContactDirection__EJunoContactDirection_MAX                                 = 6
+};
+
+/// Enum /Script/JunoGameNative.EJunoDumpWorldPersistentContentsVerbosity
+/// Size: 0x04
+enum class EJunoDumpWorldPersistentContentsVerbosity : uint8_t
+{
+	EJunoDumpWorldPersistentContentsVerbosity__Compact                               = 0,
+	EJunoDumpWorldPersistentContentsVerbosity__Default                               = 1,
+	EJunoDumpWorldPersistentContentsVerbosity__Verbose                               = 2,
+	EJunoDumpWorldPersistentContentsVerbosity__EJunoDumpWorldPersistentContentsVerbosity_MAX = 3
 };
 
 /// Enum /Script/JunoGameNative.EJunoGeometryCollectionAssemblerDurationType
@@ -266,7 +289,7 @@ enum class EJunoBuildModeType : uint8_t
 };
 
 /// Enum /Script/JunoGameNative.EJunoPersistenceReportOptions
-/// Size: 0x14
+/// Size: 0x15
 enum class EJunoPersistenceReportOptions : uint16_t
 {
 	EJunoPersistenceReportOptions__None                                              = 0,
@@ -274,15 +297,16 @@ enum class EJunoPersistenceReportOptions : uint16_t
 	EJunoPersistenceReportOptions__ActorInstanceDataEnabled                          = 2,
 	EJunoPersistenceReportOptions__JunoUpdateActionDataEnabled                       = 4,
 	EJunoPersistenceReportOptions__JunoDeleteActionDataEnabled                       = 8,
-	EJunoPersistenceReportOptions__DataEnabledDefaultFlags                           = 15,
-	EJunoPersistenceReportOptions__ShowReportHeader                                  = 16,
-	EJunoPersistenceReportOptions__ShowDeltasHeaders                                 = 32,
-	EJunoPersistenceReportOptions__ShowSubreportsHeaders                             = 64,
-	EJunoPersistenceReportOptions__ShowTablesHeaders                                 = 128,
-	EJunoPersistenceReportOptions__ShowIndividualItemsStats                          = 256,
-	EJunoPersistenceReportOptions__ShowAggregatedStats                               = 512,
-	EJunoPersistenceReportOptions__ShowDefaultFlags                                  = 752,
-	EJunoPersistenceReportOptions__EJunoPersistenceReportOptions_MAX                 = 753
+	EJunoPersistenceReportOptions__JunoPersistenceFeaturesDataEnabled                = 16,
+	EJunoPersistenceReportOptions__DataEnabledDefaultFlags                           = 31,
+	EJunoPersistenceReportOptions__ShowReportHeader                                  = 32,
+	EJunoPersistenceReportOptions__ShowPlayspaceHeaders                              = 64,
+	EJunoPersistenceReportOptions__ShowSubreportsHeaders                             = 128,
+	EJunoPersistenceReportOptions__ShowTablesHeaders                                 = 256,
+	EJunoPersistenceReportOptions__ShowIndividualItemsStats                          = 512,
+	EJunoPersistenceReportOptions__ShowAggregatedStats                               = 1024,
+	EJunoPersistenceReportOptions__ShowDefaultFlags                                  = 1504,
+	EJunoPersistenceReportOptions__EJunoPersistenceReportOptions_MAX                 = 1505
 };
 
 /// Enum /Script/JunoGameNative.EJunoWorldConditionAICampChecksIsAssigned
@@ -314,6 +338,17 @@ enum class EJunoWorldConditionAssignmentState : uint8_t
 	EJunoWorldConditionAssignmentState__Assigned                                     = 2,
 	EJunoWorldConditionAssignmentState__Unassigned                                   = 3,
 	EJunoWorldConditionAssignmentState__EJunoWorldConditionAssignmentState_MAX       = 4
+};
+
+/// Enum /Script/JunoGameNative.EJunoWorldConditionPawnType
+/// Size: 0x05
+enum class EJunoWorldConditionPawnType : uint8_t
+{
+	EJunoWorldConditionPawnType__None                                                = 0,
+	EJunoWorldConditionPawnType__Player                                              = 1,
+	EJunoWorldConditionPawnType__Villager                                            = 2,
+	EJunoWorldConditionPawnType__EnemyMinifig                                        = 4,
+	EJunoWorldConditionPawnType__EJunoWorldConditionPawnType_MAX                     = 5
 };
 
 /// Enum /Script/JunoGameNative.EJunoWorldConditionHasFollower
@@ -476,6 +511,15 @@ enum class EJunoGuidedBuildingState : uint8_t
 	EJunoGuidedBuildingState__EJunoGuidedBuildingState_MAX                           = 4
 };
 
+/// Enum /Script/JunoGameNative.EJunoLandscapeVisualModifierType
+/// Size: 0x03
+enum class EJunoLandscapeVisualModifierType : uint8_t
+{
+	EJunoLandscapeVisualModifierType__None                                           = 0,
+	EJunoLandscapeVisualModifierType__DirtPatch                                      = 1,
+	EJunoLandscapeVisualModifierType__EJunoLandscapeVisualModifierType_MAX           = 2
+};
+
 /// Enum /Script/JunoGameNative.EJunoAutomaticConnectionMethod
 /// Size: 0x04
 enum class EJunoAutomaticConnectionMethod : uint8_t
@@ -570,11 +614,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingTrackedActorInterface.ShouldBeTrackedByMetrics
-	// bool ShouldBeTrackedByMetrics();                                                                                      // [0x24f4ae8] Native|Event|Public|BlueprintEvent|Const 
+	// bool ShouldBeTrackedByMetrics();                                                                                      // [0x1ccfdb4] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/JunoGameNative.JunoBuildingTrackedActorInterface.GetNumberOfRelevantActors
-	// int32_t GetNumberOfRelevantActors();                                                                                  // [0x63905e4] Native|Event|Public|BlueprintEvent|Const 
+	// int32_t GetNumberOfRelevantActors();                                                                                  // [0x60b7ef4] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/JunoGameNative.JunoBuildingTrackedActorInterface.GetNetRelevanceDistanceOverride
-	// float GetNetRelevanceDistanceOverride();                                                                              // [0xb8ad0ec] Native|Event|Public|BlueprintEvent|Const 
+	// float GetNetRelevanceDistanceOverride();                                                                              // [0xbb957b4] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Struct /Script/JunoGameNative.PushMontageData
@@ -582,7 +626,7 @@ public:
 struct FPushMontageData
 { 
 	FGameplayTagRequirements                           MontageDataRequirement;                                     // 0x0000   (0x0088)  
-	SDK_UNDEFINED(80,11778) /* TMap<EFortPhysicsSimSize, UAnimMontage*> */ __um(SizeToMontageMap);                 // 0x0088   (0x0050)  
+	SDK_UNDEFINED(80,11816) /* TMap<EFortPhysicsSimSize, UAnimMontage*> */ __um(SizeToMontageMap);                 // 0x0088   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoAbility_PlayerPushPhysicsObject
@@ -602,28 +646,28 @@ public:
 	FScalableFloat                                     EnergyDrainPerSecond;                                       // 0x0C30   (0x0028)  
 	bool                                               bEnergyExhausted;                                           // 0x0C58   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0C59   (0x0003)  MISSED
-	SDK_UNDEFINED(8,11779) /* TWeakObjectPtr<UFortComponent_Energy*> */ __um(CachedEnergyComponent);               // 0x0C5C   (0x0008)  
+	SDK_UNDEFINED(8,11817) /* TWeakObjectPtr<UFortComponent_Energy*> */ __um(CachedEnergyComponent);               // 0x0C5C   (0x0008)  
 	unsigned char                                      UnknownData02_5[0xC];                                       // 0x0C64   (0x000C)  MISSED
-	SDK_UNDEFINED(8,11780) /* TWeakObjectPtr<AActor*> */ __um(TrackedObjectToPush);                                // 0x0C70   (0x0008)  
+	SDK_UNDEFINED(8,11818) /* TWeakObjectPtr<AActor*> */ __um(TrackedObjectToPush);                                // 0x0C70   (0x0008)  
 	EFortPhysicsSimSize                                TrackedObjectSimSize;                                       // 0x0C78   (0x0001)  
 	unsigned char                                      UnknownData03_6[0x17];                                      // 0x0C79   (0x0017)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAbility_PlayerPushPhysicsObject.StopUsingEnergy
-	// void StopUsingEnergy();                                                                                               // [0xb8ad54c] Final|Native|Protected|BlueprintCallable 
+	// void StopUsingEnergy();                                                                                               // [0xbb95f0c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAbility_PlayerPushPhysicsObject.PotentiallyStartUsingEnergy
-	// void PotentiallyStartUsingEnergy();                                                                                   // [0xb8ad524] Final|Native|Protected|BlueprintCallable 
+	// void PotentiallyStartUsingEnergy();                                                                                   // [0xbb95c7c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAbility_PlayerPushPhysicsObject.OnPlayerHit
-	// void OnPlayerHit(class AActor* HitPlayer, class AActor* HitActor, FVector NormalImpulse, FHitResult& Hit);            // [0xb8ad2ac] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnPlayerHit(class AActor* HitPlayer, class AActor* HitActor, FVector NormalImpulse, FHitResult& Hit);            // [0xbb959fc] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/JunoGameNative.JunoAbility_PlayerPushPhysicsObject.OnEnergyFullyRecharged
-	// void OnEnergyFullyRecharged(class UFortComponent_Energy* EnergyComponentRecharged);                                   // [0xb8ad218] Final|Native|Private 
+	// void OnEnergyFullyRecharged(class UFortComponent_Energy* EnergyComponentRecharged);                                   // [0xbb95924] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoAbility_PlayerPushPhysicsObject.OnEnergyDrained
-	// void OnEnergyDrained(class UFortComponent_Energy* EnergyComponentDrained);                                            // [0xb8ad184] Final|Native|Private 
+	// void OnEnergyDrained(class UFortComponent_Energy* EnergyComponentDrained);                                            // [0xbb9584c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoAbility_PlayerPushPhysicsObject.GetMontageToPlay
-	// class UAnimMontage* GetMontageToPlay();                                                                               // [0xb8ad0c8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UAnimMontage* GetMontageToPlay();                                                                               // [0xbb95790] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAbility_PlayerPushPhysicsObject.CancelPushingPhysicsObject
-	// void CancelPushingPhysicsObject();                                                                                    // [0x32e4b44] Final|Native|Protected|BlueprintCallable 
+	// void CancelPushingPhysicsObject();                                                                                    // [0x307d48c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoAccountItemDefinitionOverrideManager
@@ -634,10 +678,10 @@ public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0028   (0x0008)  MISSED
 	class UFortHeroType*                               JunoHeroDefinition;                                         // 0x0030   (0x0008)  
 	class UDataTable*                                  DefaultCharacters;                                          // 0x0038   (0x0008)  
-	SDK_UNDEFINED(80,11781) /* TMap<TWeakObjectPtr<UClass*>, TWeakObjectPtr<UClass*>> */ __um(PreviewActorClasses); // 0x0040   (0x0050)  
-	SDK_UNDEFINED(80,11782) /* TMap<TWeakObjectPtr<UClass*>, FGameplayTagContainer> */ __um(GameplayTagParentsToRemoveFromOverrides); // 0x0090   (0x0050)  
-	SDK_UNDEFINED(80,11783) /* TMap<TWeakObjectPtr<UClass*>, FGameplayTagContainer> */ __um(GameplayTagsToAdd);    // 0x00E0   (0x0050)  
-	SDK_UNDEFINED(80,11784) /* TMap<FPrimaryAssetId, FJunoAccountItemDefinitionOverride> */ __um(Overrides);       // 0x0130   (0x0050)  
+	SDK_UNDEFINED(80,11819) /* TMap<TWeakObjectPtr<UClass*>, TWeakObjectPtr<UClass*>> */ __um(PreviewActorClasses); // 0x0040   (0x0050)  
+	SDK_UNDEFINED(80,11820) /* TMap<TWeakObjectPtr<UClass*>, FGameplayTagContainer> */ __um(GameplayTagParentsToRemoveFromOverrides); // 0x0090   (0x0050)  
+	SDK_UNDEFINED(80,11821) /* TMap<TWeakObjectPtr<UClass*>, FGameplayTagContainer> */ __um(GameplayTagsToAdd);    // 0x00E0   (0x0050)  
+	SDK_UNDEFINED(80,11822) /* TMap<FPrimaryAssetId, FJunoAccountItemDefinitionOverride> */ __um(Overrides);       // 0x0130   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0180   (0x0010)  MISSED
 };
 
@@ -652,19 +696,25 @@ public:
 	float                                              FrontendPreviewScale;                                       // 0x0054   (0x0004)  
 	FVector                                            FrontendPreviewPivotOffset;                                 // 0x0058   (0x0018)  
 	FRotator                                           FrontendPreviewInitialRotation;                             // 0x0070   (0x0018)  
-	SDK_UNDEFINED(32,11785) /* TWeakObjectPtr<UClass*> */ __um(PreviewActorClass);                                 // 0x0088   (0x0020)  
+	SDK_UNDEFINED(32,11823) /* TWeakObjectPtr<UClass*> */ __um(PreviewActorClass);                                 // 0x0088   (0x0020)  
 };
 
 /// Class /Script/JunoGameNative.JunoAthenaCharacterItemOverrideDefinition
-/// Size: 0x0068 (0x0000A8 - 0x000110)
+/// Size: 0x0088 (0x0000A8 - 0x000130)
 class UJunoAthenaCharacterItemOverrideDefinition : public UJunoAccountItemOverrideDefinition
 { 
 public:
-	SDK_UNDEFINED(32,11786) /* TWeakObjectPtr<UAthenaCharacterItemDefinition*> */ __um(BaseAthenaCharacterItemDefinition); // 0x00A8   (0x0020)  
-	SDK_UNDEFINED(32,11787) /* TWeakObjectPtr<UAssembledMeshSchema*> */ __um(AssembledMeshSchema);                 // 0x00C8   (0x0020)  
-	SDK_UNDEFINED(32,11788) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontendAnimMontageIdleOverride);             // 0x00E8   (0x0020)  
-	float                                              PreviewPawnScale;                                           // 0x0108   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x010C   (0x0004)  MISSED
+	SDK_UNDEFINED(32,11824) /* TWeakObjectPtr<UAthenaCharacterItemDefinition*> */ __um(BaseAthenaCharacterItemDefinition); // 0x00A8   (0x0020)  
+	SDK_UNDEFINED(32,11825) /* TWeakObjectPtr<UAssembledMeshSchema*> */ __um(AssembledMeshSchema);                 // 0x00C8   (0x0020)  
+	SDK_UNDEFINED(32,11826) /* TWeakObjectPtr<UAssembledMeshSchema*> */ __um(LowDetailsAssembledMeshSchema);       // 0x00E8   (0x0020)  
+	SDK_UNDEFINED(32,11827) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontendAnimMontageIdleOverride);             // 0x0108   (0x0020)  
+	float                                              PreviewPawnScale;                                           // 0x0128   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x012C   (0x0004)  MISSED
+
+
+	/// Functions
+	// Function /Script/JunoGameNative.JunoAthenaCharacterItemOverrideDefinition.SetBaseAthenaCharacterItemDefinition
+	// void SetBaseAthenaCharacterItemDefinition(TWeakObjectPtr<UAthenaCharacterItemDefinition*> InBaseAthenaCharacterItemDefinition); // [0xbb95c90] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoAthenaDanceItemOverrideDefinition
@@ -672,18 +722,23 @@ public:
 class UJunoAthenaDanceItemOverrideDefinition : public UJunoAccountItemOverrideDefinition
 { 
 public:
-	SDK_UNDEFINED(32,11789) /* TWeakObjectPtr<UAthenaDanceItemDefinition*> */ __um(BaseAthenaDanceItemDefinition); // 0x00A8   (0x0020)  
-	SDK_UNDEFINED(32,11790) /* TWeakObjectPtr<UAnimMontage*> */ __um(Animation);                                   // 0x00C8   (0x0020)  
-	SDK_UNDEFINED(32,11791) /* TWeakObjectPtr<UAnimMontage*> */ __um(AnimationFemaleOverride);                     // 0x00E8   (0x0020)  
+	SDK_UNDEFINED(32,11828) /* TWeakObjectPtr<UAthenaDanceItemDefinition*> */ __um(BaseAthenaDanceItemDefinition); // 0x00A8   (0x0020)  
+	SDK_UNDEFINED(32,11829) /* TWeakObjectPtr<UAnimMontage*> */ __um(Animation);                                   // 0x00C8   (0x0020)  
+	SDK_UNDEFINED(32,11830) /* TWeakObjectPtr<UAnimMontage*> */ __um(AnimationFemaleOverride);                     // 0x00E8   (0x0020)  
 	TArray<FFortEmoteMapping>                          AnimationOverrides;                                         // 0x0108   (0x0010)  
-	SDK_UNDEFINED(32,11792) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontEndAnimation);                           // 0x0118   (0x0020)  
-	SDK_UNDEFINED(32,11793) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontEndAnimationFemaleOverride);             // 0x0138   (0x0020)  
+	SDK_UNDEFINED(32,11831) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontEndAnimation);                           // 0x0118   (0x0020)  
+	SDK_UNDEFINED(32,11832) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontEndAnimationFemaleOverride);             // 0x0138   (0x0020)  
 	TArray<FFortEmoteMapping>                          FrontEndAnimationOverrides;                                 // 0x0158   (0x0010)  
 	FVector                                            GroupEmotePositionOffset;                                   // 0x0168   (0x0018)  
 	float                                              GroupEmotePositionOffsetTolerance;                          // 0x0180   (0x0004)  
 	float                                              GroupEmoteFollowDistance;                                   // 0x0184   (0x0004)  
 	float                                              WalkForwardSpeed;                                           // 0x0188   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x018C   (0x0004)  MISSED
+
+
+	/// Functions
+	// Function /Script/JunoGameNative.JunoAthenaDanceItemOverrideDefinition.SetBaseAthenaDanceItemDefinition
+	// void SetBaseAthenaDanceItemDefinition(TWeakObjectPtr<UAthenaDanceItemDefinition*> InBaseAthenaDanceItemDefinition);   // [0xbb95dc4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoActionConfig
@@ -716,11 +771,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoActorAttributeOverrideComponent.SetupHealthAttributeSet
-	// void SetupHealthAttributeSet();                                                                                       // [0xb8ad538] Final|Native|Protected 
+	// void SetupHealthAttributeSet();                                                                                       // [0xbb95ef8] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoActorAttributeOverrideComponent.GetSecondaryLootTier
-	// FName GetSecondaryLootTier();                                                                                         // [0xb8ad14c] Final|Native|Public|BlueprintCallable 
+	// FName GetSecondaryLootTier();                                                                                         // [0xbb95814] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoActorAttributeOverrideComponent.GetPrimaryLootTier
-	// FName GetPrimaryLootTier();                                                                                           // [0xb8ad114] Final|Native|Public|BlueprintCallable 
+	// FName GetPrimaryLootTier();                                                                                           // [0xbb957dc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoActorInstancesReportHandler
@@ -747,7 +802,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPersistenceFeatureDataActor.OnPersistentDataModified
-	// void OnPersistentDataModified();                                                                                      // [0x63aa528] Native|Protected|BlueprintCallable 
+	// void OnPersistentDataModified();                                                                                      // [0x60d2114] Native|Protected|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.SavedAIData_BaseType
@@ -772,7 +827,7 @@ struct FSavedGlobalAIData_FTUE : FSavedAIData_BaseType
 /// Size: 0x004F (0x000001 - 0x000050)
 struct FSavedGlobalAIData_Rewards : FSavedAIData_BaseType
 { 
-	SDK_UNDEFINED(80,11794) /* TMap<FName, int32_t> */ __um(CountOfRewardedLootTierGroups);                        // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11833) /* TMap<FName, int32_t> */ __um(CountOfRewardedLootTierGroups);                        // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.SavedGlobalAIData_WorldSettings
@@ -788,7 +843,7 @@ struct FSavedGlobalAIData_WorldSettings : FSavedAIData_BaseType
 /// Size: 0x004F (0x000001 - 0x000050)
 struct FSavedGlobalAIData_RecruitmentObjectData : FSavedAIData_BaseType
 { 
-	SDK_UNDEFINED(80,11795) /* TMap<FGuid, FJunoRecruitmentObjectAssignedData> */ __um(RecruitmentObjectToAssignedData); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11834) /* TMap<FGuid, FJunoRecruitmentObjectAssignedData> */ __um(RecruitmentObjectToAssignedData); // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.SavedGlobalAIData
@@ -806,7 +861,7 @@ struct FSavedGlobalAIData
 /// Size: 0x0120 (0x000000 - 0x000120)
 struct FSavedAIDataManager
 { 
-	SDK_UNDEFINED(80,11796) /* TMap<FGameplayTag, FSavedAIData> */ __um(SavedAIDataPerUniqueAIIdentifier);         // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11835) /* TMap<FGameplayTag, FSavedAIData> */ __um(SavedAIDataPerUniqueAIIdentifier);         // 0x0000   (0x0050)  
 	FSavedGlobalAIData                                 SavedGlobalAIData;                                          // 0x0050   (0x00D0)  
 };
 
@@ -856,21 +911,22 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoAlterationCraftingComponent
-/// Size: 0x0028 (0x0000A0 - 0x0000C8)
+/// Size: 0x0010 (0x0000A0 - 0x0000B0)
 class UJunoAlterationCraftingComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(8,11797) /* TWeakObjectPtr<UCraftingObjectComponent*> */ __um(CachedCraftingObjectComponent);    // 0x00A0   (0x0008)  
-	SDK_UNDEFINED(32,11798) /* TWeakObjectPtr<UDataTable*> */ __um(WeaponEssenceDataTable);                        // 0x00A8   (0x0020)  
+	SDK_UNDEFINED(8,11836) /* TWeakObjectPtr<UCraftingObjectComponent*> */ __um(CachedCraftingObjectComponent);    // 0x00A0   (0x0008)  
+	FDataRegistryType                                  WeaponEssenceDataRegistryType;                              // 0x00A8   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x00AC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAlterationCraftingComponent.OnCraftingSuccess
-	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                           // [0xb8b01f8] Final|Native|Private|HasOutParms 
+	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                           // [0xbb989f8] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoAlterationCraftingComponent.OnCheckValidItemType
-	// bool OnCheckValidItemType(class AFortPlayerController* Instigator);                                                   // [0x8680678] Final|Native|Private 
+	// bool OnCheckValidItemType(class AFortPlayerController* Instigator);                                                   // [0x8624e08] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoAlterationCraftingComponent.HandleCraftingStateChanged
-	// void HandleCraftingStateChanged(FCraftingObjectStateChangedEvent& Event);                                             // [0xb8afdc8] Final|Native|Private|HasOutParms 
+	// void HandleCraftingStateChanged(FCraftingObjectStateChangedEvent& Event);                                             // [0xbb9895c] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoAnalytics
@@ -906,15 +962,15 @@ public:
 class UJunoAsyncAction_WaitForEventRouter : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,11799) /* FMulticastInlineDelegate */ __um(OnGameplayEventRouterAvailable);                   // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,11837) /* FMulticastInlineDelegate */ __um(OnGameplayEventRouterAvailable);                   // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0040   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAsyncAction_WaitForEventRouter.WaitForEventRouter
-	// class UJunoAsyncAction_WaitForEventRouter* WaitForEventRouter(class AActor* ContextActor);                            // [0xb8b04a8] Final|Native|Static|Public|BlueprintCallable 
+	// class UJunoAsyncAction_WaitForEventRouter* WaitForEventRouter(class AActor* ContextActor);                            // [0xbb98da8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAsyncAction_WaitForEventRouter.onGameplayEventRouterAvailable__DelegateSignature
-	// void onGameplayEventRouterAvailable__DelegateSignature(class UGameplayEventRouterComponent* EventRouter);             // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void onGameplayEventRouterAvailable__DelegateSignature(class UGameplayEventRouterComponent* EventRouter);             // [0x2047e54] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/JunoGameNative.JunoBuilderToolSelectedActorInterface
@@ -926,9 +982,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuilderToolSelectedActorInterface.ReceiveSpawnedByBuilderTool
-	// void ReceiveSpawnedByBuilderTool(class AJunoBuilderTool* BuilderTool, class UJunoBuilderToolInteractionBehavior* Behavior); // [0xb8b03e4] Native|Event|Public|BlueprintEvent 
+	// void ReceiveSpawnedByBuilderTool(class AJunoBuilderTool* BuilderTool, class UJunoBuilderToolInteractionBehavior* Behavior); // [0xbb98c68] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolSelectedActorInterface.ReceiveSelectionSpawnedByBuilderTool
-	// void ReceiveSelectionSpawnedByBuilderTool(class AJunoBuilderTool* BuilderTool, class UJunoBuilderToolInteractionBehavior* Behavior, FJunoBuilderToolSelectionSpawnParams& SelectionSpawnParameters); // [0xb8b02a0] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceiveSelectionSpawnedByBuilderTool(class AJunoBuilderTool* BuilderTool, class UJunoBuilderToolInteractionBehavior* Behavior, FJunoBuilderToolSelectionSpawnParams& SelectionSpawnParameters); // [0xbb98aa0] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingConnectivityBlueprintLibrary
@@ -940,13 +996,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingConnectivityBlueprintLibrary.GetKnobs
-	// TArray<FJunoBuildingConnectionPoint> GetKnobs(FJunoBuildingConnectionPointsResult& Result);                           // [0xb8af694] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<FJunoBuildingConnectionPoint> GetKnobs(FJunoBuildingConnectionPointsResult& Result);                           // [0xbb98228] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBuildingConnectivityBlueprintLibrary.GetAtomModelAssetUserData
-	// TArray<UAtomModelAssetUserData*> GetAtomModelAssetUserData(class UObject* Object);                                    // [0xb8af5dc] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UAtomModelAssetUserData*> GetAtomModelAssetUserData(class UObject* Object);                                    // [0xbb98130] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingConnectivityBlueprintLibrary.DebugDrawConnections
-	// void DebugDrawConnections(class UObject* WorldContextObject, FJunoBuildingConnectionPointsResult& Candidates, FJunoBuildingConnectionPointsResult& Targets, FJunoBuildingConnection& ChosenConnection, TArray<FJunoBuildingConnection>& Connections); // [0xb8af3c4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void DebugDrawConnections(class UObject* WorldContextObject, FJunoBuildingConnectionPointsResult& Candidates, FJunoBuildingConnectionPointsResult& Targets, FJunoBuildingConnection& ChosenConnection, TArray<FJunoBuildingConnection>& Connections); // [0xbb97ee8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingConnectivityBlueprintLibrary.DebugDrawConnectionLocations
-	// void DebugDrawConnectionLocations(class UObject* WorldContextObject, FJunoBuildingConnection& Connection);            // [0xb8af2e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void DebugDrawConnectionLocations(class UObject* WorldContextObject, FJunoBuildingConnection& Connection);            // [0xbb97dbc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingProp
@@ -963,7 +1019,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingProp.GetAssociatedItem
-	// class UFortItemDefinition* GetAssociatedItem();                                                                       // [0xb9ae4c8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItemDefinition* GetAssociatedItem();                                                                       // [0xbcc3c00] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingPropTree
@@ -976,7 +1032,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingPropTree.BlueprintCanDieInLifecyclePhase
-	// bool BlueprintCanDieInLifecyclePhase(char CurrentPhaseIndex);                                                         // [0x211c0a0] BlueprintAuthorityOnly|Event|Protected|BlueprintEvent 
+	// bool BlueprintCanDieInLifecyclePhase(char CurrentPhaseIndex);                                                         // [0x2047e54] BlueprintAuthorityOnly|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/JunoGameNative.JunoCampActor
@@ -997,8 +1053,8 @@ class UJunoCampCenterComponent : public UGameFrameworkComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A0   (0x0008)  MISSED
-	SDK_UNDEFINED(16,11800) /* FMulticastInlineDelegate */ __um(OnJunoCampAwesomeLevelChangedDelegate);            // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,11801) /* FMulticastInlineDelegate */ __um(OnJunoCampAwesomePointModificationDelegate);       // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,11838) /* FMulticastInlineDelegate */ __um(OnJunoCampAwesomeLevelChangedDelegate);            // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,11839) /* FMulticastInlineDelegate */ __um(OnJunoCampAwesomePointModificationDelegate);       // 0x00B8   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x30];                                      // 0x00C8   (0x0030)  MISSED
 	class UClass*                                      CampActorClassToSpawn;                                      // 0x00F8   (0x0008)  
 	FGameplayTag                                       CampCenterDestructionDeathReasonTag;                        // 0x0100   (0x0004)  
@@ -1010,13 +1066,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCampCenterComponent.OnCampAwesomePointModification
-	// void OnCampAwesomePointModification(FJunoEvent_CampAwesomePointsModified& Payload);                                   // [0xb8b0160] Final|Native|Protected|HasOutParms 
+	// void OnCampAwesomePointModification(FJunoEvent_CampAwesomePointsModified& Payload);                                   // [0xbb9c510] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoCampCenterComponent.OnCampAwesomeLevelChanged
-	// void OnCampAwesomeLevelChanged(FJunoEvent_CampAwesomeLevelChanged& Payload);                                          // [0xb8b00c8] Final|Native|Protected|HasOutParms 
+	// void OnCampAwesomeLevelChanged(FJunoEvent_CampAwesomeLevelChanged& Payload);                                          // [0xbb9c478] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoCampCenterComponent.NotifyOwnerPlacedByBuilderTool
-	// void NotifyOwnerPlacedByBuilderTool(class AFortPlayerController* FortPC);                                             // [0xb8afffc] Final|Native|Public|BlueprintCallable 
+	// void NotifyOwnerPlacedByBuilderTool(class AFortPlayerController* FortPC);                                             // [0xbb9c368] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampCenterComponent.HandleSmartObjectEvent
-	// void HandleSmartObjectEvent(FSmartObjectEventData& SmartObjectEventData, class AActor* Actor);                        // [0xb8afe64] Final|Native|Private|HasOutParms 
+	// void HandleSmartObjectEvent(FSmartObjectEventData& SmartObjectEventData, class AActor* Actor);                        // [0xbb9bf20] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoCampComponentBase
@@ -1071,46 +1127,46 @@ public:
 class UJunoCampMembershipActorComponent : public UFortAthenaTrackableAIObjectComponent
 { 
 public:
-	SDK_UNDEFINED(16,11802) /* FMulticastInlineDelegate */ __um(OnJunoCampMembershipChanged);                      // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,11840) /* FMulticastInlineDelegate */ __um(OnJunoCampMembershipChanged);                      // 0x00E0   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x00F0   (0x0018)  MISSED
-	SDK_UNDEFINED(8,11803) /* TWeakObjectPtr<AJunoCampActor*> */ __um(BoundCamp);                                  // 0x0108   (0x0008)  
+	SDK_UNDEFINED(8,11841) /* TWeakObjectPtr<AJunoCampActor*> */ __um(BoundCamp);                                  // 0x0108   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x30];                                      // 0x0110   (0x0030)  MISSED
 	FScalableFloat                                     ToleranceForMovementUpdates;                                // 0x0140   (0x0028)  
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.OnRep_BoundCamp
-	// void OnRep_BoundCamp();                                                                                               // [0xb8b360c] Final|Native|Private 
+	// void OnRep_BoundCamp();                                                                                               // [0xbb9c5bc] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.HasCampAtLocation
-	// bool HasCampAtLocation(class UObject* WorldContextObject, FVector& Location);                                         // [0xb8b328c] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool HasCampAtLocation(class UObject* WorldContextObject, FVector& Location);                                         // [0xbb9c1e8] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.HasCampAtBounds
-	// bool HasCampAtBounds(class UObject* WorldContextObject, FBox& Bounds);                                                // [0xb8b31bc] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool HasCampAtBounds(class UObject* WorldContextObject, FBox& Bounds);                                                // [0xbb9c0cc] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.HandleBoundCampEndPlayEvent
-	// void HandleBoundCampEndPlayEvent(class AActor* InOwner, TEnumAsByte<EEndPlayReason> EndPlayReason);                   // [0xb8b2ba4] Final|Native|Private 
+	// void HandleBoundCampEndPlayEvent(class AActor* InOwner, TEnumAsByte<EEndPlayReason> EndPlayReason);                   // [0xbb9b8bc] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.GetBoundComponent
-	// class UActorComponent* GetBoundComponent(class UClass* ComponentClass);                                               // [0xb8b286c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UActorComponent* GetBoundComponent(class UClass* ComponentClass);                                               // [0xbb9b7d4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.GetBoundCamp
-	// class AJunoCampActor* GetBoundCamp();                                                                                 // [0xb8b2848] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AJunoCampActor* GetBoundCamp();                                                                                 // [0xbb9b7b0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindOrCreateCampMembershipComponentAndReturnComponent
-	// class UActorComponent* FindOrCreateCampMembershipComponentAndReturnComponent(class UClass* ComponentClass, class AActor* Owner); // [0xb8b2734] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// class UActorComponent* FindOrCreateCampMembershipComponentAndReturnComponent(class UClass* ComponentClass, class AActor* Owner); // [0xbb9b61c] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindOrCreateCampMembershipActorComponentOnActor
-	// class UJunoCampMembershipActorComponent* FindOrCreateCampMembershipActorComponentOnActor(class AActor* Owner);        // [0xb8b26b4] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// class UJunoCampMembershipActorComponent* FindOrCreateCampMembershipActorComponentOnActor(class AActor* Owner);        // [0xbb9b55c] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindCampMembershipComponentAndReturnComponent
-	// class UActorComponent* FindCampMembershipComponentAndReturnComponent(class UClass* ComponentClass, class AActor* Owner); // [0xb8b25b8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UActorComponent* FindCampMembershipComponentAndReturnComponent(class UClass* ComponentClass, class AActor* Owner); // [0xbb9b3e8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindCampMembershipActorComponentOnActor
-	// class UJunoCampMembershipActorComponent* FindCampMembershipActorComponentOnActor(class AActor* Owner);                // [0xb8b252c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UJunoCampMembershipActorComponent* FindCampMembershipActorComponentOnActor(class AActor* Owner);                // [0xbb9b31c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindBindableLocalCampForLocation
-	// class AJunoCampActor* FindBindableLocalCampForLocation(class UObject* WorldContextObject, FVector& Location);         // [0xb8b2424] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class AJunoCampActor* FindBindableLocalCampForLocation(class UObject* WorldContextObject, FVector& Location);         // [0xbb9b1c8] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindBindableLocalCampForArea
-	// class AJunoCampActor* FindBindableLocalCampForArea(class AActor* Actor, FBox& AreaBox);                               // [0xb8b22d8] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class AJunoCampActor* FindBindableLocalCampForArea(class AActor* Actor, FBox& AreaBox);                               // [0xbb9b038] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindBindableLocalCampForActorAndReturnComponent
-	// class UActorComponent* FindBindableLocalCampForActorAndReturnComponent(class UClass* ComponentClass, class AActor* Actor); // [0xb8b21e0] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// class UActorComponent* FindBindableLocalCampForActorAndReturnComponent(class UClass* ComponentClass, class AActor* Actor); // [0xbb9aec0] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindBindableLocalCampForActor
-	// class AJunoCampActor* FindBindableLocalCampForActor(class AActor* Actor);                                             // [0xb8b2160] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// class AJunoCampActor* FindBindableLocalCampForActor(class AActor* Actor);                                             // [0xbb9ae00] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.FindBindableLocalCampAtLocationAndReturnComponent
-	// class UActorComponent* FindBindableLocalCampAtLocationAndReturnComponent(class UClass* ComponentClass, class UObject* WorldContextObject, FVector& Location); // [0xb8b1fe0] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UActorComponent* FindBindableLocalCampAtLocationAndReturnComponent(class UClass* ComponentClass, class UObject* WorldContextObject, FVector& Location); // [0xbb9ac00] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampMembershipActorComponent.AttemptToBindToCamp
-	// void AttemptToBindToCamp();                                                                                           // [0xb8b1f20] Final|Native|Private 
+	// void AttemptToBindToCamp();                                                                                           // [0xbb9ab40] Final|Native|Private 
 };
 
 /// Struct /Script/JunoGameNative.AwesomeLevelSaveData
@@ -1119,7 +1175,7 @@ struct FAwesomeLevelSaveData
 { 
 	int32_t                                            AwesomePoints;                                              // 0x0000   (0x0004)  
 	int32_t                                            AwesomeLevel;                                               // 0x0004   (0x0004)  
-	SDK_UNDEFINED(80,11804) /* TSet<FGuid> */          __um(AwesomePrefabIDs);                                     // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,11842) /* TSet<FGuid> */          __um(AwesomePrefabIDs);                                     // 0x0008   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.AICampManagementSaveData
@@ -1136,7 +1192,7 @@ struct FAICampManagementSaveData
 /// Size: 0x00B0 (0x000000 - 0x0000B0)
 struct FNamedPOISaveData
 { 
-	SDK_UNDEFINED(24,11805) /* FText */                __um(POIName);                                              // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,11843) /* FText */                __um(POIName);                                              // 0x0000   (0x0018)  
 	FJunoMarker                                        Marker;                                                     // 0x0018   (0x0098)  
 };
 
@@ -1172,12 +1228,12 @@ struct FActiveCampNPCEntry
 { 
 	FGameplayTag                                       UniqueAIIdentifier;                                         // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(24,11806) /* FText */                __um(DisplayName);                                          // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,11844) /* FText */                __um(DisplayName);                                          // 0x0008   (0x0018)  
 	FGameplayTag                                       RoleTag;                                                    // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0024   (0x0004)  MISSED
-	SDK_UNDEFINED(32,11807) /* TWeakObjectPtr<UTexture2D*> */ __um(NPCIconSmall);                                  // 0x0028   (0x0020)  
-	SDK_UNDEFINED(32,11808) /* TWeakObjectPtr<UTexture2D*> */ __um(NPCIconLarge);                                  // 0x0048   (0x0020)  
-	SDK_UNDEFINED(32,11809) /* TWeakObjectPtr<UTexture2D*> */ __um(NPCIconWide);                                   // 0x0068   (0x0020)  
+	SDK_UNDEFINED(32,11845) /* TWeakObjectPtr<UTexture2D*> */ __um(NPCIconSmall);                                  // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,11846) /* TWeakObjectPtr<UTexture2D*> */ __um(NPCIconLarge);                                  // 0x0048   (0x0020)  
+	SDK_UNDEFINED(32,11847) /* TWeakObjectPtr<UTexture2D*> */ __um(NPCIconWide);                                   // 0x0068   (0x0020)  
 };
 
 /// Class /Script/JunoGameNative.JunoCampRecruitmentComponent
@@ -1191,7 +1247,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCampRecruitmentComponent.GetActiveNPCEntries
-	// TArray<FActiveCampNPCEntry> GetActiveNPCEntries();                                                                    // [0xb8b2810] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FActiveCampNPCEntry> GetActiveNPCEntries();                                                                    // [0xbb9b778] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/JunoGameNative.JunoRecruitmentObjectAssignedData
@@ -1202,8 +1258,8 @@ struct FJunoRecruitmentObjectAssignedData
 	FGameplayTag                                       UniqueAIIdentifier;                                         // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
 	FUniqueNetIdRepl                                   PlayerNetId;                                                // 0x0018   (0x0030)  
-	SDK_UNDEFINED(24,11810) /* FText */                __um(DisplayText);                                          // 0x0048   (0x0018)  
-	SDK_UNDEFINED(32,11811) /* TWeakObjectPtr<UTexture2D*> */ __um(NPCPortrait);                                   // 0x0060   (0x0020)  
+	SDK_UNDEFINED(24,11848) /* FText */                __um(DisplayText);                                          // 0x0048   (0x0018)  
+	SDK_UNDEFINED(32,11849) /* TWeakObjectPtr<UTexture2D*> */ __um(NPCPortrait);                                   // 0x0060   (0x0020)  
 };
 
 /// Class /Script/JunoGameNative.JunoCampRecruitmentObjectComponent
@@ -1211,9 +1267,9 @@ struct FJunoRecruitmentObjectAssignedData
 class UJunoCampRecruitmentObjectComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(16,11812) /* FMulticastInlineDelegate */ __um(OnJunoRecruitmentObjectAssignedChangedDelegate);   // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11850) /* FMulticastInlineDelegate */ __um(OnJunoRecruitmentObjectAssignedChangedDelegate);   // 0x00A0   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x00B0   (0x0018)  MISSED
-	SDK_UNDEFINED(16,11813) /* FMulticastInlineDelegate */ __um(OnJunoRecruitmentObjectEnableChangeDelegate);      // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,11851) /* FMulticastInlineDelegate */ __um(OnJunoRecruitmentObjectEnableChangeDelegate);      // 0x00C8   (0x0010)  
 	bool                                               bIsEnabled;                                                 // 0x00D8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00D9   (0x0007)  MISSED
 	FJunoRecruitmentObjectAssignedData                 CachedAssignedData;                                         // 0x00E0   (0x0080)  
@@ -1222,25 +1278,25 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.OnRep_bIsEnabled
-	// void OnRep_bIsEnabled();                                                                                              // [0xb8b3640] Final|Native|Private 
+	// void OnRep_bIsEnabled();                                                                                              // [0xbb9c5f0] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.OnRep_AssignedData
-	// void OnRep_AssignedData();                                                                                            // [0xb8b35f8] Final|Native|Private 
+	// void OnRep_AssignedData();                                                                                            // [0xbb9c5a8] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.IsEnabled
-	// bool IsEnabled();                                                                                                     // [0x849d3e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                     // [0x84381f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.IsAssignedToPlayer
-	// bool IsAssignedToPlayer();                                                                                            // [0xb8b3394] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAssignedToPlayer();                                                                                            // [0xbb9c33c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.IsAssignedToAI
-	// bool IsAssignedToAI();                                                                                                // [0x849f258] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAssignedToAI();                                                                                                // [0x843a4c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.HandleOnEmptyRecrutmentObjectInteracted
-	// void HandleOnEmptyRecrutmentObjectInteracted(class AFortPlayerController* InteractingController);                     // [0xb8b3130] Final|Native|Public|BlueprintCallable 
+	// void HandleOnEmptyRecrutmentObjectInteracted(class AFortPlayerController* InteractingController);                     // [0xbb9be50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.HandleDied
-	// void HandleDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb8b2c68] Final|Native|Private|HasDefaults 
+	// void HandleDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xbb9b9fc] Final|Native|Private|HasDefaults 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.GetAssignedData
-	// FJunoRecruitmentObjectAssignedData GetAssignedData();                                                                 // [0xb8b282c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoRecruitmentObjectAssignedData GetAssignedData();                                                                 // [0xbb9b794] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.CostlyFindAssignableNPCs
-	// bool CostlyFindAssignableNPCs(TArray<FGameplayTag>& OutAssignableNPCs);                                               // [0xb8b1f34] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool CostlyFindAssignableNPCs(TArray<FGameplayTag>& OutAssignableNPCs);                                               // [0xbb9ab54] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCampRecruitmentObjectComponent.AssignToPlayer
-	// void AssignToPlayer(class AFortPlayerController* PlayerController, bool bCheckForDuplicateRecruitmentObjects);        // [0xb8b1e58] Final|Native|Public|BlueprintCallable 
+	// void AssignToPlayer(class AFortPlayerController* PlayerController, bool bCheckForDuplicateRecruitmentObjects);        // [0xbb9aa00] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.JunoCampRemovalStatusData
@@ -1268,7 +1324,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCampRemovalStatusComponent.OnRep_CampRemovalStatusData
-	// void OnRep_CampRemovalStatusData();                                                                                   // [0xb8b3620] Final|Native|Private 
+	// void OnRep_CampRemovalStatusData();                                                                                   // [0xbb9c5d0] Final|Native|Private 
 };
 
 /// Class /Script/JunoGameNative.JunoCaveContainerInterface
@@ -1280,7 +1336,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCaveContainerInterface.GetCaveEntrances
-	// void GetCaveEntrances(TArray<FTransform>& Transforms);                                                                // [0xb8b2910] Native|Public|HasOutParms|Const 
+	// void GetCaveEntrances(TArray<FTransform>& Transforms);                                                                // [0xbb9e348] Native|Public|HasOutParms|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoChaosAudioGameStateComponent
@@ -1291,44 +1347,44 @@ public:
 	class UPhysicalMaterial*                           FallbackPhysicalMaterial;                                   // 0x00A0   (0x0008)  
 	FName                                              CollisionEventSizeParamName;                                // 0x00A8   (0x0004)  
 	FName                                              CollisionTriggerUpdateParamName;                            // 0x00AC   (0x0004)  
-	SDK_UNDEFINED(32,11814) /* TWeakObjectPtr<USoundBase*> */ __um(Collision_Loop);                                // 0x00B0   (0x0020)  
+	SDK_UNDEFINED(32,11852) /* TWeakObjectPtr<USoundBase*> */ __um(Collision_Loop);                                // 0x00B0   (0x0020)  
 	FScalableFloat                                     CollisionMassToSize;                                        // 0x00D0   (0x0028)  
 	FScalableFloat                                     CollisionVolumeMultiplier;                                  // 0x00F8   (0x0028)  
-	SDK_UNDEFINED(80,11815) /* TMap<UPhysicalMaterial*, FChaosAudioEventSizeSounds> */ __um(CollisionMaterials);   // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,11853) /* TMap<UPhysicalMaterial*, FChaosAudioEventSizeSounds> */ __um(CollisionMaterials);   // 0x0120   (0x0050)  
 	FName                                              BreakEventSizeParamName;                                    // 0x0170   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0174   (0x0004)  MISSED
-	SDK_UNDEFINED(32,11816) /* TWeakObjectPtr<USoundBase*> */ __um(Break_Group_Default);                           // 0x0178   (0x0020)  
-	SDK_UNDEFINED(80,11817) /* TMap<UPhysicalMaterial*, USoundBase*> */ __um(BreakGroupMaterialMap);               // 0x0198   (0x0050)  
+	SDK_UNDEFINED(32,11854) /* TWeakObjectPtr<USoundBase*> */ __um(Break_Group_Default);                           // 0x0178   (0x0020)  
+	SDK_UNDEFINED(80,11855) /* TMap<UPhysicalMaterial*, USoundBase*> */ __um(BreakGroupMaterialMap);               // 0x0198   (0x0050)  
 	FScalableFloat                                     BreakMassToSize;                                            // 0x01E8   (0x0028)  
 	FScalableFloat                                     BreakVolumeMultiplier;                                      // 0x0210   (0x0028)  
-	SDK_UNDEFINED(80,11818) /* TMap<UPhysicalMaterial*, FChaosAudioEventSizeSounds> */ __um(BreakMaterials);       // 0x0238   (0x0050)  
-	SDK_UNDEFINED(80,11819) /* TMap<FGuid, TWeakObjectPtr<UAudioComponent*>> */ __um(CollisionSoundMap);           // 0x0288   (0x0050)  
-	SDK_UNDEFINED(80,11820) /* TMap<FGuid, TWeakObjectPtr<UAudioComponent*>> */ __um(BreakSoundMap);               // 0x02D8   (0x0050)  
+	SDK_UNDEFINED(80,11856) /* TMap<UPhysicalMaterial*, FChaosAudioEventSizeSounds> */ __um(BreakMaterials);       // 0x0238   (0x0050)  
+	SDK_UNDEFINED(80,11857) /* TMap<FGuid, TWeakObjectPtr<UAudioComponent*>> */ __um(CollisionSoundMap);           // 0x0288   (0x0050)  
+	SDK_UNDEFINED(80,11858) /* TMap<FGuid, TWeakObjectPtr<UAudioComponent*>> */ __um(BreakSoundMap);               // 0x02D8   (0x0050)  
 	class UAudioEventAggregatorSubsystem*              AudioEventAggregatorSubsystem;                              // 0x0328   (0x0008)  
-	SDK_UNDEFINED(16,11821) /* TArray<TWeakObjectPtr<USoundBase*>> */ __um(SoftAssets);                            // 0x0330   (0x0010)  
+	SDK_UNDEFINED(16,11859) /* TArray<TWeakObjectPtr<USoundBase*>> */ __um(SoftAssets);                            // 0x0330   (0x0010)  
 	TArray<class USoundBase*>                          LoadedAssets;                                               // 0x0340   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0350   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.UnSubscribeToChaosEventRelayEvents
-	// void UnSubscribeToChaosEventRelayEvents();                                                                            // [0xb8b37a0] Final|Native|Public|BlueprintCallable 
+	// void UnSubscribeToChaosEventRelayEvents();                                                                            // [0xbba10a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.SubscribeToChaosEventRelayEvents
-	// void SubscribeToChaosEventRelayEvents();                                                                              // [0xb8b378c] Final|Native|Public|BlueprintCallable 
+	// void SubscribeToChaosEventRelayEvents();                                                                              // [0xbba108c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.OnSoundCollisionEvents
-	// void OnSoundCollisionEvents(TArray<FSoundCollisionEvent>& SoundCollisionEvents);                                      // [0xb8b36f0] Final|Native|Private|HasOutParms 
+	// void OnSoundCollisionEvents(TArray<FSoundCollisionEvent>& SoundCollisionEvents);                                      // [0xbba0224] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.OnSoundBreakEvents
-	// void OnSoundBreakEvents(TArray<FSoundBreakEvent>& SoundBreakEvents);                                                  // [0xb8b3654] Final|Native|Private|HasOutParms 
+	// void OnSoundBreakEvents(TArray<FSoundBreakEvent>& SoundBreakEvents);                                                  // [0xbb9fb64] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.OnActiveSoundCollisionEventsUpdated
-	// void OnActiveSoundCollisionEventsUpdated(TArray<FSoundCollisionEvent>& SoundCollisionEvents);                         // [0xb8b355c] Final|Native|Private|HasOutParms 
+	// void OnActiveSoundCollisionEventsUpdated(TArray<FSoundCollisionEvent>& SoundCollisionEvents);                         // [0xbb9f14c] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.OnActiveSoundCollisionEventSoundFinished
-	// void OnActiveSoundCollisionEventSoundFinished(class UAudioComponent* Component);                                      // [0xb8b34dc] Final|Native|Private 
+	// void OnActiveSoundCollisionEventSoundFinished(class UAudioComponent* Component);                                      // [0xbb9f08c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.OnActiveSoundBreakEventsUpdated
-	// void OnActiveSoundBreakEventsUpdated(TArray<FSoundBreakEvent>& SoundBreakEvents);                                     // [0xb8b3440] Final|Native|Private|HasOutParms 
+	// void OnActiveSoundBreakEventsUpdated(TArray<FSoundBreakEvent>& SoundBreakEvents);                                     // [0xbb9e9cc] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.OnActiveSoundBreakEventSoundFinished
-	// void OnActiveSoundBreakEventSoundFinished(class UAudioComponent* Component);                                          // [0xb8b33c0] Final|Native|Private 
+	// void OnActiveSoundBreakEventSoundFinished(class UAudioComponent* Component);                                          // [0xbb9e90c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoChaosAudioGameStateComponent.GetSingleChaosEventSound
-	// class USoundBase* GetSingleChaosEventSound(TMap<UPhysicalMaterial*, FChaosAudioEventSizeSounds> ChaosEventMaterials, class UPhysicalMaterial* Material, char EventSize); // [0xb8b29b0] Final|Native|Private 
+	// class USoundBase* GetSingleChaosEventSound(TMap<UPhysicalMaterial*, FChaosAudioEventSizeSounds> ChaosEventMaterials, class UPhysicalMaterial* Material, char EventSize); // [0xbb9e5a0] Final|Native|Private 
 };
 
 /// Class /Script/JunoGameNative.JunoCheatProfilerSubsystem
@@ -1347,11 +1403,11 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoClusterUnionComponent
-/// Size: 0x0090 (0x0007B0 - 0x000840)
+/// Size: 0x0090 (0x000740 - 0x0007D0)
 class UJunoClusterUnionComponent : public UClusterUnionComponent
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x90];                                      // 0x07B0   (0x0090)  MISSED
+	unsigned char                                      UnknownData00_1[0x90];                                      // 0x0740   (0x0090)  MISSED
 };
 
 /// Class /Script/JunoGameNative.JunoComponent_HealthIndicator
@@ -1367,11 +1423,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoComponent_HealthIndicator.OnServerPawnHealthChanged
-	// void OnServerPawnHealthChanged();                                                                                     // [0xb8b5d54] Final|Native|Protected 
+	// void OnServerPawnHealthChanged();                                                                                     // [0xbb9fb50] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoComponent_HealthIndicator.OnRep_MaxHealth
-	// void OnRep_MaxHealth();                                                                                               // [0xb8b5d10] Final|Native|Protected 
+	// void OnRep_MaxHealth();                                                                                               // [0xbb9fb0c] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoComponent_HealthIndicator.OnRep_Health
-	// void OnRep_Health();                                                                                                  // [0xb8b5ccc] Final|Native|Protected 
+	// void OnRep_Health();                                                                                                  // [0xbb9fac8] Final|Native|Protected 
 };
 
 /// Class /Script/JunoGameNative.JunoComponent_Stamina
@@ -1383,9 +1439,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoComponent_Stamina.SetMaxEnergy
-	// void SetMaxEnergy(FScalableFloat NewMaxEnergy);                                                                       // [0xb8b632c] Final|Native|Public|BlueprintCallable 
+	// void SetMaxEnergy(FScalableFloat NewMaxEnergy);                                                                       // [0xbba0fa4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoComponent_Stamina.GetMaxEnergy
-	// FScalableFloat GetMaxEnergy();                                                                                        // [0xb8b57c4] Final|Native|Public|BlueprintCallable 
+	// FScalableFloat GetMaxEnergy();                                                                                        // [0xbb9e564] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoConnectableActorInterface
@@ -1428,14 +1484,14 @@ public:
 	float                                              ShowDistance;                                               // 0x00B8   (0x0004)  
 	float                                              HideDistance;                                               // 0x00BC   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x00C0   (0x0010)  MISSED
-	SDK_UNDEFINED(80,11822) /* TSet<AFortPawn*> */     __um(VisiblePawnsCache);                                    // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,11860) /* TSet<AFortPawn*> */     __um(VisiblePawnsCache);                                    // 0x00D0   (0x0050)  
 	TArray<FJunoIndicatorVisibilityQueryEntry>         QueryToPawnEntries;                                         // 0x0120   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x30];                                      // 0x0130   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoControllerComponent_Indicators.OnAnyFortPawnDestroyed
-	// void OnAnyFortPawnDestroyed(class AActor* FortPawnActor);                                                             // [0xb8b5a90] Final|Native|Private 
+	// void OnAnyFortPawnDestroyed(class AActor* FortPawnActor);                                                             // [0xbb9f80c] Final|Native|Private 
 };
 
 /// Class /Script/JunoGameNative.JunoControllerComponent_MapMarker
@@ -1447,9 +1503,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoControllerComponent_MapMarker.ServerCreateMarker
-	// void ServerCreateMarker(FGuid Guid, FJunoMarker NewMarker, FText DisplayName);                                        // [0xb8b5d68] Net|NetReliableNative|Event|Public|NetServer|HasDefaults 
+	// void ServerCreateMarker(FGuid Guid, FJunoMarker NewMarker, FText DisplayName);                                        // [0xbba08e4] Net|NetReliableNative|Event|Public|NetServer|HasDefaults 
 	// Function /Script/JunoGameNative.JunoControllerComponent_MapMarker.ClientRequestCustomization
-	// void ClientRequestCustomization(FGuid Guid, FJunoMarker NewMarker, FText DisplayName);                                // [0xb8b518c] Net|NetReliableNative|Event|Public|HasDefaults|NetClient 
+	// void ClientRequestCustomization(FGuid Guid, FJunoMarker NewMarker, FText DisplayName);                                // [0xbb9e130] Net|NetReliableNative|Event|Public|HasDefaults|NetClient 
 };
 
 /// Class /Script/JunoGameNative.JunoControllerComponent_SocialSim
@@ -1462,11 +1518,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoControllerComponent_SocialSim.Server_TriggerVillageSelfDestruct
-	// void Server_TriggerVillageSelfDestruct();                                                                             // [0x80f8ed4] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void Server_TriggerVillageSelfDestruct();                                                                             // [0x80910ac] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoControllerComponent_SocialSim.Server_TriggerAwesomeLevelChange
-	// void Server_TriggerAwesomeLevelChange(class AFortPlayerController* TriggeringPlayer);                                 // [0x894b158] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void Server_TriggerAwesomeLevelChange(class AFortPlayerController* TriggeringPlayer);                                 // [0x8919fa4] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoControllerComponent_SocialSim.OnJunoPlayerPersistenceDataAvailable
-	// void OnJunoPlayerPersistenceDataAvailable(FUniqueNetIdRepl& UniquePlayerId, FJunoPlayerSaveData& SaveData);           // [0xb8b5b90] Final|Native|Private|HasOutParms 
+	// void OnJunoPlayerPersistenceDataAvailable(FUniqueNetIdRepl& UniquePlayerId, FJunoPlayerSaveData& SaveData);           // [0xbb9f98c] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoCraftingAnalytics
@@ -1491,7 +1547,7 @@ struct FJunoInventoryGroupConfig
 	uint32_t                                           NumItemRows;                                                // 0x0004   (0x0004)  
 	uint32_t                                           NumItemColumns;                                             // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,11823) /* TMap<int32_t, FGameplayTagContainer> */ __um(SlotTagMap);                           // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,11861) /* TMap<int32_t, FGameplayTagContainer> */ __um(SlotTagMap);                           // 0x0010   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoInventoryConfig
@@ -1509,7 +1565,7 @@ struct FJunoInventoryConfig
 struct FJunoInventoryHandle
 { 
 	FGuid                                              Guid;                                                       // 0x0000   (0x0010)  
-	SDK_UNDEFINED(8,11824) /* TWeakObjectPtr<AJunoInventory*> */ __um(Inventory);                                  // 0x0010   (0x0008)  
+	SDK_UNDEFINED(8,11862) /* TWeakObjectPtr<AJunoInventory*> */ __um(Inventory);                                  // 0x0010   (0x0008)  
 	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0018   (0x000C)  MISSED
 };
 
@@ -1556,9 +1612,9 @@ public:
 	float                                              LootTossAngle;                                              // 0x0134   (0x0004)  
 	FJunoInventoryHandle                               InventoryHandle;                                            // 0x0138   (0x0024)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x015C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,11825) /* TMap<FGameplayTag, FJunoItemSlotGroup> */ __um(ItemSlotGroups);                     // 0x0160   (0x0050)  
+	SDK_UNDEFINED(80,11863) /* TMap<FGameplayTag, FJunoItemSlotGroup> */ __um(ItemSlotGroups);                     // 0x0160   (0x0050)  
 	FJunoReplicatedItemSlotList                        ReplicatedItemSlotData;                                     // 0x01B0   (0x0128)  
-	SDK_UNDEFINED(16,11826) /* FMulticastInlineDelegate */ __um(OnInventoryChangedEvent);                          // 0x02D8   (0x0010)  
+	SDK_UNDEFINED(16,11864) /* FMulticastInlineDelegate */ __um(OnInventoryChangedEvent);                          // 0x02D8   (0x0010)  
 	unsigned char                                      UnknownData03_5[0x8];                                       // 0x02E8   (0x0008)  MISSED
 	TArray<FJunoSelectedSlotData>                      SelectedItemGroupSlots;                                     // 0x02F0   (0x0010)  
 	unsigned char                                      UnknownData04_6[0x18];                                      // 0x0300   (0x0018)  MISSED
@@ -1566,37 +1622,37 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoInventoryComponent.UseOffHandDurability
-	// void UseOffHandDurability(float DurabilityPerUse);                                                                    // [0xb96d0ac] Final|Native|Public|BlueprintCallable 
+	// void UseOffHandDurability(float DurabilityPerUse);                                                                    // [0xbc818e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.ServerTakeItem
-	// void ServerTakeItem(FJunoTakeItemRequest Request);                                                                    // [0xb96c314] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerTakeItem(FJunoTakeItemRequest Request);                                                                    // [0xbc80a94] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.ServerMoveAllItemsPossible
-	// void ServerMoveAllItemsPossible(class UJunoInventoryComponent* SourceInventoryComponent, class UJunoInventoryComponent* DestinationInventoryComponent, TArray<FGameplayTag> SourceGroupTags, TArray<FGameplayTag> DestinationGroupTags); // [0xb96b830] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerMoveAllItemsPossible(class UJunoInventoryComponent* SourceInventoryComponent, class UJunoInventoryComponent* DestinationInventoryComponent, TArray<FGameplayTag> SourceGroupTags, TArray<FGameplayTag> DestinationGroupTags); // [0xbc7ff14] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.ServerMergeAllItemsPossible
-	// void ServerMergeAllItemsPossible();                                                                                   // [0x6e94000] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerMergeAllItemsPossible(class AActor* TargetInventoryActor);                                                 // [0x80b8a60] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.ServerAttemptItemTransfer
-	// void ServerAttemptItemTransfer(FJunoItemTransferRequest Request);                                                     // [0xb96b618] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerAttemptItemTransfer(FJunoItemTransferRequest Request);                                                     // [0xbc7fd2c] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.ServerAttemptItemMerge
-	// void ServerAttemptItemMerge(FJunoItemSlot SourceItemSlot, FJunoItemSlot DestinationItemSlot, class AActor* SourceInventoryActor, class AActor* DestinationInventoryActor, int32_t Count); // [0xb96b0b0] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerAttemptItemMerge(FJunoItemSlot SourceItemSlot, FJunoItemSlot DestinationItemSlot, class AActor* SourceInventoryActor, class AActor* DestinationInventoryActor, int32_t Count); // [0xbc7f998] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.RemoveItemFromInventory
-	// bool RemoveItemFromInventory(FGuid ItemGuid, int32_t Count);                                                          // [0xb96aec4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool RemoveItemFromInventory(FGuid ItemGuid, int32_t Count);                                                          // [0xbc7f794] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.OnRep_InventoryHandle
-	// void OnRep_InventoryHandle();                                                                                         // [0xb96adcc] Final|Native|Protected 
+	// void OnRep_InventoryHandle();                                                                                         // [0xbc7f63c] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.OnOwningBuildingActorKilled
-	// void OnOwningBuildingActorKilled(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0x867d2f0] Final|Native|Private|HasDefaults 
+	// void OnOwningBuildingActorKilled(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0x86210f0] Final|Native|Private|HasDefaults 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.OnInventoryChangedEvent__DelegateSignature
-	// void OnInventoryChangedEvent__DelegateSignature(TArray<UFortItem*>& AddedItems, TArray<UFortItem*>& RemovedItems);    // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnInventoryChangedEvent__DelegateSignature(TArray<UFortItem*>& AddedItems, TArray<UFortItem*>& RemovedItems);    // [0x2047e54] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.GetOffhandItem
-	// class UFortItem* GetOffhandItem();                                                                                    // [0xb969d18] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UFortItem* GetOffhandItem();                                                                                    // [0xbc7db1c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.GetInventoryItemsInGroups
-	// TArray<UFortWorldItem*> GetInventoryItemsInGroups(TArray<FGameplayTag>& Groups);                                      // [0xb969c50] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFortWorldItem*> GetInventoryItemsInGroups(TArray<FGameplayTag>& Groups);                                      // [0xbc7d9e4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.GetInventoryItems
-	// TArray<UFortWorldItem*> GetInventoryItems();                                                                          // [0xb969c10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFortWorldItem*> GetInventoryItems();                                                                          // [0xbc7d9a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.ClientMoveAllItemsPossibleComplete
-	// void ClientMoveAllItemsPossibleComplete();                                                                            // [0x219df9c] RequiredAPI|Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientMoveAllItemsPossibleComplete();                                                                            // [0x2ef340c] RequiredAPI|Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.ClientMergeAllItemsPossibleComplete
-	// void ClientMergeAllItemsPossibleComplete();                                                                           // [0x212f478] RequiredAPI|Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientMergeAllItemsPossibleComplete();                                                                           // [0x38a9134] RequiredAPI|Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/JunoGameNative.JunoInventoryComponent.AddItemToInventory
-	// class UFortItem* AddItemToInventory(class UFortItemDefinition* ItemDefinition, int32_t Count);                        // [0xb9690c0] Final|Native|Public|BlueprintCallable 
+	// class UFortItem* AddItemToInventory(class UFortItemDefinition* ItemDefinition, int32_t Count);                        // [0xbc7cbf0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoCraftingInventoryComponent
@@ -1615,7 +1671,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCraftingLibrary.MakePerPlayerCraftingKey
-	// FCraftingMultiKey MakePerPlayerCraftingKey(class AActor* Instigator);                                                 // [0xb8b5a10] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FCraftingMultiKey MakePerPlayerCraftingKey(class AActor* Instigator);                                                 // [0xbb9e84c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoGameNative.JunoDeleteActionsReportHandler
@@ -1644,11 +1700,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoDestructionBlueprintLibrary.SetGeometryCollectionSourceFromAtomModel
-	// void SetGeometryCollectionSourceFromAtomModel(class UGeometryCollection* GeometryCollection, class UAtomModel* AtomModel, FName SelectionSetFilter); // [0xb8b6248] Final|Native|Static|Public|BlueprintCallable 
+	// void SetGeometryCollectionSourceFromAtomModel(class UGeometryCollection* GeometryCollection, class UAtomModel* AtomModel, FName SelectionSetFilter); // [0xbba0e04] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoDestructionBlueprintLibrary.SetGeometryCollectionMaterialForInstancedMeshes
-	// void SetGeometryCollectionMaterialForInstancedMeshes(class UGeometryCollection* GeometryCollection, class UMaterialInterface* OpaqueMaterial, class UMaterialInterface* TransparentMaterial, class UMaterialInterface* GlitterMaterial, class UMaterialInterface* OpalMaterial, class UMaterialInterface* InternalGlowMaterial); // [0xb8b60ac] Final|Native|Static|Public|BlueprintCallable 
+	// void SetGeometryCollectionMaterialForInstancedMeshes(class UGeometryCollection* GeometryCollection, class UMaterialInterface* OpaqueMaterial, class UMaterialInterface* TransparentMaterial, class UMaterialInterface* GlitterMaterial, class UMaterialInterface* OpalMaterial, class UMaterialInterface* InternalGlowMaterial); // [0xbba0afc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoDestructionBlueprintLibrary.GetGeometryCollectionSource
-	// TArray<FGeometryCollectionSource> GetGeometryCollectionSource(class UAtomModel* AtomModel, FName SelectionSetFilter); // [0xb8b56b4] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FGeometryCollectionSource> GetGeometryCollectionSource(class UAtomModel* AtomModel, FName SelectionSetFilter); // [0xbb9e3e8] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoDumpWorldPersistentContents
@@ -1674,7 +1730,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoEssenceLevelComponent.OnEquip
-	// void OnEquip(class AFortWeapon* Weapon);                                                                              // [0xb8b5b10] Final|Native|Protected 
+	// void OnEquip(class AFortWeapon* Weapon);                                                                              // [0xbb9f8cc] Final|Native|Protected 
 };
 
 /// Class /Script/JunoGameNative.JunoEventLimiterInterface
@@ -1693,7 +1749,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoEventRouterLibrary.GetGameplayEventRouter
-	// class UGameplayEventRouterComponent* GetGameplayEventRouter(class AActor* ContextActor);                              // [0xb8b5634] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UGameplayEventRouterComponent* GetGameplayEventRouter(class AActor* ContextActor);                              // [0xbba2f44] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoGameNative.JunoExampleMacroGenerated_CheatTestSetup
@@ -1777,17 +1833,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoFreeBuildBlueprintLibrary.IsPlayerAllowedToFly
-	// bool IsPlayerAllowedToFly(class UObject* WorldContextObject);                                                         // [0xb8b5990] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsPlayerAllowedToFly(class UObject* WorldContextObject);                                                         // [0xbba35ac] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoFreeBuildBlueprintLibrary.IsItemSpawnerEnabled
-	// bool IsItemSpawnerEnabled(class UObject* WorldContextObject);                                                         // [0xb8b5900] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsItemSpawnerEnabled(class UObject* WorldContextObject);                                                         // [0xbba34b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoFreeBuildBlueprintLibrary.IsFreeBuildEnabled
-	// bool IsFreeBuildEnabled(class UObject* WorldContextObject);                                                           // [0xb8b5880] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsFreeBuildEnabled(class UObject* WorldContextObject);                                                           // [0xbba33e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoFreeBuildBlueprintLibrary.IsFreeBuildCostFilteringEnabled
-	// bool IsFreeBuildCostFilteringEnabled(class UObject* WorldContextObject);                                              // [0xb8b5800] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsFreeBuildCostFilteringEnabled(class UObject* WorldContextObject);                                              // [0xbba3300] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoFreeBuildBlueprintLibrary.GetFreeBuildSpawnableItems
-	// TArray<FName> GetFreeBuildSpawnableItems(class UObject* WorldContextObject);                                          // [0xb8b55a0] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FName> GetFreeBuildSpawnableItems(class UObject* WorldContextObject);                                          // [0xbba2e70] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoFreeBuildBlueprintLibrary.GetFreeBuildSpawnableItemDefinition
-	// class UFortItemDefinition* GetFreeBuildSpawnableItemDefinition(class UObject* WorldContextObject, FName& Name);       // [0xb8b54d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UFortItemDefinition* GetFreeBuildSpawnableItemDefinition(class UObject* WorldContextObject, FName& Name);       // [0xbba2d64] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoFreeBuildComponent
@@ -1806,29 +1862,29 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.WasFreeBuildEverEnabled
-	// bool WasFreeBuildEverEnabled();                                                                                       // [0xab91c40] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool WasFreeBuildEverEnabled();                                                                                       // [0xad6f994] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.OnRep_WasFreeBuildEverEnabled
-	// void OnRep_WasFreeBuildEverEnabled();                                                                                 // [0xb8b86b4] Final|Native|Private 
+	// void OnRep_WasFreeBuildEverEnabled();                                                                                 // [0xbba38a8] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.OnRep_IsFreeBuildEnabled
-	// void OnRep_IsFreeBuildEnabled();                                                                                      // [0xb8b866c] Final|Native|Private 
+	// void OnRep_IsFreeBuildEnabled();                                                                                      // [0xbba3854] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.OnRep_AnyFreeBuildFlag
-	// void OnRep_AnyFreeBuildFlag();                                                                                        // [0xb8b8658] Final|Native|Private 
+	// void OnRep_AnyFreeBuildFlag();                                                                                        // [0xbba3840] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.OnPlaylistDataReady
-	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb8b8528] Final|Native|Private|HasOutParms 
+	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xbba368c] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.IsPlayerAllowedToFly
-	// bool IsPlayerAllowedToFly();                                                                                          // [0xb8b8508] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayerAllowedToFly();                                                                                          // [0xbba366c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.IsItemSpawnerEnabled
-	// bool IsItemSpawnerEnabled();                                                                                          // [0xb8b84e8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsItemSpawnerEnabled();                                                                                          // [0xbba358c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.IsFreeBuildEnabled
-	// bool IsFreeBuildEnabled();                                                                                            // [0xb8b84d0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFreeBuildEnabled();                                                                                            // [0xbba34a0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.IsFreeBuildCostFilteringEnabled
-	// bool IsFreeBuildCostFilteringEnabled();                                                                               // [0xb8b84b0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFreeBuildCostFilteringEnabled();                                                                               // [0xbba33c0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.GetSpawnableItems
-	// TArray<FName> GetSpawnableItems();                                                                                    // [0xb8b8234] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetSpawnableItems();                                                                                    // [0xbba3044] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.EnableFreeBuild
-	// void EnableFreeBuild();                                                                                               // [0xb8b8080] Final|Native|Public|BlueprintCallable 
+	// void EnableFreeBuild();                                                                                               // [0xbba2b74] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoFreeBuildComponent.DisableFreeBuild
-	// void DisableFreeBuild();                                                                                              // [0xb8b806c] Final|Native|Public|BlueprintCallable 
+	// void DisableFreeBuild();                                                                                              // [0xbba2b60] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoBasePFWPersistenceFeatureData
@@ -1843,7 +1899,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBasePFWPersistenceFeatureData.OnPersistentDataModified
-	// void OnPersistentDataModified();                                                                                      // [0x63540b0] RequiredAPI|Native|Protected|BlueprintCallable 
+	// void OnPersistentDataModified();                                                                                      // [0x6075a98] RequiredAPI|Native|Protected|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.JunoFreeBuildSaveData
@@ -1921,21 +1977,21 @@ public:
 class UJunoGameStateTemperatureComponent : public UGameStateComponent
 { 
 public:
-	SDK_UNDEFINED(80,11827) /* TMap<FGameplayTag, FScalableFloat> */ __um(TemperatureToFloatMap);                  // 0x00A0   (0x0050)  
-	SDK_UNDEFINED(80,11828) /* TMap<FGameplayTag, FScalableFloat> */ __um(TemperatureThresholdsMap);               // 0x00F0   (0x0050)  
+	SDK_UNDEFINED(80,11865) /* TMap<FGameplayTag, FScalableFloat> */ __um(TemperatureToFloatMap);                  // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,11866) /* TMap<FGameplayTag, FScalableFloat> */ __um(TemperatureThresholdsMap);               // 0x00F0   (0x0050)  
 	FFloatRange                                        TemperatureRange;                                           // 0x0140   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0150   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGameStateTemperatureComponent.TemperatureToFloat
-	// float TemperatureToFloat(FGameplayTag& Temperature);                                                                  // [0xb8b8828] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float TemperatureToFloat(FGameplayTag& Temperature);                                                                  // [0xbba3aa0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGameStateTemperatureComponent.GetTemperatureRanges
-	// TArray<FTemperatureRange> GetTemperatureRanges();                                                                     // [0xb8b8274] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FTemperatureRange> GetTemperatureRanges();                                                                     // [0xbba3084] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGameStateTemperatureComponent.GetMinimumTemperature
-	// float GetMinimumTemperature();                                                                                        // [0xb8b8214] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMinimumTemperature();                                                                                        // [0xbba3024] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGameStateTemperatureComponent.GetMaximumTemperature
-	// float GetMaximumTemperature();                                                                                        // [0xb8b81f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaximumTemperature();                                                                                        // [0xbba3004] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoGameStateWeatherComponent
@@ -1952,30 +2008,30 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.TransitionWeatherNowTo
-	// void TransitionWeatherNowTo(FJunoWeatherPhase& NewWeatherPhase, FJunoWeatherPhase& NewNextWeatherPhase, FJunoWeatherLocation OptionalLocation); // [0xb8b8980] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TransitionWeatherNowTo(FJunoWeatherPhase& NewWeatherPhase, FJunoWeatherPhase& NewNextWeatherPhase, FJunoWeatherLocation OptionalLocation); // [0xbba3c38] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.TransitionWeatherNow
-	// void TransitionWeatherNow(FName OptionalLocation);                                                                    // [0xb8b8900] Final|Native|Public|BlueprintCallable 
+	// void TransitionWeatherNow(FName OptionalLocation);                                                                    // [0xbba3b78] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.SetAutoTransitioning
-	// void SetAutoTransitioning(bool bAutoTransitionWeather);                                                               // [0xb8b86c8] Final|Native|Public|BlueprintCallable 
+	// void SetAutoTransitioning(bool bAutoTransitionWeather);                                                               // [0xbba38bc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.OnWeatherPhaseChanged
-	// void OnWeatherPhaseChanged(class UJunoWeatherStateComponent* WeatherState);                                           // [0x604b150] Final|Native|Private 
+	// void OnWeatherPhaseChanged(class UJunoWeatherStateComponent* WeatherState);                                           // [0x5d5254c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.OnNextWeatherQueueChanged
-	// void OnNextWeatherQueueChanged(class UJunoWeatherStateComponent* WeatherState);                                       // [0x604b150] Final|Native|Private 
+	// void OnNextWeatherQueueChanged(class UJunoWeatherStateComponent* WeatherState);                                       // [0x5d5254c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.IsAutoTransitioning
-	// bool IsAutoTransitioning();                                                                                           // [0x7bed35c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAutoTransitioning();                                                                                           // [0x7ba7064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.HandleWeatherStatesSetup
-	// void HandleWeatherStatesSetup(TArray<UJunoWeatherStateComponent*>& WeatherStates);                                    // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void HandleWeatherStatesSetup(TArray<UJunoWeatherStateComponent*>& WeatherStates);                                    // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.GetWeatherStates
-	// TArray<UJunoWeatherStateComponent*> GetWeatherStates();                                                               // [0xb8b82b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UJunoWeatherStateComponent*> GetWeatherStates();                                                               // [0xbba30c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.ForceWeatherState
-	// void ForceWeatherState(FName NewWeatherType, FName OptionalLocation);                                                 // [0xb8b8130] Native|Event|Public|BlueprintEvent 
+	// void ForceWeatherState(FName NewWeatherType, FName OptionalLocation);                                                 // [0xbba2c24] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoGameStateWeatherComponent.FindWeatherState
-	// class UJunoWeatherStateComponent* FindWeatherState(FJunoWeatherLocation& Location);                                   // [0xb8b8094] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UJunoWeatherStateComponent* FindWeatherState(FJunoWeatherLocation& Location);                                   // [0xbba2b88] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
-/// Class /Script/JunoGameNative.JunoGeneratePersistentClassReportCommandlet
+/// Class /Script/JunoGameNative.JunoGeneratePersistenceAssetsReportCommandlet
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UJunoGeneratePersistentClassReportCommandlet : public UCommandlet
+class UJunoGeneratePersistenceAssetsReportCommandlet : public UCommandlet
 { 
 public:
 };
@@ -1989,7 +2045,7 @@ struct FJunoGeometryCollectionAssemblerTargetData
 };
 
 /// Class /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent
-/// Size: 0x0178 (0x0000A0 - 0x000218)
+/// Size: 0x0180 (0x0000A0 - 0x000220)
 class UJunoGeometryCollectionAssemblerComponent : public UActorComponent
 { 
 public:
@@ -2004,33 +2060,33 @@ public:
 	FScalableFloat                                     DisassembledRotationAmount;                                 // 0x0150   (0x0028)  
 	bool                                               bFreeMemoryWhenNotAnimating;                                // 0x0178   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0179   (0x0007)  MISSED
-	SDK_UNDEFINED(80,11829) /* TMap<UGeometryCollectionComponent*, FJunoGeometryCollectionAssemblerGCInfo> */ __um(GeometryCollectionInfos); // 0x0180   (0x0050)  
-	SDK_UNDEFINED(16,11830) /* FMulticastInlineDelegate */ __um(OnAssemblyVisualsAnimationStart);                  // 0x01D0   (0x0010)  
-	SDK_UNDEFINED(16,11831) /* FMulticastInlineDelegate */ __um(OnAssemblyVisualsAnimationUpdated);                // 0x01E0   (0x0010)  
-	SDK_UNDEFINED(16,11832) /* FMulticastInlineDelegate */ __um(OnAssemblyVisualsAnimationEnd);                    // 0x01F0   (0x0010)  
+	SDK_UNDEFINED(80,11867) /* TMap<UGeometryCollectionComponent*, FJunoGeometryCollectionAssemblerGCInfo> */ __um(GeometryCollectionInfos); // 0x0180   (0x0050)  
+	SDK_UNDEFINED(16,11868) /* FMulticastInlineDelegate */ __um(OnAssemblyVisualsAnimationStart);                  // 0x01D0   (0x0010)  
+	SDK_UNDEFINED(16,11869) /* FMulticastInlineDelegate */ __um(OnAssemblyVisualsAnimationUpdated);                // 0x01E0   (0x0010)  
+	SDK_UNDEFINED(16,11870) /* FMulticastInlineDelegate */ __um(OnAssemblyVisualsAnimationEnd);                    // 0x01F0   (0x0010)  
 	FJunoGeometryCollectionAssemblerTargetData         TargetData;                                                 // 0x0200   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0208   (0x0010)  MISSED
+	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0208   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.SetFreeMemoryWhenNotAnimating
-	// void SetFreeMemoryWhenNotAnimating(bool bValue);                                                                      // [0xb8b8748] Final|Native|Public|BlueprintCallable 
+	// void SetFreeMemoryWhenNotAnimating(bool bValue);                                                                      // [0xbba3980] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.OnRep_TargetData
-	// void OnRep_TargetData();                                                                                              // [0xb8b86a0] Final|Native|Protected 
+	// void OnRep_TargetData();                                                                                              // [0xbba3888] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.IsUpdating
-	// bool IsUpdating();                                                                                                    // [0x64f8f28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUpdating();                                                                                                    // [0x622b358] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.IsDisassembling
-	// bool IsDisassembling();                                                                                               // [0xb8b8458] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDisassembling();                                                                                               // [0xbba32a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.IsDisassembled
-	// bool IsDisassembled();                                                                                                // [0xb8b8438] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDisassembled();                                                                                                // [0xbba3288] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.IsAssembling
-	// bool IsAssembling();                                                                                                  // [0xb8b8414] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAssembling();                                                                                                  // [0xbba3264] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.IsAssembled
-	// bool IsAssembled();                                                                                                   // [0xb8b83f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAssembled();                                                                                                   // [0xbba3240] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.IsActorAssembled
-	// bool IsActorAssembled(class AActor* Actor);                                                                           // [0xb8b831c] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsActorAssembled(class AActor* Actor);                                                                           // [0xbba312c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGeometryCollectionAssemblerComponent.GetAssemblyRatio
-	// float GetAssemblyRatio();                                                                                             // [0x6338a60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAssemblyRatio();                                                                                             // [0x60590f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoGuidedBuildingBCOInterface
@@ -2042,7 +2098,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBCOInterface.SetParentGuidedBuilding
-	// void SetParentGuidedBuilding(class AJunoGuidedBuildingActor* OurGuidedBuild);                                         // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void SetParentGuidedBuilding(class AJunoGuidedBuildingActor* OurGuidedBuild);                                         // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/JunoGameNative.JunoInputMapping
@@ -2061,7 +2117,7 @@ struct FJunoInputAlternateDisplayText
 	class UInputAction*                                InputAction;                                                // 0x0000   (0x0008)  
 	FName                                              ActionName;                                                 // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(24,11833) /* FText */                __um(DisplayText);                                          // 0x0010   (0x0018)  
+	SDK_UNDEFINED(24,11871) /* FText */                __um(DisplayText);                                          // 0x0010   (0x0018)  
 };
 
 /// Class /Script/JunoGameNative.JunoInputMappingComponent
@@ -2077,9 +2133,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoInputMappingComponent.PushContext
-	// void PushContext(class UJunoInputControllerComponent* JunoInputController);                                           // [0xb8c40a0] Final|Native|Public|BlueprintCallable 
+	// void PushContext(class UJunoInputControllerComponent* JunoInputController);                                           // [0xbbaecb4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInputMappingComponent.PopContext
-	// void PopContext(class UJunoInputControllerComponent* JunoInputController);                                            // [0xb8c4008] Final|Native|Public|BlueprintCallable 
+	// void PopContext(class UJunoInputControllerComponent* JunoInputController);                                            // [0xbbaebd8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoInputQueueComponent
@@ -2092,17 +2148,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoInputQueueComponent.StopQueueingInput
-	// void StopQueueingInput(int32_t MontageInstanceID, FGameplayTagContainer AbilityTagsToAdd, FGameplayTagContainer AbilityTagsToRemove); // [0xb8c4650] Final|Native|Public|BlueprintCallable 
+	// void StopQueueingInput(int32_t MontageInstanceID, FGameplayTagContainer AbilityTagsToAdd, FGameplayTagContainer AbilityTagsToRemove); // [0xbbaf308] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInputQueueComponent.StartQueueingInput
-	// void StartQueueingInput(int32_t MontageInstanecID, class UGameplayAbility* Ability, bool bQueueMantisInputs, FGameplayTagContainer EventTags); // [0xb8c4444] Final|Native|Public|BlueprintCallable 
+	// void StartQueueingInput(int32_t MontageInstanecID, class UGameplayAbility* Ability, bool bQueueMantisInputs, FGameplayTagContainer EventTags); // [0xbbaf080] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInputQueueComponent.SetInterruptible
-	// void SetInterruptible(int32_t MontageInstanceID, FGameplayTagContainer AbilityTagsToAdd, FGameplayTagContainer AbilityTagsToRemove); // [0xb8c41b8] Final|Native|Public|BlueprintCallable 
+	// void SetInterruptible(int32_t MontageInstanceID, FGameplayTagContainer AbilityTagsToAdd, FGameplayTagContainer AbilityTagsToRemove); // [0xbbaee50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInputQueueComponent.ResetBlockingTags
-	// void ResetBlockingTags(int32_t MontageInstanceID);                                                                    // [0xb8c4138] Final|Native|Public|BlueprintCallable 
+	// void ResetBlockingTags(int32_t MontageInstanceID);                                                                    // [0xbbaed90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInputQueueComponent.OverrideBlockingTags
-	// void OverrideBlockingTags(int32_t MontageInstanceID, class UGameplayAbility* Ability, FGameplayTagContainer AbilityTagsToAdd, FGameplayTagContainer AbilityTagsToRemove); // [0xb8c3d38] Final|Native|Public|BlueprintCallable 
+	// void OverrideBlockingTags(int32_t MontageInstanceID, class UGameplayAbility* Ability, FGameplayTagContainer AbilityTagsToAdd, FGameplayTagContainer AbilityTagsToRemove); // [0xbbae92c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoInputQueueComponent.FireQueuedInputs
-	// void FireQueuedInputs(int32_t MontageInstanceID);                                                                     // [0xb8c3964] Final|Native|Public|BlueprintCallable 
+	// void FireQueuedInputs(int32_t MontageInstanceID);                                                                     // [0xbbae4e8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoInventoryPersistenceFeatureModule
@@ -2139,9 +2195,9 @@ class UJunoKnowledgeBundle : public UPrimaryDataAsset
 { 
 public:
 	class UDataTable*                                  RecipeTable;                                                // 0x0030   (0x0008)  
-	SDK_UNDEFINED(24,11834) /* FText */                __um(BundleName);                                           // 0x0038   (0x0018)  
-	SDK_UNDEFINED(24,11835) /* FText */                __um(BundleDescription);                                    // 0x0050   (0x0018)  
-	SDK_UNDEFINED(32,11836) /* TWeakObjectPtr<UObject*> */ __um(BundleImage);                                      // 0x0068   (0x0020)  
+	SDK_UNDEFINED(24,11872) /* FText */                __um(BundleName);                                           // 0x0038   (0x0018)  
+	SDK_UNDEFINED(24,11873) /* FText */                __um(BundleDescription);                                    // 0x0050   (0x0018)  
+	SDK_UNDEFINED(32,11874) /* TWeakObjectPtr<UObject*> */ __um(BundleImage);                                      // 0x0068   (0x0020)  
 	FGameplayTag                                       BundleIdentifier;                                           // 0x0088   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x008C   (0x0004)  MISSED
 };
@@ -2151,14 +2207,14 @@ public:
 class UJunoKnowledgeCraftingComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(8,11837) /* TWeakObjectPtr<UCraftingObjectComponent*> */ __um(CachedCraftingObjectComponent);    // 0x00A0   (0x0008)  
+	SDK_UNDEFINED(8,11875) /* TWeakObjectPtr<UCraftingObjectComponent*> */ __um(CachedCraftingObjectComponent);    // 0x00A0   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoKnowledgeCraftingComponent.OnCraftingSuccess
-	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                           // [0xb8c3c7c] Final|Native|Private|HasOutParms 
+	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                           // [0xbbae884] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoKnowledgeCraftingComponent.HandleCraftingStateChanged
-	// void HandleCraftingStateChanged(FCraftingObjectStateChangedEvent& Event);                                             // [0xb8c3be0] Final|Native|Private|HasOutParms 
+	// void HandleCraftingStateChanged(FCraftingObjectStateChangedEvent& Event);                                             // [0xbbae7e8] Final|Native|Private|HasOutParms 
 };
 
 /// Struct /Script/JunoGameNative.JunoKnowledgeSaveRecord
@@ -2167,8 +2223,8 @@ struct FJunoKnowledgeSaveRecord
 { 
 	FGameplayTagContainer                              CraftingObjectTags;                                         // 0x0000   (0x0020)  
 	FGameplayTagContainer                              ClaimedBundleIdentifiers;                                   // 0x0020   (0x0020)  
-	SDK_UNDEFINED(80,11838) /* TMap<UFortItemDefinition*, FJunoKnowledgeItemStateEntry> */ __um(ItemStates);       // 0x0040   (0x0050)  
-	SDK_UNDEFINED(80,11839) /* TMap<FName, FJunoKnowledgeRecipeStateEntry> */ __um(RecipeStates);                  // 0x0090   (0x0050)  
+	SDK_UNDEFINED(80,11876) /* TMap<UFortItemDefinition*, FJunoKnowledgeItemStateEntry> */ __um(ItemStates);       // 0x0040   (0x0050)  
+	SDK_UNDEFINED(80,11877) /* TMap<FName, FJunoKnowledgeRecipeStateEntry> */ __um(RecipeStates);                  // 0x0090   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoKnowledgeSaveData
@@ -2224,9 +2280,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoLocalEnvironmentComponentInterface.GetCaveId
-	// FGuid GetCaveId();                                                                                                    // [0xb8c3b24] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FGuid GetCaveId();                                                                                                    // [0xbbae6e8] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoLocalEnvironmentComponentInterface.GetBiome
-	// FJunoBiomeInfoQueryResult GetBiome();                                                                                 // [0xaeba3fc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBiomeInfoQueryResult GetBiome();                                                                                 // [0xb0ad8e0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoLocalEnvironmentActorInterface
@@ -2238,9 +2294,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoLocalEnvironmentActorInterface.GetBiomeInfo
-	// bool GetBiomeInfo(FJunoBiomeInfoQueryResult& OutHabitat);                                                             // [0xb8c3a80] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBiomeInfo(FJunoBiomeInfoQueryResult& OutHabitat);                                                             // [0xbbae644] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoLocalEnvironmentActorInterface.GetBiome
-	// bool GetBiome(EJunoBiome& OutBiome);                                                                                  // [0xb8c39e4] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBiome(EJunoBiome& OutBiome);                                                                                  // [0xbbae5a8] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoLWMCaveEventDataInterface
@@ -2307,7 +2363,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoMapManagerComponent.GetFOWForTile
-	// class UTexture2D* GetFOWForTile(int32_t TileId);                                                                      // [0xb8c3b54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTexture2D* GetFOWForTile(int32_t TileId);                                                                      // [0xbbae718] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildLimitGetter
@@ -2394,7 +2450,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoMeshNetworkWeatherComponent.OnRep_OnSynchronizedWeatherStates
-	// void OnRep_OnSynchronizedWeatherStates();                                                                             // [0xb8c3d24] Final|Native|Private 
+	// void OnRep_OnSynchronizedWeatherStates();                                                                             // [0xbbb0dc4] Final|Native|Private 
 };
 
 /// Class /Script/JunoGameNative.JunoMoodReactionConfigMappings
@@ -2402,7 +2458,7 @@ public:
 class UJunoMoodReactionConfigMappings : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,11840) /* TMap<FGameplayTag, FDataTableRowHandle> */ __um(MoodReactionConfigMap);             // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,11878) /* TMap<FGameplayTag, FDataTableRowHandle> */ __um(MoodReactionConfigMap);             // 0x0030   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoMutator_AutoPickup
@@ -2421,44 +2477,76 @@ public:
 	class UJunoMoodReactionConfigMappings*             MoodReactionConfigMappings;                                 // 0x00F8   (0x0008)  
 };
 
-/// Class /Script/JunoGameNative.JunoPassiveCraftingComponent
+/// Struct /Script/JunoGameNative.JunoPassiveCraftingItemAndCount
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FJunoPassiveCraftingItemAndCount
+{ 
+	int32_t                                            Count;                                                      // 0x0000   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
+	class UFortItemDefinition*                         Item;                                                       // 0x0008   (0x0008)  
+};
+
+/// Struct /Script/JunoGameNative.JunoPassiveCraftingContributorAnalytics
+/// Size: 0x0028 (0x000000 - 0x000028)
+struct FJunoPassiveCraftingContributorAnalytics
+{ 
+	SDK_UNDEFINED(16,11879) /* FString */              __um(AccountId);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11880) /* FString */              __um(SessionId);                                            // 0x0010   (0x0010)  
+	double                                             SessionTime;                                                // 0x0020   (0x0008)  
+};
+
+/// Class /Script/JunoGameNative.JunoPassiveCraftingAnalyticsComponent
 /// Size: 0x0048 (0x0000A0 - 0x0000E8)
+class UJunoPassiveCraftingAnalyticsComponent : public UGameFrameworkComponent
+{ 
+public:
+	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A0   (0x0008)  MISSED
+	FJunoPassiveCraftingItemAndCount                   AccumulatedItem;                                            // 0x00A8   (0x0010)  
+	TArray<FJunoPassiveCraftingContributorAnalytics>   AccumulatedContributors;                                    // 0x00B8   (0x0010)  
+	TArray<FJunoPassiveCraftingItemAndCount>           AccumulatedIngredients;                                     // 0x00C8   (0x0010)  
+	FName                                              Recipe;                                                     // 0x00D8   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00DC   (0x0004)  MISSED
+	double                                             AccumulatedCraftingTime;                                    // 0x00E0   (0x0008)  
+};
+
+/// Class /Script/JunoGameNative.JunoPassiveCraftingComponent
+/// Size: 0x0050 (0x0000A0 - 0x0000F0)
 class UJunoPassiveCraftingComponent : public UGameFrameworkComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A0   (0x0008)  MISSED
-	SDK_UNDEFINED(16,11841) /* FMulticastInlineDelegate */ __um(OnPassiveCraftingDone);                            // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(8,11842) /* TWeakObjectPtr<UJunoInventoryComponent*> */ __um(CachedInventoryComponent);          // 0x00B8   (0x0008)  
-	SDK_UNDEFINED(8,11843) /* TWeakObjectPtr<UCraftingObjectComponent*> */ __um(CachedCraftingObjectComponent);    // 0x00C0   (0x0008)  
+	SDK_UNDEFINED(16,11881) /* FMulticastInlineDelegate */ __um(OnPassiveCraftingDone);                            // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(8,11882) /* TWeakObjectPtr<UJunoInventoryComponent*> */ __um(CachedInventoryComponent);          // 0x00B8   (0x0008)  
+	SDK_UNDEFINED(8,11883) /* TWeakObjectPtr<UCraftingObjectComponent*> */ __um(CachedCraftingObjectComponent);    // 0x00C0   (0x0008)  
 	bool                                               bIsAutoCrafting;                                            // 0x00C8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00C9   (0x0003)  MISSED
 	FName                                              AutoCraftingFormulaRow;                                     // 0x00CC   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x00D0   (0x0008)  MISSED
 	FDateTime                                          AutoCraftingStartDateTime;                                  // 0x00D8   (0x0008)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x00E0   (0x0008)  MISSED
+	unsigned char                                      UnknownData03_6[0x10];                                      // 0x00E0   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.SetAutoCraftRecipe
-	// void SetAutoCraftRecipe(FName FormulaRow);                                                                            // [0xb8cfd6c] Final|Native|Public|BlueprintCallable 
+	// void SetAutoCraftRecipe(FName FormulaRow);                                                                            // [0xbbb0e90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.OnCraftingSuccess
-	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                           // [0xb8cf73c] Final|Native|Private|HasOutParms 
+	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                           // [0xbbb0d40] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.MulticastFireCraftingDone
-	// void MulticastFireCraftingDone(EPassiveCraftingDoneReason Reason);                                                    // [0xb8cf6b8] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void MulticastFireCraftingDone(EPassiveCraftingDoneReason Reason);                                                    // [0xbbb0c7c] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.IsAutoCrafting
-	// bool IsAutoCrafting();                                                                                                // [0x9fc3d68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAutoCrafting();                                                                                                // [0xa10f178] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.HandleInventoryDataRestored
-	// void HandleInventoryDataRestored();                                                                                   // [0xb8cf5d0] Final|Native|Private 
+	// void HandleInventoryDataRestored();                                                                                   // [0xbbb0c68] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.HandleCraftingStateChanged
-	// void HandleCraftingStateChanged(FCraftingObjectStateChangedEvent& Event);                                             // [0xb8cf534] Final|Native|Private|HasOutParms 
+	// void HandleCraftingStateChanged(FCraftingObjectStateChangedEvent& Event);                                             // [0xbbb0bcc] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.GetAutoCraftingFormulaRow
-	// FName GetAutoCraftingFormulaRow();                                                                                    // [0xb8cee90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetAutoCraftingFormulaRow();                                                                                    // [0xbbb0aa4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.EnableAutoCrafting
-	// void EnableAutoCrafting();                                                                                            // [0xb8ced0c] Final|Native|Public|BlueprintCallable 
+	// void EnableAutoCrafting();                                                                                            // [0xbbb0a90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.DisableAutoCrafting
-	// void DisableAutoCrafting();                                                                                           // [0xb8cecf8] Final|Native|Public|BlueprintCallable 
+	// void DisableAutoCrafting();                                                                                           // [0xbbb0a7c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPassiveCraftingComponent.CalculateNumRemainingAutoCraft
-	// int32_t CalculateNumRemainingAutoCraft(FName OptionalFormulaRow);                                                     // [0xb8cec6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t CalculateNumRemainingAutoCraft(FName OptionalFormulaRow);                                                     // [0xbbb09b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoPassiveResourcesGathererPawnComponent
@@ -2468,23 +2556,23 @@ class UJunoPassiveResourcesGathererPawnComponent : public UPawnComponent
 public:
 	FScalableFloat                                     JobEstimationTimeMultiplier;                                // 0x00A0   (0x0028)  
 	class UDataTable*                                  GathererTable;                                              // 0x00C8   (0x0008)  
-	SDK_UNDEFINED(16,11844) /* FMulticastInlineDelegate */ __um(OnPassiveResourceGeneratedOnPawnDelegate);         // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,11884) /* FMulticastInlineDelegate */ __um(OnPassiveResourceGeneratedOnPawnDelegate);         // 0x00D0   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x00E0   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPassiveResourcesGathererPawnComponent.GetTotalJobCompletionTimeInJunoHours
-	// float GetTotalJobCompletionTimeInJunoHours();                                                                         // [0xb8cf230] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTotalJobCompletionTimeInJunoHours();                                                                         // [0xbbb0ba4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPassiveResourcesGathererPawnComponent.GetRemainingJobCompletionTimeInJunoHours
-	// float GetRemainingJobCompletionTimeInJunoHours();                                                                     // [0xb8cf018] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemainingJobCompletionTimeInJunoHours();                                                                     // [0xbbb0b7c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPassiveResourcesGathererPawnComponent.GetLastUsedGatheringActorItemId
-	// FPrimaryAssetId GetLastUsedGatheringActorItemId();                                                                    // [0xb8cefec] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FPrimaryAssetId GetLastUsedGatheringActorItemId();                                                                    // [0xbbb0b50] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPassiveResourcesGathererPawnComponent.GetLastUsedGatheringActorDisplayText
-	// FText GetLastUsedGatheringActorDisplayText();                                                                         // [0xb8cefa8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetLastUsedGatheringActorDisplayText();                                                                         // [0xbbb0b0c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPassiveResourcesGathererPawnComponent.GetLastGeneratedPercentage
-	// float GetLastGeneratedPercentage();                                                                                   // [0xb8cef14] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLastGeneratedPercentage();                                                                                   // [0xbbb0ae4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPassiveResourcesGathererPawnComponent.GetEstimatedTotalJobCompletionTimeInJunoDays
-	// float GetEstimatedTotalJobCompletionTimeInJunoDays();                                                                 // [0xb8ceed0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEstimatedTotalJobCompletionTimeInJunoDays();                                                                 // [0xbbb0abc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoPassiveResourcesGatheringWorldConditionSchema
@@ -2510,7 +2598,7 @@ class UJunoPassiveResourcesGatheringComponent : public UGameFrameworkComponent
 public:
 	unsigned char                                      UnknownData00_2[0x28];                                      // 0x00A0   (0x0028)  MISSED
 	TArray<FPassiveResourcesGatheringRowRuntime>       ActiveGatheringRows;                                        // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,11845) /* FMulticastInlineDelegate */ __um(OnPassiveResourceGeneratedDelegate);               // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,11885) /* FMulticastInlineDelegate */ __um(OnPassiveResourceGeneratedDelegate);               // 0x00D8   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x28];                                      // 0x00E8   (0x0028)  MISSED
 	FGameplayTagQuery                                  MatchingRolesQuery;                                         // 0x0110   (0x0048)  
 	TArray<FDataTableRowHandle>                        GatheringRows;                                              // 0x0158   (0x0010)  
@@ -2519,9 +2607,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPassiveResourcesGatheringComponent.RemoveGatheringRowOverride
-	// void RemoveGatheringRowOverride();                                                                                    // [0xb8cf9b8] Final|Native|Public|BlueprintCallable 
+	// void RemoveGatheringRowOverride();                                                                                    // [0xbbb0e74] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPassiveResourcesGatheringComponent.OverrideGatheringRow
-	// bool OverrideGatheringRow(FDataTableRowHandle& GatheringRow);                                                         // [0xb8cf91c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool OverrideGatheringRow(FDataTableRowHandle& GatheringRow);                                                         // [0xbbb0dd8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoPersistenceDeveloperSettings
@@ -2532,11 +2620,11 @@ public:
 	bool                                               bCreateNewWorldAlways;                                      // 0x0030   (0x0001)  
 	bool                                               bDisablePersistence;                                        // 0x0031   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0032   (0x0006)  MISSED
-	SDK_UNDEFINED(16,11846) /* FString */              __um(WorldNameSuffix);                                      // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,11886) /* FString */              __um(WorldNameSuffix);                                      // 0x0038   (0x0010)  
 	bool                                               bEnablePersistenceFrameworkDeltas;                          // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0049   (0x0003)  MISSED
 	int32_t                                            NewWorldAdventureSeed;                                      // 0x004C   (0x0004)  
-	SDK_UNDEFINED(80,11847) /* TMap<FString, FString> */ __um(NewWorldDevProperties);                              // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,11887) /* TMap<FString, FString> */ __um(NewWorldDevProperties);                              // 0x0050   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoPersistenceFeatureData
@@ -2546,12 +2634,20 @@ class UJunoPersistenceFeatureData : public UInterface
 public:
 };
 
+/// Class /Script/JunoGameNative.JunoPersistenceFeaturesReportHandler
+/// Size: 0x0018 (0x000028 - 0x000040)
+class UJunoPersistenceFeaturesReportHandler : public UObject
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x18];                                      // 0x0028   (0x0018)  MISSED
+};
+
 /// Class /Script/JunoGameNative.JunoPersistenceReportGenerator
-/// Size: 0x0028 (0x000028 - 0x000050)
+/// Size: 0x0020 (0x000028 - 0x000048)
 class UJunoPersistenceReportGenerator : public UObject
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x28];                                      // 0x0028   (0x0028)  MISSED
+	unsigned char                                      UnknownData00_1[0x20];                                      // 0x0028   (0x0020)  MISSED
 };
 
 /// Class /Script/JunoGameNative.JunoPFWDefaultServiceWrapperSettings
@@ -2619,11 +2715,11 @@ struct FJunoBuildingSlotDataArray : FFastArraySerializer
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FJunoBuildingSessionEntry
 { 
-	SDK_UNDEFINED(8,11848) /* TWeakObjectPtr<AActor*> */ __um(SpawnedActor);                                       // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,11888) /* TWeakObjectPtr<AActor*> */ __um(SpawnedActor);                                       // 0x0000   (0x0008)  
 	FVector                                            SpawnLocation;                                              // 0x0008   (0x0018)  
 	FDateTime                                          SpawnTime;                                                  // 0x0020   (0x0008)  
 	class UClass*                                      ActorClass;                                                 // 0x0028   (0x0008)  
-	SDK_UNDEFINED(8,11849) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(ItemDef);                               // 0x0030   (0x0008)  
+	SDK_UNDEFINED(8,11889) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(ItemDef);                               // 0x0030   (0x0008)  
 	FName                                              Recipe;                                                     // 0x0038   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x003C   (0x0004)  MISSED
 };
@@ -2647,15 +2743,15 @@ struct FJunoBuildingMetricsClientPermissions
 };
 
 /// Class /Script/JunoGameNative.JunoPlayerBuildingComponent
-/// Size: 0x04B8 (0x0000A8 - 0x000560)
+/// Size: 0x04C8 (0x0000A8 - 0x000570)
 class UJunoPlayerBuildingComponent : public UFortControllerComponent
 { 
 public:
 	FJunoSelectedSlot                                  ReplicatedSelectedSlot;                                     // 0x00A8   (0x0030)  
 	unsigned char                                      UnknownData00_5[0x38];                                      // 0x00D8   (0x0038)  MISSED
 	FJunoBuildingSlotDataArray                         BuildBars;                                                  // 0x0110   (0x0270)  
-	SDK_UNDEFINED(8,11850) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(LastGuidedBuildingActor);          // 0x0380   (0x0008)  
-	SDK_UNDEFINED(8,11851) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(ReplicatedLastGuidedBuildingActor); // 0x0388   (0x0008)  
+	SDK_UNDEFINED(8,11890) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(LastGuidedBuildingActor);          // 0x0380   (0x0008)  
+	SDK_UNDEFINED(8,11891) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(ReplicatedLastGuidedBuildingActor); // 0x0388   (0x0008)  
 	float                                              ReplicateLastGuidedActorTime;                               // 0x0390   (0x0004)  
 	float                                              ReplicateBuildingMetricSpatialPrecision;                    // 0x0394   (0x0004)  
 	FJunoBuildingSessionInfo                           BuildingSessionInfo;                                        // 0x0398   (0x0028)  
@@ -2669,78 +2765,79 @@ public:
 	TArray<FJunoBuildingMetricsClientPermissions>      ClientSpatialMetricsBuildingPermissions;                    // 0x0410   (0x0010)  
 	FIntVector                                         LastKnownPawnSpatialCell;                                   // 0x0420   (0x000C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x042C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,11852) /* TSet<FJunoTrackedActorKey> */ __um(DirtyCellLocations);                             // 0x0430   (0x0050)  
+	SDK_UNDEFINED(80,11892) /* TSet<FJunoTrackedActorKey> */ __um(DirtyCellLocations);                             // 0x0430   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x10];                                      // 0x0480   (0x0010)  MISSED
 	int32_t                                            MaxRecentRecipes;                                           // 0x0490   (0x0004)  
 	unsigned char                                      UnknownData03_5[0xC4];                                      // 0x0494   (0x00C4)  MISSED
 	class UJunoAsyncAction_WaitForEventRouter*         WaitForEventRouterAction;                                   // 0x0558   (0x0008)  
+	unsigned char                                      UnknownData04_6[0x10];                                      // 0x0560   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.SetRecipeAtIndex
-	// void SetRecipeAtIndex(int32_t InIndex, FName RecipeName, EJunoBuildModeType ModeType);                                // [0xb8cfe6c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetRecipeAtIndex(int32_t InIndex, FName RecipeName, EJunoBuildModeType ModeType);                                // [0xbbbc078] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.SetLastGuidedBuildingActor
-	// void SetLastGuidedBuildingActor(class AJunoGuidedBuildingActor* InLastGuidedBuildingActor);                           // [0xb8cfdec] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetLastGuidedBuildingActor(class AJunoGuidedBuildingActor* InLastGuidedBuildingActor);                           // [0xbbbbfb8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.ServerSetRecipeAtIndex
-	// void ServerSetRecipeAtIndex(FJunoSlotIndex NewSlot, FName RecipeName);                                                // [0xb8cfb58] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerSetRecipeAtIndex(FJunoSlotIndex NewSlot, FName RecipeName);                                                // [0xbbbbe70] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.ServerSetLastGuidedBuildingActor
-	// void ServerSetLastGuidedBuildingActor(class AJunoGuidedBuildingActor* InLastActor);                                   // [0x83f3434] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerSetLastGuidedBuildingActor(class AJunoGuidedBuildingActor* InLastActor);                                   // [0x8392544] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.ServerSelectSlot
-	// void ServerSelectSlot(FJunoSelectedSlot NewSlot);                                                                     // [0xb8cf9d4] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerSelectSlot(FJunoSelectedSlot NewSlot);                                                                     // [0xbbbbd54] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.ServerEndGuidedBuild
-	// void ServerEndGuidedBuild();                                                                                          // [0x83b84b0] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerEndGuidedBuild();                                                                                          // [0x8357bf4] RequiredAPI|Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.OnRep_ReplicateLastGuidedActorTime
-	// void OnRep_ReplicateLastGuidedActorTime();                                                                            // [0xb8cf8e0] Final|Native|Protected 
+	// void OnRep_ReplicateLastGuidedActorTime();                                                                            // [0xbbbbd04] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.OnRep_ReplicatedSelectedSlot
-	// void OnRep_ReplicatedSelectedSlot();                                                                                  // [0xb8cf908] Final|Native|Protected 
+	// void OnRep_ReplicatedSelectedSlot();                                                                                  // [0xbbbbd2c] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.OnRep_ReplicatedLastGuidedBuildingActor
-	// void OnRep_ReplicatedLastGuidedBuildingActor();                                                                       // [0xb8cf8f4] Final|Native|Protected 
+	// void OnRep_ReplicatedLastGuidedBuildingActor();                                                                       // [0xbbbbd18] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.OnGuidedBuildingStageChanged
-	// void OnGuidedBuildingStageChanged(FGuidedBuildingUpdate& StageUpdate);                                                // [0xb8cf850] Final|Native|Protected|HasOutParms 
+	// void OnGuidedBuildingStageChanged(FGuidedBuildingUpdate& StageUpdate);                                                // [0xbbbb45c] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.OnGuidedBuildDone
-	// void OnGuidedBuildDone(FGuidedBuildingUpdate& StageUpdate);                                                           // [0xb8cf7c0] Final|Native|Protected|HasOutParms 
+	// void OnGuidedBuildDone(FGuidedBuildingUpdate& StageUpdate);                                                           // [0xbbbb3cc] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.IsRecipePinned
-	// bool IsRecipePinned(FName Recipe);                                                                                    // [0xb8cf62c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRecipePinned(FName Recipe);                                                                                    // [0xbbbb300] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.IsBuildModeEnabled
-	// bool IsBuildModeEnabled();                                                                                            // [0x3213b4c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBuildModeEnabled();                                                                                            // [0x2e9f56c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.HasSelectedRemainingParts
-	// bool HasSelectedRemainingParts();                                                                                     // [0xb8cf608] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasSelectedRemainingParts();                                                                                     // [0xbbbb2dc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.HasSelectedMissingParts
-	// bool HasSelectedMissingParts();                                                                                       // [0xb8cf5e4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasSelectedMissingParts();                                                                                       // [0xbbbb2b8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.HandleBuildingMetricsThresholdChange
-	// void HandleBuildingMetricsThresholdChange(FInt32Vector& Location);                                                    // [0xb8cf4ac] Final|Native|Protected|HasOutParms|HasDefaults 
+	// void HandleBuildingMetricsThresholdChange(FInt32Vector& Location);                                                    // [0xbbbb180] Final|Native|Protected|HasOutParms|HasDefaults 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.HandleBuildingMetricsActorCountChange
-	// void HandleBuildingMetricsActorCountChange(FInt32Vector& Location, int32_t PreviousActorCount, int32_t NewActorCount); // [0xb8cf258] Final|Native|Protected|HasOutParms|HasDefaults 
+	// void HandleBuildingMetricsActorCountChange(FInt32Vector& Location, int32_t PreviousActorCount, int32_t NewActorCount); // [0xbbbaf04] Final|Native|Protected|HasOutParms|HasDefaults 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetSlotData
-	// FJunoBuildingSlotData GetSlotData(int32_t Index, EJunoBuildModeType InType);                                          // [0xb8cf100] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingSlotData GetSlotData(int32_t Index, EJunoBuildModeType InType);                                          // [0xbbbacb8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetSelectedSlotIndex
-	// int32_t GetSelectedSlotIndex(EJunoBuildModeType InType);                                                              // [0xb8cf074] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSelectedSlotIndex(EJunoBuildModeType InType);                                                              // [0xbbbabe8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetRemainingPartsForSelectedRecipe
-	// FJunoGuidedBuildRemainingPartsInfo GetRemainingPartsForSelectedRecipe();                                              // [0xb8cf040] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoGuidedBuildRemainingPartsInfo GetRemainingPartsForSelectedRecipe();                                              // [0xbbbabb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetLastSelectedRecipe
-	// FName GetLastSelectedRecipe();                                                                                        // [0xb8cef90] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetLastSelectedRecipe();                                                                                        // [0xbbbab9c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetLastLoadedRecipeData
-	// FJunoLastLoadedRecipeData GetLastLoadedRecipeData();                                                                  // [0xb8cef78] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoLastLoadedRecipeData GetLastLoadedRecipeData();                                                                  // [0xbbbab84] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetLastLoadedRecipe
-	// FName GetLastLoadedRecipe();                                                                                          // [0xb8cef60] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetLastLoadedRecipe();                                                                                          // [0xbbbab6c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetLastGuidedBuildingActor
-	// class AJunoGuidedBuildingActor* GetLastGuidedBuildingActor();                                                         // [0xb8cef3c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AJunoGuidedBuildingActor* GetLastGuidedBuildingActor();                                                         // [0xbbbab48] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetLastFocusedRecipe
-	// FName GetLastFocusedRecipe();                                                                                         // [0xb23d140] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetLastFocusedRecipe();                                                                                         // [0xb4687f4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetIsInBuildMode
-	// bool GetIsInBuildMode();                                                                                              // [0xb8ceef8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsInBuildMode();                                                                                              // [0xbbbab2c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetForcedRecipe
-	// FName GetForcedRecipe();                                                                                              // [0x6ecb988] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetForcedRecipe();                                                                                              // [0x6d470b8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetCurrentRecipe
-	// FName GetCurrentRecipe();                                                                                             // [0xb8ceea8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetCurrentRecipe();                                                                                             // [0xbbbab04] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.GetBuildModeType
-	// EJunoBuildModeType GetBuildModeType();                                                                                // [0x849d3e0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoBuildModeType GetBuildModeType();                                                                                // [0x84381f0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.EnterGuidedBuilding
-	// void EnterGuidedBuilding(class AJunoGuidedBuildingActor* InLastGuidedBuildingActor);                                  // [0xb8cee10] Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void EnterGuidedBuilding(class AJunoGuidedBuildingActor* InLastGuidedBuildingActor);                                  // [0xbbbaa44] Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.EnterBuildingModeAndSelectIndex
-	// void EnterBuildingModeAndSelectIndex(int32_t Index, EJunoBuildModeType InType);                                       // [0xb8ced20] Final|Native|Public|BlueprintCallable 
+	// void EnterBuildingModeAndSelectIndex(int32_t Index, EJunoBuildModeType InType);                                       // [0xbbba8c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerBuildingComponent.AttempEndGuidedBuild
-	// void AttempEndGuidedBuild();                                                                                          // [0xb8cec58] Final|Native|Public|BlueprintCallable 
+	// void AttempEndGuidedBuild();                                                                                          // [0xbbba8ac] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoPlayerCampPawnComponent
@@ -2753,7 +2850,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayerCampPawnComponent.HandleAwesomeLevelChanged
-	// void HandleAwesomeLevelChanged(FJunoAwesomeLevelChangeData& ChangeData);                                              // [0xb8d2304] Final|Native|Private|HasOutParms 
+	// void HandleAwesomeLevelChanged(FJunoAwesomeLevelChangeData& ChangeData);                                              // [0xbbbae74] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoPlayerControllerComponent_SessionAnalytics
@@ -2769,7 +2866,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00D4   (0x0004)  MISSED
 	FVector                                            LastPlayerPawnLocation;                                     // 0x00D8   (0x0018)  
 	unsigned char                                      UnknownData02_5[0x50];                                      // 0x00F0   (0x0050)  MISSED
-	SDK_UNDEFINED(16,11853) /* FString */              __um(SavedDisconnectReason);                                // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,11893) /* FString */              __um(SavedDisconnectReason);                                // 0x0140   (0x0010)  
 	FGameplayEventListenerHandle                       GracefulShutdownInitiatedEventHandle;                       // 0x0150   (0x001C)  
 	bool                                               bGracefulShutdownStarted;                                   // 0x016C   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x3];                                       // 0x016D   (0x0003)  MISSED
@@ -2782,19 +2879,19 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayerControllerComponent_SessionAnalytics.ResetHeartbeatStats
-	// void ResetHeartbeatStats();                                                                                           // [0xb8d3140] Final|Native|Private 
+	// void ResetHeartbeatStats();                                                                                           // [0xbbbbd40] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayerControllerComponent_SessionAnalytics.OnRep_JunoPlaySessionID
-	// void OnRep_JunoPlaySessionID();                                                                                       // [0xb8d3054] Final|Native|Private 
+	// void OnRep_JunoPlaySessionID();                                                                                       // [0xbbbbcf0] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayerControllerComponent_SessionAnalytics.OnPlayerStatsUpdateTimer
-	// void OnPlayerStatsUpdateTimer();                                                                                      // [0xb8d2d88] Final|Native|Private 
+	// void OnPlayerStatsUpdateTimer();                                                                                      // [0xbbbbcdc] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayerControllerComponent_SessionAnalytics.OnPlayerDisconnecting
-	// void OnPlayerDisconnecting(class AFortPlayerController* FortPlayerController, FString DevReason, bool bGracefulDisconnect); // [0xb8d2664] Final|Native|Private 
+	// void OnPlayerDisconnecting(class AFortPlayerController* FortPlayerController, FString DevReason, bool bGracefulDisconnect); // [0xbbbb500] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayerControllerComponent_SessionAnalytics.OnHeartbeatTimer
-	// void OnHeartbeatTimer();                                                                                              // [0xb8d25bc] Final|Native|Private 
+	// void OnHeartbeatTimer();                                                                                              // [0xbbbb4ec] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayerControllerComponent_SessionAnalytics.HandleInventoryDataRestored
-	// void HandleInventoryDataRestored();                                                                                   // [0xb8d2430] Final|Native|Private 
+	// void HandleInventoryDataRestored();                                                                                   // [0xbbbb2a4] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayerControllerComponent_SessionAnalytics.HandleGracefulShutdownInitiated
-	// void HandleGracefulShutdownInitiated(FFortGracefulShutdownInitiatedEvent& Event);                                     // [0xb8d2394] Final|Native|Private|HasOutParms 
+	// void HandleGracefulShutdownInitiated(FFortGracefulShutdownInitiatedEvent& Event);                                     // [0xbbbb208] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoPlayerSaveDataProviderInterface
@@ -2825,7 +2922,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FJunoPlayspaceAccountantSaveData
 { 
-	SDK_UNDEFINED(80,11854) /* TMap<FName, int32_t> */ __um(PersistentValueTable);                                 // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11894) /* TMap<FName, int32_t> */ __um(PersistentValueTable);                                 // 0x0000   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoPlayspaceAccountantFeatureData
@@ -2843,7 +2940,7 @@ class AJunoPlayspaceAccountantFeatureDataActor : public AJunoPersistenceFeatureD
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x02D0   (0x0008)  MISSED
-	SDK_UNDEFINED(80,11855) /* TMap<FName, int32_t> */ __um(PersistentValueTable);                                 // 0x02D8   (0x0050)  
+	SDK_UNDEFINED(80,11895) /* TMap<FName, int32_t> */ __um(PersistentValueTable);                                 // 0x02D8   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoPlayspaceAccountantPersistenceFeatureModule
@@ -2870,13 +2967,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayspaceControllerComponent_PlayerSpawning.StartRespawn
-	// void StartRespawn();                                                                                                  // [0xb8d3320] Final|Native|Public|BlueprintCallable 
+	// void StartRespawn();                                                                                                  // [0xbbbeef8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayspaceControllerComponent_PlayerSpawning.ServerQueuePlayerForRespawn
-	// void ServerQueuePlayerForRespawn();                                                                                   // [0xb8d3154] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerQueuePlayerForRespawn();                                                                                   // [0xbbbecac] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/JunoGameNative.JunoPlayspaceControllerComponent_PlayerSpawning.OnPawnPosessed
-	// void OnPawnPosessed(class AFortPawn* NewPawn);                                                                        // [0xb8d25d0] Final|Native|Private 
+	// void OnPawnPosessed(class AFortPawn* NewPawn);                                                                        // [0xbbbe7b0] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayspaceControllerComponent_PlayerSpawning.IsAllowedToShowRespawnUI
-	// bool IsAllowedToShowRespawnUI();                                                                                      // [0xb8d258c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAllowedToShowRespawnUI();                                                                                      // [0xbbbe780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoPlayspaceIndexPersistenceFeatureModule
@@ -2899,7 +2996,7 @@ class UJunoPlayspacePersistenceFeatureHelper : public UObject
 { 
 public:
 	class UClass*                                      PersistenceFeatureDataClass;                                // 0x0028   (0x0008)  
-	SDK_UNDEFINED(16,11856) /* TScriptInterface<Class> */ __um(PersistenceFeatureData);                            // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,11896) /* TScriptInterface<Class> */ __um(PersistenceFeatureData);                            // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0040   (0x0010)  MISSED
 };
 
@@ -2991,9 +3088,9 @@ struct FJunoPersistenceFeature
 	uint32_t                                           CheckoutStateChangeRequestKey;                              // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4C];                                      // 0x001C   (0x004C)  MISSED
 	class UObject*                                     ImplementationCustomStateObject;                            // 0x0068   (0x0008)  
-	SDK_UNDEFINED(16,11857) /* TScriptInterface<Class> */ __um(Data);                                              // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,11897) /* TScriptInterface<Class> */ __um(Data);                                              // 0x0070   (0x0010)  
 	class UClass*                                      SourceImplementationDataClass;                              // 0x0080   (0x0008)  
-	SDK_UNDEFINED(16,11858) /* TScriptInterface<Class> */ __um(DifferentImplementationData);                       // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,11898) /* TScriptInterface<Class> */ __um(DifferentImplementationData);                       // 0x0088   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x18];                                      // 0x0098   (0x0018)  MISSED
 };
 
@@ -3015,12 +3112,12 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoSmartObjectComponent
-/// Size: 0x0010 (0x000340 - 0x000350)
+/// Size: 0x0010 (0x0002D0 - 0x0002E0)
 class UJunoSmartObjectComponent : public UFortSmartObjectComponent
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0340   (0x0008)  MISSED
-	class UCurveFloat*                                 LootTierPercentageToSlotPickingModifier;                    // 0x0348   (0x0008)  
+	class UCurveFloat*                                 LootTierPercentageToSlotPickingModifier;                    // 0x02D0   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x02D8   (0x0008)  MISSED
 };
 
 /// Class /Script/JunoGameNative.JunoSyncTimeOfDayComponent
@@ -3033,9 +3130,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoSyncTimeOfDayComponent.SetTimeOfDaySyncEnabled
-	// void SetTimeOfDaySyncEnabled(bool bNewTimeOfDaySyncEnabled);                                                          // [0xb8d32a0] Final|Native|Protected|BlueprintCallable 
+	// void SetTimeOfDaySyncEnabled(bool bNewTimeOfDaySyncEnabled);                                                          // [0xbbbee38] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoSyncTimeOfDayComponent.GetTimeOfDaySyncEnabled
-	// bool GetTimeOfDaySyncEnabled();                                                                                       // [0x8109240] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool GetTimeOfDaySyncEnabled();                                                                                       // [0x80a279c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoSyncWeatherComponent
@@ -3060,18 +3157,18 @@ public:
 class AJunoTeleporter : public ABuildingProp
 { 
 public:
-	SDK_UNDEFINED(8,11859) /* TWeakObjectPtr<AJunoTeleporter*> */ __um(TargetTeleporter);                          // 0x0BC8   (0x0008)  
+	SDK_UNDEFINED(8,11899) /* TWeakObjectPtr<AJunoTeleporter*> */ __um(TargetTeleporter);                          // 0x0BC8   (0x0008)  
 	bool                                               bIsTeleporterEnabled;                                       // 0x0BD0   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0BD1   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoTeleporter.SetTargetTeleporter
-	// void SetTargetTeleporter(class AJunoTeleporter* TargetTeleportActor);                                                 // [0xb8d31a0] Final|Native|Public|BlueprintCallable 
+	// void SetTargetTeleporter(class AJunoTeleporter* TargetTeleportActor);                                                 // [0xbbbecf8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoTeleporter.IsTeleporterEnabled
-	// bool IsTeleporterEnabled();                                                                                           // [0xb8d25a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTeleporterEnabled();                                                                                           // [0xbbbe798] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoTeleporter.GetTargetTeleporter
-	// class AJunoTeleporter* GetTargetTeleporter();                                                                         // [0xb8d22dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AJunoTeleporter* GetTargetTeleporter();                                                                         // [0xbbbe50c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoGameNative.TemperatureRange
@@ -3083,7 +3180,7 @@ struct FTemperatureRange
 };
 
 /// Class /Script/JunoGameNative.JunoTemperatureAttributeSet
-/// Size: 0x00E0 (0x000030 - 0x000110)
+/// Size: 0x0100 (0x000030 - 0x000130)
 class UJunoTemperatureAttributeSet : public UFortAttributeSet
 { 
 public:
@@ -3094,29 +3191,29 @@ public:
 	FGameplayTag                                       CurrentTemperature;                                         // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00CC   (0x0004)  MISSED
 	TArray<FTemperatureRange>                          TemperatureRanges;                                          // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,11860) /* FMulticastInlineDelegate */ __um(OnTemperatureChanged);                             // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,11861) /* FMulticastInlineDelegate */ __um(OnTemperatureRangesChanged);                       // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,11900) /* FMulticastInlineDelegate */ __um(OnTemperatureChanged);                             // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,11901) /* FMulticastInlineDelegate */ __um(OnTemperatureRangesChanged);                       // 0x00F0   (0x0010)  
 	bool                                               bAddTemperatureTagToActor;                                  // 0x0100   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0101   (0x0003)  MISSED
 	FGameplayTag                                       ForcedTemperature;                                          // 0x0104   (0x0004)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0108   (0x0008)  MISSED
+	unsigned char                                      UnknownData02_6[0x28];                                      // 0x0108   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoTemperatureAttributeSet.OnRep_TemperatureRanges
-	// void OnRep_TemperatureRanges();                                                                                       // [0xb8d312c] Final|Native|Private 
+	// void OnRep_TemperatureRanges();                                                                                       // [0xbbbec98] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoTemperatureAttributeSet.OnRep_Temperature
-	// void OnRep_Temperature(FFortGameplayAttributeData& OldValue);                                                         // [0xb8d3068] Final|Native|Private|HasOutParms 
+	// void OnRep_Temperature(FFortGameplayAttributeData& OldValue);                                                         // [0xbbbeb98] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoTemperatureAttributeSet.OnRep_HeatResistance
-	// void OnRep_HeatResistance(FFortGameplayAttributeData& OldValue);                                                      // [0xb8d2f90] Final|Native|Private|HasOutParms 
+	// void OnRep_HeatResistance(FFortGameplayAttributeData& OldValue);                                                      // [0xbbbea98] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoTemperatureAttributeSet.OnRep_CurrentTemperature
-	// void OnRep_CurrentTemperature(FGameplayTag OldTemperature);                                                           // [0xb8d2e60] Final|Native|Private 
+	// void OnRep_CurrentTemperature(FGameplayTag OldTemperature);                                                           // [0xbbbe984] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoTemperatureAttributeSet.OnRep_ColdResistance
-	// void OnRep_ColdResistance(FFortGameplayAttributeData& OldValue);                                                      // [0xb8d2d9c] Final|Native|Private|HasOutParms 
+	// void OnRep_ColdResistance(FFortGameplayAttributeData& OldValue);                                                      // [0xbbbe884] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoTemperatureAttributeSet.HandleWeatherTemperatureChanged
-	// void HandleWeatherTemperatureChanged(FJunoEvent_TemperatureChanged Payload);                                          // [0xb8d2444] Final|Native|Private 
+	// void HandleWeatherTemperatureChanged(FJunoEvent_TemperatureChanged Payload);                                          // [0xbbbe6a4] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoTemperatureAttributeSet.ForceTemperature
-	// void ForceTemperature(FGameplayTag TemperatureToForce);                                                               // [0xb8d21ac] Final|Native|Public|BlueprintCallable 
+	// void ForceTemperature(FGameplayTag TemperatureToForce);                                                               // [0xbbbe44c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoTemperatureComponent
@@ -3124,16 +3221,16 @@ public:
 class UJunoTemperatureComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(8,11862) /* TWeakObjectPtr<UJunoTemperatureAttributeSet*> */ __um(TemperatureAttributeSet);      // 0x00A0   (0x0008)  
+	SDK_UNDEFINED(8,11902) /* TWeakObjectPtr<UJunoTemperatureAttributeSet*> */ __um(TemperatureAttributeSet);      // 0x00A0   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoTemperatureComponent.HandleOwnerASCInvalidated
-	// void HandleOwnerASCInvalidated();                                                                                     // [0xb8d53b0] Final|Native|Private 
+	// void HandleOwnerASCInvalidated();                                                                                     // [0xbbbe67c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoTemperatureComponent.HandleOwnerASCInitialized
-	// void HandleOwnerASCInitialized(class UFortAbilitySystemComponent* FortAbilitySystemComponent, class AFortPlayerPawn* AffectedPawn); // [0xb8d52f4] Final|Native|Private 
+	// void HandleOwnerASCInitialized(class UFortAbilitySystemComponent* FortAbilitySystemComponent, class AFortPlayerPawn* AffectedPawn); // [0xbbbe534] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoTemperatureComponent.GetTemperatureAttributeSet
-	// class UJunoTemperatureAttributeSet* GetTemperatureAttributeSet();                                                     // [0x682f148] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UJunoTemperatureAttributeSet* GetTemperatureAttributeSet();                                                     // [0x65745ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoTemplatesReportHandler
@@ -3154,7 +3251,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoToyAttachmentFixupComponent.HandleToyAttachementFixupTimer
-	// void HandleToyAttachementFixupTimer();                                                                                // [0xb8d53c4] Final|Native|Protected 
+	// void HandleToyAttachementFixupTimer();                                                                                // [0xbbbe690] Final|Native|Protected 
 };
 
 /// Class /Script/JunoGameNative.JunoUpdateActionsReportHandler
@@ -3173,12 +3270,12 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoWeaponCreatureItemDefinition
-/// Size: 0x0020 (0x000D10 - 0x000D30)
+/// Size: 0x0020 (0x000CD0 - 0x000CF0)
 class UJunoWeaponCreatureItemDefinition : public UFortWeaponRangedItemDefinition
 { 
 public:
-	TArray<class UClass*>                              Debug_CreaturesToSpawn;                                     // 0x0D10   (0x0010)  
-	TArray<FDataTableRowHandle>                        SpawnEvents;                                                // 0x0D20   (0x0010)  
+	TArray<class UClass*>                              Debug_CreaturesToSpawn;                                     // 0x0CD0   (0x0010)  
+	TArray<FDataTableRowHandle>                        SpawnEvents;                                                // 0x0CE0   (0x0010)  
 };
 
 /// Class /Script/JunoGameNative.JunoWeaponsBlueprintLibrary
@@ -3190,9 +3287,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWeaponsBlueprintLibrary.GetSpawnEvents
-	// TArray<FDataTableRowHandle> GetSpawnEvents(class UGameplayAbility* GameplayAbility);                                  // [0xb8d51bc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FDataTableRowHandle> GetSpawnEvents(class UGameplayAbility* GameplayAbility);                                  // [0xbbc12ac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoWeaponsBlueprintLibrary.GetCreaturesToSpawn
-	// TArray<UClass*> GetCreaturesToSpawn(class UGameplayAbility* GameplayAbility);                                         // [0xb8d4984] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<UClass*> GetCreaturesToSpawn(class UGameplayAbility* GameplayAbility);                                         // [0xbbc08fc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoGameNative.JunoWeatherFXPersistence
@@ -3216,7 +3313,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWeatherFXPersistence.UpdateWindGust
-	// void UpdateWindGust(float IntensityScalar, FVector& GustIntensity, FLinearColor& CurrentWind);                        // [0xb8d59c8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdateWindGust(float IntensityScalar, FVector& GustIntensity, FLinearColor& CurrentWind);                        // [0xbbc1dac] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoWeatherLibrary
@@ -3228,23 +3325,23 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.StringToLocation
-	// FJunoWeatherLocation StringToLocation(FName LocationName);                                                            // [0xb8d5948] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FJunoWeatherLocation StringToLocation(FName LocationName);                                                            // [0xbbc1be0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.RollWeatherFromSeason
-	// FJunoWeatherPhase RollWeatherFromSeason(FJunoWeatherSeasonRow& Season, FJunoWeatherLocation& Location, FGameplayTag& OptionalWeatherType); // [0xb8d5798] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FJunoWeatherPhase RollWeatherFromSeason(FJunoWeatherSeasonRow& Season, FJunoWeatherLocation& Location, FGameplayTag& OptionalWeatherType); // [0xbbc1928] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.RollWeatherFromForecast
-	// FJunoWeatherPhase RollWeatherFromForecast(FJunoWeatherPhaseForecast& Forecast);                                       // [0xb8d56d8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FJunoWeatherPhase RollWeatherFromForecast(FJunoWeatherPhaseForecast& Forecast);                                       // [0xbbc1868] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.NotEqual_JunoWeatherLocation
-	// bool NotEqual_JunoWeatherLocation(FJunoWeatherLocation& A, FJunoWeatherLocation& B);                                  // [0xb8d5514] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool NotEqual_JunoWeatherLocation(FJunoWeatherLocation& A, FJunoWeatherLocation& B);                                  // [0xbbc1538] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.FindGameStateWeatherComponent
-	// class UJunoGameStateWeatherComponent* FindGameStateWeatherComponent(class UObject* WorldContextObject);               // [0xb8d484c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UJunoGameStateWeatherComponent* FindGameStateWeatherComponent(class UObject* WorldContextObject);               // [0xbbc06f4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.EqualEqual_JunoWeatherLocation
-	// bool EqualEqual_JunoWeatherLocation(FJunoWeatherLocation& A, FJunoWeatherLocation& B);                                // [0xb8d4758] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool EqualEqual_JunoWeatherLocation(FJunoWeatherLocation& A, FJunoWeatherLocation& B);                                // [0xbbc0600] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.DescribePhase
-	// FString DescribePhase(FJunoWeatherPhase& WeatherPhase);                                                               // [0xb8d46b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FString DescribePhase(FJunoWeatherPhase& WeatherPhase);                                                               // [0xbbc0558] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.DescribeLocation
-	// FString DescribeLocation(FJunoWeatherLocation& WeatherLocation);                                                      // [0xb8d460c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FString DescribeLocation(FJunoWeatherLocation& WeatherLocation);                                                      // [0xbbc04b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherLibrary.CalculateLocation
-	// FJunoWeatherLocation CalculateLocation(class AActor* Actor);                                                          // [0xb8d458c] Final|Native|Static|Public|BlueprintCallable 
+	// FJunoWeatherLocation CalculateLocation(class AActor* Actor);                                                          // [0xbbc03e0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoWeatherLocationComponent
@@ -3252,20 +3349,20 @@ public:
 class UJunoWeatherLocationComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(16,11863) /* FMulticastInlineDelegate */ __um(OnLocationChanged);                                // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11903) /* FMulticastInlineDelegate */ __um(OnLocationChanged);                                // 0x00A0   (0x0010)  
 	FJunoWeatherLocation                               Location;                                                   // 0x00B0   (0x0002)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x00B2   (0x0006)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWeatherLocationComponent.OnRep_Location
-	// void OnRep_Location(FJunoWeatherLocation& OldLocation);                                                               // [0xb8d5608] Final|Native|Protected|HasOutParms 
+	// void OnRep_Location(FJunoWeatherLocation& OldLocation);                                                               // [0xbbc1640] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoWeatherLocationComponent.HandleLocationChanged
-	// void HandleLocationChanged();                                                                                         // [0xb8d52e0] Final|Native|Protected|BlueprintCallable 
+	// void HandleLocationChanged();                                                                                         // [0xbbc1440] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherLocationComponent.GetLocation
-	// FJunoWeatherLocation GetLocation();                                                                                   // [0xb8d51a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoWeatherLocation GetLocation();                                                                                   // [0xbbc11f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherLocationComponent.BP_CalculateLocation
-	// FJunoWeatherLocation BP_CalculateLocation();                                                                          // [0xb8d455c] Native|Event|Protected|BlueprintEvent|Const 
+	// FJunoWeatherLocation BP_CalculateLocation();                                                                          // [0xbbc03b0] Native|Event|Protected|BlueprintEvent|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoWeatherPersistenceFeatureModule
@@ -3287,28 +3384,28 @@ public:
 class UJunoWeatherReactionComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,11864) /* FMulticastInlineDelegate */ __um(OnWeatherPhaseChanged);                            // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,11865) /* FMulticastInlineDelegate */ __um(OnTemperatureChanged);                             // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,11904) /* FMulticastInlineDelegate */ __um(OnWeatherPhaseChanged);                            // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11905) /* FMulticastInlineDelegate */ __um(OnTemperatureChanged);                             // 0x00B0   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00C0   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWeatherReactionComponent.ReceiveOnWeatherPhaseChanged
-	// void ReceiveOnWeatherPhaseChanged(FJunoEvent_WeatherPhaseChanged Payload);                                            // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveOnWeatherPhaseChanged(FJunoEvent_WeatherPhaseChanged Payload);                                            // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoWeatherReactionComponent.ReceiveOnTemperatureChanged
-	// void ReceiveOnTemperatureChanged(FJunoEvent_TemperatureChanged Payload);                                              // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveOnTemperatureChanged(FJunoEvent_TemperatureChanged Payload);                                              // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoWeatherReactionComponent.HandleWeatherLocationChanged
-	// void HandleWeatherLocationChanged(FJunoWeatherLocationChangedEvent Payload);                                          // [0xb8d53d8] Final|Native|Protected 
+	// void HandleWeatherLocationChanged(FJunoWeatherLocationChangedEvent Payload);                                          // [0xbbc1454] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoWeatherReactionComponent.GetCurrentWeatherPhase
-	// FJunoWeatherPhase GetCurrentWeatherPhase();                                                                           // [0xb8d5110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoWeatherPhase GetCurrentWeatherPhase();                                                                           // [0xbbc1128] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherReactionComponent.GetCurrentTemperatureFloat
-	// float GetCurrentTemperatureFloat();                                                                                   // [0xb8d50e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentTemperatureFloat();                                                                                   // [0xbbc1100] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherReactionComponent.GetCurrentTemperature
-	// FGameplayTag GetCurrentTemperature();                                                                                 // [0xb8d50a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetCurrentTemperature();                                                                                 // [0xbbc1090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherReactionComponent.GetClosestStatefulLocationFor
-	// FJunoWeatherLocation GetClosestStatefulLocationFor(FJunoWeatherLocation& WeatherLocation);                            // [0xb8d48f0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FJunoWeatherLocation GetClosestStatefulLocationFor(FJunoWeatherLocation& WeatherLocation);                            // [0xbbc0868] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherReactionComponent.FindWeatherState
-	// class UJunoWeatherStateComponent* FindWeatherState();                                                                 // [0xb8d48cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UJunoWeatherStateComponent* FindWeatherState();                                                                 // [0xbbc07b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoWeatherStateComponent
@@ -3329,47 +3426,47 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.TransitionWeatherNowTo
-	// void TransitionWeatherNowTo(FJunoWeatherPhase& NewWeatherPhase, FJunoWeatherPhase& NewNextWeatherPhase);              // [0xb8d850c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TransitionWeatherNowTo(FJunoWeatherPhase& NewWeatherPhase, FJunoWeatherPhase& NewNextWeatherPhase);              // [0xbbc1cb4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.TransitionWeatherNow
-	// void TransitionWeatherNow();                                                                                          // [0xb8d84f8] Final|Native|Public|BlueprintCallable 
+	// void TransitionWeatherNow();                                                                                          // [0xbbc1ca0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.SetAutoTransitioning
-	// void SetAutoTransitioning(bool bAutoTransitionWeather);                                                               // [0xb8d8478] Final|Native|Public|BlueprintCallable 
+	// void SetAutoTransitioning(bool bAutoTransitionWeather);                                                               // [0xbbc1b20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.RollWeatherPhase
-	// FJunoWeatherPhase RollWeatherPhase();                                                                                 // [0xb8d8430] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoWeatherPhase RollWeatherPhase();                                                                                 // [0xbbc1ad8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.RerollNextWeatherWith
-	// void RerollNextWeatherWith(FGameplayTag& WeatherTypeName);                                                            // [0xb8d8368] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RerollNextWeatherWith(FGameplayTag& WeatherTypeName);                                                            // [0xbbc17a0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.ReceiveWeatherPhaseChanged
-	// void ReceiveWeatherPhaseChanged(FJunoEvent_WeatherPhaseChanged& Payload);                                             // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceiveWeatherPhaseChanged(FJunoEvent_WeatherPhaseChanged& Payload);                                             // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.ReceiveTemperatureChanged
-	// void ReceiveTemperatureChanged(FJunoEvent_TemperatureChanged& Payload);                                               // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceiveTemperatureChanged(FJunoEvent_TemperatureChanged& Payload);                                               // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.QueueNextWeather
-	// void QueueNextWeather(FJunoWeatherPhase& QueuedWeather);                                                              // [0xb8d8260] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void QueueNextWeather(FJunoWeatherPhase& QueuedWeather);                                                              // [0xbbc1710] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.OnRep_CurrentWeatherPhase
-	// void OnRep_CurrentWeatherPhase();                                                                                     // [0xb8d7b8c] Final|Native|Private 
+	// void OnRep_CurrentWeatherPhase();                                                                                     // [0xbbc162c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.IsAutoTransitioning
-	// bool IsAutoTransitioning();                                                                                           // [0xb8d75b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAutoTransitioning();                                                                                           // [0xbbc1520] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetTransitionOutAlpha
-	// float GetTransitionOutAlpha();                                                                                        // [0xb8d6d2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTransitionOutAlpha();                                                                                        // [0xbbc1428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetTransitionInAlpha
-	// float GetTransitionInAlpha();                                                                                         // [0xb8d6d14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTransitionInAlpha();                                                                                         // [0xbbc1410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetNextWeatherQueue
-	// TArray<FJunoWeatherPhase> GetNextWeatherQueue();                                                                      // [0xb8d6cd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FJunoWeatherPhase> GetNextWeatherQueue();                                                                      // [0xbbc1270] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetNextWeatherPhase
-	// FJunoWeatherPhase GetNextWeatherPhase();                                                                              // [0xb8d6c98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoWeatherPhase GetNextWeatherPhase();                                                                              // [0xbbc1230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetLocation
-	// FJunoWeatherLocation GetLocation();                                                                                   // [0xb8d6c7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoWeatherLocation GetLocation();                                                                                   // [0xbbc1214] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetCurrentWeatherPhase
-	// FJunoWeatherPhase GetCurrentWeatherPhase();                                                                           // [0xb8d6c3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoWeatherPhase GetCurrentWeatherPhase();                                                                           // [0xbbc11b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetCurrentTemperatureFloat
-	// float GetCurrentTemperatureFloat();                                                                                   // [0x6ecb9a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentTemperatureFloat();                                                                                   // [0x6d470d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetCurrentTemperature
-	// FGameplayTag GetCurrentTemperature();                                                                                 // [0xb8d6c10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetCurrentTemperature();                                                                                 // [0xbbc10d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.GetCurrentSeason
-	// FGameplayTag GetCurrentSeason();                                                                                      // [0xb8d6be0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FGameplayTag GetCurrentSeason();                                                                                      // [0xbbc1060] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.ForceNextWeatherTo
-	// void ForceNextWeatherTo(FJunoWeatherPhase& NewNextWeatherPhase);                                                      // [0xb8d69f0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ForceNextWeatherTo(FJunoWeatherPhase& NewNextWeatherPhase);                                                      // [0xbbc07d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWeatherStateComponent.ClearNextWeatherQueue
-	// void ClearNextWeatherQueue();                                                                                         // [0xb8d69dc] Final|Native|Public|BlueprintCallable 
+	// void ClearNextWeatherQueue();                                                                                         // [0xbbc04a0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoWorldPersistenceCheckpointManager
@@ -3410,21 +3507,21 @@ public:
 	class UJunoWorldPersistencePlayerManager*          WorldPersistencePlayerManager;                              // 0x0078   (0x0008)  
 	class UJunoWorldPersistenceSubsystemData*          SubsystemData;                                              // 0x0080   (0x0008)  
 	class UJunoWorldPersistenceCheckpointManager*      CheckpointManager;                                          // 0x0088   (0x0008)  
-	SDK_UNDEFINED(80,11866) /* TMap<FGuid, TWeakObjectPtr<AJunoPersistentPlayspace*>> */ __um(PersistentPlayspaceMap); // 0x0090   (0x0050)  
+	SDK_UNDEFINED(80,11906) /* TMap<FGuid, TWeakObjectPtr<AJunoPersistentPlayspace*>> */ __um(PersistentPlayspaceMap); // 0x0090   (0x0050)  
 	EJunoWorldSaveDataState                            WorldSaveDataState;                                         // 0x00E0   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x00E1   (0x0007)  MISSED
 	FSoftObjectPath                                    SubsystemDataAssetPath;                                     // 0x00E8   (0x0018)  
 	unsigned char                                      UnknownData03_5[0x18];                                      // 0x0100   (0x0018)  MISSED
-	SDK_UNDEFINED(16,11867) /* TArray<FString> */      __um(ErrorCodeAllowList);                                   // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,11907) /* TArray<FString> */      __um(ErrorCodeAllowList);                                   // 0x0118   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWorldPersistenceSubsystem.WasActorSpawnedFromSavedGame
-	// bool WasActorSpawnedFromSavedGame(class AActor* Actor);                                                               // [0xb8d89bc] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// bool WasActorSpawnedFromSavedGame(class AActor* Actor);                                                               // [0xbbc43e8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldPersistenceSubsystem.RequestActorSave
-	// void RequestActorSave(class AActor* Actor);                                                                           // [0xb8d82f0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void RequestActorSave(class AActor* Actor);                                                                           // [0xbbc3ef8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldPersistenceSubsystem.GenerateDeterministicMapActorGUID
-	// FGuid GenerateDeterministicMapActorGUID(class AActor* Actor);                                                         // [0xb8d6a80] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FGuid GenerateDeterministicMapActorGUID(class AActor* Actor);                                                         // [0xbbc26e0] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoWorldPersistenceSubsystemData
@@ -3445,9 +3542,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWorldRegistryInterface.GetWorldDebugInfoText
-	// void GetWorldDebugInfoText(class AFortPlayerPawn* PlayerPawn, FJunoDebugWorldInfoResult& WorldDebugInfo);             // [0xb8d74c4] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetWorldDebugInfoText(class AFortPlayerPawn* PlayerPawn, FJunoDebugWorldInfoResult& WorldDebugInfo);             // [0xbbc3080] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWorldRegistryInterface.GetWorldAnalyticsInfo
-	// void GetWorldAnalyticsInfo(class UObject* WorldContextObject, FVector& WorldLocation, FJunoWorldAnalyticsInfoResult& WorldAnalyticsInfo); // [0xb8d6d44] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetWorldAnalyticsInfo(class UObject* WorldContextObject, FVector& WorldLocation, FJunoWorldAnalyticsInfoResult& WorldAnalyticsInfo); // [0xbbc28c0] Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoWorldSettingsBlueprintLibrary
@@ -3459,17 +3556,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWorldSettingsBlueprintLibrary.TurnWorldSettingOn
-	// void TurnWorldSettingOn(class UObject* WorldContextObject, FGameplayTag& SettingName);                                // [0xb8d88a8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void TurnWorldSettingOn(class UObject* WorldContextObject, FGameplayTag& SettingName);                                // [0xbbc4294] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldSettingsBlueprintLibrary.TurnWorldSettingOff
-	// void TurnWorldSettingOff(class UObject* WorldContextObject, FGameplayTag& SettingName);                               // [0xb8d8794] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void TurnWorldSettingOff(class UObject* WorldContextObject, FGameplayTag& SettingName);                               // [0xbbc4140] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldSettingsBlueprintLibrary.IsWorldSettingTainted
-	// bool IsWorldSettingTainted(class UObject* WorldContextObject, FGameplayTag& SettingName);                             // [0xb8d7a70] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool IsWorldSettingTainted(class UObject* WorldContextObject, FGameplayTag& SettingName);                             // [0xbbc36dc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldSettingsBlueprintLibrary.IsWorldSettingSaved
-	// bool IsWorldSettingSaved(class UObject* WorldContextObject, FGameplayTag& SettingName);                               // [0xb8d7954] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool IsWorldSettingSaved(class UObject* WorldContextObject, FGameplayTag& SettingName);                               // [0xbbc3580] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldSettingsBlueprintLibrary.IsWorldSettingOn
-	// bool IsWorldSettingOn(class UObject* WorldContextObject, FGameplayTag& SettingName);                                  // [0xb8d7848] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool IsWorldSettingOn(class UObject* WorldContextObject, FGameplayTag& SettingName);                                  // [0xbbc3438] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldSettingsBlueprintLibrary.GetAllWorldSettingNames
-	// TArray<FGameplayTag> GetAllWorldSettingNames(class UObject* WorldContextObject);                                      // [0xb8d6b4c] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FGameplayTag> GetAllWorldSettingNames(class UObject* WorldContextObject);                                      // [0xbbc27ec] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.JunoWorldSettingMapping
@@ -3502,19 +3599,19 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWorldSettingsComponent.TurnSettingOn
-	// void TurnSettingOn(FGameplayTag& SettingName);                                                                        // [0xb8d86cc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TurnSettingOn(FGameplayTag& SettingName);                                                                        // [0xbbc4078] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldSettingsComponent.TurnSettingOff
-	// void TurnSettingOff(FGameplayTag& SettingName);                                                                       // [0xb8d8604] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TurnSettingOff(FGameplayTag& SettingName);                                                                       // [0xbbc3fb0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoWorldSettingsComponent.OnRep_WorldSettings
-	// void OnRep_WorldSettings(TArray<FJunoWorldSettingRepState>& OldValue);                                                // [0xb8d7ba0] Final|Native|Private|HasOutParms 
+	// void OnRep_WorldSettings(TArray<FJunoWorldSettingRepState>& OldValue);                                                // [0xbbc3838] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoWorldSettingsComponent.IsSettingTainted
-	// bool IsSettingTainted(FGameplayTag& SettingName);                                                                     // [0xb8d7774] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSettingTainted(FGameplayTag& SettingName);                                                                     // [0xbbc3364] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWorldSettingsComponent.IsSettingSaved
-	// bool IsSettingSaved(FGameplayTag& SettingName);                                                                       // [0xb8d76a0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSettingSaved(FGameplayTag& SettingName);                                                                       // [0xbbc3290] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWorldSettingsComponent.IsSettingOn
-	// bool IsSettingOn(FGameplayTag& SettingName);                                                                          // [0xb8d75cc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSettingOn(FGameplayTag& SettingName);                                                                          // [0xbbc31bc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoWorldSettingsComponent.GetAllSettingNames
-	// TArray<FGameplayTag> GetAllSettingNames();                                                                            // [0xb8d6b0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FGameplayTag> GetAllSettingNames();                                                                            // [0xbbc27ac] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoGameNative.JunoWorldSettingsSaveData
@@ -3530,7 +3627,7 @@ class UJunoWorldSettingsPersistenceFeatureData : public UJunoBasePFWPersistenceF
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0040   (0x0008)  MISSED
-	SDK_UNDEFINED(80,11868) /* TMap<FName, bool> */    __um(BoolWorldSettings);                                    // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,11908) /* TMap<FName, bool> */    __um(BoolWorldSettings);                                    // 0x0048   (0x0050)  
 	FJunoWorldSettingsSaveData                         WorldSettingsSaveData;                                      // 0x0098   (0x0010)  
 };
 
@@ -3555,7 +3652,7 @@ class UJunoMapMarkerCustomizationInitData : public UObject
 public:
 	FGuid                                              MarkerID;                                                   // 0x0028   (0x0010)  
 	FJunoMarker                                        NewMarker;                                                  // 0x0038   (0x0098)  
-	SDK_UNDEFINED(24,11869) /* FText */                __um(DisplayName);                                          // 0x00D0   (0x0018)  
+	SDK_UNDEFINED(24,11909) /* FText */                __um(DisplayName);                                          // 0x00D0   (0x0018)  
 };
 
 /// Class /Script/JunoGameNative.PhysicalStrainHealthSubsystem
@@ -3606,7 +3703,7 @@ struct FPOIEncounterDataForCamps
 };
 
 /// Class /Script/JunoGameNative.PlayspaceComponent_JunoRootCampManagement
-/// Size: 0x0500 (0x0000F8 - 0x0005F8)
+/// Size: 0x04D8 (0x0000F8 - 0x0005D0)
 class UPlayspaceComponent_JunoRootCampManagement : public UFortPlayspaceComponent
 { 
 public:
@@ -3615,25 +3712,24 @@ public:
 	FScalableFloat                                     RunValidityChecksForCampPlacementOnClients;                 // 0x0148   (0x0028)  
 	FScalableFloat                                     BoxExtentsForCampValidityCheck;                             // 0x0170   (0x0028)  
 	FScalableFloat                                     BoxExtentsForCampValidityCheckForPOIs;                      // 0x0198   (0x0028)  
-	FScalableFloat                                     MinZForCampValidityCheckForCaves;                           // 0x01C0   (0x0028)  
-	FScalableFloat                                     MoveCampWhenNewSquareIsAddedAfterSoftRemoval;               // 0x01E8   (0x0028)  
-	SDK_UNDEFINED(80,11870) /* TMap<int32_t, UDataTable*> */ __um(PlayerPerksPerAwesomenessLevel);                 // 0x0210   (0x0050)  
-	SDK_UNDEFINED(80,11871) /* TMap<int32_t, UDataTable*> */ __um(NPCPerksPerAwesomenessLevel);                    // 0x0260   (0x0050)  
-	SDK_UNDEFINED(80,11872) /* TMap<EJunoBiome, UDataTable*> */ __um(NPCPerksPerBiome);                            // 0x02B0   (0x0050)  
-	unsigned char                                      UnknownData00_5[0x30];                                      // 0x0300   (0x0030)  MISSED
-	class UJunoAsyncAction_WaitForEventRouter*         WaitForEventRouterAction;                                   // 0x0330   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0338   (0x0010)  MISSED
-	TArray<FReplicatedCampData>                        ReplicatedCampDatas;                                        // 0x0348   (0x0010)  
-	unsigned char                                      UnknownData02_5[0x150];                                     // 0x0358   (0x0150)  MISSED
-	TArray<FPOIEncounterDataForCamps>                  LoadedPOIEncounters;                                        // 0x04A8   (0x0010)  
-	unsigned char                                      UnknownData03_6[0x140];                                     // 0x04B8   (0x0140)  MISSED
+	FScalableFloat                                     MoveCampWhenNewSquareIsAddedAfterSoftRemoval;               // 0x01C0   (0x0028)  
+	SDK_UNDEFINED(80,11910) /* TMap<int32_t, UDataTable*> */ __um(PlayerPerksPerAwesomenessLevel);                 // 0x01E8   (0x0050)  
+	SDK_UNDEFINED(80,11911) /* TMap<int32_t, UDataTable*> */ __um(NPCPerksPerAwesomenessLevel);                    // 0x0238   (0x0050)  
+	SDK_UNDEFINED(80,11912) /* TMap<EJunoBiome, UDataTable*> */ __um(NPCPerksPerBiome);                            // 0x0288   (0x0050)  
+	unsigned char                                      UnknownData00_5[0x30];                                      // 0x02D8   (0x0030)  MISSED
+	class UJunoAsyncAction_WaitForEventRouter*         WaitForEventRouterAction;                                   // 0x0308   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0310   (0x0010)  MISSED
+	TArray<FReplicatedCampData>                        ReplicatedCampDatas;                                        // 0x0320   (0x0010)  
+	unsigned char                                      UnknownData02_5[0x150];                                     // 0x0330   (0x0150)  MISSED
+	TArray<FPOIEncounterDataForCamps>                  LoadedPOIEncounters;                                        // 0x0480   (0x0010)  
+	unsigned char                                      UnknownData03_6[0x140];                                     // 0x0490   (0x0140)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.PlayspaceComponent_JunoRootCampManagement.IsAValidLocationForANewCamp
-	// bool IsAValidLocationForANewCamp(FVector& Location, FGameplayTagContainer& OutFailureReasons);                        // [0xb8f65bc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAValidLocationForANewCamp(FVector& Location, FGameplayTagContainer& OutFailureReasons);                        // [0xbbf1b9c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.PlayspaceComponent_JunoRootCampManagement.GetRootPlayspaceJunoCampManagementComponent
-	// class UPlayspaceComponent_JunoRootCampManagement* GetRootPlayspaceJunoCampManagementComponent(class UObject* WorldContextObject); // [0xb8f6488] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UPlayspaceComponent_JunoRootCampManagement* GetRootPlayspaceJunoCampManagementComponent(class UObject* WorldContextObject); // [0xbbf1a28] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoAwesomeInteractionConfigMappings
@@ -3641,7 +3737,7 @@ public:
 class UJunoAwesomeInteractionConfigMappings : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,11873) /* TMap<FGameplayTag, FDataTableRowHandle> */ __um(InteractionConfigMap);              // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,11913) /* TMap<FGameplayTag, FDataTableRowHandle> */ __um(InteractionConfigMap);              // 0x0030   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoAwesomePlacementConfigMappings
@@ -3660,7 +3756,7 @@ public:
 class UJunoAwesomePoiConfigMappings : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,11874) /* TMap<EJunoBiome, FDataTableRowHandle> */ __um(PoiConfigMap);                        // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,11914) /* TMap<EJunoBiome, FDataTableRowHandle> */ __um(PoiConfigMap);                        // 0x0030   (0x0050)  
 	FDataTableRowHandle                                DefaultConfig;                                              // 0x0080   (0x0010)  
 };
 
@@ -3691,21 +3787,21 @@ struct FJunoAwesomeThresholdMapping
 class UJunoAwesomeThresholdsComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(16,11875) /* FMulticastInlineDelegate */ __um(OnAwesomeLevelChanged);                            // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11915) /* FMulticastInlineDelegate */ __um(OnAwesomeLevelChanged);                            // 0x00A0   (0x0010)  
 	TArray<FJunoAwesomeThresholdMapping>               AwesomeThresholdToActionsMappings;                          // 0x00B0   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x00C0   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAwesomeThresholdsComponent.HandleJunoAwesomeLevelChanged
-	// void HandleJunoAwesomeLevelChanged(FJunoAwesomeLevelChangeData& ChangeData);                                          // [0xb8f6508] Final|Native|Private|HasOutParms 
+	// void HandleJunoAwesomeLevelChanged(FJunoAwesomeLevelChangeData& ChangeData);                                          // [0xbbf1ae8] Final|Native|Private|HasOutParms 
 };
 
 /// Struct /Script/JunoGameNative.JunoAwesomeUpgradeResourceCost
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FJunoAwesomeUpgradeResourceCost
 { 
-	SDK_UNDEFINED(32,11876) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(ResourceCostItemDefinition);           // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,11916) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(ResourceCostItemDefinition);           // 0x0000   (0x0020)  
 	int32_t                                            ItemAmount;                                                 // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0024   (0x0004)  MISSED
 };
@@ -3745,8 +3841,8 @@ struct FJunoAwesomeLevelChangeData
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FAwesomePerkReward
 { 
-	SDK_UNDEFINED(24,11877) /* FText */                __um(Title);                                                // 0x0000   (0x0018)  
-	SDK_UNDEFINED(24,11878) /* FText */                __um(Description);                                          // 0x0018   (0x0018)  
+	SDK_UNDEFINED(24,11917) /* FText */                __um(Title);                                                // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,11918) /* FText */                __um(Description);                                          // 0x0018   (0x0018)  
 	FGameplayTagContainer                              GameplayTags;                                               // 0x0030   (0x0020)  
 };
 
@@ -3765,9 +3861,9 @@ struct FAwesomeLevelRewardEntry
 class UJunoAwesomeLevelComponent : public UJunoCampComponentBase
 { 
 public:
-	SDK_UNDEFINED(16,11879) /* FMulticastInlineDelegate */ __um(OnJunoAwesomeLevelChangedDelegate);                // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,11880) /* FMulticastInlineDelegate */ __um(OnJunoAwesomePointModification);                   // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,11881) /* FMulticastInlineDelegate */ __um(OnJunoAwesomeComponentReadyDelegate);              // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,11919) /* FMulticastInlineDelegate */ __um(OnJunoAwesomeLevelChangedDelegate);                // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11920) /* FMulticastInlineDelegate */ __um(OnJunoAwesomePointModification);                   // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,11921) /* FMulticastInlineDelegate */ __um(OnJunoAwesomeComponentReadyDelegate);              // 0x00C0   (0x0010)  
 	int32_t                                            AwesomeLevel;                                               // 0x00D0   (0x0004)  
 	int32_t                                            CurrentAwesomePoints;                                       // 0x00D4   (0x0004)  
 	TArray<int32_t>                                    AwesomePointGoals;                                          // 0x00D8   (0x0010)  
@@ -3788,49 +3884,49 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.TriggerAwesomeLevelChange
-	// void TriggerAwesomeLevelChange(class AFortPlayerController* TriggeringPlayer);                                        // [0xb8f6c84] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void TriggerAwesomeLevelChange(class AFortPlayerController* TriggeringPlayer);                                        // [0xbbf23e0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.ProcessAwesomePointModifierCheat
-	// bool ProcessAwesomePointModifierCheat(int32_t AwesomePointAmount, class AActor* SourceActor);                         // [0xb8f696c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// bool ProcessAwesomePointModifierCheat(int32_t AwesomePointAmount, class AActor* SourceActor);                         // [0xbbf1f8c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.OnRep_CurrentAwesomePoints
-	// void OnRep_CurrentAwesomePoints();                                                                                    // [0xb8f68f4] Final|Native|Protected 
+	// void OnRep_CurrentAwesomePoints();                                                                                    // [0xbbf1f14] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.OnRep_bIsReadyForUse
-	// void OnRep_bIsReadyForUse();                                                                                          // [0xb8f6940] Final|Native|Private 
+	// void OnRep_bIsReadyForUse();                                                                                          // [0xbbf1f60] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.OnRep_AwesomeLevel
-	// void OnRep_AwesomeLevel();                                                                                            // [0xb8f68dc] Final|Native|Protected 
+	// void OnRep_AwesomeLevel();                                                                                            // [0xbbf1efc] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.OnAwesomeSettingsInitialized
-	// void OnAwesomeSettingsInitialized();                                                                                  // [0xb8f68c8] Final|Native|Private 
+	// void OnAwesomeSettingsInitialized();                                                                                  // [0xbbf1ee8] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.IsReadyForUse
-	// bool IsReadyForUse();                                                                                                 // [0xa687aa4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsReadyForUse();                                                                                                 // [0xa838358] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.IsAwesomeLevelUpPending
-	// EJunoAwesomeLevelUpgradeQueryResult IsAwesomeLevelUpPending(class AFortPlayerController* TriggeringPlayer);           // [0xb8f6718] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoAwesomeLevelUpgradeQueryResult IsAwesomeLevelUpPending(class AFortPlayerController* TriggeringPlayer);           // [0xbbf1cf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.HasEnoughAwesomePointsForALevelUp
-	// bool HasEnoughAwesomePointsForALevelUp();                                                                             // [0xb8f6598] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasEnoughAwesomePointsForALevelUp();                                                                             // [0xbbf1b78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetMaxAwesomeLevel
-	// int32_t GetMaxAwesomeLevel();                                                                                         // [0xb8f6450] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxAwesomeLevel();                                                                                         // [0xbbf19f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetMaxAwesomeIndex
-	// int32_t GetMaxAwesomeIndex();                                                                                         // [0x6ecb988] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxAwesomeIndex();                                                                                         // [0x6d470b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetCurrentUpgradeResourceCosts
-	// FJunoAwesomeUpgradeResourceCostList GetCurrentUpgradeResourceCosts();                                                 // [0xb8f6418] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoAwesomeUpgradeResourceCostList GetCurrentUpgradeResourceCosts();                                                 // [0xbbf19b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetCurrentAwesomePointGoal
-	// int32_t GetCurrentAwesomePointGoal();                                                                                 // [0xb8f63f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentAwesomePointGoal();                                                                                 // [0xbbf1994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetCurrentAwesomePointFloor
-	// int32_t GetCurrentAwesomePointFloor();                                                                                // [0xb8f63d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentAwesomePointFloor();                                                                                // [0xbbf1970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetBiomeType
-	// EJunoBiome GetBiomeType();                                                                                            // [0x662dc98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoBiome GetBiomeType();                                                                                            // [0x6371d2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetAwesomePointsNeededForNextLevel
-	// int32_t GetAwesomePointsNeededForNextLevel();                                                                         // [0xb8f63ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAwesomePointsNeededForNextLevel();                                                                         // [0xbbf194c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetAwesomePoints
-	// int32_t GetAwesomePoints();                                                                                           // [0x99508f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAwesomePoints();                                                                                           // [0x9a67a5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetAwesomeLevelRewardEntries
-	// TArray<FAwesomeLevelRewardEntry> GetAwesomeLevelRewardEntries();                                                      // [0xb8f6390] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FAwesomeLevelRewardEntry> GetAwesomeLevelRewardEntries();                                                      // [0xbbf1930] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetAwesomeLevelFromCurrentPoints
-	// int32_t GetAwesomeLevelFromCurrentPoints();                                                                           // [0xb8f636c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAwesomeLevelFromCurrentPoints();                                                                           // [0xbbf190c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.GetAwesomeLevel
-	// int32_t GetAwesomeLevel();                                                                                            // [0x87aa8e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAwesomeLevel();                                                                                            // [0x8757b10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.BP_OnAwesomePointsModified
-	// void BP_OnAwesomePointsModified(FJunoAwesomePointModificationData& ModificationData);                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnAwesomePointsModified(FJunoAwesomePointModificationData& ModificationData);                                 // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAwesomeLevelComponent.BP_OnAwesomeLevelChanged
-	// void BP_OnAwesomeLevelChanged(FJunoAwesomeLevelChangeData& ChangeData);                                               // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnAwesomeLevelChanged(FJunoAwesomeLevelChangeData& ChangeData);                                               // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoGameNative.JunoNamedPOIComponent
@@ -3838,40 +3934,40 @@ public:
 class UJunoNamedPOIComponent : public UJunoCampComponentBase
 { 
 public:
-	SDK_UNDEFINED(16,11882) /* FMulticastInlineDelegate */ __um(OnJunoPOIMarkerChangedDelegate);                   // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11922) /* FMulticastInlineDelegate */ __um(OnJunoPOIMarkerChangedDelegate);                   // 0x00A0   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x10];                                      // 0x00B0   (0x0010)  MISSED
-	SDK_UNDEFINED(24,11883) /* FText */                __um(POIName);                                              // 0x00C0   (0x0018)  
+	SDK_UNDEFINED(24,11923) /* FText */                __um(POIName);                                              // 0x00C0   (0x0018)  
 	FJunoMarker                                        Marker;                                                     // 0x00D8   (0x0098)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0170   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.SetPOIName
-	// void SetPOIName(FText& NewPOIName);                                                                                   // [0xb8f6be8] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPOIName(FText& NewPOIName);                                                                                   // [0xbbf2344] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.SetMarker
-	// void SetMarker(FJunoMarker& NewMarker);                                                                               // [0xb8f6b24] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetMarker(FJunoMarker& NewMarker);                                                                               // [0xbbf2280] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.ProcessCampReadyLogic
-	// void ProcessCampReadyLogic(FJunoCampAwesomeStatsData& ReadyData);                                                     // [0xb8f6a90] Final|Native|Private|HasOutParms 
+	// void ProcessCampReadyLogic(FJunoCampAwesomeStatsData& ReadyData);                                                     // [0xbbf2130] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.PrepareForCampReadyLogic
-	// void PrepareForCampReadyLogic();                                                                                      // [0xb8f6958] Final|Native|Private 
+	// void PrepareForCampReadyLogic();                                                                                      // [0xbbf1f78] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.OnRep_Marker
-	// void OnRep_Marker();                                                                                                  // [0xb8f690c] Final|Native|Private 
+	// void OnRep_Marker();                                                                                                  // [0xbbf1f2c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.OnAwesomePointsModifiedCosmetic
-	// void OnAwesomePointsModifiedCosmetic(FJunoAwesomePointModificationData& ModificationData);                            // [0xb8f6838] Final|Native|Protected|HasOutParms 
+	// void OnAwesomePointsModifiedCosmetic(FJunoAwesomePointModificationData& ModificationData);                            // [0xbbf1e58] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.OnAwesomeLevelChangedCosmetic
-	// void OnAwesomeLevelChangedCosmetic(FJunoAwesomeLevelChangeData& ChangeData);                                          // [0xb8f67a8] Final|Native|Protected|HasOutParms 
+	// void OnAwesomeLevelChangedCosmetic(FJunoAwesomeLevelChangeData& ChangeData);                                          // [0xbbf1dc8] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.K2_OnPlayerExitedCampCosmetic
-	// void K2_OnPlayerExitedCampCosmetic(int32_t CurrentAwesomeLevel, int32_t AwesomePoints, class AJunoCampActor* OwningCamp); // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void K2_OnPlayerExitedCampCosmetic(int32_t CurrentAwesomeLevel, int32_t AwesomePoints, class AJunoCampActor* OwningCamp); // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.K2_OnPlayerEnteredCampCosmetic
-	// void K2_OnPlayerEnteredCampCosmetic(int32_t CurrentAwesomeLevel, int32_t AwesomePoints, class AJunoCampActor* OwningCamp); // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void K2_OnPlayerEnteredCampCosmetic(int32_t CurrentAwesomeLevel, int32_t AwesomePoints, class AJunoCampActor* OwningCamp); // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.K2_OnAwesomePointsModifiedCosmetic
-	// void K2_OnAwesomePointsModifiedCosmetic(FJunoAwesomePointModificationData& ModificationData);                         // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void K2_OnAwesomePointsModifiedCosmetic(FJunoAwesomePointModificationData& ModificationData);                         // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.K2_OnAwesomeLevelChangedCosmetic
-	// void K2_OnAwesomeLevelChangedCosmetic(FJunoAwesomeLevelChangeData& ChangeData);                                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void K2_OnAwesomeLevelChangedCosmetic(FJunoAwesomeLevelChangeData& ChangeData);                                       // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.GetPOIName
-	// FText GetPOIName();                                                                                                   // [0xb8f646c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetPOIName();                                                                                                   // [0xbbf1a0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoNamedPOIComponent.GetMarker
-	// FJunoMarker GetMarker();                                                                                              // [0xb8f6434] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoMarker GetMarker();                                                                                              // [0xbbf19d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoAdventurePlayspaceBase
@@ -3886,20 +3982,20 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAdventurePlayspaceBase.RemoveAdventureTags
-	// void RemoveAdventureTags(FGameplayTagContainer& TagsToRemove);                                                        // [0xb92b538] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveAdventureTags(FGameplayTagContainer& TagsToRemove);                                                        // [0xbbf21c4] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAdventurePlayspaceBase.GetAdventureTags
-	// FGameplayTagContainer GetAdventureTags();                                                                             // [0xb928ee4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetAdventureTags();                                                                             // [0xbbf18f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAdventurePlayspaceBase.ContainsController
-	// bool ContainsController(class AController* Controller);                                                               // [0xb9276b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ContainsController(class AController* Controller);                                                               // [0xbbf17f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAdventurePlayspaceBase.AppendAdventureTags
-	// void AppendAdventureTags(FGameplayTagContainer& TagsToAdd);                                                           // [0xb9274c8] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void AppendAdventureTags(FGameplayTagContainer& TagsToAdd);                                                           // [0xbbf1738] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.JunoCampRewardRecipeResult
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FJunoCampRewardRecipeResult
 { 
-	SDK_UNDEFINED(32,11884) /* TWeakObjectPtr<UJunoBuildInstructionsItemDefinition*> */ __um(KnowledgeItemDefinition); // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,11924) /* TWeakObjectPtr<UJunoBuildInstructionsItemDefinition*> */ __um(KnowledgeItemDefinition); // 0x0000   (0x0020)  
 	EJunoKnowledgeState                                NewState;                                                   // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
 };
@@ -4026,9 +4122,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAINavInvokerComponent.OnPlayerPossessed
-	// void OnPlayerPossessed(class APawn* Pawn);                                                                            // [0xb92ab5c] Final|Native|Protected 
+	// void OnPlayerPossessed(class APawn* Pawn);                                                                            // [0xbc260e4] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoAINavInvokerComponent.OnNPCPossessed
-	// void OnNPCPossessed(class APawn* Pawn);                                                                               // [0xb92aadc] Final|Native|Protected 
+	// void OnNPCPossessed(class APawn* Pawn);                                                                               // [0xbc26024] Final|Native|Protected 
 };
 
 /// Class /Script/JunoGameNative.JunoNavSystemConfig
@@ -4055,15 +4151,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPhysicsObjectNavigationComponent.OnWake
-	// void OnWake(class UPrimitiveComponent* SimulatingComponent, FName BoneName);                                          // [0xb92b090] Final|RequiredAPI|Native|Protected 
+	// void OnWake(class UPrimitiveComponent* SimulatingComponent, FName BoneName);                                          // [0xbc26800] Final|RequiredAPI|Native|Protected 
 	// Function /Script/JunoGameNative.JunoPhysicsObjectNavigationComponent.OnSleep
-	// void OnSleep(class UPrimitiveComponent* SimulatingComponent, FName BoneName);                                         // [0xb92ade4] Final|RequiredAPI|Native|Protected 
+	// void OnSleep(class UPrimitiveComponent* SimulatingComponent, FName BoneName);                                         // [0xbc264c0] Final|RequiredAPI|Native|Protected 
 	// Function /Script/JunoGameNative.JunoPhysicsObjectNavigationComponent.OnRemovedFromClusterUnion
-	// void OnRemovedFromClusterUnion(class UClusterUnionComponent* ClusterUnion, class UPrimitiveComponent* Component);     // [0xb92ad0c] Final|RequiredAPI|Native|Protected 
+	// void OnRemovedFromClusterUnion(class UClusterUnionComponent* ClusterUnion, class UPrimitiveComponent* Component);     // [0xbc26358] Final|RequiredAPI|Native|Protected 
 	// Function /Script/JunoGameNative.JunoPhysicsObjectNavigationComponent.OnClusterUnionPhysicsObjectAwakeChanged
-	// void OnClusterUnionPhysicsObjectAwakeChanged(class UPrimitiveComponent* SimulatingComponent, bool bIsAwake);          // [0xb92aa14] Final|RequiredAPI|Native|Protected 
+	// void OnClusterUnionPhysicsObjectAwakeChanged(class UPrimitiveComponent* SimulatingComponent, bool bIsAwake);          // [0xbc25ee4] Final|RequiredAPI|Native|Protected 
 	// Function /Script/JunoGameNative.JunoPhysicsObjectNavigationComponent.OnAddedToClusterUnion
-	// void OnAddedToClusterUnion(class UClusterUnionComponent* ClusterUnion, class UPrimitiveComponent* Component);         // [0xb92a820] Final|RequiredAPI|Native|Protected 
+	// void OnAddedToClusterUnion(class UClusterUnionComponent* ClusterUnion, class UPrimitiveComponent* Component);         // [0xbc25c6c] Final|RequiredAPI|Native|Protected 
 };
 
 /// Class /Script/JunoGameNative.JunoGameFeatureAction_AddJunoAnalytics
@@ -4083,21 +4179,21 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAnimationBlueprintLibrary.ImpactOrDamage
-	// void ImpactOrDamage(FGameplayTagContainer& DamageTags, class AFortPawn* DamageInstigator, class AActor* DamageSource, EImpactOrDamage_ExecutionPin& ExecutionPin); // [0xb92a530] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void ImpactOrDamage(FGameplayTagContainer& DamageTags, class AFortPawn* DamageInstigator, class AActor* DamageSource, EImpactOrDamage_ExecutionPin& ExecutionPin); // [0xbc258f4] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimationBlueprintLibrary.HasMatchingImpactCue
-	// bool HasMatchingImpactCue(FGameplayTagContainer& DamageTags, class AFortPawn* DamageInstigator, class AActor* DamageSource); // [0xb92a370] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// bool HasMatchingImpactCue(FGameplayTagContainer& DamageTags, class AFortPawn* DamageInstigator, class AActor* DamageSource); // [0xbc25734] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimationBlueprintLibrary.GetFacingTargetRotation
-	// FRotator GetFacingTargetRotation(class USceneComponent* Source, class USceneComponent* Target, bool bYawOnly);        // [0xb929ac4] Final|Native|Static|Private|HasDefaults|BlueprintCallable 
+	// FRotator GetFacingTargetRotation(class USceneComponent* Source, class USceneComponent* Target, bool bYawOnly);        // [0xbc24b74] Final|Native|Static|Private|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimationBlueprintLibrary.GetFacingRotation
-	// FRotator GetFacingRotation(FVector SourceLocation, FVector TargetLocation);                                           // [0xb929874] Final|Native|Static|Private|HasDefaults|BlueprintCallable 
+	// FRotator GetFacingRotation(FVector SourceLocation, FVector TargetLocation);                                           // [0xbc249ec] Final|Native|Static|Private|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimationBlueprintLibrary.GetClampedWarpTargetLocation
-	// void GetClampedWarpTargetLocation(FVector WarpStartLocation, FVector WarpTargetLocation, float WarpTargetRadius, float WarpDistanceMax, bool ConstrainToPawnForwardVector, FVector PawnForward, FVector& ClampedTargetLocation, FRotator& FaceTargetRotation); // [0xb929164] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetClampedWarpTargetLocation(FVector WarpStartLocation, FVector WarpTargetLocation, float WarpTargetRadius, float WarpDistanceMax, bool ConstrainToPawnForwardVector, FVector PawnForward, FVector& ClampedTargetLocation, FRotator& FaceTargetRotation); // [0xbc245b4] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimationBlueprintLibrary.GetCapsuleActorSpaceBounds
-	// void GetCapsuleActorSpaceBounds(class UCapsuleComponent* Capsule, FVector& Origin, FVector& Extents);                 // [0xb928fd8] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetCapsuleActorSpaceBounds(class UCapsuleComponent* Capsule, FVector& Origin, FVector& Extents);                 // [0xbc243e8] Final|Native|Static|Private|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimationBlueprintLibrary.AbilityMontage_SetNextSection
-	// void AbilityMontage_SetNextSection(class AFortPawn* FortPawn, FName NextSection);                                     // [0xb9273dc] Final|Native|Static|Private|BlueprintCallable 
+	// void AbilityMontage_SetNextSection(class AFortPawn* FortPawn, FName NextSection);                                     // [0xbc227d0] Final|Native|Static|Private|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimationBlueprintLibrary.AbilityMontage_ReplicatePosition
-	// void AbilityMontage_ReplicatePosition(class AFortPawn* FortPawn, bool bReplicatePosition);                            // [0xb9272fc] Final|Native|Static|Private|BlueprintCallable 
+	// void AbilityMontage_ReplicatePosition(class AFortPawn* FortPawn, bool bReplicatePosition);                            // [0xbc2266c] Final|Native|Static|Private|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoAnimInstance
@@ -4110,13 +4206,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAnimInstance.UpdateAnimationTimer
-	// void UpdateAnimationTimer(float& TimeRemaining, bool& bTimeIsExpired, EUpdateAnimationTimer_ExecutionPin& ExecutionPin); // [0xb92bd9c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void UpdateAnimationTimer(float& TimeRemaining, bool& bTimeIsExpired, EUpdateAnimationTimer_ExecutionPin& ExecutionPin); // [0xbc276c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimInstance.RandomizeAnimationTimer
-	// void RandomizeAnimationTimer(float MinTime, float MaxTime, float& TimeRemaining, bool& bTimeIsExpired);               // [0xb92b154] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RandomizeAnimationTimer(float MinTime, float MaxTime, float& TimeRemaining, bool& bTimeIsExpired);               // [0xbc2693c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoAnimInstance.GetMainAnimInstance
-	// class UJunoAnimInstance* GetMainAnimInstance();                                                                       // [0xb92a008] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UJunoAnimInstance* GetMainAnimInstance();                                                                       // [0xbc252d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoAnimInstance.BlendCurvesByName
-	// float BlendCurvesByName(FName CurveA, FName CurveB, float Alpha);                                                     // [0xb927584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float BlendCurvesByName(FName CurveA, FName CurveB, float Alpha);                                                     // [0xbc2293c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoGliderAnimInstance
@@ -4186,13 +4282,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPawnAnimInstance.StartPawnMovingIdleBreakTimer
-	// void StartPawnMovingIdleBreakTimer(float MinTime, float MaxTime);                                                     // [0xb92bb80] Final|Native|Public|BlueprintCallable 
+	// void StartPawnMovingIdleBreakTimer(float MinTime, float MaxTime);                                                     // [0xbc2741c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnAnimInstance.StartPawnIdleBreakTimer
-	// void StartPawnIdleBreakTimer(float MinTime, float MaxTime);                                                           // [0xb92bab0] Final|Native|Public|BlueprintCallable 
+	// void StartPawnIdleBreakTimer(float MinTime, float MaxTime);                                                           // [0xbc272c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnAnimInstance.ClearPawnMovingIdleBreakTimer
-	// void ClearPawnMovingIdleBreakTimer();                                                                                 // [0xb92769c] Final|Native|Public|BlueprintCallable 
+	// void ClearPawnMovingIdleBreakTimer();                                                                                 // [0xbc22b14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnAnimInstance.ClearPawnIdleBreakTimer
-	// void ClearPawnIdleBreakTimer();                                                                                       // [0xb927680] Final|Native|Public|BlueprintCallable 
+	// void ClearPawnIdleBreakTimer();                                                                                       // [0xbc22af8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.JunoMinifigLayeringParameters
@@ -4221,7 +4317,7 @@ struct FJunoMinifigLayeringMask
 };
 
 /// Class /Script/JunoGameNative.JunoPlayerAnimInstance
-/// Size: 0x0310 (0x000570 - 0x000880)
+/// Size: 0x0340 (0x000570 - 0x0008B0)
 class UJunoPlayerAnimInstance : public UJunoPawnAnimInstance
 { 
 public:
@@ -4278,15 +4374,16 @@ public:
 	bool                                               bPlayerIsRunning : 1;                                       // 0x0636:6 (0x0001)  
 	bool                                               bPlayerIsSprinting : 1;                                     // 0x0636:7 (0x0001)  
 	bool                                               bPlayerIsWalking : 1;                                       // 0x0637:0 (0x0001)  
-	bool                                               bPlayerShouldMove : 1;                                      // 0x0637:1 (0x0001)  
-	bool                                               bPlayerShouldTurnInPlace : 1;                               // 0x0637:2 (0x0001)  
-	bool                                               bPlayerFaceIsVisible : 1;                                   // 0x0637:3 (0x0001)  
-	bool                                               bPlayerUpperBodyIsSwinging : 1;                             // 0x0637:4 (0x0001)  
-	bool                                               bPlayerProp1MontageActive : 1;                              // 0x0637:5 (0x0001)  
-	bool                                               bPlayerProp2MontageActive : 1;                              // 0x0637:6 (0x0001)  
-	bool                                               bPlayerHeadShouldFollowCamera : 1;                          // 0x0637:7 (0x0001)  
-	SDK_UNDEFINED(1,11885) /* TEnumAsByte<EFortMovementStyle> */ __um(PlayerMovementStyle);                        // 0x0638   (0x0001)  
-	unsigned char                                      UnknownData04_5[0x3];                                       // 0x0639   (0x0003)  MISSED
+	bool                                               bPlayerIsWaterJumping : 1;                                  // 0x0637:1 (0x0001)  
+	bool                                               bPlayerShouldMove : 1;                                      // 0x0637:2 (0x0001)  
+	bool                                               bPlayerShouldTurnInPlace : 1;                               // 0x0637:3 (0x0001)  
+	bool                                               bPlayerFaceIsVisible : 1;                                   // 0x0637:4 (0x0001)  
+	bool                                               bPlayerUpperBodyIsSwinging : 1;                             // 0x0637:5 (0x0001)  
+	bool                                               bPlayerProp1MontageActive : 1;                              // 0x0637:6 (0x0001)  
+	bool                                               bPlayerProp2MontageActive : 1;                              // 0x0637:7 (0x0001)  
+	bool                                               bPlayerHeadShouldFollowCamera : 1;                          // 0x0638:0 (0x0001)  
+	SDK_UNDEFINED(1,11925) /* TEnumAsByte<EFortMovementStyle> */ __um(PlayerMovementStyle);                        // 0x0639   (0x0001)  
+	unsigned char                                      UnknownData04_5[0x2];                                       // 0x063A   (0x0002)  MISSED
 	float                                              PlayerAccelerationAmount;                                   // 0x063C   (0x0004)  
 	FRotator                                           PlayerLookAtRotation;                                       // 0x0640   (0x0018)  
 	FRotator                                           PlayerRotationTarget;                                       // 0x0658   (0x0018)  
@@ -4305,52 +4402,55 @@ public:
 	class AFortWeapon*                                 PlayerOffHandItem;                                          // 0x0798   (0x0008)  
 	FVector2D                                          PlayerAimOffset;                                            // 0x07A0   (0x0010)  
 	FVector                                            PlayerAimOffsetTemp;                                        // 0x07B0   (0x0018)  
-	FRotator                                           PlayerPreviousRootRotation;                                 // 0x07C8   (0x0018)  
-	EJunoMinifigRotationMode                           PlayerRotationMode;                                         // 0x07E0   (0x0001)  
-	unsigned char                                      UnknownData06_5[0x7];                                       // 0x07E1   (0x0007)  MISSED
-	FRotator                                           SmoothedRotationTarget;                                     // 0x07E8   (0x0018)  
-	FRotator                                           SuperSmoothedRotationTarget;                                // 0x0800   (0x0018)  
-	FRotator                                           PlayerStartingRotation;                                     // 0x0818   (0x0018)  
-	float                                              PlayerStartingAngle;                                        // 0x0830   (0x0004)  
-	bool                                               bPlayerEmotionHasChanged;                                   // 0x0834   (0x0001)  
-	unsigned char                                      UnknownData07_6[0x4B];                                      // 0x0835   (0x004B)  MISSED
+	FRotator                                           PlayerSlopeMatchingRotationOffset;                          // 0x07C8   (0x0018)  
+	float                                              PlayerSlopeMatchingWeight;                                  // 0x07E0   (0x0004)  
+	unsigned char                                      UnknownData06_5[0x4];                                       // 0x07E4   (0x0004)  MISSED
+	FRotator                                           PlayerPreviousRootRotation;                                 // 0x07E8   (0x0018)  
+	EJunoMinifigRotationMode                           PlayerRotationMode;                                         // 0x0800   (0x0001)  
+	unsigned char                                      UnknownData07_5[0x7];                                       // 0x0801   (0x0007)  MISSED
+	FRotator                                           SmoothedRotationTarget;                                     // 0x0808   (0x0018)  
+	FRotator                                           SuperSmoothedRotationTarget;                                // 0x0820   (0x0018)  
+	FRotator                                           PlayerStartingRotation;                                     // 0x0838   (0x0018)  
+	float                                              PlayerStartingAngle;                                        // 0x0850   (0x0004)  
+	bool                                               bPlayerEmotionHasChanged;                                   // 0x0854   (0x0001)  
+	unsigned char                                      UnknownData08_6[0x5B];                                      // 0x0855   (0x005B)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.UpdatePlayerRotationTarget
-	// void UpdatePlayerRotationTarget(float DeltaSeconds);                                                                  // [0xb92c50c] Final|Native|Public|BlueprintCallable 
+	// void UpdatePlayerRotationTarget(float DeltaSeconds);                                                                  // [0xbc27e14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.UpdatePlayerRootRotation
-	// void UpdatePlayerRootRotation(float DeltaSeconds);                                                                    // [0xb92c48c] Final|Native|Public|BlueprintCallable 
+	// void UpdatePlayerRootRotation(float DeltaSeconds);                                                                    // [0xbc27d50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.UpdatePlayerCurveRotateToStaticTarget
-	// void UpdatePlayerCurveRotateToStaticTarget(float DeltaSeconds);                                                       // [0xb92c410] Final|Native|Public|BlueprintCallable 
+	// void UpdatePlayerCurveRotateToStaticTarget(float DeltaSeconds);                                                       // [0xbc27c94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.UpdatePlayerCurveRotateToMovingTarget
-	// void UpdatePlayerCurveRotateToMovingTarget(float DeltaSeconds);                                                       // [0xb92c390] Final|Native|Public|BlueprintCallable 
+	// void UpdatePlayerCurveRotateToMovingTarget(float DeltaSeconds);                                                       // [0xbc27bd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.UpdatePlayerContinuousRotateToTarget
-	// void UpdatePlayerContinuousRotateToTarget(float DeltaSeconds);                                                        // [0xb92c310] Final|Native|Public|BlueprintCallable 
+	// void UpdatePlayerContinuousRotateToTarget(float DeltaSeconds);                                                        // [0xbc27b0c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.UpdatePlayerAimOffsetWithRootCompensation
-	// void UpdatePlayerAimOffsetWithRootCompensation(FRotator LookAtRotation, float InterpSpeed, bool bCompensate, float DeltaSeconds); // [0xb92bf48] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void UpdatePlayerAimOffsetWithRootCompensation(FRotator LookAtRotation, float InterpSpeed, bool bCompensate, float DeltaSeconds); // [0xbc278b0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.UpdatePlayerAimOffset
-	// void UpdatePlayerAimOffset(float DeltaSeconds);                                                                       // [0xb92bec8] Final|Native|Public|BlueprintCallable 
+	// void UpdatePlayerAimOffset(float DeltaSeconds);                                                                       // [0xbc277ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.ShouldForcePlayerToFacePawnRotation
-	// bool ShouldForcePlayerToFacePawnRotation();                                                                           // [0xb92ba8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldForcePlayerToFacePawnRotation();                                                                           // [0xbc272a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.SetPlayerRotationMode
-	// void SetPlayerRotationMode(EJunoMinifigRotationMode RotationMode);                                                    // [0xb92b96c] Final|Native|Public|BlueprintCallable 
+	// void SetPlayerRotationMode(EJunoMinifigRotationMode RotationMode);                                                    // [0xbc27100] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.OnPlayerStoppedPushing
-	// void OnPlayerStoppedPushing();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnPlayerStoppedPushing();                                                                                        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.OnPlayerOffHandItemChanged
-	// void OnPlayerOffHandItemChanged(class AFortWeapon* CurrentItem);                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnPlayerOffHandItemChanged(class AFortWeapon* CurrentItem);                                                      // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.OnPlayerMainHandItemChanged
-	// void OnPlayerMainHandItemChanged(class AFortWeapon* CurrentItem);                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnPlayerMainHandItemChanged(class AFortWeapon* CurrentItem);                                                     // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.OnPlayerEmotionChanged
-	// void OnPlayerEmotionChanged();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnPlayerEmotionChanged();                                                                                        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.GetPlayerStrideScale
-	// float GetPlayerStrideScale();                                                                                         // [0xb92a178] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPlayerStrideScale();                                                                                         // [0xbc25440] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.GetPlayerRotationTargetInterpolationSpeeds
-	// void GetPlayerRotationTargetInterpolationSpeeds(float& SmoothedSpeed, float& SuperSmoothedSpeed);                     // [0xb92a0a0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPlayerRotationTargetInterpolationSpeeds(float& SmoothedSpeed, float& SuperSmoothedSpeed);                     // [0xbc25368] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.GetPlayerRotationMode
-	// EJunoMinifigRotationMode GetPlayerRotationMode();                                                                     // [0xb92a04c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoMinifigRotationMode GetPlayerRotationMode();                                                                     // [0xbc25314] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayerAnimInstance.GetPlayerLeanAmount
-	// float GetPlayerLeanAmount();                                                                                          // [0xb92a02c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPlayerLeanAmount();                                                                                          // [0xbc252f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoPlayerAnimInstanceProxy
@@ -4365,37 +4465,37 @@ public:
 class UAudioEventAggregatorSubsystem : public UWorldSubsystem
 { 
 public:
-	SDK_UNDEFINED(16,11886) /* FMulticastInlineDelegate */ __um(OnSoundBreakEvents);                               // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,11887) /* FMulticastInlineDelegate */ __um(OnSoundCollisionEvents);                           // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,11888) /* FMulticastInlineDelegate */ __um(OnActiveSoundBreakEventsUpdated);                  // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,11889) /* FMulticastInlineDelegate */ __um(OnActiveSoundCollisionEventsUpdated);              // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,11926) /* FMulticastInlineDelegate */ __um(OnSoundBreakEvents);                               // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,11927) /* FMulticastInlineDelegate */ __um(OnSoundCollisionEvents);                           // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,11928) /* FMulticastInlineDelegate */ __um(OnActiveSoundBreakEventsUpdated);                  // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,11929) /* FMulticastInlineDelegate */ __um(OnActiveSoundCollisionEventsUpdated);              // 0x0060   (0x0010)  
 	class UWorld*                                      World;                                                      // 0x0070   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x38];                                      // 0x0078   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.SetRadius
-	// void SetRadius(float Radius);                                                                                         // [0xb92ba08] Final|Native|Public|BlueprintCallable 
+	// void SetRadius(float Radius);                                                                                         // [0xbc271dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.SetCollisionEventLifetime
-	// void SetCollisionEventLifetime(float Time);                                                                           // [0xb92b8ec] Final|Native|Public|BlueprintCallable 
+	// void SetCollisionEventLifetime(float Time);                                                                           // [0xbc2703c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.SetCollisionDeltaVelocityMagnitudeThreshold
-	// void SetCollisionDeltaVelocityMagnitudeThreshold(float Magnitude);                                                    // [0xb92b86c] Final|Native|Public|BlueprintCallable 
+	// void SetCollisionDeltaVelocityMagnitudeThreshold(float Magnitude);                                                    // [0xbc26f78] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.SetBreakEventLifetime
-	// void SetBreakEventLifetime(float Time);                                                                               // [0xb92b7ec] Final|Native|Public|BlueprintCallable 
+	// void SetBreakEventLifetime(float Time);                                                                               // [0xbc26eb4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.RemoveActiveCollisionEvent
-	// void RemoveActiveCollisionEvent(FGuid EventId);                                                                       // [0xb92b3f8] Final|Native|Public|HasDefaults 
+	// void RemoveActiveCollisionEvent(FGuid EventId);                                                                       // [0xbc26bdc] Final|Native|Public|HasDefaults 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.RemoveActiveBreakEvent
-	// void RemoveActiveBreakEvent(FGuid EventId);                                                                           // [0xb92b2b8] Final|Native|Public|HasDefaults 
+	// void RemoveActiveBreakEvent(FGuid EventId);                                                                           // [0xbc26b0c] Final|Native|Public|HasDefaults 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.IsAggregatingCollisionEvents
-	// bool IsAggregatingCollisionEvents();                                                                                  // [0xb92a7ec] Final|Native|Public  
+	// bool IsAggregatingCollisionEvents();                                                                                  // [0xbc25c38] Final|Native|Public  
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.InitChaosEventRelay
-	// void InitChaosEventRelay();                                                                                           // [0xb92a7bc] Final|Native|Public|BlueprintCallable 
+	// void InitChaosEventRelay();                                                                                           // [0xbc25c08] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.FilterAndGroupCollisionEvents
-	// void FilterAndGroupCollisionEvents(TArray<FCollisionChaosEvent>& CollisionEvents);                                    // [0xb927efc] Final|Native|Public|HasOutParms 
+	// void FilterAndGroupCollisionEvents(TArray<FCollisionChaosEvent>& CollisionEvents);                                    // [0xbc2334c] Final|Native|Public|HasOutParms 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.FilterAndGroupBreakEvents
-	// void FilterAndGroupBreakEvents(TArray<FChaosBreakEvent>& BreakEvents);                                                // [0xb92783c] Final|Native|Public|HasOutParms 
+	// void FilterAndGroupBreakEvents(TArray<FChaosBreakEvent>& BreakEvents);                                                // [0xbc22c8c] Final|Native|Public|HasOutParms 
 	// Function /Script/JunoGameNative.AudioEventAggregatorSubsystem.DeinitChaosEventRelay
-	// void DeinitChaosEventRelay();                                                                                         // [0xb927828] Final|Native|Public|BlueprintCallable 
+	// void DeinitChaosEventRelay();                                                                                         // [0xbc22c78] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoFoleyContext
@@ -4431,15 +4531,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCameraMode_OrbitCam.UpdateCameraBP
-	// void UpdateCameraBP(class AActor* ViewTarget, float DeltaTime, FTViewTarget& OutVT);                                  // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void UpdateCameraBP(class AActor* ViewTarget, float DeltaTime, FTViewTarget& OutVT);                                  // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoCameraMode_OrbitCam.OnBecomeActiveBP
-	// void OnBecomeActiveBP(class AActor* ViewTarget);                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnBecomeActiveBP(class AActor* ViewTarget);                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoCameraMode_OrbitCam.IsCurrentlyInBuildPreviewMode
-	// bool IsCurrentlyInBuildPreviewMode();                                                                                 // [0xb92a808] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCurrentlyInBuildPreviewMode();                                                                                 // [0xbc25c54] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCameraMode_OrbitCam.GetBuildPreviewerFromViewTarget
-	// class AJunoBuilderTool* GetBuildPreviewerFromViewTarget(class AActor* ViewTarget);                                    // [0xb928f1c] Final|Native|Protected|BlueprintCallable 
+	// class AJunoBuilderTool* GetBuildPreviewerFromViewTarget(class AActor* ViewTarget);                                    // [0xbc242ec] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCameraMode_OrbitCam.CalculateCameraOriginForBuildPreview
-	// bool CalculateCameraOriginForBuildPreview(class AActor* ViewTarget, FVector& OutOrigin);                              // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// bool CalculateCameraOriginForBuildPreview(class AActor* ViewTarget, FVector& OutOrigin);                              // [0x2047e54] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 };
 
 /// Class /Script/JunoGameNative.FortClientPilot_QuickSmokeJuno
@@ -4467,7 +4567,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAIPersistenceComponent.HandleAIFullySpawned
-	// void HandleAIFullySpawned(class AAIController* Controller, class AFortPawn* Pawn);                                    // [0xb92a22c] Final|Native|Protected 
+	// void HandleAIFullySpawned(class AAIController* Controller, class AFortPawn* Pawn);                                    // [0xbc25534] Final|Native|Protected 
 };
 
 /// Class /Script/JunoGameNative.JunoCameraModeOverrideComponent
@@ -4483,8 +4583,8 @@ struct FAICharacterInfo
 { 
 	FGameplayTag                                       AICharacterGameplayTag;                                     // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(24,11890) /* FText */                __um(AICharacterDisplayName);                               // 0x0008   (0x0018)  
-	SDK_UNDEFINED(32,11891) /* TWeakObjectPtr<UTexture2D*> */ __um(AICharacterIcon);                               // 0x0020   (0x0020)  
+	SDK_UNDEFINED(24,11930) /* FText */                __um(AICharacterDisplayName);                               // 0x0008   (0x0018)  
+	SDK_UNDEFINED(32,11931) /* TWeakObjectPtr<UTexture2D*> */ __um(AICharacterIcon);                               // 0x0020   (0x0020)  
 };
 
 /// Class /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents
@@ -4499,21 +4599,21 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents.TryFindCharacterDispplayName
-	// FText TryFindCharacterDispplayName(FGameplayTag& CharacterGameplayTag);                                               // [0xb92bc50] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// FText TryFindCharacterDispplayName(FGameplayTag& CharacterGameplayTag);                                               // [0xbc27574] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents.ServerHandleEndInteraction
-	// void ServerHandleEndInteraction();                                                                                    // [0x83b8590] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerHandleEndInteraction();                                                                                    // [0x8357d50] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents.ServerAttemptAssignPlayerCharacter
-	// void ServerAttemptAssignPlayerCharacter(class AActor* ReceivingActor);                                                // [0xb92b768] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerAttemptAssignPlayerCharacter(class AActor* ReceivingActor);                                                // [0xbc26df0] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents.ServerAttemptAssignAICharacter
-	// void ServerAttemptAssignAICharacter(class AActor* ReceivingActor, FGameplayTag CharacterGameplayTag);                 // [0xb92b5f4] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerAttemptAssignAICharacter(class AActor* ReceivingActor, FGameplayTag CharacterGameplayTag);                 // [0xbc26cac] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents.OnRep_AvailableCharactersData
-	// void OnRep_AvailableCharactersData();                                                                                 // [0xb92add0] Final|Native|Private 
+	// void OnRep_AvailableCharactersData();                                                                                 // [0xbc26498] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents.HandleCampObjectInteracted
-	// void HandleCampObjectInteracted(class AActor* ReceivingActor);                                                        // [0xb92a2f0] Final|Native|Public  
+	// void HandleCampObjectInteracted(class AActor* ReceivingActor);                                                        // [0xbc25674] Final|Native|Public  
 	// Function /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents.GetAssignableNPCSs
-	// TArray<FAICharacterInfo> GetAssignableNPCSs();                                                                        // [0xb928f00] Final|RequiredAPI|Native|Public 
+	// TArray<FAICharacterInfo> GetAssignableNPCSs();                                                                        // [0xbc242d0] Final|RequiredAPI|Native|Public 
 	// Function /Script/JunoGameNative.JunoControllerComponent_BedAssignmentNetworkEvents.ClientNotifyObjectInteracted
-	// void ClientNotifyObjectInteracted(class AActor* ReceivingActor);                                                      // [0x83f3434] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientNotifyObjectInteracted(class AActor* ReceivingActor);                                                      // [0x8392544] Net|NetReliableNative|Event|Public|NetClient 
 };
 
 /// Class /Script/JunoGameNative.JunoGameStateComponent_PickupManagement
@@ -4526,7 +4626,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGameStateComponent_PickupManagement.OnPlaylistDataReady
-	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb92abdc] Final|Native|Private|HasOutParms 
+	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xbc261a4] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoPlayspaceAccountantComponent
@@ -4539,15 +4639,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayspaceAccountantComponent.IsAccountantReady
-	// bool IsAccountantReady();                                                                                             // [0xb92a7d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAccountantReady();                                                                                             // [0xbc25c1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayspaceAccountantComponent.IncrementValue
-	// void IncrementValue(FName ValueName, int32_t Value);                                                                  // [0xb92a6fc] Final|Native|Public|BlueprintCallable 
+	// void IncrementValue(FName ValueName, int32_t Value);                                                                  // [0xbc25ac0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayspaceAccountantComponent.GetValue
-	// int32_t GetValue(FName ValueName);                                                                                    // [0xb92a1a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetValue(FName ValueName);                                                                                    // [0xbc25468] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayspaceAccountantComponent.GetJunoPlayspaceAccountantComponent
-	// class UJunoPlayspaceAccountantComponent* GetJunoPlayspaceAccountantComponent(class UObject* WorldContextObject, FVector& Location); // [0xb929d28] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UJunoPlayspaceAccountantComponent* GetJunoPlayspaceAccountantComponent(class UObject* WorldContextObject, FVector& Location); // [0xbc24f24] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayspaceAccountantComponent.DecrementValue
-	// void DecrementValue(FName ValueName, int32_t Value);                                                                  // [0xb927768] Final|Native|Public|BlueprintCallable 
+	// void DecrementValue(FName ValueName, int32_t Value);                                                                  // [0xbc22b30] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoPlayspaceRandomStreamComponent
@@ -4561,17 +4661,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayspaceRandomStreamComponent.OnVolumeGuidChanged
-	// void OnVolumeGuidChanged(class AActor* Actor, FGuid NewGuid);                                                         // [0xb92af24] Final|Native|Private|HasDefaults 
+	// void OnVolumeGuidChanged(class AActor* Actor, FGuid NewGuid);                                                         // [0xbc266b8] Final|Native|Private|HasDefaults 
 	// Function /Script/JunoGameNative.JunoPlayspaceRandomStreamComponent.OnVolumeBoundsChanged
-	// void OnVolumeBoundsChanged(class APlayspace* Playspace);                                                              // [0xb92aea8] Final|Native|Private 
+	// void OnVolumeBoundsChanged(class APlayspace* Playspace);                                                              // [0xbc265fc] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayspaceRandomStreamComponent.GetJunoRootPlayspaceRandomStreamComponent
-	// class UJunoPlayspaceRandomStreamComponent* GetJunoRootPlayspaceRandomStreamComponent(class UObject* WorldContextObject); // [0xb929f88] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UJunoPlayspaceRandomStreamComponent* GetJunoRootPlayspaceRandomStreamComponent(class UObject* WorldContextObject); // [0xbc25210] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayspaceRandomStreamComponent.GetJunoPlayspaceRandomStreamComponent
-	// class UJunoPlayspaceRandomStreamComponent* GetJunoPlayspaceRandomStreamComponent(class UObject* WorldContextObject, FVector& Location); // [0xb929e80] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UJunoPlayspaceRandomStreamComponent* GetJunoPlayspaceRandomStreamComponent(class UObject* WorldContextObject, FVector& Location); // [0xbc250bc] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPlayspaceRandomStreamComponent.GenerateRandomStream
-	// FRandomStream GenerateRandomStream(FString Name, FVector OptionalLocation);                                           // [0xb92873c] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRandomStream GenerateRandomStream(FString Name, FVector OptionalLocation);                                           // [0xbc23b58] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPlayspaceRandomStreamComponent.GenerateRandomSeed
-	// int32_t GenerateRandomSeed(FString Name, FVector OptionalLocation);                                                   // [0xb927f98] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GenerateRandomSeed(FString Name, FVector OptionalLocation);                                                   // [0xbc233e8] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingHitData
@@ -4600,7 +4700,7 @@ public:
 	TArray<FJunoBuildingHitData>                       BuildingsHitList;                                           // 0x0108   (0x0010)  
 	float                                              ResourcePercentToReturn;                                    // 0x0118   (0x0004)  
 	int32_t                                            PickupsPerResource;                                         // 0x011C   (0x0004)  
-	SDK_UNDEFINED(32,11892) /* TWeakObjectPtr<UClass*> */ __um(PickupClassPtr);                                    // 0x0120   (0x0020)  
+	SDK_UNDEFINED(32,11932) /* TWeakObjectPtr<UClass*> */ __um(PickupClassPtr);                                    // 0x0120   (0x0020)  
 	float                                              TossSpeed;                                                  // 0x0140   (0x0004)  
 	float                                              ConeHalfAngleDegrees;                                       // 0x0144   (0x0004)  
 };
@@ -4618,8 +4718,8 @@ public:
 class AJunoCoreMutators : public AFortAthenaMutator
 { 
 public:
-	SDK_UNDEFINED(16,11893) /* FMulticastInlineDelegate */ __um(OnPawnLoaded);                                     // 0x0338   (0x0010)  
-	SDK_UNDEFINED(16,11894) /* FMulticastInlineDelegate */ __um(OnClientInitialLoadingFinished);                   // 0x0348   (0x0010)  
+	SDK_UNDEFINED(16,11933) /* FMulticastInlineDelegate */ __um(OnPawnLoaded);                                     // 0x0338   (0x0010)  
+	SDK_UNDEFINED(16,11934) /* FMulticastInlineDelegate */ __um(OnClientInitialLoadingFinished);                   // 0x0348   (0x0010)  
 	bool                                               bIsJunoPlayspaceReady;                                      // 0x0358   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x27];                                      // 0x0359   (0x0027)  MISSED
 };
@@ -4634,20 +4734,20 @@ public:
 	ESpatialLoadingState                               SpatialLoadingState;                                        // 0x06F0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x06F1   (0x0003)  MISSED
 	FName                                              PersistenceMainLevelUniquePackageName;                      // 0x06F4   (0x0004)  
-	SDK_UNDEFINED(8,11895) /* TWeakObjectPtr<ULevel*> */ __um(PersistenceMainLevelWeakPtr);                        // 0x06F8   (0x0008)  
+	SDK_UNDEFINED(8,11935) /* TWeakObjectPtr<ULevel*> */ __um(PersistenceMainLevelWeakPtr);                        // 0x06F8   (0x0008)  
 	uint32_t                                           PlayspaceRequestKey;                                        // 0x0700   (0x0004)  
 	unsigned char                                      UnknownData02_6[0xC4];                                      // 0x0704   (0x00C4)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPersistentPlayspace.ShouldBeTrackedByPlayspace
-	// bool ShouldBeTrackedByPlayspace(class AActor* Actor);                                                                 // [0xba91c40] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// bool ShouldBeTrackedByPlayspace(class AActor* Actor);                                                                 // [0xbda12e8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPersistentPlayspace.SetShouldBeTrackedByPlayspace
-	// void SetShouldBeTrackedByPlayspace(class AActor* Actor, bool bShouldBeTracked);                                       // [0xba91b8c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void SetShouldBeTrackedByPlayspace(class AActor* Actor, bool bShouldBeTracked);                                       // [0xbda11a8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPersistentPlayspace.RemoveActorWhenEndPlay
-	// void RemoveActorWhenEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                          // [0xba91ac8] Final|Native|Private 
+	// void RemoveActorWhenEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                          // [0xbda1068] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPersistentPlayspace.EnableSpawnedActorTracking
-	// void EnableSpawnedActorTracking(class AActor* Actor);                                                                 // [0xba91420] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void EnableSpawnedActorTracking(class AActor* Actor);                                                                 // [0xbda0ef8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.JunoReplicatedWorldMetadata
@@ -4655,10 +4755,10 @@ public:
 struct FJunoReplicatedWorldMetadata
 { 
 	FJunoWorldMetadata                                 MetaData;                                                   // 0x0000   (0x0088)  
-	SDK_UNDEFINED(16,11896) /* FString */              __um(OwnerId);                                              // 0x0088   (0x0010)  
-	SDK_UNDEFINED(16,11897) /* FString */              __um(OwnerName);                                            // 0x0098   (0x0010)  
-	SDK_UNDEFINED(16,11898) /* TArray<FString> */      __um(Keyholders);                                           // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,11899) /* TArray<FString> */      __um(Occupants);                                            // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,11936) /* FString */              __um(OwnerId);                                              // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,11937) /* FString */              __um(OwnerName);                                            // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,11938) /* TArray<FString> */      __um(Keyholders);                                           // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,11939) /* TArray<FString> */      __um(Occupants);                                            // 0x00B8   (0x0010)  
 	double                                             WorldOwnerGuestReservationExpiration;                       // 0x00C8   (0x0008)  
 	FDateTime                                          CreatedAt;                                                  // 0x00D0   (0x0008)  
 	FDateTime                                          LastPlayed;                                                 // 0x00D8   (0x0008)  
@@ -4670,7 +4770,7 @@ class AJunoRootPlayspace : public AJunoPersistentPlayspace
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x20];                                      // 0x07C8   (0x0020)  MISSED
-	SDK_UNDEFINED(8,11900) /* TWeakObjectPtr<AFortPlayerControllerAthena*> */ __um(OwningController);              // 0x07E8   (0x0008)  
+	SDK_UNDEFINED(8,11940) /* TWeakObjectPtr<AFortPlayerControllerAthena*> */ __um(OwningController);              // 0x07E8   (0x0008)  
 	FGameplayTag                                       DefaultInventoryItemTag;                                    // 0x07F0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x07F4   (0x0004)  MISSED
 	class UPlayspaceComponent_JunoServerExpiration*    JunoServerExpiration;                                       // 0x07F8   (0x0008)  
@@ -4690,7 +4790,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoRootPlayspace.OnRep_WorldMetadata
-	// void OnRep_WorldMetadata();                                                                                           // [0xb96ae1c] Final|Native|Private 
+	// void OnRep_WorldMetadata();                                                                                           // [0xbc264ac] Final|Native|Private 
 };
 
 /// Class /Script/JunoGameNative.JunoStateMachine
@@ -4705,7 +4805,7 @@ public:
 class UJunoState_Setup : public UGameplayState
 { 
 public:
-	SDK_UNDEFINED(32,11901) /* TWeakObjectPtr<UDataTable*> */ __um(PossibleWorldsDataTable);                       // 0x0078   (0x0020)  
+	SDK_UNDEFINED(32,11941) /* TWeakObjectPtr<UDataTable*> */ __um(PossibleWorldsDataTable);                       // 0x0078   (0x0020)  
 	int32_t                                            WorldRandomSeed;                                            // 0x0098   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x009C   (0x0004)  MISSED
 };
@@ -4802,27 +4902,27 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdateTurnAngleStored
-	// void UpdateTurnAngleStored();                                                                                         // [0x6497f84] Native|Event|Public|BlueprintEvent 
+	// void UpdateTurnAngleStored();                                                                                         // [0x61cb46c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdateSwimmingYaw
-	// void UpdateSwimmingYaw();                                                                                             // [0x6497fb4] Native|Event|Public|BlueprintEvent 
+	// void UpdateSwimmingYaw();                                                                                             // [0x61cb49c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdateRidingMovePlayRate
-	// void UpdateRidingMovePlayRate();                                                                                      // [0xa7672f8] Native|Event|Public|BlueprintEvent 
+	// void UpdateRidingMovePlayRate();                                                                                      // [0xa91cf40] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdatePlayLandAdditive
-	// void UpdatePlayLandAdditive();                                                                                        // [0xa7672e0] Native|Event|Public|BlueprintEvent 
+	// void UpdatePlayLandAdditive();                                                                                        // [0xa91cf28] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdateFootPhaseStop
-	// void UpdateFootPhaseStop();                                                                                           // [0x649d19c] Native|Event|Public|BlueprintEvent 
+	// void UpdateFootPhaseStop();                                                                                           // [0x61cf738] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdateBoostPlayRate
-	// void UpdateBoostPlayRate();                                                                                           // [0xa767140] Native|Event|Public|BlueprintEvent 
+	// void UpdateBoostPlayRate();                                                                                           // [0xa91cd88] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdateBodyRoll
-	// void UpdateBodyRoll();                                                                                                // [0x6497f9c] Native|Event|Public|BlueprintEvent 
+	// void UpdateBodyRoll();                                                                                                // [0x61cb484] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdateBackwardVelocity
-	// void UpdateBackwardVelocity();                                                                                        // [0xa7670fc] Native|Event|Public|BlueprintEvent 
+	// void UpdateBackwardVelocity();                                                                                        // [0xa91cd44] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.UpdateBackwardsPlayRate
-	// void UpdateBackwardsPlayRate();                                                                                       // [0x6497f6c] Native|Event|Public|BlueprintEvent 
+	// void UpdateBackwardsPlayRate();                                                                                       // [0x61cb454] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.FinishFootPhaseStopUpdate
-	// void FinishFootPhaseStopUpdate();                                                                                     // [0x6497c5c] Native|Event|Public|BlueprintEvent 
+	// void FinishFootPhaseStopUpdate();                                                                                     // [0x61cb004] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoAIFaunaAnimInstance.CalculateLookAtAlpha
-	// void CalculateLookAtAlpha(bool bForceDisableLookAt, float DeltaSeconds);                                              // [0xb969170] Final|Native|Public|BlueprintCallable 
+	// void CalculateLookAtAlpha(bool bForceDisableLookAt, float DeltaSeconds);                                              // [0xbc7cd2c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoCreatureAnimInstance
@@ -4901,23 +5001,23 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.TurnInPlace_Started
-	// void TurnInPlace_Started();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void TurnInPlace_Started();                                                                                           // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.TurnInPlace_SignalAnimationEnded
-	// void TurnInPlace_SignalAnimationEnded();                                                                              // [0xb96d098] Final|Native|Public|BlueprintCallable 
+	// void TurnInPlace_SignalAnimationEnded();                                                                              // [0xbc818cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.TurnInPlace_Setup
-	// void TurnInPlace_Setup(class UAnimSequence* TurnAnimSequence);                                                        // [0xb96c5e0] Final|Native|Public|BlueprintCallable 
+	// void TurnInPlace_Setup(class UAnimSequence* TurnAnimSequence);                                                        // [0xbc80dd4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.TurnInPlace_Interrupted
-	// void TurnInPlace_Interrupted();                                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void TurnInPlace_Interrupted();                                                                                       // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.TurnInPlace_Ended
-	// void TurnInPlace_Ended();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void TurnInPlace_Ended();                                                                                             // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.StartInPlace_Started
-	// void StartInPlace_Started();                                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void StartInPlace_Started();                                                                                          // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.StartInPlace_Setup
-	// void StartInPlace_Setup(class UAnimSequence* StartAnimSequence);                                                      // [0xb96c4e0] Final|Native|Public|BlueprintCallable 
+	// void StartInPlace_Setup(class UAnimSequence* StartAnimSequence);                                                      // [0xbc80c80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.CreatureIsMovingRight
-	// bool CreatureIsMovingRight();                                                                                         // [0xb969b1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CreatureIsMovingRight();                                                                                         // [0xbc7d7a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoCreatureAnimInstance.CreatureIsMovingLeft
-	// bool CreatureIsMovingLeft();                                                                                          // [0xb969a94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CreatureIsMovingLeft();                                                                                          // [0xbc7d720] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoCreatureAnimInstance_LootLlama
@@ -4965,18 +5065,18 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoInventory
-/// Size: 0x0078 (0x000508 - 0x000580)
+/// Size: 0x0080 (0x000508 - 0x000588)
 class AJunoInventory : public AFortInventory
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x28];                                      // 0x0508   (0x0028)  MISSED
-	FGuid                                              SavedActorGuid;                                             // 0x0530   (0x0010)  
-	unsigned char                                      UnknownData01_5[0x28];                                      // 0x0540   (0x0028)  MISSED
-	int32_t                                            InventoryCapacity;                                          // 0x0568   (0x0004)  
-	FGuid                                              InventoryHandleGuid;                                        // 0x056C   (0x0010)  
-	bool                                               bIsPersistent;                                              // 0x057C   (0x0001)  
-	bool                                               bWasSpawnedByLevelSaveRecord;                               // 0x057D   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x2];                                       // 0x057E   (0x0002)  MISSED
+	unsigned char                                      UnknownData00_2[0x30];                                      // 0x0508   (0x0030)  MISSED
+	FGuid                                              SavedActorGuid;                                             // 0x0538   (0x0010)  
+	unsigned char                                      UnknownData01_5[0x28];                                      // 0x0548   (0x0028)  MISSED
+	int32_t                                            InventoryCapacity;                                          // 0x0570   (0x0004)  
+	FGuid                                              InventoryHandleGuid;                                        // 0x0574   (0x0010)  
+	bool                                               bIsPersistent;                                              // 0x0584   (0x0001)  
+	bool                                               bWasSpawnedByLevelSaveRecord;                               // 0x0585   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x2];                                       // 0x0586   (0x0002)  MISSED
 };
 
 /// Class /Script/JunoGameNative.JunoInventoryManagerComponent
@@ -4985,15 +5085,15 @@ class UJunoInventoryManagerComponent : public UActorComponent
 { 
 public:
 	TArray<FJunoInventoryHandle>                       InventoryHandles;                                           // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,11902) /* TArray<TWeakObjectPtr<AJunoInventory*>> */ __um(InventoryInstances);                // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,11942) /* TArray<TWeakObjectPtr<AJunoInventory*>> */ __um(InventoryInstances);                // 0x00B0   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x40];                                      // 0x00C0   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoInventoryManagerComponent.OnRep_InventoryInstances
-	// void OnRep_InventoryInstances();                                                                                      // [0xb96adf4] Final|Native|Protected 
+	// void OnRep_InventoryInstances();                                                                                      // [0xbc7f664] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoInventoryManagerComponent.OnRep_InventoryHandles
-	// void OnRep_InventoryHandles();                                                                                        // [0xb96ade0] Final|Native|Protected 
+	// void OnRep_InventoryHandles();                                                                                        // [0xbc7f650] Final|Native|Protected 
 };
 
 /// Struct /Script/JunoGameNative.JunoInventoriesSaveData
@@ -5032,7 +5132,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FJunoInventoryUISaveData
 { 
-	SDK_UNDEFINED(80,11903) /* TMap<FGuid, FJunoSavedInventoryUIData> */ __um(InventoryUIData);                    // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11943) /* TMap<FGuid, FJunoSavedInventoryUIData> */ __um(InventoryUIData);                    // 0x0000   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoInventoryUIPersistenceFeatureData
@@ -5050,7 +5150,7 @@ class AJunoInventoryUIPersistenceFeatureDataActor : public AJunoPersistenceFeatu
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x02D0   (0x0008)  MISSED
-	SDK_UNDEFINED(80,11904) /* TMap<FGuid, FJunoSavedInventoryUIData> */ __um(SavedInventoryUI);                   // 0x02D8   (0x0050)  
+	SDK_UNDEFINED(80,11944) /* TMap<FGuid, FJunoSavedInventoryUIData> */ __um(SavedInventoryUI);                   // 0x02D8   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoInventoryUIPersistenceFeatureDataInterface
@@ -5069,58 +5169,58 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayerInventoryComponent.OnPlayerPawnPossessed
-	// void OnPlayerPawnPossessed(class APawn* PossessedPawn);                                                               // [0xb96ac98] Final|Native|Protected 
+	// void OnPlayerPawnPossessed(class APawn* PossessedPawn);                                                               // [0xbc7f4c4] Final|Native|Protected 
 };
 
 /// Class /Script/JunoGameNative.JunoBuilderTool
-/// Size: 0x0070 (0x001500 - 0x001570)
+/// Size: 0x0070 (0x001508 - 0x001578)
 class AJunoBuilderTool : public AFortWeapon
 { 
 public:
-	SDK_UNDEFINED(16,11905) /* FMulticastInlineDelegate */ __um(OnBuilderToolInteractionStarted);                  // 0x1500   (0x0010)  
-	SDK_UNDEFINED(16,11906) /* FMulticastInlineDelegate */ __um(OnBuilderToolInteractionStopped);                  // 0x1510   (0x0010)  
-	FJunoInputMapping                                  InputMapping;                                               // 0x1520   (0x0010)  
-	class UInputAction*                                UnEquipInputAction;                                         // 0x1530   (0x0008)  
-	FGameplayTagContainer                              ActivatedTags;                                              // 0x1538   (0x0020)  
-	TArray<class UJunoBuilderToolInteractionBehavior*> InteractionBehaviors;                                       // 0x1558   (0x0010)  
-	class UJunoBuilderToolInteractionBehavior*         ActiveInteractionBehavior;                                  // 0x1568   (0x0008)  
+	SDK_UNDEFINED(16,11945) /* FMulticastInlineDelegate */ __um(OnBuilderToolInteractionStarted);                  // 0x1508   (0x0010)  
+	SDK_UNDEFINED(16,11946) /* FMulticastInlineDelegate */ __um(OnBuilderToolInteractionStopped);                  // 0x1518   (0x0010)  
+	FJunoInputMapping                                  InputMapping;                                               // 0x1528   (0x0010)  
+	class UInputAction*                                UnEquipInputAction;                                         // 0x1538   (0x0008)  
+	FGameplayTagContainer                              ActivatedTags;                                              // 0x1540   (0x0020)  
+	TArray<class UJunoBuilderToolInteractionBehavior*> InteractionBehaviors;                                       // 0x1560   (0x0010)  
+	class UJunoBuilderToolInteractionBehavior*         ActiveInteractionBehavior;                                  // 0x1570   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuilderTool.ServerStartInteraction
-	// void ServerStartInteraction(TArray<FJunoBuilderToolSelectedActor> SelectedActors, FGuid SelectionGUID);               // [0xb96bb8c] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
+	// void ServerStartInteraction(TArray<FJunoBuilderToolSelectedActor> SelectedActors, FGuid SelectionGUID);               // [0xbc80340] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
 	// Function /Script/JunoGameNative.JunoBuilderTool.ServerClearInteraction
-	// void ServerClearInteraction(bool bExited);                                                                            // [0xb96b780] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerClearInteraction(bool bExited);                                                                            // [0xbc7fe24] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/JunoGameNative.JunoBuilderTool.ReceiveInteractionStarted
-	// void ReceiveInteractionStarted(class UJunoBuilderToolInteractionBehavior* InteractionBehavior);                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveInteractionStarted(class UJunoBuilderToolInteractionBehavior* InteractionBehavior);                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderTool.ReceiveInteractionEnded
-	// void ReceiveInteractionEnded(class UJunoBuilderToolInteractionBehavior* InteractionBehavior);                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveInteractionEnded(class UJunoBuilderToolInteractionBehavior* InteractionBehavior);                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderTool.MulticastStartInteractionOnRemoteClients
-	// void MulticastStartInteractionOnRemoteClients(class UJunoBuilderToolInteractionBehavior* InteractionBehavior, TArray<FJunoBuilderToolSelectedActor> SelectedActors, FGuid SelectionGUID); // [0xb96a4cc] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void MulticastStartInteractionOnRemoteClients(class UJunoBuilderToolInteractionBehavior* InteractionBehavior, TArray<FJunoBuilderToolSelectedActor> SelectedActors, FGuid SelectionGUID); // [0xbc7e5bc] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/JunoGameNative.JunoBuilderTool.MulticastClearInteractionOnRemoteClients
-	// void MulticastClearInteractionOnRemoteClients();                                                                      // [0x88af38c] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void MulticastClearInteractionOnRemoteClients();                                                                      // [0x8864880] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/JunoGameNative.JunoBuilderTool.IsRunningOnOwningClient
-	// bool IsRunningOnOwningClient();                                                                                       // [0xb96a484] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRunningOnOwningClient();                                                                                       // [0xbc7e574] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderTool.IsEnabled
-	// bool IsEnabled();                                                                                                     // [0xb96a45c] Native|Event|Protected|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                     // [0xbc7e54c] Native|Event|Protected|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderTool.GetSelectionGUID
-	// FGuid GetSelectionGUID();                                                                                             // [0xb96a434] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FGuid GetSelectionGUID();                                                                                             // [0xbc7e294] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderTool.GetSelectedActors
-	// TArray<FJunoBuilderToolSelectedActor> GetSelectedActors();                                                            // [0xb969d60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FJunoBuilderToolSelectedActor> GetSelectedActors();                                                            // [0xbc7dbc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderTool.GetActiveInteractionBehavior
-	// class UJunoBuilderToolInteractionBehavior* GetActiveInteractionBehavior();                                            // [0xb4ffe64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UJunoBuilderToolInteractionBehavior* GetActiveInteractionBehavior();                                            // [0xb73fcb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderTool.ClientStopInteraction
-	// void ClientStopInteraction(bool bIsExiting);                                                                          // [0x83b96e4] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientStopInteraction(bool bIsExiting);                                                                          // [0x8359230] Final|Net|NetReliableNative|Event|Private|NetClient 
 	// Function /Script/JunoGameNative.JunoBuilderTool.ClientStartInteraction
-	// void ClientStartInteraction(class UJunoBuilderToolInteractionBehavior* InteractionBehavior, TArray<FJunoBuilderToolSelectedActor> SelectedActors, FGuid SelectionGUID); // [0xb9692c8] Final|Net|NetReliableNative|Event|Private|HasDefaults|NetClient 
+	// void ClientStartInteraction(class UJunoBuilderToolInteractionBehavior* InteractionBehavior, TArray<FJunoBuilderToolSelectedActor> SelectedActors, FGuid SelectionGUID); // [0xbc7cf50] Final|Net|NetReliableNative|Event|Private|HasDefaults|NetClient 
 };
 
 /// Struct /Script/JunoGameNative.JunoBuilderToolInteractionActorClassSet
 /// Size: 0x00A0 (0x000000 - 0x0000A0)
 struct FJunoBuilderToolInteractionActorClassSet
 { 
-	SDK_UNDEFINED(80,11907) /* TSet<TWeakObjectPtr<UClass*>> */ __um(Classes);                                     // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,11908) /* TSet<TWeakObjectPtr<UClass*>> */ __um(ExcludedSubclasses);                          // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,11947) /* TSet<TWeakObjectPtr<UClass*>> */ __um(Classes);                                     // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11948) /* TSet<TWeakObjectPtr<UClass*>> */ __um(ExcludedSubclasses);                          // 0x0050   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuilderToolSelectedActor
@@ -5136,7 +5236,7 @@ struct FJunoBuilderToolSelectedActor
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FJunoBuilderToolTimedActors
 { 
-	SDK_UNDEFINED(16,11909) /* TArray<TWeakObjectPtr<AActor*>> */ __um(Actors);                                    // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11949) /* TArray<TWeakObjectPtr<AActor*>> */ __um(Actors);                                    // 0x0000   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0010   (0x0008)  MISSED
 };
 
@@ -5144,7 +5244,7 @@ struct FJunoBuilderToolTimedActors
 /// Size: 0x000C (0x000000 - 0x00000C)
 struct FServerSpawnedActorPair
 { 
-	SDK_UNDEFINED(8,11910) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,11950) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
 	FName                                              StableName;                                                 // 0x0008   (0x0004)  
 };
 
@@ -5153,10 +5253,10 @@ struct FServerSpawnedActorPair
 class UJunoBuilderToolInteractionBehavior : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,11911) /* FMulticastInlineDelegate */ __um(OnInteractionStart);                               // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,11912) /* FMulticastInlineDelegate */ __um(OnInteractionTrigger);                             // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,11913) /* FMulticastInlineDelegate */ __um(OnInteractionEnd);                                 // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,11914) /* FMulticastInlineDelegate */ __um(OnInteractionExit);                                // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,11951) /* FMulticastInlineDelegate */ __um(OnInteractionStart);                               // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,11952) /* FMulticastInlineDelegate */ __um(OnInteractionTrigger);                             // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,11953) /* FMulticastInlineDelegate */ __um(OnInteractionEnd);                                 // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,11954) /* FMulticastInlineDelegate */ __um(OnInteractionExit);                                // 0x00D0   (0x0010)  
 	bool                                               bShouldAddToParent;                                         // 0x00E0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00E1   (0x0003)  MISSED
 	int32_t                                            Priority;                                                   // 0x00E4   (0x0004)  
@@ -5182,47 +5282,47 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ServerSpawnSelectedActors
-	// void ServerSpawnSelectedActors(FJunoBuilderToolSelectionSpawnParams SelectionSpawnParameters);                        // [0xb96ba20] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerSpawnSelectedActors(FJunoBuilderToolSelectionSpawnParams SelectionSpawnParameters);                        // [0xbc80240] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ServerOnSpawnedActorProcessedByClient
-	// void ServerOnSpawnedActorProcessedByClient(FName StableName);                                                         // [0xb96b99c] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerOnSpawnedActorProcessedByClient(FName StableName);                                                         // [0xbc8017c] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveTriggerInteraction
-	// void ReceiveTriggerInteraction();                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveTriggerInteraction();                                                                                     // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveTickInteraction
-	// void ReceiveTickInteraction();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveTickInteraction();                                                                                        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveStartInteractionOnServer
-	// void ReceiveStartInteractionOnServer(TArray<FJunoBuilderToolSelectedActor>& Actors, FGuid& Guid);                     // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void ReceiveStartInteractionOnServer(TArray<FJunoBuilderToolSelectedActor>& Actors, FGuid& Guid);                     // [0x2047e54] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveStartInteractionOnRemoteClient
-	// void ReceiveStartInteractionOnRemoteClient(TArray<FJunoBuilderToolSelectedActor>& Actors, FGuid& Guid);               // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void ReceiveStartInteractionOnRemoteClient(TArray<FJunoBuilderToolSelectedActor>& Actors, FGuid& Guid);               // [0x2047e54] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveStartInteractionOnClient
-	// void ReceiveStartInteractionOnClient(TArray<FJunoBuilderToolSelectedActor>& Actors, FGuid& Guid);                     // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void ReceiveStartInteractionOnClient(TArray<FJunoBuilderToolSelectedActor>& Actors, FGuid& Guid);                     // [0x2047e54] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveSpawnedActor
-	// void ReceiveSpawnedActor(class AActor* SpawnedActor);                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveSpawnedActor(class AActor* SpawnedActor);                                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveExitInteraction
-	// void ReceiveExitInteraction(bool bClearInteractionBehavior);                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveExitInteraction(bool bClearInteractionBehavior);                                                          // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveEndInteraction
-	// void ReceiveEndInteraction();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveEndInteraction();                                                                                         // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ReceiveClearInteractionOnRemoteClient
-	// void ReceiveClearInteractionOnRemoteClient();                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveClearInteractionOnRemoteClient();                                                                         // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.PlayGameplayAbility
-	// void PlayGameplayAbility(class UClass* AbilityClass);                                                                 // [0xb96ae30] Final|Native|Public|BlueprintCallable 
+	// void PlayGameplayAbility(class UClass* AbilityClass);                                                                 // [0xbc7f6bc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.OnRep_ServerSpawnedActors
-	// void OnRep_ServerSpawnedActors();                                                                                     // [0xb96ae08] Final|Native|Private 
+	// void OnRep_ServerSpawnedActors();                                                                                     // [0xbc7f678] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.IsRunningOnOwningClient
-	// bool IsRunningOnOwningClient();                                                                                       // [0xb96a4a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRunningOnOwningClient();                                                                                       // [0xbc7e598] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.GetSelectionGUID
-	// FGuid GetSelectionGUID();                                                                                             // [0x9fc4750] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FGuid GetSelectionGUID();                                                                                             // [0xa110494] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.GetSelectedActors
-	// TArray<FJunoBuilderToolSelectedActor> GetSelectedActors();                                                            // [0xb96a418] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FJunoBuilderToolSelectedActor> GetSelectedActors();                                                            // [0xbc7e278] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.GetPlayerController
-	// class APlayerController* GetPlayerController();                                                                       // [0xb969d3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APlayerController* GetPlayerController();                                                                       // [0xbc7db9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.GetInstigator
-	// class APawn* GetInstigator();                                                                                         // [0xb969bec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APawn* GetInstigator();                                                                                         // [0xbc7d980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.GetFortPlayerController
-	// class AFortPlayerController* GetFortPlayerController();                                                               // [0xb969bc8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortPlayerController* GetFortPlayerController();                                                               // [0xbc7d8a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.GetBuilderTool
-	// class AJunoBuilderTool* GetBuilderTool();                                                                             // [0xb969ba4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AJunoBuilderTool* GetBuilderTool();                                                                             // [0xbc7d830] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuilderToolInteractionBehavior.ClientOnServerSpawnSelectedActorsFailed
-	// void ClientOnServerSpawnSelectedActorsFailed(TArray<FName> FailedNames);                                              // [0xb969234] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientOnServerSpawnSelectedActorsFailed(TArray<FName> FailedNames);                                              // [0xbc7ce7c] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingBehaviorGridLimits
@@ -5269,28 +5369,28 @@ public:
 	FJunoBuilderToolInteractionActorClassSet           SupportableClasses;                                         // 0x0CF8   (0x00A0)  
 	class UJunoConnectivityComponent*                  Connectivity;                                               // 0x0D98   (0x0008)  
 	class UJunoGeometryCollectionAssemblerComponent*   GeometryCollectionAssemblerComponent;                       // 0x0DA0   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0DA8   (0x0008)  MISSED
+	class AJunoGuidedBuildingLandscapeVisualModifierActor* TerrainVisualModifierActor;                             // 0x0DA8   (0x0008)  
 	FTransform                                         BuildingPivotOffset;                                        // 0x0DB0   (0x0060)  
 	FVector                                            BuildingGridSnapOffset;                                     // 0x0E10   (0x0018)  
 	TArray<FJunoBuildingSnapEntry>                     SnapEntries;                                                // 0x0E28   (0x0010)  
 	TArray<FJunoBuildingActorOverlapAction>            OverlapActions;                                             // 0x0E38   (0x0010)  
-	SDK_UNDEFINED(80,11915) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0E48   (0x0050)  
+	SDK_UNDEFINED(80,11955) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0E48   (0x0050)  
 	bool                                               bCanRegenHealth : 1;                                        // 0x0E98:0 (0x0001)  
 	bool                                               bProcessOverlaps;                                           // 0x0E99   (0x0001)  
 	bool                                               bShouldPersist;                                             // 0x0E9A   (0x0001)  
 	bool                                               bForceOverrideDestroyFoliageWhenPlaced;                     // 0x0E9B   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x4];                                       // 0x0E9C   (0x0004)  MISSED
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x0E9C   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingActor.SetCanEverAffectNavigation
-	// void SetCanEverAffectNavigation(bool bCanEverAffectNavigation, class UActorComponent* TargetActorComponent);          // [0xa9c9280] Final|Native|Protected|BlueprintCallable 
+	// void SetCanEverAffectNavigation(bool bCanEverAffectNavigation, class UActorComponent* TargetActorComponent);          // [0xab9bce4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingActor.ReceiveCustomOverlapAction
-	// bool ReceiveCustomOverlapAction(FJunoBuildingMultiOverlapResult& OverlapResult, class UPrimitiveComponent* PrimitiveComp); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// bool ReceiveCustomOverlapAction(FJunoBuildingMultiOverlapResult& OverlapResult, class UPrimitiveComponent* PrimitiveComp); // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingActor.OnRep_bForceOverrideDestroyFoliageWhenPlaced
-	// void OnRep_bForceOverrideDestroyFoliageWhenPlaced();                                                                  // [0xb9afa80] Final|Native|Private 
+	// void OnRep_bForceOverrideDestroyFoliageWhenPlaced();                                                                  // [0xbc7f68c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoBuildingActor.OnPlacedInWorld
-	// void OnPlacedInWorld(bool bFinalize, TArray<FJunoBuilderToolSupportActorComponentPair>& SupportCandidates);           // [0xb9af38c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnPlacedInWorld(bool bFinalize, TArray<FJunoBuilderToolSupportActorComponentPair>& SupportCandidates);           // [0xbc7ed8c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingAssociatedItemInterface
@@ -5302,15 +5402,15 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingAssociatedItemInterface.CanRemoveAssociatedItemFromInventory
-	// bool CanRemoveAssociatedItemFromInventory();                                                                          // [0x2a89fe4] Native|Event|Public|BlueprintEvent|Const 
+	// bool CanRemoveAssociatedItemFromInventory();                                                                          // [0x239d258] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Struct /Script/JunoGameNative.JunoCollisionChannelResponsePair
 /// Size: 0x0002 (0x000000 - 0x000002)
 struct FJunoCollisionChannelResponsePair
 { 
-	SDK_UNDEFINED(1,11916) /* TEnumAsByte<ECollisionChannel> */ __um(Channel);                                     // 0x0000   (0x0001)  
-	SDK_UNDEFINED(1,11917) /* TEnumAsByte<ECollisionResponse> */ __um(Response);                                   // 0x0001   (0x0001)  
+	SDK_UNDEFINED(1,11956) /* TEnumAsByte<ECollisionChannel> */ __um(Channel);                                     // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,11957) /* TEnumAsByte<ECollisionResponse> */ __um(Response);                                   // 0x0001   (0x0001)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingPreviewParams
@@ -5332,10 +5432,10 @@ public:
 	EJunoBuildingBehaviorState                         BuildingState;                                              // 0x02A0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x02A1   (0x0007)  MISSED
 	FGameplayTagContainer                              BuildingStateTags;                                          // 0x02A8   (0x0020)  
-	SDK_UNDEFINED(16,11918) /* FMulticastInlineDelegate */ __um(OnBuildingStateChanged);                           // 0x02C8   (0x0010)  
-	SDK_UNDEFINED(16,11919) /* FMulticastInlineDelegate */ __um(OnBuildingStateTagsChanged);                       // 0x02D8   (0x0010)  
-	SDK_UNDEFINED(16,11920) /* FMulticastInlineDelegate */ __um(OnEnterPreviewMode);                               // 0x02E8   (0x0010)  
-	SDK_UNDEFINED(16,11921) /* FMulticastInlineDelegate */ __um(OnExitPreviewMode);                                // 0x02F8   (0x0010)  
+	SDK_UNDEFINED(16,11958) /* FMulticastInlineDelegate */ __um(OnBuildingStateChanged);                           // 0x02C8   (0x0010)  
+	SDK_UNDEFINED(16,11959) /* FMulticastInlineDelegate */ __um(OnBuildingStateTagsChanged);                       // 0x02D8   (0x0010)  
+	SDK_UNDEFINED(16,11960) /* FMulticastInlineDelegate */ __um(OnEnterPreviewMode);                               // 0x02E8   (0x0010)  
+	SDK_UNDEFINED(16,11961) /* FMulticastInlineDelegate */ __um(OnExitPreviewMode);                                // 0x02F8   (0x0010)  
 	FJunoInputMapping                                  BuildPreviewModeInputMapping;                               // 0x0308   (0x0010)  
 	class UInputAction*                                BuildingPreviewModeCameraRotationAction;                    // 0x0318   (0x0008)  
 	FTransform                                         SelectionToWorld;                                           // 0x0320   (0x0060)  
@@ -5349,55 +5449,55 @@ public:
 	bool                                               bIsCurrentlyInPreviewMode;                                  // 0x0509   (0x0001)  
 	EJunoBuildModeType                                 CurrentBuildMode;                                           // 0x050A   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x5];                                       // 0x050B   (0x0005)  MISSED
-	SDK_UNDEFINED(16,11922) /* FMulticastInlineDelegate */ __um(OnPositionInterpStart);                            // 0x0510   (0x0010)  
-	SDK_UNDEFINED(16,11923) /* FMulticastInlineDelegate */ __um(OnPositionInterpEnd);                              // 0x0520   (0x0010)  
+	SDK_UNDEFINED(16,11962) /* FMulticastInlineDelegate */ __um(OnPositionInterpStart);                            // 0x0510   (0x0010)  
+	SDK_UNDEFINED(16,11963) /* FMulticastInlineDelegate */ __um(OnPositionInterpEnd);                              // 0x0520   (0x0010)  
 	FGameplayTagQuery                                  SpatialInterfaceSelectionQuery;                             // 0x0530   (0x0048)  
 	unsigned char                                      UnknownData04_6[0x8];                                       // 0x0578   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.SetTargetSelectionToWorld
-	// void SetTargetSelectionToWorld(FTransform& NewSelectionToWorld);                                                      // [0xb9b00b0] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetTargetSelectionToWorld(FTransform& NewSelectionToWorld);                                                      // [0xbcc7528] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.SetTargetSelectionRotation
-	// void SetTargetSelectionRotation(FQuat& NewRotation);                                                                  // [0xb9b001c] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetTargetSelectionRotation(FQuat& NewRotation);                                                                  // [0xbcc7494] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.SetTargetSelectionLocation
-	// void SetTargetSelectionLocation(FVector& NewLocation);                                                                // [0xb9aff48] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetTargetSelectionLocation(FVector& NewLocation);                                                                // [0xbcc73c0] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.SetSmoothedSelectionToWorld
-	// void SetSmoothedSelectionToWorld(FTransform& NewSmoothedSelectionToWorld);                                            // [0xb9afe10] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetSmoothedSelectionToWorld(FTransform& NewSmoothedSelectionToWorld);                                            // [0xbcc7154] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.SetInterpolationBasis
-	// void SetInterpolationBasis(FTransform& NewInterpolationBasis);                                                        // [0xb9afd10] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetInterpolationBasis(FTransform& NewInterpolationBasis);                                                        // [0xbcc7054] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.SetDisabled
-	// void SetDisabled(bool bShouldBeDisabled);                                                                             // [0xb9afbb8] Final|Native|Public|BlueprintCallable 
+	// void SetDisabled(bool bShouldBeDisabled);                                                                             // [0xbcc6f40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.ReceivePositionInterpStart
-	// void ReceivePositionInterpStart();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceivePositionInterpStart();                                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.ReceivePositionInterpEnd
-	// void ReceivePositionInterpEnd();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceivePositionInterpEnd();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.ReceiveBuildingStateChanged
-	// void ReceiveBuildingStateChanged(EJunoBuildingBehaviorState PreviousState, EJunoBuildingBehaviorState NewState);      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveBuildingStateChanged(EJunoBuildingBehaviorState PreviousState, EJunoBuildingBehaviorState NewState);      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.IsDisabled
-	// bool IsDisabled();                                                                                                    // [0xb9af2ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDisabled();                                                                                                    // [0xbcc5f4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.HandleBuildModeChanged
-	// void HandleBuildModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                   // [0xb9af1a8] Final|Native|Protected|HasOutParms 
+	// void HandleBuildModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                   // [0xbcc5e7c] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.GetTargetSelectionToWorld
-	// FTransform GetTargetSelectionToWorld();                                                                               // [0xb9aeca4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetTargetSelectionToWorld();                                                                               // [0xbcc5bb8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.GetSelectionToWorld
-	// FTransform GetSelectionToWorld();                                                                                     // [0xb9aeb54] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetSelectionToWorld();                                                                                     // [0xbcc59a4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.GetPreviewWorldBounds
-	// FBox GetPreviewWorldBounds();                                                                                         // [0xb9aeae0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox GetPreviewWorldBounds();                                                                                         // [0xbcc5788] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.GetPreviewLocalBounds
-	// FBox GetPreviewLocalBounds();                                                                                         // [0xb9aea98] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox GetPreviewLocalBounds();                                                                                         // [0xbcc5740] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.GetPreviewer
-	// class AJunoBuildingPreviewer* GetPreviewer();                                                                         // [0x634bca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AJunoBuildingPreviewer* GetPreviewer();                                                                         // [0x606d484] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.GetDefaultPreviewParams
-	// FJunoBuildingPreviewParams GetDefaultPreviewParams();                                                                 // [0xb9ae700] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingPreviewParams GetDefaultPreviewParams();                                                                 // [0xbcc3de4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.GetBuildingStateTags
-	// FGameplayTagContainer GetBuildingStateTags();                                                                         // [0xb9ae510] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetBuildingStateTags();                                                                         // [0xbcc3c2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.GetBuildingState
-	// EJunoBuildingBehaviorState GetBuildingState();                                                                        // [0xab9f24c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoBuildingBehaviorState GetBuildingState();                                                                        // [0xad7e1b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.CanSelectedActorsBePlaced
-	// bool CanSelectedActorsBePlaced(TArray<FJunoBuilderToolSelectedActor>& InSelectedActors, FTransform& InSelectionToWorld, FGameplayTagContainer& OutBuildingStateTags); // [0xb9adb9c] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// bool CanSelectedActorsBePlaced(TArray<FJunoBuilderToolSelectedActor>& InSelectedActors, FTransform& InSelectionToWorld, FGameplayTagContainer& OutBuildingStateTags); // [0xbcc3208] Native|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorBase.CanPlaceSelectedActors
-	// bool CanPlaceSelectedActors(FGameplayTagContainer& OutBuildingStateTags);                                             // [0xb9adac8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPlaceSelectedActors(FGameplayTagContainer& OutBuildingStateTags);                                             // [0xbcc3134] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoGameNative.JunoBuilderToolInteractionRow
@@ -5431,13 +5531,14 @@ struct FJunoBuildingBehaviorOverrides
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingSnapEntryContext
-/// Size: 0x0070 (0x000000 - 0x000070)
+/// Size: 0x0080 (0x000000 - 0x000080)
 struct FJunoBuildingSnapEntryContext
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
 	EJunoBuildingSnapEntryState                        State;                                                      // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0009   (0x0007)  MISSED
 	FTransform                                         ToWorld;                                                    // 0x0010   (0x0060)  
+	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0070   (0x0010)  MISSED
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingSnapContext
@@ -5453,7 +5554,7 @@ struct FJunoBuildingSnapContext
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FJunoBuildingConnectionPointsResult
 { 
-	SDK_UNDEFINED(80,11924) /* TMap<EConnectionFieldGender, FJunoBuildingConnectionPoints> */ __um(PointsMap);     // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11964) /* TMap<EConnectionFieldGender, FJunoBuildingConnectionPoints> */ __um(PointsMap);     // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingConnectionPoint
@@ -5463,7 +5564,7 @@ struct FJunoBuildingConnectionPoint
 	FTransform                                         FieldToObject;                                              // 0x0000   (0x0060)  
 	FTransform                                         PointToObject;                                              // 0x0060   (0x0060)  
 	FVector2D                                          FieldSize;                                                  // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(8,11925) /* TWeakObjectPtr<USceneComponent*> */ __um(Component);                                 // 0x00D0   (0x0008)  
+	SDK_UNDEFINED(8,11965) /* TWeakObjectPtr<USceneComponent*> */ __um(Component);                                 // 0x00D0   (0x0008)  
 	int32_t                                            ObjectId;                                                   // 0x00D8   (0x0004)  
 	EConnectionPointType                               PointType;                                                  // 0x00DC   (0x0001)  
 	bool                                               bAvailable;                                                 // 0x00DD   (0x0001)  
@@ -5490,35 +5591,18 @@ struct FJunoBuildingConnectivityContext
 	FJunoBuildingConnection                            Connection;                                                 // 0x00D0   (0x01D0)  
 };
 
-/// Struct /Script/JunoGameNative.JunoBuildingOverlapResult
-/// Size: 0x0038 (0x000000 - 0x000038)
-struct FJunoBuildingOverlapResult
-{ 
-	SDK_UNDEFINED(8,11926) /* TWeakObjectPtr<AActor*> */ __um(OverlappedActor);                                    // 0x0000   (0x0008)  
-	SDK_UNDEFINED(8,11927) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(OverlappedComponent);                   // 0x0008   (0x0008)  
-	TArray<FBox>                                       Intersections;                                              // 0x0010   (0x0010)  
-	FVector                                            MTD;                                                        // 0x0020   (0x0018)  
-};
-
-/// Struct /Script/JunoGameNative.JunoBuildingMultiOverlapResult
-/// Size: 0x0010 (0x000000 - 0x000010)
-struct FJunoBuildingMultiOverlapResult
-{ 
-	TArray<FJunoBuildingOverlapResult>                 Overlaps;                                                   // 0x0000   (0x0010)  
-};
-
 /// Struct /Script/JunoGameNative.JunoBuildingFloatingResult
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FJunoBuildingFloatingResult
 { 
-	SDK_UNDEFINED(16,11928) /* TArray<TWeakObjectPtr<UPrimitiveComponent*>> */ __um(SupportingComponents);         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11966) /* TArray<TWeakObjectPtr<UPrimitiveComponent*>> */ __um(SupportingComponents);         // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingSupportedComponent
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FJunoBuildingSupportedComponent
 { 
-	SDK_UNDEFINED(8,11929) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Component);                             // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,11967) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Component);                             // 0x0000   (0x0008)  
 	FJunoBuildingFloatingResult                        Result;                                                     // 0x0008   (0x0010)  
 };
 
@@ -5526,7 +5610,7 @@ struct FJunoBuildingSupportedComponent
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FJunoBuildingBehaviorStateContext
 { 
-	SDK_UNDEFINED(8,11930) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(OverlappedPreviewComponent);            // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,11968) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(OverlappedPreviewComponent);            // 0x0000   (0x0008)  
 	FJunoBuildingMultiOverlapResult                    OverlapResult;                                              // 0x0008   (0x0010)  
 	TArray<FJunoBuildingSupportedComponent>            SupportedComponents;                                        // 0x0018   (0x0010)  
 	bool                                               bBlockedByAssembly;                                         // 0x0028   (0x0001)  
@@ -5562,12 +5646,12 @@ public:
 	bool                                               bEnableAdjacency;                                           // 0x1160   (0x0001)  
 	bool                                               bEnableSnapPlacement;                                       // 0x1161   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x6];                                       // 0x1162   (0x0006)  MISSED
-	SDK_UNDEFINED(16,11931) /* FMulticastInlineDelegate */ __um(OnToggleSnapping);                                 // 0x1168   (0x0010)  
+	SDK_UNDEFINED(16,11969) /* FMulticastInlineDelegate */ __um(OnToggleSnapping);                                 // 0x1168   (0x0010)  
 	FIntPoint                                          GridOffset;                                                 // 0x1178   (0x0008)  
 	FQuat                                              GridOffsetControlRotation;                                  // 0x1180   (0x0020)  
-	SDK_UNDEFINED(16,11932) /* FMulticastInlineDelegate */ __um(OnPlacementTypeChanged);                           // 0x11A0   (0x0010)  
+	SDK_UNDEFINED(16,11970) /* FMulticastInlineDelegate */ __um(OnPlacementTypeChanged);                           // 0x11A0   (0x0010)  
 	FJunoBuildingBehaviorStateContext                  CachedBuildingStateContext;                                 // 0x11B0   (0x0030)  
-	SDK_UNDEFINED(16,11933) /* FMulticastInlineDelegate */ __um(OnBuildingStateContextChanged);                    // 0x11E0   (0x0010)  
+	SDK_UNDEFINED(16,11971) /* FMulticastInlineDelegate */ __um(OnBuildingStateContextChanged);                    // 0x11E0   (0x0010)  
 	double                                             LastTriggerRequestedTimestamp;                              // 0x11F0   (0x0008)  
 	double                                             LastTriggerTimestamp;                                       // 0x11F8   (0x0008)  
 	bool                                               bAdhesionNeedsReset;                                        // 0x1200   (0x0001)  
@@ -5580,61 +5664,61 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.ToggleAdjacency
-	// void ToggleAdjacency();                                                                                               // [0xb9b02b0] Final|Native|Private|BlueprintCallable 
+	// void ToggleAdjacency();                                                                                               // [0xbc80dc0] Final|Native|Private|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.SetGridOffset
-	// void SetGridOffset(FIntPoint& NewOffset);                                                                             // [0xb9afc88] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetGridOffset(FIntPoint& NewOffset);                                                                             // [0xbc80bf8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.RotateSelection
-	// void RotateSelection(double Delta);                                                                                   // [0xb9afab0] Final|Native|Private|BlueprintCallable 
+	// void RotateSelection(double Delta);                                                                                   // [0xbc7f8d0] Final|Native|Private|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.ReceiveSnappingEnabled
-	// void ReceiveSnappingEnabled();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveSnappingEnabled();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.ReceiveSnappingDisabled
-	// void ReceiveSnappingDisabled();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveSnappingDisabled();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.ReceiveRotateSelection
-	// void ReceiveRotateSelection();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveRotateSelection();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.ReceivePositionChangedGridCell
-	// void ReceivePositionChangedGridCell(FVector& GridCellLocation);                                                       // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void ReceivePositionChangedGridCell(FVector& GridCellLocation);                                                       // [0x2047e54] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.ReceiveNudgeInputAction
-	// void ReceiveNudgeInputAction(bool bOffsetChanged);                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveNudgeInputAction(bool bOffsetChanged);                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.ReceivedFailedInteraction
-	// void ReceivedFailedInteraction();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceivedFailedInteraction();                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.IsAdjacencyEnabled
-	// bool IsAdjacencyEnabled();                                                                                            // [0xb9af294] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAdjacencyEnabled();                                                                                            // [0xbc7e534] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.HasAnySnapEntries
-	// bool HasAnySnapEntries();                                                                                             // [0xb9af244] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool HasAnySnapEntries();                                                                                             // [0xbc7e518] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetWorldSpacePivotOffset
-	// FVector GetWorldSpacePivotOffset();                                                                                   // [0xb9af150] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetWorldSpacePivotOffset();                                                                                   // [0xbc7e4c0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetWorldSpaceGridOffsetLimits
-	// FVector2D GetWorldSpaceGridOffsetLimits(FVector2D& MinOffset, FVector2D& MaxOffset);                                  // [0xb9af058] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetWorldSpaceGridOffsetLimits(FVector2D& MinOffset, FVector2D& MaxOffset);                                  // [0xbc7e3c8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetWorldSpaceGridOffset
-	// FVector2D GetWorldSpaceGridOffset();                                                                                  // [0xb9af00c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetWorldSpaceGridOffset();                                                                                  // [0xbc7e37c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetTargetTraceResult
-	// FHitResult GetTargetTraceResult();                                                                                    // [0xb9aecfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FHitResult GetTargetTraceResult();                                                                                    // [0xbc7e2d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetSnapContext
-	// FJunoBuildingSnapContext GetSnapContext();                                                                            // [0xb9aebac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingSnapContext GetSnapContext();                                                                            // [0xbc7e2bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetPivotOffset
-	// FVector GetPivotOffset();                                                                                             // [0xb9ae9a8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetPivotOffset();                                                                                             // [0xbc7db68] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetPenetrationTolerance
-	// FVector GetPenetrationTolerance();                                                                                    // [0xb9ae948] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetPenetrationTolerance();                                                                                    // [0xbc7db40] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetLastPlacementResult
-	// FJunoBuildingPlacementResult GetLastPlacementResult();                                                                // [0xb9ae874] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingPlacementResult GetLastPlacementResult();                                                                // [0xbc7daac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetGridSnapOffset
-	// FVector GetGridSnapOffset();                                                                                          // [0xb9ae81c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetGridSnapOffset();                                                                                          // [0xbc7d928] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetGridSize
-	// FVector GetGridSize();                                                                                                // [0xb9ae7bc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetGridSize();                                                                                                // [0xbc7d900] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetGridOffsetLimits
-	// FJunoBuildingBehaviorGridLimits GetGridOffsetLimits();                                                                // [0xb9ae7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingBehaviorGridLimits GetGridOffsetLimits();                                                                // [0xbc7d8e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetGridOffset
-	// FIntPoint GetGridOffset();                                                                                            // [0xb9ae758] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FIntPoint GetGridOffset();                                                                                            // [0xbc7d8cc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetConnectivityContext
-	// FJunoBuildingConnectivityContext GetConnectivityContext();                                                            // [0xb9ae570] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingConnectivityContext GetConnectivityContext();                                                            // [0xbc7d88c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetConfigData
-	// FJunoBuildingBehaviorInteractionRow GetConfigData();                                                                  // [0xb9ae554] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingBehaviorInteractionRow GetConfigData();                                                                  // [0xbc7d870] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.GetBuildingStateContext
-	// FJunoBuildingBehaviorStateContext GetBuildingStateContext();                                                          // [0xb9ae4f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingBehaviorStateContext GetBuildingStateContext();                                                          // [0xbc7d854] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.AddGridOffset
-	// void AddGridOffset(FIntPoint& OffsetDelta);                                                                           // [0xb9ad754] Final|Native|Private|HasOutParms|HasDefaults|BlueprintCallable 
+	// void AddGridOffset(FIntPoint& OffsetDelta);                                                                           // [0xbc7cb68] Final|Native|Private|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingBehavior.AddCameraSpaceGridOffset
-	// void AddCameraSpaceGridOffset(FIntPoint& Delta);                                                                      // [0xb9ad6cc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void AddCameraSpaceGridOffset(FIntPoint& Delta);                                                                      // [0xbc7cae0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface
@@ -5646,35 +5730,35 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.UpdateNoTargetPlacement
-	// void UpdateNoTargetPlacement(FTransform& NewSelectionToWorld, FTransform& NewUnsnappedSelectionToWorld, FTransform& NewBasis, FTransform& ActorToSelection, FJunoBuildingPlacementResult& PlacementResult, class UJunoBuildingBehavior* Behavior); // [0xb9b02c4] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// void UpdateNoTargetPlacement(FTransform& NewSelectionToWorld, FTransform& NewUnsnappedSelectionToWorld, FTransform& NewBasis, FTransform& ActorToSelection, FJunoBuildingPlacementResult& PlacementResult, class UJunoBuildingBehavior* Behavior); // [0xbcc7b24] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.ShouldMinDistanceIncludeBounds
-	// bool ShouldMinDistanceIncludeBounds();                                                                                // [0x67281f8] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldMinDistanceIncludeBounds();                                                                                // [0x646ab24] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.ShouldIgnoreOverlaps
-	// bool ShouldIgnoreOverlaps(class UPrimitiveComponent* PrimComp, class AActor* OverlappingActor);                       // [0xb9b01e8] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldIgnoreOverlaps(class UPrimitiveComponent* PrimComp, class AActor* OverlappingActor);                       // [0xbcc799c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.ShouldBeGridAligned
-	// bool ShouldBeGridAligned();                                                                                           // [0xa7db2b4] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldBeGridAligned();                                                                                           // [0x80ccd74] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetRotationOffset
-	// FRotator GetRotationOffset();                                                                                         // [0x2b73890] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FRotator GetRotationOffset();                                                                                         // [0x28e6d14] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetPivotOffset
-	// FVector GetPivotOffset();                                                                                             // [0xb9ae970] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FVector GetPivotOffset();                                                                                             // [0xbcc564c] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetOverlappableClasses
-	// FJunoBuilderToolInteractionActorClassSet GetOverlappableClasses();                                                    // [0xb9ae8e4] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FJunoBuilderToolInteractionActorClassSet GetOverlappableClasses();                                                    // [0xbcc4830] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetMinDistance
-	// float GetMinDistance();                                                                                               // [0x8ee54c4] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// float GetMinDistance();                                                                                               // [0x8f29248] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetGridSnapOffset
-	// FVector GetGridSnapOffset();                                                                                          // [0xb9ae7e4] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FVector GetGridSnapOffset();                                                                                          // [0xbcc3f38] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetGridSize
-	// FVector GetGridSize();                                                                                                // [0xaeba38c] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FVector GetGridSize();                                                                                                // [0xb0ad870] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetGridOffsetLimits
-	// FJunoBuildingBehaviorGridLimits GetGridOffsetLimits();                                                                // [0xb9ae770] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FJunoBuildingBehaviorGridLimits GetGridOffsetLimits();                                                                // [0xbcc3f08] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetFloatingValidationDirections
-	// TArray<EJunoContactDirection> GetFloatingValidationDirections();                                                      // [0xb9ae71c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TArray<EJunoContactDirection> GetFloatingValidationDirections();                                                      // [0xbcc3ecc] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.GetCoordinateBasis
-	// FTransform GetCoordinateBasis();                                                                                      // [0xb9ae58c] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FTransform GetCoordinateBasis();                                                                                      // [0xbcc3c70] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.CanSupport
-	// bool CanSupport(class UClass* ActorClass);                                                                            // [0xb9ae3f4] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool CanSupport(class UClass* ActorClass);                                                                            // [0xbcc3a6c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingBehaviorSelectedActorInterface.CanPlaceSelectedActor
-	// bool CanPlaceSelectedActor(class UJunoBuildingBehavior* Behavior, FTransform& ToWorld, FGameplayTagContainer& OutBuildingStateTags); // [0xb9ad948] Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool CanPlaceSelectedActor(class UJunoBuildingBehavior* Behavior, FTransform& ToWorld, FGameplayTagContainer& OutBuildingStateTags); // [0xbcc2f70] Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingBlueprintLibrary
@@ -5686,17 +5770,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingBlueprintLibrary.GetUnitGridSize
-	// FVector GetUnitGridSize();                                                                                            // [0xb9aefcc] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetUnitGridSize();                                                                                            // [0xbcc5e3c] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBuildingBlueprintLibrary.GetTargetTransform
-	// FTransform GetTargetTransform(FJunoBuildingPlacementResult& PlacementResult);                                         // [0xb9aeed8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetTargetTransform(FJunoBuildingPlacementResult& PlacementResult);                                         // [0xbcc5d48] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBuildingBlueprintLibrary.GetTargetTraceResult
-	// FHitResult GetTargetTraceResult(FJunoBuildingPlacementResult& PlacementResult);                                       // [0xb9aeda0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FHitResult GetTargetTraceResult(FJunoBuildingPlacementResult& PlacementResult);                                       // [0xbcc5c10] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBuildingBlueprintLibrary.GetSupportCandidates
-	// TArray<AActor*> GetSupportCandidates(FJunoBuilderToolSelectionSpawnParams& Params);                                   // [0xb9aebc8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<AActor*> GetSupportCandidates(FJunoBuilderToolSelectionSpawnParams& Params);                                   // [0xbcc5adc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBuildingBlueprintLibrary.GetPlacementType
-	// EJunoBuildingPlacementType GetPlacementType(FJunoBuildingPlacementResult& PlacementResult);                           // [0xb9ae9dc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// EJunoBuildingPlacementType GetPlacementType(FJunoBuildingPlacementResult& PlacementResult);                           // [0xbcc5684] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBuildingBlueprintLibrary.GetCoordinateBasis
-	// FTransform GetCoordinateBasis(FJunoBuildingPlacementResult& PlacementResult);                                         // [0xb9ae60c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetCoordinateBasis(FJunoBuildingPlacementResult& PlacementResult);                                         // [0xbcc3cf0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingGameplayActor
@@ -5712,26 +5796,26 @@ public:
 	FJunoBuildingBehaviorGridLimits                    GridOffsetLimits;                                           // 0x0A58   (0x0010)  
 	FJunoBuilderToolInteractionActorClassSet           OverlappableClasses;                                        // 0x0A68   (0x00A0)  
 	class UFortItemDefinition*                         AssociatedItem;                                             // 0x0B08   (0x0008)  
-	SDK_UNDEFINED(80,11934) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0B10   (0x0050)  
+	SDK_UNDEFINED(80,11972) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0B10   (0x0050)  
 	bool                                               bShouldPersist;                                             // 0x0B60   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x1F];                                      // 0x0B61   (0x001F)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingGameplayActor.SetAssociatedItem
-	// void SetAssociatedItem(class UFortItemDefinition* Item);                                                              // [0xb9afb34] Native|Public|BlueprintCallable 
+	// void SetAssociatedItem(class UFortItemDefinition* Item);                                                              // [0xbcc6e78] Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingGameplayActor.OnPhysicsStateChanged
-	// void OnPhysicsStateChanged(class UPrimitiveComponent* PrimitiveComponent, EComponentPhysicsStateChange StateChange);  // [0xb9af2c8] Final|Native|Private 
+	// void OnPhysicsStateChanged(class UPrimitiveComponent* PrimitiveComponent, EComponentPhysicsStateChange StateChange);  // [0xbcc6b68] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoBuildingGameplayActor.HasBeenMigrated
-	// bool HasBeenMigrated();                                                                                               // [0xb9af260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasBeenMigrated();                                                                                               // [0xbcc5f18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingGameplayActor.GetAssociatedItem
-	// class UFortItemDefinition* GetAssociatedItem();                                                                       // [0xb9ae49c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItemDefinition* GetAssociatedItem();                                                                       // [0xbcc3bd4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingGameplayActor.BlueprintCanDropResourceWithTagOnDeath
-	// bool BlueprintCanDropResourceWithTagOnDeath(FGameplayTag ResourceTag);                                                // [0xb9ad804] Native|Event|Public|BlueprintEvent 
+	// bool BlueprintCanDropResourceWithTagOnDeath(FGameplayTag ResourceTag);                                                // [0xbcc2e9c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingGameplayActor.BlueprintCanDropResourceOnDeath
-	// bool BlueprintCanDropResourceOnDeath();                                                                               // [0x8866fcc] Native|Event|Public|BlueprintEvent 
+	// bool BlueprintCanDropResourceOnDeath();                                                                               // [0x88191c0] Native|Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingGameplayActor.BlueprintCanDropItemOnDestroy
-	// bool BlueprintCanDropItemOnDestroy();                                                                                 // [0xb9ad7dc] Native|Event|Public|BlueprintEvent|Const 
+	// bool BlueprintCanDropItemOnDestroy();                                                                                 // [0xbcc2e74] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingSnapEditorComponent
@@ -5754,12 +5838,12 @@ struct FJunoBuildingSnapEntryBase
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingSnappingLocation
-/// Size: 0x0030 (0x000290 - 0x0002C0)
+/// Size: 0x0030 (0x000220 - 0x000250)
 class UJunoBuildingSnappingLocation : public USceneComponent
 { 
 public:
-	FGameplayTagContainer                              LocationTags;                                               // 0x0290   (0x0020)  
-	TArray<FJunoBuildingSnapEntryBase>                 SnapEntries;                                                // 0x02B0   (0x0010)  
+	FGameplayTagContainer                              LocationTags;                                               // 0x0220   (0x0020)  
+	TArray<FJunoBuildingSnapEntryBase>                 SnapEntries;                                                // 0x0240   (0x0010)  
 };
 
 /// Class /Script/JunoGameNative.JunoDamageableBuildingInterface
@@ -5771,9 +5855,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoDamageableBuildingInterface.OnBuildingHandleOutOfHealth
-	// void OnBuildingHandleOutOfHealth(FGameplayEffectContextHandle& EffectContext, class AController* EventInstigator, class AActor* DamageCauser, FGameplayTagContainer& InTags); // [0xb9f2ca0] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void OnBuildingHandleOutOfHealth(FGameplayEffectContextHandle& EffectContext, class AController* EventInstigator, class AActor* DamageCauser, FGameplayTagContainer& InTags); // [0xbcc643c] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoDamageableBuildingInterface.OnBuildingHandleDamage
-	// void OnBuildingHandleDamage(class AActor* DamageCauser);                                                              // [0x811e3ac] Native|Event|Public|BlueprintEvent 
+	// void OnBuildingHandleDamage(class AActor* DamageCauser);                                                              // [0x80baa04] Native|Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/JunoGameNative.JunoStageKey
@@ -5791,7 +5875,7 @@ struct FJunoGuidedBuildingData
 	FName                                              ActorName;                                                  // 0x0000   (0x0004)  
 	FName                                              Recipe;                                                     // 0x0004   (0x0004)  
 	TArray<FComponentReference>                        ComponentReferences;                                        // 0x0008   (0x0010)  
-	SDK_UNDEFINED(32,11935) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                        // 0x0018   (0x0020)  
+	SDK_UNDEFINED(32,11973) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                        // 0x0018   (0x0020)  
 	TArray<class UPrimitiveComponent*>                 Components;                                                 // 0x0038   (0x0010)  
 	FJunoStageKey                                      StageKey;                                                   // 0x0048   (0x0008)  
 	int32_t                                            BuildingStateIndex;                                         // 0x0050   (0x0004)  
@@ -5808,7 +5892,7 @@ struct FJunoGuidedBuildingStateEntry : FFastArraySerializerItem
 { 
 	EJunoGuidedBuildingState                           CurrentState;                                               // 0x000C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x000D   (0x0003)  MISSED
-	SDK_UNDEFINED(8,11936) /* TWeakObjectPtr<AActor*> */ __um(FilledActor);                                        // 0x0010   (0x0008)  
+	SDK_UNDEFINED(8,11974) /* TWeakObjectPtr<AActor*> */ __um(FilledActor);                                        // 0x0010   (0x0008)  
 	int32_t                                            BuildingDataIndex;                                          // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x001C   (0x0004)  MISSED
 };
@@ -5827,7 +5911,7 @@ struct FJunoGuidedBuildingSetCompleteState
 { 
 	bool                                               bSetComplete;                                               // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
-	SDK_UNDEFINED(8,11937) /* TWeakObjectPtr<AActor*> */ __um(FinishingPlayer);                                    // 0x0004   (0x0008)  
+	SDK_UNDEFINED(8,11975) /* TWeakObjectPtr<AActor*> */ __um(FinishingPlayer);                                    // 0x0004   (0x0008)  
 	bool                                               bSetUnfinished;                                             // 0x000C   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x3];                                       // 0x000D   (0x0003)  MISSED
 };
@@ -5836,7 +5920,7 @@ struct FJunoGuidedBuildingSetCompleteState
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FJunoGuidedBuildingStageData
 { 
-	SDK_UNDEFINED(24,11938) /* FText */                __um(StageDisplayName);                                     // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,11976) /* FText */                __um(StageDisplayName);                                     // 0x0000   (0x0018)  
 	TArray<int32_t>                                    ActorIndexes;                                               // 0x0018   (0x0010)  
 	TArray<int32_t>                                    AutoCompleteIndexes;                                        // 0x0028   (0x0010)  
 	int32_t                                            NumCompleted;                                               // 0x0038   (0x0004)  
@@ -5848,7 +5932,7 @@ struct FJunoGuidedBuildingStageData
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FJunoGuidedBuildingSectionData
 { 
-	SDK_UNDEFINED(24,11939) /* FText */                __um(SectionDisplayName);                                   // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,11977) /* FText */                __um(SectionDisplayName);                                   // 0x0000   (0x0018)  
 	int32_t                                            NumCompleted;                                               // 0x0018   (0x0004)  
 	int32_t                                            TotalNumberOfSnapsInSection;                                // 0x001C   (0x0004)  
 	bool                                               bSectionEverCompleted;                                      // 0x0020   (0x0001)  
@@ -5860,7 +5944,7 @@ struct FJunoGuidedBuildingSectionData
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FJunoGuidedBuildingSetData
 { 
-	SDK_UNDEFINED(24,11940) /* FText */                __um(SetDisplayName);                                       // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,11978) /* FText */                __um(SetDisplayName);                                       // 0x0000   (0x0018)  
 	int32_t                                            TotalNumberOfSnapsInSet;                                    // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	FJunoGuidedBuildingStageData                       FoundationStage;                                            // 0x0020   (0x0040)  
@@ -5871,7 +5955,7 @@ struct FJunoGuidedBuildingSetData
 /// Size: 0x0008 (0x00000C - 0x000014)
 struct FJunoGuidedBuildingRegisteredPlayer : FFastArraySerializerItem
 { 
-	SDK_UNDEFINED(8,11941) /* TWeakObjectPtr<AFortPlayerState*> */ __um(PlayerState);                              // 0x000C   (0x0008)  
+	SDK_UNDEFINED(8,11979) /* TWeakObjectPtr<AFortPlayerState*> */ __um(PlayerState);                              // 0x000C   (0x0008)  
 };
 
 /// Struct /Script/JunoGameNative.JunoGuidedBuildingRegisteredPlayerArray
@@ -5883,19 +5967,19 @@ struct FJunoGuidedBuildingRegisteredPlayerArray : FFastArraySerializer
 };
 
 /// Class /Script/JunoGameNative.JunoGuidedBuildingActor
-/// Size: 0x06E0 (0x000C10 - 0x0012F0)
+/// Size: 0x0750 (0x000C10 - 0x001360)
 class AJunoGuidedBuildingActor : public AJunoBuildingProp
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x20];                                      // 0x0C10   (0x0020)  MISSED
-	SDK_UNDEFINED(16,11942) /* FMulticastInlineDelegate */ __um(OnCurrentStageUpdateDelegate);                     // 0x0C30   (0x0010)  
-	SDK_UNDEFINED(16,11943) /* FMulticastInlineDelegate */ __um(OnStageUpdateDelegate);                            // 0x0C40   (0x0010)  
-	SDK_UNDEFINED(16,11944) /* FMulticastInlineDelegate */ __um(OnStageCompleteDelegate);                          // 0x0C50   (0x0010)  
-	SDK_UNDEFINED(16,11945) /* FMulticastInlineDelegate */ __um(OnSectionCompleteDelegate);                        // 0x0C60   (0x0010)  
-	SDK_UNDEFINED(16,11946) /* FMulticastInlineDelegate */ __um(OnSetCompleteDelegate);                            // 0x0C70   (0x0010)  
-	SDK_UNDEFINED(16,11947) /* FMulticastInlineDelegate */ __um(OnSetUnfinishedDelegate);                          // 0x0C80   (0x0010)  
-	SDK_UNDEFINED(16,11948) /* FMulticastInlineDelegate */ __um(OnCurrentStageChange);                             // 0x0C90   (0x0010)  
-	SDK_UNDEFINED(16,11949) /* FMulticastInlineDelegate */ __um(OnSnapsUpdatedDelegate);                           // 0x0CA0   (0x0010)  
+	SDK_UNDEFINED(16,11980) /* FMulticastInlineDelegate */ __um(OnCurrentStageUpdateDelegate);                     // 0x0C30   (0x0010)  
+	SDK_UNDEFINED(16,11981) /* FMulticastInlineDelegate */ __um(OnStageUpdateDelegate);                            // 0x0C40   (0x0010)  
+	SDK_UNDEFINED(16,11982) /* FMulticastInlineDelegate */ __um(OnStageCompleteDelegate);                          // 0x0C50   (0x0010)  
+	SDK_UNDEFINED(16,11983) /* FMulticastInlineDelegate */ __um(OnSectionCompleteDelegate);                        // 0x0C60   (0x0010)  
+	SDK_UNDEFINED(16,11984) /* FMulticastInlineDelegate */ __um(OnSetCompleteDelegate);                            // 0x0C70   (0x0010)  
+	SDK_UNDEFINED(16,11985) /* FMulticastInlineDelegate */ __um(OnSetUnfinishedDelegate);                          // 0x0C80   (0x0010)  
+	SDK_UNDEFINED(16,11986) /* FMulticastInlineDelegate */ __um(OnCurrentStageChange);                             // 0x0C90   (0x0010)  
+	SDK_UNDEFINED(16,11987) /* FMulticastInlineDelegate */ __um(OnSnapsUpdatedDelegate);                           // 0x0CA0   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0CB0   (0x0010)  MISSED
 	FTransform                                         BuildingPivotOffset;                                        // 0x0CC0   (0x0060)  
 	FVector                                            BuildingGridSnapOffset;                                     // 0x0D20   (0x0018)  
@@ -5904,7 +5988,7 @@ public:
 	FJunoBuildingBehaviorGridLimits                    GridOffsetLimits;                                           // 0x0DF0   (0x0010)  
 	float                                              MinDistanceOverride;                                        // 0x0E00   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0E04   (0x0004)  MISSED
-	SDK_UNDEFINED(80,11950) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0E08   (0x0050)  
+	SDK_UNDEFINED(80,11988) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0E08   (0x0050)  
 	FGameplayTagContainer                              DestroyOnPlacementTags;                                     // 0x0E58   (0x0020)  
 	TArray<FJunoGuidedBuildingData>                    DataArray;                                                  // 0x0E78   (0x0010)  
 	FJunoGuidedBuildingStateArray                      StateArray;                                                 // 0x0E88   (0x0120)  
@@ -5912,75 +5996,79 @@ public:
 	FJunoGuidedBuildingSetCompleteState                SetCompleteState;                                           // 0x0FB0   (0x0010)  
 	FDateTime                                          TimeStarted;                                                // 0x0FC0   (0x0008)  
 	FUniqueNetIdRepl                                   OwningPlayerID;                                             // 0x0FC8   (0x0030)  
-	SDK_UNDEFINED(32,11951) /* TWeakObjectPtr<UMaterial*> */ __um(GuidedBuildingMaterial);                         // 0x0FF8   (0x0020)  
+	SDK_UNDEFINED(32,11989) /* TWeakObjectPtr<UMaterial*> */ __um(GuidedBuildingMaterial);                         // 0x0FF8   (0x0020)  
 	FJunoGuidedBuildingSetData                         SetData;                                                    // 0x1018   (0x0070)  
 	float                                              LifespanAfterCompletion;                                    // 0x1088   (0x0004)  
 	float                                              LifespanAfterUnfinished;                                    // 0x108C   (0x0004)  
 	float                                              TimeDelayBeforeShowingNewStageGhostBrushes;                 // 0x1090   (0x0004)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x1094   (0x0004)  MISSED
 	class AFortPlayerController*                       LocalRegisteredController;                                  // 0x1098   (0x0008)  
-	FJunoGuidedBuildingRegisteredPlayerArray           RegisteredPlayers;                                          // 0x10A0   (0x0148)  
-	SDK_UNDEFINED(8,11952) /* TWeakObjectPtr<APawn*> */ __um(AutoCompleteInstigatingPawn);                         // 0x11E8   (0x0008)  
-	class UClass*                                      InteractionComponentClass;                                  // 0x11F0   (0x0008)  
-	FScalableFloat                                     FoundationVerticalOffset;                                   // 0x11F8   (0x0028)  
-	FGuid                                              BuildId;                                                    // 0x1220   (0x0010)  
-	SDK_UNDEFINED(16,11953) /* TArray<TWeakObjectPtr<AActor*>> */ __um(PendingInstantAutoCompleteActors);          // 0x1230   (0x0010)  
-	unsigned char                                      UnknownData04_6[0xB0];                                      // 0x1240   (0x00B0)  MISSED
+	class AJunoGuidedBuildingLandscapeVisualModifierActor* TerrainVisualModifierActor;                             // 0x10A0   (0x0008)  
+	unsigned char                                      UnknownData04_5[0x68];                                      // 0x10A8   (0x0068)  MISSED
+	FJunoGuidedBuildingRegisteredPlayerArray           RegisteredPlayers;                                          // 0x1110   (0x0148)  
+	SDK_UNDEFINED(8,11990) /* TWeakObjectPtr<APawn*> */ __um(AutoCompleteInstigatingPawn);                         // 0x1258   (0x0008)  
+	class UClass*                                      InteractionComponentClass;                                  // 0x1260   (0x0008)  
+	FScalableFloat                                     FoundationVerticalOffset;                                   // 0x1268   (0x0028)  
+	FGuid                                              BuildId;                                                    // 0x1290   (0x0010)  
+	SDK_UNDEFINED(16,11991) /* TArray<TWeakObjectPtr<AActor*>> */ __um(PendingInstantAutoCompleteActors);          // 0x12A0   (0x0010)  
+	unsigned char                                      UnknownData05_6[0xB0];                                      // 0x12B0   (0x00B0)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.UpdateBlueprintColor
-	// void UpdateBlueprintColor(FJunoGuidedBuildingBrushState& BrushState);                                                 // [0x211c0a0] BlueprintCosmetic|Event|Protected|HasOutParms|BlueprintEvent 
+	// void UpdateBlueprintColor(FJunoGuidedBuildingBrushState& BrushState);                                                 // [0x2047e54] BlueprintCosmetic|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.ShowSparkleEffect
-	// void ShowSparkleEffect();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ShowSparkleEffect();                                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.SetupComponent
-	// void SetupComponent(class UPrimitiveComponent* PrimComp);                                                             // [0x889c180] Native|Event|Protected|BlueprintEvent 
+	// void SetupComponent(class UPrimitiveComponent* PrimComp);                                                             // [0x8850494] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.SetToAutoComplete
-	// void SetToAutoComplete(class APawn* InInstigator);                                                                    // [0xb9f4008] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetToAutoComplete(class APawn* InInstigator);                                                                    // [0xbcc781c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.SetTerrainVisualModifierOptions
+	// void SetTerrainVisualModifierOptions(EJunoLandscapeVisualModifierType InModifierType, FTransform& InTransform);       // [0xbcc7660] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.OnRep_SetCompleteState
-	// void OnRep_SetCompleteState();                                                                                        // [0xb9f3964] Final|Native|Protected 
+	// void OnRep_SetCompleteState();                                                                                        // [0xbcc6d80] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.OnRep_RegisteredPlayers
-	// void OnRep_RegisteredPlayers();                                                                                       // [0xb9f3950] Final|Native|Protected 
+	// void OnRep_RegisteredPlayers();                                                                                       // [0xbcc6d6c] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.OnRep_CurrentStage
-	// void OnRep_CurrentStage(FJunoStageKey OldKeyVal);                                                                     // [0xb9f37ac] Final|Native|Protected 
+	// void OnRep_CurrentStage(FJunoStageKey OldKeyVal);                                                                     // [0xbcc6ca8] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.OnGhostBrushesVisible
-	// void OnGhostBrushesVisible(bool bIsFocused, bool bCanBlendVisibility);                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnGhostBrushesVisible(bool bIsFocused, bool bCanBlendVisibility);                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.OnGhostBrushesHidden
-	// void OnGhostBrushesHidden(bool bCanBlendVisibility);                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnGhostBrushesHidden(bool bCanBlendVisibility);                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.OnFilledPieceDied
-	// void OnFilledPieceDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb9f30c4] Final|Native|Protected|HasDefaults 
+	// void OnFilledPieceDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xbcc6774] Final|Native|Protected|HasDefaults 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.OnFilledPieceDestroyed
-	// void OnFilledPieceDestroyed(class AActor* Actor);                                                                     // [0xb9f3044] Final|Native|Protected 
+	// void OnFilledPieceDestroyed(class AActor* Actor);                                                                     // [0xbcc66b4] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.IsSetComplete
-	// bool IsSetComplete();                                                                                                 // [0xb9f2aa4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSetComplete();                                                                                                 // [0xbcc620c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.IsRecipeInStage
-	// bool IsRecipeInStage(FJunoStageKey& InStageKey, FName& Recipe);                                                       // [0xb9f2950] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRecipeInStage(FJunoStageKey& InStageKey, FName& Recipe);                                                       // [0xbcc611c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.IsRecipeInCurrentStage
-	// bool IsRecipeInCurrentStage(FName& Recipe);                                                                           // [0xb9f28ac] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRecipeInCurrentStage(FName& Recipe);                                                                           // [0xbcc6078] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.IsOwningPlayerController
-	// bool IsOwningPlayerController(class APlayerController* Controller);                                                   // [0xb9f27dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOwningPlayerController(class APlayerController* Controller);                                                   // [0xbcc5f68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.HideSparkleEffect
-	// void HideSparkleEffect();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void HideSparkleEffect();                                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetStageUpdate
-	// FGuidedBuildingUpdate GetStageUpdate(FJunoStageKey& InKey);                                                           // [0xb9f2118] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGuidedBuildingUpdate GetStageUpdate(FJunoStageKey& InKey);                                                           // [0xbcc5a18] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetSetCompleteState
-	// FJunoGuidedBuildingSetCompleteState GetSetCompleteState();                                                            // [0xb9f2088] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoGuidedBuildingSetCompleteState GetSetCompleteState();                                                            // [0xbcc59fc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetRemainingPartsInfoForRecipeInCurrentStage
-	// FJunoGuidedBuildRemainingPartsInfo GetRemainingPartsInfoForRecipeInCurrentStage(FName& Recipe);                       // [0xb9f1fc8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FJunoGuidedBuildRemainingPartsInfo GetRemainingPartsInfoForRecipeInCurrentStage(FName& Recipe);                       // [0xbcc58fc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetRemainingPartsInfoForRecipe
-	// FJunoGuidedBuildRemainingPartsInfo GetRemainingPartsInfoForRecipe(FJunoStageKey& InStageKey, FName& Recipe);          // [0xb9f1ec8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FJunoGuidedBuildRemainingPartsInfo GetRemainingPartsInfoForRecipe(FJunoStageKey& InStageKey, FName& Recipe);          // [0xbcc57fc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetPartsInStage
-	// bool GetPartsInStage(FJunoStageKey& InStageKey, TArray<FJunoGuidedBuildRemainingPartsInfo>& OutArray);                // [0xb9f1650] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetPartsInStage(FJunoStageKey& InStageKey, TArray<FJunoGuidedBuildRemainingPartsInfo>& OutArray);                // [0xbcc4f50] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetPartsInCurrentStage
-	// bool GetPartsInCurrentStage(TArray<FJunoGuidedBuildRemainingPartsInfo>& OutArray);                                    // [0xb9f0f94] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetPartsInCurrentStage(TArray<FJunoGuidedBuildRemainingPartsInfo>& OutArray);                                    // [0xbcc4894] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetMissingPartsForRecipe
-	// FJunoGuidedBuildRemainingPartsInfo GetMissingPartsForRecipe(FName& Recipe);                                           // [0xb9f0c98] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FJunoGuidedBuildRemainingPartsInfo GetMissingPartsForRecipe(FName& Recipe);                                           // [0xbcc46bc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetMissingParts
-	// void GetMissingParts(TArray<FJunoGuidedBuildRemainingPartsInfo>& OutArray);                                           // [0xb9f05d8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetMissingParts(TArray<FJunoGuidedBuildRemainingPartsInfo>& OutArray);                                           // [0xbcc3ffc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetLatestUpdate
-	// FGuidedBuildingUpdate GetLatestUpdate();                                                                              // [0xb9f0594] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGuidedBuildingUpdate GetLatestUpdate();                                                                              // [0xbcc3fb8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingActor.GetEntryState
-	// EJunoGuidedBuildingState GetEntryState(int32_t BuildingDataIndex);                                                    // [0xb9f04c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoGuidedBuildingState GetEntryState(int32_t BuildingDataIndex);                                                    // [0xbcc3e00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary
@@ -5992,29 +6080,29 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.ShowProgressUpTo
-	// void ShowProgressUpTo(FJunoStageKey& InStageKey);                                                                     // [0xb9f2abc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ShowProgressUpTo(FJunoStageKey& InStageKey);                                                                     // [0xbcc6224] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.ShowAllStages
-	// void ShowAllStages();                                                                                                 // [0x32e4b44] Final|Native|Static|Public|BlueprintCallable 
+	// void ShowAllStages();                                                                                                 // [0x307d48c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.SetStageHidden
-	// void SetStageHidden(FJunoStageKey StageKey, bool bHidden);                                                            // [0xb9f3e2c] Final|Native|Static|Public|BlueprintCallable 
+	// void SetStageHidden(FJunoStageKey StageKey, bool bHidden);                                                            // [0xbcc728c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.SetActorToAutoComplete
-	// void SetActorToAutoComplete(class AActor* Actor, bool bAutoComplete);                                                 // [0x811ffc0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetActorToAutoComplete(class AActor* Actor, bool bAutoComplete);                                                 // [0x80bc89c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.MoveActorToNewStageByName
-	// void MoveActorToNewStageByName(FName& ActorName, FJunoStageKey& NewStage);                                            // [0xb9f2bdc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void MoveActorToNewStageByName(FName& ActorName, FJunoStageKey& NewStage);                                            // [0xbcc638c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.MoveActorToNewStage
-	// void MoveActorToNewStage(class AActor* Actor, FJunoStageKey& NewStage);                                               // [0xb9f2b2c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void MoveActorToNewStage(class AActor* Actor, FJunoStageKey& NewStage);                                               // [0xbcc6294] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.IsolateStage
-	// void IsolateStage(FJunoStageKey& InStageKey);                                                                         // [0xb9f2abc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void IsolateStage(FJunoStageKey& InStageKey);                                                                         // [0xbcc6224] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.HideAllStages
-	// void HideAllStages();                                                                                                 // [0x32e4b44] Final|Native|Static|Public|BlueprintCallable 
+	// void HideAllStages();                                                                                                 // [0x307d48c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.GetPreviousStage
-	// FJunoStageKey GetPreviousStage(FJunoStageKey StageKey);                                                               // [0xb9f0d40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FJunoStageKey GetPreviousStage(FJunoStageKey StageKey);                                                               // [0xbcc4764] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.GetNextStage
-	// FJunoStageKey GetNextStage(FJunoStageKey StageKey);                                                                   // [0xb9f0d40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FJunoStageKey GetNextStage(FJunoStageKey StageKey);                                                                   // [0xbcc4764] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.GetJunoGuidedBuildingWorldSettings
-	// class AJunoGuidedBuildingSettings* GetJunoGuidedBuildingWorldSettings();                                              // [0x66a91a4] Final|Native|Static|Public|BlueprintCallable 
+	// class AJunoGuidedBuildingSettings* GetJunoGuidedBuildingWorldSettings();                                              // [0x63ec52c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingBlueprintLibrary.GetAllStageKeys
-	// TArray<FJunoStageKey> GetAllStageKeys();                                                                              // [0xb9f0464] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FJunoStageKey> GetAllStageKeys();                                                                              // [0xbcc3ba4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoGameNative.JunoGuidedBuildingInteractionComponent
@@ -6023,15 +6111,36 @@ class UJunoGuidedBuildingInteractionComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A0   (0x0008)  MISSED
-	SDK_UNDEFINED(8,11954) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(ParentBuilding);                   // 0x00A8   (0x0008)  
-	SDK_UNDEFINED(24,11955) /* FText */                __um(InteractionText);                                      // 0x00B0   (0x0018)  
+	SDK_UNDEFINED(8,11992) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(ParentBuilding);                   // 0x00A8   (0x0008)  
+	SDK_UNDEFINED(24,11993) /* FText */                __um(InteractionText);                                      // 0x00B0   (0x0018)  
 	float                                              InteractRatingAdjustment;                                   // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00CC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGuidedBuildingInteractionComponent.GetInteractionText
-	// FText GetInteractionText();                                                                                           // [0xb9f054c] Native|Event|Protected|BlueprintEvent|Const 
+	// FText GetInteractionText();                                                                                           // [0xbcc3f70] Native|Event|Protected|BlueprintEvent|Const 
+};
+
+/// Class /Script/JunoGameNative.JunoGuidedBuildingLandscapeVisualModifierActor
+/// Size: 0x0048 (0x000290 - 0x0002D8)
+class AJunoGuidedBuildingLandscapeVisualModifierActor : public AActor
+{ 
+public:
+	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0290   (0x0008)  MISSED
+	class UJunoLandscapeVisualModifierComponent*       VisualModifier;                                             // 0x0298   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x02A0   (0x0004)  MISSED
+	FGuid                                              SavedActorGuid;                                             // 0x02A4   (0x0010)  
+	unsigned char                                      UnknownData02_6[0x24];                                      // 0x02B4   (0x0024)  MISSED
+
+
+	/// Functions
+	// Function /Script/JunoGameNative.JunoGuidedBuildingLandscapeVisualModifierActor.SetupVisualModifier
+	// void SetupVisualModifier(EJunoLandscapeVisualModifierType InModifierType);                                            // [0xbcc78dc] Final|Native|Public|BlueprintCallable 
+	// Function /Script/JunoGameNative.JunoGuidedBuildingLandscapeVisualModifierActor.RemoveOwningPartRef
+	// void RemoveOwningPartRef(class AActor* InOwningPart);                                                                 // [0xbcc6dbc] Final|Native|Public|BlueprintCallable 
+	// Function /Script/JunoGameNative.JunoGuidedBuildingLandscapeVisualModifierActor.AddOwningPartRef
+	// void AddOwningPartRef(class AActor* InOwningPart);                                                                    // [0xbcc2db8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.JunoGuidedBuildingStageEditorData
@@ -6091,16 +6200,16 @@ struct FGuidedBuildingCachedEditorData
 	class UWorld*                                      World;                                                      // 0x0000   (0x0008)  
 	class AJunoGuidedBuildingSettings*                 SettingsActor;                                              // 0x0008   (0x0008)  
 	TArray<FJunoBuildingEditorActorEntry>              ActorEntries;                                               // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,11956) /* FString */              __um(BaseName);                                             // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,11957) /* FString */              __um(GuidedBuildingBlueprintName);                          // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,11958) /* FString */              __um(GuidedBuildingPreviewMeshName);                        // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,11959) /* FString */              __um(GuidedBuildingPluginName);                             // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,11960) /* FString */              __um(GuidedBuildingBlueprintPath);                          // 0x0060   (0x0010)  
-	SDK_UNDEFINED(16,11961) /* FString */              __um(GuidedBuildingPreviewMeshPath);                        // 0x0070   (0x0010)  
-	SDK_UNDEFINED(16,11962) /* FString */              __um(OldBPPath);                                            // 0x0080   (0x0010)  
+	SDK_UNDEFINED(16,11994) /* FString */              __um(BaseName);                                             // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,11995) /* FString */              __um(GuidedBuildingBlueprintName);                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,11996) /* FString */              __um(GuidedBuildingPreviewMeshName);                        // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,11997) /* FString */              __um(GuidedBuildingPluginName);                             // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,11998) /* FString */              __um(GuidedBuildingBlueprintPath);                          // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,11999) /* FString */              __um(GuidedBuildingPreviewMeshPath);                        // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,12000) /* FString */              __um(OldBPPath);                                            // 0x0080   (0x0010)  
 	FName                                              PlaylistName;                                               // 0x0090   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0094   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11963) /* TArray<FString> */      __um(PluginsToActivate);                                    // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,12001) /* TArray<FString> */      __um(PluginsToActivate);                                    // 0x0098   (0x0010)  
 	class UClass*                                      ParentClass;                                                // 0x00A8   (0x0008)  
 	class UClass*                                      NewBPClass;                                                 // 0x00B0   (0x0008)  
 	TArray<FJunoStageKey>                              AllStageKeys;                                               // 0x00B8   (0x0010)  
@@ -6115,10 +6224,10 @@ public:
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0294   (0x0004)  MISSED
 	TArray<FGameplayTag>                               SortRankTags;                                               // 0x0298   (0x0010)  
 	FJunoGuidedBuildingSetEditorData                   GeneratedData;                                              // 0x02A8   (0x0080)  
-	SDK_UNDEFINED(16,11964) /* FString */              __um(PrimaryPluginName);                                    // 0x0328   (0x0010)  
+	SDK_UNDEFINED(16,12002) /* FString */              __um(PrimaryPluginName);                                    // 0x0328   (0x0010)  
 	FName                                              PrimaryPlaylist;                                            // 0x0338   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x033C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,11965) /* TMap<UClass*, FName> */ __um(ClassToRecipeMap);                                     // 0x0340   (0x0050)  
+	SDK_UNDEFINED(80,12003) /* TMap<UClass*, FName> */ __um(ClassToRecipeMap);                                     // 0x0340   (0x0050)  
 	FName                                              CraftingFormulaRegistryType;                                // 0x0390   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0394   (0x0004)  MISSED
 	FGuidedBuildingCachedEditorData                    CurrentState;                                               // 0x0398   (0x00C8)  
@@ -6127,17 +6236,17 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGuidedBuildingSettings.StartGeneratingGuidedBuildingAssets
-	// void StartGeneratingGuidedBuildingAssets();                                                                           // [0xb9f40a4] Final|Native|Static|Public|BlueprintCallable 
+	// void StartGeneratingGuidedBuildingAssets();                                                                           // [0xbcc7af0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingSettings.SetActorToAutoComplete
-	// void SetActorToAutoComplete(class AActor* Actor, bool bAutoComplete);                                                 // [0x811ffc0] Final|Native|Public|BlueprintCallable 
+	// void SetActorToAutoComplete(class AActor* Actor, bool bAutoComplete);                                                 // [0x80bc89c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingSettings.MoveActorToNewStageByName
-	// void MoveActorToNewStageByName(FName& ActorName, FJunoStageKey& NewStage);                                            // [0xb9f2bdc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MoveActorToNewStageByName(FName& ActorName, FJunoStageKey& NewStage);                                            // [0xbcc638c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingSettings.MoveActorToNewStage
-	// void MoveActorToNewStage(class AActor* Actor, FJunoStageKey& NewStage);                                               // [0xb9f2b2c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MoveActorToNewStage(class AActor* Actor, FJunoStageKey& NewStage);                                               // [0xbcc6294] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingSettings.GetAllStageKeys
-	// TArray<FJunoStageKey> GetAllStageKeys();                                                                              // [0xb9f0448] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FJunoStageKey> GetAllStageKeys();                                                                              // [0xbcc3b88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoGuidedBuildingSettings.GenerateNewStageData
-	// void GenerateNewStageData();                                                                                          // [0xb9f03ec] Final|Native|Public|BlueprintCallable 
+	// void GenerateNewStageData();                                                                                          // [0xbcc3b54] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoISMPoolRenderer
@@ -6154,7 +6263,7 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingRenderComponent
-/// Size: 0x0000 (0x000290 - 0x000290)
+/// Size: 0x0000 (0x000220 - 0x000220)
 class UJunoBuildingRenderComponent : public USceneComponent
 { 
 public:
@@ -6198,7 +6307,23 @@ public:
 class UJunoCommonPartsDataMappings : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,11966) /* TMap<TWeakObjectPtr<UStaticMesh*>, FJunoCommonPartsSettings> */ __um(Mapping);      // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,12004) /* TMap<TWeakObjectPtr<UStaticMesh*>, FJunoCommonPartsSettings> */ __um(Mapping);      // 0x0030   (0x0050)  
+};
+
+/// Class /Script/JunoGameNative.JunoLandscapeVisualModifierComponent
+/// Size: 0x0030 (0x000220 - 0x000250)
+class UJunoLandscapeVisualModifierComponent : public USceneComponent
+{ 
+public:
+	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0220   (0x0018)  MISSED
+	class UStaticMeshComponent*                        DirtPlane;                                                  // 0x0238   (0x0008)  
+	EJunoLandscapeVisualModifierType                   VisualModifierType;                                         // 0x0240   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0241   (0x000F)  MISSED
+
+
+	/// Functions
+	// Function /Script/JunoGameNative.JunoLandscapeVisualModifierComponent.OnRep_LandscapeModifierData
+	// void OnRep_LandscapeModifierData();                                                                                   // [0xbd09710] Final|Native|Private 
 };
 
 /// Class /Script/JunoGameNative.JunoPhysicsToySpawnerActor
@@ -6223,7 +6348,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPickupComponent.PickupBuildingctor
-	// void PickupBuildingctor(class AFortPlayerController* FPC);                                                            // [0x604b150] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void PickupBuildingctor(class AFortPlayerController* FPC);                                                            // [0x5d5254c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoResourceComponent
@@ -6238,7 +6363,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoResourceComponent.HandleBuildingDamaged
-	// void HandleBuildingDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xb9f21dc] Final|Native|Private|HasDefaults 
+	// void HandleBuildingDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xbd07684] Final|Native|Private|HasDefaults 
 };
 
 /// Class /Script/JunoGameNative.JunoStorageChest
@@ -6258,7 +6383,7 @@ public:
 	FVector                                            BuildingGridSnapOffset;                                     // 0x0CC0   (0x0018)  
 	FJunoBuildingBehaviorGridLimits                    GridOffsetLimits;                                           // 0x0CD8   (0x0010)  
 	FJunoBuilderToolInteractionActorClassSet           OverlappableClasses;                                        // 0x0CE8   (0x00A0)  
-	SDK_UNDEFINED(80,11967) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0D88   (0x0050)  
+	SDK_UNDEFINED(80,12005) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0D88   (0x0050)  
 	FUniqueNetIdRepl                                   OwnerPlayerId;                                              // 0x0DD8   (0x0030)  
 	FName                                              BaseLootTierGroup;                                          // 0x0E08   (0x0004)  
 	float                                              DefaultInteractTime;                                        // 0x0E0C   (0x0004)  
@@ -6272,33 +6397,33 @@ public:
 	bool                                               bChestSearched;                                             // 0x0E30   (0x0001)  
 	bool                                               bChestLooted;                                               // 0x0E31   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x2];                                       // 0x0E32   (0x0002)  MISSED
-	SDK_UNDEFINED(8,11968) /* TWeakObjectPtr<AActor*> */ __um(LastInteractor);                                     // 0x0E34   (0x0008)  
+	SDK_UNDEFINED(8,12006) /* TWeakObjectPtr<AActor*> */ __um(LastInteractor);                                     // 0x0E34   (0x0008)  
 	unsigned char                                      UnknownData04_6[0x4];                                       // 0x0E3C   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoStorageChest.OnRep_ChestSearched
-	// void OnRep_ChestSearched();                                                                                           // [0xb9f3788] Final|Native|Protected 
+	// void OnRep_ChestSearched();                                                                                           // [0xbd095f8] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoStorageChest.OnRep_ChestLooted
-	// void OnRep_ChestLooted();                                                                                             // [0xb9f3738] Final|Native|Protected 
+	// void OnRep_ChestLooted();                                                                                             // [0xbd095a8] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoStorageChest.OnPersistentPlayspaceDataLoadEnd
-	// void OnPersistentPlayspaceDataLoadEnd(class AJunoPersistentPlayspace* PersistentPlayspace, bool bSuccess);            // [0xb9f3540] Final|Native|Protected 
+	// void OnPersistentPlayspaceDataLoadEnd(class AJunoPersistentPlayspace* PersistentPlayspace, bool bSuccess);            // [0xbd09088] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoStorageChest.OnInventoryAcquired
-	// void OnInventoryAcquired();                                                                                           // [0xb9f352c] Final|Native|Private 
+	// void OnInventoryAcquired();                                                                                           // [0xbd08990] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoStorageChest.IsChestAlreadySearched
-	// bool IsChestAlreadySearched();                                                                                        // [0xb9f27c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsChestAlreadySearched();                                                                                        // [0xbd07bf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoStorageChest.GetOwningPlayerID
-	// FUniqueNetIdRepl GetOwningPlayerID();                                                                                 // [0xb9f0e80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FUniqueNetIdRepl GetOwningPlayerID();                                                                                 // [0xbd07328] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoStorageChest.CanInteractWithChest
-	// bool CanInteractWithChest(class AFortPawn* FortPawn);                                                                 // [0xb9ef954] Native|Event|Protected|BlueprintEvent|Const 
+	// bool CanInteractWithChest(class AFortPawn* FortPawn);                                                                 // [0xbd06808] Native|Event|Protected|BlueprintEvent|Const 
 	// Function /Script/JunoGameNative.JunoStorageChest.BlueprintOnChestLooted
-	// void BlueprintOnChestLooted();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BlueprintOnChestLooted();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoStorageChest.BlueprintGetLootTierGroup
-	// FName BlueprintGetLootTierGroup(FJunoBiomeInfoQueryResult BiomeInfo);                                                 // [0x211c0a0] BlueprintAuthorityOnly|Event|Protected|BlueprintEvent 
+	// FName BlueprintGetLootTierGroup(FJunoBiomeInfoQueryResult BiomeInfo);                                                 // [0x2047e54] BlueprintAuthorityOnly|Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoStorageChest.BlueprintCanShowInventoryUI
-	// bool BlueprintCanShowInventoryUI(FInteractionType& InteractType);                                                     // [0xb9ef8d4] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// bool BlueprintCanShowInventoryUI(FInteractionType& InteractType);                                                     // [0xbd06788] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoStorageChest.BlueprintAllowSpawnLoot
-	// bool BlueprintAllowSpawnLoot(FInteractionType& InteractType);                                                         // [0xb9ef8d4] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// bool BlueprintAllowSpawnLoot(FInteractionType& InteractType);                                                         // [0xbd06788] Native|Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingPreviewComponent
@@ -6311,25 +6436,25 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.ReceiveSet
-	// void ReceiveSet();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveSet();                                                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.ReceivePlacementStarted
-	// void ReceivePlacementStarted();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceivePlacementStarted();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.ReceiveEnabled
-	// void ReceiveEnabled();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveEnabled();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.ReceiveDisabled
-	// void ReceiveDisabled();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveDisabled();                                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.ReceiveCreated
-	// void ReceiveCreated();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveCreated();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.ReceiveCleared
-	// void ReceiveCleared();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveCleared();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.IsSet
-	// bool IsSet();                                                                                                         // [0xb9f2a40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSet();                                                                                                         // [0xbd07c10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.GetSourceActorClass
-	// class UClass* GetSourceActorClass();                                                                                  // [0xb9f20dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetSourceActorClass();                                                                                  // [0xbd07648] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.GetPreviewer
-	// class AJunoBuildingPreviewer* GetPreviewer();                                                                         // [0xb9f1ea4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AJunoBuildingPreviewer* GetPreviewer();                                                                         // [0xbd07594] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewComponent.GetOwningPreviewRef
-	// FJunoBuildingSelectionPreview GetOwningPreviewRef(bool& bSuccess);                                                    // [0xb9f0ee0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingSelectionPreview GetOwningPreviewRef(bool& bSuccess);                                                    // [0xbd07388] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingPlacementPreview
@@ -6344,82 +6469,80 @@ struct FJunoBuildingPlacementPreview
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingPreviewer
-/// Size: 0x0170 (0x000290 - 0x000400)
+/// Size: 0x0150 (0x000290 - 0x0003E0)
 class AJunoBuildingPreviewer : public AActor
 { 
 public:
-	SDK_UNDEFINED(32,11969) /* TWeakObjectPtr<UClass*> */ __um(SnapLocationMeshComponentClass);                    // 0x0290   (0x0020)  
-	class UClass*                                      LoadedSnapLocationMeshComponentClass;                       // 0x02B0   (0x0008)  
-	SDK_UNDEFINED(8,11970) /* TWeakObjectPtr<UJunoBuildingBehaviorBase*> */ __um(OwningBehavior);                  // 0x02B8   (0x0008)  
-	bool                                               bEnabled;                                                   // 0x02C0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x02C1   (0x0007)  MISSED
-	SDK_UNDEFINED(80,11971) /* TMap<FGuid, FJunoBuildingSelectionPreview> */ __um(PreviewPool);                    // 0x02C8   (0x0050)  
-	TArray<FGuid>                                      MostRecentlyUpdated;                                        // 0x0318   (0x0010)  
-	FGuid                                              CurrentlySetPreviewGUID;                                    // 0x0328   (0x0010)  
-	bool                                               bHasSetPreview;                                             // 0x0338   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0339   (0x0007)  MISSED
-	FJunoBuildingPlacementPreview                      PlacementPreview;                                           // 0x0340   (0x00C0)  
+	SDK_UNDEFINED(8,12007) /* TWeakObjectPtr<UJunoBuildingBehaviorBase*> */ __um(OwningBehavior);                  // 0x0290   (0x0008)  
+	bool                                               bEnabled;                                                   // 0x0298   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0299   (0x0007)  MISSED
+	SDK_UNDEFINED(80,12008) /* TMap<FGuid, FJunoBuildingSelectionPreview> */ __um(PreviewPool);                    // 0x02A0   (0x0050)  
+	TArray<FGuid>                                      MostRecentlyUpdated;                                        // 0x02F0   (0x0010)  
+	FGuid                                              CurrentlySetPreviewGUID;                                    // 0x0300   (0x0010)  
+	bool                                               bHasSetPreview;                                             // 0x0310   (0x0001)  
+	unsigned char                                      UnknownData01_5[0xF];                                       // 0x0311   (0x000F)  MISSED
+	FJunoBuildingPlacementPreview                      PlacementPreview;                                           // 0x0320   (0x00C0)  
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.SetPreviewVisibility
-	// void SetPreviewVisibility(bool bVisible);                                                                             // [0xb9f3d54] Final|Native|Public|BlueprintCallable 
+	// void SetPreviewVisibility(bool bVisible);                                                                             // [0xbd0a158] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.SetPreview
-	// bool SetPreview(FGuid& Guid);                                                                                         // [0xb9f3cb8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool SetPreview(FGuid& Guid);                                                                                         // [0xbd0a0bc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceiveUpdateSnapEntryPreviews
-	// void ReceiveUpdateSnapEntryPreviews(TArray<FJunoBuildingSnapEntryPreview>& Previews);                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceiveUpdateSnapEntryPreviews(TArray<FJunoBuildingSnapEntryPreview>& Previews);                                 // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceivePreviewSet
-	// void ReceivePreviewSet(FJunoBuildingSelectionPreview& Preview);                                                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceivePreviewSet(FJunoBuildingSelectionPreview& Preview);                                                       // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceivePreviewCreated
-	// void ReceivePreviewCreated(FJunoBuildingSelectionPreview& Preview);                                                   // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceivePreviewCreated(FJunoBuildingSelectionPreview& Preview);                                                   // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceivePreviewCleared
-	// void ReceivePreviewCleared(FJunoBuildingSelectionPreview& Preview);                                                   // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceivePreviewCleared(FJunoBuildingSelectionPreview& Preview);                                                   // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceivePlacementStarted
-	// void ReceivePlacementStarted();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceivePlacementStarted();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceivePlacementPreviewInitialized
-	// void ReceivePlacementPreviewInitialized(FJunoBuildingPlacementPreview& Preview);                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceivePlacementPreviewInitialized(FJunoBuildingPlacementPreview& Preview);                                      // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceivePlacementPreviewHidden
-	// void ReceivePlacementPreviewHidden(FJunoBuildingPlacementPreview& Preview);                                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceivePlacementPreviewHidden(FJunoBuildingPlacementPreview& Preview);                                           // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceiveEnabled
-	// void ReceiveEnabled();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveEnabled();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceiveDisabled
-	// void ReceiveDisabled();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveDisabled();                                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceiveDestroyPreview
-	// void ReceiveDestroyPreview(FJunoBuildingSelectionPreview& Preview);                                                   // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceiveDestroyPreview(FJunoBuildingSelectionPreview& Preview);                                                   // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceiveDestroyPlacementPreview
-	// void ReceiveDestroyPlacementPreview(FJunoBuildingPlacementPreview& Preview);                                          // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceiveDestroyPlacementPreview(FJunoBuildingPlacementPreview& Preview);                                          // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ReceiveClearSnapEntryPreviews
-	// void ReceiveClearSnapEntryPreviews(TArray<FJunoBuildingSnapEntryPreview>& Previews);                                  // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void ReceiveClearSnapEntryPreviews(TArray<FJunoBuildingSnapEntryPreview>& Previews);                                  // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.NotifyPlacementStarted
-	// void NotifyPlacementStarted();                                                                                        // [0xb9f2c8c] Final|Native|Public|BlueprintCallable 
+	// void NotifyPlacementStarted();                                                                                        // [0xbd07c74] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.IsPreviewerEnabled
-	// bool IsPreviewerEnabled();                                                                                            // [0x8a34d34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPreviewerEnabled();                                                                                            // [0x65abb48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.InitializePlacementPreview
-	// void InitializePlacementPreview();                                                                                    // [0xb9f27b0] Final|Native|Public|BlueprintCallable 
+	// void InitializePlacementPreview();                                                                                    // [0xbd07be4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.HidePlacementPreview
-	// void HidePlacementPreview();                                                                                          // [0xb9f2770] Final|Native|Public|BlueprintCallable 
+	// void HidePlacementPreview();                                                                                          // [0xbd07ba4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.HasSetPreview
-	// bool HasSetPreview();                                                                                                 // [0xb9f274c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasSetPreview();                                                                                                 // [0xbd07b80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.GetPreviewRef
-	// FJunoBuildingSelectionPreview GetPreviewRef(bool& bSuccess);                                                          // [0xb9f1de4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingSelectionPreview GetPreviewRef(bool& bSuccess);                                                          // [0xbd074d4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.GetPlacementPreview
-	// FJunoBuildingPlacementPreview GetPlacementPreview();                                                                  // [0xb9f1d4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingPlacementPreview GetPlacementPreview();                                                                  // [0xbd0743c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.GetOwningBuildingBehavior
-	// class UJunoBuildingBehaviorBase* GetOwningBuildingBehavior();                                                         // [0xb9f0e58] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UJunoBuildingBehaviorBase* GetOwningBuildingBehavior();                                                         // [0xbd07300] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.FindPreviewRef
-	// FJunoBuildingSelectionPreview FindPreviewRef(FGuid& Guid, bool& bSuccess);                                            // [0xb9f02dc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FJunoBuildingSelectionPreview FindPreviewRef(FGuid& Guid, bool& bSuccess);                                            // [0xbd07164] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.Enable
-	// void Enable();                                                                                                        // [0xb9f02c8] Final|Native|Public|BlueprintCallable 
+	// void Enable();                                                                                                        // [0xbd07150] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.Disable
-	// void Disable();                                                                                                       // [0xb9f02b4] Final|Native|Public|BlueprintCallable 
+	// void Disable();                                                                                                       // [0xbd0713c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.DestroyPreview
-	// void DestroyPreview(FGuid Guid);                                                                                      // [0xb9f0174] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void DestroyPreview(FGuid Guid);                                                                                      // [0xbd0706c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.DestroyPlacementPreview
-	// void DestroyPlacementPreview();                                                                                       // [0xb9f0160] Final|Native|Public|BlueprintCallable 
+	// void DestroyPlacementPreview();                                                                                       // [0xbd07058] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.CreatePreview
-	// bool CreatePreview(TArray<FJunoBuilderToolSelectedActor>& SelectedActors, FGuid& Guid, FJunoBuildingPreviewParams& Params); // [0xb9ef9fc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool CreatePreview(TArray<FJunoBuilderToolSelectedActor>& SelectedActors, FGuid& Guid, FJunoBuildingPreviewParams& Params); // [0xbd068f4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBuildingPreviewer.ClearPreview
-	// void ClearPreview();                                                                                                  // [0xb9ef9e8] Final|Native|Public|BlueprintCallable 
+	// void ClearPreview();                                                                                                  // [0xbd068e0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingPreviewInterface
@@ -6431,7 +6554,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildingPreviewInterface.GetPreviewComponentTemplates
-	// TMap<FName, UClass*> GetPreviewComponentTemplates();                                                                  // [0xb9f1d84] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TMap<FName, UClass*> GetPreviewComponentTemplates();                                                                  // [0xbd07474] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoGameStateComponent_Loot
@@ -6446,48 +6569,48 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGameStateComponent_Loot.OnPlaylistDataReady
-	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb9f3608] Final|Native|Private|HasOutParms 
+	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xbd091c8] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoBuildInstructionsItemDefinition
-/// Size: 0x0070 (0x0008A0 - 0x000910)
+/// Size: 0x0070 (0x000860 - 0x0008D0)
 class UJunoBuildInstructionsItemDefinition : public UFortWorldItemDefinition
 { 
 public:
-	bool                                               bGiveResourcesOnDestroy : 1;                                // 0x0898:0 (0x0001)  
-	unsigned char                                      UnknownData00_4[0x3];                                       // 0x0899   (0x0003)  MISSED
-	FName                                              SelfCraftingFormulaName;                                    // 0x089C   (0x0004)  
-	TArray<FName>                                      PrerequisiteCraftingFormulaNames;                           // 0x08A0   (0x0010)  
-	SDK_UNDEFINED(32,11972) /* TWeakObjectPtr<UClass*> */ __um(ActorClassToBuild);                                 // 0x08B0   (0x0020)  
-	class UFortPlaysetPropItemDefinition*              PlaysetPropToBuild;                                         // 0x08D0   (0x0008)  
-	SDK_UNDEFINED(24,11973) /* FText */                __um(SizeDescription);                                      // 0x08D8   (0x0018)  
-	SDK_UNDEFINED(24,11974) /* FText */                __um(SetDescription);                                       // 0x08F0   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0908   (0x0008)  MISSED
+	bool                                               bGiveResourcesOnDestroy : 1;                                // 0x0858:0 (0x0001)  
+	unsigned char                                      UnknownData00_4[0x3];                                       // 0x0859   (0x0003)  MISSED
+	FName                                              SelfCraftingFormulaName;                                    // 0x085C   (0x0004)  
+	TArray<FName>                                      PrerequisiteCraftingFormulaNames;                           // 0x0860   (0x0010)  
+	SDK_UNDEFINED(32,12009) /* TWeakObjectPtr<UClass*> */ __um(ActorClassToBuild);                                 // 0x0870   (0x0020)  
+	class UFortPlaysetPropItemDefinition*              PlaysetPropToBuild;                                         // 0x0890   (0x0008)  
+	SDK_UNDEFINED(24,12010) /* FText */                __um(SizeDescription);                                      // 0x0898   (0x0018)  
+	SDK_UNDEFINED(24,12011) /* FText */                __um(SetDescription);                                       // 0x08B0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x08C8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBuildInstructionsItemDefinition.ShouldGiveResourcesOnDestroy
-	// bool ShouldGiveResourcesOnDestroy();                                                                                  // [0xb9f4088] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldGiveResourcesOnDestroy();                                                                                  // [0xbd0a270] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildInstructionsItemDefinition.GetSizeDescription
-	// FText GetSizeDescription();                                                                                           // [0xb9f20c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetSizeDescription();                                                                                           // [0xbd0762c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildInstructionsItemDefinition.GetSetDescription
-	// FText GetSetDescription();                                                                                            // [0xb9f20a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetSetDescription();                                                                                            // [0xbd07610] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildInstructionsItemDefinition.GetSelfCraftingFormulaName
-	// FName GetSelfCraftingFormulaName();                                                                                   // [0xb9f2070] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetSelfCraftingFormulaName();                                                                                   // [0xbd075f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildInstructionsItemDefinition.GetPrerequisiteCraftingFormulaNames
-	// TArray<FName> GetPrerequisiteCraftingFormulaNames();                                                                  // [0xb9f1d68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetPrerequisiteCraftingFormulaNames();                                                                  // [0xbd07458] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoBuildInstructionsItemDefinition.GetActorClassToBuild
-	// TWeakObjectPtr<UClass*> GetActorClassToBuild();                                                                       // [0xb9f0420] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UClass*> GetActorClassToBuild();                                                                       // [0xbd07274] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoGameNative.ActorUpgradeInfo
 /// Size: 0x00D0 (0x000000 - 0x0000D0)
 struct FActorUpgradeInfo
 { 
-	SDK_UNDEFINED(16,11975) /* FString */              __um(FlowName);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(8,11976) /* TWeakObjectPtr<AActor*> */ __um(ActorToUpgrade);                                     // 0x0010   (0x0008)  
-	SDK_UNDEFINED(8,11977) /* TWeakObjectPtr<AActor*> */ __um(CraftingObject);                                     // 0x0018   (0x0008)  
-	SDK_UNDEFINED(8,11978) /* TWeakObjectPtr<AJunoPersistentPlayspace*> */ __um(Playspace);                        // 0x0020   (0x0008)  
+	SDK_UNDEFINED(16,12012) /* FString */              __um(FlowName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(8,12013) /* TWeakObjectPtr<AActor*> */ __um(ActorToUpgrade);                                     // 0x0010   (0x0008)  
+	SDK_UNDEFINED(8,12014) /* TWeakObjectPtr<AActor*> */ __um(CraftingObject);                                     // 0x0018   (0x0008)  
+	SDK_UNDEFINED(8,12015) /* TWeakObjectPtr<AJunoPersistentPlayspace*> */ __um(Playspace);                        // 0x0020   (0x0008)  
 	FName                                              RecipeName;                                                 // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x002C   (0x0004)  MISSED
 	class UJunoBuildInstructionsItemDefinition*        OldItemDef;                                                 // 0x0030   (0x0008)  
@@ -6503,24 +6626,26 @@ class UJunoControllerComponent_CraftingNetworkEvents : public UFortControllerCom
 { 
 public:
 	TArray<FActorUpgradeInfo>                          ActorsToUpgrade;                                            // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(8,11979) /* TWeakObjectPtr<AActor*> */ __um(LastUpgradedActor);                                  // 0x00B8   (0x0008)  
+	SDK_UNDEFINED(8,12016) /* TWeakObjectPtr<AActor*> */ __um(LastUpgradedActor);                                  // 0x00B8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoControllerComponent_CraftingNetworkEvents.ServerSetAutoPassiveCraftingFormula
-	// void ServerSetAutoPassiveCraftingFormula(class AActor* PassiveCraftingObject, FName FormulaName);                     // [0xb9f3bcc] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerSetAutoPassiveCraftingFormula(class AActor* PassiveCraftingObject, FName FormulaName);                     // [0xbd09f44] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// Function /Script/JunoGameNative.JunoControllerComponent_CraftingNetworkEvents.ServerHandleCraftingBGAContributor
+	// void ServerHandleCraftingBGAContributor(class AActor* CraftingObject);                                                // [0xbd09e60] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/JunoGameNative.JunoControllerComponent_CraftingNetworkEvents.ServerEnableAutoPassiveCrafting
-	// void ServerEnableAutoPassiveCrafting(class AActor* PassiveCraftingObject);                                            // [0xb9f3b2c] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerEnableAutoPassiveCrafting(class AActor* PassiveCraftingObject);                                            // [0xbd09d7c] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/JunoGameNative.JunoControllerComponent_CraftingNetworkEvents.ServerDisableAutoPassiveCrafting
-	// void ServerDisableAutoPassiveCrafting(class AActor* PassiveCraftingObject);                                           // [0xb9f3a8c] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerDisableAutoPassiveCrafting(class AActor* PassiveCraftingObject);                                           // [0xbd09c98] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/JunoGameNative.JunoControllerComponent_CraftingNetworkEvents.ServerAttemptCraftingUpgrage
-	// void ServerAttemptCraftingUpgrage(class AActor* ActorToUpgrade, FName RecipeName);                                    // [0xb9f39a0] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void ServerAttemptCraftingUpgrage(class AActor* ActorToUpgrade, FName RecipeName);                                    // [0xbd09b20] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/JunoGameNative.JunoControllerComponent_CraftingNetworkEvents.OnRep_LastUpgradedActor
-	// void OnRep_LastUpgradedActor();                                                                                       // [0xb9f38dc] Final|Native|Protected 
+	// void OnRep_LastUpgradedActor();                                                                                       // [0xbd09724] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoControllerComponent_CraftingNetworkEvents.OnCraftingSuccess
-	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                           // [0xb9f2f9c] Final|Native|Protected|HasOutParms 
+	// void OnCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                           // [0xbd0883c] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoControllerComponent_CraftingNetworkEvents.OnCraftingChangedState
-	// void OnCraftingChangedState(FCraftingObjectStateChangedEvent& Event);                                                 // [0xb9f2f00] Final|Native|Protected|HasOutParms 
+	// void OnCraftingChangedState(FCraftingObjectStateChangedEvent& Event);                                                 // [0xbd087a0] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoCraftingObjectBGA
@@ -6535,7 +6660,7 @@ public:
 	FJunoBuildingBehaviorGridLimits                    GridOffsetLimits;                                           // 0x0AA8   (0x0010)  
 	FJunoBuilderToolInteractionActorClassSet           OverlappableClasses;                                        // 0x0AB8   (0x00A0)  
 	class UFortItemDefinition*                         AssociatedItem;                                             // 0x0B58   (0x0008)  
-	SDK_UNDEFINED(80,11980) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0B60   (0x0050)  
+	SDK_UNDEFINED(80,12017) /* TMap<FName, UClass*> */ __um(PreviewComponentTemplates);                            // 0x0B60   (0x0050)  
 	FName                                              UpgradeRecipe;                                              // 0x0BB0   (0x0004)  
 	bool                                               bShouldPersist;                                             // 0x0BB4   (0x0001)  
 	unsigned char                                      UnknownData01_6[0xB];                                       // 0x0BB5   (0x000B)  MISSED
@@ -6543,9 +6668,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCraftingObjectBGA.HandleCraftingSuccess
-	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                       // [0xb9f26a4] Final|Native|Private|HasOutParms 
+	// void HandleCraftingSuccess(FCraftingObjectSuccessEvent& Event);                                                       // [0xbd07ad8] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoCraftingObjectBGA.GetAssociatedItem
-	// class UFortItemDefinition* GetAssociatedItem();                                                                       // [0xb9f0494] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortItemDefinition* GetAssociatedItem();                                                                       // [0xbd0729c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoGameStateComponent_Crafting
@@ -6557,16 +6682,16 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoGameStateComponent_Crafting.HandleLootTablesLoaded
-	// void HandleLootTablesLoaded();                                                                                        // [0x88dc8a8] Final|Native|Protected 
+	// void HandleLootTablesLoaded();                                                                                        // [0x888df9c] Final|Native|Protected 
 };
 
 /// Class /Script/JunoGameNative.JunoRecipeBundleItemDefinition
-/// Size: 0x0010 (0x0008A0 - 0x0008B0)
+/// Size: 0x0010 (0x000860 - 0x000870)
 class UJunoRecipeBundleItemDefinition : public UFortWorldItemDefinition
 { 
 public:
-	TArray<FDataTableRowHandle>                        CraftingFormulas;                                           // 0x0898   (0x0010)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x08A8   (0x0008)  MISSED
+	TArray<FDataTableRowHandle>                        CraftingFormulas;                                           // 0x0858   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0868   (0x0008)  MISSED
 };
 
 /// Class /Script/JunoGameNative.JunoConnectivityDataComponent
@@ -6592,19 +6717,19 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPhysicsToy.StopAttachment
-	// void StopAttachment();                                                                                                // [0x32df6c4] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StopAttachment();                                                                                                // [0x2f4c200] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPhysicsToy.StartAttachmentToActor
-	// void StartAttachmentToActor(class AActor* Actor);                                                                     // [0x70823a4] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StartAttachmentToActor(class AActor* Actor);                                                                     // [0x6f4d30c] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPhysicsToy.OnToyStopTrigger
-	// void OnToyStopTrigger();                                                                                              // [0x70a6144] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnToyStopTrigger();                                                                                              // [0x6f77980] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPhysicsToy.OnToyStartTrigger
-	// void OnToyStartTrigger(bool bIsControlled);                                                                           // [0xba44c5c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnToyStartTrigger(bool bIsControlled);                                                                           // [0xbd0998c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPhysicsToy.EnablePhysics
-	// void EnablePhysics();                                                                                                 // [0x3346b94] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void EnablePhysics();                                                                                                 // [0x30996e4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPhysicsToy.DisablePhysics
-	// void DisablePhysics();                                                                                                // [0x30e10d4] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DisablePhysics();                                                                                                // [0x2c50134] RequiredAPI|Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPhysicsToy.DestroyToy
-	// void DestroyToy();                                                                                                    // [0x2fb2d68] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DestroyToy();                                                                                                    // [0x2d39ec0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/JunoGameNative.JunoBasePlayspaceMigrationComponent
@@ -6626,11 +6751,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoClientAtomicReplacementComponent.OnRep_PlayspsaceRenameRepData
-	// void OnRep_PlayspsaceRenameRepData();                                                                                 // [0xba44aac] Final|Native|Private 
+	// void OnRep_PlayspsaceRenameRepData();                                                                                 // [0xbd09798] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoClientAtomicReplacementComponent.OnRep_Guid
-	// void OnRep_Guid(FGuid OldGuid);                                                                                       // [0xba44948] Final|Native|Private|HasDefaults 
+	// void OnRep_Guid(FGuid OldGuid);                                                                                       // [0xbd0961c] Final|Native|Private|HasDefaults 
 	// Function /Script/JunoGameNative.JunoClientAtomicReplacementComponent.OnOwnerGuidChanged
-	// void OnOwnerGuidChanged(class AActor* Owner, FGuid InGuid);                                                           // [0xba44084] Final|Native|Private|HasDefaults 
+	// void OnOwnerGuidChanged(class AActor* Owner, FGuid InGuid);                                                           // [0xbd089a4] Final|Native|Private|HasDefaults 
 };
 
 /// Class /Script/JunoGameNative.JunoClientAtomicReplacementWorldSubsystem
@@ -6651,9 +6776,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoClusterUnionActor.OnComponentRemovedFromClusterUnion
-	// void OnComponentRemovedFromClusterUnion(class UPrimitiveComponent* Component, TArray<FClusterUnionBoneData>& RemovedBonesData); // [0xba4376c] Final|Native|Protected|HasOutParms 
+	// void OnComponentRemovedFromClusterUnion(class UPrimitiveComponent* Component, TArray<FClusterUnionBoneData>& RemovedBonesData); // [0xbd083fc] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoClusterUnionActor.OnComponentAddedToClusterUnion
-	// void OnComponentAddedToClusterUnion(class UPrimitiveComponent* Component, TArray<FClusterUnionBoneData>& BonesData, TArray<FClusterUnionBoneData>& RemovedBoneIDs, bool bIsNew); // [0xba4334c] Final|Native|Protected|HasOutParms 
+	// void OnComponentAddedToClusterUnion(class UPrimitiveComponent* Component, TArray<FClusterUnionBoneData>& BonesData, TArray<FClusterUnionBoneData>& RemovedBoneIDs, bool bIsNew); // [0xbd07f7c] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoConnectivityComponent
@@ -6662,14 +6787,14 @@ class UJunoConnectivityComponent : public UGameFrameworkComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A0   (0x0008)  MISSED
-	SDK_UNDEFINED(16,11981) /* FMulticastInlineDelegate */ __um(NotifyAddedIntoClusterUnion);                      // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,11982) /* FMulticastInlineDelegate */ __um(NotifyRemovedFromClusterUnion);                    // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,12018) /* FMulticastInlineDelegate */ __um(NotifyAddedIntoClusterUnion);                      // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,12019) /* FMulticastInlineDelegate */ __um(NotifyRemovedFromClusterUnion);                    // 0x00B8   (0x0010)  
 	float                                              ContactDistance;                                            // 0x00C8   (0x0004)  
 	bool                                               bIsInGraph;                                                 // 0x00CC   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00CD   (0x0003)  MISSED
 	TArray<FComponentReference>                        GeometryCollectionsToIgnoreBreaksForConnectivity;           // 0x00D0   (0x0010)  
 	TArray<FComponentReference>                        RootDoorComponentReferences;                                // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,11983) /* TArray<TWeakObjectPtr<UPrimitiveComponent*>> */ __um(DoorComponents);               // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,12020) /* TArray<TWeakObjectPtr<UPrimitiveComponent*>> */ __um(DoorComponents);               // 0x00F0   (0x0010)  
 	bool                                               bAreDoorsEjected;                                           // 0x0100   (0x0001)  
 	bool                                               bAreDoorsEjectedInternal;                                   // 0x0101   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x0102   (0x0002)  MISSED
@@ -6691,49 +6816,49 @@ public:
 	FVector                                            OverlapMargin;                                              // 0x0150   (0x0018)  
 	int32_t                                            MinimumIslandSize;                                          // 0x0168   (0x0004)  
 	unsigned char                                      UnknownData05_5[0x4];                                       // 0x016C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,11984) /* TArray<TWeakObjectPtr<AActor*>> */ __um(AttachedToys);                              // 0x0170   (0x0010)  
+	SDK_UNDEFINED(16,12021) /* TArray<TWeakObjectPtr<AActor*>> */ __um(AttachedToys);                              // 0x0170   (0x0010)  
 	unsigned char                                      UnknownData06_6[0x20];                                      // 0x0180   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.ShouldUsePartialDestruction
-	// bool ShouldUsePartialDestruction();                                                                                   // [0xba45698] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool ShouldUsePartialDestruction();                                                                                   // [0xbd0a28c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OverrideMinimumIslandSize
-	// void OverrideMinimumIslandSize(int32_t NewSize);                                                                      // [0xba44cf4] Final|Native|Public|BlueprintCallable 
+	// void OverrideMinimumIslandSize(int32_t NewSize);                                                                      // [0xbd09a64] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnVertexRemovedFromGraph
-	// void OnVertexRemovedFromGraph();                                                                                      // [0xba44ce0] Final|Native|Private 
+	// void OnVertexRemovedFromGraph();                                                                                      // [0xbd09a50] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnToyAttached
-	// void OnToyAttached(class AActor* ToyActor);                                                                           // [0xba44ac0] Final|Native|Public  
+	// void OnToyAttached(class AActor* ToyActor);                                                                           // [0xbd097ac] Final|Native|Public  
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnRep_IsDebris
-	// void OnRep_IsDebris();                                                                                                // [0xba44a88] Final|Native|Private 
+	// void OnRep_IsDebris();                                                                                                // [0xbd096ec] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnRep_AreDoorsEjected
-	// void OnRep_AreDoorsEjected();                                                                                         // [0xba44934] Final|Native|Private 
+	// void OnRep_AreDoorsEjected();                                                                                         // [0xbd09594] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnRemovedFromGraph
-	// void OnRemovedFromGraph();                                                                                            // [0x212f478] Native|Event|Protected|BlueprintEvent 
+	// void OnRemovedFromGraph();                                                                                            // [0x38a9134] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnRemovedFromClusterUnion
-	// void OnRemovedFromClusterUnion(class UClusterUnionComponent* ClusterUnion, class UPrimitiveComponent* Component);     // [0xba44790] Final|Native|Protected 
+	// void OnRemovedFromClusterUnion(class UClusterUnionComponent* ClusterUnion, class UPrimitiveComponent* Component);     // [0xbd0937c] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnParentClusterUnionAwake
-	// void OnParentClusterUnionAwake(class UPrimitiveComponent* WakingComponent, FName BoneName);                           // [0xba446cc] Final|Native|Private 
+	// void OnParentClusterUnionAwake(class UPrimitiveComponent* WakingComponent, FName BoneName);                           // [0xbd08f4c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnParentActorDeath
-	// void OnParentActorDeath(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xba44204] Final|Native|Protected|HasDefaults 
+	// void OnParentActorDeath(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xbd08af8] Final|Native|Protected|HasDefaults 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnGeometryCollectionDecayed
-	// void OnGeometryCollectionDecayed();                                                                                   // [0xba43cac] Final|Native|Protected 
+	// void OnGeometryCollectionDecayed();                                                                                   // [0xbd0897c] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnGeometryCollectionBreak
-	// void OnGeometryCollectionBreak(FChaosBreakEvent& BreakEvent);                                                         // [0xba43c14] Final|Native|Protected|HasOutParms 
+	// void OnGeometryCollectionBreak(FChaosBreakEvent& BreakEvent);                                                         // [0xbd088e4] Final|Native|Protected|HasOutParms 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnAttachedToyDetached
-	// void OnAttachedToyDetached(class AActor* ToyActor);                                                                   // [0xba431d8] Final|Native|Public  
+	// void OnAttachedToyDetached(class AActor* ToyActor);                                                                   // [0xbd07dc8] Final|Native|Public  
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.OnAddedIntoClusterUnion
-	// void OnAddedIntoClusterUnion(class UClusterUnionComponent* ClusterUnion, class UPrimitiveComponent* Component);       // [0xba43114] Final|Native|Protected 
+	// void OnAddedIntoClusterUnion(class UClusterUnionComponent* ClusterUnion, class UPrimitiveComponent* Component);       // [0xbd07c88] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.NotifyRemovedFromGraph
-	// void NotifyRemovedFromGraph();                                                                                        // [0x6e94000] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void NotifyRemovedFromGraph();                                                                                        // [0x6d0e0b0] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.GetRelevantSimulatingComponents
-	// TArray<UPrimitiveComponent*> GetRelevantSimulatingComponents();                                                       // [0xba42824] Final|RequiredAPI|Native|Public|Const 
+	// TArray<UPrimitiveComponent*> GetRelevantSimulatingComponents();                                                       // [0xbd075b8] Final|RequiredAPI|Native|Public|Const 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.GetContactDistance
-	// float GetContactDistance();                                                                                           // [0x63b1c64] Final|Native|Public|Const 
+	// float GetContactDistance();                                                                                           // [0x60da51c] Final|Native|Public|Const 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.GetBaseAttachParentActor
-	// class AActor* GetBaseAttachParentActor();                                                                             // [0xba42230] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetBaseAttachParentActor();                                                                             // [0xbd072c8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoConnectivityComponent.GetAutomaticallyConnectedComponents
-	// void GetAutomaticallyConnectedComponents(TArray<UJunoConnectivityComponent*>& Results);                               // [0xba41b74] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void GetAutomaticallyConnectedComponents(TArray<UJunoConnectivityComponent*>& Results);                               // [0x8f4a628] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/JunoGameNative.JunoConnectivityGraphWorldSubsystem
@@ -6777,27 +6902,27 @@ public:
 	class UFortConnectivityGraph*                      Graph;                                                      // 0x00C0   (0x0008)  
 	bool                                               bIsGraphDirty;                                              // 0x00C8   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x00C9   (0x0007)  MISSED
-	SDK_UNDEFINED(80,11985) /* TMap<FGraphVertexHandle, UJunoConnectivityComponent*> */ __um(VertexToConnectivityComponents); // 0x00D0   (0x0050)  
-	SDK_UNDEFINED(80,11986) /* TMap<FGraphIslandHandle, AJunoClusterUnionActor*> */ __um(IslandToClusterUnionActors); // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,12022) /* TMap<FGraphVertexHandle, UJunoConnectivityComponent*> */ __um(VertexToConnectivityComponents); // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,12023) /* TMap<FGraphIslandHandle, AJunoClusterUnionActor*> */ __um(IslandToClusterUnionActors); // 0x0120   (0x0050)  
 	FJunoConnectivityDebugData                         DebugDrawData;                                              // 0x0170   (0x0038)  
 	unsigned char                                      UnknownData03_6[0x70];                                      // 0x01A8   (0x0070)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoConnectivityManagerComponent.RequestAddActorsToConnectivityGraph
-	// void RequestAddActorsToConnectivityGraph(TArray<AActor*>& Actors);                                                    // [0xba44d70] Final|Native|Public|HasOutParms 
+	// void RequestAddActorsToConnectivityGraph(TArray<AActor*>& Actors);                                                    // [0xbd4b338] Final|Native|Public|HasOutParms 
 	// Function /Script/JunoGameNative.JunoConnectivityManagerComponent.OnGraphVertexRemovedFromIsland
-	// void OnGraphVertexRemovedFromIsland(FGraphIslandHandle& IslandHandle, FGraphVertexHandle& VertexHandle);              // [0xba43f80] Final|Native|Private|HasOutParms 
+	// void OnGraphVertexRemovedFromIsland(FGraphIslandHandle& IslandHandle, FGraphVertexHandle& VertexHandle);              // [0xbd4b124] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoConnectivityManagerComponent.OnGraphVertexAddedToIsland
-	// void OnGraphVertexAddedToIsland(FGraphIslandHandle& IslandHandle, FGraphVertexHandle& VertexHandle);                  // [0xba43e7c] Final|Native|Private|HasOutParms 
+	// void OnGraphVertexAddedToIsland(FGraphIslandHandle& IslandHandle, FGraphVertexHandle& VertexHandle);                  // [0xbd4b020] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoConnectivityManagerComponent.OnGraphIslandDestroyed
-	// void OnGraphIslandDestroyed(FGraphIslandHandle& IslandHandle);                                                        // [0xba43de8] Final|Native|Private|HasOutParms 
+	// void OnGraphIslandDestroyed(FGraphIslandHandle& IslandHandle);                                                        // [0xbd4af8c] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoConnectivityManagerComponent.OnGraphIslandCreated
-	// void OnGraphIslandCreated(FGraphIslandHandle& IslandHandle);                                                          // [0xba43d54] Final|Native|Private|HasOutParms 
+	// void OnGraphIslandCreated(FGraphIslandHandle& IslandHandle);                                                          // [0xbd4aef8] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoConnectivityManagerComponent.OnGraphIslandConnectivityChanged
-	// void OnGraphIslandConnectivityChanged(FGraphIslandHandle& IslandHandle);                                              // [0xba43cc0] Final|Native|Private|HasOutParms 
+	// void OnGraphIslandConnectivityChanged(FGraphIslandHandle& IslandHandle);                                              // [0xbd4ae64] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoConnectivityManagerComponent.HandleOnGeometryCollectionBreaks
-	// void HandleOnGeometryCollectionBreaks(TArray<FChaosBreakEvent>& BreakEvents);                                         // [0xba42864] Final|Native|Protected|HasOutParms 
+	// void HandleOnGeometryCollectionBreaks(TArray<FChaosBreakEvent>& BreakEvents);                                         // [0xbd49f18] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.JunoPhysicsToyActor
@@ -6819,9 +6944,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPhysicsToyConnectivityComponent.DetachFromConnectivity
-	// void DetachFromConnectivity();                                                                                        // [0xba41b60] Final|Native|Public|BlueprintCallable 
+	// void DetachFromConnectivity();                                                                                        // [0xbd49690] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPhysicsToyConnectivityComponent.AttachToConnectivity
-	// void AttachToConnectivity(class AActor* Other);                                                                       // [0xba41ae0] Final|Native|Public|BlueprintCallable 
+	// void AttachToConnectivity(class AActor* Other);                                                                       // [0xbd4944c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoConnectivityGraphPersistenceFeatureData
@@ -6860,7 +6985,7 @@ public:
 };
 
 /// Struct /Script/JunoGameNative.JunoKnowledgeRecipeStateFastEntry
-/// Size: 0x0084 (0x00000C - 0x000090)
+/// Size: 0x008C (0x00000C - 0x000098)
 struct FJunoKnowledgeRecipeStateFastEntry : FFastArraySerializerItem
 { 
 	EJunoKnowledgeState                                CurrentState;                                               // 0x000C   (0x0001)  
@@ -6870,14 +6995,15 @@ struct FJunoKnowledgeRecipeStateFastEntry : FFastArraySerializerItem
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0024   (0x0004)  MISSED
 	class AFortPlayerState*                            DiscoveredByPlayerState;                                    // 0x0028   (0x0008)  
 	TArray<FUniqueNetIdRepl>                           ViewedPlayerIds;                                            // 0x0030   (0x0010)  
-	TArray<bool>                                       IngredientSatisfied;                                        // 0x0040   (0x0010)  
-	TArray<FGameplayTagContainer>                      IngredientTags;                                             // 0x0050   (0x0010)  
-	FGameplayTagContainer                              McpProfileOwnershipTags;                                    // 0x0060   (0x0020)  
-	class UFortItemDefinition*                         ResultItem;                                                 // 0x0080   (0x0008)  
-	bool                                               bResultAcquired;                                            // 0x0088   (0x0001)  
-	bool                                               bIgnoreIngredientsForReveal;                                // 0x0089   (0x0001)  
-	bool                                               bMissingMpcProfileOwnership;                                // 0x008A   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x5];                                       // 0x008B   (0x0005)  MISSED
+	bool                                               bMissingMpcProfileOwnership;                                // 0x0040   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0041   (0x0007)  MISSED
+	TArray<bool>                                       IngredientSatisfied;                                        // 0x0048   (0x0010)  
+	TArray<FGameplayTagContainer>                      IngredientTags;                                             // 0x0058   (0x0010)  
+	FGameplayTagContainer                              McpProfileOwnershipTags;                                    // 0x0068   (0x0020)  
+	class UFortItemDefinition*                         ResultItem;                                                 // 0x0088   (0x0008)  
+	bool                                               bResultAcquired;                                            // 0x0090   (0x0001)  
+	bool                                               bIgnoreIngredientsForReveal;                                // 0x0091   (0x0001)  
+	unsigned char                                      UnknownData03_6[0x6];                                       // 0x0092   (0x0006)  MISSED
 };
 
 /// Struct /Script/JunoGameNative.JunoKnowledgeRecipeStateFastArray
@@ -6926,7 +7052,7 @@ public:
 	unsigned char                                      UnknownData02_5[0xA0];                                      // 0x03C0   (0x00A0)  MISSED
 	bool                                               bComponentReady;                                            // 0x0460   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0461   (0x0007)  MISSED
-	SDK_UNDEFINED(80,11987) /* TSet<UFortItemDefinition*> */ __um(ItemQuickLookup);                                // 0x0468   (0x0050)  
+	SDK_UNDEFINED(80,12024) /* TSet<UFortItemDefinition*> */ __um(ItemQuickLookup);                                // 0x0468   (0x0050)  
 	unsigned char                                      UnknownData04_5[0xE8];                                      // 0x04B8   (0x00E8)  MISSED
 	FGameplayEventListenerHandle                       CraftingObjectPlacedHandle;                                 // 0x05A0   (0x001C)  
 	unsigned char                                      UnknownData05_6[0x24];                                      // 0x05BC   (0x0024)  MISSED
@@ -6934,49 +7060,59 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.ViewRecipe
-	// void ViewRecipe(FName InRecipeName);                                                                                  // [0xba45854] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ViewRecipe(FName InRecipeName);                                                                                  // [0xbd4bdbc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.ViewItem
-	// void ViewItem(class UFortItemDefinition* InItemDef);                                                                  // [0xba456b0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ViewItem(class UFortItemDefinition* InItemDef);                                                                  // [0xbd4bbd4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.SetRecipeKnowledgeState
-	// void SetRecipeKnowledgeState(FName RowName, EJunoKnowledgeState NewState);                                            // [0xba455d4] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetRecipeKnowledgeState(FName RowName, EJunoKnowledgeState NewState);                                            // [0xbd4ba98] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.SetPlayerRecipeKnowledgeState
-	// void SetPlayerRecipeKnowledgeState(class AFortPlayerController* PC, FName RowName, EJunoKnowledgeState NewState);     // [0xba454d8] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// void SetPlayerRecipeKnowledgeState(class AFortPlayerController* PC, FName RowName, EJunoKnowledgeState NewState);     // [0xbd4b8d4] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.ServerViewRecipe
-	// void ServerViewRecipe(FName InRecipeName);                                                                            // [0xba45454] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerViewRecipe(FName InRecipeName);                                                                            // [0xbd4b810] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.ServerViewItem
-	// void ServerViewItem(class UFortItemDefinition* InItemDef);                                                            // [0xb92b768] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerViewItem(class UFortItemDefinition* InItemDef);                                                            // [0xbc26df0] RequiredAPI|Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.RevealRecipeCategoryForPlayer
-	// void RevealRecipeCategoryForPlayer(class AFortPlayerController* PC, FGameplayTag CraftingObjectTag, FGameplayTag CategoryTag, FGameplayTag SubCategoryTag); // [0xba45128] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// void RevealRecipeCategoryForPlayer(class AFortPlayerController* PC, FGameplayTag CraftingObjectTag, FGameplayTag CategoryTag, FGameplayTag SubCategoryTag); // [0xbd4b5cc] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.RevealRecipeCategory
-	// void RevealRecipeCategory(FGameplayTag CraftingObjectTag, FGameplayTag CategoryTag, FGameplayTag SubCategoryTag);     // [0xba44e4c] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void RevealRecipeCategory(FGameplayTag CraftingObjectTag, FGameplayTag CategoryTag, FGameplayTag SubCategoryTag);     // [0xbd4b414] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.OnCraftingObjectInteraction
-	// void OnCraftingObjectInteraction(FCraftingMessage CraftingMessage);                                                   // [0xba43acc] Net|NetReliableNative|Event|Protected|NetServer 
+	// void OnCraftingObjectInteraction(FCraftingMessage CraftingMessage);                                                   // [0xbd4ad8c] Net|NetReliableNative|Event|Protected|NetServer 
+	// Function /Script/JunoGameNative.JunoKnowledgeComponent.IsRecipeMissingMCPOwnership
+	// bool IsRecipeMissingMCPOwnership(FName RowName);                                                                      // [0xbd4aba0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.HasViewedRecipe
-	// bool HasViewedRecipe(FName InRecipeName);                                                                             // [0xba43088] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasViewedRecipe(FName InRecipeName);                                                                             // [0xbd4a850] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.HasViewedItem
-	// bool HasViewedItem(class UFortItemDefinition* InItemDef);                                                             // [0xba42ff8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasViewedItem(class UFortItemDefinition* InItemDef);                                                             // [0xbd4a780] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.HasClaimedKnowledgeBundle
-	// bool HasClaimedKnowledgeBundle(FGameplayTag& BundleIdentifier);                                                       // [0xba42f24] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool HasClaimedKnowledgeBundle(FGameplayTag& BundleIdentifier);                                                       // [0xbd4a6ac] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.GetRecipeKnowledgeState
-	// EJunoKnowledgeState GetRecipeKnowledgeState(FName RowName);                                                           // [0xba42798] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoKnowledgeState GetRecipeKnowledgeState(FName RowName);                                                           // [0xbd49d48] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.GetRecipeFromGuidForPlayer
-	// FName GetRecipeFromGuidForPlayer(class AFortPlayerController* PC, FGuid InGuid);                                      // [0xba42600] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FName GetRecipeFromGuidForPlayer(class AFortPlayerController* PC, FGuid InGuid);                                      // [0xbd49bd4] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.GetRecipeFromGuid
-	// FName GetRecipeFromGuid(FGuid InGuid);                                                                                // [0xba424b8] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FName GetRecipeFromGuid(FGuid InGuid);                                                                                // [0xbd49af0] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.GetPlayerRecipeKnowledgeState
-	// EJunoKnowledgeState GetPlayerRecipeKnowledgeState(class AFortPlayerController* PC, FName RowName);                    // [0xba423dc] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// EJunoKnowledgeState GetPlayerRecipeKnowledgeState(class AFortPlayerController* PC, FName RowName);                    // [0xbd499a0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.GetGuidFromRecipeForPlayer
-	// FGuid GetGuidFromRecipeForPlayer(class AFortPlayerController* PC, FName RecipeName);                                  // [0xba42300] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FGuid GetGuidFromRecipeForPlayer(class AFortPlayerController* PC, FName RecipeName);                                  // [0xbd4977c] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.GetGuidFromRecipe
-	// FGuid GetGuidFromRecipe(FName RecipeName);                                                                            // [0xba42268] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FGuid GetGuidFromRecipe(FName RecipeName);                                                                            // [0xbd496a4] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.AddCraftingObjectTagsToPlayer
-	// void AddCraftingObjectTagsToPlayer(class AFortPlayerController* PC, FGameplayTagContainer CraftingObjectTags);        // [0xba41918] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// void AddCraftingObjectTagsToPlayer(class AFortPlayerController* PC, FGameplayTagContainer CraftingObjectTags);        // [0xbd4929c] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.AddCraftingObjectTags
-	// void AddCraftingObjectTags(FGameplayTagContainer CraftingObjectTags);                                                 // [0xba417c4] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AddCraftingObjectTags(FGameplayTagContainer CraftingObjectTags);                                                 // [0xbd4919c] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.AcquireItemForPlayer
-	// void AcquireItemForPlayer(class AFortPlayerController* PC, class UFortItemDefinition* NewItemDef);                    // [0xba416f8] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// void AcquireItemForPlayer(class AFortPlayerController* PC, class UFortItemDefinition* NewItemDef);                    // [0xbd49054] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoKnowledgeComponent.AcquireItem
-	// void AcquireItem(class UFortItemDefinition* NewItemDef);                                                              // [0xba41678] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AcquireItem(class UFortItemDefinition* NewItemDef);                                                              // [0xbd48f94] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+};
+
+/// Class /Script/JunoGameNative.JunoKnowledgeDebugMenu
+/// Size: 0x0400 (0x0004C0 - 0x0008C0)
+class AJunoKnowledgeDebugMenu : public AImGuiDebugMenuBase
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x400];                                     // 0x04C0   (0x0400)  MISSED
 };
 
 /// Class /Script/JunoGameNative.JunoKnowledgePersistenceFeatureData
@@ -7060,13 +7196,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoMarkerManagerPlayspaceComponent.OnRep_MarkersIds
-	// void OnRep_MarkersIds();                                                                                              // [0xba91ab4] Final|Native|Protected 
+	// void OnRep_MarkersIds();                                                                                              // [0xbd4b324] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoMarkerManagerPlayspaceComponent.OnRep_Markers
-	// void OnRep_Markers();                                                                                                 // [0xba91aa0] Final|Native|Protected 
+	// void OnRep_Markers();                                                                                                 // [0xbd4b310] Final|Native|Protected 
 	// Function /Script/JunoGameNative.JunoMarkerManagerPlayspaceComponent.GetJunoMarkerManagerComponent
-	// class UJunoMarkerManagerPlayspaceComponent* GetJunoMarkerManagerComponent(class UObject* WorldContextObject);         // [0xba91490] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UJunoMarkerManagerPlayspaceComponent* GetJunoMarkerManagerComponent(class UObject* WorldContextObject);         // [0xbd498e0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoMarkerManagerPlayspaceComponent.CreateMarker
-	// bool CreateMarker(class AActor* Actor, FJunoMarker& Marker);                                                          // [0xba912e8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// bool CreateMarker(class AActor* Actor, FJunoMarker& Marker);                                                          // [0xbd49524] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.JunoMarkersSaveData
@@ -7112,9 +7248,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoModeratorModeBlueprintLibrary.IsPlayerAllowedToFly
-	// bool IsPlayerAllowedToFly(class UObject* WorldContextObject);                                                         // [0xba917c8] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsPlayerAllowedToFly(class UObject* WorldContextObject);                                                         // [0xbd4aac0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoModeratorModeBlueprintLibrary.IsModeratorModeEnabled
-	// bool IsModeratorModeEnabled(class UObject* WorldContextObject);                                                       // [0xba91668] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsModeratorModeEnabled(class UObject* WorldContextObject);                                                       // [0xbd4a91c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoModeratorModeComponent
@@ -7131,27 +7267,27 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.OnRootPlayspaceOwnerSet
-	// void OnRootPlayspaceOwnerSet(class AFortPlayerControllerAthena* PlayerControllerAthena);                              // [0x604b150] Final|Native|Private 
+	// void OnRootPlayspaceOwnerSet(class AFortPlayerControllerAthena* PlayerControllerAthena);                              // [0x5d5254c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.OnRep_IsModeratorModeEnabled
-	// void OnRep_IsModeratorModeEnabled();                                                                                  // [0xba91a8c] Final|Native|Private 
+	// void OnRep_IsModeratorModeEnabled();                                                                                  // [0xbd4b2fc] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.OnPawnDestroyed
-	// void OnPawnDestroyed(class AActor* DestroyedActor);                                                                   // [0xba919f8] Final|Native|Private 
+	// void OnPawnDestroyed(class AActor* DestroyedActor);                                                                   // [0xbd4b228] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.IsPlayerAllowedToFly
-	// bool IsPlayerAllowedToFly();                                                                                          // [0xba91848] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayerAllowedToFly();                                                                                          // [0xbd4ab80] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.IsModeratorModeEnabled
-	// bool IsModeratorModeEnabled();                                                                                        // [0xab91c40] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsModeratorModeEnabled();                                                                                        // [0xad6f994] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.HandleTeleportPlayer
-	// void HandleTeleportPlayer();                                                                                          // [0xba91654] Final|Native|Private 
+	// void HandleTeleportPlayer();                                                                                          // [0xbd4a698] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.HandlePlayerPossesedPawn
-	// void HandlePlayerPossesedPawn(class APawn* PlayerPawn);                                                               // [0xba915d4] Final|Native|Private 
+	// void HandlePlayerPossesedPawn(class APawn* PlayerPawn);                                                               // [0xbd4a5d8] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.HandleOnCreativeFlyChangedDelegate
-	// void HandleOnCreativeFlyChangedDelegate(bool bIsFlying);                                                              // [0xba91510] Final|Native|Private 
+	// void HandleOnCreativeFlyChangedDelegate(bool bIsFlying);                                                              // [0xbd49e14] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.EnableModeratorMode
-	// void EnableModeratorMode();                                                                                           // [0x32e4b44] Final|Native|Public|BlueprintCallable 
+	// void EnableModeratorMode();                                                                                           // [0x307d48c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.DisableModeratorMode
-	// void DisableModeratorMode();                                                                                          // [0x32e4b44] Final|Native|Public|BlueprintCallable 
+	// void DisableModeratorMode();                                                                                          // [0x307d48c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoModeratorModeComponent.CheatModeratorConfirm
-	// void CheatModeratorConfirm();                                                                                         // [0xba912d0] Final|Native|Public|BlueprintCallable 
+	// void CheatModeratorConfirm();                                                                                         // [0xbd4950c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoDoorMetaNavArea
@@ -7184,13 +7320,13 @@ struct FJunoMoodStateData
 class UJunoPawnComponentMood : public UFortPawnComponent
 { 
 public:
-	SDK_UNDEFINED(16,11988) /* FMulticastInlineDelegate */ __um(OnJunoMoodChangedDelegate);                        // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,12025) /* FMulticastInlineDelegate */ __um(OnJunoMoodChangedDelegate);                        // 0x00A8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x00B8   (0x0018)  MISSED
-	SDK_UNDEFINED(16,11989) /* FMulticastInlineDelegate */ __um(OnJunoMoodReactionTriggeredDelegate);              // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,12026) /* FMulticastInlineDelegate */ __um(OnJunoMoodReactionTriggeredDelegate);              // 0x00D0   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x00E0   (0x0018)  MISSED
-	SDK_UNDEFINED(16,11990) /* FMulticastInlineDelegate */ __um(OnJunoMoodReactionFinishedDelegate);               // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,12027) /* FMulticastInlineDelegate */ __um(OnJunoMoodReactionFinishedDelegate);               // 0x00F8   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x18];                                      // 0x0108   (0x0018)  MISSED
-	SDK_UNDEFINED(16,11991) /* FMulticastInlineDelegate */ __um(OnJunoMoodReactionCanceledDelegate);               // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,12028) /* FMulticastInlineDelegate */ __um(OnJunoMoodReactionCanceledDelegate);               // 0x0120   (0x0010)  
 	unsigned char                                      UnknownData03_5[0x18];                                      // 0x0130   (0x0018)  MISSED
 	FJunoMoodStateData                                 CurrentMoodState;                                           // 0x0148   (0x0004)  
 	unsigned char                                      UnknownData04_5[0x4];                                       // 0x014C   (0x0004)  MISSED
@@ -7201,23 +7337,23 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.OnRep_CurrentMoodState
-	// void OnRep_CurrentMoodState();                                                                                        // [0xba91a78] Final|Native|Private 
+	// void OnRep_CurrentMoodState();                                                                                        // [0xbd4b2e8] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.NotifyMoodReactionComplete
-	// void NotifyMoodReactionComplete();                                                                                    // [0xba9199c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void NotifyMoodReactionComplete();                                                                                    // [0xbd4ad30] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.MulticastTriggerMoodReaction
-	// void MulticastTriggerMoodReaction(FGameplayTag MoodReactionTag);                                                      // [0xba91868] RequiredAPI|Net|NetReliableNative|Event|NetMulticast|Public 
+	// void MulticastTriggerMoodReaction(FGameplayTag MoodReactionTag);                                                      // [0xbd4ac6c] RequiredAPI|Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.MulticastOnMoodReactionComplete
-	// void MulticastOnMoodReactionComplete();                                                                               // [0x219df9c] Final|Net|NetReliableNative|Event|NetMulticast|Private|BlueprintCallable 
+	// void MulticastOnMoodReactionComplete();                                                                               // [0x2ef340c] Final|Net|NetReliableNative|Event|NetMulticast|Private|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.MulticastOnCancelCurrentMoodReaction
-	// void MulticastOnCancelCurrentMoodReaction();                                                                          // [0x212f478] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void MulticastOnCancelCurrentMoodReaction();                                                                          // [0x38a9134] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.IsMoodReactionSupported_Internal
-	// bool IsMoodReactionSupported_Internal(FGameplayTag& MoodReactionTag);                                                 // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// bool IsMoodReactionSupported_Internal(FGameplayTag& MoodReactionTag);                                                 // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.IsMoodReactionSupported
-	// bool IsMoodReactionSupported(FGameplayTag& MoodReactionTag);                                                          // [0xba916f4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// bool IsMoodReactionSupported(FGameplayTag& MoodReactionTag);                                                          // [0xbd4a9ec] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.GetMoodAnimProxyTable
-	// class UProxyTable* GetMoodAnimProxyTable();                                                                           // [0x7056ea0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UProxyTable* GetMoodAnimProxyTable();                                                                           // [0x6f1b218] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPawnComponentMood.GetCurrentMoodState
-	// FJunoMoodStateData GetCurrentMoodState();                                                                             // [0xa08e680] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoMoodStateData GetCurrentMoodState();                                                                             // [0xa20f6c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoPawnComponentSpeechBubble
@@ -7234,8 +7370,8 @@ class UJunoDeltaFile : public ULevelSaveRecord
 public:
 	FName                                              UniquePackageName;                                          // 0x0768   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x076C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,11992) /* TMap<FGuid, FJunoUpdateAction> */ __um(UpdateActions);                              // 0x0770   (0x0050)  
-	SDK_UNDEFINED(8,11993) /* TWeakObjectPtr<AJunoPersistentPlayspace*> */ __um(WeakPersistentPlayspaceToApplyTo); // 0x07C0   (0x0008)  
+	SDK_UNDEFINED(80,12029) /* TMap<FGuid, FJunoUpdateAction> */ __um(UpdateActions);                              // 0x0770   (0x0050)  
+	SDK_UNDEFINED(8,12030) /* TWeakObjectPtr<AJunoPersistentPlayspace*> */ __um(WeakPersistentPlayspaceToApplyTo); // 0x07C0   (0x0008)  
 	bool                                               bDirty;                                                     // 0x07C8   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x07C9   (0x0007)  MISSED
 };
@@ -7245,12 +7381,12 @@ public:
 class UJunoDeltaFileApplier : public ULevelRecordSpawner
 { 
 public:
-	SDK_UNDEFINED(80,11994) /* TMap<FGuid, FJunoUpdateAction> */ __um(UpdateActionMap);                            // 0x04F0   (0x0050)  
-	SDK_UNDEFINED(80,11995) /* TMap<FGuid, FDeleteAction> */ __um(DeleteActionMap);                                // 0x0540   (0x0050)  
+	SDK_UNDEFINED(80,12031) /* TMap<FGuid, FJunoUpdateAction> */ __um(UpdateActionMap);                            // 0x04F0   (0x0050)  
+	SDK_UNDEFINED(80,12032) /* TMap<FGuid, FDeleteAction> */ __um(DeleteActionMap);                                // 0x0540   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoDeltasLevelSaveComponent
-/// Size: 0x0000 (0x000970 - 0x000970)
+/// Size: 0x0000 (0x0008D8 - 0x0008D8)
 class UJunoDeltasLevelSaveComponent : public UFortLevelSaveComponent
 { 
 public:
@@ -7264,11 +7400,11 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoPFWContainer_LevelDelta
-/// Size: 0x0028 (0x000140 - 0x000168)
+/// Size: 0x0038 (0x000140 - 0x000178)
 class UJunoPFWContainer_LevelDelta : public UPersistenceFrameworkContainer
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x28];                                      // 0x0140   (0x0028)  MISSED
+	unsigned char                                      UnknownData00_1[0x38];                                      // 0x0140   (0x0038)  MISSED
 };
 
 /// Class /Script/JunoGameNative.JunoPFWContainer_LevelDeltaIndex
@@ -7291,7 +7427,7 @@ public:
 class UJunoPersistentPlayspaceLevelRegistry : public UEngineSubsystem
 { 
 public:
-	SDK_UNDEFINED(80,11996) /* TMap<FName, FJunoPersistentPlayspaceLevelRegistryEntry> */ __um(PersistentPlayspaceLevelMap); // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,12033) /* TMap<FName, FJunoPersistentPlayspaceLevelRegistryEntry> */ __um(PersistentPlayspaceLevelMap); // 0x0030   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoPlayerPersistenceComponent
@@ -7300,19 +7436,19 @@ class UJunoPlayerPersistenceComponent : public UFortPlayspaceComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x40];                                      // 0x00F8   (0x0040)  MISSED
-	SDK_UNDEFINED(80,11997) /* TMap<FUniqueNetIdRepl, FJunoPlayerSaveData> */ __um(PlayerSaveData);                // 0x0138   (0x0050)  
-	SDK_UNDEFINED(80,11998) /* TMap<FUniqueNetIdRepl, TWeakObjectPtr<UJunoPlayerSaveData_Container*>> */ __um(PlayerSaveDataContainers); // 0x0188   (0x0050)  
-	SDK_UNDEFINED(80,11999) /* TSet<FUniqueNetIdRepl> */ __um(InFlightPlayerSaves);                                // 0x01D8   (0x0050)  
+	SDK_UNDEFINED(80,12034) /* TMap<FUniqueNetIdRepl, FJunoPlayerSaveData> */ __um(PlayerSaveData);                // 0x0138   (0x0050)  
+	SDK_UNDEFINED(80,12035) /* TMap<FUniqueNetIdRepl, TWeakObjectPtr<UJunoPlayerSaveData_Container*>> */ __um(PlayerSaveDataContainers); // 0x0188   (0x0050)  
+	SDK_UNDEFINED(80,12036) /* TSet<FUniqueNetIdRepl> */ __um(InFlightPlayerSaves);                                // 0x01D8   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0228   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayerPersistenceComponent.OnControllerBeginDestroy
-	// void OnControllerBeginDestroy(class AFortPlayerControllerAthena* FortPCAthena);                                       // [0x604b150] Final|Native|Private 
+	// void OnControllerBeginDestroy(class AFortPlayerControllerAthena* FortPCAthena);                                       // [0x5d5254c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayerPersistenceComponent.OnAnyPlayerLoggedOut
-	// void OnAnyPlayerLoggedOut(class AGameModeBase* GameModeBase, class AController* Controller);                          // [0x69b67c4] Final|Native|Private 
+	// void OnAnyPlayerLoggedOut(class AGameModeBase* GameModeBase, class AController* Controller);                          // [0x6714940] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPlayerPersistenceComponent.OnAnyPlayerLoggedIn
-	// void OnAnyPlayerLoggedIn(class APlayerController* PlayerController);                                                  // [0x604b150] Final|Native|Private 
+	// void OnAnyPlayerLoggedIn(class APlayerController* PlayerController);                                                  // [0x5d5254c] Final|Native|Private 
 };
 
 /// Class /Script/JunoGameNative.JunoWorldPersistenceHandler
@@ -7329,8 +7465,8 @@ struct FJunoRollbackBadCheckpointRange
 { 
 	int32_t                                            StartCL;                                                    // 0x0000   (0x0004)  
 	int32_t                                            EndCL;                                                      // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,12000) /* FString */              __um(StartTimestamp);                                       // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,12001) /* FString */              __um(EndTimestamp);                                         // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,12037) /* FString */              __um(StartTimestamp);                                       // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,12038) /* FString */              __um(EndTimestamp);                                         // 0x0018   (0x0010)  
 };
 
 /// Class /Script/JunoGameNative.JunoWorldPersistenceHandler_Deltas
@@ -7358,7 +7494,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWorldPersistencePlayerManager.OnAnyPlayerLoggedIn
-	// void OnAnyPlayerLoggedIn(class APlayerController* PlayerController);                                                  // [0xbac922c] Final|Native|Public  
+	// void OnAnyPlayerLoggedIn(class APlayerController* PlayerController);                                                  // [0xbda0fa8] Final|Native|Public  
 };
 
 /// Class /Script/JunoGameNative.JunoAIPersistenceFeatureData
@@ -7381,7 +7517,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FJunoPlayspaceIndexSaveData
 { 
-	SDK_UNDEFINED(80,12002) /* TMap<FGuid, FJunoPlayspaceIndexNode> */ __um(PlayspaceNodes);                       // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12039) /* TMap<FGuid, FJunoPlayspaceIndexNode> */ __um(PlayspaceNodes);                       // 0x0000   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoPlayspaceIndexPersistenceFeatureData
@@ -7441,7 +7577,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FJunoClusterUnionSaveData
 { 
-	SDK_UNDEFINED(80,12003) /* TMap<FGraphIslandHandle, FJunoSingleClusterUnionSaveData> */ __um(PerClusterUnionData); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12040) /* TMap<FGraphIslandHandle, FJunoSingleClusterUnionSaveData> */ __um(PerClusterUnionData); // 0x0000   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoClusterUnionPersistenceFeatureData
@@ -7493,7 +7629,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FJunoPhysicsToySaveData
 { 
-	SDK_UNDEFINED(80,12004) /* TMap<FGuid, FJunoSinglePhysicsToySaveData> */ __um(PerToyData);                     // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12041) /* TMap<FGuid, FJunoSinglePhysicsToySaveData> */ __um(PerToyData);                     // 0x0000   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoPhysicsToyPersistenceFeatureData
@@ -7517,7 +7653,7 @@ class AJunoPlayerPersistenceFeatureDataActor : public AJunoPersistenceFeatureDat
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x02D0   (0x0008)  MISSED
-	SDK_UNDEFINED(80,12005) /* TMap<FUniqueNetIdRepl, FJunoPlayerSaveData> */ __um(PlayerSaveData);                // 0x02D8   (0x0050)  
+	SDK_UNDEFINED(80,12042) /* TMap<FUniqueNetIdRepl, FJunoPlayerSaveData> */ __um(PlayerSaveData);                // 0x02D8   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0328   (0x0018)  MISSED
 };
 
@@ -7533,7 +7669,7 @@ public:
 class UJunoPersistenceFeaturePFWState : public UObject
 { 
 public:
-	SDK_UNDEFINED(8,12006) /* TWeakObjectPtr<UJunoBasePFWPersistenceFeatureDataContainer*> */ __um(ContainerWeakPtr); // 0x0028   (0x0008)  
+	SDK_UNDEFINED(8,12043) /* TWeakObjectPtr<UJunoBasePFWPersistenceFeatureDataContainer*> */ __um(ContainerWeakPtr); // 0x0028   (0x0008)  
 };
 
 /// Class /Script/JunoGameNative.PFWSubsystemExtension_JunoGameNative
@@ -7545,13 +7681,13 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoControllerComponent
-/// Size: 0x0408 (0x0000A8 - 0x0004B0)
+/// Size: 0x0410 (0x0000A8 - 0x0004B8)
 class UJunoControllerComponent : public UFortControllerComponent
 { 
 public:
-	SDK_UNDEFINED(16,12007) /* FMulticastInlineDelegate */ __um(OnPlayerSpawnedActorWithBuilderTool);              // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,12008) /* FMulticastInlineDelegate */ __um(OnOffhandInputPressed);                            // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,12009) /* FMulticastInlineDelegate */ __um(OnOffhandInputReleased);                           // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,12044) /* FMulticastInlineDelegate */ __um(OnPlayerSpawnedActorWithBuilderTool);              // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,12045) /* FMulticastInlineDelegate */ __um(OnOffhandInputPressed);                            // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,12046) /* FMulticastInlineDelegate */ __um(OnOffhandInputReleased);                           // 0x00C8   (0x0010)  
 	class UFortWorldItemDefinition*                    EmptyHandItemDefinition;                                    // 0x00D8   (0x0008)  
 	float                                              InteractionDistanceFromCamera;                              // 0x00E0   (0x0004)  
 	float                                              InteractionDistanceFromPlayer;                              // 0x00E4   (0x0004)  
@@ -7565,75 +7701,80 @@ public:
 	FGuid                                              ItemToBuildGUID;                                            // 0x01B8   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x01C8   (0x0010)  MISSED
 	FGuid                                              ItemSelectedGuid;                                           // 0x01D8   (0x0010)  
-	unsigned char                                      UnknownData02_5[0x10];                                      // 0x01E8   (0x0010)  MISSED
-	class UInputComponent*                             InputComponent;                                             // 0x01F8   (0x0008)  
-	unsigned char                                      UnknownData03_5[0x90];                                      // 0x0200   (0x0090)  MISSED
-	class UFortItem*                                   CachedQuickBuildItem;                                       // 0x0290   (0x0008)  
-	unsigned char                                      UnknownData04_5[0x190];                                     // 0x0298   (0x0190)  MISSED
-	class UFortOffhandComponent*                       OffhandComponent;                                           // 0x0428   (0x0008)  
-	FGameplayEventListenerHandle                       CheckpointActorDestroyedHandle;                             // 0x0430   (0x001C)  
-	unsigned char                                      UnknownData05_5[0x5C];                                      // 0x044C   (0x005C)  MISSED
-	bool                                               bIsModeratorModeEnabled;                                    // 0x04A8   (0x0001)  
-	unsigned char                                      UnknownData06_6[0x7];                                       // 0x04A9   (0x0007)  MISSED
+	bool                                               bSpawnedBackpack;                                           // 0x01E8   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x17];                                      // 0x01E9   (0x0017)  MISSED
+	class UInputComponent*                             InputComponent;                                             // 0x0200   (0x0008)  
+	unsigned char                                      UnknownData03_5[0x90];                                      // 0x0208   (0x0090)  MISSED
+	class UFortItem*                                   CachedQuickBuildItem;                                       // 0x0298   (0x0008)  
+	unsigned char                                      UnknownData04_5[0x190];                                     // 0x02A0   (0x0190)  MISSED
+	class UFortOffhandComponent*                       OffhandComponent;                                           // 0x0430   (0x0008)  
+	FGameplayEventListenerHandle                       CheckpointActorDestroyedHandle;                             // 0x0438   (0x001C)  
+	unsigned char                                      UnknownData05_5[0x5C];                                      // 0x0454   (0x005C)  MISSED
+	bool                                               bIsModeratorModeEnabled;                                    // 0x04B0   (0x0001)  
+	unsigned char                                      UnknownData06_6[0x7];                                       // 0x04B1   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoControllerComponent.SwitchToEmptyHands
-	// void SwitchToEmptyHands(bool bTriggerSelection);                                                                      // [0xbaca230] Final|Native|Public|BlueprintCallable 
+	// void SwitchToEmptyHands(bool bTriggerSelection, FGameplayTag OptionalSlotGroupTag, int32_t OptionalSlotRow, int32_t OptionalSlotColumn); // [0xbde40e0] Final|Native|Public|BlueprintCallable 
+	// Function /Script/JunoGameNative.JunoControllerComponent.SpawnedBackpack
+	// bool SpawnedBackpack();                                                                                               // [0xbde40c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/JunoGameNative.JunoControllerComponent.ShouldSpawnDeathChest
+	// bool ShouldSpawnDeathChest();                                                                                         // [0xbde40a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoControllerComponent.SetPlayerLastCaveTeleporterLocation
-	// void SetPlayerLastCaveTeleporterLocation(FVector& TeleporterLocation);                                                // [0xbaca16c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetPlayerLastCaveTeleporterLocation(FVector& TeleporterLocation);                                                // [0xbde3fe0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoControllerComponent.SetPlayerCheckpoint
-	// void SetPlayerCheckpoint(class AActor* CheckpointActor, FVector& CheckpointLocation);                                 // [0xbaca064] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetPlayerCheckpoint(class AActor* CheckpointActor, FVector& CheckpointLocation);                                 // [0xbde3e90] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoControllerComponent.SetIsModeratorModeEnabled
-	// void SetIsModeratorModeEnabled(bool bEnable);                                                                         // [0xbac9fe4] Final|Native|Public  
+	// void SetIsModeratorModeEnabled(bool bEnable);                                                                         // [0xbde3dd0] Final|Native|Public  
 	// Function /Script/JunoGameNative.JunoControllerComponent.ServerTeleportToPOI
-	// void ServerTeleportToPOI();                                                                                           // [0x78c1bf4] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerTeleportToPOI();                                                                                           // [0x781e2e8] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ServerTeleportToLocation
-	// void ServerTeleportToLocation(FVector TeleportLocation, FRotator TeleportRotation);                                   // [0xbac9b80] Net|NetReliableNative|Event|Public|NetServer|HasDefaults 
+	// void ServerTeleportToLocation(FVector TeleportLocation, FRotator TeleportRotation);                                   // [0xbde3a24] Net|NetReliableNative|Event|Public|NetServer|HasDefaults 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ServerTeleportToCave
-	// void ServerTeleportToCave();                                                                                          // [0x83bae70] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerTeleportToCave();                                                                                          // [0x835ae94] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ServerSetSelectedItem
-	// void ServerSetSelectedItem(FGuid ItemGuid, FGameplayTag SlotGroupTag, int32_t SlotRow, int32_t SlotColumn);           // [0xbac97b8] Final|Net|Native|Event|Private|NetServer|HasDefaults 
+	// void ServerSetSelectedItem(FGuid ItemGuid, FGameplayTag SlotGroupTag, int32_t SlotRow, int32_t SlotColumn);           // [0xbde37dc] Final|Net|Native|Event|Private|NetServer|HasDefaults 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ServerSetCraftingContextItem
-	// void ServerSetCraftingContextItem(FGuid InItemGuid);                                                                  // [0xbac9674] Net|NetReliableNative|Event|Public|NetServer|HasDefaults 
+	// void ServerSetCraftingContextItem(FGuid InItemGuid);                                                                  // [0xbde3708] Net|NetReliableNative|Event|Public|NetServer|HasDefaults 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ServerRequestPersistenceDataReport
-	// void ServerRequestPersistenceDataReport(EJunoPersistenceReportOptions ReportOptions);                                 // [0xbac95f0] Net|NetReliableNative|Event|Public|NetServer|Const 
+	// void ServerRequestPersistenceDataReport(EJunoPersistenceReportOptions ReportOptions);                                 // [0xbde3644] Net|NetReliableNative|Event|Public|NetServer|Const 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ServerReplicateMapData
-	// void ServerReplicateMapData();                                                                                        // [0x81efe74] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerReplicateMapData();                                                                                        // [0x81809cc] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ServerFreeBuildAddInventoryItem
-	// void ServerFreeBuildAddInventoryItem(FFortItemEntry InItemEntry);                                                     // [0xbac9484] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerFreeBuildAddInventoryItem(FFortItemEntry InItemEntry);                                                     // [0xbde3544] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/JunoGameNative.JunoControllerComponent.OnRep_ItemSelectedGuid
-	// void OnRep_ItemSelectedGuid();                                                                                        // [0xbac92f4] Final|Native|Private 
+	// void OnRep_ItemSelectedGuid();                                                                                        // [0xbde3374] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoControllerComponent.OnCameraToggle
-	// void OnCameraToggle();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnCameraToggle();                                                                                                // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoControllerComponent.OnAnimToggle
-	// void OnAnimToggle();                                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnAnimToggle();                                                                                                  // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/JunoGameNative.JunoControllerComponent.HandleFortPawnChanged
-	// void HandleFortPawnChanged(class AFortPawn* NewPawn);                                                                 // [0xbac8dd4] Final|Native|Private 
+	// void HandleFortPawnChanged(class AFortPawn* NewPawn);                                                                 // [0xbde2d20] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoControllerComponent.HandleBuilderToolUnEquip
-	// void HandleBuilderToolUnEquip(class AFortWeapon* Weapon);                                                             // [0xbac8860] Final|Native|Private 
+	// void HandleBuilderToolUnEquip(class AFortWeapon* Weapon);                                                             // [0xbde2674] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoControllerComponent.HandleBuilderToolInteractionStopped
-	// void HandleBuilderToolInteractionStopped(class AJunoBuilderTool* BuilderTool, class UJunoBuilderToolInteractionBehavior* Behavior); // [0xbac879c] Final|Native|Private 
+	// void HandleBuilderToolInteractionStopped(class AJunoBuilderTool* BuilderTool, class UJunoBuilderToolInteractionBehavior* Behavior); // [0xbde2534] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoControllerComponent.HandleBuilderToolInteractionStarted
-	// void HandleBuilderToolInteractionStarted(class AJunoBuilderTool* BuilderTool, class UJunoBuilderToolInteractionBehavior* Behavior); // [0xbac86d8] Final|Native|Private 
+	// void HandleBuilderToolInteractionStarted(class AJunoBuilderTool* BuilderTool, class UJunoBuilderToolInteractionBehavior* Behavior); // [0xbde23f4] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoControllerComponent.GetPlayerCheckpoint
-	// FJunoPlayerCheckpoint GetPlayerCheckpoint();                                                                          // [0xbac8678] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FJunoPlayerCheckpoint GetPlayerCheckpoint();                                                                          // [0xbde2394] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoControllerComponent.GetLastCaveTeleporterLocation
-	// FVector GetLastCaveTeleporterLocation();                                                                              // [0xbac8650] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetLastCaveTeleporterLocation();                                                                              // [0xbde236c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoControllerComponent.GetIsModeratorModeEnabled
-	// bool GetIsModeratorModeEnabled();                                                                                     // [0xbac8638] Final|Native|Public  
+	// bool GetIsModeratorModeEnabled();                                                                                     // [0xbde2354] Final|Native|Public  
 	// Function /Script/JunoGameNative.JunoControllerComponent.GetBuilderTool
-	// class AJunoBuilderTool* GetBuilderTool();                                                                             // [0xbac85e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AJunoBuilderTool* GetBuilderTool();                                                                             // [0xbde22e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ClientPrintPersistenceDataReport
-	// void ClientPrintPersistenceDataReport(TArray<FString> Logs);                                                          // [0xbac8554] Net|NetReliableNative|Event|Public|NetClient|Const 
+	// void ClientPrintPersistenceDataReport(TArray<FString> Logs);                                                          // [0xbde2210] Net|NetReliableNative|Event|Public|NetClient|Const 
 	// Function /Script/JunoGameNative.JunoControllerComponent.ClientNotifyInventoryFull
-	// void ClientNotifyInventoryFull();                                                                                     // [0x8213e04] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientNotifyInventoryFull();                                                                                     // [0x81a6998] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/JunoGameNative.JunoControllerComponent.AddRecipeToBuilderTool
-	// void AddRecipeToBuilderTool(FName RecipeName);                                                                        // [0xbac84d4] Final|Native|Public  
+	// void AddRecipeToBuilderTool(FName RecipeName);                                                                        // [0xbde2150] Final|Native|Public  
 	// Function /Script/JunoGameNative.JunoControllerComponent.AddItemToBuilderToolOnEquip
-	// void AddItemToBuilderToolOnEquip(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                        // [0xbac8410] Final|Native|Private 
+	// void AddItemToBuilderToolOnEquip(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                        // [0xbde2010] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoControllerComponent.AddItemToBuilderTool
-	// void AddItemToBuilderTool(class UFortItem* Item);                                                                     // [0xbac8390] Final|Native|Public|BlueprintCallable 
+	// void AddItemToBuilderTool(class UFortItem* Item);                                                                     // [0xbde1f50] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.JunoHealthComponent
@@ -7653,7 +7794,7 @@ struct FJunoEnhancedInputActionToGameplayEvent
 };
 
 /// Class /Script/JunoGameNative.JunoInputControllerComponent
-/// Size: 0x0138 (0x0000A8 - 0x0001E0)
+/// Size: 0x0140 (0x0000A8 - 0x0001E8)
 class UJunoInputControllerComponent : public UFortControllerComponent
 { 
 public:
@@ -7674,28 +7815,29 @@ public:
 	class UInputAction*                                InputAction_HandleOpenBuildingMenu;                         // 0x0158   (0x0008)  
 	class UInputAction*                                InputAction_HandleOpenMapMenu;                              // 0x0160   (0x0008)  
 	class UInputAction*                                InputAction_HandleOpenInventoryMenu;                        // 0x0168   (0x0008)  
-	class UInputAction*                                InputAction_HandleOpenEscapeMenu;                           // 0x0170   (0x0008)  
-	class UInputAction*                                InputAction_JunoBuildingStartPlacement;                     // 0x0178   (0x0008)  
-	class UInputAction*                                InputAction_ToggleBuildMode;                                // 0x0180   (0x0008)  
-	class UInputAction*                                InputAction_TeleportPlayer;                                 // 0x0188   (0x0008)  
-	class UInputAction*                                InputAction_OffhandUse;                                     // 0x0190   (0x0008)  
-	class UInputAction*                                InputAction_FlyDown;                                        // 0x0198   (0x0008)  
-	class UInputAction*                                InputAction_FlyUp;                                          // 0x01A0   (0x0008)  
-	TArray<class UInputAction*>                        QuickbarBindings;                                           // 0x01A8   (0x0010)  
-	TArray<FJunoEnhancedInputActionToGameplayEvent>    InputActionsToGameplayEvents;                               // 0x01B8   (0x0010)  
-	bool                                               bJunoIsFlying;                                              // 0x01C8   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x17];                                      // 0x01C9   (0x0017)  MISSED
+	class UInputAction*                                InputAction_HandleOpenEngagementMenu;                       // 0x0170   (0x0008)  
+	class UInputAction*                                InputAction_HandleOpenEscapeMenu;                           // 0x0178   (0x0008)  
+	class UInputAction*                                InputAction_JunoBuildingStartPlacement;                     // 0x0180   (0x0008)  
+	class UInputAction*                                InputAction_ToggleBuildMode;                                // 0x0188   (0x0008)  
+	class UInputAction*                                InputAction_TeleportPlayer;                                 // 0x0190   (0x0008)  
+	class UInputAction*                                InputAction_OffhandUse;                                     // 0x0198   (0x0008)  
+	class UInputAction*                                InputAction_FlyDown;                                        // 0x01A0   (0x0008)  
+	class UInputAction*                                InputAction_FlyUp;                                          // 0x01A8   (0x0008)  
+	TArray<class UInputAction*>                        QuickbarBindings;                                           // 0x01B0   (0x0010)  
+	TArray<FJunoEnhancedInputActionToGameplayEvent>    InputActionsToGameplayEvents;                               // 0x01C0   (0x0010)  
+	bool                                               bJunoIsFlying;                                              // 0x01D0   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x17];                                      // 0x01D1   (0x0017)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoInputControllerComponent.ReplaceInputMappingContext
-	// void ReplaceInputMappingContext(FJunoInputMapping& InputMapping);                                                     // [0xbac93e0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void ReplaceInputMappingContext(FJunoInputMapping& InputMapping);                                                     // [0xbde34a0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoInputControllerComponent.RemoveInputMappingContext
-	// void RemoveInputMappingContext(class UInputMappingContext* InputMappingContext);                                      // [0xbac9360] Final|Native|Public|BlueprintCallable|Const 
+	// void RemoveInputMappingContext(class UInputMappingContext* InputMappingContext);                                      // [0xbde33e0] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/JunoGameNative.JunoInputControllerComponent.HandleOnCreativeFlyChangedDelegate
-	// void HandleOnCreativeFlyChangedDelegate(bool bIsFlying);                                                              // [0xbac9188] Final|Native|Private 
+	// void HandleOnCreativeFlyChangedDelegate(bool bIsFlying);                                                              // [0xbde3244] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoInputControllerComponent.AddInputMappingContext
-	// void AddInputMappingContext(FJunoInputMapping& InputMapping);                                                         // [0xbac8300] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void AddInputMappingContext(FJunoInputMapping& InputMapping);                                                         // [0xbde1ec0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoLWITriggerComponent
@@ -7717,9 +7859,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPawnComponent.ShouldPawnSpawnDeathChest
-	// bool ShouldPawnSpawnDeathChest();                                                                                     // [0xab91c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldPawnSpawnDeathChest();                                                                                     // [0xad6f994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPawnComponent.IsPlayerInCave
-	// bool IsPlayerInCave();                                                                                                // [0xbac9208] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayerInCave();                                                                                                // [0xbde3308] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoGameNative.JunoEmotionalStateData
@@ -7749,10 +7891,10 @@ struct FJunoPawnEmotionalStateMappingFromAwesomeLevel
 class UJunoPawnComponent_EmotionalState : public UFortPawnComponent
 { 
 public:
-	SDK_UNDEFINED(16,12010) /* FMulticastInlineDelegate */ __um(OnJunoCurrentEmotionalStateChangedDelegate);       // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,12011) /* FMulticastInlineDelegate */ __um(OnJunoCurrentEmotionalStateStartedChange);         // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,12012) /* FMulticastInlineDelegate */ __um(OnJunoCurrentEmotionChangeFinished);               // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,12013) /* FMulticastInlineDelegate */ __um(OnCheatEmotionIndexChanged);                       // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,12047) /* FMulticastInlineDelegate */ __um(OnJunoCurrentEmotionalStateChangedDelegate);       // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,12048) /* FMulticastInlineDelegate */ __um(OnJunoCurrentEmotionalStateStartedChange);         // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,12049) /* FMulticastInlineDelegate */ __um(OnJunoCurrentEmotionChangeFinished);               // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,12050) /* FMulticastInlineDelegate */ __um(OnCheatEmotionIndexChanged);                       // 0x00D8   (0x0010)  
 	EJunoPawnEmotionalState                            CurrentEmotionalState;                                      // 0x00E8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00E9   (0x0003)  MISSED
 	FJunoEmotionalStateData                            TargetEmotionalState;                                       // 0x00EC   (0x0010)  
@@ -7769,23 +7911,23 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.SetEmotionalState
-	// void SetEmotionalState(FJunoEmotionalStateData Emotion);                                                              // [0xbac9ea0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetEmotionalState(FJunoEmotionalStateData Emotion);                                                              // [0xbde3cfc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.SetCurrentEmotionalState
-	// void SetCurrentEmotionalState(EJunoPawnEmotionalState NewEmotion);                                                    // [0xbac9e20] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetCurrentEmotionalState(EJunoPawnEmotionalState NewEmotion);                                                    // [0xbde3c3c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.ResetToDefaultEmotionalState
-	// void ResetToDefaultEmotionalState();                                                                                  // [0xbac9470] Final|Native|Private 
+	// void ResetToDefaultEmotionalState();                                                                                  // [0xbde3530] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.OnRep_TargetEmotionalState
-	// void OnRep_TargetEmotionalState();                                                                                    // [0xbac934c] Final|Native|Private 
+	// void OnRep_TargetEmotionalState();                                                                                    // [0xbde33cc] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.OnRep_CurrentEmotionalState
-	// void OnRep_CurrentEmotionalState();                                                                                   // [0xbac92e0] Final|Native|Private 
+	// void OnRep_CurrentEmotionalState();                                                                                   // [0xbde3360] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.OnRep_CheatEmotionIndex
-	// void OnRep_CheatEmotionIndex();                                                                                       // [0xbac92ac] Final|Native|Private 
+	// void OnRep_CheatEmotionIndex();                                                                                       // [0xbde332c] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.HandleJunoAwesomeLevelChanged
-	// void HandleJunoAwesomeLevelChanged(FJunoAwesomeLevelChangeData& ChangeData);                                          // [0xbac8f78] Final|Native|Private|HasOutParms 
+	// void HandleJunoAwesomeLevelChanged(FJunoAwesomeLevelChangeData& ChangeData);                                          // [0xbde2f44] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.GetCurrentEmotionalStateValue
-	// float GetCurrentEmotionalStateValue();                                                                                // [0xbac8620] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentEmotionalStateValue();                                                                                // [0xbde233c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoGameNative.JunoPawnComponent_EmotionalState.GetCurrentEmotionalState
-	// EJunoPawnEmotionalState GetCurrentEmotionalState();                                                                   // [0xbac8608] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoPawnEmotionalState GetCurrentEmotionalState();                                                                   // [0xbde2324] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoPawnPhysicsRepulsionComponent
@@ -7799,33 +7941,35 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPawnPhysicsRepulsionComponent.SetCapsuleMass
-	// void SetCapsuleMass(float InBaseForce);                                                                               // [0xbac9d98] Final|Native|Public|BlueprintCallable 
+	// void SetCapsuleMass(float InBaseForce);                                                                               // [0xbde3b70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoPawnPhysicsRepulsionComponent.HandleMovementModeChanged
-	// void HandleMovementModeChanged(TEnumAsByte<EMovementMode> MovementMode, char CustomMode);                             // [0xbac90cc] Final|Native|Private 
+	// void HandleMovementModeChanged(TEnumAsByte<EMovementMode> MovementMode, char CustomMode);                             // [0xbde3110] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnPhysicsRepulsionComponent.HandleMovementBaseChanged
-	// void HandleMovementBaseChanged(class UPrimitiveComponent* NewBaseComponent, FName BoneName);                          // [0xbac9008] Final|Native|Private 
+	// void HandleMovementBaseChanged(class UPrimitiveComponent* NewBaseComponent, FName BoneName);                          // [0xbde2fd4] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnPhysicsRepulsionComponent.HandleHeldObjectChanged
-	// void HandleHeldObjectChanged(class AActor* HeldObject);                                                               // [0xbac8efc] Final|Native|Private 
+	// void HandleHeldObjectChanged(class AActor* HeldObject);                                                               // [0xbde2e88] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnPhysicsRepulsionComponent.HandleComponentPhysicsStateChange
-	// void HandleComponentPhysicsStateChange(class UPrimitiveComponent* ChangedComponent, EComponentPhysicsStateChange StateChange); // [0xbac8d10] Final|Native|Private 
+	// void HandleComponentPhysicsStateChange(class UPrimitiveComponent* ChangedComponent, EComponentPhysicsStateChange StateChange); // [0xbde2be0] Final|Native|Private 
 	// Function /Script/JunoGameNative.JunoPawnPhysicsRepulsionComponent.HandleComponentHit
-	// void HandleComponentHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0xbac8950] Final|Native|Private|HasOutParms|HasDefaults 
+	// void HandleComponentHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0xbde27a4] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/JunoGameNative.JunoPawnPhysicsRepulsionComponent.GetCapsuleMass
-	// float GetCapsuleMass();                                                                                               // [0x63b1c64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCapsuleMass();                                                                                               // [0x60da51c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoPlayerState
-/// Size: 0x0020 (0x001888 - 0x0018A8)
+/// Size: 0x0028 (0x001888 - 0x0018B0)
 class AJunoPlayerState : public AFortPlayerStateAthena
 { 
 public:
 	FGuid                                              CaveId;                                                     // 0x1888   (0x0010)  
 	TArray<FLinearColor>                               PinColorForPlayer;                                          // 0x1898   (0x0010)  
+	FGameplayTag                                       GameplayTagPresentWhenTeleporting;                          // 0x18A8   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x18AC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoPlayerState.GetCaveId
-	// FGuid GetCaveId();                                                                                                    // [0xbafe94c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FGuid GetCaveId();                                                                                                    // [0xbde2308] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoWorldStreamingSourceProviderInterface
@@ -7875,7 +8019,7 @@ class UJunoClusterUnionCustomRepNode : public UFortReplicationGraphNode_Custom
 { 
 public:
 	TArray<class AJunoClusterUnionActor*>              AllClusterUnions;                                           // 0x0050   (0x0010)  
-	SDK_UNDEFINED(80,12014) /* TSet<AJunoClusterUnionActor*> */ __um(FlushedClusterUnionsWhenIrrelevant);          // 0x0060   (0x0050)  
+	SDK_UNDEFINED(80,12051) /* TSet<AJunoClusterUnionActor*> */ __um(FlushedClusterUnionsWhenIrrelevant);          // 0x0060   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x00B0   (0x0010)  MISSED
 };
 
@@ -7888,7 +8032,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoAction.K2_OnExecuteAction
-	// void K2_OnExecuteAction(FJunoActionTargetPayload& ActionTargetPayload, class UJunoActionConfig* Config);              // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void K2_OnExecuteAction(FJunoActionTargetPayload& ActionTargetPayload, class UJunoActionConfig* Config);              // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoAction_SetStaticMesh
@@ -7916,17 +8060,19 @@ public:
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingActorMetric
-/// Size: 0x0130 (0x000040 - 0x000170)
+/// Size: 0x01D8 (0x000058 - 0x000230)
 class UJunoBuildingActorMetric : public USpatialMetric
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0040   (0x0008)  MISSED
-	FScalableFloat                                     MinValue;                                                   // 0x0048   (0x0028)  
-	FScalableFloat                                     NetworkRelevantActorCountThreshold;                         // 0x0070   (0x0028)  
-	FScalableFloat                                     SpatialPrecision;                                           // 0x0098   (0x0028)  
-	SDK_UNDEFINED(80,12015) /* TMap<FJunoTrackedActorKey, FJunoRelevantActorTrackingData> */ __um(ActorCounts);    // 0x00C0   (0x0050)  
-	SDK_UNDEFINED(80,12016) /* TSet<FJunoTrackedActor> */ __um(TrackedActors);                                     // 0x0110   (0x0050)  
-	TArray<class UClass*>                              TrackedClasses;                                             // 0x0160   (0x0010)  
+	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0058   (0x0010)  MISSED
+	FScalableFloat                                     MinValue;                                                   // 0x0068   (0x0028)  
+	FScalableFloat                                     NetworkRelevantActorCountThreshold;                         // 0x0090   (0x0028)  
+	FScalableFloat                                     SpatialPrecision;                                           // 0x00B8   (0x0028)  
+	SDK_UNDEFINED(80,12052) /* TMap<FJunoTrackedActorKey, FJunoRelevantActorTrackingData> */ __um(ActorCounts);    // 0x00E0   (0x0050)  
+	SDK_UNDEFINED(80,12053) /* TSet<FJunoTrackedActor> */ __um(TrackedActors);                                     // 0x0130   (0x0050)  
+	TArray<class UClass*>                              TrackedClasses;                                             // 0x0180   (0x0010)  
+	SDK_UNDEFINED(80,12054) /* TSet<FJunoTrackedActorRefreshmentOptions> */ __um(PendingRefreshments);             // 0x0190   (0x0050)  
+	SDK_UNDEFINED(80,12055) /* TSet<TWeakObjectPtr<AActor*>> */ __um(ActorsPendingAdd);                            // 0x01E0   (0x0050)  
 };
 
 /// Class /Script/JunoGameNative.JunoBuildingSpatialMetricComponent
@@ -7934,8 +8080,8 @@ public:
 class UJunoBuildingSpatialMetricComponent : public UGameStateComponent
 { 
 public:
-	SDK_UNDEFINED(32,12017) /* TWeakObjectPtr<UClass*> */ __um(JunoBuildingMetricClass);                           // 0x00A0   (0x0020)  
-	SDK_UNDEFINED(8,12018) /* TWeakObjectPtr<UJunoBuildingActorMetric*> */ __um(JunoBuildingMetric);               // 0x00C0   (0x0008)  
+	SDK_UNDEFINED(32,12056) /* TWeakObjectPtr<UClass*> */ __um(JunoBuildingMetricClass);                           // 0x00A0   (0x0020)  
+	SDK_UNDEFINED(8,12057) /* TWeakObjectPtr<UJunoBuildingActorMetric*> */ __um(JunoBuildingMetric);               // 0x00C0   (0x0008)  
 };
 
 /// Class /Script/JunoGameNative.JunoAssetList
@@ -7955,61 +8101,63 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.SpawnPersistentActor
-	// class AActor* SpawnPersistentActor(class UObject* WorldContextObject, class UClass*& ActorClass, FTransform& SpawnTransform, class APawn* Instigator, class AJunoPersistentPlayspace* Playspace, FGameplayTagQuery PlayspaceTagQuery); // [0xbb00878] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class AActor* SpawnPersistentActor(class UObject* WorldContextObject, class UClass*& ActorClass, FTransform& SpawnTransform, class APawn* Instigator, class AJunoPersistentPlayspace* Playspace, FGameplayTagQuery PlayspaceTagQuery); // [0xbe11c20] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.SetGeometryCollectionISMPoolCustomInstanceData
-	// void SetGeometryCollectionISMPoolCustomInstanceData(class UGeometryCollectionComponent* GeometryCollectionComponent, int32_t CustomDataIndex, float CustomDataValue); // [0xbb00740] Final|Native|Static|Public|BlueprintCallable 
+	// void SetGeometryCollectionISMPoolCustomInstanceData(class UGeometryCollectionComponent* GeometryCollectionComponent, int32_t CustomDataIndex, float CustomDataValue); // [0xbe11a24] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.JunoForEachActorComponentConstDelegate__DelegateSignature
-	// void JunoForEachActorComponentConstDelegate__DelegateSignature(class UActorComponent* Component);                     // [0x211c0a0] Public|Delegate      
+	// void JunoForEachActorComponentConstDelegate__DelegateSignature(class UActorComponent* Component);                     // [0x2047e54] Public|Delegate      
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.IsFreshWorld
-	// bool IsFreshWorld(class UObject* WorldContextObject);                                                                 // [0xbaffd70] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// bool IsFreshWorld(class UObject* WorldContextObject);                                                                 // [0xbe10d9c] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.IsFirstPlayerSpawn
-	// bool IsFirstPlayerSpawn(class AFortPlayerPawn* PlayerPawn);                                                           // [0xbaffcf0] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// bool IsFirstPlayerSpawn(class AFortPlayerPawn* PlayerPawn);                                                           // [0xbe10cdc] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetWorldStartPosition
-	// void GetWorldStartPosition(class UObject* WorldContextObject, FVector& Location, bool& bIsReady);                     // [0xbaffb9c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetWorldStartPosition(class UObject* WorldContextObject, FVector& Location, bool& bIsReady);                     // [0xbe10ac8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetPreviewSmartObjectEntranceLocationsWithValidation
-	// bool GetPreviewSmartObjectEntranceLocationsWithValidation(class UObject* WorldContextObject, FTransform& WorldTransform, class USmartObjectDefinition* SmartObjectDefinition, class AActor* SkipActor, FSmartObjectSlotEntranceLocationRequest& Request, TArray<FSmartObjectSlotEntranceLocationResult>& Results); // [0xbaff82c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GetPreviewSmartObjectEntranceLocationsWithValidation(class UObject* WorldContextObject, FTransform& WorldTransform, class USmartObjectDefinition* SmartObjectDefinition, class AActor* SkipActor, FSmartObjectSlotEntranceLocationRequest& Request, TArray<FSmartObjectSlotEntranceLocationResult>& Results); // [0xbe10714] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetPreviewSmartObjectEntranceLocations
-	// bool GetPreviewSmartObjectEntranceLocations(FTransform& WorldTransform, class USmartObjectDefinition* SmartObjectDefinition, TArray<FSmartObjectSlotEntranceLocationResult>& Results); // [0xbaff4a0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GetPreviewSmartObjectEntranceLocations(FTransform& WorldTransform, class USmartObjectDefinition* SmartObjectDefinition, TArray<FSmartObjectSlotEntranceLocationResult>& Results); // [0xbe10388] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetPlayspaceComponentFromPlayspace
-	// class UPlayspaceComponent* GetPlayspaceComponentFromPlayspace(class AActor* Actor, class UClass* ComponentClass, class UClass* PlayspaceClass); // [0xbaff318] Final|Native|Static|Public|BlueprintCallable 
+	// class UPlayspaceComponent* GetPlayspaceComponentFromPlayspace(class AActor* Actor, class UClass* ComponentClass, class UClass* PlayspaceClass); // [0xbe10030] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetPlayspaceComponentByInterface
-	// class UPlayspaceComponent* GetPlayspaceComponentByInterface(class AActor* Actor, class UClass* InterfaceClass, class UClass* PlayspaceClass); // [0xbaff164] Final|Native|Static|Public|BlueprintCallable 
+	// class UPlayspaceComponent* GetPlayspaceComponentByInterface(class AActor* Actor, class UClass* InterfaceClass, class UClass* PlayspaceClass); // [0xbe0fcb0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetPlayerSaveData
-	// FJunoPlayerSaveData GetPlayerSaveData(class AController* PlayerController, bool& bIsValid);                           // [0xbafef9c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FJunoPlayerSaveData GetPlayerSaveData(class AController* PlayerController, bool& bIsValid);                           // [0xbe0faa4] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetMergedMeshComponents
-	// TArray<UPrimitiveComponent*> GetMergedMeshComponents(class UObject* WorldContextObject);                              // [0xbafef08] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<UPrimitiveComponent*> GetMergedMeshComponents(class UObject* WorldContextObject);                              // [0xbe0f9d0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetMapManagerComponent
-	// class UJunoMapManagerComponent* GetMapManagerComponent(class UObject* WorldContextObject);                            // [0xbafee88] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UJunoMapManagerComponent* GetMapManagerComponent(class UObject* WorldContextObject);                            // [0xbe0f910] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetKnownCraftingRecipes
-	// void GetKnownCraftingRecipes(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FName>& OutFormulas); // [0xbafebf8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetKnownCraftingRecipes(class AFortPlayerController* FortPC, class AActor* CraftingObject, TArray<FName>& OutFormulas); // [0xbe0f600] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetIsWorldOwner
-	// bool GetIsWorldOwner(class AFortPlayerController* PC);                                                                // [0xbafeb78] Final|Native|Static|Public|BlueprintCallable 
+	// bool GetIsWorldOwner(class AFortPlayerController* PC);                                                                // [0xbe0f540] Final|Native|Static|Public|BlueprintCallable 
+	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetIsWorldKeyHolder
+	// bool GetIsWorldKeyHolder(class AFortPlayerController* PC);                                                            // [0xbe0f480] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetDistanceToWorldStartPosition
-	// double GetDistanceToWorldStartPosition(class UObject* WorldContextObject, FVector& Location, bool& bIsReady);         // [0xbafea20] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// double GetDistanceToWorldStartPosition(class UObject* WorldContextObject, FVector& Location, bool& bIsReady);         // [0xbe0f2e4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetCountOfResourcesInAIResourcesInventory
-	// int32_t GetCountOfResourcesInAIResourcesInventory(class AActor* AIActor);                                             // [0xbafe968] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetCountOfResourcesInAIResourcesInventory(class AActor* AIActor);                                             // [0xbe0f1ec] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetBoneIndex
-	// int32_t GetBoneIndex(class USkeletalMesh* SkeletalMesh, FName BoneName);                                              // [0xbafe85c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetBoneIndex(class USkeletalMesh* SkeletalMesh, FName BoneName);                                              // [0xbe0f084] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetBiomeInformationForActor
-	// void GetBiomeInformationForActor(class AActor* Actor, FJunoBiomeInfoQueryResult& OutResult);                          // [0xbafe6ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetBiomeInformationForActor(class AActor* Actor, FJunoBiomeInfoQueryResult& OutResult);                          // [0xbe0ee94] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetBiomeInformationAtLocation
-	// void GetBiomeInformationAtLocation(class UObject* WorldContextObject, FVector& Location, FJunoBiomeInfoQueryResult& OutResult); // [0xbafe54c] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetBiomeInformationAtLocation(class UObject* WorldContextObject, FVector& Location, FJunoBiomeInfoQueryResult& OutResult); // [0xbe0ed00] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetBiomeForActor
-	// void GetBiomeForActor(class AActor* Actor, EJunoBiome& OutResult);                                                    // [0xbafe398] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetBiomeForActor(class AActor* Actor, EJunoBiome& OutResult);                                                    // [0xbe0eb08] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetAMSCustomizableObjectInstance
-	// class UCustomizableObjectInstance* GetAMSCustomizableObjectInstance(class AActor* Actor);                             // [0xbafe23c] Final|Native|Static|Public|BlueprintCallable 
+	// class UCustomizableObjectInstance* GetAMSCustomizableObjectInstance(class AActor* Actor);                             // [0xbe0e92c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetAMSAnimDataAssetsFromActor
-	// bool GetAMSAnimDataAssetsFromActor(class AActor* Actor, FAssembledMeshSchemaData_AnimDataAssets& AnimData);           // [0xbafe12c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetAMSAnimDataAssetsFromActor(class AActor* Actor, FAssembledMeshSchemaData_AnimDataAssets& AnimData);           // [0xbe0e7d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetAMSAnimDataAssets
-	// bool GetAMSAnimDataAssets(class AFortPlayerPawn* FortPlayerPawn, FAssembledMeshSchemaData_AnimDataAssets& AnimData);  // [0xbafe12c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetAMSAnimDataAssets(class AFortPlayerPawn* FortPlayerPawn, FAssembledMeshSchemaData_AnimDataAssets& AnimData);  // [0xbe0e7d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.GetActorPersistentPlayspace
-	// class AJunoPersistentPlayspace* GetActorPersistentPlayspace(class AActor* Actor);                                     // [0xbafe2e8] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// class AJunoPersistentPlayspace* GetActorPersistentPlayspace(class AActor* Actor);                                     // [0xbe0ea18] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.ForEachComponentOfActorClassDefault
-	// void ForEachComponentOfActorClassDefault(class UClass*& ActorClass, class UClass*& ComponentClass, FDelegateProperty& Func); // [0xbafdfd0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ForEachComponentOfActorClassDefault(class UClass*& ActorClass, class UClass*& ComponentClass, FDelegateProperty& Func); // [0xbe0e674] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.CostlyFindAIDisplayNameFromUniqueAIIdentifier
-	// FText CostlyFindAIDisplayNameFromUniqueAIIdentifier(class UObject* WorldContextObject, FGameplayTag& UniqueAIIdentifier); // [0xbafdebc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText CostlyFindAIDisplayNameFromUniqueAIIdentifier(class UObject* WorldContextObject, FGameplayTag& UniqueAIIdentifier); // [0xbe0e528] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoGameNative.JunoBlueprintLibrary.BreakHitResultThreadSafe
-	// void BreakHitResultThreadSafe(FHitResult& Hit, bool& bBlockingHit, bool& bInitialOverlap, float& Time, float& Distance, FVector& Location, FVector& ImpactPoint, FVector& Normal, FVector& ImpactNormal, class UPhysicalMaterial*& PhysMat, class AActor*& HitActor, class UPrimitiveComponent*& HitComponent, FName& HitBoneName, FName& BoneName, int32_t& HitItem, int32_t& ElementIndex, int32_t& FaceIndex, FVector& TraceStart, FVector& TraceEnd); // [0xbafd6c4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void BreakHitResultThreadSafe(FHitResult& Hit, bool& bBlockingHit, bool& bInitialOverlap, float& Time, float& Distance, FVector& Location, FVector& ImpactPoint, FVector& Normal, FVector& ImpactNormal, class UPhysicalMaterial*& PhysMat, class AActor*& HitActor, class UPrimitiveComponent*& HitComponent, FName& HitBoneName, FName& BoneName, int32_t& HitItem, int32_t& ElementIndex, int32_t& FaceIndex, FVector& TraceStart, FVector& TraceEnd); // [0xbe0dd30] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoGameNative.JunoCheatManager
@@ -8021,101 +8169,109 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoUpdateWorldLastAccessTime
-	// void JunoUpdateWorldLastAccessTime(FString JunoWorldId);                                                              // [0x8c0e6d0] Final|Exec|Native|Private 
+	// void JunoUpdateWorldLastAccessTime(FString JunoWorldId);                                                              // [0x8c1108c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoTurnOnWorldSetting
-	// void JunoTurnOnWorldSetting(FName WorldSetting);                                                                      // [0x86fce54] Final|Exec|Native|Private 
+	// void JunoTurnOnWorldSetting(FName WorldSetting);                                                                      // [0x86a3a74] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoTurnOffWorldSetting
-	// void JunoTurnOffWorldSetting(FName WorldSetting);                                                                     // [0x86fce54] Final|Exec|Native|Private 
+	// void JunoTurnOffWorldSetting(FName WorldSetting);                                                                     // [0x86a3a74] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoTransitionWeatherNow
-	// void JunoTransitionWeatherNow(FName OptionalLocation);                                                                // [0x86fce54] Final|Exec|Native|Private 
+	// void JunoTransitionWeatherNow(FName OptionalLocation);                                                                // [0x86a3a74] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoToggleKnowledgeFiltering
-	// void JunoToggleKnowledgeFiltering();                                                                                  // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoToggleKnowledgeFiltering();                                                                                  // [0x307d48c] Final|Exec|Native|Private 
+	// Function /Script/JunoGameNative.JunoCheatManager.JunoToggleKnowledgeDebugMenu
+	// void JunoToggleKnowledgeDebugMenu();                                                                                  // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoToggleFreeCrafting
-	// void JunoToggleFreeCrafting();                                                                                        // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoToggleFreeCrafting();                                                                                        // [0x307d48c] Final|Exec|Native|Private 
+	// Function /Script/JunoGameNative.JunoCheatManager.JunoTeleportToPersistenceLocationOfInterest
+	// void JunoTeleportToPersistenceLocationOfInterest();                                                                   // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoShowDualLocalPlayerInventory
-	// void JunoShowDualLocalPlayerInventory();                                                                              // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoShowDualLocalPlayerInventory();                                                                              // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoSetEmotion
-	// void JunoSetEmotion(int32_t EmotionIndex);                                                                            // [0x6695f1c] Final|Exec|Native|Private 
+	// void JunoSetEmotion(int32_t EmotionIndex);                                                                            // [0x63da070] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoSavePersistenceDataCsvReport
-	// void JunoSavePersistenceDataCsvReport();                                                                              // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoSavePersistenceDataCsvReport();                                                                              // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoRevealRecipesOfCategory
-	// void JunoRevealRecipesOfCategory(FName CraftingObjectTag, FName CategoryTag, FName SubCategoryTag);                   // [0xbb00660] Final|Exec|Native|Private 
+	// void JunoRevealRecipesOfCategory(FName CraftingObjectTag, FName CategoryTag, FName SubCategoryTag);                   // [0xbe11884] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoRevealRecipe
-	// void JunoRevealRecipe(FName RecipeName);                                                                              // [0x86fce54] Final|Exec|Native|Private 
+	// void JunoRevealRecipe(FName RecipeName);                                                                              // [0x86a3a74] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoRevealBuildingTestRecipes
-	// void JunoRevealBuildingTestRecipes();                                                                                 // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoRevealBuildingTestRecipes();                                                                                 // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoResaveAllPersistentPlayspacesActorsAroundPlayer
-	// void JunoResaveAllPersistentPlayspacesActorsAroundPlayer(float Max2DDistance);                                        // [0x6456a9c] Final|Exec|Native|Private 
+	// void JunoResaveAllPersistentPlayspacesActorsAroundPlayer(float Max2DDistance);                                        // [0x6189d50] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoResaveAllPersistentPlayspacesActors
-	// void JunoResaveAllPersistentPlayspacesActors();                                                                       // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoResaveAllPersistentPlayspacesActors();                                                                       // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoProfiler_Item
-	// void JunoProfiler_Item();                                                                                             // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoProfiler_Item();                                                                                             // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoProfiler_Creature
-	// void JunoProfiler_Creature();                                                                                         // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoProfiler_Creature();                                                                                         // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoProfiler_BuildingSuburb
-	// void JunoProfiler_BuildingSuburb(int32_t NumBuildings);                                                               // [0x6695f1c] Final|Exec|Native|Private 
+	// void JunoProfiler_BuildingSuburb(int32_t NumBuildings);                                                               // [0x63da070] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoProfiler_BuildingJunkyard
-	// void JunoProfiler_BuildingJunkyard(int32_t NumBuildings);                                                             // [0x6695f1c] Final|Exec|Native|Private 
+	// void JunoProfiler_BuildingJunkyard(int32_t NumBuildings);                                                             // [0x63da070] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoProfiler_BuildingActor
-	// void JunoProfiler_BuildingActor();                                                                                    // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoProfiler_BuildingActor();                                                                                    // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoProcessPlayerProgression
-	// void JunoProcessPlayerProgression();                                                                                  // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoProcessPlayerProgression();                                                                                  // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoPrintWorldSettings
-	// void JunoPrintWorldSettings();                                                                                        // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoPrintWorldSettings();                                                                                        // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoPrintPersistenceDataReport
-	// void JunoPrintPersistenceDataReport(bool bShowTemplateData, bool bShowActorInstanceData, bool bShowJunoUpdateActions, bool bShowJunoDeleteActions); // [0xbb00540] Final|Exec|Native|Private 
+	// void JunoPrintPersistenceDataReport(bool bShowTemplateData, bool bShowActorInstanceData, bool bShowJunoUpdateActions, bool bShowJunoDeleteActions); // [0xbe1166c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoPrintConnectivityGraphSummary
-	// void JunoPrintConnectivityGraphSummary();                                                                             // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoPrintConnectivityGraphSummary();                                                                             // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoPrintAreaAwesomeLevelInfo
-	// void JunoPrintAreaAwesomeLevelInfo();                                                                                 // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoPrintAreaAwesomeLevelInfo();                                                                                 // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoLogPersistenceDebugInfo
-	// void JunoLogPersistenceDebugInfo();                                                                                   // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoLogPersistenceDebugInfo();                                                                                   // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoListWorlds
-	// void JunoListWorlds();                                                                                                // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoListWorlds();                                                                                                // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoGiveWeapon
-	// void JunoGiveWeapon(FString WeaponPath);                                                                              // [0x8c0e6d0] Final|Exec|Native|Private|Const 
+	// void JunoGiveWeapon(FString WeaponPath);                                                                              // [0x8c1108c] Final|Exec|Native|Private|Const 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoForceWeatherState
-	// void JunoForceWeatherState(FName NewWeatherType, FName OptionalLocation);                                             // [0x6865f0c] Final|Exec|Native|Private 
+	// void JunoForceWeatherState(FName NewWeatherType, FName OptionalLocation);                                             // [0x65b7298] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoForcePlayerTemperature
-	// void JunoForcePlayerTemperature(FName NewTemperatureTag);                                                             // [0x86fce54] Final|Exec|Native|Private 
+	// void JunoForcePlayerTemperature(FName NewTemperatureTag);                                                             // [0x86a3a74] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoEnableSpawnedActorPersistentPlayspaceTracking
-	// void JunoEnableSpawnedActorPersistentPlayspaceTracking(FName ActorName);                                              // [0x86fce54] Final|Exec|Native|Private 
+	// void JunoEnableSpawnedActorPersistentPlayspaceTracking(FName ActorName);                                              // [0x86a3a74] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoEnableModeratorMode
-	// void JunoEnableModeratorMode();                                                                                       // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoEnableModeratorMode();                                                                                       // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoEnableFreeBuild
-	// void JunoEnableFreeBuild();                                                                                           // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoEnableFreeBuild();                                                                                           // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoDumpWorldPersistentContents
-	// void JunoDumpWorldPersistentContents();                                                                               // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoDumpWorldPersistentContents();                                                                               // [0x307d48c] Final|Exec|Native|Private 
+	// Function /Script/JunoGameNative.JunoCheatManager.JunoDumpAllDeltasAssetReferences
+	// void JunoDumpAllDeltasAssetReferences();                                                                              // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoDisableModeratorMode
-	// void JunoDisableModeratorMode();                                                                                      // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoDisableModeratorMode();                                                                                      // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoDisableFreeBuild
-	// void JunoDisableFreeBuild();                                                                                          // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoDisableFreeBuild();                                                                                          // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoDestroyCurrentVillage
-	// void JunoDestroyCurrentVillage();                                                                                     // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoDestroyCurrentVillage();                                                                                     // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoDestroyAllSupportStructures
-	// void JunoDestroyAllSupportStructures();                                                                               // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoDestroyAllSupportStructures();                                                                               // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoDeleteWorld
-	// void JunoDeleteWorld(FString JunoWorldId);                                                                            // [0x8c0e6d0] Final|Exec|Native|Private 
+	// void JunoDeleteWorld(FString JunoWorldId);                                                                            // [0x8c1108c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoDeleteAllWorlds
-	// void JunoDeleteAllWorlds();                                                                                           // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoDeleteAllWorlds();                                                                                           // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoCreateNewWorld
-	// void JunoCreateNewWorld(FString Title, int32_t AdventureSeed, FString WorldDevMetadata);                              // [0xbaffdf0] Final|Exec|Native|Private 
+	// void JunoCreateNewWorld(FString Title, int32_t AdventureSeed, FString WorldDevMetadata);                              // [0xbe10e5c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoCreateCurrentWorldCheckpoint
-	// void JunoCreateCurrentWorldCheckpoint();                                                                              // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoCreateCurrentWorldCheckpoint();                                                                              // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoCompleteGuidedBuild
-	// void JunoCompleteGuidedBuild();                                                                                       // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoCompleteGuidedBuild();                                                                                       // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoClearKnowledgeCloudSave
-	// void JunoClearKnowledgeCloudSave();                                                                                   // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoClearKnowledgeCloudSave();                                                                                   // [0x307d48c] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoClearFOW
-	// void JunoClearFOW(bool bForCurrentTile);                                                                              // [0x60325ec] Final|Exec|Native|Private 
+	// void JunoClearFOW(bool bForCurrentTile);                                                                              // [0x5d35ffc] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoClearClientFOW
-	// void JunoClearClientFOW(bool bForCurrentTile);                                                                        // [0x60325ec] Final|Exec|Native|Private 
+	// void JunoClearClientFOW(bool bForCurrentTile);                                                                        // [0x5d35ffc] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoCheckInWorldSaveDataAndExitPIE
-	// void JunoCheckInWorldSaveDataAndExitPIE();                                                                            // [0x32e4b44] Final|Exec|Native|Private 
+	// void JunoCheckInWorldSaveDataAndExitPIE();                                                                            // [0x307d48c] Final|Exec|Native|Private 
+	// Function /Script/JunoGameNative.JunoCheatManager.JunoApplyDamageToRadius
+	// void JunoApplyDamageToRadius(float Radius, float DamageToApply);                                                      // [0x809fc60] Final|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoAdjustAreaAwesomePoints
-	// void JunoAdjustAreaAwesomePoints(int32_t AwesomePointsDelta);                                                         // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoAdjustAreaAwesomePoints(int32_t AwesomePointsDelta);                                                         // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoGameNative.JunoCheatManager.JunoAddEssence
-	// void JunoAddEssence(FString EssencePath);                                                                             // [0x8c0e6d0] Final|Exec|Native|Private|Const 
+	// void JunoAddEssence(FString EssencePath);                                                                             // [0x8c1108c] Final|Exec|Native|Private|Const 
 };
 
 /// Class /Script/JunoGameNative.JunoGlobals
@@ -8178,7 +8334,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.JunoWorldConditionWeatherState.HandleWeatherChanged
-	// void HandleWeatherChanged(FJunoEvent_WeatherPhaseChanged& Payload);                                                   // [0xbb0ae44] Final|Native|Private|HasOutParms 
+	// void HandleWeatherChanged(FJunoEvent_WeatherPhaseChanged& Payload);                                                   // [0xbe10c50] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/JunoGameNative.BlockOctreeManager
@@ -8190,7 +8346,7 @@ public:
 	int32_t                                            MaxISMCsToPopulateAFrame;                                   // 0x0294   (0x0004)  
 	bool                                               bRenderAllBricks;                                           // 0x0298   (0x0001)  
 	unsigned char                                      UnknownData00_5[0xA7];                                      // 0x0299   (0x00A7)  MISSED
-	SDK_UNDEFINED(80,12019) /* TMap<int32_t, UInstancedStaticMeshComponent*> */ __um(CellIdToISMC);                // 0x0340   (0x0050)  
+	SDK_UNDEFINED(80,12058) /* TMap<int32_t, UInstancedStaticMeshComponent*> */ __um(CellIdToISMC);                // 0x0340   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0390   (0x0010)  MISSED
 	class UInstancedStaticMeshComponent*               ISMC;                                                       // 0x03A0   (0x0008)  
 	TArray<class UInstancedStaticMeshComponent*>       ISMCFreeList;                                               // 0x03A8   (0x0010)  
@@ -8202,7 +8358,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.BlockOctreeManager.Towers
-	// void Towers(int32_t Rows, int32_t Cols);                                                                              // [0xbb0af64] Final|Native|Public|BlueprintCallable 
+	// void Towers(int32_t Rows, int32_t Cols);                                                                              // [0xbe16730] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoGameNative.StressISMManager
@@ -8222,11 +8378,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoGameNative.StressISMManager.Towers
-	// void Towers(int32_t Rows, int32_t Cols, int32_t Height);                                                              // [0xbb0b024] Final|Native|Public|BlueprintCallable 
+	// void Towers(int32_t Rows, int32_t Cols, int32_t Height);                                                              // [0xbe1686c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.StressISMManager.SetNumChildISMC
-	// void SetNumChildISMC(int32_t Num);                                                                                    // [0xbb0aee4] Final|Native|Public|BlueprintCallable 
+	// void SetNumChildISMC(int32_t Num);                                                                                    // [0xbe16670] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameNative.StressISMManager.PushUpdatesToISMC
-	// void PushUpdatesToISMC();                                                                                             // [0xbb0aed0] Final|Native|Public|BlueprintCallable 
+	// void PushUpdatesToISMC();                                                                                             // [0xbe1665c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/JunoGameNative.SoundBreakEvent
@@ -8342,7 +8498,7 @@ struct FJunoWeatherLocationChangedEvent
 /// Size: 0x0008 (0x000000 - 0x000008)
 struct FGuidedBuildingMessageBase
 { 
-	SDK_UNDEFINED(8,12020) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(GuidedBuildingActor);              // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12059) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(GuidedBuildingActor);              // 0x0000   (0x0008)  
 };
 
 /// Struct /Script/JunoGameNative.GuidedBuildingUpdate
@@ -8367,7 +8523,7 @@ struct FGuidedBuildingUpdate : FGuidedBuildingMessageBase
 /// Size: 0x004F (0x000001 - 0x000050)
 struct FAssembledMeshSchemaData_AnimDataAssets : FAssembledMeshSchemaData
 { 
-	SDK_UNDEFINED(80,12021) /* TMap<FName, UPrimaryDataAsset*> */ __um(DataAssetMap);                              // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12060) /* TMap<FName, UPrimaryDataAsset*> */ __um(DataAssetMap);                              // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBiomeInfoQueryResult
@@ -8556,6 +8712,13 @@ struct FJunoEvent_OpenInventoryMenuMessage
 	class AFortPlayerController*                       SourceController;                                           // 0x0000   (0x0008)  
 };
 
+/// Struct /Script/JunoGameNative.JunoEvent_OpenEngagementMenuMessage
+/// Size: 0x0001 (0x000000 - 0x000001)
+struct FJunoEvent_OpenEngagementMenuMessage
+{ 
+	unsigned char                                      UnknownData00_1[0x1];                                       // 0x0000   (0x0001)  MISSED
+};
+
 /// Struct /Script/JunoGameNative.JunoEvent_OpenBedAssignmentMenuMessage
 /// Size: 0x0008 (0x000000 - 0x000008)
 struct FJunoEvent_OpenBedAssignmentMenuMessage
@@ -8593,10 +8756,10 @@ struct FJunoEvent_InventoryMenuOpen
 };
 
 /// Struct /Script/JunoGameNative.JunoEvent_EmptyHands
-/// Size: 0x0001 (0x000000 - 0x000001)
+/// Size: 0x000C (0x000000 - 0x00000C)
 struct FJunoEvent_EmptyHands
 { 
-	unsigned char                                      UnknownData00_1[0x1];                                       // 0x0000   (0x0001)  MISSED
+	unsigned char                                      UnknownData00_1[0xC];                                       // 0x0000   (0x000C)  MISSED
 };
 
 /// Struct /Script/JunoGameNative.JunoEvent_FreeBuildItemSpawned
@@ -8626,18 +8789,18 @@ struct FJunoAccountItemConversionRow : FTableRowBase
 	float                                              FrontendPreviewScale;                                       // 0x0034   (0x0004)  
 	FVector                                            FrontendPreviewPivotOffset;                                 // 0x0038   (0x0018)  
 	FRotator                                           FrontendPreviewInitialRotation;                             // 0x0050   (0x0018)  
-	SDK_UNDEFINED(32,12022) /* TWeakObjectPtr<UClass*> */ __um(PreviewActorClass);                                 // 0x0068   (0x0020)  
+	SDK_UNDEFINED(32,12061) /* TWeakObjectPtr<UClass*> */ __um(PreviewActorClass);                                 // 0x0068   (0x0020)  
 };
 
 /// Struct /Script/JunoGameNative.JunoEmoteConversionRow
 /// Size: 0x00C8 (0x000088 - 0x000150)
 struct FJunoEmoteConversionRow : FJunoAccountItemConversionRow
 { 
-	SDK_UNDEFINED(32,12023) /* TWeakObjectPtr<UAnimMontage*> */ __um(Animation);                                   // 0x0088   (0x0020)  
-	SDK_UNDEFINED(32,12024) /* TWeakObjectPtr<UAnimMontage*> */ __um(AnimationFemaleOverride);                     // 0x00A8   (0x0020)  
+	SDK_UNDEFINED(32,12062) /* TWeakObjectPtr<UAnimMontage*> */ __um(Animation);                                   // 0x0088   (0x0020)  
+	SDK_UNDEFINED(32,12063) /* TWeakObjectPtr<UAnimMontage*> */ __um(AnimationFemaleOverride);                     // 0x00A8   (0x0020)  
 	TArray<FFortEmoteMapping>                          AnimationOverrides;                                         // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(32,12025) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontEndAnimation);                           // 0x00D8   (0x0020)  
-	SDK_UNDEFINED(32,12026) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontEndAnimationFemaleOverride);             // 0x00F8   (0x0020)  
+	SDK_UNDEFINED(32,12064) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontEndAnimation);                           // 0x00D8   (0x0020)  
+	SDK_UNDEFINED(32,12065) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontEndAnimationFemaleOverride);             // 0x00F8   (0x0020)  
 	TArray<FFortEmoteMapping>                          FrontEndAnimationOverrides;                                 // 0x0118   (0x0010)  
 	FVector                                            GroupEmotePositionOffset;                                   // 0x0128   (0x0018)  
 	float                                              GroupEmotePositionOffsetTolerance;                          // 0x0140   (0x0004)  
@@ -8650,8 +8813,8 @@ struct FJunoEmoteConversionRow : FJunoAccountItemConversionRow
 /// Size: 0x0048 (0x000088 - 0x0000D0)
 struct FJunoCharacterConversionRow : FJunoAccountItemConversionRow
 { 
-	SDK_UNDEFINED(32,12027) /* TWeakObjectPtr<UAssembledMeshSchema*> */ __um(AssembledMeshSchema);                 // 0x0088   (0x0020)  
-	SDK_UNDEFINED(32,12028) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontendAnimMontageIdleOverride);             // 0x00A8   (0x0020)  
+	SDK_UNDEFINED(32,12066) /* TWeakObjectPtr<UAssembledMeshSchema*> */ __um(AssembledMeshSchema);                 // 0x0088   (0x0020)  
+	SDK_UNDEFINED(32,12067) /* TWeakObjectPtr<UAnimMontage*> */ __um(FrontendAnimMontageIdleOverride);             // 0x00A8   (0x0020)  
 	float                                              PreviewPawnScale;                                           // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x00CC   (0x0004)  MISSED
 };
@@ -8716,7 +8879,7 @@ struct FSavedAIData_Resources_GeneratedItem
 /// Size: 0x0097 (0x000001 - 0x000098)
 struct FSavedAIData_Resources : FSavedAIData_BaseType
 { 
-	SDK_UNDEFINED(80,12029) /* TMap<FName, double> */  __um(GeneratingLootTierGroups);                             // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12068) /* TMap<FName, double> */  __um(GeneratingLootTierGroups);                             // 0x0000   (0x0050)  
 	TArray<FSavedAIData_Resources_GeneratedItem>       GeneratedItems;                                             // 0x0050   (0x0010)  
 	int32_t                                            GeneratedLootCallsSinceLastRefresh;                         // 0x0060   (0x0004)  
 	FPrimaryAssetId                                    LastUsedGatheringActorItemId;                               // 0x0064   (0x0008)  
@@ -8749,7 +8912,7 @@ struct FSavedAIData_WorldSpawn : FSavedAIData_BaseType
 { 
 	FGuid                                              PointProviderGuid;                                          // 0x0000   (0x0010)  
 	int64_t                                            AssignationEndGameTime;                                     // 0x0010   (0x0008)  
-	SDK_UNDEFINED(16,12030) /* FString */              __um(EventDataPath);                                        // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,12069) /* FString */              __um(EventDataPath);                                        // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/JunoGameNative.SavedAIData
@@ -8768,7 +8931,7 @@ struct FSavedAIData
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FJunoWeaponEssenceData : FTableRowBase
 { 
-	SDK_UNDEFINED(32,12031) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(WeaponDefinition);                     // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,12070) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(WeaponDefinition);                     // 0x0008   (0x0020)  
 	int32_t                                            EssenceSlotCount;                                           // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x002C   (0x0004)  MISSED
 };
@@ -8801,7 +8964,7 @@ struct FJunoAwesomePoiConfigTableRow : FTableRowBase
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FJunoBarterSaleItemData
 { 
-	SDK_UNDEFINED(32,12032) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(SaleItemDefinition);                   // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,12071) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(SaleItemDefinition);                   // 0x0000   (0x0020)  
 	int32_t                                            SaleItemBulkQuantity;                                       // 0x0020   (0x0004)  
 	int32_t                                            WantItemQuantity;                                           // 0x0024   (0x0004)  
 };
@@ -8810,7 +8973,7 @@ struct FJunoBarterSaleItemData
 /// Size: 0x0030 (0x000008 - 0x000038)
 struct FJunoBarterPricingData : FTableRowBase
 { 
-	SDK_UNDEFINED(32,12033) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(WantItemDefinition);                   // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,12072) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(WantItemDefinition);                   // 0x0008   (0x0020)  
 	TArray<FJunoBarterSaleItemData>                    SaleItemDatas;                                              // 0x0028   (0x0010)  
 };
 
@@ -8818,17 +8981,17 @@ struct FJunoBarterPricingData : FTableRowBase
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FJunoDebugWorldInfoResult
 { 
-	SDK_UNDEFINED(24,12034) /* FText */                __um(AdventureSeed);                                        // 0x0000   (0x0018)  
-	SDK_UNDEFINED(24,12035) /* FText */                __um(TileSet);                                              // 0x0018   (0x0018)  
-	SDK_UNDEFINED(24,12036) /* FText */                __um(TileName);                                             // 0x0030   (0x0018)  
-	SDK_UNDEFINED(24,12037) /* FText */                __um(BiomeName);                                            // 0x0048   (0x0018)  
+	SDK_UNDEFINED(24,12073) /* FText */                __um(AdventureSeed);                                        // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,12074) /* FText */                __um(TileSet);                                              // 0x0018   (0x0018)  
+	SDK_UNDEFINED(24,12075) /* FText */                __um(TileName);                                             // 0x0030   (0x0018)  
+	SDK_UNDEFINED(24,12076) /* FText */                __um(BiomeName);                                            // 0x0048   (0x0018)  
 };
 
 /// Struct /Script/JunoGameNative.JunoWorldAnalyticsInfoResult
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FJunoWorldAnalyticsInfoResult
 { 
-	SDK_UNDEFINED(16,12038) /* FString */              __um(TileName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12077) /* FString */              __um(TileName);                                             // 0x0000   (0x0010)  
 	FVector                                            NormalizedTileLocation;                                     // 0x0010   (0x0018)  
 };
 
@@ -8843,7 +9006,7 @@ struct FJunoTrackedActorKey
 /// Size: 0x001C (0x000000 - 0x00001C)
 struct FJunoTrackedActor
 { 
-	SDK_UNDEFINED(8,12039) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12078) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
 	FJunoTrackedActorKey                               ActorKey;                                                   // 0x0008   (0x000C)  
 	float                                              InitialNetRelevanceDistance;                                // 0x0014   (0x0004)  
 	int32_t                                            NumberOfRelevantActors;                                     // 0x0018   (0x0004)  
@@ -8856,12 +9019,21 @@ struct FJunoBuildingMetricQuery
 	FVector                                            Location;                                                   // 0x0000   (0x0018)  
 };
 
+/// Struct /Script/JunoGameNative.JunoTrackedActorRefreshmentOptions
+/// Size: 0x000C (0x000000 - 0x00000C)
+struct FJunoTrackedActorRefreshmentOptions
+{ 
+	EJunoTrackedActorRefreshReason                     Reason;                                                     // 0x0000   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
+	SDK_UNDEFINED(8,12079) /* TWeakObjectPtr<AActor*> */ __um(ActorRequiringRefresh);                              // 0x0004   (0x0008)  
+};
+
 /// Struct /Script/JunoGameNative.JunoBuildingConnectivityComponentEntry
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FJunoBuildingConnectivityComponentEntry
 { 
-	SDK_UNDEFINED(8,12040) /* TWeakObjectPtr<USceneComponent*> */ __um(Component);                                 // 0x0000   (0x0008)  
-	SDK_UNDEFINED(80,12041) /* TSet<int32_t> */        __um(Ids);                                                  // 0x0008   (0x0050)  
+	SDK_UNDEFINED(8,12080) /* TWeakObjectPtr<USceneComponent*> */ __um(Component);                                 // 0x0000   (0x0008)  
+	SDK_UNDEFINED(80,12081) /* TSet<int32_t> */        __um(Ids);                                                  // 0x0008   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingConnectionPoints
@@ -8971,10 +9143,10 @@ struct FJunoEvent_CraftingObjectPlaced
 /// Size: 0x0038 (0x000008 - 0x000040)
 struct FJunoDestructionMaterialReplacementDataTable : FTableRowBase
 { 
-	SDK_UNDEFINED(16,12042) /* FString */              __um(SearchString);                                         // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,12043) /* FString */              __um(BaseMaterialSearchString);                             // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,12082) /* FString */              __um(SearchString);                                         // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,12083) /* FString */              __um(BaseMaterialSearchString);                             // 0x0018   (0x0010)  
 	class UMaterialInterface*                          MaterialReplacement;                                        // 0x0028   (0x0008)  
-	SDK_UNDEFINED(16,12044) /* FString */              __um(Annotations);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,12084) /* FString */              __um(Annotations);                                          // 0x0030   (0x0010)  
 };
 
 /// Struct /Script/JunoGameNative.JunoDestructionFixISMMaterialsDataflowNode
@@ -8992,7 +9164,7 @@ struct FJunoLivingWorldPointProviderEventLimiter
 { 
 	bool                                               bCanLimitBasedOnEvent;                                      // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
-	SDK_UNDEFINED(8,12045) /* TWeakObjectPtr<UFortAthenaLivingWorldEventData*> */ __um(EventData);                 // 0x0004   (0x0008)  
+	SDK_UNDEFINED(8,12085) /* TWeakObjectPtr<UFortAthenaLivingWorldEventData*> */ __um(EventData);                 // 0x0004   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x14];                                      // 0x000C   (0x0014)  MISSED
 };
 
@@ -9051,7 +9223,7 @@ struct FJunoFreeBuildSpawnable : FTableRowBase
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FJunoFreeBuildSpawnableItem : FJunoFreeBuildSpawnable
 { 
-	SDK_UNDEFINED(32,12046) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(Item);                                 // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,12086) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(Item);                                 // 0x0008   (0x0020)  
 };
 
 /// Struct /Script/JunoGameNative.JunoGeometryCollectionAssemblerGCInfo
@@ -9065,7 +9237,7 @@ struct FJunoGeometryCollectionAssemblerGCInfo
 /// Size: 0x0008 (0x000000 - 0x000008)
 struct FGuidedBuildingNewFocus
 { 
-	SDK_UNDEFINED(8,12047) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(GuidedBuildingActor);              // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12087) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(GuidedBuildingActor);              // 0x0000   (0x0008)  
 };
 
 /// Struct /Script/JunoGameNative.GuidedBuildBarUpdate
@@ -9079,8 +9251,8 @@ struct FGuidedBuildBarUpdate : FGuidedBuildingMessageBase
 /// Size: 0x0014 (0x000000 - 0x000014)
 struct FGuidedBuildingRegistrationEvent
 { 
-	SDK_UNDEFINED(8,12048) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(GuidedBuild);                      // 0x0000   (0x0008)  
-	SDK_UNDEFINED(8,12049) /* TWeakObjectPtr<AFortPlayerState*> */ __um(PlayerState);                              // 0x0008   (0x0008)  
+	SDK_UNDEFINED(8,12088) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(GuidedBuild);                      // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12089) /* TWeakObjectPtr<AFortPlayerState*> */ __um(PlayerState);                              // 0x0008   (0x0008)  
 	bool                                               bIsRegistering;                                             // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0011   (0x0003)  MISSED
 };
@@ -9108,7 +9280,7 @@ struct FJunoIndexedSavedConnectivityData
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	TArray<FGraphVertexHandle>                         Vertices;                                                   // 0x0008   (0x0010)  
 	TArray<FJunoIndexedSerializedEdgeData>             Edges;                                                      // 0x0018   (0x0010)  
-	SDK_UNDEFINED(80,12050) /* TMap<FGraphIslandHandle, FJunoIndexedSerializedIslandData> */ __um(Islands);        // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,12090) /* TMap<FGraphIslandHandle, FJunoIndexedSerializedIslandData> */ __um(Islands);        // 0x0028   (0x0050)  
 	TArray<bool>                                       ConnectivityVertexData;                                     // 0x0078   (0x0010)  
 };
 
@@ -9163,7 +9335,7 @@ struct FJunoKnowledgeRecipeStateEntry
 { 
 	EJunoKnowledgeState                                KnowledgeState;                                             // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(80,12051) /* TSet<FUniqueNetIdRepl> */ __um(ViewedPlayerIds);                                    // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,12091) /* TSet<FUniqueNetIdRepl> */ __um(ViewedPlayerIds);                                    // 0x0008   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoKnowledgeItemStateEntry
@@ -9171,14 +9343,14 @@ struct FJunoKnowledgeRecipeStateEntry
 struct FJunoKnowledgeItemStateEntry
 { 
 	FDateTime                                          DateFound;                                                  // 0x0000   (0x0008)  
-	SDK_UNDEFINED(80,12052) /* TSet<FUniqueNetIdRepl> */ __um(ViewedPlayerIds);                                    // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,12092) /* TSet<FUniqueNetIdRepl> */ __um(ViewedPlayerIds);                                    // 0x0008   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoMarkerSettingsRow
 /// Size: 0x0040 (0x000008 - 0x000048)
 struct FJunoMarkerSettingsRow : FTableRowBase
 { 
-	SDK_UNDEFINED(32,12053) /* TWeakObjectPtr<UObject*> */ __um(Icon);                                             // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,12093) /* TWeakObjectPtr<UObject*> */ __um(Icon);                                             // 0x0008   (0x0020)  
 	FLinearColor                                       Color;                                                      // 0x0028   (0x0010)  
 	bool                                               bAnchorOnEdges;                                             // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0039   (0x0003)  MISSED
@@ -9194,7 +9366,7 @@ struct FJunoMarkerSettingsRow : FTableRowBase
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FJunoMarkerCustomizationOptionsRow : FTableRowBase
 { 
-	SDK_UNDEFINED(16,12054) /* TArray<TWeakObjectPtr<UTexture*>> */ __um(Icons);                                   // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,12094) /* TArray<TWeakObjectPtr<UTexture*>> */ __um(Icons);                                   // 0x0008   (0x0010)  
 	TArray<FLinearColor>                               Colors;                                                     // 0x0018   (0x0010)  
 };
 
@@ -9225,7 +9397,7 @@ struct FJunoMerchantPricingLevel
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FJunoMerchantWantedItemData
 { 
-	SDK_UNDEFINED(32,12055) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(WantItemDefinition);                   // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,12095) /* TWeakObjectPtr<UFortItemDefinition*> */ __um(WantItemDefinition);                   // 0x0000   (0x0020)  
 	float                                              WantItemWeight;                                             // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0024   (0x0004)  MISSED
 };
@@ -9574,6 +9746,13 @@ struct FJunoWorldConditionBed : FWorldConditionCommonActorBase
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
 };
 
+/// Struct /Script/JunoGameNative.JunoWorldConditionIsInCave
+/// Size: 0x0008 (0x000010 - 0x000018)
+struct FJunoWorldConditionIsInCave : FWorldConditionCommonActorBase
+{ 
+	FWorldConditionContextDataRef                      ActorRef;                                                   // 0x0010   (0x0008)  
+};
+
 /// Struct /Script/JunoGameNative.JunoWorldConditionIsSpatiallyInCamp
 /// Size: 0x0008 (0x000010 - 0x000018)
 struct FJunoWorldConditionIsSpatiallyInCamp : FWorldConditionCommonActorBase
@@ -9589,6 +9768,15 @@ struct FJunoWorldConditionLocalCampChecks : FWorldConditionCommonActorBase
 	bool                                               bMustHaveFreeRecruitmentObject;                             // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0019   (0x0003)  MISSED
 	float                                              MinimumRemainingSoftRemovalTimeInJunoHours;                 // 0x001C   (0x0004)  
+};
+
+/// Struct /Script/JunoGameNative.JunoWorldConditionPawnType
+/// Size: 0x0010 (0x000010 - 0x000020)
+struct FJunoWorldConditionPawnType : FWorldConditionCommonActorBase
+{ 
+	FWorldConditionContextDataRef                      PawnRef;                                                    // 0x0010   (0x0008)  
+	char                                               AnyPawnType;                                                // 0x0018   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0019   (0x0007)  MISSED
 };
 
 /// Struct /Script/JunoGameNative.JunoWorldConditionPlayerCampChecks
@@ -9716,7 +9904,7 @@ struct FJunoEvent_OpenPlayerManagement
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FCampRemovalEntry
 { 
-	SDK_UNDEFINED(8,12056) /* TWeakObjectPtr<AJunoCampActor*> */ __um(CampActor);                                  // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12096) /* TWeakObjectPtr<AJunoCampActor*> */ __um(CampActor);                                  // 0x0000   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0008   (0x0010)  MISSED
 };
 
@@ -9724,8 +9912,8 @@ struct FCampRemovalEntry
 /// Size: 0x0060 (0x000008 - 0x000068)
 struct FJunoCampManagementPerk : FTableRowBase
 { 
-	SDK_UNDEFINED(24,12057) /* FText */                __um(Title);                                                // 0x0008   (0x0018)  
-	SDK_UNDEFINED(24,12058) /* FText */                __um(Description);                                          // 0x0020   (0x0018)  
+	SDK_UNDEFINED(24,12097) /* FText */                __um(Title);                                                // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,12098) /* FText */                __um(Description);                                          // 0x0020   (0x0018)  
 	FGameplayTagContainer                              GameplayTags;                                               // 0x0038   (0x0020)  
 	TArray<class UClass*>                              GEsToApply;                                                 // 0x0058   (0x0010)  
 };
@@ -9781,7 +9969,7 @@ struct FJunoStudGunUnselected
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FJunoAwesomePlacementConfigTableRow : FTableRowBase
 { 
-	SDK_UNDEFINED(32,12059) /* TWeakObjectPtr<UJunoBuildInstructionsItemDefinition*> */ __um(ItemDefinition);      // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,12099) /* TWeakObjectPtr<UJunoBuildInstructionsItemDefinition*> */ __um(ItemDefinition);      // 0x0008   (0x0020)  
 	int32_t                                            AwesomePointsToContribute;                                  // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x002C   (0x0004)  MISSED
 };
@@ -9797,7 +9985,7 @@ struct FJunoRecipeUnlockType
 /// Size: 0x0010 (0x000008 - 0x000018)
 struct FJunoRecipeUnlockType_BuildInstructions : FJunoRecipeUnlockType
 { 
-	SDK_UNDEFINED(16,12060) /* TArray<TWeakObjectPtr<UJunoBuildInstructionsItemDefinition*>> */ __um(BuildInstructions); // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,12100) /* TArray<TWeakObjectPtr<UJunoBuildInstructionsItemDefinition*>> */ __um(BuildInstructions); // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/JunoGameNative.JunoRecipeUnlockType_CraftingRowNames
@@ -9893,8 +10081,8 @@ struct FJunoBuildingResourceData : FTableRowBase
 /// Size: 0x0070 (0x000008 - 0x000078)
 struct FJunoResourceData : FTableRowBase
 { 
-	SDK_UNDEFINED(32,12061) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(ItemDefinition);                  // 0x0008   (0x0020)  
-	SDK_UNDEFINED(80,12062) /* TMap<EJunoResourceScale, int32_t> */ __um(Amount);                                  // 0x0028   (0x0050)  
+	SDK_UNDEFINED(32,12101) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(ItemDefinition);                  // 0x0008   (0x0020)  
+	SDK_UNDEFINED(80,12102) /* TMap<EJunoResourceScale, int32_t> */ __um(Amount);                                  // 0x0028   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoEvent_RootPlayspaceReady
@@ -9915,8 +10103,8 @@ struct FJunoEvent_WorldLoadedOrCreated
 /// Size: 0x0038 (0x000008 - 0x000040)
 struct FPCGJunoPossibleWorld : FTableRowBase
 { 
-	SDK_UNDEFINED(32,12063) /* TWeakObjectPtr<UWorld*> */ __um(PersistentLevel);                                   // 0x0008   (0x0020)  
-	SDK_UNDEFINED(16,12064) /* TArray<TWeakObjectPtr<UWorld*>> */ __um(OverlayLevels);                             // 0x0028   (0x0010)  
+	SDK_UNDEFINED(32,12103) /* TWeakObjectPtr<UWorld*> */ __um(PersistentLevel);                                   // 0x0008   (0x0020)  
+	SDK_UNDEFINED(16,12104) /* TArray<TWeakObjectPtr<UWorld*>> */ __um(OverlayLevels);                             // 0x0028   (0x0010)  
 	bool                                               bCanBeRandomlySelected;                                     // 0x0038   (0x0001)  
 	bool                                               bIsDeprecated;                                              // 0x0039   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x003A   (0x0006)  MISSED
@@ -9951,8 +10139,8 @@ struct FJunoBuilderToolSupportActorComponentPair
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FJunoBuilderToolSupportCandidate
 { 
-	SDK_UNDEFINED(8,12065) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
-	SDK_UNDEFINED(8,12066) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Component);                             // 0x0008   (0x0008)  
+	SDK_UNDEFINED(8,12105) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12106) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Component);                             // 0x0008   (0x0008)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuilderToolSelectionSpawnParams
@@ -9961,7 +10149,7 @@ struct FJunoBuilderToolSelectionSpawnParams
 { 
 	TArray<FJunoBuilderToolSelectedActor>              SelectedActors;                                             // 0x0000   (0x0010)  
 	FTransform                                         SelectionTransform;                                         // 0x0010   (0x0060)  
-	SDK_UNDEFINED(8,12067) /* TWeakObjectPtr<AActor*> */ __um(AttachmentActor);                                    // 0x0070   (0x0008)  
+	SDK_UNDEFINED(8,12107) /* TWeakObjectPtr<AActor*> */ __um(AttachmentActor);                                    // 0x0070   (0x0008)  
 	TArray<FJunoBuilderToolSupportCandidate>           SupportCandidates;                                          // 0x0078   (0x0010)  
 	class APawn*                                       Instigator;                                                 // 0x0088   (0x0008)  
 	FName                                              RecipeName;                                                 // 0x0090   (0x0004)  
@@ -9969,13 +10157,6 @@ struct FJunoBuilderToolSelectionSpawnParams
 	TArray<FName>                                      StableNames;                                                // 0x0098   (0x0010)  
 	FGameplayTagContainer                              GameplayTags;                                               // 0x00A8   (0x0020)  
 	FBox                                               WorldSpaceBoundingBox;                                      // 0x00C8   (0x0038)  
-};
-
-/// Struct /Script/JunoGameNative.JunoBuildingOverlapParams
-/// Size: 0x0140 (0x000000 - 0x000140)
-struct FJunoBuildingOverlapParams
-{ 
-	unsigned char                                      UnknownData00_1[0x140];                                     // 0x0000   (0x0140)  MISSED
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingFloatingParams
@@ -9989,7 +10170,7 @@ struct FJunoBuildingFloatingParams
 /// Size: 0x000C (0x000000 - 0x00000C)
 struct FOnPlacementAction
 { 
-	SDK_UNDEFINED(8,12068) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12108) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
 	EOnPlacementAction                                 Action;                                                     // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0009   (0x0003)  MISSED
 };
@@ -10005,7 +10186,7 @@ struct FJunoBuildingPlacementResult
 	FTransform                                         UnsnappedTargetTransform;                                   // 0x0150   (0x0060)  
 	FTransform                                         TargetTransform;                                            // 0x01B0   (0x0060)  
 	FTransform                                         CoordinateBasis;                                            // 0x0210   (0x0060)  
-	SDK_UNDEFINED(8,12069) /* TWeakObjectPtr<AActor*> */ __um(AttachmentActor);                                    // 0x0270   (0x0008)  
+	SDK_UNDEFINED(8,12109) /* TWeakObjectPtr<AActor*> */ __um(AttachmentActor);                                    // 0x0270   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0278   (0x0008)  MISSED
 };
 
@@ -10027,7 +10208,7 @@ struct FJunoGuidedBuildingUpdateData
 	TArray<FJunoStageKey>                              CompletedSections;                                          // 0x0030   (0x0010)  
 	bool                                               bSetComplete;                                               // 0x0040   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0041   (0x0003)  MISSED
-	SDK_UNDEFINED(8,12070) /* TWeakObjectPtr<AActor*> */ __um(FinishingPlayer);                                    // 0x0044   (0x0008)  
+	SDK_UNDEFINED(8,12110) /* TWeakObjectPtr<AActor*> */ __um(FinishingPlayer);                                    // 0x0044   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x004C   (0x0004)  MISSED
 };
 
@@ -10044,7 +10225,7 @@ struct FJunoGuidedBuildRemainingPartsInfo
 /// Size: 0x0008 (0x000000 - 0x000008)
 struct FJunoEvent_LastGuidedBuildingActorChanged
 { 
-	SDK_UNDEFINED(8,12071) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(NewActor);                         // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12111) /* TWeakObjectPtr<AJunoGuidedBuildingActor*> */ __um(NewActor);                         // 0x0000   (0x0008)  
 };
 
 /// Struct /Script/JunoGameNative.AutoCompleteData
@@ -10085,7 +10266,7 @@ struct FJunoCommonPartsSettings
 /// Size: 0x0030 (0x000008 - 0x000038)
 struct FProjectPlayResourceData : FTableRowBase
 { 
-	SDK_UNDEFINED(32,12072) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(ItemDefinition);                  // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,12112) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(ItemDefinition);                  // 0x0008   (0x0020)  
 	FCurveTableRowHandle                               ResourceAmount;                                             // 0x0028   (0x0010)  
 };
 
@@ -10093,7 +10274,7 @@ struct FProjectPlayResourceData : FTableRowBase
 /// Size: 0x0028 (0x000008 - 0x000030)
 struct FJunoBuildingTagData : FTableRowBase
 { 
-	SDK_UNDEFINED(32,12073) /* TWeakObjectPtr<UClass*> */ __um(BlueprintClass);                                    // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,12113) /* TWeakObjectPtr<UClass*> */ __um(BlueprintClass);                                    // 0x0008   (0x0020)  
 	FGameplayTag                                       tag;                                                        // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x002C   (0x0004)  MISSED
 };
@@ -10102,7 +10283,7 @@ struct FJunoBuildingTagData : FTableRowBase
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FJunoComponentActorMapEntry
 { 
-	SDK_UNDEFINED(8,12074) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Component);                             // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12114) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Component);                             // 0x0000   (0x0008)  
 	class UClass*                                      SelectedActorClass;                                         // 0x0008   (0x0008)  
 };
 
@@ -10110,12 +10291,11 @@ struct FJunoComponentActorMapEntry
 /// Size: 0x00B0 (0x000000 - 0x0000B0)
 struct FJunoBuildingSnapEntryPreview
 { 
-	class UPrimitiveComponent*                         Component;                                                  // 0x0000   (0x0008)  
-	EJunoBuildingSnapEntryState                        State;                                                      // 0x0008   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
+	EJunoBuildingSnapEntryState                        State;                                                      // 0x0000   (0x0001)  
+	unsigned char                                      UnknownData00_5[0xF];                                       // 0x0001   (0x000F)  MISSED
 	FTransform                                         ToWorld;                                                    // 0x0010   (0x0060)  
 	FBox                                               TargetingArea;                                              // 0x0070   (0x0038)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00A8   (0x0008)  MISSED
+	double                                             FadePercentage;                                             // 0x00A8   (0x0008)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildingSelectionPreview
@@ -10141,25 +10321,25 @@ struct FJunoBuildInstructionsDisplayData
 { 
 	EFortItemType                                      ItemType;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(24,12075) /* FText */                __um(ItemTypeNameOverride);                                 // 0x0008   (0x0018)  
-	SDK_UNDEFINED(24,12076) /* FText */                __um(DisplayName);                                          // 0x0020   (0x0018)  
-	SDK_UNDEFINED(24,12077) /* FText */                __um(QuantityDisplayName);                                  // 0x0038   (0x0018)  
-	SDK_UNDEFINED(24,12078) /* FText */                __um(ShortDescription);                                     // 0x0050   (0x0018)  
-	SDK_UNDEFINED(24,12079) /* FText */                __um(Description);                                          // 0x0068   (0x0018)  
+	SDK_UNDEFINED(24,12115) /* FText */                __um(ItemTypeNameOverride);                                 // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,12116) /* FText */                __um(DisplayName);                                          // 0x0020   (0x0018)  
+	SDK_UNDEFINED(24,12117) /* FText */                __um(QuantityDisplayName);                                  // 0x0038   (0x0018)  
+	SDK_UNDEFINED(24,12118) /* FText */                __um(ShortDescription);                                     // 0x0050   (0x0018)  
+	SDK_UNDEFINED(24,12119) /* FText */                __um(Description);                                          // 0x0068   (0x0018)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildInstructionsPickupData
 /// Size: 0x0100 (0x000000 - 0x000100)
 struct FJunoBuildInstructionsPickupData
 { 
-	SDK_UNDEFINED(32,12080) /* TWeakObjectPtr<UStaticMesh*> */ __um(PickupStaticMesh);                             // 0x0000   (0x0020)  
-	SDK_UNDEFINED(32,12081) /* TWeakObjectPtr<USkeletalMesh*> */ __um(PickupSkeletalMesh);                         // 0x0020   (0x0020)  
-	SDK_UNDEFINED(32,12082) /* TWeakObjectPtr<UClass*> */ __um(PickupEffectOverride);                              // 0x0040   (0x0020)  
-	SDK_UNDEFINED(32,12083) /* TWeakObjectPtr<USoundBase*> */ __um(PickupSound);                                   // 0x0060   (0x0020)  
-	SDK_UNDEFINED(32,12084) /* TWeakObjectPtr<USoundBase*> */ __um(PickupByNearbyPawnSound);                       // 0x0080   (0x0020)  
-	SDK_UNDEFINED(32,12085) /* TWeakObjectPtr<USoundBase*> */ __um(DropSound);                                     // 0x00A0   (0x0020)  
-	SDK_UNDEFINED(32,12086) /* TWeakObjectPtr<USoundBase*> */ __um(DroppedLoopSound);                              // 0x00C0   (0x0020)  
-	SDK_UNDEFINED(32,12087) /* TWeakObjectPtr<USoundBase*> */ __um(LandedSound);                                   // 0x00E0   (0x0020)  
+	SDK_UNDEFINED(32,12120) /* TWeakObjectPtr<UStaticMesh*> */ __um(PickupStaticMesh);                             // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,12121) /* TWeakObjectPtr<USkeletalMesh*> */ __um(PickupSkeletalMesh);                         // 0x0020   (0x0020)  
+	SDK_UNDEFINED(32,12122) /* TWeakObjectPtr<UClass*> */ __um(PickupEffectOverride);                              // 0x0040   (0x0020)  
+	SDK_UNDEFINED(32,12123) /* TWeakObjectPtr<USoundBase*> */ __um(PickupSound);                                   // 0x0060   (0x0020)  
+	SDK_UNDEFINED(32,12124) /* TWeakObjectPtr<USoundBase*> */ __um(PickupByNearbyPawnSound);                       // 0x0080   (0x0020)  
+	SDK_UNDEFINED(32,12125) /* TWeakObjectPtr<USoundBase*> */ __um(DropSound);                                     // 0x00A0   (0x0020)  
+	SDK_UNDEFINED(32,12126) /* TWeakObjectPtr<USoundBase*> */ __um(DroppedLoopSound);                              // 0x00C0   (0x0020)  
+	SDK_UNDEFINED(32,12127) /* TWeakObjectPtr<USoundBase*> */ __um(LandedSound);                                   // 0x00E0   (0x0020)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildInstructionsItemData
@@ -10169,9 +10349,9 @@ struct FJunoBuildInstructionsItemData
 	bool                                               bGiveResourcesOnDestroy;                                    // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FName                                              SelfCraftingFormulaName;                                    // 0x0004   (0x0004)  
-	SDK_UNDEFINED(32,12088) /* TWeakObjectPtr<UClass*> */ __um(ActorClassToBuild);                                 // 0x0008   (0x0020)  
-	SDK_UNDEFINED(24,12089) /* FText */                __um(SizeDescription);                                      // 0x0028   (0x0018)  
-	SDK_UNDEFINED(24,12090) /* FText */                __um(SetDescription);                                       // 0x0040   (0x0018)  
+	SDK_UNDEFINED(32,12128) /* TWeakObjectPtr<UClass*> */ __um(ActorClassToBuild);                                 // 0x0008   (0x0020)  
+	SDK_UNDEFINED(24,12129) /* FText */                __um(SizeDescription);                                      // 0x0028   (0x0018)  
+	SDK_UNDEFINED(24,12130) /* FText */                __um(SetDescription);                                       // 0x0040   (0x0018)  
 };
 
 /// Struct /Script/JunoGameNative.JunoBuildInstructionsInitializationParams
@@ -10213,7 +10393,7 @@ struct FJunoDeltasStorage_Index_Dss
 { 
 	int32_t                                            WorldCompatibilityVersion;                                  // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(80,12091) /* TMap<FString, FString> */ __um(PackageDeltaFiles);                                  // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,12131) /* TMap<FString, FString> */ __um(PackageDeltaFiles);                                  // 0x0008   (0x0050)  
 };
 
 /// Struct /Script/JunoGameNative.JunoDeltasStorage_Index_PFW
@@ -10222,14 +10402,21 @@ struct FJunoDeltasStorage_Index_PFW
 { 
 	int32_t                                            WorldCompatibilityVersion;                                  // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(80,12092) /* TMap<FString, FJsonObjectWrapper> */ __um(DeltasMetadata);                          // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,12132) /* TMap<FString, FJsonObjectWrapper> */ __um(DeltasMetadata);                          // 0x0008   (0x0050)  
+};
+
+/// Struct /Script/JunoGameNative.JunoPFWDeltaContentBase64
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FJunoPFWDeltaContentBase64
+{ 
+	SDK_UNDEFINED(16,12133) /* FString */              __um(Content);                                              // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/JunoGameNative.JunoPersistentPlayspaceLevelRegistryEntry
 /// Size: 0x0024 (0x000000 - 0x000024)
 struct FJunoPersistentPlayspaceLevelRegistryEntry
 { 
-	SDK_UNDEFINED(8,12093) /* TWeakObjectPtr<AJunoPersistentPlayspace*> */ __um(PersistentPlayspaceWeakPtr);       // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,12134) /* TWeakObjectPtr<AJunoPersistentPlayspace*> */ __um(PersistentPlayspaceWeakPtr);       // 0x0000   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x1C];                                      // 0x0008   (0x001C)  MISSED
 };
 
@@ -10369,14 +10556,14 @@ struct FMeshAuditInfo
 	int32_t                                            NumNonStreamingLODs;                                        // 0x002C   (0x0004)  
 	int32_t                                            NumInlineLODs;                                              // 0x0030   (0x0004)  
 	int32_t                                            NumLODs;                                                    // 0x0034   (0x0004)  
-	SDK_UNDEFINED(1,12094) /* TEnumAsByte<ECollisionTraceFlag> */ __um(CollisionTraceFlag);                        // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,12135) /* TEnumAsByte<ECollisionTraceFlag> */ __um(CollisionTraceFlag);                        // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0039   (0x0007)  MISSED
 	TArray<int32_t>                                    TriCounts;                                                  // 0x0040   (0x0010)  
 	int64_t                                            RenderResourceSystemSize;                                   // 0x0050   (0x0008)  
 	int64_t                                            BodySetupResourceSize;                                      // 0x0058   (0x0008)  
 	float                                              WorstTriRatio;                                              // 0x0060   (0x0004)  
 	float                                              MeshBoundingBoxAreaMeters;                                  // 0x0064   (0x0004)  
-	SDK_UNDEFINED(16,12095) /* FString */              __um(RouteToAsset);                                         // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,12136) /* FString */              __um(RouteToAsset);                                         // 0x0068   (0x0010)  
 	bool                                               bCustomizedCollision;                                       // 0x0078   (0x0001)  
 	bool                                               bMeshCollideAll;                                            // 0x0079   (0x0001)  
 	bool                                               bNeverStream;                                               // 0x007A   (0x0001)  
@@ -10429,8 +10616,8 @@ struct FGeometryCollectionAuditData
 	uint64_t                                           NumAutoInstancedMeshes;                                     // 0x0078   (0x0008)  
 	TArray<class UStaticMesh*>                         AutoInstancedMeshes;                                        // 0x0080   (0x0010)  
 	uint64_t                                           SizeSpecificDataSize;                                       // 0x0090   (0x0008)  
-	SDK_UNDEFINED(16,12096) /* FString */              __um(DynamicCollectionGroupsAndSizes);                      // 0x0098   (0x0010)  
-	SDK_UNDEFINED(16,12097) /* FString */              __um(RestCollectionGroupsAndSizes);                         // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,12137) /* FString */              __um(DynamicCollectionGroupsAndSizes);                      // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,12138) /* FString */              __um(RestCollectionGroupsAndSizes);                         // 0x00A8   (0x0010)  
 };
 
 /// Struct /Script/JunoGameNative.JunoWorldConditionWeather

@@ -34,7 +34,7 @@ struct FEpicMediaScheduleScheduleEntryHourly
 { 
 	int32_t                                            Minutes;                                                    // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13284) /* FString */              __um(VUID);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,13336) /* FString */              __um(VUID);                                                 // 0x0008   (0x0010)  
 	int32_t                                            DurationSeconds;                                            // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	class ULevelSequence*                              Sequence;                                                   // 0x0020   (0x0008)  
@@ -46,7 +46,7 @@ struct FEpicMediaScheduleScheduleEntryDaily
 { 
 	int32_t                                            Hours;                                                      // 0x0000   (0x0004)  
 	int32_t                                            Minutes;                                                    // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,13285) /* FString */              __um(VUID);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,13337) /* FString */              __um(VUID);                                                 // 0x0008   (0x0010)  
 	int32_t                                            DurationSeconds;                                            // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	class ULevelSequence*                              Sequence;                                                   // 0x0020   (0x0008)  
@@ -56,8 +56,8 @@ struct FEpicMediaScheduleScheduleEntryDaily
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FEpicMediaScheduleScheduleEntryAbsolute
 { 
-	SDK_UNDEFINED(16,13286) /* FString */              __um(IsoStartTime);                                         // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13287) /* FString */              __um(VUID);                                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13338) /* FString */              __um(IsoStartTime);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13339) /* FString */              __um(VUID);                                                 // 0x0010   (0x0010)  
 	int32_t                                            DurationSeconds;                                            // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
 	class ULevelSequence*                              Sequence;                                                   // 0x0028   (0x0008)  
@@ -69,7 +69,7 @@ struct FEpicMediaScheduleScheduleInfo
 { 
 	FDateTime                                          StartTime;                                                  // 0x0000   (0x0008)  
 	FTimespan                                          RelativeStartTime;                                          // 0x0008   (0x0008)  
-	SDK_UNDEFINED(16,13288) /* FString */              __um(VUID);                                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13340) /* FString */              __um(VUID);                                                 // 0x0010   (0x0010)  
 	class ULevelSequence*                              Sequence;                                                   // 0x0020   (0x0008)  
 };
 

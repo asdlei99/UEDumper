@@ -79,10 +79,10 @@ class UEntityCoreSubsystem : public UWorldSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0030   (0x0010)  MISSED
-	SDK_UNDEFINED(80,999) /* TMap<uint32_t, FEntityComponentContainer> */ __um(ComponentMap);                      // 0x0040   (0x0050)  
+	SDK_UNDEFINED(80,1000) /* TMap<uint32_t, FEntityComponentContainer> */ __um(ComponentMap);                     // 0x0040   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x58];                                      // 0x0090   (0x0058)  MISSED
 	TArray<class UEntityComponent*>                    ComponentArray;                                             // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(80,1000) /* TMap<uint32_t, UEntity*> */ __um(Entities);                                          // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,1001) /* TMap<uint32_t, UEntity*> */ __um(Entities);                                          // 0x00F8   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0148   (0x0008)  MISSED
 };
 
@@ -98,7 +98,7 @@ public:
 
 	/// Functions
 	// Function /Script/EntityCore.EntityEnableableComponent.OnRep_Enabled
-	// void OnRep_Enabled();                                                                                                 // [0x7133e70] Final|Native|Private 
+	// void OnRep_Enabled();                                                                                                 // [0x7002850] Final|Native|Private 
 };
 
 /// Class /Script/EntityCore.EntityTickableComponent

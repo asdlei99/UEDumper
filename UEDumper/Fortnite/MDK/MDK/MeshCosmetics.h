@@ -12,7 +12,8 @@
 /// dependency: FortniteGame
 /// dependency: GameFeatures
 /// dependency: GameplayTags
-/// dependency: McpProfileSysCore
+/// dependency: ItemizationCoreRuntime
+/// dependency: McpProfileSys
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsOption_ApplyAssembledMeshSchema
 /// Size: 0x0000 (0x000030 - 0x000030)
@@ -156,15 +157,15 @@ public:
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsApparelItemDefinition
-/// Size: 0x0028 (0x000790 - 0x0007B8)
+/// Size: 0x0028 (0x000750 - 0x000778)
 class UMeshCosmeticsApparelItemDefinition : public UFortApparelItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1976;
+	static inline constexpr uint64_t __MDKClassSize = 1912;
 
 public:
-	SMember(FCosmeticSlotSelector)                     SlotValidWithin                                             OFFSET(getStruct<T>, {0x790, 2, 0, 0})
-	SMember(FApparelCustomizableItemReference)         Parameter                                                   OFFSET(getStruct<T>, {0x798, 32, 0, 0})
+	SMember(FCosmeticSlotSelector)                     SlotValidWithin                                             OFFSET(getStruct<T>, {0x750, 2, 0, 0})
+	SMember(FApparelCustomizableItemReference)         Parameter                                                   OFFSET(getStruct<T>, {0x758, 32, 0, 0})
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableObjectParameterVariant
@@ -180,7 +181,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmetics.FortCustomizableObjectParameterVariant.ApplyVariants
-	// void ApplyVariants(class AActor* Actor, FFortAthenaLoadout& Loadout);                                                    // [0x9d4e6ac] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void ApplyVariants(class AActor* Actor, FFortAthenaLoadout& Loadout);                                                    // [0x9e9ae54] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableObjectSprayVariant
@@ -228,7 +229,7 @@ public:
 
 	/// Functions
 	// Function /Script/MeshCosmetics.MeshCosmeticTagInterface.OnPostCustomizationAnimGameplayTags_BP
-	// void OnPostCustomizationAnimGameplayTags_BP(FGameplayTagContainer& GameplayTags);                                        // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnPostCustomizationAnimGameplayTags_BP(FGameplayTagContainer& GameplayTags);                                        // [0x2047e54] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/MeshCosmetics.FortCustomizableInstanceLODManagement
@@ -242,15 +243,15 @@ public:
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsLayoutSchema
-/// Size: 0x00A0 (0x000378 - 0x000418)
+/// Size: 0x00A0 (0x000338 - 0x0003D8)
 class UMeshCosmeticsLayoutSchema : public UFortApparelLayoutItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1048;
+	static inline constexpr uint64_t __MDKClassSize = 984;
 
 public:
-	CMember(TMap<FCosmeticSlotSelector, FCosmeticsLayoutSlot>) SlotDataConfig                                      OFFSET(get<T>, {0x378, 80, 0, 0})
-	CMember(TMap<FCosmeticSlotSelector, TWeakObjectPtr<UCustomizableObject*>>) SlottedCustomizableObjects          OFFSET(get<T>, {0x3C8, 80, 0, 0})
+	CMember(TMap<FCosmeticSlotSelector, FCosmeticsLayoutSlot>) SlotDataConfig                                      OFFSET(get<T>, {0x338, 80, 0, 0})
+	CMember(TMap<FCosmeticSlotSelector, TWeakObjectPtr<UCustomizableObject*>>) SlottedCustomizableObjects          OFFSET(get<T>, {0x388, 80, 0, 0})
 };
 
 /// Class /Script/MeshCosmetics.MeshCosmeticsAppliedSchemaData

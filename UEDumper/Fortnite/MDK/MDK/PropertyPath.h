@@ -32,21 +32,21 @@ public:
 
 	/// Functions
 	// Function /Script/PropertyPath.PropertyPathTestObject.SetStructRef
-	// void SetStructRef(FPropertyPathTestStruct InStruct);                                                                     // [0x5b60970] Final|Native|Public  
+	// void SetStructRef(FPropertyPathTestStruct InStruct);                                                                     // [0x584191c] Final|Native|Public  
 	// Function /Script/PropertyPath.PropertyPathTestObject.SetStructConstRef
-	// void SetStructConstRef(FPropertyPathTestStruct InStruct);                                                                // [0x5b60818] Final|Native|Public  
+	// void SetStructConstRef(FPropertyPathTestStruct InStruct);                                                                // [0x5841834] Final|Native|Public  
 	// Function /Script/PropertyPath.PropertyPathTestObject.SetStruct
-	// void SetStruct(FPropertyPathTestStruct InStruct);                                                                        // [0x5b606c0] Final|Native|Public  
+	// void SetStruct(FPropertyPathTestStruct InStruct);                                                                        // [0x584174c] Final|Native|Public  
 	// Function /Script/PropertyPath.PropertyPathTestObject.SetFloat
-	// void SetFloat(float InFloat);                                                                                            // [0x5b6063c] Final|Native|Public  
+	// void SetFloat(float InFloat);                                                                                            // [0x5841684] Final|Native|Public  
 	// Function /Script/PropertyPath.PropertyPathTestObject.GetStructRef
-	// FPropertyPathTestStruct GetStructRef();                                                                                  // [0x5b60618] Final|Native|Public|Const 
+	// FPropertyPathTestStruct GetStructRef();                                                                                  // [0x5841660] Final|Native|Public|Const 
 	// Function /Script/PropertyPath.PropertyPathTestObject.GetStructConstRef
-	// FPropertyPathTestStruct GetStructConstRef();                                                                             // [0x5b605f4] Final|Native|Public|Const 
+	// FPropertyPathTestStruct GetStructConstRef();                                                                             // [0x584163c] Final|Native|Public|Const 
 	// Function /Script/PropertyPath.PropertyPathTestObject.GetStruct
-	// FPropertyPathTestStruct GetStruct();                                                                                     // [0x5b605b0] Final|Native|Public|Const 
+	// FPropertyPathTestStruct GetStruct();                                                                                     // [0x58415f8] Final|Native|Public|Const 
 	// Function /Script/PropertyPath.PropertyPathTestObject.GetFloat
-	// float GetFloat();                                                                                                        // [0x5b60594] Final|Native|Public|Const 
+	// float GetFloat();                                                                                                        // [0x58415dc] Final|Native|Public|Const 
 };
 
 /// Struct /Script/PropertyPath.PropertyPathSegment

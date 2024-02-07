@@ -21,30 +21,73 @@ enum class EResourceSizeMemoryCategory : uint8_t
 	EResourceSizeMemoryCategory__EResourceSizeMemoryCategory_MAX                     = 8
 };
 
-/// Class /Script/SpatialMetrics.ActorCountMetric
-/// Size: 0x0060 (0x000040 - 0x0000A0)
-class UActorCountMetric : public USpatialMetric
+/// Class /Script/SpatialMetrics.SpatialMetricBase
+/// Size: 0x0058 (0x000058 - 0x0000B0)
+class USpatialMetricBase : public USpatialMetric
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x60];                                      // 0x0040   (0x0060)  MISSED
+	unsigned char                                      UnknownData00_1[0x58];                                      // 0x0058   (0x0058)  MISSED
+};
+
+/// Class /Script/SpatialMetrics.ActorCountMetric
+/// Size: 0x0008 (0x0000B0 - 0x0000B8)
+class UActorCountMetric : public USpatialMetricBase
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x8];                                       // 0x00B0   (0x0008)  MISSED
 };
 
 /// Class /Script/SpatialMetrics.ActorResourceSizeMetric
-/// Size: 0x00E8 (0x000040 - 0x000128)
+/// Size: 0x00E8 (0x000058 - 0x000140)
 class UActorResourceSizeMetric : public USpatialMetric
 { 
 public:
-	unsigned char                                      UnknownData00_2[0xE0];                                      // 0x0040   (0x00E0)  MISSED
-	float                                              UpdateTimeThresholdInMs;                                    // 0x0120   (0x0004)  
-	EResourceSizeMemoryCategory                        MemoryCategoryFlags;                                        // 0x0124   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x3];                                       // 0x0125   (0x0003)  MISSED
+	unsigned char                                      UnknownData00_2[0xE0];                                      // 0x0058   (0x00E0)  MISSED
+	float                                              UpdateTimeThresholdInMs;                                    // 0x0138   (0x0004)  
+	EResourceSizeMemoryCategory                        MemoryCategoryFlags;                                        // 0x013C   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x3];                                       // 0x013D   (0x0003)  MISSED
+};
+
+/// Class /Script/SpatialMetrics.PlatformMemoryMetric
+/// Size: 0x0000 (0x0000B0 - 0x0000B0)
+class UPlatformMemoryMetric : public USpatialMetricBase
+{ 
+public:
+};
+
+/// Class /Script/SpatialMetrics.PlatformAvailableMemoryMetric
+/// Size: 0x0000 (0x0000B0 - 0x0000B0)
+class UPlatformAvailableMemoryMetric : public USpatialMetricBase
+{ 
+public:
+};
+
+/// Class /Script/SpatialMetrics.PlatformTimeMetric
+/// Size: 0x0000 (0x0000B0 - 0x0000B0)
+class UPlatformTimeMetric : public USpatialMetricBase
+{ 
+public:
+};
+
+/// Class /Script/SpatialMetrics.PlatformGameTimeMetric
+/// Size: 0x0000 (0x0000B0 - 0x0000B0)
+class UPlatformGameTimeMetric : public USpatialMetricBase
+{ 
+public:
+};
+
+/// Class /Script/SpatialMetrics.PlatformRenderTimeMetric
+/// Size: 0x0000 (0x0000B0 - 0x0000B0)
+class UPlatformRenderTimeMetric : public USpatialMetricBase
+{ 
+public:
 };
 
 /// Class /Script/SpatialMetrics.ProxyMetric
-/// Size: 0x0050 (0x000040 - 0x000090)
+/// Size: 0x0050 (0x000058 - 0x0000A8)
 class UProxyMetric : public USpatialMetric
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x50];                                      // 0x0040   (0x0050)  MISSED
+	unsigned char                                      UnknownData00_1[0x50];                                      // 0x0058   (0x0050)  MISSED
 };
 

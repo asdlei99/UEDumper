@@ -33,21 +33,21 @@ struct FImagePlateParameters
 };
 
 /// Class /Script/ImagePlate.ImagePlateComponent
-/// Size: 0x0150 (0x000570 - 0x0006C0)
+/// Size: 0x0150 (0x000500 - 0x000650)
 class UImagePlateComponent : public UPrimitiveComponent
 { 
 public:
-	FImagePlateParameters                              Plate;                                                      // 0x0570   (0x0040)  
-	unsigned char                                      UnknownData00_6[0x110];                                     // 0x05B0   (0x0110)  MISSED
+	FImagePlateParameters                              Plate;                                                      // 0x0500   (0x0040)  
+	unsigned char                                      UnknownData00_6[0x110];                                     // 0x0540   (0x0110)  MISSED
 
 
 	/// Functions
 	// Function /Script/ImagePlate.ImagePlateComponent.SetImagePlate
-	// void SetImagePlate(FImagePlateParameters Plate);                                                                      // [0xbf8a608] Final|Native|Public|BlueprintCallable 
+	// void SetImagePlate(FImagePlateParameters Plate);                                                                      // [0xc2dee70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ImagePlate.ImagePlateComponent.OnRenderTextureChanged
-	// void OnRenderTextureChanged();                                                                                        // [0xbf8a5f4] Final|Native|Public  
+	// void OnRenderTextureChanged();                                                                                        // [0xc2dee5c] Final|Native|Public  
 	// Function /Script/ImagePlate.ImagePlateComponent.GetPlate
-	// FImagePlateParameters GetPlate();                                                                                     // [0xbf8a57c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FImagePlateParameters GetPlate();                                                                                     // [0xc2dede4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ImagePlate.ImagePlateSettings
@@ -55,7 +55,7 @@ public:
 class UImagePlateSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,13880) /* FString */              __um(ProxyName);                                            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,13987) /* FString */              __um(ProxyName);                                            // 0x0028   (0x0010)  
 };
 
 /// Class /Script/ImagePlate.ImagePlateFileSequence
@@ -64,13 +64,13 @@ class UImagePlateFileSequence : public UObject
 { 
 public:
 	FDirectoryPath                                     SequencePath;                                               // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,13881) /* FString */              __um(FileWildcard);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,13988) /* FString */              __um(FileWildcard);                                         // 0x0038   (0x0010)  
 	float                                              FrameRate;                                                  // 0x0048   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x004C   (0x0004)  MISSED
 };
 
 /// Class /Script/ImagePlate.ImagePlateFrustumComponent
-/// Size: 0x0000 (0x000570 - 0x000570)
+/// Size: 0x0000 (0x000500 - 0x000500)
 class UImagePlateFrustumComponent : public UPrimitiveComponent
 { 
 public:

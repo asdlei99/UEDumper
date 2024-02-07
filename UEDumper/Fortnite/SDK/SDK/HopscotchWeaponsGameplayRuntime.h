@@ -16,8 +16,8 @@
 class UFortGameplayAbility_AppleSunSmall_Passive : public UFortGameplayAbility
 { 
 public:
-	SDK_UNDEFINED(8,13862) /* TWeakObjectPtr<AFortPlayerPawn*> */ __um(PlayerPawn);                                // 0x0B60   (0x0008)  
-	SDK_UNDEFINED(8,13863) /* TWeakObjectPtr<UCharacterMovementComponent*> */ __um(CharacterMovementComponent);    // 0x0B68   (0x0008)  
+	SDK_UNDEFINED(8,13969) /* TWeakObjectPtr<AFortPlayerPawn*> */ __um(PlayerPawn);                                // 0x0B60   (0x0008)  
+	SDK_UNDEFINED(8,13970) /* TWeakObjectPtr<UCharacterMovementComponent*> */ __um(CharacterMovementComponent);    // 0x0B68   (0x0008)  
 	FScalableFloat                                     UpdateIntervalRow;                                          // 0x0B70   (0x0028)  
 	class UClass*                                      CanCrashpadGameplayEffectClass;                             // 0x0B98   (0x0008)  
 	FGameplayTagContainer                              CanCrashpadGameplayTags;                                    // 0x0BA0   (0x0020)  
@@ -46,10 +46,10 @@ public:
 
 	/// Functions
 	// Function /Script/HopscotchWeaponsGameplayRuntime.FortGameplayAbility_AppleSunSmall_Passive.UpdateIsCloseToGround
-	// void UpdateIsCloseToGround();                                                                                         // [0xaa09d38] Final|Native|Protected|BlueprintCallable 
+	// void UpdateIsCloseToGround();                                                                                         // [0xabdcd64] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/HopscotchWeaponsGameplayRuntime.FortGameplayAbility_AppleSunSmall_Passive.UpdateCanCrashpad
-	// void UpdateCanCrashpad();                                                                                             // [0xaa09d24] Final|Native|Protected|BlueprintCallable 
+	// void UpdateCanCrashpad();                                                                                             // [0xabdcd50] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/HopscotchWeaponsGameplayRuntime.FortGameplayAbility_AppleSunSmall_Passive.OnPlayerMovementModeChanged
-	// void OnPlayerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xaa09a3c] Final|Native|Private 
+	// void OnPlayerMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xabdc9a8] Final|Native|Private 
 };
 

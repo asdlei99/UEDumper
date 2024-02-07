@@ -18,12 +18,12 @@ public:
 };
 
 /// Class /Script/NaniteDisplacedMesh.NaniteDisplacedMeshComponent
-/// Size: 0x0010 (0x000630 - 0x000640)
+/// Size: 0x0010 (0x0005C0 - 0x0005D0)
 class UNaniteDisplacedMeshComponent : public UStaticMeshComponent
 { 
 public:
-	class UNaniteDisplacedMesh*                        DisplacedMesh;                                              // 0x0630   (0x0008)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0638   (0x0008)  MISSED
+	class UNaniteDisplacedMesh*                        DisplacedMesh;                                              // 0x05C0   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x05C8   (0x0008)  MISSED
 };
 
 /// Struct /Script/NaniteDisplacedMesh.NaniteDisplacedMeshDisplacementMap

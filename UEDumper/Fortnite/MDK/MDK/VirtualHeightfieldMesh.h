@@ -50,33 +50,33 @@ public:
 };
 
 /// Class /Script/VirtualHeightfieldMesh.VirtualHeightfieldMeshComponent
-/// Size: 0x0070 (0x000570 - 0x0005E0)
+/// Size: 0x0070 (0x000500 - 0x000570)
 class UVirtualHeightfieldMeshComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1504;
+	static inline constexpr uint64_t __MDKClassSize = 1392;
 
 public:
-	CMember(TWeakObjectPtr<ARuntimeVirtualTextureVolume*>) VirtualTexture                                          OFFSET(get<T>, {0x570, 32, 0, 0})
-	CMember(class ARuntimeVirtualTextureVolume*)       VirtualTextureRef                                           OFFSET(get<T>, {0x590, 8, 0, 0})
-	CMember(class UObject*)                            VirtualTextureThumbnail                                     OFFSET(get<T>, {0x598, 8, 0, 0})
-	DMember(bool)                                      bCopyBoundsButton                                           OFFSET(get<bool>, {0x5A0, 1, 0, 0})
-	CMember(class UHeightfieldMinMaxTexture*)          MinMaxTexture                                               OFFSET(get<T>, {0x5A8, 8, 0, 0})
-	DMember(int32_t)                                   NumMinMaxTextureBuildLevels                                 OFFSET(get<int32_t>, {0x5B0, 4, 0, 0})
-	DMember(bool)                                      bBuildMinMaxTextureButton                                   OFFSET(get<bool>, {0x5B4, 1, 0, 0})
-	CMember(class UMaterialInterface*)                 Material                                                    OFFSET(get<T>, {0x5B8, 8, 0, 0})
-	DMember(float)                                     LOD0ScreenSize                                              OFFSET(get<float>, {0x5C0, 4, 0, 0})
-	DMember(float)                                     Lod0Distribution                                            OFFSET(get<float>, {0x5C4, 4, 0, 0})
-	DMember(float)                                     LodDistribution                                             OFFSET(get<float>, {0x5C8, 4, 0, 0})
-	DMember(float)                                     LodBiasScale                                                OFFSET(get<float>, {0x5CC, 4, 0, 0})
-	DMember(int32_t)                                   NumForceLoadLods                                            OFFSET(get<int32_t>, {0x5D0, 4, 0, 0})
-	DMember(int32_t)                                   NumOcclusionLods                                            OFFSET(get<int32_t>, {0x5D4, 4, 0, 0})
-	DMember(bool)                                      bHiddenInEditor                                             OFFSET(get<bool>, {0x5D8, 1, 0, 0})
-	DMember(bool)                                      bWorldPositionOffsetVelocity                                OFFSET(get<bool>, {0x5D9, 1, 0, 0})
+	CMember(TWeakObjectPtr<ARuntimeVirtualTextureVolume*>) VirtualTexture                                          OFFSET(get<T>, {0x500, 32, 0, 0})
+	CMember(class ARuntimeVirtualTextureVolume*)       VirtualTextureRef                                           OFFSET(get<T>, {0x520, 8, 0, 0})
+	CMember(class UObject*)                            VirtualTextureThumbnail                                     OFFSET(get<T>, {0x528, 8, 0, 0})
+	DMember(bool)                                      bCopyBoundsButton                                           OFFSET(get<bool>, {0x530, 1, 0, 0})
+	CMember(class UHeightfieldMinMaxTexture*)          MinMaxTexture                                               OFFSET(get<T>, {0x538, 8, 0, 0})
+	DMember(int32_t)                                   NumMinMaxTextureBuildLevels                                 OFFSET(get<int32_t>, {0x540, 4, 0, 0})
+	DMember(bool)                                      bBuildMinMaxTextureButton                                   OFFSET(get<bool>, {0x544, 1, 0, 0})
+	CMember(class UMaterialInterface*)                 Material                                                    OFFSET(get<T>, {0x548, 8, 0, 0})
+	DMember(float)                                     LOD0ScreenSize                                              OFFSET(get<float>, {0x550, 4, 0, 0})
+	DMember(float)                                     Lod0Distribution                                            OFFSET(get<float>, {0x554, 4, 0, 0})
+	DMember(float)                                     LodDistribution                                             OFFSET(get<float>, {0x558, 4, 0, 0})
+	DMember(float)                                     LodBiasScale                                                OFFSET(get<float>, {0x55C, 4, 0, 0})
+	DMember(int32_t)                                   NumForceLoadLods                                            OFFSET(get<int32_t>, {0x560, 4, 0, 0})
+	DMember(int32_t)                                   NumOcclusionLods                                            OFFSET(get<int32_t>, {0x564, 4, 0, 0})
+	DMember(bool)                                      bHiddenInEditor                                             OFFSET(get<bool>, {0x568, 1, 0, 0})
+	DMember(bool)                                      bWorldPositionOffsetVelocity                                OFFSET(get<bool>, {0x569, 1, 0, 0})
 
 
 	/// Functions
 	// Function /Script/VirtualHeightfieldMesh.VirtualHeightfieldMeshComponent.GatherHideFlags
-	// void GatherHideFlags(bool& InOutHidePrimitivesInEditor, bool& InOutHidePrimitivesInGame);                                // [0xc2be1d8] Final|Native|Protected|HasOutParms|Const 
+	// void GatherHideFlags(bool& InOutHidePrimitivesInEditor, bool& InOutHidePrimitivesInGame);                                // [0xc69d1b0] Final|Native|Protected|HasOutParms|Const 
 };
 

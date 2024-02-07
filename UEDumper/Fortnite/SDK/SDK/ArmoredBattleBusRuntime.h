@@ -12,62 +12,62 @@
 /// dependency: FortniteGame
 
 /// Class /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance
-/// Size: 0x00C0 (0x001620 - 0x0016E0)
+/// Size: 0x00D0 (0x001620 - 0x0016F0)
 class UFortArmoredBattleBusPassengerAnimInstance : public UFortPlayerAnimInstanceProxy
 { 
 public:
-	FRotator                                           PreviousVehicleRotator;                                     // 0x1618   (0x0018)  
-	float                                              SmoothedVehicleYawRate;                                     // 0x1630   (0x0004)  
-	int32_t                                            PawnSeat;                                                   // 0x1634   (0x0004)  
-	bool                                               bIsFrontTurretPassenger;                                    // 0x1638   (0x0001)  
-	bool                                               bIsRearTurretPassenger;                                     // 0x1639   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x163A   (0x0002)  MISSED
-	float                                              Speed;                                                      // 0x163C   (0x0004)  
-	float                                              YawDelta;                                                   // 0x1640   (0x0004)  
-	float                                              TurretYaw;                                                  // 0x1644   (0x0004)  
-	float                                              TurretPitch;                                                // 0x1648   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x164C   (0x0004)  MISSED
-	FRotator                                           TurretYawRotator;                                           // 0x1650   (0x0018)  
-	float                                              SlopeRollDegreeAngle;                                       // 0x1668   (0x0004)  
-	float                                              SlopePitchDegreeAngle;                                      // 0x166C   (0x0004)  
-	FVector                                            HandAttachL;                                                // 0x1670   (0x0018)  
-	FVector                                            HandAttachR;                                                // 0x1688   (0x0018)  
-	SDK_UNDEFINED(1,11551) /* TEnumAsByte<ERelativeTransformSpace> */ __um(TransformSpace);                        // 0x16A0   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x3];                                       // 0x16A1   (0x0003)  MISSED
-	float                                              UpdateYawDeltaSmoothedLerpRate;                             // 0x16A4   (0x0004)  
-	int32_t                                            TurretPassengerFront;                                       // 0x16A8   (0x0004)  
-	int32_t                                            TurretPassengerRear;                                        // 0x16AC   (0x0004)  
-	FName                                              FrontFootBoneName;                                          // 0x16B0   (0x0004)  
-	FName                                              RearFootBoneName;                                           // 0x16B4   (0x0004)  
-	FName                                              GunHandAttachBoneName_FrontLeft;                            // 0x16B8   (0x0004)  
-	FName                                              GunHandAttachBoneName_RearLeft;                             // 0x16BC   (0x0004)  
-	FName                                              GunHandAttachBoneName_FrontRight;                           // 0x16C0   (0x0004)  
-	FName                                              GunHandAttachBoneName_RearRight;                            // 0x16C4   (0x0004)  
-	FName                                              PassengerBoneName_Front;                                    // 0x16C8   (0x0004)  
-	FName                                              PassengerBoneName_Rear;                                     // 0x16CC   (0x0004)  
-	float                                              TurretPitchDegMin;                                          // 0x16D0   (0x0004)  
-	float                                              TurretPitchDegMax;                                          // 0x16D4   (0x0004)  
-	float                                              LocalPlayerTurretPitchEaseRate;                             // 0x16D8   (0x0004)  
-	unsigned char                                      UnknownData03_6[0x4];                                       // 0x16DC   (0x0004)  MISSED
+	FRotator                                           PreviousVehicleRotator;                                     // 0x1620   (0x0018)  
+	float                                              SmoothedVehicleYawRate;                                     // 0x1638   (0x0004)  
+	int32_t                                            PawnSeat;                                                   // 0x163C   (0x0004)  
+	bool                                               bIsFrontTurretPassenger;                                    // 0x1640   (0x0001)  
+	bool                                               bIsRearTurretPassenger;                                     // 0x1641   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x1642   (0x0002)  MISSED
+	float                                              Speed;                                                      // 0x1644   (0x0004)  
+	float                                              YawDelta;                                                   // 0x1648   (0x0004)  
+	float                                              TurretYaw;                                                  // 0x164C   (0x0004)  
+	float                                              TurretPitch;                                                // 0x1650   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x1654   (0x0004)  MISSED
+	FRotator                                           TurretYawRotator;                                           // 0x1658   (0x0018)  
+	float                                              SlopeRollDegreeAngle;                                       // 0x1670   (0x0004)  
+	float                                              SlopePitchDegreeAngle;                                      // 0x1674   (0x0004)  
+	FVector                                            HandAttachL;                                                // 0x1678   (0x0018)  
+	FVector                                            HandAttachR;                                                // 0x1690   (0x0018)  
+	SDK_UNDEFINED(1,11584) /* TEnumAsByte<ERelativeTransformSpace> */ __um(TransformSpace);                        // 0x16A8   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x3];                                       // 0x16A9   (0x0003)  MISSED
+	float                                              UpdateYawDeltaSmoothedLerpRate;                             // 0x16AC   (0x0004)  
+	int32_t                                            TurretPassengerFront;                                       // 0x16B0   (0x0004)  
+	int32_t                                            TurretPassengerRear;                                        // 0x16B4   (0x0004)  
+	FName                                              FrontFootBoneName;                                          // 0x16B8   (0x0004)  
+	FName                                              RearFootBoneName;                                           // 0x16BC   (0x0004)  
+	FName                                              GunHandAttachBoneName_FrontLeft;                            // 0x16C0   (0x0004)  
+	FName                                              GunHandAttachBoneName_RearLeft;                             // 0x16C4   (0x0004)  
+	FName                                              GunHandAttachBoneName_FrontRight;                           // 0x16C8   (0x0004)  
+	FName                                              GunHandAttachBoneName_RearRight;                            // 0x16CC   (0x0004)  
+	FName                                              PassengerBoneName_Front;                                    // 0x16D0   (0x0004)  
+	FName                                              PassengerBoneName_Rear;                                     // 0x16D4   (0x0004)  
+	float                                              TurretPitchDegMin;                                          // 0x16D8   (0x0004)  
+	float                                              TurretPitchDegMax;                                          // 0x16DC   (0x0004)  
+	float                                              LocalPlayerTurretPitchEaseRate;                             // 0x16E0   (0x0004)  
+	unsigned char                                      UnknownData03_6[0xC];                                       // 0x16E4   (0x000C)  MISSED
 
 
 	/// Functions
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateYawDeltaSmoothed
-	// void UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator& NewRotation, float& SmoothedYawValue); // [0xa7bd1a4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator& NewRotation, float& SmoothedYawValue); // [0xa974f9c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateSmoothedVehicleYawRate
-	// void UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor);                                            // [0xa7bcc48] Final|Native|Public|BlueprintCallable 
+	// void UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor);                                            // [0xa974950] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateHandPositionsSlopeValues
-	// void UpdateHandPositionsSlopeValues(class USkeletalMeshComponent* BusMeshComponent);                                  // [0xa7bcbc8] Final|Native|Public|BlueprintCallable 
+	// void UpdateHandPositionsSlopeValues(class USkeletalMeshComponent* BusMeshComponent);                                  // [0xa974890] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UnrotateHandAttachLocation
-	// FVector UnrotateHandAttachLocation(FVector& HandLocation, FVector& FootLocation, FRotator& FootRotation);             // [0xa7bca04] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector UnrotateHandAttachLocation(FVector& HandLocation, FVector& FootLocation, FRotator& FootRotation);             // [0xa9746cc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetPassengerTransform
-	// FTransform GetPassengerTransform(class USkeletalMeshComponent* BusMeshComponent);                                     // [0xa7bc72c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetPassengerTransform(class USkeletalMeshComponent* BusMeshComponent);                                     // [0xa97434c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetHandAttachLocation
-	// FVector GetHandAttachLocation(class USkeletalMeshComponent* BusMeshComponent, FName FrontHandAttachBoneName, FName RearHandAttachBoneName); // [0xa7bc61c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetHandAttachLocation(class USkeletalMeshComponent* BusMeshComponent, FName FrontHandAttachBoneName, FName RearHandAttachBoneName); // [0xa97417c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetFootAttachTransform
-	// FTransform GetFootAttachTransform(class USkeletalMeshComponent* BusMeshComponent);                                    // [0xa7bc540] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetFootAttachTransform(class USkeletalMeshComponent* BusMeshComponent);                                    // [0xa974060] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GenerateCharacterPitchAndYawForSlopedTerrain
-	// void GenerateCharacterPitchAndYawForSlopedTerrain(class AFortAthenaVehicle* VehicleActor, float& TurretYaw, float& TurretPitch, FRotator& PawnYawRotator); // [0xa7bc3d4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GenerateCharacterPitchAndYawForSlopedTerrain(class AFortAthenaVehicle* VehicleActor, float& TurretYaw, float& TurretPitch, FRotator& PawnYawRotator); // [0xa973eb8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance
@@ -102,12 +102,12 @@ public:
 
 	/// Functions
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateYawDeltaSmoothed
-	// float UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator NewRotation, float SmoothedYawValue); // [0xa7bd304] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// float UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator NewRotation, float SmoothedYawValue); // [0xa97516c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateTurretAimPitchWeaponYaw
-	// void UpdateTurretAimPitchWeaponYaw(class AFortAthenaVehicle* OwnerVehicle, class AFortPlayerPawn* GunnerActor, FName SocketName, float YawOffset, float& TurretAimPitch, float& YawDeltaSmoothed, FRotator& WeaponYaw); // [0xa7bcf6c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdateTurretAimPitchWeaponYaw(class AFortAthenaVehicle* OwnerVehicle, class AFortPlayerPawn* GunnerActor, FName SocketName, float YawOffset, float& TurretAimPitch, float& YawDeltaSmoothed, FRotator& WeaponYaw); // [0xa974c80] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateSmoothedVehicleYawRate
-	// float UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor, FRotator PreviousRotator);                 // [0xa7bcd50] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// float UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor, FRotator PreviousRotator);                 // [0xa974a98] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.GetPitchAndYaw
-	// void GetPitchAndYaw(class AFortAthenaVehicle* VehicleActor, class AFortPlayerPawn* GunnerActor, float& AdjustedPitch, float& AdjustedYaw, bool& bIsLocalPlayerControlled, FRotator& YawRotator); // [0xa7bc808] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetPitchAndYaw(class AFortAthenaVehicle* VehicleActor, class AFortPlayerPawn* GunnerActor, float& AdjustedPitch, float& AdjustedYaw, bool& bIsLocalPlayerControlled, FRotator& YawRotator); // [0xa974468] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 

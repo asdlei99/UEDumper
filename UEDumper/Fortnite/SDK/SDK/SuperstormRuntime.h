@@ -73,16 +73,16 @@ public:
 
 	/// Functions
 	// Function /Script/SuperstormRuntime.TempestLightningComponent.GetLightningRadius
-	// float GetLightningRadius();                                                                                           // [0xb438940] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLightningRadius();                                                                                           // [0xb67192c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SuperstormRuntime.TempestLightningComponent.GetCloudHeight
-	// float GetCloudHeight();                                                                                               // [0xb43890c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCloudHeight();                                                                                               // [0xb6718f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/SuperstormRuntime.TornadoSimulationData
 /// Size: 0x0034 (0x00000C - 0x000040)
 struct FTornadoSimulationData : FFastArraySerializerItem
 { 
-	SDK_UNDEFINED(8,15251) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x000C   (0x0008)  
+	SDK_UNDEFINED(8,15347) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x000C   (0x0008)  
 	EFortPhysicsObjectType                             ObjectType;                                                 // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0015   (0x0003)  MISSED
 	float                                              TangentVelocity;                                            // 0x0018   (0x0004)  
@@ -104,13 +104,13 @@ struct FTornadoClientSimulationArray : FFastArraySerializer
 class UTempestTornadoForcesComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(16,15252) /* FMulticastInlineDelegate */ __um(OnActorAddedToTornadoForces);                      // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,15253) /* FMulticastInlineDelegate */ __um(OnActorRemovedFromTornadoForces);                  // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,15348) /* FMulticastInlineDelegate */ __um(OnActorAddedToTornadoForces);                      // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,15349) /* FMulticastInlineDelegate */ __um(OnActorRemovedFromTornadoForces);                  // 0x00B0   (0x0010)  
 	FDataTableRowHandle                                ConfigHandle;                                               // 0x00C0   (0x0010)  
 	TArray<FGameplayTag>                               PhysicsPresetTagsAngularDampingToOverride;                  // 0x00D0   (0x0010)  
 	FScalableFloat                                     AngularDampingOverride;                                     // 0x00E0   (0x0028)  
 	class UClass*                                      PawnInGE;                                                   // 0x0108   (0x0008)  
-	SDK_UNDEFINED(80,15254) /* TMap<EFortPhysicsObjectType, FScalableFloat> */ __um(ObjectTypeToMaxCapCount);      // 0x0110   (0x0050)  
+	SDK_UNDEFINED(80,15350) /* TMap<EFortPhysicsObjectType, FScalableFloat> */ __um(ObjectTypeToMaxCapCount);      // 0x0110   (0x0050)  
 	FGameplayTagContainer                              TagsToIgnore;                                               // 0x0160   (0x0020)  
 	class UClass*                                      RecentlyRemovedGE;                                          // 0x0180   (0x0008)  
 	class UTargetingPreset*                            TargetingPreset;                                            // 0x0188   (0x0008)  
@@ -128,15 +128,15 @@ public:
 	unsigned char                                      UnknownData02_5[0x118];                                     // 0x0318   (0x0118)  MISSED
 	FTargetingRequestHandle                            AsyncTargetingHandle;                                       // 0x0430   (0x0004)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x0434   (0x0004)  MISSED
-	SDK_UNDEFINED(80,15255) /* TSet<AFortPlayerPawn*> */ __um(PreviouslyNearPlayers);                              // 0x0438   (0x0050)  
+	SDK_UNDEFINED(80,15351) /* TSet<AFortPlayerPawn*> */ __um(PreviouslyNearPlayers);                              // 0x0438   (0x0050)  
 	unsigned char                                      UnknownData04_6[0xA8];                                      // 0x0488   (0x00A8)  MISSED
 
 
 	/// Functions
 	// Function /Script/SuperstormRuntime.TempestTornadoForcesComponent.OnVehicleInTornadoPlayerExit
-	// void OnVehicleInTornadoPlayerExit(class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle); // [0xb438a04] Final|Native|Private 
+	// void OnVehicleInTornadoPlayerExit(class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle); // [0xb671a30] Final|Native|Private 
 	// Function /Script/SuperstormRuntime.TempestTornadoForcesComponent.IsActorInTornado
-	// bool IsActorInTornado(class AActor* Actor);                                                                           // [0xb438974] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActorInTornado(class AActor* Actor);                                                                           // [0xb671960] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SuperstormRuntime.TornadoRadialForce
@@ -202,8 +202,8 @@ struct FTornadoConfigEntry : FTableRowBase
 	float                                              DragCoefficient1;                                           // 0x0064   (0x0004)  
 	float                                              DragCoefficient2;                                           // 0x0068   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x006C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,15256) /* TMap<EFortPhysicsSimSize, FTornadoObjectForceModifiers> */ __um(SizeForceModifiers); // 0x0070   (0x0050)  
-	SDK_UNDEFINED(80,15257) /* TMap<EFortPhysicsObjectType, FTornadoObjectForceModifiers> */ __um(ObjectTypeForceModifiers); // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,15352) /* TMap<EFortPhysicsSimSize, FTornadoObjectForceModifiers> */ __um(SizeForceModifiers); // 0x0070   (0x0050)  
+	SDK_UNDEFINED(80,15353) /* TMap<EFortPhysicsObjectType, FTornadoObjectForceModifiers> */ __um(ObjectTypeForceModifiers); // 0x00C0   (0x0050)  
 	float                                              PlayerGravityFloorOffset;                                   // 0x0110   (0x0004)  
 	float                                              PlayerGravityFloorWidth;                                    // 0x0114   (0x0004)  
 	float                                              PlayerGravityFloorGravityScalar;                            // 0x0118   (0x0004)  
@@ -225,8 +225,8 @@ struct FTornadoConfigEntry : FTableRowBase
 /// Size: 0x00A8 (0x000000 - 0x0000A8)
 struct FTornadoTelemetryStats
 { 
-	SDK_UNDEFINED(80,15258) /* TMap<EFortPhysicsObjectType, int32_t> */ __um(NumActorsEnteredByType);              // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,15259) /* TSet<FUniqueNetIdRepl> */ __um(EnteredPlayerAccountIds);                            // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,15354) /* TMap<EFortPhysicsObjectType, int32_t> */ __um(NumActorsEnteredByType);              // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,15355) /* TSet<FUniqueNetIdRepl> */ __um(EnteredPlayerAccountIds);                            // 0x0050   (0x0050)  
 	int32_t                                            NumPreBuiltStructuresDestroyed;                             // 0x00A0   (0x0004)  
 	int32_t                                            NumPlayerBuiltStructuresDestroyed;                          // 0x00A4   (0x0004)  
 };

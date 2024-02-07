@@ -27,14 +27,14 @@ class UFortCurieElementAttachHandlerIce : public UFortCurieElementAttachHandler
 public:
 	float                                              MinWaterContentOnDetach;                                    // 0x0090   (0x0004)  
 	float                                              ShatterDamageThreshold;                                     // 0x0094   (0x0004)  
-	SDK_UNDEFINED(80,13864) /* TMap<ABuildingActor*, float> */ __um(AggregateDamagePerActor);                      // 0x0098   (0x0050)  
+	SDK_UNDEFINED(80,13971) /* TMap<ABuildingActor*, float> */ __um(AggregateDamagePerActor);                      // 0x0098   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/IceRuntime.FortCurieElementAttachHandlerIce.ResolveBuildingDamage
-	// void ResolveBuildingDamage(class ABuildingActor* DamagedBuildingActor, class AController* InstigatedBy, class AActor* DamageCauser); // [0xaa00038] Final|Native|Private 
+	// void ResolveBuildingDamage(class ABuildingActor* DamagedBuildingActor, class AController* InstigatedBy, class AActor* DamageCauser); // [0xabd2ca0] Final|Native|Private 
 	// Function /Script/IceRuntime.FortCurieElementAttachHandlerIce.HandleBuildingDamaged
-	// void HandleBuildingDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xa9ff610] Final|Native|Private|HasDefaults 
+	// void HandleBuildingDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xabd2370] Final|Native|Private|HasDefaults 
 };
 
 /// Class /Script/IceRuntime.FortCurieIceNativeFXHandlerConfig
@@ -58,7 +58,7 @@ class AIceGroundPath : public AActor
 public:
 	class UStaticMesh*                                 StaticMesh;                                                 // 0x0290   (0x0008)  
 	class UMaterial*                                   Material;                                                   // 0x0298   (0x0008)  
-	SDK_UNDEFINED(1,13865) /* TEnumAsByte<ESplineMeshAxis> */ __um(ForwardAxis);                                   // 0x02A0   (0x0001)  
+	SDK_UNDEFINED(1,13972) /* TEnumAsByte<ESplineMeshAxis> */ __um(ForwardAxis);                                   // 0x02A0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x02A1   (0x0007)  MISSED
 	TArray<FVector_NetQuantize>                        SplinePoints;                                               // 0x02A8   (0x0010)  
 	FVector                                            SplineOffset;                                               // 0x02B8   (0x0018)  
@@ -71,13 +71,13 @@ public:
 
 	/// Functions
 	// Function /Script/IceRuntime.IceGroundPath.OnRep_SplinePoints
-	// void OnRep_SplinePoints();                                                                                            // [0xa9fffe4] Final|Native|Private 
+	// void OnRep_SplinePoints();                                                                                            // [0xabd2c4c] Final|Native|Private 
 	// Function /Script/IceRuntime.IceGroundPath.GetLocationOnLandscape
-	// FVector GetLocationOnLandscape(FVector Location);                                                                     // [0xa9ff4a4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetLocationOnLandscape(FVector Location);                                                                     // [0xabd2274] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/IceRuntime.IceGroundPath.GetLastSplinePointLocation
-	// bool GetLastSplinePointLocation(FVector& LastPointLocation);                                                          // [0xa9ff390] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool GetLastSplinePointLocation(FVector& LastPointLocation);                                                          // [0xabd2160] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/IceRuntime.IceGroundPath.AddSplinePoint
-	// void AddSplinePoint(FVector InWorldLoc);                                                                              // [0xa9ff250] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddSplinePoint(FVector InWorldLoc);                                                                              // [0xabd2044] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/IceRuntime.FortCurieIcePropagationManagerConfig
@@ -103,7 +103,7 @@ public:
 
 	/// Functions
 	// Function /Script/IceRuntime.FortCurieIcePropagationManager.OnIceBlockDied
-	// void OnIceBlockDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xa9ffad8] Final|Native|Public|HasDefaults 
+	// void OnIceBlockDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xabd27c4] Final|Native|Public|HasDefaults 
 };
 
 /// Class /Script/IceRuntime.FortIceSkatesMovementControls

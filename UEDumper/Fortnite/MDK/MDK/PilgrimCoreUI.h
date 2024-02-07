@@ -29,11 +29,11 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelectionRequested
-	// void OnPresetSelectionRequested(class APlayerController* Player);                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPresetSelectionRequested(class APlayerController* Player);                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelectionCancelled
-	// void OnPresetSelectionCancelled();                                                                                       // [0xac61280] Final|Native|Public|BlueprintCallable 
+	// void OnPresetSelectionCancelled();                                                                                       // [0xae43bac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimCoreUI.PilgrimPresetSelector.OnPresetSelected
-	// void OnPresetSelected(int32_t SelectedNumLanes, class UFortInputMappingContext* SelectedPreset);                         // [0xac60e48] Final|Native|Public|BlueprintCallable 
+	// void OnPresetSelected(int32_t SelectedNumLanes, class UFortInputMappingContext* SelectedPreset);                         // [0xae436f0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimCoreUI.FortSettingRegistryExtension_Pilgrim
@@ -61,7 +61,7 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimPlayerInfoWidgetBase.HookUpVoiceIcon
-	// void HookUpVoiceIcon(class UFortVoiceChatStatusIcon* Icon, class AFortPlayerStateAthena* Player);                        // [0xac60c40] Final|Native|Public|BlueprintCallable 
+	// void HookUpVoiceIcon(class UFortVoiceChatStatusIcon* Icon, class AFortPlayerStateAthena* Player);                        // [0xae433b4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimPostGameProgressWidget
@@ -76,9 +76,9 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimPostGameProgressWidget.GetTotalXP
-	// int32_t GetTotalXP();                                                                                                    // [0xac60bf8] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTotalXP();                                                                                                    // [0xae4336c] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimCoreUI.PilgrimPostGameProgressWidget.GetMatchXP
-	// int32_t GetMatchXP();                                                                                                    // [0xac60ad8] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMatchXP();                                                                                                    // [0xae4324c] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimPresetSwitcher
@@ -97,9 +97,9 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimPresetSwitcher.InitializeForLanes
-	// void InitializeForLanes(int32_t NewNumLanes, EHardwareDevicePrimaryType DeviceType);                                     // [0xac60d84] Final|Native|Private|BlueprintCallable 
+	// void InitializeForLanes(int32_t NewNumLanes, EHardwareDevicePrimaryType DeviceType);                                     // [0xae435b4] Final|Native|Private|BlueprintCallable 
 	// Function /Script/PilgrimCoreUI.PilgrimPresetSwitcher.GetSelectedItems
-	// void GetSelectedItems(int32_t& OutSelectedLaneNum, class UFortInputMappingContext*& OutInputContext);                    // [0xac60b20] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetSelectedItems(int32_t& OutSelectedLaneNum, class UFortInputMappingContext*& OutInputContext);                    // [0xae43294] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimSongSortVM
@@ -177,7 +177,7 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimCoreUI.PilgrimSongFilterVM.Initialize
-	// void Initialize(class APlayerController* InOwningController);                                                            // [0xac60d04] Final|Native|Public|BlueprintCallable 
+	// void Initialize(class APlayerController* InOwningController);                                                            // [0xae434f4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimCoreUI.PilgrimCoreUIGlobals

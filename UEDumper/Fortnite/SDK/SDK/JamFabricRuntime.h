@@ -40,15 +40,15 @@ public:
 
 	/// Functions
 	// Function /Script/JamFabricRuntime.JamFabricBridgePlayspaceComponent.OnRep_SyncType
-	// void OnRep_SyncType();                                                                                                // [0xb614f04] Final|Native|Protected 
+	// void OnRep_SyncType();                                                                                                // [0xb87663c] Final|Native|Protected 
 	// Function /Script/JamFabricRuntime.JamFabricBridgePlayspaceComponent.OnFabricTempoChanged
-	// void OnFabricTempoChanged(int32_t CurrentTempo);                                                                      // [0xb614e84] Final|Native|Protected 
+	// void OnFabricTempoChanged(int32_t CurrentTempo);                                                                      // [0xb87657c] Final|Native|Protected 
 	// Function /Script/JamFabricRuntime.JamFabricBridgePlayspaceComponent.OnFabricPlayStateChanged
-	// void OnFabricPlayStateChanged(EFabricMetasoundPlayState CurrentState);                                                // [0xb614e00] Final|Native|Protected 
+	// void OnFabricPlayStateChanged(EFabricMetasoundPlayState CurrentState);                                                // [0xb8764b4] Final|Native|Protected 
 	// Function /Script/JamFabricRuntime.JamFabricBridgePlayspaceComponent.OnFabricModeChanged
-	// void OnFabricModeChanged(EMusicKeyMode CurrentMode);                                                                  // [0xb614d80] Final|Native|Protected 
+	// void OnFabricModeChanged(EMusicKeyMode CurrentMode);                                                                  // [0xb8763f4] Final|Native|Protected 
 	// Function /Script/JamFabricRuntime.JamFabricBridgePlayspaceComponent.OnFabricKeyChanged
-	// void OnFabricKeyChanged(EMusicKey CurrentKey);                                                                        // [0xb614d00] Final|Native|Protected 
+	// void OnFabricKeyChanged(EMusicKey CurrentKey);                                                                        // [0xb876334] Final|Native|Protected 
 };
 
 /// Class /Script/JamFabricRuntime.JamFabricPatchWrapper

@@ -25,18 +25,18 @@ public:
 	float                                              VisibilityMinNonfriendly;                                   // 0x09CC   (0x0004)  
 	float                                              VisibilityLevelChangeRate;                                  // 0x09D0   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x09D4   (0x0004)  MISSED
-	SDK_UNDEFINED(80,12200) /* TMap<FName, FFortGameCueCloakModifier> */ __um(CloakModifiersByNameMap);            // 0x09D8   (0x0050)  
+	SDK_UNDEFINED(80,12244) /* TMap<FName, FFortGameCueCloakModifier> */ __um(CloakModifiersByNameMap);            // 0x09D8   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/CloakGameplay.FortGameCueNotifyLoop_Cloak.TickVisibilityLevel
-	// float TickVisibilityLevel(float DeltaSeconds);                                                                        // [0xaa00c84] Final|Native|Protected|BlueprintCallable 
+	// float TickVisibilityLevel(float DeltaSeconds);                                                                        // [0xabd39b0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/CloakGameplay.FortGameCueNotifyLoop_Cloak.SetModifierEnabled
-	// bool SetModifierEnabled(FName& ModifierName, bool bNewEnabled);                                                       // [0xaa00b64] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool SetModifierEnabled(FName& ModifierName, bool bNewEnabled);                                                       // [0xabd3890] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/CloakGameplay.FortGameCueNotifyLoop_Cloak.SetModifierCanBeEnabled
-	// bool SetModifierCanBeEnabled(FName& ModifierName, bool bNewCanBeEnabled);                                             // [0xaa00a44] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// bool SetModifierCanBeEnabled(FName& ModifierName, bool bNewCanBeEnabled);                                             // [0xabd3770] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/CloakGameplay.FortGameCueNotifyLoop_Cloak.GetCurrentModifierValues
-	// bool GetCurrentModifierValues(float& OutVisibilityMultiplier, float& OutVisibilityAddition, FName& ModifierName);     // [0xaa00918] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetCurrentModifierValues(float& OutVisibilityMultiplier, float& OutVisibilityAddition, FName& ModifierName);     // [0xabd3644] Final|Native|Protected|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/CloakGameplay.FortGameCueCloakModifier

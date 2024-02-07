@@ -55,84 +55,84 @@ public:
 };
 
 /// Class /Script/MotorboatRuntime.FortMeatballVehicle
-/// Size: 0x02F0 (0x001E80 - 0x002170)
+/// Size: 0x02F0 (0x001EF0 - 0x0021E0)
 class AFortMeatballVehicle : public AFortAthenaSKVehicle
 { 
 public:
-	FFortRechargingActionTimer                         BoostAction;                                                // 0x1E80   (0x00D8)  
-	float                                              FxNormalizationMaxSpeedKmh;                                 // 0x1F58   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x1F5C   (0x0004)  MISSED
-	class UFortVehicleAudioVoice*                      CacheAudioEngineUp;                                         // 0x1F60   (0x0008)  
-	class UFortVehicleAudioVoice*                      CacheAudioEngineDown;                                       // 0x1F68   (0x0008)  
-	class UFortVehicleAudioVoice*                      CacheAudioWakeTurn;                                         // 0x1F70   (0x0008)  
-	class UFortVehicleAudioVoice*                      CacheAudioWakeSpeed;                                        // 0x1F78   (0x0008)  
-	class UFortVehicleAudioVoice*                      CacheAudioScrape;                                           // 0x1F80   (0x0008)  
-	class UFortVehicleAudioVoice*                      CacheAudioEngineOutOfFuel;                                  // 0x1F88   (0x0008)  
-	class UMaterialInstanceDynamic*                    BoostMID;                                                   // 0x1F90   (0x0008)  
-	class UNiagaraComponent*                           CachedGroundFXComponent;                                    // 0x1F98   (0x0008)  
-	class APlayerController*                           DrivingPlayerController;                                    // 0x1FA0   (0x0008)  
-	class ULegacyCameraShake*                          LandCameraShake;                                            // 0x1FA8   (0x0008)  
-	class UClass*                                      LandCameraShakeClass;                                       // 0x1FB0   (0x0008)  
-	class ULegacyCameraShake*                          DriverCameraShake;                                          // 0x1FB8   (0x0008)  
-	class UClass*                                      DriverCameraShakeClass;                                     // 0x1FC0   (0x0008)  
-	float                                              LandRumbleIntensity;                                        // 0x1FC8   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x1FCC   (0x0004)  MISSED
-	uint64_t                                           LandForceFeedbackHandle;                                    // 0x1FD0   (0x0008)  
-	float                                              TurnRumbleIntensity;                                        // 0x1FD8   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x1FDC   (0x0004)  MISSED
-	uint64_t                                           TurnForceFeedbackHandle;                                    // 0x1FE0   (0x0008)  
-	float                                              CurrentSnowAltitude;                                        // 0x1FE8   (0x0004)  
-	bool                                               bHasSnow;                                                   // 0x1FEC   (0x0001)  
-	bool                                               bLargeRumble;                                               // 0x1FED   (0x0001)  
-	bool                                               bTurnRumbleActive;                                          // 0x1FEE   (0x0001)  
-	bool                                               bWaterDropsOnScreen;                                        // 0x1FEF   (0x0001)  
-	FGameplayTag                                       GCVehicleScreenDrips;                                       // 0x1FF0   (0x0004)  
-	unsigned char                                      UnknownData03_5[0x4];                                       // 0x1FF4   (0x0004)  MISSED
-	FGameplayCueParameters                             GCParamsEmpty;                                              // 0x1FF8   (0x00D0)  
-	class UClass*                                      BoostingCamera;                                             // 0x20C8   (0x0008)  
-	class UClass*                                      VehicleCameraNoWeaponOverride;                              // 0x20D0   (0x0008)  
-	unsigned char                                      UnknownData04_5[0x10];                                      // 0x20D8   (0x0010)  MISSED
-	class UFortMeatballVehicleConfigs*                 FortMeatballVehicleConfigs;                                 // 0x20E8   (0x0008)  
-	int32_t                                            WaterLineStartPontoonIndex;                                 // 0x20F0   (0x0004)  
-	int32_t                                            WaterLineEndPontoonIndex;                                   // 0x20F4   (0x0004)  
-	unsigned char                                      UnknownData05_5[0x38];                                      // 0x20F8   (0x0038)  MISSED
-	bool                                               bBoostFailed;                                               // 0x2130   (0x0001)  
-	unsigned char                                      UnknownData06_6[0x3F];                                      // 0x2131   (0x003F)  MISSED
+	FFortRechargingActionTimer                         BoostAction;                                                // 0x1EF0   (0x00D8)  
+	float                                              FxNormalizationMaxSpeedKmh;                                 // 0x1FC8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x1FCC   (0x0004)  MISSED
+	class UFortVehicleAudioVoice*                      CacheAudioEngineUp;                                         // 0x1FD0   (0x0008)  
+	class UFortVehicleAudioVoice*                      CacheAudioEngineDown;                                       // 0x1FD8   (0x0008)  
+	class UFortVehicleAudioVoice*                      CacheAudioWakeTurn;                                         // 0x1FE0   (0x0008)  
+	class UFortVehicleAudioVoice*                      CacheAudioWakeSpeed;                                        // 0x1FE8   (0x0008)  
+	class UFortVehicleAudioVoice*                      CacheAudioScrape;                                           // 0x1FF0   (0x0008)  
+	class UFortVehicleAudioVoice*                      CacheAudioEngineOutOfFuel;                                  // 0x1FF8   (0x0008)  
+	class UMaterialInstanceDynamic*                    BoostMID;                                                   // 0x2000   (0x0008)  
+	class UNiagaraComponent*                           CachedGroundFXComponent;                                    // 0x2008   (0x0008)  
+	class APlayerController*                           DrivingPlayerController;                                    // 0x2010   (0x0008)  
+	class ULegacyCameraShake*                          LandCameraShake;                                            // 0x2018   (0x0008)  
+	class UClass*                                      LandCameraShakeClass;                                       // 0x2020   (0x0008)  
+	class ULegacyCameraShake*                          DriverCameraShake;                                          // 0x2028   (0x0008)  
+	class UClass*                                      DriverCameraShakeClass;                                     // 0x2030   (0x0008)  
+	float                                              LandRumbleIntensity;                                        // 0x2038   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x203C   (0x0004)  MISSED
+	uint64_t                                           LandForceFeedbackHandle;                                    // 0x2040   (0x0008)  
+	float                                              TurnRumbleIntensity;                                        // 0x2048   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x204C   (0x0004)  MISSED
+	uint64_t                                           TurnForceFeedbackHandle;                                    // 0x2050   (0x0008)  
+	float                                              CurrentSnowAltitude;                                        // 0x2058   (0x0004)  
+	bool                                               bHasSnow;                                                   // 0x205C   (0x0001)  
+	bool                                               bLargeRumble;                                               // 0x205D   (0x0001)  
+	bool                                               bTurnRumbleActive;                                          // 0x205E   (0x0001)  
+	bool                                               bWaterDropsOnScreen;                                        // 0x205F   (0x0001)  
+	FGameplayTag                                       GCVehicleScreenDrips;                                       // 0x2060   (0x0004)  
+	unsigned char                                      UnknownData03_5[0x4];                                       // 0x2064   (0x0004)  MISSED
+	FGameplayCueParameters                             GCParamsEmpty;                                              // 0x2068   (0x00D0)  
+	class UClass*                                      BoostingCamera;                                             // 0x2138   (0x0008)  
+	class UClass*                                      VehicleCameraNoWeaponOverride;                              // 0x2140   (0x0008)  
+	unsigned char                                      UnknownData04_5[0x10];                                      // 0x2148   (0x0010)  MISSED
+	class UFortMeatballVehicleConfigs*                 FortMeatballVehicleConfigs;                                 // 0x2158   (0x0008)  
+	int32_t                                            WaterLineStartPontoonIndex;                                 // 0x2160   (0x0004)  
+	int32_t                                            WaterLineEndPontoonIndex;                                   // 0x2164   (0x0004)  
+	unsigned char                                      UnknownData05_5[0x38];                                      // 0x2168   (0x0038)  MISSED
+	bool                                               bBoostFailed;                                               // 0x21A0   (0x0001)  
+	unsigned char                                      UnknownData06_6[0x3F];                                      // 0x21A1   (0x003F)  MISSED
 
 
 	/// Functions
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.UpdateSnowAndDirtParams
-	// void UpdateSnowAndDirtParams(float NormalizedForwardSpeed);                                                           // [0xa903084] Final|Native|Protected|BlueprintCallable 
+	// void UpdateSnowAndDirtParams(float NormalizedForwardSpeed);                                                           // [0xaad9d00] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.StopTurnRumble
-	// void StopTurnRumble();                                                                                                // [0xa903070] Final|Native|Protected|BlueprintCallable 
+	// void StopTurnRumble();                                                                                                // [0xaad9cec] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.StopLandRumble
-	// void StopLandRumble();                                                                                                // [0xa90305c] Final|Native|Protected|BlueprintCallable 
+	// void StopLandRumble();                                                                                                // [0xaad9cd8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.StopDriverCameraShake
-	// void StopDriverCameraShake();                                                                                         // [0xa903048] Final|Native|Protected|BlueprintCallable 
+	// void StopDriverCameraShake();                                                                                         // [0xaad9cc4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.SmashedThroughBuildingPiece
-	// void SmashedThroughBuildingPiece(FVector& ImpactPoint, FVector& ImpactNormal, class ABuildingActor* BuildingHitActor); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void SmashedThroughBuildingPiece(FVector& ImpactPoint, FVector& ImpactNormal, class ABuildingActor* BuildingHitActor); // [0x2047e54] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.ShowCooldownCue
-	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ShowCooldownCue(class AFortPlayerPawn* Pawn, float duration);                                                    // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.OnBoostStarted
-	// void OnBoostStarted();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnBoostStarted();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.OnBoostReady
-	// void OnBoostReady();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnBoostReady();                                                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.OnBoostFinished
-	// void OnBoostFinished();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnBoostFinished();                                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.OnBoostFailed
-	// void OnBoostFailed();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnBoostFailed();                                                                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.LandShakeEnd
-	// void LandShakeEnd();                                                                                                  // [0xa903034] Final|Native|Protected|BlueprintCallable 
+	// void LandShakeEnd();                                                                                                  // [0xaad9cb0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.GetSeatRotation
-	// FQuat GetSeatRotation();                                                                                              // [0xa90300c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FQuat GetSeatRotation();                                                                                              // [0xaad9c88] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.GetSeatOffset
-	// FVector GetSeatOffset();                                                                                              // [0xa902fe4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetSeatOffset();                                                                                              // [0xaad9c60] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.GetBoostCharge
-	// float GetBoostCharge();                                                                                               // [0xa902fbc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoostCharge();                                                                                               // [0xaad9c38] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.CacheGroundFXComponent
-	// void CacheGroundFXComponent(class UNiagaraComponent* InGroundFXComponent);                                            // [0xa902f30] Final|Native|Public|BlueprintCallable 
+	// void CacheGroundFXComponent(class UNiagaraComponent* InGroundFXComponent);                                            // [0xaad9b68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorboatRuntime.FortMeatballVehicle.CacheAudioPointers
-	// void CacheAudioPointers(class UFortVehicleAudioVoice* InAudioEngineUp, class UFortVehicleAudioVoice* InAudioEngineDown, class UFortVehicleAudioVoice* InAudioWakeTurn, class UFortVehicleAudioVoice* InAudioWakeSpeed, class UFortVehicleAudioVoice* InAudioScrape, class UFortVehicleAudioVoice* InAudioEngineOutOfFuel); // [0xa902cb4] Final|Native|Public|BlueprintCallable 
+	// void CacheAudioPointers(class UFortVehicleAudioVoice* InAudioEngineUp, class UFortVehicleAudioVoice* InAudioEngineDown, class UFortVehicleAudioVoice* InAudioWakeTurn, class UFortVehicleAudioVoice* InAudioWakeSpeed, class UFortVehicleAudioVoice* InAudioScrape, class UFortVehicleAudioVoice* InAudioEngineOutOfFuel); // [0xaad9788] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MotorboatRuntime.FortMeatballVehicleConfigs

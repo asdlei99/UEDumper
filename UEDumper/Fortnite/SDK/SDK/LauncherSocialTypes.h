@@ -213,9 +213,9 @@ struct FSocialListStyle
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FProfanityData
 { 
-	SDK_UNDEFINED(16,9384) /* FString */               __um(CountryCode);                                          // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,9385) /* FString */               __um(ProfanityList);                                        // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,9386) /* FString */               __um(WhiteList);                                            // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,9406) /* FString */               __um(CountryCode);                                          // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,9407) /* FString */               __um(ProfanityList);                                        // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,9408) /* FString */               __um(WhiteList);                                            // 0x0020   (0x0010)  
 	bool                                               bAutoAdd;                                                   // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0031   (0x0007)  MISSED
 };

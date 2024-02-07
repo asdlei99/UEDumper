@@ -11,17 +11,17 @@
 /// dependency: FortniteGame
 
 /// Class /Script/ResolveTurretRuntime.FortPlayerAnimInstance_AntiVehMountedTurret
-/// Size: 0x0030 (0x001620 - 0x001650)
+/// Size: 0x0040 (0x001620 - 0x001660)
 class UFortPlayerAnimInstance_AntiVehMountedTurret : public UFortPlayerAnimInstanceProxy
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5712;
+	static inline constexpr uint64_t __MDKClassSize = 5728;
 
 public:
-	SMember(FVector)                                   HandAttachL                                                 OFFSET(getStruct<T>, {0x1618, 24, 0, 0})
-	SMember(FVector)                                   HandAttachR                                                 OFFSET(getStruct<T>, {0x1630, 24, 0, 0})
-	SMember(FName)                                     HandAttachBoneNameL                                         OFFSET(getStruct<T>, {0x1648, 4, 0, 0})
-	SMember(FName)                                     HandAttachBoneNameR                                         OFFSET(getStruct<T>, {0x164C, 4, 0, 0})
+	SMember(FVector)                                   HandAttachL                                                 OFFSET(getStruct<T>, {0x1620, 24, 0, 0})
+	SMember(FVector)                                   HandAttachR                                                 OFFSET(getStruct<T>, {0x1638, 24, 0, 0})
+	SMember(FName)                                     HandAttachBoneNameL                                         OFFSET(getStruct<T>, {0x1650, 4, 0, 0})
+	SMember(FName)                                     HandAttachBoneNameR                                         OFFSET(getStruct<T>, {0x1654, 4, 0, 0})
 };
 
 /// Class /Script/ResolveTurretRuntime.FortVehicleAnimInstance_AntiVehMountedTurret

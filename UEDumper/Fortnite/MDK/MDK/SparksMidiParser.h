@@ -23,7 +23,7 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiEventBase.OnFinished__DelegateSignature
-	// void OnFinished__DelegateSignature(bool bCanceled);                                                                      // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnFinished__DelegateSignature(bool bCanceled);                                                                      // [0x2047e54] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEvent
@@ -40,13 +40,13 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEvent.OnMidiNoteEventDelegate__DelegateSignature
-	// void OnMidiNoteEventDelegate__DelegateSignature(char MidiEventNote, FParsedMidiNoteEvent& MidiEventData);                // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnMidiNoteEventDelegate__DelegateSignature(char MidiEventNote, FParsedMidiNoteEvent& MidiEventData);                // [0x2047e54] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEvent.ListenForMidiNoteEvents_WithParams
-	// class UAsyncAction_ListenForMidiNoteEvent* ListenForMidiNoteEvents_WithParams(TScriptInterface<Class> MidiEventDriver, FMidiNoteEventListenerParams& Params); // [0xab6a2ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiNoteEvent* ListenForMidiNoteEvents_WithParams(TScriptInterface<Class> MidiEventDriver, FMidiNoteEventListenerParams& Params); // [0xad46c58] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEvent.ListenForMidiNoteEvents
-	// class UAsyncAction_ListenForMidiNoteEvent* ListenForMidiNoteEvents(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, TArray<char> EventNotes, float SecondsBeforeEventStart, float SecondsBeforeEventEnd); // [0xab698a8] Final|Native|Static|Public|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiNoteEvent* ListenForMidiNoteEvents(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, TArray<char> EventNotes, float SecondsBeforeEventStart, float SecondsBeforeEventEnd); // [0xad45f6c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEvent.ListenForMidiNoteEvent
-	// class UAsyncAction_ListenForMidiNoteEvent* ListenForMidiNoteEvent(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, char EventNote, float SecondsBeforeEventStart, float SecondsBeforeEventEnd); // [0xab69044] Final|Native|Static|Public|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiNoteEvent* ListenForMidiNoteEvent(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, char EventNote, float SecondsBeforeEventStart, float SecondsBeforeEventEnd); // [0xad453f8] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/SparksMidiParser.AsyncAction_ListenForMidiTextEvent
@@ -62,13 +62,13 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiTextEvent.OnMidiTextEventDelegate__DelegateSignature
-	// void OnMidiTextEventDelegate__DelegateSignature(FString MidiEventText, FParsedMidiTextEvent& MidiEventData);             // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnMidiTextEventDelegate__DelegateSignature(FString MidiEventText, FParsedMidiTextEvent& MidiEventData);             // [0x2047e54] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiTextEvent.ListenForMidiTextEvents_WithParams
-	// class UAsyncAction_ListenForMidiTextEvent* ListenForMidiTextEvents_WithParams(TScriptInterface<Class> MidiEventDriver, FMidiTextEventListenerParams& Params); // [0xab6ab9c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiTextEvent* ListenForMidiTextEvents_WithParams(TScriptInterface<Class> MidiEventDriver, FMidiTextEventListenerParams& Params); // [0xad478bc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiTextEvent.ListenForMidiTextEvents
-	// class UAsyncAction_ListenForMidiTextEvent* ListenForMidiTextEvents(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, TArray<FString>& EventStrings, float SecondsBeforeEventStart); // [0xab6a850] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiTextEvent* ListenForMidiTextEvents(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, TArray<FString>& EventStrings, float SecondsBeforeEventStart); // [0xad47610] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiTextEvent.ListenForMidiTextEvent
-	// class UAsyncAction_ListenForMidiTextEvent* ListenForMidiTextEvent(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, FString EventString, float SecondsBeforeEventStart); // [0xab6a464] Final|Native|Static|Public|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiTextEvent* ListenForMidiTextEvent(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, FString EventString, float SecondsBeforeEventStart); // [0xad46da8] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEventPools
@@ -84,13 +84,13 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEventPools.OnMidiNotePoolEventDelegate__DelegateSignature
-	// void OnMidiNotePoolEventDelegate__DelegateSignature(char MidiNote, FParsedMidiNoteEvent& MidiNoteData, FName WaitPoolID, float ActualDelay, float MaxDelayShortenedBy); // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnMidiNotePoolEventDelegate__DelegateSignature(char MidiNote, FParsedMidiNoteEvent& MidiNoteData, FName WaitPoolID, float ActualDelay, float MaxDelayShortenedBy); // [0x2047e54] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEventPools.ListenForMidiNoteEventsPools_WithParams
-	// class UAsyncAction_ListenForMidiNoteEventPools* ListenForMidiNoteEventsPools_WithParams(TScriptInterface<Class> MidiEventDriver, FMidiNotePoolEventListenerParams& Params); // [0xab6a0f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiNoteEventPools* ListenForMidiNoteEventsPools_WithParams(TScriptInterface<Class> MidiEventDriver, FMidiNotePoolEventListenerParams& Params); // [0xad46b00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEventPools.ListenForMidiNoteEventsPools
-	// class UAsyncAction_ListenForMidiNoteEventPools* ListenForMidiNoteEventsPools(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, TArray<char>& EventNotes, TArray<char>& WatchNotes, TArray<FMidiNoteEvent_DelayPool>& DelayPools); // [0xab69dac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiNoteEventPools* ListenForMidiNoteEventsPools(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, TArray<char>& EventNotes, TArray<char>& WatchNotes, TArray<FMidiNoteEvent_DelayPool>& DelayPools); // [0xad46298] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksMidiParser.AsyncAction_ListenForMidiNoteEventPools.ListenForMidiNoteEventPools
-	// class UAsyncAction_ListenForMidiNoteEventPools* ListenForMidiNoteEventPools(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, char EventNote, TArray<char>& WatchNotes, TArray<FMidiNoteEvent_DelayPool>& DelayPools); // [0xab694fc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UAsyncAction_ListenForMidiNoteEventPools* ListenForMidiNoteEventPools(TScriptInterface<Class> MidiEventDriver, FName MidiTrackName, char EventNote, TArray<char>& WatchNotes, TArray<FMidiNoteEvent_DelayPool>& DelayPools); // [0xad456e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SparksMidiParser.MidiEventDriverInterface
@@ -105,23 +105,23 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.TickToSeconds
-	// float TickToSeconds(int32_t Tick);                                                                                       // [0xab6addc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float TickToSeconds(int32_t Tick);                                                                                       // [0xad47ad4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.SecondsToTick
-	// int32_t SecondsToTick(float Seconds);                                                                                    // [0xab6ad48] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t SecondsToTick(float Seconds);                                                                                    // [0xad47a00] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.IsPlaybackEnded
-	// bool IsPlaybackEnded();                                                                                                  // [0x67281f8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlaybackEnded();                                                                                                  // [0x646ab24] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.GetSparksInstrumentFromMidiTrackName
-	// ESparksInstrumentType GetSparksInstrumentFromMidiTrackName(FName TrackName);                                             // [0xab68f18] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESparksInstrumentType GetSparksInstrumentFromMidiTrackName(FName TrackName);                                             // [0xad4528c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.GetParsedMidiEventData
-	// class UParsedMidiEventData* GetParsedMidiEventData();                                                                    // [0x646d4cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UParsedMidiEventData* GetParsedMidiEventData();                                                                    // [0x61a118c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.GetMidiTrackNameFromSparksInstrument
-	// FName GetMidiTrackNameFromSparksInstrument(ESparksInstrumentType InstrumentType);                                        // [0xab68a98] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetMidiTrackNameFromSparksInstrument(ESparksInstrumentType InstrumentType);                                        // [0xad44cf0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.GetMidiPlaybackState
-	// FMidiPlaybackState GetMidiPlaybackState();                                                                               // [0xab68894] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FMidiPlaybackState GetMidiPlaybackState();                                                                               // [0xad44a64] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.GetCurrentMidiTick
-	// int32_t GetCurrentMidiTick();                                                                                            // [0xab67aa4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentMidiTick();                                                                                            // [0xad441b4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.MidiEventDriverInterface.GetCurrentMidiSeconds
-	// float GetCurrentMidiSeconds();                                                                                           // [0x8ee54c4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentMidiSeconds();                                                                                           // [0x8f29248] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SparksMidiParser.MidiEventListenerSubsystem
@@ -136,11 +136,11 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMidiParser.MidiEventListenerSubsystem.IsListenerActive
-	// bool IsListenerActive(FMidiEventListenerHandle& Handle);                                                                 // [0xab68fa8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool IsListenerActive(FMidiEventListenerHandle& Handle);                                                                 // [0xad4535c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/SparksMidiParser.MidiEventListenerSubsystem.CancelListener
-	// void CancelListener(FMidiEventListenerHandle& Handle);                                                                   // [0xab678f4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CancelListener(FMidiEventListenerHandle& Handle);                                                                   // [0xad44004] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksMidiParser.MidiEventListenerSubsystem.CancelAllListenersForDriver
-	// void CancelAllListenersForDriver(TScriptInterface<Class>& Driver);                                                       // [0xab67864] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CancelAllListenersForDriver(TScriptInterface<Class>& Driver);                                                       // [0xad43f74] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SparksMidiParser.ParsedMidiEventData
@@ -158,23 +158,23 @@ public:
 
 	/// Functions
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetPreviousMidiTextEventsWithStrings
-	// void GetPreviousMidiTextEventsWithStrings(FName TrackName, TArray<FString>& MidiEventStrings, int32_t UpToMidiTick, TArray<FMidiTextEventList>& OutResults); // [0xab68d24] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPreviousMidiTextEventsWithStrings(FName TrackName, TArray<FString>& MidiEventStrings, int32_t UpToMidiTick, TArray<FMidiTextEventList>& OutResults); // [0xad45028] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetPreviousMidiNoteEventsWithInts
-	// void GetPreviousMidiNoteEventsWithInts(FName TrackName, TArray<char>& MidiEventInts, int32_t UpToMidiTick, TArray<FMidiNoteEventList>& OutResults); // [0xab68b24] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPreviousMidiNoteEventsWithInts(FName TrackName, TArray<char>& MidiEventInts, int32_t UpToMidiTick, TArray<FMidiNoteEventList>& OutResults); // [0xad44dbc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetMidiTextEventsWithStrings
-	// void GetMidiTextEventsWithStrings(FName TrackName, TArray<FString>& MidiEventStrings, TArray<FParsedMidiTextEvent>& OutArray); // [0xab68960] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetMidiTextEventsWithStrings(FName TrackName, TArray<FString>& MidiEventStrings, TArray<FParsedMidiTextEvent>& OutArray); // [0xad44b74] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetMidiTextEvents
-	// TArray<FParsedMidiTextEvent> GetMidiTextEvents(FName TrackName);                                                         // [0xab688cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FParsedMidiTextEvent> GetMidiTextEvents(FName TrackName);                                                         // [0xad44a9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetMidiNoteEventsWithInts
-	// void GetMidiNoteEventsWithInts(FName TrackName, TArray<char>& MidiEventInts, TArray<FParsedMidiNoteEvent>& OutArray);    // [0xab67b80] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetMidiNoteEventsWithInts(FName TrackName, TArray<char>& MidiEventInts, TArray<FParsedMidiNoteEvent>& OutArray);    // [0xad442d4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetMidiNoteEvents
-	// TArray<FParsedMidiNoteEvent> GetMidiNoteEvents(FName TrackName);                                                         // [0xab67aec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FParsedMidiNoteEvent> GetMidiNoteEvents(FName TrackName);                                                         // [0xad441fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetMidiFile
-	// class UMidiFile* GetMidiFile();                                                                                          // [0xab67ac8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMidiFile* GetMidiFile();                                                                                          // [0xad441d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetAllMidiTextEvents
-	// TMap<FName, FMidiTextEventList> GetAllMidiTextEvents();                                                                  // [0xab67a14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TMap<FName, FMidiTextEventList> GetAllMidiTextEvents();                                                                  // [0xad44124] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksMidiParser.ParsedMidiEventData.GetAllMidiNoteEvents
-	// TMap<FName, FMidiNoteEventList> GetAllMidiNoteEvents();                                                                  // [0xab67984] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TMap<FName, FMidiNoteEventList> GetAllMidiNoteEvents();                                                                  // [0xad44094] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/SparksMidiParser.MidiEventListenerParams

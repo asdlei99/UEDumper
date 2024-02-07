@@ -275,7 +275,7 @@ struct FTimeStretchConfig
 	bool                                               bMaintainTime;                                              // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FPitchShifterName                                  PitchShifter;                                               // 0x0004   (0x0004)  
-	SDK_UNDEFINED(80,13354) /* TMap<FName, FTypedParameter> */ __um(PitchShifterOptions);                          // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,13409) /* TMap<FName, FTypedParameter> */ __um(PitchShifterOptions);                          // 0x0008   (0x0050)  
 	bool                                               bSyncTempo;                                                 // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0059   (0x0003)  MISSED
 	float                                              OriginalTempo;                                              // 0x005C   (0x0004)  
@@ -299,7 +299,7 @@ struct FTrackChannelInfo
 	FName                                              Routing;                                                    // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
 	TArray<FStreamingChannelParams>                    Channels;                                                   // 0x0010   (0x0010)  
-	SDK_UNDEFINED(80,13355) /* TMap<FName, FStreamingChannelParamsArray> */ __um(PresetChannels);                  // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,13410) /* TMap<FName, FStreamingChannelParamsArray> */ __um(PresetChannels);                  // 0x0020   (0x0050)  
 };
 
 /// Struct /Script/HarmonixDsp.KeyzoneSettings
@@ -564,24 +564,13 @@ struct FFusionPatchData
 };
 
 /// Class /Script/HarmonixDsp.FusionPatch
-/// Size: 0x0058 (0x000028 - 0x000080)
+/// Size: 0x0048 (0x000028 - 0x000070)
 class UFusionPatch : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0028   (0x0008)  MISSED
 	FFusionPatchData                                   FusionPatchData;                                            // 0x0030   (0x0028)  
-	unsigned char                                      UnknownData01_6[0x28];                                      // 0x0058   (0x0028)  MISSED
-
-
-	/// Functions
-	// Function /Script/HarmonixDsp.FusionPatch.ReleaseLoadedAudio
-	// void ReleaseLoadedAudio();                                                                                            // [0xaa4ffc0] Final|Native|Public|BlueprintCallable 
-	// Function /Script/HarmonixDsp.FusionPatch.LoadAudioForPlayback
-	// void LoadAudioForPlayback(FDelegateProperty OnLoadComplete);                                                          // [0xaa4ff2c] Final|Native|Public|BlueprintCallable 
-	// Function /Script/HarmonixDsp.FusionPatch.IsAudioLoadedForPlayback
-	// bool IsAudioLoadedForPlayback();                                                                                      // [0xaa4ff08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
-	// Function /Script/HarmonixDsp.FusionPatch.CancelAudioLoadRequest
-	// void CancelAudioLoadRequest();                                                                                        // [0xaa4fef4] Final|Native|Public|BlueprintCallable 
+	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0058   (0x0018)  MISSED
 };
 
 /// Class /Script/HarmonixDsp.StretcherAndPitchShifterConfig

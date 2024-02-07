@@ -125,18 +125,18 @@ struct FRigUnit_FullbodyIK_WorkData
 };
 
 /// Struct /Script/FullBodyIK.RigUnit_FullbodyIK
-/// Size: 0x0270 (0x000180 - 0x0003F0)
+/// Size: 0x0270 (0x0001D0 - 0x000440)
 struct FRigUnit_FullbodyIK : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Root;                                                       // 0x0180   (0x0008)  
-	TArray<FFBIKEndEffector>                           Effectors;                                                  // 0x0188   (0x0010)  
-	TArray<FFBIKConstraintOption>                      Constraints;                                                // 0x0198   (0x0010)  
-	FSolverInput                                       SolverProperty;                                             // 0x01A8   (0x0024)  
-	FMotionProcessInput                                MotionProperty;                                             // 0x01CC   (0x0002)  
-	bool                                               bPropagateToChildren;                                       // 0x01CE   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x1];                                       // 0x01CF   (0x0001)  MISSED
-	FFBIKDebugOption                                   DebugOption;                                                // 0x01D0   (0x0080)  
-	FRigUnit_FullbodyIK_WorkData                       WorkData;                                                   // 0x0250   (0x0198)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x03E8   (0x0008)  MISSED
+	FRigElementKey                                     Root;                                                       // 0x01D0   (0x0008)  
+	TArray<FFBIKEndEffector>                           Effectors;                                                  // 0x01D8   (0x0010)  
+	TArray<FFBIKConstraintOption>                      Constraints;                                                // 0x01E8   (0x0010)  
+	FSolverInput                                       SolverProperty;                                             // 0x01F8   (0x0024)  
+	FMotionProcessInput                                MotionProperty;                                             // 0x021C   (0x0002)  
+	bool                                               bPropagateToChildren;                                       // 0x021E   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x1];                                       // 0x021F   (0x0001)  MISSED
+	FFBIKDebugOption                                   DebugOption;                                                // 0x0220   (0x0080)  
+	FRigUnit_FullbodyIK_WorkData                       WorkData;                                                   // 0x02A0   (0x0198)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0438   (0x0008)  MISSED
 };
 

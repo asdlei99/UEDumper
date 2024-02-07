@@ -33,22 +33,22 @@ public:
 
 	/// Functions
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetShouldUpdateFromOwner
-	// void SetShouldUpdateFromOwner(bool ShouldUpdate, class UObject* Owner);                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SetShouldUpdateFromOwner(bool ShouldUpdate, class UObject* Owner);                                               // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.UpdateFromTrajectoryOwner
-	// void UpdateFromTrajectoryOwner();                                                                                     // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateFromTrajectoryOwner();                                                                                     // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.ReceiveTick
-	// void ReceiveTick(float DeltaSeconds);                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveTick(float DeltaSeconds);                                                                                 // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetTrajectorySpline
-	// void SetTrajectorySpline(TArray<FVector>& SplinePoints, TArray<FVector>& SplineTangents);                             // [0x211c0a0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTrajectorySpline(TArray<FVector>& SplinePoints, TArray<FVector>& SplineTangents);                             // [0x2047e54] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetTrajectoryValid
-	// void SetTrajectoryValid(bool bIsTrajectoryValid);                                                                     // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void SetTrajectoryValid(bool bIsTrajectoryValid);                                                                     // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.UpdateTargetMeshVisibility
-	// void UpdateTargetMeshVisibility();                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void UpdateTargetMeshVisibility();                                                                                    // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.ExecuteUbergraph_BP_ProjectileTrajectory
-	// void ExecuteUbergraph_BP_ProjectileTrajectory(int32_t EntryPoint);                                                    // [0x211c0a0] Final|HasDefaults    
+	// void ExecuteUbergraph_BP_ProjectileTrajectory(int32_t EntryPoint);                                                    // [0x2047e54] Final|HasDefaults    
 };
 

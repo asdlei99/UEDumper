@@ -23,7 +23,7 @@ public:
 
 	/// Functions
 	// Function /Script/DynamicUI.DynamicUITransitionableWidgetInterface.BroadcastTransitionCompleted
-	// void BroadcastTransitionCompleted();                                                                                     // [0x32caac0] Native|Protected|BlueprintCallable 
+	// void BroadcastTransitionCompleted();                                                                                     // [0x2f3ff84] Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DynamicUI.DynamicUIDirectorBase
@@ -41,13 +41,13 @@ public:
 
 	/// Functions
 	// Function /Script/DynamicUI.DynamicUIDirectorBase.RemoveScene
-	// void RemoveScene(class UDynamicUIScene* Scene);                                                                          // [0x7769a08] Final|Native|Public|BlueprintCallable 
+	// void RemoveScene(class UDynamicUIScene* Scene);                                                                          // [0x76bd1ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIDirectorBase.GetOwningLocalPlayerController
-	// class APlayerController* GetOwningLocalPlayerController();                                                               // [0x355adb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APlayerController* GetOwningLocalPlayerController();                                                               // [0x76bd188] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DynamicUI.DynamicUIDirectorBase.GetOwningLocalPlayer
-	// class ULocalPlayer* GetOwningLocalPlayer();                                                                              // [0x77699e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ULocalPlayer* GetOwningLocalPlayer();                                                                              // [0x76bd164] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DynamicUI.DynamicUIDirectorBase.AddScene
-	// void AddScene(class UDynamicUIScene* Scene);                                                                             // [0x34e2aa4] Final|Native|Public|BlueprintCallable 
+	// void AddScene(class UDynamicUIScene* Scene);                                                                             // [0x76bbfb8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DynamicUI.DynamicUIConstraintBase
@@ -170,17 +170,17 @@ public:
 
 	/// Functions
 	// Function /Script/DynamicUI.DynamicUIManager.RemoveScenes
-	// void RemoveScenes(TArray<UDynamicUIScene*> Scenes, class APlayerController*& Player);                                    // [0x7769dcc] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void RemoveScenes(TArray<UDynamicUIScene*> Scenes, class APlayerController*& Player);                                    // [0x76bd630] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.RemoveSceneFromFirstLocalPlayer
-	// void RemoveSceneFromFirstLocalPlayer(class UDynamicUIScene* Scene);                                                      // [0x7769c4c] Final|Native|Protected|BlueprintCallable 
+	// void RemoveSceneFromFirstLocalPlayer(class UDynamicUIScene* Scene);                                                      // [0x76bd470] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.RemoveScene
-	// void RemoveScene(class UDynamicUIScene* Scene, class APlayerController*& Player);                                        // [0x7769a88] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void RemoveScene(class UDynamicUIScene* Scene, class APlayerController*& Player);                                        // [0x76bd26c] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.AddSceneToFirstLocalPlayer
-	// void AddSceneToFirstLocalPlayer(class UDynamicUIScene* Scene);                                                           // [0x7769474] Final|Native|Protected|BlueprintCallable 
+	// void AddSceneToFirstLocalPlayer(class UDynamicUIScene* Scene);                                                           // [0x76bc550] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.AddScenes
-	// void AddScenes(TArray<UDynamicUIScene*> Scenes, class APlayerController*& Player);                                       // [0x77698bc] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddScenes(TArray<UDynamicUIScene*> Scenes, class APlayerController*& Player);                                       // [0x76bc9f4] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.AddScene
-	// void AddScene(class UDynamicUIScene* Scene, class APlayerController*& Player);                                           // [0x7768ff0] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddScene(class UDynamicUIScene* Scene, class APlayerController*& Player);                                           // [0x76bc078] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/DynamicUI.DynamicUIScene

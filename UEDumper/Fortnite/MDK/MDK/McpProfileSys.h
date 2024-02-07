@@ -7,6 +7,7 @@
 
 /// dependency: BasicType
 /// dependency: CoreUObject
+/// dependency: Engine
 /// dependency: JsonUtilities
 
 /// Class /Script/McpProfileSys.McpItemAware
@@ -15,6 +16,16 @@ class UMcpItemAware : public UInterface
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 40;
+
+public:
+};
+
+/// Class /Script/McpProfileSys.McpItemDefinitionBase
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UMcpItemDefinitionBase : public UPrimaryDataAsset
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
 };
@@ -43,17 +54,17 @@ public:
 
 	/// Functions
 	// Function /Script/McpProfileSys.McpProfile.UnlockProfileForWrite
-	// void UnlockProfileForWrite(FString Code, FDedicatedServerUrlContext& Context);                                           // [0xffff8009b6310000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void UnlockProfileForWrite(FString Code, FDedicatedServerUrlContext& Context);                                           // [0xffff8008b2970000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 	// Function /Script/McpProfileSys.McpProfile.QueryPublicProfile
-	// void QueryPublicProfile(FBaseUrlContext& Context);                                                                       // [0xffff8009b6310000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void QueryPublicProfile(FBaseUrlContext& Context);                                                                       // [0xffff8008b2970000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 	// Function /Script/McpProfileSys.McpProfile.QueryProfile
-	// void QueryProfile(FBaseUrlContext& Context);                                                                             // [0xffff8009b6310000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void QueryProfile(FBaseUrlContext& Context);                                                                             // [0xffff8008b2970000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 	// Function /Script/McpProfileSys.McpProfile.LockProfileForWrite
-	// void LockProfileForWrite(FString Code, int32_t Timeout, FDedicatedServerUrlContext& Context);                            // [0xffff8009b6310000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void LockProfileForWrite(FString Code, int32_t Timeout, FDedicatedServerUrlContext& Context);                            // [0xffff8008b2970000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 	// Function /Script/McpProfileSys.McpProfile.DeleteProfile
-	// void DeleteProfile(FClientUrlContext& Context);                                                                          // [0xffff8009b6310000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void DeleteProfile(FClientUrlContext& Context);                                                                          // [0xffff8008b2970000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 	// Function /Script/McpProfileSys.McpProfile.DeleteAllProfiles
-	// void DeleteAllProfiles(FClientUrlContext& Context);                                                                      // [0xffff8009b6310000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void DeleteAllProfiles(FClientUrlContext& Context);                                                                      // [0xffff8008b2970000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 };
 
 /// Class /Script/McpProfileSys.McpProfileGroup

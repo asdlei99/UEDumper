@@ -120,7 +120,7 @@ public:
 
 	/// Functions
 	// Function /Script/DynamicUI.DynamicUITransitionableWidgetInterface.BroadcastTransitionCompleted
-	// void BroadcastTransitionCompleted();                                                                                  // [0x32caac0] Native|Protected|BlueprintCallable 
+	// void BroadcastTransitionCompleted();                                                                                  // [0x2f3ff84] Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DynamicUI.DynamicUIDirectorBase
@@ -129,20 +129,20 @@ class ADynamicUIDirectorBase : public AActor
 { 
 public:
 	TArray<class UDynamicUIScene*>                     DefaultScenes;                                              // 0x0290   (0x0010)  
-	SDK_UNDEFINED(8,9352) /* TWeakObjectPtr<ULocalPlayer*> */ __um(OwningLocalPlayer);                             // 0x02A0   (0x0008)  
+	SDK_UNDEFINED(8,9374) /* TWeakObjectPtr<ULocalPlayer*> */ __um(OwningLocalPlayer);                             // 0x02A0   (0x0008)  
 	bool                                               bEnabledDuringReplay;                                       // 0x02A8   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x02A9   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/DynamicUI.DynamicUIDirectorBase.RemoveScene
-	// void RemoveScene(class UDynamicUIScene* Scene);                                                                       // [0x7769a08] Final|Native|Public|BlueprintCallable 
+	// void RemoveScene(class UDynamicUIScene* Scene);                                                                       // [0x76bd1ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIDirectorBase.GetOwningLocalPlayerController
-	// class APlayerController* GetOwningLocalPlayerController();                                                            // [0x355adb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APlayerController* GetOwningLocalPlayerController();                                                            // [0x76bd188] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DynamicUI.DynamicUIDirectorBase.GetOwningLocalPlayer
-	// class ULocalPlayer* GetOwningLocalPlayer();                                                                           // [0x77699e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ULocalPlayer* GetOwningLocalPlayer();                                                                           // [0x76bd164] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DynamicUI.DynamicUIDirectorBase.AddScene
-	// void AddScene(class UDynamicUIScene* Scene);                                                                          // [0x34e2aa4] Final|Native|Public|BlueprintCallable 
+	// void AddScene(class UDynamicUIScene* Scene);                                                                          // [0x76bbfb8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DynamicUI.DynamicUIConstraintBase
@@ -182,8 +182,8 @@ struct FDynamicUIAspectRatio
 class UDynamicUIConstraintAlignment : public UDynamicUIConstraintBase
 { 
 public:
-	SDK_UNDEFINED(1,9353) /* TEnumAsByte<EHorizontalAlignment> */ __um(HorizontalAlignment);                       // 0x0070   (0x0001)  
-	SDK_UNDEFINED(1,9354) /* TEnumAsByte<EVerticalAlignment> */ __um(VerticalAlignment);                           // 0x0071   (0x0001)  
+	SDK_UNDEFINED(1,9375) /* TEnumAsByte<EHorizontalAlignment> */ __um(HorizontalAlignment);                       // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,9376) /* TEnumAsByte<EVerticalAlignment> */ __um(VerticalAlignment);                           // 0x0071   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0072   (0x0002)  MISSED
 	EDynamicUIAnchor                                   Anchor;                                                     // 0x0074   (0x0004)  
 	FDynamicUIAspectRatio                              MaxAspectRatio;                                             // 0x0078   (0x0008)  
@@ -198,7 +198,7 @@ struct FDynamicUIWidgetTarget
 { 
 	FName                                              WidgetPath;                                                 // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,9355) /* TWeakObjectPtr<UClass*> */ __um(WidgetClass);                                        // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,9377) /* TWeakObjectPtr<UClass*> */ __um(WidgetClass);                                        // 0x0008   (0x0020)  
 	FName                                              UniqueID;                                                   // 0x0028   (0x0004)  
 	bool                                               bUseUniqueID : 1;                                           // 0x002C:0 (0x0001)  
 	unsigned char                                      UnknownData01_6[0x33];                                      // 0x002D   (0x0033)  MISSED
@@ -254,8 +254,8 @@ public:
 class UDynamicUIConstraintPlatformOverride : public UDynamicUIConstraintOverrideBase
 { 
 public:
-	SDK_UNDEFINED(80,9356) /* TMap<FName, UDynamicUIConstraintBase*> */ __um(PlatformVisibilityControls);          // 0x0028   (0x0050)  
-	SDK_UNDEFINED(80,9357) /* TMap<ECommonInputType, UDynamicUIConstraintBase*> */ __um(InputTypeVisibilityControls); // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,9378) /* TMap<FName, UDynamicUIConstraintBase*> */ __um(PlatformVisibilityControls);          // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,9379) /* TMap<ECommonInputType, UDynamicUIConstraintBase*> */ __um(InputTypeVisibilityControls); // 0x0078   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00C8   (0x0008)  MISSED
 };
 
@@ -265,34 +265,34 @@ class UDynamicUIManager : public UWorldSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0030   (0x0018)  MISSED
-	SDK_UNDEFINED(80,9358) /* TMap<TWeakObjectPtr<ULocalPlayer*>, FDynamicUIPlayerData> */ __um(PlayerDataMap);    // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,9380) /* TMap<TWeakObjectPtr<ULocalPlayer*>, FDynamicUIPlayerData> */ __um(PlayerDataMap);    // 0x0048   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/DynamicUI.DynamicUIManager.RemoveScenes
-	// void RemoveScenes(TArray<UDynamicUIScene*> Scenes, class APlayerController*& Player);                                 // [0x7769dcc] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void RemoveScenes(TArray<UDynamicUIScene*> Scenes, class APlayerController*& Player);                                 // [0x76bd630] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.RemoveSceneFromFirstLocalPlayer
-	// void RemoveSceneFromFirstLocalPlayer(class UDynamicUIScene* Scene);                                                   // [0x7769c4c] Final|Native|Protected|BlueprintCallable 
+	// void RemoveSceneFromFirstLocalPlayer(class UDynamicUIScene* Scene);                                                   // [0x76bd470] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.RemoveScene
-	// void RemoveScene(class UDynamicUIScene* Scene, class APlayerController*& Player);                                     // [0x7769a88] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void RemoveScene(class UDynamicUIScene* Scene, class APlayerController*& Player);                                     // [0x76bd26c] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.AddSceneToFirstLocalPlayer
-	// void AddSceneToFirstLocalPlayer(class UDynamicUIScene* Scene);                                                        // [0x7769474] Final|Native|Protected|BlueprintCallable 
+	// void AddSceneToFirstLocalPlayer(class UDynamicUIScene* Scene);                                                        // [0x76bc550] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.AddScenes
-	// void AddScenes(TArray<UDynamicUIScene*> Scenes, class APlayerController*& Player);                                    // [0x77698bc] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddScenes(TArray<UDynamicUIScene*> Scenes, class APlayerController*& Player);                                    // [0x76bc9f4] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/DynamicUI.DynamicUIManager.AddScene
-	// void AddScene(class UDynamicUIScene* Scene, class APlayerController*& Player);                                        // [0x7768ff0] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddScene(class UDynamicUIScene* Scene, class APlayerController*& Player);                                        // [0x76bc078] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/DynamicUI.DynamicUIAllowed
 /// Size: 0x0068 (0x000000 - 0x000068)
 struct FDynamicUIAllowed
 { 
-	SDK_UNDEFINED(32,9359) /* TWeakObjectPtr<UClass*> */ __um(Widget);                                             // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,9381) /* TWeakObjectPtr<UClass*> */ __um(Widget);                                             // 0x0000   (0x0020)  
 	EDynamicUIZOrder                                   ZOrder;                                                     // 0x0020   (0x0004)  
 	int32_t                                            CustomZOrder;                                               // 0x0024   (0x0004)  
 	FName                                              UniqueID;                                                   // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(32,9360) /* TWeakObjectPtr<UCommonInputActionDomain*> */ __um(ActionDomain);                     // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,9382) /* TWeakObjectPtr<UCommonInputActionDomain*> */ __um(ActionDomain);                     // 0x0030   (0x0020)  
 	class UDynamicUIConstraintBase*                    LayoutConstraint;                                           // 0x0050   (0x0008)  
 	class UDynamicUISizeBase*                          SizeModifier;                                               // 0x0058   (0x0008)  
 	char                                               LayerIDOverride;                                            // 0x0060   (0x0001)  
@@ -315,7 +315,7 @@ struct FDynamicUIAdjust
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FDynamicUIPreload
 { 
-	SDK_UNDEFINED(32,9361) /* TWeakObjectPtr<UClass*> */ __um(Widget);                                             // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,9383) /* TWeakObjectPtr<UClass*> */ __um(Widget);                                             // 0x0000   (0x0020)  
 };
 
 /// Class /Script/DynamicUI.DynamicUIScene
@@ -384,8 +384,8 @@ public:
 class UDynamicUISizeOverridePlatform : public UDynamicUISizeOverrideBase
 { 
 public:
-	SDK_UNDEFINED(80,9362) /* TMap<FName, UDynamicUISizeBase*> */ __um(PlatformOverrides);                         // 0x0028   (0x0050)  
-	SDK_UNDEFINED(80,9363) /* TMap<ECommonInputType, UDynamicUISizeBase*> */ __um(InputTypeOverrides);             // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,9384) /* TMap<FName, UDynamicUISizeBase*> */ __um(PlatformOverrides);                         // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,9385) /* TMap<ECommonInputType, UDynamicUISizeBase*> */ __um(InputTypeOverrides);             // 0x0078   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00C8   (0x0008)  MISSED
 };
 
@@ -432,7 +432,7 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FDynamicUIUnallowed
 { 
-	SDK_UNDEFINED(32,9364) /* TWeakObjectPtr<UClass*> */ __um(Widget);                                             // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,9386) /* TWeakObjectPtr<UClass*> */ __um(Widget);                                             // 0x0000   (0x0020)  
 	FName                                              UniqueID;                                                   // 0x0020   (0x0004)  
 	EDynamicUIUnallowedBehavior                        Behavior;                                                   // 0x0024   (0x0004)  
 	bool                                               bTargetAll : 1;                                             // 0x0028:0 (0x0001)  
@@ -465,8 +465,8 @@ struct FDynamicUISceneData
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FDynamicUIDirectorData
 { 
-	SDK_UNDEFINED(32,9365) /* TWeakObjectPtr<UClass*> */ __um(DirectorClass);                                      // 0x0000   (0x0020)  
-	SDK_UNDEFINED(8,9366) /* TWeakObjectPtr<AActor*> */ __um(Instance);                                            // 0x0020   (0x0008)  
+	SDK_UNDEFINED(32,9387) /* TWeakObjectPtr<UClass*> */ __um(DirectorClass);                                      // 0x0000   (0x0020)  
+	SDK_UNDEFINED(8,9388) /* TWeakObjectPtr<AActor*> */ __um(Instance);                                            // 0x0020   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0028   (0x0008)  MISSED
 };
 
@@ -475,6 +475,6 @@ struct FDynamicUIDirectorData
 struct FDynamicUIPlayerData
 { 
 	unsigned char                                      UnknownData00_2[0x40];                                      // 0x0000   (0x0040)  MISSED
-	SDK_UNDEFINED(80,9367) /* TMap<FString, FDynamicUIDirectorData> */ __um(ActiveDirectors);                      // 0x0040   (0x0050)  
+	SDK_UNDEFINED(80,9389) /* TMap<FString, FDynamicUIDirectorData> */ __um(ActiveDirectors);                      // 0x0040   (0x0050)  
 };
 

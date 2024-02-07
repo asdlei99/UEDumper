@@ -12,7 +12,6 @@
 /// dependency: FortniteGame
 /// dependency: GameplayAbilities
 /// dependency: GameplayTags
-/// dependency: GameplayTasks
 /// dependency: MantisRuntime
 /// dependency: ModularGameplay
 
@@ -27,26 +26,24 @@ enum class EFortKatanaPrimaryAttackVariation : uint8_t
 };
 
 /// Class /Script/KatanaGameplayRuntime.FortKatanaLayerAnimInstance
-/// Size: 0x0160 (0x001630 - 0x001790)
+/// Size: 0x0170 (0x001630 - 0x0017A0)
 class UFortKatanaLayerAnimInstance : public UFortMantisLayerAnimInstance
 { 
 public:
-	bool                                               IsDashCharge;                                               // 0x1628   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x1629   (0x0007)  MISSED
-	class AFortPlayerPawn*                             AsFortPlayerPawn;                                           // 0x1630   (0x0008)  
-	bool                                               IsBMeleeKatana;                                             // 0x1638   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x1639   (0x0003)  MISSED
-	float                                              HandIKHipAttachAlpha;                                       // 0x163C   (0x0004)  
-	FVector                                            LeftAttachedHandIKLoc;                                      // 0x1640   (0x0018)  
-	FRotator                                           LeftAttachedhandIKRot;                                      // 0x1658   (0x0018)  
-	FVector                                            RightWeaponLoc;                                             // 0x1670   (0x0018)  
-	FRotator                                           RightWeaponRot;                                             // 0x1688   (0x0018)  
-	FVector                                            LeftAttachedHandIKLocOffsetMED;                             // 0x16A0   (0x0018)  
-	FRotator                                           LeftAttachedHandIKRotOffset;                                // 0x16B8   (0x0018)  
-	FVector                                            RightWeaponLocOffsetMED;                                    // 0x16D0   (0x0018)  
-	FRotator                                           RightWeaponRotOffset;                                       // 0x16E8   (0x0018)  
-	float                                              LocalLeftHandIKAlpha;                                       // 0x1700   (0x0004)  
-	float                                              LocalRightHandIKAlpha;                                      // 0x1704   (0x0004)  
+	bool                                               IsDashCharge;                                               // 0x1630   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x1631   (0x0007)  MISSED
+	class AFortPlayerPawn*                             AsFortPlayerPawn;                                           // 0x1638   (0x0008)  
+	bool                                               IsBMeleeKatana;                                             // 0x1640   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x1641   (0x0003)  MISSED
+	float                                              HandIKHipAttachAlpha;                                       // 0x1644   (0x0004)  
+	FVector                                            LeftAttachedHandIKLoc;                                      // 0x1648   (0x0018)  
+	FRotator                                           LeftAttachedhandIKRot;                                      // 0x1660   (0x0018)  
+	FVector                                            RightWeaponLoc;                                             // 0x1678   (0x0018)  
+	FRotator                                           RightWeaponRot;                                             // 0x1690   (0x0018)  
+	FVector                                            LeftAttachedHandIKLocOffsetMED;                             // 0x16A8   (0x0018)  
+	FRotator                                           LeftAttachedHandIKRotOffset;                                // 0x16C0   (0x0018)  
+	FVector                                            RightWeaponLocOffsetMED;                                    // 0x16D8   (0x0018)  
+	FRotator                                           RightWeaponRotOffset;                                       // 0x16F0   (0x0018)  
 	bool                                               IsDashAttack;                                               // 0x1708   (0x0001)  
 	bool                                               IsDashOutro;                                                // 0x1709   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x170A   (0x0002)  MISSED
@@ -70,8 +67,11 @@ public:
 	bool                                               IsAirAttackSlam;                                            // 0x1781   (0x0001)  
 	bool                                               TransitionRuleToDefault;                                    // 0x1782   (0x0001)  
 	bool                                               IsGrindRailSwing;                                           // 0x1783   (0x0001)  
-	float                                              DashChargePlayRate;                                         // 0x1784   (0x0004)  
-	unsigned char                                      UnknownData06_6[0x8];                                       // 0x1788   (0x0008)  MISSED
+	bool                                               CanExitDashCharge;                                          // 0x1784   (0x0001)  
+	unsigned char                                      UnknownData06_5[0x3];                                       // 0x1785   (0x0003)  MISSED
+	float                                              DashChargePlayRate;                                         // 0x1788   (0x0004)  
+	float                                              YawForKatanaDashAO;                                         // 0x178C   (0x0004)  
+	unsigned char                                      UnknownData07_6[0x10];                                      // 0x1790   (0x0010)  MISSED
 };
 
 /// Class /Script/KatanaGameplayRuntime.FortKatanaWeaponAnimInstance
@@ -141,38 +141,24 @@ public:
 	FScalableFloat                                     PropRemainingHealthToDestroy;                               // 0x0150   (0x0028)  
 	FScalableFloat                                     BuildingRemainingHealthToDestroy;                           // 0x0178   (0x0028)  
 	FGameplayTagContainer                              DashBlockingBuildingTags;                                   // 0x01A0   (0x0020)  
-	SDK_UNDEFINED(80,14421) /* TSet<UClass*> */        __um(DashBlockingBuildingClasses);                          // 0x01C0   (0x0050)  
+	SDK_UNDEFINED(80,14538) /* TSet<UClass*> */        __um(DashBlockingBuildingClasses);                          // 0x01C0   (0x0050)  
 	FFortAbilityTargetSelectionList                    PawnTargetSelectionList;                                    // 0x0210   (0x0048)  
-	SDK_UNDEFINED(1,14422) /* TEnumAsByte<ECollisionChannel> */ __um(DashTraceChannel);                            // 0x0258   (0x0001)  
+	SDK_UNDEFINED(1,14539) /* TEnumAsByte<ECollisionChannel> */ __um(DashTraceChannel);                            // 0x0258   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0259   (0x0003)  MISSED
 	float                                              ObstructionOverlapBoxHalfSize;                              // 0x025C   (0x0004)  
 	FFortTargetFilter                                  ObstructionTargetFilter;                                    // 0x0260   (0x0038)  
 	FGameplayTagContainer                              DashBlockIgnoreTags;                                        // 0x0298   (0x0020)  
-	SDK_UNDEFINED(80,14423) /* TMap<EFortKatanaPrimaryAttackVariation, FFortKatanaPrimaryAttackVariationInfo> */ __um(PrimaryAttackVariationInfos); // 0x02B8   (0x0050)  
+	SDK_UNDEFINED(80,14540) /* TMap<EFortKatanaPrimaryAttackVariation, FFortKatanaPrimaryAttackVariationInfo> */ __um(PrimaryAttackVariationInfos); // 0x02B8   (0x0050)  
 	float                                              PrimaryAttackMinForwardMovement;                            // 0x0308   (0x0004)  
-	SDK_UNDEFINED(1,14424) /* TEnumAsByte<ECollisionChannel> */ __um(PrimaryAttackObstructionTraceChannel);        // 0x030C   (0x0001)  
+	SDK_UNDEFINED(1,14541) /* TEnumAsByte<ECollisionChannel> */ __um(PrimaryAttackObstructionTraceChannel);        // 0x030C   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x3];                                       // 0x030D   (0x0003)  MISSED
 
 
 	/// Functions
 	// Function /Script/KatanaGameplayRuntime.KatanaTargetingComponent.PerformPrimaryAttackTargeting
-	// FVector PerformPrimaryAttackTargeting(EFortKatanaPrimaryAttackVariation AttackVariation);                             // [0xa9a1f18] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector PerformPrimaryAttackTargeting(EFortKatanaPrimaryAttackVariation AttackVariation);                             // [0xab74b3c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/KatanaGameplayRuntime.KatanaTargetingComponent.PerformDashTargeting
-	// bool PerformDashTargeting(FFortKatanaDashTargetingInfo& OutDashTargetingInfo);                                        // [0xa9a1e38] Final|Native|Public|HasOutParms|BlueprintCallable 
-};
-
-/// Class /Script/KatanaGameplayRuntime.AbilityTask_ApplyRootMotion_KatanaDashForce
-/// Size: 0x0008 (0x000120 - 0x000128)
-class UAbilityTask_ApplyRootMotion_KatanaDashForce : public UAbilityTask_ApplyRootMotionMoveToForce
-{ 
-public:
-	float                                              HeightAboveGround;                                          // 0x0120   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0124   (0x0004)  MISSED
-
-
-	/// Functions
-	// Function /Script/KatanaGameplayRuntime.AbilityTask_ApplyRootMotion_KatanaDashForce.ApplyRootMotion_KatanaDashForce
-	// class UAbilityTask_ApplyRootMotion_KatanaDashForce* ApplyRootMotion_KatanaDashForce(class UGameplayAbility* InOwningAbility, FName InTaskInstanceName, FVector InTargetLocation, float InDuration, float InHeightAboveGround, bool bInSetNewMovementMode, TEnumAsByte<EMovementMode> InMovementMode, bool bInRestrictSpeedToExpected, class UCurveVector* InPathOffsetCurve, ERootMotionFinishVelocityMode InVelocityOnFinishMode, FVector InSetVelocityOnFinish, float InClampVelocityOnFinish); // [0xa9a147c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// bool PerformDashTargeting(FFortKatanaDashTargetingInfo& OutDashTargetingInfo);                                        // [0xab74a5c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/KatanaGameplayRuntime.FortKatanaPrimaryAttackVariationInfo
@@ -190,17 +176,11 @@ struct FFortKatanaDashTargetingInfo
 { 
 	FVector                                            DashDirection;                                              // 0x0000   (0x0018)  
 	float                                              DashDistance;                                               // 0x0018   (0x0004)  
-	SDK_UNDEFINED(8,14425) /* TWeakObjectPtr<AActor*> */ __um(DashBlockingActor);                                  // 0x001C   (0x0008)  
+	SDK_UNDEFINED(8,14542) /* TWeakObjectPtr<AActor*> */ __um(DashBlockingActor);                                  // 0x001C   (0x0008)  
 	bool                                               bWasDashDirectionAdjusted;                                  // 0x0024   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0025   (0x0003)  MISSED
 	TArray<class AActor*>                              DamagedActors;                                              // 0x0028   (0x0010)  
 	float                                              OutOfRangePercent;                                          // 0x0038   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x003C   (0x0004)  MISSED
-};
-
-/// Struct /Script/KatanaGameplayRuntime.RootMotionSource_KatanaDashForce
-/// Size: 0x0000 (0x000120 - 0x000120)
-struct FRootMotionSource_KatanaDashForce : FRootMotionSource_MoveToForce
-{ 
 };
 

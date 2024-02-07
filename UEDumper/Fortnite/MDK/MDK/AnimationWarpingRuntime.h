@@ -277,6 +277,7 @@ public:
 	DMember(bool)                                      bOrientStrideDirectionUsingFloorNormal                      OFFSET(get<bool>, {0x1F8, 1, 0, 0})
 	DMember(bool)                                      bCompensateIKUsingFKThighRotation                           OFFSET(get<bool>, {0x1F9, 1, 0, 0})
 	DMember(bool)                                      bClampIKUsingFKLimits                                       OFFSET(get<bool>, {0x1FA, 1, 0, 0})
+	DMember(bool)                                      bDisableIfMissingRootMotion                                 OFFSET(get<bool>, {0x1FB, 1, 0, 0})
 };
 
 /// Enum /Script/AnimationWarpingRuntime.EFootPlacementLockType

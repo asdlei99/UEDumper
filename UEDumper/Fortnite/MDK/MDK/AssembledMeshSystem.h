@@ -7,6 +7,7 @@
 
 /// dependency: BasicType
 /// dependency: CoreUObject
+/// dependency: CosmeticsFrameworkItems
 /// dependency: CustomizableObject
 /// dependency: Engine
 /// dependency: GameplayTags
@@ -78,17 +79,17 @@ public:
 
 	/// Functions
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.SetMeshPart
-	// void SetMeshPart(class UAssembledMeshSchema* InMeshPart);                                                                // [0x7059fb4] Final|Native|Private|BlueprintCallable 
+	// void SetMeshPart(class UAssembledMeshSchema* InMeshPart);                                                                // [0x6f2301c] Final|Native|Private|BlueprintCallable 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.OnRep_MeshParts
-	// void OnRep_MeshParts();                                                                                                  // [0x351e7b8] Native|Protected     
+	// void OnRep_MeshParts();                                                                                                  // [0x6f23004] Native|Protected     
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GetMeshPart
-	// class UAssembledMeshSchema* GetMeshPart();                                                                               // [0x66a91a4] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// class UAssembledMeshSchema* GetMeshPart();                                                                               // [0x63ec52c] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GetAttachToComponent
-	// class USkeletalMeshComponent* GetAttachToComponent();                                                                    // [0x38a57d8] Native|Event|Protected|BlueprintEvent 
+	// class USkeletalMeshComponent* GetAttachToComponent();                                                                    // [0x6f22fdc] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.GatherAndAssignAssembledMeshParts
-	// void GatherAndAssignAssembledMeshParts();                                                                                // [0x219df9c] Native|Public        
+	// void GatherAndAssignAssembledMeshParts();                                                                                // [0x2ef340c] Native|Public        
 	// Function /Script/AssembledMeshSystem.AssembledMeshUserComponent.CustomizationCompleted
-	// void CustomizationCompleted(int32_t PartIndex);                                                                          // [0x7059f30] Native|Protected     
+	// void CustomizationCompleted(int32_t PartIndex);                                                                          // [0x6f22f18] Native|Protected     
 };
 
 /// Struct /Script/AssembledMeshSystem.AssembledComponentReferences
@@ -128,6 +129,18 @@ public:
 	CMember(TWeakObjectPtr<UTexture2D*>)               WidePreviewImage                                            OFFSET(get<T>, {0x0, 32, 0, 0})
 	CMember(TWeakObjectPtr<UTexture2D*>)               SmallPreviewImage                                           OFFSET(get<T>, {0x20, 32, 0, 0})
 	CMember(TWeakObjectPtr<UTexture2D*>)               LargePreviewImage                                           OFFSET(get<T>, {0x40, 32, 0, 0})
+};
+
+/// Struct /Script/AssembledMeshSystem.CosmeticProperty_AssembledMeshSchema
+/// Size: 0x0024 (0x000004 - 0x000028)
+class FCosmeticProperty_AssembledMeshSchema : public FCosmeticPropertyBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 40;
+
+public:
+	CMember(TWeakObjectPtr<UAssembledMeshSchema*>)     AssembledMeshSchema                                         OFFSET(get<T>, {0x8, 32, 0, 0})
 };
 
 /// Struct /Script/AssembledMeshSystem.AssembledMeshAttachmentRules

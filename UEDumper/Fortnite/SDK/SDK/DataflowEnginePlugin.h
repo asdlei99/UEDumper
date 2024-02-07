@@ -18,10 +18,10 @@ public:
 };
 
 /// Class /Script/DataflowEnginePlugin.DataflowComponent
-/// Size: 0x0140 (0x000570 - 0x0006B0)
+/// Size: 0x0140 (0x000500 - 0x000640)
 class UDataflowComponent : public UPrimitiveComponent
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x140];                                     // 0x0570   (0x0140)  MISSED
+	unsigned char                                      UnknownData00_1[0x140];                                     // 0x0500   (0x0140)  MISSED
 };
 

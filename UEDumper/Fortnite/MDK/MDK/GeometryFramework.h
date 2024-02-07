@@ -40,125 +40,125 @@ public:
 };
 
 /// Class /Script/GeometryFramework.BaseDynamicMeshComponent
-/// Size: 0x0060 (0x0005B0 - 0x000610)
+/// Size: 0x0060 (0x000540 - 0x0005A0)
 class UBaseDynamicMeshComponent : public UMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1552;
+	static inline constexpr uint64_t __MDKClassSize = 1440;
 
 public:
-	DMember(bool)                                      bExplicitShowWireframe                                      OFFSET(get<bool>, {0x5C8, 1, 0, 0})
-	SMember(FLinearColor)                              WireframeColor                                              OFFSET(getStruct<T>, {0x5CC, 16, 0, 0})
-	CMember(EDynamicMeshComponentColorOverrideMode)    ColorMode                                                   OFFSET(get<T>, {0x5DC, 1, 0, 0})
-	SMember(FColor)                                    ConstantColor                                               OFFSET(getStruct<T>, {0x5E0, 4, 0, 0})
-	CMember(EDynamicMeshVertexColorTransformMode)      ColorSpaceMode                                              OFFSET(get<T>, {0x5E4, 1, 0, 0})
-	DMember(bool)                                      bEnableFlatShading                                          OFFSET(get<bool>, {0x5E5, 1, 0, 0})
-	DMember(bool)                                      bEnableViewModeOverrides                                    OFFSET(get<bool>, {0x5E6, 1, 0, 0})
-	CMember(class UMaterialInterface*)                 OverrideRenderMaterial                                      OFFSET(get<T>, {0x5E8, 8, 0, 0})
-	CMember(class UMaterialInterface*)                 SecondaryRenderMaterial                                     OFFSET(get<T>, {0x5F0, 8, 0, 0})
-	DMember(bool)                                      bEnableRayTracing                                           OFFSET(get<bool>, {0x5F9, 1, 0, 0})
-	CMember(TArray<class UMaterialInterface*>)         BaseMaterials                                               OFFSET(get<T>, {0x600, 16, 0, 0})
+	DMember(bool)                                      bExplicitShowWireframe                                      OFFSET(get<bool>, {0x558, 1, 0, 0})
+	SMember(FLinearColor)                              WireframeColor                                              OFFSET(getStruct<T>, {0x55C, 16, 0, 0})
+	CMember(EDynamicMeshComponentColorOverrideMode)    ColorMode                                                   OFFSET(get<T>, {0x56C, 1, 0, 0})
+	SMember(FColor)                                    ConstantColor                                               OFFSET(getStruct<T>, {0x570, 4, 0, 0})
+	CMember(EDynamicMeshVertexColorTransformMode)      ColorSpaceMode                                              OFFSET(get<T>, {0x574, 1, 0, 0})
+	DMember(bool)                                      bEnableFlatShading                                          OFFSET(get<bool>, {0x575, 1, 0, 0})
+	DMember(bool)                                      bEnableViewModeOverrides                                    OFFSET(get<bool>, {0x576, 1, 0, 0})
+	CMember(class UMaterialInterface*)                 OverrideRenderMaterial                                      OFFSET(get<T>, {0x578, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 SecondaryRenderMaterial                                     OFFSET(get<T>, {0x580, 8, 0, 0})
+	DMember(bool)                                      bEnableRayTracing                                           OFFSET(get<bool>, {0x589, 1, 0, 0})
+	CMember(TArray<class UMaterialInterface*>)         BaseMaterials                                               OFFSET(get<T>, {0x590, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetViewModeOverridesEnabled
-	// void SetViewModeOverridesEnabled(bool bEnabled);                                                                         // [0xaef3088] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetViewModeOverridesEnabled(bool bEnabled);                                                                         // [0xb0e6930] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetVertexColorSpaceTransformMode
-	// void SetVertexColorSpaceTransformMode(EDynamicMeshVertexColorTransformMode NewMode);                                     // [0xaef3004] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetVertexColorSpaceTransformMode(EDynamicMeshVertexColorTransformMode NewMode);                                     // [0xb0e686c] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetShadowsEnabled
-	// void SetShadowsEnabled(bool bEnabled);                                                                                   // [0xaef2f00] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetShadowsEnabled(bool bEnabled);                                                                                   // [0xb0e66e4] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetSecondaryRenderMaterial
-	// void SetSecondaryRenderMaterial(class UMaterialInterface* Material);                                                     // [0xaef2e7c] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSecondaryRenderMaterial(class UMaterialInterface* Material);                                                     // [0xb0e6620] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetSecondaryBuffersVisibility
-	// void SetSecondaryBuffersVisibility(bool bSetVisible);                                                                    // [0xaef2df8] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSecondaryBuffersVisibility(bool bSetVisible);                                                                    // [0xb0e6558] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetOverrideRenderMaterial
-	// void SetOverrideRenderMaterial(class UMaterialInterface* Material);                                                      // [0xaef2d74] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetOverrideRenderMaterial(class UMaterialInterface* Material);                                                      // [0xb0e6494] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetEnableWireframeRenderPass
-	// void SetEnableWireframeRenderPass(bool bEnable);                                                                         // [0xaef2cf0] Native|Public|BlueprintCallable 
+	// void SetEnableWireframeRenderPass(bool bEnable);                                                                         // [0xb0e63cc] Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetEnableRaytracing
-	// void SetEnableRaytracing(bool bSetEnabled);                                                                              // [0xaef2c6c] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetEnableRaytracing(bool bSetEnabled);                                                                              // [0xb0e6304] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetEnableFlatShading
-	// void SetEnableFlatShading(bool bEnable);                                                                                 // [0xaef2be8] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetEnableFlatShading(bool bEnable);                                                                                 // [0xb0e623c] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetConstantOverrideColor
-	// void SetConstantOverrideColor(FColor NewColor);                                                                          // [0xaef2884] RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetConstantOverrideColor(FColor NewColor);                                                                          // [0xb0e5e88] RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.SetColorOverrideMode
-	// void SetColorOverrideMode(EDynamicMeshComponentColorOverrideMode NewMode);                                               // [0xaef273c] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetColorOverrideMode(EDynamicMeshComponentColorOverrideMode NewMode);                                               // [0xb0e5c74] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.HasOverrideRenderMaterial
-	// bool HasOverrideRenderMaterial(int32_t K);                                                                               // [0xaef227c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasOverrideRenderMaterial(int32_t K);                                                                               // [0xb0e55f4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetViewModeOverridesEnabled
-	// bool GetViewModeOverridesEnabled();                                                                                      // [0xaef2254] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetViewModeOverridesEnabled();                                                                                      // [0xb0e55cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetVertexColorSpaceTransformMode
-	// EDynamicMeshVertexColorTransformMode GetVertexColorSpaceTransformMode();                                                 // [0xaef222c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDynamicMeshVertexColorTransformMode GetVertexColorSpaceTransformMode();                                                 // [0xb0e55a4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetShadowsEnabled
-	// bool GetShadowsEnabled();                                                                                                // [0xaef21c0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetShadowsEnabled();                                                                                                // [0xb0e5538] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetSecondaryRenderMaterial
-	// class UMaterialInterface* GetSecondaryRenderMaterial();                                                                  // [0xaef2198] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMaterialInterface* GetSecondaryRenderMaterial();                                                                  // [0xb0e5510] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetSecondaryBuffersVisibility
-	// bool GetSecondaryBuffersVisibility();                                                                                    // [0xaef2170] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetSecondaryBuffersVisibility();                                                                                    // [0xb0e54e8] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetOverrideRenderMaterial
-	// class UMaterialInterface* GetOverrideRenderMaterial(int32_t MaterialIndex);                                              // [0xaef20dc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMaterialInterface* GetOverrideRenderMaterial(int32_t MaterialIndex);                                              // [0xb0e5414] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetFlatShadingEnabled
-	// bool GetFlatShadingEnabled();                                                                                            // [0xaef20b4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetFlatShadingEnabled();                                                                                            // [0xb0e53ec] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetEnableWireframeRenderPass
-	// bool GetEnableWireframeRenderPass();                                                                                     // [0xaef208c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetEnableWireframeRenderPass();                                                                                     // [0xb0e53c4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetEnableRaytracing
-	// bool GetEnableRaytracing();                                                                                              // [0x8f0427c] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetEnableRaytracing();                                                                                              // [0x8f48cf8] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetDynamicMesh
-	// class UDynamicMesh* GetDynamicMesh();                                                                                    // [0xaef2064] Native|Public|BlueprintCallable 
+	// class UDynamicMesh* GetDynamicMesh();                                                                                    // [0xb0e539c] Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetConstantOverrideColor
-	// FColor GetConstantOverrideColor();                                                                                       // [0xaef2034] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FColor GetConstantOverrideColor();                                                                                       // [0xb0e536c] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.GetColorOverrideMode
-	// EDynamicMeshComponentColorOverrideMode GetColorOverrideMode();                                                           // [0x846ccf4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDynamicMeshComponentColorOverrideMode GetColorOverrideMode();                                                           // [0x840484c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.ClearSecondaryRenderMaterial
-	// void ClearSecondaryRenderMaterial();                                                                                     // [0xaef1f08] RequiredAPI|Native|Public|BlueprintCallable 
+	// void ClearSecondaryRenderMaterial();                                                                                     // [0xb0e5240] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.BaseDynamicMeshComponent.ClearOverrideRenderMaterial
-	// void ClearOverrideRenderMaterial();                                                                                      // [0xaef1ef0] RequiredAPI|Native|Public|BlueprintCallable 
+	// void ClearOverrideRenderMaterial();                                                                                      // [0xb0e5228] RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GeometryFramework.DynamicMeshComponent
-/// Size: 0x0260 (0x000610 - 0x000870)
+/// Size: 0x0260 (0x0005A0 - 0x000800)
 class UDynamicMeshComponent : public UBaseDynamicMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2160;
+	static inline constexpr uint64_t __MDKClassSize = 2048;
 
 public:
-	CMember(class UDynamicMesh*)                       MeshObject                                                  OFFSET(get<T>, {0x618, 8, 0, 0})
-	CMember(EDynamicMeshComponentTangentsMode)         TangentsType                                                OFFSET(get<T>, {0x750, 1, 0, 0})
-	CMember(TEnumAsByte<ECollisionTraceFlag>)          CollisionType                                               OFFSET(get<T>, {0x790, 1, 0, 0})
-	DMember(bool)                                      bUseAsyncCooking                                            OFFSET(get<bool>, {0x791, 1, 0, 0})
-	DMember(bool)                                      bEnableComplexCollision                                     OFFSET(get<bool>, {0x792, 1, 0, 0})
-	DMember(bool)                                      bDeferCollisionUpdates                                      OFFSET(get<bool>, {0x793, 1, 0, 0})
-	CMember(class UBodySetup*)                         MeshBodySetup                                               OFFSET(get<T>, {0x798, 8, 0, 0})
-	SMember(FKAggregateGeom)                           AggGeom                                                     OFFSET(getStruct<T>, {0x7D8, 120, 0, 0})
-	CMember(TArray<class UBodySetup*>)                 AsyncBodySetupQueue                                         OFFSET(get<T>, {0x850, 16, 0, 0})
+	CMember(class UDynamicMesh*)                       MeshObject                                                  OFFSET(get<T>, {0x5A8, 8, 0, 0})
+	CMember(EDynamicMeshComponentTangentsMode)         TangentsType                                                OFFSET(get<T>, {0x6E0, 1, 0, 0})
+	CMember(TEnumAsByte<ECollisionTraceFlag>)          CollisionType                                               OFFSET(get<T>, {0x720, 1, 0, 0})
+	DMember(bool)                                      bUseAsyncCooking                                            OFFSET(get<bool>, {0x721, 1, 0, 0})
+	DMember(bool)                                      bEnableComplexCollision                                     OFFSET(get<bool>, {0x722, 1, 0, 0})
+	DMember(bool)                                      bDeferCollisionUpdates                                      OFFSET(get<bool>, {0x723, 1, 0, 0})
+	CMember(class UBodySetup*)                         MeshBodySetup                                               OFFSET(get<T>, {0x728, 8, 0, 0})
+	SMember(FKAggregateGeom)                           AggGeom                                                     OFFSET(getStruct<T>, {0x768, 120, 0, 0})
+	CMember(TArray<class UBodySetup*>)                 AsyncBodySetupQueue                                         OFFSET(get<T>, {0x7E0, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/GeometryFramework.DynamicMeshComponent.ValidateMaterialSlots
-	// bool ValidateMaterialSlots(bool bCreateIfMissing, bool bDeleteExtraSlots);                                               // [0xaef3190] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool ValidateMaterialSlots(bool bCreateIfMissing, bool bDeleteExtraSlots);                                               // [0xb0e6ac0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.UpdateCollision
-	// void UpdateCollision(bool bOnlyIfPending);                                                                               // [0xaef310c] RequiredAPI|Native|Public|BlueprintCallable 
+	// void UpdateCollision(bool bOnlyIfPending);                                                                               // [0xb0e69f8] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.SetTangentsType
-	// void SetTangentsType(EDynamicMeshComponentTangentsMode NewTangentsType);                                                 // [0xaef2f84] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetTangentsType(EDynamicMeshComponentTangentsMode NewTangentsType);                                                 // [0xb0e67ac] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.SetDynamicMesh
-	// void SetDynamicMesh(class UDynamicMesh* NewMesh);                                                                        // [0xaef2aa0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetDynamicMesh(class UDynamicMesh* NewMesh);                                                                        // [0xb0e60b0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.SetDeferredCollisionUpdatesEnabled
-	// void SetDeferredCollisionUpdatesEnabled(bool bEnabled, bool bImmediateUpdate);                                           // [0xaef29b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetDeferredCollisionUpdatesEnabled(bool bEnabled, bool bImmediateUpdate);                                           // [0xb0e5f48] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.SetComplexAsSimpleCollisionEnabled
-	// void SetComplexAsSimpleCollisionEnabled(bool bEnabled, bool bImmediateUpdate);                                           // [0xaef27c0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetComplexAsSimpleCollisionEnabled(bool bEnabled, bool bImmediateUpdate);                                           // [0xb0e5d38] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.NotifyMeshVertexAttributesModified
-	// void NotifyMeshVertexAttributesModified(bool bPositions, bool bNormals, bool bUVs, bool bColors);                        // [0xaef2334] RequiredAPI|Native|Public|BlueprintCallable 
+	// void NotifyMeshVertexAttributesModified(bool bPositions, bool bNormals, bool bUVs, bool bColors);                        // [0xb0e56ec] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.NotifyMeshModified
-	// void NotifyMeshModified();                                                                                               // [0x8d9114c] RequiredAPI|Native|Public|BlueprintCallable 
+	// void NotifyMeshModified();                                                                                               // [0x8db7e8c] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.GetTangentsTypePure
-	// EDynamicMeshComponentTangentsMode GetTangentsTypePure();                                                                 // [0xaef21e8] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// EDynamicMeshComponentTangentsMode GetTangentsTypePure();                                                                 // [0xb0e5560] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.GetTangentsType
-	// EDynamicMeshComponentTangentsMode GetTangentsType();                                                                     // [0xaef21e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDynamicMeshComponentTangentsMode GetTangentsType();                                                                     // [0xb0e5560] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.EnableComplexAsSimpleCollision
-	// void EnableComplexAsSimpleCollision();                                                                                   // [0xaef1fbc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void EnableComplexAsSimpleCollision();                                                                                   // [0xb0e52f4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshComponent.ConfigureMaterialSet
-	// void ConfigureMaterialSet(TArray<UMaterialInterface*>& NewMaterialSet);                                                  // [0xaef1f20] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void ConfigureMaterialSet(TArray<UMaterialInterface*>& NewMaterialSet);                                                  // [0xb0e5258] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GeometryFramework.DynamicMeshActor
@@ -176,17 +176,17 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryFramework.DynamicMeshActor.ReleaseComputeMesh
-	// bool ReleaseComputeMesh(class UDynamicMesh* Mesh);                                                                       // [0xaef24b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool ReleaseComputeMesh(class UDynamicMesh* Mesh);                                                                       // [0xb0e596c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshActor.ReleaseAllComputeMeshes
-	// void ReleaseAllComputeMeshes();                                                                                          // [0xaef248c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReleaseAllComputeMeshes();                                                                                          // [0xb0e5944] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshActor.GetDynamicMeshComponent
-	// class UDynamicMeshComponent* GetDynamicMeshComponent();                                                                  // [0x651c4cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDynamicMeshComponent* GetDynamicMeshComponent();                                                                  // [0x6394878] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.DynamicMeshActor.GetComputeMeshPool
-	// class UDynamicMeshPool* GetComputeMeshPool();                                                                            // [0xaef2010] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UDynamicMeshPool* GetComputeMeshPool();                                                                            // [0xb0e5348] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshActor.FreeAllComputeMeshes
-	// void FreeAllComputeMeshes();                                                                                             // [0xaef1fd4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void FreeAllComputeMeshes();                                                                                             // [0xb0e530c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshActor.AllocateComputeMesh
-	// class UDynamicMesh* AllocateComputeMesh();                                                                               // [0xaef1ea0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UDynamicMesh* AllocateComputeMesh();                                                                               // [0xb0e51d8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GeometryFramework.DynamicMeshGenerator
@@ -214,13 +214,13 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryFramework.DynamicMesh.ResetToCube
-	// class UDynamicMesh* ResetToCube();                                                                                       // [0xaef2618] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UDynamicMesh* ResetToCube();                                                                                       // [0xb0e5b10] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMesh.Reset
-	// class UDynamicMesh* Reset();                                                                                             // [0xaef25f4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UDynamicMesh* Reset();                                                                                             // [0xb0e5aec] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMesh.IsEmpty
-	// bool IsEmpty();                                                                                                          // [0xaef2310] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEmpty();                                                                                                          // [0xb0e56c8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryFramework.DynamicMesh.GetTriangleCount
-	// int32_t GetTriangleCount();                                                                                              // [0xaef220c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTriangleCount();                                                                                              // [0xb0e5584] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GeometryFramework.DynamicMeshPool
@@ -237,13 +237,13 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryFramework.DynamicMeshPool.ReturnMesh
-	// void ReturnMesh(class UDynamicMesh* Mesh);                                                                               // [0xaef2650] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReturnMesh(class UDynamicMesh* Mesh);                                                                               // [0xb0e5b48] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshPool.ReturnAllMeshes
-	// void ReturnAllMeshes();                                                                                                  // [0xaef263c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReturnAllMeshes();                                                                                                  // [0xb0e5b34] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshPool.RequestMesh
-	// class UDynamicMesh* RequestMesh();                                                                                       // [0xaef25d0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UDynamicMesh* RequestMesh();                                                                                       // [0xb0e5ac8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryFramework.DynamicMeshPool.FreeAllMeshes
-	// void FreeAllMeshes();                                                                                                    // [0xaef1ffc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void FreeAllMeshes();                                                                                                    // [0xb0e5334] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/GeometryFramework.DynamicMeshChangeInfo

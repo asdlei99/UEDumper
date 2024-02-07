@@ -49,18 +49,18 @@ public:
 
 	/// Functions
 	// Function /Script/AmbientAudio.AmbientAudioComponent.SetPriority
-	// void SetPriority(int32_t InPriority);                                                                                 // [0x7c5f6dc] Final|Native|Public|BlueprintCallable 
+	// void SetPriority(int32_t InPriority);                                                                                 // [0x7c269b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AmbientAudio.AmbientAudioComponent.SetCrossfadeTime
-	// void SetCrossfadeTime(float InCrossfadeTime);                                                                         // [0x7c5f648] Final|Native|Public|BlueprintCallable 
+	// void SetCrossfadeTime(float InCrossfadeTime);                                                                         // [0x7c268e4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AmbientAudio.AmbientAudioComponent.SetAmbientAsset
-	// void SetAmbientAsset(class UAmbientAudioDataAsset* InAmbientAsset);                                                   // [0x7c5f5c8] Final|Native|Public|BlueprintCallable 
+	// void SetAmbientAsset(class UAmbientAudioDataAsset* InAmbientAsset);                                                   // [0x7c26824] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AmbientAudio.AmbientAudioBase
 /// Size: 0x00B8 (0x000000 - 0x0000B8)
 struct FAmbientAudioBase
 { 
-	SDK_UNDEFINED(32,1214) /* TWeakObjectPtr<USoundBase*> */ __um(sound);                                          // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,1216) /* TWeakObjectPtr<USoundBase*> */ __um(sound);                                          // 0x0000   (0x0020)  
 	FGameplayTagQuery                                  Requirements;                                               // 0x0020   (0x0048)  
 	FAudioGameplayRequirements                         PlaybackRequirements;                                       // 0x0068   (0x0050)  
 };
@@ -96,8 +96,8 @@ class UAmbientAudioSubsystem : public UWorldSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0030   (0x0008)  MISSED
-	SDK_UNDEFINED(16,1215) /* FMulticastInlineDelegate */ __um(OnTagChanged);                                      // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1216) /* FMulticastInlineDelegate */ __um(OnEntryChanged);                                    // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1217) /* FMulticastInlineDelegate */ __um(OnTagChanged);                                      // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1218) /* FMulticastInlineDelegate */ __um(OnEntryChanged);                                    // 0x0048   (0x0010)  
 	TArray<class UAmbientAudioComponent*>              AmbientComponents;                                          // 0x0058   (0x0010)  
 	class AAmbientAudioParameterActor*                 ParameterActor;                                             // 0x0068   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x1E8];                                     // 0x0070   (0x01E8)  MISSED
@@ -105,15 +105,15 @@ public:
 
 	/// Functions
 	// Function /Script/AmbientAudio.AmbientAudioSubsystem.RemoveGameplayTag
-	// void RemoveGameplayTag(FGameplayTag GameplayTag);                                                                     // [0x26a1cd0] Final|Native|Public|BlueprintCallable 
+	// void RemoveGameplayTag(FGameplayTag GameplayTag);                                                                     // [0x2927a0c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AmbientAudio.AmbientAudioSubsystem.RemoveAmbientEntry
-	// void RemoveAmbientEntry(FName AmbientName, float CrossfadeOverride);                                                  // [0x3160214] Final|Native|Public|BlueprintCallable 
+	// void RemoveAmbientEntry(FName AmbientName, float CrossfadeOverride);                                                  // [0x31395b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AmbientAudio.AmbientAudioSubsystem.GetAudioParameterComponent
-	// class UAudioParameterComponent* GetAudioParameterComponent();                                                         // [0x7c5f584] Final|Native|Public|BlueprintCallable 
+	// class UAudioParameterComponent* GetAudioParameterComponent();                                                         // [0x7c267e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AmbientAudio.AmbientAudioSubsystem.AddGameplayTag
-	// void AddGameplayTag(FGameplayTag GameplayTag);                                                                        // [0x26a1e10] Final|Native|Public|BlueprintCallable 
+	// void AddGameplayTag(FGameplayTag GameplayTag);                                                                        // [0x2927ad0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AmbientAudio.AmbientAudioSubsystem.AddAmbientEntry
-	// void AddAmbientEntry(FName AmbientName, class UAmbientAudioDataAsset* Asset, int32_t Priority, float CrossfadeTime);  // [0x26a14c4] Final|Native|Public|BlueprintCallable 
+	// void AddAmbientEntry(FName AmbientName, class UAmbientAudioDataAsset* Asset, int32_t Priority, float CrossfadeTime);  // [0x29270e0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AmbientAudio.AmbientAudioParameterActor

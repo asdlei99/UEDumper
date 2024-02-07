@@ -28,17 +28,17 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCMS.CatalogData.IsFromHotfix
-	// bool IsFromHotfix();                                                                                                     // [0x3b24640] Final|Native|Public|BlueprintCallable 
+	// bool IsFromHotfix();                                                                                                     // [0x38b7f1c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.CatalogData.IsEnabledForPilgrim
-	// bool IsEnabledForPilgrim();                                                                                              // [0xaa40d6c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabledForPilgrim();                                                                                              // [0xac18ef4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.IsEnabledForJam
-	// bool IsEnabledForJam();                                                                                                  // [0xaa40d48] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabledForJam();                                                                                                  // [0xac18ed0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0xaa40d24] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                        // [0xac18eac] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SparksCMS.CatalogData.ConsolidateData
-	// void ConsolidateData();                                                                                                  // [0xaa3f0cc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ConsolidateData();                                                                                                  // [0xac17108] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.CatalogData.ClearConsolidatedData
-	// void ClearConsolidatedData();                                                                                            // [0xaa3f0b8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ClearConsolidatedData();                                                                                            // [0xac170f4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SparksCMS.SparksSongCatalog
@@ -57,19 +57,19 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCMS.SparksSongCatalog.SetCMSSuffix
-	// void SetCMSSuffix(FString InCMSSuffix);                                                                                  // [0xaa40e08] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetCMSSuffix(FString InCMSSuffix);                                                                                  // [0xac19028] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.RequestSongCatalog
-	// void RequestSongCatalog();                                                                                               // [0xaa40df4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RequestSongCatalog();                                                                                               // [0xac19014] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.OnCalendarActiveEventsChanged
-	// void OnCalendarActiveEventsChanged(TArray<FString>& ActiveEventFlags);                                                   // [0x361708c] Final|Native|Protected|HasOutParms 
+	// void OnCalendarActiveEventsChanged(TArray<FString>& ActiveEventFlags);                                                   // [0xac18f7c] Final|Native|Protected|HasOutParms 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongList
-	// void GetSongList(ESongSortMethod SortMethod, ESongSortDirection SortDirection, FGameplayTagQuery& TagQuery, TArray<UCatalogData*>& OutResults); // [0xaa40588] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetSongList(ESongSortMethod SortMethod, ESongSortDirection SortDirection, FGameplayTagQuery& TagQuery, TArray<UCatalogData*>& OutResults); // [0xac1868c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByUID
-	// class UCatalogData* GetSongByUID(FString InUID);                                                                         // [0xaa3fed8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByUID(FString InUID);                                                                         // [0xac17f98] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByTemplateID
-	// class UCatalogData* GetSongByTemplateID(FString InTemplateId);                                                           // [0xaa3f790] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByTemplateID(FString InTemplateId);                                                           // [0xac17810] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCMS.SparksSongCatalog.GetSongByShortName
-	// class UCatalogData* GetSongByShortName(FString InShortName);                                                             // [0xaa3f0e0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// class UCatalogData* GetSongByShortName(FString InShortName);                                                             // [0xac1711c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/SparksCMS.SparksSongQuicksilverTrack

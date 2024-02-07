@@ -249,12 +249,12 @@ enum class ELandscapeLODFalloff : uint8_t
 };
 
 /// Class /Script/Landscape.ControlPointMeshComponent
-/// Size: 0x0010 (0x000630 - 0x000640)
+/// Size: 0x0010 (0x0005C0 - 0x0005D0)
 class UControlPointMeshComponent : public UStaticMeshComponent
 { 
 public:
-	float                                              VirtualTextureMainPassMaxDrawDistance;                      // 0x0630   (0x0004)  
-	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0634   (0x000C)  MISSED
+	float                                              VirtualTextureMainPassMaxDrawDistance;                      // 0x05C0   (0x0004)  
+	unsigned char                                      UnknownData00_6[0xC];                                       // 0x05C4   (0x000C)  MISSED
 };
 
 /// Class /Script/Landscape.LandscapeSplineInterface
@@ -274,7 +274,7 @@ struct FLandscapePerLODMaterialOverride
 };
 
 /// Class /Script/Landscape.LandscapeProxy
-/// Size: 0x04B0 (0x000290 - 0x000740)
+/// Size: 0x04B8 (0x000290 - 0x000748)
 class ALandscapeProxy : public APartitionActor
 { 
 public:
@@ -285,119 +285,121 @@ public:
 	bool                                               bEnableNanite;                                              // 0x02C0   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x02C1   (0x0007)  MISSED
 	TArray<FLandscapePerLODMaterialOverride>           PerLODOverrideMaterials;                                    // 0x02C8   (0x0010)  
-	FIntPoint                                          LandscapeSectionOffset;                                     // 0x02D8   (0x0008)  
-	int32_t                                            MaxLODLevel;                                                // 0x02E0   (0x0004)  
-	float                                              ComponentScreenSizeToUseSubSections;                        // 0x02E4   (0x0004)  
-	float                                              LOD0ScreenSize;                                             // 0x02E8   (0x0004)  
-	uint32_t                                           LODGroupKey;                                                // 0x02EC   (0x0004)  
-	float                                              LOD0DistributionSetting;                                    // 0x02F0   (0x0004)  
-	float                                              LODDistributionSetting;                                     // 0x02F4   (0x0004)  
-	FPerQualityLevelFloat                              ScalableLOD0ScreenSize;                                     // 0x02F8   (0x0068)  
-	FPerQualityLevelFloat                              ScalableLOD0DistributionSetting;                            // 0x0360   (0x0068)  
-	FPerQualityLevelFloat                              ScalableLODDistributionSetting;                             // 0x03C8   (0x0068)  
-	bool                                               bUseScalableLODSettings;                                    // 0x0430   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0431   (0x0003)  MISSED
-	float                                              LODBlendRange;                                              // 0x0434   (0x0004)  
-	int32_t                                            StaticLightingLOD;                                          // 0x0438   (0x0004)  
-	unsigned char                                      UnknownData04_5[0x4];                                       // 0x043C   (0x0004)  MISSED
-	class UPhysicalMaterial*                           DefaultPhysMaterial;                                        // 0x0440   (0x0008)  
-	float                                              StreamingDistanceMultiplier;                                // 0x0448   (0x0004)  
-	unsigned char                                      UnknownData05_5[0x4];                                       // 0x044C   (0x0004)  MISSED
-	class UMaterialInterface*                          LandscapeMaterial;                                          // 0x0450   (0x0008)  
-	class UMaterialInterface*                          LandscapeHoleMaterial;                                      // 0x0458   (0x0008)  
-	TArray<class URuntimeVirtualTexture*>              RuntimeVirtualTextures;                                     // 0x0460   (0x0010)  
-	bool                                               bSetCreateRuntimeVirtualTextureVolumes;                     // 0x0470   (0x0001)  
-	bool                                               bVirtualTextureRenderWithQuad;                              // 0x0471   (0x0001)  
-	bool                                               bVirtualTextureRenderWithQuadHQ;                            // 0x0472   (0x0001)  
-	unsigned char                                      UnknownData06_5[0x1];                                       // 0x0473   (0x0001)  MISSED
-	int32_t                                            VirtualTextureNumLods;                                      // 0x0474   (0x0004)  
-	int32_t                                            VirtualTextureLodBias;                                      // 0x0478   (0x0004)  
-	ERuntimeVirtualTextureMainPassType                 VirtualTextureRenderPassType;                               // 0x047C   (0x0001)  
-	unsigned char                                      UnknownData07_5[0x3];                                       // 0x047D   (0x0003)  MISSED
-	float                                              NegativeZBoundsExtension;                                   // 0x0480   (0x0004)  
-	float                                              PositiveZBoundsExtension;                                   // 0x0484   (0x0004)  
-	TArray<class ULandscapeComponent*>                 LandscapeComponents;                                        // 0x0488   (0x0010)  
-	TArray<class ULandscapeHeightfieldCollisionComponent*> CollisionComponents;                                    // 0x0498   (0x0010)  
-	TArray<class UHierarchicalInstancedStaticMeshComponent*> FoliageComponents;                                    // 0x04A8   (0x0010)  
-	class ULandscapeNaniteComponent*                   NaniteComponent;                                            // 0x04B8   (0x0008)  
-	TArray<class ULandscapeNaniteComponent*>           NaniteComponents;                                           // 0x04C0   (0x0010)  
-	unsigned char                                      UnknownData08_5[0x64];                                      // 0x04D0   (0x0064)  MISSED
-	float                                              GrassTypesMaxDiscardDistance;                               // 0x0534   (0x0004)  
-	unsigned char                                      UnknownData09_5[0x10];                                      // 0x0538   (0x0010)  MISSED
-	float                                              StaticLightingResolution;                                   // 0x0548   (0x0004)  
-	bool                                               CastShadow : 1;                                             // 0x054C:0 (0x0001)  
-	bool                                               bCastDynamicShadow : 1;                                     // 0x054C:1 (0x0001)  
-	bool                                               bCastStaticShadow : 1;                                      // 0x054C:2 (0x0001)  
-	EShadowCacheInvalidationBehavior                   ShadowCacheInvalidationBehavior;                            // 0x054D   (0x0001)  
-	bool                                               bCastContactShadow : 1;                                     // 0x054E:0 (0x0001)  
-	unsigned char                                      UnknownData10_3[0x1];                                       // 0x054F   (0x0001)  MISSED
-	bool                                               bCastFarShadow : 1;                                         // 0x0550:0 (0x0001)  
-	unsigned char                                      UnknownData11_3[0x3];                                       // 0x0551   (0x0003)  MISSED
-	bool                                               bCastHiddenShadow : 1;                                      // 0x0554:0 (0x0001)  
-	unsigned char                                      UnknownData12_3[0x3];                                       // 0x0555   (0x0003)  MISSED
-	bool                                               bCastShadowAsTwoSided : 1;                                  // 0x0558:0 (0x0001)  
+	bool                                               bDisableRuntimeGrassMapGeneration;                          // 0x02D8   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x3];                                       // 0x02D9   (0x0003)  MISSED
+	FIntPoint                                          LandscapeSectionOffset;                                     // 0x02DC   (0x0008)  
+	int32_t                                            MaxLODLevel;                                                // 0x02E4   (0x0004)  
+	float                                              ComponentScreenSizeToUseSubSections;                        // 0x02E8   (0x0004)  
+	float                                              LOD0ScreenSize;                                             // 0x02EC   (0x0004)  
+	uint32_t                                           LODGroupKey;                                                // 0x02F0   (0x0004)  
+	float                                              LOD0DistributionSetting;                                    // 0x02F4   (0x0004)  
+	float                                              LODDistributionSetting;                                     // 0x02F8   (0x0004)  
+	unsigned char                                      UnknownData04_5[0x4];                                       // 0x02FC   (0x0004)  MISSED
+	FPerQualityLevelFloat                              ScalableLOD0ScreenSize;                                     // 0x0300   (0x0068)  
+	FPerQualityLevelFloat                              ScalableLOD0DistributionSetting;                            // 0x0368   (0x0068)  
+	FPerQualityLevelFloat                              ScalableLODDistributionSetting;                             // 0x03D0   (0x0068)  
+	bool                                               bUseScalableLODSettings;                                    // 0x0438   (0x0001)  
+	unsigned char                                      UnknownData05_5[0x3];                                       // 0x0439   (0x0003)  MISSED
+	float                                              LODBlendRange;                                              // 0x043C   (0x0004)  
+	int32_t                                            StaticLightingLOD;                                          // 0x0440   (0x0004)  
+	unsigned char                                      UnknownData06_5[0x4];                                       // 0x0444   (0x0004)  MISSED
+	class UPhysicalMaterial*                           DefaultPhysMaterial;                                        // 0x0448   (0x0008)  
+	float                                              StreamingDistanceMultiplier;                                // 0x0450   (0x0004)  
+	unsigned char                                      UnknownData07_5[0x4];                                       // 0x0454   (0x0004)  MISSED
+	class UMaterialInterface*                          LandscapeMaterial;                                          // 0x0458   (0x0008)  
+	class UMaterialInterface*                          LandscapeHoleMaterial;                                      // 0x0460   (0x0008)  
+	TArray<class URuntimeVirtualTexture*>              RuntimeVirtualTextures;                                     // 0x0468   (0x0010)  
+	bool                                               bSetCreateRuntimeVirtualTextureVolumes;                     // 0x0478   (0x0001)  
+	bool                                               bVirtualTextureRenderWithQuad;                              // 0x0479   (0x0001)  
+	bool                                               bVirtualTextureRenderWithQuadHQ;                            // 0x047A   (0x0001)  
+	unsigned char                                      UnknownData08_5[0x1];                                       // 0x047B   (0x0001)  MISSED
+	int32_t                                            VirtualTextureNumLods;                                      // 0x047C   (0x0004)  
+	int32_t                                            VirtualTextureLodBias;                                      // 0x0480   (0x0004)  
+	ERuntimeVirtualTextureMainPassType                 VirtualTextureRenderPassType;                               // 0x0484   (0x0001)  
+	unsigned char                                      UnknownData09_5[0x3];                                       // 0x0485   (0x0003)  MISSED
+	float                                              NegativeZBoundsExtension;                                   // 0x0488   (0x0004)  
+	float                                              PositiveZBoundsExtension;                                   // 0x048C   (0x0004)  
+	TArray<class ULandscapeComponent*>                 LandscapeComponents;                                        // 0x0490   (0x0010)  
+	TArray<class ULandscapeHeightfieldCollisionComponent*> CollisionComponents;                                    // 0x04A0   (0x0010)  
+	TArray<class UHierarchicalInstancedStaticMeshComponent*> FoliageComponents;                                    // 0x04B0   (0x0010)  
+	class ULandscapeNaniteComponent*                   NaniteComponent;                                            // 0x04C0   (0x0008)  
+	TArray<class ULandscapeNaniteComponent*>           NaniteComponents;                                           // 0x04C8   (0x0010)  
+	unsigned char                                      UnknownData10_5[0x64];                                      // 0x04D8   (0x0064)  MISSED
+	float                                              GrassTypesMaxDiscardDistance;                               // 0x053C   (0x0004)  
+	unsigned char                                      UnknownData11_5[0x10];                                      // 0x0540   (0x0010)  MISSED
+	float                                              StaticLightingResolution;                                   // 0x0550   (0x0004)  
+	bool                                               CastShadow : 1;                                             // 0x0554:0 (0x0001)  
+	bool                                               bCastDynamicShadow : 1;                                     // 0x0554:1 (0x0001)  
+	bool                                               bCastStaticShadow : 1;                                      // 0x0554:2 (0x0001)  
+	EShadowCacheInvalidationBehavior                   ShadowCacheInvalidationBehavior;                            // 0x0555   (0x0001)  
+	bool                                               bCastContactShadow : 1;                                     // 0x0556:0 (0x0001)  
+	unsigned char                                      UnknownData12_3[0x1];                                       // 0x0557   (0x0001)  MISSED
+	bool                                               bCastFarShadow : 1;                                         // 0x0558:0 (0x0001)  
 	unsigned char                                      UnknownData13_3[0x3];                                       // 0x0559   (0x0003)  MISSED
-	bool                                               bAffectDistanceFieldLighting : 1;                           // 0x055C:0 (0x0001)  
-	FLightingChannels                                  LightingChannels;                                           // 0x055D   (0x0001)  
-	unsigned char                                      UnknownData14_5[0x2];                                       // 0x055E   (0x0002)  MISSED
-	bool                                               bUseMaterialPositionOffsetInStaticLighting : 1;             // 0x0560:0 (0x0001)  
-	bool                                               bRenderCustomDepth : 1;                                     // 0x0560:1 (0x0001)  
-	unsigned char                                      UnknownData15_4[0x3];                                       // 0x0561   (0x0003)  MISSED
-	ERendererStencilMask                               CustomDepthStencilWriteMask;                                // 0x0564   (0x0001)  
-	unsigned char                                      UnknownData16_5[0x3];                                       // 0x0565   (0x0003)  MISSED
-	int32_t                                            CustomDepthStencilValue;                                    // 0x0568   (0x0004)  
-	float                                              LDMaxDrawDistance;                                          // 0x056C   (0x0004)  
-	FLightmassPrimitiveSettings                        LightmassSettings;                                          // 0x0570   (0x0018)  
-	int32_t                                            CollisionMipLevel;                                          // 0x0588   (0x0004)  
-	int32_t                                            SimpleCollisionMipLevel;                                    // 0x058C   (0x0004)  
-	FBodyInstance                                      BodyInstance;                                               // 0x0590   (0x0190)  
-	bool                                               bGenerateOverlapEvents : 1;                                 // 0x0720:0 (0x0001)  
-	bool                                               bBakeMaterialPositionOffsetIntoCollision : 1;               // 0x0720:1 (0x0001)  
-	unsigned char                                      UnknownData17_4[0x3];                                       // 0x0721   (0x0003)  MISSED
-	int32_t                                            ComponentSizeQuads;                                         // 0x0724   (0x0004)  
-	int32_t                                            SubsectionSizeQuads;                                        // 0x0728   (0x0004)  
-	int32_t                                            NumSubsections;                                             // 0x072C   (0x0004)  
-	bool                                               bUsedForNavigation : 1;                                     // 0x0730:0 (0x0001)  
-	bool                                               bFillCollisionUnderLandscapeForNavmesh : 1;                 // 0x0730:1 (0x0001)  
-	unsigned char                                      UnknownData18_4[0x3];                                       // 0x0731   (0x0003)  MISSED
-	ENavDataGatheringMode                              NavigationGeometryGatheringMode;                            // 0x0734   (0x0001)  
-	bool                                               bUseDynamicMaterialInstance;                                // 0x0735   (0x0001)  
-	bool                                               bUseLandscapeForCullingInvisibleHLODVertices;               // 0x0736   (0x0001)  
-	bool                                               bHasLayersContent;                                          // 0x0737   (0x0001)  
-	bool                                               bUseCompressedHeightmapStorage;                             // 0x0738   (0x0001)  
-	bool                                               bUseRuntimeGrassMapGeneration;                              // 0x0739   (0x0001)  
-	bool                                               bStripPhysicsWhenCookedClient;                              // 0x073A   (0x0001)  
-	bool                                               bStripPhysicsWhenCookedServer;                              // 0x073B   (0x0001)  
-	bool                                               bStripGrassWhenCookedClient;                                // 0x073C   (0x0001)  
-	bool                                               bStripGrassWhenCookedServer;                                // 0x073D   (0x0001)  
-	unsigned char                                      UnknownData19_6[0x2];                                       // 0x073E   (0x0002)  MISSED
+	bool                                               bCastHiddenShadow : 1;                                      // 0x055C:0 (0x0001)  
+	unsigned char                                      UnknownData14_3[0x3];                                       // 0x055D   (0x0003)  MISSED
+	bool                                               bCastShadowAsTwoSided : 1;                                  // 0x0560:0 (0x0001)  
+	unsigned char                                      UnknownData15_3[0x3];                                       // 0x0561   (0x0003)  MISSED
+	bool                                               bAffectDistanceFieldLighting : 1;                           // 0x0564:0 (0x0001)  
+	FLightingChannels                                  LightingChannels;                                           // 0x0565   (0x0001)  
+	unsigned char                                      UnknownData16_5[0x2];                                       // 0x0566   (0x0002)  MISSED
+	bool                                               bUseMaterialPositionOffsetInStaticLighting : 1;             // 0x0568:0 (0x0001)  
+	bool                                               bRenderCustomDepth : 1;                                     // 0x0568:1 (0x0001)  
+	unsigned char                                      UnknownData17_4[0x3];                                       // 0x0569   (0x0003)  MISSED
+	ERendererStencilMask                               CustomDepthStencilWriteMask;                                // 0x056C   (0x0001)  
+	unsigned char                                      UnknownData18_5[0x3];                                       // 0x056D   (0x0003)  MISSED
+	int32_t                                            CustomDepthStencilValue;                                    // 0x0570   (0x0004)  
+	float                                              LDMaxDrawDistance;                                          // 0x0574   (0x0004)  
+	FLightmassPrimitiveSettings                        LightmassSettings;                                          // 0x0578   (0x0018)  
+	int32_t                                            CollisionMipLevel;                                          // 0x0590   (0x0004)  
+	int32_t                                            SimpleCollisionMipLevel;                                    // 0x0594   (0x0004)  
+	FBodyInstance                                      BodyInstance;                                               // 0x0598   (0x0190)  
+	bool                                               bGenerateOverlapEvents : 1;                                 // 0x0728:0 (0x0001)  
+	bool                                               bBakeMaterialPositionOffsetIntoCollision : 1;               // 0x0728:1 (0x0001)  
+	unsigned char                                      UnknownData19_4[0x3];                                       // 0x0729   (0x0003)  MISSED
+	int32_t                                            ComponentSizeQuads;                                         // 0x072C   (0x0004)  
+	int32_t                                            SubsectionSizeQuads;                                        // 0x0730   (0x0004)  
+	int32_t                                            NumSubsections;                                             // 0x0734   (0x0004)  
+	bool                                               bUsedForNavigation : 1;                                     // 0x0738:0 (0x0001)  
+	bool                                               bFillCollisionUnderLandscapeForNavmesh : 1;                 // 0x0738:1 (0x0001)  
+	unsigned char                                      UnknownData20_4[0x3];                                       // 0x0739   (0x0003)  MISSED
+	ENavDataGatheringMode                              NavigationGeometryGatheringMode;                            // 0x073C   (0x0001)  
+	bool                                               bUseDynamicMaterialInstance;                                // 0x073D   (0x0001)  
+	bool                                               bUseLandscapeForCullingInvisibleHLODVertices;               // 0x073E   (0x0001)  
+	bool                                               bHasLayersContent;                                          // 0x073F   (0x0001)  
+	bool                                               bUseCompressedHeightmapStorage;                             // 0x0740   (0x0001)  
+	bool                                               bStripPhysicsWhenCookedClient;                              // 0x0741   (0x0001)  
+	bool                                               bStripPhysicsWhenCookedServer;                              // 0x0742   (0x0001)  
+	bool                                               bStripGrassWhenCookedClient;                                // 0x0743   (0x0001)  
+	bool                                               bStripGrassWhenCookedServer;                                // 0x0744   (0x0001)  
+	unsigned char                                      UnknownData21_6[0x3];                                       // 0x0745   (0x0003)  MISSED
 
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeProxy.SetVirtualTextureRenderPassType
-	// void SetVirtualTextureRenderPassType(ERuntimeVirtualTextureMainPassType InType);                                      // [0x604b5bc] Final|Native|Public|BlueprintCallable 
+	// void SetVirtualTextureRenderPassType(ERuntimeVirtualTextureMainPassType InType);                                      // [0x5d52b88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue
-	// void SetLandscapeMaterialVectorParameterValue(FName ParameterName, FLinearColor Value);                               // [0x604b448] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLandscapeMaterialVectorParameterValue(FName ParameterName, FLinearColor Value);                               // [0x5d52a38] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue
-	// void SetLandscapeMaterialTextureParameterValue(FName ParameterName, class UTexture* Value);                           // [0x604b384] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetLandscapeMaterialTextureParameterValue(FName ParameterName, class UTexture* Value);                           // [0x5d528fc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue
-	// void SetLandscapeMaterialScalarParameterValue(FName ParameterName, float Value);                                      // [0x604b2c0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetLandscapeMaterialScalarParameterValue(FName ParameterName, float Value);                                      // [0x5d527c0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.LandscapeExportHeightmapToRenderTarget
-	// bool LandscapeExportHeightmapToRenderTarget(class UTextureRenderTarget2D* InRenderTarget, bool InExportHeightIntoRGChannel, bool InExportLandscapeProxies); // [0x604b1dc] Final|Native|Public|BlueprintCallable 
+	// bool LandscapeExportHeightmapToRenderTarget(class UTextureRenderTarget2D* InRenderTarget, bool InExportHeightIntoRGChannel, bool InExportLandscapeProxies); // [0x5d5261c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.GetLandscapeActor
-	// class ALandscape* GetLandscapeActor();                                                                                // [0x604b1b4] Native|Public|BlueprintCallable 
+	// class ALandscape* GetLandscapeActor();                                                                                // [0x5d525f4] Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.EditorSetLandscapeMaterial
-	// void EditorSetLandscapeMaterial(class UMaterialInterface* NewLandscapeMaterial);                                      // [0x604b150] Final|Native|Public|BlueprintCallable 
+	// void EditorSetLandscapeMaterial(class UMaterialInterface* NewLandscapeMaterial);                                      // [0x5d5254c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.EditorApplySpline
-	// void EditorApplySpline(class USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, class ULandscapeLayerInfoObject* PaintLayer, FName EditLayerName); // [0x604ae54] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void EditorApplySpline(class USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, class ULandscapeLayerInfoObject* PaintLayer, FName EditLayerName); // [0x5d51f90] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.ChangeLODDistanceFactor
-	// void ChangeLODDistanceFactor(float InLODDistanceFactor);                                                              // [0x604add0] Native|Public|BlueprintCallable 
+	// void ChangeLODDistanceFactor(float InLODDistanceFactor);                                                              // [0x5d51ec8] Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections
-	// void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections);                          // [0x604ad4c] Native|Public|BlueprintCallable 
+	// void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections);                          // [0x5d51e00] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Landscape.Landscape
-/// Size: 0x0000 (0x000740 - 0x000740)
+/// Size: 0x0000 (0x000748 - 0x000748)
 class ALandscape : public ALandscapeProxy
 { 
 public:
@@ -405,13 +407,13 @@ public:
 
 	/// Functions
 	// Function /Script/Landscape.Landscape.RenderWeightmaps
-	// bool RenderWeightmaps(FTransform InWorldTransform, FBox2D InExtents, TArray<FName>& InWeightmapLayerNames, class UTextureRenderTarget* OutRenderTarget); // [0x6025608] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool RenderWeightmaps(FTransform InWorldTransform, FBox2D InExtents, TArray<FName>& InWeightmapLayerNames, class UTextureRenderTarget* OutRenderTarget); // [0x5d29018] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Landscape.Landscape.RenderWeightmap
-	// bool RenderWeightmap(FTransform InWorldTransform, FBox2D InExtents, FName InWeightmapLayerName, class UTextureRenderTarget2D* OutRenderTarget); // [0x6025184] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// bool RenderWeightmap(FTransform InWorldTransform, FBox2D InExtents, FName InWeightmapLayerName, class UTextureRenderTarget2D* OutRenderTarget); // [0x5d28cd4] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/Landscape.Landscape.RenderHeightmap
-	// bool RenderHeightmap(FTransform InWorldTransform, FBox2D InExtents, class UTextureRenderTarget2D* OutRenderTarget);   // [0x6024dc0] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// bool RenderHeightmap(FTransform InWorldTransform, FBox2D InExtents, class UTextureRenderTarget2D* OutRenderTarget);   // [0x5d28a28] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/Landscape.Landscape.GetTargetLayerNames
-	// TArray<FName> GetTargetLayerNames(bool bInIncludeVisibilityLayer);                                                    // [0x6024d34] Final|Native|Public|BlueprintCallable|Const 
+	// TArray<FName> GetTargetLayerNames(bool bInIncludeVisibilityLayer);                                                    // [0x5d28958] Final|Native|Public|BlueprintCallable|Const 
 };
 
 /// Class /Script/Landscape.LandscapeLODStreamingProxy_DEPRECATED
@@ -432,65 +434,65 @@ struct FWeightmapLayerAllocationInfo
 };
 
 /// Class /Script/Landscape.LandscapeComponent
-/// Size: 0x0210 (0x000570 - 0x000780)
+/// Size: 0x0210 (0x000500 - 0x000710)
 class ULandscapeComponent : public UPrimitiveComponent
 { 
 public:
-	int32_t                                            SectionBaseX;                                               // 0x0570   (0x0004)  
-	int32_t                                            SectionBaseY;                                               // 0x0574   (0x0004)  
-	int32_t                                            ComponentSizeQuads;                                         // 0x0578   (0x0004)  
-	int32_t                                            SubsectionSizeQuads;                                        // 0x057C   (0x0004)  
-	int32_t                                            NumSubsections;                                             // 0x0580   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0584   (0x0004)  MISSED
-	class UMaterialInterface*                          OverrideMaterial;                                           // 0x0588   (0x0008)  
-	class UMaterialInterface*                          OverrideHoleMaterial;                                       // 0x0590   (0x0008)  
-	TArray<class UMaterialInstanceConstant*>           MaterialInstances;                                          // 0x0598   (0x0010)  
-	TArray<class UMaterialInstanceDynamic*>            MaterialInstancesDynamic;                                   // 0x05A8   (0x0010)  
-	TArray<int8_t>                                     LODIndexToMaterialIndex;                                    // 0x05B8   (0x0010)  
-	class UTexture2D*                                  XYOffsetmapTexture;                                         // 0x05C8   (0x0008)  
-	FVector4                                           WeightmapScaleBias;                                         // 0x05D0   (0x0020)  
-	float                                              WeightmapSubsectionOffset;                                  // 0x05F0   (0x0004)  
-	unsigned char                                      UnknownData01_5[0xC];                                       // 0x05F4   (0x000C)  MISSED
-	FVector4                                           HeightmapScaleBias;                                         // 0x0600   (0x0020)  
-	FBox                                               CachedLocalBox;                                             // 0x0620   (0x0038)  
-	class ULandscapeHeightfieldCollisionComponent*     CollisionComponentRef;                                      // 0x0658   (0x0008)  
-	bool                                               bUserTriggeredChangeRequested;                              // 0x0660   (0x0001)  
-	bool                                               bNaniteActive;                                              // 0x0661   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x6];                                       // 0x0662   (0x0006)  MISSED
-	class UTexture2D*                                  HeightmapTexture;                                           // 0x0668   (0x0008)  
-	TArray<FWeightmapLayerAllocationInfo>              WeightmapLayerAllocations;                                  // 0x0670   (0x0010)  
-	TArray<class UTexture2D*>                          WeightmapTextures;                                          // 0x0680   (0x0010)  
-	TArray<FLandscapePerLODMaterialOverride>           PerLODOverrideMaterials;                                    // 0x0690   (0x0010)  
-	TArray<class ULandscapeGrassType*>                 GrassTypes;                                                 // 0x06A0   (0x0010)  
-	unsigned char                                      UnknownData03_5[0x10];                                      // 0x06B0   (0x0010)  MISSED
-	FGuid                                              MapBuildDataId;                                             // 0x06C0   (0x0010)  
-	int32_t                                            CollisionMipLevel;                                          // 0x06D0   (0x0004)  
-	int32_t                                            SimpleCollisionMipLevel;                                    // 0x06D4   (0x0004)  
-	float                                              NegativeZBoundsExtension;                                   // 0x06D8   (0x0004)  
-	float                                              PositiveZBoundsExtension;                                   // 0x06DC   (0x0004)  
-	float                                              StaticLightingResolution;                                   // 0x06E0   (0x0004)  
-	int32_t                                            ForcedLOD;                                                  // 0x06E4   (0x0004)  
-	int32_t                                            LODBias;                                                    // 0x06E8   (0x0004)  
-	FGuid                                              StateId;                                                    // 0x06EC   (0x0010)  
-	unsigned char                                      UnknownData04_5[0x24];                                      // 0x06FC   (0x0024)  MISSED
-	class UMaterialInterface*                          MobileMaterialInterface;                                    // 0x0720   (0x0008)  
-	TArray<class UMaterialInterface*>                  MobileMaterialInterfaces;                                   // 0x0728   (0x0010)  
-	TArray<class UTexture2D*>                          MobileWeightmapTextures;                                    // 0x0738   (0x0010)  
-	TArray<FWeightmapLayerAllocationInfo>              MobileWeightmapLayerAllocations;                            // 0x0748   (0x0010)  
-	unsigned char                                      UnknownData05_6[0x28];                                      // 0x0758   (0x0028)  MISSED
+	int32_t                                            SectionBaseX;                                               // 0x0500   (0x0004)  
+	int32_t                                            SectionBaseY;                                               // 0x0504   (0x0004)  
+	int32_t                                            ComponentSizeQuads;                                         // 0x0508   (0x0004)  
+	int32_t                                            SubsectionSizeQuads;                                        // 0x050C   (0x0004)  
+	int32_t                                            NumSubsections;                                             // 0x0510   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0514   (0x0004)  MISSED
+	class UMaterialInterface*                          OverrideMaterial;                                           // 0x0518   (0x0008)  
+	class UMaterialInterface*                          OverrideHoleMaterial;                                       // 0x0520   (0x0008)  
+	TArray<class UMaterialInstanceConstant*>           MaterialInstances;                                          // 0x0528   (0x0010)  
+	TArray<class UMaterialInstanceDynamic*>            MaterialInstancesDynamic;                                   // 0x0538   (0x0010)  
+	TArray<int8_t>                                     LODIndexToMaterialIndex;                                    // 0x0548   (0x0010)  
+	class UTexture2D*                                  XYOffsetmapTexture;                                         // 0x0558   (0x0008)  
+	FVector4                                           WeightmapScaleBias;                                         // 0x0560   (0x0020)  
+	float                                              WeightmapSubsectionOffset;                                  // 0x0580   (0x0004)  
+	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0584   (0x000C)  MISSED
+	FVector4                                           HeightmapScaleBias;                                         // 0x0590   (0x0020)  
+	FBox                                               CachedLocalBox;                                             // 0x05B0   (0x0038)  
+	class ULandscapeHeightfieldCollisionComponent*     CollisionComponentRef;                                      // 0x05E8   (0x0008)  
+	bool                                               bUserTriggeredChangeRequested;                              // 0x05F0   (0x0001)  
+	bool                                               bNaniteActive;                                              // 0x05F1   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x6];                                       // 0x05F2   (0x0006)  MISSED
+	class UTexture2D*                                  HeightmapTexture;                                           // 0x05F8   (0x0008)  
+	TArray<FWeightmapLayerAllocationInfo>              WeightmapLayerAllocations;                                  // 0x0600   (0x0010)  
+	TArray<class UTexture2D*>                          WeightmapTextures;                                          // 0x0610   (0x0010)  
+	TArray<FLandscapePerLODMaterialOverride>           PerLODOverrideMaterials;                                    // 0x0620   (0x0010)  
+	TArray<class ULandscapeGrassType*>                 GrassTypes;                                                 // 0x0630   (0x0010)  
+	unsigned char                                      UnknownData03_5[0x10];                                      // 0x0640   (0x0010)  MISSED
+	FGuid                                              MapBuildDataId;                                             // 0x0650   (0x0010)  
+	int32_t                                            CollisionMipLevel;                                          // 0x0660   (0x0004)  
+	int32_t                                            SimpleCollisionMipLevel;                                    // 0x0664   (0x0004)  
+	float                                              NegativeZBoundsExtension;                                   // 0x0668   (0x0004)  
+	float                                              PositiveZBoundsExtension;                                   // 0x066C   (0x0004)  
+	float                                              StaticLightingResolution;                                   // 0x0670   (0x0004)  
+	int32_t                                            ForcedLOD;                                                  // 0x0674   (0x0004)  
+	int32_t                                            LODBias;                                                    // 0x0678   (0x0004)  
+	FGuid                                              StateId;                                                    // 0x067C   (0x0010)  
+	unsigned char                                      UnknownData04_5[0x24];                                      // 0x068C   (0x0024)  MISSED
+	class UMaterialInterface*                          MobileMaterialInterface;                                    // 0x06B0   (0x0008)  
+	TArray<class UMaterialInterface*>                  MobileMaterialInterfaces;                                   // 0x06B8   (0x0010)  
+	TArray<class UTexture2D*>                          MobileWeightmapTextures;                                    // 0x06C8   (0x0010)  
+	TArray<FWeightmapLayerAllocationInfo>              MobileWeightmapLayerAllocations;                            // 0x06D8   (0x0010)  
+	unsigned char                                      UnknownData05_6[0x28];                                      // 0x06E8   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeComponent.SetLODBias
-	// void SetLODBias(int32_t InLODBias);                                                                                   // [0x6025a9c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetLODBias(int32_t InLODBias);                                                                                   // [0x5d293c4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeComponent.SetForcedLOD
-	// void SetForcedLOD(int32_t InForcedLOD);                                                                               // [0x6025a1c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetForcedLOD(int32_t InForcedLOD);                                                                               // [0x5d29300] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeComponent.GetMaterialInstanceDynamic
-	// class UMaterialInstanceDynamic* GetMaterialInstanceDynamic(int32_t InIndex);                                          // [0x6024c68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMaterialInstanceDynamic* GetMaterialInstanceDynamic(int32_t InIndex);                                          // [0x5d28848] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation
-	// float EditorGetPaintLayerWeightByNameAtLocation(FVector& InLocation, FName InPaintLayerName);                         // [0x6024b34] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float EditorGetPaintLayerWeightByNameAtLocation(FVector& InLocation, FName InPaintLayerName);                         // [0x5d28714] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation
-	// float EditorGetPaintLayerWeightAtLocation(FVector& InLocation, class ULandscapeLayerInfoObject* PaintLayer);          // [0x6024a00] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float EditorGetPaintLayerWeightAtLocation(FVector& InLocation, class ULandscapeLayerInfoObject* PaintLayer);          // [0x5d285e0] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/Landscape.LandscapeGizmoActor
@@ -509,7 +511,7 @@ public:
 };
 
 /// Class /Script/Landscape.LandscapeGizmoRenderComponent
-/// Size: 0x0000 (0x000570 - 0x000570)
+/// Size: 0x0000 (0x000500 - 0x000500)
 class ULandscapeGizmoRenderComponent : public UPrimitiveComponent
 { 
 public:
@@ -577,29 +579,29 @@ public:
 };
 
 /// Class /Script/Landscape.LandscapeHeightfieldCollisionComponent
-/// Size: 0x0100 (0x000570 - 0x000670)
+/// Size: 0x0100 (0x000500 - 0x000600)
 class ULandscapeHeightfieldCollisionComponent : public UPrimitiveComponent
 { 
 public:
-	TArray<class ULandscapeLayerInfoObject*>           ComponentLayerInfos;                                        // 0x0570   (0x0010)  
-	int32_t                                            SectionBaseX;                                               // 0x0580   (0x0004)  
-	int32_t                                            SectionBaseY;                                               // 0x0584   (0x0004)  
-	int32_t                                            CollisionSizeQuads;                                         // 0x0588   (0x0004)  
-	float                                              CollisionScale;                                             // 0x058C   (0x0004)  
-	int32_t                                            SimpleCollisionSizeQuads;                                   // 0x0590   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0594   (0x0004)  MISSED
-	TArray<char>                                       CollisionQuadFlags;                                         // 0x0598   (0x0010)  
-	FGuid                                              HeightfieldGuid;                                            // 0x05A8   (0x0010)  
-	FBox                                               CachedLocalBox;                                             // 0x05B8   (0x0038)  
-	class ULandscapeComponent*                         RenderComponentRef;                                         // 0x05F0   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x18];                                      // 0x05F8   (0x0018)  MISSED
-	TArray<class UPhysicalMaterial*>                   CookedPhysicalMaterials;                                    // 0x0610   (0x0010)  
-	unsigned char                                      UnknownData02_6[0x50];                                      // 0x0620   (0x0050)  MISSED
+	TArray<class ULandscapeLayerInfoObject*>           ComponentLayerInfos;                                        // 0x0500   (0x0010)  
+	int32_t                                            SectionBaseX;                                               // 0x0510   (0x0004)  
+	int32_t                                            SectionBaseY;                                               // 0x0514   (0x0004)  
+	int32_t                                            CollisionSizeQuads;                                         // 0x0518   (0x0004)  
+	float                                              CollisionScale;                                             // 0x051C   (0x0004)  
+	int32_t                                            SimpleCollisionSizeQuads;                                   // 0x0520   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0524   (0x0004)  MISSED
+	TArray<char>                                       CollisionQuadFlags;                                         // 0x0528   (0x0010)  
+	FGuid                                              HeightfieldGuid;                                            // 0x0538   (0x0010)  
+	FBox                                               CachedLocalBox;                                             // 0x0548   (0x0038)  
+	class ULandscapeComponent*                         RenderComponentRef;                                         // 0x0580   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x18];                                      // 0x0588   (0x0018)  MISSED
+	TArray<class UPhysicalMaterial*>                   CookedPhysicalMaterials;                                    // 0x05A0   (0x0010)  
+	unsigned char                                      UnknownData02_6[0x50];                                      // 0x05B0   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent
-	// class ULandscapeComponent* GetRenderComponent();                                                                      // [0x6024d1c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ULandscapeComponent* GetRenderComponent();                                                                      // [0x5d28940] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Landscape.LandscapeLayerInfoObject
@@ -624,25 +626,25 @@ struct FLandscapeMaterialTextureStreamingInfo
 };
 
 /// Class /Script/Landscape.LandscapeMaterialInstanceConstant
-/// Size: 0x0018 (0x000248 - 0x000260)
+/// Size: 0x0018 (0x000260 - 0x000278)
 class ULandscapeMaterialInstanceConstant : public UMaterialInstanceConstant
 { 
 public:
-	TArray<FLandscapeMaterialTextureStreamingInfo>     TextureStreamingInfo;                                       // 0x0248   (0x0010)  
-	bool                                               bIsLayerThumbnail : 1;                                      // 0x0258:0 (0x0001)  
-	bool                                               bDisableTessellation : 1;                                   // 0x0258:1 (0x0001)  
-	bool                                               bMobile : 1;                                                // 0x0258:2 (0x0001)  
-	bool                                               bEditorToolUsage : 1;                                       // 0x0258:3 (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0259   (0x0007)  MISSED
+	TArray<FLandscapeMaterialTextureStreamingInfo>     TextureStreamingInfo;                                       // 0x0260   (0x0010)  
+	bool                                               bIsLayerThumbnail : 1;                                      // 0x0270:0 (0x0001)  
+	bool                                               bDisableTessellation : 1;                                   // 0x0270:1 (0x0001)  
+	bool                                               bMobile : 1;                                                // 0x0270:2 (0x0001)  
+	bool                                               bEditorToolUsage : 1;                                       // 0x0270:3 (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0271   (0x0007)  MISSED
 };
 
 /// Class /Script/Landscape.LandscapeMeshCollisionComponent
-/// Size: 0x0020 (0x000670 - 0x000690)
+/// Size: 0x0020 (0x000600 - 0x000620)
 class ULandscapeMeshCollisionComponent : public ULandscapeHeightfieldCollisionComponent
 { 
 public:
-	FGuid                                              MeshGuid;                                                   // 0x0670   (0x0010)  
-	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0680   (0x0010)  MISSED
+	FGuid                                              MeshGuid;                                                   // 0x0600   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0610   (0x0010)  MISSED
 };
 
 /// Class /Script/Landscape.LandscapeMeshProxyActor
@@ -654,20 +656,20 @@ public:
 };
 
 /// Class /Script/Landscape.LandscapeMeshProxyComponent
-/// Size: 0x0070 (0x000630 - 0x0006A0)
+/// Size: 0x0070 (0x0005C0 - 0x000630)
 class ULandscapeMeshProxyComponent : public UStaticMeshComponent
 { 
 public:
-	FGuid                                              LandscapeGuid;                                              // 0x0630   (0x0010)  
-	TArray<FIntPoint>                                  ProxyComponentBases;                                        // 0x0640   (0x0010)  
-	TArray<FVector>                                    ProxyComponentCentersObjectSpace;                           // 0x0650   (0x0010)  
-	FVector                                            ComponentXVectorObjectSpace;                                // 0x0660   (0x0018)  
-	FVector                                            ComponentYVectorObjectSpace;                                // 0x0678   (0x0018)  
-	int32_t                                            ComponentResolution;                                        // 0x0690   (0x0004)  
-	int8_t                                             ProxyLOD;                                                   // 0x0694   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0695   (0x0003)  MISSED
-	uint32_t                                           LODGroupKey;                                                // 0x0698   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x069C   (0x0004)  MISSED
+	FGuid                                              LandscapeGuid;                                              // 0x05C0   (0x0010)  
+	TArray<FIntPoint>                                  ProxyComponentBases;                                        // 0x05D0   (0x0010)  
+	TArray<FVector>                                    ProxyComponentCentersObjectSpace;                           // 0x05E0   (0x0010)  
+	FVector                                            ComponentXVectorObjectSpace;                                // 0x05F0   (0x0018)  
+	FVector                                            ComponentYVectorObjectSpace;                                // 0x0608   (0x0018)  
+	int32_t                                            ComponentResolution;                                        // 0x0620   (0x0004)  
+	int8_t                                             ProxyLOD;                                                   // 0x0624   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0625   (0x0003)  MISSED
+	uint32_t                                           LODGroupKey;                                                // 0x0628   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x062C   (0x0004)  MISSED
 };
 
 /// Class /Script/Landscape.LandscapeSettings
@@ -683,8 +685,8 @@ public:
 	ELandscapeDirtyingMode                             LandscapeDirtyingMode;                                      // 0x0041   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0042   (0x0002)  MISSED
 	int32_t                                            SideResolutionLimit;                                        // 0x0044   (0x0004)  
-	SDK_UNDEFINED(32,14107) /* TWeakObjectPtr<UMaterialInterface*> */ __um(DefaultLandscapeMaterial);              // 0x0048   (0x0020)  
-	SDK_UNDEFINED(32,14108) /* TWeakObjectPtr<ULandscapeLayerInfoObject*> */ __um(DefaultLayerInfoObject);         // 0x0068   (0x0020)  
+	SDK_UNDEFINED(32,14221) /* TWeakObjectPtr<UMaterialInterface*> */ __um(DefaultLandscapeMaterial);              // 0x0048   (0x0020)  
+	SDK_UNDEFINED(32,14222) /* TWeakObjectPtr<ULandscapeLayerInfoObject*> */ __um(DefaultLayerInfoObject);         // 0x0068   (0x0020)  
 	float                                              BrushSizeUIMax;                                             // 0x0088   (0x0004)  
 	float                                              BrushSizeClampMax;                                          // 0x008C   (0x0004)  
 	bool                                               bRestrictiveMode;                                           // 0x0090   (0x0001)  
@@ -692,18 +694,18 @@ public:
 };
 
 /// Class /Script/Landscape.LandscapeSplinesComponent
-/// Size: 0x0030 (0x000570 - 0x0005A0)
+/// Size: 0x0030 (0x000500 - 0x000530)
 class ULandscapeSplinesComponent : public UPrimitiveComponent
 { 
 public:
-	TArray<class ULandscapeSplineControlPoint*>        ControlPoints;                                              // 0x0570   (0x0010)  
-	TArray<class ULandscapeSplineSegment*>             Segments;                                                   // 0x0580   (0x0010)  
-	TArray<class UMeshComponent*>                      CookedForeignMeshComponents;                                // 0x0590   (0x0010)  
+	TArray<class ULandscapeSplineControlPoint*>        ControlPoints;                                              // 0x0500   (0x0010)  
+	TArray<class ULandscapeSplineSegment*>             Segments;                                                   // 0x0510   (0x0010)  
+	TArray<class UMeshComponent*>                      CookedForeignMeshComponents;                                // 0x0520   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
-	// TArray<USplineMeshComponent*> GetSplineMeshComponents();                                                              // [0x602dbbc] Final|Native|Public|BlueprintCallable 
+	// TArray<USplineMeshComponent*> GetSplineMeshComponents();                                                              // [0x5d31500] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/Landscape.LandscapeSplineConnection
@@ -775,12 +777,12 @@ public:
 };
 
 /// Class /Script/Landscape.LandscapeStreamingProxy
-/// Size: 0x0070 (0x000740 - 0x0007B0)
+/// Size: 0x0070 (0x000748 - 0x0007B8)
 class ALandscapeStreamingProxy : public ALandscapeProxy
 { 
 public:
-	SDK_UNDEFINED(32,14109) /* TWeakObjectPtr<ALandscape*> */ __um(LandscapeActorRef);                             // 0x0740   (0x0020)  
-	SDK_UNDEFINED(80,14110) /* TSet<FString> */        __um(OverriddenSharedProperties);                           // 0x0760   (0x0050)  
+	SDK_UNDEFINED(32,14223) /* TWeakObjectPtr<ALandscape*> */ __um(LandscapeActorRef);                             // 0x0748   (0x0020)  
+	SDK_UNDEFINED(80,14224) /* TSet<FString> */        __um(OverriddenSharedProperties);                           // 0x0768   (0x0050)  
 };
 
 /// Class /Script/Landscape.LandscapeWeightmapUsage
@@ -815,7 +817,7 @@ public:
 struct FLayerBlendInput
 { 
 	FName                                              LayerName;                                                  // 0x0000   (0x0004)  
-	SDK_UNDEFINED(1,14111) /* TEnumAsByte<ELandscapeLayerBlendType> */ __um(BlendType);                            // 0x0004   (0x0001)  
+	SDK_UNDEFINED(1,14225) /* TEnumAsByte<ELandscapeLayerBlendType> */ __um(BlendType);                            // 0x0004   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
 	FExpressionInput                                   LayerInput;                                                 // 0x0008   (0x0028)  
 	FExpressionInput                                   HeightInput;                                                // 0x0030   (0x0028)  
@@ -839,8 +841,8 @@ public:
 class UMaterialExpressionLandscapeLayerCoords : public UMaterialExpression
 { 
 public:
-	SDK_UNDEFINED(1,14112) /* TEnumAsByte<ETerrainCoordMappingType> */ __um(MappingType);                          // 0x00B0   (0x0001)  
-	SDK_UNDEFINED(1,14113) /* TEnumAsByte<ELandscapeCustomizedCoordType> */ __um(CustomUVType);                    // 0x00B1   (0x0001)  
+	SDK_UNDEFINED(1,14226) /* TEnumAsByte<ETerrainCoordMappingType> */ __um(MappingType);                          // 0x00B0   (0x0001)  
+	SDK_UNDEFINED(1,14227) /* TEnumAsByte<ELandscapeCustomizedCoordType> */ __um(CustomUVType);                    // 0x00B1   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x00B2   (0x0002)  MISSED
 	float                                              MappingScale;                                               // 0x00B4   (0x0004)  
 	float                                              MappingRotation;                                            // 0x00B8   (0x0004)  
@@ -866,15 +868,15 @@ public:
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.RequestLandscapeUpdate
-	// void RequestLandscapeUpdate(bool bInUserTriggered);                                                                   // [0x60325ec] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RequestLandscapeUpdate(bool bInUserTriggered);                                                                   // [0x5d35ffc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.RenderLayer
-	// class UTextureRenderTarget2D* RenderLayer(FLandscapeBrushParameters& InParameters);                                   // [0x6032544] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintEvent 
+	// class UTextureRenderTarget2D* RenderLayer(FLandscapeBrushParameters& InParameters);                                   // [0x5d35f54] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.Render
-	// class UTextureRenderTarget2D* Render(bool InIsHeightmap, class UTextureRenderTarget2D* InCombinedResult, FName& InWeightmapLayerName); // [0x6032428] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintEvent 
+	// class UTextureRenderTarget2D* Render(bool InIsHeightmap, class UTextureRenderTarget2D* InCombinedResult, FName& InWeightmapLayerName); // [0x5d35dc4] RequiredAPI|Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.Initialize
-	// void Initialize(FTransform& InLandscapeTransform, FIntPoint& InLandscapeSize, FIntPoint& InLandscapeRenderTargetSize); // [0x6032298] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Initialize(FTransform& InLandscapeTransform, FIntPoint& InLandscapeSize, FIntPoint& InLandscapeRenderTargetSize); // [0x5d35c34] RequiredAPI|Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.GetBlueprintRenderDependencies
-	// void GetBlueprintRenderDependencies(TArray<UObject*>& OutStreamableAssets);                                           // [0x211c0a0] RequiredAPI|Event|Public|HasOutParms|BlueprintEvent 
+	// void GetBlueprintRenderDependencies(TArray<UObject*>& OutStreamableAssets);                                           // [0x2047e54] RequiredAPI|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/Landscape.LandscapeHLODBuilder
@@ -889,7 +891,7 @@ public:
 class ULandscapeInfo : public UObject
 { 
 public:
-	SDK_UNDEFINED(8,14114) /* TWeakObjectPtr<ALandscape*> */ __um(LandscapeActor);                                 // 0x0028   (0x0008)  
+	SDK_UNDEFINED(8,14228) /* TWeakObjectPtr<ALandscape*> */ __um(LandscapeActor);                                 // 0x0028   (0x0008)  
 	FGuid                                              LandscapeGuid;                                              // 0x0030   (0x0010)  
 	int32_t                                            ComponentSizeQuads;                                         // 0x0040   (0x0004)  
 	int32_t                                            SubsectionSizeQuads;                                        // 0x0044   (0x0004)  
@@ -897,7 +899,7 @@ public:
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x004C   (0x0004)  MISSED
 	FVector                                            DrawScale;                                                  // 0x0050   (0x0018)  
 	unsigned char                                      UnknownData01_5[0xB0];                                      // 0x0068   (0x00B0)  MISSED
-	SDK_UNDEFINED(16,14115) /* TArray<TWeakObjectPtr<ALandscapeStreamingProxy*>> */ __um(StreamingProxies);        // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,14229) /* TArray<TWeakObjectPtr<ALandscapeStreamingProxy*>> */ __um(StreamingProxies);        // 0x0118   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x100];                                     // 0x0128   (0x0100)  MISSED
 };
 
@@ -910,13 +912,13 @@ public:
 };
 
 /// Class /Script/Landscape.LandscapeNaniteComponent
-/// Size: 0x0020 (0x000630 - 0x000650)
+/// Size: 0x0020 (0x0005C0 - 0x0005E0)
 class ULandscapeNaniteComponent : public UStaticMeshComponent
 { 
 public:
-	FGuid                                              ProxyContentId;                                             // 0x0630   (0x0010)  
-	bool                                               bEnabled;                                                   // 0x0640   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0641   (0x000F)  MISSED
+	FGuid                                              ProxyContentId;                                             // 0x05C0   (0x0010)  
+	bool                                               bEnabled;                                                   // 0x05D0   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x05D1   (0x000F)  MISSED
 };
 
 /// Class /Script/Landscape.LandscapeSplineActor
@@ -1026,10 +1028,10 @@ struct FLandscapeLayer
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0016   (0x0002)  MISSED
 	float                                              HeightmapAlpha;                                             // 0x0018   (0x0004)  
 	float                                              WeightmapAlpha;                                             // 0x001C   (0x0004)  
-	SDK_UNDEFINED(1,14116) /* TEnumAsByte<ELandscapeBlendMode> */ __um(BlendMode);                                 // 0x0020   (0x0001)  
+	SDK_UNDEFINED(1,14230) /* TEnumAsByte<ELandscapeBlendMode> */ __um(BlendMode);                                 // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0021   (0x0007)  MISSED
 	TArray<FLandscapeLayerBrush>                       Brushes;                                                    // 0x0028   (0x0010)  
-	SDK_UNDEFINED(80,14117) /* TMap<ULandscapeLayerInfoObject*, bool> */ __um(WeightmapLayerAllocationBlend);      // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,14231) /* TMap<ULandscapeLayerInfoObject*, bool> */ __um(WeightmapLayerAllocationBlend);      // 0x0038   (0x0050)  
 };
 
 /// Struct /Script/Landscape.LandscapeEditToolRenderData
@@ -1120,9 +1122,9 @@ struct FLandscapeSplineMeshEntry
 	bool                                               bScaleToWidth : 1;                                          // 0x0030:0 (0x0001)  
 	unsigned char                                      UnknownData01_4[0x7];                                       // 0x0031   (0x0007)  MISSED
 	FVector                                            Scale;                                                      // 0x0038   (0x0018)  
-	SDK_UNDEFINED(1,14118) /* TEnumAsByte<LandscapeSplineMeshOrientation> */ __um(orientation);                    // 0x0050   (0x0001)  
-	SDK_UNDEFINED(1,14119) /* TEnumAsByte<ESplineMeshAxis> */ __um(ForwardAxis);                                   // 0x0051   (0x0001)  
-	SDK_UNDEFINED(1,14120) /* TEnumAsByte<ESplineMeshAxis> */ __um(UpAxis);                                        // 0x0052   (0x0001)  
+	SDK_UNDEFINED(1,14232) /* TEnumAsByte<LandscapeSplineMeshOrientation> */ __um(orientation);                    // 0x0050   (0x0001)  
+	SDK_UNDEFINED(1,14233) /* TEnumAsByte<ESplineMeshAxis> */ __um(ForwardAxis);                                   // 0x0051   (0x0001)  
+	SDK_UNDEFINED(1,14234) /* TEnumAsByte<ESplineMeshAxis> */ __um(UpAxis);                                        // 0x0052   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x5];                                       // 0x0053   (0x0005)  MISSED
 };
 

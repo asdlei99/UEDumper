@@ -23,13 +23,13 @@ public:
 
 	/// Functions
 	// Function /Script/DaySequence.DaySequenceConditionTag.SetupBroadcastBindings
-	// void SetupBroadcastBindings();                                                                                           // [0x160abec] Native|Event|Protected|BlueprintEvent|Const 
+	// void SetupBroadcastBindings();                                                                                           // [0x13d65e0] Native|Event|Protected|BlueprintEvent|Const 
 	// Function /Script/DaySequence.DaySequenceConditionTag.GetConditionName
-	// FString GetConditionName();                                                                                              // [0x6428914] Native|Event|Public|BlueprintEvent|Const 
+	// FString GetConditionName();                                                                                              // [0x6159414] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DaySequence.DaySequenceConditionTag.Evaluate
-	// bool Evaluate();                                                                                                         // [0x1d94e8c] Native|Event|Public|BlueprintEvent|Const 
+	// bool Evaluate();                                                                                                         // [0x2677cdc] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/DaySequence.DaySequenceConditionTag.BroadcastOnConditionValueChanged
-	// void BroadcastOnConditionValueChanged();                                                                                 // [0x3b9540c] Final|Native|Protected|BlueprintCallable|Const 
+	// void BroadcastOnConditionValueChanged();                                                                                 // [0x1d9e174] Final|Native|Protected|BlueprintCallable|Const 
 };
 
 /// Class /Script/DaySequence.DaySequenceModifierEasingFunction
@@ -43,95 +43,95 @@ public:
 };
 
 /// Class /Script/DaySequence.DaySequenceModifierComponent
-/// Size: 0x01B0 (0x000290 - 0x000440)
+/// Size: 0x01B0 (0x000220 - 0x0003D0)
 class UDaySequenceModifierComponent : public USceneComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1088;
+	static inline constexpr uint64_t __MDKClassSize = 976;
 
 public:
-	CMember(class UDaySequenceModifierEasingFunction*) EasingFunction                                              OFFSET(get<T>, {0x290, 8, 0, 0})
-	CMember(class ADaySequenceActor*)                  TargetActor                                                 OFFSET(get<T>, {0x298, 8, 0, 0})
-	CMember(TArray<FComponentReference>)               VolumeShapeComponents                                       OFFSET(get<T>, {0x2A0, 16, 0, 0})
-	CMember(TWeakObjectPtr<AActor*>)                   ExternalVolumeBlendTarget                                   OFFSET(get<T>, {0x2B0, 8, 0, 0})
-	CMember(class UDaySequence*)                       UserDaySequence                                             OFFSET(get<T>, {0x2B8, 8, 0, 0})
-	CMember(class UDaySequence*)                       ProceduralDaySequence                                       OFFSET(get<T>, {0x2C0, 8, 0, 0})
-	CMember(TMap<FName, FDaySequenceModifierNamedSequence>) AdditionalNamedDaySequences                            OFFSET(get<T>, {0x2C8, 80, 0, 0})
-	CMember(TMap<FName, FDaySequenceModifierNamedSequence>) TransientCollectionSequences                           OFFSET(get<T>, {0x318, 80, 0, 0})
-	CMember(class UDaySequenceCollectionAsset*)        DaySequenceCollection                                       OFFSET(get<T>, {0x368, 8, 0, 0})
-	DMember(int32_t)                                   Bias                                                        OFFSET(get<int32_t>, {0x370, 4, 0, 0})
-	DMember(float)                                     DayNightCycleTime                                           OFFSET(get<float>, {0x374, 4, 0, 0})
-	DMember(float)                                     BlendAmount                                                 OFFSET(get<float>, {0x378, 4, 0, 0})
-	DMember(float)                                     CustomVolumeBlendWeight                                     OFFSET(get<float>, {0x380, 4, 0, 0})
-	CMember(EDayNightCycleMode)                        DayNightCycle                                               OFFSET(get<T>, {0x384, 1, 0, 0})
-	CMember(EDaySequenceModifierBlendMode)             BlendMode                                                   OFFSET(get<T>, {0x385, 1, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnPostReinitializeSubSequences                              OFFSET(getStruct<T>, {0x388, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnPostEnableModifier                                        OFFSET(getStruct<T>, {0x398, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVolumeBlendTargetOverlapBegin                             OFFSET(getStruct<T>, {0x3A8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVolumeBlendTargetOverlapEnd                               OFFSET(getStruct<T>, {0x3B8, 16, 0, 0})
-	DMember(bool)                                      bIgnoreBias                                                 OFFSET(get<bool>, {0x3C8, 1, 1, 0})
-	DMember(bool)                                      bUseVolume                                                  OFFSET(get<bool>, {0x3C8, 1, 1, 1})
-	DMember(bool)                                      bIsComponentEnabled                                         OFFSET(get<bool>, {0x3C8, 1, 1, 2})
-	DMember(bool)                                      bIsEnabled                                                  OFFSET(get<bool>, {0x3C8, 1, 1, 3})
-	DMember(bool)                                      bPreview                                                    OFFSET(get<bool>, {0x3C8, 1, 1, 4})
-	DMember(bool)                                      bUseCollection                                              OFFSET(get<bool>, {0x3C8, 1, 1, 6})
+	CMember(class UDaySequenceModifierEasingFunction*) EasingFunction                                              OFFSET(get<T>, {0x220, 8, 0, 0})
+	CMember(class ADaySequenceActor*)                  TargetActor                                                 OFFSET(get<T>, {0x228, 8, 0, 0})
+	CMember(TArray<FComponentReference>)               VolumeShapeComponents                                       OFFSET(get<T>, {0x230, 16, 0, 0})
+	CMember(TWeakObjectPtr<AActor*>)                   ExternalVolumeBlendTarget                                   OFFSET(get<T>, {0x240, 8, 0, 0})
+	CMember(class UDaySequence*)                       UserDaySequence                                             OFFSET(get<T>, {0x248, 8, 0, 0})
+	CMember(class UDaySequence*)                       ProceduralDaySequence                                       OFFSET(get<T>, {0x250, 8, 0, 0})
+	CMember(TMap<FName, FDaySequenceModifierNamedSequence>) AdditionalNamedDaySequences                            OFFSET(get<T>, {0x258, 80, 0, 0})
+	CMember(TMap<FName, FDaySequenceModifierNamedSequence>) TransientCollectionSequences                           OFFSET(get<T>, {0x2A8, 80, 0, 0})
+	CMember(class UDaySequenceCollectionAsset*)        DaySequenceCollection                                       OFFSET(get<T>, {0x2F8, 8, 0, 0})
+	DMember(int32_t)                                   Bias                                                        OFFSET(get<int32_t>, {0x300, 4, 0, 0})
+	DMember(float)                                     DayNightCycleTime                                           OFFSET(get<float>, {0x304, 4, 0, 0})
+	DMember(float)                                     BlendAmount                                                 OFFSET(get<float>, {0x308, 4, 0, 0})
+	DMember(float)                                     CustomVolumeBlendWeight                                     OFFSET(get<float>, {0x310, 4, 0, 0})
+	CMember(EDayNightCycleMode)                        DayNightCycle                                               OFFSET(get<T>, {0x314, 1, 0, 0})
+	CMember(EDaySequenceModifierBlendMode)             BlendMode                                                   OFFSET(get<T>, {0x315, 1, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnPostReinitializeSubSequences                              OFFSET(getStruct<T>, {0x318, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnPostEnableModifier                                        OFFSET(getStruct<T>, {0x328, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVolumeBlendTargetOverlapBegin                             OFFSET(getStruct<T>, {0x338, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVolumeBlendTargetOverlapEnd                               OFFSET(getStruct<T>, {0x348, 16, 0, 0})
+	DMember(bool)                                      bIgnoreBias                                                 OFFSET(get<bool>, {0x358, 1, 1, 0})
+	DMember(bool)                                      bUseVolume                                                  OFFSET(get<bool>, {0x358, 1, 1, 1})
+	DMember(bool)                                      bIsComponentEnabled                                         OFFSET(get<bool>, {0x358, 1, 1, 2})
+	DMember(bool)                                      bIsEnabled                                                  OFFSET(get<bool>, {0x358, 1, 1, 3})
+	DMember(bool)                                      bPreview                                                    OFFSET(get<bool>, {0x358, 1, 1, 4})
+	DMember(bool)                                      bUseCollection                                              OFFSET(get<bool>, {0x358, 1, 1, 6})
 
 
 	/// Functions
 	// Function /Script/DaySequence.DaySequenceModifierComponent.UnbindFromDaySequenceActor
-	// void UnbindFromDaySequenceActor();                                                                                       // [0x3f21df8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void UnbindFromDaySequenceActor();                                                                                       // [0x1f6b738] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.SetVolumeCollisionEnabled
-	// void SetVolumeCollisionEnabled(TEnumAsByte<ECollisionEnabled> InCollisionType);                                          // [0x3526348] Final|Native|Public|BlueprintCallable|Const 
+	// void SetVolumeCollisionEnabled(TEnumAsByte<ECollisionEnabled> InCollisionType);                                          // [0x1f6bd2c] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.SetUserDaySequence
-	// void SetUserDaySequence(class UDaySequence* InDaySequence);                                                              // [0x7ff5e74] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetUserDaySequence(class UDaySequence* InDaySequence);                                                              // [0x7fbe930] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.SetCustomVolumeBlendWeight
-	// void SetCustomVolumeBlendWeight(float Weight);                                                                           // [0x31073bc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetCustomVolumeBlendWeight(float Weight);                                                                           // [0x2e144c8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.ResetOverrides
-	// void ResetOverrides();                                                                                                   // [0x7ff5a14] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ResetOverrides();                                                                                                   // [0x7fbe2d4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.OnVolumeOverlapEnd
-	// void OnVolumeOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x2f401cc] Final|Native|Private 
+	// void OnVolumeOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x2b575d8] Final|Native|Private 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.OnVolumeOverlapBegin
-	// void OnVolumeOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x2f3fed0] Final|Native|Private|HasOutParms 
+	// void OnVolumeOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x2acc078] Final|Native|Private|HasOutParms 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.MuteNamedSequence
-	// void MuteNamedSequence(FName SequenceKey, bool bState);                                                                  // [0x7ff57e4] Final|Native|Public|BlueprintCallable 
+	// void MuteNamedSequence(FName SequenceKey, bool bState);                                                                  // [0x7fbdf68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.IsNamedSequenceMuted
-	// bool IsNamedSequenceMuted(FName SequenceKey);                                                                            // [0x7ff5718] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsNamedSequenceMuted(FName SequenceKey);                                                                            // [0x7fbde5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.IsBlendTargetInAnyVolume
-	// bool IsBlendTargetInAnyVolume();                                                                                         // [0x1c14dd4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// bool IsBlendTargetInAnyVolume();                                                                                         // [0x1f6c008] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.GetCurrentBlendWeight
-	// float GetCurrentBlendWeight();                                                                                           // [0x3c32f8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentBlendWeight();                                                                                           // [0x1f6b3d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.EnableModifier
-	// void EnableModifier();                                                                                                   // [0x177a40c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void EnableModifier();                                                                                                   // [0x1f6b644] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.EnableDistanceVolumeBlends
-	// void EnableDistanceVolumeBlends(class AActor* InActor);                                                                  // [0x347ae04] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void EnableDistanceVolumeBlends(class AActor* InActor);                                                                  // [0x3049f58] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.EnableComponent
-	// void EnableComponent();                                                                                                  // [0x3985fa4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void EnableComponent();                                                                                                  // [0x3519160] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.DisableModifier
-	// void DisableModifier();                                                                                                  // [0x177a7c4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void DisableModifier();                                                                                                  // [0x1f6ba64] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.DisableComponent
-	// void DisableComponent();                                                                                                 // [0x7ff5310] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void DisableComponent();                                                                                                 // [0x7fbd990] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.BindToDaySequenceActor
-	// void BindToDaySequenceActor(class ADaySequenceActor* DaySequenceActor);                                                  // [0x177a4c4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void BindToDaySequenceActor(class ADaySequenceActor* DaySequenceActor);                                                  // [0x1f6b74c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddVisibilityOverride
-	// void AddVisibilityOverride(class UObject* Object, bool bValue);                                                          // [0x7ff5104] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddVisibilityOverride(class UObject* Object, bool bValue);                                                          // [0x7fbd6cc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddVectorOverride
-	// void AddVectorOverride(class UObject* Object, FName PropertyName, FVector Value);                                        // [0x7ff4f58] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddVectorOverride(class UObject* Object, FName PropertyName, FVector Value);                                        // [0x7fbd500] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddTransformOverride
-	// void AddTransformOverride(class UObject* Object, FTransform Value);                                                      // [0x7ff4d54] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddTransformOverride(class UObject* Object, FTransform Value);                                                      // [0x7fbd31c] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddStaticTimeOfDayOverride
-	// void AddStaticTimeOfDayOverride(class ADaySequenceActor* Actor, float Hours);                                            // [0x7ff4c90] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddStaticTimeOfDayOverride(class ADaySequenceActor* Actor, float Hours);                                            // [0x7fbd1dc] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddScalarOverride
-	// void AddScalarOverride(class UObject* Object, FName PropertyName, double Value);                                         // [0x7ff4b94] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddScalarOverride(class UObject* Object, FName PropertyName, double Value);                                         // [0x7fbd01c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddScalarMaterialParameterOverride
-	// void AddScalarMaterialParameterOverride(class UObject* Object, int32_t MaterialIndex, FName ParameterName, float Value); // [0x7ff4a58] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddScalarMaterialParameterOverride(class UObject* Object, int32_t MaterialIndex, FName ParameterName, float Value); // [0x7fbcde4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddMaterialOverride
-	// void AddMaterialOverride(class UObject* Object, int32_t MaterialIndex, class UMaterialInterface* Value);                 // [0x7ff4960] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddMaterialOverride(class UObject* Object, int32_t MaterialIndex, class UMaterialInterface* Value);                 // [0x7fbcc2c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddColorOverride
-	// void AddColorOverride(class UObject* Object, FName PropertyName, FLinearColor Value);                                    // [0x7ff47c0] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddColorOverride(class UObject* Object, FName PropertyName, FLinearColor Value);                                    // [0x7fbca6c] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddColorMaterialParameterOverride
-	// void AddColorMaterialParameterOverride(class UObject* Object, int32_t MaterialIndex, FName ParameterName, FLinearColor Value); // [0x7ff45e4] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void AddColorMaterialParameterOverride(class UObject* Object, int32_t MaterialIndex, FName ParameterName, FLinearColor Value); // [0x7fbc82c] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceModifierComponent.AddBoolOverride
-	// void AddBoolOverride(class UObject* Object, FName PropertyName, bool bValue);                                            // [0x7ff44e8] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddBoolOverride(class UObject* Object, FName PropertyName, bool bValue);                                            // [0x7fbc670] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DaySequence.DaySequence
@@ -176,57 +176,57 @@ public:
 
 	/// Functions
 	// Function /Script/DaySequence.DaySequenceActor.SetTimeOfDayPreview
-	// void SetTimeOfDayPreview(float InHours);                                                                                 // [0x6456a9c] Final|Native|Public|BlueprintCallable 
+	// void SetTimeOfDayPreview(float InHours);                                                                                 // [0x6189d50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.SetTimeOfDay
-	// bool SetTimeOfDay(float InHours);                                                                                        // [0x7ff5de4] Final|Native|Public|BlueprintCallable 
+	// bool SetTimeOfDay(float InHours);                                                                                        // [0x7fbe860] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.SetStaticTimeOfDay
-	// void SetStaticTimeOfDay(float InHours);                                                                                  // [0x7ff5d64] Final|Native|Public|BlueprintCallable 
+	// void SetStaticTimeOfDay(float InHours);                                                                                  // [0x7fbe79c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.SetReplicatePlayback
-	// void SetReplicatePlayback(bool ReplicatePlayback);                                                                       // [0x7ff5cd4] Final|Native|Public|BlueprintCallable 
+	// void SetReplicatePlayback(bool ReplicatePlayback);                                                                       // [0x7fbe6c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.SetDaySequence
-	// void SetDaySequence(FName SequenceName, class UDaySequence* InDaySequence);                                              // [0x7ff5ae8] Final|Native|Public|BlueprintCallable 
+	// void SetDaySequence(FName SequenceName, class UDaySequence* InDaySequence);                                              // [0x7fbe424] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.SetBias
-	// void SetBias(FName SequenceKey, int32_t Bias);                                                                           // [0x7ff5a28] Final|Native|Public|BlueprintCallable 
+	// void SetBias(FName SequenceKey, int32_t Bias);                                                                           // [0x7fbe2e8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.RemoveStaticTimeOfDay
-	// void RemoveStaticTimeOfDay(bool bResumeFromStaticTime);                                                                  // [0x7ff5994] Final|Native|Public|BlueprintCallable 
+	// void RemoveStaticTimeOfDay(bool bResumeFromStaticTime);                                                                  // [0x7fbe210] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.Play
-	// void Play();                                                                                                             // [0x7ff5980] Final|Native|Public|BlueprintCallable 
+	// void Play();                                                                                                             // [0x7fbe1fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.Pause
-	// void Pause();                                                                                                            // [0x7ff596c] Final|Native|Public|BlueprintCallable 
+	// void Pause();                                                                                                            // [0x7fbe1e8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.MuteSequence
-	// void MuteSequence(FName SequenceKey, bool bState);                                                                       // [0x7ff58a8] Final|Native|Public|BlueprintCallable 
+	// void MuteSequence(FName SequenceKey, bool bState);                                                                       // [0x7fbe0a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.Multicast_SetTimePerCycle
-	// void Multicast_SetTimePerCycle(float InHours);                                                                           // [0x604add0] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_SetTimePerCycle(float InHours);                                                                           // [0x5d51ec8] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/DaySequence.DaySequenceActor.IsPlaying
-	// bool IsPlaying();                                                                                                        // [0x7ff57c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlaying();                                                                                                        // [0x7fbdf48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.IsPaused
-	// bool IsPaused();                                                                                                         // [0x7ff57a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPaused();                                                                                                         // [0x7fbdf28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.IsMuteSequence
-	// bool IsMuteSequence(FName SequenceKey);                                                                                  // [0x7ff568c] Final|Native|Public|BlueprintCallable 
+	// bool IsMuteSequence(FName SequenceKey);                                                                                  // [0x7fbdd90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.HasStaticTimeOfDay
-	// bool HasStaticTimeOfDay();                                                                                               // [0x7ff561c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasStaticTimeOfDay();                                                                                               // [0x7fbdd20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetTimePerCycle
-	// float GetTimePerCycle();                                                                                                 // [0x7ff55f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimePerCycle();                                                                                                 // [0x7fbdcf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetTimeOfDayPreview
-	// float GetTimeOfDayPreview();                                                                                             // [0x7053348] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimeOfDayPreview();                                                                                             // [0x6f178a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetTimeOfDay
-	// float GetTimeOfDay();                                                                                                    // [0x7ff55cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimeOfDay();                                                                                                    // [0x7fbdcd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetStaticTimeOfDay
-	// float GetStaticTimeOfDay();                                                                                              // [0x7ff55a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStaticTimeOfDay();                                                                                              // [0x7fbdca8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetSequencePlayer
-	// class UDaySequencePlayer* GetSequencePlayer();                                                                           // [0x60acb70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDaySequencePlayer* GetSequencePlayer();                                                                           // [0x5ff0788] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetInitialTimeOfDay
-	// float GetInitialTimeOfDay();                                                                                             // [0x7ff551c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetInitialTimeOfDay();                                                                                             // [0x7fbdc20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetFirstDaySequence
-	// class UDaySequence* GetFirstDaySequence();                                                                               // [0x7ff54f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDaySequence* GetFirstDaySequence();                                                                               // [0x7fbdbfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetDaySequence
-	// class UDaySequence* GetDaySequence(FName SequenceName);                                                                  // [0x7ff5400] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDaySequence* GetDaySequence(FName SequenceName);                                                                  // [0x7fbdac0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetDayLength
-	// float GetDayLength();                                                                                                    // [0x7ff53d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDayLength();                                                                                                    // [0x7fbda98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceActor.GetBias
-	// int32_t GetBias(FName SequenceKey);                                                                                      // [0x7ff534c] Final|Native|Public|BlueprintCallable 
+	// int32_t GetBias(FName SequenceKey);                                                                                      // [0x7fbd9cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceActor.ContainsDaySequence
-	// bool ContainsDaySequence(class UDaySequence* InDaySequence);                                                             // [0x7ff51cc] Final|Native|Public|BlueprintCallable 
+	// bool ContainsDaySequence(class UDaySequence* InDaySequence);                                                             // [0x7fbd80c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DaySequence.DaySequenceCollectionAsset
@@ -255,23 +255,23 @@ public:
 
 	/// Functions
 	// Function /Script/DaySequence.DaySequenceDirector.OnCreated
-	// void OnCreated();                                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnCreated();                                                                                                        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/DaySequence.DaySequenceDirector.GetSequence
-	// class UMovieSceneSequence* GetSequence();                                                                                // [0x634bcb8] Final|Native|Public|BlueprintCallable 
+	// class UMovieSceneSequence* GetSequence();                                                                                // [0x606d49c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceDirector.GetRootSequenceTime
-	// FQualifiedFrameTime GetRootSequenceTime();                                                                               // [0x7ff5574] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FQualifiedFrameTime GetRootSequenceTime();                                                                               // [0x7fbdc78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceDirector.GetMasterSequenceTime
-	// FQualifiedFrameTime GetMasterSequenceTime();                                                                             // [0x7ff5544] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FQualifiedFrameTime GetMasterSequenceTime();                                                                             // [0x7fbdc48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceDirector.GetCurrentTime
-	// FQualifiedFrameTime GetCurrentTime();                                                                                    // [0x634bbf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FQualifiedFrameTime GetCurrentTime();                                                                                    // [0x606d3dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DaySequence.DaySequenceDirector.GetBoundObjects
-	// TArray<UObject*> GetBoundObjects(FMovieSceneObjectBindingID ObjectBinding);                                              // [0x634ba78] Final|Native|Public|BlueprintCallable 
+	// TArray<UObject*> GetBoundObjects(FMovieSceneObjectBindingID ObjectBinding);                                              // [0x606d2c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceDirector.GetBoundObject
-	// class UObject* GetBoundObject(FMovieSceneObjectBindingID ObjectBinding);                                                 // [0x634b914] Final|Native|Public|BlueprintCallable 
+	// class UObject* GetBoundObject(FMovieSceneObjectBindingID ObjectBinding);                                                 // [0x606d174] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceDirector.GetBoundActors
-	// TArray<AActor*> GetBoundActors(FMovieSceneObjectBindingID ObjectBinding);                                                // [0x634b794] Final|Native|Public|BlueprintCallable 
+	// TArray<AActor*> GetBoundActors(FMovieSceneObjectBindingID ObjectBinding);                                                // [0x606d05c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DaySequence.DaySequenceDirector.GetBoundActor
-	// class AActor* GetBoundActor(FMovieSceneObjectBindingID ObjectBinding);                                                   // [0x634b630] Final|Native|Public|BlueprintCallable 
+	// class AActor* GetBoundActor(FMovieSceneObjectBindingID ObjectBinding);                                                   // [0x606cf60] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DaySequence.DaySequencePlayer
@@ -322,9 +322,9 @@ public:
 
 	/// Functions
 	// Function /Script/DaySequence.DaySequenceSubsystem.SetDaySequenceActor
-	// void SetDaySequenceActor(class ADaySequenceActor* InActor);                                                              // [0x7ff5bac] Final|Native|Public  
+	// void SetDaySequenceActor(class ADaySequenceActor* InActor);                                                              // [0x7fbe560] Final|Native|Public  
 	// Function /Script/DaySequence.DaySequenceSubsystem.GetDaySequenceActor
-	// class ADaySequenceActor* GetDaySequenceActor();                                                                          // [0x7ff54d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADaySequenceActor* GetDaySequenceActor();                                                                          // [0x7fbdbd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DaySequence.DaySequenceTrack

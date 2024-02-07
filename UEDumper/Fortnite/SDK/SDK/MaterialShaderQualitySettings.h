@@ -47,6 +47,6 @@ public:
 class UMaterialShaderQualitySettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,14485) /* TMap<FName, UShaderPlatformQualitySettings*> */ __um(ForwardSettingMap);            // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,14614) /* TMap<FName, UShaderPlatformQualitySettings*> */ __um(ForwardSettingMap);            // 0x0028   (0x0050)  
 };
 

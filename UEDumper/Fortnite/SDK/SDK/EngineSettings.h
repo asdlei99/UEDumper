@@ -52,8 +52,8 @@ enum class ESubLevelStripMode : uint8_t
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FAutoCompleteCommand
 { 
-	SDK_UNDEFINED(16,13248) /* FString */              __um(Command);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13249) /* FString */              __um(Desc);                                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13300) /* FString */              __um(Command);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13301) /* FString */              __um(Desc);                                                 // 0x0010   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0020   (0x0008)  MISSED
 };
 
@@ -65,7 +65,7 @@ public:
 	int32_t                                            MaxScrollbackSize;                                          // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x002C   (0x0004)  MISSED
 	TArray<FAutoCompleteCommand>                       ManualAutoCompleteList;                                     // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,13250) /* TArray<FString> */      __um(AutoCompleteMapPaths);                                 // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,13302) /* TArray<FString> */      __um(AutoCompleteMapPaths);                                 // 0x0040   (0x0010)  
 	float                                              BackgroundOpacityPercentage;                                // 0x0050   (0x0004)  
 	bool                                               bOrderTopToBottom;                                          // 0x0054   (0x0001)  
 	bool                                               bDisplayHelpInAutoComplete;                                 // 0x0055   (0x0001)  
@@ -82,7 +82,7 @@ public:
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FGameModeName
 { 
-	SDK_UNDEFINED(16,13251) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13303) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	FSoftClassPath                                     GameMode;                                                   // 0x0010   (0x0018)  
 };
 
@@ -91,11 +91,11 @@ struct FGameModeName
 class UGameMapsSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,13252) /* FString */              __um(LocalMapOptions);                                      // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,13304) /* FString */              __um(LocalMapOptions);                                      // 0x0028   (0x0010)  
 	FSoftObjectPath                                    TransitionMap;                                              // 0x0038   (0x0018)  
 	bool                                               bUseSplitscreen;                                            // 0x0050   (0x0001)  
-	SDK_UNDEFINED(1,13253) /* TEnumAsByte<ETwoPlayerSplitScreenType> */ __um(TwoPlayerSplitscreenLayout);          // 0x0051   (0x0001)  
-	SDK_UNDEFINED(1,13254) /* TEnumAsByte<EThreePlayerSplitScreenType> */ __um(ThreePlayerSplitscreenLayout);      // 0x0052   (0x0001)  
+	SDK_UNDEFINED(1,13305) /* TEnumAsByte<ETwoPlayerSplitScreenType> */ __um(TwoPlayerSplitscreenLayout);          // 0x0051   (0x0001)  
+	SDK_UNDEFINED(1,13306) /* TEnumAsByte<EThreePlayerSplitScreenType> */ __um(ThreePlayerSplitscreenLayout);      // 0x0052   (0x0001)  
 	EFourPlayerSplitScreenType                         FourPlayerSplitscreenLayout;                                // 0x0053   (0x0001)  
 	bool                                               bOffsetPlayerGamepadIds;                                    // 0x0054   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0055   (0x0003)  MISSED
@@ -110,11 +110,11 @@ public:
 
 	/// Functions
 	// Function /Script/EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1
-	// void SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer);                                                         // [0x56ceb50] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer);                                                         // [0x53a0368] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1
-	// bool GetSkipAssigningGamepadToPlayer1();                                                                              // [0x56ceb3c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetSkipAssigningGamepadToPlayer1();                                                                              // [0x53a0354] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EngineSettings.GameMapsSettings.GetGameMapsSettings
-	// class UGameMapsSettings* GetGameMapsSettings();                                                                       // [0x56ceb0c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UGameMapsSettings* GetGameMapsSettings();                                                                       // [0x53a0324] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/EngineSettings.GameNetworkManagerSettings
@@ -160,19 +160,19 @@ public:
 class UGeneralProjectSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,13255) /* FString */              __um(CompanyName);                                          // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,13256) /* FString */              __um(CompanyDistinguishedName);                             // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,13257) /* FString */              __um(CopyrightNotice);                                      // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,13258) /* FString */              __um(Description);                                          // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,13259) /* FString */              __um(Homepage);                                             // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,13260) /* FString */              __um(LicensingTerms);                                       // 0x0078   (0x0010)  
-	SDK_UNDEFINED(16,13261) /* FString */              __um(PrivacyPolicy);                                        // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,13307) /* FString */              __um(CompanyName);                                          // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,13308) /* FString */              __um(CompanyDistinguishedName);                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,13309) /* FString */              __um(CopyrightNotice);                                      // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,13310) /* FString */              __um(Description);                                          // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,13311) /* FString */              __um(Homepage);                                             // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,13312) /* FString */              __um(LicensingTerms);                                       // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,13313) /* FString */              __um(PrivacyPolicy);                                        // 0x0088   (0x0010)  
 	FGuid                                              ProjectID;                                                  // 0x0098   (0x0010)  
-	SDK_UNDEFINED(16,13262) /* FString */              __um(ProjectName);                                          // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,13263) /* FString */              __um(ProjectVersion);                                       // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,13264) /* FString */              __um(SupportContact);                                       // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(24,13265) /* FText */                __um(ProjectDisplayedTitle);                                // 0x00D8   (0x0018)  
-	SDK_UNDEFINED(24,13266) /* FText */                __um(ProjectDebugTitleInfo);                                // 0x00F0   (0x0018)  
+	SDK_UNDEFINED(16,13314) /* FString */              __um(ProjectName);                                          // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,13315) /* FString */              __um(ProjectVersion);                                       // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,13316) /* FString */              __um(SupportContact);                                       // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(24,13317) /* FText */                __um(ProjectDisplayedTitle);                                // 0x00D8   (0x0018)  
+	SDK_UNDEFINED(24,13318) /* FText */                __um(ProjectDebugTitleInfo);                                // 0x00F0   (0x0018)  
 	bool                                               bShouldWindowPreserveAspectRatio;                           // 0x0108   (0x0001)  
 	bool                                               bUseBorderlessWindow;                                       // 0x0109   (0x0001)  
 	bool                                               bStartInVR;                                                 // 0x010A   (0x0001)  
@@ -201,6 +201,6 @@ struct FTemplateMapInfoOverride
 { 
 	FSoftObjectPath                                    Thumbnail;                                                  // 0x0000   (0x0018)  
 	FSoftObjectPath                                    Map;                                                        // 0x0018   (0x0018)  
-	SDK_UNDEFINED(24,13267) /* FText */                __um(DisplayName);                                          // 0x0030   (0x0018)  
+	SDK_UNDEFINED(24,13319) /* FText */                __um(DisplayName);                                          // 0x0030   (0x0018)  
 };
 

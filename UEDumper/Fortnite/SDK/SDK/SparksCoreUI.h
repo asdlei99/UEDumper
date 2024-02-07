@@ -35,17 +35,17 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCoreUI.SparksQuestScreenContainer.SetQuestScreenVisible
-	// void SetQuestScreenVisible(bool bVisible);                                                                            // [0xb07fbdc] Final|Native|Protected|BlueprintCallable 
+	// void SetQuestScreenVisible(bool bVisible);                                                                            // [0xb26b3cc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SparksCoreUI.SparksQuestScreenContainer.HandleToggleQuestList
-	// void HandleToggleQuestList(bool bMapVisible);                                                                         // [0xb07fbdc] Final|Native|Protected 
+	// void HandleToggleQuestList(bool bMapVisible);                                                                         // [0xb26b3cc] Final|Native|Protected 
 	// Function /Script/SparksCoreUI.SparksQuestScreenContainer.HandleMapPanelExitButtonPressed
-	// void HandleMapPanelExitButtonPressed();                                                                               // [0xb07fbc8] Final|Native|Protected|BlueprintCallable 
+	// void HandleMapPanelExitButtonPressed();                                                                               // [0xb26b3b8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SparksCoreUI.SparksQuestScreenContainer.HandleAthenaScreenDeactivated
-	// void HandleAthenaScreenDeactivated();                                                                                 // [0xb07fbb0] Final|Native|Protected 
+	// void HandleAthenaScreenDeactivated();                                                                                 // [0xb26b3a0] Final|Native|Protected 
 };
 
 /// Class /Script/SparksCoreUI.SparksSongItemDetailsVM
-/// Size: 0x0000 (0x000390 - 0x000390)
+/// Size: 0x0000 (0x0003C0 - 0x0003C0)
 class USparksSongItemDetailsVM : public UAthenaItemDetailsVM
 { 
 public:
@@ -53,7 +53,7 @@ public:
 
 	/// Functions
 	// Function /Script/SparksCoreUI.SparksSongItemDetailsVM.OnSongCatalogRetrieved
-	// void OnSongCatalogRetrieved(bool bSuccess);                                                                           // [0xb07fc5c] Final|Native|Private 
+	// void OnSongCatalogRetrieved(bool bSuccess);                                                                           // [0xb26b490] Final|Native|Private 
 };
 
 /// Class /Script/SparksCoreUI.SparksSongItemVM
@@ -64,7 +64,7 @@ public:
 };
 
 /// Class /Script/SparksCoreUI.SparksSongLockerCategoryConfig
-/// Size: 0x0000 (0x000130 - 0x000130)
+/// Size: 0x0000 (0x000128 - 0x000128)
 class USparksSongLockerCategoryConfig : public UAthenaLockerCategoryConfig
 { 
 public:

@@ -51,11 +51,11 @@ public:
 };
 
 /// Class /Script/SportbikeRuntime.FortSportbikeVehicle
-/// Size: 0x0010 (0x002350 - 0x002360)
+/// Size: 0x0010 (0x0023C0 - 0x0023D0)
 class AFortSportbikeVehicle : public AFortMotorcycleVehicle
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 9056;
+	static inline constexpr uint64_t __MDKClassSize = 9168;
 
 public:
 };

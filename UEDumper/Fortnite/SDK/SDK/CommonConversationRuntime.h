@@ -53,14 +53,14 @@ class UConversationNode : public UObject
 { 
 public:
 	class UObject*                                     EvalWorldContextObj;                                        // 0x0028   (0x0008)  
-	SDK_UNDEFINED(16,1775) /* FString */               __um(NodeName);                                             // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1770) /* FString */               __um(NodeName);                                             // 0x0030   (0x0010)  
 	FGuid                                              Compiled_NodeGUID;                                          // 0x0040   (0x0010)  
 	class UConversationNode*                           ParentNode;                                                 // 0x0050   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/CommonConversationRuntime.ConversationNode.GetDebugParticipantColor
-	// FLinearColor GetDebugParticipantColor(FGameplayTag ParticipantID);                                                    // [0x7bad77c] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FLinearColor GetDebugParticipantColor(FGameplayTag ParticipantID);                                                    // [0x7b672ec] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CommonConversationRuntime.ConversationSubNode
@@ -75,13 +75,13 @@ public:
 class UConversationChoiceNode : public UConversationSubNode
 { 
 public:
-	SDK_UNDEFINED(24,1776) /* FText */                 __um(DefaultChoiceDisplayText);                             // 0x0058   (0x0018)  
+	SDK_UNDEFINED(24,1771) /* FText */                 __um(DefaultChoiceDisplayText);                             // 0x0058   (0x0018)  
 	FGameplayTagContainer                              ChoiceTags;                                                 // 0x0070   (0x0020)  
 
 
 	/// Functions
 	// Function /Script/CommonConversationRuntime.ConversationChoiceNode.FillChoice
-	// void FillChoice(FConversationContext& Context, FClientConversationOptionEntry& ChoiceEntry);                          // [0x7baab9c] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void FillChoice(FConversationContext& Context, FClientConversationOptionEntry& ChoiceEntry);                          // [0x7b646c8] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/CommonConversationRuntime.ConversationContextHelpers
@@ -93,33 +93,33 @@ public:
 
 	/// Functions
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.ReturnToLastClientChoice
-	// FConversationTaskResult ReturnToLastClientChoice(FConversationContext& Context);                                      // [0x7ba7f48] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FConversationTaskResult ReturnToLastClientChoice(FConversationContext& Context);                                      // [0x7b61d2c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.ReturnToCurrentClientChoice
-	// FConversationTaskResult ReturnToCurrentClientChoice(FConversationContext& Context);                                   // [0x7ba7f48] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FConversationTaskResult ReturnToCurrentClientChoice(FConversationContext& Context);                                   // [0x7b61d2c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.ReturnToConversationStart
-	// FConversationTaskResult ReturnToConversationStart(FConversationContext& Context);                                     // [0x7ba7f48] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FConversationTaskResult ReturnToConversationStart(FConversationContext& Context);                                     // [0x7b61d2c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.PauseConversationAndSendClientChoices
-	// FConversationTaskResult PauseConversationAndSendClientChoices(FConversationContext& Context, FClientConversationMessage& Message); // [0x7baf11c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FConversationTaskResult PauseConversationAndSendClientChoices(FConversationContext& Context, FClientConversationMessage& Message); // [0x7b68c98] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.MakeConversationParticipant
-	// void MakeConversationParticipant(FConversationContext& Context, class AActor* ParticipantActor, FGameplayTag ParticipantTag); // [0x7bae828] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void MakeConversationParticipant(FConversationContext& Context, class AActor* ParticipantActor, FGameplayTag ParticipantTag); // [0x7b68354] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.GetCurrentConversationNodeHandle
-	// FConversationNodeHandle GetCurrentConversationNodeHandle(FConversationContext& Context);                              // [0x7bad0a8] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FConversationNodeHandle GetCurrentConversationNodeHandle(FConversationContext& Context);                              // [0x7b66c18] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.GetConversationParticipantActor
-	// class AActor* GetConversationParticipantActor(FConversationContext& Context, FGameplayTag ParticipantTag);            // [0x7bac8f4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class AActor* GetConversationParticipantActor(FConversationContext& Context, FGameplayTag ParticipantTag);            // [0x7b66450] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.GetConversationParticipant
-	// class UConversationParticipantComponent* GetConversationParticipant(FConversationContext& Context, FGameplayTag ParticipantTag); // [0x7bac140] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UConversationParticipantComponent* GetConversationParticipant(FConversationContext& Context, FGameplayTag ParticipantTag); // [0x7b65c88] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.GetConversationInstance
-	// class UConversationInstance* GetConversationInstance(FConversationContext& Context);                                  // [0x7baba88] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UConversationInstance* GetConversationInstance(FConversationContext& Context);                                  // [0x7b655d0] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.FindConversationComponent
-	// class UConversationParticipantComponent* FindConversationComponent(class AActor* Actor);                              // [0x7bab2c0] Final|Native|Static|Public|BlueprintCallable 
+	// class UConversationParticipantComponent* FindConversationComponent(class AActor* Actor);                              // [0x7b64dec] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.CanConversationContinue
-	// bool CanConversationContinue(FConversationTaskResult& ConversationTasResult);                                         // [0x7ba8d78] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool CanConversationContinue(FConversationTaskResult& ConversationTasResult);                                         // [0x7b62b5c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.AdvanceConversationWithChoice
-	// FConversationTaskResult AdvanceConversationWithChoice(FConversationContext& Context, FAdvanceConversationRequest& Choice); // [0x7ba862c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FConversationTaskResult AdvanceConversationWithChoice(FConversationContext& Context, FAdvanceConversationRequest& Choice); // [0x7b62410] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.AdvanceConversation
-	// FConversationTaskResult AdvanceConversation(FConversationContext& Context);                                           // [0x7ba7f48] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FConversationTaskResult AdvanceConversation(FConversationContext& Context);                                           // [0x7b61d2c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationContextHelpers.AbortConversation
-	// FConversationTaskResult AbortConversation(FConversationContext& Context);                                             // [0x7ba7f48] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FConversationTaskResult AbortConversation(FConversationContext& Context);                                             // [0x7b61d2c] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/CommonConversationRuntime.ConversationEntryList
@@ -135,7 +135,7 @@ struct FConversationEntryList
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FCommonDialogueBankParticipant
 { 
-	SDK_UNDEFINED(24,1777) /* FText */                 __um(FallbackName);                                         // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,1772) /* FText */                 __um(FallbackName);                                         // 0x0000   (0x0018)  
 	FGameplayTag                                       ParticipantName;                                            // 0x0018   (0x0004)  
 	FLinearColor                                       NodeTint;                                                   // 0x001C   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x002C   (0x0004)  MISSED
@@ -148,7 +148,7 @@ class UConversationDatabase : public UPrimaryDataAsset
 public:
 	int32_t                                            CompilerVersion;                                            // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(80,1778) /* TMap<FGuid, UConversationNode*> */ __um(ReachableNodeMap);                           // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,1773) /* TMap<FGuid, UConversationNode*> */ __um(ReachableNodeMap);                           // 0x0038   (0x0050)  
 	TArray<FConversationEntryList>                     EntryTags;                                                  // 0x0088   (0x0010)  
 	FGameplayTagContainer                              ExitTags;                                                   // 0x0098   (0x0020)  
 	TArray<FGuid>                                      InternalNodeIds;                                            // 0x00B8   (0x0010)  
@@ -207,8 +207,10 @@ public:
 
 
 	/// Functions
+	// Function /Script/CommonConversationRuntime.ConversationLibrary.StartConversationFromGraph
+	// class UConversationInstance* StartConversationFromGraph(FGameplayTag& ConversationEntryTag, class AActor* Instigator, FGameplayTag& InstigatorTag, class AActor* Target, FGameplayTag& TargetTag, class UConversationDatabase* Graph); // [0x7b69864] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationLibrary.StartConversation
-	// class UConversationInstance* StartConversation(FGameplayTag ConversationEntryTag, class AActor* Instigator, FGameplayTag InstigatorTag, class AActor* Target, FGameplayTag TargetTag, class UClass* ConversationInstanceClass); // [0x7bafa64] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// class UConversationInstance* StartConversation(FGameplayTag& ConversationEntryTag, class AActor* Instigator, FGameplayTag& InstigatorTag, class AActor* Target, FGameplayTag& TargetTag, class UClass* ConversationInstanceClass); // [0x7b69578] Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/CommonConversationRuntime.ConversationTaskNode
@@ -223,15 +225,15 @@ public:
 
 	/// Functions
 	// Function /Script/CommonConversationRuntime.ConversationTaskNode.IsRequirementSatisfied
-	// EConversationRequirementResult IsRequirementSatisfied(FConversationContext& Context);                                 // [0x7bae168] BlueprintAuthorityOnly|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// EConversationRequirementResult IsRequirementSatisfied(FConversationContext& Context);                                 // [0x7b67c94] BlueprintAuthorityOnly|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/CommonConversationRuntime.ConversationTaskNode.GetNodeBodyColor
-	// bool GetNodeBodyColor(FLinearColor& BodyColor);                                                                       // [0x7bad8c4] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// bool GetNodeBodyColor(FLinearColor& BodyColor);                                                                       // [0x7b673f0] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/CommonConversationRuntime.ConversationTaskNode.GatherStaticExtraData
-	// void GatherStaticExtraData(FConversationContext& Context, TArray<FConversationNodeParameterPair>& InOutExtraData);    // [0x7bab34c] BlueprintAuthorityOnly|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void GatherStaticExtraData(FConversationContext& Context, TArray<FConversationNodeParameterPair>& InOutExtraData);    // [0x7b64eb8] BlueprintAuthorityOnly|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/CommonConversationRuntime.ConversationTaskNode.ExecuteTaskNode
-	// FConversationTaskResult ExecuteTaskNode(FConversationContext& Context);                                               // [0x7baa4b4] BlueprintAuthorityOnly|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// FConversationTaskResult ExecuteTaskNode(FConversationContext& Context);                                               // [0x7b63fe0] BlueprintAuthorityOnly|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/CommonConversationRuntime.ConversationTaskNode.ExecuteClientEffects
-	// void ExecuteClientEffects(FConversationContext& Context);                                                             // [0x7ba9df8] BlueprintCosmetic|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void ExecuteClientEffects(FConversationContext& Context);                                                             // [0x7b63924] BlueprintCosmetic|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/CommonConversationRuntime.ConversationLinkNode
@@ -247,8 +249,8 @@ public:
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FConversationNodeParameterPair
 { 
-	SDK_UNDEFINED(16,1779) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1780) /* FString */               __um(Value);                                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1774) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1775) /* FString */               __um(Value);                                                // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/CommonConversationRuntime.ClientConversationMessage
@@ -257,8 +259,8 @@ struct FClientConversationMessage
 { 
 	FGameplayTag                                       SpeakerID;                                                  // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1781) /* FText */                 __um(ParticipantDisplayName);                               // 0x0008   (0x0018)  
-	SDK_UNDEFINED(24,1782) /* FText */                 __um(Text);                                                 // 0x0020   (0x0018)  
+	SDK_UNDEFINED(24,1776) /* FText */                 __um(ParticipantDisplayName);                               // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,1777) /* FText */                 __um(Text);                                                 // 0x0020   (0x0018)  
 	TArray<FConversationNodeParameterPair>             MetadataParameters;                                         // 0x0038   (0x0010)  
 };
 
@@ -281,7 +283,7 @@ struct FConversationChoiceReference
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FClientConversationOptionEntry
 { 
-	SDK_UNDEFINED(24,1783) /* FText */                 __um(ChoiceText);                                           // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,1778) /* FText */                 __um(ChoiceText);                                           // 0x0000   (0x0018)  
 	FGameplayTagContainer                              ChoiceTags;                                                 // 0x0018   (0x0020)  
 	EConversationChoiceType                            ChoiceType;                                                 // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0039   (0x0007)  MISSED
@@ -315,38 +317,38 @@ public:
 
 	/// Functions
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.ServerAdvanceConversation
-	// void ServerAdvanceConversation(FAdvanceConversationRequest InChoicePicked);                                           // [0x7baf910] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerAdvanceConversation(FAdvanceConversationRequest InChoicePicked);                                           // [0x7b6948c] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.RequestServerAdvanceConversation
-	// void RequestServerAdvanceConversation(FAdvanceConversationRequest& InChoicePicked);                                   // [0x7baf860] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RequestServerAdvanceConversation(FAdvanceConversationRequest& InChoicePicked);                                   // [0x7b693dc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.OnRep_ConversationsActive
-	// void OnRep_ConversationsActive(int32_t OldConversationsActive);                                                       // [0x7baf09c] Final|Native|Protected 
+	// void OnRep_ConversationsActive(int32_t OldConversationsActive);                                                       // [0x7b68bd8] Final|Native|Protected 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.IsInActiveConversation
-	// bool IsInActiveConversation();                                                                                        // [0x7bada88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInActiveConversation();                                                                                        // [0x7b675b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.GetParticipantDisplayName
-	// FText GetParticipantDisplayName();                                                                                    // [0x7bada40] Native|Public|BlueprintCallable 
+	// FText GetParticipantDisplayName();                                                                                    // [0x7b6756c] Native|Public|BlueprintCallable 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.GetParticipantActor
-	// class AActor* GetParticipantActor(FGameplayTag& ParticipantTag);                                                      // [0x7bad960] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetParticipantActor(FGameplayTag& ParticipantTag);                                                      // [0x7b6748c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.ClientUpdateParticipants
-	// void ClientUpdateParticipants(FConversationParticipants InParticipants);                                              // [0x7ba9cb4] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientUpdateParticipants(FConversationParticipants InParticipants);                                              // [0x7b63850] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.ClientUpdateConversationTaskChoiceData
-	// void ClientUpdateConversationTaskChoiceData(FConversationNodeHandle Handle, FClientConversationOptionEntry OptionEntry); // [0x7ba99f0] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientUpdateConversationTaskChoiceData(FConversationNodeHandle Handle, FClientConversationOptionEntry OptionEntry); // [0x7b63614] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.ClientUpdateConversations
-	// void ClientUpdateConversations(int32_t InConversationsActive);                                                        // [0x7ba9c30] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientUpdateConversations(int32_t InConversationsActive);                                                        // [0x7b6378c] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.ClientUpdateConversation
-	// void ClientUpdateConversation(FClientConversationMessagePayload Message);                                             // [0x7ba98a4] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientUpdateConversation(FClientConversationMessagePayload Message);                                             // [0x7b63538] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.ClientStartConversation
-	// void ClientStartConversation(FConversationParticipants InParticipants);                                               // [0x7ba9760] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientStartConversation(FConversationParticipants InParticipants);                                               // [0x7b63464] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.ClientExitConversation
-	// void ClientExitConversation(FConversationParticipants InParticipants);                                                // [0x7ba961c] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientExitConversation(FConversationParticipants InParticipants);                                                // [0x7b63390] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/CommonConversationRuntime.ConversationParticipantComponent.ClientExecuteTaskAndSideEffects
-	// void ClientExecuteTaskAndSideEffects(FConversationNodeHandle Handle);                                                 // [0x7ba94d8] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientExecuteTaskAndSideEffects(FConversationNodeHandle Handle);                                                 // [0x7b632bc] Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Struct /Script/CommonConversationRuntime.NetSerializeScriptStructCache_ConvVersion
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FNetSerializeScriptStructCache_ConvVersion
 { 
-	SDK_UNDEFINED(80,1784) /* TMap<UScriptStruct*, int32_t> */ __um(ScriptStructsToIndex);                         // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,1779) /* TMap<UScriptStruct*, int32_t> */ __um(ScriptStructsToIndex);                         // 0x0000   (0x0050)  
 	TArray<class UScriptStruct*>                       IndexToScriptStructs;                                       // 0x0050   (0x0010)  
 };
 
@@ -369,7 +371,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonConversationRuntime.ConversationRequirementNode.IsRequirementSatisfied
-	// EConversationRequirementResult IsRequirementSatisfied(FConversationContext& Context);                                 // [0x7badaa8] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// EConversationRequirementResult IsRequirementSatisfied(FConversationContext& Context);                                 // [0x7b675d4] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/CommonConversationRuntime.ConversationSettings
@@ -377,7 +379,7 @@ public:
 class UConversationSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(32,1785) /* TWeakObjectPtr<UClass*> */ __um(ConversationInstanceClass);                          // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,1780) /* TWeakObjectPtr<UClass*> */ __um(ConversationInstanceClass);                          // 0x0030   (0x0020)  
 };
 
 /// Class /Script/CommonConversationRuntime.ConversationSideEffectNode
@@ -389,9 +391,9 @@ public:
 
 	/// Functions
 	// Function /Script/CommonConversationRuntime.ConversationSideEffectNode.ServerCauseSideEffect
-	// void ServerCauseSideEffect(FConversationContext& Context);                                                            // [0x7ba9df8] BlueprintAuthorityOnly|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void ServerCauseSideEffect(FConversationContext& Context);                                                            // [0x7b63924] BlueprintAuthorityOnly|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/CommonConversationRuntime.ConversationSideEffectNode.ClientCauseSideEffect
-	// void ClientCauseSideEffect(FConversationContext& Context);                                                            // [0x7ba8e1c] BlueprintCosmetic|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void ClientCauseSideEffect(FConversationContext& Context);                                                            // [0x7b62c00] BlueprintCosmetic|Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Struct /Script/CommonConversationRuntime.AdvanceConversationRequest

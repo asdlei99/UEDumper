@@ -31,7 +31,7 @@ class UMaterialExpressionHeightfieldMinMaxTexture : public UMaterialExpression
 { 
 public:
 	class UHeightfieldMinMaxTexture*                   MinMaxTexture;                                              // 0x00B0   (0x0008)  
-	SDK_UNDEFINED(1,15311) /* TEnumAsByte<EMaterialSamplerType> */ __um(SamplerType);                              // 0x00B8   (0x0001)  
+	SDK_UNDEFINED(1,15407) /* TEnumAsByte<EMaterialSamplerType> */ __um(SamplerType);                              // 0x00B8   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x00B9   (0x0007)  MISSED
 };
 
@@ -44,33 +44,33 @@ public:
 };
 
 /// Class /Script/VirtualHeightfieldMesh.VirtualHeightfieldMeshComponent
-/// Size: 0x0070 (0x000570 - 0x0005E0)
+/// Size: 0x0070 (0x000500 - 0x000570)
 class UVirtualHeightfieldMeshComponent : public UPrimitiveComponent
 { 
 public:
-	SDK_UNDEFINED(32,15312) /* TWeakObjectPtr<ARuntimeVirtualTextureVolume*> */ __um(VirtualTexture);              // 0x0570   (0x0020)  
-	class ARuntimeVirtualTextureVolume*                VirtualTextureRef;                                          // 0x0590   (0x0008)  
-	class UObject*                                     VirtualTextureThumbnail;                                    // 0x0598   (0x0008)  
-	bool                                               bCopyBoundsButton;                                          // 0x05A0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x05A1   (0x0007)  MISSED
-	class UHeightfieldMinMaxTexture*                   MinMaxTexture;                                              // 0x05A8   (0x0008)  
-	int32_t                                            NumMinMaxTextureBuildLevels;                                // 0x05B0   (0x0004)  
-	bool                                               bBuildMinMaxTextureButton;                                  // 0x05B4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x05B5   (0x0003)  MISSED
-	class UMaterialInterface*                          Material;                                                   // 0x05B8   (0x0008)  
-	float                                              LOD0ScreenSize;                                             // 0x05C0   (0x0004)  
-	float                                              Lod0Distribution;                                           // 0x05C4   (0x0004)  
-	float                                              LodDistribution;                                            // 0x05C8   (0x0004)  
-	float                                              LodBiasScale;                                               // 0x05CC   (0x0004)  
-	int32_t                                            NumForceLoadLods;                                           // 0x05D0   (0x0004)  
-	int32_t                                            NumOcclusionLods;                                           // 0x05D4   (0x0004)  
-	bool                                               bHiddenInEditor;                                            // 0x05D8   (0x0001)  
-	bool                                               bWorldPositionOffsetVelocity;                               // 0x05D9   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x6];                                       // 0x05DA   (0x0006)  MISSED
+	SDK_UNDEFINED(32,15408) /* TWeakObjectPtr<ARuntimeVirtualTextureVolume*> */ __um(VirtualTexture);              // 0x0500   (0x0020)  
+	class ARuntimeVirtualTextureVolume*                VirtualTextureRef;                                          // 0x0520   (0x0008)  
+	class UObject*                                     VirtualTextureThumbnail;                                    // 0x0528   (0x0008)  
+	bool                                               bCopyBoundsButton;                                          // 0x0530   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0531   (0x0007)  MISSED
+	class UHeightfieldMinMaxTexture*                   MinMaxTexture;                                              // 0x0538   (0x0008)  
+	int32_t                                            NumMinMaxTextureBuildLevels;                                // 0x0540   (0x0004)  
+	bool                                               bBuildMinMaxTextureButton;                                  // 0x0544   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0545   (0x0003)  MISSED
+	class UMaterialInterface*                          Material;                                                   // 0x0548   (0x0008)  
+	float                                              LOD0ScreenSize;                                             // 0x0550   (0x0004)  
+	float                                              Lod0Distribution;                                           // 0x0554   (0x0004)  
+	float                                              LodDistribution;                                            // 0x0558   (0x0004)  
+	float                                              LodBiasScale;                                               // 0x055C   (0x0004)  
+	int32_t                                            NumForceLoadLods;                                           // 0x0560   (0x0004)  
+	int32_t                                            NumOcclusionLods;                                           // 0x0564   (0x0004)  
+	bool                                               bHiddenInEditor;                                            // 0x0568   (0x0001)  
+	bool                                               bWorldPositionOffsetVelocity;                               // 0x0569   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x6];                                       // 0x056A   (0x0006)  MISSED
 
 
 	/// Functions
 	// Function /Script/VirtualHeightfieldMesh.VirtualHeightfieldMeshComponent.GatherHideFlags
-	// void GatherHideFlags(bool& InOutHidePrimitivesInEditor, bool& InOutHidePrimitivesInGame);                             // [0xc2be1d8] Final|Native|Protected|HasOutParms|Const 
+	// void GatherHideFlags(bool& InOutHidePrimitivesInEditor, bool& InOutHidePrimitivesInGame);                             // [0xc69d1b0] Final|Native|Protected|HasOutParms|Const 
 };
 

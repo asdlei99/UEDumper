@@ -41,19 +41,19 @@ public:
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPlayspaceComponent
-/// Size: 0x0210 (0x0000F8 - 0x000308)
+/// Size: 0x0230 (0x0000F8 - 0x000328)
 class UJunoPOIEncounterPlayspaceComponent : public UJunoConnectedActorLevelPlayspaceComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 776;
+	static inline constexpr uint64_t __MDKClassSize = 808;
 
 public:
 	CMember(TWeakObjectPtr<UClass*>)                   EncounterPrefabClass                                        OFFSET(get<T>, {0x100, 32, 0, 0})
 	CMember(TArray<FGameplayTagQuery>)                 VariantQueries                                              OFFSET(get<T>, {0x120, 16, 0, 0})
 	CMember(TWeakObjectPtr<AJunoPOIGameplayVolume*>)   POIPlayspaceVolume                                          OFFSET(get<T>, {0x130, 8, 0, 0})
 	CMember(TWeakObjectPtr<AJunoPOIEncounterPrefab*>)  EncounterPrefab                                             OFFSET(get<T>, {0x138, 8, 0, 0})
-	SMember(FJunoPOIEncounterSaveData)                 EncounterConfigData                                         OFFSET(getStruct<T>, {0x150, 256, 0, 0})
-	CMember(TWeakObjectPtr<UDataTable*>)               EncounterCategoryTable                                      OFFSET(get<T>, {0x250, 32, 0, 0})
+	SMember(FJunoPOIEncounterSaveData)                 EncounterConfigData                                         OFFSET(getStruct<T>, {0x158, 256, 0, 0})
+	CMember(TWeakObjectPtr<UDataTable*>)               EncounterCategoryTable                                      OFFSET(get<T>, {0x258, 32, 0, 0})
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoSpawnActorTaskHelper
@@ -67,16 +67,16 @@ public:
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoEncounterStaticPointProvider
-/// Size: 0x0070 (0x000378 - 0x0003E8)
+/// Size: 0x0070 (0x000390 - 0x000400)
 class AJunoEncounterStaticPointProvider : public AEncounterStaticPointProvider
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1000;
+	static inline constexpr uint64_t __MDKClassSize = 1024;
 
 public:
-	SMember(FJunoLivingWorldPointProviderEventLimiter) EventLimiter                                                OFFSET(getStruct<T>, {0x388, 32, 0, 0})
-	CMember(TArray<FJunoEncounterConditionalTags>)     ConditionalTags                                             OFFSET(get<T>, {0x3A8, 16, 0, 0})
-	SMember(FGuid)                                     SavedActorGuid                                              OFFSET(getStruct<T>, {0x3B8, 16, 0, 0})
+	SMember(FJunoLivingWorldPointProviderEventLimiter) EventLimiter                                                OFFSET(getStruct<T>, {0x3A0, 32, 0, 0})
+	CMember(TArray<FJunoEncounterConditionalTags>)     ConditionalTags                                             OFFSET(get<T>, {0x3C0, 16, 0, 0})
+	SMember(FGuid)                                     SavedActorGuid                                              OFFSET(getStruct<T>, {0x3D0, 16, 0, 0})
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPersistenceFeatureData
@@ -112,31 +112,31 @@ public:
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPrefab
-/// Size: 0x0010 (0x0009A8 - 0x0009B8)
+/// Size: 0x0010 (0x0009C8 - 0x0009D8)
 class AJunoPOIEncounterPrefab : public ALivingWorldEncounterPrefab
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2488;
+	static inline constexpr uint64_t __MDKClassSize = 2520;
 
 public:
-	DMember(bool)                                      bEncounterShouldBeLoaded                                    OFFSET(get<bool>, {0x9A8, 1, 0, 0})
-	DMember(bool)                                      bEncounterIsInitialized                                     OFFSET(get<bool>, {0x9A9, 1, 0, 0})
-	CMember(TWeakObjectPtr<UJunoPOIEncounterPlayspaceComponent*>) POIPlayspaceComponent                            OFFSET(get<T>, {0x9AC, 8, 0, 0})
+	DMember(bool)                                      bEncounterShouldBeLoaded                                    OFFSET(get<bool>, {0x9C8, 1, 0, 0})
+	DMember(bool)                                      bEncounterIsInitialized                                     OFFSET(get<bool>, {0x9C9, 1, 0, 0})
+	CMember(TWeakObjectPtr<UJunoPOIEncounterPlayspaceComponent*>) POIPlayspaceComponent                            OFFSET(get<T>, {0x9CC, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPrefab.OnRep_EncounterShouldBeLoaded
-	// void OnRep_EncounterShouldBeLoaded();                                                                                    // [0x88ae94c] Final|Native|Private 
+	// void OnRep_EncounterShouldBeLoaded();                                                                                    // [0x886368c] Final|Native|Private 
 	// Function /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPrefab.OnRep_EncounterInitialized
-	// void OnRep_EncounterInitialized();                                                                                       // [0xbd39ed0] Final|Native|Private 
+	// void OnRep_EncounterInitialized();                                                                                       // [0xc0733bc] Final|Native|Private 
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterSpawner
-/// Size: 0x0008 (0x000290 - 0x000298)
+/// Size: 0x0018 (0x000290 - 0x0002A8)
 class AJunoPOIEncounterSpawner : public AActor
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 664;
+	static inline constexpr uint64_t __MDKClassSize = 680;
 
 public:
 	CMember(TWeakObjectPtr<UJunoPOIEncounterPlayspaceComponent*>) POIEncountersPlayspace                           OFFSET(get<T>, {0x290, 8, 0, 0})

@@ -25,8 +25,8 @@ public:
 
 	/// Functions
 	// Function /Script/EpicMediaMetadataResolver.EpicMediaMetadataResolver.GetData
-	// bool GetData(FString UID, bool bLive, FEpicMediaOptions InMediaOptions);                                                 // [0x7b8c234] Final|Native|Public|BlueprintCallable 
+	// bool GetData(FString UID, bool bLive, FEpicMediaOptions InMediaOptions);                                                 // [0x7b44ef0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicMediaMetadataResolver.EpicMediaMetadataResolver.GetBlurl
-	// bool GetBlurl(FString InVUID, bool bInBlurlLive, FEpicMediaOptions InMediaOptions);                                      // [0x7b8b708] Final|Native|Public|BlueprintCallable 
+	// bool GetBlurl(FString InVUID, bool bInBlurlLive, FEpicMediaOptions InMediaOptions);                                      // [0x7b443b0] Final|Native|Public|BlueprintCallable 
 };
 

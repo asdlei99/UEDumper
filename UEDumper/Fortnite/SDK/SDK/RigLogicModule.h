@@ -125,7 +125,7 @@ public:
 class UDNAAsset : public UAssetUserData
 { 
 public:
-	SDK_UNDEFINED(16,14946) /* FString */              __um(DnaFileName);                                          // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,15041) /* FString */              __um(DnaFileName);                                          // 0x0028   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x98];                                      // 0x0038   (0x0098)  MISSED
 };
 
@@ -190,7 +190,7 @@ struct FRigUnit_RigLogic_IntArray
 /// Size: 0x0098 (0x000000 - 0x000098)
 struct FRigUnit_RigLogic_Data
 { 
-	SDK_UNDEFINED(8,14947) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(SkelMeshComponent);                  // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,15042) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(SkelMeshComponent);                  // 0x0000   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x0008   (0x0018)  MISSED
 	TArray<int32_t>                                    InputCurveIndices;                                          // 0x0020   (0x0010)  
 	TArray<int32_t>                                    NeuralNetMaskCurveIndices;                                  // 0x0030   (0x0010)  
@@ -204,11 +204,11 @@ struct FRigUnit_RigLogic_Data
 };
 
 /// Struct /Script/RigLogicModule.RigUnit_RigLogic
-/// Size: 0x00A0 (0x000180 - 0x000220)
+/// Size: 0x00A0 (0x0001D0 - 0x000270)
 struct FRigUnit_RigLogic : FRigUnitMutable
 { 
-	FRigUnit_RigLogic_Data                             Data;                                                       // 0x0180   (0x0098)  
-	bool                                               bIsInitialized;                                             // 0x0218   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0219   (0x0007)  MISSED
+	FRigUnit_RigLogic_Data                             Data;                                                       // 0x01D0   (0x0098)  
+	bool                                               bIsInitialized;                                             // 0x0268   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0269   (0x0007)  MISSED
 };
 

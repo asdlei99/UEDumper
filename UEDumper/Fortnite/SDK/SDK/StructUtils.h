@@ -126,7 +126,7 @@ struct FPropertyBagPropertyDescMetaData
 { 
 	FName                                              Key;                                                        // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1283) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1286) /* FString */               __um(Value);                                                // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/StructUtils.PropertyBagMissingStruct

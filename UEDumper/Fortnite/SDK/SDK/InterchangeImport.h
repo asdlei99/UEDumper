@@ -502,7 +502,7 @@ class UMaterialExpressionMaterialXSwizzle : public UMaterialExpression
 { 
 public:
 	FExpressionInput                                   Input;                                                      // 0x00B0   (0x0028)  
-	SDK_UNDEFINED(16,13956) /* FString */              __um(Channels);                                             // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,14063) /* FString */              __um(Channels);                                             // 0x00D8   (0x0010)  
 };
 
 /// Class /Script/InterchangeImport.MaterialExpressionMaterialXTextureSampleParameterBlur

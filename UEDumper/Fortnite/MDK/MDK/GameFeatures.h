@@ -134,7 +134,17 @@ public:
 
 	/// Functions
 	// Function /Script/GameFeatures.GameFeatureData.GetPluginName
-	// void GetPluginName(class UGameFeatureData* GFD, FString& PluginName);                                                    // [0x6d7582c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetPluginName(class UGameFeatureData* GFD, FString& PluginName);                                                    // [0x6be2240] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+};
+
+/// Class /Script/GameFeatures.GameFeatureOptionalContentInstaller
+/// Size: 0x0108 (0x000028 - 0x000130)
+class UGameFeatureOptionalContentInstaller : public UObject
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 304;
+
+public:
 };
 
 /// Class /Script/GameFeatures.GameFeaturePluginStateMachine

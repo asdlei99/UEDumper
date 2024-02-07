@@ -116,7 +116,7 @@ public:
 	FVector                                            PlayerOffsetFemale;                                         // 0x09C8   (0x0018)  
 	FSoftObjectPath                                    ScytheMontage;                                              // 0x09E0   (0x0018)  
 	FSoftObjectPath                                    BRSwordMontage;                                             // 0x09F8   (0x0018)  
-	SDK_UNDEFINED(1,11186) /* TEnumAsByte<EFortWeaponCoreAnimation> */ __um(MeleeDualWieldCoreAnimation);          // 0x0A10   (0x0001)  
+	SDK_UNDEFINED(1,11217) /* TEnumAsByte<EFortWeaponCoreAnimation> */ __um(MeleeDualWieldCoreAnimation);          // 0x0A10   (0x0001)  
 	unsigned char                                      UnknownData09_5[0x7];                                       // 0x0A11   (0x0007)  MISSED
 	FVector                                            SlopePitchTraceStart;                                       // 0x0A18   (0x0018)  
 	FVector                                            SlopePitchTraceEnd;                                         // 0x0A30   (0x0018)  
@@ -133,15 +133,15 @@ public:
 
 	/// Functions
 	// Function /Script/RidingCodeRuntime.FortVehicleLayerAnimInstance_Riding.UpdateSlopePitchForRiding
-	// void UpdateSlopePitchForRiding();                                                                                     // [0x6497c5c] Native|Event|Protected|BlueprintEvent 
+	// void UpdateSlopePitchForRiding();                                                                                     // [0x61cb004] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.FortVehicleLayerAnimInstance_Riding.UpdateBoostPlayRate
-	// void UpdateBoostPlayRate();                                                                                           // [0x649d19c] Native|Event|Protected|BlueprintEvent 
+	// void UpdateBoostPlayRate();                                                                                           // [0x61cf738] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.FortVehicleLayerAnimInstance_Riding.SetFootPhase
-	// void SetFootPhase(ERidingFootPhase InFootPhase);                                                                      // [0xa878c6c] Final|Native|Public|BlueprintCallable 
+	// void SetFootPhase(ERidingFootPhase InFootPhase);                                                                      // [0xaa5be90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RidingCodeRuntime.FortVehicleLayerAnimInstance_Riding.PlaceHandIKTargets
-	// void PlaceHandIKTargets();                                                                                            // [0x6497f84] Native|Event|Protected|BlueprintEvent 
+	// void PlaceHandIKTargets();                                                                                            // [0x61cb46c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.FortVehicleLayerAnimInstance_Riding.BlueprintCollectRidableAnimBPData
-	// void BlueprintCollectRidableAnimBPData(class UAnimInstance* RidableAnimInstance);                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BlueprintCollectRidableAnimBPData(class UAnimInstance* RidableAnimInstance);                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/RidingCodeRuntime.RidingCheatManager
@@ -153,11 +153,11 @@ public:
 
 	/// Functions
 	// Function /Script/RidingCodeRuntime.RidingCheatManager.StopRidingActor
-	// void StopRidingActor();                                                                                               // [0x2264518] BlueprintAuthorityOnly|Exec|Native|Public 
+	// void StopRidingActor();                                                                                               // [0x20a0030] BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/RidingCodeRuntime.RidingCheatManager.StartRidingActor
-	// void StartRidingActor();                                                                                              // [0x1e093d0] BlueprintAuthorityOnly|Exec|Native|Public 
+	// void StartRidingActor();                                                                                              // [0x201202c] BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/RidingCodeRuntime.RidingCheatManager.RidingSetStaminaPercent
-	// void RidingSetStaminaPercent(float StaminaPercent);                                                                   // [0xa878900] BlueprintAuthorityOnly|Exec|Native|Public 
+	// void RidingSetStaminaPercent(float StaminaPercent);                                                                   // [0xaa5bbb8] BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Struct /Script/RidingCodeRuntime.RidingAttachmentBoundsOverride
@@ -174,7 +174,7 @@ struct FRidingAttachmentBoundsOverride
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FPrimaryFireAnimMontageAnimCoreTypeOverride
 { 
-	SDK_UNDEFINED(1,11187) /* TEnumAsByte<EFortWeaponCoreAnimation> */ __um(CoreTypeToOverride);                   // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,11218) /* TEnumAsByte<EFortWeaponCoreAnimation> */ __um(CoreTypeToOverride);                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	FFortGameplayAbilityMontageInfo                    OverridingMontageInfo;                                      // 0x0008   (0x0058)  
 };
@@ -205,8 +205,8 @@ class URidableComponent : public UGameFrameworkComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A0   (0x0008)  MISSED
-	SDK_UNDEFINED(16,11188) /* FMulticastInlineDelegate */ __um(OnRiderStartedRiding);                             // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(16,11189) /* FMulticastInlineDelegate */ __um(OnRiderStoppedRiding);                             // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,11219) /* FMulticastInlineDelegate */ __um(OnRiderStartedRiding);                             // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,11220) /* FMulticastInlineDelegate */ __um(OnRiderStoppedRiding);                             // 0x00B8   (0x0010)  
 	class UClass*                                      RiderAnimLayerOverlayClass;                                 // 0x00C8   (0x0008)  
 	FName                                              AttachSocket;                                               // 0x00D0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00D4   (0x0004)  MISSED
@@ -257,39 +257,39 @@ public:
 
 	/// Functions
 	// Function /Script/RidingCodeRuntime.RidableComponent.ShouldCameraFocusOnRidable
-	// bool ShouldCameraFocusOnRidable(class URiderComponent* Rider);                                                        // [0xa878d6c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool ShouldCameraFocusOnRidable(class URiderComponent* Rider);                                                        // [0xaa5c014] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.OnRep_ActiveRider
-	// void OnRep_ActiveRider();                                                                                             // [0xa878768] Final|Native|Protected 
+	// void OnRep_ActiveRider();                                                                                             // [0xaa5ba8c] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RidableComponent.IsSprinting
-	// bool IsSprinting();                                                                                                   // [0x8fba0f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSprinting();                                                                                                   // [0xaa5b42c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.IsFlying
-	// bool IsFlying();                                                                                                      // [0x8f060ec] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFlying();                                                                                                      // [0x8f4b844] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.IsBeingRidden
-	// bool IsBeingRidden();                                                                                                 // [0xa8782ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBeingRidden();                                                                                                 // [0xaa5b36c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.HandleRiderStoppedRiding
-	// void HandleRiderStoppedRiding(class URiderComponent* Rider);                                                          // [0x680a298] Native|Event|Protected|BlueprintEvent 
+	// void HandleRiderStoppedRiding(class URiderComponent* Rider);                                                          // [0x654eda8] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.RidableComponent.HandleRiderStartedRiding
-	// void HandleRiderStartedRiding(class URiderComponent* Rider);                                                          // [0x69aeebc] Native|Event|Protected|BlueprintEvent 
+	// void HandleRiderStartedRiding(class URiderComponent* Rider);                                                          // [0x670cf80] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.RidableComponent.HandleRiderEndPlay
-	// void HandleRiderEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                              // [0xa877d1c] Final|Native|Protected 
+	// void HandleRiderEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                              // [0xaa5adbc] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RidableComponent.GetRidingEmoteCapsuleSize
-	// void GetRidingEmoteCapsuleSize(class URiderComponent* Rider, float OriginalRadius, float OriginalHalfHeight, float& OutRadius, float& OutHalfHeight); // [0xa877210] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void GetRidingEmoteCapsuleSize(class URiderComponent* Rider, float OriginalRadius, float OriginalHalfHeight, float& OutRadius, float& OutHalfHeight); // [0xaa5a088] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.GetRidingCapsuleSize
-	// void GetRidingCapsuleSize(class URiderComponent* Rider, float OriginalRadius, float OriginalHalfHeight, float& OutRadius, float& OutHalfHeight); // [0xa877074] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// void GetRidingCapsuleSize(class URiderComponent* Rider, float OriginalRadius, float OriginalHalfHeight, float& OutRadius, float& OutHalfHeight); // [0xaa59e38] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.GetRidingAttachComponent
-	// class USceneComponent* GetRidingAttachComponent();                                                                    // [0xa87704c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class USceneComponent* GetRidingAttachComponent();                                                                    // [0xaa59e10] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.GetPettingData
-	// FRidingPettingData GetPettingData();                                                                                  // [0xa877030] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRidingPettingData GetPettingData();                                                                                  // [0xaa59df4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.GetDismountLaunchVectorOverride
-	// FVector GetDismountLaunchVectorOverride(class URiderComponent* Rider);                                                // [0xa876f88] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FVector GetDismountLaunchVectorOverride(class URiderComponent* Rider);                                                // [0xaa59d0c] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.CheatSetStaminaPercent
-	// void CheatSetStaminaPercent(float StaminaPercent);                                                                    // [0x211c0a0] BlueprintAuthorityOnly|Event|Public|BlueprintEvent 
+	// void CheatSetStaminaPercent(float StaminaPercent);                                                                    // [0x2047e54] BlueprintAuthorityOnly|Event|Public|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.RidableComponent.CanRiderPlayEmote
-	// bool CanRiderPlayEmote(class URiderComponent* Rider);                                                                 // [0x90556c0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool CanRiderPlayEmote(class URiderComponent* Rider);                                                                 // [0x90974bc] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.CanBeRiddenBP
-	// bool CanBeRiddenBP(class URiderComponent* Rider);                                                                     // [0xa876b2c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool CanBeRiddenBP(class URiderComponent* Rider);                                                                     // [0xaa59734] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RidableComponent.CanBePet
-	// bool CanBePet(class URiderComponent* Rider);                                                                          // [0x88dbf28] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool CanBePet(class URiderComponent* Rider);                                                                          // [0x888d3dc] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/RidingCodeRuntime.ControllableRidableComponent
@@ -303,14 +303,14 @@ public:
 	bool                                               bIsControllable;                                            // 0x0438   (0x0001)  
 	bool                                               bHasAbility;                                                // 0x0439   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x043A   (0x0006)  MISSED
-	SDK_UNDEFINED(24,11190) /* FText */                __um(AbilityDisplayText);                                   // 0x0440   (0x0018)  
+	SDK_UNDEFINED(24,11221) /* FText */                __um(AbilityDisplayText);                                   // 0x0440   (0x0018)  
 	bool                                               bCanJump;                                                   // 0x0458   (0x0001)  
 	bool                                               bAlwaysMoveForward;                                         // 0x0459   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x045A   (0x0002)  MISSED
 	float                                              ForwardMoveSpeedMultiplier;                                 // 0x045C   (0x0004)  
 	float                                              BackwardMoveSpeedMultiplier;                                // 0x0460   (0x0004)  
 	float                                              SidewaysMoveRotationOffset;                                 // 0x0464   (0x0004)  
-	SDK_UNDEFINED(1,11191) /* TEnumAsByte<EFortMovementUrgency> */ __um(MovementUrgency);                          // 0x0468   (0x0001)  
+	SDK_UNDEFINED(1,11222) /* TEnumAsByte<EFortMovementUrgency> */ __um(MovementUrgency);                          // 0x0468   (0x0001)  
 	bool                                               bIsBeingControlled;                                         // 0x0469   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x1E];                                      // 0x046A   (0x001E)  MISSED
 	FRidableControlParams                              RidableControlParams;                                       // 0x0488   (0x0208)  
@@ -321,35 +321,35 @@ public:
 
 	/// Functions
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.ServerDoJumpExit
-	// void ServerDoJumpExit();                                                                                              // [0x351e7b8] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
+	// void ServerDoJumpExit();                                                                                              // [0x37618b4] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.OnRep_IsBeingControlled
-	// void OnRep_IsBeingControlled();                                                                                       // [0xa8787bc] Final|Native|Protected 
+	// void OnRep_IsBeingControlled();                                                                                       // [0xaa5bae0] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.OnCapsuleBeginOverlap
-	// void OnCapsuleBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xa878420] Final|Native|Protected|HasOutParms 
+	// void OnCapsuleBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xaa5b53c] Final|Native|Protected|HasOutParms 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.IsSprintToggleable
-	// bool IsSprintToggleable();                                                                                            // [0xa8782f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSprintToggleable();                                                                                            // [0xaa5b3b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.HandleJumpStopped
-	// void HandleJumpStopped();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void HandleJumpStopped();                                                                                             // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.HandleJumpStarted
-	// void HandleJumpStarted();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void HandleJumpStarted();                                                                                             // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.HandleJumpHeld
-	// void HandleJumpHeld();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void HandleJumpHeld();                                                                                                // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.HandleCancelSprint
-	// void HandleCancelSprint(bool bAbilityInputHeld, bool bForceCancel);                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void HandleCancelSprint(bool bAbilityInputHeld, bool bForceCancel);                                                   // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.HandleAbilityStopped
-	// void HandleAbilityStopped();                                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void HandleAbilityStopped();                                                                                          // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.HandleAbilityStarted
-	// void HandleAbilityStarted();                                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void HandleAbilityStarted();                                                                                          // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.HandleAbilityHeld
-	// void HandleAbilityHeld();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void HandleAbilityHeld();                                                                                             // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.GetAbilityDisplayText
-	// FText GetAbilityDisplayText();                                                                                        // [0xa876f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetAbilityDisplayText();                                                                                        // [0xaa59cc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.CanStartSprinting
-	// bool CanStartSprinting();                                                                                             // [0xa876bc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanStartSprinting();                                                                                             // [0xaa5980c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.CancelBuildBar
-	// void CancelBuildBar();                                                                                                // [0xa876be4] Final|Native|Protected|BlueprintCallable 
+	// void CancelBuildBar();                                                                                                // [0xaa59830] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/RidingCodeRuntime.ControllableRidableComponent.CanBeControlled
-	// bool CanBeControlled(class URiderComponent* Rider);                                                                   // [0xa876a98] Native|Event|Public|BlueprintEvent|Const 
+	// bool CanBeControlled(class URiderComponent* Rider);                                                                   // [0xaa5965c] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Struct /Script/RidingCodeRuntime.RiderDismountLaunchVelocity
@@ -369,8 +369,8 @@ struct FRiderDismountLaunchVelocity
 struct FRidingAnalyticsData_Base
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
-	SDK_UNDEFINED(32,11192) /* TWeakObjectPtr<URiderComponent*> */ __um(Rider);                                    // 0x0008   (0x0020)  
-	SDK_UNDEFINED(32,11193) /* TWeakObjectPtr<URidableComponent*> */ __um(Ridable);                                // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,11223) /* TWeakObjectPtr<URiderComponent*> */ __um(Rider);                                    // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,11224) /* TWeakObjectPtr<URidableComponent*> */ __um(Ridable);                                // 0x0028   (0x0020)  
 };
 
 /// Struct /Script/RidingCodeRuntime.RidingAnalyticsData_Stopped
@@ -400,8 +400,8 @@ class URiderComponent : public UFortPawnOverrideComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,11194) /* FMulticastInlineDelegate */ __um(OnStartedRiding);                                  // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,11195) /* FMulticastInlineDelegate */ __um(OnStoppedRiding);                                  // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,11225) /* FMulticastInlineDelegate */ __um(OnStartedRiding);                                  // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,11226) /* FMulticastInlineDelegate */ __um(OnStoppedRiding);                                  // 0x00C0   (0x0010)  
 	class UClass*                                      RidingCameraModeClass;                                      // 0x00D0   (0x0008)  
 	class UClass*                                      RidingSprintCameraModeClass;                                // 0x00D8   (0x0008)  
 	float                                              RidingCameraModeBlendTime;                                  // 0x00E0   (0x0004)  
@@ -457,7 +457,7 @@ public:
 	FRidableControlRuntimeData                         RidableControlRuntimeData;                                  // 0x04D0   (0x0040)  
 	bool                                               bIsSprintingReplay : 1;                                     // 0x0510:0 (0x0001)  
 	unsigned char                                      UnknownData08_4[0x3];                                       // 0x0511   (0x0003)  MISSED
-	SDK_UNDEFINED(8,11196) /* TWeakObjectPtr<AFortPlayerController*> */ __um(ClampedController);                   // 0x0514   (0x0008)  
+	SDK_UNDEFINED(8,11227) /* TWeakObjectPtr<AFortPlayerController*> */ __um(ClampedController);                   // 0x0514   (0x0008)  
 	bool                                               bIsPetting;                                                 // 0x051C   (0x0001)  
 	unsigned char                                      UnknownData09_5[0x3];                                       // 0x051D   (0x0003)  MISSED
 	FScalableFloat                                     RidingCapsuleHalfHeight;                                    // 0x0520   (0x0028)  
@@ -473,57 +473,57 @@ public:
 
 	/// Functions
 	// Function /Script/RidingCodeRuntime.RiderComponent.StopRidingActor
-	// bool StopRidingActor(bool bLaunchRider, bool bFindDismountLocation, bool bIsJumpExit);                                // [0xa878e00] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// bool StopRidingActor(bool bLaunchRider, bool bFindDismountLocation, bool bIsJumpExit);                                // [0xaa5c0ec] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/RidingCodeRuntime.RiderComponent.StartRidingActor
-	// bool StartRidingActor(class AActor* TargetActor);                                                                     // [0x8b594fc] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// bool StartRidingActor(class AActor* TargetActor);                                                                     // [0x8b4f8dc] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/RidingCodeRuntime.RiderComponent.SetRidingInputEnabled
-	// void SetRidingInputEnabled(bool bEnabled);                                                                            // [0xa878cec] Final|Native|Public|BlueprintCallable 
+	// void SetRidingInputEnabled(bool bEnabled);                                                                            // [0xaa5bf50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RidingCodeRuntime.RiderComponent.ServerRidingExit
-	// void ServerRidingExit();                                                                                              // [0xa878984] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerRidingExit();                                                                                              // [0xaa5bc80] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/RidingCodeRuntime.RiderComponent.OnRep_RidableControlRuntimeUpdated
-	// void OnRep_RidableControlRuntimeUpdated();                                                                            // [0xa878864] Final|Native|Protected 
+	// void OnRep_RidableControlRuntimeUpdated();                                                                            // [0xaa5bb1c] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.OnRep_IsSprintingReplay
-	// void OnRep_IsSprintingReplay();                                                                                       // [0xa8787e4] Final|Native|Protected 
+	// void OnRep_IsSprintingReplay();                                                                                       // [0xaa5bb08] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.OnRep_ActiveRidable
-	// void OnRep_ActiveRidable();                                                                                           // [0xa878754] Final|Native|Protected 
+	// void OnRep_ActiveRidable();                                                                                           // [0xaa5ba78] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* InCharacter, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xa878644] Final|Native|Protected 
+	// void OnMovementModeChanged(class ACharacter* InCharacter, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xaa5b8a8] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.IsRidingActor
-	// bool IsRidingActor();                                                                                                 // [0xa8782c8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRidingActor();                                                                                                 // [0xaa5b388] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleStoppedRiding
-	// void HandleStoppedRiding(class URidableComponent* Ridable);                                                           // [0x7fe3968] Native|Event|Protected|BlueprintEvent 
+	// void HandleStoppedRiding(class URidableComponent* Ridable);                                                           // [0x7fac19c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleStartedRiding
-	// void HandleStartedRiding(class URidableComponent* Ridable);                                                           // [0x73f5190] Native|Event|Protected|BlueprintEvent 
+	// void HandleStartedRiding(class URidableComponent* Ridable);                                                           // [0x62507b8] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleRidingExitReleased
-	// void HandleRidingExitReleased();                                                                                      // [0xa878270] Final|Native|Protected 
+	// void HandleRidingExitReleased();                                                                                      // [0xaa5b330] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleRidingExitPressed
-	// void HandleRidingExitPressed();                                                                                       // [0xa87825c] Final|Native|Protected 
+	// void HandleRidingExitPressed();                                                                                       // [0xaa5b31c] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleRiderTakenDamage
-	// void HandleRiderTakenDamage(class AActor* DamageOnOwnerPawnDamageddActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xa877ddc] Final|Native|Protected|HasDefaults 
+	// void HandleRiderTakenDamage(class AActor* DamageOnOwnerPawnDamageddActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xaa5aef4] Final|Native|Protected|HasDefaults 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleRiderDidDamage
-	// void HandleRiderDidDamage(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xa8778c4] Final|Native|Protected|HasDefaults 
+	// void HandleRiderDidDamage(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xaa5a9bc] Final|Native|Protected|HasDefaults 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleRidableMovementModeChanged
-	// void HandleRidableMovementModeChanged(class ACharacter* InCharacter, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xa8777c8] Final|Native|Protected 
+	// void HandleRidableMovementModeChanged(class ACharacter* InCharacter, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xaa5a800] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleRidableFound
-	// void HandleRidableFound(FHitResult& HitResult);                                                                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void HandleRidableFound(FHitResult& HitResult);                                                                       // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandlePawnTeleported
-	// void HandlePawnTeleported(class AFortPawn* TeleportedPawn);                                                           // [0xa877734] Final|Native|Protected 
+	// void HandlePawnTeleported(class AFortPawn* TeleportedPawn);                                                           // [0xaa5a72c] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandlePawnDiedWhileRiding
-	// void HandlePawnDiedWhileRiding(class AFortPawn* DeadPawn);                                                            // [0xa8776b4] Final|Native|Protected 
+	// void HandlePawnDiedWhileRiding(class AFortPawn* DeadPawn);                                                            // [0xaa5a66c] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleOnWeaponEquipped
-	// void HandleOnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                             // [0xa8775ec] Final|Native|Protected 
+	// void HandleOnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                             // [0xaa5a528] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleGamepadRidingExitReleased
-	// void HandleGamepadRidingExitReleased();                                                                               // [0xa8775d8] Final|Native|Protected 
+	// void HandleGamepadRidingExitReleased();                                                                               // [0xaa5a514] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleDeferredExitVelocity
-	// void HandleDeferredExitVelocity(FVector ExitVelocity);                                                                // [0xa877484] Final|Native|Protected|HasDefaults 
+	// void HandleDeferredExitVelocity(FVector ExitVelocity);                                                                // [0xaa5a42c] Final|Native|Protected|HasDefaults 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleDBNOWhileRiding
-	// void HandleDBNOWhileRiding();                                                                                         // [0xa877470] Final|Native|Protected 
+	// void HandleDBNOWhileRiding();                                                                                         // [0xaa5a418] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.HandleActorEndPlayWhileRiding
-	// void HandleActorEndPlayWhileRiding(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                   // [0xa8773ac] Final|Native|Protected 
+	// void HandleActorEndPlayWhileRiding(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                   // [0xaa5a2d8] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.RiderComponent.ClientNotifyEmoteFailure
-	// void ClientNotifyEmoteFailure(FGameplayTagContainer ErrorTags);                                                       // [0xa876ce4] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientNotifyEmoteFailure(FGameplayTagContainer ErrorTags);                                                       // [0xaa59970] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/RidingCodeRuntime.RiderComponent.ClientHandleFinishedCharacterCustomization
-	// void ClientHandleFinishedCharacterCustomization(class AFortPlayerPawn* PlayerPawn);                                   // [0xa876c64] Final|Native|Protected 
+	// void ClientHandleFinishedCharacterCustomization(class AFortPlayerPawn* PlayerPawn);                                   // [0xaa598b0] Final|Native|Protected 
 };
 
 /// Struct /Script/RidingCodeRuntime.RidingControlInputState
@@ -582,49 +582,49 @@ public:
 
 	/// Functions
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.UpdateFromInput
-	// void UpdateFromInput(float DeltaTime, FRidingControlInputState& InputState);                                          // [0xa878f14] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void UpdateFromInput(float DeltaTime, FRidingControlInputState& InputState);                                          // [0xaa5c2c4] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.ServerUpdateControlInputStateUnreliable
-	// void ServerUpdateControlInputStateUnreliable(FRidingControlInputStateUnreliable InputState);                          // [0xa878b1c] Net|Native|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdateControlInputStateUnreliable(FRidingControlInputStateUnreliable InputState);                          // [0xaa5bdac] Net|Native|Event|Protected|NetServer|NetValidate 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.ServerUpdateControlInputStateReliable
-	// void ServerUpdateControlInputStateReliable(FRidingControlInputStateReliable InputState);                              // [0xa8789d0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdateControlInputStateReliable(FRidingControlInputStateReliable InputState);                              // [0xaa5bccc] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.ServerCancelPetting
-	// void ServerCancelPetting();                                                                                           // [0x70a588c] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerCancelPetting();                                                                                           // [0x6f76c44] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.ReloadPressed
-	// void ReloadPressed();                                                                                                 // [0xa8788ec] Final|Native|Protected 
+	// void ReloadPressed();                                                                                                 // [0xaa5bba4] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.OnSprintCanceled
-	// void OnSprintCanceled();                                                                                              // [0x70a5874] Net|NetReliableNative|Event|Protected|NetServer 
+	// void OnSprintCanceled();                                                                                              // [0x6f76c2c] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.OnRep_IsControllingRidable
-	// void OnRep_IsControllingRidable();                                                                                    // [0xa8787d0] Final|Native|Protected 
+	// void OnRep_IsControllingRidable();                                                                                    // [0xaa5baf4] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.OnRep_ControlInputUnreliable
-	// void OnRep_ControlInputUnreliable();                                                                                  // [0xa87879c] Final|Native|Protected 
+	// void OnRep_ControlInputUnreliable();                                                                                  // [0xaa5bac0] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.OnRep_ControlInputReliable
-	// void OnRep_ControlInputReliable();                                                                                    // [0xa87877c] Final|Native|Protected 
+	// void OnRep_ControlInputReliable();                                                                                    // [0xaa5baa0] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.IsTryingToMove
-	// bool IsTryingToMove(float Tolerance);                                                                                 // [0xa87836c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTryingToMove(float Tolerance);                                                                                 // [0xaa5b444] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.HandleSpotActorOrPettingAbilityReleased
-	// void HandleSpotActorOrPettingAbilityReleased();                                                                       // [0xa878298] Final|Native|Protected 
+	// void HandleSpotActorOrPettingAbilityReleased();                                                                       // [0xaa5b358] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.HandleSpotActorOrPettingAbilityPressed
-	// void HandleSpotActorOrPettingAbilityPressed();                                                                        // [0xa878284] Final|Native|Protected 
+	// void HandleSpotActorOrPettingAbilityPressed();                                                                        // [0xaa5b344] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.HandleRidingAbilityReleased
-	// void HandleRidingAbilityReleased();                                                                                   // [0xa878248] Final|Native|Protected 
+	// void HandleRidingAbilityReleased();                                                                                   // [0xaa5b308] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.HandleRidingAbilityPressed
-	// void HandleRidingAbilityPressed();                                                                                    // [0xa878234] Final|Native|Protected 
+	// void HandleRidingAbilityPressed();                                                                                    // [0xaa5b2f4] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.HandleRequestPettingStop
-	// void HandleRequestPettingStop();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void HandleRequestPettingStop();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.HandleRequestPettingStart
-	// void HandleRequestPettingStart();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void HandleRequestPettingStart();                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.HandlePettingAbilityPressed
-	// void HandlePettingAbilityPressed();                                                                                   // [0xa8777b4] Final|Native|Protected 
+	// void HandlePettingAbilityPressed();                                                                                   // [0xaa5a7ec] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.HandleGamepadRidingAbilityPressed
-	// void HandleGamepadRidingAbilityPressed();                                                                             // [0xa8775c4] Final|Native|Protected 
+	// void HandleGamepadRidingAbilityPressed();                                                                             // [0xaa5a500] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.GetControlInputState
-	// FRidingControlInputState GetControlInputState();                                                                      // [0xa876f5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRidingControlInputState GetControlInputState();                                                                      // [0xaa59ce0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.ControllingActor_OnMoveRight
-	// void ControllingActor_OnMoveRight(float Val);                                                                         // [0xa876ec0] Final|Native|Protected 
+	// void ControllingActor_OnMoveRight(float Val);                                                                         // [0xaa59c00] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.ControllingActor_OnMoveForward
-	// void ControllingActor_OnMoveForward(float Val);                                                                       // [0x71cfbe0] Final|Native|Protected 
+	// void ControllingActor_OnMoveForward(float Val);                                                                       // [0xaa59b3c] Final|Native|Protected 
 	// Function /Script/RidingCodeRuntime.ControllingRiderComponent.ControllingActor_OnJumpInput
-	// void ControllingActor_OnJumpInput(bool bPressed);                                                                     // [0xa876e40] Final|Native|Protected 
+	// void ControllingActor_OnJumpInput(bool bPressed);                                                                     // [0xaa59a78] Final|Native|Protected 
 };
 
 /// Class /Script/RidingCodeRuntime.FortCameraMode_Riding
@@ -661,7 +661,7 @@ public:
 
 	/// Functions
 	// Function /Script/RidingCodeRuntime.FortAthenaPettingWildlifeTelemetryData.OnPetted
-	// void OnPetted();                                                                                                      // [0xa878740] Final|Native|Public|BlueprintCallable 
+	// void OnPetted();                                                                                                      // [0xaa5ba64] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/RidingCodeRuntime.RidingPlaylistBlacklistTableRow

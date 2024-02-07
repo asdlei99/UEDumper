@@ -75,8 +75,8 @@ struct FLiveEditObjectTestStruct
 	float                                              float1;                                                     // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
 	double                                             Double;                                                     // 0x0018   (0x0008)  
-	SDK_UNDEFINED(16,14453) /* FString */              __um(String);                                               // 0x0020   (0x0010)  
-	SDK_UNDEFINED(24,14454) /* FText */                __um(Text);                                                 // 0x0030   (0x0018)  
+	SDK_UNDEFINED(16,14578) /* FString */              __um(String);                                               // 0x0020   (0x0010)  
+	SDK_UNDEFINED(24,14579) /* FText */                __um(Text);                                                 // 0x0030   (0x0018)  
 	FName                                              Name;                                                       // 0x0048   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x004C   (0x0004)  MISSED
 	class UObject*                                     RawObjectPtr;                                               // 0x0050   (0x0008)  
@@ -85,8 +85,8 @@ struct FLiveEditObjectTestStruct
 	FVector2D                                          Struct;                                                     // 0x0078   (0x0010)  
 	int32_t                                            FixedArray;                                                 // 0x0088   (0x0010)  
 	TArray<int32_t>                                    DynamicArray;                                               // 0x0098   (0x0010)  
-	SDK_UNDEFINED(80,14455) /* TSet<int32_t> */        __um(Set);                                                  // 0x00A8   (0x0050)  
-	SDK_UNDEFINED(80,14456) /* TMap<int32_t, int32_t> */ __um(Map);                                                // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,14580) /* TSet<int32_t> */        __um(Set);                                                  // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,14581) /* TMap<int32_t, int32_t> */ __um(Map);                                                // 0x00F8   (0x0050)  
 };
 
 /// Class /Script/LiveEditObject.LiveEditObjectTestObject

@@ -65,15 +65,15 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_UpdateBodyPartWeightsMulti
-	// void BP_BoneMask_UpdateBodyPartWeightsMulti(FBoneMask& BoneMask, TArray<FBoneMaskUpdateMultiParam>& Params);          // [0x7c70d84] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_BoneMask_UpdateBodyPartWeightsMulti(FBoneMask& BoneMask, TArray<FBoneMaskUpdateMultiParam>& Params);          // [0x7c35be8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_UpdateBodyPartWeights
-	// void BP_BoneMask_UpdateBodyPartWeights(FBoneMask& BoneMask, FName Name, float LocalSpaceWeight, float MeshSpaceWeight); // [0x7c70a30] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_BoneMask_UpdateBodyPartWeights(FBoneMask& BoneMask, FName Name, float LocalSpaceWeight, float MeshSpaceWeight); // [0x7c3586c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_UpdateBodyPartMeshSpaceWeight
-	// void BP_BoneMask_UpdateBodyPartMeshSpaceWeight(FBoneMask& BoneMask, FName Name, float MeshSpaceWeight);               // [0x7c707b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_BoneMask_UpdateBodyPartMeshSpaceWeight(FBoneMask& BoneMask, FName Name, float MeshSpaceWeight);               // [0x7c355d4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_UpdateBodyPartLocalSpaceWeight
-	// void BP_BoneMask_UpdateBodyPartLocalSpaceWeight(FBoneMask& BoneMask, FName Name, float LocalSpaceWeight);             // [0x7c707b4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_BoneMask_UpdateBodyPartLocalSpaceWeight(FBoneMask& BoneMask, FName Name, float LocalSpaceWeight);             // [0x7c355d4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationLayeringRuntime.BoneMaskFunctionLibrary.BP_BoneMask_GetBodyPartWeights
-	// void BP_BoneMask_GetBodyPartWeights(FBoneMask& BoneMask, FName Name, float& LocalSpaceWeight, float& MeshSpaceWeight); // [0x7c7050c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void BP_BoneMask_GetBodyPartWeights(FBoneMask& BoneMask, FName Name, float& LocalSpaceWeight, float& MeshSpaceWeight); // [0x7c35300] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/AnimationLayeringRuntime.BoneMaskEntry
@@ -88,7 +88,7 @@ struct FBoneMaskEntry
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FBoneMask
 { 
-	SDK_UNDEFINED(80,1255) /* TMap<FName, FBoneMaskEntry> */ __um(BoneMaskMap);                                    // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,1257) /* TMap<FName, FBoneMaskEntry> */ __um(BoneMaskMap);                                    // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/AnimationLayeringRuntime.BoneMaskUpdateMultiParam
@@ -117,7 +117,7 @@ struct FAnimNode_BoneMask : FAnimNode_Base
 	FBoneMask                                          BoneMask;                                                   // 0x0040   (0x0050)  
 	class UBoneMaskDefinitionDataAsset*                BoneMaskDefinitionDataAsset;                                // 0x0090   (0x0008)  
 	TArray<FBoneMaskBodyPartNameContainer>             BodyParts;                                                  // 0x0098   (0x0010)  
-	SDK_UNDEFINED(1,1256) /* TEnumAsByte<ECurveBlendOption> */ __um(CurveBlendOption);                             // 0x00A8   (0x0001)  
+	SDK_UNDEFINED(1,1258) /* TEnumAsByte<ECurveBlendOption> */ __um(CurveBlendOption);                             // 0x00A8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00A9   (0x0003)  MISSED
 	int32_t                                            LODThreshold;                                               // 0x00AC   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x48];                                      // 0x00B0   (0x0048)  MISSED
@@ -132,7 +132,7 @@ struct FAnimNode_CopyBoneAdvanced : FAnimNode_SkeletalControlBase
 	FVector                                            TranslationWeight;                                          // 0x00E0   (0x0018)  
 	float                                              RotationWeight;                                             // 0x00F8   (0x0004)  
 	float                                              ScaleWeight;                                                // 0x00FC   (0x0004)  
-	SDK_UNDEFINED(1,1257) /* TEnumAsByte<EBoneControlSpace> */ __um(ControlSpace);                                 // 0x0100   (0x0001)  
+	SDK_UNDEFINED(1,1259) /* TEnumAsByte<EBoneControlSpace> */ __um(ControlSpace);                                 // 0x0100   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0101   (0x0003)  MISSED
 	FBoneReference                                     TranslationSpaceBone;                                       // 0x0104   (0x000C)  
 	bool                                               bTranslationInCustomBoneSpace;                              // 0x0110   (0x0001)  
@@ -162,7 +162,7 @@ struct FAnimNode_CopyMotion : FAnimNode_SkeletalControlBase
 	FName                                              TargetCurveName;                                            // 0x0174   (0x0004)  
 	float                                              TargetCurveScale;                                           // 0x0178   (0x0004)  
 	ECopyMotion_Component                              TargetCurveComponent;                                       // 0x017C   (0x0001)  
-	SDK_UNDEFINED(1,1258) /* TEnumAsByte<EAxis> */     __um(TargetCurveRotationAxis);                              // 0x017D   (0x0001)  
+	SDK_UNDEFINED(1,1260) /* TEnumAsByte<EAxis> */     __um(TargetCurveRotationAxis);                              // 0x017D   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x017E   (0x0002)  MISSED
 	FName                                              TranslationX_CurveName;                                     // 0x0180   (0x0004)  
 	FName                                              TranslationY_CurveName;                                     // 0x0184   (0x0004)  

@@ -43,16 +43,16 @@ public:
 class UGameFeatureAction_AnimPreset : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(32,1275) /* TWeakObjectPtr<UClass*> */ __um(AnimBP_Preset_BasicLocomotion);                      // 0x0028   (0x0020)  
-	SDK_UNDEFINED(32,1276) /* TWeakObjectPtr<UClass*> */ __um(AnimBP_CopyPoseFromMesh);                            // 0x0048   (0x0020)  
-	SDK_UNDEFINED(32,1277) /* TWeakObjectPtr<UClass*> */ __um(AnimBP_RetargetPoseFromMesh);                        // 0x0068   (0x0020)  
+	SDK_UNDEFINED(32,1277) /* TWeakObjectPtr<UClass*> */ __um(AnimBP_Preset_BasicLocomotion);                      // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,1278) /* TWeakObjectPtr<UClass*> */ __um(AnimBP_CopyPoseFromMesh);                            // 0x0048   (0x0020)  
+	SDK_UNDEFINED(32,1279) /* TWeakObjectPtr<UClass*> */ __um(AnimBP_RetargetPoseFromMesh);                        // 0x0068   (0x0020)  
 };
 
 /// Struct /Script/AnimPresetsRuntime.AnimPresetRetargetData
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FAnimPresetRetargetData
 { 
-	SDK_UNDEFINED(32,1278) /* TWeakObjectPtr<UIKRetargeter*> */ __um(IKRetargeter);                                // 0x0000   (0x0020)  
-	SDK_UNDEFINED(32,1279) /* TWeakObjectPtr<USkeletalMesh*> */ __um(SourceSkeletalMesh);                          // 0x0020   (0x0020)  
+	SDK_UNDEFINED(32,1280) /* TWeakObjectPtr<UIKRetargeter*> */ __um(IKRetargeter);                                // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,1281) /* TWeakObjectPtr<USkeletalMesh*> */ __um(SourceSkeletalMesh);                          // 0x0020   (0x0020)  
 };
 

@@ -45,13 +45,13 @@ public:
 
 	/// Functions
 	// Function /Script/RockVehicleRuntime.FortCheatManager_RockVehicle.RockVehicleSetVelocity
-	// void RockVehicleSetVelocity(float X, float Y, float Z);                                                               // [0x8c14b18] Final|Exec|Native|Public 
+	// void RockVehicleSetVelocity(float X, float Y, float Z);                                                               // [0x8c17b54] Final|Exec|Native|Public 
 	// Function /Script/RockVehicleRuntime.FortCheatManager_RockVehicle.RockVehicleSetRotation
-	// void RockVehicleSetRotation(float pitch, float Yaw, float Roll);                                                      // [0x8c14b18] Final|Exec|Native|Public 
+	// void RockVehicleSetRotation(float pitch, float Yaw, float Roll);                                                      // [0x8c17b54] Final|Exec|Native|Public 
 	// Function /Script/RockVehicleRuntime.FortCheatManager_RockVehicle.RockVehicleSetLocation
-	// void RockVehicleSetLocation(float X, float Y, float Z);                                                               // [0x8c14b18] Final|Exec|Native|Public 
+	// void RockVehicleSetLocation(float X, float Y, float Z);                                                               // [0x8c17b54] Final|Exec|Native|Public 
 	// Function /Script/RockVehicleRuntime.FortCheatManager_RockVehicle.RockVehicleSetBalboaVelocity
-	// void RockVehicleSetBalboaVelocity(float X, float Y, float Z);                                                         // [0x8c14b18] Final|Exec|Native|Public 
+	// void RockVehicleSetBalboaVelocity(float X, float Y, float Z);                                                         // [0x8c17b54] Final|Exec|Native|Public 
 };
 
 /// Struct /Script/RockVehicleRuntime.RockRuntimeConfigOverrides
@@ -65,52 +65,52 @@ struct FRockRuntimeConfigOverrides
 };
 
 /// Class /Script/RockVehicleRuntime.RockVehicle
-/// Size: 0x0240 (0x001E80 - 0x0020C0)
+/// Size: 0x0240 (0x001EF0 - 0x002130)
 class ARockVehicle : public AFortAthenaSKVehicle
 { 
 public:
-	float                                              InputSwivelPitch;                                           // 0x1E80   (0x0004)  
-	float                                              InputSwivelYaw;                                             // 0x1E84   (0x0004)  
-	bool                                               bInputReverseCamera : 1;                                    // 0x1E88:0 (0x0001)  
-	bool                                               bHasDoubleJumped : 1;                                       // 0x1E88:1 (0x0001)  
-	bool                                               bHasDodged : 1;                                             // 0x1E88:2 (0x0001)  
-	bool                                               bFreeLookCamera;                                            // 0x1E89   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x1E8A   (0x0006)  MISSED
-	SDK_UNDEFINED(16,14967) /* FMulticastInlineDelegate */ __um(OnFreeCamToggled);                                 // 0x1E90   (0x0010)  
-	unsigned char                                      UnknownData01_5[0x1];                                       // 0x1EA0   (0x0001)  MISSED
-	FRockRuntimeConfigOverrides                        RockRuntimeConfigs;                                         // 0x1EA1   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x1B];                                      // 0x1EA5   (0x001B)  MISSED
-	SDK_UNDEFINED(16,14968) /* FMulticastInlineDelegate */ __um(OnSpringImpact);                                   // 0x1EC0   (0x0010)  
-	unsigned char                                      UnknownData03_5[0x78];                                      // 0x1ED0   (0x0078)  MISSED
-	class URockVehicleAnalyticsComponent*              RockAnalyticsComp;                                          // 0x1F48   (0x0008)  
-	TArray<class URockVehicleAbility*>                 VehicleAbilities;                                           // 0x1F50   (0x0010)  
-	SDK_UNDEFINED(16,14969) /* TArray<TWeakObjectPtr<UClass*>> */ __um(VehicleAbilityTickOrder);                   // 0x1F60   (0x0010)  
-	class AFortVehicleAudioController*                 CachedVehicleAudioController;                               // 0x1F70   (0x0008)  
-	class URockVehicleAbility_Supersonic*              SupersonicAbility;                                          // 0x1F78   (0x0008)  
-	class URockVehicleAnimInstance*                    RockAnimInstance;                                           // 0x1F80   (0x0008)  
-	FFortAthenaVehicleInputState                       PendingDriverInputState;                                    // 0x1F88   (0x0040)  
-	FFortAthenaVehicleInputState                       PrevDriverInputState;                                       // 0x1FC8   (0x0040)  
-	FVector                                            EnterExitImpulse;                                           // 0x2008   (0x0018)  
-	unsigned char                                      UnknownData04_6[0xA0];                                      // 0x2020   (0x00A0)  MISSED
+	float                                              InputSwivelPitch;                                           // 0x1EF0   (0x0004)  
+	float                                              InputSwivelYaw;                                             // 0x1EF4   (0x0004)  
+	bool                                               bInputReverseCamera : 1;                                    // 0x1EF8:0 (0x0001)  
+	bool                                               bHasDoubleJumped : 1;                                       // 0x1EF8:1 (0x0001)  
+	bool                                               bHasDodged : 1;                                             // 0x1EF8:2 (0x0001)  
+	bool                                               bFreeLookCamera;                                            // 0x1EF9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x1EFA   (0x0006)  MISSED
+	SDK_UNDEFINED(16,15062) /* FMulticastInlineDelegate */ __um(OnFreeCamToggled);                                 // 0x1F00   (0x0010)  
+	unsigned char                                      UnknownData01_5[0x1];                                       // 0x1F10   (0x0001)  MISSED
+	FRockRuntimeConfigOverrides                        RockRuntimeConfigs;                                         // 0x1F11   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x1B];                                      // 0x1F15   (0x001B)  MISSED
+	SDK_UNDEFINED(16,15063) /* FMulticastInlineDelegate */ __um(OnSpringImpact);                                   // 0x1F30   (0x0010)  
+	unsigned char                                      UnknownData03_5[0x78];                                      // 0x1F40   (0x0078)  MISSED
+	class URockVehicleAnalyticsComponent*              RockAnalyticsComp;                                          // 0x1FB8   (0x0008)  
+	TArray<class URockVehicleAbility*>                 VehicleAbilities;                                           // 0x1FC0   (0x0010)  
+	SDK_UNDEFINED(16,15064) /* TArray<TWeakObjectPtr<UClass*>> */ __um(VehicleAbilityTickOrder);                   // 0x1FD0   (0x0010)  
+	class AFortVehicleAudioController*                 CachedVehicleAudioController;                               // 0x1FE0   (0x0008)  
+	class URockVehicleAbility_Supersonic*              SupersonicAbility;                                          // 0x1FE8   (0x0008)  
+	class URockVehicleAnimInstance*                    RockAnimInstance;                                           // 0x1FF0   (0x0008)  
+	FFortAthenaVehicleInputState                       PendingDriverInputState;                                    // 0x1FF8   (0x0040)  
+	FFortAthenaVehicleInputState                       PrevDriverInputState;                                       // 0x2038   (0x0040)  
+	FVector                                            EnterExitImpulse;                                           // 0x2078   (0x0018)  
+	unsigned char                                      UnknownData04_6[0xA0];                                      // 0x2090   (0x00A0)  MISSED
 
 
 	/// Functions
 	// Function /Script/RockVehicleRuntime.RockVehicle.ServerToggleFreeCam
-	// void ServerToggleFreeCam();                                                                                           // [0xb35fd30] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerToggleFreeCam();                                                                                           // [0xb594d50] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/RockVehicleRuntime.RockVehicle.ServerSetLegacyDamageValues
-	// void ServerSetLegacyDamageValues(bool bDamageFriendlyVehicles, bool bDamageOtherVehicles, bool bDamageOwnVehicle, bool bDamageAllowedFromOtherVehicle); // [0xb35fbd0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ServerSetLegacyDamageValues(bool bDamageFriendlyVehicles, bool bDamageOtherVehicles, bool bDamageOwnVehicle, bool bDamageAllowedFromOtherVehicle); // [0xb594aec] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/RockVehicleRuntime.RockVehicle.RockFreeCamToggledDelegate__DelegateSignature
-	// void RockFreeCamToggledDelegate__DelegateSignature(bool bFreeCam);                                                    // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void RockFreeCamToggledDelegate__DelegateSignature(bool bFreeCam);                                                    // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/RockVehicleRuntime.RockVehicle.OnSpringImpact__DelegateSignature
-	// void OnSpringImpact__DelegateSignature(FName Socket, float ImpactSpeed, FHitResult& OutHit);                          // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnSpringImpact__DelegateSignature(FName Socket, float ImpactSpeed, FHitResult& OutHit);                          // [0x2047e54] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/RockVehicleRuntime.RockVehicle.OnRep_FreeLookCamera
-	// void OnRep_FreeLookCamera();                                                                                          // [0xb35f95c] Final|Native|Public  
+	// void OnRep_FreeLookCamera();                                                                                          // [0xb594738] Final|Native|Public  
 	// Function /Script/RockVehicleRuntime.RockVehicle.GetThrottleState
-	// float GetThrottleState();                                                                                             // [0xb35f13c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetThrottleState();                                                                                             // [0xb593d54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RockVehicleRuntime.RockVehicle.GetDriverInput
-	// FFortAthenaVehicleInputState GetDriverInput();                                                                        // [0xb35f088] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFortAthenaVehicleInputState GetDriverInput();                                                                        // [0xb593cc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RockVehicleRuntime.RockVehicle.GetCurrentRockRuntimeConfigOverrides
-	// FRockRuntimeConfigOverrides GetCurrentRockRuntimeConfigOverrides();                                                   // [0xb35f070] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRockRuntimeConfigOverrides GetCurrentRockRuntimeConfigOverrides();                                                   // [0xb593ca8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/RockVehicleRuntime.RockVehicleAbility
@@ -125,11 +125,11 @@ public:
 
 	/// Functions
 	// Function /Script/RockVehicleRuntime.RockVehicleAbility.GetVehicle
-	// class ARockVehicle* GetVehicle();                                                                                     // [0x30c6fc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ARockVehicle* GetVehicle();                                                                                     // [0x2ed94dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RockVehicleRuntime.RockVehicleAbility.GetInactiveSeconds
-	// float GetInactiveSeconds();                                                                                           // [0xb35f0d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetInactiveSeconds();                                                                                           // [0xb593d0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RockVehicleRuntime.RockVehicleAbility.GetActiveSeconds
-	// float GetActiveSeconds();                                                                                             // [0x374eacc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActiveSeconds();                                                                                             // [0x5db55ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/RockVehicleRuntime.RockVehicleAbility_Physics
@@ -196,7 +196,7 @@ class URockVehicleAbility_Boost : public URockVehicleAbility_Physics
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0108   (0x0018)  MISSED
 	FRockScalableFloat                                 BoostAccel;                                                 // 0x0120   (0x0030)  
-	SDK_UNDEFINED(16,14970) /* FMulticastInlineDelegate */ __um(OnBoostFailed);                                    // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,15065) /* FMulticastInlineDelegate */ __um(OnBoostFailed);                                    // 0x0150   (0x0010)  
 	class URockVehicleBoostTank*                       BoostTank;                                                  // 0x0160   (0x0008)  
 	bool                                               bHasBoost;                                                  // 0x0168   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0169   (0x0007)  MISSED
@@ -207,7 +207,7 @@ public:
 class URockVehicleBoostTank : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,14971) /* FMulticastInlineDelegate */ __um(OnSecondsChanged);                                 // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,15066) /* FMulticastInlineDelegate */ __um(OnSecondsChanged);                                 // 0x00A0   (0x0010)  
 	FRockScalableFloat                                 StartSeconds;                                               // 0x00B0   (0x0030)  
 	FRockScalableFloat                                 MaxSeconds;                                                 // 0x00E0   (0x0030)  
 	ERockBoostLogic                                    BoostLogic;                                                 // 0x0110   (0x0001)  
@@ -220,17 +220,17 @@ public:
 
 	/// Functions
 	// Function /Script/RockVehicleRuntime.RockVehicleBoostTank.OnRep_SecondsRemaining
-	// void OnRep_SecondsRemaining(float PrevValue);                                                                         // [0xb35f990] Final|Native|Protected 
+	// void OnRep_SecondsRemaining(float PrevValue);                                                                         // [0xb59476c] Final|Native|Protected 
 	// Function /Script/RockVehicleRuntime.RockVehicleBoostTank.IsBoostFull
-	// bool IsBoostFull();                                                                                                   // [0xb35f204] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBoostFull();                                                                                                   // [0xb593e60] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RockVehicleRuntime.RockVehicleBoostTank.HasBoost
-	// bool HasBoost();                                                                                                      // [0xb35f1e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasBoost();                                                                                                      // [0xb593e40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RockVehicleRuntime.RockVehicleBoostTank.GiveBoost
-	// void GiveBoost(float Seconds);                                                                                        // [0xb35f164] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void GiveBoost(float Seconds);                                                                                        // [0xb593d7c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/RockVehicleRuntime.RockVehicleBoostTank.GetPercentRemaining
-	// float GetPercentRemaining();                                                                                          // [0xb35f11c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPercentRemaining();                                                                                          // [0xb593d34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/RockVehicleRuntime.RockVehicleBoostTank.GetMaxBoostInSeconds
-	// float GetMaxBoostInSeconds();                                                                                         // [0x70a5258] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxBoostInSeconds();                                                                                         // [0x6f764d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/RockVehicleRuntime.RockDodgeImpulse
@@ -293,7 +293,7 @@ public:
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FGroundTrailsData
 { 
-	SDK_UNDEFINED(1,14972) /* TEnumAsByte<EPhysicalSurface> */ __um(SurfaceType);                                  // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,15067) /* TEnumAsByte<EPhysicalSurface> */ __um(SurfaceType);                                  // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	class UNiagaraSystem*                              NiagaraFX;                                                  // 0x0008   (0x0008)  
 };
@@ -321,9 +321,9 @@ public:
 
 	/// Functions
 	// Function /Script/RockVehicleRuntime.RockVehicleAbility_GroundTrails.SetEnabled
-	// void SetEnabled(bool bValue);                                                                                         // [0xb35fdfc] Final|Native|Public|BlueprintCallable 
+	// void SetEnabled(bool bValue);                                                                                         // [0xb594e5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RockVehicleRuntime.RockVehicleAbility_GroundTrails.OnSurfaceChanged
-	// void OnSurfaceChanged(TEnumAsByte<EPhysicalSurface> NewSurface);                                                      // [0xb35fb50] Final|Native|Protected|BlueprintCallable 
+	// void OnSurfaceChanged(TEnumAsByte<EPhysicalSurface> NewSurface);                                                      // [0xb594a2c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/RockVehicleRuntime.RockVehicleAbility_Jump
@@ -357,8 +357,8 @@ public:
 class URockVehicleAbility_Supersonic : public URockVehicleAbility
 { 
 public:
-	SDK_UNDEFINED(16,14973) /* FMulticastInlineDelegate */ __um(OnTrailsActivate);                                 // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,14974) /* FMulticastInlineDelegate */ __um(OnTrailsDeactivate);                               // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,15068) /* FMulticastInlineDelegate */ __um(OnTrailsActivate);                                 // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,15069) /* FMulticastInlineDelegate */ __um(OnTrailsDeactivate);                               // 0x00C0   (0x0010)  
 	FRockScalableFloat                                 TurnOffTime;                                                // 0x00D0   (0x0030)  
 	FRockScalableFloat                                 TurnOnTime;                                                 // 0x0100   (0x0030)  
 	bool                                               bUseTurnOnTimeRequirement;                                  // 0x0130   (0x0001)  
@@ -389,19 +389,19 @@ public:
 
 	/// Functions
 	// Function /Script/RockVehicleRuntime.RockVehicleAnalyticsComponent.OnSupersonicStart
-	// void OnSupersonicStart(class UActorComponent* InComp, bool bInReset);                                                 // [0xb35fa98] Final|Native|Private 
+	// void OnSupersonicStart(class UActorComponent* InComp, bool bInReset);                                                 // [0xb5948f8] Final|Native|Private 
 	// Function /Script/RockVehicleRuntime.RockVehicleAnalyticsComponent.OnSupersonicEnd
-	// void OnSupersonicEnd(class UActorComponent* InComp);                                                                  // [0xb35fa28] Final|Native|Private 
+	// void OnSupersonicEnd(class UActorComponent* InComp);                                                                  // [0xb594844] Final|Native|Private 
 	// Function /Script/RockVehicleRuntime.RockVehicleAnalyticsComponent.OnPawnExitedSeat
-	// void OnPawnExitedSeat(TScriptInterface<Class>& InVehicle, class AFortPawn* InPlayerPawn, int32_t InSeatIndex);        // [0xb35f700] Final|Native|Private|HasOutParms 
+	// void OnPawnExitedSeat(TScriptInterface<Class>& InVehicle, class AFortPawn* InPlayerPawn, int32_t InSeatIndex);        // [0xb5944b0] Final|Native|Private|HasOutParms 
 	// Function /Script/RockVehicleRuntime.RockVehicleAnalyticsComponent.OnPawnEnteredSeat
-	// void OnPawnEnteredSeat(TScriptInterface<Class>& InVehicle, class AFortPawn* InPlayerPawn, int32_t InSeatIndex);       // [0xb35f464] Final|Native|Private|HasOutParms 
+	// void OnPawnEnteredSeat(TScriptInterface<Class>& InVehicle, class AFortPawn* InPlayerPawn, int32_t InSeatIndex);       // [0xb594228] Final|Native|Private|HasOutParms 
 	// Function /Script/RockVehicleRuntime.RockVehicleAnalyticsComponent.OnJumped
-	// void OnJumped(class UActorComponent* InComp, bool bInReset);                                                          // [0xb35f3ac] Final|Native|Private 
+	// void OnJumped(class UActorComponent* InComp, bool bInReset);                                                          // [0xb5940f8] Final|Native|Private 
 	// Function /Script/RockVehicleRuntime.RockVehicleAnalyticsComponent.OnDoubleJumped
-	// void OnDoubleJumped(class UActorComponent* InComp, bool bInReset);                                                    // [0xb35f2f4] Final|Native|Private 
+	// void OnDoubleJumped(class UActorComponent* InComp, bool bInReset);                                                    // [0xb593fc8] Final|Native|Private 
 	// Function /Script/RockVehicleRuntime.RockVehicleAnalyticsComponent.OnDodged
-	// void OnDodged(class UActorComponent* InComp, bool bInReset);                                                          // [0xb35f23c] Final|Native|Private 
+	// void OnDodged(class UActorComponent* InComp, bool bInReset);                                                          // [0xb593e98] Final|Native|Private 
 };
 
 /// Struct /Script/RockVehicleRuntime.BouncyChassisState
@@ -457,13 +457,13 @@ public:
 
 	/// Functions
 	// Function /Script/RockVehicleRuntime.RockVehicleAudioController.SetSurfaceTypeParam
-	// void SetSurfaceTypeParam(float NewSurfaceParam);                                                                      // [0xb35fe7c] Final|Native|Public|BlueprintCallable 
+	// void SetSurfaceTypeParam(float NewSurfaceParam);                                                                      // [0xb594f1c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RockVehicleRuntime.RockVehicleAudioController.SetBoosting
-	// void SetBoosting(bool bNewBoosting);                                                                                  // [0xb35fd7c] Final|Native|Public|BlueprintCallable 
+	// void SetBoosting(bool bNewBoosting);                                                                                  // [0xb594d9c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/RockVehicleRuntime.RockVehicleAudioController.OnInAirUpdated
-	// void OnInAirUpdated(bool bNewInAir);                                                                                  // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnInAirUpdated(bool bNewInAir);                                                                                  // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/RockVehicleRuntime.RockVehicleAudioController.GetMotorSimComponent
-	// class UAudioMotorModelComponent* GetMotorSimComponent();                                                              // [0x85a71c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAudioMotorModelComponent* GetMotorSimComponent();                                                              // [0x854cd80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/RockVehicleRuntime.RockCameraSettings
@@ -615,7 +615,7 @@ public:
 
 	/// Functions
 	// Function /Script/RockVehicleRuntime.StreamingRadioPlayerComponent_Rock.VehicleExploded
-	// void VehicleExploded(class AController* LastDamageInstigator, class AFortAthenaVehicle* Vehicle);                     // [0xb35fefc] Final|Native|Protected 
+	// void VehicleExploded(class AController* LastDamageInstigator, class AFortAthenaVehicle* Vehicle);                     // [0xb594fe0] Final|Native|Protected 
 };
 
 /// Struct /Script/RockVehicleRuntime.RockVehicleState

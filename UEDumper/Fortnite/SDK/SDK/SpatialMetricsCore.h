@@ -41,24 +41,24 @@ public:
 };
 
 /// Struct /Script/SpatialMetricsCore.SpatialMetricProperties
-/// Size: 0x0018 (0x000000 - 0x000018)
+/// Size: 0x0030 (0x000000 - 0x000030)
 struct FSpatialMetricProperties
 { 
-	FName                                              IdName;                                                     // 0x0000   (0x0004)  
-	int32_t                                            MinValue;                                                   // 0x0004   (0x0004)  
-	int32_t                                            MaxValue;                                                   // 0x0008   (0x0004)  
-	int32_t                                            ThresholdValue;                                             // 0x000C   (0x0004)  
-	int32_t                                            SpatialPrecision;                                           // 0x0010   (0x0004)  
-	EUnit                                              Unit;                                                       // 0x0014   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0015   (0x0003)  MISSED
+	SDK_UNDEFINED(24,11815) /* FText */                __um(Label);                                                // 0x0000   (0x0018)  
+	int32_t                                            MinValue;                                                   // 0x0018   (0x0004)  
+	int32_t                                            MaxValue;                                                   // 0x001C   (0x0004)  
+	int32_t                                            ThresholdValue;                                             // 0x0020   (0x0004)  
+	int32_t                                            SpatialPrecision;                                           // 0x0024   (0x0004)  
+	EUnit                                              Unit;                                                       // 0x0028   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0029   (0x0007)  MISSED
 };
 
 /// Class /Script/SpatialMetricsCore.SpatialMetric
-/// Size: 0x0018 (0x000028 - 0x000040)
+/// Size: 0x0030 (0x000028 - 0x000058)
 class USpatialMetric : public UObject
 { 
 public:
-	FSpatialMetricProperties                           Properties;                                                 // 0x0028   (0x0018)  
+	FSpatialMetricProperties                           Properties;                                                 // 0x0028   (0x0030)  
 };
 
 /// Class /Script/SpatialMetricsCore.SpatialMetricsActorIndexer
@@ -91,14 +91,14 @@ public:
 };
 
 /// Class /Script/SpatialMetricsCore.TestMetric
-/// Size: 0x0080 (0x000040 - 0x0000C0)
+/// Size: 0x0080 (0x000058 - 0x0000D8)
 class UTestMetric : public USpatialMetric
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x74];                                      // 0x0040   (0x0074)  MISSED
-	int32_t                                            SamplingDistance;                                           // 0x00B4   (0x0004)  
-	float                                              WorldSamplingFactor;                                        // 0x00B8   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00BC   (0x0004)  MISSED
+	unsigned char                                      UnknownData00_2[0x74];                                      // 0x0058   (0x0074)  MISSED
+	int32_t                                            SamplingDistance;                                           // 0x00CC   (0x0004)  
+	float                                              WorldSamplingFactor;                                        // 0x00D0   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00D4   (0x0004)  MISSED
 };
 
 /// Struct /Script/SpatialMetricsCore.SpatialValue
@@ -109,15 +109,25 @@ struct FSpatialValue
 	int32_t                                            Value;                                                      // 0x000C   (0x0004)  
 };
 
+/// Struct /Script/SpatialMetricsCore.SpatialMetricDescriptor
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FSpatialMetricDescriptor
+{ 
+	FName                                              IdName;                                                     // 0x0000   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
+	class UClass*                                      Class;                                                      // 0x0008   (0x0008)  
+};
+
 /// Struct /Script/SpatialMetricsCore.SpatialMetricSample
-/// Size: 0x0048 (0x000000 - 0x000048)
+/// Size: 0x0070 (0x000000 - 0x000070)
 struct FSpatialMetricSample
 { 
-	FSpatialMetricProperties                           Properties;                                                 // 0x0000   (0x0018)  
-	TArray<FSpatialValue>                              Values;                                                     // 0x0018   (0x0010)  
-	FIntVector                                         BoundsMin;                                                  // 0x0028   (0x000C)  
-	FIntVector                                         BoundsMax;                                                  // 0x0034   (0x000C)  
-	FDateTime                                          Timestamp;                                                  // 0x0040   (0x0008)  
+	FSpatialMetricDescriptor                           Source;                                                     // 0x0000   (0x0010)  
+	FSpatialMetricProperties                           Properties;                                                 // 0x0010   (0x0030)  
+	TArray<FSpatialValue>                              Values;                                                     // 0x0040   (0x0010)  
+	FIntVector                                         BoundsMin;                                                  // 0x0050   (0x000C)  
+	FIntVector                                         BoundsMax;                                                  // 0x005C   (0x000C)  
+	FDateTime                                          Timestamp;                                                  // 0x0068   (0x0008)  
 };
 
 /// Struct /Script/SpatialMetricsCore.SpatialMetricSampleImageProperties

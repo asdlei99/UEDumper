@@ -41,24 +41,25 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.UseSmartObjectWithGameplayBehavior
-	// class UAITask_UseGameplayBehaviorSmartObject* UseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7f97604] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* UseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7f5e650] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.UseGameplayBehaviorSmartObject
-	// class UAITask_UseGameplayBehaviorSmartObject* UseGameplayBehaviorSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic); // [0x7f9734c] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* UseGameplayBehaviorSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic); // [0x7f5e210] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayBehaviorSmartObjectsModule.AITask_UseGameplayBehaviorSmartObject.MoveToAndUseSmartObjectWithGameplayBehavior
-	// class UAITask_UseGameplayBehaviorSmartObject* MoveToAndUseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7f970d8] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayBehaviorSmartObject* MoveToAndUseSmartObjectWithGameplayBehavior(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic, ESmartObjectClaimPriority ClaimPriority); // [0x7f5dfb0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayBehaviorSmartObjectsModule.BTTask_FindAndUseGameplayBehaviorSmartObject
-/// Size: 0x00A8 (0x000070 - 0x000118)
+/// Size: 0x00B0 (0x000070 - 0x000120)
 class UBTTask_FindAndUseGameplayBehaviorSmartObject : public UBTTaskNode
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 280;
+	static inline constexpr uint64_t __MDKClassSize = 288;
 
 public:
 	SMember(FGameplayTagQuery)                         ActivityRequirements                                        OFFSET(getStruct<T>, {0x70, 72, 0, 0})
-	SMember(FEQSParametrizedQueryExecutionRequest)     EQSRequest                                                  OFFSET(getStruct<T>, {0xB8, 72, 0, 0})
-	DMember(float)                                     Radius                                                      OFFSET(get<float>, {0x100, 4, 0, 0})
+	CMember(ESmartObjectClaimPriority)                 ClaimPriority                                               OFFSET(get<T>, {0xB8, 1, 0, 0})
+	SMember(FEQSParametrizedQueryExecutionRequest)     EQSRequest                                                  OFFSET(getStruct<T>, {0xC0, 72, 0, 0})
+	DMember(float)                                     Radius                                                      OFFSET(get<float>, {0x108, 4, 0, 0})
 };
 
 /// Class /Script/GameplayBehaviorSmartObjectsModule.GameplayBehaviorSmartObjectsBlueprintFunctionLibrary
@@ -73,6 +74,6 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayBehaviorSmartObjectsModule.GameplayBehaviorSmartObjectsBlueprintFunctionLibrary.UseGameplayBehaviorSmartObject
-	// bool UseGameplayBehaviorSmartObject(class AActor* Avatar, class AActor* SmartObject);                                    // [0x7f974d8] Final|Native|Static|Public|BlueprintCallable 
+	// bool UseGameplayBehaviorSmartObject(class AActor* Avatar, class AActor* SmartObject);                                    // [0x7f5e4a0] Final|Native|Static|Public|BlueprintCallable 
 };
 

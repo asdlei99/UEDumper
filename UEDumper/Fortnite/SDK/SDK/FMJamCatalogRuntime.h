@@ -13,7 +13,8 @@
 /// dependency: FMCoreRuntime
 /// dependency: FortniteGame
 /// dependency: GameplayTags
-/// dependency: McpProfileSysCore
+/// dependency: ItemizationCoreRuntime
+/// dependency: McpProfileSys
 /// dependency: ModularGameplay
 /// dependency: SparksCMS
 
@@ -86,33 +87,33 @@ public:
 class UFMJamLoop : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(32,13603) /* TWeakObjectPtr<UMidiFile*> */ __um(MidiFileMajor);                                  // 0x0030   (0x0020)  
-	SDK_UNDEFINED(32,13604) /* TWeakObjectPtr<UMidiFile*> */ __um(MidiFileMinor);                                  // 0x0050   (0x0020)  
-	SDK_UNDEFINED(32,13605) /* TWeakObjectPtr<UFusionPatch*> */ __um(FusionPatchMajor);                            // 0x0070   (0x0020)  
-	SDK_UNDEFINED(32,13606) /* TWeakObjectPtr<UFusionPatch*> */ __um(FusionPatchMinor);                            // 0x0090   (0x0020)  
+	SDK_UNDEFINED(32,13658) /* TWeakObjectPtr<UMidiFile*> */ __um(MidiFileMajor);                                  // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,13659) /* TWeakObjectPtr<UMidiFile*> */ __um(MidiFileMinor);                                  // 0x0050   (0x0020)  
+	SDK_UNDEFINED(32,13660) /* TWeakObjectPtr<UFusionPatch*> */ __um(FusionPatchMajor);                            // 0x0070   (0x0020)  
+	SDK_UNDEFINED(32,13661) /* TWeakObjectPtr<UFusionPatch*> */ __um(FusionPatchMinor);                            // 0x0090   (0x0020)  
 	bool                                               bOverrideDefaultTransposition;                              // 0x00B0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x00B1   (0x0007)  MISSED
-	SDK_UNDEFINED(80,13607) /* TMap<EMusicKey, int32_t> */ __um(Transposes);                                       // 0x00B8   (0x0050)  
-	SDK_UNDEFINED(32,13608) /* TWeakObjectPtr<UFMJamSong*> */ __um(Song);                                          // 0x0108   (0x0020)  
+	SDK_UNDEFINED(80,13662) /* TMap<EMusicKey, int32_t> */ __um(Transposes);                                       // 0x00B8   (0x0050)  
+	SDK_UNDEFINED(32,13663) /* TWeakObjectPtr<UFMJamSong*> */ __um(Song);                                          // 0x0108   (0x0020)  
 
 
 	/// Functions
 	// Function /Script/FMJamCatalogRuntime.FMJamLoop.HasPitch
-	// bool HasPitch();                                                                                                      // [0xb5fd680] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasPitch();                                                                                                      // [0xb85dd60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamLoop.GetSong
-	// class UFMJamSong* GetSong();                                                                                          // [0xb5fcce8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFMJamSong* GetSong();                                                                                          // [0xb85d2c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamLoop.GetSemitoneTranspose
-	// int32_t GetSemitoneTranspose(EMusicKey ToKey);                                                                        // [0xb5fcc5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSemitoneTranspose(EMusicKey ToKey);                                                                        // [0xb85d1f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamLoop.GetMinorMidi
-	// void GetMinorMidi(TWeakObjectPtr<UMidiFile*>& OutMetasoundMidi, TWeakObjectPtr<UFusionPatch*>& OutMetasoundFusion);   // [0xb5fc390] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetMinorMidi(TWeakObjectPtr<UMidiFile*>& OutMetasoundMidi, TWeakObjectPtr<UFusionPatch*>& OutMetasoundFusion);   // [0xb85c8e8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamLoop.GetMidi
-	// void GetMidi(EMusicKeyMode Mode, TWeakObjectPtr<UMidiFile*>& OutMetasoundMidi, TWeakObjectPtr<UFusionPatch*>& OutMetasoundFusion); // [0xb5fc238] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetMidi(EMusicKeyMode Mode, TWeakObjectPtr<UMidiFile*>& OutMetasoundMidi, TWeakObjectPtr<UFusionPatch*>& OutMetasoundFusion); // [0xb85c74c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamLoop.GetMajorMidi
-	// void GetMajorMidi(TWeakObjectPtr<UMidiFile*>& OutMetasoundMidi, TWeakObjectPtr<UFusionPatch*>& OutMetasoundFusion);   // [0xb5fc120] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetMajorMidi(TWeakObjectPtr<UMidiFile*>& OutMetasoundMidi, TWeakObjectPtr<UFusionPatch*>& OutMetasoundFusion);   // [0xb85c634] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamLoop.GetLoopType
-	// EFMJamLoopType GetLoopType();                                                                                         // [0xb5fbecc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFMJamLoopType GetLoopType();                                                                                         // [0xb85c3a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamLoop.GetKey
-	// EMusicKey GetKey();                                                                                                   // [0xb5fbdcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMusicKey GetKey();                                                                                                   // [0xb85c264] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FMJamCatalogRuntime.FMJamSong
@@ -123,11 +124,11 @@ public:
 	FName                                              SongShortName;                                              // 0x0030   (0x0004)  
 	EJamSongSource                                     SongDataSource;                                             // 0x0034   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0035   (0x0003)  MISSED
-	SDK_UNDEFINED(32,13609) /* TWeakObjectPtr<UTexture2D*> */ __um(AlbumArt);                                      // 0x0038   (0x0020)  
-	SDK_UNDEFINED(16,13610) /* FString */              __um(UEFNLinkCode);                                         // 0x0058   (0x0010)  
+	SDK_UNDEFINED(32,13664) /* TWeakObjectPtr<UTexture2D*> */ __um(AlbumArt);                                      // 0x0038   (0x0020)  
+	SDK_UNDEFINED(16,13665) /* FString */              __um(UEFNLinkCode);                                         // 0x0058   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0068   (0x0008)  MISSED
-	SDK_UNDEFINED(24,13611) /* FText */                __um(Title);                                                // 0x0070   (0x0018)  
-	SDK_UNDEFINED(24,13612) /* FText */                __um(Artist);                                               // 0x0088   (0x0018)  
+	SDK_UNDEFINED(24,13666) /* FText */                __um(Title);                                                // 0x0070   (0x0018)  
+	SDK_UNDEFINED(24,13667) /* FText */                __um(Artist);                                               // 0x0088   (0x0018)  
 	int32_t                                            Year;                                                       // 0x00A0   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x00A4   (0x0004)  MISSED
 	FGameplayTagContainer                              AdditionalTags;                                             // 0x00A8   (0x0020)  
@@ -139,32 +140,32 @@ public:
 	class UFMJamLoop*                                  Misc;                                                       // 0x00D8   (0x0008)  
 	class UFMJamLoop*                                  Bass;                                                       // 0x00E0   (0x0008)  
 	class UFMJamLoop*                                  Beat;                                                       // 0x00E8   (0x0008)  
-	SDK_UNDEFINED(32,13613) /* TWeakObjectPtr<UAnimSequence*> */ __um(LipSyncAnimAsset);                           // 0x00F0   (0x0020)  
+	SDK_UNDEFINED(32,13668) /* TWeakObjectPtr<UAnimSequence*> */ __um(LipSyncAnimAsset);                           // 0x00F0   (0x0020)  
 
 
 	/// Functions
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetYear
-	// int32_t GetYear();                                                                                                    // [0xb5fd65c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetYear();                                                                                                    // [0xb85dd3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetTitle
-	// FString GetTitle();                                                                                                   // [0xb5fd61c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetTitle();                                                                                                   // [0xb85dcfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetTempo
-	// int32_t GetTempo();                                                                                                   // [0xb5fd5d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTempo();                                                                                                   // [0xb85dcb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetSongShortName
-	// FName GetSongShortName();                                                                                             // [0x6339b64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetSongShortName();                                                                                             // [0x605a6a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetMode
-	// EMusicKeyMode GetMode();                                                                                              // [0xb5fc4a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMusicKeyMode GetMode();                                                                                              // [0xb85ca00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetLoopTypeForLoop
-	// EFMJamLoopType GetLoopTypeForLoop(class UFMJamLoop* Loop);                                                            // [0xb5fbfe4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFMJamLoopType GetLoopTypeForLoop(class UFMJamLoop* Loop);                                                            // [0xb85c4b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetLoop
-	// class UFMJamLoop* GetLoop(EFMJamLoopType LoopType);                                                                   // [0xb5fbe3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFMJamLoop* GetLoop(EFMJamLoopType LoopType);                                                                   // [0xb85c2d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetLipSyncAnimAsset
-	// TWeakObjectPtr<UAnimSequence*> GetLipSyncAnimAsset();                                                                 // [0xb5fbe14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UAnimSequence*> GetLipSyncAnimAsset();                                                                 // [0xb85c2ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetKey
-	// EMusicKey GetKey();                                                                                                   // [0xb5fbdf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMusicKey GetKey();                                                                                                   // [0xb85c288] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetArtist
-	// FString GetArtist();                                                                                                  // [0xb5fbc84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetArtist();                                                                                                  // [0xb85c09c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSong.GetAdditionalTags
-	// FGameplayTagContainer GetAdditionalTags();                                                                            // [0xb5fbc5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetAdditionalTags();                                                                            // [0xb85c074] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FMJamCatalogRuntime.FMJamSongCatalog
@@ -173,7 +174,7 @@ class UFMJamSongCatalog : public UGameStateComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x48];                                      // 0x00A0   (0x0048)  MISSED
-	SDK_UNDEFINED(80,13614) /* TMap<FName, UFMJamSong*> */ __um(SongsByShortName);                                 // 0x00E8   (0x0050)  
+	SDK_UNDEFINED(80,13669) /* TMap<FName, UFMJamSong*> */ __um(SongsByShortName);                                 // 0x00E8   (0x0050)  
 	class USparksSongCatalog*                          CachedCMSCatalog;                                           // 0x0138   (0x0008)  
 	int32_t                                            NumCMSRetries;                                              // 0x0140   (0x0004)  
 	bool                                               bHaveSongCatalog;                                           // 0x0144   (0x0001)  
@@ -182,41 +183,41 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.TryGetFMJamSongCatalog
-	// class UFMJamSongCatalog* TryGetFMJamSongCatalog(class UObject* WorldContextObject);                                   // [0xb5fd834] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UFMJamSongCatalog* TryGetFMJamSongCatalog(class UObject* WorldContextObject);                                   // [0xb85df54] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.OnSongCatalogRetrieved
-	// void OnSongCatalogRetrieved(bool bSuccess);                                                                           // [0x37a8f60] Final|Native|Private 
+	// void OnSongCatalogRetrieved(bool bSuccess);                                                                           // [0x2e48974] Final|Native|Private 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.HaveCMSSongCatalog
-	// bool HaveCMSSongCatalog();                                                                                            // [0xb5fd6b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HaveCMSSongCatalog();                                                                                            // [0xb85dd90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.GetSortedSongList
-	// TArray<UFMJamSong*> GetSortedSongList(EFMJamSongCatalogSortMethod SortMethod, EFMJamSongCatalogSortDirection SortDirection, FGameplayTagQuery& TagQuery); // [0xb5fce60] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFMJamSong*> GetSortedSongList(EFMJamSongCatalogSortMethod SortMethod, EFMJamSongCatalogSortDirection SortDirection, FGameplayTagQuery& TagQuery); // [0xb85d4c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.GetSongCatalogEntryByShortName
-	// class UCatalogData* GetSongCatalogEntryByShortName(FName ShortName);                                                  // [0xb5fcd98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCatalogData* GetSongCatalogEntryByShortName(FName ShortName);                                                  // [0xb85d3b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.GetSongByShortName
-	// class UFMJamSong* GetSongByShortName(FName ShortName);                                                                // [0xb5fcd0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFMJamSong* GetSongByShortName(FName ShortName);                                                                // [0xb85d2e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.GetRandomSongList
-	// TArray<UFMJamSong*> GetRandomSongList(int32_t NumSongs, FGameplayTagQuery& TagQuery);                                 // [0xb5fc4f0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UFMJamSong*> GetRandomSongList(int32_t NumSongs, FGameplayTagQuery& TagQuery);                                 // [0xb85ca48] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.GetLoopTypeText
-	// FText GetLoopTypeText(EFMJamLoopType& LoopType);                                                                      // [0xb5fc074] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FText GetLoopTypeText(EFMJamLoopType& LoopType);                                                                      // [0xb85c588] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.GetLoopTypeByTag
-	// EFMJamLoopType GetLoopTypeByTag(FGameplayTag& LoopTag);                                                               // [0xb5fbf1c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// EFMJamLoopType GetLoopTypeByTag(FGameplayTag& LoopTag);                                                               // [0xb85c3f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FMJamCatalogRuntime.FMJamSongCatalog.GetFMJamSongCatalog
-	// class UFMJamSongCatalog* GetFMJamSongCatalog(class UObject* WorldContextObject);                                      // [0xb5fbcc4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UFMJamSongCatalog* GetFMJamSongCatalog(class UObject* WorldContextObject);                                      // [0xb85c0dc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/FMJamCatalogRuntime.FortJamEmoteItemDefinition
-/// Size: 0x0008 (0x0009B8 - 0x0009C0)
+/// Size: 0x0008 (0x000978 - 0x000980)
 class UFortJamEmoteItemDefinition : public UAthenaDanceItemDefinition
 { 
 public:
-	uint32_t                                           SongIndex;                                                  // 0x09B8   (0x0004)  
-	bool                                               ReadSongDataFromAllOwnedSongs;                              // 0x09BC   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x3];                                       // 0x09BD   (0x0003)  MISSED
+	uint32_t                                           SongIndex;                                                  // 0x0978   (0x0004)  
+	bool                                               ReadSongDataFromAllOwnedSongs;                              // 0x097C   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x3];                                       // 0x097D   (0x0003)  MISSED
 
 
 	/// Functions
 	// Function /Script/FMJamCatalogRuntime.FortJamEmoteItemDefinition.IsJamLoopEnabled
-	// bool IsJamLoopEnabled(class AFortPlayerController* PlayerController);                                                 // [0xb5fd6c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsJamLoopEnabled(class AFortPlayerController* PlayerController);                                                 // [0xb85dda8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMJamCatalogRuntime.FortJamEmoteItemDefinition.GetJamSongShortNameForPlayer
-	// FName GetJamSongShortNameForPlayer(class AFortPlayerState* PlayerState);                                              // [0xb5fbd44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetJamSongShortNameForPlayer(class AFortPlayerState* PlayerState);                                              // [0xb85c19c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

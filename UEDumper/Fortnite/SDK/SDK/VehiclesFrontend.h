@@ -15,7 +15,7 @@
 /// dependency: ModelViewViewModel
 
 /// Class /Script/VehiclesFrontend.DelMarItemDetailsVM
-/// Size: 0x0000 (0x000390 - 0x000390)
+/// Size: 0x0000 (0x0003C0 - 0x0003C0)
 class UDelMarItemDetailsVM : public UAthenaItemDetailsVM
 { 
 public:
@@ -29,16 +29,16 @@ public:
 };
 
 /// Class /Script/VehiclesFrontend.DelMarLockerCategoryConfig
-/// Size: 0x0018 (0x000130 - 0x000148)
+/// Size: 0x0018 (0x000128 - 0x000140)
 class UDelMarLockerCategoryConfig : public UAthenaLockerCategoryConfig
 { 
 public:
-	class UCosmeticLoadoutSchema*                      VehicleLoadoutSchema;                                       // 0x0130   (0x0008)  
-	TArray<FPrimaryAssetType>                          AllowedAssetTypes;                                          // 0x0138   (0x0010)  
+	class UCosmeticLoadoutSchema*                      VehicleLoadoutSchema;                                       // 0x0128   (0x0008)  
+	TArray<FPrimaryAssetType>                          AllowedAssetTypes;                                          // 0x0130   (0x0010)  
 };
 
 /// Class /Script/VehiclesFrontend.DelMarLockerCategoryVM
-/// Size: 0x0000 (0x000170 - 0x000170)
+/// Size: 0x0000 (0x0001B0 - 0x0001B0)
 class UDelMarLockerCategoryVM : public UAthenaLockerCategoryVM
 { 
 public:

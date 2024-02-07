@@ -19,12 +19,12 @@ struct FEngineServicePing
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FEngineServicePong
 { 
-	SDK_UNDEFINED(16,13238) /* FString */              __um(CurrentLevel);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13290) /* FString */              __um(CurrentLevel);                                         // 0x0000   (0x0010)  
 	int32_t                                            EngineVersion;                                              // 0x0010   (0x0004)  
 	bool                                               HasBegunPlay;                                               // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0015   (0x0003)  MISSED
 	FGuid                                              InstanceID;                                                 // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,13239) /* FString */              __um(InstanceType);                                         // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,13291) /* FString */              __um(InstanceType);                                         // 0x0028   (0x0010)  
 	FGuid                                              SessionId;                                                  // 0x0038   (0x0010)  
 	float                                              WorldTimeSeconds;                                           // 0x0048   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x004C   (0x0004)  MISSED
@@ -34,38 +34,38 @@ struct FEngineServicePong
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FEngineServiceAuthDeny
 { 
-	SDK_UNDEFINED(16,13240) /* FString */              __um(UserName);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13241) /* FString */              __um(UserToDeny);                                           // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13292) /* FString */              __um(UserName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13293) /* FString */              __um(UserToDeny);                                           // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/EngineMessages.EngineServiceAuthGrant
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FEngineServiceAuthGrant
 { 
-	SDK_UNDEFINED(16,13242) /* FString */              __um(UserName);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13243) /* FString */              __um(UserToGrant);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13294) /* FString */              __um(UserName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13295) /* FString */              __um(UserToGrant);                                          // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/EngineMessages.EngineServiceExecuteCommand
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FEngineServiceExecuteCommand
 { 
-	SDK_UNDEFINED(16,13244) /* FString */              __um(Command);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,13245) /* FString */              __um(UserName);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13296) /* FString */              __um(Command);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13297) /* FString */              __um(UserName);                                             // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/EngineMessages.EngineServiceTerminate
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FEngineServiceTerminate
 { 
-	SDK_UNDEFINED(16,13246) /* FString */              __um(UserName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13298) /* FString */              __um(UserName);                                             // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/EngineMessages.EngineServiceNotification
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FEngineServiceNotification
 { 
-	SDK_UNDEFINED(16,13247) /* FString */              __um(Text);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13299) /* FString */              __um(Text);                                                 // 0x0000   (0x0010)  
 	double                                             TimeSeconds;                                                // 0x0010   (0x0008)  
 };
 

@@ -37,11 +37,11 @@ public:
 };
 
 /// Class /Script/VerseDevices.ScriptDevice
-/// Size: 0x0038 (0x000BC8 - 0x000C00)
+/// Size: 0x0028 (0x000BC8 - 0x000BF0)
 class AScriptDevice : public ABuildingProp
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3072;
+	static inline constexpr uint64_t __MDKClassSize = 3056;
 
 public:
 	CMember(class UVerseCreativeDevice*)               Script                                                      OFFSET(get<T>, {0xBD0, 8, 0, 0})
@@ -50,9 +50,9 @@ public:
 
 	/// Functions
 	// Function /Script/VerseDevices.ScriptDevice.SetEnabled
-	// void SetEnabled(bool bInEnabled);                                                                                        // [0xa6d3ed0] Final|Native|Protected|BlueprintCallable 
+	// void SetEnabled(bool bInEnabled);                                                                                        // [0xa883e7c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VerseDevices.ScriptDevice.BP_SetVisibility
-	// void BP_SetVisibility(bool bVisible);                                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_SetVisibility(bool bVisible);                                                                                    // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/VerseDevices.VerseMovableObjectBase
@@ -66,13 +66,14 @@ public:
 };
 
 /// Class /Script/VerseDevices.VerseCreativeDevice
-/// Size: 0x0010 (0x0000A0 - 0x0000B0)
+/// Size: 0x0020 (0x0000A0 - 0x0000C0)
 class UVerseCreativeDevice : public UVerseMovableObjectBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 176;
+	static inline constexpr uint64_t __MDKClassSize = 192;
 
 public:
+	CMember(class AActor*)                             ActorOwner                                                  OFFSET(get<T>, {0xB0, 8, 0, 0})
 };
 
 /// Class /Script/VerseDevices.VerseCreativeObject
@@ -108,14 +109,19 @@ public:
 };
 
 /// Class /Script/VerseDevices.VerseDeviceSubsystem
-/// Size: 0x0110 (0x000030 - 0x000140)
+/// Size: 0x0160 (0x000030 - 0x000190)
 class UVerseDeviceSubsystem : public UWorldSubsystem
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 320;
+	static inline constexpr uint64_t __MDKClassSize = 400;
 
 public:
 	CMember(TMap<TWeakObjectPtr<UClass*>, UVerseClass*>) DeviceClassToVerseClassMap                                OFFSET(get<T>, {0x30, 80, 0, 0})
+
+
+	/// Functions
+	// Function /Script/VerseDevices.VerseDeviceSubsystem.HandleMinigameStateChanged
+	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                     // [0xa883b9c] Final|Native|Private 
 };
 
 /// Class /Script/VerseDevices.VerseDeviceWrapperClassMap

@@ -22,7 +22,7 @@ public:
 class UForwardingChannelsSubsystem : public UGameInstanceSubsystem
 { 
 public:
-	SDK_UNDEFINED(16,13752) /* TArray<TScriptInterface<Class>> */ __um(ForwardingChannelFactories);                // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,13818) /* TArray<TScriptInterface<Class>> */ __um(ForwardingChannelFactories);                // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x58];                                      // 0x0040   (0x0058)  MISSED
 };
 

@@ -79,10 +79,10 @@ struct FClothPhysicalMeshData
 	TArray<FVector3f>                                  Vertices;                                                   // 0x0000   (0x0010)  
 	TArray<FVector3f>                                  Normals;                                                    // 0x0010   (0x0010)  
 	TArray<uint32_t>                                   Indices;                                                    // 0x0020   (0x0010)  
-	SDK_UNDEFINED(80,1280) /* TMap<uint32_t, FPointWeightMap> */ __um(WeightMaps);                                 // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,1283) /* TMap<uint32_t, FPointWeightMap> */ __um(WeightMaps);                                 // 0x0030   (0x0050)  
 	TArray<float>                                      InverseMasses;                                              // 0x0080   (0x0010)  
 	TArray<FClothVertBoneData>                         BoneData;                                                   // 0x0090   (0x0010)  
-	SDK_UNDEFINED(80,1281) /* TSet<int32_t> */         __um(SelfCollisionVertexSet);                               // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,1284) /* TSet<int32_t> */         __um(SelfCollisionVertexSet);                               // 0x00A0   (0x0050)  
 	FClothTetherData                                   EuclideanTethers;                                           // 0x00F0   (0x0010)  
 	FClothTetherData                                   GeodesicTethers;                                            // 0x0100   (0x0010)  
 	int32_t                                            MaxBoneWeights;                                             // 0x0110   (0x0004)  
@@ -109,7 +109,7 @@ class UClothingAssetCommon : public UClothingAssetBase
 { 
 public:
 	class UPhysicsAsset*                               PhysicsAsset;                                               // 0x0048   (0x0008)  
-	SDK_UNDEFINED(80,1282) /* TMap<FName, UClothConfigBase*> */ __um(ClothConfigs);                                // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,1285) /* TMap<FName, UClothConfigBase*> */ __um(ClothConfigs);                                // 0x0050   (0x0050)  
 	TArray<FClothLODDataCommon>                        LODData;                                                    // 0x00A0   (0x0010)  
 	TArray<int32_t>                                    LodMap;                                                     // 0x00B0   (0x0010)  
 	TArray<FName>                                      UsedBoneNames;                                              // 0x00C0   (0x0010)  

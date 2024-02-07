@@ -41,13 +41,13 @@ struct FJunoPOIEncounterSaveData
 { 
 	bool                                               bEncounterChosen;                                           // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(32,14067) /* TWeakObjectPtr<UEncounterItemDefinition*> */ __um(ChosenEncounterDefinition);       // 0x0008   (0x0020)  
-	SDK_UNDEFINED(32,14068) /* TWeakObjectPtr<UEncounterFactionData*> */ __um(ChosenFaction);                      // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,14181) /* TWeakObjectPtr<UEncounterItemDefinition*> */ __um(ChosenEncounterDefinition);       // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,14182) /* TWeakObjectPtr<UEncounterFactionData*> */ __um(ChosenFaction);                      // 0x0028   (0x0020)  
 	int32_t                                            ChosenVariant;                                              // 0x0048   (0x0004)  
 	FDataRegistryId                                    EncounterRow;                                               // 0x004C   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0054   (0x0004)  MISSED
-	SDK_UNDEFINED(80,14069) /* TMap<FGameplayTag, FPersistenceFrameworkDataTableRowHandle> */ __um(Variables);     // 0x0058   (0x0050)  
-	SDK_UNDEFINED(80,14070) /* TMap<FGameplayTag, int32_t> */ __um(PersistentValues);                              // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,14183) /* TMap<FGameplayTag, FPersistenceFrameworkDataTableRowHandle> */ __um(Variables);     // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,14184) /* TMap<FGameplayTag, int32_t> */ __um(PersistentValues);                              // 0x00A8   (0x0050)  
 	bool                                               bIsPOISetup;                                                // 0x00F8   (0x0001)  
 	bool                                               bEncounterFinished;                                         // 0x00F9   (0x0001)  
 	bool                                               bFactionChosen;                                             // 0x00FA   (0x0001)  
@@ -55,19 +55,19 @@ struct FJunoPOIEncounterSaveData
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPlayspaceComponent
-/// Size: 0x0210 (0x0000F8 - 0x000308)
+/// Size: 0x0230 (0x0000F8 - 0x000328)
 class UJunoPOIEncounterPlayspaceComponent : public UJunoConnectedActorLevelPlayspaceComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00F8   (0x0008)  MISSED
-	SDK_UNDEFINED(32,14071) /* TWeakObjectPtr<UClass*> */ __um(EncounterPrefabClass);                              // 0x0100   (0x0020)  
+	SDK_UNDEFINED(32,14185) /* TWeakObjectPtr<UClass*> */ __um(EncounterPrefabClass);                              // 0x0100   (0x0020)  
 	TArray<FGameplayTagQuery>                          VariantQueries;                                             // 0x0120   (0x0010)  
-	SDK_UNDEFINED(8,14072) /* TWeakObjectPtr<AJunoPOIGameplayVolume*> */ __um(POIPlayspaceVolume);                 // 0x0130   (0x0008)  
-	SDK_UNDEFINED(8,14073) /* TWeakObjectPtr<AJunoPOIEncounterPrefab*> */ __um(EncounterPrefab);                   // 0x0138   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0140   (0x0010)  MISSED
-	FJunoPOIEncounterSaveData                          EncounterConfigData;                                        // 0x0150   (0x0100)  
-	SDK_UNDEFINED(32,14074) /* TWeakObjectPtr<UDataTable*> */ __um(EncounterCategoryTable);                        // 0x0250   (0x0020)  
-	unsigned char                                      UnknownData02_6[0x98];                                      // 0x0270   (0x0098)  MISSED
+	SDK_UNDEFINED(8,14186) /* TWeakObjectPtr<AJunoPOIGameplayVolume*> */ __um(POIPlayspaceVolume);                 // 0x0130   (0x0008)  
+	SDK_UNDEFINED(8,14187) /* TWeakObjectPtr<AJunoPOIEncounterPrefab*> */ __um(EncounterPrefab);                   // 0x0138   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x18];                                      // 0x0140   (0x0018)  MISSED
+	FJunoPOIEncounterSaveData                          EncounterConfigData;                                        // 0x0158   (0x0100)  
+	SDK_UNDEFINED(32,14188) /* TWeakObjectPtr<UDataTable*> */ __um(EncounterCategoryTable);                        // 0x0258   (0x0020)  
+	unsigned char                                      UnknownData02_6[0xB0];                                      // 0x0278   (0x00B0)  MISSED
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoSpawnActorTaskHelper
@@ -87,15 +87,15 @@ struct FJunoEncounterConditionalTags
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoEncounterStaticPointProvider
-/// Size: 0x0070 (0x000378 - 0x0003E8)
+/// Size: 0x0070 (0x000390 - 0x000400)
 class AJunoEncounterStaticPointProvider : public AEncounterStaticPointProvider
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0378   (0x0010)  MISSED
-	FJunoLivingWorldPointProviderEventLimiter          EventLimiter;                                               // 0x0388   (0x0020)  
-	TArray<FJunoEncounterConditionalTags>              ConditionalTags;                                            // 0x03A8   (0x0010)  
-	FGuid                                              SavedActorGuid;                                             // 0x03B8   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x20];                                      // 0x03C8   (0x0020)  MISSED
+	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0390   (0x0010)  MISSED
+	FJunoLivingWorldPointProviderEventLimiter          EventLimiter;                                               // 0x03A0   (0x0020)  
+	TArray<FJunoEncounterConditionalTags>              ConditionalTags;                                            // 0x03C0   (0x0010)  
+	FGuid                                              SavedActorGuid;                                             // 0x03D0   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x20];                                      // 0x03E0   (0x0020)  MISSED
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPersistenceFeatureData
@@ -124,37 +124,38 @@ public:
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPrefab
-/// Size: 0x0010 (0x0009A8 - 0x0009B8)
+/// Size: 0x0010 (0x0009C8 - 0x0009D8)
 class AJunoPOIEncounterPrefab : public ALivingWorldEncounterPrefab
 { 
 public:
-	bool                                               bEncounterShouldBeLoaded;                                   // 0x09A8   (0x0001)  
-	bool                                               bEncounterIsInitialized;                                    // 0x09A9   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x09AA   (0x0002)  MISSED
-	SDK_UNDEFINED(8,14075) /* TWeakObjectPtr<UJunoPOIEncounterPlayspaceComponent*> */ __um(POIPlayspaceComponent); // 0x09AC   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x09B4   (0x0004)  MISSED
+	bool                                               bEncounterShouldBeLoaded;                                   // 0x09C8   (0x0001)  
+	bool                                               bEncounterIsInitialized;                                    // 0x09C9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x09CA   (0x0002)  MISSED
+	SDK_UNDEFINED(8,14189) /* TWeakObjectPtr<UJunoPOIEncounterPlayspaceComponent*> */ __um(POIPlayspaceComponent); // 0x09CC   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x09D4   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPrefab.OnRep_EncounterShouldBeLoaded
-	// void OnRep_EncounterShouldBeLoaded();                                                                                 // [0x88ae94c] Final|Native|Private 
+	// void OnRep_EncounterShouldBeLoaded();                                                                                 // [0x886368c] Final|Native|Private 
 	// Function /Script/JunoEncountersPOIRuntime.JunoPOIEncounterPrefab.OnRep_EncounterInitialized
-	// void OnRep_EncounterInitialized();                                                                                    // [0xbd39ed0] Final|Native|Private 
+	// void OnRep_EncounterInitialized();                                                                                    // [0xc0733bc] Final|Native|Private 
 };
 
 /// Class /Script/JunoEncountersPOIRuntime.JunoPOIEncounterSpawner
-/// Size: 0x0008 (0x000290 - 0x000298)
+/// Size: 0x0018 (0x000290 - 0x0002A8)
 class AJunoPOIEncounterSpawner : public AActor
 { 
 public:
-	SDK_UNDEFINED(8,14076) /* TWeakObjectPtr<UJunoPOIEncounterPlayspaceComponent*> */ __um(POIEncountersPlayspace); // 0x0290   (0x0008)  
+	SDK_UNDEFINED(8,14190) /* TWeakObjectPtr<UJunoPOIEncounterPlayspaceComponent*> */ __um(POIEncountersPlayspace); // 0x0290   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0298   (0x0010)  MISSED
 };
 
 /// Struct /Script/JunoEncountersPOIRuntime.JunoEnableVillagerProviderStateTreeTaskInstanceData
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FJunoEnableVillagerProviderStateTreeTaskInstanceData
 { 
-	SDK_UNDEFINED(8,14077) /* TWeakObjectPtr<AJunoEncounterStaticPointProvider*> */ __um(VillagerProvider);        // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,14191) /* TWeakObjectPtr<AJunoEncounterStaticPointProvider*> */ __um(VillagerProvider);        // 0x0000   (0x0008)  
 	bool                                               bEnableProvider;                                            // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
 	class AActor*                                      UserActor;                                                  // 0x0010   (0x0008)  
@@ -172,7 +173,7 @@ struct FJunoGetVillagerProviderStateTreeTaskInstanceData
 { 
 	FGameplayTagQuery                                  ProviderTagQuery;                                           // 0x0000   (0x0048)  
 	class AActor*                                      UserActor;                                                  // 0x0048   (0x0008)  
-	SDK_UNDEFINED(8,14078) /* TWeakObjectPtr<AJunoEncounterStaticPointProvider*> */ __um(VillagerProvider);        // 0x0050   (0x0008)  
+	SDK_UNDEFINED(8,14192) /* TWeakObjectPtr<AJunoEncounterStaticPointProvider*> */ __um(VillagerProvider);        // 0x0050   (0x0008)  
 };
 
 /// Struct /Script/JunoEncountersPOIRuntime.JunoGetVillagerProviderStateTreeTask
@@ -185,7 +186,7 @@ struct FJunoGetVillagerProviderStateTreeTask : FStateTreeTaskCommonBase
 /// Size: 0x0088 (0x000008 - 0x000090)
 struct FJunoPOIEncounterCategoryRow : FTableRowBase
 { 
-	SDK_UNDEFINED(32,14079) /* TWeakObjectPtr<UDataRegistry*> */ __um(POIEncounterRegistry);                       // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,14193) /* TWeakObjectPtr<UDataRegistry*> */ __um(POIEncounterRegistry);                       // 0x0008   (0x0020)  
 	FGameplayTagQuery                                  RequiredCapabilities;                                       // 0x0028   (0x0048)  
 	FWorldConditionQueryDefinition                     WorldConditionDefinition;                                   // 0x0070   (0x0018)  
 	float                                              Weight;                                                     // 0x0088   (0x0004)  
@@ -219,7 +220,7 @@ struct FJunoPOIDestroyActorInfo
 /// Size: 0x0068 (0x000000 - 0x000068)
 struct FJunoPOIHLODActorInfo
 { 
-	SDK_UNDEFINED(32,14080) /* TWeakObjectPtr<UClass*> */ __um(HLODActorClass);                                    // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,14194) /* TWeakObjectPtr<UClass*> */ __um(HLODActorClass);                                    // 0x0000   (0x0020)  
 	FGameplayTagQuery                                  HLODActorAnchorQuery;                                       // 0x0020   (0x0048)  
 };
 
@@ -228,7 +229,7 @@ struct FJunoPOIHLODActorInfo
 struct FJunoPOIEncounterRow : FTableRowBase
 { 
 	class UEncounterItemDefinition*                    EncounterDefinition;                                        // 0x0008   (0x0008)  
-	SDK_UNDEFINED(32,14081) /* TWeakObjectPtr<UDataRegistry*> */ __um(FactionRegistry);                            // 0x0010   (0x0020)  
+	SDK_UNDEFINED(32,14195) /* TWeakObjectPtr<UDataRegistry*> */ __um(FactionRegistry);                            // 0x0010   (0x0020)  
 	FGameplayTagQuery                                  RequiredCapabilities;                                       // 0x0030   (0x0048)  
 	FWorldConditionQueryDefinition                     WorldConditionDefinition;                                   // 0x0078   (0x0018)  
 	TArray<FJunoPOIHLODActorInfo>                      HLODActorsEntries;                                          // 0x0090   (0x0010)  
@@ -242,7 +243,7 @@ struct FJunoPOIEncounterRow : FTableRowBase
 /// Size: 0x00F8 (0x000000 - 0x0000F8)
 struct FJunoSpawnActorStateTreeTaskInstanceData
 { 
-	SDK_UNDEFINED(32,14082) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                        // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,14196) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                        // 0x0000   (0x0020)  
 	FGameplayTagQuery                                  AnchorQuery;                                                // 0x0020   (0x0048)  
 	FVector                                            AnchorOffset;                                               // 0x0068   (0x0018)  
 	bool                                               bEnablePhysics;                                             // 0x0080   (0x0001)  
@@ -255,7 +256,7 @@ struct FJunoSpawnActorStateTreeTaskInstanceData
 	FGameplayTag                                       PersistenceID;                                              // 0x00CC   (0x0004)  
 	bool                                               bWaitForSpawnedActor;                                       // 0x00D0   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x00D1   (0x0003)  MISSED
-	SDK_UNDEFINED(8,14083) /* TWeakObjectPtr<AActor*> */ __um(SpawnedActor);                                       // 0x00D4   (0x0008)  
+	SDK_UNDEFINED(8,14197) /* TWeakObjectPtr<AActor*> */ __um(SpawnedActor);                                       // 0x00D4   (0x0008)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x00DC   (0x0004)  MISSED
 	class AActor*                                      UserActor;                                                  // 0x00E0   (0x0008)  
 	class UJunoSpawnActorTaskHelper*                   JunoSpawnActorHelper;                                       // 0x00E8   (0x0008)  
@@ -290,7 +291,7 @@ struct FFindPrefabSpawnedActorStateTreeTaskInstanceData
 { 
 	class UClass*                                      MustBeOfClass;                                              // 0x0000   (0x0008)  
 	class AActor*                                      UserActor;                                                  // 0x0008   (0x0008)  
-	SDK_UNDEFINED(8,14084) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0010   (0x0008)  
+	SDK_UNDEFINED(8,14198) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0010   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0018   (0x0008)  MISSED
 };
 
@@ -306,9 +307,9 @@ struct FFindPrefabSpawnedActorStateTreeTask : FStateTreeTaskCommonBase
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FJunoVillagerProviderSpawnTransitionStateTreeTaskInstanceData
 { 
-	SDK_UNDEFINED(8,14085) /* TWeakObjectPtr<AJunoEncounterStaticPointProvider*> */ __um(VillagerProvider);        // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,14199) /* TWeakObjectPtr<AJunoEncounterStaticPointProvider*> */ __um(VillagerProvider);        // 0x0000   (0x0008)  
 	class AActor*                                      UserActor;                                                  // 0x0008   (0x0008)  
-	SDK_UNDEFINED(8,14086) /* TWeakObjectPtr<AActor*> */ __um(Villager);                                           // 0x0010   (0x0008)  
+	SDK_UNDEFINED(8,14200) /* TWeakObjectPtr<AActor*> */ __um(Villager);                                           // 0x0010   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0018   (0x0008)  MISSED
 };
 

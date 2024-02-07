@@ -105,13 +105,13 @@ public:
 
 	/// Functions
 	// Function /Script/GiftingUI.AthenaGiftingConfirmationScreen.OnPresentationModeChanged
-	// void OnPresentationModeChanged(EGiftingPresentationMode NewMode);                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPresentationModeChanged(EGiftingPresentationMode NewMode);                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingConfirmationScreen.HandleTokenOfferPurchaseComplete
-	// void HandleTokenOfferPurchaseComplete(bool bSuccess, TArray<FPurchasedItemInfo>& PurchasedItems);                     // [0xb1e6ed8] Final|Native|Private|HasOutParms 
+	// void HandleTokenOfferPurchaseComplete(bool bSuccess, TArray<FPurchasedItemInfo>& PurchasedItems);                     // [0xb408458] Final|Native|Private|HasOutParms 
 	// Function /Script/GiftingUI.AthenaGiftingConfirmationScreen.HandleGiftSent
-	// void HandleGiftSent(bool bSuccess, TArray<FString>& IneligibleAccounts, TArray<FString>& ErrorCodes);                 // [0xb1e6b70] Final|Native|Private|HasOutParms 
+	// void HandleGiftSent(bool bSuccess, TArray<FString>& IneligibleAccounts, TArray<FString>& ErrorCodes);                 // [0xb4080bc] Final|Native|Private|HasOutParms 
 	// Function /Script/GiftingUI.AthenaGiftingConfirmationScreen.Dismiss
-	// void Dismiss(bool bGiftConfirmed);                                                                                    // [0xb1e6ad4] Final|Native|Private|BlueprintCallable 
+	// void Dismiss(bool bGiftConfirmed);                                                                                    // [0xb407fdc] Final|Native|Private|BlueprintCallable 
 };
 
 /// Class /Script/GiftingUI.AthenaGiftingErrorsPanel
@@ -130,7 +130,7 @@ public:
 
 	/// Functions
 	// Function /Script/GiftingUI.AthenaGiftingErrorsPanel.UpdateGiftEligibility
-	// void UpdateGiftEligibility(bool bStillGiftable);                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void UpdateGiftEligibility(bool bStillGiftable);                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/GiftingUI.AthenaGiftingPriceWidget
@@ -146,7 +146,7 @@ public:
 
 	/// Functions
 	// Function /Script/GiftingUI.AthenaGiftingPriceWidget.SetPresentationMode
-	// void SetPresentationMode(EGiftingPricePresentationMode Mode);                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void SetPresentationMode(EGiftingPricePresentationMode Mode);                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/GiftingUI.AthenaGiftingPurchaseButton
@@ -175,7 +175,7 @@ public:
 
 	/// Functions
 	// Function /Script/GiftingUI.AthenaGiftingPurchasePanel.PlayIntroAnimation
-	// void PlayIntroAnimation();                                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void PlayIntroAnimation();                                                                                            // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/GiftingUI.AthenaGiftingScreenGiftableItemsData
@@ -217,10 +217,10 @@ public:
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x07DC   (0x0004)  MISSED
 	FDataTableRowHandle                                FilterTabsPreviousAction;                                   // 0x07E0   (0x0010)  
 	FDataTableRowHandle                                FilterTabsNextAction;                                       // 0x07F0   (0x0010)  
-	SDK_UNDEFINED(24,13790) /* FText */                __um(RegularGiftingPolicy);                                 // 0x0800   (0x0018)  
-	SDK_UNDEFINED(24,13791) /* FText */                __um(BattlePassGiftingPolicy);                              // 0x0818   (0x0018)  
+	SDK_UNDEFINED(24,13857) /* FText */                __um(RegularGiftingPolicy);                                 // 0x0800   (0x0018)  
+	SDK_UNDEFINED(24,13858) /* FText */                __um(BattlePassGiftingPolicy);                              // 0x0818   (0x0018)  
 	unsigned char                                      UnknownData02_5[0x60];                                      // 0x0830   (0x0060)  MISSED
-	SDK_UNDEFINED(80,13792) /* TMap<UCommonButtonBase*, EFilterType> */ __um(FilterMap);                           // 0x0890   (0x0050)  
+	SDK_UNDEFINED(80,13859) /* TMap<UCommonButtonBase*, EFilterType> */ __um(FilterMap);                           // 0x0890   (0x0050)  
 	class UCommonButtonGroupBase*                      FilterGroup;                                                // 0x08E0   (0x0008)  
 	FAthenaGiftingScreenGiftableItemsData              GiftableItems;                                              // 0x08E8   (0x0030)  
 	class UFortItemDefinition*                         PresentedItemDefinition;                                    // 0x0918   (0x0008)  
@@ -230,23 +230,23 @@ public:
 
 	/// Functions
 	// Function /Script/GiftingUI.AthenaGiftingScreen.OnShowSearchWarningText
-	// void OnShowSearchWarningText(bool bShow);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnShowSearchWarningText(bool bShow);                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingScreen.OnShownItemChanged
-	// void OnShownItemChanged();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnShownItemChanged();                                                                                            // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingScreen.OnSetupFilterTabButton
-	// void OnSetupFilterTabButton(class UCommonButtonBase* Button, EFilterType FilterType);                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnSetupFilterTabButton(class UCommonButtonBase* Button, EFilterType FilterType);                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingScreen.OnPresentationModeChanged
-	// void OnPresentationModeChanged(EGiftingScreenPresentationMode Mode);                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPresentationModeChanged(EGiftingScreenPresentationMode Mode);                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingScreen.OnPartyListUpdated
-	// void OnPartyListUpdated(bool bEmpty);                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPartyListUpdated(bool bEmpty);                                                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingScreen.OnHandlePreviewItem
-	// void OnHandlePreviewItem(bool bUseWidePreview);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnHandlePreviewItem(bool bUseWidePreview);                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingScreen.OnFriendSelectionChanged
-	// void OnFriendSelectionChanged();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnFriendSelectionChanged();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingScreen.OnFilterChanged
-	// void OnFilterChanged(EFilterType FilterType);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnFilterChanged(EFilterType FilterType);                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.AthenaGiftingScreen.BlockScreenContent
-	// void BlockScreenContent(bool bBlockScreen, FText& ContentBlockedText);                                                // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BlockScreenContent(bool bBlockScreen, FText& ContentBlockedText);                                                // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/GiftingUI.AthenaGiftingWrapOptionsPanel
@@ -255,7 +255,7 @@ class UAthenaGiftingWrapOptionsPanel : public UCommonActivatableWidget
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x28];                                      // 0x0400   (0x0028)  MISSED
-	SDK_UNDEFINED(16,13793) /* TArray<TWeakObjectPtr<UFortGiftBoxItemDefinition*>> */ __um(GiftBoxes);             // 0x0428   (0x0010)  
+	SDK_UNDEFINED(16,13860) /* TArray<TWeakObjectPtr<UFortGiftBoxItemDefinition*>> */ __um(GiftBoxes);             // 0x0428   (0x0010)  
 	TArray<class UFortGiftBoxItemDefinition*>          GiftBoxItemDefs;                                            // 0x0438   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0448   (0x0010)  MISSED
 	class UCommonButtonLegacy*                         Button_ConfirmWrap;                                         // 0x0458   (0x0008)  
@@ -277,15 +277,15 @@ public:
 
 	/// Functions
 	// Function /Script/GiftingUI.FortGiftingSocialUserListEntry.SetPresentationMode
-	// void SetPresentationMode(ERecipientPresentationMode Mode);                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void SetPresentationMode(ERecipientPresentationMode Mode);                                                            // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.FortGiftingSocialUserListEntry.OnUserItemSet
-	// void OnUserItemSet();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnUserItemSet();                                                                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.FortGiftingSocialUserListEntry.OnRecipientStatusUpdated
-	// void OnRecipientStatusUpdated();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnRecipientStatusUpdated();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.FortGiftingSocialUserListEntry.BP_OnTouchSelectionConfirmed
-	// void BP_OnTouchSelectionConfirmed();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnTouchSelectionConfirmed();                                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.FortGiftingSocialUserListEntry.BP_OnHighlightedStateChanged
-	// void BP_OnHighlightedStateChanged(bool bInIsHighlighted, bool bPlayAnimation);                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnHighlightedStateChanged(bool bInIsHighlighted, bool bPlayAnimation);                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/GiftingUI.FortGiftingSocialUserListView
@@ -310,13 +310,13 @@ public:
 
 	/// Functions
 	// Function /Script/GiftingUI.FortGiftingUserSearchWidget.OnSearchCommit
-	// void OnSearchCommit(bool bSearchStringShort);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnSearchCommit(bool bSearchStringShort);                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/GiftingUI.FortGiftingUserSearchWidget.HandleSearchFriendsTextEntered
-	// void HandleSearchFriendsTextEntered(FText& Text, TEnumAsByte<ETextCommit> CommitMethod);                              // [0xb1e6d48] Final|Native|Private|HasOutParms 
+	// void HandleSearchFriendsTextEntered(FText& Text, TEnumAsByte<ETextCommit> CommitMethod);                              // [0xb4082c8] Final|Native|Private|HasOutParms 
 	// Function /Script/GiftingUI.FortGiftingUserSearchWidget.HandleSearchFriendsTextChanged
-	// void HandleSearchFriendsTextChanged(FText& Text);                                                                     // [0xb1e6cbc] Final|Native|Private|HasOutParms 
+	// void HandleSearchFriendsTextChanged(FText& Text);                                                                     // [0xb40823c] Final|Native|Private|HasOutParms 
 	// Function /Script/GiftingUI.FortGiftingUserSearchWidget.FocusEditableText
-	// void FocusEditableText();                                                                                             // [0xb1e6b54] Final|Native|Protected|BlueprintCallable 
+	// void FocusEditableText();                                                                                             // [0xb4080a0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/GiftingUI.FortGiftingWrapOptionListEntry
@@ -335,7 +335,7 @@ public:
 class UFortGiftingData : public UFortGameFeatureData
 { 
 public:
-	SDK_UNDEFINED(32,13794) /* TWeakObjectPtr<UClass*> */ __um(GiftingScreenClass);                                // 0x0530   (0x0020)  
+	SDK_UNDEFINED(32,13861) /* TWeakObjectPtr<UClass*> */ __um(GiftingScreenClass);                                // 0x0530   (0x0020)  
 };
 
 /// Struct /Script/GiftingUI.FortGiftingRecipientState

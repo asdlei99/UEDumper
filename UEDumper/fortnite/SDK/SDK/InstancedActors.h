@@ -6,14 +6,19 @@
 ********************************************************/
 
 #pragma once
-/// dependency: CommonConversationRuntime
 /// dependency: CoreUObject
 /// dependency: Engine
-/// dependency: FortniteConversationRuntime
 
-/// Class /FortniteConversation/Conversation/FortPlayerConversationComponent.FortPlayerConversationComponent_C
-/// Size: 0x0000 (0x000360 - 0x000360)
-class UFortPlayerConversationComponent_C : public UFortPlayerConversationComponent
+/// Class /Script/InstancedActors.InstancedActorsData
+/// Size: 0x0000 (0x000028 - 0x000028)
+class UInstancedActorsData : public UObject
+{ 
+public:
+};
+
+/// Class /Script/InstancedActors.InstancedActorsManager
+/// Size: 0x0000 (0x000290 - 0x000290)
+class AInstancedActorsManager : public APartitionActor
 { 
 public:
 };

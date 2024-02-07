@@ -143,9 +143,9 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.MeshTopologySelectionMechanicProperties.SelectAll
-	// void SelectAll();                                                                                                        // [0xaf146cc] Final|Native|Public  
+	// void SelectAll();                                                                                                        // [0xb1080f0] Final|Native|Public  
 	// Function /Script/ModelingComponents.MeshTopologySelectionMechanicProperties.InvertSelection
-	// void InvertSelection();                                                                                                  // [0xaf14690] Final|Native|Public  
+	// void InvertSelection();                                                                                                  // [0xb1080b4] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.GeometrySelectionEditCommandArguments
@@ -383,32 +383,32 @@ public:
 };
 
 /// Class /Script/ModelingComponents.OctreeDynamicMeshComponent
-/// Size: 0x0120 (0x000610 - 0x000730)
+/// Size: 0x0120 (0x0005A0 - 0x0006C0)
 class UOctreeDynamicMeshComponent : public UBaseDynamicMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1840;
+	static inline constexpr uint64_t __MDKClassSize = 1728;
 
 public:
-	CMember(class UDynamicMesh*)                       MeshObject                                                  OFFSET(get<T>, {0x670, 8, 0, 0})
+	CMember(class UDynamicMesh*)                       MeshObject                                                  OFFSET(get<T>, {0x600, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/ModelingComponents.OctreeDynamicMeshComponent.SetDynamicMesh
-	// void SetDynamicMesh(class UDynamicMesh* NewMesh);                                                                        // [0xaf14708] Final|Native|Public|BlueprintCallable 
+	// void SetDynamicMesh(class UDynamicMesh* NewMesh);                                                                        // [0xb10812c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ModelingComponents.LineSetComponent
-/// Size: 0x0080 (0x0005B0 - 0x000630)
+/// Size: 0x0080 (0x000540 - 0x0005C0)
 class ULineSetComponent : public UMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1584;
+	static inline constexpr uint64_t __MDKClassSize = 1472;
 
 public:
-	CMember(class UMaterialInterface*)                 LineMaterial                                                OFFSET(get<T>, {0x5A8, 8, 0, 0})
-	SMember(FBoxSphereBounds)                          Bounds                                                      OFFSET(getStruct<T>, {0x5B0, 56, 0, 0})
-	DMember(bool)                                      bBoundsDirty                                                OFFSET(get<bool>, {0x5E8, 1, 0, 0})
+	CMember(class UMaterialInterface*)                 LineMaterial                                                OFFSET(get<T>, {0x538, 8, 0, 0})
+	SMember(FBoxSphereBounds)                          Bounds                                                      OFFSET(getStruct<T>, {0x540, 56, 0, 0})
+	DMember(bool)                                      bBoundsDirty                                                OFFSET(get<bool>, {0x578, 1, 0, 0})
 };
 
 /// Class /Script/ModelingComponents.MeshElementsVisualizerProperties
@@ -453,43 +453,43 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.PreviewGeometry.SetPointSetVisibility
-	// bool SetPointSetVisibility(FString PointSetIdentifier, bool bVisible);                                                   // [0xaf64678] Final|Native|Public  
+	// bool SetPointSetVisibility(FString PointSetIdentifier, bool bVisible);                                                   // [0xb1585d8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetPointSetMaterial
-	// bool SetPointSetMaterial(FString PointSetIdentifier, class UMaterialInterface* NewMaterial);                             // [0xaf63fa4] Final|Native|Public  
+	// bool SetPointSetMaterial(FString PointSetIdentifier, class UMaterialInterface* NewMaterial);                             // [0xb157e80] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetLineSetVisibility
-	// bool SetLineSetVisibility(FString LineSetIdentifier, bool bVisible);                                                     // [0xaf638cc] Final|Native|Public  
+	// bool SetLineSetVisibility(FString LineSetIdentifier, bool bVisible);                                                     // [0xb157724] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetLineSetMaterial
-	// bool SetLineSetMaterial(FString LineSetIdentifier, class UMaterialInterface* NewMaterial);                               // [0xaf631f8] Final|Native|Public  
+	// bool SetLineSetMaterial(FString LineSetIdentifier, class UMaterialInterface* NewMaterial);                               // [0xb156fcc] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetAllPointSetsMaterial
-	// void SetAllPointSetsMaterial(class UMaterialInterface* Material);                                                        // [0xaf63178] Final|Native|Public  
+	// void SetAllPointSetsMaterial(class UMaterialInterface* Material);                                                        // [0xb156f0c] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.SetAllLineSetsMaterial
-	// void SetAllLineSetsMaterial(class UMaterialInterface* Material);                                                         // [0xaf630f8] Final|Native|Public  
+	// void SetAllLineSetsMaterial(class UMaterialInterface* Material);                                                         // [0xb156e4c] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemovePointSet
-	// bool RemovePointSet(FString PointSetIdentifier, bool bDestroy);                                                          // [0xaf62a20] Final|Native|Public  
+	// bool RemovePointSet(FString PointSetIdentifier, bool bDestroy);                                                          // [0xb1566f0] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveLineSet
-	// bool RemoveLineSet(FString LineSetIdentifier, bool bDestroy);                                                            // [0xaf62348] Final|Native|Public  
+	// bool RemoveLineSet(FString LineSetIdentifier, bool bDestroy);                                                            // [0xb155f94] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveAllPointSets
-	// void RemoveAllPointSets(bool bDestroy);                                                                                  // [0xaf622c8] Final|Native|Public  
+	// void RemoveAllPointSets(bool bDestroy);                                                                                  // [0xb155ed0] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.RemoveAllLineSets
-	// void RemoveAllLineSets(bool bDestroy);                                                                                   // [0xaf62248] Final|Native|Public  
+	// void RemoveAllLineSets(bool bDestroy);                                                                                   // [0xb155e0c] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.GetActor
-	// class APreviewGeometryActor* GetActor();                                                                                 // [0x7c4ef68] Final|Native|Public|Const 
+	// class APreviewGeometryActor* GetActor();                                                                                 // [0x7a2e0f8] Final|Native|Public|Const 
 	// Function /Script/ModelingComponents.PreviewGeometry.FindTriangleSet
-	// class UTriangleSetComponent* FindTriangleSet(FString TriangleSetIdentifier);                                             // [0xaf61b1c] Final|Native|Public  
+	// class UTriangleSetComponent* FindTriangleSet(FString TriangleSetIdentifier);                                             // [0xb15569c] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.FindPointSet
-	// class UPointSetComponent* FindPointSet(FString PointSetIdentifier);                                                      // [0xaf6146c] Final|Native|Public  
+	// class UPointSetComponent* FindPointSet(FString PointSetIdentifier);                                                      // [0xb154fa8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.FindLineSet
-	// class ULineSetComponent* FindLineSet(FString LineSetIdentifier);                                                         // [0xaf60dbc] Final|Native|Public  
+	// class ULineSetComponent* FindLineSet(FString LineSetIdentifier);                                                         // [0xb1548b4] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.Disconnect
-	// void Disconnect();                                                                                                       // [0xaf60da8] Final|Native|Public  
+	// void Disconnect();                                                                                                       // [0xb1548a0] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.CreateInWorld
-	// void CreateInWorld(class UWorld* World, FTransform& WithTransform);                                                      // [0xaf5fd00] Final|Native|Public|HasOutParms|HasDefaults 
+	// void CreateInWorld(class UWorld* World, FTransform& WithTransform);                                                      // [0xb1537b0] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/ModelingComponents.PreviewGeometry.AddTriangleSet
-	// class UTriangleSetComponent* AddTriangleSet(FString TriangleSetIdentifier);                                              // [0xaf5f650] Final|Native|Public  
+	// class UTriangleSetComponent* AddTriangleSet(FString TriangleSetIdentifier);                                              // [0xb1530bc] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.AddPointSet
-	// class UPointSetComponent* AddPointSet(FString PointSetIdentifier);                                                       // [0xaf5efa0] Final|Native|Public  
+	// class UPointSetComponent* AddPointSet(FString PointSetIdentifier);                                                       // [0xb1529c8] Final|Native|Public  
 	// Function /Script/ModelingComponents.PreviewGeometry.AddLineSet
-	// class ULineSetComponent* AddLineSet(FString LineSetIdentifier);                                                          // [0xaf5e8f0] Final|Native|Public  
+	// class ULineSetComponent* AddLineSet(FString LineSetIdentifier);                                                          // [0xb1522d4] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.MeshElementsVisualizer
@@ -505,49 +505,49 @@ public:
 };
 
 /// Class /Script/ModelingComponents.MeshWireframeComponent
-/// Size: 0x00A0 (0x0005B0 - 0x000650)
+/// Size: 0x00A0 (0x000540 - 0x0005E0)
 class UMeshWireframeComponent : public UMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1616;
+	static inline constexpr uint64_t __MDKClassSize = 1504;
 
 public:
-	DMember(float)                                     LineDepthBias                                               OFFSET(get<float>, {0x5A8, 4, 0, 0})
-	DMember(float)                                     LineDepthBiasSizeScale                                      OFFSET(get<float>, {0x5AC, 4, 0, 0})
-	DMember(float)                                     ThicknessScale                                              OFFSET(get<float>, {0x5B0, 4, 0, 0})
-	DMember(bool)                                      bEnableWireframe                                            OFFSET(get<bool>, {0x5B4, 1, 0, 0})
-	SMember(FColor)                                    WireframeColor                                              OFFSET(getStruct<T>, {0x5B8, 4, 0, 0})
-	DMember(float)                                     WireframeThickness                                          OFFSET(get<float>, {0x5BC, 4, 0, 0})
-	DMember(bool)                                      bEnableBoundaryEdges                                        OFFSET(get<bool>, {0x5C0, 1, 0, 0})
-	SMember(FColor)                                    BoundaryEdgeColor                                           OFFSET(getStruct<T>, {0x5C4, 4, 0, 0})
-	DMember(float)                                     BoundaryEdgeThickness                                       OFFSET(get<float>, {0x5C8, 4, 0, 0})
-	DMember(bool)                                      bEnableUVSeams                                              OFFSET(get<bool>, {0x5CC, 1, 0, 0})
-	SMember(FColor)                                    UVSeamColor                                                 OFFSET(getStruct<T>, {0x5D0, 4, 0, 0})
-	DMember(float)                                     UVSeamThickness                                             OFFSET(get<float>, {0x5D4, 4, 0, 0})
-	DMember(bool)                                      bEnableNormalSeams                                          OFFSET(get<bool>, {0x5D8, 1, 0, 0})
-	SMember(FColor)                                    NormalSeamColor                                             OFFSET(getStruct<T>, {0x5DC, 4, 0, 0})
-	DMember(float)                                     NormalSeamThickness                                         OFFSET(get<float>, {0x5E0, 4, 0, 0})
-	DMember(bool)                                      bEnableTangentSeams                                         OFFSET(get<bool>, {0x5E4, 1, 0, 0})
-	SMember(FColor)                                    TangentSeamColor                                            OFFSET(getStruct<T>, {0x5E8, 4, 0, 0})
-	DMember(float)                                     TangentSeamThickness                                        OFFSET(get<float>, {0x5EC, 4, 0, 0})
-	DMember(bool)                                      bEnableColorSeams                                           OFFSET(get<bool>, {0x5F0, 1, 0, 0})
-	SMember(FColor)                                    ColorSeamColor                                              OFFSET(getStruct<T>, {0x5F4, 4, 0, 0})
-	DMember(float)                                     ColorSeamThickness                                          OFFSET(get<float>, {0x5F8, 4, 0, 0})
-	CMember(class UMaterialInterface*)                 LineMaterial                                                OFFSET(get<T>, {0x600, 8, 0, 0})
-	SMember(FBoxSphereBounds)                          LocalBounds                                                 OFFSET(getStruct<T>, {0x608, 56, 0, 0})
+	DMember(float)                                     LineDepthBias                                               OFFSET(get<float>, {0x538, 4, 0, 0})
+	DMember(float)                                     LineDepthBiasSizeScale                                      OFFSET(get<float>, {0x53C, 4, 0, 0})
+	DMember(float)                                     ThicknessScale                                              OFFSET(get<float>, {0x540, 4, 0, 0})
+	DMember(bool)                                      bEnableWireframe                                            OFFSET(get<bool>, {0x544, 1, 0, 0})
+	SMember(FColor)                                    WireframeColor                                              OFFSET(getStruct<T>, {0x548, 4, 0, 0})
+	DMember(float)                                     WireframeThickness                                          OFFSET(get<float>, {0x54C, 4, 0, 0})
+	DMember(bool)                                      bEnableBoundaryEdges                                        OFFSET(get<bool>, {0x550, 1, 0, 0})
+	SMember(FColor)                                    BoundaryEdgeColor                                           OFFSET(getStruct<T>, {0x554, 4, 0, 0})
+	DMember(float)                                     BoundaryEdgeThickness                                       OFFSET(get<float>, {0x558, 4, 0, 0})
+	DMember(bool)                                      bEnableUVSeams                                              OFFSET(get<bool>, {0x55C, 1, 0, 0})
+	SMember(FColor)                                    UVSeamColor                                                 OFFSET(getStruct<T>, {0x560, 4, 0, 0})
+	DMember(float)                                     UVSeamThickness                                             OFFSET(get<float>, {0x564, 4, 0, 0})
+	DMember(bool)                                      bEnableNormalSeams                                          OFFSET(get<bool>, {0x568, 1, 0, 0})
+	SMember(FColor)                                    NormalSeamColor                                             OFFSET(getStruct<T>, {0x56C, 4, 0, 0})
+	DMember(float)                                     NormalSeamThickness                                         OFFSET(get<float>, {0x570, 4, 0, 0})
+	DMember(bool)                                      bEnableTangentSeams                                         OFFSET(get<bool>, {0x574, 1, 0, 0})
+	SMember(FColor)                                    TangentSeamColor                                            OFFSET(getStruct<T>, {0x578, 4, 0, 0})
+	DMember(float)                                     TangentSeamThickness                                        OFFSET(get<float>, {0x57C, 4, 0, 0})
+	DMember(bool)                                      bEnableColorSeams                                           OFFSET(get<bool>, {0x580, 1, 0, 0})
+	SMember(FColor)                                    ColorSeamColor                                              OFFSET(getStruct<T>, {0x584, 4, 0, 0})
+	DMember(float)                                     ColorSeamThickness                                          OFFSET(get<float>, {0x588, 4, 0, 0})
+	CMember(class UMaterialInterface*)                 LineMaterial                                                OFFSET(get<T>, {0x590, 8, 0, 0})
+	SMember(FBoxSphereBounds)                          LocalBounds                                                 OFFSET(getStruct<T>, {0x598, 56, 0, 0})
 };
 
 /// Class /Script/ModelingComponents.PointSetComponent
-/// Size: 0x0080 (0x0005B0 - 0x000630)
+/// Size: 0x0080 (0x000540 - 0x0005C0)
 class UPointSetComponent : public UMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1584;
+	static inline constexpr uint64_t __MDKClassSize = 1472;
 
 public:
-	CMember(class UMaterialInterface*)                 PointMaterial                                               OFFSET(get<T>, {0x5A8, 8, 0, 0})
-	SMember(FBoxSphereBounds)                          Bounds                                                      OFFSET(getStruct<T>, {0x5B0, 56, 0, 0})
-	DMember(bool)                                      bBoundsDirty                                                OFFSET(get<bool>, {0x5E8, 1, 0, 0})
+	CMember(class UMaterialInterface*)                 PointMaterial                                               OFFSET(get<T>, {0x538, 8, 0, 0})
+	SMember(FBoxSphereBounds)                          Bounds                                                      OFFSET(getStruct<T>, {0x540, 56, 0, 0})
+	DMember(bool)                                      bBoundsDirty                                                OFFSET(get<bool>, {0x578, 1, 0, 0})
 };
 
 /// Class /Script/ModelingComponents.PreviewMesh
@@ -583,15 +583,15 @@ public:
 };
 
 /// Class /Script/ModelingComponents.TriangleSetComponent
-/// Size: 0x0100 (0x0005B0 - 0x0006B0)
+/// Size: 0x0100 (0x000540 - 0x000640)
 class UTriangleSetComponent : public UMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1712;
+	static inline constexpr uint64_t __MDKClassSize = 1600;
 
 public:
-	SMember(FBoxSphereBounds)                          Bounds                                                      OFFSET(getStruct<T>, {0x5A8, 56, 0, 0})
-	DMember(bool)                                      bBoundsDirty                                                OFFSET(get<bool>, {0x5E0, 1, 0, 0})
+	SMember(FBoxSphereBounds)                          Bounds                                                      OFFSET(getStruct<T>, {0x538, 56, 0, 0})
+	DMember(bool)                                      bBoundsDirty                                                OFFSET(get<bool>, {0x570, 1, 0, 0})
 };
 
 /// Class /Script/ModelingComponents.UVLayoutPreviewProperties
@@ -880,13 +880,13 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateTextureObject
-	// FCreateTextureObjectResult CreateTextureObject(FCreateTextureObjectParams& CreateTexParams);                             // [0xaf606d8] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateTextureObjectResult CreateTextureObject(FCreateTextureObjectParams& CreateTexParams);                             // [0xb1541d0] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateNewActor
-	// FCreateActorResult CreateNewActor(FCreateActorParams& CreateActorParams);                                                // [0xaf605f8] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateActorResult CreateNewActor(FCreateActorParams& CreateActorParams);                                                // [0xb1540f0] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateMeshObject
-	// FCreateMeshObjectResult CreateMeshObject(FCreateMeshObjectParams& CreateMeshParams);                                     // [0xaf604fc] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateMeshObjectResult CreateMeshObject(FCreateMeshObjectParams& CreateMeshParams);                                     // [0xb153ff4] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ModelingComponents.ModelingObjectsCreationAPI.CreateMaterialObject
-	// FCreateMaterialObjectResult CreateMaterialObject(FCreateMaterialObjectParams& CreateMaterialParams);                     // [0xaf5fe30] Native|Public|HasOutParms|BlueprintCallable 
+	// FCreateMaterialObjectResult CreateMaterialObject(FCreateMaterialObjectParams& CreateMaterialParams);                     // [0xb153928] Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/ModelingComponents.PreviewMeshActor
@@ -915,11 +915,11 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.ShouldShowPropertySet
-	// bool ShouldShowPropertySet();                                                                                            // [0xaf64d50] Final|Native|Public|Const 
+	// bool ShouldShowPropertySet();                                                                                            // [0xb158d34] Final|Native|Public|Const 
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.GetOutputTypeNamesFunc
-	// TArray<FString> GetOutputTypeNamesFunc();                                                                                // [0xaf6222c] Final|Native|Public  
+	// TArray<FString> GetOutputTypeNamesFunc();                                                                                // [0xb155df0] Final|Native|Public  
 	// Function /Script/ModelingComponents.CreateMeshObjectTypeProperties.GetCurrentCreateMeshType
-	// ECreateObjectTypeHint GetCurrentCreateMeshType();                                                                        // [0xaf621cc] Final|Native|Public|Const 
+	// ECreateObjectTypeHint GetCurrentCreateMeshType();                                                                        // [0xb155d90] Final|Native|Public|Const 
 };
 
 /// Class /Script/ModelingComponents.OnAcceptHandleSourcesPropertiesSingle
@@ -947,7 +947,7 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.PolygroupLayersProperties.GetGroupLayersFunc
-	// TArray<FString> GetGroupLayersFunc();                                                                                    // [0xaf621f0] Final|Native|Public  
+	// TArray<FString> GetGroupLayersFunc();                                                                                    // [0xb155db4] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.WeightMapSetProperties
@@ -965,7 +965,7 @@ public:
 
 	/// Functions
 	// Function /Script/ModelingComponents.WeightMapSetProperties.GetWeightMapsFunc
-	// TArray<FString> GetWeightMapsFunc();                                                                                     // [0xaf621f0] Final|Native|Public  
+	// TArray<FString> GetWeightMapsFunc();                                                                                     // [0xb155db4] Final|Native|Public  
 };
 
 /// Class /Script/ModelingComponents.GeometrySelectionManager

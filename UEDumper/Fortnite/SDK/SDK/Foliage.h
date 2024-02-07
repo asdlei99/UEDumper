@@ -68,16 +68,16 @@ enum class ESimulationQuery : uint8_t
 };
 
 /// Class /Script/Foliage.FoliageInstancedStaticMeshComponent
-/// Size: 0x0040 (0x000BC0 - 0x000C00)
+/// Size: 0x0040 (0x000B50 - 0x000B90)
 class UFoliageInstancedStaticMeshComponent : public UHierarchicalInstancedStaticMeshComponent
 { 
 public:
-	SDK_UNDEFINED(16,2055) /* FMulticastInlineDelegate */ __um(OnInstanceTakePointDamage);                         // 0x0BC0   (0x0010)  
-	SDK_UNDEFINED(16,2056) /* FMulticastInlineDelegate */ __um(OnInstanceTakeRadialDamage);                        // 0x0BD0   (0x0010)  
-	bool                                               bEnableDiscardOnLoad;                                       // 0x0BE0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0BE1   (0x0003)  MISSED
-	FGuid                                              GenerationGuid;                                             // 0x0BE4   (0x0010)  
-	unsigned char                                      UnknownData01_6[0xC];                                       // 0x0BF4   (0x000C)  MISSED
+	SDK_UNDEFINED(16,2043) /* FMulticastInlineDelegate */ __um(OnInstanceTakePointDamage);                         // 0x0B50   (0x0010)  
+	SDK_UNDEFINED(16,2044) /* FMulticastInlineDelegate */ __um(OnInstanceTakeRadialDamage);                        // 0x0B60   (0x0010)  
+	bool                                               bEnableDiscardOnLoad;                                       // 0x0B70   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0B71   (0x0003)  MISSED
+	FGuid                                              GenerationGuid;                                             // 0x0B74   (0x0010)  
+	unsigned char                                      UnknownData01_6[0xC];                                       // 0x0B84   (0x000C)  MISSED
 };
 
 /// Struct /Script/Foliage.FoliageVertexColorChannelMask
@@ -118,7 +118,7 @@ public:
 	FFloatInterval                                     ScaleY;                                                     // 0x0058   (0x0008)  
 	FFloatInterval                                     ScaleZ;                                                     // 0x0060   (0x0008)  
 	FFoliageVertexColorChannelMask                     VertexColorMaskByChannel;                                   // 0x0068   (0x0030)  
-	SDK_UNDEFINED(1,2057) /* TEnumAsByte<FoliageVertexColorMask> */ __um(VertexColorMask);                         // 0x0098   (0x0001)  
+	SDK_UNDEFINED(1,2045) /* TEnumAsByte<FoliageVertexColorMask> */ __um(VertexColorMask);                         // 0x0098   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0099   (0x0003)  MISSED
 	float                                              VertexColorMaskThreshold;                                   // 0x009C   (0x0004)  
 	bool                                               VertexColorMaskInvert : 1;                                  // 0x00A0:0 (0x0001)  
@@ -148,7 +148,7 @@ public:
 	unsigned char                                      UnknownData09_5[0x4];                                       // 0x0124   (0x0004)  MISSED
 	FBoxSphereBounds                                   MeshBounds;                                                 // 0x0128   (0x0038)  
 	FVector                                            LowBoundOriginRadius;                                       // 0x0160   (0x0018)  
-	SDK_UNDEFINED(1,2058) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                    // 0x0178   (0x0001)  
+	SDK_UNDEFINED(1,2046) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                    // 0x0178   (0x0001)  
 	unsigned char                                      UnknownData10_5[0x3];                                       // 0x0179   (0x0003)  MISSED
 	FInt32Interval                                     CullDistance;                                               // 0x017C   (0x0008)  
 	bool                                               bEnableStaticLighting : 1;                                  // 0x0184:0 (0x0001)  
@@ -176,7 +176,7 @@ public:
 	unsigned char                                      UnknownData17_4[0x3];                                       // 0x01A1   (0x0003)  MISSED
 	int32_t                                            WorldPositionOffsetDisableDistance;                         // 0x01A4   (0x0004)  
 	FBodyInstance                                      BodyInstance;                                               // 0x01A8   (0x0190)  
-	SDK_UNDEFINED(1,2059) /* TEnumAsByte<EHasCustomNavigableGeometry> */ __um(CustomNavigableGeometry);            // 0x0338   (0x0001)  
+	SDK_UNDEFINED(1,2047) /* TEnumAsByte<EHasCustomNavigableGeometry> */ __um(CustomNavigableGeometry);            // 0x0338   (0x0001)  
 	FLightingChannels                                  LightingChannels;                                           // 0x0339   (0x0001)  
 	unsigned char                                      UnknownData18_5[0x2];                                       // 0x033A   (0x0002)  MISSED
 	bool                                               bRenderCustomDepth : 1;                                     // 0x033C:0 (0x0001)  
@@ -261,11 +261,11 @@ public:
 };
 
 /// Class /Script/Foliage.InteractiveFoliageComponent
-/// Size: 0x0010 (0x000630 - 0x000640)
+/// Size: 0x0010 (0x0005C0 - 0x0005D0)
 class UInteractiveFoliageComponent : public UStaticMeshComponent
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0630   (0x0010)  MISSED
+	unsigned char                                      UnknownData00_1[0x10];                                      // 0x05C0   (0x0010)  MISSED
 };
 
 /// Class /Script/Foliage.FoliageStatistics
@@ -277,15 +277,15 @@ public:
 
 	/// Functions
 	// Function /Script/Foliage.FoliageStatistics.FoliageOverlappingSphereCount
-	// int32_t FoliageOverlappingSphereCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FVector CenterPosition, float Radius); // [0x6023638] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// int32_t FoliageOverlappingSphereCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FVector CenterPosition, float Radius); // [0x5d27210] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/Foliage.FoliageStatistics.FoliageOverlappingBoxTransforms
-	// void FoliageOverlappingBoxTransforms(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box, TArray<FTransform>& OutTransforms); // [0x6023408] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void FoliageOverlappingBoxTransforms(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box, TArray<FTransform>& OutTransforms); // [0x5d26fd4] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Foliage.FoliageStatistics.FoliageOverlappingBoxCount
-	// int32_t FoliageOverlappingBoxCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box);       // [0x6023240] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// int32_t FoliageOverlappingBoxCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box);       // [0x5d26dec] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/Foliage.GrassInstancedStaticMeshComponent
-/// Size: 0x0000 (0x000BC0 - 0x000BC0)
+/// Size: 0x0000 (0x000B50 - 0x000B50)
 class UGrassInstancedStaticMeshComponent : public UHierarchicalInstancedStaticMeshComponent
 { 
 public:
@@ -315,7 +315,7 @@ public:
 
 	/// Functions
 	// Function /Script/Foliage.InteractiveFoliageActor.CapsuleTouched
-	// void CapsuleTouched(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& OverlapInfo); // [0x6022eec] Final|Native|Protected|HasOutParms 
+	// void CapsuleTouched(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& OverlapInfo); // [0x5d26958] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/Foliage.ProceduralFoliageBlockingVolume
@@ -363,13 +363,13 @@ public:
 	TArray<FFoliageTypeObject>                         FoliageTypes;                                               // 0x0040   (0x0010)  
 	bool                                               bUseOverrideFoliageTerrainMaterials;                        // 0x0050   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0051   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2060) /* TArray<TWeakObjectPtr<UMaterialInterface*>> */ __um(OverrideFoliageTerrainMaterials); // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,2048) /* TArray<TWeakObjectPtr<UMaterialInterface*>> */ __um(OverrideFoliageTerrainMaterials); // 0x0058   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x18];                                      // 0x0068   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/Foliage.ProceduralFoliageSpawner.Simulate
-	// void Simulate(int32_t NumSteps);                                                                                      // [0x60238b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void Simulate(int32_t NumSteps);                                                                                      // [0x5d27454] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/Foliage.ProceduralFoliageInstance

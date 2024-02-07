@@ -33,25 +33,25 @@ public:
 };
 
 /// Class /Script/MassLOD.MassLODSubsystem
-/// Size: 0x00C8 (0x000048 - 0x000110)
-class UMassLODSubsystem : public UMassTickableSubsystemBase
+/// Size: 0x00C8 (0x000038 - 0x000100)
+class UMassLODSubsystem : public UMassSubsystemBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 272;
+	static inline constexpr uint64_t __MDKClassSize = 256;
 
 public:
-	DMember(bool)                                      bGatherPlayerControllers                                    OFFSET(get<bool>, {0x48, 1, 1, 0})
-	DMember(bool)                                      bGatherStreamingSources                                     OFFSET(get<bool>, {0x48, 1, 1, 1})
-	DMember(bool)                                      bAllowNonPlayerViwerActors                                  OFFSET(get<bool>, {0x48, 1, 1, 2})
-	DMember(bool)                                      bUsePlayerPawnLocationInsteadOfCamera                       OFFSET(get<bool>, {0x48, 1, 1, 3})
-	CMember(TArray<FViewerInfo>)                       Viewers                                                     OFFSET(get<T>, {0x50, 16, 0, 0})
-	CMember(TMap<uint32_t, FMassViewerHandle>)         ViewerMap                                                   OFFSET(get<T>, {0x60, 80, 0, 0})
-	CMember(TArray<class AActor*>)                     RegisteredActorViewers                                      OFFSET(get<T>, {0xB0, 16, 0, 0})
+	DMember(bool)                                      bGatherPlayerControllers                                    OFFSET(get<bool>, {0x38, 1, 1, 0})
+	DMember(bool)                                      bGatherStreamingSources                                     OFFSET(get<bool>, {0x38, 1, 1, 1})
+	DMember(bool)                                      bAllowNonPlayerViwerActors                                  OFFSET(get<bool>, {0x38, 1, 1, 2})
+	DMember(bool)                                      bUsePlayerPawnLocationInsteadOfCamera                       OFFSET(get<bool>, {0x38, 1, 1, 3})
+	CMember(TArray<FViewerInfo>)                       Viewers                                                     OFFSET(get<T>, {0x40, 16, 0, 0})
+	CMember(TMap<uint32_t, FMassViewerHandle>)         ViewerMap                                                   OFFSET(get<T>, {0x50, 80, 0, 0})
+	CMember(TArray<class AActor*>)                     RegisteredActorViewers                                      OFFSET(get<T>, {0xA0, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/MassLOD.MassLODSubsystem.OnPlayerControllerEndPlay
-	// void OnPlayerControllerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                          // [0xa6f3c28] Final|Native|Protected 
+	// void OnPlayerControllerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                          // [0xa8a3b70] Final|Native|Protected 
 };
 
 /// Class /Script/MassLOD.MassLODCollectorTrait

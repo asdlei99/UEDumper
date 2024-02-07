@@ -54,7 +54,7 @@ struct FPictureInPictureActionConfig
 	PictureInPictureAction                             ActionType;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0xF];                                       // 0x0001   (0x000F)  MISSED
 	FSlateBrush                                        ActionBrush;                                                // 0x0010   (0x00C0)  
-	SDK_UNDEFINED(24,14735) /* FText */                __um(ActionText);                                           // 0x00D0   (0x0018)  
+	SDK_UNDEFINED(24,14830) /* FText */                __um(ActionText);                                           // 0x00D0   (0x0018)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00E8   (0x0008)  MISSED
 };
 
@@ -84,7 +84,7 @@ struct FPIPVideoPlayerAssetConfig
 class UPictureInPicturePartnerDataAsset : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(16,14736) /* FString */              __um(PartnerName);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,14831) /* FString */              __um(PartnerName);                                          // 0x0030   (0x0010)  
 	class UImage*                                      ClientImage;                                                // 0x0040   (0x0008)  
 	int32_t                                            MediaHeight;                                                // 0x0048   (0x0004)  
 	int32_t                                            MediaWidth;                                                 // 0x004C   (0x0004)  
@@ -98,22 +98,22 @@ public:
 class UPictureInPictureActionData : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,14737) /* FString */              __um(PartnerName);                                          // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,14832) /* FString */              __um(PartnerName);                                          // 0x0028   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0038   (0x0008)  MISSED
 	FSlateBrush                                        ActionBrush;                                                // 0x0040   (0x00C0)  
-	SDK_UNDEFINED(24,14738) /* FText */                __um(ActionText);                                           // 0x0100   (0x0018)  
+	SDK_UNDEFINED(24,14833) /* FText */                __um(ActionText);                                           // 0x0100   (0x0018)  
 	PictureInPictureAction                             ActionType;                                                 // 0x0118   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0119   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14739) /* FMulticastInlineDelegate */ __um(ActionEvent);                                      // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,14740) /* FMulticastInlineDelegate */ __um(ActionFiredEvent);                                 // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,14834) /* FMulticastInlineDelegate */ __um(ActionEvent);                                      // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,14835) /* FMulticastInlineDelegate */ __um(ActionFiredEvent);                                 // 0x0130   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x18];                                      // 0x0140   (0x0018)  MISSED
-	SDK_UNDEFINED(16,14741) /* FMulticastInlineDelegate */ __um(CallbackEvent);                                    // 0x0158   (0x0010)  
+	SDK_UNDEFINED(16,14836) /* FMulticastInlineDelegate */ __um(CallbackEvent);                                    // 0x0158   (0x0010)  
 	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0168   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/PictureInPictureDescriptors.PictureInPictureActionData.CallEvent
-	// void CallEvent();                                                                                                     // [0x160abec] Native|Public|BlueprintCallable 
+	// void CallEvent();                                                                                                     // [0x13d65e0] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PictureInPictureDescriptors.PictureInPictureSourceActionData
@@ -121,8 +121,8 @@ public:
 class UPictureInPictureSourceActionData : public UPictureInPictureActionData
 { 
 public:
-	SDK_UNDEFINED(16,14742) /* FString */              __um(SourceName);                                           // 0x0168   (0x0010)  
-	SDK_UNDEFINED(16,14743) /* FMulticastInlineDelegate */ __um(SourceActionEvent);                                // 0x0178   (0x0010)  
+	SDK_UNDEFINED(16,14837) /* FString */              __um(SourceName);                                           // 0x0168   (0x0010)  
+	SDK_UNDEFINED(16,14838) /* FMulticastInlineDelegate */ __um(SourceActionEvent);                                // 0x0178   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0188   (0x0008)  MISSED
 };
 
@@ -131,7 +131,7 @@ public:
 class UPictureInPictureAnalyticsManager : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,14744) /* TMap<FString, FPictureInPictureAnalyticsPayload> */ __um(PartnerAnalytics);         // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,14839) /* TMap<FString, FPictureInPictureAnalyticsPayload> */ __um(PartnerAnalytics);         // 0x0028   (0x0050)  
 };
 
 /// Struct /Script/PictureInPictureDescriptors.PiPPartnerSource
@@ -141,16 +141,16 @@ struct FPiPPartnerSource
 	unsigned char                                      UnknownData00_2[0x48];                                      // 0x0000   (0x0048)  MISSED
 	PictureInPictureSourceType                         SourceType;                                                 // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0049   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14745) /* FString */              __um(Name);                                                 // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,14840) /* FString */              __um(Name);                                                 // 0x0050   (0x0010)  
 	FDateTime                                          StartTime;                                                  // 0x0060   (0x0008)  
 	FDateTime                                          EndTime;                                                    // 0x0068   (0x0008)  
 	FFortMediaEventsStreamAssets                       AssetConfig;                                                // 0x0070   (0x0068)  
-	SDK_UNDEFINED(16,14746) /* FString */              __um(EventIconUrl);                                         // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,14841) /* FString */              __um(EventIconUrl);                                         // 0x00D8   (0x0010)  
 	class UEpicCMSImage*                               CMSImage;                                                   // 0x00E8   (0x0008)  
 	class UPictureInPictureSourceActionData*           ActionData;                                                 // 0x00F0   (0x0008)  
-	SDK_UNDEFINED(80,14747) /* TSet<FString> */        __um(PlatformDenylist);                                     // 0x00F8   (0x0050)  
-	SDK_UNDEFINED(80,14748) /* TSet<FString> */        __um(GameplayTagDenylist);                                  // 0x0148   (0x0050)  
-	SDK_UNDEFINED(80,14749) /* TSet<FString> */        __um(GameplayTagAllowlist);                                 // 0x0198   (0x0050)  
+	SDK_UNDEFINED(80,14842) /* TSet<FString> */        __um(PlatformDenylist);                                     // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,14843) /* TSet<FString> */        __um(GameplayTagDenylist);                                  // 0x0148   (0x0050)  
+	SDK_UNDEFINED(80,14844) /* TSet<FString> */        __um(GameplayTagAllowlist);                                 // 0x0198   (0x0050)  
 	bool                                               bManual;                                                    // 0x01E8   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x7];                                       // 0x01E9   (0x0007)  MISSED
 };
@@ -159,12 +159,12 @@ struct FPiPPartnerSource
 /// Size: 0x0048 (0x000000 - 0x000048)
 struct FPIPVideoPlayerConfig
 { 
-	SDK_UNDEFINED(16,14750) /* FString */              __um(MimeType);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14751) /* FString */              __um(BlurlVUID);                                            // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14845) /* FString */              __um(MimeType);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14846) /* FString */              __um(BlurlVUID);                                            // 0x0010   (0x0010)  
 	bool                                               bLoopEnabled;                                               // 0x0020   (0x0001)  
 	bool                                               bAutoPlay;                                                  // 0x0021   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0022   (0x0006)  MISSED
-	SDK_UNDEFINED(16,14752) /* FString */              __um(VideoURL);                                             // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,14847) /* FString */              __um(VideoURL);                                             // 0x0028   (0x0010)  
 	bool                                               bShareBlocked;                                              // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0039   (0x0007)  MISSED
 	FDateTime                                          EventStartTime;                                             // 0x0040   (0x0008)  
@@ -174,7 +174,7 @@ struct FPIPVideoPlayerConfig
 /// Size: 0x0098 (0x000000 - 0x000098)
 struct FPictureInPictureAnalyticsPayload
 { 
-	SDK_UNDEFINED(80,14753) /* TMap<PictureInPictureAction, int32_t> */ __um(PartnerActionTally);                  // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14848) /* TMap<PictureInPictureAction, int32_t> */ __um(PartnerActionTally);                  // 0x0000   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x48];                                      // 0x0050   (0x0048)  MISSED
 };
 

@@ -13,11 +13,11 @@
 /// dependency: NavigationSystem
 
 /// Class /Script/AIPatrolPath.AIPatrolPathEditorComponent
-/// Size: 0x00A0 (0x0005C0 - 0x000660)
+/// Size: 0x00A0 (0x000550 - 0x0005F0)
 class UAIPatrolPathEditorComponent : public UDebugDrawComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1632;
+	static inline constexpr uint64_t __MDKClassSize = 1520;
 
 public:
 };
@@ -56,73 +56,73 @@ public:
 
 	/// Functions
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.UpdateEditorComponent
-	// void UpdateEditorComponent();                                                                                            // [0x32e4b44] Final|Native|Public|BlueprintCallable 
+	// void UpdateEditorComponent();                                                                                            // [0x307d48c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.ShouldRenderPath
-	// bool ShouldRenderPath();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// bool ShouldRenderPath();                                                                                                 // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.SetRenderPath
-	// void SetRenderPath(bool bRenderPath);                                                                                    // [0xb0cf9d4] Final|Native|Public|BlueprintCallable 
+	// void SetRenderPath(bool bRenderPath);                                                                                    // [0xb2c87c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.SetPatrolPathGroup
-	// void SetPatrolPathGroup(EFortCreativePatrolPathGroup PatrolPathGroup);                                                   // [0xb0cf8c4] Final|Native|Public|BlueprintCallable 
+	// void SetPatrolPathGroup(EFortCreativePatrolPathGroup PatrolPathGroup);                                                   // [0xb2c8630] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.SetPatrolPathEnabled
-	// void SetPatrolPathEnabled(bool bIsEnabled);                                                                              // [0xb0cf840] Final|Native|Public|BlueprintCallable 
+	// void SetPatrolPathEnabled(bool bIsEnabled);                                                                              // [0xb2c856c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.SetPatrollingMode
-	// void SetPatrollingMode(EPatrollingMode NewMode);                                                                         // [0xb0cf944] Final|Native|Public|BlueprintCallable 
+	// void SetPatrollingMode(EPatrollingMode NewMode);                                                                         // [0xb2c86f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.RequestRenderPath
-	// void RequestRenderPath();                                                                                                // [0xb0cf82c] Final|Native|Public|BlueprintCallable 
+	// void RequestRenderPath();                                                                                                // [0xb2c8558] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.RenderToNextPoint
-	// void RenderToNextPoint();                                                                                                // [0xb0cf818] Final|Native|Public|BlueprintCallable 
+	// void RenderToNextPoint();                                                                                                // [0xb2c8544] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.RenderToNextAndPreviousPoint
-	// void RenderToNextAndPreviousPoint();                                                                                     // [0xb0cf7ac] Final|Native|Public|BlueprintCallable 
+	// void RenderToNextAndPreviousPoint();                                                                                     // [0xb2c84d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.RemovePoint
-	// bool RemovePoint();                                                                                                      // [0xb0cf788] Final|Native|Public|BlueprintCallable 
+	// bool RemovePoint();                                                                                                      // [0xb2c84b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.PropagatePatrolPathPointIndexToDevice
-	// void PropagatePatrolPathPointIndexToDevice(int32_t NewPatrolPathPointIndex);                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void PropagatePatrolPathPointIndexToDevice(int32_t NewPatrolPathPointIndex);                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.PropagatePatrolPathIndexToDevice
-	// void PropagatePatrolPathIndexToDevice(int32_t NewPatrolPathIndex);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void PropagatePatrolPathIndexToDevice(int32_t NewPatrolPathIndex);                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.PostFinishSpawningActor
-	// void PostFinishSpawningActor();                                                                                          // [0xb0cf774] Final|Native|Public|BlueprintCallable 
+	// void PostFinishSpawningActor();                                                                                          // [0xb2c84a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.PatrolPointReached
-	// void PatrolPointReached(class AFortAthenaPatrolPoint* PathPoint, class AAIController* Instigator);                       // [0xb0cf6b0] Final|Native|Private 
+	// void PatrolPointReached(class AFortAthenaPatrolPoint* PathPoint, class AAIController* Instigator);                       // [0xb2c8360] Final|Native|Private 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.PatrolPointFailedToReach
-	// void PatrolPointFailedToReach(class AFortAthenaPatrolPoint* PathPoint, class AAIController* Instigator);                 // [0xb0cf5ec] Final|Native|Private 
+	// void PatrolPointFailedToReach(class AFortAthenaPatrolPoint* PathPoint, class AAIController* Instigator);                 // [0xb2c8220] Final|Native|Private 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.PatrolPathStopped
-	// void PatrolPathStopped(class AAIController* Instigator);                                                                 // [0xb0cf56c] Final|Native|Private 
+	// void PatrolPathStopped(class AAIController* Instigator);                                                                 // [0xb2c8160] Final|Native|Private 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.PatrolPathStarted
-	// void PatrolPathStarted(class AAIController* Instigator);                                                                 // [0xb0cf4ec] Final|Native|Private 
+	// void PatrolPathStarted(class AAIController* Instigator);                                                                 // [0xb2c80a0] Final|Native|Private 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.OnPatrolPathActorAssigned
-	// void OnPatrolPathActorAssigned();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnPatrolPathActorAssigned();                                                                                        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.OnPathExtremitiesChanged
-	// void OnPathExtremitiesChanged(bool bIsStart, bool bIsEnd);                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnPathExtremitiesChanged(bool bIsStart, bool bIsEnd);                                                               // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.OnAnyPropertyChanged
-	// void OnAnyPropertyChanged();                                                                                             // [0x32e4b44] Final|Native|Protected 
+	// void OnAnyPropertyChanged();                                                                                             // [0x307d48c] Final|Native|Protected 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.NotifyEditorUserOptionChanged
-	// void NotifyEditorUserOptionChanged(TArray<FString>& UserOptions);                                                        // [0x83f70c4] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void NotifyEditorUserOptionChanged(TArray<FString>& UserOptions);                                                        // [0x8396a14] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.HasValidPatrolPath
-	// bool HasValidPatrolPath();                                                                                               // [0xb0cf4a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasValidPatrolPath();                                                                                               // [0xb2c8054] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetPatrolPathPointIndexFromDevice
-	// int32_t GetPatrolPathPointIndexFromDevice();                                                                             // [0x211c0a0] Event|Public|BlueprintEvent|Const 
+	// int32_t GetPatrolPathPointIndexFromDevice();                                                                             // [0x2047e54] Event|Public|BlueprintEvent|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetPatrolPathPointIndex
-	// int32_t GetPatrolPathPointIndex();                                                                                       // [0xb0cf47c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPatrolPathPointIndex();                                                                                       // [0xb2c8030] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetPatrolPathPoint
-	// class UAIPatrolPathComponent* GetPatrolPathPoint(int32_t InPatrolPathIndex, int32_t InPatrolPathPointIndex);             // [0xb0cf3bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAIPatrolPathComponent* GetPatrolPathPoint(int32_t InPatrolPathIndex, int32_t InPatrolPathPointIndex);             // [0xb2c7ee4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetPatrolPathIndexFromDevice
-	// int32_t GetPatrolPathIndexFromDevice();                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent|Const 
+	// int32_t GetPatrolPathIndexFromDevice();                                                                                  // [0x2047e54] Event|Public|BlueprintEvent|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetPatrolPathIndex
-	// int32_t GetPatrolPathIndex();                                                                                            // [0xb0cf398] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPatrolPathIndex();                                                                                            // [0xb2c7ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetPatrolPathGroup
-	// EFortCreativePatrolPathGroup GetPatrolPathGroup();                                                                       // [0x211c0a0] Event|Public|BlueprintEvent|Const 
+	// EFortCreativePatrolPathGroup GetPatrolPathGroup();                                                                       // [0x2047e54] Event|Public|BlueprintEvent|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetPatrollingMode
-	// EPatrollingMode GetPatrollingMode();                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent|Const 
+	// EPatrollingMode GetPatrollingMode();                                                                                     // [0x2047e54] Event|Public|BlueprintEvent|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetPatrolFilterOptions
-	// class UClass* GetPatrolFilterOptions();                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
+	// class UClass* GetPatrolFilterOptions();                                                                                  // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetNextAvailablePatrolPathIndex
-	// bool GetNextAvailablePatrolPathIndex(int32_t& NextAvailableIndex);                                                       // [0xb0cf300] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetNextAvailablePatrolPathIndex(int32_t& NextAvailableIndex);                                                       // [0xb2c7e28] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GetLinkedPatrolPoints
-	// TArray<UAIPatrolPathComponent*> GetLinkedPatrolPoints();                                                                 // [0xb0cf294] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UAIPatrolPathComponent*> GetLinkedPatrolPoints();                                                                 // [0xb2c7dbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.GeneratePathPoints
-	// void GeneratePathPoints(EFortCreativePatrolPathGroup PatrolPathGroup, bool bGenerationCausedByDuplication);              // [0xb0cf1d0] Final|Native|Public|BlueprintCallable 
+	// void GeneratePathPoints(EFortCreativePatrolPathGroup PatrolPathGroup, bool bGenerationCausedByDuplication);              // [0xb2c7c7c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AIPatrolPath.AIPatrolPathComponent.CanNextPointBeReached
-	// bool CanNextPointBeReached();                                                                                            // [0xb0cf1b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanNextPointBeReached();                                                                                            // [0xb2c7c5c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/AIPatrolPath.PatrolPathSegmentDetails

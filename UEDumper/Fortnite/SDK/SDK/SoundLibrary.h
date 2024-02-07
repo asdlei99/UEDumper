@@ -40,7 +40,7 @@ enum class ESoundLibrarySelectionBehavior : uint8_t
 class USoundLibraryContext : public UObject
 { 
 public:
-	SDK_UNDEFINED(8,2697) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                               // 0x0028   (0x0008)  
+	SDK_UNDEFINED(8,2690) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                               // 0x0028   (0x0008)  
 	FGameplayTag                                       BaseEventName;                                              // 0x0030   (0x0004)  
 	bool                                               bForwardToActorOwner;                                       // 0x0034   (0x0001)  
 	bool                                               bForwardToAttachedActors;                                   // 0x0035   (0x0001)  
@@ -51,15 +51,15 @@ public:
 
 	/// Functions
 	// Function /Script/SoundLibrary.SoundLibraryContext.Play
-	// bool Play(FSoundLibraryContextEventInput& InEventData, TArray<UAudioComponent*>& OutComponents);                      // [0x15b2e28] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// bool Play(FSoundLibraryContextEventInput& InEventData, TArray<UAudioComponent*>& OutComponents);                      // [0x161e190] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/SoundLibrary.SoundLibraryContext.OnRemovedFromActor
-	// void OnRemovedFromActor(class AActor* InActor);                                                                       // [0x70571a4] Native|Event|Public|BlueprintEvent 
+	// void OnRemovedFromActor(class AActor* InActor);                                                                       // [0x6f1b6b0] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SoundLibrary.SoundLibraryContext.OnAddedToActor
-	// void OnAddedToActor(class AActor* InActor);                                                                           // [0x7057120] Native|Event|Public|BlueprintEvent 
+	// void OnAddedToActor(class AActor* InActor);                                                                           // [0x6f1b5ec] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SoundLibrary.SoundLibraryContext.GatherActorTargets
-	// bool GatherActorTargets(TArray<AActor*>& OutActors);                                                                  // [0x15c9714] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool GatherActorTargets(TArray<AActor*>& OutActors);                                                                  // [0x159095c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 	// Function /Script/SoundLibrary.SoundLibraryContext.CreateEventName
-	// bool CreateEventName(FGameplayTag& OutEventName);                                                                     // [0x15c980c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool CreateEventName(FGameplayTag& OutEventName);                                                                     // [0x159087c] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Struct /Script/SoundLibrary.SoundLibraryAnimContextSettings
@@ -84,8 +84,8 @@ class USoundLibraryAnimContext : public USoundLibraryContext
 { 
 public:
 	FSoundLibraryAnimContextSettings                   AnimSettings;                                               // 0x0058   (0x0024)  
-	SDK_UNDEFINED(8,2698) /* TWeakObjectPtr<UAnimSequenceBase*> */ __um(Animation);                                // 0x007C   (0x0008)  
-	SDK_UNDEFINED(8,2699) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(MeshComponent);                       // 0x0084   (0x0008)  
+	SDK_UNDEFINED(8,2691) /* TWeakObjectPtr<UAnimSequenceBase*> */ __um(Animation);                                // 0x007C   (0x0008)  
+	SDK_UNDEFINED(8,2692) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(MeshComponent);                       // 0x0084   (0x0008)  
 	bool                                               bSupportsNotifyEnd;                                         // 0x008C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x008D   (0x0003)  MISSED
 	float                                              AnimRate;                                                   // 0x0090   (0x0004)  
@@ -94,7 +94,7 @@ public:
 
 	/// Functions
 	// Function /Script/SoundLibrary.SoundLibraryAnimContext.ConfigureContext
-	// void ConfigureContext(class AActor* OwningActor, class UAnimSequenceBase* InAnimation, FSoundLibraryAnimContextSettings& InSettings); // [0x70569d0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ConfigureContext(class AActor* OwningActor, class UAnimSequenceBase* InAnimation, FSoundLibraryAnimContextSettings& InSettings); // [0x6f1acac] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SoundLibrary.SoundLibraryAnimNotifyHelper
@@ -102,7 +102,7 @@ public:
 class USoundLibraryAnimNotifyHelper : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,2700) /* TArray<TWeakObjectPtr<UAudioComponent*>> */ __um(PlayingComps);                      // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,2693) /* TArray<TWeakObjectPtr<UAudioComponent*>> */ __um(PlayingComps);                      // 0x0028   (0x0010)  
 };
 
 /// Class /Script/SoundLibrary.AnimNotify_SoundLibrary
@@ -128,8 +128,8 @@ public:
 class UGameFeatureAction_AddSoundLibraryCollection : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(16,2701) /* TArray<TWeakObjectPtr<USoundLibraryCollection*>> */ __um(CollectionList);            // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,2702) /* TArray<TWeakObjectPtr<USoundLibrarySubsystem*>> */ __um(TrackedSubsystems);          // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,2694) /* TArray<TWeakObjectPtr<USoundLibraryCollection*>> */ __um(CollectionList);            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,2695) /* TArray<TWeakObjectPtr<USoundLibrarySubsystem*>> */ __um(TrackedSubsystems);          // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0048   (0x0010)  MISSED
 };
 
@@ -138,27 +138,27 @@ public:
 class USoundLibrary : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,2703) /* TMap<FGameplayTag, TWeakObjectPtr<USoundBase*>> */ __um(Sounds);                     // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,2696) /* TMap<FGameplayTag, TWeakObjectPtr<USoundBase*>> */ __um(Sounds);                     // 0x0028   (0x0050)  
 	FAudioGameplayRequirements                         LibraryRequirements;                                        // 0x0078   (0x0050)  
 	FGameplayTag                                       Channel;                                                    // 0x00C8   (0x0004)  
 	int32_t                                            Priority;                                                   // 0x00CC   (0x0004)  
 	FGameplayTagContainer                              MetaData;                                                   // 0x00D0   (0x0020)  
-	SDK_UNDEFINED(80,2704) /* TMap<FGameplayTag, TWeakObjectPtr<USoundBase*>> */ __um(FullLibrary);                // 0x00F0   (0x0050)  
-	SDK_UNDEFINED(80,2705) /* TMap<FGameplayTag, USoundBase*> */ __um(RuntimeSounds);                              // 0x0140   (0x0050)  
+	SDK_UNDEFINED(80,2697) /* TMap<FGameplayTag, TWeakObjectPtr<USoundBase*>> */ __um(FullLibrary);                // 0x00F0   (0x0050)  
+	SDK_UNDEFINED(80,2698) /* TMap<FGameplayTag, USoundBase*> */ __um(RuntimeSounds);                              // 0x0140   (0x0050)  
 	TArray<class USoundBase*>                          LoadedSoundObjects;                                         // 0x0190   (0x0010)  
-	SDK_UNDEFINED(16,2706) /* TArray<TWeakObjectPtr<USoundBase*>> */ __um(Assets);                                 // 0x01A0   (0x0010)  
+	SDK_UNDEFINED(16,2699) /* TArray<TWeakObjectPtr<USoundBase*>> */ __um(Assets);                                 // 0x01A0   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x01B0   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/SoundLibrary.SoundLibrary.SetPriority
-	// void SetPriority(int32_t InPriority);                                                                                 // [0x7057ab0] Final|Native|Public|BlueprintCallable 
+	// void SetPriority(int32_t InPriority);                                                                                 // [0x6f1beb8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrary.SetChannel
-	// void SetChannel(FGameplayTag InTag);                                                                                  // [0x7057984] Final|Native|Public|BlueprintCallable 
+	// void SetChannel(FGameplayTag InTag);                                                                                  // [0x6f1bdfc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrary.FindSound
-	// class USoundBase* FindSound(FGameplayTag InTag);                                                                      // [0x7056d64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USoundBase* FindSound(FGameplayTag InTag);                                                                      // [0x6f1b148] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SoundLibrary.SoundLibrary.AddSound
-	// void AddSound(FGameplayTag InTag, class USoundBase* InSound);                                                         // [0x70567c4] Final|Native|Public|BlueprintCallable 
+	// void AddSound(FGameplayTag InTag, class USoundBase* InSound);                                                         // [0x6f1ab38] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SoundLibrary.SoundLibraryComponent
@@ -171,38 +171,38 @@ public:
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00B4   (0x0004)  MISSED
 	class UClass*                                      ContextClass;                                               // 0x00B8   (0x0008)  
 	TArray<class USoundLibrary*>                       Libraries;                                                  // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,2707) /* FMulticastInlineDelegate */ __um(OnSoundLibraryPlayEvent);                           // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,2708) /* FMulticastInlineDelegate */ __um(OnEventPlayedDelegate);                             // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,2709) /* FMulticastInlineDelegate */ __um(OnEventStoppedDelegate);                            // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,2700) /* FMulticastInlineDelegate */ __um(OnSoundLibraryPlayEvent);                           // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,2701) /* FMulticastInlineDelegate */ __um(OnEventPlayedDelegate);                             // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,2702) /* FMulticastInlineDelegate */ __um(OnEventStoppedDelegate);                            // 0x00F0   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x50];                                      // 0x0100   (0x0050)  MISSED
 	class USoundLibraryContext*                        Context;                                                    // 0x0150   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/SoundLibrary.SoundLibraryComponent.StopEvent
-	// bool StopEvent(FGameplayTag InEventName);                                                                             // [0x1853908] Native|Public|BlueprintCallable 
+	// bool StopEvent(FGameplayTag InEventName);                                                                             // [0x2120c6c] Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.RemoveLibrary
-	// void RemoveLibrary(class USoundLibrary* InLibrary);                                                                   // [0x70578cc] Final|Native|Public|BlueprintCallable 
+	// void RemoveLibrary(class USoundLibrary* InLibrary);                                                                   // [0x6f1bd04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.RemoveLibraries
-	// void RemoveLibraries(TArray<USoundLibrary*>& InLibraries);                                                            // [0x705782c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveLibraries(TArray<USoundLibrary*>& InLibraries);                                                            // [0x6f1bc64] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.PlayEvent
-	// FSoundLibraryPlayResult PlayEvent(FGameplayTag InEventName);                                                          // [0x3143100] Native|Public|BlueprintCallable 
+	// FSoundLibraryPlayResult PlayEvent(FGameplayTag InEventName);                                                          // [0x30a10d4] Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.OnSoundStopped
-	// void OnSoundStopped(FGameplayTag InEventName, class UAudioComponent* InComponent, bool& bStopped);                    // [0x7057438] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void OnSoundStopped(FGameplayTag InEventName, class UAudioComponent* InComponent, bool& bStopped);                    // [0x6f1b8b8] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.OnSoundPlayed
-	// void OnSoundPlayed(FGameplayTag InEventName, class UAudioComponent* InComponent);                                     // [0x7057228] Native|Event|Public|BlueprintEvent 
+	// void OnSoundPlayed(FGameplayTag InEventName, class UAudioComponent* InComponent);                                     // [0x6f1b774] Native|Event|Public|BlueprintEvent 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.OnEventStopped
-	// void OnEventStopped(FGameplayTag InEventName);                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnEventStopped(FGameplayTag InEventName);                                                                        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.OnEventPlayed
-	// void OnEventPlayed(FGameplayTag InEventName);                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnEventPlayed(FGameplayTag InEventName);                                                                         // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.IsEventActive
-	// bool IsEventActive(FGameplayTag InEventName);                                                                         // [0x3475f5c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsEventActive(FGameplayTag InEventName);                                                                         // [0x6f1b45c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.GetContext
-	// class USoundLibraryContext* GetContext();                                                                             // [0x7056ea0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USoundLibraryContext* GetContext();                                                                             // [0x6f1b218] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.AddLibrary
-	// void AddLibrary(class USoundLibrary* InLibrary);                                                                      // [0x705670c] Final|Native|Public|BlueprintCallable 
+	// void AddLibrary(class USoundLibrary* InLibrary);                                                                      // [0x6f1aa40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibraryComponent.AddLibraries
-	// void AddLibraries(TArray<USoundLibrary*>& InLibraries);                                                               // [0x705666c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddLibraries(TArray<USoundLibrary*>& InLibraries);                                                               // [0x6f1a9a0] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SoundLibrary.SoundLibraryProviderInterface
@@ -217,7 +217,7 @@ public:
 class USoundLibraryCollection : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,2710) /* TMap<FGameplayTag, FSoundLibrarySet> */ __um(Libraries);                             // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,2703) /* TMap<FGameplayTag, FSoundLibrarySet> */ __um(Libraries);                             // 0x0030   (0x0050)  
 };
 
 /// Class /Script/SoundLibrary.SoundLibrarySettings
@@ -225,7 +225,7 @@ public:
 class USoundLibrarySettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(32,2711) /* TWeakObjectPtr<USoundLibraryCollection*> */ __um(CommonLibraries);                   // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,2704) /* TWeakObjectPtr<USoundLibraryCollection*> */ __um(CommonLibraries);                   // 0x0030   (0x0020)  
 };
 
 /// Struct /Script/SoundLibrary.SoundLibrarySimpleContextSettings
@@ -246,7 +246,7 @@ struct FSoundLibrarySimpleContextSettings
 	FName                                              AttachName;                                                 // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x002C   (0x0004)  MISSED
 	class USceneComponent*                             AttachToComponent;                                          // 0x0030   (0x0008)  
-	SDK_UNDEFINED(1,2712) /* TEnumAsByte<EAttachLocation> */ __um(LocationType);                                   // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,2705) /* TEnumAsByte<EAttachLocation> */ __um(LocationType);                                   // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0039   (0x0007)  MISSED
 	FVector                                            Location;                                                   // 0x0040   (0x0018)  
 };
@@ -261,7 +261,7 @@ public:
 
 	/// Functions
 	// Function /Script/SoundLibrary.SoundLibrarySimpleContext.ConfigureContext
-	// void ConfigureContext(class AActor* OwningActor, FSoundLibrarySimpleContextSettings& InSettings);                     // [0x7056bf8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ConfigureContext(class AActor* OwningActor, FSoundLibrarySimpleContextSettings& InSettings);                     // [0x6f1af58] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SoundLibrary.SoundLibrarySubsystem
@@ -271,36 +271,36 @@ class USoundLibrarySubsystem : public UWorldSubsystem
 public:
 	TArray<class USoundLibraryCollection*>             LibraryCollections;                                         // 0x0030   (0x0010)  
 	class USoundLibrarySimpleContext*                  SimpleContext;                                              // 0x0040   (0x0008)  
-	SDK_UNDEFINED(80,2713) /* TMap<uint32_t, FSoundLibraryActorData> */ __um(ActorDataMap);                        // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,2706) /* TMap<uint32_t, FSoundLibraryActorData> */ __um(ActorDataMap);                        // 0x0048   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.RemoveLibrary
-	// void RemoveLibrary(class AActor* Actor, class USoundLibrary* Library);                                                // [0x2fdaf3c] Final|Native|Public|BlueprintCallable 
+	// void RemoveLibrary(class AActor* Actor, class USoundLibrary* Library);                                                // [0x3385b70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.RemoveLibrariesFromCollections
-	// void RemoveLibrariesFromCollections(class AActor* Actor, FGameplayTagContainer& CollectionTags);                      // [0x2aa00e8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveLibrariesFromCollections(class AActor* Actor, FGameplayTagContainer& CollectionTags);                      // [0x28ca614] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.RemoveLibraries
-	// void RemoveLibraries(class AActor* Actor, TArray<USoundLibrary*> Libraries);                                          // [0x31bf704] Final|Native|Public|BlueprintCallable 
+	// void RemoveLibraries(class AActor* Actor, TArray<USoundLibrary*> Libraries);                                          // [0x2fad564] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.RemoveContext
-	// bool RemoveContext(class AActor* Actor, class UClass* ContextClass);                                                  // [0x705767c] Final|Native|Public|BlueprintCallable 
+	// bool RemoveContext(class AActor* Actor, class UClass* ContextClass);                                                  // [0x6f1ba34] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.PlaySoundSimple
-	// FSoundLibraryPlayResult PlaySoundSimple(class AActor* OwningActor, FSoundLibrarySimpleContextSettings& InSettings);   // [0x2d7a814] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FSoundLibraryPlayResult PlaySoundSimple(class AActor* OwningActor, FSoundLibrarySimpleContextSettings& InSettings);   // [0x2c82a5c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.PlaySound
-	// void PlaySound(class USoundLibraryContext* Context, FSoundLibraryPlayResult& OutResults);                             // [0x339e1b0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void PlaySound(class USoundLibraryContext* Context, FSoundLibraryPlayResult& OutResults);                             // [0x30b4d04] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.GetContext
-	// class USoundLibraryContext* GetContext(class AActor* Actor, class UClass* ContextClass);                              // [0x7056eb8] Final|Native|Public|BlueprintCallable 
+	// class USoundLibraryContext* GetContext(class AActor* Actor, class UClass* ContextClass);                              // [0x6f1b230] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.EnableEventsForActor
-	// void EnableEventsForActor(class AActor* Actor);                                                                       // [0x7056ce0] Final|Native|Public|BlueprintCallable 
+	// void EnableEventsForActor(class AActor* Actor);                                                                       // [0x6f1b084] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.DisableEventsForActor
-	// void DisableEventsForActor(class AActor* Actor);                                                                      // [0x2d6e49c] Final|Native|Public|BlueprintCallable 
+	// void DisableEventsForActor(class AActor* Actor);                                                                      // [0x2a74850] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.AddLibrary
-	// void AddLibrary(class AActor* Actor, class USoundLibrary* Library);                                                   // [0x2f5c5d4] Final|Native|Public|BlueprintCallable 
+	// void AddLibrary(class AActor* Actor, class USoundLibrary* Library);                                                   // [0x2e4e084] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.AddLibrariesFromCollections
-	// void AddLibrariesFromCollections(class AActor* Actor, FGameplayTagContainer& CollectionTags);                         // [0x33f4750] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddLibrariesFromCollections(class AActor* Actor, FGameplayTagContainer& CollectionTags);                         // [0x313a290] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.AddLibraries
-	// void AddLibraries(class AActor* Actor, TArray<USoundLibrary*> Libraries);                                             // [0x32b7058] Final|Native|Public|BlueprintCallable 
+	// void AddLibraries(class AActor* Actor, TArray<USoundLibrary*> Libraries);                                             // [0x30b8240] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SoundLibrary.SoundLibrarySubsystem.AddContext
-	// class USoundLibraryContext* AddContext(class AActor* Actor, class UClass* ContextClass);                              // [0x7056424] Final|Native|Public|BlueprintCallable 
+	// class USoundLibraryContext* AddContext(class AActor* Actor, class UClass* ContextClass);                              // [0x6f1a6d8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SoundLibrary.SoundLibraryTagHelperFunctions
@@ -312,7 +312,7 @@ public:
 
 	/// Functions
 	// Function /Script/SoundLibrary.SoundLibraryTagHelperFunctions.MakeSoundLibraryTag
-	// FSoundLibraryTag MakeSoundLibraryTag(FGameplayTag& tag);                                                              // [0x705705c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FSoundLibraryTag MakeSoundLibraryTag(FGameplayTag& tag);                                                              // [0x6f1b528] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/SoundLibrary.SoundLibraryPlayResult
@@ -341,7 +341,7 @@ struct FSoundLibraryContextEventInput
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FSoundLibrarySet
 { 
-	SDK_UNDEFINED(80,2714) /* TSet<USoundLibrary*> */  __um(LibrarySet);                                           // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,2707) /* TSet<USoundLibrary*> */  __um(LibrarySet);                                           // 0x0000   (0x0050)  
 	ESoundLibrarySelectionBehavior                     SelectionType;                                              // 0x0050   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0051   (0x0007)  MISSED
 };
@@ -351,7 +351,7 @@ struct FSoundLibrarySet
 struct FSoundLibraryActorData
 { 
 	unsigned char                                      UnknownData00_2[0x20];                                      // 0x0000   (0x0020)  MISSED
-	SDK_UNDEFINED(80,2715) /* TSet<USoundLibrary*> */  __um(SoundLibraries);                                       // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,2708) /* TSet<USoundLibrary*> */  __um(SoundLibraries);                                       // 0x0020   (0x0050)  
 	TArray<class USoundLibraryContext*>                SoundLibraryContexts;                                       // 0x0070   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0080   (0x0008)  MISSED
 };

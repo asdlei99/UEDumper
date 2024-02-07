@@ -14,9 +14,9 @@
 /// Size: 0x0048 (0x000000 - 0x000048)
 struct FCreativeLowMemoryFallbackUserFacingText
 { 
-	SDK_UNDEFINED(24,12467) /* FText */                __um(ExitToMainMenuReasonText);                             // 0x0000   (0x0018)  
-	SDK_UNDEFINED(24,12468) /* FText */                __um(WarningToastTitle);                                    // 0x0018   (0x0018)  
-	SDK_UNDEFINED(24,12469) /* FText */                __um(WarningToastDescription);                              // 0x0030   (0x0018)  
+	SDK_UNDEFINED(24,12519) /* FText */                __um(ExitToMainMenuReasonText);                             // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,12520) /* FText */                __um(WarningToastTitle);                                    // 0x0018   (0x0018)  
+	SDK_UNDEFINED(24,12521) /* FText */                __um(WarningToastDescription);                              // 0x0030   (0x0018)  
 };
 
 /// Class /Script/CreativeLowMemoryFallbackRuntime.CreativeLowMemoryFallbackSettings
@@ -24,10 +24,10 @@ struct FCreativeLowMemoryFallbackUserFacingText
 class UCreativeLowMemoryFallbackSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(32,12470) /* TWeakObjectPtr<UObject*> */ __um(WarningToastIcon);                                 // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,12522) /* TWeakObjectPtr<UObject*> */ __um(WarningToastIcon);                                 // 0x0030   (0x0020)  
 	FCreativeLowMemoryFallbackUserFacingText           DefaultText;                                                // 0x0050   (0x0048)  
-	SDK_UNDEFINED(80,12471) /* TMap<TWeakObjectPtr<UFortPlaylist*>, FCreativeLowMemoryFallbackFreeMemoryThresholds> */ __um(PlaylistOverrideThresholds); // 0x0098   (0x0050)  
-	SDK_UNDEFINED(80,12472) /* TMap<TWeakObjectPtr<UFortPlaylist*>, FCreativeLowMemoryFallbackUserFacingText> */ __um(PlaylistOverrideText); // 0x00E8   (0x0050)  
+	SDK_UNDEFINED(80,12523) /* TMap<TWeakObjectPtr<UFortPlaylist*>, FCreativeLowMemoryFallbackFreeMemoryThresholds> */ __um(PlaylistOverrideThresholds); // 0x0098   (0x0050)  
+	SDK_UNDEFINED(80,12524) /* TMap<TWeakObjectPtr<UFortPlaylist*>, FCreativeLowMemoryFallbackUserFacingText> */ __um(PlaylistOverrideText); // 0x00E8   (0x0050)  
 };
 
 /// Struct /Script/CreativeLowMemoryFallbackRuntime.CreativeLowMemoryFallbackFreeMemoryThresholds
@@ -50,6 +50,6 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeLowMemoryFallbackRuntime.CreativeLowMemoryFallbackWorldSubsystem.OnPlaylistDataChanged
-	// void OnPlaylistDataChanged(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb5f0b70] Final|Native|Private|HasOutParms 
+	// void OnPlaylistDataChanged(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb850884] Final|Native|Private|HasOutParms 
 };
 

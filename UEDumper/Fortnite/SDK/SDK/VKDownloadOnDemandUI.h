@@ -39,9 +39,9 @@ public:
 
 	/// Functions
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectManagementTab.UpdateProjectConfirmed
-	// void UpdateProjectConfirmed();                                                                                        // [0xb682910] Final|Native|Protected|BlueprintCallable 
+	// void UpdateProjectConfirmed();                                                                                        // [0xb8fae2c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectManagementTab.RemoveProjectConfirmed
-	// void RemoveProjectConfirmed();                                                                                        // [0xb68286c] Final|Native|Protected|BlueprintCallable 
+	// void RemoveProjectConfirmed();                                                                                        // [0xb8fad44] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/VKDownloadOnDemandUI.DownloadOnDemandTabPanel
@@ -55,7 +55,7 @@ public:
 	class UClass*                                      DownloadOnDemandProjectDetailsSidePanelClass;               // 0x0478   (0x0008)  
 	class UClass*                                      DownloadOnDemandAddProjectModalClass;                       // 0x0480   (0x0008)  
 	class UClass*                                      DownloadOnDemandMessageModalClass;                          // 0x0488   (0x0008)  
-	SDK_UNDEFINED(16,15319) /* FString */              __um(AddProjectsWithMnemonicEntitlementName);               // 0x0490   (0x0010)  
+	SDK_UNDEFINED(16,15415) /* FString */              __um(AddProjectsWithMnemonicEntitlementName);               // 0x0490   (0x0010)  
 	class UDownloadOnDemandProject*                    SelectedProject;                                            // 0x04A0   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x10];                                      // 0x04A8   (0x0010)  MISSED
 	class UOverlay*                                    Overlay_AddProjectParent;                                   // 0x04B8   (0x0008)  
@@ -72,7 +72,7 @@ public:
 class UDownloadOnDemandTab_EntitlementCreationCondition : public UCreativeContentBrowserTab_CreationCondition
 { 
 public:
-	SDK_UNDEFINED(16,15320) /* FString */              __um(EntitlementName);                                      // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,15416) /* FString */              __um(EntitlementName);                                      // 0x0028   (0x0010)  
 };
 
 /// Class /Script/VKDownloadOnDemandUI.DownloadOnDemandAddProjectModal
@@ -92,9 +92,9 @@ public:
 
 	/// Functions
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandAddProjectModal.UpdateLightningViolator
-	// void UpdateLightningViolator(ESlateVisibility InVisibility, FText& InText);                                           // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void UpdateLightningViolator(ESlateVisibility InVisibility, FText& InText);                                           // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandAddProjectModal.HandleDownloadLinkIdTextChanged
-	// void HandleDownloadLinkIdTextChanged(FText& InputLinkCode);                                                           // [0xb6827d0] Final|Native|Private|HasOutParms 
+	// void HandleDownloadLinkIdTextChanged(FText& InputLinkCode);                                                           // [0xb8faca8] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/VKDownloadOnDemandUI.DownloadOnDemandMessageModal
@@ -181,9 +181,9 @@ public:
 
 	/// Functions
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectTile.UpdateLabel
-	// void UpdateLabel(bool bShowLabel);                                                                                    // [0xb682890] Final|Native|Public|BlueprintCallable 
+	// void UpdateLabel(bool bShowLabel);                                                                                    // [0xb8fad68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectTile.OnLabelUpdated
-	// void OnLabelUpdated();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnLabelUpdated();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/VKDownloadOnDemandUI.DownloadOnDemandProjectTileImage

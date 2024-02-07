@@ -30,13 +30,13 @@ public:
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FArtifactSettings
 { 
-	SDK_UNDEFINED(16,14715) /* FString */              __um(ArtifactName);                                         // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14716) /* FString */              __um(ClientId);                                             // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,14717) /* FString */              __um(ClientSecret);                                         // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,14718) /* FString */              __um(ProductId);                                            // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,14719) /* FString */              __um(SandboxId);                                            // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,14720) /* FString */              __um(DeploymentId);                                         // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,14721) /* FString */              __um(ClientEncryptionKey);                                  // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,14810) /* FString */              __um(ArtifactName);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14811) /* FString */              __um(ClientId);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14812) /* FString */              __um(ClientSecret);                                         // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,14813) /* FString */              __um(ProductId);                                            // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,14814) /* FString */              __um(SandboxId);                                            // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,14815) /* FString */              __um(DeploymentId);                                         // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,14816) /* FString */              __um(ClientEncryptionKey);                                  // 0x0060   (0x0010)  
 };
 
 /// Class /Script/OnlineSubsystemEOS.EOSSettings
@@ -44,19 +44,19 @@ struct FArtifactSettings
 class UEOSSettings : public URuntimeOptionsBase
 { 
 public:
-	SDK_UNDEFINED(16,14722) /* FString */              __um(CacheDir);                                             // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,14723) /* FString */              __um(DefaultArtifactName);                                  // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,14724) /* FString */              __um(RTCBackgroundMode);                                    // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,14817) /* FString */              __um(CacheDir);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,14818) /* FString */              __um(DefaultArtifactName);                                  // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,14819) /* FString */              __um(RTCBackgroundMode);                                    // 0x0058   (0x0010)  
 	int32_t                                            TickBudgetInMilliseconds;                                   // 0x0068   (0x0004)  
 	bool                                               bEnableOverlay;                                             // 0x006C   (0x0001)  
 	bool                                               bEnableSocialOverlay;                                       // 0x006D   (0x0001)  
 	bool                                               bEnableEditorOverlay;                                       // 0x006E   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x006F   (0x0001)  MISSED
-	SDK_UNDEFINED(16,14725) /* TArray<FString> */      __um(TitleStorageTags);                                     // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,14820) /* TArray<FString> */      __um(TitleStorageTags);                                     // 0x0070   (0x0010)  
 	int32_t                                            TitleStorageReadChunkLength;                                // 0x0080   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0084   (0x0004)  MISSED
 	TArray<FArtifactSettings>                          Artifacts;                                                  // 0x0088   (0x0010)  
-	SDK_UNDEFINED(16,14726) /* TArray<FString> */      __um(AuthScopeFlags);                                       // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,14821) /* TArray<FString> */      __um(AuthScopeFlags);                                       // 0x0098   (0x0010)  
 	bool                                               bUseEAS;                                                    // 0x00A8   (0x0001)  
 	bool                                               bUseEOSConnect;                                             // 0x00A9   (0x0001)  
 	bool                                               bMirrorStatsToEOS;                                          // 0x00AA   (0x0001)  

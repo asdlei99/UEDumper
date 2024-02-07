@@ -24,19 +24,19 @@ enum class EGameplayMessageMatchType : uint8_t
 class UAsyncAction_RegisterGameplayMessageReceiver : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,2316) /* FMulticastInlineDelegate */ __um(OnMessageReceived);                                 // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,2317) /* FMulticastInlineDelegate */ __um(HandleSavedState);                                  // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,2318) /* FMulticastInlineDelegate */ __um(HandleStateCleared);                                // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,2304) /* FMulticastInlineDelegate */ __um(OnMessageReceived);                                 // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2305) /* FMulticastInlineDelegate */ __um(HandleSavedState);                                  // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,2306) /* FMulticastInlineDelegate */ __um(HandleStateCleared);                                // 0x0050   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x38];                                      // 0x0060   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/GameplayMessages.AsyncAction_RegisterGameplayMessageReceiver.Unregister
-	// void Unregister();                                                                                                    // [0x1e093d0] Final|Native|Public|BlueprintCallable 
+	// void Unregister();                                                                                                    // [0x201202c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayMessages.AsyncAction_RegisterGameplayMessageReceiver.RegisterGameplayMessageReceiver
-	// class UAsyncAction_RegisterGameplayMessageReceiver* RegisterGameplayMessageReceiver(class UObject* WorldContextObject, FEventMessageTag Channel, class UScriptStruct* PayloadType, EGameplayMessageMatchType MatchType, class AActor* ActorContext); // [0x6d7c140] Final|Native|Static|Public|BlueprintCallable 
+	// class UAsyncAction_RegisterGameplayMessageReceiver* RegisterGameplayMessageReceiver(class UObject* WorldContextObject, FEventMessageTag Channel, class UScriptStruct* PayloadType, EGameplayMessageMatchType MatchType, class AActor* ActorContext); // [0x6be85b8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayMessages.AsyncAction_RegisterGameplayMessageReceiver.GetPayload
-	// bool GetPayload(int32_t& OutPayload);                                                                                 // [0x6d7b7fc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetPayload(int32_t& OutPayload);                                                                                 // [0x6be7f1c] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GameplayMessages.GameplayMessageReplicator
@@ -48,7 +48,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayMessages.GameplayMessageReplicator.Multicast_ServerMessageTriggered
-	// void Multicast_ServerMessageTriggered(FEventMessageTag Channel, FReplicatedMessage MessageData);                      // [0x6d7bec4] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ServerMessageTriggered(FEventMessageTag Channel, FReplicatedMessage MessageData);                      // [0x6be83ec] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/GameplayMessages.GameplayMessageRouter
@@ -62,11 +62,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayMessages.GameplayMessageRouter.K2_BroadcastMessage
-	// void K2_BroadcastMessage(FEventMessageTag Channel, int32_t& Message, bool bSaveToChannel, class AActor* ActorContext); // [0x6d7bac8] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void K2_BroadcastMessage(FEventMessageTag Channel, int32_t& Message, bool bSaveToChannel, class AActor* ActorContext); // [0x6be8164] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/GameplayMessages.GameplayMessageRouter.HasValidSavedMessage
-	// bool HasValidSavedMessage(FEventMessageTag Channel);                                                                  // [0x6d7b98c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasValidSavedMessage(FEventMessageTag Channel);                                                                  // [0x6be8044] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayMessages.GameplayMessageRouter.ClearSavedMessage
-	// void ClearSavedMessage(FEventMessageTag Channel);                                                                     // [0x6d7b5a4] Final|Native|Public|BlueprintCallable 
+	// void ClearSavedMessage(FEventMessageTag Channel);                                                                     // [0x6be7da4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayMessages.BlueprintEventMessageTagLibrary
@@ -78,7 +78,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayMessages.BlueprintEventMessageTagLibrary.GetEventMessageTagFromGameplayTag
-	// FEventMessageTag GetEventMessageTagFromGameplayTag(FGameplayTag InTag);                                               // [0x6d7b6d4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FEventMessageTag GetEventMessageTagFromGameplayTag(FGameplayTag InTag);                                               // [0x6be7e64] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/GameplayMessages.EventMessageTag
@@ -106,7 +106,7 @@ struct FReplicatedMessage
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FGameplayMessageReceiverHandle
 { 
-	SDK_UNDEFINED(8,2319) /* TWeakObjectPtr<UGameplayMessageRouter*> */ __um(Subsystem);                           // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,2307) /* TWeakObjectPtr<UGameplayMessageRouter*> */ __um(Subsystem);                           // 0x0000   (0x0008)  
 	FEventMessageTag                                   Channel;                                                    // 0x0008   (0x0004)  
 	int32_t                                            ID;                                                         // 0x000C   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0010   (0x0008)  MISSED

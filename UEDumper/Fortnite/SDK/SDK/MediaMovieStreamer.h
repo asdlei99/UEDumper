@@ -23,6 +23,6 @@ public:
 
 	/// Functions
 	// Function /Script/MediaMovieStreamer.MediaMovieAssets.OnMediaEnd
-	// void OnMediaEnd();                                                                                                    // [0x7c7a27c] Final|Native|Private 
+	// void OnMediaEnd();                                                                                                    // [0x7c37778] Final|Native|Private 
 };
 

@@ -472,12 +472,13 @@ enum class ECheckBoxState : uint8_t
 };
 
 /// Enum /Script/SlateCore.ETextOverflowPolicy
-/// Size: 0x03
+/// Size: 0x04
 enum class ETextOverflowPolicy : uint8_t
 {
 	ETextOverflowPolicy__Clip                                                        = 0,
 	ETextOverflowPolicy__Ellipsis                                                    = 1,
-	ETextOverflowPolicy__ETextOverflowPolicy_MAX                                     = 2
+	ETextOverflowPolicy__MultilineEllipsis                                           = 2,
+	ETextOverflowPolicy__ETextOverflowPolicy_MAX                                     = 3
 };
 
 /// Enum /Script/SlateCore.ETextTransformPolicy

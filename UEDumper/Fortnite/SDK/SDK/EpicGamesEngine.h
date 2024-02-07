@@ -19,7 +19,7 @@
 struct FVerseActionMapping : FFastArraySerializerItem
 { 
 	FName                                              Name;                                                       // 0x000C   (0x0004)  
-	SDK_UNDEFINED(16,9216) /* FString */               __um(UIText);                                               // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,9238) /* FString */               __um(UIText);                                               // 0x0010   (0x0010)  
 	TArray<FKey>                                       Keys;                                                       // 0x0020   (0x0010)  
 };
 
@@ -38,7 +38,7 @@ struct FVerseAxisMapping : FFastArraySerializerItem
 	FName                                              AxisName;                                                   // 0x000C   (0x0004)  
 	float                                              Scale;                                                      // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(16,9217) /* FString */               __um(UIText);                                               // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,9239) /* FString */               __um(UIText);                                               // 0x0018   (0x0010)  
 	TArray<FKey>                                       Keys;                                                       // 0x0028   (0x0010)  
 };
 
@@ -55,7 +55,7 @@ struct FVerseAxisMappingArray : FFastArraySerializer
 struct FVerseInputBinding : FFastArraySerializerItem
 { 
 	FName                                              Name;                                                       // 0x000C   (0x0004)  
-	SDK_UNDEFINED(1,9218) /* TEnumAsByte<EInputEvent> */ __um(InputEvent);                                         // 0x0010   (0x0001)  
+	SDK_UNDEFINED(1,9240) /* TEnumAsByte<EInputEvent> */ __um(InputEvent);                                         // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0xB];                                       // 0x0011   (0x000B)  MISSED
 };
 
@@ -81,8 +81,8 @@ public:
 
 	/// Functions
 	// Function /Script/EpicGamesEngine.VerseUEInputComponentBase.ServerTriggerAxis
-	// void ServerTriggerAxis(FName AxisName, float Value);                                                                  // [0xa5c6dcc] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerTriggerAxis(FName AxisName, float Value);                                                                  // [0xa7a5034] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/EpicGamesEngine.VerseUEInputComponentBase.ServerTriggerAction
-	// void ServerTriggerAction(FName ActionName, TEnumAsByte<EInputEvent> InputEvent);                                      // [0xa5c6ce0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void ServerTriggerAction(FName ActionName, TEnumAsByte<EInputEvent> InputEvent);                                      // [0xa7a4ebc] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 };
 

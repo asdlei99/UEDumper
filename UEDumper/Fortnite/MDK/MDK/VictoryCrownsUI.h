@@ -27,7 +27,7 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsUI.FortUIManagerComponent_VictoryCrowns.RebuildBearerIndicators
-	// void RebuildBearerIndicators(TArray<AFortPlayerStateAthena*>& CrownBearerList);                                          // [0xb44a1e4] Final|Native|Protected|HasOutParms 
+	// void RebuildBearerIndicators(TArray<AFortPlayerStateAthena*>& CrownBearerList);                                          // [0xb684dc4] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/VictoryCrownsUI.VictoryCrownsBearerInfoBase
@@ -44,9 +44,9 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsUI.VictoryCrownsBearerInfoBase.SetPlayerState
-	// void SetPlayerState(class AFortPlayerStateAthena* InPlayerState);                                                        // [0xb44a330] Final|Native|Public|BlueprintCallable 
+	// void SetPlayerState(class AFortPlayerStateAthena* InPlayerState);                                                        // [0xb684f10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsBearerInfoBase.OnSetPlayerState
-	// void OnSetPlayerState(class AFortPlayerStateAthena* PSA);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnSetPlayerState(class AFortPlayerStateAthena* PSA);                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/VictoryCrownsUI.VictoryCrownsIndicator
@@ -61,11 +61,11 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsUI.VictoryCrownsIndicator.OnScreenClampChanged
-	// void OnScreenClampChanged(bool bIsClamped);                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnScreenClampChanged(bool bIsClamped);                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsIndicator.OnDistanceChanged
-	// void OnDistanceChanged(int32_t Distance);                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnDistanceChanged(int32_t Distance);                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsIndicator.GetIndicatedPlayerStateAthena
-	// class AFortPlayerStateAthena* GetIndicatedPlayerStateAthena();                                                           // [0xb44a108] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortPlayerStateAthena* GetIndicatedPlayerStateAthena();                                                           // [0xb684ce8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/VictoryCrownsUI.VictoryCrownsPlacementOverlay
@@ -90,9 +90,9 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPlayerInfoWidget.OnPlayerVictoryCrownStatusChanged
-	// void OnPlayerVictoryCrownStatusChanged(bool bHasCrown);                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPlayerVictoryCrownStatusChanged(bool bHasCrown);                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPlayerInfoWidget.HandleCrownBearerListChanged
-	// void HandleCrownBearerListChanged(TArray<AFortPlayerStateAthena*>& CrownBearerList);                                     // [0xb44a12c] Final|Native|Protected|HasOutParms 
+	// void HandleCrownBearerListChanged(TArray<AFortPlayerStateAthena*>& CrownBearerList);                                     // [0xb684d0c] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget
@@ -110,22 +110,22 @@ public:
 
 	/// Functions
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.UnregisterCloseButtonInput
-	// void UnregisterCloseButtonInput();                                                                                       // [0xb44a3b0] Final|Native|Private 
+	// void UnregisterCloseButtonInput();                                                                                       // [0xb684fd0] Final|Native|Private 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.StartFadeOut
-	// void StartFadeOut();                                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void StartFadeOut();                                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.RegisterCloseButtonInput
-	// void RegisterCloseButtonInput();                                                                                         // [0xb44a31c] Final|Native|Private 
+	// void RegisterCloseButtonInput();                                                                                         // [0xb684efc] Final|Native|Private 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.RebuildBearerList
-	// void RebuildBearerList(TArray<AFortPlayerStateAthena*>& CrownBearerList);                                                // [0xb44a280] Final|Native|Private|HasOutParms 
+	// void RebuildBearerList(TArray<AFortPlayerStateAthena*>& CrownBearerList);                                                // [0xb684e60] Final|Native|Private|HasOutParms 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.OnInputMethodChanged
-	// void OnInputMethodChanged(ECommonInputType CurrentInput);                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnInputMethodChanged(ECommonInputType CurrentInput);                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.OnCloseActionsComplete
-	// void OnCloseActionsComplete();                                                                                           // [0xb44a1c8] Final|Native|Protected|BlueprintCallable 
+	// void OnCloseActionsComplete();                                                                                           // [0xb684da8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.OnButtonCloseProgress
-	// void OnButtonCloseProgress(float Progress);                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnButtonCloseProgress(float Progress);                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.OnButtonClose
-	// void OnButtonClose();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void OnButtonClose();                                                                                                    // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/VictoryCrownsUI.VictoryCrownsPreGameWidget.FadeOutTimerFinished
-	// void FadeOutTimerFinished();                                                                                             // [0xb44a0f4] Final|Native|Private 
+	// void FadeOutTimerFinished();                                                                                             // [0xb684cd4] Final|Native|Private 
 };
 

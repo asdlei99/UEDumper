@@ -44,11 +44,11 @@ public:
 
 	/// Functions
 	// Function /Script/BeatSyncedAnimRuntime.BeatSyncedAnimLibrary.GetLastEmoteExecuted
-	// class UFortItemDefinition* GetLastEmoteExecuted(class AController* Controller);                                       // [0xab5e2c0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UFortItemDefinition* GetLastEmoteExecuted(class AController* Controller);                                       // [0xad3a804] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.BeatSyncedAnimLibrary.CalculateMontagePlayRate
-	// float CalculateMontagePlayRate(class UMusicClockComponent* MusicClock, class UAnimMontage* Montage, float MontageBeatLength); // [0xab5dd10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float CalculateMontagePlayRate(class UMusicClockComponent* MusicClock, class UAnimMontage* Montage, float MontageBeatLength); // [0xad39f38] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.BeatSyncedAnimLibrary.CalculateMontageBeatSyncInfo
-	// FFMontageBeatSyncInfo CalculateMontageBeatSyncInfo(class UMusicClockComponent* MusicClock, class UAnimMontage* Montage, float LengthInBeats, float MsOffset); // [0xab5d9a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FFMontageBeatSyncInfo CalculateMontageBeatSyncInfo(class UMusicClockComponent* MusicClock, class UAnimMontage* Montage, float LengthInBeats, float MsOffset); // [0xad39ac8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/BeatSyncedAnimRuntime.FMBeatTimingUtils
@@ -60,17 +60,17 @@ public:
 
 	/// Functions
 	// Function /Script/BeatSyncedAnimRuntime.FMBeatTimingUtils.GetCurrentSongTime_Unsafe
-	// float GetCurrentSongTime_Unsafe(class UMusicClockComponent* InMusicClock, bool bRounded);                             // [0xab5e1f8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetCurrentSongTime_Unsafe(class UMusicClockComponent* InMusicClock, bool bRounded);                             // [0xad3a6c4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.FMBeatTimingUtils.GetCurrentSongTime
-	// float GetCurrentSongTime(class UMusicClockComponent* InMusicClock, bool bRounded);                                    // [0xab5e130] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetCurrentSongTime(class UMusicClockComponent* InMusicClock, bool bRounded);                                    // [0xad3a584] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.FMBeatTimingUtils.GetCurrentBeatForBPM
-	// float GetCurrentBeatForBPM(float InBPM, class UObject* WorldContextObject);                                           // [0xab5df60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetCurrentBeatForBPM(float InBPM, class UObject* WorldContextObject);                                           // [0xad3a2c4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.FMBeatTimingUtils.GetCurrentBeat_Unsafe
-	// float GetCurrentBeat_Unsafe(class UMusicClockComponent* InMusicClock, bool bRounded);                                 // [0xab5e028] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetCurrentBeat_Unsafe(class UMusicClockComponent* InMusicClock, bool bRounded);                                 // [0xad3a404] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.FMBeatTimingUtils.GetCurrentBeat
-	// float GetCurrentBeat(class UMusicClockComponent* InMusicClock, bool bRounded);                                        // [0xab5de98] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetCurrentBeat(class UMusicClockComponent* InMusicClock, bool bRounded);                                        // [0xad3a184] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.FMBeatTimingUtils.GetBeatsPerMeasure
-	// float GetBeatsPerMeasure();                                                                                           // [0xab5de80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetBeatsPerMeasure();                                                                                           // [0xad3a16c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/BeatSyncedAnimRuntime.MontageBeatSyncComponent
@@ -86,7 +86,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00B1   (0x0003)  MISSED
 	float                                              MontageLengthInBeats;                                       // 0x00B4   (0x0004)  
 	float                                              MontageOffsetMs;                                            // 0x00B8   (0x0004)  
-	SDK_UNDEFINED(8,11721) /* TWeakObjectPtr<UMusicClockComponent*> */ __um(WeakMusicClockPtr);                    // 0x00BC   (0x0008)  
+	SDK_UNDEFINED(8,11758) /* TWeakObjectPtr<UMusicClockComponent*> */ __um(WeakMusicClockPtr);                    // 0x00BC   (0x0008)  
 	bool                                               bIsMusicPlaying;                                            // 0x00C4   (0x0001)  
 	bool                                               bHaveTimingInfo;                                            // 0x00C5   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x00C6   (0x0002)  MISSED
@@ -94,25 +94,25 @@ public:
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x00CC   (0x0004)  MISSED
 	class AFortPlayerPawn*                             OwnerPlayerPawn;                                            // 0x00D0   (0x0008)  
 	class USkeletalMeshComponent*                      OwnerMeshComponent;                                         // 0x00D8   (0x0008)  
-	SDK_UNDEFINED(16,11722) /* TArray<TWeakObjectPtr<UMontageBeatSyncComponent*>> */ __um(YoungerSiblings);        // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,11759) /* TArray<TWeakObjectPtr<UMontageBeatSyncComponent*>> */ __um(YoungerSiblings);        // 0x00E0   (0x0010)  
 	class UPreciseBeatSyncedAnimMetaData*              ActiveTimingInfo;                                           // 0x00F0   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/BeatSyncedAnimRuntime.MontageBeatSyncComponent.SetMusicClockReference
-	// void SetMusicClockReference(class UMusicClockComponent* MusicClock);                                                  // [0xab5e448] Final|Native|Public|BlueprintCallable 
+	// void SetMusicClockReference(class UMusicClockComponent* MusicClock);                                                  // [0xad3aa58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/BeatSyncedAnimRuntime.MontageBeatSyncComponent.LookupMontageTimingInfo_BP
-	// class UPreciseBeatSyncedAnimMetaData* LookupMontageTimingInfo_BP(class UAnimMontage* Montage, class AFortPlayerPawn* PlayerPawn); // [0xab5e37c] Native|Event|Public|BlueprintEvent 
+	// class UPreciseBeatSyncedAnimMetaData* LookupMontageTimingInfo_BP(class UAnimMontage* Montage, class AFortPlayerPawn* PlayerPawn); // [0xad3a900] Native|Event|Public|BlueprintEvent 
 	// Function /Script/BeatSyncedAnimRuntime.MontageBeatSyncComponent.IsMusicPlaying
-	// bool IsMusicPlaying();                                                                                                // [0xab5e364] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsMusicPlaying();                                                                                                // [0xad3a8e8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.MontageBeatSyncComponent.GetOwnerSkeletalMeshComponent
-	// class USkeletalMeshComponent* GetOwnerSkeletalMeshComponent();                                                        // [0x8f91958] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class USkeletalMeshComponent* GetOwnerSkeletalMeshComponent();                                                        // [0x8fda554] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.MontageBeatSyncComponent.GetOwnerFortPlayerPawn
-	// class AFortPlayerPawn* GetOwnerFortPlayerPawn();                                                                      // [0x8f91e0c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class AFortPlayerPawn* GetOwnerFortPlayerPawn();                                                                      // [0x8fda8b8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/BeatSyncedAnimRuntime.MontageBeatSyncComponent.EndedPlayingMusic
-	// void EndedPlayingMusic();                                                                                             // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void EndedPlayingMusic();                                                                                             // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/BeatSyncedAnimRuntime.MontageBeatSyncComponent.BeganPlayingMusic
-	// void BeganPlayingMusic();                                                                                             // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void BeganPlayingMusic();                                                                                             // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/BeatSyncedAnimRuntime.SparksAnimLoggingComponent
@@ -125,7 +125,7 @@ public:
 
 	/// Functions
 	// Function /Script/BeatSyncedAnimRuntime.SparksAnimLoggingComponent.GetCurrentFullBodyAnimName
-	// FString GetCurrentFullBodyAnimName();                                                                                 // [0xab5e0f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetCurrentFullBodyAnimName();                                                                                 // [0xad3a544] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/BeatSyncedAnimRuntime.AnimNotify_BeatMarker

@@ -14,24 +14,25 @@
 /// dependency: StructUtils
 /// dependency: UMG
 
-/// Class /Script/CustomizableObject.CustomizableInstancePrivateData
-/// Size: 0x0238 (0x000028 - 0x000260)
-class UCustomizableInstancePrivateData : public UObject
+/// Class /Script/CustomizableObject.CustomizableInstancePrivate
+/// Size: 0x0248 (0x000028 - 0x000270)
+class UCustomizableInstancePrivate : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 608;
+	static inline constexpr uint64_t __MDKClassSize = 624;
 
 public:
-	CMember(TArray<FGeneratedMaterial>)                GeneratedMaterials                                          OFFSET(get<T>, {0x28, 16, 0, 0})
-	CMember(TArray<FGeneratedTexture>)                 GeneratedTextures                                           OFFSET(get<T>, {0x38, 16, 0, 0})
-	CMember(TMap<FString, TWeakObjectPtr<UTexture2D*>>) TextureReuseCache                                          OFFSET(get<T>, {0x58, 80, 0, 0})
-	CMember(TArray<FCustomizableInstanceComponentData>) ComponentsData                                             OFFSET(get<T>, {0xE0, 16, 0, 0})
-	CMember(TArray<class UMaterialInterface*>)         ReferencedMaterials                                         OFFSET(get<T>, {0xF0, 16, 0, 0})
-	CMember(TArray<class UPhysicsAsset*>)              ClothingPhysicsAssets                                       OFFSET(get<T>, {0x160, 16, 0, 0})
-	CMember(TArray<class UClass*>)                     GatheredAnimBPs                                             OFFSET(get<T>, {0x170, 16, 0, 0})
-	SMember(FGameplayTagContainer)                     AnimBPGameplayTags                                          OFFSET(getStruct<T>, {0x180, 32, 0, 0})
-	CMember(TMap<UClass*, FAnimBpGeneratedPhysicsAssets>) AnimBpPhysicsAssets                                      OFFSET(get<T>, {0x1A0, 80, 0, 0})
-	CMember(TArray<class UTexture*>)                   LoadedPassThroughTexturesPendingSetMaterial                 OFFSET(get<T>, {0x200, 16, 0, 0})
+	CMember(TArray<class USkeletalMesh*>)              SkeletalMeshes                                              OFFSET(get<T>, {0x28, 16, 0, 0})
+	CMember(TArray<FGeneratedMaterial>)                GeneratedMaterials                                          OFFSET(get<T>, {0x38, 16, 0, 0})
+	CMember(TArray<FGeneratedTexture>)                 GeneratedTextures                                           OFFSET(get<T>, {0x48, 16, 0, 0})
+	CMember(TMap<FString, TWeakObjectPtr<UTexture2D*>>) TextureReuseCache                                          OFFSET(get<T>, {0x68, 80, 0, 0})
+	CMember(TArray<FCustomizableInstanceComponentData>) ComponentsData                                             OFFSET(get<T>, {0xF0, 16, 0, 0})
+	CMember(TArray<class UMaterialInterface*>)         ReferencedMaterials                                         OFFSET(get<T>, {0x100, 16, 0, 0})
+	CMember(TArray<class UPhysicsAsset*>)              ClothingPhysicsAssets                                       OFFSET(get<T>, {0x170, 16, 0, 0})
+	CMember(TArray<class UClass*>)                     GatheredAnimBPs                                             OFFSET(get<T>, {0x180, 16, 0, 0})
+	SMember(FGameplayTagContainer)                     AnimBPGameplayTags                                          OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+	CMember(TMap<UClass*, FAnimBpGeneratedPhysicsAssets>) AnimBpPhysicsAssets                                      OFFSET(get<T>, {0x1B0, 80, 0, 0})
+	CMember(TArray<class UTexture*>)                   LoadedPassThroughTexturesPendingSetMaterial                 OFFSET(get<T>, {0x210, 16, 0, 0})
 };
 
 /// Class /Script/CustomizableObject.CustomizableObjectExtension
@@ -42,6 +43,24 @@ class UCustomizableObjectExtension : public UObject
 	static inline constexpr uint64_t __MDKClassSize = 40;
 
 public:
+};
+
+/// Class /Script/CustomizableObject.CustomizableObjectInstanceUserData
+/// Size: 0x0020 (0x000028 - 0x000048)
+class UCustomizableObjectInstanceUserData : public UAssetUserData
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 72;
+
+public:
+	SMember(FGameplayTagContainer)                     AnimBPGameplayTags                                          OFFSET(getStruct<T>, {0x28, 32, 0, 0})
+
+
+	/// Functions
+	// Function /Script/CustomizableObject.CustomizableObjectInstanceUserData.SetAnimationGameplayTags
+	// void SetAnimationGameplayTags(FGameplayTagContainer& InstanceTags);                                                      // [0x6eb3008] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// Function /Script/CustomizableObject.CustomizableObjectInstanceUserData.GetAnimationGameplayTags
+	// FGameplayTagContainer GetAnimationGameplayTags();                                                                        // [0x6eb2fec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CustomizableObject.CustomizableObjectInstanceUsage
@@ -61,19 +80,20 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableObjectInstanceUsage.UpdateSkeletalMeshAsyncResult
-	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);          // [0x7041dcc] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);          // [0x6eb3180] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstanceUsage.UpdateSkeletalMeshAsync
-	// void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);                                                                     // [0x7041bb8] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);                                                                     // [0x6eb30c4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CustomizableObject.CustomizableObjectPrivate
-/// Size: 0x0068 (0x000028 - 0x000090)
+/// Size: 0x0238 (0x000028 - 0x000260)
 class UCustomizableObjectPrivate : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 144;
+	static inline constexpr uint64_t __MDKClassSize = 608;
 
 public:
+	SMember(FModelResources)                           ModelResources                                              OFFSET(getStruct<T>, {0x38, 352, 0, 0})
 };
 
 /// Class /Script/CustomizableObject.CustomizableObjectResourceDataContainer
@@ -87,24 +107,35 @@ public:
 	SMember(FCustomizableObjectResourceData)           Data                                                        OFFSET(getStruct<T>, {0x28, 24, 0, 0})
 };
 
+/// Class /Script/CustomizableObject.CustomizableObjectSystemPrivate
+/// Size: 0x0448 (0x000028 - 0x000470)
+class UCustomizableObjectSystemPrivate : public UObject
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 1136;
+
+public:
+	CMember(class UCustomizableObjectInstance*)        CurrentInstanceBeingUpdated                                 OFFSET(get<T>, {0x1F8, 8, 0, 0})
+};
+
 /// Class /Script/CustomizableObject.CustomizableSkeletalComponent
-/// Size: 0x0030 (0x000290 - 0x0002C0)
+/// Size: 0x0030 (0x000220 - 0x000250)
 class UCustomizableSkeletalComponent : public USceneComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 704;
+	static inline constexpr uint64_t __MDKClassSize = 592;
 
 public:
-	CMember(class UCustomizableObjectInstance*)        CustomizableObjectInstance                                  OFFSET(get<T>, {0x290, 8, 0, 0})
-	DMember(int32_t)                                   ComponentIndex                                              OFFSET(get<int32_t>, {0x298, 4, 0, 0})
-	CMember(class UCustomizableObjectInstanceUsage*)   CustomizableObjectInstanceUsage                             OFFSET(get<T>, {0x2B0, 8, 0, 0})
+	CMember(class UCustomizableObjectInstance*)        CustomizableObjectInstance                                  OFFSET(get<T>, {0x220, 8, 0, 0})
+	DMember(int32_t)                                   ComponentIndex                                              OFFSET(get<int32_t>, {0x228, 4, 0, 0})
+	CMember(class UCustomizableObjectInstanceUsage*)   CustomizableObjectInstanceUsage                             OFFSET(get<T>, {0x240, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsyncResult
-	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);          // [0x7041ecc] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);          // [0x6efea3c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsync
-	// void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);                                                                     // [0x7041c34] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);                                                                     // [0x6efe7a0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CustomizableObject.CustomizableSystemImageProvider
@@ -159,101 +190,87 @@ public:
 };
 
 /// Class /Script/CustomizableObject.CustomizableObject
-/// Size: 0x0440 (0x000028 - 0x000468)
+/// Size: 0x0250 (0x000028 - 0x000278)
 class UCustomizableObject : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1128;
+	static inline constexpr uint64_t __MDKClassSize = 632;
 
 public:
-	CMember(TArray<FMutableRefSkeletalMeshData>)       ReferenceSkeletalMeshesData                                 OFFSET(get<T>, {0x28, 16, 0, 0})
-	CMember(TArray<TWeakObjectPtr<UMaterialInterface*>>) ReferencedMaterials                                       OFFSET(get<T>, {0x38, 16, 0, 0})
-	CMember(TArray<FName>)                             ReferencedMaterialSlotNames                                 OFFSET(get<T>, {0x48, 16, 0, 0})
-	CMember(TArray<TWeakObjectPtr<USkeleton*>>)        ReferencedSkeletons                                         OFFSET(get<T>, {0x58, 16, 0, 0})
-	CMember(TArray<TWeakObjectPtr<UTexture*>>)         ReferencedPassThroughTextures                               OFFSET(get<T>, {0x68, 16, 0, 0})
-	SMember(FMutableLODSettings)                       LODSettings                                                 OFFSET(getStruct<T>, {0x78, 128, 0, 0})
-	CMember(TArray<FMutableModelImageProperties>)      ImageProperties                                             OFFSET(get<T>, {0xF8, 16, 0, 0})
-	CMember(TArray<FMorphTargetInfo>)                  ContributingMorphTargetsInfo                                OFFSET(get<T>, {0x110, 16, 0, 0})
-	CMember(TArray<FMorphTargetVertexData>)            MorphTargetReconstructionData                               OFFSET(get<T>, {0x120, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectClothConfigData>) ClothSharedConfigsData                                     OFFSET(get<T>, {0x130, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectClothingAssetData>) ContributingClothingAssetsData                           OFFSET(get<T>, {0x140, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectMeshToMeshVertData>) ClothMeshToMeshVertData                                 OFFSET(get<T>, {0x150, 16, 0, 0})
-	CMember(TArray<FMutableSkinWeightProfileInfo>)     SkinWeightProfilesInfo                                      OFFSET(get<T>, {0x160, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectResourceData>)   AlwaysLoadedExtensionData                                   OFFSET(get<T>, {0x170, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectStreamedResourceData>) StreamedExtensionData                                 OFFSET(get<T>, {0x180, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectStreamedResourceData>) StreamedResourceData                                  OFFSET(get<T>, {0x190, 16, 0, 0})
-	DMember(bool)                                      bEnableUseRefSkeletalMeshAsPlaceholder                      OFFSET(get<bool>, {0x1A0, 1, 0, 0})
-	DMember(bool)                                      bPreserveUserLODsOnFirstGeneration                          OFFSET(get<bool>, {0x1A1, 1, 0, 0})
-	DMember(bool)                                      bEnableMeshCache                                            OFFSET(get<bool>, {0x1A2, 1, 0, 0})
-	DMember(int32_t)                                   NumMeshComponentsInRoot                                     OFFSET(get<int32_t>, {0x1A4, 4, 0, 0})
-	CMember(TArray<FMutableModelParameterProperties>)  ParameterProperties                                         OFFSET(get<T>, {0x1A8, 16, 0, 0})
-	CMember(TMap<FString, FParameterUIData>)           ParameterUIDataMap                                          OFFSET(get<T>, {0x208, 80, 0, 0})
-	CMember(TArray<FName>)                             LowPriorityTextures                                         OFFSET(get<T>, {0x258, 16, 0, 0})
-	CMember(TMap<FString, FParameterUIData>)           StateUIDataMap                                              OFFSET(get<T>, {0x268, 80, 0, 0})
-	CMember(TMap<FString, TWeakObjectPtr<UPhysicsAsset*>>) PhysicsAssetsMap                                        OFFSET(get<T>, {0x2B8, 80, 0, 0})
-	CMember(TMap<FString, TWeakObjectPtr<UClass*>>)    AnimBPAssetsMap                                             OFFSET(get<T>, {0x308, 80, 0, 0})
-	CMember(TArray<FAnimBpOverridePhysicsAssetsInfo>)  AnimBpOverridePhysiscAssetsInfo                             OFFSET(get<T>, {0x358, 16, 0, 0})
-	CMember(TArray<FMutableRefSocket>)                 SocketArray                                                 OFFSET(get<T>, {0x368, 16, 0, 0})
-	CMember(TMap<uint64_t, FMutableStreamableBlock>)   HashToStreamableBlock                                       OFFSET(get<T>, {0x378, 80, 0, 0})
-	CMember(TArray<FString>)                           CustomizableObjectClassTags                                 OFFSET(get<T>, {0x3C8, 16, 0, 0})
-	CMember(TArray<FString>)                           PopulationClassTags                                         OFFSET(get<T>, {0x3D8, 16, 0, 0})
-	CMember(TMap<FString, FParameterTags>)             CustomizableObjectParametersTags                            OFFSET(get<T>, {0x3E8, 80, 0, 0})
-	CMember(TArray<FName>)                             BoneNames                                                   OFFSET(get<T>, {0x438, 16, 0, 0})
-	CMember(class UCustomizableObjectBulk*)            BulkData                                                    OFFSET(get<T>, {0x458, 8, 0, 0})
-	CMember(class UCustomizableObjectPrivate*)         Private                                                     OFFSET(get<T>, {0x460, 8, 0, 0})
+	SMember(FMutableLODSettings)                       LODSettings                                                 OFFSET(getStruct<T>, {0x28, 128, 0, 0})
+	CMember(TArray<FMorphTargetInfo>)                  ContributingMorphTargetsInfo                                OFFSET(get<T>, {0xB0, 16, 0, 0})
+	CMember(TArray<FMorphTargetVertexData>)            MorphTargetReconstructionData                               OFFSET(get<T>, {0xC0, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectClothConfigData>) ClothSharedConfigsData                                     OFFSET(get<T>, {0xD0, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectClothingAssetData>) ContributingClothingAssetsData                           OFFSET(get<T>, {0xE0, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectMeshToMeshVertData>) ClothMeshToMeshVertData                                 OFFSET(get<T>, {0xF0, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectResourceData>)   AlwaysLoadedExtensionData                                   OFFSET(get<T>, {0x100, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectStreamedResourceData>) StreamedExtensionData                                 OFFSET(get<T>, {0x110, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectStreamedResourceData>) StreamedResourceData                                  OFFSET(get<T>, {0x120, 16, 0, 0})
+	DMember(bool)                                      bEnableUseRefSkeletalMeshAsPlaceholder                      OFFSET(get<bool>, {0x130, 1, 0, 0})
+	DMember(bool)                                      bPreserveUserLODsOnFirstGeneration                          OFFSET(get<bool>, {0x131, 1, 0, 0})
+	DMember(bool)                                      bEnableMeshCache                                            OFFSET(get<bool>, {0x132, 1, 0, 0})
+	DMember(int32_t)                                   NumMeshComponentsInRoot                                     OFFSET(get<int32_t>, {0x134, 4, 0, 0})
+	CMember(TArray<FMutableModelParameterProperties>)  ParameterProperties                                         OFFSET(get<T>, {0x138, 16, 0, 0})
+	CMember(TArray<FName>)                             LowPriorityTextures                                         OFFSET(get<T>, {0x198, 16, 0, 0})
+	CMember(TMap<uint64_t, FMutableStreamableBlock>)   HashToStreamableBlock                                       OFFSET(get<T>, {0x1A8, 80, 0, 0})
+	CMember(TArray<FString>)                           CustomizableObjectClassTags                                 OFFSET(get<T>, {0x1F8, 16, 0, 0})
+	CMember(TArray<FString>)                           PopulationClassTags                                         OFFSET(get<T>, {0x208, 16, 0, 0})
+	CMember(TMap<FString, FParameterTags>)             CustomizableObjectParametersTags                            OFFSET(get<T>, {0x218, 80, 0, 0})
+	CMember(class UCustomizableObjectBulk*)            BulkData                                                    OFFSET(get<T>, {0x268, 8, 0, 0})
+	CMember(class UCustomizableObjectPrivate*)         Private                                                     OFFSET(get<T>, {0x270, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableObject.IsParameterMultidimensional
-	// bool IsParameterMultidimensional(FString InParameterName);                                                               // [0x7037cbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsParameterMultidimensional(FString InParameterName);                                                               // [0x6ef4064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.IsCompiled
-	// bool IsCompiled();                                                                                                       // [0x70375e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCompiled();                                                                                                       // [0x6ef3948] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex
-	// FParameterUIData GetStateUIMetadataFromIndex(int32_t StateIndex);                                                        // [0x70366c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FParameterUIData GetStateUIMetadataFromIndex(int32_t StateIndex);                                                        // [0x6ef2920] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateUIMetadata
-	// FParameterUIData GetStateUIMetadata(FString StateName);                                                                  // [0x7035fd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FParameterUIData GetStateUIMetadata(FString StateName);                                                                  // [0x6ef21f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateParameterName
-	// FString GetStateParameterName(FString StateName, int32_t ParameterIndex);                                                // [0x7035898] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetStateParameterName(FString StateName, int32_t ParameterIndex);                                                // [0x6ef1a30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateParameterCount
-	// int32_t GetStateParameterCount(FString StateName);                                                                       // [0x70351b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetStateParameterCount(FString StateName);                                                                       // [0x6ef1304] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateName
-	// FString GetStateName(int32_t StateIndex);                                                                                // [0x703510c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetStateName(int32_t StateIndex);                                                                                // [0x6ef1220] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetStateCount
-	// int32_t GetStateCount();                                                                                                 // [0x70350ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetStateCount();                                                                                                 // [0x6ef1200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetProjectorParameterDefaultValue
-	// void GetProjectorParameterDefaultValue(FString InParameterName, FVector3f& OutPos, FVector3f& OutDirection, FVector3f& OutUp, FVector3f& OutScale, float& OutAngle, ECustomizableObjectProjectorType& OutType); // [0x7031ab4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetProjectorParameterDefaultValue(FString InParameterName, FVector3f& OutPos, FVector3f& OutDirection, FVector3f& OutUp, FVector3f& OutScale, float& OutAngle, ECustomizableObjectProjectorType& OutType); // [0x6eed898] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex
-	// FParameterUIData GetParameterUIMetadataFromIndex(int32_t ParamIndex);                                                    // [0x7030c18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FParameterUIData GetParameterUIMetadataFromIndex(int32_t ParamIndex);                                                    // [0x6eec8b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterUIMetadata
-	// FParameterUIData GetParameterUIMetadata(FString ParamName);                                                              // [0x7030530] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FParameterUIData GetParameterUIMetadata(FString ParamName);                                                              // [0x6eec188] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterTypeByName
-	// EMutableParameterType GetParameterTypeByName(FString Name);                                                              // [0x702fe80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMutableParameterType GetParameterTypeByName(FString Name);                                                              // [0x6eeba94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterType
-	// EMutableParameterType GetParameterType(int32_t ParamIndex);                                                              // [0x702fdf4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMutableParameterType GetParameterType(int32_t ParamIndex);                                                              // [0x6eeb9c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterName
-	// FString GetParameterName(int32_t ParamIndex);                                                                            // [0x702fd60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetParameterName(int32_t ParamIndex);                                                                            // [0x6eeb8f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterDescriptionCount
-	// int32_t GetParameterDescriptionCount(FString ParamName);                                                                 // [0x702f6c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetParameterDescriptionCount(FString ParamName);                                                                 // [0x6eeb20c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetParameterCount
-	// int32_t GetParameterCount();                                                                                             // [0x702efe4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetParameterCount();                                                                                             // [0x6eeaab4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetIntParameterNumOptions
-	// int32_t GetIntParameterNumOptions(int32_t ParamIndex);                                                                   // [0x702e064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIntParameterNumOptions(int32_t ParamIndex);                                                                   // [0x6ee99e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetIntParameterDefaultValue
-	// int32_t GetIntParameterDefaultValue(FString InParameterName);                                                            // [0x702d9b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIntParameterDefaultValue(FString InParameterName);                                                            // [0x6ee92f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetIntParameterAvailableOption
-	// FString GetIntParameterAvailableOption(int32_t ParamIndex, int32_t K);                                                   // [0x702d8ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetIntParameterAvailableOption(int32_t ParamIndex, int32_t K);                                                   // [0x6ee91a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetFloatParameterDefaultValue
-	// float GetFloatParameterDefaultValue(FString InParameterName);                                                            // [0x702c46c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloatParameterDefaultValue(FString InParameterName);                                                            // [0x6ee7c18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetComponentCount
-	// int32_t GetComponentCount();                                                                                             // [0x702c3f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetComponentCount();                                                                                             // [0x6ee7ba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetColorParameterDefaultValue
-	// FLinearColor GetColorParameterDefaultValue(FString InParameterName);                                                     // [0x702b6b4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FLinearColor GetColorParameterDefaultValue(FString InParameterName);                                                     // [0x6ee6de0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.GetBoolParameterDefaultValue
-	// bool GetBoolParameterDefaultValue(FString InParameterName);                                                              // [0x702a8e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBoolParameterDefaultValue(FString InParameterName);                                                              // [0x6ee5fa0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.FindParameter
-	// int32_t FindParameter(FString Name);                                                                                     // [0x70292e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindParameter(FString Name);                                                                                     // [0x6ee4824] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObject.CreateInstance
-	// class UCustomizableObjectInstance* CreateInstance();                                                                     // [0x7027df0] Final|Native|Public|BlueprintCallable 
+	// class UCustomizableObjectInstance* CreateInstance();                                                                     // [0x6ee3270] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CustomizableObject.DGGUI
@@ -268,203 +285,202 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObject.DGGUI.SetCustomizableObjectInstanceUsage
-	// void SetCustomizableObjectInstanceUsage(class UCustomizableObjectInstanceUsage* CustomizableObjectInstanceUsage);        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void SetCustomizableObjectInstanceUsage(class UCustomizableObjectInstanceUsage* CustomizableObjectInstanceUsage);        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/CustomizableObject.DGGUI.GetCustomizableObjectInstanceUsage
-	// class UCustomizableObjectInstanceUsage* GetCustomizableObjectInstanceUsage();                                            // [0x211c0a0] Event|Public|BlueprintEvent 
+	// class UCustomizableObjectInstanceUsage* GetCustomizableObjectInstanceUsage();                                            // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/CustomizableObject.CustomizableObjectInstance
-/// Size: 0x02C0 (0x000028 - 0x0002E8)
+/// Size: 0x02B0 (0x000028 - 0x0002D8)
 class UCustomizableObjectInstance : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 744;
+	static inline constexpr uint64_t __MDKClassSize = 728;
 
 public:
 	SMember(FMulticastInlineDelegate)                  UpdatedDelegate                                             OFFSET(getStruct<T>, {0x28, 16, 0, 0})
 	SMember(FMulticastInlineDelegate)                  BeginDestroyDelegate                                        OFFSET(getStruct<T>, {0x50, 16, 0, 0})
-	CMember(TArray<class USkeletalMesh*>)              SkeletalMeshes                                              OFFSET(get<T>, {0xC8, 16, 0, 0})
-	SMember(FCustomizableObjectInstanceDescriptor)     Descriptor                                                  OFFSET(getStruct<T>, {0xF0, 296, 0, 0})
-	CMember(class UCustomizableInstancePrivateData*)   PrivateData                                                 OFFSET(get<T>, {0x218, 8, 0, 0})
-	CMember(class UCustomizableObject*)                CustomizableObject                                          OFFSET(get<T>, {0x228, 8, 0, 0})
-	CMember(TArray<FCustomizableObjectBoolParameterValue>) BoolParameters                                          OFFSET(get<T>, {0x230, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectIntParameterValue>) IntParameters                                            OFFSET(get<T>, {0x240, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectFloatParameterValue>) FloatParameters                                        OFFSET(get<T>, {0x250, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectTextureParameterValue>) TextureParameters                                    OFFSET(get<T>, {0x260, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectVectorParameterValue>) VectorParameters                                      OFFSET(get<T>, {0x270, 16, 0, 0})
-	CMember(TArray<FCustomizableObjectProjectorParameterValue>) ProjectorParameters                                OFFSET(get<T>, {0x280, 16, 0, 0})
-	CMember(TMap<FName, FMultilayerProjector>)         MultilayerProjectors                                        OFFSET(get<T>, {0x290, 80, 0, 0})
+	SMember(FCustomizableObjectInstanceDescriptor)     Descriptor                                                  OFFSET(getStruct<T>, {0xE0, 296, 0, 0})
+	CMember(class UCustomizableInstancePrivate*)       PrivateData                                                 OFFSET(get<T>, {0x208, 8, 0, 0})
+	CMember(class UCustomizableObject*)                CustomizableObject                                          OFFSET(get<T>, {0x218, 8, 0, 0})
+	CMember(TArray<FCustomizableObjectBoolParameterValue>) BoolParameters                                          OFFSET(get<T>, {0x220, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectIntParameterValue>) IntParameters                                            OFFSET(get<T>, {0x230, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectFloatParameterValue>) FloatParameters                                        OFFSET(get<T>, {0x240, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectTextureParameterValue>) TextureParameters                                    OFFSET(get<T>, {0x250, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectVectorParameterValue>) VectorParameters                                      OFFSET(get<T>, {0x260, 16, 0, 0})
+	CMember(TArray<FCustomizableObjectProjectorParameterValue>) ProjectorParameters                                OFFSET(get<T>, {0x270, 16, 0, 0})
+	CMember(TMap<FName, FMultilayerProjector>)         MultilayerProjectors                                        OFFSET(get<T>, {0x280, 80, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsyncResult
-	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);          // [0x7041cb0] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsyncResult(FDelegateProperty Callback, bool bIgnoreCloseDist, bool bForceHighPriority);          // [0x6efe85c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsync
-	// void UpdateSkeletalMeshAsync(bool bIgnoreCloseDist, bool bForceHighPriority);                                            // [0x7041af4] Final|Native|Public|BlueprintCallable 
+	// void UpdateSkeletalMeshAsync(bool bIgnoreCloseDist, bool bForceHighPriority);                                            // [0x6efe650] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption
-	// void SetVectorParameterSelectedOption(FString VectorParamName, FLinearColor& VectorValue);                               // [0x7041418] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVectorParameterSelectedOption(FString VectorParamName, FLinearColor& VectorValue);                               // [0x6efdf38] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetTextureParameterSelectedOption
-	// void SetTextureParameterSelectedOption(FString TextureParamName, FString TextureValue, int32_t RangeIndex);              // [0x7040cf0] Final|Native|Public|BlueprintCallable 
+	// void SetTextureParameterSelectedOption(FString TextureParamName, FString TextureValue, int32_t RangeIndex);              // [0x6efd754] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetReplacePhysicsAssets
-	// void SetReplacePhysicsAssets(bool bReplaceEnabled);                                                                      // [0x7040c70] Final|Native|Public|BlueprintCallable 
+	// void SetReplacePhysicsAssets(bool bReplaceEnabled);                                                                      // [0x6efd690] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetRandomValuesFromStream
-	// void SetRandomValuesFromStream(FRandomStream& Stream);                                                                   // [0x7040be0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetRandomValuesFromStream(FRandomStream& InStream);                                                                 // [0x6efd600] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetRandomValues
-	// void SetRandomValues();                                                                                                  // [0x7040ba8] Final|Native|Public|BlueprintCallable 
+	// void SetRandomValues();                                                                                                  // [0x6efd5b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorValue
-	// void SetProjectorValue(FString ProjectorParamName, FVector& OutPos, FVector& OutDirection, FVector& OutUp, FVector& OutScale, float OutAngle, int32_t RangeIndex); // [0x70401fc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorValue(FString ProjectorParamName, FVector& OutPos, FVector& OutDirection, FVector& OutUp, FVector& OutScale, float OutAngle, int32_t RangeIndex); // [0x6efcbd0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorUp
-	// void SetProjectorUp(FString ProjectorParamName, FVector& Up, int32_t RangeIndex);                                        // [0x703fa60] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorUp(FString ProjectorParamName, FVector& Up, int32_t RangeIndex);                                        // [0x6efc3ec] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorScale
-	// void SetProjectorScale(FString ProjectorParamName, FVector& Scale, int32_t RangeIndex);                                  // [0x703f2c4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorScale(FString ProjectorParamName, FVector& Scale, int32_t RangeIndex);                                  // [0x6efbc08] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorPosition
-	// void SetProjectorPosition(FString ProjectorParamName, FVector3f& Pos, int32_t RangeIndex);                               // [0x703eaf0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorPosition(FString ProjectorParamName, FVector3f& Pos, int32_t RangeIndex);                               // [0x6efb3dc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorDirection
-	// void SetProjectorDirection(FString ProjectorParamName, FVector& Direction, int32_t RangeIndex);                          // [0x703e354] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetProjectorDirection(FString ProjectorParamName, FVector& Direction, int32_t RangeIndex);                          // [0x6efabf8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetProjectorAngle
-	// void SetProjectorAngle(FString ProjectorParamName, float Angle, int32_t RangeIndex);                                     // [0x703dc48] Final|Native|Public|BlueprintCallable 
+	// void SetProjectorAngle(FString ProjectorParamName, float Angle, int32_t RangeIndex);                                     // [0x6efa430] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetObject
-	// void SetObject(class UCustomizableObject* InObject);                                                                     // [0x703dbc8] Final|Native|Public|BlueprintCallable 
+	// void SetObject(class UCustomizableObject* InObject);                                                                     // [0x6efa370] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetIntParameterSelectedOption
-	// void SetIntParameterSelectedOption(FString ParamName, FString SelectedOptionName, int32_t RangeIndex);                   // [0x703d4a0] Final|Native|Public|BlueprintCallable 
+	// void SetIntParameterSelectedOption(FString ParamName, FString SelectedOptionName, int32_t RangeIndex);                   // [0x6ef9b8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetFloatParameterSelectedOption
-	// void SetFloatParameterSelectedOption(FString FloatParamName, float FloatValue, int32_t RangeIndex);                      // [0x703cd94] Final|Native|Public|BlueprintCallable 
+	// void SetFloatParameterSelectedOption(FString FloatParamName, float FloatValue, int32_t RangeIndex);                      // [0x6ef93c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetCurrentState
-	// void SetCurrentState(FString StateName);                                                                                 // [0x703c6e4] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentState(FString StateName);                                                                                 // [0x6ef8cd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption
-	// void SetColorParameterSelectedOption(FString ColorParamName, FLinearColor& ColorValue);                                  // [0x703bff4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetColorParameterSelectedOption(FString ColorParamName, FLinearColor& ColorValue);                                  // [0x6ef85a8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetBuildParameterRelevancy
-	// void SetBuildParameterRelevancy(bool Value);                                                                             // [0x703bf74] Final|Native|Public|BlueprintCallable 
+	// void SetBuildParameterRelevancy(bool Value);                                                                             // [0x6ef84e8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetBuildParameterDecorations
-	// void SetBuildParameterDecorations(bool Value);                                                                           // [0x60325ec] Final|Native|Public|BlueprintCallable 
+	// void SetBuildParameterDecorations(bool Value);                                                                           // [0x5d35ffc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.SetBoolParameterSelectedOption
-	// void SetBoolParameterSelectedOption(FString BoolParamName, bool BoolValue);                                              // [0x703b89c] Final|Native|Public|BlueprintCallable 
+	// void SetBoolParameterSelectedOption(FString BoolParamName, bool BoolValue);                                              // [0x6ef7d94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.RemoveValueFromProjectorRange
-	// int32_t RemoveValueFromProjectorRange(FString ParamName);                                                                // [0x703b1b4] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveValueFromProjectorRange(FString ParamName);                                                                // [0x6ef7668] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.RemoveValueFromIntRange
-	// int32_t RemoveValueFromIntRange(FString ParamName);                                                                      // [0x703aaf8] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveValueFromIntRange(FString ParamName);                                                                      // [0x6ef6f6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.RemoveValueFromFloatRange
-	// int32_t RemoveValueFromFloatRange(FString ParamName);                                                                    // [0x703a3ec] Final|Native|Public|BlueprintCallable 
+	// int32_t RemoveValueFromFloatRange(FString ParamName);                                                                    // [0x6ef681c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.RemoveMultilayerProjector
-	// void RemoveMultilayerProjector(FName& ProjectorParamName);                                                               // [0x703a35c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveMultilayerProjector(FName& ProjectorParamName);                                                               // [0x6ef678c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorUpdateVirtualLayer
-	// void MultilayerProjectorUpdateVirtualLayer(FName& ProjectorParamName, FName& ID, FMultilayerProjectorVirtualLayer& Layer); // [0x7039c0c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorUpdateVirtualLayer(FName& ProjectorParamName, FName& ID, FMultilayerProjectorVirtualLayer& Layer); // [0x6ef603c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorUpdateLayer
-	// void MultilayerProjectorUpdateLayer(FName& ProjectorParamName, int32_t Index, FMultilayerProjectorLayer& Layer);         // [0x70394ac] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorUpdateLayer(FName& ProjectorParamName, int32_t Index, FMultilayerProjectorLayer& Layer);         // [0x6ef58dc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorRemoveVirtualLayer
-	// void MultilayerProjectorRemoveVirtualLayer(FName& ProjectorParamName, FName& ID);                                        // [0x7039380] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorRemoveVirtualLayer(FName& ProjectorParamName, FName& ID);                                        // [0x6ef57b0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorRemoveLayerAt
-	// void MultilayerProjectorRemoveLayerAt(FName& ProjectorParamName, int32_t Index);                                         // [0x7039220] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorRemoveLayerAt(FName& ProjectorParamName, int32_t Index);                                         // [0x6ef5650] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorNumLayers
-	// int32_t MultilayerProjectorNumLayers(FName& ProjectorParamName);                                                         // [0x7039140] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t MultilayerProjectorNumLayers(FName& ProjectorParamName);                                                         // [0x6ef5570] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorGetVirtualLayers
-	// TArray<FName> MultilayerProjectorGetVirtualLayers(FName& ProjectorParamName);                                            // [0x703903c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> MultilayerProjectorGetVirtualLayers(FName& ProjectorParamName);                                            // [0x6ef546c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorGetVirtualLayer
-	// FMultilayerProjectorVirtualLayer MultilayerProjectorGetVirtualLayer(FName& ProjectorParamName, FName& ID);               // [0x7038f1c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FMultilayerProjectorVirtualLayer MultilayerProjectorGetVirtualLayer(FName& ProjectorParamName, FName& ID);               // [0x6ef534c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorGetLayer
-	// FMultilayerProjectorLayer MultilayerProjectorGetLayer(FName& ProjectorParamName, int32_t Index);                         // [0x7038dc8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FMultilayerProjectorLayer MultilayerProjectorGetLayer(FName& ProjectorParamName, int32_t Index);                         // [0x6ef51f8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorFindOrCreateVirtualLayer
-	// FMultilayerProjectorVirtualLayer MultilayerProjectorFindOrCreateVirtualLayer(FName& ProjectorParamName, FName& ID);      // [0x7038ca8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FMultilayerProjectorVirtualLayer MultilayerProjectorFindOrCreateVirtualLayer(FName& ProjectorParamName, FName& ID);      // [0x6ef50d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorCreateVirtualLayer
-	// void MultilayerProjectorCreateVirtualLayer(FName& ProjectorParamName, FName& ID);                                        // [0x7038b7c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorCreateVirtualLayer(FName& ProjectorParamName, FName& ID);                                        // [0x6ef4fac] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.MultilayerProjectorCreateLayer
-	// void MultilayerProjectorCreateLayer(FName& ProjectorParamName, int32_t Index);                                           // [0x7038a1c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MultilayerProjectorCreateLayer(FName& ProjectorParamName, int32_t Index);                                           // [0x6ef4e4c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.IsParamMultidimensional
-	// bool IsParamMultidimensional(FString ParamName);                                                                         // [0x7037600] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsParamMultidimensional(FString ParamName);                                                                         // [0x6ef3968] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.IsParameterRelevant
-	// bool IsParameterRelevant(FString ParamName);                                                                             // [0x703836c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsParameterRelevant(FString ParamName);                                                                             // [0x6ef4758] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.HasAnySkeletalMesh
-	// bool HasAnySkeletalMesh();                                                                                               // [0x70375bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasAnySkeletalMesh();                                                                                               // [0x6ef3928] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.HasAnyParameters
-	// bool HasAnyParameters();                                                                                                 // [0x703756c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasAnyParameters();                                                                                                 // [0x6ef38d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetVectorParameters
-	// TArray<FCustomizableObjectVectorParameterValue> GetVectorParameters();                                                   // [0x7037550] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectVectorParameterValue> GetVectorParameters();                                                   // [0x6ef38bc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetTextureValueRange
-	// int32_t GetTextureValueRange(FString ParamName);                                                                         // [0x7036e7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTextureValueRange(FString ParamName);                                                                         // [0x6ef31a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetTextureParameterSelectedOption
-	// FName GetTextureParameterSelectedOption(FString TextureParamName, int32_t RangeIndex);                                   // [0x7036780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetTextureParameterSelectedOption(FString TextureParamName, int32_t RangeIndex);                                   // [0x6ef2a24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetTextureParameters
-	// TArray<FCustomizableObjectTextureParameterValue> GetTextureParameters();                                                 // [0x7036e60] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectTextureParameterValue> GetTextureParameters();                                                 // [0x6ef3188] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetSkeletalMesh
-	// class USkeletalMesh* GetSkeletalMesh(int32_t ComponentIndex);                                                            // [0x7035060] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMesh* GetSkeletalMesh(int32_t ComponentIndex);                                                            // [0x6ef1130] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorValueRange
-	// int32_t GetProjectorValueRange(FString ParamName);                                                                       // [0x703498c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetProjectorValueRange(FString ParamName);                                                                       // [0x6ef0a18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorValue
-	// void GetProjectorValue(FString ProjectorParamName, FVector& OutPos, FVector& OutDirection, FVector& OutUp, FVector& OutScale, float& OutAngle, ECustomizableObjectProjectorType& OutType, int32_t RangeIndex); // [0x7033f44] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetProjectorValue(FString ProjectorParamName, FVector& OutPos, FVector& OutDirection, FVector& OutUp, FVector& OutScale, float& OutAngle, ECustomizableObjectProjectorType& OutType, int32_t RangeIndex); // [0x6eeff7c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorUp
-	// FVector GetProjectorUp(FString ParamName, int32_t RangeIndex);                                                           // [0x7033850] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetProjectorUp(FString ParamName, int32_t RangeIndex);                                                           // [0x6eef808] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorScale
-	// FVector GetProjectorScale(FString ParamName, int32_t RangeIndex);                                                        // [0x703315c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetProjectorScale(FString ParamName, int32_t RangeIndex);                                                        // [0x6eef094] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorPosition
-	// FVector GetProjectorPosition(FString ParamName, int32_t RangeIndex);                                                     // [0x7032a68] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetProjectorPosition(FString ParamName, int32_t RangeIndex);                                                     // [0x6eee920] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType
-	// ECustomizableObjectProjectorType GetProjectorParameterType(FString ParamName, int32_t RangeIndex);                       // [0x7032374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ECustomizableObjectProjectorType GetProjectorParameterType(FString ParamName, int32_t RangeIndex);                       // [0x6eee1a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorParameters
-	// TArray<FCustomizableObjectProjectorParameterValue> GetProjectorParameters();                                             // [0x7032a4c] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectProjectorParameterValue> GetProjectorParameters();                                             // [0x6eee904] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorDirection
-	// FVector GetProjectorDirection(FString ParamName, int32_t RangeIndex);                                                    // [0x70313c0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetProjectorDirection(FString ParamName, int32_t RangeIndex);                                                    // [0x6eed124] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetProjectorAngle
-	// float GetProjectorAngle(FString ParamName, int32_t RangeIndex);                                                          // [0x7030ce4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetProjectorAngle(FString ParamName, int32_t RangeIndex);                                                          // [0x6eec9c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetParameterDescription
-	// class UTexture2D* GetParameterDescription(FString ParamName, int32_t DescIndex);                                         // [0x702effc] Final|Native|Public|BlueprintCallable 
+	// class UTexture2D* GetParameterDescription(FString ParamName, int32_t DescIndex);                                         // [0x6eeaacc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetNumComponents
-	// int32_t GetNumComponents();                                                                                              // [0x702efc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumComponents();                                                                                              // [0x6eeaa94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetMergedAssetUserData
-	// TSet<UAssetUserData*> GetMergedAssetUserData(int32_t ComponentIndex);                                                    // [0x702eec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TSet<UAssetUserData*> GetMergedAssetUserData(int32_t ComponentIndex);                                                    // [0x6eea94c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetIntValueRange
-	// int32_t GetIntValueRange(FString ParamName);                                                                             // [0x702e7ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIntValueRange(FString ParamName);                                                                             // [0x6eea234] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetIntParameterSelectedOption
-	// FString GetIntParameterSelectedOption(FString ParamName, int32_t RangeIndex);                                            // [0x702e0f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetIntParameterSelectedOption(FString ParamName, int32_t RangeIndex);                                            // [0x6ee9ab4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetIntParameters
-	// TArray<FCustomizableObjectIntParameterValue> GetIntParameters();                                                         // [0x702e7d0] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectIntParameterValue> GetIntParameters();                                                         // [0x6eea218] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetFloatValueRange
-	// int32_t GetFloatValueRange(FString ParamName);                                                                           // [0x702d218] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetFloatValueRange(FString ParamName);                                                                           // [0x6ee8a88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetFloatParameterSelectedOption
-	// float GetFloatParameterSelectedOption(FString FloatParamName, int32_t RangeIndex);                                       // [0x702cb20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloatParameterSelectedOption(FString FloatParamName, int32_t RangeIndex);                                       // [0x6ee830c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetFloatParameters
-	// TArray<FCustomizableObjectFloatParameterValue> GetFloatParameters();                                                     // [0x702d1fc] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectFloatParameterValue> GetFloatParameters();                                                     // [0x6ee8a6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetCustomizableObject
-	// class UCustomizableObject* GetCustomizableObject();                                                                      // [0x702c454] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCustomizableObject* GetCustomizableObject();                                                                      // [0x6ee7c00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetCurrentState
-	// FString GetCurrentState();                                                                                               // [0x702c414] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetCurrentState();                                                                                               // [0x6ee7bc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption
-	// FLinearColor GetColorParameterSelectedOption(FString ColorParamName);                                                    // [0x702bd54] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FLinearColor GetColorParameterSelectedOption(FString ColorParamName);                                                    // [0x6ee74c0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetBuildParameterRelevancy
-	// bool GetBuildParameterRelevancy();                                                                                       // [0x702b69c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBuildParameterRelevancy();                                                                                       // [0x39c6d14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetBuildParameterDecorations
-	// bool GetBuildParameterDecorations();                                                                                     // [0x2f1d290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBuildParameterDecorations();                                                                                     // [0x2bbcc84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetBoolParameterSelectedOption
-	// bool GetBoolParameterSelectedOption(FString BoolParamName);                                                              // [0x702af94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBoolParameterSelectedOption(FString BoolParamName);                                                              // [0x6ee6694] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetBoolParameters
-	// TArray<FCustomizableObjectBoolParameterValue> GetBoolParameters();                                                       // [0x702b680] Final|Native|Public|BlueprintCallable 
+	// TArray<FCustomizableObjectBoolParameterValue> GetBoolParameters();                                                       // [0x6ee6dc4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetAnimBP
-	// class UClass* GetAnimBP(int32_t ComponentIndex, FName& Slot);                                                            // [0x702a7e4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetAnimBP(int32_t ComponentIndex, FName& Slot);                                                            // [0x6ee5e64] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.GetAnimationGameplayTags
-	// FGameplayTagContainer GetAnimationGameplayTags();                                                                        // [0x702a8c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetAnimationGameplayTags();                                                                        // [0x6ee5f7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.ForEachAnimInstance
-	// void ForEachAnimInstance(int32_t ComponentIndex, FDelegateProperty Delegate);                                            // [0x702a70c] Final|Native|Public|BlueprintCallable|Const 
+	// void ForEachAnimInstance(int32_t ComponentIndex, FDelegateProperty Delegate);                                            // [0x6ee5d10] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindVectorParameterNameIndex
-	// int32_t FindVectorParameterNameIndex(FString ParamName);                                                                 // [0x702a050] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindVectorParameterNameIndex(FString ParamName);                                                                 // [0x6ee5614] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindProjectorParameterNameIndex
-	// int32_t FindProjectorParameterNameIndex(FString ParamName);                                                              // [0x7029994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindProjectorParameterNameIndex(FString ParamName);                                                              // [0x6ee4f18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindIntParameterNameIndex
-	// int32_t FindIntParameterNameIndex(FString ParamName);                                                                    // [0x7028c28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindIntParameterNameIndex(FString ParamName);                                                                    // [0x6ee4128] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindFloatParameterNameIndex
-	// int32_t FindFloatParameterNameIndex(FString ParamName);                                                                  // [0x702856c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindFloatParameterNameIndex(FString ParamName);                                                                  // [0x6ee3a2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.FindBoolParameterNameIndex
-	// int32_t FindBoolParameterNameIndex(FString ParamName);                                                                   // [0x7027eb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindBoolParameterNameIndex(FString ParamName);                                                                   // [0x6ee3330] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.CreateMultiLayerProjector
-	// bool CreateMultiLayerProjector(FName& ProjectorParamName);                                                               // [0x7027e14] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool CreateMultiLayerProjector(FName& ProjectorParamName);                                                               // [0x6ee3294] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.CloneStatic
-	// class UCustomizableObjectInstance* CloneStatic(class UObject* Outer);                                                    // [0x7027d4c] Final|Native|Public|BlueprintCallable 
+	// class UCustomizableObjectInstance* CloneStatic(class UObject* Outer);                                                    // [0x6ee3188] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.Clone
-	// class UCustomizableObjectInstance* Clone();                                                                              // [0x7027cf8] Final|Native|Public|BlueprintCallable 
+	// class UCustomizableObjectInstance* Clone();                                                                              // [0x6ee3134] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.AddValueToProjectorRange
-	// int32_t AddValueToProjectorRange(FString ParamName);                                                                     // [0x702763c] Final|Native|Public|BlueprintCallable 
+	// int32_t AddValueToProjectorRange(FString ParamName);                                                                     // [0x6ee2a38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.AddValueToIntRange
-	// int32_t AddValueToIntRange(FString ParamName);                                                                           // [0x7026f80] Final|Native|Public|BlueprintCallable 
+	// int32_t AddValueToIntRange(FString ParamName);                                                                           // [0x6ee233c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectInstance.AddValueToFloatRange
-	// int32_t AddValueToFloatRange(FString ParamName);                                                                         // [0x7026888] Final|Native|Public|BlueprintCallable 
+	// int32_t AddValueToFloatRange(FString ParamName);                                                                         // [0x6ee1c04] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/CustomizableObject.MutableTextureMipDataProviderFactory
@@ -479,41 +495,43 @@ public:
 };
 
 /// Class /Script/CustomizableObject.CustomizableObjectSystem
-/// Size: 0x0138 (0x000028 - 0x000160)
+/// Size: 0x0120 (0x000028 - 0x000148)
 class UCustomizableObjectSystem : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 352;
+	static inline constexpr uint64_t __MDKClassSize = 328;
 
 public:
 	CMember(TArray<FPendingReleaseSkeletalMeshInfo>)   PendingReleaseSkeletalMesh                                  OFFSET(get<T>, {0x28, 16, 0, 0})
-	CMember(TArray<FPendingReleaseMaterialsInfo>)      PendingReleaseMaterials                                     OFFSET(get<T>, {0x38, 16, 0, 0})
-	CMember(class UCustomizableInstanceLODManagementBase*) DefaultInstanceLODManagement                            OFFSET(get<T>, {0x48, 8, 0, 0})
-	CMember(class UCustomizableInstanceLODManagementBase*) CurrentInstanceLODManagement                            OFFSET(get<T>, {0x50, 8, 0, 0})
-	CMember(TArray<class UTexture2D*>)                 ProtectedCachedTextures                                     OFFSET(get<T>, {0x58, 16, 0, 0})
+	CMember(class UCustomizableInstanceLODManagementBase*) DefaultInstanceLODManagement                            OFFSET(get<T>, {0x38, 8, 0, 0})
+	CMember(class UCustomizableInstanceLODManagementBase*) CurrentInstanceLODManagement                            OFFSET(get<T>, {0x40, 8, 0, 0})
+	CMember(TArray<class UTexture2D*>)                 ProtectedCachedTextures                                     OFFSET(get<T>, {0x48, 16, 0, 0})
+	CMember(class UCustomizableObjectSystemPrivate*)   Private                                                     OFFSET(get<T>, {0x58, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmediately
-	// void SetReleaseMutableTexturesImmediately(bool bReleaseTextures);                                                        // [0x70534c4] Final|Native|Public|BlueprintCallable 
+	// void SetReleaseMutableTexturesImmediately(bool bReleaseTextures);                                                        // [0x6f17b28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.IsUpdating
-	// bool IsUpdating(class UCustomizableObjectInstance* Instance);                                                            // [0x7053380] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUpdating(class UCustomizableObjectInstance* Instance);                                                            // [0x6f179a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/CustomizableObject.CustomizableObjectSystem.IsUpdateResultValid
+	// bool IsUpdateResultValid(EUpdateResult UpdateResult);                                                                    // [0x6f178e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetTotalInstances
-	// int32_t GetTotalInstances();                                                                                             // [0x705335c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTotalInstances();                                                                                             // [0x6f178bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetTextureMemoryUsed
-	// int32_t GetTextureMemoryUsed();                                                                                          // [0x7053348] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTextureMemoryUsed();                                                                                          // [0x6f178a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetPluginVersion
-	// FString GetPluginVersion();                                                                                              // [0x70532fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetPluginVersion();                                                                                              // [0x6f1785c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetNumPendingInstances
-	// int32_t GetNumPendingInstances();                                                                                        // [0x70532bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumPendingInstances();                                                                                        // [0x6f1781c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetNumInstances
-	// int32_t GetNumInstances();                                                                                               // [0x7053268] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumInstances();                                                                                               // [0x6f177c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetInstanceChecked
-	// class UCustomizableObjectSystem* GetInstanceChecked();                                                                   // [0x7053244] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCustomizableObjectSystem* GetInstanceChecked();                                                                   // [0x6f177a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetInstance
-	// class UCustomizableObjectSystem* GetInstance();                                                                          // [0x7053244] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UCustomizableObjectSystem* GetInstance();                                                                          // [0x6f177a4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CustomizableObject.CustomizableObjectSystem.GetAverageBuildTime
-	// int32_t GetAverageBuildTime();                                                                                           // [0x70531e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAverageBuildTime();                                                                                           // [0x6f17740] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CustomizableObject.CustomizableSkeletalMeshActor
@@ -665,7 +683,7 @@ class FCustomizableObjectBoolParameterValue : public MDKBase
 public:
 	SMember(FString)                                   ParameterName                                               OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 	DMember(bool)                                      ParameterValue                                              OFFSET(get<bool>, {0x10, 1, 0, 0})
-	SMember(FString)                                   UID                                                         OFFSET(getStruct<T>, {0x18, 16, 0, 0})
+	SMember(FGuid)                                     ID                                                          OFFSET(getStruct<T>, {0x14, 16, 0, 0})
 };
 
 /// Struct /Script/CustomizableObject.CustomizableObjectIntParameterValue
@@ -679,7 +697,7 @@ class FCustomizableObjectIntParameterValue : public MDKBase
 public:
 	SMember(FString)                                   ParameterName                                               OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 	SMember(FString)                                   ParameterValueName                                          OFFSET(getStruct<T>, {0x10, 16, 0, 0})
-	SMember(FString)                                   UID                                                         OFFSET(getStruct<T>, {0x20, 16, 0, 0})
+	SMember(FGuid)                                     ID                                                          OFFSET(getStruct<T>, {0x20, 16, 0, 0})
 	CMember(TArray<FString>)                           ParameterRangeValueNames                                    OFFSET(get<T>, {0x30, 16, 0, 0})
 };
 
@@ -694,7 +712,7 @@ class FCustomizableObjectFloatParameterValue : public MDKBase
 public:
 	SMember(FString)                                   ParameterName                                               OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 	DMember(float)                                     ParameterValue                                              OFFSET(get<float>, {0x10, 4, 0, 0})
-	SMember(FString)                                   UID                                                         OFFSET(getStruct<T>, {0x18, 16, 0, 0})
+	SMember(FGuid)                                     ID                                                          OFFSET(getStruct<T>, {0x14, 16, 0, 0})
 	CMember(TArray<float>)                             ParameterRangeValues                                        OFFSET(get<T>, {0x28, 16, 0, 0})
 };
 
@@ -709,7 +727,7 @@ class FCustomizableObjectTextureParameterValue : public MDKBase
 public:
 	SMember(FString)                                   ParameterName                                               OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 	SMember(FName)                                     ParameterValue                                              OFFSET(getStruct<T>, {0x10, 4, 0, 0})
-	SMember(FString)                                   UID                                                         OFFSET(getStruct<T>, {0x18, 16, 0, 0})
+	SMember(FGuid)                                     ID                                                          OFFSET(getStruct<T>, {0x14, 16, 0, 0})
 	CMember(TArray<FName>)                             ParameterRangeValues                                        OFFSET(get<T>, {0x28, 16, 0, 0})
 };
 
@@ -724,7 +742,7 @@ class FCustomizableObjectVectorParameterValue : public MDKBase
 public:
 	SMember(FString)                                   ParameterName                                               OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 	SMember(FLinearColor)                              ParameterValue                                              OFFSET(getStruct<T>, {0x10, 16, 0, 0})
-	SMember(FString)                                   UID                                                         OFFSET(getStruct<T>, {0x20, 16, 0, 0})
+	SMember(FGuid)                                     ID                                                          OFFSET(getStruct<T>, {0x20, 16, 0, 0})
 };
 
 /// Struct /Script/CustomizableObject.CustomizableObjectProjector
@@ -755,8 +773,240 @@ class FCustomizableObjectProjectorParameterValue : public MDKBase
 public:
 	SMember(FString)                                   ParameterName                                               OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 	SMember(FCustomizableObjectProjector)              Value                                                       OFFSET(getStruct<T>, {0x10, 56, 0, 0})
-	SMember(FString)                                   UID                                                         OFFSET(getStruct<T>, {0x48, 16, 0, 0})
+	SMember(FGuid)                                     ID                                                          OFFSET(getStruct<T>, {0x48, 16, 0, 0})
 	CMember(TArray<FCustomizableObjectProjector>)      RangeValues                                                 OFFSET(get<T>, {0x58, 16, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableModelImageProperties
+/// Size: 0x0020 (0x000000 - 0x000020)
+class FMutableModelImageProperties : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 32;
+
+public:
+	SMember(FString)                                   TextureParameterName                                        OFFSET(getStruct<T>, {0x0, 16, 0, 0})
+	CMember(TEnumAsByte<TextureFilter>)                Filter                                                      OFFSET(get<T>, {0x10, 1, 0, 0})
+	DMember(bool)                                      SRGB                                                        OFFSET(get<bool>, {0x14, 1, 1, 0})
+	DMember(bool)                                      FlipGreenChannel                                            OFFSET(get<bool>, {0x14, 1, 1, 1})
+	DMember(bool)                                      IsPassThrough                                               OFFSET(get<bool>, {0x14, 1, 1, 2})
+	DMember(int32_t)                                   LODBias                                                     OFFSET(get<int32_t>, {0x18, 4, 0, 0})
+	CMember(TEnumAsByte<TextureGroup>)                 LODGroup                                                    OFFSET(get<T>, {0x1C, 1, 0, 0})
+	CMember(TEnumAsByte<TextureAddress>)               AddressX                                                    OFFSET(get<T>, {0x1D, 1, 0, 0})
+	CMember(TEnumAsByte<TextureAddress>)               AddressY                                                    OFFSET(get<T>, {0x1E, 1, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableRefSocket
+/// Size: 0x0058 (0x000000 - 0x000058)
+class FMutableRefSocket : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 88;
+
+public:
+	SMember(FName)                                     SocketName                                                  OFFSET(getStruct<T>, {0x0, 4, 0, 0})
+	SMember(FName)                                     BoneName                                                    OFFSET(getStruct<T>, {0x4, 4, 0, 0})
+	SMember(FVector)                                   RelativeLocation                                            OFFSET(getStruct<T>, {0x8, 24, 0, 0})
+	SMember(FRotator)                                  RelativeRotation                                            OFFSET(getStruct<T>, {0x20, 24, 0, 0})
+	SMember(FVector)                                   RelativeScale                                               OFFSET(getStruct<T>, {0x38, 24, 0, 0})
+	DMember(bool)                                      bForceAlwaysAnimated                                        OFFSET(get<bool>, {0x50, 1, 0, 0})
+	DMember(int32_t)                                   Priority                                                    OFFSET(get<int32_t>, {0x54, 4, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableRefLODInfo
+/// Size: 0x000C (0x000000 - 0x00000C)
+class FMutableRefLODInfo : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 12;
+
+public:
+	DMember(float)                                     ScreenSize                                                  OFFSET(get<float>, {0x0, 4, 0, 0})
+	DMember(float)                                     LODHysteresis                                               OFFSET(get<float>, {0x4, 4, 0, 0})
+	DMember(bool)                                      bSupportUniformlyDistributedSampling                        OFFSET(get<bool>, {0x8, 1, 0, 0})
+	DMember(bool)                                      bAllowCPUAccess                                             OFFSET(get<bool>, {0x9, 1, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableRefLODRenderData
+/// Size: 0x0002 (0x000000 - 0x000002)
+class FMutableRefLODRenderData : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 2;
+
+public:
+	DMember(bool)                                      bIsLODOptional                                              OFFSET(get<bool>, {0x0, 1, 0, 0})
+	DMember(bool)                                      bStreamedDataInlined                                        OFFSET(get<bool>, {0x1, 1, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableRefLODData
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FMutableRefLODData : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	SMember(FMutableRefLODInfo)                        LODInfo                                                     OFFSET(getStruct<T>, {0x0, 12, 0, 0})
+	SMember(FMutableRefLODRenderData)                  RenderData                                                  OFFSET(getStruct<T>, {0xC, 2, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableRefSkeletalMeshSettings
+/// Size: 0x0008 (0x000000 - 0x000008)
+class FMutableRefSkeletalMeshSettings : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 8;
+
+public:
+	DMember(bool)                                      bEnablePerPolyCollision                                     OFFSET(get<bool>, {0x0, 1, 0, 0})
+	DMember(float)                                     DefaultUVChannelDensity                                     OFFSET(get<float>, {0x4, 4, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableRefAssetUserData
+/// Size: 0x0008 (0x000000 - 0x000008)
+class FMutableRefAssetUserData : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 8;
+
+public:
+	CMember(class UAssetUserData*)                     AssetUserData                                               OFFSET(get<T>, {0x0, 8, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableRefSkeletalMeshData
+/// Size: 0x00D0 (0x000000 - 0x0000D0)
+class FMutableRefSkeletalMeshData : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 208;
+
+public:
+	CMember(class USkeletalMesh*)                      SkeletalMesh                                                OFFSET(get<T>, {0x0, 8, 0, 0})
+	CMember(TWeakObjectPtr<USkeletalMesh*>)            SoftSkeletalMesh                                            OFFSET(get<T>, {0x8, 32, 0, 0})
+	CMember(TArray<FMutableRefLODData>)                LODData                                                     OFFSET(get<T>, {0x28, 16, 0, 0})
+	CMember(TArray<FMutableRefSocket>)                 Sockets                                                     OFFSET(get<T>, {0x38, 16, 0, 0})
+	SMember(FBoxSphereBounds)                          Bounds                                                      OFFSET(getStruct<T>, {0x48, 56, 0, 0})
+	SMember(FMutableRefSkeletalMeshSettings)           Settings                                                    OFFSET(getStruct<T>, {0x80, 8, 0, 0})
+	CMember(class USkeleton*)                          Skeleton                                                    OFFSET(get<T>, {0x88, 8, 0, 0})
+	CMember(class UPhysicsAsset*)                      PhysicsAsset                                                OFFSET(get<T>, {0x90, 8, 0, 0})
+	CMember(TWeakObjectPtr<UClass*>)                   PostProcessAnimInst                                         OFFSET(get<T>, {0x98, 32, 0, 0})
+	CMember(class UPhysicsAsset*)                      ShadowPhysicsAsset                                          OFFSET(get<T>, {0xB8, 8, 0, 0})
+	CMember(TArray<FMutableRefAssetUserData>)          AssetUserData                                               OFFSET(get<T>, {0xC0, 16, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.AnimBpOverridePhysicsAssetsInfo
+/// Size: 0x0048 (0x000000 - 0x000048)
+class FAnimBpOverridePhysicsAssetsInfo : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 72;
+
+public:
+	CMember(TWeakObjectPtr<UClass*>)                   AnimInstanceClass                                           OFFSET(get<T>, {0x0, 32, 0, 0})
+	CMember(TWeakObjectPtr<UPhysicsAsset*>)            SourceAsset                                                 OFFSET(get<T>, {0x20, 32, 0, 0})
+	DMember(int32_t)                                   PropertyIndex                                               OFFSET(get<int32_t>, {0x40, 4, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableSkinWeightProfileInfo
+/// Size: 0x0008 (0x000000 - 0x000008)
+class FMutableSkinWeightProfileInfo : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 8;
+
+public:
+	SMember(FName)                                     Name                                                        OFFSET(getStruct<T>, {0x0, 4, 0, 0})
+	DMember(bool)                                      DefaultProfile                                              OFFSET(get<bool>, {0x4, 1, 0, 0})
+	DMember(int8_t)                                    DefaultProfileFromLODIndex                                  OFFSET(get<int8_t>, {0x5, 1, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.ModelResources
+/// Size: 0x0160 (0x000000 - 0x000160)
+class FModelResources : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 352;
+
+public:
+	CMember(TArray<FMutableRefSkeletalMeshData>)       ReferenceSkeletalMeshesData                                 OFFSET(get<T>, {0x0, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<USkeleton*>>)        Skeletons                                                   OFFSET(get<T>, {0x10, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UMaterialInterface*>>) Materials                                                 OFFSET(get<T>, {0x20, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UTexture*>>)         PassThroughTextures                                         OFFSET(get<T>, {0x30, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UPhysicsAsset*>>)    PhysicsAssets                                               OFFSET(get<T>, {0x40, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UClass*>>)           AnimBPs                                                     OFFSET(get<T>, {0x50, 16, 0, 0})
+	CMember(TArray<FAnimBpOverridePhysicsAssetsInfo>)  AnimBpOverridePhysiscAssetsInfo                             OFFSET(get<T>, {0x60, 16, 0, 0})
+	CMember(TArray<FName>)                             MaterialSlotNames                                           OFFSET(get<T>, {0x70, 16, 0, 0})
+	CMember(TArray<FName>)                             BoneNames                                                   OFFSET(get<T>, {0x80, 16, 0, 0})
+	CMember(TArray<FMutableRefSocket>)                 SocketArray                                                 OFFSET(get<T>, {0x90, 16, 0, 0})
+	CMember(TArray<FMutableSkinWeightProfileInfo>)     SkinWeightProfilesInfo                                      OFFSET(get<T>, {0xA0, 16, 0, 0})
+	CMember(TArray<FMutableModelImageProperties>)      ImageProperties                                             OFFSET(get<T>, {0xB0, 16, 0, 0})
+	CMember(TMap<FString, FParameterUIData>)           ParameterUIDataMap                                          OFFSET(get<T>, {0xC0, 80, 0, 0})
+	CMember(TMap<FString, FParameterUIData>)           StateUIDataMap                                              OFFSET(get<T>, {0x110, 80, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.ParameterUIData
+/// Size: 0x0170 (0x000000 - 0x000170)
+class FParameterUIData : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 368;
+
+public:
+	SMember(FString)                                   Name                                                        OFFSET(getStruct<T>, {0x0, 16, 0, 0})
+	SMember(FMutableParamUIMetadata)                   ParamUIMetadata                                             OFFSET(getStruct<T>, {0x10, 240, 0, 0})
+	CMember(EMutableParameterType)                     Type                                                        OFFSET(get<T>, {0x100, 1, 0, 0})
+	CMember(TArray<FIntegerParameterUIData>)           ArrayIntegerParameterOption                                 OFFSET(get<T>, {0x108, 16, 0, 0})
+	CMember(ECustomizableObjectGroupType)              IntegerParameterGroupType                                   OFFSET(get<T>, {0x118, 1, 0, 0})
+	CMember(ETextureCompressionStrategy)               TextureCompressionStrategy                                  OFFSET(get<T>, {0x119, 1, 0, 0})
+	DMember(bool)                                      bDisableTextureStreaming                                    OFFSET(get<bool>, {0x11A, 1, 0, 0})
+	DMember(bool)                                      bLiveUpdateMode                                             OFFSET(get<bool>, {0x11B, 1, 0, 0})
+	DMember(bool)                                      bReuseInstanceTextures                                      OFFSET(get<bool>, {0x11C, 1, 0, 0})
+	CMember(TMap<FString, FString>)                    ForcedParameterValues                                       OFFSET(get<T>, {0x120, 80, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.IntegerParameterUIData
+/// Size: 0x0100 (0x000000 - 0x000100)
+class FIntegerParameterUIData : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 256;
+
+public:
+	SMember(FString)                                   Name                                                        OFFSET(getStruct<T>, {0x0, 16, 0, 0})
+	SMember(FMutableParamUIMetadata)                   ParamUIMetadata                                             OFFSET(getStruct<T>, {0x10, 240, 0, 0})
+};
+
+/// Struct /Script/CustomizableObject.MutableParamUIMetadata
+/// Size: 0x00F0 (0x000000 - 0x0000F0)
+class FMutableParamUIMetadata : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 240;
+
+public:
+	SMember(FString)                                   ObjectFriendlyName                                          OFFSET(getStruct<T>, {0x0, 16, 0, 0})
+	SMember(FString)                                   UISectionName                                               OFFSET(getStruct<T>, {0x10, 16, 0, 0})
+	DMember(int32_t)                                   UIOrder                                                     OFFSET(get<int32_t>, {0x20, 4, 0, 0})
+	CMember(TWeakObjectPtr<UTexture2D*>)               UIThumbnail                                                 OFFSET(get<T>, {0x28, 32, 0, 0})
+	CMember(TMap<FString, FString>)                    ExtraInformation                                            OFFSET(get<T>, {0x48, 80, 0, 0})
+	CMember(TMap<FString, TWeakObjectPtr<UObject*>>)   ExtraAssets                                                 OFFSET(get<T>, {0x98, 80, 0, 0})
+	DMember(float)                                     MinimumValue                                                OFFSET(get<float>, {0xE8, 4, 0, 0})
+	DMember(float)                                     MaximumValue                                                OFFSET(get<float>, {0xEC, 4, 0, 0})
 };
 
 /// Struct /Script/CustomizableObject.CustomizableObjectResourceData
@@ -808,59 +1058,6 @@ class FGeneratedMaterial : public MDKBase
 public:
 	CMember(class UMaterialInterface*)                 MaterialInterface                                           OFFSET(get<T>, {0x0, 8, 0, 0})
 	CMember(TArray<FGeneratedTexture>)                 Textures                                                    OFFSET(get<T>, {0x8, 16, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.MutableParamUIMetadata
-/// Size: 0x00F0 (0x000000 - 0x0000F0)
-class FMutableParamUIMetadata : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 240;
-
-public:
-	SMember(FString)                                   ObjectFriendlyName                                          OFFSET(getStruct<T>, {0x0, 16, 0, 0})
-	SMember(FString)                                   UISectionName                                               OFFSET(getStruct<T>, {0x10, 16, 0, 0})
-	DMember(int32_t)                                   UIOrder                                                     OFFSET(get<int32_t>, {0x20, 4, 0, 0})
-	CMember(TWeakObjectPtr<UTexture2D*>)               UIThumbnail                                                 OFFSET(get<T>, {0x28, 32, 0, 0})
-	CMember(TMap<FString, FString>)                    ExtraInformation                                            OFFSET(get<T>, {0x48, 80, 0, 0})
-	CMember(TMap<FString, TWeakObjectPtr<UObject*>>)   ExtraAssets                                                 OFFSET(get<T>, {0x98, 80, 0, 0})
-	DMember(float)                                     MinimumValue                                                OFFSET(get<float>, {0xE8, 4, 0, 0})
-	DMember(float)                                     MaximumValue                                                OFFSET(get<float>, {0xEC, 4, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.IntegerParameterUIData
-/// Size: 0x0100 (0x000000 - 0x000100)
-class FIntegerParameterUIData : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 256;
-
-public:
-	SMember(FString)                                   Name                                                        OFFSET(getStruct<T>, {0x0, 16, 0, 0})
-	SMember(FMutableParamUIMetadata)                   ParamUIMetadata                                             OFFSET(getStruct<T>, {0x10, 240, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.ParameterUIData
-/// Size: 0x0170 (0x000000 - 0x000170)
-class FParameterUIData : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 368;
-
-public:
-	SMember(FString)                                   Name                                                        OFFSET(getStruct<T>, {0x0, 16, 0, 0})
-	SMember(FMutableParamUIMetadata)                   ParamUIMetadata                                             OFFSET(getStruct<T>, {0x10, 240, 0, 0})
-	CMember(EMutableParameterType)                     Type                                                        OFFSET(get<T>, {0x100, 1, 0, 0})
-	CMember(TArray<FIntegerParameterUIData>)           ArrayIntegerParameterOption                                 OFFSET(get<T>, {0x108, 16, 0, 0})
-	CMember(ECustomizableObjectGroupType)              IntegerParameterGroupType                                   OFFSET(get<T>, {0x118, 1, 0, 0})
-	CMember(ETextureCompressionStrategy)               TextureCompressionStrategy                                  OFFSET(get<T>, {0x119, 1, 0, 0})
-	DMember(bool)                                      bDisableTextureStreaming                                    OFFSET(get<bool>, {0x11A, 1, 0, 0})
-	DMember(bool)                                      bLiveUpdateMode                                             OFFSET(get<bool>, {0x11B, 1, 0, 0})
-	DMember(bool)                                      bReuseInstanceTextures                                      OFFSET(get<bool>, {0x11C, 1, 0, 0})
-	CMember(TMap<FString, FString>)                    ForcedParameterValues                                       OFFSET(get<T>, {0x120, 80, 0, 0})
 };
 
 /// Struct /Script/CustomizableObject.FParameterOptionsTags
@@ -920,26 +1117,6 @@ public:
 	DMember(bool)                                      bUseDiskCompilation                                         OFFSET(get<bool>, {0x8, 1, 0, 0})
 };
 
-/// Struct /Script/CustomizableObject.MutableModelImageProperties
-/// Size: 0x0020 (0x000000 - 0x000020)
-class FMutableModelImageProperties : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 32;
-
-public:
-	SMember(FString)                                   TextureParameterName                                        OFFSET(getStruct<T>, {0x0, 16, 0, 0})
-	CMember(TEnumAsByte<TextureFilter>)                Filter                                                      OFFSET(get<T>, {0x10, 1, 0, 0})
-	DMember(bool)                                      SRGB                                                        OFFSET(get<bool>, {0x14, 1, 1, 0})
-	DMember(bool)                                      FlipGreenChannel                                            OFFSET(get<bool>, {0x14, 1, 1, 1})
-	DMember(bool)                                      IsPassThrough                                               OFFSET(get<bool>, {0x14, 1, 1, 2})
-	DMember(int32_t)                                   LODBias                                                     OFFSET(get<int32_t>, {0x18, 4, 0, 0})
-	CMember(TEnumAsByte<TextureGroup>)                 LODGroup                                                    OFFSET(get<T>, {0x1C, 1, 0, 0})
-	CMember(TEnumAsByte<TextureAddress>)               AddressX                                                    OFFSET(get<T>, {0x1D, 1, 0, 0})
-	CMember(TEnumAsByte<TextureAddress>)               AddressY                                                    OFFSET(get<T>, {0x1E, 1, 0, 0})
-};
-
 /// Struct /Script/CustomizableObject.MutableModelParameterValue
 /// Size: 0x0018 (0x000000 - 0x000018)
 class FMutableModelParameterValue : public MDKBase
@@ -964,20 +1141,6 @@ class FMutableModelParameterProperties : public MDKBase
 public:
 	CMember(EMutableParameterType)                     Type                                                        OFFSET(get<T>, {0x10, 1, 0, 0})
 	CMember(TArray<FMutableModelParameterValue>)       PossibleValues                                              OFFSET(get<T>, {0x18, 16, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.AnimBpOverridePhysicsAssetsInfo
-/// Size: 0x0048 (0x000000 - 0x000048)
-class FAnimBpOverridePhysicsAssetsInfo : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 72;
-
-public:
-	CMember(TWeakObjectPtr<UClass*>)                   AnimInstanceClass                                           OFFSET(get<T>, {0x0, 32, 0, 0})
-	CMember(TWeakObjectPtr<UPhysicsAsset*>)            SourceAsset                                                 OFFSET(get<T>, {0x20, 32, 0, 0})
-	DMember(int32_t)                                   PropertyIndex                                               OFFSET(get<int32_t>, {0x40, 4, 0, 0})
 };
 
 /// Struct /Script/CustomizableObject.MorphTargetInfo
@@ -1025,20 +1188,6 @@ public:
 	DMember(int16_t)                                   SourceAssetLodIndex                                         OFFSET(get<int16_t>, {0x3E, 2, 0, 0})
 };
 
-/// Struct /Script/CustomizableObject.MutableSkinWeightProfileInfo
-/// Size: 0x0008 (0x000000 - 0x000008)
-class FMutableSkinWeightProfileInfo : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 8;
-
-public:
-	SMember(FName)                                     Name                                                        OFFSET(getStruct<T>, {0x0, 4, 0, 0})
-	DMember(bool)                                      DefaultProfile                                              OFFSET(get<bool>, {0x4, 1, 0, 0})
-	DMember(int8_t)                                    DefaultProfileFromLODIndex                                  OFFSET(get<int8_t>, {0x5, 1, 0, 0})
-};
-
 /// Struct /Script/CustomizableObject.MutableStreamableBlock
 /// Size: 0x0018 (0x000000 - 0x000018)
 class FMutableStreamableBlock : public MDKBase
@@ -1051,112 +1200,6 @@ public:
 	DMember(uint16_t)                                  FileIndex                                                   OFFSET(get<uint16_t>, {0x0, 2, 0, 0})
 	DMember(uint64_t)                                  Offset                                                      OFFSET(get<uint64_t>, {0x8, 8, 0, 0})
 	DMember(uint32_t)                                  Size                                                        OFFSET(get<uint32_t>, {0x10, 4, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.MutableRefLODInfo
-/// Size: 0x000C (0x000000 - 0x00000C)
-class FMutableRefLODInfo : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 12;
-
-public:
-	DMember(float)                                     ScreenSize                                                  OFFSET(get<float>, {0x0, 4, 0, 0})
-	DMember(float)                                     LODHysteresis                                               OFFSET(get<float>, {0x4, 4, 0, 0})
-	DMember(bool)                                      bSupportUniformlyDistributedSampling                        OFFSET(get<bool>, {0x8, 1, 0, 0})
-	DMember(bool)                                      bAllowCPUAccess                                             OFFSET(get<bool>, {0x9, 1, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.MutableRefLODRenderData
-/// Size: 0x0002 (0x000000 - 0x000002)
-class FMutableRefLODRenderData : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 2;
-
-public:
-	DMember(bool)                                      bIsLODOptional                                              OFFSET(get<bool>, {0x0, 1, 0, 0})
-	DMember(bool)                                      bStreamedDataInlined                                        OFFSET(get<bool>, {0x1, 1, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.MutableRefLODData
-/// Size: 0x0010 (0x000000 - 0x000010)
-class FMutableRefLODData : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 16;
-
-public:
-	SMember(FMutableRefLODInfo)                        LODInfo                                                     OFFSET(getStruct<T>, {0x0, 12, 0, 0})
-	SMember(FMutableRefLODRenderData)                  RenderData                                                  OFFSET(getStruct<T>, {0xC, 2, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.MutableRefSocket
-/// Size: 0x0058 (0x000000 - 0x000058)
-class FMutableRefSocket : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 88;
-
-public:
-	SMember(FName)                                     SocketName                                                  OFFSET(getStruct<T>, {0x0, 4, 0, 0})
-	SMember(FName)                                     BoneName                                                    OFFSET(getStruct<T>, {0x4, 4, 0, 0})
-	SMember(FVector)                                   RelativeLocation                                            OFFSET(getStruct<T>, {0x8, 24, 0, 0})
-	SMember(FRotator)                                  RelativeRotation                                            OFFSET(getStruct<T>, {0x20, 24, 0, 0})
-	SMember(FVector)                                   RelativeScale                                               OFFSET(getStruct<T>, {0x38, 24, 0, 0})
-	DMember(bool)                                      bForceAlwaysAnimated                                        OFFSET(get<bool>, {0x50, 1, 0, 0})
-	DMember(int32_t)                                   Priority                                                    OFFSET(get<int32_t>, {0x54, 4, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.MutableRefSkeletalMeshSettings
-/// Size: 0x0008 (0x000000 - 0x000008)
-class FMutableRefSkeletalMeshSettings : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 8;
-
-public:
-	DMember(bool)                                      bEnablePerPolyCollision                                     OFFSET(get<bool>, {0x0, 1, 0, 0})
-	DMember(float)                                     DefaultUVChannelDensity                                     OFFSET(get<float>, {0x4, 4, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.MutableRefAssetUserData
-/// Size: 0x0008 (0x000000 - 0x000008)
-class FMutableRefAssetUserData : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 8;
-
-public:
-	CMember(class UAssetUserData*)                     AssetUserData                                               OFFSET(get<T>, {0x0, 8, 0, 0})
-};
-
-/// Struct /Script/CustomizableObject.MutableRefSkeletalMeshData
-/// Size: 0x0110 (0x000000 - 0x000110)
-class FMutableRefSkeletalMeshData : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 272;
-
-public:
-	CMember(class USkeletalMesh*)                      SkeletalMesh                                                OFFSET(get<T>, {0x0, 8, 0, 0})
-	SMember(FSoftObjectPath)                           SkeletalMeshAssetPath                                       OFFSET(getStruct<T>, {0x8, 24, 0, 0})
-	CMember(TArray<FMutableRefLODData>)                LODData                                                     OFFSET(get<T>, {0x20, 16, 0, 0})
-	CMember(TArray<FMutableRefSocket>)                 Sockets                                                     OFFSET(get<T>, {0x30, 16, 0, 0})
-	SMember(FBoxSphereBounds)                          Bounds                                                      OFFSET(getStruct<T>, {0x40, 56, 0, 0})
-	SMember(FMutableRefSkeletalMeshSettings)           Settings                                                    OFFSET(getStruct<T>, {0x78, 8, 0, 0})
-	CMember(TWeakObjectPtr<USkeleton*>)                Skeleton                                                    OFFSET(get<T>, {0x80, 32, 0, 0})
-	CMember(TWeakObjectPtr<UPhysicsAsset*>)            PhysicsAsset                                                OFFSET(get<T>, {0xA0, 32, 0, 0})
-	CMember(TWeakObjectPtr<UClass*>)                   PostProcessAnimInst                                         OFFSET(get<T>, {0xC0, 32, 0, 0})
-	CMember(TWeakObjectPtr<UPhysicsAsset*>)            ShadowPhysicsAsset                                          OFFSET(get<T>, {0xE0, 32, 0, 0})
-	CMember(TArray<FMutableRefAssetUserData>)          AssetUserData                                               OFFSET(get<T>, {0x100, 16, 0, 0})
 };
 
 /// Struct /Script/CustomizableObject.MutableLODSettings
@@ -1299,16 +1342,17 @@ public:
 };
 
 /// Enum /Script/CustomizableObject.EUpdateResult
-/// Size: 0x07
+/// Size: 0x08
 enum EUpdateResult : uint8_t
 {
 	EUpdateResult__Success                                                           = 0,
-	EUpdateResult__Error                                                             = 1,
-	EUpdateResult__ErrorOptimized                                                    = 2,
-	EUpdateResult__ErrorReplaced                                                     = 3,
-	EUpdateResult__ErrorDiscarded                                                    = 4,
-	EUpdateResult__Error16BitBoneIndex                                               = 5,
-	EUpdateResult__EUpdateResult_MAX                                                 = 6
+	EUpdateResult__Warning                                                           = 1,
+	EUpdateResult__Error                                                             = 2,
+	EUpdateResult__ErrorOptimized                                                    = 3,
+	EUpdateResult__ErrorReplaced                                                     = 4,
+	EUpdateResult__ErrorDiscarded                                                    = 5,
+	EUpdateResult__Error16BitBoneIndex                                               = 6,
+	EUpdateResult__EUpdateResult_MAX                                                 = 7
 };
 
 /// Enum /Script/CustomizableObject.EMutableParameterType

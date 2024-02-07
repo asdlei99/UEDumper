@@ -14,7 +14,7 @@
 class UFortCTAButtonViewModel : public UMVVMViewModelBase
 { 
 public:
-	SDK_UNDEFINED(24,13678) /* FText */                __um(Text);                                                 // 0x0068   (0x0018)  
-	SDK_UNDEFINED(24,13679) /* FText */                __um(SecondaryText);                                        // 0x0080   (0x0018)  
+	SDK_UNDEFINED(24,13734) /* FText */                __um(Text);                                                 // 0x0068   (0x0018)  
+	SDK_UNDEFINED(24,13735) /* FText */                __um(SecondaryText);                                        // 0x0080   (0x0018)  
 };
 

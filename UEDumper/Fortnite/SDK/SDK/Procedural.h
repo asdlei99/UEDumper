@@ -106,7 +106,7 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralParameterModifier.GetContribution
-	// float GetContribution();                                                                                              // [0xc2a7668] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetContribution();                                                                                              // [0xc623a68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralDensityModifier
@@ -228,7 +228,7 @@ public:
 class UHISMBuilderSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(1,14926) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                   // 0x0028   (0x0001)  
+	SDK_UNDEFINED(1,15021) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                   // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	FInt32Interval                                     CullDistance;                                               // 0x002C   (0x0008)  
 	float                                              LODDistanceScale;                                           // 0x0034   (0x0004)  
@@ -247,7 +247,7 @@ public:
 	bool                                               bUseAsOccluder : 1;                                         // 0x0044:0 (0x0001)  
 	unsigned char                                      UnknownData03_4[0x3];                                       // 0x0045   (0x0003)  MISSED
 	FBodyInstance                                      BodyInstance;                                               // 0x0048   (0x0190)  
-	SDK_UNDEFINED(1,14927) /* TEnumAsByte<EHasCustomNavigableGeometry> */ __um(CustomNavigableGeometry);           // 0x01D8   (0x0001)  
+	SDK_UNDEFINED(1,15022) /* TEnumAsByte<EHasCustomNavigableGeometry> */ __um(CustomNavigableGeometry);           // 0x01D8   (0x0001)  
 	FLightingChannels                                  LightingChannels;                                           // 0x01D9   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x2];                                       // 0x01DA   (0x0002)  MISSED
 	bool                                               bRenderCustomDepth : 1;                                     // 0x01DC:0 (0x0001)  
@@ -266,9 +266,9 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.HISMBuilderSettings.SetOverriddenLightMapRes
-	// void SetOverriddenLightMapRes(int32_t Value);                                                                         // [0xc2a811c] Final|Native|Public|BlueprintCallable 
+	// void SetOverriddenLightMapRes(int32_t Value);                                                                         // [0xc624664] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.HISMBuilderSettings.GetOverriddenLightMapRes
-	// int32_t GetOverriddenLightMapRes();                                                                                   // [0x3527584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetOverriddenLightMapRes();                                                                                   // [0x339d7f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralContentVariationsWeightsModifier
@@ -363,15 +363,15 @@ public:
 	class UProceduralGeneratorContext*                 GeneratorContext;                                           // 0x0028   (0x0008)  
 	TArray<class UProceduralGeneratorContext*>         GeneratedContexts;                                          // 0x0030   (0x0010)  
 	TArray<class UProceduralGeneratorContext*>         RegisteredContexts;                                         // 0x0040   (0x0010)  
-	SDK_UNDEFINED(80,14928) /* TMap<FGuid, UProceduralGeneratorContext*> */ __um(GeneratorContexts);               // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,15023) /* TMap<FGuid, UProceduralGeneratorContext*> */ __um(GeneratorContexts);               // 0x0050   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x00A0   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralGenerationContext.GetGenerationVolume
-	// class AVolume* GetGenerationVolume();                                                                                 // [0xc2a7d50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AVolume* GetGenerationVolume();                                                                                 // [0xc624150] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralGenerationContext.GetGenerationComponent
-	// class UProceduralGenerationComponent* GetGenerationComponent();                                                       // [0xc2a7d2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UProceduralGenerationComponent* GetGenerationComponent();                                                       // [0xc62412c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralGenerationVolume
@@ -384,9 +384,9 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralGenerationVolume.Generate
-	// void Generate();                                                                                                      // [0xc2a7628] Final|Native|Public|BlueprintCallable 
+	// void Generate();                                                                                                      // [0xc623a28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralGenerationVolume.ClearGeneratedContent
-	// void ClearGeneratedContent();                                                                                         // [0xc2a75e4] Final|Native|Public|BlueprintCallable 
+	// void ClearGeneratedContent();                                                                                         // [0xc6239e4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Procedural.ProceduralGeneratorContext
@@ -403,19 +403,19 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralGeneratorContext.OnGenerate
-	// bool OnGenerate();                                                                                                    // [0x2bc7450] Native|Event|Public|BlueprintEvent 
+	// bool OnGenerate();                                                                                                    // [0x605e7ac] Native|Event|Public|BlueprintEvent 
 	// Function /Script/Procedural.ProceduralGeneratorContext.OnDrawVisualization
-	// void OnDrawVisualization();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent|Const 
+	// void OnDrawVisualization();                                                                                           // [0x2047e54] Event|Public|BlueprintEvent|Const 
 	// Function /Script/Procedural.ProceduralGeneratorContext.OnClearGeneratedContent
-	// void OnClearGeneratedContent();                                                                                       // [0x160abec] Native|Event|Public|BlueprintEvent 
+	// void OnClearGeneratedContent();                                                                                       // [0x13d65e0] Native|Event|Public|BlueprintEvent 
 	// Function /Script/Procedural.ProceduralGeneratorContext.GetOrCreateGeneratorContext
-	// void GetOrCreateGeneratorContext(class UProceduralGenerator* Generator, class UProceduralGeneratorContext*& Context); // [0xc2a7d74] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetOrCreateGeneratorContext(class UProceduralGenerator* Generator, class UProceduralGeneratorContext*& Context); // [0xc624174] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralGeneratorContext.GetGeneratedContexts
-	// TArray<UProceduralGeneratorContext*> GetGeneratedContexts();                                                          // [0xc2a7688] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UProceduralGeneratorContext*> GetGeneratedContexts();                                                          // [0xc623a88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralGeneratorContext.Generate
-	// bool Generate();                                                                                                      // [0xc2a7644] Final|Native|Public|BlueprintCallable 
+	// bool Generate();                                                                                                      // [0xc623a44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralGeneratorContext.ClearGeneratedContent
-	// void ClearGeneratedContent();                                                                                         // [0xc2a7600] Final|Native|Public|BlueprintCallable 
+	// void ClearGeneratedContent();                                                                                         // [0xc623a00] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/Procedural.ProceduralGenerationStackElement
@@ -468,9 +468,9 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralPointCloud.GetPointsByTag
-	// TArray<FProceduralPointCloudPoint> GetPointsByTag(FName InTag);                                                       // [0xc2a7e44] Final|Native|Public|BlueprintCallable 
+	// TArray<FProceduralPointCloudPoint> GetPointsByTag(FName InTag);                                                       // [0xc62427c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralPointCloud.Empty
-	// void Empty();                                                                                                         // [0xc2a7614] Final|Native|Public|BlueprintCallable 
+	// void Empty();                                                                                                         // [0xc623a14] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Procedural.ProceduralRotationMapModifier
@@ -489,29 +489,29 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralRotationMapModifier.SetYawMin
-	// void SetYawMin(float InValue);                                                                                        // [0xc2a8578] Final|Native|Public|BlueprintCallable 
+	// void SetYawMin(float InValue);                                                                                        // [0xc624cc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.SetYawMax
-	// void SetYawMax(float InValue);                                                                                        // [0xc2a84ec] Final|Native|Public|BlueprintCallable 
+	// void SetYawMax(float InValue);                                                                                        // [0xc624bf4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.SetRollMin
-	// void SetRollMin(float InValue);                                                                                       // [0xc2a8690] Final|Native|Public|BlueprintCallable 
+	// void SetRollMin(float InValue);                                                                                       // [0xc624e58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.SetRollMax
-	// void SetRollMax(float InValue);                                                                                       // [0xc2a8604] Final|Native|Public|BlueprintCallable 
+	// void SetRollMax(float InValue);                                                                                       // [0xc624d8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.SetPitchMin
-	// void SetPitchMin(float InValue);                                                                                      // [0xc2a8230] Final|Native|Public|BlueprintCallable 
+	// void SetPitchMin(float InValue);                                                                                      // [0xc6247f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.SetPitchMax
-	// void SetPitchMax(float InValue);                                                                                      // [0xc2a81a4] Final|Native|Public|BlueprintCallable 
+	// void SetPitchMax(float InValue);                                                                                      // [0xc62472c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.GetYawMin
-	// float GetYawMin();                                                                                                    // [0x662d96c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetYawMin();                                                                                                    // [0x6371a00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.GetYawMax
-	// float GetYawMax();                                                                                                    // [0x662dc18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetYawMax();                                                                                                    // [0x6371cac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.GetRollMin
-	// float GetRollMin();                                                                                                   // [0x3880b68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRollMin();                                                                                                   // [0x372aa08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.GetRollMax
-	// float GetRollMax();                                                                                                   // [0x3b24b44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRollMax();                                                                                                   // [0x38b8424] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.GetPitchMin
-	// float GetPitchMin();                                                                                                  // [0x3b24878] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPitchMin();                                                                                                  // [0x38b8158] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationMapModifier.GetPitchMax
-	// float GetPitchMax();                                                                                                  // [0x2c3646c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPitchMax();                                                                                                  // [0x2965080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralRotationNoiseModifier
@@ -533,29 +533,29 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.SetRandomYawMin
-	// void SetRandomYawMin(float InValue);                                                                                  // [0xc2a8578] Final|Native|Public|BlueprintCallable 
+	// void SetRandomYawMin(float InValue);                                                                                  // [0xc624cc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.SetRandomYawMax
-	// void SetRandomYawMax(float InValue);                                                                                  // [0xc2a84ec] Final|Native|Public|BlueprintCallable 
+	// void SetRandomYawMax(float InValue);                                                                                  // [0xc624bf4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.SetRandomRollMin
-	// void SetRandomRollMin(float InValue);                                                                                 // [0xc2a8460] Final|Native|Public|BlueprintCallable 
+	// void SetRandomRollMin(float InValue);                                                                                 // [0xc624b28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.SetRandomRollMax
-	// void SetRandomRollMax(float InValue);                                                                                 // [0xc2a83d4] Final|Native|Public|BlueprintCallable 
+	// void SetRandomRollMax(float InValue);                                                                                 // [0xc624a5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.SetRandomPitchMin
-	// void SetRandomPitchMin(float InValue);                                                                                // [0xc2a8348] Final|Native|Public|BlueprintCallable 
+	// void SetRandomPitchMin(float InValue);                                                                                // [0xc624990] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.SetRandomPitchMax
-	// void SetRandomPitchMax(float InValue);                                                                                // [0xc2a82bc] Final|Native|Public|BlueprintCallable 
+	// void SetRandomPitchMax(float InValue);                                                                                // [0xc6248c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.GetRandomYawMin
-	// float GetRandomYawMin();                                                                                              // [0x662d96c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRandomYawMin();                                                                                              // [0x6371a00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.GetRandomYawMax
-	// float GetRandomYawMax();                                                                                              // [0x662dc18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRandomYawMax();                                                                                              // [0x6371cac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.GetRandomRollMin
-	// float GetRandomRollMin();                                                                                             // [0x3527584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRandomRollMin();                                                                                             // [0x339d7f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.GetRandomRollMax
-	// float GetRandomRollMax();                                                                                             // [0x35faa7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRandomRollMax();                                                                                             // [0x34193cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.GetRandomPitchMin
-	// float GetRandomPitchMin();                                                                                            // [0x3b24b44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRandomPitchMin();                                                                                            // [0x38b8424] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralRotationNoiseModifier.GetRandomPitchMax
-	// float GetRandomPitchMax();                                                                                            // [0x3b24878] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRandomPitchMax();                                                                                            // [0x38b8158] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralScaleMapModifier
@@ -572,13 +572,13 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralScaleMapModifier.SetRemapScaleMin
-	// void SetRemapScaleMin(float InValue);                                                                                 // [0xc2a8460] Final|Native|Public|BlueprintCallable 
+	// void SetRemapScaleMin(float InValue);                                                                                 // [0xc624b28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralScaleMapModifier.SetRemapScaleMax
-	// void SetRemapScaleMax(float InValue);                                                                                 // [0xc2a83d4] Final|Native|Public|BlueprintCallable 
+	// void SetRemapScaleMax(float InValue);                                                                                 // [0xc624a5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralScaleMapModifier.GetRemapScaleMin
-	// float GetRemapScaleMin();                                                                                             // [0x3527584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemapScaleMin();                                                                                             // [0x339d7f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralScaleMapModifier.GetRemapScaleMax
-	// float GetRemapScaleMax();                                                                                             // [0x35faa7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemapScaleMax();                                                                                             // [0x34193cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralScaleNoiseModifier
@@ -591,13 +591,13 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralScaleNoiseModifier.SetScaleMin
-	// void SetScaleMin(float InValue);                                                                                      // [0xc2a87a8] Final|Native|Public|BlueprintCallable 
+	// void SetScaleMin(float InValue);                                                                                      // [0xc624ff0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralScaleNoiseModifier.SetScaleMax
-	// void SetScaleMax(float InValue);                                                                                      // [0xc2a871c] Final|Native|Public|BlueprintCallable 
+	// void SetScaleMax(float InValue);                                                                                      // [0xc624f24] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralScaleNoiseModifier.GetScaleMin
-	// float GetScaleMin();                                                                                                  // [0x662d8a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetScaleMin();                                                                                                  // [0x6371938] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralScaleNoiseModifier.GetScaleMax
-	// float GetScaleMax();                                                                                                  // [0x3527584] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetScaleMax();                                                                                                  // [0x339d7f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralScatterContentVariation
@@ -712,7 +712,7 @@ struct FProceduralHitPoint
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	FVector                                            Position;                                                   // 0x0008   (0x0018)  
 	FVector                                            Normal;                                                     // 0x0020   (0x0018)  
-	SDK_UNDEFINED(8,14929) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Component);                             // 0x0038   (0x0008)  
+	SDK_UNDEFINED(8,15024) /* TWeakObjectPtr<UPrimitiveComponent*> */ __um(Component);                             // 0x0038   (0x0008)  
 };
 
 /// Struct /Script/Procedural.ProceduralScatterPoint
@@ -907,13 +907,13 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralScatterSettings.SetSourcePointDistanceMin
-	// void SetSourcePointDistanceMin(float InValue);                                                                        // [0xc2a88c8] Final|Native|Public|BlueprintCallable 
+	// void SetSourcePointDistanceMin(float InValue);                                                                        // [0xc625194] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralScatterSettings.SetSourcePointDistanceMax
-	// void SetSourcePointDistanceMax(float InValue);                                                                        // [0xc2a8834] Final|Native|Public|BlueprintCallable 
+	// void SetSourcePointDistanceMax(float InValue);                                                                        // [0xc6250bc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralScatterSettings.GetSourcePointDistanceMin
-	// float GetSourcePointDistanceMin();                                                                                    // [0x6337a1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSourcePointDistanceMin();                                                                                    // [0x6058054] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralScatterSettings.GetSourcePointDistanceMax
-	// float GetSourcePointDistanceMax();                                                                                    // [0x8bee02c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSourcePointDistanceMax();                                                                                    // [0x8bebccc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralScatterStaticMeshContentVariation
@@ -954,15 +954,15 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralSurfaceHeightMap.SetHeightRangeMin
-	// void SetHeightRangeMin(float InValue);                                                                                // [0xc2a8088] Final|Native|Public|BlueprintCallable 
+	// void SetHeightRangeMin(float InValue);                                                                                // [0xc62458c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralSurfaceHeightMap.SetHeightRangeMax
-	// void SetHeightRangeMax(float InValue);                                                                                // [0xc2a7ff4] Final|Native|Public|BlueprintCallable 
+	// void SetHeightRangeMax(float InValue);                                                                                // [0xc6244b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralSurfaceHeightMap.GetValue
-	// float GetValue(float InHeight);                                                                                       // [0xc2a7f64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetValue(float InHeight);                                                                                       // [0xc6243e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralSurfaceHeightMap.GetHeightRangeMin
-	// float GetHeightRangeMin();                                                                                            // [0xb50836c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHeightRangeMin();                                                                                            // [0xb7491d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralSurfaceHeightMap.GetHeightRangeMax
-	// float GetHeightRangeMax();                                                                                            // [0x62b1e44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHeightRangeMax();                                                                                            // [0x5fc34bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Procedural.ProceduralSurfaceSlopeAngleMap
@@ -978,14 +978,14 @@ public:
 
 	/// Functions
 	// Function /Script/Procedural.ProceduralSurfaceSlopeAngleMap.SetSlopeAngleRangeMin
-	// void SetSlopeAngleRangeMin(float InValue);                                                                            // [0xc2a8088] Final|Native|Public|BlueprintCallable 
+	// void SetSlopeAngleRangeMin(float InValue);                                                                            // [0xc62458c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralSurfaceSlopeAngleMap.SetSlopeAngleRangeMax
-	// void SetSlopeAngleRangeMax(float InValue);                                                                            // [0xc2a7ff4] Final|Native|Public|BlueprintCallable 
+	// void SetSlopeAngleRangeMax(float InValue);                                                                            // [0xc6244b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Procedural.ProceduralSurfaceSlopeAngleMap.GetValue
-	// float GetValue(float InSlopeAngle);                                                                                   // [0xc2a7f64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetValue(float InSlopeAngle);                                                                                   // [0xc6243e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralSurfaceSlopeAngleMap.GetSlopeAngleRangeMin
-	// float GetSlopeAngleRangeMin();                                                                                        // [0xb50836c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSlopeAngleRangeMin();                                                                                        // [0xb7491d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Procedural.ProceduralSurfaceSlopeAngleMap.GetSlopeAngleRangeMax
-	// float GetSlopeAngleRangeMax();                                                                                        // [0x62b1e44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSlopeAngleRangeMax();                                                                                        // [0x5fc34bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

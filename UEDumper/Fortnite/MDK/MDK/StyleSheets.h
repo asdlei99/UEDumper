@@ -97,15 +97,15 @@ public:
 };
 
 /// Class /Script/StyleSheets.StyleSheet
-/// Size: 0x0020 (0x000028 - 0x000048)
+/// Size: 0x0030 (0x000028 - 0x000058)
 class UStyleSheet : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 72;
+	static inline constexpr uint64_t __MDKClassSize = 88;
 
 public:
 	CMember(TArray<class UStyleRule*>)                 StyleRules                                                  OFFSET(get<T>, {0x28, 16, 0, 0})
-	SMember(FStyleSheetSettings)                       Settings                                                    OFFSET(getStruct<T>, {0x38, 16, 0, 0})
+	SMember(FStyleSheetSettings)                       Settings                                                    OFFSET(getStruct<T>, {0x38, 32, 0, 0})
 };
 
 /// Class /Script/StyleSheets.StyleSheetCollection
@@ -176,7 +176,7 @@ public:
 
 	/// Functions
 	// Function /Script/StyleSheets.StylableWidget.BP_OnWidgetStyled
-	// void BP_OnWidgetStyled();                                                                                                // [0x211c0a0] RequiredAPI|Event|Protected|BlueprintEvent 
+	// void BP_OnWidgetStyled();                                                                                                // [0x2047e54] RequiredAPI|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/StyleSheets.StyleSheetsSettings
@@ -300,15 +300,16 @@ public:
 };
 
 /// Struct /Script/StyleSheets.StyleSheetSettings
-/// Size: 0x0010 (0x000000 - 0x000010)
+/// Size: 0x0020 (0x000000 - 0x000020)
 class FStyleSheetSettings : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 16;
+	static inline constexpr uint64_t __MDKClassSize = 32;
 
 public:
-	CMember(TArray<class UClass*>)                     StylableWidgetClasses                                       OFFSET(get<T>, {0x0, 16, 0, 0})
+	SMember(FString)                                   Description                                                 OFFSET(getStruct<T>, {0x0, 16, 0, 0})
+	CMember(TArray<class UClass*>)                     StylableWidgetClasses                                       OFFSET(get<T>, {0x10, 16, 0, 0})
 };
 
 /// Struct /Script/StyleSheets.StyleTag

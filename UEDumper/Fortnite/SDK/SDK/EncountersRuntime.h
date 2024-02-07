@@ -16,8 +16,9 @@
 /// dependency: GameplayAbilities
 /// dependency: GameplayStateTreeModule
 /// dependency: GameplayTags
+/// dependency: ItemizationCoreRuntime
 /// dependency: LagerRuntime
-/// dependency: McpProfileSysCore
+/// dependency: McpProfileSys
 /// dependency: ModularGameplay
 /// dependency: PlayspaceSystem
 /// dependency: StateTreeModule
@@ -81,7 +82,7 @@ struct FEncounterMobInstance
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0000   (0x0018)  MISSED
 	class AFortAthenaLivingWorldVolume*                VolumePointProvider;                                        // 0x0018   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0020   (0x0010)  MISSED
-	SDK_UNDEFINED(16,13181) /* TArray<TScriptInterface<Class>> */ __um(CurrentPointProviders);                     // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,13231) /* TArray<TScriptInterface<Class>> */ __um(CurrentPointProviders);                     // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x18];                                      // 0x0040   (0x0018)  MISSED
 };
 
@@ -91,11 +92,11 @@ struct FEncounterMobSpawnInfo
 { 
 	FScalableFloat                                     LeashRadiusInner;                                           // 0x0000   (0x0028)  
 	FScalableFloat                                     LeashRadiusOuter;                                           // 0x0028   (0x0028)  
-	SDK_UNDEFINED(8,13182) /* TWeakObjectPtr<AEncounterMobAnchor*> */ __um(EncounterAnchorPoint);                  // 0x0050   (0x0008)  
+	SDK_UNDEFINED(8,13232) /* TWeakObjectPtr<AEncounterMobAnchor*> */ __um(EncounterAnchorPoint);                  // 0x0050   (0x0008)  
 	EEncounterMobSpawnType                             MobSpawnType;                                               // 0x0058   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x005C   (0x0004)  MISSED
 	FGameplayTagContainer                              PointProviderFilterTags;                                    // 0x0060   (0x0020)  
-	SDK_UNDEFINED(16,13183) /* TArray<TWeakObjectPtr<AFortAthenaLivingWorldStaticPointProvider*>> */ __um(StaticPointProviders); // 0x0080   (0x0010)  
+	SDK_UNDEFINED(16,13233) /* TArray<TWeakObjectPtr<AFortAthenaLivingWorldStaticPointProvider*>> */ __um(StaticPointProviders); // 0x0080   (0x0010)  
 	class UEnvQuery*                                   PointProviderEQS;                                           // 0x0090   (0x0008)  
 	class UClass*                                      PointProviderVolumeClass;                                   // 0x0098   (0x0008)  
 };
@@ -104,11 +105,11 @@ struct FEncounterMobSpawnInfo
 /// Size: 0x00E0 (0x000000 - 0x0000E0)
 struct FEncounterMobSpawnData
 { 
-	SDK_UNDEFINED(16,13184) /* FString */              __um(DevNotes);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13234) /* FString */              __um(DevNotes);                                             // 0x0000   (0x0010)  
 	FGameplayTag                                       MobIdentifier;                                              // 0x0010   (0x0004)  
 	bool                                               bActiveOnStart;                                             // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0015   (0x0003)  MISSED
-	SDK_UNDEFINED(32,13185) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(MobEncounterData);         // 0x0018   (0x0020)  
+	SDK_UNDEFINED(32,13235) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(MobEncounterData);         // 0x0018   (0x0020)  
 	bool                                               bOverrideDefaultSpawnInfo;                                  // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0039   (0x0007)  MISSED
 	FEncounterMobSpawnInfo                             MobSpawnInfo;                                               // 0x0040   (0x00A0)  
@@ -124,44 +125,44 @@ public:
 	FEncounterMobSpawnInfo                             DefaultMobSpawnInfo;                                        // 0x00C0   (0x00A0)  
 	FScalableFloat                                     LWMDensityWeight;                                           // 0x0160   (0x0028)  
 	FScalableFloat                                     LWMDensityRange;                                            // 0x0188   (0x0028)  
-	SDK_UNDEFINED(16,13186) /* FMulticastInlineDelegate */ __um(OnEncounterStarted);                               // 0x01B0   (0x0010)  
-	SDK_UNDEFINED(16,13187) /* FMulticastInlineDelegate */ __um(OnEncounterPaused);                                // 0x01C0   (0x0010)  
-	SDK_UNDEFINED(16,13188) /* FMulticastInlineDelegate */ __um(OnEncounterResumed);                               // 0x01D0   (0x0010)  
-	SDK_UNDEFINED(16,13189) /* FMulticastInlineDelegate */ __um(OnEncounterActorSpawned);                          // 0x01E0   (0x0010)  
-	SDK_UNDEFINED(16,13190) /* FMulticastInlineDelegate */ __um(OnEncounterActorDead);                             // 0x01F0   (0x0010)  
-	SDK_UNDEFINED(16,13191) /* FMulticastInlineDelegate */ __um(OnEncounterEnded);                                 // 0x0200   (0x0010)  
-	SDK_UNDEFINED(8,13192) /* TWeakObjectPtr<ALivingWorldEncounterPrefab*> */ __um(EncounterPrefab);               // 0x0210   (0x0008)  
+	SDK_UNDEFINED(16,13236) /* FMulticastInlineDelegate */ __um(OnEncounterStarted);                               // 0x01B0   (0x0010)  
+	SDK_UNDEFINED(16,13237) /* FMulticastInlineDelegate */ __um(OnEncounterPaused);                                // 0x01C0   (0x0010)  
+	SDK_UNDEFINED(16,13238) /* FMulticastInlineDelegate */ __um(OnEncounterResumed);                               // 0x01D0   (0x0010)  
+	SDK_UNDEFINED(16,13239) /* FMulticastInlineDelegate */ __um(OnEncounterActorSpawned);                          // 0x01E0   (0x0010)  
+	SDK_UNDEFINED(16,13240) /* FMulticastInlineDelegate */ __um(OnEncounterActorDead);                             // 0x01F0   (0x0010)  
+	SDK_UNDEFINED(16,13241) /* FMulticastInlineDelegate */ __um(OnEncounterEnded);                                 // 0x0200   (0x0010)  
+	SDK_UNDEFINED(8,13242) /* TWeakObjectPtr<ALivingWorldEncounterPrefab*> */ __um(EncounterPrefab);               // 0x0210   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.StartMobEncounter
-	// bool StartMobEncounter(FGameplayTag& MobIdentifier);                                                                  // [0xb19c89c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StartMobEncounter(FGameplayTag& MobIdentifier);                                                                  // [0xb3bb4ec] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.ResumeMobEncounter
-	// void ResumeMobEncounter(FGameplayTag& MobIdentifier);                                                                 // [0xb19c7d4] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResumeMobEncounter(FGameplayTag& MobIdentifier);                                                                 // [0xb3bb424] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.PauseMobEncounter
-	// void PauseMobEncounter(FGameplayTag& MobIdentifier);                                                                  // [0xb19c70c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void PauseMobEncounter(FGameplayTag& MobIdentifier);                                                                  // [0xb3bb35c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobPawnEndPlay
-	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0xb19c580] Final|Native|Private 
+	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0xb3bb158] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobActorSpawn
-	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                     // [0xb19c2c0] Final|Native|Private 
+	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                     // [0xb3bae58] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnMobActorDied
-	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb19bdec] Final|Native|Private|HasDefaults 
+	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb3ba9fc] Final|Native|Private|HasDefaults 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterStarted__DelegateSignature
-	// void OnEncounterStarted__DelegateSignature(FGameplayTag MobIdentifier);                                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnEncounterStarted__DelegateSignature(FGameplayTag MobIdentifier);                                               // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterResumed__DelegateSignature
-	// void OnEncounterResumed__DelegateSignature(FGameplayTag MobIdentifier);                                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnEncounterResumed__DelegateSignature(FGameplayTag MobIdentifier);                                               // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterPaused__DelegateSignature
-	// void OnEncounterPaused__DelegateSignature(FGameplayTag MobIdentifier);                                                // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnEncounterPaused__DelegateSignature(FGameplayTag MobIdentifier);                                                // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterEnded__DelegateSignature
-	// void OnEncounterEnded__DelegateSignature(FGameplayTag MobIdentifier);                                                 // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnEncounterEnded__DelegateSignature(FGameplayTag MobIdentifier);                                                 // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterActorSpawned__DelegateSignature
-	// void OnEncounterActorSpawned__DelegateSignature(FGameplayTag MobIdentifier, class AActor* SpawnedActor);              // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnEncounterActorSpawned__DelegateSignature(FGameplayTag MobIdentifier, class AActor* SpawnedActor);              // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.OnEncounterActorDead__DelegateSignature
-	// void OnEncounterActorDead__DelegateSignature(FGameplayTag MobIdentifier, class AActor* DamagedActor, class AActor* DamageCauser); // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnEncounterActorDead__DelegateSignature(FGameplayTag MobIdentifier, class AActor* DamagedActor, class AActor* DamageCauser); // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.EndMobEncounter
-	// void EndMobEncounter(FGameplayTag& MobIdentifier);                                                                    // [0xb19bd24] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void EndMobEncounter(FGameplayTag& MobIdentifier);                                                                    // [0xb3ba934] Final|RequiredAPI|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterMobManagerComponent.EndAndCleanupAllMobEncounters
-	// void EndAndCleanupAllMobEncounters();                                                                                 // [0xb19bd10] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void EndAndCleanupAllMobEncounters();                                                                                 // [0xb3ba920] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/EncountersRuntime.EncounterWorldConditionSchema
@@ -177,22 +178,22 @@ public:
 class ULWMEncounterInstance : public UObject
 { 
 public:
-	SDK_UNDEFINED(8,13193) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounterInstance*> */ __um(LWMInstance);       // 0x0028   (0x0008)  
-	SDK_UNDEFINED(16,13194) /* TArray<TWeakObjectPtr<AFortPawn*>> */ __um(SpawnedMobPawns);                        // 0x0030   (0x0010)  
+	SDK_UNDEFINED(8,13243) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounterInstance*> */ __um(LWMInstance);       // 0x0028   (0x0008)  
+	SDK_UNDEFINED(16,13244) /* TArray<TWeakObjectPtr<AFortPawn*>> */ __um(SpawnedMobPawns);                        // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x58];                                      // 0x0040   (0x0058)  MISSED
-	SDK_UNDEFINED(8,13195) /* TWeakObjectPtr<AActor*> */ __um(EncounterAnchorPoint);                               // 0x0098   (0x0008)  
-	SDK_UNDEFINED(8,13196) /* TWeakObjectPtr<AActor*> */ __um(UserActor);                                          // 0x00A0   (0x0008)  
-	SDK_UNDEFINED(16,13197) /* TArray<TScriptInterface<Class>> */ __um(ActivePointProviderInterfaces);             // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(8,13245) /* TWeakObjectPtr<AActor*> */ __um(EncounterAnchorPoint);                               // 0x0098   (0x0008)  
+	SDK_UNDEFINED(8,13246) /* TWeakObjectPtr<AActor*> */ __um(UserActor);                                          // 0x00A0   (0x0008)  
+	SDK_UNDEFINED(16,13247) /* TArray<TScriptInterface<Class>> */ __um(ActivePointProviderInterfaces);             // 0x00A8   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x48];                                      // 0x00B8   (0x0048)  MISSED
 
 
 	/// Functions
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobPawnEndPlay
-	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0xb1ad9e4] Final|Native|Public  
+	// void OnMobPawnEndPlay(class AActor* Mob, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0xb3c0abc] Final|Native|Public  
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobActorSpawn
-	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                     // [0xb1ad860] Final|Native|Public  
+	// void OnMobActorSpawn(class AActor* SpawnedActor);                                                                     // [0xb3c08f8] Final|Native|Public  
 	// Function /Script/EncountersRuntime.LWMEncounterInstance.OnMobActorDied
-	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb1ad2ec] Final|Native|Public|HasDefaults 
+	// void OnMobActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* HitComponent, FName BoneName, FVector Momentum); // [0xb3c0400] Final|Native|Public|HasDefaults 
 };
 
 /// Class /Script/EncountersRuntime.SpawnActorTaskHelper
@@ -231,7 +232,7 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterBlueprintLibrary.GetRelevantMobManagerComponentForActor
-	// class UEncounterMobManagerComponent* GetRelevantMobManagerComponentForActor(class AActor* Actor);                     // [0xb1ac858] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UEncounterMobManagerComponent* GetRelevantMobManagerComponentForActor(class AActor* Actor);                     // [0xb3c0200] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/EncountersRuntime.EncounterFactionData
@@ -252,19 +253,19 @@ public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0330   (0x0018)  MISSED
 	class UEncounterStateTreeComponent*                EncounterStateTreeComponent;                                // 0x0348   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0350   (0x0008)  MISSED
-	SDK_UNDEFINED(16,13198) /* TArray<TScriptInterface<Class>> */ __um(EncounterPointProviders);                   // 0x0358   (0x0010)  
-	SDK_UNDEFINED(16,13199) /* TArray<TWeakObjectPtr<AEncounterMobAnchor*>> */ __um(EncounterAnchors);             // 0x0368   (0x0010)  
-	SDK_UNDEFINED(16,13200) /* TArray<TWeakObjectPtr<ABuildingActor*>> */ __um(BuildingActors);                    // 0x0378   (0x0010)  
-	SDK_UNDEFINED(16,13201) /* TArray<TWeakObjectPtr<AFortPlayerController*>> */ __um(Players);                    // 0x0388   (0x0010)  
-	SDK_UNDEFINED(80,13202) /* TMap<FString, FString> */ __um(AllVisitedPlayersMap);                               // 0x0398   (0x0050)  
+	SDK_UNDEFINED(16,13248) /* TArray<TScriptInterface<Class>> */ __um(EncounterPointProviders);                   // 0x0358   (0x0010)  
+	SDK_UNDEFINED(16,13249) /* TArray<TWeakObjectPtr<AEncounterMobAnchor*>> */ __um(EncounterAnchors);             // 0x0368   (0x0010)  
+	SDK_UNDEFINED(16,13250) /* TArray<TWeakObjectPtr<ABuildingActor*>> */ __um(BuildingActors);                    // 0x0378   (0x0010)  
+	SDK_UNDEFINED(16,13251) /* TArray<TWeakObjectPtr<AFortPlayerController*>> */ __um(Players);                    // 0x0388   (0x0010)  
+	SDK_UNDEFINED(80,13252) /* TMap<FString, FString> */ __um(AllVisitedPlayersMap);                               // 0x0398   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x48];                                      // 0x03E8   (0x0048)  MISSED
 
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterGameplayVolume.OnCleanup
-	// void OnCleanup();                                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnCleanup();                                                                                                     // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/EncountersRuntime.EncounterGameplayVolume.IsDoneCleaningUp
-	// bool IsDoneCleaningUp();                                                                                              // [0xa7fe16c] Native|Event|Public|BlueprintEvent|Const 
+	// bool IsDoneCleaningUp();                                                                                              // [0xa9d2484] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/EncountersRuntime.EncounterItem
@@ -273,8 +274,8 @@ class UEncounterItem : public UFortItem
 { 
 public:
 	class UEncounterItemDefinition*                    EncounterItemDefinition;                                    // 0x0088   (0x0008)  
-	SDK_UNDEFINED(8,13203) /* TWeakObjectPtr<ALivingWorldEncounterPrefab*> */ __um(EncounterPrefab);               // 0x0090   (0x0008)  
-	SDK_UNDEFINED(8,13204) /* TWeakObjectPtr<UEncounterManagerComponent*> */ __um(EncounterManager);               // 0x0098   (0x0008)  
+	SDK_UNDEFINED(8,13253) /* TWeakObjectPtr<ALivingWorldEncounterPrefab*> */ __um(EncounterPrefab);               // 0x0090   (0x0008)  
+	SDK_UNDEFINED(8,13254) /* TWeakObjectPtr<UEncounterManagerComponent*> */ __um(EncounterManager);               // 0x0098   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x00A0   (0x0018)  MISSED
 };
 
@@ -289,30 +290,30 @@ struct FEncounterRewardBehavior
 };
 
 /// Class /Script/EncountersRuntime.EncounterItemDefinition
-/// Size: 0x0218 (0x000378 - 0x000590)
+/// Size: 0x0218 (0x000338 - 0x000550)
 class UEncounterItemDefinition : public UFortItemDefinition
 { 
 public:
-	bool                                               bAutoHandleSuccessFailure;                                  // 0x0378   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0379   (0x0007)  MISSED
-	SDK_UNDEFINED(32,13205) /* TWeakObjectPtr<UWorld*> */ __um(Level);                                             // 0x0380   (0x0020)  
-	SDK_UNDEFINED(32,13206) /* TWeakObjectPtr<UStateTree*> */ __um(StateTreeOverride);                             // 0x03A0   (0x0020)  
-	FGameplayCueTag                                    ProximityGameplayCueTag;                                    // 0x03C0   (0x0004)  
-	FGameplayCueTag                                    ActorCleanupGameplayCueTag;                                 // 0x03C4   (0x0004)  
-	TArray<FName>                                      SuccessRewards;                                             // 0x03C8   (0x0010)  
-	FEncounterRewardBehavior                           SuccessRewardBehavior;                                      // 0x03D8   (0x0080)  
-	FGameplayCueTag                                    ActorSuccessGameplayCueTag;                                 // 0x0458   (0x0004)  
-	FGameplayCueTag                                    PlayerSuccessGameplayCueTag;                                // 0x045C   (0x0004)  
-	TArray<FName>                                      FailureRewards;                                             // 0x0460   (0x0010)  
-	FEncounterRewardBehavior                           FailureRewardBehavior;                                      // 0x0470   (0x0080)  
-	FGameplayCueTag                                    ActorFailureGameplayCueTag;                                 // 0x04F0   (0x0004)  
-	FGameplayCueTag                                    PlayerFailureGameplayCueTag;                                // 0x04F4   (0x0004)  
-	FScalableFloat                                     LWMDensityWeight;                                           // 0x04F8   (0x0028)  
-	FScalableFloat                                     LWMDensityRange;                                            // 0x0520   (0x0028)  
-	TArray<FInstancedStruct>                           Vars;                                                       // 0x0548   (0x0010)  
-	TArray<FInstancedStruct>                           VariableSelections;                                         // 0x0558   (0x0010)  
-	FWorldConditionQueryDefinition                     CanSpawnWorldConditionDefinition;                           // 0x0568   (0x0018)  
-	TArray<FFortAthenaLivingWorldPrefabActorSpawnerData> ActorSpawnerDatas;                                        // 0x0580   (0x0010)  
+	bool                                               bAutoHandleSuccessFailure;                                  // 0x0338   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0339   (0x0007)  MISSED
+	SDK_UNDEFINED(32,13255) /* TWeakObjectPtr<UWorld*> */ __um(Level);                                             // 0x0340   (0x0020)  
+	SDK_UNDEFINED(32,13256) /* TWeakObjectPtr<UStateTree*> */ __um(StateTreeOverride);                             // 0x0360   (0x0020)  
+	FGameplayCueTag                                    ProximityGameplayCueTag;                                    // 0x0380   (0x0004)  
+	FGameplayCueTag                                    ActorCleanupGameplayCueTag;                                 // 0x0384   (0x0004)  
+	TArray<FName>                                      SuccessRewards;                                             // 0x0388   (0x0010)  
+	FEncounterRewardBehavior                           SuccessRewardBehavior;                                      // 0x0398   (0x0080)  
+	FGameplayCueTag                                    ActorSuccessGameplayCueTag;                                 // 0x0418   (0x0004)  
+	FGameplayCueTag                                    PlayerSuccessGameplayCueTag;                                // 0x041C   (0x0004)  
+	TArray<FName>                                      FailureRewards;                                             // 0x0420   (0x0010)  
+	FEncounterRewardBehavior                           FailureRewardBehavior;                                      // 0x0430   (0x0080)  
+	FGameplayCueTag                                    ActorFailureGameplayCueTag;                                 // 0x04B0   (0x0004)  
+	FGameplayCueTag                                    PlayerFailureGameplayCueTag;                                // 0x04B4   (0x0004)  
+	FScalableFloat                                     LWMDensityWeight;                                           // 0x04B8   (0x0028)  
+	FScalableFloat                                     LWMDensityRange;                                            // 0x04E0   (0x0028)  
+	TArray<FInstancedStruct>                           Vars;                                                       // 0x0508   (0x0010)  
+	TArray<FInstancedStruct>                           VariableSelections;                                         // 0x0518   (0x0010)  
+	FWorldConditionQueryDefinition                     CanSpawnWorldConditionDefinition;                           // 0x0528   (0x0018)  
+	TArray<FFortAthenaLivingWorldPrefabActorSpawnerData> ActorSpawnerDatas;                                        // 0x0540   (0x0010)  
 };
 
 /// Struct /Script/EncountersRuntime.ActorIdentifierEntry
@@ -320,7 +321,7 @@ public:
 struct FActorIdentifierEntry
 { 
 	FGameplayTagContainer                              IdentifierTags;                                             // 0x0000   (0x0020)  
-	SDK_UNDEFINED(8,13207) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0020   (0x0008)  
+	SDK_UNDEFINED(8,13257) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0020   (0x0008)  
 };
 
 /// Struct /Script/EncountersRuntime.LWMEncounterInfo
@@ -342,7 +343,7 @@ struct FGameplayEffectIdentifierInfo
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FTrackedActorInfo
 { 
-	SDK_UNDEFINED(8,13208) /* TWeakObjectPtr<AActor*> */ __um(TrackedActor);                                       // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,13258) /* TWeakObjectPtr<AActor*> */ __um(TrackedActor);                                       // 0x0000   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x30];                                      // 0x0008   (0x0030)  MISSED
 };
 
@@ -351,66 +352,68 @@ struct FTrackedActorInfo
 class UEncounterManagerComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(8,13209) /* TWeakObjectPtr<AEncounterGameplayVolume*> */ __um(EncounterVolume);                  // 0x00A0   (0x0008)  
-	SDK_UNDEFINED(8,13210) /* TWeakObjectPtr<AActor*> */ __um(CenterActorOverride);                                // 0x00A8   (0x0008)  
-	SDK_UNDEFINED(16,13211) /* TArray<TWeakObjectPtr<ABuildingActor*>> */ __um(PermanentActors);                   // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(8,13259) /* TWeakObjectPtr<AEncounterGameplayVolume*> */ __um(EncounterVolume);                  // 0x00A0   (0x0008)  
+	SDK_UNDEFINED(8,13260) /* TWeakObjectPtr<AActor*> */ __um(CenterActorOverride);                                // 0x00A8   (0x0008)  
+	SDK_UNDEFINED(16,13261) /* TArray<TWeakObjectPtr<ABuildingActor*>> */ __um(ActorsToRemainAfterEncounter);      // 0x00B0   (0x0010)  
 	FDataTableRowHandle                                PostEncounterLWMEvent;                                      // 0x00C0   (0x0010)  
 	FDataTableRowHandle                                PostEncounterLWMCategory;                                   // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(80,13212) /* TSet<AFortPlayerController*> */ __um(ExplicitContributors);                         // 0x00E0   (0x0050)  
+	SDK_UNDEFINED(80,13262) /* TSet<AFortPlayerController*> */ __um(ExplicitContributors);                         // 0x00E0   (0x0050)  
 	TArray<FActorIdentifierEntry>                      ActorIdentifiers;                                           // 0x0130   (0x0010)  
 	TArray<FLWMEncounterInfo>                          EncounterInfos;                                             // 0x0140   (0x0010)  
 	TArray<FGameplayEffectIdentifierInfo>              GameplayEffectInfos;                                        // 0x0150   (0x0010)  
-	SDK_UNDEFINED(8,13213) /* TWeakObjectPtr<UEncounterItem*> */ __um(EncounterItem);                              // 0x0160   (0x0008)  
-	SDK_UNDEFINED(8,13214) /* TWeakObjectPtr<ALivingWorldEncounterPrefab*> */ __um(EncounterPrefab);               // 0x0168   (0x0008)  
-	SDK_UNDEFINED(32,13215) /* TWeakObjectPtr<UDataTable*> */ __um(LWMEncounterTable);                             // 0x0170   (0x0020)  
+	SDK_UNDEFINED(8,13263) /* TWeakObjectPtr<UEncounterItem*> */ __um(EncounterItem);                              // 0x0160   (0x0008)  
+	SDK_UNDEFINED(8,13264) /* TWeakObjectPtr<ALivingWorldEncounterPrefab*> */ __um(EncounterPrefab);               // 0x0168   (0x0008)  
+	SDK_UNDEFINED(32,13265) /* TWeakObjectPtr<UDataTable*> */ __um(LWMEncounterTable);                             // 0x0170   (0x0020)  
 	unsigned char                                      UnknownData00_5[0x100];                                     // 0x0190   (0x0100)  MISSED
-	SDK_UNDEFINED(8,13216) /* TWeakObjectPtr<AActor*> */ __um(LastThreat);                                         // 0x0290   (0x0008)  
-	SDK_UNDEFINED(8,13217) /* TWeakObjectPtr<AActor*> */ __um(ReservoirActor);                                     // 0x0298   (0x0008)  
+	SDK_UNDEFINED(8,13266) /* TWeakObjectPtr<AActor*> */ __um(LastThreat);                                         // 0x0290   (0x0008)  
+	SDK_UNDEFINED(8,13267) /* TWeakObjectPtr<AActor*> */ __um(ReservoirActor);                                     // 0x0298   (0x0008)  
 	TArray<FTrackedActorInfo>                          TrackedActorInfos;                                          // 0x02A0   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x02B0   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.SetPersistentValue
-	// void SetPersistentValue(FGameplayTag& Identifier, int32_t Value);                                                     // [0xb1adbe8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPersistentValue(FGameplayTag& Identifier, int32_t Value);                                                     // [0xb3d60e4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.RemoveExplicitContributor
-	// void RemoveExplicitContributor(class AFortPlayerController* Contributor);                                             // [0xb1adb50] Final|Native|Public|BlueprintCallable 
+	// void RemoveExplicitContributor(class AFortPlayerController* Contributor);                                             // [0xb3d6008] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.OnStateTreeStatusChanged
-	// void OnStateTreeStatusChanged(EStateTreeRunStatus Status);                                                            // [0xb1adad0] Final|Native|Private 
+	// void OnStateTreeStatusChanged(EStateTreeRunStatus Status);                                                            // [0xb3d5f48] Final|Native|Private 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.HandleEncounterSuccess
-	// void HandleEncounterSuccess(int32_t RewardIndex);                                                                     // [0xb1ad26c] Final|Native|Public|BlueprintCallable 
+	// void HandleEncounterSuccess(int32_t RewardIndex);                                                                     // [0xb3d5e88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.HandleEncounterFailure
-	// void HandleEncounterFailure(int32_t RewardIndex);                                                                     // [0xb1ad1ec] Final|Native|Public|BlueprintCallable 
+	// void HandleEncounterFailure(int32_t RewardIndex);                                                                     // [0xb3d5dc8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_TagQuery
-	// FGameplayTagQuery GetVariable_TagQuery(FGameplayTag& VarName);                                                        // [0xb1ad0f8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagQuery GetVariable_TagQuery(FGameplayTag& VarName);                                                        // [0xb3d5cd4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_LWMEncounter
-	// class UFortAthenaLivingWorldEncounter* GetVariable_LWMEncounter(FGameplayTag& VarName);                               // [0xb1ad020] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UFortAthenaLivingWorldEncounter* GetVariable_LWMEncounter(FGameplayTag& VarName);                               // [0xb3d5bfc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_ItemDefinition
-	// class UFortWorldItemDefinition* GetVariable_ItemDefinition(FGameplayTag& VarName);                                    // [0xb1acf48] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UFortWorldItemDefinition* GetVariable_ItemDefinition(FGameplayTag& VarName);                                    // [0xb3d5b24] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Int
-	// int32_t GetVariable_Int(FGameplayTag& VarName);                                                                       // [0xb1ace74] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVariable_Int(FGameplayTag& VarName);                                                                       // [0xb3d5a50] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_GameplayTagContainer
-	// FGameplayTagContainer GetVariable_GameplayTagContainer(FGameplayTag& VarName);                                        // [0xb1acd88] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetVariable_GameplayTagContainer(FGameplayTag& VarName);                                        // [0xb3d5964] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_GameplayTag
-	// FGameplayTag GetVariable_GameplayTag(FGameplayTag& VarName);                                                          // [0xb1accb8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetVariable_GameplayTag(FGameplayTag& VarName);                                                          // [0xb3d5894] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Float
-	// float GetVariable_Float(FGameplayTag& VarName);                                                                       // [0xb1acbe0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float GetVariable_Float(FGameplayTag& VarName);                                                                       // [0xb3d57bc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_Bool
-	// bool GetVariable_Bool(FGameplayTag& VarName);                                                                         // [0xb1acb0c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetVariable_Bool(FGameplayTag& VarName);                                                                         // [0xb3d56e8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_ActorDescription
+	// TArray<FFortAthenaLivingWorldEventDataActorSpawnDescription> GetVariable_ActorDescription(FGameplayTag& VarName);     // [0xb3d5608] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetVariable_ActorClass
-	// TWeakObjectPtr<UClass*> GetVariable_ActorClass(FGameplayTag& VarName);                                                // [0xb1aca18] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TWeakObjectPtr<UClass*> GetVariable_ActorClass(FGameplayTag& VarName);                                                // [0xb3d5514] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.GetPersistentValue
-	// int32_t GetPersistentValue(FGameplayTag& Identifier);                                                                 // [0xb1ac7a8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPersistentValue(FGameplayTag& Identifier);                                                                 // [0xb3d5464] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EncountersRuntime.EncounterManagerComponent.AddExplicitContributor
-	// void AddExplicitContributor(class AFortPlayerController* Contributor);                                                // [0xb1ac70c] Final|Native|Public|BlueprintCallable 
+	// void AddExplicitContributor(class AFortPlayerController* Contributor);                                                // [0xb3d5384] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/EncountersRuntime.EncounterPatrolPathPointProvider
-/// Size: 0x0008 (0x000360 - 0x000368)
+/// Size: 0x0008 (0x000378 - 0x000380)
 class AEncounterPatrolPathPointProvider : public AFortAthenaPatrolPathPointProvider
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x8];                                       // 0x0360   (0x0008)  MISSED
+	unsigned char                                      UnknownData00_1[0x8];                                       // 0x0378   (0x0008)  MISSED
 };
 
 /// Class /Script/EncountersRuntime.EncounterPointProviderInterface
@@ -429,19 +432,19 @@ public:
 };
 
 /// Class /Script/EncountersRuntime.EncounterStaticPointProvider
-/// Size: 0x0008 (0x000370 - 0x000378)
+/// Size: 0x0008 (0x000388 - 0x000390)
 class AEncounterStaticPointProvider : public AFortAthenaLivingWorldStaticPointProvider
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x8];                                       // 0x0370   (0x0008)  MISSED
+	unsigned char                                      UnknownData00_1[0x8];                                       // 0x0388   (0x0008)  MISSED
 };
 
 /// Class /Script/EncountersRuntime.EncounterVolumePointProvider
-/// Size: 0x0008 (0x0005C0 - 0x0005C8)
+/// Size: 0x0008 (0x0005D8 - 0x0005E0)
 class AEncounterVolumePointProvider : public AFortAthenaLivingWorldVolume
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x8];                                       // 0x05C0   (0x0008)  MISSED
+	unsigned char                                      UnknownData00_1[0x8];                                       // 0x05D8   (0x0008)  MISSED
 };
 
 /// Class /Script/EncountersRuntime.FortCheatManager_Encounters
@@ -453,7 +456,7 @@ public:
 
 	/// Functions
 	// Function /Script/EncountersRuntime.FortCheatManager_Encounters.EncountersDump
-	// void EncountersDump();                                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void EncountersDump();                                                                                                // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Struct /Script/EncountersRuntime.EncounterPrefabInfo
@@ -467,21 +470,21 @@ struct FEncounterPrefabInfo
 };
 
 /// Class /Script/EncountersRuntime.LivingWorldEncounterPrefab
-/// Size: 0x0088 (0x000920 - 0x0009A8)
+/// Size: 0x0088 (0x000940 - 0x0009C8)
 class ALivingWorldEncounterPrefab : public AFortAthenaLivingWorldPrefab
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x58];                                      // 0x0920   (0x0058)  MISSED
-	TArray<FEncounterPrefabInfo>                       EncounterEntries;                                           // 0x0978   (0x0010)  
-	class UEncounterItem*                              EncounterItem;                                              // 0x0988   (0x0008)  
-	class UEncounterItemDefinition*                    EncounterDefinition;                                        // 0x0990   (0x0008)  
-	SDK_UNDEFINED(8,13218) /* TWeakObjectPtr<AActor*> */ __um(ReservoirActorOverride);                             // 0x0998   (0x0008)  
-	SDK_UNDEFINED(8,13219) /* TWeakObjectPtr<UEncounterManagerComponent*> */ __um(EncounterManager);               // 0x09A0   (0x0008)  
+	unsigned char                                      UnknownData00_2[0x58];                                      // 0x0940   (0x0058)  MISSED
+	TArray<FEncounterPrefabInfo>                       EncounterEntries;                                           // 0x0998   (0x0010)  
+	class UEncounterItem*                              EncounterItem;                                              // 0x09A8   (0x0008)  
+	class UEncounterItemDefinition*                    EncounterDefinition;                                        // 0x09B0   (0x0008)  
+	SDK_UNDEFINED(8,13268) /* TWeakObjectPtr<AActor*> */ __um(ReservoirActorOverride);                             // 0x09B8   (0x0008)  
+	SDK_UNDEFINED(8,13269) /* TWeakObjectPtr<UEncounterManagerComponent*> */ __um(EncounterManager);               // 0x09C0   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/EncountersRuntime.LivingWorldEncounterPrefab.OnRep_EncounterDefinition
-	// void OnRep_EncounterDefinition();                                                                                     // [0x88ae94c] Final|Native|Private 
+	// void OnRep_EncounterDefinition();                                                                                     // [0x886368c] Final|Native|Private 
 };
 
 /// Class /Script/EncountersRuntime.FortVerbProcessor_EncounterCompleted
@@ -495,7 +498,7 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FActorAddLooseTagsStateTreeTaskInstanceData
 { 
-	SDK_UNDEFINED(8,13220) /* TWeakObjectPtr<AActor*> */ __um(InActor);                                            // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,13270) /* TWeakObjectPtr<AActor*> */ __um(InActor);                                            // 0x0000   (0x0008)  
 	FGameplayTagContainer                              ActorTags;                                                  // 0x0008   (0x0020)  
 	class AActor*                                      UserActor;                                                  // 0x0028   (0x0008)  
 };
@@ -522,14 +525,31 @@ struct FActorPhysicsStateTreeTask : FStateTreeTaskCommonBase
 { 
 };
 
-/// Struct /Script/EncountersRuntime.AddGameplayCueStateTreeTaskInstanceData
+/// Struct /Script/EncountersRuntime.AddEncounterPrefabTagStateTreeTaskInstanceData
 /// Size: 0x0010 (0x000000 - 0x000010)
+struct FAddEncounterPrefabTagStateTreeTaskInstanceData
+{ 
+	FGameplayTag                                       PrefabTag;                                                  // 0x0000   (0x0004)  
+	bool                                               bRemoveOnExit;                                              // 0x0004   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
+	class AActor*                                      UserActor;                                                  // 0x0008   (0x0008)  
+};
+
+/// Struct /Script/EncountersRuntime.AddEncounterPrefabTagStateTreeTask
+/// Size: 0x0000 (0x000020 - 0x000020)
+struct FAddEncounterPrefabTagStateTreeTask : FStateTreeTaskCommonBase
+{ 
+};
+
+/// Struct /Script/EncountersRuntime.AddGameplayCueStateTreeTaskInstanceData
+/// Size: 0x0018 (0x000000 - 0x000018)
 struct FAddGameplayCueStateTreeTaskInstanceData
 { 
 	FGameplayCueTag                                    GameplayCue;                                                // 0x0000   (0x0004)  
-	bool                                               bIsLooping;                                                 // 0x0004   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
-	class AActor*                                      UserActor;                                                  // 0x0008   (0x0008)  
+	SDK_UNDEFINED(8,13271) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0004   (0x0008)  
+	bool                                               bIsLooping;                                                 // 0x000C   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x000D   (0x0003)  MISSED
+	class AActor*                                      UserActor;                                                  // 0x0010   (0x0008)  
 };
 
 /// Struct /Script/EncountersRuntime.AddGameplayCueStateTreeTask
@@ -646,13 +666,29 @@ struct FEncounterGetVariableActorClassStateTreeTaskInstanceData
 { 
 	FGameplayTag                                       VariableIdentifier;                                         // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,13221) /* TWeakObjectPtr<UClass*> */ __um(Value);                                             // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,13272) /* TWeakObjectPtr<UClass*> */ __um(Value);                                             // 0x0008   (0x0020)  
 	class AActor*                                      UserActor;                                                  // 0x0028   (0x0008)  
 };
 
 /// Struct /Script/EncountersRuntime.EncounterGetVariableActorClassStateTreeTask
 /// Size: 0x0000 (0x000020 - 0x000020)
 struct FEncounterGetVariableActorClassStateTreeTask : FStateTreeTaskCommonBase
+{ 
+};
+
+/// Struct /Script/EncountersRuntime.EncounterGetVariableActorDescriptionStateTreeTaskInstanceData
+/// Size: 0x0020 (0x000000 - 0x000020)
+struct FEncounterGetVariableActorDescriptionStateTreeTaskInstanceData
+{ 
+	FGameplayTag                                       VariableIdentifier;                                         // 0x0000   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
+	TArray<FFortAthenaLivingWorldEventDataActorSpawnDescription> Value;                                            // 0x0008   (0x0010)  
+	class AActor*                                      UserActor;                                                  // 0x0018   (0x0008)  
+};
+
+/// Struct /Script/EncountersRuntime.EncounterGetVariableActorDescriptionStateTreeTask
+/// Size: 0x0000 (0x000020 - 0x000020)
+struct FEncounterGetVariableActorDescriptionStateTreeTask : FStateTreeTaskCommonBase
 { 
 };
 
@@ -739,7 +775,7 @@ struct FEncounterGetVariableItemDefinitionStateTreeTaskInstanceData
 { 
 	FGameplayTag                                       VariableIdentifier;                                         // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,13222) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(Value);                           // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,13273) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(Value);                           // 0x0008   (0x0020)  
 	class AActor*                                      UserActor;                                                  // 0x0028   (0x0008)  
 };
 
@@ -755,7 +791,7 @@ struct FEncounterGetVariableLWMEncounterStateTreeTaskInstanceData
 { 
 	FGameplayTag                                       VariableIdentifier;                                         // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,13223) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Value);                    // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,13274) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Value);                    // 0x0008   (0x0020)  
 	class AActor*                                      UserActor;                                                  // 0x0028   (0x0008)  
 };
 
@@ -804,7 +840,7 @@ struct FEncounterSelectLWMEncounterStateTreeTaskInstanceData
 	FGameplayTagContainer                              Capabilities;                                               // 0x0008   (0x0020)  
 	FGameplayTagQuery                                  LWMEncounterTagQuery;                                       // 0x0028   (0x0048)  
 	class AActor*                                      UserActor;                                                  // 0x0070   (0x0008)  
-	SDK_UNDEFINED(32,13224) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(LWMEncounter);             // 0x0078   (0x0020)  
+	SDK_UNDEFINED(32,13275) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(LWMEncounter);             // 0x0078   (0x0020)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0098   (0x0008)  MISSED
 };
 
@@ -834,7 +870,7 @@ struct FEncounterSelectLWMEncounterTableStateTreeTask : FStateTreeTaskCommonBase
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FEncounterSetCenterActorStateTreeTaskInstanceData
 { 
-	SDK_UNDEFINED(8,13225) /* TWeakObjectPtr<AActor*> */ __um(CenterActor);                                        // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,13276) /* TWeakObjectPtr<AActor*> */ __um(CenterActor);                                        // 0x0000   (0x0008)  
 	class AActor*                                      UserActor;                                                  // 0x0008   (0x0008)  
 };
 
@@ -890,6 +926,13 @@ struct FEncounterVariableSelectionsRow : FTableRowBase
 /// Struct /Script/EncountersRuntime.EncounterVariableSelectionsRow_ActorClass
 /// Size: 0x0010 (0x000070 - 0x000080)
 struct FEncounterVariableSelectionsRow_ActorClass : FEncounterVariableSelectionsRow
+{ 
+	FDataTableRowHandle                                RowValue;                                                   // 0x0070   (0x0010)  
+};
+
+/// Struct /Script/EncountersRuntime.EncounterVariableSelectionsRow_ActorDescription
+/// Size: 0x0010 (0x000070 - 0x000080)
+struct FEncounterVariableSelectionsRow_ActorDescription : FEncounterVariableSelectionsRow
 { 
 	FDataTableRowHandle                                RowValue;                                                   // 0x0070   (0x0010)  
 };
@@ -950,6 +993,13 @@ struct FEncounterVariableSelections_ActorClass : FEncounterVariableSelections
 	class UDataTable*                                  ValueChoiceTable;                                           // 0x0010   (0x0008)  
 };
 
+/// Struct /Script/EncountersRuntime.EncounterVariableSelections_ActorDescription
+/// Size: 0x0008 (0x000010 - 0x000018)
+struct FEncounterVariableSelections_ActorDescription : FEncounterVariableSelections
+{ 
+	class UDataTable*                                  ValueChoiceTable;                                           // 0x0010   (0x0008)  
+};
+
 /// Struct /Script/EncountersRuntime.EncounterVariableSelections_Boolean
 /// Size: 0x0008 (0x000010 - 0x000018)
 struct FEncounterVariableSelections_Boolean : FEncounterVariableSelections
@@ -1002,6 +1052,13 @@ struct FEncounterVariableSelections_TagQuery : FEncounterVariableSelections
 /// Struct /Script/EncountersRuntime.EncounterVariable_ActorClass
 /// Size: 0x0010 (0x000010 - 0x000020)
 struct FEncounterVariable_ActorClass : FEncounterVariable
+{ 
+	FDataTableRowHandle                                RowValue;                                                   // 0x0010   (0x0010)  
+};
+
+/// Struct /Script/EncountersRuntime.EncounterVariable_ActorDescription
+/// Size: 0x0010 (0x000010 - 0x000020)
+struct FEncounterVariable_ActorDescription : FEncounterVariable
 { 
 	FDataTableRowHandle                                RowValue;                                                   // 0x0010   (0x0010)  
 };
@@ -1072,7 +1129,14 @@ struct FEncounterVarRow : FTableRowBase
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FEncounterVarRow_ActorClass : FEncounterVarRow
 { 
-	SDK_UNDEFINED(32,13226) /* TWeakObjectPtr<UClass*> */ __um(Value);                                             // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,13277) /* TWeakObjectPtr<UClass*> */ __um(Value);                                             // 0x0008   (0x0020)  
+};
+
+/// Struct /Script/EncountersRuntime.EncounterVarRow_ActorDescription
+/// Size: 0x0010 (0x000008 - 0x000018)
+struct FEncounterVarRow_ActorDescription : FEncounterVarRow
+{ 
+	TArray<FFortAthenaLivingWorldEventDataActorSpawnDescription> Value;                                            // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/EncountersRuntime.EncounterVarRow_Boolean
@@ -1118,14 +1182,14 @@ struct FEncounterVarRow_Integer : FEncounterVarRow
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FEncounterVarRow_ItemDefinition : FEncounterVarRow
 { 
-	SDK_UNDEFINED(32,13227) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(Value);                           // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,13278) /* TWeakObjectPtr<UFortWorldItemDefinition*> */ __um(Value);                           // 0x0008   (0x0020)  
 };
 
 /// Struct /Script/EncountersRuntime.EncounterVarRow_LWMEncounter
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FEncounterVarRow_LWMEncounter : FEncounterVarRow
 { 
-	SDK_UNDEFINED(32,13228) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Value);                    // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,13279) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Value);                    // 0x0008   (0x0020)  
 };
 
 /// Struct /Script/EncountersRuntime.EncounterVarRow_TagQuery
@@ -1163,13 +1227,28 @@ struct FFortVerbMessage_EncounterCompleted : FVerbMessage
 struct FGetAnchorStateTreeTaskInstanceData
 { 
 	FGameplayTagQuery                                  AnchorQuery;                                                // 0x0000   (0x0048)  
-	SDK_UNDEFINED(8,13229) /* TWeakObjectPtr<AActor*> */ __um(AnchorActor);                                        // 0x0048   (0x0008)  
+	SDK_UNDEFINED(8,13280) /* TWeakObjectPtr<AActor*> */ __um(AnchorActor);                                        // 0x0048   (0x0008)  
 	class AActor*                                      UserActor;                                                  // 0x0050   (0x0008)  
 };
 
 /// Struct /Script/EncountersRuntime.GetAnchorStateTreeTask
 /// Size: 0x0000 (0x000020 - 0x000020)
 struct FGetAnchorStateTreeTask : FStateTreeTaskCommonBase
+{ 
+};
+
+/// Struct /Script/EncountersRuntime.GetEncounterActorStateTreeTaskInstanceData
+/// Size: 0x0058 (0x000000 - 0x000058)
+struct FGetEncounterActorStateTreeTaskInstanceData
+{ 
+	FGameplayTagQuery                                  ActorQuery;                                                 // 0x0000   (0x0048)  
+	SDK_UNDEFINED(8,13281) /* TWeakObjectPtr<AActor*> */ __um(ChosenActor);                                        // 0x0048   (0x0008)  
+	class AActor*                                      UserActor;                                                  // 0x0050   (0x0008)  
+};
+
+/// Struct /Script/EncountersRuntime.GetEncounterActorStateTreeTask
+/// Size: 0x0000 (0x000020 - 0x000020)
+struct FGetEncounterActorStateTreeTask : FStateTreeTaskCommonBase
 { 
 };
 
@@ -1256,8 +1335,8 @@ struct FLWMEncounterStartSharedStateTreeTaskInstanceData
 struct FLWMEncounterDynamicStartStateTreeTaskInstanceData : FLWMEncounterStartSharedStateTreeTaskInstanceData
 { 
 	TArray<FDynamicEncounterEntry>                     DynamicEncounterEntries;                                    // 0x0138   (0x0010)  
-	SDK_UNDEFINED(32,13230) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(DynamicEmptyEncounter);    // 0x0148   (0x0020)  
-	SDK_UNDEFINED(8,13231) /* TWeakObjectPtr<ULWMEncounterInstance*> */ __um(EncounterInstance);                   // 0x0168   (0x0008)  
+	SDK_UNDEFINED(32,13282) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(DynamicEmptyEncounter);    // 0x0148   (0x0020)  
+	SDK_UNDEFINED(8,13283) /* TWeakObjectPtr<ULWMEncounterInstance*> */ __um(EncounterInstance);                   // 0x0168   (0x0008)  
 };
 
 /// Struct /Script/EncountersRuntime.LWMEncounterDynamicStartStateTreeTask
@@ -1330,7 +1409,7 @@ struct FLWMEncounterResumeStateTreeTask : FStateTreeTaskCommonBase
 /// Size: 0x0058 (0x000008 - 0x000060)
 struct FLWMEncounterRow : FTableRowBase
 { 
-	SDK_UNDEFINED(32,13232) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Encounter);                // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,13284) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Encounter);                // 0x0008   (0x0020)  
 	TArray<FFortAthenaLivingWorldEventDataActorSpawnDescription> DynamicActorDescriptions;                         // 0x0028   (0x0010)  
 	FGameplayTagContainer                              Tags;                                                       // 0x0038   (0x0020)  
 	float                                              Weight;                                                     // 0x0058   (0x0004)  
@@ -1347,7 +1426,7 @@ struct FLWMEncounterSetAlertLevelStateTreeTaskInstanceData
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x004A   (0x0002)  MISSED
 	FLWMEncounterAlertLevelTargetInfo                  HasThreatTargetInfo;                                        // 0x004C   (0x000C)  
 	FLWMEncounterAlertLevelTargetInfo                  NoThreatTargetInfo;                                         // 0x0058   (0x000C)  
-	SDK_UNDEFINED(8,13233) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0064   (0x0008)  
+	SDK_UNDEFINED(8,13285) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0064   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x006C   (0x0004)  MISSED
 	class AActor*                                      UserActor;                                                  // 0x0070   (0x0008)  
 };
@@ -1381,8 +1460,8 @@ struct FLWMEncounterStartStateTreeTaskInstanceData : FLWMEncounterStartSharedSta
 	bool                                               bUseEncounterTagQuery;                                      // 0x0138   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0139   (0x0007)  MISSED
 	FGameplayTagQuery                                  LWMEncounterTagQuery;                                       // 0x0140   (0x0048)  
-	SDK_UNDEFINED(32,13234) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(LWMEncounter);             // 0x0188   (0x0020)  
-	SDK_UNDEFINED(8,13235) /* TWeakObjectPtr<ULWMEncounterInstance*> */ __um(EncounterInstance);                   // 0x01A8   (0x0008)  
+	SDK_UNDEFINED(32,13286) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(LWMEncounter);             // 0x0188   (0x0020)  
+	SDK_UNDEFINED(8,13287) /* TWeakObjectPtr<ULWMEncounterInstance*> */ __um(EncounterInstance);                   // 0x01A8   (0x0008)  
 };
 
 /// Struct /Script/EncountersRuntime.LWMEncounterStartStateTreeTask
@@ -1439,6 +1518,21 @@ struct FPauseMobEncounterStateTreeTask : FStateTreeTaskCommonBase
 { 
 };
 
+/// Struct /Script/EncountersRuntime.RemoveEncounterPrefabTagStateTreeTaskInstanceData
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FRemoveEncounterPrefabTagStateTreeTaskInstanceData
+{ 
+	FGameplayTag                                       PrefabTag;                                                  // 0x0000   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
+	class AActor*                                      UserActor;                                                  // 0x0008   (0x0008)  
+};
+
+/// Struct /Script/EncountersRuntime.RemoveEncounterPrefabTagStateTreeTask
+/// Size: 0x0000 (0x000020 - 0x000020)
+struct FRemoveEncounterPrefabTagStateTreeTask : FStateTreeTaskCommonBase
+{ 
+};
+
 /// Struct /Script/EncountersRuntime.ResumeMobEncounterStateTreeTaskInstanceData
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FResumeMobEncounterStateTreeTaskInstanceData
@@ -1458,7 +1552,7 @@ struct FResumeMobEncounterStateTreeTask : FStateTreeTaskCommonBase
 /// Size: 0x00E8 (0x000000 - 0x0000E8)
 struct FSpawnActorStateTreeTaskInstanceData
 { 
-	SDK_UNDEFINED(32,13236) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                        // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,13288) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                        // 0x0000   (0x0020)  
 	FGameplayTagQuery                                  AnchorQuery;                                                // 0x0020   (0x0048)  
 	FVector                                            AnchorOffset;                                               // 0x0068   (0x0018)  
 	bool                                               bEnablePhysics;                                             // 0x0080   (0x0001)  
@@ -1468,7 +1562,7 @@ struct FSpawnActorStateTreeTaskInstanceData
 	FGameplayTagContainer                              ActorIdentifierTags;                                        // 0x00A8   (0x0020)  
 	bool                                               bWaitForSpawnedActor;                                       // 0x00C8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00C9   (0x0003)  MISSED
-	SDK_UNDEFINED(8,13237) /* TWeakObjectPtr<AActor*> */ __um(SpawnedActor);                                       // 0x00CC   (0x0008)  
+	SDK_UNDEFINED(8,13289) /* TWeakObjectPtr<AActor*> */ __um(SpawnedActor);                                       // 0x00CC   (0x0008)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x00D4   (0x0004)  MISSED
 	class AActor*                                      UserActor;                                                  // 0x00D8   (0x0008)  
 	class USpawnActorTaskHelper*                       SpawnActorHelper;                                           // 0x00E0   (0x0008)  

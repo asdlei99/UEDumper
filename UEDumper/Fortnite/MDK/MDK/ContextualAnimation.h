@@ -45,96 +45,69 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualAnimation.ContextualAnimActorInterface.GetMesh
-	// class USkeletalMeshComponent* GetMesh();                                                                                 // [0x7d09938] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
-};
-
-/// Class /Script/ContextualAnimation.ContextualAnimManager
-/// Size: 0x0068 (0x000028 - 0x000090)
-class UContextualAnimManager : public UObject
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 144;
-
-public:
-	CMember(TSet<UContextualAnimSceneActorComponent*>) SceneActorCompContainer                                     OFFSET(get<T>, {0x30, 80, 0, 0})
-	CMember(TArray<class UContextualAnimSceneInstance*>) Instances                                                 OFFSET(get<T>, {0x80, 16, 0, 0})
-
-
-	/// Functions
-	// Function /Script/ContextualAnimation.ContextualAnimManager.TryStopSceneWithActor
-	// bool TryStopSceneWithActor(class AActor* Actor);                                                                         // [0x7d0a9b8] Final|Native|Public|BlueprintCallable 
-	// Function /Script/ContextualAnimation.ContextualAnimManager.OnSceneInstanceEnded
-	// void OnSceneInstanceEnded(class UContextualAnimSceneInstance* SceneInstance);                                            // [0x7d0a1fc] Final|Native|Protected 
-	// Function /Script/ContextualAnimation.ContextualAnimManager.IsActorInAnyScene
-	// bool IsActorInAnyScene(class AActor* Actor);                                                                             // [0x7d09b1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
-	// Function /Script/ContextualAnimation.ContextualAnimManager.GetSceneWithActor
-	// class UContextualAnimSceneInstance* GetSceneWithActor(class AActor* Actor);                                              // [0x7d09a60] Final|Native|Public|BlueprintCallable 
-	// Function /Script/ContextualAnimation.ContextualAnimManager.GetContextualAnimManager
-	// class UContextualAnimManager* GetContextualAnimManager(class UObject* WorldContextObject);                               // [0x7d0974c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
-	// Function /Script/ContextualAnimation.ContextualAnimManager.BP_TryStartScene
-	// class UContextualAnimSceneInstance* BP_TryStartScene(class UContextualAnimSceneAsset* SceneAsset, FContextualAnimStartSceneParams& Params); // [0x7d083ec] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// class USkeletalMeshComponent* GetMesh();                                                                                 // [0x7cc593c] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/ContextualAnimation.ContextualAnimSceneActorComponent
-/// Size: 0x01B0 (0x000570 - 0x000720)
+/// Size: 0x01B0 (0x000500 - 0x0006B0)
 class UContextualAnimSceneActorComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1824;
+	static inline constexpr uint64_t __MDKClassSize = 1712;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnJoinedSceneDelegate                                       OFFSET(getStruct<T>, {0x578, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnLeftSceneDelegate                                         OFFSET(getStruct<T>, {0x588, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnPlayMontageNotifyBeginDelegate                            OFFSET(getStruct<T>, {0x598, 16, 0, 0})
-	CMember(class UContextualAnimSceneAsset*)          SceneAsset                                                  OFFSET(get<T>, {0x5A8, 8, 0, 0})
-	DMember(bool)                                      bEnableDebug                                                OFFSET(get<bool>, {0x5B0, 1, 0, 0})
-	SMember(FContextualAnimRepBindingsData)            RepBindings                                                 OFFSET(getStruct<T>, {0x5B8, 80, 0, 0})
-	SMember(FContextualAnimRepLateJoinData)            RepLateJoinData                                             OFFSET(getStruct<T>, {0x608, 56, 0, 0})
-	SMember(FContextualAnimRepTransitionData)          RepTransitionData                                           OFFSET(getStruct<T>, {0x640, 40, 0, 0})
-	SMember(FContextualAnimRepTransitionData)          RepTransitionSingleActorData                                OFFSET(getStruct<T>, {0x668, 40, 0, 0})
-	SMember(FContextualAnimSceneBindings)              Bindings                                                    OFFSET(getStruct<T>, {0x690, 40, 0, 0})
-	CMember(TArray<FContextualAnimIKTarget>)           IKTargets                                                   OFFSET(get<T>, {0x6B8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnJoinedSceneDelegate                                       OFFSET(getStruct<T>, {0x508, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnLeftSceneDelegate                                         OFFSET(getStruct<T>, {0x518, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnPlayMontageNotifyBeginDelegate                            OFFSET(getStruct<T>, {0x528, 16, 0, 0})
+	CMember(class UContextualAnimSceneAsset*)          SceneAsset                                                  OFFSET(get<T>, {0x538, 8, 0, 0})
+	DMember(bool)                                      bEnableDebug                                                OFFSET(get<bool>, {0x540, 1, 0, 0})
+	SMember(FContextualAnimRepBindingsData)            RepBindings                                                 OFFSET(getStruct<T>, {0x548, 80, 0, 0})
+	SMember(FContextualAnimRepLateJoinData)            RepLateJoinData                                             OFFSET(getStruct<T>, {0x598, 56, 0, 0})
+	SMember(FContextualAnimRepTransitionData)          RepTransitionData                                           OFFSET(getStruct<T>, {0x5D0, 40, 0, 0})
+	SMember(FContextualAnimRepTransitionData)          RepTransitionSingleActorData                                OFFSET(getStruct<T>, {0x5F8, 40, 0, 0})
+	SMember(FContextualAnimSceneBindings)              Bindings                                                    OFFSET(getStruct<T>, {0x620, 40, 0, 0})
+	CMember(TArray<FContextualAnimIKTarget>)           IKTargets                                                   OFFSET(get<T>, {0x648, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.TransitionSingleActor
-	// bool TransitionSingleActor(int32_t SectionIdx, int32_t AnimSetIdx);                                                      // [0x7d0a8f8] Final|Native|Public|BlueprintCallable 
+	// bool TransitionSingleActor(int32_t SectionIdx, int32_t AnimSetIdx);                                                      // [0x7cc6694] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.TransitionContextualAnimScene
-	// bool TransitionContextualAnimScene(FName SectionName);                                                                   // [0x7d0a86c] Final|Native|Public|BlueprintCallable 
+	// bool TransitionContextualAnimScene(FName SectionName);                                                                   // [0x7cc65c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.StartContextualAnimScene
-	// bool StartContextualAnimScene(FContextualAnimSceneBindings& InBindings);                                                 // [0x7d0a7b4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool StartContextualAnimScene(FContextualAnimSceneBindings& InBindings);                                                 // [0x7cc6510] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.ServerStartContextualAnimScene
-	// void ServerStartContextualAnimScene(FContextualAnimSceneBindings InBindings);                                            // [0x7d0a640] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerStartContextualAnimScene(FContextualAnimSceneBindings InBindings);                                            // [0x7cc6404] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.ServerEarlyOutContextualAnimScene
-	// void ServerEarlyOutContextualAnimScene();                                                                                // [0x7d0a5f4] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerEarlyOutContextualAnimScene();                                                                                // [0x7cc63b8] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnTickPose
-	// void OnTickPose(class USkinnedMeshComponent* SkinnedMeshComponent, float DeltaTime, bool bNeedsValidRootMotion);         // [0x7d0a2a0] Final|Native|Protected 
+	// void OnTickPose(class USkinnedMeshComponent* SkinnedMeshComponent, float DeltaTime, bool bNeedsValidRootMotion);         // [0x7cc5f4c] Native|Protected     
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnRep_TransitionData
-	// void OnRep_TransitionData();                                                                                             // [0x7d0a1e8] Final|Native|Protected 
+	// void OnRep_TransitionData();                                                                                             // [0x7cc5f38] Final|Native|Protected 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnRep_RepTransitionSingleActor
-	// void OnRep_RepTransitionSingleActor();                                                                                   // [0x7d0a1d4] Final|Native|Protected 
+	// void OnRep_RepTransitionSingleActor();                                                                                   // [0x7cc5f24] Final|Native|Protected 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnRep_LateJoinData
-	// void OnRep_LateJoinData();                                                                                               // [0x7d0a1c0] Final|Native|Protected 
+	// void OnRep_LateJoinData();                                                                                               // [0x7cc5f10] Final|Native|Protected 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnRep_Bindings
-	// void OnRep_Bindings();                                                                                                   // [0x7d0a1ac] Final|Native|Protected 
+	// void OnRep_Bindings();                                                                                                   // [0x7cc5efc] Final|Native|Protected 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnPlayMontageNotifyBegin
-	// void OnPlayMontageNotifyBegin(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x7d0a0cc] Final|Native|Protected|HasOutParms 
+	// void OnPlayMontageNotifyBegin(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x7cc5dd4] Final|Native|Protected|HasOutParms 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnMontageBlendingOut
-	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                               // [0x7d09d7c] Final|Native|Protected 
+	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                               // [0x7cc5c94] Final|Native|Protected 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnLeftScene
-	// void OnLeftScene();                                                                                                      // [0x32e4b44] Final|Native|Public|BlueprintCallable 
+	// void OnLeftScene();                                                                                                      // [0x307d48c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.OnJoinedScene
-	// void OnJoinedScene(FContextualAnimSceneBindings& InBindings);                                                            // [0x7d09cf4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnJoinedScene(FContextualAnimSceneBindings& InBindings);                                                            // [0x7cc5c0c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.LateJoinContextualAnimScene
-	// bool LateJoinContextualAnimScene(class AActor* Actor, FName Role);                                                       // [0x7d09c30] Final|Native|Public|BlueprintCallable 
+	// bool LateJoinContextualAnimScene(class AActor* Actor, FName Role);                                                       // [0x7cc5abc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.IsInActiveScene
-	// bool IsInActiveScene();                                                                                                  // [0x7d09bd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInActiveScene();                                                                                                  // [0x7cc5a64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.GetIKTargets
-	// TArray<FContextualAnimIKTarget> GetIKTargets();                                                                          // [0x7d098c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FContextualAnimIKTarget> GetIKTargets();                                                                          // [0x7cc58c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.GetIKTargetByGoalName
-	// FContextualAnimIKTarget GetIKTargetByGoalName(FName GoalName);                                                           // [0x7d097dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FContextualAnimIKTarget GetIKTargetByGoalName(FName GoalName);                                                           // [0x7cc579c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneActorComponent.EarlyOutContextualAnimScene
-	// void EarlyOutContextualAnimScene();                                                                                      // [0x7d08538] Final|Native|Public|BlueprintCallable 
+	// void EarlyOutContextualAnimScene();                                                                                      // [0x7cc452c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ContextualAnimation.ContextualAnimRolesAsset
@@ -149,11 +122,11 @@ public:
 };
 
 /// Class /Script/ContextualAnimation.ContextualAnimSceneAsset
-/// Size: 0x0070 (0x000030 - 0x0000A0)
+/// Size: 0x0060 (0x000030 - 0x000090)
 class UContextualAnimSceneAsset : public UDataAsset
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 160;
+	static inline constexpr uint64_t __MDKClassSize = 144;
 
 public:
 	CMember(class UContextualAnimRolesAsset*)          RolesAsset                                                  OFFSET(get<T>, {0x30, 8, 0, 0})
@@ -161,62 +134,32 @@ public:
 	CMember(TArray<FContextualAnimActorPreviewData>)   OverridePreviewData                                         OFFSET(get<T>, {0x40, 16, 0, 0})
 	CMember(TArray<FContextualAnimSceneSection>)       Sections                                                    OFFSET(get<T>, {0x50, 16, 0, 0})
 	DMember(float)                                     Radius                                                      OFFSET(get<float>, {0x60, 4, 0, 0})
-	CMember(class UClass*)                             SceneInstanceClass                                          OFFSET(get<T>, {0x68, 8, 0, 0})
-	CMember(EContextualAnimCollisionBehavior)          CollisionBehavior                                           OFFSET(get<T>, {0x70, 1, 0, 0})
-	CMember(TArray<FContextualAnimIgnoreChannelsParam>) CollisionChannelsToIgnoreParams                            OFFSET(get<T>, {0x78, 16, 0, 0})
-	CMember(TArray<FContextualAnimAttachmentParams>)   AttachmentParams                                            OFFSET(get<T>, {0x88, 16, 0, 0})
-	DMember(bool)                                      bPrecomputeAlignmentTracks                                  OFFSET(get<bool>, {0x98, 1, 0, 0})
-	DMember(int32_t)                                   SampleRate                                                  OFFSET(get<int32_t>, {0x9C, 4, 0, 0})
+	CMember(EContextualAnimCollisionBehavior)          CollisionBehavior                                           OFFSET(get<T>, {0x64, 1, 0, 0})
+	CMember(TArray<FContextualAnimIgnoreChannelsParam>) CollisionChannelsToIgnoreParams                            OFFSET(get<T>, {0x68, 16, 0, 0})
+	CMember(TArray<FContextualAnimAttachmentParams>)   AttachmentParams                                            OFFSET(get<T>, {0x78, 16, 0, 0})
+	DMember(bool)                                      bPrecomputeAlignmentTracks                                  OFFSET(get<bool>, {0x88, 1, 0, 0})
+	DMember(int32_t)                                   SampleRate                                                  OFFSET(get<int32_t>, {0x8C, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.Query
-	// bool Query(FName Role, FContextualAnimQueryResult& OutResult, FContextualAnimQueryParams& QueryParams, FTransform& ToWorldTransform); // [0x7d0a398] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool Query(FName Role, FContextualAnimQueryResult& OutResult, FContextualAnimQueryParams& QueryParams, FTransform& ToWorldTransform); // [0x7cc610c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.GetRoles
-	// TArray<FName> GetRoles();                                                                                                // [0x7d09960] Final|Native|Public|Const 
+	// TArray<FName> GetRoles();                                                                                                // [0x7cc5964] Final|Native|Public|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.GetAlignmentPointsForSecondaryRoleConsideringSelectionCriteria
-	// void GetAlignmentPointsForSecondaryRoleConsideringSelectionCriteria(EContextualAnimPointType Type, int32_t SectionIdx, FContextualAnimSceneBindingContext& Primary, FContextualAnimSceneBindingContext& Querier, EContextualAnimCriterionToConsider CriterionToConsider, TArray<FContextualAnimPoint>& OutResult); // [0x7d08e08] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAlignmentPointsForSecondaryRoleConsideringSelectionCriteria(EContextualAnimPointType Type, int32_t SectionIdx, FContextualAnimSceneBindingContext& Primary, FContextualAnimSceneBindingContext& Querier, EContextualAnimCriterionToConsider CriterionToConsider, TArray<FContextualAnimPoint>& OutResult); // [0x7cc4d9c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.GetAlignmentPointsForSecondaryRole
-	// void GetAlignmentPointsForSecondaryRole(EContextualAnimPointType Type, int32_t SectionIdx, FContextualAnimSceneBindingContext& Primary, TArray<FContextualAnimPoint>& OutResult); // [0x7d08630] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetAlignmentPointsForSecondaryRole(EContextualAnimPointType Type, int32_t SectionIdx, FContextualAnimSceneBindingContext& Primary, TArray<FContextualAnimPoint>& OutResult); // [0x7cc4540] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.BP_GetStartAndEndTimeForWarpSection
-	// void BP_GetStartAndEndTimeForWarpSection(int32_t SectionIdx, int32_t AnimSetIdx, FName Role, FName WarpSectionName, float& OutStartTime, float& OutEndTime); // [0x7d057b4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void BP_GetStartAndEndTimeForWarpSection(int32_t SectionIdx, int32_t AnimSetIdx, FName Role, FName WarpSectionName, float& OutStartTime, float& OutEndTime); // [0x7cc154c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.BP_GetIKTargetTransformForRoleAtTime
-	// FTransform BP_GetIKTargetTransformForRoleAtTime(int32_t SectionIdx, int32_t AnimSetIdx, FName Role, FName TrackName, float Time); // [0x7d055f8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform BP_GetIKTargetTransformForRoleAtTime(int32_t SectionIdx, int32_t AnimSetIdx, FName Role, FName TrackName, float Time); // [0x7cc1258] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.BP_GetAlignmentTransformForRoleRelativeToWarpPoint
-	// FTransform BP_GetAlignmentTransformForRoleRelativeToWarpPoint(int32_t SectionIdx, int32_t AnimSetIdx, FName Role, float Time); // [0x7d05464] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform BP_GetAlignmentTransformForRoleRelativeToWarpPoint(int32_t SectionIdx, int32_t AnimSetIdx, FName Role, float Time); // [0x7cc0fc4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.BP_FindAnimSetIndexByAnimation
-	// int32_t BP_FindAnimSetIndexByAnimation(int32_t SectionIdx, class UAnimSequenceBase* Animation);                          // [0x7d05230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t BP_FindAnimSetIndexByAnimation(int32_t SectionIdx, class UAnimSequenceBase* Animation);                          // [0x7cc0c50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSceneAsset.BP_FindAnimationForRole
-	// class UAnimSequenceBase* BP_FindAnimationForRole(int32_t SectionIdx, int32_t AnimSetIdx, FName Role);                    // [0x7d05350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
-};
-
-/// Class /Script/ContextualAnimation.ContextualAnimSceneInstance
-/// Size: 0x00A8 (0x000028 - 0x0000D0)
-class UContextualAnimSceneInstance : public UObject
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 208;
-
-public:
-	SMember(FMulticastInlineDelegate)                  OnSectionEndTimeReached                                     OFFSET(getStruct<T>, {0x28, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnSceneEnded                                                OFFSET(getStruct<T>, {0x38, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnActorJoined                                               OFFSET(getStruct<T>, {0x48, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnActorLeft                                                 OFFSET(getStruct<T>, {0x58, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnNotifyBegin                                               OFFSET(getStruct<T>, {0x68, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnNotifyEnd                                                 OFFSET(getStruct<T>, {0x78, 16, 0, 0})
-	CMember(class UContextualAnimSceneAsset*)          SceneAsset                                                  OFFSET(get<T>, {0x88, 8, 0, 0})
-	SMember(FContextualAnimSceneBindings)              Bindings                                                    OFFSET(getStruct<T>, {0x90, 40, 0, 0})
-
-
-	/// Functions
-	// Function /Script/ContextualAnimation.ContextualAnimSceneInstance.OnNotifyEndReceived
-	// void OnNotifyEndReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);                   // [0x7d09fec] Final|Native|Protected|HasOutParms 
-	// Function /Script/ContextualAnimation.ContextualAnimSceneInstance.OnNotifyBeginReceived
-	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);                 // [0x7d09f0c] Final|Native|Protected|HasOutParms 
-	// Function /Script/ContextualAnimation.ContextualAnimSceneInstance.OnMontageBlendingOut
-	// void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);                                               // [0x7d09e44] Final|Native|Protected 
-	// Function /Script/ContextualAnimation.ContextualAnimSceneInstance.GetActorByRole
-	// class AActor* GetActorByRole(FName Role);                                                                                // [0x7d0854c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAnimSequenceBase* BP_FindAnimationForRole(int32_t SectionIdx, int32_t AnimSetIdx, FName Role);                    // [0x7cc0dec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ContextualAnimation.ContextualAnimSelectionCriterion
@@ -242,9 +185,9 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualAnimation.ContextualAnimSelectionCriterion_Blueprint.GetSceneAsset
-	// class UContextualAnimSceneAsset* GetSceneAsset();                                                                        // [0x7d09a18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UContextualAnimSceneAsset* GetSceneAsset();                                                                        // [0x7cc5a1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ContextualAnimation.ContextualAnimSelectionCriterion_Blueprint.BP_DoesQuerierPassCondition
-	// bool BP_DoesQuerierPassCondition(FContextualAnimSceneBindingContext& Primary, FContextualAnimSceneBindingContext& Querier); // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool BP_DoesQuerierPassCondition(FContextualAnimSceneBindingContext& Primary, FContextualAnimSceneBindingContext& Querier); // [0x2047e54] Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/ContextualAnimation.ContextualAnimSelectionCriterion_TriggerArea
@@ -286,21 +229,6 @@ public:
 	DMember(float)                                     MaxDistance                                                 OFFSET(get<float>, {0x38, 4, 0, 0})
 };
 
-/// Class /Script/ContextualAnimation.ContextualAnimTransition
-/// Size: 0x0000 (0x000028 - 0x000028)
-class UContextualAnimTransition : public UObject
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 40;
-
-public:
-
-
-	/// Functions
-	// Function /Script/ContextualAnimation.ContextualAnimTransition.CanEnterTransition
-	// bool CanEnterTransition(class UContextualAnimSceneInstance* SceneInstance, FName& FromSection, FName& ToSection);        // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent|Const 
-};
-
 /// Class /Script/ContextualAnimation.ContextualAnimUtilities
 /// Size: 0x0000 (0x000028 - 0x000028)
 class UContextualAnimUtilities : public UBlueprintFunctionLibrary
@@ -313,63 +241,63 @@ public:
 
 	/// Functions
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_GetSectionAndAnimSetIndices
-	// void BP_SceneBindings_GetSectionAndAnimSetIndices(FContextualAnimSceneBindings& Bindings, int32_t& SectionIdx, int32_t& AnimSetIdx); // [0x7d082a4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void BP_SceneBindings_GetSectionAndAnimSetIndices(FContextualAnimSceneBindings& Bindings, int32_t& SectionIdx, int32_t& AnimSetIdx); // [0x7cc43e4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_GetSceneAsset
-	// class UContextualAnimSceneAsset* BP_SceneBindings_GetSceneAsset(FContextualAnimSceneBindings& Bindings);                 // [0x7d081f8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UContextualAnimSceneAsset* BP_SceneBindings_GetSceneAsset(FContextualAnimSceneBindings& Bindings);                 // [0x7cc4338] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_GetBindings
-	// TArray<FContextualAnimSceneBinding> BP_SceneBindings_GetBindings(FContextualAnimSceneBindings& Bindings);                // [0x7d08148] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<FContextualAnimSceneBinding> BP_SceneBindings_GetBindings(FContextualAnimSceneBindings& Bindings);                // [0x7cc4288] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_GetBindingByRole
-	// FContextualAnimSceneBinding BP_SceneBindings_GetBindingByRole(FContextualAnimSceneBindings& Bindings, FName Role);       // [0x7d07f98] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FContextualAnimSceneBinding BP_SceneBindings_GetBindingByRole(FContextualAnimSceneBindings& Bindings, FName Role);       // [0x7cc408c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_GetBindingByActor
-	// FContextualAnimSceneBinding BP_SceneBindings_GetBindingByActor(FContextualAnimSceneBindings& Bindings, class AActor* Actor); // [0x7d07de0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FContextualAnimSceneBinding BP_SceneBindings_GetBindingByActor(FContextualAnimSceneBindings& Bindings, class AActor* Actor); // [0x7cc3e94] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_GetAlignmentTransformFromBinding
-	// FTransform BP_SceneBindings_GetAlignmentTransformFromBinding(FContextualAnimSceneBindings& Bindings, FContextualAnimSceneBinding& Binding, FContextualAnimWarpPoint& WarpPoint); // [0x7d07be8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform BP_SceneBindings_GetAlignmentTransformFromBinding(FContextualAnimSceneBindings& Bindings, FContextualAnimSceneBinding& Binding, FContextualAnimWarpPoint& WarpPoint); // [0x7cc3c98] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_GetAlignmentTransformForRoleRelativeToWarpPoint
-	// FTransform BP_SceneBindings_GetAlignmentTransformForRoleRelativeToWarpPoint(FContextualAnimSceneBindings& Bindings, FName Role, FContextualAnimWarpPoint& WarpPoint, float Time); // [0x7d078a4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform BP_SceneBindings_GetAlignmentTransformForRoleRelativeToWarpPoint(FContextualAnimSceneBindings& Bindings, FName Role, FContextualAnimWarpPoint& WarpPoint, float Time); // [0x7cc3934] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_GetAlignmentTransformForRoleRelativeToOtherRole
-	// FTransform BP_SceneBindings_GetAlignmentTransformForRoleRelativeToOtherRole(FContextualAnimSceneBindings& Bindings, FName Role, FName RelativeToRole, float Time); // [0x7d07518] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform BP_SceneBindings_GetAlignmentTransformForRoleRelativeToOtherRole(FContextualAnimSceneBindings& Bindings, FName Role, FName RelativeToRole, float Time); // [0x7cc3564] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_CalculateWarpPoints
-	// void BP_SceneBindings_CalculateWarpPoints(FContextualAnimSceneBindings& Bindings, TArray<FContextualAnimWarpPoint>& OutWarpPoints); // [0x7d06dfc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_SceneBindings_CalculateWarpPoints(FContextualAnimSceneBindings& Bindings, TArray<FContextualAnimWarpPoint>& OutWarpPoints); // [0x7cc2e48] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindings_AddOrUpdateWarpTargetsForBindings
-	// void BP_SceneBindings_AddOrUpdateWarpTargetsForBindings(FContextualAnimSceneBindings& Bindings);                         // [0x7d06d60] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_SceneBindings_AddOrUpdateWarpTargetsForBindings(FContextualAnimSceneBindings& Bindings);                         // [0x7cc2dac] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_MakeFromActorWithExternalTransform
-	// FContextualAnimSceneBindingContext BP_SceneBindingContext_MakeFromActorWithExternalTransform(class AActor* Actor, FTransform ExternalTransform); // [0x7d06648] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FContextualAnimSceneBindingContext BP_SceneBindingContext_MakeFromActorWithExternalTransform(class AActor* Actor, FTransform ExternalTransform); // [0x7cc269c] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_MakeFromActor
-	// FContextualAnimSceneBindingContext BP_SceneBindingContext_MakeFromActor(class AActor* Actor);                            // [0x7d0656c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FContextualAnimSceneBindingContext BP_SceneBindingContext_MakeFromActor(class AActor* Actor);                            // [0x7cc2580] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_HasMatchingGameplayTag
-	// bool BP_SceneBindingContext_HasMatchingGameplayTag(FContextualAnimSceneBindingContext& BindingContext, FGameplayTag& TagToCheck); // [0x7d063a8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool BP_SceneBindingContext_HasMatchingGameplayTag(FContextualAnimSceneBindingContext& BindingContext, FGameplayTag& TagToCheck); // [0x7cc23c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_HasAnyMatchingGameplayTags
-	// bool BP_SceneBindingContext_HasAnyMatchingGameplayTags(FContextualAnimSceneBindingContext& BindingContext, FGameplayTagContainer& TagContainer); // [0x7d06238] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool BP_SceneBindingContext_HasAnyMatchingGameplayTags(FContextualAnimSceneBindingContext& BindingContext, FGameplayTagContainer& TagContainer); // [0x7cc2250] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_HasAllMatchingGameplayTags
-	// bool BP_SceneBindingContext_HasAllMatchingGameplayTags(FContextualAnimSceneBindingContext& BindingContext, FGameplayTagContainer& TagContainer); // [0x7d06090] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// bool BP_SceneBindingContext_HasAllMatchingGameplayTags(FContextualAnimSceneBindingContext& BindingContext, FGameplayTagContainer& TagContainer); // [0x7cc20a8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_GetVelocity
-	// FVector BP_SceneBindingContext_GetVelocity(FContextualAnimSceneBindingContext& BindingContext);                          // [0x7d05f58] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector BP_SceneBindingContext_GetVelocity(FContextualAnimSceneBindingContext& BindingContext);                          // [0x7cc1f70] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_GetTransform
-	// FTransform BP_SceneBindingContext_GetTransform(FContextualAnimSceneBindingContext& BindingContext);                      // [0x7d05e48] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform BP_SceneBindingContext_GetTransform(FContextualAnimSceneBindingContext& BindingContext);                      // [0x7cc1e60] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_GetGameplayTags
-	// FGameplayTagContainer BP_SceneBindingContext_GetGameplayTags(FContextualAnimSceneBindingContext& BindingContext);        // [0x7d05d60] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FGameplayTagContainer BP_SceneBindingContext_GetGameplayTags(FContextualAnimSceneBindingContext& BindingContext);        // [0x7cc1d74] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBindingContext_GetActor
-	// class AActor* BP_SceneBindingContext_GetActor(FContextualAnimSceneBindingContext& BindingContext);                       // [0x7d05c80] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class AActor* BP_SceneBindingContext_GetActor(FContextualAnimSceneBindingContext& BindingContext);                       // [0x7cc1c90] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBinding_GetSkeletalMesh
-	// class USkeletalMeshComponent* BP_SceneBinding_GetSkeletalMesh(FContextualAnimSceneBinding& Binding);                     // [0x7d06c20] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class USkeletalMeshComponent* BP_SceneBinding_GetSkeletalMesh(FContextualAnimSceneBinding& Binding);                     // [0x7cc2c6c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBinding_GetRoleFromBinding
-	// FName BP_SceneBinding_GetRoleFromBinding(FContextualAnimSceneBindings& Bindings, FContextualAnimSceneBinding& Binding);  // [0x7d06ab4] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FName BP_SceneBinding_GetRoleFromBinding(FContextualAnimSceneBindings& Bindings, FContextualAnimSceneBinding& Binding);  // [0x7cc2afc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBinding_GetAnimationFromBinding
-	// class UAnimSequenceBase* BP_SceneBinding_GetAnimationFromBinding(FContextualAnimSceneBindings& Bindings, FContextualAnimSceneBinding& Binding); // [0x7d06950] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class UAnimSequenceBase* BP_SceneBinding_GetAnimationFromBinding(FContextualAnimSceneBindings& Bindings, FContextualAnimSceneBinding& Binding); // [0x7cc2994] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_SceneBinding_GetActor
-	// class AActor* BP_SceneBinding_GetActor(FContextualAnimSceneBinding& Binding);                                            // [0x7d0686c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// class AActor* BP_SceneBinding_GetActor(FContextualAnimSceneBinding& Binding);                                            // [0x7cc28ac] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_Montage_GetSectionTimeLeftFromPos
-	// float BP_Montage_GetSectionTimeLeftFromPos(class UAnimMontage* Montage, float Position);                                 // [0x7d05bb4] Final|Native|Static|Public|BlueprintCallable 
+	// float BP_Montage_GetSectionTimeLeftFromPos(class UAnimMontage* Montage, float Position);                                 // [0x7cc1b38] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_Montage_GetSectionStartAndEndTime
-	// void BP_Montage_GetSectionStartAndEndTime(class UAnimMontage* Montage, int32_t SectionIndex, float& OutStartTime, float& OutEndTime); // [0x7d05a64] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void BP_Montage_GetSectionStartAndEndTime(class UAnimMontage* Montage, int32_t SectionIndex, float& OutStartTime, float& OutEndTime); // [0x7cc1968] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_Montage_GetSectionLength
-	// float BP_Montage_GetSectionLength(class UAnimMontage* Montage, int32_t SectionIndex);                                    // [0x7d05998] Final|Native|Static|Public|BlueprintCallable 
+	// float BP_Montage_GetSectionLength(class UAnimMontage* Montage, int32_t SectionIndex);                                    // [0x7cc1810] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_DrawDebugPose
-	// void BP_DrawDebugPose(class UObject* WorldContextObject, class UAnimSequenceBase* Animation, float Time, FTransform LocalToWorldTransform, FLinearColor Color, float Lifetime, float Thickness); // [0x7d04d08] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void BP_DrawDebugPose(class UObject* WorldContextObject, class UAnimSequenceBase* Animation, float Time, FTransform LocalToWorldTransform, FLinearColor Color, float Lifetime, float Thickness); // [0x7cc07ec] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_CreateContextualAnimSceneBindingsForTwoActors
-	// bool BP_CreateContextualAnimSceneBindingsForTwoActors(class UContextualAnimSceneAsset* SceneAsset, FContextualAnimSceneBindingContext& Primary, FContextualAnimSceneBindingContext& Secondary, FContextualAnimSceneBindings& OutBindings); // [0x7d04acc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool BP_CreateContextualAnimSceneBindingsForTwoActors(class UContextualAnimSceneAsset* SceneAsset, FContextualAnimSceneBindingContext& Primary, FContextualAnimSceneBindingContext& Secondary, FContextualAnimSceneBindings& OutBindings); // [0x7cc0570] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ContextualAnimation.ContextualAnimUtilities.BP_CreateContextualAnimSceneBindings
-	// bool BP_CreateContextualAnimSceneBindings(class UContextualAnimSceneAsset* SceneAsset, TMap<FName, FContextualAnimSceneBindingContext>& Params, FContextualAnimSceneBindings& OutBindings); // [0x7d04940] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool BP_CreateContextualAnimSceneBindings(class UContextualAnimSceneAsset* SceneAsset, TMap<FName, FContextualAnimSceneBindingContext>& Params, FContextualAnimSceneBindings& OutBindings); // [0x7cc03b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/ContextualAnimation.ContextualAnimWarpTarget
@@ -469,6 +397,7 @@ public:
 	CMember(TWeakObjectPtr<UAnimInstance*>)            CachedAnimInstance                                          OFFSET(get<T>, {0x10, 8, 0, 0})
 	CMember(TWeakObjectPtr<USkeletalMeshComponent*>)   CachedSkeletalMesh                                          OFFSET(get<T>, {0x18, 8, 0, 0})
 	CMember(TWeakObjectPtr<UCharacterMovementComponent*>) CachedMovementComp                                       OFFSET(get<T>, {0x20, 8, 0, 0})
+	CMember(TWeakObjectPtr<UMotionWarpingComponent*>)  CachedMotionWarpingComp                                     OFFSET(get<T>, {0x28, 8, 0, 0})
 };
 
 /// Struct /Script/ContextualAnimation.ContextualAnimRepLateJoinData

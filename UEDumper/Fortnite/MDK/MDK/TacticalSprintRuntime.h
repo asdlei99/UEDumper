@@ -59,21 +59,21 @@ public:
 
 	/// Functions
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnReloadCanceling
-	// void HandleOnReloadCanceling();                                                                                          // [0xa884f94] Final|Native|Public  
+	// void HandleOnReloadCanceling();                                                                                          // [0xaa687f0] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnPlayerWeaponChanged
-	// void HandleOnPlayerWeaponChanged(class AFortPawn* InPawn, class AFortWeapon* InNewWeapon, class AFortWeapon* InPlayerWeapon); // [0xa884eac] Final|Native|Public  
+	// void HandleOnPlayerWeaponChanged(class AFortPawn* InPawn, class AFortWeapon* InNewWeapon, class AFortWeapon* InPlayerWeapon); // [0xaa68648] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnPawnJump
-	// void HandleOnPawnJump();                                                                                                 // [0xa884e94] Final|Native|Public  
+	// void HandleOnPawnJump();                                                                                                 // [0xaa68630] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnEnteredEditMode
-	// void HandleOnEnteredEditMode();                                                                                          // [0xa884e7c] Final|Native|Public  
+	// void HandleOnEnteredEditMode();                                                                                          // [0xaa68618] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnEnterAircraft
-	// void HandleOnEnterAircraft();                                                                                            // [0xa884e64] Final|Native|Public  
+	// void HandleOnEnterAircraft();                                                                                            // [0xaa68600] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleOnEnergyDrained
-	// void HandleOnEnergyDrained(class UFortComponent_Energy* EnergyComp);                                                     // [0xa884de8] Final|Native|Public  
+	// void HandleOnEnergyDrained(class UFortComponent_Energy* EnergyComp);                                                     // [0xaa68544] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleMovementModeChanged
-	// void HandleMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xa884d04] Final|Native|Public  
+	// void HandleMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xaa683a4] Final|Native|Public  
 	// Function /Script/TacticalSprintRuntime.FortMovementMode_ELTacSprint.HandleFailedToSprint
-	// void HandleFailedToSprint();                                                                                             // [0xa884cf0] Final|Native|Public  
+	// void HandleFailedToSprint();                                                                                             // [0xaa68390] Final|Native|Public  
 };
 
 /// Class /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint
@@ -106,27 +106,27 @@ public:
 
 	/// Functions
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.SetIsSprinting
-	// void SetIsSprinting(bool bNewIsSprinting);                                                                               // [0xa885b44] Final|Native|Public|BlueprintCallable 
+	// void SetIsSprinting(bool bNewIsSprinting);                                                                               // [0xaa696a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.RemoveCustomSprintMMEClass
-	// void RemoveCustomSprintMMEClass(class UClass*& SprintMMEClassToRemove);                                                  // [0xa885aa4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveCustomSprintMMEClass(class UClass*& SprintMMEClassToRemove);                                                  // [0xaa69608] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.RegisterMutatorUpdatedDelegate
-	// void RegisterMutatorUpdatedDelegate();                                                                                   // [0xa885a90] Final|Native|Private 
+	// void RegisterMutatorUpdatedDelegate();                                                                                   // [0xaa695f4] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnWeaponEquipped
-	// void OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PreviousWeapon);                                  // [0xa8859cc] Final|Native|Private 
+	// void OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PreviousWeapon);                                  // [0xaa694b4] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0xa8858d4] Final|Native|Private 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0xaa692f8] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnPawnChanged
-	// void OnPawnChanged(class AFortPawn* InPawn);                                                                             // [0xa885840] Final|Native|Private 
+	// void OnPawnChanged(class AFortPawn* InPawn);                                                                             // [0xaa69224] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                                 // [0xa88582c] Final|Native|Private 
+	// void OnMutatorUpdated();                                                                                                 // [0xaa69210] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xa885730] Final|Native|Private 
+	// void OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0xaa69054] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.OnAutoRunChanged
-	// void OnAutoRunChanged(bool bAutoRunIsOn);                                                                                // [0xa8856b0] Final|Native|Private 
+	// void OnAutoRunChanged(bool bAutoRunIsOn);                                                                                // [0xaa68f90] Final|Native|Private 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.LogAndVisualLog
-	// void LogAndVisualLog(class UObject* LoggingSource, ESprintLoggingVerbosityLevel Verbosity, FString& LogString);          // [0xa884fac] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void LogAndVisualLog(class UObject* LoggingSource, ESprintLoggingVerbosityLevel Verbosity, FString& LogString);          // [0xaa68808] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TacticalSprintRuntime.FortPlayerControllerComponent_TacticalSprint.AddCustomSprintMMEClass
-	// void AddCustomSprintMMEClass(class UClass*& SprintMMEClassToAdd);                                                        // [0xa884c2c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddCustomSprintMMEClass(class UClass*& SprintMMEClassToAdd);                                                        // [0xaa682cc] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/TacticalSprintRuntime.FortMovementMode_TacSprintRuntimeData

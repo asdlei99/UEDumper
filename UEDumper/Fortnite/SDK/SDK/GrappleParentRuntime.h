@@ -62,9 +62,9 @@ public:
 
 	/// Functions
 	// Function /Script/GrappleParentRuntime.FortCameraModifier_Swinging.RemoveSelfFromCameraManager
-	// void RemoveSelfFromCameraManager();                                                                                   // [0xa85f7ec] Final|Native|Protected 
+	// void RemoveSelfFromCameraManager();                                                                                   // [0xaa40bb8] Final|Native|Protected 
 	// Function /Script/GrappleParentRuntime.FortCameraModifier_Swinging.CalculateDynamicMultipliers
-	// void CalculateDynamicMultipliers(float& OutFOVBoundsMultiplier, float& OutBoostOffsetMultiplier);                     // [0xa85f500] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void CalculateDynamicMultipliers(float& OutFOVBoundsMultiplier, float& OutBoostOffsetMultiplier);                     // [0xaa408cc] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/GrappleParentRuntime.FortSwingingLayerAnimInstance
@@ -127,8 +127,8 @@ public:
 
 	/// Functions
 	// Function /Script/GrappleParentRuntime.FortSwingingLayerAnimInstance.GetPlayerAnglesFromAttachPoint
-	// void GetPlayerAnglesFromAttachPoint(float& pitch, float& Roll, float& Yaw);                                           // [0xa85f6c4] Final|Native|Public|HasOutParms 
+	// void GetPlayerAnglesFromAttachPoint(float& pitch, float& Roll, float& Yaw);                                           // [0xaa40a90] Final|Native|Public|HasOutParms 
 	// Function /Script/GrappleParentRuntime.FortSwingingLayerAnimInstance.GetAttachVectorInPlayerSpace
-	// FVector GetAttachVectorInPlayerSpace(FVector& InPlayerToAttachPoint);                                                 // [0xa85f5e0] Final|Native|Public|HasOutParms|HasDefaults 
+	// FVector GetAttachVectorInPlayerSpace(FVector& InPlayerToAttachPoint);                                                 // [0xaa409ac] Final|Native|Public|HasOutParms|HasDefaults 
 };
 

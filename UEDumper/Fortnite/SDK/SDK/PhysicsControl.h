@@ -48,265 +48,265 @@ public:
 
 	/// Functions
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.GetControlNamesInSet
-	// TArray<FName> GetControlNamesInSet(FRigidBodyWithControlReference& RigidBodyWithControl, FName SetName);              // [0xb107990] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<FName> GetControlNamesInSet(FRigidBodyWithControlReference& RigidBodyWithControl, FName SetName);              // [0xb323da8] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.GetBodyModifierNamesInSet
-	// TArray<FName> GetBodyModifierNamesInSet(FRigidBodyWithControlReference& RigidBodyWithControl, FName SetName);         // [0xb106a04] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// TArray<FName> GetBodyModifierNamesInSet(FRigidBodyWithControlReference& RigidBodyWithControl, FName SetName);         // [0xb322320] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.ConvertToRigidBodyWithControlPure
-	// void ConvertToRigidBodyWithControlPure(FAnimNodeReference& Node, FRigidBodyWithControlReference& RigidBodyWithControl, bool& Result); // [0xb101218] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void ConvertToRigidBodyWithControlPure(FAnimNodeReference& Node, FRigidBodyWithControlReference& RigidBodyWithControl, bool& Result); // [0xb31bbf8] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.ConvertToRigidBodyWithControl
-	// FRigidBodyWithControlReference ConvertToRigidBodyWithControl(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0xb1010ec] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// FRigidBodyWithControlReference ConvertToRigidBodyWithControl(FAnimNodeReference& Node, EAnimNodeReferenceConversionResult& Result); // [0xb31bacc] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.BlendParameters
-	// void BlendParameters(FPhysicsControlControlAndModifierParameters& InParametersA, FPhysicsControlControlAndModifierParameters& InParametersB, float InInterpolationWeight, FPhysicsControlControlAndModifierParameters& OutParameters); // [0xb100e88] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void BlendParameters(FPhysicsControlControlAndModifierParameters& InParametersA, FPhysicsControlControlAndModifierParameters& InParametersB, float InInterpolationWeight, FPhysicsControlControlAndModifierParameters& OutParameters); // [0xb31b264] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.BlendModifierParametersThroughSet
-	// void BlendModifierParametersThroughSet(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlNamedModifierParameters& InStartModifierParameters, FPhysicsControlNamedModifierParameters& InEndModifierParameters, TArray<FName>& ModifierNames, FPhysicsControlControlAndModifierParameters& OutParameters); // [0xb100c1c] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void BlendModifierParametersThroughSet(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlNamedModifierParameters& InStartModifierParameters, FPhysicsControlNamedModifierParameters& InEndModifierParameters, TArray<FName>& ModifierNames, FPhysicsControlControlAndModifierParameters& OutParameters); // [0xb31aa40] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.BlendControlParametersThroughSet
-	// void BlendControlParametersThroughSet(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlNamedControlParameters& InStartControlParameters, FPhysicsControlNamedControlParameters& InEndControlParameters, TArray<FName>& ControlNames, FPhysicsControlControlAndModifierParameters& OutParameters); // [0xb1009c4] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void BlendControlParametersThroughSet(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlNamedControlParameters& InStartControlParameters, FPhysicsControlNamedControlParameters& InEndControlParameters, TArray<FName>& ControlNames, FPhysicsControlControlAndModifierParameters& OutParameters); // [0xb31a218] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.AddMultipleModifierParameters
-	// void AddMultipleModifierParameters(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlControlAndModifierParameters& OutParameters, TArray<FName>& Names, FPhysicsControlModifierSparseData& ModifierData); // [0xb1007c8] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void AddMultipleModifierParameters(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlControlAndModifierParameters& OutParameters, TArray<FName>& Names, FPhysicsControlModifierSparseData& ModifierData); // [0xb319a48] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.AddMultipleControlParameters
-	// void AddMultipleControlParameters(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlControlAndModifierParameters& OutParameters, TArray<FName>& Names, FPhysicsControlSparseData& ControlData); // [0xb1005d0] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void AddMultipleControlParameters(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlControlAndModifierParameters& OutParameters, TArray<FName>& Names, FPhysicsControlSparseData& ControlData); // [0xb319274] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.AddModifierParameters
-	// void AddModifierParameters(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlControlAndModifierParameters& OutParameters, FName Name, FPhysicsControlModifierSparseData& ModifierData); // [0xb100390] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void AddModifierParameters(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlControlAndModifierParameters& OutParameters, FName Name, FPhysicsControlModifierSparseData& ModifierData); // [0xb318a14] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PhysicsControl.PhysicsControlBPLibrary.AddControlParameters
-	// void AddControlParameters(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlControlAndModifierParameters& OutParameters, FName Name, FPhysicsControlSparseData& ControlData); // [0xb0ffcec] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void AddControlParameters(FPhysicsControlControlAndModifierParameters& InParameters, FPhysicsControlControlAndModifierParameters& OutParameters, FName Name, FPhysicsControlSparseData& ControlData); // [0xb317d14] Final|Native|Static|Private|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/PhysicsControl.PhysicsControlComponent
-/// Size: 0x0050 (0x000290 - 0x0002E0)
+/// Size: 0x0050 (0x000220 - 0x000270)
 class UPhysicsControlComponent : public USceneComponent
 { 
 public:
-	float                                              TeleportDistanceThreshold;                                  // 0x0290   (0x0004)  
-	float                                              TeleportRotationThreshold;                                  // 0x0294   (0x0004)  
-	bool                                               bShowDebugVisualization;                                    // 0x0298   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0299   (0x0003)  MISSED
-	float                                              VisualizationSizeScale;                                     // 0x029C   (0x0004)  
-	bool                                               bShowDebugControlList;                                      // 0x02A0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x02A1   (0x0007)  MISSED
-	SDK_UNDEFINED(16,12179) /* FString */              __um(DebugControlDetailFilter);                             // 0x02A8   (0x0010)  
-	bool                                               bShowDebugBodyModifierList;                                 // 0x02B8   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x02B9   (0x0007)  MISSED
-	SDK_UNDEFINED(16,12180) /* FString */              __um(DebugBodyModifierDetailFilter);                        // 0x02C0   (0x0010)  
-	float                                              VelocityPredictionTime;                                     // 0x02D0   (0x0004)  
-	int32_t                                            MaxNumControlsOrModifiersPerName;                           // 0x02D4   (0x0004)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x02D8   (0x0008)  MISSED
+	float                                              TeleportDistanceThreshold;                                  // 0x0220   (0x0004)  
+	float                                              TeleportRotationThreshold;                                  // 0x0224   (0x0004)  
+	bool                                               bShowDebugVisualization;                                    // 0x0228   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0229   (0x0003)  MISSED
+	float                                              VisualizationSizeScale;                                     // 0x022C   (0x0004)  
+	bool                                               bShowDebugControlList;                                      // 0x0230   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0231   (0x0007)  MISSED
+	SDK_UNDEFINED(16,12223) /* FString */              __um(DebugControlDetailFilter);                             // 0x0238   (0x0010)  
+	bool                                               bShowDebugBodyModifierList;                                 // 0x0248   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0249   (0x0007)  MISSED
+	SDK_UNDEFINED(16,12224) /* FString */              __um(DebugBodyModifierDetailFilter);                        // 0x0250   (0x0010)  
+	float                                              VelocityPredictionTime;                                     // 0x0260   (0x0004)  
+	int32_t                                            MaxNumControlsOrModifiersPerName;                           // 0x0264   (0x0004)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0268   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/PhysicsControl.PhysicsControlComponent.UpdateTargetCaches
-	// void UpdateTargetCaches(float DeltaTime);                                                                             // [0xb110264] Final|Native|Public|BlueprintCallable 
+	// void UpdateTargetCaches(float DeltaTime);                                                                             // [0xb32d048] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.UpdateControls
-	// void UpdateControls(float DeltaTime);                                                                                 // [0xb1101e8] Final|Native|Public|BlueprintCallable 
+	// void UpdateControls(float DeltaTime);                                                                                 // [0xb32cf8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlUseSkeletalAnimation
-	// bool SetControlUseSkeletalAnimation(FName Name, bool bUseSkeletalAnimation, float SkeletalAnimationVelocityMultiplier); // [0xb10fa24] Final|Native|Public|BlueprintCallable 
+	// bool SetControlUseSkeletalAnimation(FName Name, bool bUseSkeletalAnimation, float SkeletalAnimationVelocityMultiplier); // [0xb32c548] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetsInSet
-	// void SetControlTargetsInSet(FName Set, FPhysicsControlTarget ControlTarget, bool bEnableControl);                     // [0xb10f788] Final|Native|Public|BlueprintCallable 
+	// void SetControlTargetsInSet(FName Set, FPhysicsControlTarget ControlTarget, bool bEnableControl);                     // [0xb32c33c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargets
-	// void SetControlTargets(TArray<FName>& Names, FPhysicsControlTarget ControlTarget, bool bEnableControl);               // [0xb10f4bc] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetControlTargets(TArray<FName>& Names, FPhysicsControlTarget ControlTarget, bool bEnableControl);               // [0xb32c134] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPositionsInSet
-	// void SetControlTargetPositionsInSet(FName SetName, FVector Position, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10f0b0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlTargetPositionsInSet(FName SetName, FVector Position, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb32be60] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPositionsFromArray
-	// bool SetControlTargetPositionsFromArray(TArray<FName>& Names, TArray<FVector>& Positions, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10ecf4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool SetControlTargetPositionsFromArray(TArray<FName>& Names, TArray<FVector>& Positions, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb32ba6c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPositionsAndOrientationsInSet
-	// void SetControlTargetPositionsAndOrientationsInSet(FName SetName, FVector Position, FRotator orientation, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10e7fc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlTargetPositionsAndOrientationsInSet(FName SetName, FVector Position, FRotator orientation, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb32b704] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPositionsAndOrientationsFromArray
-	// bool SetControlTargetPositionsAndOrientationsFromArray(TArray<FName>& Names, TArray<FVector>& Positions, TArray<FRotator>& Orientations, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10e3d4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool SetControlTargetPositionsAndOrientationsFromArray(TArray<FName>& Names, TArray<FVector>& Positions, TArray<FRotator>& Orientations, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb32ac94] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPositionsAndOrientations
-	// void SetControlTargetPositionsAndOrientations(TArray<FName>& Names, FVector Position, FRotator orientation, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10de9c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetControlTargetPositionsAndOrientations(TArray<FName>& Names, FVector Position, FRotator orientation, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb32a920] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPositions
-	// void SetControlTargetPositions(TArray<FName>& Names, FVector Position, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10da54] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetControlTargetPositions(TArray<FName>& Names, FVector Position, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb32a644] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPositionAndOrientation
-	// bool SetControlTargetPositionAndOrientation(FName Name, FVector Position, FRotator orientation, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10d53c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetControlTargetPositionAndOrientation(FName Name, FVector Position, FRotator orientation, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb32a2d8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPosition
-	// bool SetControlTargetPosition(FName Name, FVector Position, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10d118] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetControlTargetPosition(FName Name, FVector Position, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb32a004] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetPoses
-	// bool SetControlTargetPoses(FName Name, FVector ParentPosition, FRotator ParentOrientation, FVector ChildPosition, FRotator ChildOrientation, float VelocityDeltaTime, bool bEnableControl); // [0xb10caf8] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetControlTargetPoses(FName Name, FVector ParentPosition, FRotator ParentOrientation, FVector ChildPosition, FRotator ChildOrientation, float VelocityDeltaTime, bool bEnableControl); // [0xb329c04] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetOrientationsInSet
-	// void SetControlTargetOrientationsInSet(FName SetName, FRotator orientation, float AngularVelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10c6ec] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlTargetOrientationsInSet(FName SetName, FRotator orientation, float AngularVelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb329930] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetOrientationsFromArray
-	// bool SetControlTargetOrientationsFromArray(TArray<FName>& Names, TArray<FRotator>& Orientations, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10c330] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool SetControlTargetOrientationsFromArray(TArray<FName>& Names, TArray<FRotator>& Orientations, float VelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb328f24] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetOrientations
-	// void SetControlTargetOrientations(TArray<FName>& Names, FRotator orientation, float AngularVelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10bee8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetControlTargetOrientations(TArray<FName>& Names, FRotator orientation, float AngularVelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb328c48] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTargetOrientation
-	// bool SetControlTargetOrientation(FName Name, FRotator orientation, float AngularVelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb10bac4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetControlTargetOrientation(FName Name, FRotator orientation, float AngularVelocityDeltaTime, bool bEnableControl, bool bApplyControlPointToTarget); // [0xb328974] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlTarget
-	// bool SetControlTarget(FName Name, FPhysicsControlTarget ControlTarget, bool bEnableControl);                          // [0xb10b81c] Final|Native|Public|BlueprintCallable 
+	// bool SetControlTarget(FName Name, FPhysicsControlTarget ControlTarget, bool bEnableControl);                          // [0xb328758] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlsUseSkeletalAnimation
-	// void SetControlsUseSkeletalAnimation(TArray<FName>& Names, bool bUseSkeletalAnimation, float SkeletalAnimationVelocityMultiplier); // [0xb110038] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetControlsUseSkeletalAnimation(TArray<FName>& Names, bool bUseSkeletalAnimation, float SkeletalAnimationVelocityMultiplier); // [0xb32cddc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlsInSetUseSkeletalAnimation
-	// void SetControlsInSetUseSkeletalAnimation(FName Set, bool bUseSkeletalAnimation, float SkeletalAnimationVelocityMultiplier); // [0xb10ff30] Final|Native|Public|BlueprintCallable 
+	// void SetControlsInSetUseSkeletalAnimation(FName Set, bool bUseSkeletalAnimation, float SkeletalAnimationVelocityMultiplier); // [0xb32cc14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlsInSetEnabled
-	// void SetControlsInSetEnabled(FName Set, bool bEnable);                                                                // [0xb10fe64] Final|Native|Public|BlueprintCallable 
+	// void SetControlsInSetEnabled(FName Set, bool bEnable);                                                                // [0xb32cac8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlsInSetDisableCollision
-	// void SetControlsInSetDisableCollision(FName Set, bool bDisableCollision);                                             // [0xb10fd98] Final|Native|Public|BlueprintCallable 
+	// void SetControlsInSetDisableCollision(FName Set, bool bDisableCollision);                                             // [0xb32c97c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlsEnabled
-	// void SetControlsEnabled(TArray<FName>& Names, bool bEnable);                                                          // [0xb10fc64] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetControlsEnabled(TArray<FName>& Names, bool bEnable);                                                          // [0xb32c848] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlsDisableCollision
-	// void SetControlsDisableCollision(TArray<FName>& Names, bool bDisableCollision);                                       // [0xb10fb30] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetControlsDisableCollision(TArray<FName>& Names, bool bDisableCollision);                                       // [0xb32c714] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlPoint
-	// bool SetControlPoint(FName Name, FVector Position);                                                                   // [0xb10b698] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetControlPoint(FName Name, FVector Position);                                                                   // [0xb3285e4] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlParentsInSet
-	// void SetControlParentsInSet(FName Set, class UMeshComponent* ParentMeshComponent, FName ParentBoneName);              // [0xb10b590] Final|Native|Public|BlueprintCallable 
+	// void SetControlParentsInSet(FName Set, class UMeshComponent* ParentMeshComponent, FName ParentBoneName);              // [0xb32841c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlParents
-	// void SetControlParents(TArray<FName>& Names, class UMeshComponent* ParentMeshComponent, FName ParentBoneName);        // [0xb10b3e4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetControlParents(TArray<FName>& Names, class UMeshComponent* ParentMeshComponent, FName ParentBoneName);        // [0xb328270] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlParent
-	// bool SetControlParent(FName Name, class UMeshComponent* ParentMeshComponent, FName ParentBoneName);                   // [0xb10b2ec] Final|Native|Public|BlueprintCallable 
+	// bool SetControlParent(FName Name, class UMeshComponent* ParentMeshComponent, FName ParentBoneName);                   // [0xb3280b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlMultipliersInSet
-	// void SetControlMultipliersInSet(FName Set, FPhysicsControlMultiplier ControlMultiplier, bool bEnableControl);         // [0xb10b050] Final|Native|Public|BlueprintCallable 
+	// void SetControlMultipliersInSet(FName Set, FPhysicsControlMultiplier ControlMultiplier, bool bEnableControl);         // [0xb327eac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlMultipliers
-	// void SetControlMultipliers(TArray<FName>& Names, FPhysicsControlMultiplier ControlMultiplier, bool bEnableControl);   // [0xb10ad88] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetControlMultipliers(TArray<FName>& Names, FPhysicsControlMultiplier ControlMultiplier, bool bEnableControl);   // [0xb327ca8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlMultiplier
-	// bool SetControlMultiplier(FName Name, FPhysicsControlMultiplier ControlMultiplier, bool bEnableControl);              // [0xb10aae0] Final|Native|Public|BlueprintCallable 
+	// bool SetControlMultiplier(FName Name, FPhysicsControlMultiplier ControlMultiplier, bool bEnableControl);              // [0xb327a90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlLinearData
-	// bool SetControlLinearData(FName Name, float Strength, float DampingRatio, float ExtraDamping, float MaxForce, bool bEnableControl); // [0xb10a8ec] Final|Native|Public|BlueprintCallable 
+	// bool SetControlLinearData(FName Name, float Strength, float DampingRatio, float ExtraDamping, float MaxForce, bool bEnableControl); // [0xb327734] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlEnabled
-	// bool SetControlEnabled(FName Name, bool bEnable);                                                                     // [0xb10a828] Final|Native|Public|BlueprintCallable 
+	// bool SetControlEnabled(FName Name, bool bEnable);                                                                     // [0xb3275e4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlDisableCollision
-	// bool SetControlDisableCollision(FName Name, bool bDisableCollision);                                                  // [0xb10a764] Final|Native|Public|BlueprintCallable 
+	// bool SetControlDisableCollision(FName Name, bool bDisableCollision);                                                  // [0xb327494] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlDatasInSet
-	// void SetControlDatasInSet(FName Set, FPhysicsControlData ControlData);                                                // [0xb10a5c8] Final|Native|Public|BlueprintCallable 
+	// void SetControlDatasInSet(FName Set, FPhysicsControlData ControlData);                                                // [0xb3272fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlDatas
-	// void SetControlDatas(TArray<FName>& Names, FPhysicsControlData ControlData);                                          // [0xb10a400] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetControlDatas(TArray<FName>& Names, FPhysicsControlData ControlData);                                          // [0xb327198] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlData
-	// bool SetControlData(FName Name, FPhysicsControlData ControlData);                                                     // [0xb10a260] Final|Native|Public|BlueprintCallable 
+	// bool SetControlData(FName Name, FPhysicsControlData ControlData);                                                     // [0xb327018] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetControlAngularData
-	// bool SetControlAngularData(FName Name, float Strength, float DampingRatio, float ExtraDamping, float MaxTorque, bool bEnableControl); // [0xb10a06c] Final|Native|Public|BlueprintCallable 
+	// bool SetControlAngularData(FName Name, float Strength, float DampingRatio, float ExtraDamping, float MaxTorque, bool bEnableControl); // [0xb326cbc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetCachedBoneData
-	// bool SetCachedBoneData(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName, FTransform& TM, FVector Velocity, FVector AngularVelocity); // [0xb109cf4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool SetCachedBoneData(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName, FTransform& TM, FVector Velocity, FVector AngularVelocity); // [0xb326940] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifierUseSkeletalAnimation
-	// bool SetBodyModifierUseSkeletalAnimation(FName Name, bool bUseSkeletalAnimation);                                     // [0xb109020] Final|Native|Public|BlueprintCallable 
+	// bool SetBodyModifierUseSkeletalAnimation(FName Name, bool bUseSkeletalAnimation);                                     // [0xb3258f4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifierUpdateKinematicFromSimulation
-	// bool SetBodyModifierUpdateKinematicFromSimulation(FName Name, bool bUpdateKinematicFromSimulation);                   // [0xb108f5c] Final|Native|Public|BlueprintCallable 
+	// bool SetBodyModifierUpdateKinematicFromSimulation(FName Name, bool bUpdateKinematicFromSimulation);                   // [0xb3257a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersUseSkeletalAnimation
-	// void SetBodyModifiersUseSkeletalAnimation(TArray<FName>& Names, bool bUseSkeletalAnimation);                          // [0xb109bc0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBodyModifiersUseSkeletalAnimation(TArray<FName>& Names, bool bUseSkeletalAnimation);                          // [0xb32680c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersUpdateKinematicFromSimulation
-	// void SetBodyModifiersUpdateKinematicFromSimulation(TArray<FName>& Names, bool bUpdateKinematicFromSimulation);        // [0xb109a8c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBodyModifiersUpdateKinematicFromSimulation(TArray<FName>& Names, bool bUpdateKinematicFromSimulation);        // [0xb3266d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersPhysicsBlendWeight
-	// void SetBodyModifiersPhysicsBlendWeight(TArray<FName>& Names, float PhysicsBlendWeight);                              // [0xb10995c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBodyModifiersPhysicsBlendWeight(TArray<FName>& Names, float PhysicsBlendWeight);                              // [0xb3265a8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersMovementType
-	// void SetBodyModifiersMovementType(TArray<FName>& Names, EPhysicsMovementType MovementType);                           // [0xb10982c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBodyModifiersMovementType(TArray<FName>& Names, EPhysicsMovementType MovementType);                           // [0xb326478] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersInSetUseSkeletalAnimation
-	// void SetBodyModifiersInSetUseSkeletalAnimation(FName Set, bool bUseSkeletalAnimation);                                // [0xb109760] Final|Native|Public|BlueprintCallable 
+	// void SetBodyModifiersInSetUseSkeletalAnimation(FName Set, bool bUseSkeletalAnimation);                                // [0xb32632c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersInSetUpdateKinematicFromSimulation
-	// void SetBodyModifiersInSetUpdateKinematicFromSimulation(FName Set, bool bUpdateKinematicFromSimulation);              // [0xb109694] Final|Native|Public|BlueprintCallable 
+	// void SetBodyModifiersInSetUpdateKinematicFromSimulation(FName Set, bool bUpdateKinematicFromSimulation);              // [0xb3261e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersInSetPhysicsBlendWeight
-	// void SetBodyModifiersInSetPhysicsBlendWeight(FName Set, float PhysicsBlendWeight);                                    // [0xb1095bc] Final|Native|Public|BlueprintCallable 
+	// void SetBodyModifiersInSetPhysicsBlendWeight(FName Set, float PhysicsBlendWeight);                                    // [0xb32608c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersInSetMovementType
-	// void SetBodyModifiersInSetMovementType(FName Set, EPhysicsMovementType MovementType);                                 // [0xb1094ec] Final|Native|Public|BlueprintCallable 
+	// void SetBodyModifiersInSetMovementType(FName Set, EPhysicsMovementType MovementType);                                 // [0xb325f44] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersInSetGravityMultiplier
-	// void SetBodyModifiersInSetGravityMultiplier(FName Set, float GravityMultiplier);                                      // [0xb109414] Final|Native|Public|BlueprintCallable 
+	// void SetBodyModifiersInSetGravityMultiplier(FName Set, float GravityMultiplier);                                      // [0xb325df0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersInSetCollisionType
-	// void SetBodyModifiersInSetCollisionType(FName Set, TEnumAsByte<ECollisionEnabled> CollisionType);                     // [0xb109344] Final|Native|Public|BlueprintCallable 
+	// void SetBodyModifiersInSetCollisionType(FName Set, TEnumAsByte<ECollisionEnabled> CollisionType);                     // [0xb325ca4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersGravityMultiplier
-	// void SetBodyModifiersGravityMultiplier(TArray<FName>& Names, float GravityMultiplier);                                // [0xb109214] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBodyModifiersGravityMultiplier(TArray<FName>& Names, float GravityMultiplier);                                // [0xb325b74] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifiersCollisionType
-	// void SetBodyModifiersCollisionType(TArray<FName>& Names, TEnumAsByte<ECollisionEnabled> CollisionType);               // [0xb1090e4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBodyModifiersCollisionType(TArray<FName>& Names, TEnumAsByte<ECollisionEnabled> CollisionType);               // [0xb325a44] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifierPhysicsBlendWeight
-	// bool SetBodyModifierPhysicsBlendWeight(FName Name, float PhysicsBlendWeight);                                         // [0xb108e9c] Final|Native|Public|BlueprintCallable 
+	// bool SetBodyModifierPhysicsBlendWeight(FName Name, float PhysicsBlendWeight);                                         // [0xb325654] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifierMovementType
-	// bool SetBodyModifierMovementType(FName Name, EPhysicsMovementType MovementType);                                      // [0xb108ddc] Final|Native|Public|BlueprintCallable 
+	// bool SetBodyModifierMovementType(FName Name, EPhysicsMovementType MovementType);                                      // [0xb325504] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifierKinematicTarget
-	// bool SetBodyModifierKinematicTarget(FName Name, FVector KinematicTargetPosition, FRotator KinematicTargetOrienation, bool bMakeKinematic); // [0xb108a8c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetBodyModifierKinematicTarget(FName Name, FVector KinematicTargetPosition, FRotator KinematicTargetOrienation, bool bMakeKinematic); // [0xb325264] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifierGravityMultiplier
-	// bool SetBodyModifierGravityMultiplier(FName Name, float GravityMultiplier);                                           // [0xb1089cc] Final|Native|Public|BlueprintCallable 
+	// bool SetBodyModifierGravityMultiplier(FName Name, float GravityMultiplier);                                           // [0xb325114] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.SetBodyModifierCollisionType
-	// bool SetBodyModifierCollisionType(FName Name, TEnumAsByte<ECollisionEnabled> CollisionType);                          // [0xb108908] Final|Native|Public|BlueprintCallable 
+	// bool SetBodyModifierCollisionType(FName Name, TEnumAsByte<ECollisionEnabled> CollisionType);                          // [0xb324fc4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.ResetControlPoint
-	// bool ResetControlPoint(FName Name);                                                                                   // [0xb108868] Final|Native|Public|BlueprintCallable 
+	// bool ResetControlPoint(FName Name);                                                                                   // [0xb324ee0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.ResetBodyModifierToCachedBoneTransform
-	// bool ResetBodyModifierToCachedBoneTransform(FName Name, EResetToCachedTargetBehavior Behavior);                       // [0xb1085a8] Final|Native|Public|BlueprintCallable 
+	// bool ResetBodyModifierToCachedBoneTransform(FName Name, EResetToCachedTargetBehavior Behavior);                       // [0xb324b18] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.ResetBodyModifiersToCachedBoneTransforms
-	// void ResetBodyModifiersToCachedBoneTransforms(TArray<FName>& Names, EResetToCachedTargetBehavior Behavior);           // [0xb108738] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ResetBodyModifiersToCachedBoneTransforms(TArray<FName>& Names, EResetToCachedTargetBehavior Behavior);           // [0xb324db0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.ResetBodyModifiersInSetToCachedBoneTransforms
-	// void ResetBodyModifiersInSetToCachedBoneTransforms(FName SetName, EResetToCachedTargetBehavior Behavior);             // [0xb108668] Final|Native|Public|BlueprintCallable 
+	// void ResetBodyModifiersInSetToCachedBoneTransforms(FName SetName, EResetToCachedTargetBehavior Behavior);             // [0xb324c68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetSetsContainingControl
-	// TArray<FName> GetSetsContainingControl(FName Control);                                                                // [0xb108504] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetSetsContainingControl(FName Control);                                                                // [0xb324a34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetSetsContainingBodyModifier
-	// TArray<FName> GetSetsContainingBodyModifier(FName Control);                                                           // [0xb108460] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetSetsContainingBodyModifier(FName Control);                                                           // [0xb324950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetLimbBonesFromSkeletalMesh
-	// TMap<FName, FPhysicsControlLimbBones> GetLimbBonesFromSkeletalMesh(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FPhysicsControlLimbSetupData>& LimbSetupData); // [0xb107d08] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TMap<FName, FPhysicsControlLimbBones> GetLimbBonesFromSkeletalMesh(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FPhysicsControlLimbSetupData>& LimbSetupData); // [0xb3241c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetControlTarget
-	// bool GetControlTarget(FName Name, FPhysicsControlTarget& ControlTarget);                                              // [0xb107bbc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetControlTarget(FName Name, FPhysicsControlTarget& ControlTarget);                                              // [0xb32403c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetControlNamesInSet
-	// TArray<FName> GetControlNamesInSet(FName Set);                                                                        // [0xb107b28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetControlNamesInSet(FName Set);                                                                        // [0xb323f64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetControlMultiplier
-	// bool GetControlMultiplier(FName Name, FPhysicsControlMultiplier& ControlMultiplier);                                  // [0xb107850] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetControlMultiplier(FName Name, FPhysicsControlMultiplier& ControlMultiplier);                                  // [0xb323c30] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetControlEnabled
-	// bool GetControlEnabled(FName Name);                                                                                   // [0xb1077b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetControlEnabled(FName Name);                                                                                   // [0xb323b50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetControlData
-	// bool GetControlData(FName Name, FPhysicsControlData& ControlData);                                                    // [0xb1076a4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetControlData(FName Name, FPhysicsControlData& ControlData);                                                    // [0xb323a08] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBoneVelocity
-	// FVector GetCachedBoneVelocity(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);                   // [0xb107594] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetCachedBoneVelocity(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);                   // [0xb32386c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBoneVelocities
-	// TArray<FVector> GetCachedBoneVelocities(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb107484] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TArray<FVector> GetCachedBoneVelocities(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb323720] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBoneTransforms
-	// TArray<FTransform> GetCachedBoneTransforms(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb107374] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TArray<FTransform> GetCachedBoneTransforms(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb3235d4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBoneTransform
-	// FTransform GetCachedBoneTransform(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);               // [0xb107254] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetCachedBoneTransform(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);               // [0xb32343c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBonePositions
-	// TArray<FVector> GetCachedBonePositions(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb107144] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TArray<FVector> GetCachedBonePositions(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb3232f0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBonePosition
-	// FVector GetCachedBonePosition(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);                   // [0xb107034] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetCachedBonePosition(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);                   // [0xb323154] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBoneOrientations
-	// TArray<FRotator> GetCachedBoneOrientations(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb106f24] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TArray<FRotator> GetCachedBoneOrientations(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb322a00] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBoneOrientation
-	// FRotator GetCachedBoneOrientation(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);               // [0xb106e50] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FRotator GetCachedBoneOrientation(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);               // [0xb32289c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBoneAngularVelocity
-	// FVector GetCachedBoneAngularVelocity(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);            // [0xb106d40] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetCachedBoneAngularVelocity(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName);            // [0xb322700] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetCachedBoneAngularVelocities
-	// TArray<FVector> GetCachedBoneAngularVelocities(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb106c30] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TArray<FVector> GetCachedBoneAngularVelocities(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames); // [0xb3225b4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetBodyModifierNamesInSet
-	// TArray<FName> GetBodyModifierNamesInSet(FName Set);                                                                   // [0xb106b9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetBodyModifierNamesInSet(FName Set);                                                                   // [0xb3224dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetAllControlNames
-	// TArray<FName> GetAllControlNames();                                                                                   // [0xb1069b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetAllControlNames();                                                                                   // [0xb3222cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.GetAllBodyModifierNames
-	// TArray<FName> GetAllBodyModifierNames();                                                                              // [0xb10695c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetAllBodyModifierNames();                                                                              // [0xb322278] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.DestroyControlsInSet
-	// void DestroyControlsInSet(FName Set);                                                                                 // [0xb106884] Final|Native|Public|BlueprintCallable 
+	// void DestroyControlsInSet(FName Set);                                                                                 // [0xb32215c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.DestroyControls
-	// void DestroyControls(TArray<FName>& Names);                                                                           // [0xb1067e8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DestroyControls(TArray<FName>& Names);                                                                           // [0xb3220c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.DestroyControl
-	// bool DestroyControl(FName Name);                                                                                      // [0xb106758] Final|Native|Public|BlueprintCallable 
+	// bool DestroyControl(FName Name);                                                                                      // [0xb321ff0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.DestroyBodyModifiersInSet
-	// void DestroyBodyModifiersInSet(FName Set);                                                                            // [0xb106680] Final|Native|Public|BlueprintCallable 
+	// void DestroyBodyModifiersInSet(FName Set);                                                                            // [0xb321ed4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.DestroyBodyModifiers
-	// void DestroyBodyModifiers(TArray<FName>& Names);                                                                      // [0xb1065e4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DestroyBodyModifiers(TArray<FName>& Names);                                                                      // [0xb321e38] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.DestroyBodyModifier
-	// bool DestroyBodyModifier(FName Name);                                                                                 // [0xb106554] Final|Native|Public|BlueprintCallable 
+	// bool DestroyBodyModifier(FName Name);                                                                                 // [0xb321d68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateNamedControl
-	// bool CreateNamedControl(FName Name, class UMeshComponent* ParentMeshComponent, FName ParentBoneName, class UMeshComponent* ChildMeshComponent, FName ChildBoneName, FPhysicsControlData ControlData, FPhysicsControlTarget ControlTarget, FPhysicsControlSettings ControlSettings, FName Set); // [0xb105df0] Final|Native|Public|BlueprintCallable 
+	// bool CreateNamedControl(FName Name, class UMeshComponent* ParentMeshComponent, FName ParentBoneName, class UMeshComponent* ChildMeshComponent, FName ChildBoneName, FPhysicsControlData ControlData, FPhysicsControlTarget ControlTarget, FPhysicsControlSettings ControlSettings, FName Set); // [0xb321638] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateNamedBodyModifier
-	// bool CreateNamedBodyModifier(FName Name, class UMeshComponent* MeshComponent, FName BoneName, FName Set, EPhysicsMovementType MovementType, TEnumAsByte<ECollisionEnabled> CollisionType, float GravityMultiplier, float PhysicsBlendWeight, bool bUseSkeletalAnimation, bool bUpdateKinematicFromSimulation); // [0xb105b00] Final|Native|Public|BlueprintCallable 
+	// bool CreateNamedBodyModifier(FName Name, class UMeshComponent* MeshComponent, FName BoneName, FName Set, EPhysicsMovementType MovementType, TEnumAsByte<ECollisionEnabled> CollisionType, float GravityMultiplier, float PhysicsBlendWeight, bool bUseSkeletalAnimation, bool bUpdateKinematicFromSimulation); // [0xb3210f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateControlsFromSkeletalMeshBelow
-	// TArray<FName> CreateControlsFromSkeletalMeshBelow(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName, bool bIncludeSelf, EPhysicsControlType ControlType, FPhysicsControlData ControlData, FPhysicsControlSettings ControlSettings, FName Set); // [0xb1055d8] Final|Native|Public|BlueprintCallable 
+	// TArray<FName> CreateControlsFromSkeletalMeshBelow(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName, bool bIncludeSelf, EPhysicsControlType ControlType, FPhysicsControlData ControlData, FPhysicsControlSettings ControlSettings, FName Set); // [0xb320bfc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateControlsFromSkeletalMeshAndConstraintProfileBelow
-	// TArray<FName> CreateControlsFromSkeletalMeshAndConstraintProfileBelow(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName, bool bIncludeSelf, FName ConstraintProfile, FName Set, bool bEnabled); // [0xb105368] Final|Native|Public|BlueprintCallable 
+	// TArray<FName> CreateControlsFromSkeletalMeshAndConstraintProfileBelow(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName, bool bIncludeSelf, FName ConstraintProfile, FName Set, bool bEnabled); // [0xb32080c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateControlsFromSkeletalMeshAndConstraintProfile
-	// TArray<FName> CreateControlsFromSkeletalMeshAndConstraintProfile(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames, FName ConstraintProfile, FName Set, bool bEnabled); // [0xb1050c4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TArray<FName> CreateControlsFromSkeletalMeshAndConstraintProfile(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames, FName ConstraintProfile, FName Set, bool bEnabled); // [0xb320544] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateControlsFromSkeletalMesh
-	// TArray<FName> CreateControlsFromSkeletalMesh(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames, EPhysicsControlType ControlType, FPhysicsControlData ControlData, FPhysicsControlSettings ControlSettings, FName Set); // [0xb104c18] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TArray<FName> CreateControlsFromSkeletalMesh(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FName>& BoneNames, EPhysicsControlType ControlType, FPhysicsControlData ControlData, FPhysicsControlSettings ControlSettings, FName Set); // [0xb32018c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateControlsFromLimbBonesAndConstraintProfile
-	// TMap<FName, FPhysicsControlNames> CreateControlsFromLimbBonesAndConstraintProfile(FPhysicsControlNames& AllControls, TMap<FName, FPhysicsControlLimbBones>& LimbBones, FName ConstraintProfile, bool bEnabled); // [0xb1048d0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TMap<FName, FPhysicsControlNames> CreateControlsFromLimbBonesAndConstraintProfile(FPhysicsControlNames& AllControls, TMap<FName, FPhysicsControlLimbBones>& LimbBones, FName ConstraintProfile, bool bEnabled); // [0xb31fe20] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateControlsFromLimbBones
-	// TMap<FName, FPhysicsControlNames> CreateControlsFromLimbBones(FPhysicsControlNames& AllControls, TMap<FName, FPhysicsControlLimbBones>& LimbBones, EPhysicsControlType ControlType, FPhysicsControlData ControlData, FPhysicsControlSettings ControlSettings, class UMeshComponent* WorldComponent, FName WorldBoneName, FString NamePrefix); // [0xb103b20] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TMap<FName, FPhysicsControlNames> CreateControlsFromLimbBones(FPhysicsControlNames& AllControls, TMap<FName, FPhysicsControlLimbBones>& LimbBones, EPhysicsControlType ControlType, FPhysicsControlData ControlData, FPhysicsControlSettings ControlSettings, class UMeshComponent* WorldComponent, FName WorldBoneName, FString NamePrefix); // [0xb31effc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateControlsAndBodyModifiersFromLimbBones
-	// void CreateControlsAndBodyModifiersFromLimbBones(FPhysicsControlNames& AllWorldSpaceControls, TMap<FName, FPhysicsControlNames>& LimbWorldSpaceControls, FPhysicsControlNames& AllParentSpaceControls, TMap<FName, FPhysicsControlNames>& LimbParentSpaceControls, FPhysicsControlNames& AllBodyModifiers, TMap<FName, FPhysicsControlNames>& LimbBodyModifiers, class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FPhysicsControlLimbSetupData>& LimbSetupData, FPhysicsControlData WorldSpaceControlData, FPhysicsControlSettings WorldSpaceControlSettings, FPhysicsControlData ParentSpaceControlData, FPhysicsControlSettings ParentSpaceControlSettings, EPhysicsMovementType PhysicsMovementType, float GravityMultiplier, float PhysicsBlendWeight, class UMeshComponent* WorldComponent, FName WorldBoneName); // [0xb102740] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreateControlsAndBodyModifiersFromLimbBones(FPhysicsControlNames& AllWorldSpaceControls, TMap<FName, FPhysicsControlNames>& LimbWorldSpaceControls, FPhysicsControlNames& AllParentSpaceControls, TMap<FName, FPhysicsControlNames>& LimbParentSpaceControls, FPhysicsControlNames& AllBodyModifiers, TMap<FName, FPhysicsControlNames>& LimbBodyModifiers, class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FPhysicsControlLimbSetupData>& LimbSetupData, FPhysicsControlData WorldSpaceControlData, FPhysicsControlSettings WorldSpaceControlSettings, FPhysicsControlData ParentSpaceControlData, FPhysicsControlSettings ParentSpaceControlSettings, EPhysicsMovementType PhysicsMovementType, float GravityMultiplier, float PhysicsBlendWeight, class UMeshComponent* WorldComponent, FName WorldBoneName); // [0xb31db54] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateControl
-	// FName CreateControl(class UMeshComponent* ParentMeshComponent, FName ParentBoneName, class UMeshComponent* ChildMeshComponent, FName ChildBoneName, FPhysicsControlData ControlData, FPhysicsControlTarget ControlTarget, FPhysicsControlSettings ControlSettings, FName Set, FString NamePrefix); // [0xb102080] Final|Native|Public|BlueprintCallable 
+	// FName CreateControl(class UMeshComponent* ParentMeshComponent, FName ParentBoneName, class UMeshComponent* ChildMeshComponent, FName ChildBoneName, FPhysicsControlData ControlData, FPhysicsControlTarget ControlTarget, FPhysicsControlSettings ControlSettings, FName Set, FString NamePrefix); // [0xb31cf70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateBodyModifiersFromSkeletalMeshBelow
-	// TArray<FName> CreateBodyModifiersFromSkeletalMeshBelow(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName, bool bIncludeSelf, FName Set, EPhysicsMovementType MovementType, TEnumAsByte<ECollisionEnabled> CollisionType, float GravityMultiplier, float PhysicsBlendWeight, bool bUseSkeletalAnimation, bool bUpdateKinematicFromSimulation); // [0xb101d3c] Final|Native|Public|BlueprintCallable 
+	// TArray<FName> CreateBodyModifiersFromSkeletalMeshBelow(class USkeletalMeshComponent* SkeletalMeshComponent, FName BoneName, bool bIncludeSelf, FName Set, EPhysicsMovementType MovementType, TEnumAsByte<ECollisionEnabled> CollisionType, float GravityMultiplier, float PhysicsBlendWeight, bool bUseSkeletalAnimation, bool bUpdateKinematicFromSimulation); // [0xb31c9a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateBodyModifiersFromLimbBones
-	// TMap<FName, FPhysicsControlNames> CreateBodyModifiersFromLimbBones(FPhysicsControlNames& AllBodyModifiers, TMap<FName, FPhysicsControlLimbBones>& LimbBones, EPhysicsMovementType MovementType, TEnumAsByte<ECollisionEnabled> CollisionType, float GravityMultiplier, float PhysicsBlendWeight, bool bUseSkeletalAnimation, bool bUpdateKinematicFromSimulation); // [0xb101648] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// TMap<FName, FPhysicsControlNames> CreateBodyModifiersFromLimbBones(FPhysicsControlNames& AllBodyModifiers, TMap<FName, FPhysicsControlLimbBones>& LimbBones, EPhysicsMovementType MovementType, TEnumAsByte<ECollisionEnabled> CollisionType, float GravityMultiplier, float PhysicsBlendWeight, bool bUseSkeletalAnimation, bool bUpdateKinematicFromSimulation); // [0xb31c23c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.CreateBodyModifier
-	// FName CreateBodyModifier(class UMeshComponent* MeshComponent, FName BoneName, FName Set, EPhysicsMovementType MovementType, TEnumAsByte<ECollisionEnabled> CollisionType, float GravityMultiplier, float PhysicsBlendWeight, bool bUseSkeletalAnimation, bool bUpdateKinematicFromSimulation); // [0xb101390] Final|Native|Public|BlueprintCallable 
+	// FName CreateBodyModifier(class UMeshComponent* MeshComponent, FName BoneName, FName Set, EPhysicsMovementType MovementType, TEnumAsByte<ECollisionEnabled> CollisionType, float GravityMultiplier, float PhysicsBlendWeight, bool bUseSkeletalAnimation, bool bUpdateKinematicFromSimulation); // [0xb31bd70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.AddControlToSet
-	// void AddControlToSet(FPhysicsControlNames& NewSet, FName Control, FName Set);                                         // [0xb0fff2c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddControlToSet(FPhysicsControlNames& NewSet, FName Control, FName Set);                                         // [0xb31856c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.AddControlsToSet
-	// void AddControlsToSet(FPhysicsControlNames& NewSet, TArray<FName>& Controls, FName Set);                              // [0xb100198] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddControlsToSet(FPhysicsControlNames& NewSet, TArray<FName>& Controls, FName Set);                              // [0xb318804] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.AddBodyModifierToSet
-	// void AddBodyModifierToSet(FPhysicsControlNames& NewSet, FName BodyModifier, FName Set);                               // [0xb0ff888] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddBodyModifierToSet(FPhysicsControlNames& NewSet, FName BodyModifier, FName Set);                               // [0xb31786c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysicsControl.PhysicsControlComponent.AddBodyModifiersToSet
-	// void AddBodyModifiersToSet(FPhysicsControlNames& NewSet, TArray<FName>& BodyModifiers, FName Set);                    // [0xb0ffaf4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddBodyModifiersToSet(FPhysicsControlNames& NewSet, TArray<FName>& BodyModifiers, FName Set);                    // [0xb317b04] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/PhysicsControl.PhysicsControlProfileAsset
@@ -315,14 +315,14 @@ class UPhysicsControlProfileAsset : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0028   (0x0008)  MISSED
-	SDK_UNDEFINED(32,12181) /* TWeakObjectPtr<USkeletalMesh*> */ __um(PreviewSkeletalMesh);                        // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,12225) /* TWeakObjectPtr<USkeletalMesh*> */ __um(PreviewSkeletalMesh);                        // 0x0030   (0x0020)  
 	float                                              TestValue;                                                  // 0x0050   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x0054   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/PhysicsControl.PhysicsControlProfileAsset.Log
-	// void Log();                                                                                                           // [0xb12bfc0] Final|Native|Public  
+	// void Log();                                                                                                           // [0xb348cf8] Final|Native|Public  
 };
 
 /// Struct /Script/PhysicsControl.PhysicsControlLimbSetupData
@@ -388,20 +388,20 @@ struct FInitialCharacterControls
 };
 
 /// Class /Script/PhysicsControl.PhysicsControlInitializerComponent
-/// Size: 0x0180 (0x000290 - 0x000410)
+/// Size: 0x0180 (0x000220 - 0x0003A0)
 class UPhysicsControlInitializerComponent : public USceneComponent
 { 
 public:
-	FInitialCharacterControls                          InitialCharacterControls;                                   // 0x0290   (0x00D8)  
-	SDK_UNDEFINED(80,12182) /* TMap<FName, FInitialPhysicsControl> */ __um(InitialControls);                       // 0x0368   (0x0050)  
-	SDK_UNDEFINED(80,12183) /* TMap<FName, FInitialBodyModifier> */ __um(InitialBodyModifiers);                    // 0x03B8   (0x0050)  
-	bool                                               bCreateControlsAtBeginPlay;                                 // 0x0408   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0409   (0x0007)  MISSED
+	FInitialCharacterControls                          InitialCharacterControls;                                   // 0x0220   (0x00D8)  
+	SDK_UNDEFINED(80,12226) /* TMap<FName, FInitialPhysicsControl> */ __um(InitialControls);                       // 0x02F8   (0x0050)  
+	SDK_UNDEFINED(80,12227) /* TMap<FName, FInitialBodyModifier> */ __um(InitialBodyModifiers);                    // 0x0348   (0x0050)  
+	bool                                               bCreateControlsAtBeginPlay;                                 // 0x0398   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0399   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/PhysicsControl.PhysicsControlInitializerComponent.CreateControls
-	// void CreateControls(class UPhysicsControlComponent* PhysicsControlComponent);                                         // [0xb12bf20] Final|Native|Public|BlueprintCallable 
+	// void CreateControls(class UPhysicsControlComponent* PhysicsControlComponent);                                         // [0xb348c18] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PhysicsControl.PhysicsControlActor
@@ -643,7 +643,7 @@ struct FRigidBodyControlTarget
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FRigidBodyControlTargets
 { 
-	SDK_UNDEFINED(80,12184) /* TMap<FName, FRigidBodyControlTarget> */ __um(Targets);                              // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12228) /* TMap<FName, FRigidBodyControlTarget> */ __um(Targets);                              // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/PhysicsControl.RigidBodyKinematicTarget
@@ -660,7 +660,7 @@ struct FRigidBodyKinematicTarget
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FRigidBodyKinematicTargets
 { 
-	SDK_UNDEFINED(80,12185) /* TMap<FName, FRigidBodyKinematicTarget> */ __um(Targets);                            // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12229) /* TMap<FName, FRigidBodyKinematicTarget> */ __um(Targets);                            // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/PhysicsControl.AnimNode_RigidBodyWithControl
@@ -679,7 +679,7 @@ struct FAnimNode_RigidBodyWithControl : FAnimNode_SkeletalControlBase
 	bool                                               UpdateCacheEveryFrame;                                      // 0x02D4   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x02D5   (0x0003)  MISSED
 	FBoneReference                                     BaseBoneRef;                                                // 0x02D8   (0x000C)  
-	SDK_UNDEFINED(1,12186) /* TEnumAsByte<ECollisionChannel> */ __um(OverlapChannel);                              // 0x02E4   (0x0001)  
+	SDK_UNDEFINED(1,12230) /* TEnumAsByte<ECollisionChannel> */ __um(OverlapChannel);                              // 0x02E4   (0x0001)  
 	ESimulationSpace                                   SimulationSpace;                                            // 0x02E5   (0x0001)  
 	bool                                               bForceDisableCollisionBetweenConstraintBodies;              // 0x02E6   (0x0001)  
 	bool                                               bUseExternalClothCollision;                                 // 0x02E7   (0x0001)  
@@ -694,7 +694,7 @@ struct FAnimNode_RigidBodyWithControl : FAnimNode_SkeletalControlBase
 	float                                              EvaluationResetTime;                                        // 0x02F0   (0x0004)  
 	bool                                               bEnableControls;                                            // 0x02F4   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x3];                                       // 0x02F5   (0x0003)  MISSED
-	SDK_UNDEFINED(80,12187) /* TMap<FName, FName> */   __um(BoneToBodyNameMap);                                    // 0x02F8   (0x0050)  
+	SDK_UNDEFINED(80,12231) /* TMap<FName, FName> */   __um(BoneToBodyNameMap);                                    // 0x02F8   (0x0050)  
 	FRigidBodySetupData                                SetupData;                                                  // 0x0348   (0x0070)  
 	FRigidBodyControlAndBodyModifierCreations          AdditionalControlsAndBodyModifiers;                         // 0x03B8   (0x0020)  
 	FPhysicsControlSetUpdates                          AdditionalSets;                                             // 0x03D8   (0x0020)  

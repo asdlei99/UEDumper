@@ -36,31 +36,31 @@ public:
 
 	/// Functions
 	// Function /Script/Lobby.LobbyBeaconClient.ServerSetPartyOwner
-	// void ServerSetPartyOwner(FUniqueNetIdRepl InUniqueId, FUniqueNetIdRepl InPartyOwnerId);                               // [0x74bd4a8] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerSetPartyOwner(FUniqueNetIdRepl InUniqueId, FUniqueNetIdRepl InPartyOwnerId);                               // [0x73e3610] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/Lobby.LobbyBeaconClient.ServerNotifyJoiningServer
-	// void ServerNotifyJoiningServer();                                                                                     // [0x74bd45c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerNotifyJoiningServer();                                                                                     // [0x73e35c4] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/Lobby.LobbyBeaconClient.ServerLoginPlayer
-	// void ServerLoginPlayer(FString InSessionId, FUniqueNetIdRepl InUniqueId, FString UrlString);                          // [0x74bd174] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerLoginPlayer(FString InSessionId, FUniqueNetIdRepl InUniqueId, FString UrlString);                          // [0x73e336c] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/Lobby.LobbyBeaconClient.ServerKickPlayer
-	// void ServerKickPlayer(FUniqueNetIdRepl PlayerToKick, FText Reason);                                                   // [0x74bcef0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerKickPlayer(FUniqueNetIdRepl PlayerToKick, FText Reason);                                                   // [0x73e31b0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/Lobby.LobbyBeaconClient.ServerDisconnectFromLobby
-	// void ServerDisconnectFromLobby();                                                                                     // [0x74bcea4] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerDisconnectFromLobby();                                                                                     // [0x73e3164] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/Lobby.LobbyBeaconClient.ServerCheat
-	// void ServerCheat(FString Msg);                                                                                        // [0x74bcdec] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerCheat(FString Msg);                                                                                        // [0x73e3068] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/Lobby.LobbyBeaconClient.ClientWasKicked
-	// void ClientWasKicked(FText KickReason);                                                                               // [0x74bcc88] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientWasKicked(FText KickReason);                                                                               // [0x73e2ec4] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/Lobby.LobbyBeaconClient.ClientSetInviteFlags
-	// void ClientSetInviteFlags(FJoinabilitySettings Settings);                                                             // [0x74bcb4c] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientSetInviteFlags(FJoinabilitySettings Settings);                                                             // [0x73e2dfc] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/Lobby.LobbyBeaconClient.ClientPlayerLeft
-	// void ClientPlayerLeft(FUniqueNetIdRepl InUniqueId);                                                                   // [0x74bc9e4] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientPlayerLeft(FUniqueNetIdRepl InUniqueId);                                                                   // [0x73e2cf0] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/Lobby.LobbyBeaconClient.ClientPlayerJoined
-	// void ClientPlayerJoined(FText NewPlayerName, FUniqueNetIdRepl InUniqueId);                                            // [0x74bc830] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientPlayerJoined(FText NewPlayerName, FUniqueNetIdRepl InUniqueId);                                            // [0x73e2b58] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/Lobby.LobbyBeaconClient.ClientLoginComplete
-	// void ClientLoginComplete(FUniqueNetIdRepl InUniqueId, bool bWasSuccessful);                                           // [0x74bc5dc] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientLoginComplete(FUniqueNetIdRepl InUniqueId, bool bWasSuccessful);                                           // [0x73e29cc] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/Lobby.LobbyBeaconClient.ClientJoinGame
-	// void ClientJoinGame();                                                                                                // [0x2bc0e2c] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientJoinGame();                                                                                                // [0x2918dfc] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/Lobby.LobbyBeaconClient.ClientAckJoiningServer
-	// void ClientAckJoiningServer();                                                                                        // [0x6604b40] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientAckJoiningServer();                                                                                        // [0x6346498] Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Class /Script/Lobby.LobbyBeaconHost
@@ -69,7 +69,7 @@ class ALobbyBeaconHost : public AOnlineBeaconHostObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x02B8   (0x0008)  MISSED
-	SDK_UNDEFINED(32,2585) /* TWeakObjectPtr<UClass*> */ __um(LobbyStateClass);                                    // 0x02C0   (0x0020)  
+	SDK_UNDEFINED(32,2578) /* TWeakObjectPtr<UClass*> */ __um(LobbyStateClass);                                    // 0x02C0   (0x0020)  
 	class ALobbyBeaconState*                           LobbyState;                                                 // 0x02E0   (0x0008)  
 };
 
@@ -78,7 +78,7 @@ public:
 class ALobbyBeaconPlayerState : public AInfo
 { 
 public:
-	SDK_UNDEFINED(24,2586) /* FText */                 __um(DisplayName);                                          // 0x0290   (0x0018)  
+	SDK_UNDEFINED(24,2579) /* FText */                 __um(DisplayName);                                          // 0x0290   (0x0018)  
 	FUniqueNetIdRepl                                   UniqueID;                                                   // 0x02A8   (0x0030)  
 	FUniqueNetIdRepl                                   PartyOwnerUniqueId;                                         // 0x02D8   (0x0030)  
 	bool                                               bInLobby;                                                   // 0x0308   (0x0001)  
@@ -89,11 +89,11 @@ public:
 
 	/// Functions
 	// Function /Script/Lobby.LobbyBeaconPlayerState.OnRep_UniqueId
-	// void OnRep_UniqueId();                                                                                                // [0x74bcda0] Final|Native|Protected 
+	// void OnRep_UniqueId();                                                                                                // [0x73e301c] Final|Native|Protected 
 	// Function /Script/Lobby.LobbyBeaconPlayerState.OnRep_PartyOwner
-	// void OnRep_PartyOwner();                                                                                              // [0x74bcd68] Final|Native|Protected 
+	// void OnRep_PartyOwner();                                                                                              // [0x73e2fe4] Final|Native|Protected 
 	// Function /Script/Lobby.LobbyBeaconPlayerState.OnRep_InLobby
-	// void OnRep_InLobby();                                                                                                 // [0x74bcd1c] Final|Native|Protected 
+	// void OnRep_InLobby();                                                                                                 // [0x73e2f98] Final|Native|Protected 
 };
 
 /// Struct /Script/Lobby.LobbyPlayerStateActorInfo
@@ -130,8 +130,8 @@ public:
 
 	/// Functions
 	// Function /Script/Lobby.LobbyBeaconState.OnRep_WaitForPlayersTimeRemaining
-	// void OnRep_WaitForPlayersTimeRemaining();                                                                             // [0x74bcdd8] Final|Native|Protected 
+	// void OnRep_WaitForPlayersTimeRemaining();                                                                             // [0x73e3054] Final|Native|Protected 
 	// Function /Script/Lobby.LobbyBeaconState.OnRep_LobbyStarted
-	// void OnRep_LobbyStarted();                                                                                            // [0x74bcd54] Final|Native|Protected 
+	// void OnRep_LobbyStarted();                                                                                            // [0x73e2fd0] Final|Native|Protected 
 };
 

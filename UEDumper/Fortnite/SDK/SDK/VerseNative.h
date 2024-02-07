@@ -55,19 +55,19 @@ public:
 
 	/// Functions
 	// Function /Script/VerseNative.VerseStmLibrary.StmSave
-	// void StmSave(FakeType& Property);                                                                                     // [0x70be538] Final|Native|Static|Public|HasOutParms 
+	// void StmSave(FakeType& Property);                                                                                     // [0x6f90a34] Final|Native|Static|Public|HasOutParms 
 	// Function /Script/VerseNative.VerseStmLibrary.StmRollback
-	// void StmRollback();                                                                                                   // [0x70be33c] Final|Native|Static|Public 
+	// void StmRollback();                                                                                                   // [0x6f90838] Final|Native|Static|Public 
 	// Function /Script/VerseNative.VerseStmLibrary.StmLeaveFrame
-	// void StmLeaveFrame();                                                                                                 // [0x70be328] Final|Native|Static|Public 
+	// void StmLeaveFrame();                                                                                                 // [0x6f90824] Final|Native|Static|Public 
 	// Function /Script/VerseNative.VerseStmLibrary.StmEnterFrame
-	// void StmEnterFrame();                                                                                                 // [0x70be2d8] Final|Native|Static|Public 
+	// void StmEnterFrame();                                                                                                 // [0x6f907d4] Final|Native|Static|Public 
 	// Function /Script/VerseNative.VerseStmLibrary.StmEnabled
-	// void StmEnabled();                                                                                                    // [0x70be244] Final|Native|Static|Public 
+	// void StmEnabled();                                                                                                    // [0x6f90700] Final|Native|Static|Public 
 	// Function /Script/VerseNative.VerseStmLibrary.StmCommit
-	// void StmCommit();                                                                                                     // [0x70bddfc] Final|Native|Static|Public 
+	// void StmCommit();                                                                                                     // [0x6f902b8] Final|Native|Static|Public 
 	// Function /Script/VerseNative.VerseStmLibrary.StmBegin
-	// void StmBegin();                                                                                                      // [0x70bdde8] Final|Native|Static|Public 
+	// void StmBegin();                                                                                                      // [0x6f902a4] Final|Native|Static|Public 
 };
 
 /// Struct /Script/VerseNative.VerseIntRange

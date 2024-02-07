@@ -86,16 +86,16 @@ class UGET_FatalDamage_C : public UGet_DirectDamageParent_C
 public:
 };
 
-/// Class /Game/GameplayEffectTemplates/GET_FallingDamage.GET_FallingDamage_C
+/// Class /Game/GameplayEffectTemplates/GET_DirectVehicleDamage.GET_DirectVehicleDamage_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGET_FallingDamage_C : public UGet_DirectDamageParent_C
+class UGET_DirectVehicleDamage_C : public UGet_DirectDamageParent_C
 { 
 public:
 };
 
-/// Class /Game/GameplayEffectTemplates/GET_DirectVehicleDamage.GET_DirectVehicleDamage_C
+/// Class /Game/GameplayEffectTemplates/GET_FallingDamage.GET_FallingDamage_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
-class UGET_DirectVehicleDamage_C : public UGet_DirectDamageParent_C
+class UGET_FallingDamage_C : public UGet_DirectDamageParent_C
 { 
 public:
 };

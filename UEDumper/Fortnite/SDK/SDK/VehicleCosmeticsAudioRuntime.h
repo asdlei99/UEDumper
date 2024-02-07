@@ -33,21 +33,21 @@ class AVehicleCosmeticsAudioController : public AFortVehicleAudioController
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0300   (0x0008)  MISSED
-	SDK_UNDEFINED(32,12580) /* TWeakObjectPtr<UVehicleAudioCosmeticData*> */ __um(CachedEngineAudioItem);          // 0x0308   (0x0020)  
+	SDK_UNDEFINED(32,12633) /* TWeakObjectPtr<UVehicleAudioCosmeticData*> */ __um(CachedEngineAudioItem);          // 0x0308   (0x0020)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0328   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.UpdateAudioData
-	// void UpdateAudioData(class UVehicleAudioCosmeticData* CosmeticData);                                                  // [0xa854368] Final|Native|Public|BlueprintCallable 
+	// void UpdateAudioData(class UVehicleAudioCosmeticData* CosmeticData);                                                  // [0xaa3095c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.HandleEngineAudioItemUpdated
-	// void HandleEngineAudioItemUpdated(TWeakObjectPtr<UVehicleCosmeticsItemDefinition_EngineAudio*> EngineAudioItem);      // [0x32ea5c4] Final|Native|Public  
+	// void HandleEngineAudioItemUpdated(TWeakObjectPtr<UVehicleCosmeticsItemDefinition_EngineAudio*> EngineAudioItem);      // [0xaa306b8] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.BP_OnUpdateAudioData
-	// void BP_OnUpdateAudioData(class UVehicleAudioCosmeticData* CosmeticData);                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnUpdateAudioData(class UVehicleAudioCosmeticData* CosmeticData);                                             // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.BP_OnAudioDataLoaded
-	// void BP_OnAudioDataLoaded(class USoundBase* sound);                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnAudioDataLoaded(class USoundBase* sound);                                                                   // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.BP_OnAudioDataEjected
-	// void BP_OnAudioDataEjected();                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnAudioDataEjected();                                                                                         // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/VehicleCosmeticsAudioRuntime.DistancePriority
@@ -78,13 +78,13 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager.UnregisterVehcle
-	// void UnregisterVehcle(TScriptInterface<Class> Vehicle);                                                               // [0x33f629c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void UnregisterVehcle(TScriptInterface<Class> Vehicle);                                                               // [0x1fda454] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager.SetVehicleBudgetOverride
-	// void SetVehicleBudgetOverride(int32_t NewBudget);                                                                     // [0xa8542ec] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetVehicleBudgetOverride(int32_t NewBudget);                                                                     // [0xaa308a0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager.RemoveVehicleBudgetOverride
-	// void RemoveVehicleBudgetOverride();                                                                                   // [0xa8542d0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RemoveVehicleBudgetOverride();                                                                                   // [0xaa30884] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager.RegisterVehicleWithAsset
-	// void RegisterVehicleWithAsset(FVehicleCosmeticLoadRequestInfo& RequestInfo);                                          // [0xa854238] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void RegisterVehicleWithAsset(FVehicleCosmeticLoadRequestInfo& RequestInfo);                                          // [0xaa307ec] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioUser
@@ -98,8 +98,8 @@ public:
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FVehicleCosmeticLoadRequestInfo
 { 
-	SDK_UNDEFINED(16,12581) /* TScriptInterface<Class> */ __um(User);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(32,12582) /* TWeakObjectPtr<USoundBase*> */ __um(sound);                                         // 0x0010   (0x0020)  
+	SDK_UNDEFINED(16,12634) /* TScriptInterface<Class> */ __um(User);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(32,12635) /* TWeakObjectPtr<USoundBase*> */ __um(sound);                                         // 0x0010   (0x0020)  
 	bool                                               bIsClientEquippedCosmetic;                                  // 0x0030   (0x0001)  
 	bool                                               bIsIPCosmetic;                                              // 0x0031   (0x0001)  
 	bool                                               bIsClientPartyCosmetic;                                     // 0x0032   (0x0001)  

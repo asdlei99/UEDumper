@@ -59,24 +59,24 @@ struct FViewerInfo
 };
 
 /// Class /Script/MassLOD.MassLODSubsystem
-/// Size: 0x00C8 (0x000048 - 0x000110)
-class UMassLODSubsystem : public UMassTickableSubsystemBase
+/// Size: 0x00C8 (0x000038 - 0x000100)
+class UMassLODSubsystem : public UMassSubsystemBase
 { 
 public:
-	bool                                               bGatherPlayerControllers : 1;                               // 0x0048:0 (0x0001)  
-	bool                                               bGatherStreamingSources : 1;                                // 0x0048:1 (0x0001)  
-	bool                                               bAllowNonPlayerViwerActors : 1;                             // 0x0048:2 (0x0001)  
-	bool                                               bUsePlayerPawnLocationInsteadOfCamera : 1;                  // 0x0048:3 (0x0001)  
-	unsigned char                                      UnknownData00_4[0x7];                                       // 0x0049   (0x0007)  MISSED
-	TArray<FViewerInfo>                                Viewers;                                                    // 0x0050   (0x0010)  
-	SDK_UNDEFINED(80,14143) /* TMap<uint32_t, FMassViewerHandle> */ __um(ViewerMap);                               // 0x0060   (0x0050)  
-	TArray<class AActor*>                              RegisteredActorViewers;                                     // 0x00B0   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x50];                                      // 0x00C0   (0x0050)  MISSED
+	bool                                               bGatherPlayerControllers : 1;                               // 0x0038:0 (0x0001)  
+	bool                                               bGatherStreamingSources : 1;                                // 0x0038:1 (0x0001)  
+	bool                                               bAllowNonPlayerViwerActors : 1;                             // 0x0038:2 (0x0001)  
+	bool                                               bUsePlayerPawnLocationInsteadOfCamera : 1;                  // 0x0038:3 (0x0001)  
+	unsigned char                                      UnknownData00_4[0x7];                                       // 0x0039   (0x0007)  MISSED
+	TArray<FViewerInfo>                                Viewers;                                                    // 0x0040   (0x0010)  
+	SDK_UNDEFINED(80,14257) /* TMap<uint32_t, FMassViewerHandle> */ __um(ViewerMap);                               // 0x0050   (0x0050)  
+	TArray<class AActor*>                              RegisteredActorViewers;                                     // 0x00A0   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x50];                                      // 0x00B0   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/MassLOD.MassLODSubsystem.OnPlayerControllerEndPlay
-	// void OnPlayerControllerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                       // [0xa6f3c28] Final|Native|Protected 
+	// void OnPlayerControllerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                       // [0xa8a3b70] Final|Native|Protected 
 };
 
 /// Class /Script/MassLOD.MassLODCollectorTrait
@@ -171,7 +171,7 @@ struct FMassViewerInfoFragment : FMassFragment
 struct FMassVariableTickChunkFragment : FMassChunkFragment
 { 
 	bool                                               bShouldTickThisFrame;                                       // 0x0000   (0x0001)  
-	SDK_UNDEFINED(1,14144) /* TEnumAsByte<EMassLOD> */ __um(LOD);                                                  // 0x0001   (0x0001)  
+	SDK_UNDEFINED(1,14258) /* TEnumAsByte<EMassLOD> */ __um(LOD);                                                  // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0002   (0x0002)  MISSED
 	float                                              TimeUntilNextTick;                                          // 0x0004   (0x0004)  
 	int32_t                                            LastChunkSerialModificationNumber;                          // 0x0008   (0x0004)  

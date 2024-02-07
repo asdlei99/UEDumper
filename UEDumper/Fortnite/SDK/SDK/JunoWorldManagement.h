@@ -93,7 +93,7 @@ public:
 	bool                                               bEnableWorldManagerInPIE;                                   // 0x0031   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0032   (0x0002)  MISSED
 	int32_t                                            WorldPersistenceCompatibilityVersion;                       // 0x0034   (0x0004)  
-	SDK_UNDEFINED(16,11764) /* FString */              __um(DeviceProfileSuffix);                                  // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,11801) /* FString */              __um(DeviceProfileSuffix);                                  // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x28];                                      // 0x0048   (0x0028)  MISSED
 	class UJunoWorldManagementHandler*                 WorldManagementHandler;                                     // 0x0070   (0x0008)  
 };
@@ -128,26 +128,26 @@ class UJunoWorldMCPProto_Profile : public UMcpProfile
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x0140   (0x0030)  MISSED
-	SDK_UNDEFINED(80,11765) /* TMap<FString, UJunoUserWorldView*> */ __um(WorldViewMap);                           // 0x0170   (0x0050)  
+	SDK_UNDEFINED(80,11802) /* TMap<FString, UJunoUserWorldView*> */ __um(WorldViewMap);                           // 0x0170   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_UpdateWorldSysMetadata
-	// void ProtoJuno_UpdateWorldSysMetadata(FString WorldId, FJsonObjectWrapper SysMetadata, FDedicatedServerUrlContext& Context); // [0xffff8009b6310000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_UpdateWorldSysMetadata(FString WorldId, FJsonObjectWrapper SysMetadata, FDedicatedServerUrlContext& Context); // [0xffff8008b2970000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_UpdateWorldMetadata
-	// void ProtoJuno_UpdateWorldMetadata(FString WorldId, FJsonObjectWrapper WorldMetadata, FClientUrlContext& Context);    // [0xffff8009b6310000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void ProtoJuno_UpdateWorldMetadata(FString WorldId, FJsonObjectWrapper WorldMetadata, FClientUrlContext& Context);    // [0xffff8008b2970000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_UpdateWorldLastAccessTime
-	// void ProtoJuno_UpdateWorldLastAccessTime(FString WorldId, FClientUrlContext& Context);                                // [0xffff8009b6310000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_UpdateWorldLastAccessTime(FString WorldId, FClientUrlContext& Context);                                // [0xffff8008b2970000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_SetWorldName
-	// void ProtoJuno_SetWorldName(FString WorldId, FString Name, FClientUrlContext& Context);                               // [0xffff8009b6310000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_SetWorldName(FString WorldId, FString Name, FClientUrlContext& Context);                               // [0xffff8008b2970000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_MarkWorldDeleted
-	// void ProtoJuno_MarkWorldDeleted(FString WorldId, FClientUrlContext& Context);                                         // [0xffff8009b6310000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_MarkWorldDeleted(FString WorldId, FClientUrlContext& Context);                                         // [0xffff8008b2970000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_DeleteWorld
-	// void ProtoJuno_DeleteWorld(FString WorldId, FClientUrlContext& Context);                                              // [0xffff8009b6310000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_DeleteWorld(FString WorldId, FClientUrlContext& Context);                                              // [0xffff8008b2970000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_DeleteAllWorlds
-	// void ProtoJuno_DeleteAllWorlds(FClientUrlContext& Context);                                                           // [0xffff8009b6310000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
+	// void ProtoJuno_DeleteAllWorlds(FClientUrlContext& Context);                                                           // [0xffff8008b2970000] Net|NetReliableNetRequest|Native|Event|Public|HasOutParms 
 	// Function /Script/JunoWorldManagement.JunoWorldMCPProto_Profile.ProtoJuno_CreateWorld
-	// void ProtoJuno_CreateWorld(FJsonObjectWrapper world_metadata, FClientUrlContext& Context);                            // [0xffff8009b6310000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
+	// void ProtoJuno_CreateWorld(FJsonObjectWrapper world_metadata, FClientUrlContext& Context);                            // [0xffff8008b2970000] Final|Net|NetReliableNetRequest|Native|Event|Private|HasOutParms 
 };
 
 /// Class /Script/JunoWorldManagement.JunoWorldManagementHandler_WorldArbitrationService
@@ -155,7 +155,7 @@ public:
 class UJunoWorldManagementHandler_WorldArbitrationService : public UJunoWorldManagementHandler
 { 
 public:
-	SDK_UNDEFINED(80,11766) /* TMap<FString, UJunoUserWorldView*> */ __um(WorldViewMap);                           // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,11803) /* TMap<FString, UJunoUserWorldView*> */ __um(WorldViewMap);                           // 0x0028   (0x0050)  
 	unsigned char                                      UnknownData00_5[0x50];                                      // 0x0078   (0x0050)  MISSED
 	uint32_t                                           GetAllAccessibleWorldsCacheTime;                            // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData01_6[0xC];                                       // 0x00CC   (0x000C)  MISSED
@@ -165,7 +165,7 @@ public:
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FJunoWorldSysMetadata
 { 
-	SDK_UNDEFINED(16,11767) /* FString */              __um(McpBackend);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11804) /* FString */              __um(McpBackend);                                           // 0x0000   (0x0010)  
 	int32_t                                            DeltasRevisionIndex;                                        // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0014   (0x0004)  MISSED
 };
@@ -174,7 +174,7 @@ struct FJunoWorldSysMetadata
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FJunoWorldGameplayProperty
 { 
-	SDK_UNDEFINED(16,11768) /* FString */              __um(ID);                                                   // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11805) /* FString */              __um(ID);                                                   // 0x0000   (0x0010)  
 	FName                                              Value;                                                      // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0014   (0x0004)  MISSED
 };
@@ -185,8 +185,8 @@ struct FJunoWorldGameMetadata
 { 
 	int32_t                                            PersistenceVersion;                                         // 0x0000   (0x0004)  
 	int32_t                                            AdventureSeed;                                              // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,11769) /* FString */              __um(Title);                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,11770) /* FString */              __um(MapName);                                              // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,11806) /* FString */              __um(Title);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,11807) /* FString */              __um(MapName);                                              // 0x0018   (0x0010)  
 	TArray<FJunoWorldGameplayProperty>                 GameplayProperties;                                         // 0x0028   (0x0010)  
 	FJsonObjectWrapper                                 DevProperties;                                              // 0x0038   (0x0020)  
 };
@@ -195,7 +195,7 @@ struct FJunoWorldGameMetadata
 /// Size: 0x0088 (0x000000 - 0x000088)
 struct FJunoWorldMetadata
 { 
-	SDK_UNDEFINED(16,11771) /* FString */              __um(ID);                                                   // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11808) /* FString */              __um(ID);                                                   // 0x0000   (0x0010)  
 	FJunoWorldSysMetadata                              Sys;                                                        // 0x0010   (0x0018)  
 	FJunoWorldGameMetadata                             Game;                                                       // 0x0028   (0x0058)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0080   (0x0008)  MISSED
@@ -205,7 +205,7 @@ struct FJunoWorldMetadata
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FJunoWorldGameMetadata_v0_Initial
 { 
-	SDK_UNDEFINED(80,11772) /* TMap<FString, FName> */ __um(GameplayProperties);                                   // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,11809) /* TMap<FString, FName> */ __um(GameplayProperties);                                   // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/JunoWorldManagement.JunoWorldQuery
@@ -227,6 +227,6 @@ struct FJunoWorldQueryResult
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FJunoWorldMCPProto_CreateWorldResult
 { 
-	SDK_UNDEFINED(16,11773) /* FString */              __um(WorldId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,11810) /* FString */              __um(WorldId);                                              // 0x0000   (0x0010)  
 };
 

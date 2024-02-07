@@ -10,6 +10,16 @@
 /// dependency: FortniteGame
 /// dependency: GameplayAbilities
 
+/// Class /Game/Balance/Physics/BP_PhysicsCollisionHandler.BP_PhysicsCollisionHandler_C
+/// Size: 0x0000 (0x0000F8 - 0x0000F8)
+class UBP_PhysicsCollisionHandler_C : public UFortPhysicsCollisionHandler
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 248;
+
+public:
+};
+
 /// Class /Game/Balance/GameplayEffects/GE_HidePlayerPawn_Default.GE_HidePlayerPawn_Default_C
 /// Size: 0x0000 (0x000A68 - 0x000A68)
 class UGE_HidePlayerPawn_Default_C : public UGameplayEffect
@@ -36,16 +46,6 @@ class ABP_FortPhysicsObjectManager_C : public AFortPhysicsObjectManager
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 936;
-
-public:
-};
-
-/// Class /Game/Balance/Physics/BP_PhysicsCollisionHandler.BP_PhysicsCollisionHandler_C
-/// Size: 0x0000 (0x0000F8 - 0x0000F8)
-class UBP_PhysicsCollisionHandler_C : public UFortPhysicsCollisionHandler
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 248;
 
 public:
 };

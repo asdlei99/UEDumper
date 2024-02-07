@@ -20,11 +20,11 @@ public:
 
 	/// Functions
 	// Function /Script/AndroidFileServer.AndroidFileServerBPLibrary.StopFileServer
-	// bool StopFileServer(bool bUSB, bool bNetwork);                                                                           // [0xc553874] Final|Native|Static|Public|BlueprintCallable 
+	// bool StopFileServer(bool bUSB, bool bNetwork);                                                                           // [0xc9363bc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AndroidFileServer.AndroidFileServerBPLibrary.StartFileServer
-	// bool StartFileServer(bool bUSB, bool bNetwork, int32_t Port);                                                            // [0xc553788] Final|Native|Static|Public|BlueprintCallable 
+	// bool StartFileServer(bool bUSB, bool bNetwork, int32_t Port);                                                            // [0xc93620c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AndroidFileServer.AndroidFileServerBPLibrary.IsFileServerRunning
-	// TEnumAsByte<EAFSActiveType> IsFileServerRunning();                                                                       // [0x2f1d290] Final|Native|Static|Public|BlueprintCallable 
+	// TEnumAsByte<EAFSActiveType> IsFileServerRunning();                                                                       // [0x2bbcc84] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Enum /Script/AndroidFileServer.EAFSActiveType

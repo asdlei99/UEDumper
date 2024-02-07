@@ -18,8 +18,8 @@ public:
 
 	/// Functions
 	// Function /Script/PropManipulation.PropManipulationNativeComponent.SetControlledObjectsVisibilityAndCollision
-	// void SetControlledObjectsVisibilityAndCollision(TArray<ABuildingSMActor*> InObjectsOfControl, bool InNewVisibility);  // [0xb5c41f4] Final|Native|Protected|BlueprintCallable 
+	// void SetControlledObjectsVisibilityAndCollision(TArray<ABuildingSMActor*> InObjectsOfControl, bool InNewVisibility);  // [0xb80b9ac] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PropManipulation.PropManipulationNativeComponent.RefreshTrackedActors
-	// void RefreshTrackedActors(class UPlayspaceComponent_SpatialActorTracker* InPlaySpaceComponent_SpatialActorTracker);   // [0xb47a490] Final|Native|Protected|BlueprintCallable 
+	// void RefreshTrackedActors(class UPlayspaceComponent_SpatialActorTracker* InPlaySpaceComponent_SpatialActorTracker);   // [0xb6b5478] Final|Native|Protected|BlueprintCallable 
 };
 

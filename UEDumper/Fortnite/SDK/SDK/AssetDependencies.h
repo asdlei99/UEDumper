@@ -20,6 +20,6 @@ public:
 	TArray<FName>                                      ExcludedPackages;                                           // 0x0090   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x50];                                      // 0x00A0   (0x0050)  MISSED
 	TArray<class UClass*>                              ClassIgnoreList;                                            // 0x00F0   (0x0010)  
-	SDK_UNDEFINED(80,11559) /* TSet<UClass*> */        __um(ClassIgnoreListSet);                                   // 0x0100   (0x0050)  
+	SDK_UNDEFINED(80,11592) /* TSet<UClass*> */        __um(ClassIgnoreListSet);                                   // 0x0100   (0x0050)  
 };
 

@@ -11,13 +11,13 @@
 /// dependency: Engine
 
 /// Class /Script/EntityLevel.CoreEntitySceneComponent
-/// Size: 0x0010 (0x000570 - 0x000580)
+/// Size: 0x0010 (0x000500 - 0x000510)
 class UCoreEntitySceneComponent : public UPrimitiveComponent
 { 
 public:
-	class ACoreEntityLevel*                            EntityLevel;                                                // 0x0570   (0x0008)  
-	bool                                               bIgnoreAttachmentUponPaste;                                 // 0x0578   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0579   (0x0007)  MISSED
+	class ACoreEntityLevel*                            EntityLevel;                                                // 0x0500   (0x0008)  
+	bool                                               bIgnoreAttachmentUponPaste;                                 // 0x0508   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0509   (0x0007)  MISSED
 };
 
 /// Class /Script/EntityLevel.CoreEntity

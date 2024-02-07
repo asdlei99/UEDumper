@@ -18,26 +18,26 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationBudgetAllocator.AnimationBudgetBlueprintLibrary.SetAnimationBudgetParameters
-	// void SetAnimationBudgetParameters(class UObject* WorldContextObject, FAnimationBudgetAllocatorParameters& InParameters); // [0x6f68824] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// void SetAnimationBudgetParameters(class UObject* WorldContextObject, FAnimationBudgetAllocatorParameters& InParameters); // [0x6ddca48] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 	// Function /Script/AnimationBudgetAllocator.AnimationBudgetBlueprintLibrary.EnableAnimationBudget
-	// void EnableAnimationBudget(class UObject* WorldContextObject, bool bEnabled);                                         // [0x6f6871c] Final|Native|Static|Private|BlueprintCallable 
+	// void EnableAnimationBudget(class UObject* WorldContextObject, bool bEnabled);                                         // [0x6ddc8bc] Final|Native|Static|Private|BlueprintCallable 
 };
 
 /// Class /Script/AnimationBudgetAllocator.SkeletalMeshComponentBudgeted
-/// Size: 0x0020 (0x000FA0 - 0x000FC0)
+/// Size: 0x0020 (0x000F30 - 0x000F50)
 class USkeletalMeshComponentBudgeted : public USkeletalMeshComponent
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0FA0   (0x0018)  MISSED
-	bool                                               bAutoRegisterWithBudgetAllocator : 1;                       // 0x0FB8:0 (0x0001)  
-	bool                                               bAutoCalculateSignificance : 1;                             // 0x0FB8:1 (0x0001)  
-	bool                                               bShouldUseActorRenderedFlag : 1;                            // 0x0FB8:2 (0x0001)  
-	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0FB9   (0x0007)  MISSED
+	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0F30   (0x0018)  MISSED
+	bool                                               bAutoRegisterWithBudgetAllocator : 1;                       // 0x0F48:0 (0x0001)  
+	bool                                               bAutoCalculateSignificance : 1;                             // 0x0F48:1 (0x0001)  
+	bool                                               bShouldUseActorRenderedFlag : 1;                            // 0x0F48:2 (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0F49   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/AnimationBudgetAllocator.SkeletalMeshComponentBudgeted.SetAutoRegisterWithBudgetAllocator
-	// void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator);                                     // [0x6f68954] Final|Native|Public|BlueprintCallable 
+	// void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator);                                     // [0x6ddcbb8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AnimationBudgetAllocator.AnimationBudgetAllocatorParameters

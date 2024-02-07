@@ -30,9 +30,9 @@ enum class EOptionalLabel : uint8_t
 class UFortStoreSelectionData : public UFortGameFeatureData
 { 
 public:
-	SDK_UNDEFINED(32,15226) /* TWeakObjectPtr<UClass*> */ __um(StoreSelectionScreenClass);                         // 0x0530   (0x0020)  
-	SDK_UNDEFINED(24,15227) /* FText */                __um(RegularStoreSelectedText);                             // 0x0550   (0x0018)  
-	SDK_UNDEFINED(24,15228) /* FText */                __um(NonRegularStoreSelectedText);                          // 0x0568   (0x0018)  
+	SDK_UNDEFINED(32,15321) /* TWeakObjectPtr<UClass*> */ __um(StoreSelectionScreenClass);                         // 0x0530   (0x0020)  
+	SDK_UNDEFINED(24,15322) /* FText */                __um(RegularStoreSelectedText);                             // 0x0550   (0x0018)  
+	SDK_UNDEFINED(24,15323) /* FText */                __um(NonRegularStoreSelectedText);                          // 0x0568   (0x0018)  
 };
 
 /// Class /Script/StoreSelectionUI.FortStoreSelectionOptionEntry
@@ -50,8 +50,8 @@ public:
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FItemData
 { 
-	SDK_UNDEFINED(32,15229) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                          // 0x0000   (0x0020)  
-	SDK_UNDEFINED(24,15230) /* FText */                __um(Name);                                                 // 0x0020   (0x0018)  
+	SDK_UNDEFINED(32,15324) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                          // 0x0000   (0x0020)  
+	SDK_UNDEFINED(24,15325) /* FText */                __um(Name);                                                 // 0x0020   (0x0018)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0038   (0x0008)  MISSED
 };
 
@@ -69,10 +69,10 @@ public:
 	class UCommonButtonLegacy*                         Button_Continue;                                            // 0x0568   (0x0008)  
 	class UCommonButtonLegacy*                         Button_Cancel;                                              // 0x0570   (0x0008)  
 	class UCommonRichTextBlock*                        RichText_InitiallySelectedHint;                             // 0x0578   (0x0008)  
-	SDK_UNDEFINED(16,15231) /* TScriptInterface<Class> */ __um(PurchaseChoiceOwner);                               // 0x0580   (0x0010)  
+	SDK_UNDEFINED(16,15326) /* TScriptInterface<Class> */ __um(PurchaseChoiceOwner);                               // 0x0580   (0x0010)  
 	TArray<FItemData>                                  StoreOptions;                                               // 0x0590   (0x0010)  
-	SDK_UNDEFINED(32,15232) /* TWeakObjectPtr<UFortMtxOfferData*> */ __um(SoftDisplayAsset);                       // 0x05A0   (0x0020)  
+	SDK_UNDEFINED(32,15327) /* TWeakObjectPtr<UFortMtxOfferData*> */ __um(SoftDisplayAsset);                       // 0x05A0   (0x0020)  
 	FItemData                                          ItemData;                                                   // 0x05C0   (0x0300)  
-	SDK_UNDEFINED(48,15233) /* FText */                __um(OptionalLabels);                                       // 0x08C0   (0x0030)  
+	SDK_UNDEFINED(48,15328) /* FText */                __um(OptionalLabels);                                       // 0x08C0   (0x0030)  
 };
 

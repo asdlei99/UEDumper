@@ -27,17 +27,17 @@ class AJunoGameDynamicMobileUIDirector : public ADynamicBacchusHUDDirector
 public:
 	unsigned char                                      UnknownData00_2[0x20];                                      // 0x0478   (0x0020)  MISSED
 	FGameplayTagContainer                              HUDTagsToSkip;                                              // 0x0498   (0x0020)  
-	SDK_UNDEFINED(24,14091) /* FText */                __um(ForcedPresetName);                                     // 0x04B8   (0x0018)  
+	SDK_UNDEFINED(24,14205) /* FText */                __um(ForcedPresetName);                                     // 0x04B8   (0x0018)  
 	FGameplayTag                                       ForcedProfile;                                              // 0x04D0   (0x0004)  
 	FGameplayTag                                       ForcedProfileContainer;                                     // 0x04D4   (0x0004)  
-	SDK_UNDEFINED(80,14092) /* TMap<FGameplayTag, UDynamicUIScene*> */ __um(HUDContextVisibilityTagToScene);       // 0x04D8   (0x0050)  
+	SDK_UNDEFINED(80,14206) /* TMap<FGameplayTag, UDynamicUIScene*> */ __um(HUDContextVisibilityTagToScene);       // 0x04D8   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0528   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoGameMobileUI.JunoGameDynamicMobileUIDirector.UpdateHUDLayoutContexts
-	// void UpdateHUDLayoutContexts(FGameplayTagContainer ContextsToAdd, FGameplayTagContainer ContextsToRemove);            // [0xbdc42c0] Final|Native|Public|BlueprintCallable 
+	// void UpdateHUDLayoutContexts(FGameplayTagContainer ContextsToAdd, FGameplayTagContainer ContextsToRemove);            // [0xc108020] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoGameMobileUI.JunoGameDynamicMobileUIDirector.BP_OnBuildingModeChanged
-	// void BP_OnBuildingModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                 // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
+	// void BP_OnBuildingModeChanged(FJunoEvent_BuildingModeChanged& Event);                                                 // [0x2047e54] Event|Public|HasOutParms|BlueprintEvent 
 };
 

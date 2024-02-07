@@ -93,7 +93,7 @@ struct FNetPhysicsMoveTraceTriggerParams
 	ENetPhysicsMoveResponseFrame                       Frame;                                                      // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0019   (0x0003)  MISSED
 	float                                              Length;                                                     // 0x001C   (0x0004)  
-	SDK_UNDEFINED(1,9250) /* TEnumAsByte<ECollisionChannel> */ __um(CollisionChannel);                             // 0x0020   (0x0001)  
+	SDK_UNDEFINED(1,9272) /* TEnumAsByte<ECollisionChannel> */ __um(CollisionChannel);                             // 0x0020   (0x0001)  
 	FCollisionResponseContainer                        ResponseParams;                                             // 0x0021   (0x0020)  
 	bool                                               bProportionalToHitDistance;                                 // 0x0041   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x0042   (0x0006)  MISSED
@@ -133,7 +133,7 @@ struct FNetPhysicsMoveResponse
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FNetPhysicsMoveConfigEntry
 { 
-	SDK_UNDEFINED(16,9251) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,9273) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 	TArray<FNetPhysicsMoveTrigger>                     Triggers;                                                   // 0x0010   (0x0010)  
 	TArray<FNetPhysicsMoveResponse>                    Responses;                                                  // 0x0020   (0x0010)  
 };

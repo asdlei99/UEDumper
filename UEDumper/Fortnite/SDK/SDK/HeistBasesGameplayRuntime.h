@@ -17,18 +17,18 @@
 class UFortGameStateComponent_HeistDisplayCaseItemManager : public UFortGameStateComponent
 { 
 public:
-	SDK_UNDEFINED(16,13856) /* FMulticastInlineDelegate */ __um(OnDisplayCaseItemManagerReady);                    // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,13963) /* FMulticastInlineDelegate */ __um(OnDisplayCaseItemManagerReady);                    // 0x00A0   (0x0010)  
 	TArray<class UFortWorldItemDefinition*>            AllDisplayCaseItems;                                        // 0x00B0   (0x0010)  
 	unsigned char                                      UnknownData00_6[0xA8];                                      // 0x00C0   (0x00A8)  MISSED
 
 
 	/// Functions
 	// Function /Script/HeistBasesGameplayRuntime.FortGameStateComponent_HeistDisplayCaseItemManager.IsDataReady
-	// bool IsDataReady();                                                                                                   // [0xb1e7f50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDataReady();                                                                                                   // [0xb409b68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HeistBasesGameplayRuntime.FortGameStateComponent_HeistDisplayCaseItemManager.HandlePlaylistDataReady
-	// void HandlePlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb1e7e34] Final|Native|Private|HasOutParms 
+	// void HandlePlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb4099c8] Final|Native|Private|HasOutParms 
 	// Function /Script/HeistBasesGameplayRuntime.FortGameStateComponent_HeistDisplayCaseItemManager.GetDisplayCaseItem
-	// class UFortWorldItemDefinition* GetDisplayCaseItem(FGameplayTag DisplayCaseGroupTag);                                 // [0xb1e7cf8] Final|Native|Public|BlueprintCallable 
+	// class UFortWorldItemDefinition* GetDisplayCaseItem(FGameplayTag DisplayCaseGroupTag);                                 // [0xb4098f8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/HeistBasesGameplayRuntime.FortHeistDisplayCase
@@ -47,9 +47,9 @@ public:
 
 	/// Functions
 	// Function /Script/HeistBasesGameplayRuntime.FortHeistDisplayCase.OnServerNotifyStartDisplayCaseLongUse
-	// void OnServerNotifyStartDisplayCaseLongUse(class AFortPlayerPawn* InteractingPawn);                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnServerNotifyStartDisplayCaseLongUse(class AFortPlayerPawn* InteractingPawn);                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/HeistBasesGameplayRuntime.FortHeistDisplayCase.OnServerNotifyEndDisplayCaseLongUse
-	// void OnServerNotifyEndDisplayCaseLongUse(class AFortPlayerPawn* InteractingPawn, bool bUseCompleted);                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnServerNotifyEndDisplayCaseLongUse(class AFortPlayerPawn* InteractingPawn, bool bUseCompleted);                 // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/HeistBasesGameplayRuntime.FortHeistDisplayCaseItemDataTableRow

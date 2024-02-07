@@ -21,17 +21,16 @@ enum class EGraphElementType : uint32_t
 };
 
 /// Enum /Script/GameplayGraph.EGraphIslandOperations
-/// Size: 0x08
+/// Size: 0x07
 enum class EGraphIslandOperations : uint32_t
 {
 	EGraphIslandOperations__None                                                     = 0,
 	EGraphIslandOperations__Add                                                      = 1,
-	EGraphIslandOperations__Remove                                                   = 2,
-	EGraphIslandOperations__Split                                                    = 4,
-	EGraphIslandOperations__Merge                                                    = 8,
-	EGraphIslandOperations__Destroy                                                  = 16,
-	EGraphIslandOperations__All                                                      = 31,
-	EGraphIslandOperations__EGraphIslandOperations_MAX                               = 32
+	EGraphIslandOperations__Split                                                    = 2,
+	EGraphIslandOperations__Merge                                                    = 4,
+	EGraphIslandOperations__Destroy                                                  = 8,
+	EGraphIslandOperations__All                                                      = 15,
+	EGraphIslandOperations__EGraphIslandOperations_MAX                               = 16
 };
 
 /// Struct /Script/GameplayGraph.GraphUniqueIndex
@@ -50,7 +49,7 @@ class UGraphElement : public UObject
 public:
 	EGraphElementType                                  ElementType;                                                // 0x0028   (0x0004)  
 	FGraphUniqueIndex                                  UniqueIndex;                                                // 0x002C   (0x0014)  
-	SDK_UNDEFINED(8,11753) /* TWeakObjectPtr<UGraph*> */ __um(ParentGraph);                                        // 0x0040   (0x0008)  
+	SDK_UNDEFINED(8,11790) /* TWeakObjectPtr<UGraph*> */ __um(ParentGraph);                                        // 0x0040   (0x0008)  
 };
 
 /// Class /Script/GameplayGraph.Graph
@@ -59,10 +58,10 @@ class UGraph : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x48];                                      // 0x0028   (0x0048)  MISSED
-	SDK_UNDEFINED(80,11754) /* TMap<FGraphVertexHandle, UGraphVertex*> */ __um(Vertices);                          // 0x0070   (0x0050)  
+	SDK_UNDEFINED(80,11791) /* TMap<FGraphVertexHandle, UGraphVertex*> */ __um(Vertices);                          // 0x0070   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x50];                                      // 0x00C0   (0x0050)  MISSED
-	SDK_UNDEFINED(80,11755) /* TMap<FGraphEdgeHandle, UGraphEdge*> */ __um(Edges);                                 // 0x0110   (0x0050)  
-	SDK_UNDEFINED(80,11756) /* TMap<FGraphIslandHandle, UGraphIsland*> */ __um(Islands);                           // 0x0160   (0x0050)  
+	SDK_UNDEFINED(80,11792) /* TMap<FGraphEdgeHandle, UGraphEdge*> */ __um(Edges);                                 // 0x0110   (0x0050)  
+	SDK_UNDEFINED(80,11793) /* TMap<FGraphIslandHandle, UGraphIsland*> */ __um(Islands);                           // 0x0160   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01B0   (0x0008)  MISSED
 };
 
@@ -71,7 +70,7 @@ public:
 struct FGraphHandle
 { 
 	FGraphUniqueIndex                                  UniqueIndex;                                                // 0x0000   (0x0014)  
-	SDK_UNDEFINED(8,11757) /* TWeakObjectPtr<UGraphElement*> */ __um(Element);                                     // 0x0014   (0x0008)  
+	SDK_UNDEFINED(8,11794) /* TWeakObjectPtr<UGraphElement*> */ __um(Element);                                     // 0x0014   (0x0008)  
 };
 
 /// Struct /Script/GameplayGraph.GraphVertexHandle
@@ -95,7 +94,7 @@ class UGraphIsland : public UGraphElement
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x60];                                      // 0x0048   (0x0060)  MISSED
-	SDK_UNDEFINED(80,11758) /* TSet<FGraphVertexHandle> */ __um(Vertices);                                         // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,11795) /* TSet<FGraphVertexHandle> */ __um(Vertices);                                         // 0x00A8   (0x0050)  
 	bool                                               bPendingDestroy;                                            // 0x00F8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00F9   (0x0003)  MISSED
 	EGraphIslandOperations                             AllowedOperations;                                          // 0x00FC   (0x0004)  
@@ -113,7 +112,7 @@ class UGraphVertex : public UGraphElement
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x0048   (0x0030)  MISSED
-	SDK_UNDEFINED(80,11759) /* TMap<FGraphVertexHandle, FGraphEdgeHandle> */ __um(Edges);                          // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,11796) /* TMap<FGraphVertexHandle, FGraphEdgeHandle> */ __um(Edges);                          // 0x0078   (0x0050)  
 	FGraphIslandHandle                                 ParentIsland;                                               // 0x00C8   (0x001C)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00E4   (0x0004)  MISSED
 };
@@ -132,8 +131,8 @@ struct FSerializableGraph
 	FGraphProperties                                   Properties;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	TArray<FGraphVertexHandle>                         Vertices;                                                   // 0x0008   (0x0010)  
-	SDK_UNDEFINED(80,11760) /* TMap<FGraphEdgeHandle, FSerializedEdgeData> */ __um(Edges);                         // 0x0018   (0x0050)  
-	SDK_UNDEFINED(80,11761) /* TMap<FGraphIslandHandle, FSerializedIslandData> */ __um(Islands);                   // 0x0068   (0x0050)  
+	SDK_UNDEFINED(80,11797) /* TMap<FGraphEdgeHandle, FSerializedEdgeData> */ __um(Edges);                         // 0x0018   (0x0050)  
+	SDK_UNDEFINED(80,11798) /* TMap<FGraphIslandHandle, FSerializedIslandData> */ __um(Islands);                   // 0x0068   (0x0050)  
 };
 
 /// Struct /Script/GameplayGraph.SerializedIslandData

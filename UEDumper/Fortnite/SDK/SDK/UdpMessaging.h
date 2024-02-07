@@ -35,19 +35,19 @@ public:
 	uint16_t                                           WorkQueueSize;                                              // 0x0034   (0x0002)  
 	bool                                               bStopServiceWhenAppDeactivates;                             // 0x0036   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x1];                                       // 0x0037   (0x0001)  MISSED
-	SDK_UNDEFINED(16,15282) /* FString */              __um(UnicastEndpoint);                                      // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,15283) /* FString */              __um(MulticastEndpoint);                                    // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,15378) /* FString */              __um(UnicastEndpoint);                                      // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,15379) /* FString */              __um(MulticastEndpoint);                                    // 0x0048   (0x0010)  
 	EUdpMessageFormat                                  MessageFormat;                                              // 0x0058   (0x0001)  
 	char                                               MulticastTimeToLive;                                        // 0x0059   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x6];                                       // 0x005A   (0x0006)  MISSED
-	SDK_UNDEFINED(16,15284) /* TArray<FString> */      __um(StaticEndpoints);                                      // 0x0060   (0x0010)  
-	SDK_UNDEFINED(16,15285) /* TArray<FString> */      __um(ExcludedEndpoints);                                    // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,15380) /* TArray<FString> */      __um(StaticEndpoints);                                      // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,15381) /* TArray<FString> */      __um(ExcludedEndpoints);                                    // 0x0070   (0x0010)  
 	bool                                               bShareKnownNodesWithActiveConnections;                      // 0x0080   (0x0001)  
 	bool                                               EnableTunnel;                                               // 0x0081   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x6];                                       // 0x0082   (0x0006)  MISSED
-	SDK_UNDEFINED(16,15286) /* FString */              __um(TunnelUnicastEndpoint);                                // 0x0088   (0x0010)  
-	SDK_UNDEFINED(16,15287) /* FString */              __um(TunnelMulticastEndpoint);                              // 0x0098   (0x0010)  
-	SDK_UNDEFINED(16,15288) /* TArray<FString> */      __um(RemoteTunnelEndpoints);                                // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,15382) /* FString */              __um(TunnelUnicastEndpoint);                                // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,15383) /* FString */              __um(TunnelMulticastEndpoint);                              // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,15384) /* TArray<FString> */      __um(RemoteTunnelEndpoints);                                // 0x00A8   (0x0010)  
 };
 
 /// Struct /Script/UdpMessaging.UdpMockMessage

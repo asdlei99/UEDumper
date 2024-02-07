@@ -64,7 +64,7 @@ enum EPhaseCommit : uint8_t
 };
 
 /// Enum /Script/PhaseCommits.ECoordinatorBroadcasts
-/// Size: 0x07
+/// Size: 0x08
 enum ECoordinatorBroadcasts : uint8_t
 {
 	ECoordinatorBroadcasts__ReadyForRequests                                         = 0,
@@ -73,11 +73,26 @@ enum ECoordinatorBroadcasts : uint8_t
 	ECoordinatorBroadcasts__PreCommit                                                = 3,
 	ECoordinatorBroadcasts__Success                                                  = 4,
 	ECoordinatorBroadcasts__Aborted                                                  = 5,
-	ECoordinatorBroadcasts__ECoordinatorBroadcasts_MAX                               = 6
+	ECoordinatorBroadcasts__NUM                                                      = 6,
+	ECoordinatorBroadcasts__ECoordinatorBroadcasts_MAX                               = 7
+};
+
+/// Enum /Script/PhaseCommits.ECoordinatorBroadcasts_Repl
+/// Size: 0x08
+enum ECoordinatorBroadcasts_Repl : uint8_t
+{
+	ECoordinatorBroadcasts_Repl__R                                                   = 0,
+	ECoordinatorBroadcasts_Repl__A                                                   = 1,
+	ECoordinatorBroadcasts_Repl__B                                                   = 2,
+	ECoordinatorBroadcasts_Repl__C                                                   = 3,
+	ECoordinatorBroadcasts_Repl__S                                                   = 4,
+	ECoordinatorBroadcasts_Repl__F                                                   = 5,
+	ECoordinatorBroadcasts_Repl__NUM                                                 = 6,
+	ECoordinatorBroadcasts_Repl__ECoordinatorBroadcasts_MAX                          = 7
 };
 
 /// Enum /Script/PhaseCommits.EParticipantResponses
-/// Size: 0x08
+/// Size: 0x09
 enum EParticipantResponses : uint8_t
 {
 	EParticipantResponses__NONE                                                      = 0,
@@ -87,6 +102,22 @@ enum EParticipantResponses : uint8_t
 	EParticipantResponses__RejectedPreCommit                                         = 4,
 	EParticipantResponses__ReceivedSuccess                                           = 5,
 	EParticipantResponses__ReceivedAbort                                             = 6,
-	EParticipantResponses__EParticipantResponses_MAX                                 = 7
+	EParticipantResponses__NUM                                                       = 7,
+	EParticipantResponses__EParticipantResponses_MAX                                 = 8
+};
+
+/// Enum /Script/PhaseCommits.EParticipantResponses_Repl
+/// Size: 0x09
+enum EParticipantResponses_Repl : uint8_t
+{
+	EParticipantResponses_Repl__N                                                    = 0,
+	EParticipantResponses_Repl__A                                                    = 1,
+	EParticipantResponses_Repl__B                                                    = 2,
+	EParticipantResponses_Repl__C                                                    = 3,
+	EParticipantResponses_Repl__D                                                    = 4,
+	EParticipantResponses_Repl__S                                                    = 5,
+	EParticipantResponses_Repl__F                                                    = 6,
+	EParticipantResponses_Repl__NUM                                                  = 7,
+	EParticipantResponses_Repl__EParticipantResponses_MAX                            = 8
 };
 

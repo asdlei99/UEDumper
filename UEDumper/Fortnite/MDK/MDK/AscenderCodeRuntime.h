@@ -24,7 +24,7 @@ public:
 
 	/// Functions
 	// Function /Script/AscenderCodeRuntime.FortCheatManager_AscenderZipline.RemoveAscenders
-	// void RemoveAscenders(bool bRemoveAscendersOn);                                                                           // [0x60325ec] Final|Exec|Native|Public 
+	// void RemoveAscenders(bool bRemoveAscendersOn);                                                                           // [0x5d35ffc] Final|Exec|Native|Public 
 };
 
 /// Class /Script/AscenderCodeRuntime.FortAscenderZipline
@@ -82,44 +82,44 @@ public:
 
 	/// Functions
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.SetupAscender
-	// void SetupAscender(bool bFromConstruction, bool bFromReplication);                                                       // [0xa85d8d0] Final|Native|Protected|BlueprintCallable 
+	// void SetupAscender(bool bFromConstruction, bool bFromReplication);                                                       // [0x39c3df4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.OnRep_TargetSplineEndLocation
-	// void OnRep_TargetSplineEndLocation();                                                                                    // [0x3aa72bc] Final|Native|Protected 
+	// void OnRep_TargetSplineEndLocation();                                                                                    // [0x3837948] Final|Native|Protected 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.OnRep_PawnUsingHandle
-	// void OnRep_PawnUsingHandle();                                                                                            // [0x232c32c] Final|Native|Protected 
+	// void OnRep_PawnUsingHandle();                                                                                            // [0xaa3ecec] Final|Native|Protected 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.OnRep_InitialSplineEndLocation
-	// void OnRep_InitialSplineEndLocation();                                                                                   // [0x39eab94] Final|Native|Protected 
+	// void OnRep_InitialSplineEndLocation();                                                                                   // [0x3819918] Final|Native|Protected 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.HandlePawnUsingHandleDied
-	// void HandlePawnUsingHandleDied(class AFortPawn* DeadPawn);                                                               // [0xa85d850] Final|Native|Protected 
+	// void HandlePawnUsingHandleDied(class AFortPawn* DeadPawn);                                                               // [0xaa3ec2c] Final|Native|Protected 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.HandleFloorActorHealthChanged
-	// void HandleFloorActorHealthChanged();                                                                                    // [0xa85d83c] Final|Native|Protected 
+	// void HandleFloorActorHealthChanged();                                                                                    // [0xaa3ec18] Final|Native|Protected 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.HandleFloorActorDestroyed
-	// void HandleFloorActorDestroyed(class AActor* Actor);                                                                     // [0xa85d7bc] Final|Native|Protected 
+	// void HandleFloorActorDestroyed(class AActor* Actor);                                                                     // [0xaa3eb58] Final|Native|Protected 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.GetTopComponent
-	// class UPrimitiveComponent* GetTopComponent();                                                                            // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UPrimitiveComponent* GetTopComponent();                                                                            // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.GetPawnUsingHandle
-	// class AFortPlayerPawn* GetPawnUsingHandle();                                                                             // [0x387387c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortPlayerPawn* GetPawnUsingHandle();                                                                             // [0xaa3eb30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.GetInteractComponentOverride
-	// class UPrimitiveComponent* GetInteractComponentOverride(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent); // [0xa85d6f0] Native|Event|Public|BlueprintEvent|Const 
+	// class UPrimitiveComponent* GetInteractComponentOverride(class AFortPlayerPawn* InteractingPawn, class UPrimitiveComponent* InteractComponent); // [0xaa3e9d8] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.GetHandleComponent
-	// class UPrimitiveComponent* GetHandleComponent();                                                                         // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UPrimitiveComponent* GetHandleComponent();                                                                         // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.BP_HandleUpdatedLoweringHandle
-	// void BP_HandleUpdatedLoweringHandle();                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_HandleUpdatedLoweringHandle();                                                                                   // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.BP_HandleUpdatedLoweringCable
-	// void BP_HandleUpdatedLoweringCable();                                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_HandleUpdatedLoweringCable();                                                                                    // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.BP_HandleStoppedLoweringHandle
-	// void BP_HandleStoppedLoweringHandle();                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_HandleStoppedLoweringHandle();                                                                                   // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.BP_HandleStoppedLoweringCable
-	// void BP_HandleStoppedLoweringCable();                                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_HandleStoppedLoweringCable();                                                                                    // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.BP_HandleStartedLoweringHandle
-	// void BP_HandleStartedLoweringHandle();                                                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_HandleStartedLoweringHandle();                                                                                   // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.BP_HandleStartedLoweringCable
-	// void BP_HandleStartedLoweringCable();                                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_HandleStartedLoweringCable();                                                                                    // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.BP_HandlePlayerStoppedUsingHandle
-	// void BP_HandlePlayerStoppedUsingHandle(class AFortPlayerPawn* Player);                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_HandlePlayerStoppedUsingHandle(class AFortPlayerPawn* Player);                                                   // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.BP_HandlePlayerStartedUsingHandle
-	// void BP_HandlePlayerStartedUsingHandle(class AFortPlayerPawn* Player);                                                   // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_HandlePlayerStartedUsingHandle(class AFortPlayerPawn* Player);                                                   // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/AscenderCodeRuntime.FortAscenderZipline.ApplyStructureDamage
-	// void ApplyStructureDamage(class ABuildingSMActor* BuildingActor, class AActor* DamageSource);                            // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent|Const 
+	// void ApplyStructureDamage(class ABuildingSMActor* BuildingActor, class AActor* DamageSource);                            // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent|Const 
 };
 

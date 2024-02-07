@@ -44,13 +44,13 @@ public:
 
 	/// Functions
 	// Function /Script/EntityFortnite.EntityFortniteStormSpawner.Stop
-	// void Stop();                                                                                                          // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void Stop();                                                                                                          // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/EntityFortnite.EntityFortniteStormSpawner.Start
-	// void Start(float StartRadius, float BoundsRadius, TArray<FEntityFortniteStormPhase>& Phases);                         // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
+	// void Start(float StartRadius, float BoundsRadius, TArray<FEntityFortniteStormPhase>& Phases);                         // [0x2047e54] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/EntityFortnite.EntityFortniteStormSpawner.Pause
-	// void Pause();                                                                                                         // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void Pause();                                                                                                         // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/EntityFortnite.EntityFortniteStormSpawner.Exists
-	// bool Exists();                                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent|Const 
+	// bool Exists();                                                                                                        // [0x2047e54] Event|Public|BlueprintEvent|Const 
 };
 
 /// Struct /Script/EntityFortnite.EntityFortniteStormPhase

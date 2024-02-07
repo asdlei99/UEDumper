@@ -63,7 +63,7 @@ public:
 
 	/// Functions
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSchema.GetTemplateId
-	// FString GetTemplateId();                                                                                                 // [0x7aa4f24] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetTemplateId();                                                                                                 // [0x7a0950c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate
@@ -83,15 +83,15 @@ public:
 
 	/// Functions
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetSlotTag
-	// FGameplayTag GetSlotTag();                                                                                               // [0x6339b64] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetSlotTag();                                                                                               // [0x605a6a0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetRequirements
-	// FCosmeticLoadoutSlotRequirements GetRequirements();                                                                      // [0x7aa4f08] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FCosmeticLoadoutSlotRequirements GetRequirements();                                                                      // [0x7a094f0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetMetaTags
-	// FGameplayTagContainer GetMetaTags();                                                                                     // [0x7aa4eec] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetMetaTags();                                                                                     // [0x7a094d4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetDefaultCosmeticItemId
-	// FPrimaryAssetId GetDefaultCosmeticItemId();                                                                              // [0x6337064] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FPrimaryAssetId GetDefaultCosmeticItemId();                                                                              // [0x60575d8] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CosmeticsFrameworkLoadouts.CosmeticLoadoutSlotTemplate.GetAlwaysUseDefaultCosmeticItemId
-	// bool GetAlwaysUseDefaultCosmeticItemId();                                                                                // [0x7aa4ed4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetAlwaysUseDefaultCosmeticItemId();                                                                                // [0x7a094bc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/CosmeticsFrameworkLoadouts.CosmeticLoadout

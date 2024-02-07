@@ -44,7 +44,7 @@ public:
 	class USpotLightComponent*                         RimTopRight1;                                               // 0x04F8   (0x0008)  
 	class USceneComponent*                             Scene_Lighting;                                             // 0x0500   (0x0008)  
 	float                                              Timeline_LErp_440FD4D745E0E071C641BAB46D630F85;             // 0x0508   (0x0004)  
-	SDK_UNDEFINED(1,13755) /* TEnumAsByte<ETimelineDirection> */ __um(Timeline__Direction_440FD4D745E0E071C641BAB46D630F85); // 0x050C   (0x0001)  
+	SDK_UNDEFINED(1,13821) /* TEnumAsByte<ETimelineDirection> */ __um(Timeline__Direction_440FD4D745E0E071C641BAB46D630F85); // 0x050C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x050D   (0x0003)  MISSED
 	class UTimelineComponent*                          Timeline;                                                   // 0x0510   (0x0008)  
 	bool                                               IsActive;                                                   // 0x0518   (0x0001)  
@@ -53,21 +53,21 @@ public:
 
 	/// Functions
 	// Function /SparksCosmetics/FrontendPreview/SongItemPreview.SongItemPreview_C.LightControl
-	// void LightControl(bool Active);                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void LightControl(bool Active);                                                                                       // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/SongItemPreview.SongItemPreview_C.SwitchPCLighting
-	// void SwitchPCLighting(bool Visibility);                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchPCLighting(bool Visibility);                                                                               // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/SongItemPreview.SongItemPreview_C.SwitchMobileLighting
-	// void SwitchMobileLighting(bool Visibility);                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchMobileLighting(bool Visibility);                                                                           // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/SongItemPreview.SongItemPreview_C.Timeline__FinishedFunc
-	// void Timeline__FinishedFunc();                                                                                        // [0x211c0a0] BlueprintEvent       
+	// void Timeline__FinishedFunc();                                                                                        // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/SongItemPreview.SongItemPreview_C.Timeline__UpdateFunc
-	// void Timeline__UpdateFunc();                                                                                          // [0x211c0a0] BlueprintEvent       
+	// void Timeline__UpdateFunc();                                                                                          // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/SongItemPreview.SongItemPreview_C.UpdateSettings
-	// void UpdateSettings();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void UpdateSettings();                                                                                                // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/SongItemPreview.SongItemPreview_C.OnPreviewVisualsSpawned
-	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/SongItemPreview.SongItemPreview_C.ExecuteUbergraph_SongItemPreview
-	// void ExecuteUbergraph_SongItemPreview(int32_t EntryPoint);                                                            // [0x211c0a0] Final                
+	// void ExecuteUbergraph_SongItemPreview(int32_t EntryPoint);                                                            // [0x2047e54] Final                
 };
 
 /// Class /SparksCosmetics/FrontendPreview/Bp_SparksActorPreviewLightRig_Base.Bp_SparksActorPreviewLightRig_Base_C
@@ -75,6 +75,36 @@ public:
 class ABp_SparksActorPreviewLightRig_Base_C : public ASparksItemPreviewOffPawnActor
 { 
 public:
+};
+
+/// Class /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C
+/// Size: 0x0050 (0x000470 - 0x0004C0)
+class AB_SparksCosmeticPreviewDisplay_C : public ABP_SparksCosmeticPreviewDisplay_Base_C
+{ 
+public:
+	FPointerToUberGraphFrame                           UberGraphFrame;                                             // 0x0470   (0x0008)  
+	class USkeletalMeshComponent*                      MicMesh;                                                    // 0x0478   (0x0008)  
+	class USkeletalMeshComponent*                      LHDrumstick;                                                // 0x0480   (0x0008)  
+	class USkeletalMeshComponent*                      RHDrumstick;                                                // 0x0488   (0x0008)  
+	class USkeletalMeshComponent*                      MicStandMesh;                                               // 0x0490   (0x0008)  
+	class USkeletalMeshComponent*                      DrumMesh;                                                   // 0x0498   (0x0008)  
+	class USkeletalMeshComponent*                      GuitarMesh;                                                 // 0x04A0   (0x0008)  
+	bool                                               Is__active;                                                 // 0x04A8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x04A9   (0x0007)  MISSED
+	SDK_UNDEFINED(16,13822) /* FMulticastInlineDelegate */ __um(NewEventDispatcher);                               // 0x04B0   (0x0010)  
+
+
+	/// Functions
+	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.FixupMeshAndMaterials
+	// void FixupMeshAndMaterials(class USkeletalMeshComponent* MeshComponent, class USkeletalMesh* NewMesh, class UMaterialInstance* Material1, class UMaterialInstance* Material2, class UFXSystemAsset* FX); // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
+	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.Hide all
+	// void Hide all();                                                                                                      // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
+	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.CustomizePreviewInstance
+	// void CustomizePreviewInstance(class UFortItemDefinition* InItemDefinition);                                           // [0x2047e54] Event|Public|BlueprintEvent 
+	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.ExecuteUbergraph_B_SparksCosmeticPreviewDisplay
+	// void ExecuteUbergraph_B_SparksCosmeticPreviewDisplay(int32_t EntryPoint);                                             // [0x2047e54] Final|HasDefaults    
+	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.NewEventDispatcher__DelegateSignature
+	// void NewEventDispatcher__DelegateSignature();                                                                         // [0x2047e54] Public|Delegate|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C
@@ -105,11 +135,11 @@ public:
 	class UStaticMeshComponent*                        Plane;                                                      // 0x07A0   (0x0008)  
 	class USkeletalMeshComponent*                      Sample_Mesh;                                                // 0x07A8   (0x0008)  
 	float                                              RezInMaterialEffectTimeLine2_NewTrack_0_EE684F644FE38B4A30D17FB8CF917357; // 0x07B0   (0x0004)  
-	SDK_UNDEFINED(1,13756) /* TEnumAsByte<ETimelineDirection> */ __um(RezInMaterialEffectTimeLine2__Direction_EE684F644FE38B4A30D17FB8CF917357); // 0x07B4   (0x0001)  
+	SDK_UNDEFINED(1,13823) /* TEnumAsByte<ETimelineDirection> */ __um(RezInMaterialEffectTimeLine2__Direction_EE684F644FE38B4A30D17FB8CF917357); // 0x07B4   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x07B5   (0x0003)  MISSED
 	class UTimelineComponent*                          RezInMaterialEffectTimeLine2;                               // 0x07B8   (0x0008)  
 	float                                              RezInMaterialEffectTimeLine_NewTrack_0_9C89220943F4EBA1DF12D38A05B1FC5C; // 0x07C0   (0x0004)  
-	SDK_UNDEFINED(1,13757) /* TEnumAsByte<ETimelineDirection> */ __um(RezInMaterialEffectTimeLine__Direction_9C89220943F4EBA1DF12D38A05B1FC5C); // 0x07C4   (0x0001)  
+	SDK_UNDEFINED(1,13824) /* TEnumAsByte<ETimelineDirection> */ __um(RezInMaterialEffectTimeLine__Direction_9C89220943F4EBA1DF12D38A05B1FC5C); // 0x07C4   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x07C5   (0x0003)  MISSED
 	class UTimelineComponent*                          RezInMaterialEffectTimeLine;                                // 0x07C8   (0x0008)  
 	bool                                               AlwaysOn;                                                   // 0x07D0   (0x0001)  
@@ -135,97 +165,71 @@ public:
 
 	/// Functions
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.IsSkyDiveContrailItem
-	// void IsSkyDiveContrailItem(bool& bSuccess);                                                                           // [0x211c0a0] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void IsSkyDiveContrailItem(bool& bSuccess);                                                                           // [0x2047e54] Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OutroAndDestroyLoadingEffects
-	// void OutroAndDestroyLoadingEffects();                                                                                 // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void OutroAndDestroyLoadingEffects();                                                                                 // [0x2047e54] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.HandleLightingSettingsChanged
-	// void HandleLightingSettingsChanged();                                                                                 // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void HandleLightingSettingsChanged();                                                                                 // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.DestroyLoadingEffects
-	// void DestroyLoadingEffects();                                                                                         // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void DestroyLoadingEffects();                                                                                         // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SpawnLoadingEffects
-	// void SpawnLoadingEffects();                                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SpawnLoadingEffects();                                                                                           // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SetupLighting
-	// void SetupLighting();                                                                                                 // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SetupLighting();                                                                                                 // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SpawnResInEffects
-	// void SpawnResInEffects();                                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SpawnResInEffects();                                                                                             // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SetupFloor
-	// void SetupFloor();                                                                                                    // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetupFloor();                                                                                                    // [0x2047e54] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.Get LOD Streaming Safety Duration
-	// void Get LOD Streaming Safety Duration();                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void Get LOD Streaming Safety Duration();                                                                             // [0x2047e54] Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SwitchErebusLighting
-	// void SwitchErebusLighting(bool Visibility);                                                                           // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SwitchErebusLighting(bool Visibility);                                                                           // [0x2047e54] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SetFloorEnabled
-	// void SetFloorEnabled(bool Show Floor);                                                                                // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SetFloorEnabled(bool Show Floor);                                                                                // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.LightControl
-	// void LightControl(bool Active);                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void LightControl(bool Active);                                                                                       // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SwitchPCLighting
-	// void SwitchPCLighting(bool Visibility);                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchPCLighting(bool Visibility);                                                                               // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SwitchMobileLighting
-	// void SwitchMobileLighting(bool NewParam);                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SwitchMobileLighting(bool NewParam);                                                                             // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.RezInMaterialEffectTimeLine__FinishedFunc
-	// void RezInMaterialEffectTimeLine__FinishedFunc();                                                                     // [0x211c0a0] BlueprintEvent       
+	// void RezInMaterialEffectTimeLine__FinishedFunc();                                                                     // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.RezInMaterialEffectTimeLine__UpdateFunc
-	// void RezInMaterialEffectTimeLine__UpdateFunc();                                                                       // [0x211c0a0] BlueprintEvent       
+	// void RezInMaterialEffectTimeLine__UpdateFunc();                                                                       // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.RezInMaterialEffectTimeLine2__FinishedFunc
-	// void RezInMaterialEffectTimeLine2__FinishedFunc();                                                                    // [0x211c0a0] BlueprintEvent       
+	// void RezInMaterialEffectTimeLine2__FinishedFunc();                                                                    // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.RezInMaterialEffectTimeLine2__UpdateFunc
-	// void RezInMaterialEffectTimeLine2__UpdateFunc();                                                                      // [0x211c0a0] BlueprintEvent       
+	// void RezInMaterialEffectTimeLine2__UpdateFunc();                                                                      // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.SpawnSoundPlayback
-	// void SpawnSoundPlayback();                                                                                            // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void SpawnSoundPlayback();                                                                                            // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnUpdateFloorMaterial
-	// void OnUpdateFloorMaterial(bool bEnableAutotestBackground);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnUpdateFloorMaterial(bool bEnableAutotestBackground);                                                           // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnItemsPendingTransitionOut
-	// void OnItemsPendingTransitionOut(FStateTransitionControllerHandle& TransitionController);                             // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnItemsPendingTransitionOut(FStateTransitionControllerHandle& TransitionController);                             // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.Internal_ItemsPendingTransitionOutComplete
-	// void Internal_ItemsPendingTransitionOutComplete(FStateTransitionControllerHandle TransitionController);               // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void Internal_ItemsPendingTransitionOutComplete(FStateTransitionControllerHandle TransitionController);               // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnItemsPendingTransitionOut_SpawnResOutEffects
-	// void OnItemsPendingTransitionOut_SpawnResOutEffects();                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void OnItemsPendingTransitionOut_SpawnResOutEffects();                                                                // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.FinishShowingResOutEffects
-	// void FinishShowingResOutEffects();                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void FinishShowingResOutEffects();                                                                                    // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp
-	// void OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp();                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void OnItemsPendingTransitionOut_EnsureAllResOutEffectsAreCleanedUp();                                                // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnSetFloorMaterial
-	// void OnSetFloorMaterial(class UMaterialInterface* InMaterialInstance);                                                // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnSetFloorMaterial(class UMaterialInterface* InMaterialInstance);                                                // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnPreviewVisualsSpawned
-	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnAllLODStreamingComplete
-	// void OnAllLODStreamingComplete();                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnAllLODStreamingComplete();                                                                                     // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnPreviewVisualsBeginLoading
-	// void OnPreviewVisualsBeginLoading();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPreviewVisualsBeginLoading();                                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.OnCurrentVisualsCleanedUp
-	// void OnCurrentVisualsCleanedUp();                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnCurrentVisualsCleanedUp();                                                                                     // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.Backup_LODStreamingFailed
-	// void Backup_LODStreamingFailed();                                                                                     // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void Backup_LODStreamingFailed();                                                                                     // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.RezInMaterialEffect
-	// void RezInMaterialEffect();                                                                                           // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void RezInMaterialEffect();                                                                                           // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOnActorPreviewDefault.B_SparksOnActorPreviewDefault_C.ExecuteUbergraph_B_SparksOnActorPreviewDefault
-	// void ExecuteUbergraph_B_SparksOnActorPreviewDefault(int32_t EntryPoint);                                              // [0x211c0a0] Final|HasDefaults    
-};
-
-/// Class /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C
-/// Size: 0x0039 (0x000470 - 0x0004A9)
-class AB_SparksCosmeticPreviewDisplay_C : public ABP_SparksCosmeticPreviewDisplay_Base_C
-{ 
-public:
-	FPointerToUberGraphFrame                           UberGraphFrame;                                             // 0x0470   (0x0008)  
-	class USkeletalMeshComponent*                      MicMesh;                                                    // 0x0478   (0x0008)  
-	class USkeletalMeshComponent*                      LHDrumstick;                                                // 0x0480   (0x0008)  
-	class USkeletalMeshComponent*                      RHDrumstick;                                                // 0x0488   (0x0008)  
-	class USkeletalMeshComponent*                      MicStandMesh;                                               // 0x0490   (0x0008)  
-	class USkeletalMeshComponent*                      DrumMesh;                                                   // 0x0498   (0x0008)  
-	class USkeletalMeshComponent*                      GuitarMesh;                                                 // 0x04A0   (0x0008)  
-	bool                                               Is__active;                                                 // 0x04A8   (0x0001)  
-
-
-	/// Functions
-	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.FixupMeshAndMaterials
-	// void FixupMeshAndMaterials(class USkeletalMeshComponent* MeshComponent, class USkeletalMesh* NewMesh, class UMaterialInstance* Material1, class UMaterialInstance* Material2); // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
-	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.Hide all
-	// void Hide all();                                                                                                      // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
-	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.CustomizePreviewInstance
-	// void CustomizePreviewInstance(class UFortItemDefinition* InItemDefinition);                                           // [0x211c0a0] Event|Public|BlueprintEvent 
-	// Function /SparksCosmetics/FrontendPreview/B_SparksCosmeticPreviewDisplay.B_SparksCosmeticPreviewDisplay_C.ExecuteUbergraph_B_SparksCosmeticPreviewDisplay
-	// void ExecuteUbergraph_B_SparksCosmeticPreviewDisplay(int32_t EntryPoint);                                             // [0x211c0a0] Final|HasDefaults    
+	// void ExecuteUbergraph_B_SparksOnActorPreviewDefault(int32_t EntryPoint);                                              // [0x2047e54] Final|HasDefaults    
 };
 
 /// Class /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C
@@ -247,10 +251,10 @@ public:
 	class USpotLightComponent*                         RimTop_pc;                                                  // 0x04E0   (0x0008)  
 	class USceneComponent*                             Lighting;                                                   // 0x04E8   (0x0008)  
 	float                                              Timeline_0_HiddenAmount_1D4E289F4B8CA6B6B9F4579D0FE7ABCC;   // 0x04F0   (0x0004)  
-	SDK_UNDEFINED(1,13758) /* TEnumAsByte<ETimelineDirection> */ __um(Timeline_0__Direction_1D4E289F4B8CA6B6B9F4579D0FE7ABCC); // 0x04F4   (0x0001)  
+	SDK_UNDEFINED(1,13825) /* TEnumAsByte<ETimelineDirection> */ __um(Timeline_0__Direction_1D4E289F4B8CA6B6B9F4579D0FE7ABCC); // 0x04F4   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x04F5   (0x0003)  MISSED
 	class UTimelineComponent*                          Timeline;                                                   // 0x04F8   (0x0008)  
-	SDK_UNDEFINED(1,13759) /* TEnumAsByte<ETimelineDirection> */ __um(Timeline__Direction_941C70EB408D2013A38BD198CDF9688B); // 0x0500   (0x0001)  
+	SDK_UNDEFINED(1,13826) /* TEnumAsByte<ETimelineDirection> */ __um(Timeline__Direction_941C70EB408D2013A38BD198CDF9688B); // 0x0500   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0501   (0x0007)  MISSED
 	class UTimelineComponent*                          Timeline0;                                                  // 0x0508   (0x0008)  
 	bool                                               Is__active;                                                 // 0x0510   (0x0001)  
@@ -260,43 +264,43 @@ public:
 
 	/// Functions
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.GetInstrumentMeshComponents
-	// void GetInstrumentMeshComponents();                                                                                   // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void GetInstrumentMeshComponents();                                                                                   // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Light Control
-	// void Light Control(bool Active);                                                                                      // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void Light Control(bool Active);                                                                                      // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Set UP Lighting
-	// void Set UP Lighting();                                                                                               // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void Set UP Lighting();                                                                                               // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Switch Mobile Lighting
-	// void Switch Mobile Lighting(bool NewParam);                                                                           // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void Switch Mobile Lighting(bool NewParam);                                                                           // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Switch PC Lighting
-	// void Switch PC Lighting(bool Visibility);                                                                             // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void Switch PC Lighting(bool Visibility);                                                                             // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.HandleLightingSettingsChanged
-	// void HandleLightingSettingsChanged();                                                                                 // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void HandleLightingSettingsChanged();                                                                                 // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Switch Erebus Lighting
-	// void Switch Erebus Lighting(bool Visibility);                                                                         // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void Switch Erebus Lighting(bool Visibility);                                                                         // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Timeline__FinishedFunc
-	// void Timeline__FinishedFunc();                                                                                        // [0x211c0a0] BlueprintEvent       
+	// void Timeline__FinishedFunc();                                                                                        // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Timeline__UpdateFunc
-	// void Timeline__UpdateFunc();                                                                                          // [0x211c0a0] BlueprintEvent       
+	// void Timeline__UpdateFunc();                                                                                          // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Timeline__PlayResIn__EventFunc
-	// void Timeline__PlayResIn__EventFunc();                                                                                // [0x211c0a0] BlueprintEvent       
+	// void Timeline__PlayResIn__EventFunc();                                                                                // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Timeline__LoadingFXOutro__EventFunc
-	// void Timeline__LoadingFXOutro__EventFunc();                                                                           // [0x211c0a0] BlueprintEvent       
+	// void Timeline__LoadingFXOutro__EventFunc();                                                                           // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Timeline__ShowPawn__EventFunc
-	// void Timeline__ShowPawn__EventFunc();                                                                                 // [0x211c0a0] BlueprintEvent       
+	// void Timeline__ShowPawn__EventFunc();                                                                                 // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Timeline_0__FinishedFunc
-	// void Timeline_0__FinishedFunc();                                                                                      // [0x211c0a0] BlueprintEvent       
+	// void Timeline_0__FinishedFunc();                                                                                      // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.Timeline_0__UpdateFunc
-	// void Timeline_0__UpdateFunc();                                                                                        // [0x211c0a0] BlueprintEvent       
+	// void Timeline_0__UpdateFunc();                                                                                        // [0x2047e54] BlueprintEvent       
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.OnPreviewVisualsSpawned
-	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPreviewVisualsSpawned(bool bUseSecondaryTransitionEffects, bool bShowFloor);                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.UpdateSettings
-	// void UpdateSettings();                                                                                                // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void UpdateSettings();                                                                                                // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.OnPreviewVisualsBeginLoading
-	// void OnPreviewVisualsBeginLoading();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPreviewVisualsBeginLoading();                                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.OnAllLODStreamingComplete
-	// void OnAllLODStreamingComplete();                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnAllLODStreamingComplete();                                                                                     // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksOffActorPreview.B_SparksOffActorPreview_C.ExecuteUbergraph_B_SparksOffActorPreview
-	// void ExecuteUbergraph_B_SparksOffActorPreview(int32_t EntryPoint);                                                    // [0x211c0a0] Final                
+	// void ExecuteUbergraph_B_SparksOffActorPreview(int32_t EntryPoint);                                                    // [0x2047e54] Final                
 };
 
 /// Class /SparksCosmetics/FrontendPreview/B_SparksSong_PreviewDisplay.B_SparksSong_PreviewDisplay_C
@@ -321,14 +325,14 @@ public:
 
 	/// Functions
 	// Function /SparksCosmetics/FrontendPreview/B_SparksSong_PreviewDisplay.B_SparksSong_PreviewDisplay_C.PerformSpecialAction
-	// void PerformSpecialAction(FName ActionName);                                                                          // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PerformSpecialAction(FName ActionName);                                                                          // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksSong_PreviewDisplay.B_SparksSong_PreviewDisplay_C.StartSongPreview
-	// void StartSongPreview();                                                                                              // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StartSongPreview();                                                                                              // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksSong_PreviewDisplay.B_SparksSong_PreviewDisplay_C.OnSongTextureLoaded
-	// void OnSongTextureLoaded(class UTexture2D* CoverArt);                                                                 // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnSongTextureLoaded(class UTexture2D* CoverArt);                                                                 // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksSong_PreviewDisplay.B_SparksSong_PreviewDisplay_C.DebounceEvent
-	// void DebounceEvent();                                                                                                 // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void DebounceEvent();                                                                                                 // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /SparksCosmetics/FrontendPreview/B_SparksSong_PreviewDisplay.B_SparksSong_PreviewDisplay_C.ExecuteUbergraph_B_SparksSong_PreviewDisplay
-	// void ExecuteUbergraph_B_SparksSong_PreviewDisplay(int32_t EntryPoint);                                                // [0x211c0a0] Final|HasDefaults    
+	// void ExecuteUbergraph_B_SparksSong_PreviewDisplay(int32_t EntryPoint);                                                // [0x2047e54] Final|HasDefaults    
 };
 

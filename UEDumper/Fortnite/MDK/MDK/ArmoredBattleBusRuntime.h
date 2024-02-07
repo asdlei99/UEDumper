@@ -11,61 +11,61 @@
 /// dependency: FortniteGame
 
 /// Class /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance
-/// Size: 0x00C0 (0x001620 - 0x0016E0)
+/// Size: 0x00D0 (0x001620 - 0x0016F0)
 class UFortArmoredBattleBusPassengerAnimInstance : public UFortPlayerAnimInstanceProxy
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5856;
+	static inline constexpr uint64_t __MDKClassSize = 5872;
 
 public:
-	SMember(FRotator)                                  PreviousVehicleRotator                                      OFFSET(getStruct<T>, {0x1618, 24, 0, 0})
-	DMember(float)                                     SmoothedVehicleYawRate                                      OFFSET(get<float>, {0x1630, 4, 0, 0})
-	DMember(int32_t)                                   PawnSeat                                                    OFFSET(get<int32_t>, {0x1634, 4, 0, 0})
-	DMember(bool)                                      bIsFrontTurretPassenger                                     OFFSET(get<bool>, {0x1638, 1, 0, 0})
-	DMember(bool)                                      bIsRearTurretPassenger                                      OFFSET(get<bool>, {0x1639, 1, 0, 0})
-	DMember(float)                                     Speed                                                       OFFSET(get<float>, {0x163C, 4, 0, 0})
-	DMember(float)                                     YawDelta                                                    OFFSET(get<float>, {0x1640, 4, 0, 0})
-	DMember(float)                                     TurretYaw                                                   OFFSET(get<float>, {0x1644, 4, 0, 0})
-	DMember(float)                                     TurretPitch                                                 OFFSET(get<float>, {0x1648, 4, 0, 0})
-	SMember(FRotator)                                  TurretYawRotator                                            OFFSET(getStruct<T>, {0x1650, 24, 0, 0})
-	DMember(float)                                     SlopeRollDegreeAngle                                        OFFSET(get<float>, {0x1668, 4, 0, 0})
-	DMember(float)                                     SlopePitchDegreeAngle                                       OFFSET(get<float>, {0x166C, 4, 0, 0})
-	SMember(FVector)                                   HandAttachL                                                 OFFSET(getStruct<T>, {0x1670, 24, 0, 0})
-	SMember(FVector)                                   HandAttachR                                                 OFFSET(getStruct<T>, {0x1688, 24, 0, 0})
-	CMember(TEnumAsByte<ERelativeTransformSpace>)      TransformSpace                                              OFFSET(get<T>, {0x16A0, 1, 0, 0})
-	DMember(float)                                     UpdateYawDeltaSmoothedLerpRate                              OFFSET(get<float>, {0x16A4, 4, 0, 0})
-	DMember(int32_t)                                   TurretPassengerFront                                        OFFSET(get<int32_t>, {0x16A8, 4, 0, 0})
-	DMember(int32_t)                                   TurretPassengerRear                                         OFFSET(get<int32_t>, {0x16AC, 4, 0, 0})
-	SMember(FName)                                     FrontFootBoneName                                           OFFSET(getStruct<T>, {0x16B0, 4, 0, 0})
-	SMember(FName)                                     RearFootBoneName                                            OFFSET(getStruct<T>, {0x16B4, 4, 0, 0})
-	SMember(FName)                                     GunHandAttachBoneName_FrontLeft                             OFFSET(getStruct<T>, {0x16B8, 4, 0, 0})
-	SMember(FName)                                     GunHandAttachBoneName_RearLeft                              OFFSET(getStruct<T>, {0x16BC, 4, 0, 0})
-	SMember(FName)                                     GunHandAttachBoneName_FrontRight                            OFFSET(getStruct<T>, {0x16C0, 4, 0, 0})
-	SMember(FName)                                     GunHandAttachBoneName_RearRight                             OFFSET(getStruct<T>, {0x16C4, 4, 0, 0})
-	SMember(FName)                                     PassengerBoneName_Front                                     OFFSET(getStruct<T>, {0x16C8, 4, 0, 0})
-	SMember(FName)                                     PassengerBoneName_Rear                                      OFFSET(getStruct<T>, {0x16CC, 4, 0, 0})
-	DMember(float)                                     TurretPitchDegMin                                           OFFSET(get<float>, {0x16D0, 4, 0, 0})
-	DMember(float)                                     TurretPitchDegMax                                           OFFSET(get<float>, {0x16D4, 4, 0, 0})
-	DMember(float)                                     LocalPlayerTurretPitchEaseRate                              OFFSET(get<float>, {0x16D8, 4, 0, 0})
+	SMember(FRotator)                                  PreviousVehicleRotator                                      OFFSET(getStruct<T>, {0x1620, 24, 0, 0})
+	DMember(float)                                     SmoothedVehicleYawRate                                      OFFSET(get<float>, {0x1638, 4, 0, 0})
+	DMember(int32_t)                                   PawnSeat                                                    OFFSET(get<int32_t>, {0x163C, 4, 0, 0})
+	DMember(bool)                                      bIsFrontTurretPassenger                                     OFFSET(get<bool>, {0x1640, 1, 0, 0})
+	DMember(bool)                                      bIsRearTurretPassenger                                      OFFSET(get<bool>, {0x1641, 1, 0, 0})
+	DMember(float)                                     Speed                                                       OFFSET(get<float>, {0x1644, 4, 0, 0})
+	DMember(float)                                     YawDelta                                                    OFFSET(get<float>, {0x1648, 4, 0, 0})
+	DMember(float)                                     TurretYaw                                                   OFFSET(get<float>, {0x164C, 4, 0, 0})
+	DMember(float)                                     TurretPitch                                                 OFFSET(get<float>, {0x1650, 4, 0, 0})
+	SMember(FRotator)                                  TurretYawRotator                                            OFFSET(getStruct<T>, {0x1658, 24, 0, 0})
+	DMember(float)                                     SlopeRollDegreeAngle                                        OFFSET(get<float>, {0x1670, 4, 0, 0})
+	DMember(float)                                     SlopePitchDegreeAngle                                       OFFSET(get<float>, {0x1674, 4, 0, 0})
+	SMember(FVector)                                   HandAttachL                                                 OFFSET(getStruct<T>, {0x1678, 24, 0, 0})
+	SMember(FVector)                                   HandAttachR                                                 OFFSET(getStruct<T>, {0x1690, 24, 0, 0})
+	CMember(TEnumAsByte<ERelativeTransformSpace>)      TransformSpace                                              OFFSET(get<T>, {0x16A8, 1, 0, 0})
+	DMember(float)                                     UpdateYawDeltaSmoothedLerpRate                              OFFSET(get<float>, {0x16AC, 4, 0, 0})
+	DMember(int32_t)                                   TurretPassengerFront                                        OFFSET(get<int32_t>, {0x16B0, 4, 0, 0})
+	DMember(int32_t)                                   TurretPassengerRear                                         OFFSET(get<int32_t>, {0x16B4, 4, 0, 0})
+	SMember(FName)                                     FrontFootBoneName                                           OFFSET(getStruct<T>, {0x16B8, 4, 0, 0})
+	SMember(FName)                                     RearFootBoneName                                            OFFSET(getStruct<T>, {0x16BC, 4, 0, 0})
+	SMember(FName)                                     GunHandAttachBoneName_FrontLeft                             OFFSET(getStruct<T>, {0x16C0, 4, 0, 0})
+	SMember(FName)                                     GunHandAttachBoneName_RearLeft                              OFFSET(getStruct<T>, {0x16C4, 4, 0, 0})
+	SMember(FName)                                     GunHandAttachBoneName_FrontRight                            OFFSET(getStruct<T>, {0x16C8, 4, 0, 0})
+	SMember(FName)                                     GunHandAttachBoneName_RearRight                             OFFSET(getStruct<T>, {0x16CC, 4, 0, 0})
+	SMember(FName)                                     PassengerBoneName_Front                                     OFFSET(getStruct<T>, {0x16D0, 4, 0, 0})
+	SMember(FName)                                     PassengerBoneName_Rear                                      OFFSET(getStruct<T>, {0x16D4, 4, 0, 0})
+	DMember(float)                                     TurretPitchDegMin                                           OFFSET(get<float>, {0x16D8, 4, 0, 0})
+	DMember(float)                                     TurretPitchDegMax                                           OFFSET(get<float>, {0x16DC, 4, 0, 0})
+	DMember(float)                                     LocalPlayerTurretPitchEaseRate                              OFFSET(get<float>, {0x16E0, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateYawDeltaSmoothed
-	// void UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator& NewRotation, float& SmoothedYawValue); // [0xa7bd1a4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator& NewRotation, float& SmoothedYawValue); // [0xa974f9c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateSmoothedVehicleYawRate
-	// void UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor);                                               // [0xa7bcc48] Final|Native|Public|BlueprintCallable 
+	// void UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor);                                               // [0xa974950] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UpdateHandPositionsSlopeValues
-	// void UpdateHandPositionsSlopeValues(class USkeletalMeshComponent* BusMeshComponent);                                     // [0xa7bcbc8] Final|Native|Public|BlueprintCallable 
+	// void UpdateHandPositionsSlopeValues(class USkeletalMeshComponent* BusMeshComponent);                                     // [0xa974890] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.UnrotateHandAttachLocation
-	// FVector UnrotateHandAttachLocation(FVector& HandLocation, FVector& FootLocation, FRotator& FootRotation);                // [0xa7bca04] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector UnrotateHandAttachLocation(FVector& HandLocation, FVector& FootLocation, FRotator& FootRotation);                // [0xa9746cc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetPassengerTransform
-	// FTransform GetPassengerTransform(class USkeletalMeshComponent* BusMeshComponent);                                        // [0xa7bc72c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetPassengerTransform(class USkeletalMeshComponent* BusMeshComponent);                                        // [0xa97434c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetHandAttachLocation
-	// FVector GetHandAttachLocation(class USkeletalMeshComponent* BusMeshComponent, FName FrontHandAttachBoneName, FName RearHandAttachBoneName); // [0xa7bc61c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetHandAttachLocation(class USkeletalMeshComponent* BusMeshComponent, FName FrontHandAttachBoneName, FName RearHandAttachBoneName); // [0xa97417c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GetFootAttachTransform
-	// FTransform GetFootAttachTransform(class USkeletalMeshComponent* BusMeshComponent);                                       // [0xa7bc540] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetFootAttachTransform(class USkeletalMeshComponent* BusMeshComponent);                                       // [0xa974060] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusPassengerAnimInstance.GenerateCharacterPitchAndYawForSlopedTerrain
-	// void GenerateCharacterPitchAndYawForSlopedTerrain(class AFortAthenaVehicle* VehicleActor, float& TurretYaw, float& TurretPitch, FRotator& PawnYawRotator); // [0xa7bc3d4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GenerateCharacterPitchAndYawForSlopedTerrain(class AFortAthenaVehicle* VehicleActor, float& TurretYaw, float& TurretPitch, FRotator& PawnYawRotator); // [0xa973eb8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance
@@ -100,12 +100,12 @@ public:
 
 	/// Functions
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateYawDeltaSmoothed
-	// float UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator NewRotation, float SmoothedYawValue); // [0xa7bd304] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// float UpdateYawDeltaSmoothed(class AFortAthenaVehicle* VehicleActor, FName SocketName, FRotator NewRotation, float SmoothedYawValue); // [0xa97516c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateTurretAimPitchWeaponYaw
-	// void UpdateTurretAimPitchWeaponYaw(class AFortAthenaVehicle* OwnerVehicle, class AFortPlayerPawn* GunnerActor, FName SocketName, float YawOffset, float& TurretAimPitch, float& YawDeltaSmoothed, FRotator& WeaponYaw); // [0xa7bcf6c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdateTurretAimPitchWeaponYaw(class AFortAthenaVehicle* OwnerVehicle, class AFortPlayerPawn* GunnerActor, FName SocketName, float YawOffset, float& TurretAimPitch, float& YawDeltaSmoothed, FRotator& WeaponYaw); // [0xa974c80] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.UpdateSmoothedVehicleYawRate
-	// float UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor, FRotator PreviousRotator);                    // [0xa7bcd50] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// float UpdateSmoothedVehicleYawRate(class AFortAthenaVehicle* VehicleActor, FRotator PreviousRotator);                    // [0xa974a98] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ArmoredBattleBusRuntime.FortArmoredBattleBusVehicleAnimInstance.GetPitchAndYaw
-	// void GetPitchAndYaw(class AFortAthenaVehicle* VehicleActor, class AFortPlayerPawn* GunnerActor, float& AdjustedPitch, float& AdjustedYaw, bool& bIsLocalPlayerControlled, FRotator& YawRotator); // [0xa7bc808] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetPitchAndYaw(class AFortAthenaVehicle* VehicleActor, class AFortPlayerPawn* GunnerActor, float& AdjustedPitch, float& AdjustedYaw, bool& bIsLocalPlayerControlled, FRotator& YawRotator); // [0xa974468] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 

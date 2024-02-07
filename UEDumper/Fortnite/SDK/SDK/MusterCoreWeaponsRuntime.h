@@ -40,13 +40,13 @@ public:
 
 	/// Functions
 	// Function /Script/MusterCoreWeaponsRuntime.FortMusterExplosiveARProjectile.SetHitRotation
-	// void SetHitRotation(FRotator& NewHitRotation);                                                                        // [0xa97afa0] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetHitRotation(FRotator& NewHitRotation);                                                                        // [0xab4e94c] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MusterCoreWeaponsRuntime.FortMusterExplosiveARProjectile.SetHitPlayer
-	// void SetHitPlayer(bool bWasHit);                                                                                      // [0xa97af18] Final|Native|Protected|BlueprintCallable 
+	// void SetHitPlayer(bool bWasHit);                                                                                      // [0xab4e884] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MusterCoreWeaponsRuntime.FortMusterExplosiveARProjectile.SetHitLocation
-	// void SetHitLocation(FVector& NewHitLocation);                                                                         // [0xa97ae18] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetHitLocation(FVector& NewHitLocation);                                                                         // [0xab4e784] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MusterCoreWeaponsRuntime.FortMusterExplosiveARProjectile.OnRep_HitLocation
-	// void OnRep_HitLocation();                                                                                             // [0xa97ad68] Final|Native|Protected 
+	// void OnRep_HitLocation();                                                                                             // [0xab4e6d4] Final|Native|Protected 
 };
 
 /// Class /Script/MusterCoreWeaponsRuntime.MusterCoreWeaponsAnimInstance
@@ -78,7 +78,7 @@ public:
 	bool                                               bHasStopped;                                                // 0x0C58   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0C59   (0x0007)  MISSED
 	FVector                                            HitNormal;                                                  // 0x0C60   (0x0018)  
-	SDK_UNDEFINED(1,14689) /* TEnumAsByte<EPhysicalSurface> */ __um(SurfaceType);                                  // 0x0C78   (0x0001)  
+	SDK_UNDEFINED(1,14784) /* TEnumAsByte<EPhysicalSurface> */ __um(SurfaceType);                                  // 0x0C78   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0C79   (0x0003)  MISSED
 	FName                                              SwordRevealMaterialParam;                                   // 0x0C7C   (0x0004)  
 	FName                                              EmissiveColorMaterialParam;                                 // 0x0C80   (0x0004)  
@@ -92,26 +92,26 @@ public:
 
 	/// Functions
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.UnblockPawnCollision
-	// void UnblockPawnCollision();                                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void UnblockPawnCollision();                                                                                          // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.TriggerExplosion
-	// void TriggerExplosion();                                                                                              // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void TriggerExplosion();                                                                                              // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.SetupSwordRevealEffects
-	// void SetupSwordRevealEffects(class UStaticMeshComponent* ProjectileMesh, float SwordRevealAlpha, float ColorChangeAlpha, float HDRMultiplierAlpha); // [0xa97b064] Final|Native|Protected|BlueprintCallable 
+	// void SetupSwordRevealEffects(class UStaticMeshComponent* ProjectileMesh, float SwordRevealAlpha, float ColorChangeAlpha, float HDRMultiplierAlpha); // [0xab4ea10] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.SetupProjectileHitAudio
-	// void SetupProjectileHitAudio(FVector& ProjectileImpactLocation, class AActor* HitActor);                              // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void SetupProjectileHitAudio(FVector& ProjectileImpactLocation, class AActor* HitActor);                              // [0x2047e54] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.SetFuseColorBasedOnTeam
-	// void SetFuseColorBasedOnTeam();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void SetFuseColorBasedOnTeam();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.RestartSimulating
-	// void RestartSimulating();                                                                                             // [0xa97ae04] Final|Native|Protected|BlueprintCallable 
+	// void RestartSimulating();                                                                                             // [0xab4e770] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.PlayPreExplosionEfffects
-	// void PlayPreExplosionEfffects();                                                                                      // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void PlayPreExplosionEfffects();                                                                                      // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.OnRep_bSimulationRunning
-	// void OnRep_bSimulationRunning();                                                                                      // [0xa97ad7c] Final|Native|Protected 
+	// void OnRep_bSimulationRunning();                                                                                      // [0xab4e6e8] Final|Native|Protected 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.OnAttachedBuildingDestroyed
-	// void OnAttachedBuildingDestroyed(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xa97a8cc] Final|Native|Protected|HasDefaults 
+	// void OnAttachedBuildingDestroyed(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector Momentum); // [0xab4e2b4] Final|Native|Protected|HasDefaults 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.OnAttachedActorDestroyed
-	// void OnAttachedActorDestroyed(class AActor* DestroyedActor);                                                          // [0xa97a828] Final|Native|Protected 
+	// void OnAttachedActorDestroyed(class AActor* DestroyedActor);                                                          // [0xab4e1cc] Final|Native|Protected 
 	// Function /Script/MusterCoreWeaponsRuntime.FortExCaliberProjectile.BP_OnProjectileStopped
-	// void BP_OnProjectileStopped();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnProjectileStopped();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 

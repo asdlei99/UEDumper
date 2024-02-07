@@ -22,11 +22,11 @@ public:
 };
 
 /// Class /Script/MidMatchRadioTowerGameplayRuntime.RemoveFoliageBoxComponent
-/// Size: 0x0000 (0x0005B0 - 0x0005B0)
+/// Size: 0x0000 (0x000540 - 0x000540)
 class URemoveFoliageBoxComponent : public UBoxComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1456;
+	static inline constexpr uint64_t __MDKClassSize = 1344;
 
 public:
 };
@@ -44,6 +44,6 @@ public:
 
 	/// Functions
 	// Function /Script/MidMatchRadioTowerGameplayRuntime.BuildingGameplayActorRadioTower.GetLinkedRadioTowerTerminal
-	// class ARadioTowerTerminal* GetLinkedRadioTowerTerminal();                                                                // [0x211c0a0] Event|Protected|BlueprintEvent|Const 
+	// class ARadioTowerTerminal* GetLinkedRadioTowerTerminal();                                                                // [0x2047e54] Event|Protected|BlueprintEvent|Const 
 };
 

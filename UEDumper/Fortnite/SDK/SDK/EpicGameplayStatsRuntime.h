@@ -50,9 +50,9 @@ public:
 
 	/// Functions
 	// Function /Script/EpicGameplayStatsRuntime.BlueprintGameplayStatsLibrary.NotEqual_GameplayStatTagGameplayStatTag
-	// bool NotEqual_GameplayStatTagGameplayStatTag(FGameplayStatTag A, FGameplayStatTag B);                                 // [0x802efe4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool NotEqual_GameplayStatTagGameplayStatTag(FGameplayStatTag A, FGameplayStatTag B);                                 // [0x7fc5408] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EpicGameplayStatsRuntime.BlueprintGameplayStatsLibrary.EqualEqual_GameplayStatTagGameplayStatTag
-	// bool EqualEqual_GameplayStatTagGameplayStatTag(FGameplayStatTag A, FGameplayStatTag B);                               // [0x802edd8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool EqualEqual_GameplayStatTagGameplayStatTag(FGameplayStatTag A, FGameplayStatTag B);                               // [0x7fc52cc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/EpicGameplayStatsRuntime.ManagedGameplayTagDataTableItem
@@ -84,8 +84,8 @@ struct FTagTableManagerHelper
 /// Size: 0x0048 (0x000008 - 0x000050)
 struct FGameplayStatMetadataTableRow : FTableRowBase
 { 
-	SDK_UNDEFINED(16,13271) /* FString */              __um(BackendName);                                          // 0x0008   (0x0010)  
-	SDK_UNDEFINED(24,13272) /* FText */                __um(DisplayName);                                          // 0x0018   (0x0018)  
+	SDK_UNDEFINED(16,13323) /* FString */              __um(BackendName);                                          // 0x0008   (0x0010)  
+	SDK_UNDEFINED(24,13324) /* FText */                __um(DisplayName);                                          // 0x0018   (0x0018)  
 	TArray<EEpicLeaderboardTimeWindow>                 Windows;                                                    // 0x0030   (0x0010)  
 	EEpicLeaderboardUpdateFunction                     Metric;                                                     // 0x0040   (0x0001)  
 	EEpicLeaderboardDataType                           DataType;                                                   // 0x0041   (0x0001)  

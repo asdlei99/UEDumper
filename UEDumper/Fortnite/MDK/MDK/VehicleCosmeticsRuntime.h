@@ -15,8 +15,10 @@
 /// dependency: FortniteGame
 /// dependency: GameplayAbilities
 /// dependency: GameplayTags
-/// dependency: McpProfileSysCore
+/// dependency: ItemizationCoreRuntime
+/// dependency: McpProfileSys
 /// dependency: ModularGameplay
+/// dependency: StructUtils
 
 /// Class /Script/VehicleCosmeticsRuntime.FortItemVehiclePreviewActor
 /// Size: 0x0080 (0x000520 - 0x0005A0)
@@ -45,11 +47,11 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.FortItemVehiclePreviewActor.HandleVehicleCosmeticsReady
-	// void HandleVehicleCosmeticsReady();                                                                                      // [0xa7db27c] Final|Native|Public  
+	// void HandleVehicleCosmeticsReady();                                                                                      // [0xa9a8adc] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsRuntime.FortItemVehiclePreviewActor.HandleDriftTrailStarted
-	// void HandleDriftTrailStarted();                                                                                          // [0xa7dadf8] Final|Native|Public  
+	// void HandleDriftTrailStarted();                                                                                          // [0xa9a851c] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsRuntime.FortItemVehiclePreviewActor.HandleBoostStarted
-	// void HandleBoostStarted();                                                                                               // [0xa7dada8] Final|Native|Public  
+	// void HandleBoostStarted();                                                                                               // [0xa9a84cc] Final|Native|Public  
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAIControllerInterface
@@ -78,22 +80,22 @@ public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsPreviewVehicle
-/// Size: 0x0050 (0x001E80 - 0x001ED0)
+/// Size: 0x0050 (0x001EF0 - 0x001F40)
 class AVehicleCosmeticsPreviewVehicle : public AFortAthenaSKVehicle
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7888;
+	static inline constexpr uint64_t __MDKClassSize = 8000;
 
 public:
 
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsPreviewVehicle.HandleOnVehicleCosmeticsFinished
-	// void HandleOnVehicleCosmeticsFinished();                                                                                 // [0xa7db168] Final|Native|Public  
+	// void HandleOnVehicleCosmeticsFinished();                                                                                 // [0xa9a8948] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsPreviewVehicle.HandleOnDriftTrailApplied
-	// void HandleOnDriftTrailApplied();                                                                                        // [0xa7db090] Final|Native|Public  
+	// void HandleOnDriftTrailApplied();                                                                                        // [0xa9a87f4] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsPreviewVehicle.HandleOnBoostApplied
-	// void HandleOnBoostApplied();                                                                                             // [0xa7db07c] Final|Native|Public  
+	// void HandleOnBoostApplied();                                                                                             // [0xa9a87e0] Final|Native|Public  
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsBlueprintLibrary
@@ -108,13 +110,13 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsBlueprintLibrary.GetMaxSignificanceLOD_RearWheelDriftFX
-	// int32_t GetMaxSignificanceLOD_RearWheelDriftFX();                                                                        // [0xa7dad10] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// int32_t GetMaxSignificanceLOD_RearWheelDriftFX();                                                                        // [0xa9a8420] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsBlueprintLibrary.GetMaxSignificanceLOD_Generic
-	// int32_t GetMaxSignificanceLOD_Generic();                                                                                 // [0xa7dacf8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// int32_t GetMaxSignificanceLOD_Generic();                                                                                 // [0xa9a8408] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsBlueprintLibrary.GetMaxSignificanceLOD_FrontWheelDriftFX
-	// int32_t GetMaxSignificanceLOD_FrontWheelDriftFX();                                                                       // [0xa7dace0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// int32_t GetMaxSignificanceLOD_FrontWheelDriftFX();                                                                       // [0xa9a83f0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsBlueprintLibrary.GetMaxSignificanceLOD_BoostFX
-	// int32_t GetMaxSignificanceLOD_BoostFX();                                                                                 // [0xa7dacc8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// int32_t GetMaxSignificanceLOD_BoostFX();                                                                                 // [0xa9a83d8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAnimInstance
@@ -168,86 +170,86 @@ public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.FortVehicleCosmeticsItemDefinition
-/// Size: 0x00A0 (0x000790 - 0x000830)
+/// Size: 0x00A0 (0x000750 - 0x0007F0)
 class UFortVehicleCosmeticsItemDefinition : public UAthenaCosmeticItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2096;
+	static inline constexpr uint64_t __MDKClassSize = 2032;
 
 public:
-	CMember(TWeakObjectPtr<UVehicleCosmeticsItemDefinition*>) VehicleCosmeticsItemDef                              OFFSET(get<T>, {0x7B8, 32, 0, 0})
-	SMember(FGameplayTag)                              ItemTypeTag                                                 OFFSET(getStruct<T>, {0x7D8, 4, 0, 0})
-	CMember(TWeakObjectPtr<UVehicleCosmeticsPreviewConfigs*>) PreviewConfig                                        OFFSET(get<T>, {0x7E0, 32, 0, 0})
-	CMember(TArray<FVehicleCosmeticsRestrictionDefinition>) RestrictionDefinitions                                 OFFSET(get<T>, {0x800, 16, 0, 0})
-	CMember(TWeakObjectPtr<UFortVehicleCosmeticsItemDefinition*>) ItemPreviewVehicleBody                           OFFSET(get<T>, {0x810, 32, 0, 0})
+	CMember(TWeakObjectPtr<UVehicleCosmeticsItemDefinition*>) VehicleCosmeticsItemDef                              OFFSET(get<T>, {0x778, 32, 0, 0})
+	SMember(FGameplayTag)                              ItemTypeTag                                                 OFFSET(getStruct<T>, {0x798, 4, 0, 0})
+	CMember(TWeakObjectPtr<UVehicleCosmeticsPreviewConfigs*>) PreviewConfig                                        OFFSET(get<T>, {0x7A0, 32, 0, 0})
+	CMember(TArray<FVehicleCosmeticsRestrictionDefinition>) RestrictionDefinitions                                 OFFSET(get<T>, {0x7C0, 16, 0, 0})
+	CMember(TWeakObjectPtr<UFortVehicleCosmeticsItemDefinition*>) ItemPreviewVehicleBody                           OFFSET(get<T>, {0x7D0, 32, 0, 0})
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.FortVehicleCosmeticsItemDefinition_Body
-/// Size: 0x0000 (0x000830 - 0x000830)
+/// Size: 0x0000 (0x0007F0 - 0x0007F0)
 class UFortVehicleCosmeticsItemDefinition_Body : public UFortVehicleCosmeticsItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2096;
+	static inline constexpr uint64_t __MDKClassSize = 2032;
 
 public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.FortVehicleCosmeticsItemDefinition_Booster
-/// Size: 0x0000 (0x000830 - 0x000830)
+/// Size: 0x0000 (0x0007F0 - 0x0007F0)
 class UFortVehicleCosmeticsItemDefinition_Booster : public UFortVehicleCosmeticsItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2096;
+	static inline constexpr uint64_t __MDKClassSize = 2032;
 
 public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.FortVehicleCosmeticsItemDefinition_DriftTrail
-/// Size: 0x0000 (0x000830 - 0x000830)
+/// Size: 0x0000 (0x0007F0 - 0x0007F0)
 class UFortVehicleCosmeticsItemDefinition_DriftTrail : public UFortVehicleCosmeticsItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2096;
+	static inline constexpr uint64_t __MDKClassSize = 2032;
 
 public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.FortVehicleCosmeticsItemDefinition_EngineAudio
-/// Size: 0x0000 (0x000830 - 0x000830)
+/// Size: 0x0000 (0x0007F0 - 0x0007F0)
 class UFortVehicleCosmeticsItemDefinition_EngineAudio : public UFortVehicleCosmeticsItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2096;
+	static inline constexpr uint64_t __MDKClassSize = 2032;
 
 public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.FortVehicleCosmeticsItemDefinition_Skin
-/// Size: 0x0000 (0x000830 - 0x000830)
+/// Size: 0x0000 (0x0007F0 - 0x0007F0)
 class UFortVehicleCosmeticsItemDefinition_Skin : public UFortVehicleCosmeticsItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2096;
+	static inline constexpr uint64_t __MDKClassSize = 2032;
 
 public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.FortVehicleCosmeticsItemDefinition_Wheel
-/// Size: 0x0000 (0x000830 - 0x000830)
+/// Size: 0x0000 (0x0007F0 - 0x0007F0)
 class UFortVehicleCosmeticsItemDefinition_Wheel : public UFortVehicleCosmeticsItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2096;
+	static inline constexpr uint64_t __MDKClassSize = 2032;
 
 public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.FortVehicleCosmeticsVariantTokenType
-/// Size: 0x0000 (0x000450 - 0x000450)
+/// Size: 0x0000 (0x000410 - 0x000410)
 class UFortVehicleCosmeticsVariantTokenType : public UFortVariantTokenType
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1104;
+	static inline constexpr uint64_t __MDKClassSize = 1040;
 
 public:
 };
@@ -265,9 +267,9 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.PlayerCustomizableObjectCacheComponent.OnSeamlessTravelStart
-	// void OnSeamlessTravelStart(class UWorld* CurrentWorld, FString LevelName);                                               // [0xa7db418] Final|Native|Protected 
+	// void OnSeamlessTravelStart(class UWorld* CurrentWorld, FString LevelName);                                               // [0xa9a8ce0] Final|Native|Protected 
 	// Function /Script/VehicleCosmeticsRuntime.PlayerCustomizableObjectCacheComponent.OnPlayerDisconnected
-	// void OnPlayerDisconnected(class AFortPlayerStateAthena* PlayerState, bool bIsDisconnected);                              // [0xa7db350] Final|Native|Protected 
+	// void OnPlayerDisconnected(class AFortPlayerStateAthena* PlayerState, bool bIsDisconnected);                              // [0xa9a8b8c] Final|Native|Protected 
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActorSpawnLogic
@@ -313,11 +315,11 @@ public:
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor
-/// Size: 0x0040 (0x000290 - 0x0002D0)
+/// Size: 0x0048 (0x000290 - 0x0002D8)
 class AVehicleCosmeticsActor : public AActor
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 720;
+	static inline constexpr uint64_t __MDKClassSize = 728;
 
 public:
 	CMember(class UVehicleCosmeticsActorSpawnLogic*)   SpawnLogic                                                  OFFSET(get<T>, {0x290, 8, 0, 0})
@@ -325,54 +327,56 @@ public:
 	CMember(TScriptInterface<Class>)                   VehicleInterface                                            OFFSET(get<T>, {0x2A8, 16, 0, 0})
 	CMember(TScriptInterface<Class>)                   VehicleCosmeticsInterface                                   OFFSET(get<T>, {0x2B8, 16, 0, 0})
 	CMember(class UActorComponent*)                    VehicleCosmeticComponent                                    OFFSET(get<T>, {0x2C8, 8, 0, 0})
+	SMember(FName)                                     SocketAttachedTo                                            OFFSET(getStruct<T>, {0x2D0, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.GetBodyMeshComponent
-	// class USkeletalMeshComponent* GetBodyMeshComponent();                                                                    // [0xa7daba8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetBodyMeshComponent();                                                                    // [0xa9a8278] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.DriftStarted
-	// void DriftStarted();                                                                                                     // [0xa7dab80] Final|Native|Public  
+	// void DriftStarted();                                                                                                     // [0xa9a8250] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.DriftFinished
-	// void DriftFinished();                                                                                                    // [0xa7dab6c] Final|Native|Public  
+	// void DriftFinished();                                                                                                    // [0xa9a823c] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.ColorReady
-	// void ColorReady(FName InColor, FVehicleCosmeticsAdditionalParameterInfos& InInfo);                                       // [0xa7d9f7c] Final|Native|Public|HasOutParms 
+	// void ColorReady(FName InColor, FVehicleCosmeticsAdditionalParameterInfos& InInfo);                                       // [0xa9a7320] Final|Native|Public|HasOutParms 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnVehicleWheelsLeftGround
-	// void BP_OnVehicleWheelsLeftGround();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnVehicleWheelsLeftGround();                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnVehicleLanded
-	// void BP_OnVehicleLanded(float LandingForced, bool bLandedKickflip);                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnVehicleLanded(float LandingForced, bool bLandedKickflip);                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnDriftStarted
-	// void BP_OnDriftStarted();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftStarted();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnDriftFinished
-	// void BP_OnDriftFinished();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftFinished();                                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnDeactivated
-	// void BP_OnDeactivated();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDeactivated();                                                                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnCosmeticApplied
-	// void BP_OnCosmeticApplied();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnCosmeticApplied();                                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnColorReady
-	// void BP_OnColorReady(FName Color, FVehicleCosmeticsAdditionalParameterInfos AdditionalInfo);                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnColorReady(FName Color, FVehicleCosmeticsAdditionalParameterInfos AdditionalInfo);                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnBoostStarted
-	// void BP_OnBoostStarted();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnBoostStarted();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BP_OnBoostFinished
-	// void BP_OnBoostFinished();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnBoostFinished();                                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BoostStarted
-	// void BoostStarted();                                                                                                     // [0xa7d9f68] Final|Native|Public  
+	// void BoostStarted();                                                                                                     // [0xa9a730c] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.BoostFinished
-	// void BoostFinished();                                                                                                    // [0xa7d9f54] Final|Native|Public  
+	// void BoostFinished();                                                                                                    // [0xa9a72f8] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsActor.ApplyCosmetic
-	// void ApplyCosmetic();                                                                                                    // [0xf424fc] Native|Public        
+	// void ApplyCosmetic();                                                                                                    // [0x1ff1b0c] Native|Public        
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent
-/// Size: 0x0588 (0x0000D8 - 0x000660)
+/// Size: 0x05A0 (0x0000D8 - 0x000678)
 class UVehicleCosmeticsAssembledMeshUserComponent : public UAssembledMeshUserComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1632;
+	static inline constexpr uint64_t __MDKClassSize = 1656;
 
 public:
 	CMember(class UCustomizableObjectInstance*)        TempCustomizableObjectInstance                              OFFSET(get<T>, {0x108, 8, 0, 0})
 	SMember(FCosmeticLoadout)                          OwningCosmeticsLoadout                                      OFFSET(getStruct<T>, {0x130, 16, 0, 0})
 	CMember(TArray<FVehicleCosmeticsDefaultLoadoutInfo>) DefaultLoadoutInfos                                       OFFSET(get<T>, {0x150, 16, 0, 0})
+	DMember(bool)                                      bVehicleCosmeticsEnabled                                    OFFSET(get<bool>, {0x161, 1, 0, 0})
 	CMember(TArray<class AVehicleCosmeticsActor*>)     SpawnedCosmeticActors_Body                                  OFFSET(get<T>, {0x168, 16, 0, 0})
 	CMember(TArray<class AVehicleCosmeticsActor*>)     SpawnedCosmeticActors_Wheel                                 OFFSET(get<T>, {0x178, 16, 0, 0})
 	CMember(TArray<class AVehicleCosmeticsActor*>)     SpawnedCosmeticActors_Booster                               OFFSET(get<T>, {0x188, 16, 0, 0})
@@ -382,36 +386,38 @@ public:
 	SMember(FMulticastInlineDelegate)                  OnCosmeticActorSpawned                                      OFFSET(getStruct<T>, {0x580, 16, 0, 0})
 	SMember(FScalableFloat)                            CustomizationEnabled                                        OFFSET(getStruct<T>, {0x590, 40, 0, 0})
 	SMember(FScalableFloat)                            CosmeticsLoadoutFXLoopTime                                  OFFSET(getStruct<T>, {0x5B8, 40, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnEngineAudioUpdated                                        OFFSET(getStruct<T>, {0x5E0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnEngineAudioUpdated                                        OFFSET(getStruct<T>, {0x5F8, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.VehicleCosmeticsOnCosmeticItemSpawned__DelegateSignature
-	// void VehicleCosmeticsOnCosmeticItemSpawned__DelegateSignature(class AVehicleCosmeticsActor* CosmeticActor);              // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void VehicleCosmeticsOnCosmeticItemSpawned__DelegateSignature(class AVehicleCosmeticsActor* CosmeticActor);              // [0x2047e54] MulticastDelegate|Public|Delegate 
+	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.SetVehicleCosmeticsEnabled
+	// void SetVehicleCosmeticsEnabled(bool& bEnabled);                                                                         // [0xa9a9434] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.OnRep_OwningCosmeticsLoadout
-	// void OnRep_OwningCosmeticsLoadout();                                                                                     // [0x3601efc] Final|Native|Protected 
+	// void OnRep_OwningCosmeticsLoadout();                                                                                     // [0xa9a8ccc] Final|Native|Protected 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleTireRepaired
-	// void HandleTireRepaired(int32_t TireIndex);                                                                              // [0xa7db1fc] Final|Native|Protected 
+	// void HandleTireRepaired(int32_t TireIndex);                                                                              // [0xa9a8a1c] Final|Native|Protected 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleTirePopped
-	// void HandleTirePopped(int32_t TireIndex);                                                                                // [0xa7db17c] Final|Native|Protected 
+	// void HandleTirePopped(int32_t TireIndex);                                                                                // [0xa9a895c] Final|Native|Protected 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleOnExplode
-	// void HandleOnExplode(class AController* LastDamageInstigator, class AFortAthenaVehicle* Vehicle);                        // [0xa7db0a4] Final|Native|Protected 
+	// void HandleOnExplode(class AController* LastDamageInstigator, class AFortAthenaVehicle* Vehicle);                        // [0xa9a8808] Final|Native|Protected 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleModApplied
-	// void HandleModApplied(class AFortAthenaVehicle* Vehicle, FGameplayTag& ModTag);                                          // [0xa7daea0] Final|Native|Protected|HasOutParms 
+	// void HandleModApplied(class AFortAthenaVehicle* Vehicle, FGameplayTag& ModTag);                                          // [0xa9a85c4] Final|Native|Protected|HasOutParms 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleForceApplyVehicleCosmetics
-	// void HandleForceApplyVehicleCosmetics(FSpawnerInfoForcedCosmetics& ForcedCosmetics);                                     // [0xa7dae0c] Final|Native|Protected|HasOutParms 
+	// void HandleForceApplyVehicleCosmetics(FSpawnerInfoForcedCosmetics& ForcedCosmetics);                                     // [0xa9a8530] Final|Native|Protected|HasOutParms 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleDriftStarted
-	// void HandleDriftStarted();                                                                                               // [0xa7dade4] Final|Native|Private 
+	// void HandleDriftStarted();                                                                                               // [0xa9a8508] Final|Native|Private 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleDriftFinished
-	// void HandleDriftFinished();                                                                                              // [0xa7dadd0] Final|Native|Private 
+	// void HandleDriftFinished();                                                                                              // [0xa9a84f4] Final|Native|Private 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleBoostStarted
-	// void HandleBoostStarted();                                                                                               // [0xa7dadbc] Final|Native|Private 
+	// void HandleBoostStarted();                                                                                               // [0xa9a84e0] Final|Native|Private 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleBoostFinished
-	// void HandleBoostFinished();                                                                                              // [0xa7dad94] Final|Native|Private 
+	// void HandleBoostFinished();                                                                                              // [0xa9a84b8] Final|Native|Private 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleBodyPhysicsChanges
-	// void HandleBodyPhysicsChanges();                                                                                         // [0xa7dad80] Final|Native|Protected 
+	// void HandleBodyPhysicsChanges();                                                                                         // [0xa9a84a4] Final|Native|Protected 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsAssembledMeshUserComponent.HandleBeginVehicleCosmetics
-	// void HandleBeginVehicleCosmetics();                                                                                      // [0x2e57f30] Final|Native|Private 
+	// void HandleBeginVehicleCosmetics();                                                                                      // [0xa9a8490] Final|Native|Private 
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager
@@ -426,53 +432,53 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.VehicleCosmeticsDriftEnabled
-	// void VehicleCosmeticsDriftEnabled(bool bNewValue);                                                                       // [0xa7dbaf0] Final|Exec|Native|Public 
+	// void VehicleCosmeticsDriftEnabled(bool bNewValue);                                                                       // [0xa9a94ec] Final|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_WheelPainted
-	// void SetVehicleCosmeticsLoadout_WheelPainted(FString PaintName);                                                         // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_WheelPainted(FString PaintName);                                                         // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_Wheel
-	// void SetVehicleCosmeticsLoadout_Wheel(FString WheelName);                                                                // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_Wheel(FString WheelName);                                                                // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_SkinPainted
-	// void SetVehicleCosmeticsLoadout_SkinPainted(FString PaintName);                                                          // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_SkinPainted(FString PaintName);                                                          // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_SkinColor
-	// void SetVehicleCosmeticsLoadout_SkinColor(FString SkinColor);                                                            // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_SkinColor(FString SkinColor);                                                            // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_Skin
-	// void SetVehicleCosmeticsLoadout_Skin(FString SkinName);                                                                  // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_Skin(FString SkinName);                                                                  // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_DriftTrailPainted
-	// void SetVehicleCosmeticsLoadout_DriftTrailPainted(FString PaintName);                                                    // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_DriftTrailPainted(FString PaintName);                                                    // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_DriftTrail
-	// void SetVehicleCosmeticsLoadout_DriftTrail(FString DriftSmokeName);                                                      // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_DriftTrail(FString DriftSmokeName);                                                      // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_BoosterPainted
-	// void SetVehicleCosmeticsLoadout_BoosterPainted(FString PaintName);                                                       // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_BoosterPainted(FString PaintName);                                                       // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_Booster
-	// void SetVehicleCosmeticsLoadout_Booster(FString BoosterName);                                                            // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_Booster(FString BoosterName);                                                            // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_BodyPainted
-	// void SetVehicleCosmeticsLoadout_BodyPainted(FString PaintName);                                                          // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_BodyPainted(FString PaintName);                                                          // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_BodyColor
-	// void SetVehicleCosmeticsLoadout_BodyColor(FString BodyColor);                                                            // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_BodyColor(FString BodyColor);                                                            // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout_Body
-	// void SetVehicleCosmeticsLoadout_Body(FString BodyName);                                                                  // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout_Body(FString BodyName);                                                                  // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmeticsLoadout
-	// void SetVehicleCosmeticsLoadout(FString BodyName, FString WheelName, FString SkinName, FString BoosterName, FString DriftTrailName, FString BodyPainted, FString WheelPainted, FString BodyColor, FString SkinColor, FString SkinPainted, FString BoosterPainted, FString DriftTrailPainted); // [0xa7da090] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SetVehicleCosmeticsLoadout(FString BodyName, FString WheelName, FString SkinName, FString BoosterName, FString DriftTrailName, FString BodyPainted, FString WheelPainted, FString BodyColor, FString SkinColor, FString SkinPainted, FString BoosterPainted, FString DriftTrailPainted); // [0xa9a744c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmetics_DriftTrailPainted
-	// void SetVehicleCosmetics_DriftTrailPainted(FString PaintName);                                                           // [0x8c0e6d0] Final|Exec|Native|Public 
+	// void SetVehicleCosmetics_DriftTrailPainted(FString PaintName);                                                           // [0x8c1108c] Final|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.SetVehicleCosmetics_BoosterPainted
-	// void SetVehicleCosmetics_BoosterPainted(FString PaintName);                                                              // [0x8c0e6d0] Final|Exec|Native|Public 
+	// void SetVehicleCosmetics_BoosterPainted(FString PaintName);                                                              // [0x8c1108c] Final|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.GrantVehicleCosmeticsLoadedAssets
-	// void GrantVehicleCosmeticsLoadedAssets();                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void GrantVehicleCosmeticsLoadedAssets();                                                                                // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.DumpVehicleCosmeticsPhysicsShapeCollision
-	// void DumpVehicleCosmeticsPhysicsShapeCollision();                                                                        // [0xa7dab94] Final|Exec|Native|Public 
+	// void DumpVehicleCosmeticsPhysicsShapeCollision();                                                                        // [0xa9a8264] Final|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.DumpVehicleCosmeticsLoadedAssetVariantTokenTypes
-	// void DumpVehicleCosmeticsLoadedAssetVariantTokenTypes();                                                                 // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void DumpVehicleCosmeticsLoadedAssetVariantTokenTypes();                                                                 // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.DumpVehicleCosmeticsLoadedAssetTemplateIds
-	// void DumpVehicleCosmeticsLoadedAssetTemplateIds();                                                                       // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void DumpVehicleCosmeticsLoadedAssetTemplateIds();                                                                       // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.DumpVehicleCosmeticsLoadedAssetSkeletalMeshes
-	// void DumpVehicleCosmeticsLoadedAssetSkeletalMeshes();                                                                    // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void DumpVehicleCosmeticsLoadedAssetSkeletalMeshes();                                                                    // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.CustomizeVehicle
-	// void CustomizeVehicle(FString BodyName, FString WheelName, FString SkinName, FString BoosterName, FString DriftTrailName, FString BodyPainted, FString WheelPainted, FString BodyColor, FString SkinColor, FString SkinPainted, FString BoosterPainted, FString DriftTrailPainted); // [0xa7da090] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void CustomizeVehicle(FString BodyName, FString WheelName, FString SkinName, FString BoosterName, FString DriftTrailName, FString BodyPainted, FString WheelPainted, FString BodyColor, FString SkinColor, FString SkinPainted, FString BoosterPainted, FString DriftTrailPainted); // [0xa9a744c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.CustomizeAllVehicles
-	// void CustomizeAllVehicles(FString BodyName, FString WheelName, FString SkinName, FString BoosterName, FString DriftTrailName, FString BodyPainted, FString WheelPainted, FString BodyColor, FString SkinColor, FString SkinPainted, FString BoosterPainted, FString DriftTrailPainted); // [0xa7da090] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void CustomizeAllVehicles(FString BodyName, FString WheelName, FString SkinName, FString BoosterName, FString DriftTrailName, FString BodyPainted, FString WheelPainted, FString BodyColor, FString SkinColor, FString SkinPainted, FString BoosterPainted, FString DriftTrailPainted); // [0xa9a744c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsCheatManager.ClearVehicleCosmeticsLoadout
-	// void ClearVehicleCosmeticsLoadout();                                                                                     // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void ClearVehicleCosmeticsLoadout();                                                                                     // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface
@@ -487,31 +493,31 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.ShouldWheelSpinForPreview
-	// bool ShouldWheelSpinForPreview();                                                                                        // [0x812ebe8] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldWheelSpinForPreview();                                                                                        // [0xa9a94c8] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.IsUnderthrustActive
-	// bool IsUnderthrustActive();                                                                                              // [0x17791c4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUnderthrustActive();                                                                                              // [0x3760ef4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.IsTurboActive
-	// bool IsTurboActive();                                                                                                    // [0xa7db328] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTurboActive();                                                                                                    // [0xa9a8b64] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.IsStartlineBoostActive
-	// bool IsStartlineBoostActive();                                                                                           // [0xa7db300] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStartlineBoostActive();                                                                                           // [0xa9a8b3c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.IsKickflipActive
-	// bool IsKickflipActive();                                                                                                 // [0x8ee518c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsKickflipActive();                                                                                                 // [0x8f28ed4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.IsJumpAbilityActive
-	// bool IsJumpAbilityActive();                                                                                              // [0xa7db2d8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsJumpAbilityActive();                                                                                              // [0xa9a8b14] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.IsDrifting
-	// bool IsDrifting();                                                                                                       // [0xa7db2b4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDrifting();                                                                                                       // [0x80ccd74] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.IsDriftBoostActive
-	// bool IsDriftBoostActive();                                                                                               // [0xa7db290] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDriftBoostActive();                                                                                               // [0xa9a8af0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.GetWheelItemName
-	// FName GetWheelItemName();                                                                                                // [0xa7dad54] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetWheelItemName();                                                                                                // [0xa9a8464] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.GetTurboItemName
-	// FName GetTurboItemName();                                                                                                // [0xa7dad28] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetTurboItemName();                                                                                                // [0xa9a8438] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.GetDriftTrailItemName
-	// FName GetDriftTrailItemName();                                                                                           // [0x86393b4] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetDriftTrailItemName();                                                                                           // [0x85dd324] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.GetDraftingAppliedBonusSpeed
-	// float GetDraftingAppliedBonusSpeed();                                                                                    // [0xa7dabf0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDraftingAppliedBonusSpeed();                                                                                    // [0xa9a82c0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/VehicleCosmeticsRuntime.VehicleCosmeticsInterface.GetBodyItemName
-	// FName GetBodyItemName();                                                                                                 // [0x1e19bb0] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetBodyItemName();                                                                                                 // [0x6bb8178] RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsItemDefinition
@@ -594,7 +600,7 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsRuntime.VehicleAudioCosmeticData.GetEngineSound
-	// TWeakObjectPtr<USoundBase*> GetEngineSound(bool bHighSpec);                                                              // [0xa7dac18] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TWeakObjectPtr<USoundBase*> GetEngineSound(bool bHighSpec);                                                              // [0xa9a82e8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/VehicleCosmeticsRuntime.VehicleCosmeticsItemDefinition_EngineAudio
@@ -632,9 +638,9 @@ class UVehicleCosmeticsItemDefinition_Wheel : public UVehicleCosmeticsItemDefini
 	static inline constexpr uint64_t __MDKClassSize = 648;
 
 public:
-	SMember(FVehicleCosmeticsCustomizableObjectIntInfo) WheelGroup                                                 OFFSET(getStruct<T>, {0x1F0, 8, 0, 0})
-	SMember(FName)                                     PaintedDataTableParameterName                               OFFSET(getStruct<T>, {0x1F8, 4, 0, 0})
-	SMember(FTirePopInfo)                              WheelTirePoppedInfo                                         OFFSET(getStruct<T>, {0x200, 24, 0, 0})
+	SMember(FVehicleCosmeticsCustomizableObjectIntInfo) WheelGroup                                                 OFFSET(getStruct<T>, {0x1F8, 8, 0, 0})
+	SMember(FName)                                     PaintedDataTableParameterName                               OFFSET(getStruct<T>, {0x200, 4, 0, 0})
+	SMember(FInstancedStruct)                          WheelTirePoppedInfo                                         OFFSET(getStruct<T>, {0x208, 16, 0, 0})
 	CMember(TMap<FGameplayTag, FVehicleCosmeticsAdditionalParameterInfos>) AdditionalVariantInfos                  OFFSET(get<T>, {0x218, 80, 0, 0})
 	CMember(TArray<FVehicleCosmeticsAnimInfo>)         AnimInfos                                                   OFFSET(get<T>, {0x268, 16, 0, 0})
 	CMember(TArray<FWheelSetupInfo>)                   WheelSetupInfos                                             OFFSET(get<T>, {0x278, 16, 0, 0})
@@ -867,8 +873,32 @@ public:
 };
 
 /// Struct /Script/VehicleCosmeticsRuntime.TirePopInfo
-/// Size: 0x0018 (0x000000 - 0x000018)
+/// Size: 0x0001 (0x000000 - 0x000001)
 class FTirePopInfo : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 1;
+
+public:
+};
+
+/// Struct /Script/VehicleCosmeticsRuntime.TirePopUsingBoneInfo
+/// Size: 0x009F (0x000001 - 0x0000A0)
+class FTirePopUsingBoneInfo : public FTirePopInfo
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 160;
+
+public:
+	CMember(TWeakObjectPtr<USkeleton*>)                WheelSkeletonReference                                      OFFSET(get<T>, {0x0, 32, 0, 0})
+	SMember(FBoneSocketTarget)                         WheelBone                                                   OFFSET(getStruct<T>, {0x20, 128, 0, 0})
+};
+
+/// Struct /Script/VehicleCosmeticsRuntime.TirePopUsingMaterialParameterInfo
+/// Size: 0x0017 (0x000001 - 0x000018)
+class FTirePopUsingMaterialParameterInfo : public FTirePopInfo
 { 
 	friend MDKHandler;
 	friend MDKBase;
@@ -880,12 +910,12 @@ public:
 };
 
 /// Struct /Script/VehicleCosmeticsRuntime.WheelInfo
-/// Size: 0x0088 (0x000000 - 0x000088)
+/// Size: 0x0080 (0x000000 - 0x000080)
 class FWheelInfo : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 136;
+	static inline constexpr uint64_t __MDKClassSize = 128;
 
 public:
 };

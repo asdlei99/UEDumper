@@ -11,11 +11,11 @@
 /// dependency: ModularGameplay
 
 /// Class /Lager/Lager/LagerManager.LagerManager_C
-/// Size: 0x0000 (0x000C10 - 0x000C10)
+/// Size: 0x0000 (0x000C20 - 0x000C20)
 class ULagerManager_C : public UFortAthenaLivingWorldManager
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3088;
+	static inline constexpr uint64_t __MDKClassSize = 3104;
 
 public:
 };

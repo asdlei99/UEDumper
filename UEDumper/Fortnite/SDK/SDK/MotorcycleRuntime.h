@@ -92,7 +92,7 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicleAnimInstance.CollectConditionsFromDriver
-	// void CollectConditionsFromDriver();                                                                                   // [0xb0c8e80] Final|Native|Public|BlueprintCallable 
+	// void CollectConditionsFromDriver();                                                                                   // [0xb2c1484] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider
@@ -234,31 +234,31 @@ public:
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartWheelie
-	// void HandleStartWheelie();                                                                                            // [0xb0c910c] Final|Native|Public  
+	// void HandleStartWheelie();                                                                                            // [0xb2c17dc] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartStoppie
-	// void HandleStartStoppie();                                                                                            // [0xb0c90f4] Final|Native|Public  
+	// void HandleStartStoppie();                                                                                            // [0xb2c17c4] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartChargingJump
-	// void HandleStartChargingJump();                                                                                       // [0xb0c90dc] Final|Native|Public  
+	// void HandleStartChargingJump();                                                                                       // [0xb2c17ac] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleStartAirTrick
-	// void HandleStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                      // [0xb0c9060] Final|Native|Public  
+	// void HandleStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                      // [0xb2c16ec] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleReleaseWheelie
-	// void HandleReleaseWheelie();                                                                                          // [0xb0c9048] Final|Native|Public  
+	// void HandleReleaseWheelie();                                                                                          // [0xb2c16d4] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleReleaseStoppie
-	// void HandleReleaseStoppie();                                                                                          // [0xb0c9030] Final|Native|Public  
+	// void HandleReleaseStoppie();                                                                                          // [0xb2c16bc] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleJump
-	// void HandleJump(float InJumpChargeFactor);                                                                            // [0xb0c8fac] Final|Native|Public  
+	// void HandleJump(float InJumpChargeFactor);                                                                            // [0xb2c15f4] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleFinishAirTrick
-	// void HandleFinishAirTrick();                                                                                          // [0xb0c8f94] Final|Native|Public  
+	// void HandleFinishAirTrick();                                                                                          // [0xb2c15dc] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleChargingJump
-	// void HandleChargingJump(float InJumpChargeFactor);                                                                    // [0xb0c8f14] Final|Native|Public  
+	// void HandleChargingJump(float InJumpChargeFactor);                                                                    // [0xb2c1518] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.HandleCancelChargingJump
-	// void HandleCancelChargingJump();                                                                                      // [0xb0c8efc] Final|Native|Public  
+	// void HandleCancelChargingJump();                                                                                      // [0xb2c1500] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.CollapsedAimYawSmoothed
-	// void CollapsedAimYawSmoothed(float DeltaSeconds);                                                                     // [0xb0c8e00] Final|Native|Public|BlueprintCallable 
+	// void CollapsedAimYawSmoothed(float DeltaSeconds);                                                                     // [0xb2c13c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.CalculateNoiseAlpha
-	// void CalculateNoiseAlpha();                                                                                           // [0xb0c8d44] Final|Native|Public|BlueprintCallable 
+	// void CalculateNoiseAlpha();                                                                                           // [0xb2c12c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleRider.AnimNotify_JumpEntered
-	// void AnimNotify_JumpEntered();                                                                                        // [0xb0c8d24] Final|Native|Public  
+	// void AnimNotify_JumpEntered();                                                                                        // [0xb2c12a0] Final|Native|Public  
 };
 
 /// Class /Script/MotorcycleRuntime.FortPlayerAnimInstance_MotorcycleDriver
@@ -383,149 +383,149 @@ public:
 };
 
 /// Class /Script/MotorcycleRuntime.FortMotorcycleVehicle
-/// Size: 0x0450 (0x001F00 - 0x002350)
+/// Size: 0x0450 (0x001F70 - 0x0023C0)
 class AFortMotorcycleVehicle : public AFortAthenaSKMotorVehicle
 { 
 public:
-	SDK_UNDEFINED(16,13046) /* FMulticastInlineDelegate */ __um(OnStartChargingJumpDelegate);                      // 0x1EF8   (0x0010)  
-	SDK_UNDEFINED(16,13047) /* FMulticastInlineDelegate */ __um(OnCancelChargingJumpDelegate);                     // 0x1F08   (0x0010)  
-	SDK_UNDEFINED(16,13048) /* FMulticastInlineDelegate */ __um(OnJumpDelegate);                                   // 0x1F18   (0x0010)  
-	SDK_UNDEFINED(16,13049) /* FMulticastInlineDelegate */ __um(OnChargingJumpDelegate);                           // 0x1F28   (0x0010)  
-	SDK_UNDEFINED(16,13050) /* FMulticastInlineDelegate */ __um(OnStartAirTrickDelegate);                          // 0x1F38   (0x0010)  
-	SDK_UNDEFINED(16,13051) /* FMulticastInlineDelegate */ __um(OnFinishAirTrickDelegate);                         // 0x1F48   (0x0010)  
-	SDK_UNDEFINED(16,13052) /* FMulticastInlineDelegate */ __um(OnStartWheelieDelegate);                           // 0x1F58   (0x0010)  
-	SDK_UNDEFINED(16,13053) /* FMulticastInlineDelegate */ __um(OnReleaseWheelieDelegate);                         // 0x1F68   (0x0010)  
-	SDK_UNDEFINED(16,13054) /* FMulticastInlineDelegate */ __um(OnLandWheelieDelegate);                            // 0x1F78   (0x0010)  
-	SDK_UNDEFINED(16,13055) /* FMulticastInlineDelegate */ __um(OnFailWheelieDelegate);                            // 0x1F88   (0x0010)  
-	SDK_UNDEFINED(16,13056) /* FMulticastInlineDelegate */ __um(OnStartStoppieDelegate);                           // 0x1F98   (0x0010)  
-	SDK_UNDEFINED(16,13057) /* FMulticastInlineDelegate */ __um(OnReleaseStoppieDelegate);                         // 0x1FA8   (0x0010)  
-	SDK_UNDEFINED(16,13058) /* FMulticastInlineDelegate */ __um(OnLandStoppieDelegate);                            // 0x1FB8   (0x0010)  
-	SDK_UNDEFINED(16,13059) /* FMulticastInlineDelegate */ __um(OnInventoryModeChangedDelegate);                   // 0x1FC8   (0x0010)  
-	SDK_UNDEFINED(16,13060) /* FMulticastInlineDelegate */ __um(OnSuperSlidingChangedDelegate);                    // 0x1FD8   (0x0010)  
-	class UClass*                                      InventoryCameraModeClass;                                   // 0x1FE8   (0x0008)  
-	class UClass*                                      InventoryCameraModeClassADS;                                // 0x1FF0   (0x0008)  
-	class UClass*                                      PassengerCameraModeClass;                                   // 0x1FF8   (0x0008)  
-	class UClass*                                      PassengerCameraModeClassADS;                                // 0x2000   (0x0008)  
-	class UFortMotorcycleVehicleConfigs*               FortMotorcycleVehicleConfigs;                               // 0x2008   (0x0008)  
-	FName                                              RearAxleSocket;                                             // 0x2010   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x2014   (0x0004)  MISSED
-	TArray<FActionDefForUI>                            ActionDefForUI;                                             // 0x2018   (0x0010)  
-	float                                              SwingArmRotation;                                           // 0x2028   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x7C];                                      // 0x202C   (0x007C)  MISSED
-	TArray<int32_t>                                    BoostShapeIndices;                                          // 0x20A8   (0x0010)  
-	bool                                               bIsBoostAttacking;                                          // 0x20B8   (0x0001)  
-	unsigned char                                      UnknownData02_5[0xF];                                       // 0x20B9   (0x000F)  MISSED
-	EFortMotorcycleAirTrickType                        CachedTrickType;                                            // 0x20C8   (0x0001)  
-	bool                                               bHadPassengerAtTrickStart;                                  // 0x20C9   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x36];                                      // 0x20CA   (0x0036)  MISSED
-	TArray<FName>                                      PassengerADSSockets;                                        // 0x2100   (0x0010)  
-	TArray<FVector>                                    PassengerADSRelativeOffsets;                                // 0x2110   (0x0010)  
-	class UNiagaraComponent*                           CachedNiagaraComponentRoadAndExhaust;                       // 0x2120   (0x0008)  
-	SDK_UNDEFINED(16,13061) /* FString */              __um(RoadAndExhaustNiagaraComponentName);                   // 0x2128   (0x0010)  
-	FName                                              RoadAndExhaustVehicleSpeedName;                             // 0x2138   (0x0004)  
-	FName                                              RoadAndExhaustSlideDirectionName;                           // 0x213C   (0x0004)  
-	float                                              RoadAndExhaustMinSpeedForDust;                              // 0x2140   (0x0004)  
-	FName                                              RoadAndExhaustDustRearName;                                 // 0x2144   (0x0004)  
-	FName                                              RoadAndExhaustDustColorLerpName;                            // 0x2148   (0x0004)  
-	float                                              RoadAndExhaustDustColorLerp;                                // 0x214C   (0x0004)  
-	FName                                              RoadAndExhaustDustAlphaMultiplierName;                      // 0x2150   (0x0004)  
-	float                                              RoadAndExhaustDustAlphaMultiplier;                          // 0x2154   (0x0004)  
-	FName                                              RoadAndExhaustPeelOutColorIndexName;                        // 0x2158   (0x0004)  
-	FName                                              RoadAndExhaustPeelOutRearName;                              // 0x215C   (0x0004)  
-	FName                                              RoadAndExhaustIsPeelOutOnRoadName;                          // 0x2160   (0x0004)  
-	FName                                              RoadAndExhaustIsPeelOutOnRoadRewindName;                    // 0x2164   (0x0004)  
-	FName                                              RoadAndExhaustIsInAirName;                                  // 0x2168   (0x0004)  
-	FGameplayTag                                       RoadAndExhaustCameraDirtGameplayCueTag;                     // 0x216C   (0x0004)  
-	FGameplayTag                                       RoadAndExhaustCameraWaterGameplayCueTag;                    // 0x2170   (0x0004)  
-	unsigned char                                      UnknownData04_5[0x4];                                       // 0x2174   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13062) /* TArray<TEnumAsByte<EPhysicalSurface>> */ __um(RoadAndExhaustSurfaceTypeArrayForFX); // 0x2178   (0x0010)  
-	class ULegacyCameraShake*                          DriverCameraShakeInstance;                                  // 0x2188   (0x0008)  
-	class ULegacyCameraShake*                          AcceleratingCameraShakeInstance;                            // 0x2190   (0x0008)  
-	unsigned char                                      UnknownData05_5[0x8];                                       // 0x2198   (0x0008)  MISSED
-	FName                                              RoadAndExhaustHeadlightsName;                               // 0x21A0   (0x0004)  
-	FName                                              RoadAndExhaustBrakelightsName;                              // 0x21A4   (0x0004)  
-	FScalableFloat                                     DoorBashMinSpeed;                                           // 0x21A8   (0x0028)  
-	FScalableFloat                                     DoorBashMaxSpeed;                                           // 0x21D0   (0x0028)  
-	FScalableFloat                                     DoorBashForwardDistanceMin;                                 // 0x21F8   (0x0028)  
-	FScalableFloat                                     DoorBashForwardDistanceMax;                                 // 0x2220   (0x0028)  
-	FGameplayTag                                       DoorBashGameplayCueTag;                                     // 0x2248   (0x0004)  
-	unsigned char                                      UnknownData06_5[0x4];                                       // 0x224C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,13063) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(DoorBashCollisionTypesForDoor);       // 0x2250   (0x0010)  
-	SDK_UNDEFINED(16,13064) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(DoorBashCollisionTypesForPawn);       // 0x2260   (0x0010)  
-	FScalableFloat                                     DoorBashSphereRadiusForPawnLaunch;                          // 0x2270   (0x0028)  
-	FScalableFloat                                     DoorBashScalarForPawnLaunch;                                // 0x2298   (0x0028)  
-	FGameplayTag                                       DoorBashPawnLaunchGameplayCueTag;                           // 0x22C0   (0x0004)  
-	unsigned char                                      UnknownData07_5[0x4];                                       // 0x22C4   (0x0004)  MISSED
-	FGameplayTagQuery                                  InventoryModeTagQuery;                                      // 0x22C8   (0x0048)  
-	FGameplayTagContainer                              InputContextBlockedTags;                                    // 0x2310   (0x0020)  
-	unsigned char                                      UnknownData08_5[0x18];                                      // 0x2330   (0x0018)  MISSED
-	FGameplayTag                                       MobileHUDTag;                                               // 0x2348   (0x0004)  
-	unsigned char                                      UnknownData09_6[0x4];                                       // 0x234C   (0x0004)  MISSED
+	SDK_UNDEFINED(16,13100) /* FMulticastInlineDelegate */ __um(OnStartChargingJumpDelegate);                      // 0x1F68   (0x0010)  
+	SDK_UNDEFINED(16,13101) /* FMulticastInlineDelegate */ __um(OnCancelChargingJumpDelegate);                     // 0x1F78   (0x0010)  
+	SDK_UNDEFINED(16,13102) /* FMulticastInlineDelegate */ __um(OnJumpDelegate);                                   // 0x1F88   (0x0010)  
+	SDK_UNDEFINED(16,13103) /* FMulticastInlineDelegate */ __um(OnChargingJumpDelegate);                           // 0x1F98   (0x0010)  
+	SDK_UNDEFINED(16,13104) /* FMulticastInlineDelegate */ __um(OnStartAirTrickDelegate);                          // 0x1FA8   (0x0010)  
+	SDK_UNDEFINED(16,13105) /* FMulticastInlineDelegate */ __um(OnFinishAirTrickDelegate);                         // 0x1FB8   (0x0010)  
+	SDK_UNDEFINED(16,13106) /* FMulticastInlineDelegate */ __um(OnStartWheelieDelegate);                           // 0x1FC8   (0x0010)  
+	SDK_UNDEFINED(16,13107) /* FMulticastInlineDelegate */ __um(OnReleaseWheelieDelegate);                         // 0x1FD8   (0x0010)  
+	SDK_UNDEFINED(16,13108) /* FMulticastInlineDelegate */ __um(OnLandWheelieDelegate);                            // 0x1FE8   (0x0010)  
+	SDK_UNDEFINED(16,13109) /* FMulticastInlineDelegate */ __um(OnFailWheelieDelegate);                            // 0x1FF8   (0x0010)  
+	SDK_UNDEFINED(16,13110) /* FMulticastInlineDelegate */ __um(OnStartStoppieDelegate);                           // 0x2008   (0x0010)  
+	SDK_UNDEFINED(16,13111) /* FMulticastInlineDelegate */ __um(OnReleaseStoppieDelegate);                         // 0x2018   (0x0010)  
+	SDK_UNDEFINED(16,13112) /* FMulticastInlineDelegate */ __um(OnLandStoppieDelegate);                            // 0x2028   (0x0010)  
+	SDK_UNDEFINED(16,13113) /* FMulticastInlineDelegate */ __um(OnInventoryModeChangedDelegate);                   // 0x2038   (0x0010)  
+	SDK_UNDEFINED(16,13114) /* FMulticastInlineDelegate */ __um(OnSuperSlidingChangedDelegate);                    // 0x2048   (0x0010)  
+	class UClass*                                      InventoryCameraModeClass;                                   // 0x2058   (0x0008)  
+	class UClass*                                      InventoryCameraModeClassADS;                                // 0x2060   (0x0008)  
+	class UClass*                                      PassengerCameraModeClass;                                   // 0x2068   (0x0008)  
+	class UClass*                                      PassengerCameraModeClassADS;                                // 0x2070   (0x0008)  
+	class UFortMotorcycleVehicleConfigs*               FortMotorcycleVehicleConfigs;                               // 0x2078   (0x0008)  
+	FName                                              RearAxleSocket;                                             // 0x2080   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x2084   (0x0004)  MISSED
+	TArray<FActionDefForUI>                            ActionDefForUI;                                             // 0x2088   (0x0010)  
+	float                                              SwingArmRotation;                                           // 0x2098   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x7C];                                      // 0x209C   (0x007C)  MISSED
+	TArray<int32_t>                                    BoostShapeIndices;                                          // 0x2118   (0x0010)  
+	bool                                               bIsBoostAttacking;                                          // 0x2128   (0x0001)  
+	unsigned char                                      UnknownData02_5[0xF];                                       // 0x2129   (0x000F)  MISSED
+	EFortMotorcycleAirTrickType                        CachedTrickType;                                            // 0x2138   (0x0001)  
+	bool                                               bHadPassengerAtTrickStart;                                  // 0x2139   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x36];                                      // 0x213A   (0x0036)  MISSED
+	TArray<FName>                                      PassengerADSSockets;                                        // 0x2170   (0x0010)  
+	TArray<FVector>                                    PassengerADSRelativeOffsets;                                // 0x2180   (0x0010)  
+	class UNiagaraComponent*                           CachedNiagaraComponentRoadAndExhaust;                       // 0x2190   (0x0008)  
+	SDK_UNDEFINED(16,13115) /* FString */              __um(RoadAndExhaustNiagaraComponentName);                   // 0x2198   (0x0010)  
+	FName                                              RoadAndExhaustVehicleSpeedName;                             // 0x21A8   (0x0004)  
+	FName                                              RoadAndExhaustSlideDirectionName;                           // 0x21AC   (0x0004)  
+	float                                              RoadAndExhaustMinSpeedForDust;                              // 0x21B0   (0x0004)  
+	FName                                              RoadAndExhaustDustRearName;                                 // 0x21B4   (0x0004)  
+	FName                                              RoadAndExhaustDustColorLerpName;                            // 0x21B8   (0x0004)  
+	float                                              RoadAndExhaustDustColorLerp;                                // 0x21BC   (0x0004)  
+	FName                                              RoadAndExhaustDustAlphaMultiplierName;                      // 0x21C0   (0x0004)  
+	float                                              RoadAndExhaustDustAlphaMultiplier;                          // 0x21C4   (0x0004)  
+	FName                                              RoadAndExhaustPeelOutColorIndexName;                        // 0x21C8   (0x0004)  
+	FName                                              RoadAndExhaustPeelOutRearName;                              // 0x21CC   (0x0004)  
+	FName                                              RoadAndExhaustIsPeelOutOnRoadName;                          // 0x21D0   (0x0004)  
+	FName                                              RoadAndExhaustIsPeelOutOnRoadRewindName;                    // 0x21D4   (0x0004)  
+	FName                                              RoadAndExhaustIsInAirName;                                  // 0x21D8   (0x0004)  
+	FGameplayTag                                       RoadAndExhaustCameraDirtGameplayCueTag;                     // 0x21DC   (0x0004)  
+	FGameplayTag                                       RoadAndExhaustCameraWaterGameplayCueTag;                    // 0x21E0   (0x0004)  
+	unsigned char                                      UnknownData04_5[0x4];                                       // 0x21E4   (0x0004)  MISSED
+	SDK_UNDEFINED(16,13116) /* TArray<TEnumAsByte<EPhysicalSurface>> */ __um(RoadAndExhaustSurfaceTypeArrayForFX); // 0x21E8   (0x0010)  
+	class ULegacyCameraShake*                          DriverCameraShakeInstance;                                  // 0x21F8   (0x0008)  
+	class ULegacyCameraShake*                          AcceleratingCameraShakeInstance;                            // 0x2200   (0x0008)  
+	unsigned char                                      UnknownData05_5[0x8];                                       // 0x2208   (0x0008)  MISSED
+	FName                                              RoadAndExhaustHeadlightsName;                               // 0x2210   (0x0004)  
+	FName                                              RoadAndExhaustBrakelightsName;                              // 0x2214   (0x0004)  
+	FScalableFloat                                     DoorBashMinSpeed;                                           // 0x2218   (0x0028)  
+	FScalableFloat                                     DoorBashMaxSpeed;                                           // 0x2240   (0x0028)  
+	FScalableFloat                                     DoorBashForwardDistanceMin;                                 // 0x2268   (0x0028)  
+	FScalableFloat                                     DoorBashForwardDistanceMax;                                 // 0x2290   (0x0028)  
+	FGameplayTag                                       DoorBashGameplayCueTag;                                     // 0x22B8   (0x0004)  
+	unsigned char                                      UnknownData06_5[0x4];                                       // 0x22BC   (0x0004)  MISSED
+	SDK_UNDEFINED(16,13117) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(DoorBashCollisionTypesForDoor);       // 0x22C0   (0x0010)  
+	SDK_UNDEFINED(16,13118) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(DoorBashCollisionTypesForPawn);       // 0x22D0   (0x0010)  
+	FScalableFloat                                     DoorBashSphereRadiusForPawnLaunch;                          // 0x22E0   (0x0028)  
+	FScalableFloat                                     DoorBashScalarForPawnLaunch;                                // 0x2308   (0x0028)  
+	FGameplayTag                                       DoorBashPawnLaunchGameplayCueTag;                           // 0x2330   (0x0004)  
+	unsigned char                                      UnknownData07_5[0x4];                                       // 0x2334   (0x0004)  MISSED
+	FGameplayTagQuery                                  InventoryModeTagQuery;                                      // 0x2338   (0x0048)  
+	FGameplayTagContainer                              InputContextBlockedTags;                                    // 0x2380   (0x0020)  
+	unsigned char                                      UnknownData08_5[0x18];                                      // 0x23A0   (0x0018)  MISSED
+	FGameplayTag                                       MobileHUDTag;                                               // 0x23B8   (0x0004)  
+	unsigned char                                      UnknownData09_6[0x4];                                       // 0x23BC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.ServerEjectAllPlayers
-	// void ServerEjectAllPlayers();                                                                                         // [0x9492990] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerEjectAllPlayers();                                                                                         // [0x9578f94] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.OnRep_IsBoostAttacking
-	// void OnRep_IsBoostAttacking();                                                                                        // [0xb0c9190] Final|Native|Protected 
+	// void OnRep_IsBoostAttacking();                                                                                        // [0xb2c19dc] Final|Native|Protected 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.OnPlayerWeaponChanged
-	// void OnPlayerWeaponChanged(class AFortWeapon* InNewWeapon, class AFortWeapon* InPrevWeapon);                          // [0x1e6a148] Final|Native|Public  
+	// void OnPlayerWeaponChanged(class AFortWeapon* InNewWeapon, class AFortWeapon* InPrevWeapon);                          // [0xb2c1860] Final|Native|Public  
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleWheelie__DelegateSignature
-	// void MotorcycleWheelie__DelegateSignature();                                                                          // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MotorcycleWheelie__DelegateSignature();                                                                          // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleSuperSlidingChanged__DelegateSignature
-	// void MotorcycleSuperSlidingChanged__DelegateSignature(bool bIsSuperSliding);                                          // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MotorcycleSuperSlidingChanged__DelegateSignature(bool bIsSuperSliding);                                          // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleStoppie__DelegateSignature
-	// void MotorcycleStoppie__DelegateSignature();                                                                          // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MotorcycleStoppie__DelegateSignature();                                                                          // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleStartAirTrick__DelegateSignature
-	// void MotorcycleStartAirTrick__DelegateSignature(EFortMotorcycleAirTrickType TrickType);                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MotorcycleStartAirTrick__DelegateSignature(EFortMotorcycleAirTrickType TrickType);                               // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleJump__DelegateSignature
-	// void MotorcycleJump__DelegateSignature(float JumpChargeFactor);                                                       // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MotorcycleJump__DelegateSignature(float JumpChargeFactor);                                                       // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleInventoryMode__DelegateSignature
-	// void MotorcycleInventoryMode__DelegateSignature(bool IsInInventoryMode);                                              // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MotorcycleInventoryMode__DelegateSignature(bool IsInInventoryMode);                                              // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleChargingJump__DelegateSignature
-	// void MotorcycleChargingJump__DelegateSignature();                                                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MotorcycleChargingJump__DelegateSignature();                                                                     // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.MotorcycleAirTrick__DelegateSignature
-	// void MotorcycleAirTrick__DelegateSignature();                                                                         // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void MotorcycleAirTrick__DelegateSignature();                                                                         // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsSuperSliding
-	// bool IsSuperSliding();                                                                                                // [0xb0c916c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSuperSliding();                                                                                                // [0xb2c183c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsPowerSliding
-	// bool IsPowerSliding();                                                                                                // [0xb0c9148] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPowerSliding();                                                                                                // [0xb2c1818] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.IsInInventoryMode
-	// bool IsInInventoryMode();                                                                                             // [0xb0c9124] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInInventoryMode();                                                                                             // [0xb2c17f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetSurfaceTypeVehicleOn
-	// TEnumAsByte<EPhysicalSurface> GetSurfaceTypeVehicleOn();                                                              // [0xb0c8ee4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TEnumAsByte<EPhysicalSurface> GetSurfaceTypeVehicleOn();                                                              // [0xb2c14e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetLeanAngleDegrees
-	// float GetLeanAngleDegrees();                                                                                          // [0xb0c8ebc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLeanAngleDegrees();                                                                                          // [0xb2c14c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.GetAverageSpringNormal
-	// FVector GetAverageSpringNormal();                                                                                     // [0xb0c8e94] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetAverageSpringNormal();                                                                                     // [0xb2c1498] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.ChangeBoostAttackState
-	// void ChangeBoostAttackState(bool bNewIsBoostAttacking);                                                               // [0xb0c8d58] Final|Native|Public|BlueprintCallable 
+	// void ChangeBoostAttackState(bool bNewIsBoostAttacking);                                                               // [0xb2c12d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartWheelie
-	// void BP_OnStartWheelie();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnStartWheelie();                                                                                             // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartStoppie
-	// void BP_OnStartStoppie();                                                                                             // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnStartStoppie();                                                                                             // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartChargingJump
-	// void BP_OnStartChargingJump();                                                                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnStartChargingJump();                                                                                        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnStartAirTrick
-	// void BP_OnStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnStartAirTrick(EFortMotorcycleAirTrickType TrickType);                                                       // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnReleaseWheelie
-	// void BP_OnReleaseWheelie();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnReleaseWheelie();                                                                                           // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnReleaseStoppie
-	// void BP_OnReleaseStoppie();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnReleaseStoppie();                                                                                           // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnLandWheelie
-	// void BP_OnLandWheelie();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnLandWheelie();                                                                                              // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnLandStoppie
-	// void BP_OnLandStoppie();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnLandStoppie();                                                                                              // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnJump
-	// void BP_OnJump(float JumpChargeFactor);                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnJump(float JumpChargeFactor);                                                                               // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnFinishAirTrick
-	// void BP_OnFinishAirTrick();                                                                                           // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnFinishAirTrick();                                                                                           // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnFailWheelie
-	// void BP_OnFailWheelie();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnFailWheelie();                                                                                              // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnChargingJump
-	// void BP_OnChargingJump(float JumpChargeFactor);                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnChargingJump(float JumpChargeFactor);                                                                       // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MotorcycleRuntime.FortMotorcycleVehicle.BP_OnCancelChargingJump
-	// void BP_OnCancelChargingJump();                                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnCancelChargingJump();                                                                                       // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/MotorcycleRuntime.MotorcycleWheel
@@ -667,7 +667,7 @@ public:
 	float                                              FrontWheelRotationAcceleration;                             // 0x0B64   (0x0004)  
 	float                                              PassengerInventoryCooldown;                                 // 0x0B68   (0x0004)  
 	float                                              DriverInventoryCooldown;                                    // 0x0B6C   (0x0004)  
-	SDK_UNDEFINED(80,13065) /* TSet<FName> */          __um(BoostAttackShapes);                                    // 0x0B70   (0x0050)  
+	SDK_UNDEFINED(80,13119) /* TSet<FName> */          __um(BoostAttackShapes);                                    // 0x0B70   (0x0050)  
 	float                                              CameraAssistStrengthMax;                                    // 0x0BC0   (0x0004)  
 	float                                              CameraAssistStrengthMin;                                    // 0x0BC4   (0x0004)  
 	float                                              CameraAssistStrengthRecovery;                               // 0x0BC8   (0x0004)  

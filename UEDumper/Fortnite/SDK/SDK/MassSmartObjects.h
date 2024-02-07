@@ -97,22 +97,22 @@ struct FSmartObjectAnnotationData
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
 	TArray<int32_t>                                    AffectedLanes;                                              // 0x0008   (0x0010)  
 	TArray<FSmartObjectLaneLocation>                   SmartObjectLaneLocations;                                   // 0x0018   (0x0010)  
-	SDK_UNDEFINED(80,14470) /* TMap<FSmartObjectHandle, int32_t> */ __um(SmartObjectToLaneLocationIndexLookup);    // 0x0028   (0x0050)  
-	SDK_UNDEFINED(80,14471) /* TMap<int32_t, FSmartObjectLaneLocationIndices> */ __um(LaneToLaneLocationIndicesLookup); // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,14595) /* TMap<FSmartObjectHandle, int32_t> */ __um(SmartObjectToLaneLocationIndexLookup);    // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,14596) /* TMap<int32_t, FSmartObjectLaneLocationIndices> */ __um(LaneToLaneLocationIndicesLookup); // 0x0078   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00C8   (0x0008)  MISSED
 };
 
 /// Class /Script/MassSmartObjects.SmartObjectZoneAnnotations
-/// Size: 0x0030 (0x0005E0 - 0x000610)
+/// Size: 0x0030 (0x000570 - 0x0005A0)
 class USmartObjectZoneAnnotations : public UZoneGraphAnnotationComponent
 { 
 public:
-	FZoneGraphTagFilter                                AffectedLaneTags;                                           // 0x05E0   (0x000C)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x05EC   (0x0004)  MISSED
-	TArray<FSmartObjectAnnotationData>                 SmartObjectAnnotationDataArray;                             // 0x05F0   (0x0010)  
-	FZoneGraphTag                                      BehaviorTag;                                                // 0x0600   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0601   (0x0007)  MISSED
-	class USmartObjectSubsystem*                       SmartObjectSubsystem;                                       // 0x0608   (0x0008)  
+	FZoneGraphTagFilter                                AffectedLaneTags;                                           // 0x0570   (0x000C)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x057C   (0x0004)  MISSED
+	TArray<FSmartObjectAnnotationData>                 SmartObjectAnnotationDataArray;                             // 0x0580   (0x0010)  
+	FZoneGraphTag                                      BehaviorTag;                                                // 0x0590   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0591   (0x0007)  MISSED
+	class USmartObjectSubsystem*                       SmartObjectSubsystem;                                       // 0x0598   (0x0008)  
 };
 
 /// Struct /Script/MassSmartObjects.MassSmartObjectUserFragment

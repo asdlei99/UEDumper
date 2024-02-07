@@ -6,14 +6,14 @@
 ********************************************************/
 
 /// dependency: CoreUObject
-/// dependency: Engine
+/// dependency: MassEntity
 
-/// Class /Script/McpProfileSysCore.McpItemDefinitionBase
-/// Size: 0x0000 (0x000030 - 0x000030)
-class UMcpItemDefinitionBase : public UPrimaryDataAsset
+/// Class /Script/MassAIDebug.MassDebugStateTreeProcessor
+/// Size: 0x02A0 (0x0000C0 - 0x000360)
+class UMassDebugStateTreeProcessor : public UMassProcessor
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 48;
+	static inline constexpr uint64_t __MDKClassSize = 864;
 
 public:
 };

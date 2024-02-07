@@ -79,7 +79,7 @@ struct FJunoConversationContextRequirement
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FJunoContexualMessageContainer
 { 
-	SDK_UNDEFINED(24,13998) /* FText */                __um(Message);                                              // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,14110) /* FText */                __um(Message);                                              // 0x0000   (0x0018)  
 	FGameplayTag                                       VoiceOverTag;                                               // 0x0018   (0x0004)  
 	FGameplayTag                                       MoodReactionTag;                                            // 0x001C   (0x0004)  
 	TArray<FConversationNodeParameterPair>             MetadataParameters;                                         // 0x0020   (0x0010)  
@@ -129,16 +129,16 @@ public:
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoControllerComponent_ConversationHistory
-/// Size: 0x0080 (0x0001F8 - 0x000278)
+/// Size: 0x00A8 (0x0001F8 - 0x0002A0)
 class UJunoControllerComponent_ConversationHistory : public UFortControllerComponent_ConversationHistory
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x80];                                      // 0x01F8   (0x0080)  MISSED
+	unsigned char                                      UnknownData00_1[0xA8];                                      // 0x01F8   (0x00A8)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoControllerComponent_ConversationHistory.Client_SetCachedContextualMessageResult
-	// void Client_SetCachedContextualMessageResult(FJunoContextualMessageQueryResult Result);                               // [0xbc03994] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_SetCachedContextualMessageResult(FJunoContextualMessageQueryResult Result);                               // [0xbf10750] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoControllerRequirement
@@ -161,9 +161,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoControllerRequirement_CampResidentsHaveTag.ValidateUniqueResidentTag
-	// bool ValidateUniqueResidentTag(FGameplayTag& OtherResidentIdentifier);                                                // [0xbc05ebc] Final|Native|Private|HasOutParms|Const 
+	// bool ValidateUniqueResidentTag(FGameplayTag& OtherResidentIdentifier);                                                // [0xbf12c9c] Final|Native|Private|HasOutParms|Const 
 	// Function /Script/JunoAdventuresRuntime.JunoControllerRequirement_CampResidentsHaveTag.ValidateRoleTag
-	// bool ValidateRoleTag(FGameplayTag& OtherResidentIdentifier, class UPlayspaceComponent_JunoAIPersistence* RootAIPersistenceComp); // [0xbc05d54] Final|Native|Private|HasOutParms|Const 
+	// bool ValidateRoleTag(FGameplayTag& OtherResidentIdentifier, class UPlayspaceComponent_JunoAIPersistence* RootAIPersistenceComp); // [0xbf12b34] Final|Native|Private|HasOutParms|Const 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoControllerRequirement_HasCompletedQuestObjective
@@ -178,7 +178,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoControllerRequirement_HasCompletedQuestObjective.Editor_GetValidObjectives
-	// TArray<FName> Editor_GetValidObjectives();                                                                            // [0x87a9ee0] Final|Native|Private|Const 
+	// TArray<FName> Editor_GetValidObjectives();                                                                            // [0x875713c] Final|Native|Private|Const 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoControllerRequirement_HasEntryTag
@@ -233,7 +233,7 @@ public:
 class UJunoConversationRequirementMappings : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,13999) /* TMap<FGameplayTag, UFortControllerRequirement*> */ __um(ConversationRequirementMappings); // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,14111) /* TMap<FGameplayTag, UFortControllerRequirement*> */ __um(ConversationRequirementMappings); // 0x0030   (0x0050)  
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoConversationRequirement_NearestCampWorldConditionSchema
@@ -289,8 +289,8 @@ class UJunoConversationTaskNode_GetResource : public UFortConversationTaskNode_S
 public:
 	int32_t                                            ResourceSlot;                                               // 0x0190   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0194   (0x0004)  MISSED
-	SDK_UNDEFINED(24,14000) /* FText */                __um(GetTextFormat);                                        // 0x0198   (0x0018)  
-	SDK_UNDEFINED(24,14001) /* FText */                __um(FinishedTextFormat);                                   // 0x01B0   (0x0018)  
+	SDK_UNDEFINED(24,14112) /* FText */                __um(GetTextFormat);                                        // 0x0198   (0x0018)  
+	SDK_UNDEFINED(24,14113) /* FText */                __um(FinishedTextFormat);                                   // 0x01B0   (0x0018)  
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoConversationTaskNode_GiftNPC
@@ -298,7 +298,7 @@ public:
 class UJunoConversationTaskNode_GiftNPC : public UFortConversationTaskNode
 { 
 public:
-	SDK_UNDEFINED(24,14002) /* FText */                __um(GiftTextFormat);                                       // 0x0170   (0x0018)  
+	SDK_UNDEFINED(24,14114) /* FText */                __um(GiftTextFormat);                                       // 0x0170   (0x0018)  
 	int32_t                                            MaxChoiceNodesToGenerate;                                   // 0x0188   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
 	TArray<FGameplayTag>                               InventoryGroupTypesToPickItemsFrom;                         // 0x0190   (0x0010)  
@@ -341,33 +341,33 @@ class UJunoConversationTaskNode_RemoteCampRecruitment : public UFortConversation
 public:
 	int32_t                                            CampSlot;                                                   // 0x0190   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0194   (0x0004)  MISSED
-	SDK_UNDEFINED(24,14003) /* FText */                __um(JoinCampTextFormat);                                   // 0x0198   (0x0018)  
+	SDK_UNDEFINED(24,14115) /* FText */                __um(JoinCampTextFormat);                                   // 0x0198   (0x0018)  
 	FScalableFloat                                     MaxDistanceFromCamp;                                        // 0x01B0   (0x0028)  
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoConversationTaskNode_Speech
-/// Size: 0x0080 (0x000170 - 0x0001F0)
+/// Size: 0x0090 (0x000170 - 0x000200)
 class UJunoConversationTaskNode_Speech : public UFortConversationTaskNode
 { 
 public:
-	SDK_UNDEFINED(16,14004) /* FString */              __um(MetaIdentifier_Animations);                            // 0x0170   (0x0010)  
+	SDK_UNDEFINED(16,14116) /* FString */              __um(MetaIdentifier_Animations);                            // 0x0170   (0x0010)  
 	FGameplayTag                                       SpeakerTag;                                                 // 0x0180   (0x0004)  
 	FGameplayTag                                       ListenerTag;                                                // 0x0184   (0x0004)  
 	FGameplayTag                                       DefaultMoodReactionTag;                                     // 0x0188   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	SDK_UNDEFINED(24,14005) /* FText */                __um(StyledParticipantNameFormat);                          // 0x0190   (0x0018)  
+	SDK_UNDEFINED(24,14117) /* FText */                __um(StyledParticipantNameFormat);                          // 0x0190   (0x0018)  
 	bool                                               bUseInlineConfig;                                           // 0x01A8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x01A9   (0x0007)  MISSED
 	class UJunoContextualMessageConfigCollection*      ExternalContextualMessageCollection;                        // 0x01B0   (0x0008)  
 	TArray<FJunoSpecializedContextualMessageConfig>    SpecializedConfigs;                                         // 0x01B8   (0x0010)  
 	FJunoContextualMessageConfig                       GeneralConfig;                                              // 0x01C8   (0x0010)  
 	FDataTableRowHandle                                GeneralConfigTableRow;                                      // 0x01D8   (0x0010)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01E8   (0x0008)  MISSED
+	unsigned char                                      UnknownData02_6[0x18];                                      // 0x01E8   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoConversationTaskNode_Speech.PlayClientVoiceLine
-	// void PlayClientVoiceLine(FConversationContext& Context, FJunoContextualMessageQueryResult& MessageParams);            // [0xbc051ec] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
+	// void PlayClientVoiceLine(FConversationContext& Context, FJunoContextualMessageQueryResult& MessageParams);            // [0xbf12080] Native|Event|Protected|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoConversationTaskNode_TagCurrentConversation
@@ -383,10 +383,10 @@ public:
 class UJunoConversationTaskNode_TradeWithMerchant : public UFortConversationTaskNode
 { 
 public:
-	SDK_UNDEFINED(24,14006) /* FText */                __um(TradeTextFormat_Single);                               // 0x0170   (0x0018)  
-	SDK_UNDEFINED(24,14007) /* FText */                __um(TradeTextFormat_Plural);                               // 0x0188   (0x0018)  
-	SDK_UNDEFINED(24,14008) /* FText */                __um(NotEnoughForTradeTextFormat_Single);                   // 0x01A0   (0x0018)  
-	SDK_UNDEFINED(24,14009) /* FText */                __um(NotEnoughForTradeTextFormat_Plural);                   // 0x01B8   (0x0018)  
+	SDK_UNDEFINED(24,14118) /* FText */                __um(TradeTextFormat_Single);                               // 0x0170   (0x0018)  
+	SDK_UNDEFINED(24,14119) /* FText */                __um(TradeTextFormat_Plural);                               // 0x0188   (0x0018)  
+	SDK_UNDEFINED(24,14120) /* FText */                __um(NotEnoughForTradeTextFormat_Single);                   // 0x01A0   (0x0018)  
+	SDK_UNDEFINED(24,14121) /* FText */                __um(NotEnoughForTradeTextFormat_Plural);                   // 0x01B8   (0x0018)  
 	int32_t                                            MaxChoiceNodesToGenerate;                                   // 0x01D0   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x01D4   (0x0004)  MISSED
 };
@@ -396,14 +396,14 @@ public:
 class UJunoNPCConversationParticipantComponent : public UFortNPCConversationParticipantComponent
 { 
 public:
-	SDK_UNDEFINED(16,14010) /* FMulticastInlineDelegate */ __um(OnJunoConversationParticipantIconChangedDelegate); // 0x0618   (0x0010)  
-	SDK_UNDEFINED(32,14011) /* TWeakObjectPtr<UTexture2D*> */ __um(ParticipantIconSmall);                          // 0x0628   (0x0020)  
+	SDK_UNDEFINED(16,14122) /* FMulticastInlineDelegate */ __um(OnJunoConversationParticipantIconChangedDelegate); // 0x0618   (0x0010)  
+	SDK_UNDEFINED(32,14123) /* TWeakObjectPtr<UTexture2D*> */ __um(ParticipantIconSmall);                          // 0x0628   (0x0020)  
 	unsigned char                                      UnknownData00_6[0x68];                                      // 0x0648   (0x0068)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoNPCConversationParticipantComponent.OnRep_ParticipantIconSmall
-	// void OnRep_ParticipantIconSmall();                                                                                    // [0xbc05188] Final|Native|Protected 
+	// void OnRep_ParticipantIconSmall();                                                                                    // [0xbf1201c] Final|Native|Protected 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoConversationTaskNode_CompleteQuestObjective
@@ -411,14 +411,14 @@ public:
 class UJunoConversationTaskNode_CompleteQuestObjective : public UFortConversationTaskNode
 { 
 public:
-	SDK_UNDEFINED(32,14012) /* TWeakObjectPtr<UFortQuestItemDefinition_Athena*> */ __um(QuestToProgress);          // 0x0170   (0x0020)  
+	SDK_UNDEFINED(32,14124) /* TWeakObjectPtr<UFortQuestItemDefinition_Athena*> */ __um(QuestToProgress);          // 0x0170   (0x0020)  
 	FName                                              ObjectiveBackendName;                                       // 0x0190   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0194   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoConversationTaskNode_CompleteQuestObjective.Editor_GetValidObjectives
-	// TArray<FName> Editor_GetValidObjectives();                                                                            // [0x87a9ee0] Final|Native|Private|Const 
+	// TArray<FName> Editor_GetValidObjectives();                                                                            // [0x875713c] Final|Native|Private|Const 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoConversationTaskNode_GrantQuest
@@ -426,7 +426,7 @@ public:
 class UJunoConversationTaskNode_GrantQuest : public UFortConversationTaskNode
 { 
 public:
-	SDK_UNDEFINED(32,14013) /* TWeakObjectPtr<UFortQuestItemDefinition_Athena*> */ __um(QuestToGrant);             // 0x0170   (0x0020)  
+	SDK_UNDEFINED(32,14125) /* TWeakObjectPtr<UFortQuestItemDefinition_Athena*> */ __um(QuestToGrant);             // 0x0170   (0x0020)  
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoConversationTaskNode_TurnInQuest
@@ -434,7 +434,7 @@ public:
 class UJunoConversationTaskNode_TurnInQuest : public UFortConversationTaskNode
 { 
 public:
-	SDK_UNDEFINED(32,14014) /* TWeakObjectPtr<UFortQuestItemDefinition_Athena*> */ __um(QuestToTurnIn);            // 0x0170   (0x0020)  
+	SDK_UNDEFINED(32,14126) /* TWeakObjectPtr<UFortQuestItemDefinition_Athena*> */ __um(QuestToTurnIn);            // 0x0170   (0x0020)  
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoControllerRequirement_HasCompletedNumQuestObjectives
@@ -466,19 +466,19 @@ public:
 class UJunoQuestGiverComponent : public UGameFrameworkComponent
 { 
 public:
-	SDK_UNDEFINED(16,14015) /* FString */              __um(GrantableQuestID);                                     // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,14127) /* FString */              __um(GrantableQuestID);                                     // 0x00A0   (0x0010)  
 	FGameplayTagContainer                              GrantableQuestTags;                                         // 0x00B0   (0x0020)  
 
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoQuestGiverComponent.RollGrantableQuestID
-	// void RollGrantableQuestID();                                                                                          // [0xbc059dc] Final|Native|Public|BlueprintCallable 
+	// void RollGrantableQuestID();                                                                                          // [0xbf12870] Final|Native|Public|BlueprintCallable 
 	// Function /Script/JunoAdventuresRuntime.JunoQuestGiverComponent.HandleOnJunoQuestComplete
-	// void HandleOnJunoQuestComplete(TScriptInterface<Class>& QuestInstance);                                               // [0xbc049cc] Final|Native|Private|HasOutParms 
+	// void HandleOnJunoQuestComplete(TScriptInterface<Class>& QuestInstance);                                               // [0xbf1181c] Final|Native|Private|HasOutParms 
 	// Function /Script/JunoAdventuresRuntime.JunoQuestGiverComponent.GetGrantableQuestID
-	// FString GetGrantableQuestID();                                                                                        // [0xbc03ae0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetGrantableQuestID();                                                                                        // [0xbf1082c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAdventuresRuntime.JunoQuestGiverComponent.BindToQuestManagerDelegates
-	// void BindToQuestManagerDelegates();                                                                                   // [0xbc03980] Final|Native|Private 
+	// void BindToQuestManagerDelegates();                                                                                   // [0xbf1073c] Final|Native|Private 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoQuestSpawnPointComponent
@@ -498,9 +498,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoTokenHandlerAIComponent.ReceiveToken
-	// void ReceiveToken(FGameplayTag& JunoToken);                                                                           // [0xbc05910] Native|Public|HasOutParms|BlueprintCallable 
+	// void ReceiveToken(FGameplayTag& JunoToken);                                                                           // [0xbf127a4] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/JunoAdventuresRuntime.JunoTokenHandlerAIComponent.GetSavedTokens
-	// FGameplayTagContainer GetSavedTokens();                                                                               // [0xbc0499c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetSavedTokens();                                                                               // [0xbf117ec] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/JunoAdventuresRuntime.JunoQuestPoolDataAssetEntry
@@ -533,24 +533,24 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoQuestDatabaseComponent.GetJunoQuestState
-	// EJunoQuestState GetJunoQuestState(FString QuestID);                                                                   // [0xbc03c2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EJunoQuestState GetJunoQuestState(FString QuestID);                                                                   // [0xbf109f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoQuestManagerComponent
-/// Size: 0x0060 (0x000448 - 0x0004A8)
+/// Size: 0x0060 (0x000450 - 0x0004B0)
 class UJunoQuestManagerComponent : public UFortPlayspaceComponent_Quests
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x60];                                      // 0x0448   (0x0060)  MISSED
+	unsigned char                                      UnknownData00_1[0x60];                                      // 0x0450   (0x0060)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoQuestManagerComponent.SendQuestStatEvent
-	// void SendQuestStatEvent(EFortQuestObjectiveStatEvent Type, FGameplayTagContainer SourceTags, FGameplayTagContainer TargetTags, int32_t Count); // [0xbc059f0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SendQuestStatEvent(EFortQuestObjectiveStatEvent Type, FGameplayTagContainer SourceTags, FGameplayTagContainer TargetTags, int32_t Count); // [0xbf12884] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/JunoAdventuresRuntime.JunoQuestManagerComponent.GetQuestGiverForQuestID
-	// class AActor* GetQuestGiverForQuestID(FString QuestID);                                                               // [0xbc042dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetQuestGiverForQuestID(FString QuestID);                                                               // [0xbf110ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAdventuresRuntime.JunoQuestManagerComponent.ActivateQuest
-	// void ActivateQuest(class UFortQuestItemDefinition_Athena* QuestDefinition, class AActor* QuestGiver);                 // [0xbc038bc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ActivateQuest(class UFortQuestItemDefinition_Athena* QuestDefinition, class AActor* QuestGiver);                 // [0xbf105fc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoEncounterManagerComponent
@@ -561,7 +561,7 @@ public:
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoPOIQuestComponent
-/// Size: 0x0000 (0x000448 - 0x000448)
+/// Size: 0x0000 (0x000450 - 0x000450)
 class UJunoPOIQuestComponent : public UFortPlayspaceComponent_Quests
 { 
 public:
@@ -572,7 +572,7 @@ public:
 class UJunoActionsDB : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,14016) /* TMap<FGameplayTag, FMappedJunoActions> */ __um(JunoTokenToJunoActions);             // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,14128) /* TMap<FGameplayTag, FMappedJunoActions> */ __um(JunoTokenToJunoActions);             // 0x0028   (0x0050)  
 };
 
 /// Class /Script/JunoAdventuresRuntime.PlayspaceComponent_JunoActionsDB
@@ -587,14 +587,14 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FQuestTokenMappings
 { 
-	SDK_UNDEFINED(80,14017) /* TMap<FName, FQuestTokenMappingContainer> */ __um(ObjectiveQuestTokensToGrant);      // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14129) /* TMap<FName, FQuestTokenMappingContainer> */ __um(ObjectiveQuestTokensToGrant);      // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/JunoAdventuresRuntime.JunoQuestData
 /// Size: 0x00A8 (0x000000 - 0x0000A8)
 struct FJunoQuestData
 { 
-	SDK_UNDEFINED(80,14018) /* TMap<FName, FQuestPropSpawnInfoContainer> */ __um(ObjectiveQuestPropActorsToSpawn); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14130) /* TMap<FName, FQuestPropSpawnInfoContainer> */ __um(ObjectiveQuestPropActorsToSpawn); // 0x0000   (0x0050)  
 	FQuestTokenMappings                                QuestTokenMappings;                                         // 0x0050   (0x0050)  
 	int32_t                                            AwesomePointsToGrant;                                       // 0x00A0   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x00A4   (0x0004)  MISSED
@@ -610,7 +610,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.FortQuestDefinitionComponent_Juno.Editor_GetValidObjectiveNames
-	// TArray<FName> Editor_GetValidObjectiveNames();                                                                        // [0x87a9ee0] Final|Native|Private|Const 
+	// TArray<FName> Editor_GetValidObjectiveNames();                                                                        // [0x875713c] Final|Native|Private|Const 
 };
 
 /// Class /Script/JunoAdventuresRuntime.FortQuestDefinitionComponent_JunoEncounter
@@ -654,9 +654,9 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoAdventuresBlueprintLibrary.GetJunoQuestManager
-	// class UJunoQuestManagerComponent* GetJunoQuestManager(class UObject* WorldContextObject);                             // [0xbc03bac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UJunoQuestManagerComponent* GetJunoQuestManager(class UObject* WorldContextObject);                             // [0xbf10938] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/JunoAdventuresRuntime.JunoAdventuresBlueprintLibrary.GetJunoQuestDatabase
-	// class UJunoQuestDatabaseComponent* GetJunoQuestDatabase(class UObject* WorldContextObject);                           // [0xbc03b2c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UJunoQuestDatabaseComponent* GetJunoQuestDatabase(class UObject* WorldContextObject);                           // [0xbf10878] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/JunoAdventuresRuntime.JunoCheatManager_Adventures
@@ -668,13 +668,19 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAdventuresRuntime.JunoCheatManager_Adventures.JunoSpawnVisitorInClosestCamp
-	// void JunoSpawnVisitorInClosestCamp(FString PartialUniqueAIIdentifier, int32_t Count);                                 // [0x9132878] Final|Exec|Native|Private|Const 
+	// void JunoSpawnVisitorInClosestCamp(FString PartialUniqueAIIdentifier, int32_t Count);                                 // [0x9180e2c] Final|Exec|Native|Private|Const 
 	// Function /Script/JunoAdventuresRuntime.JunoCheatManager_Adventures.JunoRepopulateAvailableQuestsWithTags
-	// void JunoRepopulateAvailableQuestsWithTags(FString QuestPoolTags);                                                    // [0xbc04ad4] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoRepopulateAvailableQuestsWithTags(FString QuestPoolTags);                                                    // [0xbf11924] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoAdventuresRuntime.JunoCheatManager_Adventures.JunoRepopulateAvailableQuests
-	// void JunoRepopulateAvailableQuests();                                                                                 // [0xbc04a5c] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoRepopulateAvailableQuests();                                                                                 // [0xbf118ac] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// Function /Script/JunoAdventuresRuntime.JunoCheatManager_Adventures.JunoQueueScriptRowMessagesForNpcConversation
+	// void JunoQueueScriptRowMessagesForNpcConversation(FString ScriptName, FString RowName);                               // [0x95cbef8] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoAdventuresRuntime.JunoCheatManager_Adventures.JunoPrintNPCsInfo
-	// void JunoPrintNPCsInfo(bool bIgnoreAIsWithNoAssignment);                                                              // [0x60325ec] Final|Exec|Native|Private|Const 
+	// void JunoPrintNPCsInfo(bool bIgnoreAIsWithNoAssignment);                                                              // [0x5d35ffc] Final|Exec|Native|Private|Const 
+	// Function /Script/JunoAdventuresRuntime.JunoCheatManager_Adventures.JunoPrintCurrentConversationInfo
+	// void JunoPrintCurrentConversationInfo();                                                                              // [0x307d48c] Final|Exec|Native|Private|Const 
+	// Function /Script/JunoAdventuresRuntime.JunoCheatManager_Adventures.JunoInjectDisplayTextForNpcConversation
+	// void JunoInjectDisplayTextForNpcConversation(FString TestString);                                                     // [0x65b05c8] Final|BlueprintAuthorityOnly|Exec|Native|Private|Const 
 };
 
 /// Struct /Script/JunoAdventuresRuntime.JunoContextualMessageConfigTableRow
@@ -688,7 +694,7 @@ struct FJunoContextualMessageConfigTableRow : FTableRowBase
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FJunoContextualMessageQueryResult
 { 
-	SDK_UNDEFINED(24,14019) /* FText */                __um(Message);                                              // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,14131) /* FText */                __um(Message);                                              // 0x0000   (0x0018)  
 	FGameplayTag                                       MoodReactionTag;                                            // 0x0018   (0x0004)  
 	FGameplayTag                                       VoiceOverTag;                                               // 0x001C   (0x0004)  
 	TArray<FConversationNodeParameterPair>             MetadataParameters;                                         // 0x0020   (0x0010)  
@@ -705,10 +711,10 @@ struct FJunoConversationGetResourceTaskMemory
 };
 
 /// Struct /Script/JunoAdventuresRuntime.JunoConversationGiftNPCTaskMemory
-/// Size: 0x0020 (0x000000 - 0x000020)
+/// Size: 0x0010 (0x000000 - 0x000010)
 struct FJunoConversationGiftNPCTaskMemory
 { 
-	unsigned char                                      UnknownData00_1[0x20];                                      // 0x0000   (0x0020)  MISSED
+	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0000   (0x0010)  MISSED
 };
 
 /// Struct /Script/JunoAdventuresRuntime.JunoConversationRemoteCampRecruitmentTaskMemory
@@ -722,7 +728,7 @@ struct FJunoConversationRemoteCampRecruitmentTaskMemory
 /// Size: 0x0088 (0x000000 - 0x000088)
 struct FQuestPropSpawnInfo
 { 
-	SDK_UNDEFINED(32,14020) /* TWeakObjectPtr<UClass*> */ __um(ClassToSpawn);                                      // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,14132) /* TWeakObjectPtr<UClass*> */ __um(ClassToSpawn);                                      // 0x0000   (0x0020)  
 	FGameplayTagContainer                              RequiredTags;                                               // 0x0020   (0x0020)  
 	FGameplayTagContainer                              ForbiddenTags;                                              // 0x0040   (0x0020)  
 	bool                                               bUseMinMaxDistances;                                        // 0x0060   (0x0001)  
@@ -742,7 +748,7 @@ struct FQuestPropSpawnInfoContainer
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FQuestTokenMappingContainer
 { 
-	SDK_UNDEFINED(80,14021) /* TMap<EJunoTokenReceiverType, FGameplayTagContainer> */ __um(QuestTokens);           // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14133) /* TMap<EJunoTokenReceiverType, FGameplayTagContainer> */ __um(QuestTokens);           // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/JunoAdventuresRuntime.JunoStateDrivenEvent_InsertItem

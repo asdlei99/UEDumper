@@ -40,9 +40,9 @@ struct FPropertyBag_862508c04c749853
 	FMargin                                            Margin;                                                     // 0x0000   (0x0010)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_3ba6b772326dd435
+/// Struct /Engine/Transient.PropertyBag_6ef5c23e2caa9e33
 /// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_3ba6b772326dd435
+struct FPropertyBag_6ef5c23e2caa9e33
 { 
 	float                                              LineHeightPercentage;                                       // 0x0000   (0x0004)  
 	float                                              Font_Size;                                                  // 0x0004   (0x0004)  
@@ -63,23 +63,23 @@ struct FPropertyBag_82c781121f843240
 	FMargin                                            Margin;                                                     // 0x0000   (0x0010)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_ecf5c755635a777d
+/// Struct /Engine/Transient.PropertyBag_ec318c908d1b93fc
 /// Size: 0x0004 (0x000000 - 0x000004)
-struct FPropertyBag_ecf5c755635a777d
+struct FPropertyBag_ec318c908d1b93fc
 { 
 	float                                              Font_Size;                                                  // 0x0000   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_a46c1339c900084b
+/// Struct /Engine/Transient.PropertyBag_362cdb6acb62229c
 /// Size: 0x0004 (0x000000 - 0x000004)
-struct FPropertyBag_a46c1339c900084b
+struct FPropertyBag_362cdb6acb62229c
 { 
 	FName                                              Font_TypefaceFontName;                                      // 0x0000   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_4681491f684a3575
+/// Struct /Engine/Transient.PropertyBag_d7fc55f8b97bedcd
 /// Size: 0x001C (0x000000 - 0x00001C)
-struct FPropertyBag_4681491f684a3575
+struct FPropertyBag_d7fc55f8b97bedcd
 { 
 	class UObject*                                     Font_FontObject;                                            // 0x0000   (0x0008)  
 	FName                                              Font_TypefaceFontName;                                      // 0x0008   (0x0004)  
@@ -90,57 +90,57 @@ struct FPropertyBag_4681491f684a3575
 	float                                              Font_SkewAmount;                                            // 0x0018   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_59663f99456f1b4c
+/// Struct /Engine/Transient.PropertyBag_1be14465084bb72d
 /// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_59663f99456f1b4c
+struct FPropertyBag_1be14465084bb72d
 { 
 	float                                              Font_Size;                                                  // 0x0000   (0x0004)  
 	int32_t                                            Font_LetterSpacing;                                         // 0x0004   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_f000d945505d49ef
+/// Struct /Engine/Transient.PropertyBag_78cef59d0c1f47eb
 /// Size: 0x000C (0x000000 - 0x00000C)
-struct FPropertyBag_f000d945505d49ef
+struct FPropertyBag_78cef59d0c1f47eb
 { 
 	FName                                              Font_TypefaceFontName;                                      // 0x0000   (0x0004)  
 	float                                              Font_Size;                                                  // 0x0004   (0x0004)  
 	int32_t                                            Font_LetterSpacing;                                         // 0x0008   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_ba2e90b9d93c41a2
+/// Struct /Engine/Transient.PropertyBag_f3084650b2229ad9
 /// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_ba2e90b9d93c41a2
+struct FPropertyBag_f3084650b2229ad9
 { 
 	FName                                              Font_TypefaceFontName;                                      // 0x0000   (0x0004)  
 	int32_t                                            Font_LetterSpacing;                                         // 0x0004   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_dac94b7ec6202da5
+/// Struct /Engine/Transient.PropertyBag_171a41a1e4f2834c
 /// Size: 0x0009 (0x000000 - 0x000009)
-struct FPropertyBag_dac94b7ec6202da5
+struct FPropertyBag_171a41a1e4f2834c
 { 
 	FName                                              Font_TypefaceFontName;                                      // 0x0000   (0x0004)  
 	int32_t                                            Font_LetterSpacing;                                         // 0x0004   (0x0004)  
 	ETextTransformPolicy                               TextTransformPolicy;                                        // 0x0008   (0x0001)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_d306bcd68f816b69
+/// Struct /Engine/Transient.PropertyBag_1a1366b3dc91599f
 /// Size: 0x0004 (0x000000 - 0x000004)
-struct FPropertyBag_d306bcd68f816b69
+struct FPropertyBag_1a1366b3dc91599f
 { 
 	float                                              Font_Size;                                                  // 0x0000   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_14eaf7ece10bf3e8
+/// Struct /Engine/Transient.PropertyBag_62501747dcc51816
 /// Size: 0x0004 (0x000000 - 0x000004)
-struct FPropertyBag_14eaf7ece10bf3e8
+struct FPropertyBag_62501747dcc51816
 { 
 	float                                              Font_Size;                                                  // 0x0000   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_1a9664da03bb03a2
+/// Struct /Engine/Transient.PropertyBag_3b60d7ba72eec7dd
 /// Size: 0x0014 (0x000000 - 0x000014)
-struct FPropertyBag_1a9664da03bb03a2
+struct FPropertyBag_3b60d7ba72eec7dd
 { 
 	class UObject*                                     Font_FontObject;                                            // 0x0000   (0x0008)  
 	FName                                              Font_TypefaceFontName;                                      // 0x0008   (0x0004)  
@@ -148,80 +148,41 @@ struct FPropertyBag_1a9664da03bb03a2
 	float                                              Font_SkewAmount;                                            // 0x0010   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_1fe8926875373c91
+/// Struct /Engine/Transient.PropertyBag_bebd31ffcf29a3b7
 /// Size: 0x0004 (0x000000 - 0x000004)
-struct FPropertyBag_1fe8926875373c91
+struct FPropertyBag_bebd31ffcf29a3b7
 { 
 	FName                                              Font_TypefaceFontName;                                      // 0x0000   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_37bdbf30236ec933
+/// Struct /Engine/Transient.PropertyBag_9a82cc6aaa7facdd
 /// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_37bdbf30236ec933
+struct FPropertyBag_9a82cc6aaa7facdd
 { 
-	class USoundBase*                                  MatchMakingSucceededSound;                                  // 0x0000   (0x0008)  
+	class UObject*                                     Font_FontMaterial;                                          // 0x0000   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_ef784dd8262d89d2
-/// Size: 0x0010 (0x000000 - 0x000010)
-struct FPropertyBag_ef784dd8262d89d2
+/// Struct /Engine/Transient.PropertyBag_d5b637bee001c377
+/// Size: 0x0064 (0x000000 - 0x000064)
+struct FPropertyBag_d5b637bee001c377
 { 
-	float                                              SecondsPriorToTransSound;                                   // 0x0000   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	class USoundBase*                                  TransitionSound;                                            // 0x0008   (0x0008)  
+	FSlateColor                                        Color_Idle;                                                 // 0x0000   (0x0014)  
+	FSlateColor                                        Color_Hovered;                                              // 0x0014   (0x0014)  
+	FSlateColor                                        Color_Focused;                                              // 0x0028   (0x0014)  
+	FSlateColor                                        Color_Pressed;                                              // 0x003C   (0x0014)  
+	FSlateColor                                        Color_Disabled;                                             // 0x0050   (0x0014)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_793ae256b45e5624
-/// Size: 0x0010 (0x000000 - 0x000010)
-struct FPropertyBag_793ae256b45e5624
+/// Struct /Engine/Transient.PropertyBag_6919764150bc1872
+/// Size: 0x0058 (0x000000 - 0x000058)
+struct FPropertyBag_6919764150bc1872
 { 
-	class USoundBase*                                  MTXOfferTileIntroWhoosh;                                    // 0x0000   (0x0008)  
-	class USoundBase*                                  ShopRowWhooshIn;                                            // 0x0008   (0x0008)  
+	FSlateFontInfo                                     Font;                                                       // 0x0000   (0x0058)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_387af51fb0ee4dea
-/// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_387af51fb0ee4dea
-{ 
-	class USoundBase*                                  ShopRowWhooshIn;                                            // 0x0000   (0x0008)  
-};
-
-/// Struct /Engine/Transient.PropertyBag_a771253926a1104e
-/// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_a771253926a1104e
-{ 
-	class USoundBase*                                  LockerCategoryWhooshSound;                                  // 0x0000   (0x0008)  
-};
-
-/// Struct /Engine/Transient.PropertyBag_258a81de738c247f
-/// Size: 0x0020 (0x000000 - 0x000020)
-struct FPropertyBag_258a81de738c247f
-{ 
-	class USoundBase*                                  BannerAppearSound;                                          // 0x0000   (0x0008)  
-	class USoundBase*                                  BannerAwaySound;                                            // 0x0008   (0x0008)  
-	class USoundBase*                                  IntroSound;                                                 // 0x0010   (0x0008)  
-	class USoundBase*                                  OutroSound;                                                 // 0x0018   (0x0008)  
-};
-
-/// Struct /Engine/Transient.PropertyBag_e9500e50887a2dc9
-/// Size: 0x0010 (0x000000 - 0x000010)
-struct FPropertyBag_e9500e50887a2dc9
-{ 
-	class USoundBase*                                  ShopIntroWhooshSound;                                       // 0x0000   (0x0008)  
-	class USoundBase*                                  ContentWhoosh_RetractSound;                                 // 0x0008   (0x0008)  
-};
-
-/// Struct /Engine/Transient.PropertyBag_8de32bd69c48641a
-/// Size: 0x0010 (0x000000 - 0x000010)
-struct FPropertyBag_8de32bd69c48641a
-{ 
-	class USoundBase*                                  ErrorWindowAppearSound;                                     // 0x0000   (0x0008)  
-	class USoundBase*                                  ErrorWindowAwaySound;                                       // 0x0008   (0x0008)  
-};
-
-/// Struct /Engine/Transient.PropertyBag_1030d64e37ecd7a0
+/// Struct /Engine/Transient.PropertyBag_7e520ae6f698159d
 /// Size: 0x02AC (0x000000 - 0x0002AC)
-struct FPropertyBag_1030d64e37ecd7a0
+struct FPropertyBag_7e520ae6f698159d
 { 
 	FSlateFontInfo                                     LargePrimaryFont;                                           // 0x0000   (0x0058)  
 	FSlateFontInfo                                     LargeSecondaryFont;                                         // 0x0058   (0x0058)  
@@ -243,9 +204,16 @@ struct FPropertyBag_1030d64e37ecd7a0
 	int32_t                                            SmallHeight;                                                // 0x02A8   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_9b4aae3a683cc931
+/// Struct /Engine/Transient.PropertyBag_996a0ad306ff3c56
+/// Size: 0x0058 (0x000000 - 0x000058)
+struct FPropertyBag_996a0ad306ff3c56
+{ 
+	FSlateFontInfo                                     GamepadPromptFont;                                          // 0x0000   (0x0058)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_c8c0480719ea50fd
 /// Size: 0x0040 (0x000000 - 0x000040)
-struct FPropertyBag_9b4aae3a683cc931
+struct FPropertyBag_c8c0480719ea50fd
 { 
 	class UObject*                                     LargePrimaryFont_FontMaterial;                              // 0x0000   (0x0008)  
 	class UObject*                                     LargeSecondaryFont_FontMaterial;                            // 0x0008   (0x0008)  
@@ -257,9 +225,9 @@ struct FPropertyBag_9b4aae3a683cc931
 	class UMaterialInstance*                           BorderMaterial;                                             // 0x0038   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_43b96145e22382f1
+/// Struct /Engine/Transient.PropertyBag_b6b0307d4845b834
 /// Size: 0x0040 (0x000000 - 0x000040)
-struct FPropertyBag_43b96145e22382f1
+struct FPropertyBag_b6b0307d4845b834
 { 
 	class UMaterialInstance*                           RegularFontMaterial;                                        // 0x0000   (0x0008)  
 	class UMaterialInstance*                           RegularSecondaryFontMaterial;                               // 0x0008   (0x0008)  
@@ -271,9 +239,9 @@ struct FPropertyBag_43b96145e22382f1
 	class UMaterialInstance*                           QuietOutlineMaterial;                                       // 0x0038   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_f670d3026ebc627
+/// Struct /Engine/Transient.PropertyBag_384d5289602ce51f
 /// Size: 0x0078 (0x000000 - 0x000078)
-struct FPropertyBag_f670d3026ebc627
+struct FPropertyBag_384d5289602ce51f
 { 
 	class UObject*                                     SmallPrimaryFont_FontMaterial;                              // 0x0000   (0x0008)  
 	class UObject*                                     SmallSecondaryFont_FontMaterial;                            // 0x0008   (0x0008)  
@@ -282,16 +250,80 @@ struct FPropertyBag_f670d3026ebc627
 	FSlateFontInfo                                     GamepadPromptFont;                                          // 0x0020   (0x0058)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_34f86d8ee4f971fd
+/// Struct /Engine/Transient.PropertyBag_67414331d86259df
 /// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_34f86d8ee4f971fd
+struct FPropertyBag_67414331d86259df
+{ 
+	class USoundBase*                                  MatchMakingSucceededSound;                                  // 0x0000   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_82f82b251490b40
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FPropertyBag_82f82b251490b40
+{ 
+	float                                              SecondsPriorToTransSound;                                   // 0x0000   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
+	class USoundBase*                                  TransitionSound;                                            // 0x0008   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_45f468269bcc1aac
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FPropertyBag_45f468269bcc1aac
+{ 
+	class USoundBase*                                  MTXOfferTileIntroWhoosh;                                    // 0x0000   (0x0008)  
+	class USoundBase*                                  ShopRowWhooshIn;                                            // 0x0008   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_96d821840febe92
+/// Size: 0x0008 (0x000000 - 0x000008)
+struct FPropertyBag_96d821840febe92
+{ 
+	class USoundBase*                                  ShopRowWhooshIn;                                            // 0x0000   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_234310beccc6e74e
+/// Size: 0x0008 (0x000000 - 0x000008)
+struct FPropertyBag_234310beccc6e74e
+{ 
+	class USoundBase*                                  LockerCategoryWhooshSound;                                  // 0x0000   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_4dcfa884907b2b7c
+/// Size: 0x0020 (0x000000 - 0x000020)
+struct FPropertyBag_4dcfa884907b2b7c
+{ 
+	class USoundBase*                                  BannerAppearSound;                                          // 0x0000   (0x0008)  
+	class USoundBase*                                  BannerAwaySound;                                            // 0x0008   (0x0008)  
+	class USoundBase*                                  IntroSound;                                                 // 0x0010   (0x0008)  
+	class USoundBase*                                  OutroSound;                                                 // 0x0018   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_df50dda7370b781a
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FPropertyBag_df50dda7370b781a
+{ 
+	class USoundBase*                                  ShopIntroWhooshSound;                                       // 0x0000   (0x0008)  
+	class USoundBase*                                  ContentWhoosh_RetractSound;                                 // 0x0008   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_ede83502c464c81f
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FPropertyBag_ede83502c464c81f
+{ 
+	class USoundBase*                                  ErrorWindowAppearSound;                                     // 0x0000   (0x0008)  
+	class USoundBase*                                  ErrorWindowAwaySound;                                       // 0x0008   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_6ec344efa1cb0538
+/// Size: 0x0008 (0x000000 - 0x000008)
+struct FPropertyBag_6ec344efa1cb0538
 { 
 	class USoundBase*                                  PressedSound;                                               // 0x0000   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_842b26be7e4f4c6
+/// Struct /Engine/Transient.PropertyBag_9c487f4e8b6650fc
 /// Size: 0x0028 (0x000000 - 0x000028)
-struct FPropertyBag_842b26be7e4f4c6
+struct FPropertyBag_9c487f4e8b6650fc
 { 
 	class USoundBase*                                  HoveredSound;                                               // 0x0000   (0x0008)  
 	class USoundBase*                                  HoldPressedSound;                                           // 0x0008   (0x0008)  
@@ -300,17 +332,17 @@ struct FPropertyBag_842b26be7e4f4c6
 	class USoundBase*                                  HoldCompletedSound;                                         // 0x0020   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_5e2e1e1b91841810
+/// Struct /Engine/Transient.PropertyBag_1d1691f2458bc69e
 /// Size: 0x0030 (0x000000 - 0x000030)
-struct FPropertyBag_5e2e1e1b91841810
+struct FPropertyBag_1d1691f2458bc69e
 { 
 	FSlateSound                                        PressedSlateSoundOverride;                                  // 0x0000   (0x0018)  
 	FSlateSound                                        HoveredSlateSoundOverride;                                  // 0x0018   (0x0018)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_fd20b0c83fc0aee8
+/// Struct /Engine/Transient.PropertyBag_d5e72d7e53a916a2
 /// Size: 0x0020 (0x000000 - 0x000020)
-struct FPropertyBag_fd20b0c83fc0aee8
+struct FPropertyBag_d5e72d7e53a916a2
 { 
 	class USoundBase*                                  HoldPressedSound;                                           // 0x0000   (0x0008)  
 	class USoundBase*                                  HoldSound;                                                  // 0x0008   (0x0008)  
@@ -318,18 +350,18 @@ struct FPropertyBag_fd20b0c83fc0aee8
 	class USoundBase*                                  HoldCompletedSound;                                         // 0x0018   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_a689741fbbdbc904
+/// Struct /Engine/Transient.PropertyBag_abe71a7708c53e42
 /// Size: 0x0018 (0x000000 - 0x000018)
-struct FPropertyBag_a689741fbbdbc904
+struct FPropertyBag_abe71a7708c53e42
 { 
 	class USoundBase*                                  ContextButtonHoverSound;                                    // 0x0000   (0x0008)  
 	class USoundBase*                                  ContextButtonClickedSound;                                  // 0x0008   (0x0008)  
 	class USoundBase*                                  BlockOutlineHoverSound;                                     // 0x0010   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_d92c7320cc2d5bc0
+/// Struct /Engine/Transient.PropertyBag_9394362bd73891f7
 /// Size: 0x0048 (0x000000 - 0x000048)
-struct FPropertyBag_d92c7320cc2d5bc0
+struct FPropertyBag_9394362bd73891f7
 { 
 	class USoundBase*                                  PressedSound;                                               // 0x0000   (0x0008)  
 	class USoundBase*                                  HoveredSound;                                               // 0x0008   (0x0008)  
@@ -338,17 +370,17 @@ struct FPropertyBag_d92c7320cc2d5bc0
 	class USoundBase*                                  ActivityBrowserTileHoverSound;                              // 0x0040   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_88a0dde3d183ff8d
+/// Struct /Engine/Transient.PropertyBag_51ad1af663f11dc2
 /// Size: 0x0010 (0x000000 - 0x000010)
-struct FPropertyBag_88a0dde3d183ff8d
+struct FPropertyBag_51ad1af663f11dc2
 { 
 	class USoundBase*                                  PressedSound;                                               // 0x0000   (0x0008)  
 	class USoundBase*                                  HoveredSound;                                               // 0x0008   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_43f1ef6b5fcc5bef
+/// Struct /Engine/Transient.PropertyBag_4c8130712915cd6d
 /// Size: 0x0030 (0x000000 - 0x000030)
-struct FPropertyBag_43f1ef6b5fcc5bef
+struct FPropertyBag_4c8130712915cd6d
 { 
 	class USoundBase*                                  HoveredSound;                                               // 0x0000   (0x0008)  
 	class USoundBase*                                  PressedSound;                                               // 0x0008   (0x0008)  
@@ -358,24 +390,24 @@ struct FPropertyBag_43f1ef6b5fcc5bef
 	class USoundBase*                                  HoldCompletedSound;                                         // 0x0028   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_5e9c71013d0c1845
+/// Struct /Engine/Transient.PropertyBag_74c4f1afdb7e7d47
 /// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_5e9c71013d0c1845
+struct FPropertyBag_74c4f1afdb7e7d47
 { 
 	class USoundBase*                                  ListEntryHoveredSound;                                      // 0x0000   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_ed83acae228913a6
+/// Struct /Engine/Transient.PropertyBag_f5c9e4924dc91427
 /// Size: 0x0030 (0x000000 - 0x000030)
-struct FPropertyBag_ed83acae228913a6
+struct FPropertyBag_f5c9e4924dc91427
 { 
 	FSlateSound                                        PressedSlateSoundOverride;                                  // 0x0000   (0x0018)  
 	FSlateSound                                        HoveredSlateSoundOverride;                                  // 0x0018   (0x0018)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_9cc24cb83be9867a
+/// Struct /Engine/Transient.PropertyBag_844f46863e643127
 /// Size: 0x0020 (0x000000 - 0x000020)
-struct FPropertyBag_9cc24cb83be9867a
+struct FPropertyBag_844f46863e643127
 { 
 	class USoundBase*                                  Press_Sound;                                                // 0x0000   (0x0008)  
 	class USoundBase*                                  HoldSound;                                                  // 0x0008   (0x0008)  
@@ -383,9 +415,9 @@ struct FPropertyBag_9cc24cb83be9867a
 	class USoundBase*                                  CompleteSound;                                              // 0x0018   (0x0008)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_ebca105dc384385e
+/// Struct /Engine/Transient.PropertyBag_a5768d2a5e68640d
 /// Size: 0x0090 (0x000000 - 0x000090)
-struct FPropertyBag_ebca105dc384385e
+struct FPropertyBag_a5768d2a5e68640d
 { 
 	class UObject*                                     LargePrimaryFont_FontObject;                                // 0x0000   (0x0008)  
 	FName                                              LargePrimaryFont_TypefaceFontName;                          // 0x0008   (0x0004)  
@@ -419,9 +451,9 @@ struct FPropertyBag_ebca105dc384385e
 	float                                              SmallSecondaryFont_SkewAmount;                              // 0x008C   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_bd486df911f09922
+/// Struct /Engine/Transient.PropertyBag_a041324a5d7d7e4f
 /// Size: 0x0018 (0x000000 - 0x000018)
-struct FPropertyBag_bd486df911f09922
+struct FPropertyBag_a041324a5d7d7e4f
 { 
 	class UObject*                                     Font_FontObject;                                            // 0x0000   (0x0008)  
 	FName                                              Font_TypefaceFontName;                                      // 0x0008   (0x0004)  
@@ -430,9 +462,9 @@ struct FPropertyBag_bd486df911f09922
 	float                                              Font_SkewAmount;                                            // 0x0014   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_83cfe8b63b4e0dbb
+/// Struct /Engine/Transient.PropertyBag_90181fb90b9b48a8
 /// Size: 0x0030 (0x000000 - 0x000030)
-struct FPropertyBag_83cfe8b63b4e0dbb
+struct FPropertyBag_90181fb90b9b48a8
 { 
 	class UObject*                                     Font_FontObject;                                            // 0x0000   (0x0008)  
 	FName                                              Font_TypefaceFontName;                                      // 0x0008   (0x0004)  
@@ -446,9 +478,9 @@ struct FPropertyBag_83cfe8b63b4e0dbb
 	float                                              TabFont_SkewAmount;                                         // 0x002C   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_b76f8e40dbfb67d3
+/// Struct /Engine/Transient.PropertyBag_9541941d5930db2
 /// Size: 0x0018 (0x000000 - 0x000018)
-struct FPropertyBag_b76f8e40dbfb67d3
+struct FPropertyBag_9541941d5930db2
 { 
 	class UObject*                                     SmallPrimaryFont_FontObject;                                // 0x0000   (0x0008)  
 	FName                                              SmallPrimaryFont_TypefaceFontName;                          // 0x0008   (0x0004)  
@@ -457,10 +489,47 @@ struct FPropertyBag_b76f8e40dbfb67d3
 	float                                              SmallPrimaryFont_SkewAmount;                                // 0x0014   (0x0004)  
 };
 
-/// Struct /Engine/Transient.PropertyBag_b907c5fd75bb4347
+/// Struct /Engine/Transient.PropertyBag_d57ce8e8b9b8dba3
 /// Size: 0x0008 (0x000000 - 0x000008)
-struct FPropertyBag_b907c5fd75bb4347
+struct FPropertyBag_d57ce8e8b9b8dba3
 { 
 	class USoundBase*                                  BattlePassIntroWhooshSound;                                 // 0x0000   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_3950e74ac89396af
+/// Size: 0x0030 (0x000000 - 0x000030)
+struct FPropertyBag_3950e74ac89396af
+{ 
+	FSlateSound                                        PressedSlateSoundOverride;                                  // 0x0000   (0x0018)  
+	FSlateSound                                        HoveredSlateSoundOverride;                                  // 0x0018   (0x0018)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_53b2ed6678cd36ae
+/// Size: 0x0038 (0x000000 - 0x000038)
+struct FPropertyBag_53b2ed6678cd36ae
+{ 
+	FSlateSound                                        PressedSlateSoundOverride;                                  // 0x0000   (0x0018)  
+	FSlateSound                                        HoveredSlateSoundOverride;                                  // 0x0018   (0x0018)  
+	class USoundBase*                                  ClickedSound;                                               // 0x0030   (0x0008)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_1df8743494dd36e
+/// Size: 0x0030 (0x000000 - 0x000030)
+struct FPropertyBag_1df8743494dd36e
+{ 
+	FSlateSound                                        PressedSlateSoundOverride;                                  // 0x0000   (0x0018)  
+	FSlateSound                                        HoveredSlateSoundOverride;                                  // 0x0018   (0x0018)  
+};
+
+/// Struct /Engine/Transient.PropertyBag_30c209cc7a4783c4
+/// Size: 0x0030 (0x000000 - 0x000030)
+struct FPropertyBag_30c209cc7a4783c4
+{ 
+	class USoundBase*                                  HoveredSound;                                               // 0x0000   (0x0008)  
+	class USoundBase*                                  PressedSound;                                               // 0x0008   (0x0008)  
+	class USoundBase*                                  HoldPressedSound;                                           // 0x0010   (0x0008)  
+	class USoundBase*                                  HoldSound;                                                  // 0x0018   (0x0008)  
+	class USoundBase*                                  HoldReleasedSound;                                          // 0x0020   (0x0008)  
+	class USoundBase*                                  HoldCompletedSound;                                         // 0x0028   (0x0008)  
 };
 

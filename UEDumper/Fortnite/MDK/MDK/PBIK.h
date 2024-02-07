@@ -133,22 +133,22 @@ public:
 };
 
 /// Struct /Script/PBIK.RigUnit_PBIK
-/// Size: 0x0120 (0x000180 - 0x0002A0)
+/// Size: 0x0120 (0x0001D0 - 0x0002F0)
 class FRigUnit_PBIK : public FRigUnit_HighlevelBaseMutable
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 672;
+	static inline constexpr uint64_t __MDKClassSize = 752;
 
 public:
-	SMember(FName)                                     Root                                                        OFFSET(getStruct<T>, {0x180, 4, 0, 0})
-	CMember(TArray<FPBIKEffector>)                     Effectors                                                   OFFSET(get<T>, {0x188, 16, 0, 0})
-	CMember(TArray<int32_t>)                           EffectorSolverIndices                                       OFFSET(get<T>, {0x198, 16, 0, 0})
-	CMember(TArray<FPBIKBoneSetting>)                  BoneSettings                                                OFFSET(get<T>, {0x1A8, 16, 0, 0})
-	CMember(TArray<FName>)                             ExcludedBones                                               OFFSET(get<T>, {0x1B8, 16, 0, 0})
-	SMember(FPBIKSolverSettings)                       Settings                                                    OFFSET(getStruct<T>, {0x1C8, 60, 0, 0})
-	SMember(FPBIKDebug)                                Debug                                                       OFFSET(getStruct<T>, {0x204, 8, 0, 0})
-	SMember(FPBIKWorkData)                             WorkData                                                    OFFSET(getStruct<T>, {0x210, 144, 0, 0})
+	SMember(FName)                                     Root                                                        OFFSET(getStruct<T>, {0x1D0, 4, 0, 0})
+	CMember(TArray<FPBIKEffector>)                     Effectors                                                   OFFSET(get<T>, {0x1D8, 16, 0, 0})
+	CMember(TArray<int32_t>)                           EffectorSolverIndices                                       OFFSET(get<T>, {0x1E8, 16, 0, 0})
+	CMember(TArray<FPBIKBoneSetting>)                  BoneSettings                                                OFFSET(get<T>, {0x1F8, 16, 0, 0})
+	CMember(TArray<FName>)                             ExcludedBones                                               OFFSET(get<T>, {0x208, 16, 0, 0})
+	SMember(FPBIKSolverSettings)                       Settings                                                    OFFSET(getStruct<T>, {0x218, 60, 0, 0})
+	SMember(FPBIKDebug)                                Debug                                                       OFFSET(getStruct<T>, {0x254, 8, 0, 0})
+	SMember(FPBIKWorkData)                             WorkData                                                    OFFSET(getStruct<T>, {0x260, 144, 0, 0})
 };
 
 /// Enum /Script/PBIK.EPBIKLimitType

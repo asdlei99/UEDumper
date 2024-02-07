@@ -10,25 +10,25 @@
 /// dependency: NavigationSystem
 
 /// Class /Script/NavCorridor.NavCorridorTestingComponent
-/// Size: 0x0120 (0x0005C0 - 0x0006E0)
+/// Size: 0x0120 (0x000550 - 0x000670)
 class UNavCorridorTestingComponent : public UDebugDrawComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1760;
+	static inline constexpr uint64_t __MDKClassSize = 1648;
 
 public:
-	SMember(FNavAgentProperties)                       NavAgentProps                                               OFFSET(getStruct<T>, {0x5C0, 48, 0, 0})
-	CMember(class UClass*)                             FilterClass                                                 OFFSET(get<T>, {0x5F0, 8, 0, 0})
-	DMember(bool)                                      bFindCorridorToGoal                                         OFFSET(get<bool>, {0x5F8, 1, 0, 0})
-	DMember(bool)                                      bFollowPathOnGoalCorridor                                   OFFSET(get<bool>, {0x5F9, 1, 0, 0})
-	DMember(float)                                     FollowLookAheadDistance                                     OFFSET(get<float>, {0x5FC, 4, 0, 0})
-	CMember(class AActor*)                             GoalActor                                                   OFFSET(get<T>, {0x600, 8, 0, 0})
-	CMember(class ANavigationData*)                    NavData                                                     OFFSET(get<T>, {0x608, 8, 0, 0})
-	SMember(FNavCorridorParams)                        CorridorParams                                              OFFSET(getStruct<T>, {0x610, 24, 0, 0})
-	DMember(bool)                                      bUpdateParametersFromWidth                                  OFFSET(get<bool>, {0x628, 1, 0, 0})
-	DMember(float)                                     PathOffset                                                  OFFSET(get<float>, {0x62C, 4, 0, 0})
-	DMember(float)                                     PathfindingTimeUs                                           OFFSET(get<float>, {0x630, 4, 0, 0})
-	DMember(float)                                     CorridorTimeUs                                              OFFSET(get<float>, {0x634, 4, 0, 0})
+	SMember(FNavAgentProperties)                       NavAgentProps                                               OFFSET(getStruct<T>, {0x550, 48, 0, 0})
+	CMember(class UClass*)                             FilterClass                                                 OFFSET(get<T>, {0x580, 8, 0, 0})
+	DMember(bool)                                      bFindCorridorToGoal                                         OFFSET(get<bool>, {0x588, 1, 0, 0})
+	DMember(bool)                                      bFollowPathOnGoalCorridor                                   OFFSET(get<bool>, {0x589, 1, 0, 0})
+	DMember(float)                                     FollowLookAheadDistance                                     OFFSET(get<float>, {0x58C, 4, 0, 0})
+	CMember(class AActor*)                             GoalActor                                                   OFFSET(get<T>, {0x590, 8, 0, 0})
+	CMember(class ANavigationData*)                    NavData                                                     OFFSET(get<T>, {0x598, 8, 0, 0})
+	SMember(FNavCorridorParams)                        CorridorParams                                              OFFSET(getStruct<T>, {0x5A0, 24, 0, 0})
+	DMember(bool)                                      bUpdateParametersFromWidth                                  OFFSET(get<bool>, {0x5B8, 1, 0, 0})
+	DMember(float)                                     PathOffset                                                  OFFSET(get<float>, {0x5BC, 4, 0, 0})
+	DMember(float)                                     PathfindingTimeUs                                           OFFSET(get<float>, {0x5C0, 4, 0, 0})
+	DMember(float)                                     CorridorTimeUs                                              OFFSET(get<float>, {0x5C4, 4, 0, 0})
 };
 
 /// Class /Script/NavCorridor.NavCorridorTestingActor

@@ -22,9 +22,9 @@ public:
 
 	/// Functions
 	// Function /Script/Qos.QosBeaconClient.ServerQosRequest
-	// void ServerQosRequest(FString InSessionId);                                                                              // [0x741f404] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerQosRequest(FString InSessionId);                                                                              // [0x731cdcc] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/Qos.QosBeaconClient.ClientQosResponse
-	// void ClientQosResponse(EQosResponseType Response);                                                                       // [0x741f380] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientQosResponse(EQosResponseType Response);                                                                       // [0x731cd08] Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Class /Script/Qos.QosBeaconHost

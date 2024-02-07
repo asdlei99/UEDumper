@@ -31,7 +31,7 @@ public:
 
 	/// Functions
 	// Function /Script/MatchmakingPortalUI.FortControllerComponent_CreativeMatchmaking.OnCreativeReadyCheckStatusChanged
-	// void OnCreativeReadyCheckStatusChanged(EInGameReadyCheckStatus InGameReadyCheckStatus);                                  // [0xb65e708] Final|Native|Protected 
+	// void OnCreativeReadyCheckStatusChanged(EInGameReadyCheckStatus InGameReadyCheckStatus);                                  // [0xb8d4d84] Final|Native|Protected 
 };
 
 /// Class /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback
@@ -57,53 +57,76 @@ public:
 
 	/// Functions
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.PushInputComponent
-	// void PushInputComponent();                                                                                               // [0xb65e81c] Final|Native|Protected|BlueprintCallable 
+	// void PushInputComponent();                                                                                               // [0xb8d4f18] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.PopInputComponent
-	// void PopInputComponent();                                                                                                // [0xb65e808] Final|Native|Protected|BlueprintCallable 
+	// void PopInputComponent();                                                                                                // [0xb8d4f04] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.PlayOutro
-	// void PlayOutro();                                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void PlayOutro();                                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.PlayIntro
-	// void PlayIntro();                                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void PlayIntro();                                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.OnUserStartedHoldActionNotification
-	// void OnUserStartedHoldActionNotification();                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnUserStartedHoldActionNotification();                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.OnTakeActionNotification
-	// void OnTakeActionNotification();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnTakeActionNotification();                                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.OnOutroFinished
-	// void OnOutroFinished();                                                                                                  // [0x3b255c0] Final|Native|Protected|BlueprintCallable 
+	// void OnOutroFinished();                                                                                                  // [0x6f751d4] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.OnMatchmakingStatusTextUpdated
-	// void OnMatchmakingStatusTextUpdated();                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnMatchmakingStatusTextUpdated();                                                                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.OnLockStateChanged
-	// void OnLockStateChanged(bool bLockState);                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnLockStateChanged(bool bLockState);                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.OnCreativeReadyCheckStatusChanged
-	// void OnCreativeReadyCheckStatusChanged(EInGameReadyCheckStatus InGameReadyCheckStatus);                                  // [0xb65e788] Final|Native|Protected 
+	// void OnCreativeReadyCheckStatusChanged(EInGameReadyCheckStatus InGameReadyCheckStatus);                                  // [0xb8d4e44] Final|Native|Protected 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.OnCancelNotification
-	// void OnCancelNotification();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnCancelNotification();                                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.IsPartyLeader
-	// bool IsPartyLeader();                                                                                                    // [0xb65e6e4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPartyLeader();                                                                                                    // [0xb8d4d60] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.IsLocalPlayerReady
-	// bool IsLocalPlayerReady();                                                                                               // [0xb65e690] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLocalPlayerReady();                                                                                               // [0xb8d4d0c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.HoldReleased
-	// void HoldReleased();                                                                                                     // [0xb65e67c] Final|Native|Protected 
+	// void HoldReleased();                                                                                                     // [0xb8d4cf8] Final|Native|Protected 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.HoldPressed
-	// void HoldPressed();                                                                                                      // [0xb65e668] Final|Native|Protected 
+	// void HoldPressed();                                                                                                      // [0xb8d4ce4] Final|Native|Protected 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.HoldAction
-	// void HoldAction();                                                                                                       // [0xb65e654] Final|Native|Protected 
+	// void HoldAction();                                                                                                       // [0xb8d4cd0] Final|Native|Protected 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.HandleCancelMatchmaking
-	// void HandleCancelMatchmaking();                                                                                          // [0xb65e390] Final|Native|Protected 
+	// void HandleCancelMatchmaking();                                                                                          // [0xb8d4894] Final|Native|Protected 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.GetTimeToDisplayMessageBeforeFadeOut
-	// float GetTimeToDisplayMessageBeforeFadeOut();                                                                            // [0xb65e374] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimeToDisplayMessageBeforeFadeOut();                                                                            // [0xb8d4864] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.CanCancelMatchmaking
-	// bool CanCancelMatchmaking();                                                                                             // [0xb65e2e8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanCancelMatchmaking();                                                                                             // [0xb8d47d8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MatchmakingPortalUI.FortCreativeMatchmakingFeedback.BP_OnCreativeReadyCheckStatusChanged
-	// void BP_OnCreativeReadyCheckStatusChanged(EInGameReadyCheckStatus InGameReadyCheckStatus);                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnCreativeReadyCheckStatusChanged(EInGameReadyCheckStatus InGameReadyCheckStatus);                               // [0x2047e54] Event|Protected|BlueprintEvent 
+};
+
+/// Class /Script/MatchmakingPortalUI.FortMatchmakingPortalCountdown
+/// Size: 0x0030 (0x000400 - 0x000430)
+class UFortMatchmakingPortalCountdown : public UCommonActivatableWidget
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 1072;
+
+public:
+	CMember(class UInputComponent*)                    MatchmakingPortalInputComponent                             OFFSET(get<T>, {0x408, 8, 0, 0})
+	CMember(class UFortActivityScalingTextBlock*)      Text_IslandName                                             OFFSET(get<T>, {0x410, 8, 0, 0})
+	DMember(float)                                     CountdownTime                                               OFFSET(get<float>, {0x418, 4, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnFinishedCountdown                                         OFFSET(getStruct<T>, {0x420, 16, 0, 0})
+
+
+	/// Functions
+	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalCountdown.StartCountdown
+	// void StartCountdown();                                                                                                   // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalCountdown.HandleCancelClicked
+	// void HandleCancelClicked();                                                                                              // [0xb8d4880] Final|Native|Protected|BlueprintCallable 
+	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalCountdown.FinishTimer
+	// void FinishTimer();                                                                                                      // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup
-/// Size: 0x01B8 (0x000410 - 0x0005C8)
+/// Size: 0x01C8 (0x000410 - 0x0005D8)
 class UFortMatchmakingPortalPopup : public UFortPortalHUDDetails
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1480;
+	static inline constexpr uint64_t __MDKClassSize = 1496;
 
 public:
 	CMember(class UFortActivityDetailsModal*)          MatchmakingPortalModalWidget                                OFFSET(get<T>, {0x420, 8, 0, 0})
@@ -122,41 +145,41 @@ public:
 	CMember(class UClass*)                             CreatorPageViewClass                                        OFFSET(get<T>, {0x508, 8, 0, 0})
 	CMember(class UClass*)                             AttributionsModalClass                                      OFFSET(get<T>, {0x510, 8, 0, 0})
 	CMember(class UFortGameActivity*)                  CachedGameActivity                                          OFFSET(get<T>, {0x518, 8, 0, 0})
-	SMember(FText)                                     InteractionMessage                                          OFFSET(getStruct<T>, {0x520, 24, 0, 0})
-	SMember(FText)                                     InteractionMessage_Cancel                                   OFFSET(getStruct<T>, {0x538, 24, 0, 0})
-	SMember(FText)                                     InteractionMessage_Disabled                                 OFFSET(getStruct<T>, {0x550, 24, 0, 0})
-	SMember(FText)                                     InteractionMessage_PartyLeadOnly                            OFFSET(getStruct<T>, {0x568, 24, 0, 0})
+	SMember(FText)                                     InteractionMessage                                          OFFSET(getStruct<T>, {0x530, 24, 0, 0})
+	SMember(FText)                                     InteractionMessage_Cancel                                   OFFSET(getStruct<T>, {0x548, 24, 0, 0})
+	SMember(FText)                                     InteractionMessage_Disabled                                 OFFSET(getStruct<T>, {0x560, 24, 0, 0})
+	SMember(FText)                                     InteractionMessage_PartyLeadOnly                            OFFSET(getStruct<T>, {0x578, 24, 0, 0})
 
 
 	/// Functions
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.UpdateVisuals
-	// void UpdateVisuals(class UHeaderDescriptionHUDComponent* HUDComponent);                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void UpdateVisuals(class UHeaderDescriptionHUDComponent* HUDComponent);                                                  // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.OnShowPortalPopup
-	// void OnShowPortalPopup(bool bShow, bool bAnimate);                                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnShowPortalPopup(bool bShow, bool bAnimate);                                                                       // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.OnPlayerCanInteractChanged
-	// void OnPlayerCanInteractChanged(bool bPlayerCanInteract, FText& Message);                                                // [0x211c0a0] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnPlayerCanInteractChanged(bool bPlayerCanInteract, FText& Message);                                                // [0x2047e54] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.OnLockStateChanged
-	// void OnLockStateChanged();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnLockStateChanged();                                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.IsInteractingDeviceAMatchmakingPortal
-	// bool IsInteractingDeviceAMatchmakingPortal();                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// bool IsInteractingDeviceAMatchmakingPortal();                                                                            // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.HasActivityToShow
-	// bool HasActivityToShow();                                                                                                // [0xb65e624] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasActivityToShow();                                                                                                // [0xb8d4cb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.HandleWidgetUpdate
-	// void HandleWidgetUpdate();                                                                                               // [0xb65e610] Final|Native|Public  
+	// void HandleWidgetUpdate();                                                                                               // [0xb8d4ca0] Final|Native|Public  
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.HandleStartedRespawn
-	// void HandleStartedRespawn(class AFortPlayerControllerZone* PlayerController);                                            // [0xb65e590] Final|Native|Public  
+	// void HandleStartedRespawn(class AFortPlayerControllerZone* PlayerController);                                            // [0xb8d4be0] Final|Native|Public  
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.HandleOnPortalDetailsVisibilityCheck
-	// void HandleOnPortalDetailsVisibilityCheck(bool bShowWidget);                                                             // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void HandleOnPortalDetailsVisibilityCheck(bool bShowWidget);                                                             // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.HandleLoadScreenChanged
-	// void HandleLoadScreenChanged(class AFortPlayerControllerAthena* PlayerController, bool bLoadScreenEnabled, FText HUDReason); // [0xb65e468] Final|Native|Public  
+	// void HandleLoadScreenChanged(class AFortPlayerControllerAthena* PlayerController, bool bLoadScreenEnabled, FText HUDReason); // [0xb8d49f8] Final|Native|Public  
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.HandleHUDShow
-	// void HandleHUDShow(bool bShow, bool bShouldAnimate);                                                                     // [0xb65e3a4] Final|Native|Public  
+	// void HandleHUDShow(bool bShow, bool bShouldAnimate);                                                                     // [0xb8d48a8] Final|Native|Public  
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.GetMatchmakingFeedbackWidget
-	// class UFortAthenaCreativeMatchmakingWidget* GetMatchmakingFeedbackWidget(class UCommonActivatableWidget* MatchmakingFeedbackContainer); // [0x211c0a0] Event|Protected|BlueprintEvent|Const 
+	// class UFortAthenaCreativeMatchmakingWidget* GetMatchmakingFeedbackWidget(class UCommonActivatableWidget* MatchmakingFeedbackContainer); // [0x2047e54] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.GetIslandData
-	// bool GetIslandData(FMatchmakingPortalPopupData& OutIslandData, class UHeaderDescriptionHUDComponent* HUDComponent);      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// bool GetIslandData(FMatchmakingPortalPopupData& OutIslandData, class UHeaderDescriptionHUDComponent* HUDComponent);      // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/MatchmakingPortalUI.FortMatchmakingPortalPopup.BindOverlapEvents
-	// void BindOverlapEvents();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BindOverlapEvents();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/MatchmakingPortalUI.FortModalBackground
@@ -174,7 +197,7 @@ public:
 
 	/// Functions
 	// Function /Script/MatchmakingPortalUI.FortModalBackground.OnPreviewImageChanged
-	// void OnPreviewImageChanged(bool bIsLoading, class UTexture* InTexture);                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPreviewImageChanged(bool bIsLoading, class UTexture* InTexture);                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/MatchmakingPortalUI.FortUIGameFeatureAction_OverridePortalHUDDetails

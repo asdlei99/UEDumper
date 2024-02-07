@@ -37,24 +37,24 @@ public:
 class UGrappleKnifeLayerAnimInstance : public UFortMantisLayerAnimInstance
 { 
 public:
-	bool                                               bIsAttached;                                                // 0x1628   (0x0001)  
-	bool                                               bIsFired;                                                   // 0x1629   (0x0001)  
-	bool                                               bAnimStartWallBounce;                                       // 0x162A   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x1];                                       // 0x162B   (0x0001)  MISSED
-	float                                              PawnRotationRateYaw;                                        // 0x162C   (0x0004)  
-	float                                              AnimBounceAngle;                                            // 0x1630   (0x0004)  
-	bool                                               bIsFireOnMotorBike;                                         // 0x1634   (0x0001)  
-	bool                                               bIsExitUnexpectedly;                                        // 0x1635   (0x0001)  
-	bool                                               bIsCastInAir;                                               // 0x1636   (0x0001)  
-	bool                                               bIsCastUpperbody;                                           // 0x1637   (0x0001)  
-	bool                                               bIsCastGroundIdle;                                          // 0x1638   (0x0001)  
-	bool                                               bIsCastGroundLoco;                                          // 0x1639   (0x0001)  
-	bool                                               bDistanceBucketIs0;                                         // 0x163A   (0x0001)  
-	bool                                               bDistanceBucketIs2;                                         // 0x163B   (0x0001)  
-	bool                                               bIsExitGround;                                              // 0x163C   (0x0001)  
-	bool                                               bIsExitWallBounce;                                          // 0x163D   (0x0001)  
-	bool                                               bIsExitZipAirStart;                                         // 0x163E   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x11];                                      // 0x163F   (0x0011)  MISSED
+	bool                                               bIsAttached;                                                // 0x1630   (0x0001)  
+	bool                                               bIsFired;                                                   // 0x1631   (0x0001)  
+	bool                                               bAnimStartWallBounce;                                       // 0x1632   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x1];                                       // 0x1633   (0x0001)  MISSED
+	float                                              PawnRotationRateYaw;                                        // 0x1634   (0x0004)  
+	float                                              AnimBounceAngle;                                            // 0x1638   (0x0004)  
+	bool                                               bIsFireOnMotorBike;                                         // 0x163C   (0x0001)  
+	bool                                               bIsExitUnexpectedly;                                        // 0x163D   (0x0001)  
+	bool                                               bIsCastInAir;                                               // 0x163E   (0x0001)  
+	bool                                               bIsCastUpperbody;                                           // 0x163F   (0x0001)  
+	bool                                               bIsCastGroundIdle;                                          // 0x1640   (0x0001)  
+	bool                                               bIsCastGroundLoco;                                          // 0x1641   (0x0001)  
+	bool                                               bDistanceBucketIs0;                                         // 0x1642   (0x0001)  
+	bool                                               bDistanceBucketIs2;                                         // 0x1643   (0x0001)  
+	bool                                               bIsExitGround;                                              // 0x1644   (0x0001)  
+	bool                                               bIsExitWallBounce;                                          // 0x1645   (0x0001)  
+	bool                                               bIsExitZipAirStart;                                         // 0x1646   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x9];                                       // 0x1647   (0x0009)  MISSED
 };
 
 /// Class /Script/GrappleWeaponRuntime.GrappleKnifeWeaponAnimInstance
@@ -73,7 +73,7 @@ public:
 
 	/// Functions
 	// Function /Script/GrappleWeaponRuntime.GrappleKnifeWeaponInterface.GetGrappleKnifeData
-	// void GetGrappleKnifeData(bool& bIsAttached, bool& bIsFired, int32_t& DistanceBucket, bool& bAnimStartWallBounce, float& AnimBounceAngle); // [0xaa068dc] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void GetGrappleKnifeData(bool& bIsAttached, bool& bIsFired, int32_t& DistanceBucket, bool& bAnimStartWallBounce, float& AnimBounceAngle); // [0xabd9978] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/GrappleWeaponRuntime.GrappleWeaponLibrary
@@ -85,13 +85,13 @@ public:
 
 	/// Functions
 	// Function /Script/GrappleWeaponRuntime.GrappleWeaponLibrary.IsTargetingLedge
-	// void IsTargetingLedge(class ACharacter* SourceCharacter, class AActor* TargetActor, FVector& TargetLocation, FVector& TargetNormal, FGrappleWeaponLedgeConfig& Config, bool& OutDidImpactWalkableSurface, bool& OutTargetingLedge, FVector& OutLedgeLocation, bool bDrawDebug); // [0xaa06ccc] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void IsTargetingLedge(class ACharacter* SourceCharacter, class AActor* TargetActor, FVector& TargetLocation, FVector& TargetNormal, FGrappleWeaponLedgeConfig& Config, bool& OutDidImpactWalkableSurface, bool& OutTargetingLedge, FVector& OutLedgeLocation, bool bDrawDebug); // [0xabd9dac] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GrappleWeaponRuntime.GrappleWeaponLibrary.GetGrappleWeaponTargetInfo
-	// FGrappleWeaponTargetInfo GetGrappleWeaponTargetInfo(class AFortPlayerPawn* SourcePlayerPawn, FGrappleWeaponTargetingConfig& Config, float DrawDebugDuration); // [0xaa06ab8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FGrappleWeaponTargetInfo GetGrappleWeaponTargetInfo(class AFortPlayerPawn* SourcePlayerPawn, FGrappleWeaponTargetingConfig& Config, float DrawDebugDuration); // [0xabd9b54] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GrappleWeaponRuntime.GrappleWeaponLibrary.DidHitResultImpactLedge
-	// void DidHitResultImpactLedge(class ACharacter* SourceCharacter, FHitResult& HitResult, FGrappleWeaponLedgeConfig& Config, bool& OutDidImpactWalkableSurface, bool& OutTargetingLedge, FVector& OutLedgeLocation, bool bDrawDebug); // [0xaa064ac] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void DidHitResultImpactLedge(class ACharacter* SourceCharacter, FHitResult& HitResult, FGrappleWeaponLedgeConfig& Config, bool& OutDidImpactWalkableSurface, bool& OutTargetingLedge, FVector& OutLedgeLocation, bool bDrawDebug); // [0xabd94e0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GrappleWeaponRuntime.GrappleWeaponLibrary.CalculateDirectionalTargetOffset
-	// FVector CalculateDirectionalTargetOffset(FVector& DirToTarget, FVector& MovementOffset, FVector& LedgeOffset);        // [0xaa062a4] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector CalculateDirectionalTargetOffset(FVector& DirToTarget, FVector& MovementOffset, FVector& LedgeOffset);        // [0xabd92d8] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/GrappleWeaponRuntime.GrappleWeaponLedgeConfig
@@ -126,8 +126,8 @@ struct FGrappleWeaponTargetInfo
 { 
 	bool                                               bHitTarget;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
-	SDK_UNDEFINED(8,13817) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0004   (0x0008)  
-	SDK_UNDEFINED(8,13818) /* TWeakObjectPtr<USceneComponent*> */ __um(TargetComponent);                           // 0x000C   (0x0008)  
+	SDK_UNDEFINED(8,13884) /* TWeakObjectPtr<AActor*> */ __um(TargetActor);                                        // 0x0004   (0x0008)  
+	SDK_UNDEFINED(8,13885) /* TWeakObjectPtr<USceneComponent*> */ __um(TargetComponent);                           // 0x000C   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0014   (0x0004)  MISSED
 	FVector                                            TargetPoint;                                                // 0x0018   (0x0018)  
 	float                                              HitDistance;                                                // 0x0030   (0x0004)  

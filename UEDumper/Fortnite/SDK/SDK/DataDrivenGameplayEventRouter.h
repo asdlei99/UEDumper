@@ -36,7 +36,7 @@ public:
 
 	/// Functions
 	// Function /Script/DataDrivenGameplayEventRouter.GameplayEventDescriptorLibrary.BroadcastEvent
-	// bool BroadcastEvent(FGameplayEventDescriptor& EventDescriptor, class UObject* EventContext, int32_t& Event, class UClass* EventRouterScope, class AActor* RouterContextActor); // [0x1db47e8] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
+	// bool BroadcastEvent(FGameplayEventDescriptor& EventDescriptor, class UObject* EventContext, int32_t& Event, class UClass* EventRouterScope, class AActor* RouterContextActor); // [0x180d83c] Final|Native|Static|Private|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/DataDrivenGameplayEventRouter.GameplayEventDefinition
@@ -60,7 +60,7 @@ struct FGameplayEventDescriptor
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FGameplayEventSubscription
 { 
-	SDK_UNDEFINED(32,12540) /* TWeakObjectPtr<UObject*> */ __um(Object);                                           // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,12593) /* TWeakObjectPtr<UObject*> */ __um(Object);                                           // 0x0000   (0x0020)  
 	FMemberReference                                   EventDescriptor;                                            // 0x0020   (0x0030)  
 	FGameplayEventListenerHandle                       EventHandle;                                                // 0x0050   (0x001C)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x006C   (0x0004)  MISSED
@@ -71,7 +71,7 @@ struct FGameplayEventSubscription
 struct FGameplayEventHandlerFunction
 { 
 	FMemberReference                                   EventHandlerFunction;                                       // 0x0000   (0x0030)  
-	SDK_UNDEFINED(80,12541) /* TMap<FName, FString> */ __um(EventHandlerFunctionDefaultValues);                    // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,12594) /* TMap<FName, FString> */ __um(EventHandlerFunctionDefaultValues);                    // 0x0030   (0x0050)  
 };
 
 /// Struct /Script/DataDrivenGameplayEventRouter.GameplayEventHandlerFunctions

@@ -20,7 +20,7 @@ public:
 	FName                                              AssetPathName;                                              // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x002C   (0x0004)  MISSED
 	class ULevelSaveRecord*                            LevelSaveRecord;                                            // 0x0030   (0x0008)  
-	SDK_UNDEFINED(32,9220) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                         // 0x0038   (0x0020)  
+	SDK_UNDEFINED(32,9242) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                         // 0x0038   (0x0020)  
 	unsigned char                                      UnknownData01_6[0x38];                                      // 0x0058   (0x0038)  MISSED
 };
 
@@ -42,21 +42,21 @@ public:
 };
 
 /// Class /Script/VerseDevices.ScriptDevice
-/// Size: 0x0038 (0x000BC8 - 0x000C00)
+/// Size: 0x0028 (0x000BC8 - 0x000BF0)
 class AScriptDevice : public ABuildingProp
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0BC8   (0x0008)  MISSED
 	class UVerseCreativeDevice*                        Script;                                                     // 0x0BD0   (0x0008)  
 	class UVerseCreativeDevice*                        ScriptInstance;                                             // 0x0BD8   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0BE0   (0x0020)  MISSED
+	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0BE0   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/VerseDevices.ScriptDevice.SetEnabled
-	// void SetEnabled(bool bInEnabled);                                                                                     // [0xa6d3ed0] Final|Native|Protected|BlueprintCallable 
+	// void SetEnabled(bool bInEnabled);                                                                                     // [0xa883e7c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/VerseDevices.ScriptDevice.BP_SetVisibility
-	// void BP_SetVisibility(bool bVisible);                                                                                 // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_SetVisibility(bool bVisible);                                                                                 // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/VerseDevices.VerseMovableObjectBase
@@ -68,11 +68,13 @@ public:
 };
 
 /// Class /Script/VerseDevices.VerseCreativeDevice
-/// Size: 0x0010 (0x0000A0 - 0x0000B0)
+/// Size: 0x0020 (0x0000A0 - 0x0000C0)
 class UVerseCreativeDevice : public UVerseMovableObjectBase
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x10];                                      // 0x00A0   (0x0010)  MISSED
+	unsigned char                                      UnknownData00_2[0x10];                                      // 0x00A0   (0x0010)  MISSED
+	class AActor*                                      ActorOwner;                                                 // 0x00B0   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x00B8   (0x0008)  MISSED
 };
 
 /// Class /Script/VerseDevices.VerseCreativeObject
@@ -97,17 +99,22 @@ public:
 class UVerseDevicesFeatureAction_RegisterWrapperClasses : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(32,9221) /* TWeakObjectPtr<UVerseDeviceWrapperClassMap*> */ __um(DeviceToWrapperClassMapAsset);  // 0x0028   (0x0020)  
+	SDK_UNDEFINED(32,9243) /* TWeakObjectPtr<UVerseDeviceWrapperClassMap*> */ __um(DeviceToWrapperClassMapAsset);  // 0x0028   (0x0020)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0048   (0x0008)  MISSED
 };
 
 /// Class /Script/VerseDevices.VerseDeviceSubsystem
-/// Size: 0x0110 (0x000030 - 0x000140)
+/// Size: 0x0160 (0x000030 - 0x000190)
 class UVerseDeviceSubsystem : public UWorldSubsystem
 { 
 public:
-	SDK_UNDEFINED(80,9222) /* TMap<TWeakObjectPtr<UClass*>, UVerseClass*> */ __um(DeviceClassToVerseClassMap);     // 0x0030   (0x0050)  
-	unsigned char                                      UnknownData00_6[0xC0];                                      // 0x0080   (0x00C0)  MISSED
+	SDK_UNDEFINED(80,9244) /* TMap<TWeakObjectPtr<UClass*>, UVerseClass*> */ __um(DeviceClassToVerseClassMap);     // 0x0030   (0x0050)  
+	unsigned char                                      UnknownData00_6[0x110];                                     // 0x0080   (0x0110)  MISSED
+
+
+	/// Functions
+	// Function /Script/VerseDevices.VerseDeviceSubsystem.HandleMinigameStateChanged
+	// void HandleMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState);                  // [0xa883b9c] Final|Native|Private 
 };
 
 /// Class /Script/VerseDevices.VerseDeviceWrapperClassMap
@@ -115,7 +122,7 @@ public:
 class UVerseDeviceWrapperClassMap : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,9223) /* TMap<TWeakObjectPtr<UClass*>, UClass*> */ __um(DeviceClassMap);                      // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,9245) /* TMap<TWeakObjectPtr<UClass*>, UClass*> */ __um(DeviceClassMap);                      // 0x0030   (0x0050)  
 };
 
 /// Struct /Script/VerseDevices.VerseDeviceFunctionPayload

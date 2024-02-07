@@ -81,17 +81,17 @@ public:
 };
 
 /// Class /Script/MassSmartObjects.SmartObjectZoneAnnotations
-/// Size: 0x0030 (0x0005E0 - 0x000610)
+/// Size: 0x0030 (0x000570 - 0x0005A0)
 class USmartObjectZoneAnnotations : public UZoneGraphAnnotationComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1552;
+	static inline constexpr uint64_t __MDKClassSize = 1440;
 
 public:
-	SMember(FZoneGraphTagFilter)                       AffectedLaneTags                                            OFFSET(getStruct<T>, {0x5E0, 12, 0, 0})
-	CMember(TArray<FSmartObjectAnnotationData>)        SmartObjectAnnotationDataArray                              OFFSET(get<T>, {0x5F0, 16, 0, 0})
-	SMember(FZoneGraphTag)                             BehaviorTag                                                 OFFSET(getStruct<T>, {0x600, 1, 0, 0})
-	CMember(class USmartObjectSubsystem*)              SmartObjectSubsystem                                        OFFSET(get<T>, {0x608, 8, 0, 0})
+	SMember(FZoneGraphTagFilter)                       AffectedLaneTags                                            OFFSET(getStruct<T>, {0x570, 12, 0, 0})
+	CMember(TArray<FSmartObjectAnnotationData>)        SmartObjectAnnotationDataArray                              OFFSET(get<T>, {0x580, 16, 0, 0})
+	SMember(FZoneGraphTag)                             BehaviorTag                                                 OFFSET(getStruct<T>, {0x590, 1, 0, 0})
+	CMember(class USmartObjectSubsystem*)              SmartObjectSubsystem                                        OFFSET(get<T>, {0x598, 8, 0, 0})
 };
 
 /// Struct /Script/MassSmartObjects.MassSmartObjectUserFragment

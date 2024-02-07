@@ -10,6 +10,26 @@
 /// dependency: FortniteUI
 /// dependency: ValetUI
 
+/// Class /EventMode/HUD/BB_Focus.BB_Focus_C
+/// Size: 0x0000 (0x000140 - 0x000140)
+class UBB_Focus_C : public UFortMobileActionButtonBehavior_Focus
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+};
+
+/// Class /RidingContent/HUD/BBE_Crouch.BBE_Crouch_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_Crouch_C : public UFortMobileActionButtonBehaviorExtension
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 128;
+
+public:
+};
+
 /// Class /RidingContent/HUD/BBE_Sprint.BBE_Sprint_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UBBE_Sprint_C : public UFortMobileActionButtonBehaviorExtension
@@ -30,19 +50,9 @@ class UBBE_RiderEmote_C : public UFortMobileActionButtonBehaviorExtension
 public:
 };
 
-/// Class /RidingContent/HUD/BBE_Crouch.BBE_Crouch_C
+/// Class /RidingContent/HUD/BBE_RiderUse.BBE_RiderUse_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_Crouch_C : public UFortMobileActionButtonBehaviorExtension
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
-
-public:
-};
-
-/// Class /RidingContent/HUD/BBE_ThrowConsumableRiding.BBE_ThrowConsumableRiding_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_ThrowConsumableRiding_C : public UFortMobileActionButtonBehaviorExtension
+class UBBE_RiderUse_C : public UFortMobileActionButtonBehaviorExtension
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 128;
@@ -60,22 +70,12 @@ class UBBE_RiderExit_C : public UFortMobileActionButtonBehaviorExtension
 public:
 };
 
-/// Class /RidingContent/HUD/BBE_RiderUse.BBE_RiderUse_C
+/// Class /RidingContent/HUD/BBE_ThrowConsumableRiding.BBE_ThrowConsumableRiding_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_RiderUse_C : public UFortMobileActionButtonBehaviorExtension
+class UBBE_ThrowConsumableRiding_C : public UFortMobileActionButtonBehaviorExtension
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 128;
-
-public:
-};
-
-/// Class /EventMode/HUD/BB_Focus.BB_Focus_C
-/// Size: 0x0000 (0x000140 - 0x000140)
-class UBB_Focus_C : public UFortMobileActionButtonBehavior_Focus
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 320;
 
 public:
 };
@@ -210,26 +210,6 @@ class UBB_NevadaMoveUp_C : public UFortMobileActionButtonBehavior
 public:
 };
 
-/// Class /Tank/HUD/BBE_TankBoost.BBE_TankBoost_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_TankBoost_C : public UFortMobileActionButtonBehaviorExtension
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
-
-public:
-};
-
-/// Class /Tank/HUD/BBE_TankHonk.BBE_TankHonk_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_TankHonk_C : public UFortMobileActionButtonBehaviorExtension
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
-
-public:
-};
-
 /// Class /Tank/HUD/BBE_TankExit.BBE_TankExit_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UBBE_TankExit_C : public UFortMobileActionButtonBehaviorExtension
@@ -250,9 +230,19 @@ class UBBE_TankTargetADS_C : public UFortMobileActionButtonBehaviorExtension
 public:
 };
 
-/// Class /Tank/HUD/BBE_TankBuildMode.BBE_TankBuildMode_C
+/// Class /Tank/HUD/BBE_TankBoost.BBE_TankBoost_C
 /// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_TankBuildMode_C : public UFortMobileActionButtonBehaviorExtension
+class UBBE_TankBoost_C : public UFortMobileActionButtonBehaviorExtension
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 128;
+
+public:
+};
+
+/// Class /Tank/HUD/BBE_TankHonk.BBE_TankHonk_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_TankHonk_C : public UFortMobileActionButtonBehaviorExtension
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 128;
@@ -263,6 +253,16 @@ public:
 /// Class /Tank/HUD/BBE_TankSwitchSeat.BBE_TankSwitchSeat_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UBBE_TankSwitchSeat_C : public UFortMobileActionButtonBehaviorExtension
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 128;
+
+public:
+};
+
+/// Class /Tank/HUD/BBE_TankBuildMode.BBE_TankBuildMode_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_TankBuildMode_C : public UFortMobileActionButtonBehaviorExtension
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 128;
@@ -310,12 +310,12 @@ class UBB_Rock_Handbrake_C : public UFortMobileActionButtonBehavior
 public:
 };
 
-/// Class /RockVehicle/HUD/BB_Rock_Boost.BB_Rock_Boost_C
-/// Size: 0x0000 (0x000138 - 0x000138)
-class UBB_Rock_Boost_C : public UFortMobileActionButtonBehavior
+/// Class /RockVehicle/HUD/BBE_Rock_VehicleExit.BBE_Rock_VehicleExit_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UBBE_Rock_VehicleExit_C : public UFortMobileActionButtonBehaviorExtension
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 312;
+	static inline constexpr uint64_t __MDKClassSize = 128;
 
 public:
 };
@@ -330,12 +330,12 @@ class UBBE_Rock_RadioNext_C : public UFortMobileActionButtonBehaviorExtension
 public:
 };
 
-/// Class /RockVehicle/HUD/BBE_Rock_VehicleExit.BBE_Rock_VehicleExit_C
-/// Size: 0x0000 (0x000080 - 0x000080)
-class UBBE_Rock_VehicleExit_C : public UFortMobileActionButtonBehaviorExtension
+/// Class /RockVehicle/HUD/BB_Rock_Boost.BB_Rock_Boost_C
+/// Size: 0x0000 (0x000138 - 0x000138)
+class UBB_Rock_Boost_C : public UFortMobileActionButtonBehavior
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
+	static inline constexpr uint64_t __MDKClassSize = 312;
 
 public:
 };

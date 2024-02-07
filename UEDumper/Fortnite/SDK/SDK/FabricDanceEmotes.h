@@ -15,6 +15,6 @@
 class UFabricDanceSynchronizerComponent : public UMontageBeatSyncComponent
 { 
 public:
-	SDK_UNDEFINED(32,13353) /* TWeakObjectPtr<UClass*> */ __um(DeviceCableManagerClass);                           // 0x00F8   (0x0020)  
+	SDK_UNDEFINED(32,13408) /* TWeakObjectPtr<UClass*> */ __um(DeviceCableManagerClass);                           // 0x00F8   (0x0020)  
 };
 

@@ -10,17 +10,17 @@
 /// dependency: Engine
 
 /// Class /Script/Foliage.FoliageInstancedStaticMeshComponent
-/// Size: 0x0040 (0x000BC0 - 0x000C00)
+/// Size: 0x0040 (0x000B50 - 0x000B90)
 class UFoliageInstancedStaticMeshComponent : public UHierarchicalInstancedStaticMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3072;
+	static inline constexpr uint64_t __MDKClassSize = 2960;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnInstanceTakePointDamage                                   OFFSET(getStruct<T>, {0xBC0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnInstanceTakeRadialDamage                                  OFFSET(getStruct<T>, {0xBD0, 16, 0, 0})
-	DMember(bool)                                      bEnableDiscardOnLoad                                        OFFSET(get<bool>, {0xBE0, 1, 0, 0})
-	SMember(FGuid)                                     GenerationGuid                                              OFFSET(getStruct<T>, {0xBE4, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnInstanceTakePointDamage                                   OFFSET(getStruct<T>, {0xB50, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnInstanceTakeRadialDamage                                  OFFSET(getStruct<T>, {0xB60, 16, 0, 0})
+	DMember(bool)                                      bEnableDiscardOnLoad                                        OFFSET(get<bool>, {0xB70, 1, 0, 0})
+	SMember(FGuid)                                     GenerationGuid                                              OFFSET(getStruct<T>, {0xB74, 16, 0, 0})
 };
 
 /// Class /Script/Foliage.FoliageType
@@ -170,11 +170,11 @@ public:
 };
 
 /// Class /Script/Foliage.InteractiveFoliageComponent
-/// Size: 0x0010 (0x000630 - 0x000640)
+/// Size: 0x0010 (0x0005C0 - 0x0005D0)
 class UInteractiveFoliageComponent : public UStaticMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1600;
+	static inline constexpr uint64_t __MDKClassSize = 1488;
 
 public:
 };
@@ -191,19 +191,19 @@ public:
 
 	/// Functions
 	// Function /Script/Foliage.FoliageStatistics.FoliageOverlappingSphereCount
-	// int32_t FoliageOverlappingSphereCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FVector CenterPosition, float Radius); // [0x6023638] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// int32_t FoliageOverlappingSphereCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FVector CenterPosition, float Radius); // [0x5d27210] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/Foliage.FoliageStatistics.FoliageOverlappingBoxTransforms
-	// void FoliageOverlappingBoxTransforms(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box, TArray<FTransform>& OutTransforms); // [0x6023408] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void FoliageOverlappingBoxTransforms(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box, TArray<FTransform>& OutTransforms); // [0x5d26fd4] Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Foliage.FoliageStatistics.FoliageOverlappingBoxCount
-	// int32_t FoliageOverlappingBoxCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box);          // [0x6023240] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// int32_t FoliageOverlappingBoxCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box);          // [0x5d26dec] Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/Foliage.GrassInstancedStaticMeshComponent
-/// Size: 0x0000 (0x000BC0 - 0x000BC0)
+/// Size: 0x0000 (0x000B50 - 0x000B50)
 class UGrassInstancedStaticMeshComponent : public UHierarchicalInstancedStaticMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3008;
+	static inline constexpr uint64_t __MDKClassSize = 2896;
 
 public:
 };
@@ -234,7 +234,7 @@ public:
 
 	/// Functions
 	// Function /Script/Foliage.InteractiveFoliageActor.CapsuleTouched
-	// void CapsuleTouched(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& OverlapInfo); // [0x6022eec] Final|Native|Protected|HasOutParms 
+	// void CapsuleTouched(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& OverlapInfo); // [0x5d26958] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/Foliage.ProceduralFoliageBlockingVolume
@@ -282,7 +282,7 @@ public:
 
 	/// Functions
 	// Function /Script/Foliage.ProceduralFoliageSpawner.Simulate
-	// void Simulate(int32_t NumSteps);                                                                                         // [0x60238b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void Simulate(int32_t NumSteps);                                                                                         // [0x5d27454] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Foliage.ProceduralFoliageTile

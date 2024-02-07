@@ -24,7 +24,7 @@ public:
 
 	/// Functions
 	// Function /Script/LootController.FortAthenaMutator_CR_CreativeAllowLootItem.SetItemGameplayTagsNotAllowed
-	// void SetItemGameplayTagsNotAllowed(FGameplayTagContainer& InItemGameplayTagsNotAllowed);                                 // [0xb5a94d4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetItemGameplayTagsNotAllowed(FGameplayTagContainer& InItemGameplayTagsNotAllowed);                                 // [0xb7f09d8] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/LootController.FortAthenaMutator_CR_LootChoice
@@ -39,15 +39,15 @@ public:
 
 	/// Functions
 	// Function /Script/LootController.FortAthenaMutator_CR_LootChoice.GetLootTierDataTable
-	// class UDataTable* GetLootTierDataTable();                                                                                // [0x66a91a4] Native|Event|Public|BlueprintEvent|Const 
+	// class UDataTable* GetLootTierDataTable();                                                                                // [0x63ec52c] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/LootController.FortAthenaMutator_CR_LootChoice.GetLootSelectionString
-	// FString GetLootSelectionString();                                                                                        // [0x66bd010] Native|Event|Public|BlueprintEvent|Const 
+	// FString GetLootSelectionString();                                                                                        // [0x63fe8f8] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/LootController.FortAthenaMutator_CR_LootChoice.GetLootPackageTable
-	// class UDataTable* GetLootPackageTable();                                                                                 // [0x66a91a4] Native|Event|Public|BlueprintEvent|Const 
+	// class UDataTable* GetLootPackageTable();                                                                                 // [0x63ec52c] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/LootController.FortAthenaMutator_CR_LootChoice.GetContextTagsToRemove
-	// FGameplayTagContainer GetContextTagsToRemove();                                                                          // [0xb5a8d60] Native|Event|Public|BlueprintEvent|Const 
+	// FGameplayTagContainer GetContextTagsToRemove();                                                                          // [0xb7f01e0] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/LootController.FortAthenaMutator_CR_LootChoice.GetContextTagsToAdd
-	// FGameplayTagContainer GetContextTagsToAdd();                                                                             // [0xb5a8d60] Native|Event|Public|BlueprintEvent|Const 
+	// FGameplayTagContainer GetContextTagsToAdd();                                                                             // [0xb7f01e0] Native|Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/LootController.LootControllerNativeComponent
@@ -64,15 +64,15 @@ public:
 
 	/// Functions
 	// Function /Script/LootController.LootControllerNativeComponent.PrintDebugString
-	// void PrintDebugString(FString DebugString, bool LogWarning);                                                             // [0xb5a8dfc] Final|Native|Protected|BlueprintCallable 
+	// void PrintDebugString(FString DebugString, bool LogWarning);                                                             // [0xb7f027c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/LootController.LootControllerNativeComponent.IsThrottleEnabled
-	// bool IsThrottleEnabled();                                                                                                // [0xb5a8de0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsThrottleEnabled();                                                                                                // [0xb7f0260] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LootController.LootControllerNativeComponent.IsRemoveLootEnabled
-	// bool IsRemoveLootEnabled();                                                                                              // [0xb5a8dc4] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRemoveLootEnabled();                                                                                              // [0xb7f0244] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/LootController.LootControllerNativeComponent.AsyncGetActorsOfClass
-	// void AsyncGetActorsOfClass(class UObject* WorldContextObject, class UClass* ActorClass);                                 // [0xb5a8b98] Final|Native|Protected|BlueprintCallable 
+	// void AsyncGetActorsOfClass(class UObject* WorldContextObject, class UClass* ActorClass);                                 // [0xb7eff9c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/LootController.LootControllerNativeComponent.AddToArray
-	// void AddToArray(TArray<FBuildingContainersFoundEntry>& InOutBuildingContainersFoundArray, int32_t InBuildingContainerFoundIndex, FBuildingContainersArrayEntry& InBuildingContainerToAdd); // [0xb5a899c] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void AddToArray(TArray<FBuildingContainersFoundEntry>& InOutBuildingContainersFoundArray, int32_t InBuildingContainerFoundIndex, FBuildingContainersArrayEntry& InBuildingContainerToAdd); // [0xb7efd80] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/LootController.BuildingContainersArrayEntry

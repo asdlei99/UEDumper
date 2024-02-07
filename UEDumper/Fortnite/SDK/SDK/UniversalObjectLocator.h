@@ -20,7 +20,7 @@ struct FDirectPathObjectLocator
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FSubObjectLocator
 { 
-	SDK_UNDEFINED(16,1284) /* FString */               __um(PathWithinContext);                                    // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1287) /* FString */               __um(PathWithinContext);                                    // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/UniversalObjectLocator.UniversalObjectLocatorFragment

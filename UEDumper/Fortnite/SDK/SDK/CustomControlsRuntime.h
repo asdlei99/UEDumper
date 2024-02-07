@@ -73,6 +73,18 @@ enum class ECustomControlsFacingMode : uint8_t
 	ECustomControlsFacingMode__ECustomControlsFacingMode_MAX                         = 3
 };
 
+/// Enum /Script/CustomControlsRuntime.ECustomControlsLockOnMode
+/// Size: 0x06
+enum class ECustomControlsLockOnMode : uint8_t
+{
+	ECustomControlsLockOnMode__Never                                                 = 0,
+	ECustomControlsLockOnMode__Always                                                = 1,
+	ECustomControlsLockOnMode__Shooting                                              = 2,
+	ECustomControlsLockOnMode__Aiming                                                = 3,
+	ECustomControlsLockOnMode__ShootingOrAiming                                      = 4,
+	ECustomControlsLockOnMode__ECustomControlsLockOnMode_MAX                         = 5
+};
+
 /// Struct /Script/CustomControlsRuntime.InteractionPointOptions
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FInteractionPointOptions
@@ -85,7 +97,7 @@ struct FInteractionPointOptions
 };
 
 /// Class /Script/CustomControlsRuntime.CustomControlOptions_Base
-/// Size: 0x0030 (0x000028 - 0x000058)
+/// Size: 0x0038 (0x000028 - 0x000060)
 class UCustomControlOptions_Base : public UObject
 { 
 public:
@@ -93,16 +105,17 @@ public:
 	float                                              MeleeAttackStateDuration;                                   // 0x002C   (0x0004)  
 	FFortWeaponReticleData                             FortWeaponReticleData;                                      // 0x0030   (0x0014)  
 	FInteractionPointOptions                           InteractionPointOptions;                                    // 0x0044   (0x0010)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0054   (0x0004)  MISSED
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0054   (0x0004)  MISSED
+	class UTargetingPreset*                            InteractionTargetingPreset;                                 // 0x0058   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.GetOwningComponent
-	// class UFortControllerComponent_CustomControls* GetOwningComponent();                                                  // [0xb4d3600] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortControllerComponent_CustomControls* GetOwningComponent();                                                  // [0xb7122d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.BP_OnDeactivate
-	// void BP_OnDeactivate();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDeactivate();                                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.BP_OnActivate
-	// void BP_OnActivate();                                                                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnActivate();                                                                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/CustomControlsRuntime.FortMovementMode_ExtBaseCustomControlsCreationData
@@ -115,15 +128,13 @@ struct FFortMovementMode_ExtBaseCustomControlsCreationData : FFortMovementMode_B
 /// Size: 0x0018 (0x000008 - 0x000020)
 struct FFortMovementMode_ExtCCThirdPersonCreationData : FFortMovementMode_ExtBaseCustomControlsCreationData
 { 
-	bool                                               bModifyRotationRateYaw;                                     // 0x0008   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0009   (0x0003)  MISSED
-	float                                              RotationRateYaw;                                            // 0x000C   (0x0004)  
-	float                                              SpeedMultiplier;                                            // 0x0010   (0x0004)  
-	ECustomControlsFacingMode                          FacingMode;                                                 // 0x0014   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0015   (0x0003)  MISSED
-	float                                              FixedFacingYaw;                                             // 0x0018   (0x0004)  
-	bool                                               bRotateTowardsTarget;                                       // 0x001C   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x3];                                       // 0x001D   (0x0003)  MISSED
+	float                                              RotationRateYaw;                                            // 0x0008   (0x0004)  
+	float                                              SpeedMultiplier;                                            // 0x000C   (0x0004)  
+	ECustomControlsFacingMode                          FacingMode;                                                 // 0x0010   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0011   (0x0003)  MISSED
+	float                                              FixedFacingYaw;                                             // 0x0014   (0x0004)  
+	bool                                               bRotateTowardsTarget;                                       // 0x0018   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0019   (0x0007)  MISSED
 };
 
 /// Struct /Script/CustomControlsRuntime.CustomControlMovementModeData
@@ -137,37 +148,37 @@ struct FCustomControlMovementModeData
 };
 
 /// Class /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson
-/// Size: 0x0108 (0x000058 - 0x000160)
+/// Size: 0x0108 (0x000060 - 0x000168)
 class UCustomControlOptions_ThirdPerson : public UCustomControlOptions_Base
 { 
 public:
-	FCustomControlMovementModeData                     BaseMovementMode;                                           // 0x0058   (0x0030)  
-	FCustomControlMovementModeData                     ShootingMovementMode;                                       // 0x0088   (0x0030)  
-	FCustomControlMovementModeData                     StrikingMovementMode;                                       // 0x00B8   (0x0030)  
-	FCustomControlMovementModeData                     AimingMovementMode;                                         // 0x00E8   (0x0030)  
-	class UTargetingPreset*                            RangedTargetingPresetTemplate;                              // 0x0118   (0x0008)  
-	class UTargetingPreset*                            RetentionTargetingPresetTemplate;                           // 0x0120   (0x0008)  
-	class UTargetingPreset*                            RangedAimingTargetingPresetTemplate;                        // 0x0128   (0x0008)  
-	class UTargetingPreset*                            MeleeTargetingPresetTemplate;                               // 0x0130   (0x0008)  
-	float                                              AngleToClampFire;                                           // 0x0138   (0x0004)  
-	bool                                               bShootMovementRequiresTarget;                               // 0x013C   (0x0001)  
-	bool                                               bStrikeMovementRequiresTarget;                              // 0x013D   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x013E   (0x0002)  MISSED
-	class UTargetingPreset*                            RangedTargetingPreset;                                      // 0x0140   (0x0008)  
-	class UTargetingPreset*                            RetentionTargetingPreset;                                   // 0x0148   (0x0008)  
-	class UTargetingPreset*                            RangedAimTargetingPreset;                                   // 0x0150   (0x0008)  
-	class UTargetingPreset*                            MeleeTargetingPreset;                                       // 0x0158   (0x0008)  
+	FCustomControlMovementModeData                     BaseMovementMode;                                           // 0x0060   (0x0030)  
+	FCustomControlMovementModeData                     ShootingMovementMode;                                       // 0x0090   (0x0030)  
+	FCustomControlMovementModeData                     StrikingMovementMode;                                       // 0x00C0   (0x0030)  
+	FCustomControlMovementModeData                     AimingMovementMode;                                         // 0x00F0   (0x0030)  
+	class UTargetingPreset*                            RangedTargetingPresetTemplate;                              // 0x0120   (0x0008)  
+	class UTargetingPreset*                            RetentionTargetingPresetTemplate;                           // 0x0128   (0x0008)  
+	class UTargetingPreset*                            RangedAimingTargetingPresetTemplate;                        // 0x0130   (0x0008)  
+	class UTargetingPreset*                            MeleeTargetingPresetTemplate;                               // 0x0138   (0x0008)  
+	float                                              AngleToClampFire;                                           // 0x0140   (0x0004)  
+	bool                                               bShootMovementRequiresTarget;                               // 0x0144   (0x0001)  
+	bool                                               bStrikeMovementRequiresTarget;                              // 0x0145   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0146   (0x0002)  MISSED
+	class UTargetingPreset*                            RangedTargetingPreset;                                      // 0x0148   (0x0008)  
+	class UTargetingPreset*                            RetentionTargetingPreset;                                   // 0x0150   (0x0008)  
+	class UTargetingPreset*                            RangedAimTargetingPreset;                                   // 0x0158   (0x0008)  
+	class UTargetingPreset*                            MeleeTargetingPreset;                                       // 0x0160   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitRetentionTargetingPreset
-	// void BP_InitRetentionTargetingPreset(class UTargetingPreset* Preset);                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_InitRetentionTargetingPreset(class UTargetingPreset* Preset);                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitRangedTargetingPreset
-	// void BP_InitRangedTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_InitRangedTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitMeleeTargetingPreset
-	// void BP_InitMeleeTargetingPreset(class UTargetingPreset* Preset);                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_InitMeleeTargetingPreset(class UTargetingPreset* Preset);                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitAimingTargetingPreset
-	// void BP_InitAimingTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_InitAimingTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/CustomControlsRuntime.CustomControlsState
@@ -181,7 +192,7 @@ struct FCustomControlsState
 };
 
 /// Class /Script/CustomControlsRuntime.FortControllerComponent_CustomControls
-/// Size: 0x0150 (0x0000A8 - 0x0001F8)
+/// Size: 0x0160 (0x0000A8 - 0x000208)
 class UFortControllerComponent_CustomControls : public UFortControllerComponent
 { 
 public:
@@ -193,32 +204,32 @@ public:
 	TArray<class UCustomControlOptions_Base*>          OwnedOptions;                                               // 0x00C0   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x58];                                      // 0x00D0   (0x0058)  MISSED
 	FGameplayTagQuery                                  BlockTagsQuery;                                             // 0x0128   (0x0048)  
-	unsigned char                                      UnknownData03_6[0x88];                                      // 0x0170   (0x0088)  MISSED
+	unsigned char                                      UnknownData03_6[0x98];                                      // 0x0170   (0x0098)  MISSED
 
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.WeaponGetAimRotOverride
-	// void WeaponGetAimRotOverride(class AFortWeapon* Weapon, EFortAbilityTargetingSource TargetingSource, FRotator& OutOverrideAimRot, bool& bOutExecutionResult); // [0xb4d38d0] Final|Native|Private|HasOutParms|HasDefaults 
+	// void WeaponGetAimRotOverride(class AFortWeapon* Weapon, EFortAbilityTargetingSource TargetingSource, FRotator& OutOverrideAimRot, bool& bOutExecutionResult); // [0xb7126e0] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.SetOptionsEnabled
-	// void SetOptionsEnabled(class UObject* ContextObject, bool bEnabled);                                                  // [0xb4d3808] Final|Native|Public|BlueprintCallable 
+	// void SetOptionsEnabled(class UObject* ContextObject, bool bEnabled);                                                  // [0xb7125a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ServerSetOptionsQueueBlocked
-	// void ServerSetOptionsQueueBlocked(bool bIsBlocked);                                                                   // [0x8781040] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerSetOptionsQueueBlocked(bool bIsBlocked);                                                                   // [0x872d204] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ServerSetFocusTarget
-	// void ServerSetFocusTarget(class AActor* NewFocusTarget);                                                              // [0x83f3434] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerSetFocusTarget(class AActor* NewFocusTarget);                                                              // [0x8392544] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.RemoveOptions
-	// void RemoveOptions(class UObject* ContextObject);                                                                     // [0xb4d3788] Final|Native|Public|BlueprintCallable 
+	// void RemoveOptions(class UObject* ContextObject);                                                                     // [0xb7124e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.OnRep_NotifyActiveOptionsUpdated
-	// void OnRep_NotifyActiveOptionsUpdated();                                                                              // [0xb4d3774] Final|Native|Private 
+	// void OnRep_NotifyActiveOptionsUpdated();                                                                              // [0xb7124cc] Final|Native|Private 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.OnRep_ActiveOptions
-	// void OnRep_ActiveOptions(class UCustomControlOptions_Base* OldOptions);                                               // [0xb4d36f4] Final|Native|Private 
+	// void OnRep_ActiveOptions(class UCustomControlOptions_Base* OldOptions);                                               // [0xb71240c] Final|Native|Private 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.NotifyOptionsUpdated
-	// void NotifyOptionsUpdated(class UCustomControlOptions_Base* Options);                                                 // [0xb4d365c] Final|Native|Public|BlueprintCallable 
+	// void NotifyOptionsUpdated(class UCustomControlOptions_Base* Options);                                                 // [0xb712330] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.GetOptions
-	// class UCustomControlOptions_Base* GetOptions(class UObject* ContextObject);                                           // [0xb4d3520] Final|Native|Public|BlueprintCallable 
+	// class UCustomControlOptions_Base* GetOptions(class UObject* ContextObject);                                           // [0xb7121b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.CreateOptionsWithPriority
-	// class UCustomControlOptions_Base* CreateOptionsWithPriority(class UObject* ContextObject, class UClass* OptionsClass, float Priority, bool bEnabled); // [0xb4d3284] Final|Native|Public|BlueprintCallable 
+	// class UCustomControlOptions_Base* CreateOptionsWithPriority(class UObject* ContextObject, class UClass* OptionsClass, float Priority, bool bEnabled); // [0xb711e10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ClientRegisterTagsQueries
-	// void ClientRegisterTagsQueries();                                                                                     // [0x81efe74] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientRegisterTagsQueries();                                                                                     // [0x81809cc] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/CustomControlsRuntime.FortMovementMode_ExtLogicBaseCustomControls
@@ -242,9 +253,9 @@ struct FFortMovementMode_ExtBaseCustomControlsRuntimeData : FFortMovementMode_Ba
 };
 
 /// Struct /Script/CustomControlsRuntime.FortMovementMode_ExtCCThirdPersonRuntimeData
-/// Size: 0x0048 (0x000010 - 0x000058)
+/// Size: 0x0030 (0x000010 - 0x000040)
 struct FFortMovementMode_ExtCCThirdPersonRuntimeData : FFortMovementMode_ExtBaseCustomControlsRuntimeData
 { 
-	unsigned char                                      UnknownData00_1[0x48];                                      // 0x0010   (0x0048)  MISSED
+	unsigned char                                      UnknownData00_1[0x30];                                      // 0x0010   (0x0030)  MISSED
 };
 

@@ -63,27 +63,27 @@ enum class EJunoWorldCondition_AIWorldSettingsExpectedValue : uint32_t
 };
 
 /// Class /Script/JunoAIRuntime.JunoAIBotController
-/// Size: 0x01F0 (0x001750 - 0x001940)
+/// Size: 0x0200 (0x001750 - 0x001950)
 class AJunoAIBotController : public AFortAthenaAIBotController
 { 
 public:
 	class UJunoAIInventoryComponent*                   JunoAIInventoryComponent;                                   // 0x1750   (0x0008)  
 	TArray<FItemAndCount>                              DefaultItemsToAdd;                                          // 0x1758   (0x0010)  
-	unsigned char                                      UnknownData00_5[0x78];                                      // 0x1768   (0x0078)  MISSED
-	bool                                               bRequiresPersistentInventory;                               // 0x17E0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x17E1   (0x0007)  MISSED
-	FScalableFloat                                     EnableDurabilityOnInventory;                                // 0x17E8   (0x0028)  
-	FScalableFloat                                     UseRoleCheckForDurability;                                  // 0x1810   (0x0028)  
-	FGameplayTagQuery                                  RequiredRoleForDurability;                                  // 0x1838   (0x0048)  
-	bool                                               bUseFocusedActorEyeLocationForFocalPoint;                   // 0x1880   (0x0001)  
-	bool                                               bUseValidItemsPerType;                                      // 0x1881   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x6];                                       // 0x1882   (0x0006)  MISSED
-	FScalableFloat                                     EffectivenessMultiplierForWeaponSelectionOnPickedOrAddedItem; // 0x1888   (0x0028)  
-	SDK_UNDEFINED(80,14022) /* TMap<FGameplayTag, UDataTable*> */ __um(ValidItemsTablePerType);                    // 0x18B0   (0x0050)  
-	class UFortItemDefinition*                         AutomaticallyEquippedWeaponOnDurabilityBreak;               // 0x1900   (0x0008)  
-	FScalableFloat                                     DurabilityMultiplier;                                       // 0x1908   (0x0028)  
-	FGameplayTag                                       TagToApplyWhenAddingFallbackItemForDurabilityBreak;         // 0x1930   (0x0004)  
-	unsigned char                                      UnknownData03_6[0xC];                                       // 0x1934   (0x000C)  MISSED
+	unsigned char                                      UnknownData00_5[0x88];                                      // 0x1768   (0x0088)  MISSED
+	bool                                               bRequiresPersistentInventory;                               // 0x17F0   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x17F1   (0x0007)  MISSED
+	FScalableFloat                                     EnableDurabilityOnInventory;                                // 0x17F8   (0x0028)  
+	FScalableFloat                                     UseRoleCheckForDurability;                                  // 0x1820   (0x0028)  
+	FGameplayTagQuery                                  RequiredRoleForDurability;                                  // 0x1848   (0x0048)  
+	bool                                               bUseFocusedActorEyeLocationForFocalPoint;                   // 0x1890   (0x0001)  
+	bool                                               bUseValidItemsPerType;                                      // 0x1891   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x6];                                       // 0x1892   (0x0006)  MISSED
+	FScalableFloat                                     EffectivenessMultiplierForWeaponSelectionOnPickedOrAddedItem; // 0x1898   (0x0028)  
+	SDK_UNDEFINED(80,14134) /* TMap<FGameplayTag, UDataTable*> */ __um(ValidItemsTablePerType);                    // 0x18C0   (0x0050)  
+	class UFortItemDefinition*                         AutomaticallyEquippedWeaponOnDurabilityBreak;               // 0x1910   (0x0008)  
+	FScalableFloat                                     DurabilityMultiplier;                                       // 0x1918   (0x0028)  
+	FGameplayTag                                       TagToApplyWhenAddingFallbackItemForDurabilityBreak;         // 0x1940   (0x0004)  
+	unsigned char                                      UnknownData03_6[0xC];                                       // 0x1944   (0x000C)  MISSED
 };
 
 /// Class /Script/JunoAIRuntime.JunoAIBotEvaluator_FallbackBehavior
@@ -110,7 +110,7 @@ struct FJunoAIFTUERuntimeConfiguration
 	FScalableFloat                                     MinDistanceFromPlayersToTeleport;                           // 0x0028   (0x0028)  
 	FScalableFloat                                     TeleportToCampDelay;                                        // 0x0050   (0x0028)  
 	class UEnvQuery*                                   TeleportToPlayerQueryTemplate;                              // 0x0078   (0x0008)  
-	SDK_UNDEFINED(1,14023) /* TEnumAsByte<EEnvQueryRunMode> */ __um(TeleportToPlayerRunMode);                      // 0x0080   (0x0001)  
+	SDK_UNDEFINED(1,14135) /* TEnumAsByte<EEnvQueryRunMode> */ __um(TeleportToPlayerRunMode);                      // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0081   (0x0007)  MISSED
 };
 
@@ -163,7 +163,7 @@ public:
 	FScalableFloat                                     UseTagForShelterCheck;                                      // 0x0200   (0x0028)  
 	FGameplayTag                                       TagToCheckForSheltered;                                     // 0x0228   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x022C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14024) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(ShelterQueryTypes);                   // 0x0230   (0x0010)  
+	SDK_UNDEFINED(16,14136) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(ShelterQueryTypes);                   // 0x0230   (0x0010)  
 	FScalableFloat                                     MaxShelterDistance;                                         // 0x0240   (0x0028)  
 	FScalableFloat                                     MinDistanceFromShelterLocationToKeepItValid;                // 0x0268   (0x0028)  
 	FGameplayTagContainer                              ShelterCollidingActorRequiresAnyTag;                        // 0x0290   (0x0020)  
@@ -179,12 +179,12 @@ struct FJunoAIUnstuckFailsafeConfiguration
 	FScalableFloat                                     MinZThresholdForLandscapeTeleport;                          // 0x0028   (0x0028)  
 	FScalableFloat                                     TeleportToLandscapeDelay;                                   // 0x0050   (0x0028)  
 	class UEnvQuery*                                   TeleportToLandscapeQueryTemplate;                           // 0x0078   (0x0008)  
-	SDK_UNDEFINED(1,14025) /* TEnumAsByte<EEnvQueryRunMode> */ __um(TeleportToLandscapeRunMode);                   // 0x0080   (0x0001)  
+	SDK_UNDEFINED(1,14137) /* TEnumAsByte<EEnvQueryRunMode> */ __um(TeleportToLandscapeRunMode);                   // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0081   (0x0007)  MISSED
 	FScalableFloat                                     MinimumTimeFalling;                                         // 0x0088   (0x0028)  
 	FScalableFloat                                     TeleportToNavmeshDelay;                                     // 0x00B0   (0x0028)  
 	class UEnvQuery*                                   TeleportToNavmeshQueryTemplate;                             // 0x00D8   (0x0008)  
-	SDK_UNDEFINED(1,14026) /* TEnumAsByte<EEnvQueryRunMode> */ __um(TeleportToNavmeshRunMode);                     // 0x00E0   (0x0001)  
+	SDK_UNDEFINED(1,14138) /* TEnumAsByte<EEnvQueryRunMode> */ __um(TeleportToNavmeshRunMode);                     // 0x00E0   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00E1   (0x0007)  MISSED
 };
 
@@ -205,11 +205,11 @@ public:
 class UJunoAICampPawnComponent : public UFortPawnComponent
 { 
 public:
-	SDK_UNDEFINED(16,14027) /* FMulticastInlineDelegate */ __um(OnJunoAICampPawnComponentChangedSoftRemovedReason); // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,14139) /* FMulticastInlineDelegate */ __um(OnJunoAICampPawnComponentChangedSoftRemovedReason); // 0x00A8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0xF0];                                      // 0x00B8   (0x00F0)  MISSED
 	TArray<class UClass*>                              PreFTUESkillSetClasses;                                     // 0x01A8   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x48];                                      // 0x01B8   (0x0048)  MISSED
-	SDK_UNDEFINED(80,14028) /* TMap<FGameplayTag, FText> */ __um(AIRoleToDisplayText);                             // 0x0200   (0x0050)  
+	SDK_UNDEFINED(80,14140) /* TMap<FGameplayTag, FText> */ __um(AIRoleToDisplayText);                             // 0x0200   (0x0050)  
 	TArray<class UClass*>                              FTUESkillSetClasses;                                        // 0x0250   (0x0010)  
 	FGameplayTagContainer                              FTUETagsToAdd;                                              // 0x0260   (0x0020)  
 	FScalableFloat                                     FTUEOverrideTileGenerationRadius;                           // 0x0280   (0x0028)  
@@ -220,13 +220,13 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetSoftRemovedReasons
-	// FGameplayTagContainer GetSoftRemovedReasons();                                                                        // [0xbbd9514] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetSoftRemovedReasons();                                                                        // [0xbee5970] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetAIRoleDisplayText
-	// FText GetAIRoleDisplayText();                                                                                         // [0xbbd94e8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetAIRoleDisplayText();                                                                                         // [0xbee593c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.GetAIRole
-	// FGameplayTag GetAIRole();                                                                                             // [0x62b1e44] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetAIRole();                                                                                             // [0x5fc34bc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/JunoAIRuntime.JunoAICampPawnComponent.ConvertAIRoleToDisplayText
-	// FText ConvertAIRoleToDisplayText(FGameplayTag& AIRole);                                                               // [0xbbd9408] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FText ConvertAIRoleToDisplayText(FGameplayTag& AIRole);                                                               // [0xbee585c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/JunoAIRuntime.JunoAIInventoryComponent
@@ -253,12 +253,12 @@ public:
 };
 
 /// Class /Script/JunoAIRuntime.JunoBTTask_FTUENPC
-/// Size: 0x0008 (0x0000C8 - 0x0000D0)
+/// Size: 0x0008 (0x0000E8 - 0x0000F0)
 class UJunoBTTask_FTUENPC : public UFortBTTask_ExecuteGameplayAbility
 { 
 public:
-	FName                                              FTUENPCStatusKeyName;                                       // 0x00C8   (0x0004)  
-	FName                                              ShouldTeleportKeyName;                                      // 0x00CC   (0x0004)  
+	FName                                              FTUENPCStatusKeyName;                                       // 0x00E8   (0x0004)  
+	FName                                              ShouldTeleportKeyName;                                      // 0x00EC   (0x0004)  
 };
 
 /// Class /Script/JunoAIRuntime.JunoBTTask_ReactToVerb
@@ -341,7 +341,7 @@ struct FJunoAICampManagementLWMConfiguration
 	FFortAthenaLivingWorldEvent                        EventTemplate;                                              // 0x0000   (0x01B0)  
 	FFortAthenaLivingWorldEventDataActorSpawnDescription SpawnDescriptionTemplate;                                 // 0x01B0   (0x0130)  
 	FPointProviderFilterEntry                          FilterEntry;                                                // 0x02E0   (0x0088)  
-	SDK_UNDEFINED(32,14029) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Encounter);                // 0x0368   (0x0020)  
+	SDK_UNDEFINED(32,14141) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Encounter);                // 0x0368   (0x0020)  
 	TArray<class UClass*>                              PointProviderClasses;                                       // 0x0388   (0x0010)  
 	bool                                               bRegisterReservoir;                                         // 0x0398   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0399   (0x0007)  MISSED
@@ -356,29 +356,30 @@ struct FJunoAICampManagementVisitorsConfiguration
 };
 
 /// Class /Script/JunoAIRuntime.JunoCampAIManagementComponent
-/// Size: 0x06E8 (0x0000A0 - 0x000788)
+/// Size: 0x0728 (0x0000A0 - 0x0007C8)
 class UJunoCampAIManagementComponent : public UJunoCampComponentBase
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x100];                                     // 0x00A0   (0x0100)  MISSED
-	SDK_UNDEFINED(16,14030) /* TArray<TScriptInterface<Class>> */ __um(PointProviders);                            // 0x01A0   (0x0010)  
-	class UFortAthenaLivingWorldEncounterInstance*     Encounter;                                                  // 0x01B0   (0x0008)  
-	FJunoAICampManagementVisitorsConfigurationDigested VisitorsConfigurationDigested;                              // 0x01B8   (0x0018)  
-	FJunoAICampManagementVisitorsPickingConfiguration  CachedVisitorsPickingConfigurationAtCurrentAwesomenessLevel; // 0x01D0   (0x0020)  
-	unsigned char                                      UnknownData01_5[0x8];                                       // 0x01F0   (0x0008)  MISSED
-	FJunoAICampManagementLWMConfiguration              LWMConfiguration;                                           // 0x01F8   (0x03A0)  
-	FJunoAICampManagementVisitorsConfiguration         VisitorsConfiguration;                                      // 0x0598   (0x0030)  
-	SDK_UNDEFINED(80,14031) /* TMap<int32_t, FDataTableRowHandle> */ __um(AwesomenessLevelToVisitorsPickingConfiguration); // 0x05C8   (0x0050)  
-	SDK_UNDEFINED(80,14032) /* TMap<int32_t, UDataTable*> */ __um(AwesomenessLevelToNPCRewards);                   // 0x0618   (0x0050)  
-	FScalableFloat                                     InitialIngameHoursDelayBeforeFirstRewardRoll;               // 0x0668   (0x0028)  
-	FScalableFloat                                     MinimumIngameHoursBetweenRewardRolls;                       // 0x0690   (0x0028)  
-	FScalableFloat                                     PassiveResourceGatheringTime;                               // 0x06B8   (0x0028)  
-	FScalableFloat                                     MultiplierForSimulatedGeneration;                           // 0x06E0   (0x0028)  
-	FScalableFloat                                     MaximumAllocableSOPerAIForSimulation;                       // 0x0708   (0x0028)  
-	FNavAgentSelector                                  SupportedAgents;                                            // 0x0730   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0734   (0x0004)  MISSED
-	FScalableFloat                                     ShouldCheckWCForRemoteRecruitment;                          // 0x0738   (0x0028)  
-	FScalableFloat                                     RequireNPCToBeInVisitorsListForRemoteRecruitment;           // 0x0760   (0x0028)  
+	unsigned char                                      UnknownData00_2[0x118];                                     // 0x00A0   (0x0118)  MISSED
+	SDK_UNDEFINED(16,14142) /* TArray<TScriptInterface<Class>> */ __um(PointProviders);                            // 0x01B8   (0x0010)  
+	class UFortAthenaLivingWorldEncounterInstance*     Encounter;                                                  // 0x01C8   (0x0008)  
+	FJunoAICampManagementVisitorsConfigurationDigested VisitorsConfigurationDigested;                              // 0x01D0   (0x0018)  
+	FJunoAICampManagementVisitorsPickingConfiguration  CachedVisitorsPickingConfigurationAtCurrentAwesomenessLevel; // 0x01E8   (0x0020)  
+	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0208   (0x0008)  MISSED
+	FJunoAICampManagementLWMConfiguration              LWMConfiguration;                                           // 0x0210   (0x03A0)  
+	FJunoAICampManagementVisitorsConfiguration         VisitorsConfiguration;                                      // 0x05B0   (0x0030)  
+	SDK_UNDEFINED(80,14143) /* TMap<int32_t, FDataTableRowHandle> */ __um(AwesomenessLevelToVisitorsPickingConfiguration); // 0x05E0   (0x0050)  
+	SDK_UNDEFINED(80,14144) /* TMap<int32_t, UDataTable*> */ __um(AwesomenessLevelToNPCRewards);                   // 0x0630   (0x0050)  
+	FScalableFloat                                     InitialIngameHoursDelayBeforeFirstRewardRoll;               // 0x0680   (0x0028)  
+	FScalableFloat                                     MinimumIngameHoursBetweenRewardRolls;                       // 0x06A8   (0x0028)  
+	FScalableFloat                                     PassiveResourceGatheringTime;                               // 0x06D0   (0x0028)  
+	FScalableFloat                                     MultiplierForSimulatedGeneration;                           // 0x06F8   (0x0028)  
+	FScalableFloat                                     MaximumAllocableSOPerAIForSimulation;                       // 0x0720   (0x0028)  
+	FNavAgentSelector                                  SupportedAgents;                                            // 0x0748   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x074C   (0x0004)  MISSED
+	FScalableFloat                                     ShouldCheckWCForRemoteRecruitment;                          // 0x0750   (0x0028)  
+	FScalableFloat                                     RequireNPCToBeInVisitorsListForRemoteRecruitment;           // 0x0778   (0x0028)  
+	FScalableFloat                                     SpawnDelayFromCampSpawn;                                    // 0x07A0   (0x0028)  
 };
 
 /// Class /Script/JunoAIRuntime.JunoCaveLivingWorldEventData
@@ -405,7 +406,7 @@ struct FJunoAIGlobalLWMConfiguration
 	FFortAthenaLivingWorldEvent                        EventTemplate;                                              // 0x0000   (0x01B0)  
 	FFortAthenaLivingWorldEventDataActorSpawnDescription SpawnDescriptionTemplate;                                 // 0x01B0   (0x0130)  
 	FPointProviderFilterEntry                          FilterEntry;                                                // 0x02E0   (0x0088)  
-	SDK_UNDEFINED(32,14033) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Encounter);                // 0x0368   (0x0020)  
+	SDK_UNDEFINED(32,14145) /* TWeakObjectPtr<UFortAthenaLivingWorldEncounter*> */ __um(Encounter);                // 0x0368   (0x0020)  
 	bool                                               bRegisterReservoir;                                         // 0x0388   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0389   (0x0007)  MISSED
 };
@@ -448,7 +449,7 @@ struct FJunoAIFollowerManagedData
 { 
 	FUniqueNetIdRepl                                   PlayerId;                                                   // 0x0000   (0x0030)  
 	class UFortAthenaLivingWorldEncounterInstance*     Encounter;                                                  // 0x0030   (0x0008)  
-	SDK_UNDEFINED(16,14034) /* TArray<TScriptInterface<Class>> */ __um(PointProviders);                            // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,14146) /* TArray<TScriptInterface<Class>> */ __um(PointProviders);                            // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x0048   (0x0050)  MISSED
 };
 
@@ -467,19 +468,19 @@ public:
 	FScalableFloat                                     GlobalRecruitableNPCsCap;                                   // 0x0D50   (0x0028)  
 	unsigned char                                      UnknownData00_5[0x20];                                      // 0x0D78   (0x0020)  MISSED
 	TArray<FJunoAIFollowerManagedData>                 ManagedFollowers;                                           // 0x0D98   (0x0010)  
-	SDK_UNDEFINED(16,14035) /* TScriptInterface<Class> */ __um(TemporaryGlobalEncounterPointProvider);             // 0x0DA8   (0x0010)  
+	SDK_UNDEFINED(16,14147) /* TScriptInterface<Class> */ __um(TemporaryGlobalEncounterPointProvider);             // 0x0DA8   (0x0010)  
 	class UFortAthenaLivingWorldEncounterInstance*     TemporaryGlobalEncounter;                                   // 0x0DB8   (0x0008)  
-	SDK_UNDEFINED(16,14036) /* TScriptInterface<Class> */ __um(FTUEEncounterPointProvider);                        // 0x0DC0   (0x0010)  
+	SDK_UNDEFINED(16,14148) /* TScriptInterface<Class> */ __um(FTUEEncounterPointProvider);                        // 0x0DC0   (0x0010)  
 	class UFortAthenaLivingWorldEncounterInstance*     FTUEEncounter;                                              // 0x0DD0   (0x0008)  
 	FWorldConditionQueryState                          FTUEEndQueryState;                                          // 0x0DD8   (0x0030)  
 	unsigned char                                      UnknownData01_5[0xB0];                                      // 0x0E08   (0x00B0)  MISSED
-	SDK_UNDEFINED(80,14037) /* TMap<FGameplayTag, FJunoAIWorldNPCSpawningData> */ __um(WorldAssignedNPCs);         // 0x0EB8   (0x0050)  
+	SDK_UNDEFINED(80,14149) /* TMap<FGameplayTag, FJunoAIWorldNPCSpawningData> */ __um(WorldAssignedNPCs);         // 0x0EB8   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x50];                                      // 0x0F08   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.PlayspaceComponent_Root_JunoAIManagement.HandleFTUENPCSpawned
-	// void HandleFTUENPCSpawned(class AActor* FTUENPC);                                                                     // [0xbbeb608] Final|Native|Private 
+	// void HandleFTUENPCSpawned(class AActor* FTUENPC);                                                                     // [0xbef83a8] Final|Native|Private 
 };
 
 /// Class /Script/JunoAIRuntime.JunoAISafetyBubbleComponent
@@ -495,7 +496,7 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAISafetyBubbleComponent.OnTimeOfDayPhaseChanged
-	// void OnTimeOfDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation);        // [0xbbeb688] Final|Native|Protected 
+	// void OnTimeOfDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation);        // [0xbef86b8] Final|Native|Protected 
 };
 
 /// Class /Script/JunoAIRuntime.EnvQueryTest_JunoIsNearBuilding
@@ -518,10 +519,12 @@ public:
 };
 
 /// Class /Script/JunoAIRuntime.JunoAIBotEvaluator_ReactToVerb
-/// Size: 0x0000 (0x0003F0 - 0x0003F0)
+/// Size: 0x0010 (0x0003F0 - 0x000400)
 class UJunoAIBotEvaluator_ReactToVerb : public UFortAthenaAIBotEvaluator_ReactToVerb
 { 
 public:
+	FName                                              MoodReactionTagKeyName;                                     // 0x03F0   (0x0004)  
+	unsigned char                                      UnknownData00_6[0xC];                                       // 0x03F4   (0x000C)  MISSED
 };
 
 /// Class /Script/JunoAIRuntime.JunoAICheatManager
@@ -533,11 +536,11 @@ public:
 
 	/// Functions
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableHostileCreatures
-	// void JunoEnableHostileCreatures(bool bEnable);                                                                        // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableHostileCreatures(bool bEnable);                                                                        // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableFriendlyNPCs
-	// void JunoEnableFriendlyNPCs(bool bEnable);                                                                            // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableFriendlyNPCs(bool bEnable);                                                                            // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/JunoAIRuntime.JunoAICheatManager.JunoEnableFriendlyCreatures
-	// void JunoEnableFriendlyCreatures(bool bEnable);                                                                       // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void JunoEnableFriendlyCreatures(bool bEnable);                                                                       // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 };
 
 /// Class /Script/JunoAIRuntime.PlayspaceComponent_JunoAISafetyBubble
@@ -551,38 +554,40 @@ public:
 };
 
 /// Struct /Script/JunoAIRuntime.JunoMoveConfig
-/// Size: 0x0008 (0x000000 - 0x000008)
+/// Size: 0x000C (0x000000 - 0x00000C)
 struct FJunoMoveConfig
 { 
-	unsigned char                                      UnknownData00_1[0x8];                                       // 0x0000   (0x0008)  MISSED
+	unsigned char                                      UnknownData00_1[0xC];                                       // 0x0000   (0x000C)  MISSED
 };
 
 /// Class /Script/JunoAIRuntime.AITask_JunoMoveTo
-/// Size: 0x0010 (0x000118 - 0x000128)
+/// Size: 0x0018 (0x000118 - 0x000130)
 class UAITask_JunoMoveTo : public UAITask_MoveTo
 { 
 public:
-	FJunoMoveConfig                                    MoveConfig;                                                 // 0x0118   (0x0008)  
-	SDK_UNDEFINED(8,14038) /* TWeakObjectPtr<AActor*> */ __um(BlockedByActor);                                     // 0x0120   (0x0008)  
+	FJunoMoveConfig                                    MoveConfig;                                                 // 0x0118   (0x000C)  
+	SDK_UNDEFINED(8,14150) /* TWeakObjectPtr<AActor*> */ __um(BlockedByActor);                                     // 0x0124   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x012C   (0x0004)  MISSED
 };
 
 /// Class /Script/JunoAIRuntime.BTTask_JunoMoveTo
-/// Size: 0x00B8 (0x0000B0 - 0x000168)
-class UBTTask_JunoMoveTo : public UBTTask_MoveTo
+/// Size: 0x00B8 (0x0000C0 - 0x000178)
+class UBTTask_JunoMoveTo : public UFortAthenaBTTask_MoveTo
 { 
 public:
-	bool                                               bOnUnreachableGoalFindBlockingBuilding : 1;                 // 0x00B0:0 (0x0001)  
-	bool                                               bAssignFoundBlockingBuildingAsTarget : 1;                   // 0x00B0:1 (0x0001)  
-	unsigned char                                      UnknownData00_4[0x7];                                       // 0x00B1   (0x0007)  MISSED
-	FScalableFloat                                     BlockingBuildingTraceDistance;                              // 0x00B8   (0x0028)  
-	FScalableFloat                                     BlockingBuildingTraceCooldown;                              // 0x00E0   (0x0028)  
-	FBlackboardKeySelector                             BlockedByBuildingKeySelector;                               // 0x0108   (0x0028)  
-	FBlackboardKeySelector                             LastBlockingBuildingTraceTimeKeySelector;                   // 0x0130   (0x0028)  
-	bool                                               bApplyCostLimit : 1;                                        // 0x0158:0 (0x0001)  
-	unsigned char                                      UnknownData01_4[0x3];                                       // 0x0159   (0x0003)  MISSED
-	float                                              PathingCostLimitFactor;                                     // 0x015C   (0x0004)  
-	float                                              PathingMinimumCostLimit;                                    // 0x0160   (0x0004)  
-	unsigned char                                      UnknownData02_6[0x4];                                       // 0x0164   (0x0004)  MISSED
+	bool                                               bOnUnreachableGoalFindBlockingBuilding : 1;                 // 0x00C0:0 (0x0001)  
+	bool                                               bAssignFoundBlockingBuildingAsTarget : 1;                   // 0x00C0:1 (0x0001)  
+	unsigned char                                      UnknownData00_4[0x7];                                       // 0x00C1   (0x0007)  MISSED
+	FScalableFloat                                     BlockingBuildingTraceDistance;                              // 0x00C8   (0x0028)  
+	FScalableFloat                                     BlockingBuildingTraceCooldown;                              // 0x00F0   (0x0028)  
+	FBlackboardKeySelector                             BlockedByBuildingKeySelector;                               // 0x0118   (0x0028)  
+	FBlackboardKeySelector                             LastBlockingBuildingTraceTimeKeySelector;                   // 0x0140   (0x0028)  
+	SDK_UNDEFINED(1,14151) /* TEnumAsByte<EPathObstacleAction> */ __um(PathObstacleAction);                        // 0x0168   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0169   (0x0003)  MISSED
+	bool                                               bApplyCostLimit : 1;                                        // 0x016C:0 (0x0001)  
+	unsigned char                                      UnknownData02_4[0x3];                                       // 0x016D   (0x0003)  MISSED
+	float                                              PathingCostLimitFactor;                                     // 0x0170   (0x0004)  
+	float                                              PathingMinimumCostLimit;                                    // 0x0174   (0x0004)  
 };
 
 /// Class /Script/JunoAIRuntime.JunoWorldCondition_AIWorldSettings_State
@@ -594,26 +599,27 @@ public:
 };
 
 /// Struct /Script/JunoAIRuntime.JunoNPCValidItemRow
-/// Size: 0x0010 (0x000008 - 0x000018)
+/// Size: 0x0020 (0x000008 - 0x000028)
 struct FJunoNPCValidItemRow : FTableRowBase
 { 
 	class UFortItemDefinition*                         ValidItem;                                                  // 0x0008   (0x0008)  
-	bool                                               bCanBeEquippedAsMainWeapon;                                 // 0x0010   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0011   (0x0007)  MISSED
+	SDK_UNDEFINED(16,14152) /* FString */              __um(ValidItemPersistentName);                              // 0x0010   (0x0010)  
+	bool                                               bCanBeEquippedAsMainWeapon;                                 // 0x0020   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
 };
 
 /// Struct /Script/JunoAIRuntime.JunoNPCValidItems
-/// Size: 0x0060 (0x000000 - 0x000060)
+/// Size: 0x0070 (0x000000 - 0x000070)
 struct FJunoNPCValidItems
 { 
-	unsigned char                                      UnknownData00_1[0x60];                                      // 0x0000   (0x0060)  MISSED
+	unsigned char                                      UnknownData00_1[0x70];                                      // 0x0000   (0x0070)  MISSED
 };
 
 /// Struct /Script/JunoAIRuntime.JunoAICampManagementNPCRewardRecipe
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FJunoAICampManagementNPCRewardRecipe
 { 
-	SDK_UNDEFINED(32,14039) /* TWeakObjectPtr<UJunoBuildInstructionsItemDefinition*> */ __um(KnowledgeItemDefinition); // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,14153) /* TWeakObjectPtr<UJunoBuildInstructionsItemDefinition*> */ __um(KnowledgeItemDefinition); // 0x0000   (0x0020)  
 	EJunoKnowledgeState                                NewState;                                                   // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
 };
@@ -647,7 +653,7 @@ struct FJunoAICampManagementVisitorConfiguration : FTableRowBase
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FJunoIsVillagerProviderExpiredStateTreeTaskInstanceData
 { 
-	SDK_UNDEFINED(8,14040) /* TWeakObjectPtr<AFortAthenaLivingWorldStaticPointProvider*> */ __um(VillagerProvider); // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,14154) /* TWeakObjectPtr<AFortAthenaLivingWorldStaticPointProvider*> */ __um(VillagerProvider); // 0x0000   (0x0008)  
 	bool                                               bIsExpired;                                                 // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
 	class AActor*                                      UserActor;                                                  // 0x0010   (0x0008)  
@@ -671,8 +677,8 @@ struct FJunoNPCVerbReactionTableRow : FFortNPCVerbReactionTableRow
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FJunoResetVillagerProviderTimerStateTreeTaskInstanceData
 { 
-	SDK_UNDEFINED(8,14041) /* TWeakObjectPtr<AFortAthenaLivingWorldStaticPointProvider*> */ __um(VillagerProvider); // 0x0000   (0x0008)  
-	SDK_UNDEFINED(8,14042) /* TWeakObjectPtr<AActor*> */ __um(Villager);                                           // 0x0008   (0x0008)  
+	SDK_UNDEFINED(8,14155) /* TWeakObjectPtr<AFortAthenaLivingWorldStaticPointProvider*> */ __um(VillagerProvider); // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,14156) /* TWeakObjectPtr<AActor*> */ __um(Villager);                                           // 0x0008   (0x0008)  
 	FScalableFloat                                     ResetDuration;                                              // 0x0010   (0x0028)  
 	class AActor*                                      UserActor;                                                  // 0x0038   (0x0008)  
 };
@@ -733,9 +739,9 @@ struct FJunoWorldCondition_IsInTemporaryGlobalEncounter : FWorldConditionCommonB
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FJunoAIWorldNPCSpawningData
 { 
-	SDK_UNDEFINED(8,14043) /* TWeakObjectPtr<UObject*> */ __um(AssignedPointProvider);                             // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,14157) /* TWeakObjectPtr<UObject*> */ __um(AssignedPointProvider);                             // 0x0000   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x10];                                      // 0x0008   (0x0010)  MISSED
-	SDK_UNDEFINED(8,14044) /* TWeakObjectPtr<UFortAthenaLivingWorldEventData*> */ __um(EventData);                 // 0x0018   (0x0008)  
+	SDK_UNDEFINED(8,14158) /* TWeakObjectPtr<UFortAthenaLivingWorldEventData*> */ __um(EventData);                 // 0x0018   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0020   (0x0008)  MISSED
 };
 
@@ -747,8 +753,8 @@ struct FJunoUniqueNPCLivingWorldPointProviderSelector : FFortAthenaLivingWorldPo
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
 	FScalableFloat                                     InitialPersistenceDuration;                                 // 0x0010   (0x0028)  
 	FScalableFloat                                     RespawnPersistenceDuration;                                 // 0x0038   (0x0028)  
-	SDK_UNDEFINED(8,14045) /* TWeakObjectPtr<UFortAthenaLivingWorldEventData*> */ __um(EventData);                 // 0x0060   (0x0008)  
-	SDK_UNDEFINED(8,14046) /* TWeakObjectPtr<UPlayspaceComponent_Root_JunoAIManagement*> */ __um(CachedRootJunoAIManagement); // 0x0068   (0x0008)  
+	SDK_UNDEFINED(8,14159) /* TWeakObjectPtr<UFortAthenaLivingWorldEventData*> */ __um(EventData);                 // 0x0060   (0x0008)  
+	SDK_UNDEFINED(8,14160) /* TWeakObjectPtr<UPlayspaceComponent_Root_JunoAIManagement*> */ __um(CachedRootJunoAIManagement); // 0x0068   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0070   (0x0008)  MISSED
 };
 
@@ -756,7 +762,7 @@ struct FJunoUniqueNPCLivingWorldPointProviderSelector : FFortAthenaLivingWorldPo
 /// Size: 0x0098 (0x000008 - 0x0000A0)
 struct FJunoVillagerSpawnerDataSelector : FFortAthenaLivingWorldSpawnerDataSelector
 { 
-	SDK_UNDEFINED(8,14047) /* TWeakObjectPtr<UPlayspaceComponent_JunoAIPersistence*> */ __um(CachedRootAIPersistence); // 0x0008   (0x0008)  
+	SDK_UNDEFINED(8,14161) /* TWeakObjectPtr<UPlayspaceComponent_JunoAIPersistence*> */ __um(CachedRootAIPersistence); // 0x0008   (0x0008)  
 	FGameplayTagQuery                                  SpawnerDataToFilter;                                        // 0x0010   (0x0048)  
 	FGameplayTagQuery                                  RoleMustMatchQuery;                                         // 0x0058   (0x0048)  
 };

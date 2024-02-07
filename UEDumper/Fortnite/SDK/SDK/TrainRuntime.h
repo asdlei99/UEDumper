@@ -25,19 +25,19 @@ public:
 
 	/// Functions
 	// Function /Script/TrainRuntime.FortTrainCheatManager.TeleportTrainToTrainStartLocation
-	// void TeleportTrainToTrainStartLocation();                                                                             // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void TeleportTrainToTrainStartLocation();                                                                             // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/TrainRuntime.FortTrainCheatManager.TeleportTrainToCursor
-	// void TeleportTrainToCursor();                                                                                         // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void TeleportTrainToCursor();                                                                                         // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/TrainRuntime.FortTrainCheatManager.TeleportToTrainStartLocation
-	// void TeleportToTrainStartLocation();                                                                                  // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void TeleportToTrainStartLocation();                                                                                  // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/TrainRuntime.FortTrainCheatManager.TeleportToTrain
-	// void TeleportToTrain();                                                                                               // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void TeleportToTrain();                                                                                               // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/TrainRuntime.FortTrainCheatManager.SetTrainStartLocationToCursor
-	// void SetTrainStartLocationToCursor();                                                                                 // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void SetTrainStartLocationToCursor();                                                                                 // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/TrainRuntime.FortTrainCheatManager.SetTrainMoveInPositiveRailDirection
-	// void SetTrainMoveInPositiveRailDirection(bool bMoveInPositiveRailDirection);                                          // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Private 
+	// void SetTrainMoveInPositiveRailDirection(bool bMoveInPositiveRailDirection);                                          // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Private 
 	// Function /Script/TrainRuntime.FortTrainCheatManager.PrintTrainDebug
-	// void PrintTrainDebug();                                                                                               // [0x32e4b44] Final|Exec|Native|Private|Const 
+	// void PrintTrainDebug();                                                                                               // [0x307d48c] Final|Exec|Native|Private|Const 
 };
 
 /// Class /Script/TrainRuntime.FortTrainSpawner
@@ -77,17 +77,17 @@ public:
 
 	/// Functions
 	// Function /Script/TrainRuntime.TrainCar.OnPawnDebasedTrainCar
-	// void OnPawnDebasedTrainCar(class AFortPawn* Pawn, class AActor* NewBase);                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPawnDebasedTrainCar(class AFortPawn* Pawn, class AActor* NewBase);                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/TrainRuntime.TrainCar.OnPawnBasedOnTrainCar
-	// void OnPawnBasedOnTrainCar(class AFortPawn* Pawn);                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPawnBasedOnTrainCar(class AFortPawn* Pawn);                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/TrainRuntime.TrainCar.OnActorTargetedForImpulse
-	// void OnActorTargetedForImpulse(class AActor* Actor);                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnActorTargetedForImpulse(class AActor* Actor);                                                                  // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/TrainRuntime.TrainCar.GetTransformAtServerTime
-	// FTransform GetTransformAtServerTime(float ServerTime);                                                                // [0xaa034fc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetTransformAtServerTime(float ServerTime);                                                                // [0xabd6368] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TrainRuntime.TrainCar.GetTrainManager
-	// class UFortTrainManager* GetTrainManager();                                                                           // [0xaa034d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortTrainManager* GetTrainManager();                                                                           // [0xabd6344] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TrainRuntime.TrainCar.GetCarIndex
-	// int32_t GetCarIndex();                                                                                                // [0xaa034b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCarIndex();                                                                                                // [0xabd6320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TrainRuntime.TrainConfig
@@ -149,33 +149,33 @@ public:
 
 	/// Functions
 	// Function /Script/TrainRuntime.FortTrainManager.PlaceOnRails
-	// void PlaceOnRails();                                                                                                  // [0xaa03950] Final|Native|Protected 
+	// void PlaceOnRails();                                                                                                  // [0xabd69e8] Final|Native|Protected 
 	// Function /Script/TrainRuntime.FortTrainManager.OnRep_Rail
-	// void OnRep_Rail();                                                                                                    // [0x12e1d18] Final|Native|Protected 
+	// void OnRep_Rail();                                                                                                    // [0x2757a2c] Final|Native|Protected 
 	// Function /Script/TrainRuntime.FortTrainManager.MoveToTimeAlongRail
-	// void MoveToTimeAlongRail(float Time, bool bUpdateReplicatedMovementData);                                             // [0xaa03888] Final|Native|Public|BlueprintCallable 
+	// void MoveToTimeAlongRail(float Time, bool bUpdateReplicatedMovementData);                                             // [0xabd68a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TrainRuntime.FortTrainManager.MoveToPositionOnRailAtCurrentServerTime
-	// void MoveToPositionOnRailAtCurrentServerTime(bool bUpdateReplicatedMovementData);                                     // [0xaa03808] Final|Native|Public|BlueprintCallable 
+	// void MoveToPositionOnRailAtCurrentServerTime(bool bUpdateReplicatedMovementData);                                     // [0xabd67e4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TrainRuntime.FortTrainManager.MoveToPositionOnRail
-	// void MoveToPositionOnRail(float RailDistance, bool bUpdateReplicatedMovementData);                                    // [0xaa03740] Final|Native|Public|BlueprintCallable 
+	// void MoveToPositionOnRail(float RailDistance, bool bUpdateReplicatedMovementData);                                    // [0xabd66a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TrainRuntime.FortTrainManager.MoveAlongRail
-	// void MoveAlongRail(float DeltaDistance, bool bUpdateReplicatedMovementData);                                          // [0xaa03670] Final|Native|Public|BlueprintCallable 
+	// void MoveAlongRail(float DeltaDistance, bool bUpdateReplicatedMovementData);                                          // [0xabd655c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TrainRuntime.FortTrainManager.GetWorldLocationAtServerTime
-	// FVector GetWorldLocationAtServerTime(float ServerTime);                                                               // [0xaa035cc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetWorldLocationAtServerTime(float ServerTime);                                                               // [0xabd6478] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TrainRuntime.FortTrainStationComponent
-/// Size: 0x00B0 (0x000290 - 0x000340)
+/// Size: 0x00B0 (0x000220 - 0x0002D0)
 class UFortTrainStationComponent : public USceneComponent
 { 
 public:
-	FGameplayTag                                       IdentifierTag;                                              // 0x0290   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0294   (0x0004)  MISSED
-	FScalableFloat                                     EnterLength;                                                // 0x0298   (0x0028)  
-	FScalableFloat                                     CoastLength;                                                // 0x02C0   (0x0028)  
-	FScalableFloat                                     ExitLength;                                                 // 0x02E8   (0x0028)  
-	FScalableFloat                                     SpeedMultiplier;                                            // 0x0310   (0x0028)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0338   (0x0008)  MISSED
+	FGameplayTag                                       IdentifierTag;                                              // 0x0220   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0224   (0x0004)  MISSED
+	FScalableFloat                                     EnterLength;                                                // 0x0228   (0x0028)  
+	FScalableFloat                                     CoastLength;                                                // 0x0250   (0x0028)  
+	FScalableFloat                                     ExitLength;                                                 // 0x0278   (0x0028)  
+	FScalableFloat                                     SpeedMultiplier;                                            // 0x02A0   (0x0028)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x02C8   (0x0008)  MISSED
 };
 
 /// Class /Script/TrainRuntime.FortTrainRail
@@ -183,7 +183,7 @@ public:
 class AFortTrainRail : public AActor
 { 
 public:
-	SDK_UNDEFINED(32,15278) /* TWeakObjectPtr<ALandscapeSplineActor*> */ __um(LandscapeSplineActor);               // 0x0290   (0x0020)  
+	SDK_UNDEFINED(32,15374) /* TWeakObjectPtr<ALandscapeSplineActor*> */ __um(LandscapeSplineActor);               // 0x0290   (0x0020)  
 	bool                                               bMinimizeSplineComponent;                                   // 0x02B0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x02B1   (0x0003)  MISSED
 	float                                              MaxTangentDifference;                                       // 0x02B4   (0x0004)  
@@ -193,11 +193,11 @@ public:
 
 	/// Functions
 	// Function /Script/TrainRuntime.FortTrainRail.ValidateSpline
-	// void ValidateSpline();                                                                                                // [0x32e4b44] Final|Native|Private|Const 
+	// void ValidateSpline();                                                                                                // [0x307d48c] Final|Native|Private|Const 
 	// Function /Script/TrainRuntime.FortTrainRail.GetTimeFromNextTrainArrival
-	// float GetTimeFromNextTrainArrival(FGameplayTag& StationIdentifierTag);                                                // [0x12e1efc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimeFromNextTrainArrival(FGameplayTag& StationIdentifierTag);                                                // [0x27dd730] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TrainRuntime.FortTrainRail.GenerateSpline
-	// void GenerateSpline();                                                                                                // [0x32e4b44] Final|Native|Private|Const 
+	// void GenerateSpline();                                                                                                // [0x307d48c] Final|Native|Private|Const 
 };
 
 /// Class /Script/TrainRuntime.FortTrainMovingPlatformComponent
@@ -212,7 +212,7 @@ public:
 
 	/// Functions
 	// Function /Script/TrainRuntime.FortTrainMovingPlatformComponent.FindOrGetTrainManager
-	// class UFortTrainManager* FindOrGetTrainManager();                                                                     // [0xaa03490] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortTrainManager* FindOrGetTrainManager();                                                                     // [0xabd62fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/TrainRuntime.TrainRailKeyframe

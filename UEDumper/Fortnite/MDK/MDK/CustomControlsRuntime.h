@@ -14,70 +14,71 @@
 /// dependency: TargetingSystem
 
 /// Class /Script/CustomControlsRuntime.CustomControlOptions_Base
-/// Size: 0x0030 (0x000028 - 0x000058)
+/// Size: 0x0038 (0x000028 - 0x000060)
 class UCustomControlOptions_Base : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 88;
+	static inline constexpr uint64_t __MDKClassSize = 96;
 
 public:
 	DMember(float)                                     RangedAttackStateDuration                                   OFFSET(get<float>, {0x28, 4, 0, 0})
 	DMember(float)                                     MeleeAttackStateDuration                                    OFFSET(get<float>, {0x2C, 4, 0, 0})
 	SMember(FFortWeaponReticleData)                    FortWeaponReticleData                                       OFFSET(getStruct<T>, {0x30, 20, 0, 0})
 	SMember(FInteractionPointOptions)                  InteractionPointOptions                                     OFFSET(getStruct<T>, {0x44, 16, 0, 0})
+	CMember(class UTargetingPreset*)                   InteractionTargetingPreset                                  OFFSET(get<T>, {0x58, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.GetOwningComponent
-	// class UFortControllerComponent_CustomControls* GetOwningComponent();                                                     // [0xb4d3600] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFortControllerComponent_CustomControls* GetOwningComponent();                                                     // [0xb7122d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.BP_OnDeactivate
-	// void BP_OnDeactivate();                                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDeactivate();                                                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_Base.BP_OnActivate
-	// void BP_OnActivate();                                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnActivate();                                                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson
-/// Size: 0x0108 (0x000058 - 0x000160)
+/// Size: 0x0108 (0x000060 - 0x000168)
 class UCustomControlOptions_ThirdPerson : public UCustomControlOptions_Base
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 352;
+	static inline constexpr uint64_t __MDKClassSize = 360;
 
 public:
-	SMember(FCustomControlMovementModeData)            BaseMovementMode                                            OFFSET(getStruct<T>, {0x58, 48, 0, 0})
-	SMember(FCustomControlMovementModeData)            ShootingMovementMode                                        OFFSET(getStruct<T>, {0x88, 48, 0, 0})
-	SMember(FCustomControlMovementModeData)            StrikingMovementMode                                        OFFSET(getStruct<T>, {0xB8, 48, 0, 0})
-	SMember(FCustomControlMovementModeData)            AimingMovementMode                                          OFFSET(getStruct<T>, {0xE8, 48, 0, 0})
-	CMember(class UTargetingPreset*)                   RangedTargetingPresetTemplate                               OFFSET(get<T>, {0x118, 8, 0, 0})
-	CMember(class UTargetingPreset*)                   RetentionTargetingPresetTemplate                            OFFSET(get<T>, {0x120, 8, 0, 0})
-	CMember(class UTargetingPreset*)                   RangedAimingTargetingPresetTemplate                         OFFSET(get<T>, {0x128, 8, 0, 0})
-	CMember(class UTargetingPreset*)                   MeleeTargetingPresetTemplate                                OFFSET(get<T>, {0x130, 8, 0, 0})
-	DMember(float)                                     AngleToClampFire                                            OFFSET(get<float>, {0x138, 4, 0, 0})
-	DMember(bool)                                      bShootMovementRequiresTarget                                OFFSET(get<bool>, {0x13C, 1, 0, 0})
-	DMember(bool)                                      bStrikeMovementRequiresTarget                               OFFSET(get<bool>, {0x13D, 1, 0, 0})
-	CMember(class UTargetingPreset*)                   RangedTargetingPreset                                       OFFSET(get<T>, {0x140, 8, 0, 0})
-	CMember(class UTargetingPreset*)                   RetentionTargetingPreset                                    OFFSET(get<T>, {0x148, 8, 0, 0})
-	CMember(class UTargetingPreset*)                   RangedAimTargetingPreset                                    OFFSET(get<T>, {0x150, 8, 0, 0})
-	CMember(class UTargetingPreset*)                   MeleeTargetingPreset                                        OFFSET(get<T>, {0x158, 8, 0, 0})
+	SMember(FCustomControlMovementModeData)            BaseMovementMode                                            OFFSET(getStruct<T>, {0x60, 48, 0, 0})
+	SMember(FCustomControlMovementModeData)            ShootingMovementMode                                        OFFSET(getStruct<T>, {0x90, 48, 0, 0})
+	SMember(FCustomControlMovementModeData)            StrikingMovementMode                                        OFFSET(getStruct<T>, {0xC0, 48, 0, 0})
+	SMember(FCustomControlMovementModeData)            AimingMovementMode                                          OFFSET(getStruct<T>, {0xF0, 48, 0, 0})
+	CMember(class UTargetingPreset*)                   RangedTargetingPresetTemplate                               OFFSET(get<T>, {0x120, 8, 0, 0})
+	CMember(class UTargetingPreset*)                   RetentionTargetingPresetTemplate                            OFFSET(get<T>, {0x128, 8, 0, 0})
+	CMember(class UTargetingPreset*)                   RangedAimingTargetingPresetTemplate                         OFFSET(get<T>, {0x130, 8, 0, 0})
+	CMember(class UTargetingPreset*)                   MeleeTargetingPresetTemplate                                OFFSET(get<T>, {0x138, 8, 0, 0})
+	DMember(float)                                     AngleToClampFire                                            OFFSET(get<float>, {0x140, 4, 0, 0})
+	DMember(bool)                                      bShootMovementRequiresTarget                                OFFSET(get<bool>, {0x144, 1, 0, 0})
+	DMember(bool)                                      bStrikeMovementRequiresTarget                               OFFSET(get<bool>, {0x145, 1, 0, 0})
+	CMember(class UTargetingPreset*)                   RangedTargetingPreset                                       OFFSET(get<T>, {0x148, 8, 0, 0})
+	CMember(class UTargetingPreset*)                   RetentionTargetingPreset                                    OFFSET(get<T>, {0x150, 8, 0, 0})
+	CMember(class UTargetingPreset*)                   RangedAimTargetingPreset                                    OFFSET(get<T>, {0x158, 8, 0, 0})
+	CMember(class UTargetingPreset*)                   MeleeTargetingPreset                                        OFFSET(get<T>, {0x160, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitRetentionTargetingPreset
-	// void BP_InitRetentionTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_InitRetentionTargetingPreset(class UTargetingPreset* Preset);                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitRangedTargetingPreset
-	// void BP_InitRangedTargetingPreset(class UTargetingPreset* Preset);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_InitRangedTargetingPreset(class UTargetingPreset* Preset);                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitMeleeTargetingPreset
-	// void BP_InitMeleeTargetingPreset(class UTargetingPreset* Preset);                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_InitMeleeTargetingPreset(class UTargetingPreset* Preset);                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/CustomControlsRuntime.CustomControlOptions_ThirdPerson.BP_InitAimingTargetingPreset
-	// void BP_InitAimingTargetingPreset(class UTargetingPreset* Preset);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_InitAimingTargetingPreset(class UTargetingPreset* Preset);                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/CustomControlsRuntime.FortControllerComponent_CustomControls
-/// Size: 0x0150 (0x0000A8 - 0x0001F8)
+/// Size: 0x0160 (0x0000A8 - 0x000208)
 class UFortControllerComponent_CustomControls : public UFortControllerComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 504;
+	static inline constexpr uint64_t __MDKClassSize = 520;
 
 public:
 	SMember(FCustomControlsState)                      CurrentState                                                OFFSET(getStruct<T>, {0xA8, 4, 0, 0})
@@ -89,27 +90,27 @@ public:
 
 	/// Functions
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.WeaponGetAimRotOverride
-	// void WeaponGetAimRotOverride(class AFortWeapon* Weapon, EFortAbilityTargetingSource TargetingSource, FRotator& OutOverrideAimRot, bool& bOutExecutionResult); // [0xb4d38d0] Final|Native|Private|HasOutParms|HasDefaults 
+	// void WeaponGetAimRotOverride(class AFortWeapon* Weapon, EFortAbilityTargetingSource TargetingSource, FRotator& OutOverrideAimRot, bool& bOutExecutionResult); // [0xb7126e0] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.SetOptionsEnabled
-	// void SetOptionsEnabled(class UObject* ContextObject, bool bEnabled);                                                     // [0xb4d3808] Final|Native|Public|BlueprintCallable 
+	// void SetOptionsEnabled(class UObject* ContextObject, bool bEnabled);                                                     // [0xb7125a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ServerSetOptionsQueueBlocked
-	// void ServerSetOptionsQueueBlocked(bool bIsBlocked);                                                                      // [0x8781040] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerSetOptionsQueueBlocked(bool bIsBlocked);                                                                      // [0x872d204] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ServerSetFocusTarget
-	// void ServerSetFocusTarget(class AActor* NewFocusTarget);                                                                 // [0x83f3434] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerSetFocusTarget(class AActor* NewFocusTarget);                                                                 // [0x8392544] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.RemoveOptions
-	// void RemoveOptions(class UObject* ContextObject);                                                                        // [0xb4d3788] Final|Native|Public|BlueprintCallable 
+	// void RemoveOptions(class UObject* ContextObject);                                                                        // [0xb7124e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.OnRep_NotifyActiveOptionsUpdated
-	// void OnRep_NotifyActiveOptionsUpdated();                                                                                 // [0xb4d3774] Final|Native|Private 
+	// void OnRep_NotifyActiveOptionsUpdated();                                                                                 // [0xb7124cc] Final|Native|Private 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.OnRep_ActiveOptions
-	// void OnRep_ActiveOptions(class UCustomControlOptions_Base* OldOptions);                                                  // [0xb4d36f4] Final|Native|Private 
+	// void OnRep_ActiveOptions(class UCustomControlOptions_Base* OldOptions);                                                  // [0xb71240c] Final|Native|Private 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.NotifyOptionsUpdated
-	// void NotifyOptionsUpdated(class UCustomControlOptions_Base* Options);                                                    // [0xb4d365c] Final|Native|Public|BlueprintCallable 
+	// void NotifyOptionsUpdated(class UCustomControlOptions_Base* Options);                                                    // [0xb712330] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.GetOptions
-	// class UCustomControlOptions_Base* GetOptions(class UObject* ContextObject);                                              // [0xb4d3520] Final|Native|Public|BlueprintCallable 
+	// class UCustomControlOptions_Base* GetOptions(class UObject* ContextObject);                                              // [0xb7121b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.CreateOptionsWithPriority
-	// class UCustomControlOptions_Base* CreateOptionsWithPriority(class UObject* ContextObject, class UClass* OptionsClass, float Priority, bool bEnabled); // [0xb4d3284] Final|Native|Public|BlueprintCallable 
+	// class UCustomControlOptions_Base* CreateOptionsWithPriority(class UObject* ContextObject, class UClass* OptionsClass, float Priority, bool bEnabled); // [0xb711e10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CustomControlsRuntime.FortControllerComponent_CustomControls.ClientRegisterTagsQueries
-	// void ClientRegisterTagsQueries();                                                                                        // [0x81efe74] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientRegisterTagsQueries();                                                                                        // [0x81809cc] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/CustomControlsRuntime.FortMovementMode_ExtLogicBaseCustomControls
@@ -196,12 +197,11 @@ class FFortMovementMode_ExtCCThirdPersonCreationData : public FFortMovementMode_
 	static inline constexpr uint64_t __MDKClassSize = 32;
 
 public:
-	DMember(bool)                                      bModifyRotationRateYaw                                      OFFSET(get<bool>, {0x8, 1, 0, 0})
-	DMember(float)                                     RotationRateYaw                                             OFFSET(get<float>, {0xC, 4, 0, 0})
-	DMember(float)                                     SpeedMultiplier                                             OFFSET(get<float>, {0x10, 4, 0, 0})
-	CMember(ECustomControlsFacingMode)                 FacingMode                                                  OFFSET(get<T>, {0x14, 1, 0, 0})
-	DMember(float)                                     FixedFacingYaw                                              OFFSET(get<float>, {0x18, 4, 0, 0})
-	DMember(bool)                                      bRotateTowardsTarget                                        OFFSET(get<bool>, {0x1C, 1, 0, 0})
+	DMember(float)                                     RotationRateYaw                                             OFFSET(get<float>, {0x8, 4, 0, 0})
+	DMember(float)                                     SpeedMultiplier                                             OFFSET(get<float>, {0xC, 4, 0, 0})
+	CMember(ECustomControlsFacingMode)                 FacingMode                                                  OFFSET(get<T>, {0x10, 1, 0, 0})
+	DMember(float)                                     FixedFacingYaw                                              OFFSET(get<float>, {0x14, 4, 0, 0})
+	DMember(bool)                                      bRotateTowardsTarget                                        OFFSET(get<bool>, {0x18, 1, 0, 0})
 };
 
 /// Struct /Script/CustomControlsRuntime.FortMovementMode_ExtBaseCustomControlsRuntimeData
@@ -216,12 +216,12 @@ public:
 };
 
 /// Struct /Script/CustomControlsRuntime.FortMovementMode_ExtCCThirdPersonRuntimeData
-/// Size: 0x0048 (0x000010 - 0x000058)
+/// Size: 0x0030 (0x000010 - 0x000040)
 class FFortMovementMode_ExtCCThirdPersonRuntimeData : public FFortMovementMode_ExtBaseCustomControlsRuntimeData
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 88;
+	static inline constexpr uint64_t __MDKClassSize = 64;
 
 public:
 };
@@ -283,5 +283,17 @@ enum ECustomControlsFacingMode : uint8_t
 	ECustomControlsFacingMode__Maintained                                            = 1,
 	ECustomControlsFacingMode__Fixed                                                 = 2,
 	ECustomControlsFacingMode__ECustomControlsFacingMode_MAX                         = 3
+};
+
+/// Enum /Script/CustomControlsRuntime.ECustomControlsLockOnMode
+/// Size: 0x06
+enum ECustomControlsLockOnMode : uint8_t
+{
+	ECustomControlsLockOnMode__Never                                                 = 0,
+	ECustomControlsLockOnMode__Always                                                = 1,
+	ECustomControlsLockOnMode__Shooting                                              = 2,
+	ECustomControlsLockOnMode__Aiming                                                = 3,
+	ECustomControlsLockOnMode__ShootingOrAiming                                      = 4,
+	ECustomControlsLockOnMode__ECustomControlsLockOnMode_MAX                         = 5
 };
 

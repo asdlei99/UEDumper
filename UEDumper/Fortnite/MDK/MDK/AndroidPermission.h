@@ -31,8 +31,8 @@ public:
 
 	/// Functions
 	// Function /Script/AndroidPermission.AndroidPermissionFunctionLibrary.CheckPermission
-	// bool CheckPermission(FString Permission);                                                                                // [0xbe6f508] Final|Native|Static|Public|BlueprintCallable 
+	// bool CheckPermission(FString Permission);                                                                                // [0xc1bc7e8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AndroidPermission.AndroidPermissionFunctionLibrary.AcquirePermissions
-	// class UAndroidPermissionCallbackProxy* AcquirePermissions(TArray<FString>& Permissions);                                 // [0xbe6f420] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UAndroidPermissionCallbackProxy* AcquirePermissions(TArray<FString>& Permissions);                                 // [0xc1bc700] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 

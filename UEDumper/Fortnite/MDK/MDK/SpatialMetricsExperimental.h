@@ -10,56 +10,56 @@
 /// dependency: SpatialMetricsCore
 
 /// Class /Script/SpatialMetricsExperimental.ActorPackageDependencyARDiskSizeMetric_Archive
-/// Size: 0x02D8 (0x000040 - 0x000318)
+/// Size: 0x02D8 (0x000058 - 0x000330)
 class UActorPackageDependencyARDiskSizeMetric_Archive : public USpatialMetric
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 792;
+	static inline constexpr uint64_t __MDKClassSize = 816;
 
 public:
 };
 
 /// Class /Script/SpatialMetricsExperimental.ActorPackageDependencyCountMetric_Archive
-/// Size: 0x02D0 (0x000040 - 0x000310)
+/// Size: 0x02D0 (0x000058 - 0x000328)
 class UActorPackageDependencyCountMetric_Archive : public USpatialMetric
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 784;
+	static inline constexpr uint64_t __MDKClassSize = 808;
 
 public:
 };
 
 /// Class /Script/SpatialMetricsExperimental.ActorPackageDependencyIoDispatcherSizeMetric_Archive
-/// Size: 0x02E0 (0x000040 - 0x000320)
+/// Size: 0x02E0 (0x000058 - 0x000338)
 class UActorPackageDependencyIoDispatcherSizeMetric_Archive : public USpatialMetric
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 800;
+	static inline constexpr uint64_t __MDKClassSize = 824;
 
 public:
-	CMember(EIoDispatcherChunkTypeFlags)               ChunkTypeFlags                                              OFFSET(get<T>, {0x318, 4, 0, 0})
+	CMember(EIoDispatcherChunkTypeFlags)               ChunkTypeFlags                                              OFFSET(get<T>, {0x330, 4, 0, 0})
 };
 
 /// Class /Script/SpatialMetricsExperimental.ActorPackageDependencyResourceSizeMetric_Archive
-/// Size: 0x02E0 (0x000040 - 0x000320)
+/// Size: 0x02E0 (0x000058 - 0x000338)
 class UActorPackageDependencyResourceSizeMetric_Archive : public USpatialMetric
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 800;
+	static inline constexpr uint64_t __MDKClassSize = 824;
 
 public:
-	CMember(EResourceSizeMemoryCategory)               MemoryCategoryFlags                                         OFFSET(get<T>, {0x318, 1, 0, 0})
+	CMember(EResourceSizeMemoryCategory)               MemoryCategoryFlags                                         OFFSET(get<T>, {0x330, 1, 0, 0})
 };
 
 /// Class /Script/SpatialMetricsExperimental.LevelPackageDependencyIoDispatcherSizeMetric_IoStore
-/// Size: 0x0360 (0x000040 - 0x0003A0)
+/// Size: 0x0360 (0x000058 - 0x0003B8)
 class ULevelPackageDependencyIoDispatcherSizeMetric_IoStore : public USpatialMetric
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 928;
+	static inline constexpr uint64_t __MDKClassSize = 952;
 
 public:
-	CMember(EIoDispatcherChunkTypeFlags)               ChunkTypeFlags                                              OFFSET(get<T>, {0x398, 4, 0, 0})
+	CMember(EIoDispatcherChunkTypeFlags)               ChunkTypeFlags                                              OFFSET(get<T>, {0x3B0, 4, 0, 0})
 };
 
 /// Enum /Script/SpatialMetricsExperimental.EIoDispatcherChunkTypeFlags

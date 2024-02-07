@@ -142,16 +142,16 @@ public:
 };
 
 /// Struct /Script/RigLogicModule.RigUnit_RigLogic
-/// Size: 0x00A0 (0x000180 - 0x000220)
+/// Size: 0x00A0 (0x0001D0 - 0x000270)
 class FRigUnit_RigLogic : public FRigUnitMutable
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 544;
+	static inline constexpr uint64_t __MDKClassSize = 624;
 
 public:
-	SMember(FRigUnit_RigLogic_Data)                    Data                                                        OFFSET(getStruct<T>, {0x180, 152, 0, 0})
-	DMember(bool)                                      bIsInitialized                                              OFFSET(get<bool>, {0x218, 1, 0, 0})
+	SMember(FRigUnit_RigLogic_Data)                    Data                                                        OFFSET(getStruct<T>, {0x1D0, 152, 0, 0})
+	DMember(bool)                                      bIsInitialized                                              OFFSET(get<bool>, {0x268, 1, 0, 0})
 };
 
 /// Enum /Script/RigLogicModule.EArchetype

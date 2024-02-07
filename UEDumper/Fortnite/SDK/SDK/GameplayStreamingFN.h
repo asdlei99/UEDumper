@@ -24,7 +24,7 @@ class UFortGFNGameplayStreamingHandler : public UGFNGameplayStreamingHandler
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0078   (0x0008)  MISSED
 	class UFortLocalPlayerAccountHelper*               FortLocalPlayerAccountHelper;                               // 0x0080   (0x0008)  
-	SDK_UNDEFINED(8,13785) /* TWeakObjectPtr<UFortOnlineAccount*> */ __um(WeakFortOnlineAccount);                  // 0x0088   (0x0008)  
+	SDK_UNDEFINED(8,13852) /* TWeakObjectPtr<UFortOnlineAccount*> */ __um(WeakFortOnlineAccount);                  // 0x0088   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0090   (0x0020)  MISSED
 };
 

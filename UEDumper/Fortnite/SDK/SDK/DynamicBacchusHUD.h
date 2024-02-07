@@ -20,7 +20,7 @@ public:
 	FDynamicUIWidgetTarget                             TouchControlRegionWidget;                                   // 0x02B0   (0x0060)  
 	class UFortMobileHUDWidgetRegistry*                BaseHUDWidgetRegistry;                                      // 0x0310   (0x0008)  
 	class UDynamicUIScene*                             WatermarkScene;                                             // 0x0318   (0x0008)  
-	SDK_UNDEFINED(80,13092) /* TMap<FGameplayTag, UDynamicUIMobileScene*> */ __um(ScenesPool);                     // 0x0320   (0x0050)  
+	SDK_UNDEFINED(80,13141) /* TMap<FGameplayTag, UDynamicUIMobileScene*> */ __um(ScenesPool);                     // 0x0320   (0x0050)  
 	class UFortMobileHUDWidgetRegistry*                HUDWidgetRegistry;                                          // 0x0370   (0x0008)  
 	unsigned char                                      UnknownData00_5[0xA0];                                      // 0x0378   (0x00A0)  MISSED
 	FGameplayTagContainer                              CurrentContextTags;                                         // 0x0418   (0x0020)  

@@ -11,11 +11,11 @@
 /// dependency: MotoSynth
 
 /// Class /Script/MotorSimOutputMotoSynth.MotorSimOutputMotoSynth
-/// Size: 0x0000 (0x000A90 - 0x000A90)
+/// Size: 0x0000 (0x000A20 - 0x000A20)
 class UMotorSimOutputMotoSynth : public USynthComponentMoto
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2704;
+	static inline constexpr uint64_t __MDKClassSize = 2592;
 
 public:
 };

@@ -13,9 +13,9 @@
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FCollectionInfo
 { 
-	SDK_UNDEFINED(16,14486) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14487) /* TArray<FString> */      __um(Includes);                                             // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,14488) /* TArray<FString> */      __um(Excludes);                                             // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,14615) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14616) /* TArray<FString> */      __um(Includes);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14617) /* TArray<FString> */      __um(Excludes);                                             // 0x0020   (0x0010)  
 	float                                              BudgetMB;                                                   // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0034   (0x0004)  MISSED
 };
@@ -26,6 +26,6 @@ class UMemoryUsageQueriesConfig : public UObject
 { 
 public:
 	TArray<FCollectionInfo>                            Collections;                                                // 0x0028   (0x0010)  
-	SDK_UNDEFINED(80,14489) /* TMap<FString, FString> */ __um(SavingsPresets);                                     // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,14618) /* TMap<FString, FString> */ __um(SavingsPresets);                                     // 0x0038   (0x0050)  
 };
 

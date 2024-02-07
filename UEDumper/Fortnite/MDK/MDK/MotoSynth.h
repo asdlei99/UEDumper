@@ -39,26 +39,26 @@ public:
 };
 
 /// Class /Script/MotoSynth.SynthComponentMoto
-/// Size: 0x01A0 (0x0008F0 - 0x000A90)
+/// Size: 0x01A0 (0x000880 - 0x000A20)
 class USynthComponentMoto : public USynthComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 2704;
+	static inline constexpr uint64_t __MDKClassSize = 2592;
 
 public:
-	CMember(class UMotoSynthPreset*)                   MotoSynthPreset                                             OFFSET(get<T>, {0x8F0, 8, 0, 0})
-	DMember(float)                                     RPM                                                         OFFSET(get<float>, {0x8F8, 4, 0, 0})
+	CMember(class UMotoSynthPreset*)                   MotoSynthPreset                                             OFFSET(get<T>, {0x880, 8, 0, 0})
+	DMember(float)                                     RPM                                                         OFFSET(get<float>, {0x888, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/MotoSynth.SynthComponentMoto.SetSettings
-	// void SetSettings(FMotoSynthRuntimeSettings& InSettings);                                                                 // [0xa7b9fc0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSettings(FMotoSynthRuntimeSettings& InSettings);                                                                 // [0xa971a30] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MotoSynth.SynthComponentMoto.SetRPM
-	// void SetRPM(float InRPM, float InTimeSec);                                                                               // [0xa7b9efc] Final|Native|Public|BlueprintCallable 
+	// void SetRPM(float InRPM, float InTimeSec);                                                                               // [0xa9718f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MotoSynth.SynthComponentMoto.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0xa7b9ee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                        // [0xa9718d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MotoSynth.SynthComponentMoto.GetRPMRange
-	// void GetRPMRange(float& OutMinRPM, float& OutMaxRPM);                                                                    // [0xa7b9e08] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetRPMRange(float& OutMinRPM, float& OutMaxRPM);                                                                    // [0xa9717fc] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/MotoSynth.MotoSynthRuntimeSettings

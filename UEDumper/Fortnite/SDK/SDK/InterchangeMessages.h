@@ -14,7 +14,7 @@
 class UInterchangeResultMeshWarning : public UInterchangeResultWarning
 { 
 public:
-	SDK_UNDEFINED(16,13957) /* FString */              __um(MeshName);                                             // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,14064) /* FString */              __um(MeshName);                                             // 0x0060   (0x0010)  
 };
 
 /// Class /Script/InterchangeMessages.InterchangeResultTextureWarning
@@ -22,7 +22,7 @@ public:
 class UInterchangeResultTextureWarning : public UInterchangeResultWarning
 { 
 public:
-	SDK_UNDEFINED(16,13958) /* FString */              __um(TextureName);                                          // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,14065) /* FString */              __um(TextureName);                                          // 0x0060   (0x0010)  
 };
 
 /// Class /Script/InterchangeMessages.InterchangeResultMeshError
@@ -30,7 +30,7 @@ public:
 class UInterchangeResultMeshError : public UInterchangeResultError
 { 
 public:
-	SDK_UNDEFINED(16,13959) /* FString */              __um(MeshName);                                             // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,14066) /* FString */              __um(MeshName);                                             // 0x0060   (0x0010)  
 };
 
 /// Class /Script/InterchangeMessages.InterchangeResultMeshWarning_Generic
@@ -38,7 +38,7 @@ public:
 class UInterchangeResultMeshWarning_Generic : public UInterchangeResultMeshWarning
 { 
 public:
-	SDK_UNDEFINED(24,13960) /* FText */                __um(Text);                                                 // 0x0070   (0x0018)  
+	SDK_UNDEFINED(24,14067) /* FText */                __um(Text);                                                 // 0x0070   (0x0018)  
 };
 
 /// Class /Script/InterchangeMessages.InterchangeResultMeshError_Generic
@@ -46,7 +46,7 @@ public:
 class UInterchangeResultMeshError_Generic : public UInterchangeResultMeshError
 { 
 public:
-	SDK_UNDEFINED(24,13961) /* FText */                __um(Text);                                                 // 0x0070   (0x0018)  
+	SDK_UNDEFINED(24,14068) /* FText */                __um(Text);                                                 // 0x0070   (0x0018)  
 };
 
 /// Class /Script/InterchangeMessages.InterchangeResultMeshWarning_TooManyUVs
@@ -63,7 +63,7 @@ public:
 class UInterchangeResultTextureWarning_TextureFileDoNotExist : public UInterchangeResultTextureWarning
 { 
 public:
-	SDK_UNDEFINED(24,13962) /* FText */                __um(Text);                                                 // 0x0070   (0x0018)  
-	SDK_UNDEFINED(16,13963) /* FString */              __um(MaterialName);                                         // 0x0088   (0x0010)  
+	SDK_UNDEFINED(24,14069) /* FText */                __um(Text);                                                 // 0x0070   (0x0018)  
+	SDK_UNDEFINED(16,14070) /* FString */              __um(MaterialName);                                         // 0x0088   (0x0010)  
 };
 

@@ -143,10 +143,10 @@ struct FGameplayInteractionContext
 class UAITask_UseGameplayInteraction : public UAITask
 { 
 public:
-	SDK_UNDEFINED(16,2312) /* FMulticastInlineDelegate */ __um(OnFinished);                                        // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,2313) /* FMulticastInlineDelegate */ __um(OnSucceeded);                                       // 0x0078   (0x0010)  
-	SDK_UNDEFINED(16,2314) /* FMulticastInlineDelegate */ __um(OnFailed);                                          // 0x0088   (0x0010)  
-	SDK_UNDEFINED(16,2315) /* FMulticastInlineDelegate */ __um(OnMoveToFailed);                                    // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,2300) /* FMulticastInlineDelegate */ __um(OnFinished);                                        // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,2301) /* FMulticastInlineDelegate */ __um(OnSucceeded);                                       // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,2302) /* FMulticastInlineDelegate */ __um(OnFailed);                                          // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,2303) /* FMulticastInlineDelegate */ __um(OnMoveToFailed);                                    // 0x0098   (0x0010)  
 	FGameplayInteractionContext                        GameplayInteractionContext;                                 // 0x00A8   (0x0068)  
 	class UAITask_MoveTo*                              MoveToTask;                                                 // 0x0110   (0x0008)  
 	FSmartObjectClaimHandle                            ClaimedHandle;                                              // 0x0118   (0x0020)  
@@ -156,11 +156,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayInteractionsModule.AITask_UseGameplayInteraction.UseSmartObjectWithGameplayInteraction
-	// class UAITask_UseGameplayInteraction* UseSmartObjectWithGameplayInteraction(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7d19744] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayInteraction* UseSmartObjectWithGameplayInteraction(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7cd5430] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayInteractionsModule.AITask_UseGameplayInteraction.RequestAbort
-	// void RequestAbort();                                                                                                  // [0x7d19730] Final|Native|Public|BlueprintCallable 
+	// void RequestAbort();                                                                                                  // [0x7cd541c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayInteractionsModule.AITask_UseGameplayInteraction.MoveToAndUseSmartObjectWithGameplayInteraction
-	// class UAITask_UseGameplayInteraction* MoveToAndUseSmartObjectWithGameplayInteraction(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7d19314] Final|Native|Static|Public|BlueprintCallable 
+	// class UAITask_UseGameplayInteraction* MoveToAndUseSmartObjectWithGameplayInteraction(class AAIController* Controller, FSmartObjectClaimHandle ClaimHandle, bool bLockAILogic); // [0x7cd4fc8] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayInteractionsModule.GameplayInteractionStateTreeSchema
@@ -203,9 +203,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayInteractionsModule.StateTreeTask_PlayContextualAnim_InstanceData.OnNotifyBeginReceived
-	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x7d19650] Final|Native|Public|HasOutParms 
+	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x7cd52f4] Final|Native|Public|HasOutParms 
 	// Function /Script/GameplayInteractionsModule.StateTreeTask_PlayContextualAnim_InstanceData.OnMontageEnded
-	// void OnMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                             // [0x7d19588] Final|Native|Public  
+	// void OnMontageEnded(class UAnimMontage* EndedMontage, bool bInterrupted);                                             // [0x7cd51b4] Final|Native|Public  
 };
 
 /// Struct /Script/GameplayInteractionsModule.GameplayInteractionSlotUserData

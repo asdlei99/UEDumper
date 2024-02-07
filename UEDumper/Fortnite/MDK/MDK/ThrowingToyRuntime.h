@@ -23,15 +23,15 @@ public:
 
 	/// Functions
 	// Function /Script/ThrowingToyRuntime.ThrowingToyTrackerComponent.SetRecentThrowingToyItemRemovedReason
-	// void SetRecentThrowingToyItemRemovedReason(EThrowingToyItemRemovedReason RemovedReason);                                 // [0xb5d1c3c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetRecentThrowingToyItemRemovedReason(EThrowingToyItemRemovedReason RemovedReason);                                 // [0xb818f58] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/ThrowingToyRuntime.ThrowingToyTrackerComponent.GetThrowingToy
-	// class AActor* GetThrowingToy(FGuid& WorldItemGuid);                                                                      // [0xb5d1b88] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class AActor* GetThrowingToy(FGuid& WorldItemGuid);                                                                      // [0xb818ea4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ThrowingToyRuntime.ThrowingToyTrackerComponent.GetRecentThrowingToyItemRemovedReason
-	// EThrowingToyItemRemovedReason GetRecentThrowingToyItemRemovedReason();                                                   // [0x8a7c790] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// EThrowingToyItemRemovedReason GetRecentThrowingToyItemRemovedReason();                                                   // [0x8a534ec] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ThrowingToyRuntime.ThrowingToyTrackerComponent.GetAndReleaseThrowingToy
-	// class AActor* GetAndReleaseThrowingToy(FGuid& WorldItemGuid);                                                            // [0xb5d1aec] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class AActor* GetAndReleaseThrowingToy(FGuid& WorldItemGuid);                                                            // [0xb818e08] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ThrowingToyRuntime.ThrowingToyTrackerComponent.AddThrowingToy
-	// void AddThrowingToy(class AActor* ThrowingToyActor, FGuid& WorldItemGuid);                                               // [0xb5d19b0] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void AddThrowingToy(class AActor* ThrowingToyActor, FGuid& WorldItemGuid);                                               // [0xb818c8c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/ThrowingToyRuntime.ThrowingToyData

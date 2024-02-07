@@ -187,19 +187,20 @@ public:
 };
 
 /// Class /Script/Chooser.ChooserTable
-/// Size: 0x0070 (0x000028 - 0x000098)
+/// Size: 0x0078 (0x000028 - 0x0000A0)
 class UChooserTable : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 152;
+	static inline constexpr uint64_t __MDKClassSize = 160;
 
 public:
-	SMember(FInstancedStruct)                          FallbackResult                                              OFFSET(getStruct<T>, {0x48, 16, 0, 0})
-	CMember(TArray<FInstancedStruct>)                  ResultsStructs                                              OFFSET(get<T>, {0x58, 16, 0, 0})
-	CMember(TArray<FInstancedStruct>)                  ColumnsStructs                                              OFFSET(get<T>, {0x68, 16, 0, 0})
-	CMember(TArray<FInstancedStruct>)                  ContextData                                                 OFFSET(get<T>, {0x78, 16, 0, 0})
-	CMember(class UClass*)                             OutputObjectType                                            OFFSET(get<T>, {0x88, 8, 0, 0})
-	CMember(EObjectChooserResultType)                  ResultType                                                  OFFSET(get<T>, {0x90, 4, 0, 0})
+	CMember(class UChooserTable*)                      ParentTable                                                 OFFSET(get<T>, {0x48, 8, 0, 0})
+	SMember(FInstancedStruct)                          FallbackResult                                              OFFSET(getStruct<T>, {0x50, 16, 0, 0})
+	CMember(TArray<FInstancedStruct>)                  ResultsStructs                                              OFFSET(get<T>, {0x60, 16, 0, 0})
+	CMember(TArray<FInstancedStruct>)                  ColumnsStructs                                              OFFSET(get<T>, {0x70, 16, 0, 0})
+	CMember(TArray<FInstancedStruct>)                  ContextData                                                 OFFSET(get<T>, {0x80, 16, 0, 0})
+	CMember(class UClass*)                             OutputObjectType                                            OFFSET(get<T>, {0x90, 8, 0, 0})
+	CMember(EObjectChooserResultType)                  ResultType                                                  OFFSET(get<T>, {0x98, 4, 0, 0})
 };
 
 /// Class /Script/Chooser.ObjectChooser_EvaluateChooser
@@ -235,23 +236,23 @@ public:
 
 	/// Functions
 	// Function /Script/Chooser.ChooserFunctionLibrary.MakeEvaluateChooser
-	// FInstancedStruct MakeEvaluateChooser(class UChooserTable* Chooser);                                                      // [0x7c77ee0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FInstancedStruct MakeEvaluateChooser(class UChooserTable* Chooser);                                                      // [0x7a13004] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/Chooser.ChooserFunctionLibrary.MakeChooserEvaluationContext
-	// FChooserEvaluationContext MakeChooserEvaluationContext();                                                                // [0x7c77e64] Final|Native|Static|Public|BlueprintCallable 
+	// FChooserEvaluationContext MakeChooserEvaluationContext();                                                                // [0x7a12f88] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Chooser.ChooserFunctionLibrary.GetChooserStructOutput
-	// void GetChooserStructOutput(FChooserEvaluationContext& Context, int32_t Index, int32_t& Value);                          // [0x7c77b04] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetChooserStructOutput(FChooserEvaluationContext& Context, int32_t Index, int32_t& Value);                          // [0x7a12bfc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/Chooser.ChooserFunctionLibrary.EvaluateObjectChooserBaseMulti
-	// TArray<UObject*> EvaluateObjectChooserBaseMulti(FChooserEvaluationContext& Context, FInstancedStruct& ObjectChooser, class UClass* ObjectClass, bool bResultIsClass); // [0x7c777bc] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<UObject*> EvaluateObjectChooserBaseMulti(FChooserEvaluationContext& Context, FInstancedStruct& ObjectChooser, class UClass* ObjectClass, bool bResultIsClass); // [0x7a12890] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Chooser.ChooserFunctionLibrary.EvaluateObjectChooserBase
-	// class UObject* EvaluateObjectChooserBase(FChooserEvaluationContext& Context, FInstancedStruct& ObjectChooser, class UClass* ObjectClass, bool bResultIsClass); // [0x7c77494] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UObject* EvaluateObjectChooserBase(FChooserEvaluationContext& Context, FInstancedStruct& ObjectChooser, class UClass* ObjectClass, bool bResultIsClass); // [0x7a12544] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Chooser.ChooserFunctionLibrary.EvaluateChooserMulti
-	// TArray<UObject*> EvaluateChooserMulti(class UObject* ContextObject, class UChooserTable* ChooserTable, class UClass* ObjectClass); // [0x7c7735c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<UObject*> EvaluateChooserMulti(class UObject* ContextObject, class UChooserTable* ChooserTable, class UClass* ObjectClass); // [0x7a12348] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/Chooser.ChooserFunctionLibrary.EvaluateChooser
-	// class UObject* EvaluateChooser(class UObject* ContextObject, class UChooserTable* ChooserTable, class UClass* ObjectClass); // [0x7c7724c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UObject* EvaluateChooser(class UObject* ContextObject, class UChooserTable* ChooserTable, class UClass* ObjectClass); // [0x7a12174] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/Chooser.ChooserFunctionLibrary.AddChooserStructInput
-	// void AddChooserStructInput(FChooserEvaluationContext& Context, int32_t Value);                                           // [0x7c76fe4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddChooserStructInput(FChooserEvaluationContext& Context, int32_t Value);                                           // [0x7a11ef8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Chooser.ChooserFunctionLibrary.AddChooserObjectInput
-	// void AddChooserObjectInput(FChooserEvaluationContext& Context, class UObject* Object);                                   // [0x7c76e28] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddChooserObjectInput(FChooserEvaluationContext& Context, class UObject* Object);                                   // [0x7a11d28] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/Chooser.ChooserParameterBase
@@ -842,6 +843,18 @@ public:
 	SMember(FChooserPlayerSettings)                    DefaultSettings                                             OFFSET(getStruct<T>, {0xF0, 64, 0, 0})
 	CMember(TArray<FInstancedStruct>)                  ChooserContextDefinition                                    OFFSET(get<T>, {0x130, 16, 0, 0})
 	DMember(bool)                                      bStartFromMatchingPose                                      OFFSET(get<bool>, {0x140, 1, 0, 0})
+};
+
+/// Struct /Script/Chooser.NestedChooser
+/// Size: 0x0008 (0x000008 - 0x000010)
+class FNestedChooser : public FObjectChooserBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	CMember(class UChooserTable*)                      Chooser                                                     OFFSET(get<T>, {0x8, 8, 0, 0})
 };
 
 /// Struct /Script/Chooser.EvaluateChooser

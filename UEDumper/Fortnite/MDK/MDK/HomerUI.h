@@ -20,9 +20,9 @@ public:
 
 	/// Functions
 	// Function /Script/HomerUI.FortHomerComponent.HandlePawnEmoteStopped
-	// void HandlePawnEmoteStopped(class UFortItemDefinition* MontageItemDef, class AFortPawn* PawnEmoting);                    // [0xb208bb4] Final|Native|Private 
+	// void HandlePawnEmoteStopped(class UFortItemDefinition* MontageItemDef, class AFortPawn* PawnEmoting);                    // [0xb429f04] Final|Native|Private 
 	// Function /Script/HomerUI.FortHomerComponent.HandleLocalPlayerEliminatedPlayer
-	// void HandleLocalPlayerEliminatedPlayer(class AFortPlayerStateAthena* Player);                                            // [0xb208b38] Final|Native|Private 
+	// void HandleLocalPlayerEliminatedPlayer(class AFortPlayerStateAthena* Player);                                            // [0xb429e44] Final|Native|Private 
 };
 
 /// Enum /Script/HomerUI.EHomerClipEventType

@@ -194,16 +194,15 @@ enum EGraphElementType : uint32_t
 };
 
 /// Enum /Script/GameplayGraph.EGraphIslandOperations
-/// Size: 0x08
+/// Size: 0x07
 enum EGraphIslandOperations : uint32_t
 {
 	EGraphIslandOperations__None                                                     = 0,
 	EGraphIslandOperations__Add                                                      = 1,
-	EGraphIslandOperations__Remove                                                   = 2,
-	EGraphIslandOperations__Split                                                    = 4,
-	EGraphIslandOperations__Merge                                                    = 8,
-	EGraphIslandOperations__Destroy                                                  = 16,
-	EGraphIslandOperations__All                                                      = 31,
-	EGraphIslandOperations__EGraphIslandOperations_MAX                               = 32
+	EGraphIslandOperations__Split                                                    = 2,
+	EGraphIslandOperations__Merge                                                    = 4,
+	EGraphIslandOperations__Destroy                                                  = 8,
+	EGraphIslandOperations__All                                                      = 15,
+	EGraphIslandOperations__EGraphIslandOperations_MAX                               = 16
 };
 

@@ -10,20 +10,20 @@
 /// dependency: Engine
 
 /// Class /Script/CrowdVolume.CrowdSpawner
-/// Size: 0x0040 (0x000290 - 0x0002D0)
+/// Size: 0x0040 (0x000220 - 0x000260)
 class UCrowdSpawner : public USceneComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 720;
+	static inline constexpr uint64_t __MDKClassSize = 608;
 
 public:
-	CMember(TArray<class UHierarchicalInstancedStaticMeshComponent*>) CharacterMeshes                              OFFSET(get<T>, {0x290, 16, 0, 0})
+	CMember(TArray<class UHierarchicalInstancedStaticMeshComponent*>) CharacterMeshes                              OFFSET(get<T>, {0x220, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/CrowdVolume.CrowdSpawner.SpawnCrowd
-	// void SpawnCrowd(int32_t Width, int32_t Depth, int32_t Height, int32_t Precision, int32_t CharacterScaleRandomness, int32_t CharacterAngleRandomness, int32_t Density); // [0xb4ca39c] Final|Native|Public|BlueprintCallable 
+	// void SpawnCrowd(int32_t Width, int32_t Depth, int32_t Height, int32_t Precision, int32_t CharacterScaleRandomness, int32_t CharacterAngleRandomness, int32_t Density); // [0xb708cf8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CrowdVolume.CrowdSpawner.RefreshTrackedActors
-	// void RefreshTrackedActors(class UPlayspaceComponent_SpatialActorTracker* InPlaySpaceComponent_SpatialActorTracker);      // [0xb47a490] Final|Native|Public|BlueprintCallable 
+	// void RefreshTrackedActors(class UPlayspaceComponent_SpatialActorTracker* InPlaySpaceComponent_SpatialActorTracker);      // [0xb6b5478] Final|Native|Public|BlueprintCallable 
 };
 

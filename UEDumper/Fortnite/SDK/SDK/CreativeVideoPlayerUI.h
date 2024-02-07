@@ -31,10 +31,10 @@ public:
 
 	/// Functions
 	// Function /Script/CreativeVideoPlayerUI.CreativeVideoPlayerFullScreenWidget.SetExternalComponents
-	// void SetExternalComponents(class UMediaTexture* VideoTextureExt, class USoundSourceBus* ExtSourceBus);                // [0xb4c3c70] Final|Native|Public|BlueprintCallable 
+	// void SetExternalComponents(class UMediaTexture* VideoTextureExt, class USoundSourceBus* ExtSourceBus);                // [0xb70249c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CreativeVideoPlayerUI.CreativeVideoPlayerFullScreenWidget.OnSkipButtonActionProgress
-	// void OnSkipButtonActionProgress(float HeldPercent);                                                                   // [0xb4c3bf4] Final|Native|Private 
+	// void OnSkipButtonActionProgress(float HeldPercent);                                                                   // [0xb7023e0] Final|Native|Private 
 	// Function /Script/CreativeVideoPlayerUI.CreativeVideoPlayerFullScreenWidget.OnSkipButtonActionComplete
-	// void OnSkipButtonActionComplete();                                                                                    // [0xb4c3be0] Final|Native|Private 
+	// void OnSkipButtonActionComplete();                                                                                    // [0xb7023cc] Final|Native|Private 
 };
 

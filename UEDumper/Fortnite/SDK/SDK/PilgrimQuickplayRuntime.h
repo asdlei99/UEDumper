@@ -43,13 +43,13 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimGreenRoomLayoutSwitcher.SetLayout
-	// void SetLayout(int32_t NewLayout);                                                                                    // [0xac2f828] Final|Native|Public|BlueprintCallable 
+	// void SetLayout(int32_t NewLayout);                                                                                    // [0xae1145c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimGreenRoomLayoutSwitcher.OnRep_CurrentLayout
-	// void OnRep_CurrentLayout();                                                                                           // [0xac2d698] Final|Native|Private 
+	// void OnRep_CurrentLayout();                                                                                           // [0xae0f194] Final|Native|Private 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimGreenRoomLayoutSwitcher.OnLayoutChanged
-	// void OnLayoutChanged(int32_t NewLayout);                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnLayoutChanged(int32_t NewLayout);                                                                              // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimGreenRoomLayoutSwitcher.CycleLayout
-	// void CycleLayout();                                                                                                   // [0xac2bc64] Final|Native|Public|BlueprintCallable 
+	// void CycleLayout();                                                                                                   // [0xae0d2fc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimLeaderboardScoreReporter
@@ -70,9 +70,9 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimPawnComponent.SetInteractionEffectsEnabled
-	// void SetInteractionEffectsEnabled(bool bEnable);                                                                      // [0xac2f798] Final|Native|Public|BlueprintCallable 
+	// void SetInteractionEffectsEnabled(bool bEnable);                                                                      // [0xae1138c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimPawnComponent.GetInteractionEffectsEnabled
-	// bool GetInteractionEffectsEnabled();                                                                                  // [0xab91c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetInteractionEffectsEnabled();                                                                                  // [0xad6f994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimPlayspaceComponent_IntroDirector
@@ -90,17 +90,17 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimPlayspaceComponent_IntroDirector.StartPlayerIntro
-	// void StartPlayerIntro(class APlayerState* PlayerState);                                                               // [0xac30230] Final|Native|Private|BlueprintCallable|Const 
+	// void StartPlayerIntro(class APlayerState* PlayerState);                                                               // [0xae11fe4] Final|Native|Private|BlueprintCallable|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimPlayspaceComponent_IntroDirector.RequestNextMontageForInstrument
-	// void RequestNextMontageForInstrument(ESparksInstrumentType InstrumentType, class AFortPlayerPawn* PlayerPawn, int32_t PlayerIndex); // [0xac2d9cc] Final|Native|Protected|BlueprintCallable 
+	// void RequestNextMontageForInstrument(ESparksInstrumentType InstrumentType, class AFortPlayerPawn* PlayerPawn, int32_t PlayerIndex); // [0xae0f648] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimPlayspaceComponent_IntroDirector.OnSpotlightMontageLoaded
-	// void OnSpotlightMontageLoaded(int32_t PlayerIndex, class UAnimMontage* LoadedMontage);                                // [0xac2d904] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnSpotlightMontageLoaded(int32_t PlayerIndex, class UAnimMontage* LoadedMontage);                                // [0xae0f504] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimPlayspaceComponent_IntroDirector.HasSpotlightMontageLoadFinished
-	// bool HasSpotlightMontageLoadFinished(int32_t PlayerIndex);                                                            // [0xac2d510] Final|Native|Protected|BlueprintCallable 
+	// bool HasSpotlightMontageLoadFinished(int32_t PlayerIndex);                                                            // [0xae0ef0c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimPlayspaceComponent_IntroDirector.EnqueueSpotlightMontages
-	// bool EnqueueSpotlightMontages(ESparksInstrumentType InstrumentType);                                                  // [0xac2bcb4] Final|Native|Protected|BlueprintCallable 
+	// bool EnqueueSpotlightMontages(ESparksInstrumentType InstrumentType);                                                  // [0xae0d34c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimPlayspaceComponent_IntroDirector.ClearSpotlightMontageHandles
-	// void ClearSpotlightMontageHandles();                                                                                  // [0xac2bb88] Final|Native|Protected|BlueprintCallable 
+	// void ClearSpotlightMontageHandles();                                                                                  // [0xae0d1a4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimPlayspaceComponent_ServerExpiration
@@ -115,49 +115,49 @@ public:
 class UPilgrimQuickplayBandStateComponent : public UPilgrimCoreBandStateComponent
 { 
 public:
-	SDK_UNDEFINED(16,14909) /* FMulticastInlineDelegate */ __um(OnSongReplayingChanged);                           // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,15004) /* FMulticastInlineDelegate */ __um(OnSongReplayingChanged);                           // 0x00B0   (0x0010)  
 	class UPilgrimPremadeSetlist*                      SetlistVoteWinner;                                          // 0x00C0   (0x0008)  
 	int32_t                                            CurrentSetlistIndex;                                        // 0x00C8   (0x0004)  
 	bool                                               bIsReplayingPreviousSong;                                   // 0x00CC   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00CD   (0x0003)  MISSED
-	SDK_UNDEFINED(80,14910) /* TMap<int32_t, FPilgrimQuickplaySongResultData> */ __um(SetlistResultMap);           // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,15005) /* TMap<int32_t, FPilgrimQuickplaySongResultData> */ __um(SetlistResultMap);           // 0x00D0   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.SongReplayingChanged__DelegateSignature
-	// void SongReplayingChanged__DelegateSignature(bool bIsReplaying);                                                      // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void SongReplayingChanged__DelegateSignature(bool bIsReplaying);                                                      // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.ServerResetSetlistIndex
-	// void ServerResetSetlistIndex();                                                                                       // [0xac2f218] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ServerResetSetlistIndex();                                                                                       // [0xae10f04] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.ServerAdvanceSetlistIndex
-	// void ServerAdvanceSetlistIndex();                                                                                     // [0xac2f204] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ServerAdvanceSetlistIndex();                                                                                     // [0xae10ef0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.OnRep_SetlistVoteWinner
-	// void OnRep_SetlistVoteWinner(class UPilgrimPremadeSetlist* PrevSetlist);                                              // [0xac2d804] Final|Native|Private 
+	// void OnRep_SetlistVoteWinner(class UPilgrimPremadeSetlist* PrevSetlist);                                              // [0xae0f384] Final|Native|Private 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.OnRep_IsReplayingPreviousSong
-	// void OnRep_IsReplayingPreviousSong();                                                                                 // [0xac2d750] Final|Native|Private 
+	// void OnRep_IsReplayingPreviousSong();                                                                                 // [0xae0f290] Final|Native|Private 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.OnRep_CurrentSetlistIndex
-	// void OnRep_CurrentSetlistIndex(int32_t PrevSetlistIndex);                                                             // [0xac2d6b0] Final|Native|Private 
+	// void OnRep_CurrentSetlistIndex(int32_t PrevSetlistIndex);                                                             // [0xae0f1ac] Final|Native|Private 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.IsReplayingPreviousSong
-	// bool IsReplayingPreviousSong();                                                                                       // [0x98d9bec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsReplayingPreviousSong();                                                                                       // [0x99f751c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetVotersForSetlist
-	// TArray<APlayerState*> GetVotersForSetlist(class UPilgrimPremadeSetlist* Setlist);                                     // [0xac2d46c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<APlayerState*> GetVotersForSetlist(class UPilgrimPremadeSetlist* Setlist);                                     // [0xae0ee28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetVoteCountForSetlist
-	// int32_t GetVoteCountForSetlist(class UPilgrimPremadeSetlist* Setlist);                                                // [0xac2d3d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVoteCountForSetlist(class UPilgrimPremadeSetlist* Setlist);                                                // [0xae0ed48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetSetlistVoteWinner
-	// class UPilgrimPremadeSetlist* GetSetlistVoteWinner();                                                                 // [0x6809770] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPilgrimPremadeSetlist* GetSetlistVoteWinner();                                                                 // [0x654e148] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetPlayersInBandByController
-	// TArray<APlayerState*> GetPlayersInBandByController(class APlayerController* Controller);                              // [0xac2c9d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<APlayerState*> GetPlayersInBandByController(class APlayerController* Controller);                              // [0xae0e1f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetPlayersInBand
-	// TArray<APlayerState*> GetPlayersInBand(char Team);                                                                    // [0xac2c930] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<APlayerState*> GetPlayersInBand(char Team);                                                                    // [0xae0e114] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetCurrentSetlistLength
-	// int32_t GetCurrentSetlistLength();                                                                                    // [0xac2be28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentSetlistLength();                                                                                    // [0xae0d548] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetCurrentSetlistIndex
-	// int32_t GetCurrentSetlistIndex();                                                                                     // [0x63b1c64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentSetlistIndex();                                                                                     // [0x60da51c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetCurrentSetlist
-	// TScriptInterface<Class> GetCurrentSetlist();                                                                          // [0xac2bdf4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TScriptInterface<Class> GetCurrentSetlist();                                                                          // [0xae0d514] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.GetBandState
-	// class UPilgrimQuickplayBandStateComponent* GetBandState(class AActor* ContextActor);                                  // [0xac2bd40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UPilgrimQuickplayBandStateComponent* GetBandState(class AActor* ContextActor);                                  // [0xae0d41c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayBandStateComponent.AreAllPlayersReady
-	// bool AreAllPlayersReady();                                                                                            // [0xac2bae4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool AreAllPlayersReady();                                                                                            // [0xae0d0c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplayCameraDataSource
@@ -167,7 +167,7 @@ class UPilgrimQuickplayCameraDataSource : public USparksCameraPluginDataProvider
 public:
 	bool                                               bCutOnMeasuresInsteadOfBeats;                               // 0x00B0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00B1   (0x0003)  MISSED
-	SDK_UNDEFINED(8,14911) /* TWeakObjectPtr<UPilgrimGame*> */ __um(PilgrimGame);                                  // 0x00B4   (0x0008)  
+	SDK_UNDEFINED(8,15006) /* TWeakObjectPtr<UPilgrimGame*> */ __um(PilgrimGame);                                  // 0x00B4   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00BC   (0x0004)  MISSED
 };
 
@@ -190,7 +190,7 @@ struct FPilgrimQuickplaySongResultBandData
 /// Size: 0x0080 (0x000000 - 0x000080)
 struct FPilgrimQuickplaySongResultPlayerData
 { 
-	SDK_UNDEFINED(16,14912) /* FString */              __um(PlayerName);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15007) /* FString */              __um(PlayerName);                                           // 0x0000   (0x0010)  
 	FUniqueNetIdRepl                                   PlayerAccountId;                                            // 0x0010   (0x0030)  
 	EPilgrimTrackType                                  InstrumentType;                                             // 0x0040   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0041   (0x0007)  MISSED
@@ -208,7 +208,7 @@ struct FPilgrimQuickplaySongResultPlayerData
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FPilgrimQuickplaySongResultData
 { 
-	SDK_UNDEFINED(24,14913) /* FText */                __um(SongName);                                             // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,15008) /* FText */                __um(SongName);                                             // 0x0000   (0x0018)  
 	FGameplayTagContainer                              SongTags;                                                   // 0x0018   (0x0020)  
 	FName                                              SongShortName;                                              // 0x0038   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x003C   (0x0004)  MISSED
@@ -278,7 +278,7 @@ public:
 	bool                                               SongResults_SetlistChallengeDebug;                          // 0x00CA   (0x0001)  
 	bool                                               SongResults_SetlistChallengeFilenameAbsolute;               // 0x00CB   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x00CC   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14914) /* FString */              __um(SongResults_SetlistChallengeJSONDumpFilename);         // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,15009) /* FString */              __um(SongResults_SetlistChallengeJSONDumpFilename);         // 0x00D0   (0x0010)  
 	bool                                               SongResults_SetlistChallengeIncludeHistogramData;           // 0x00E0   (0x0001)  
 	unsigned char                                      UnknownData04_6[0x7];                                       // 0x00E1   (0x0007)  MISSED
 };
@@ -292,7 +292,7 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayEmoteBPFL.GetEmoteActionBinding
-	// void GetEmoteActionBinding(FString EmoteTemplateID, FEmoteActionBinding& OutCreatedEmote);                            // [0xac2be4c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetEmoteActionBinding(FString EmoteTemplateID, FEmoteActionBinding& OutCreatedEmote);                            // [0xae0d56c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerSpawningComponent
@@ -310,84 +310,84 @@ class UPilgrimQuickplayPlayerStateComponent : public UPilgrimCorePlayerStateComp
 public:
 	class UPilgrimSongMetadata*                        SongVote;                                                   // 0x00B0   (0x0008)  
 	class UPilgrimPremadeSetlist*                      SetlistVote;                                                // 0x00B8   (0x0008)  
-	SDK_UNDEFINED(80,14915) /* TMap<int32_t, FPilgrimPersonalBestHistoryRpl> */ __um(SetlistHighscoreMap);         // 0x00C0   (0x0050)  
-	SDK_UNDEFINED(80,14916) /* TMap<int32_t, UPilgrimQuickplaySetlistResultProxyInstance*> */ __um(SetlistResultMap); // 0x0110   (0x0050)  
+	SDK_UNDEFINED(80,15010) /* TMap<int32_t, FPilgrimPersonalBestHistoryRpl> */ __um(SetlistHighscoreMap);         // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,15011) /* TMap<int32_t, UPilgrimQuickplaySetlistResultProxyInstance*> */ __um(SetlistResultMap); // 0x0110   (0x0050)  
 	float                                              CloseupCameraTime;                                          // 0x0160   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0164   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14917) /* TArray<TScriptInterface<Class>> */ __um(GrantedQuests);                             // 0x0168   (0x0010)  
+	SDK_UNDEFINED(16,15012) /* TArray<TScriptInterface<Class>> */ __um(GrantedQuests);                             // 0x0168   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SetSongVote
-	// void SetSongVote(class UPilgrimSongMetadata* PlayerChosenSong);                                                       // [0xac301b0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetSongVote(class UPilgrimSongMetadata* PlayerChosenSong);                                                       // [0xae11f24] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SetSongResultData
-	// void SetSongResultData(FPilgrimQuickplaySongResultData& NewSongResultData);                                           // [0xac3010c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSongResultData(FPilgrimQuickplaySongResultData& NewSongResultData);                                           // [0xae11e80] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SetSetlistVote
-	// void SetSetlistVote(class UPilgrimPremadeSetlist* PlayerChosenSetlist);                                               // [0xac3008c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetSetlistVote(class UPilgrimPremadeSetlist* PlayerChosenSetlist);                                               // [0xae11dc0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SetReachedNewHighscore
-	// void SetReachedNewHighscore(int32_t TotalScore, int32_t DeltaScore, EPilgrimPersonalBestType BestType);               // [0xac2ff94] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetReachedNewHighscore(int32_t TotalScore, int32_t DeltaScore, EPilgrimPersonalBestType BestType);               // [0xae11c08] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SetPerformanceData
-	// void SetPerformanceData(FPilgrimQuickplayPlayerPerformanceData& NewPerformanceData);                                  // [0xac2f8a8] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPerformanceData(FPilgrimQuickplayPlayerPerformanceData& NewPerformanceData);                                  // [0xae1151c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SetHighscore
-	// void SetHighscore(FPilgrimPersonalBestResultRpl& Highscore, int32_t SetlistIndex, bool bLoaded);                      // [0xac2f528] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetHighscore(FPilgrimPersonalBestResultRpl& Highscore, int32_t SetlistIndex, bool bLoaded);                      // [0xae110f0] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SetCloseupCameraTime
-	// void SetCloseupCameraTime(float TotalTime);                                                                           // [0x90d78d4] Final|Native|Public|BlueprintCallable 
+	// void SetCloseupCameraTime(float TotalTime);                                                                           // [0x9126680] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.ServerSetHighscore
-	// void ServerSetHighscore(FPilgrimPersonalBestResultRpl Highscore, int32_t SetlistIndex, bool bLoaded);                 // [0xac2f22c] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void ServerSetHighscore(FPilgrimPersonalBestResultRpl Highscore, int32_t SetlistIndex, bool bLoaded);                 // [0xae10f18] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.Server_ResetDefaultQuests
-	// void Server_ResetDefaultQuests();                                                                                     // [0x998bfc0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_ResetDefaultQuests();                                                                                     // [0x9aa7504] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.Server_GrantDefaultQuests
-	// void Server_GrantDefaultQuests();                                                                                     // [0x14b9e3c] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_GrantDefaultQuests();                                                                                     // [0x1c0d610] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SendToServerPerformanceData
-	// void SendToServerPerformanceData(FPilgrimQuickplayPlayerPerformanceData NewPerformanceData);                          // [0xac2ea78] Net|NetReliableNative|Event|Public|NetServer 
+	// void SendToServerPerformanceData(FPilgrimQuickplayPlayerPerformanceData NewPerformanceData);                          // [0xae107dc] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SendToServerAllIntrosFinished
-	// void SendToServerAllIntrosFinished(class UPilgrimQuickplayState_Intro* IntroState);                                   // [0x63d1d4c] Net|NetReliableNative|Event|Public|NetServer 
+	// void SendToServerAllIntrosFinished(class UPilgrimQuickplayState_Intro* IntroState);                                   // [0x60fd36c] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SendToClientsSongResultData
-	// void SendToClientsSongResultData(int32_t SetlistIndex, FPilgrimQuickplaySongResultData NewPerformanceData);           // [0xac2e8ec] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void SendToClientsSongResultData(int32_t SetlistIndex, FPilgrimQuickplaySongResultData NewPerformanceData);           // [0xae1066c] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SendToClientsResetSetlistResultData
-	// void SendToClientsResetSetlistResultData();                                                                           // [0x351e7b8] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void SendToClientsResetSetlistResultData();                                                                           // [0x37618b4] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SendToClientsPerformanceData
-	// void SendToClientsPerformanceData(int32_t SetlistIndex, FPilgrimQuickplayPlayerPerformanceData NewPerformanceData);   // [0xac2e124] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void SendToClientsPerformanceData(int32_t SetlistIndex, FPilgrimQuickplayPlayerPerformanceData NewPerformanceData);   // [0xae0fee0] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.SendHighscoreToServer
-	// void SendHighscoreToServer(FPilgrimPersonalBestResult& Highscore, int32_t SetlistIndex, bool bLoaded);                // [0xac2de7c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SendHighscoreToServer(FPilgrimPersonalBestResult& Highscore, int32_t SetlistIndex, bool bLoaded);                // [0xae0fc0c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.ResetSetlistResultData
-	// void ResetSetlistResultData();                                                                                        // [0xac2de68] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ResetSetlistResultData();                                                                                        // [0xae0fbf8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.OnRep_SongVote
-	// void OnRep_SongVote(class UPilgrimSongMetadata* PrevSongVote);                                                        // [0xac2d884] Final|Native|Private 
+	// void OnRep_SongVote(class UPilgrimSongMetadata* PrevSongVote);                                                        // [0xae0f444] Final|Native|Private 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.OnRep_SetlistVote
-	// void OnRep_SetlistVote(class UPilgrimPremadeSetlist* PrevSetlistVote);                                                // [0xac2d784] Final|Native|Private 
+	// void OnRep_SetlistVote(class UPilgrimPremadeSetlist* PrevSetlistVote);                                                // [0xae0f2c4] Final|Native|Private 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.MulticastBroadcastNewHighscore
-	// void MulticastBroadcastNewHighscore(int32_t TotalScore, int32_t DeltaScore, EPilgrimPersonalBestType BestType);       // [0xac2d59c] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void MulticastBroadcastNewHighscore(int32_t TotalScore, int32_t DeltaScore, EPilgrimPersonalBestType BestType);       // [0xae0efd8] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetSongVote
-	// class UPilgrimSongMetadata* GetSongVote(class APlayerState* PlayerState);                                             // [0xac2d33c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UPilgrimSongMetadata* GetSongVote(class APlayerState* PlayerState);                                             // [0xae0ec74] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetSongResultData
-	// FPilgrimQuickplaySongResultData GetSongResultData();                                                                  // [0xac2d310] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPilgrimQuickplaySongResultData GetSongResultData();                                                                  // [0xae0ec48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetSetlistResultProxies
-	// void GetSetlistResultProxies(TArray<UPilgrimQuickplaySetlistResultProxyInstance*>& SetlistProxy);                     // [0xac2cc50] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetSetlistResultProxies(TArray<UPilgrimQuickplaySetlistResultProxyInstance*>& SetlistProxy);                     // [0xae0e588] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetSetlistResultDataByIndex
-	// FPilgrimQuickplaySetlistResultData GetSetlistResultDataByIndex(int32_t SetlistIndex);                                 // [0xac2cb9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPilgrimQuickplaySetlistResultData GetSetlistResultDataByIndex(int32_t SetlistIndex);                                 // [0xae0e490] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetReachedNewHighscore
-	// bool GetReachedNewHighscore(EPilgrimPersonalBestType BestType, int32_t SetlistIndex);                                 // [0xac2cadc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetReachedNewHighscore(EPilgrimPersonalBestType BestType, int32_t SetlistIndex);                                 // [0xae0e340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetPilgrimQuickplayPlayerStateComponent
-	// class UPilgrimQuickplayPlayerStateComponent* GetPilgrimQuickplayPlayerStateComponent(class APlayerState* PlayerState); // [0xac2c8a4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class UPilgrimQuickplayPlayerStateComponent* GetPilgrimQuickplayPlayerStateComponent(class APlayerState* PlayerState); // [0xae0e048] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetPerformanceData
-	// FPilgrimQuickplayPlayerPerformanceData GetPerformanceData();                                                          // [0xac2c878] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPilgrimQuickplayPlayerPerformanceData GetPerformanceData();                                                          // [0xae0e01c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetMainStateMachine
-	// class UGameplayStateMachine* GetMainStateMachine();                                                                   // [0xac2c854] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UGameplayStateMachine* GetMainStateMachine();                                                                   // [0xae0dff8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetHighscoreResult
-	// bool GetHighscoreResult(FPilgrimPersonalBestResultRpl& OutResult, int32_t SetlistIndex, bool bLoaded);                // [0xac2c5d4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetHighscoreResult(FPilgrimPersonalBestResultRpl& OutResult, int32_t SetlistIndex, bool bLoaded);                // [0xae0dd58] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetCurrentSongVote
-	// class UPilgrimSongMetadata* GetCurrentSongVote();                                                                     // [0x32c2c44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPilgrimSongMetadata* GetCurrentSongVote();                                                                     // [0x284d108] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetCurrentSetlistVote
-	// class UPilgrimPremadeSetlist* GetCurrentSetlistVote();                                                                // [0x8f4a678] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPilgrimPremadeSetlist* GetCurrentSetlistVote();                                                                // [0x8f91428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetCloseupCameraTime
-	// float GetCloseupCameraTime();                                                                                         // [0x976bf00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCloseupCameraTime();                                                                                         // [0x98791d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.GetBandState
-	// class UPilgrimQuickplayBandStateComponent* GetBandState();                                                            // [0xac2bdd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPilgrimQuickplayBandStateComponent* GetBandState();                                                            // [0xae0d4f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.ClientMatchRecorded
-	// void ClientMatchRecorded(int32_t SetlistIndex, bool bIsSoloMatch);                                                    // [0xac2bb9c] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientMatchRecorded(int32_t SetlistIndex, bool bIsSoloMatch);                                                    // [0xae0d1b8] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayerStateComponent.BroadcastEvent_SongResultDataChanged
-	// void BroadcastEvent_SongResultDataChanged(int32_t SetlistIndex);                                                      // [0xac2bb08] Final|Native|Private 
+	// void BroadcastEvent_SongResultDataChanged(int32_t SetlistIndex);                                                      // [0xae0d0e4] Final|Native|Private 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace
@@ -405,21 +405,21 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace.HandleDirectorStopEvent
-	// void HandleDirectorStopEvent(FSparksCommonStopCameraDirectorEvent& Payload);                                          // [0x211c0a0] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void HandleDirectorStopEvent(FSparksCommonStopCameraDirectorEvent& Payload);                                          // [0x2047e54] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace.HandleDirectorStartEvent
-	// void HandleDirectorStartEvent(FSparksCommonStartCameraDirectorEvent& Payload);                                        // [0x211c0a0] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void HandleDirectorStartEvent(FSparksCommonStartCameraDirectorEvent& Payload);                                        // [0x2047e54] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace.HandleDirectorResetEvent
-	// void HandleDirectorResetEvent(FSparksCommonResetCameraDirectorEvent& Payload);                                        // [0x211c0a0] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void HandleDirectorResetEvent(FSparksCommonResetCameraDirectorEvent& Payload);                                        // [0x2047e54] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace.GetPilgrimQuickplayStateMachine
-	// class UPilgrimQuickplayStateMachine* GetPilgrimQuickplayStateMachine();                                               // [0xac315c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPilgrimQuickplayStateMachine* GetPilgrimQuickplayStateMachine();                                               // [0xae133b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace.GetIsSinglePlayerGame
-	// bool GetIsSinglePlayerGame();                                                                                         // [0xac31550] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsSinglePlayerGame();                                                                                         // [0xae13344] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace.GetActivePilgrimStateId
-	// EPilgrimQuickplayState GetActivePilgrimStateId();                                                                     // [0xac313e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EPilgrimQuickplayState GetActivePilgrimStateId();                                                                     // [0xae131d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace.GetActivePilgrimQuickplayState
-	// class UPilgrimQuickplayStateBase* GetActivePilgrimQuickplayState();                                                   // [0xac313a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPilgrimQuickplayStateBase* GetActivePilgrimQuickplayState();                                                   // [0xae13198] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayPlayspace.ForceActiveCameraDirector
-	// void ForceActiveCameraDirector();                                                                                     // [0xac31390] Final|Native|Public|BlueprintCallable 
+	// void ForceActiveCameraDirector();                                                                                     // [0xae13184] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplaySetlistResultProxyInstance
@@ -436,21 +436,21 @@ class UPilgrimQuickplayStateBase : public UGameplayState
 { 
 public:
 	class UFortAbilitySet*                             AbilitySetForState;                                         // 0x0078   (0x0008)  
-	SDK_UNDEFINED(80,14918) /* TMap<TWeakObjectPtr<APlayerState*>, FFortAbilitySetHandle> */ __um(GrantedAbilitySets); // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,15013) /* TMap<TWeakObjectPtr<APlayerState*>, FFortAbilitySetHandle> */ __um(GrantedAbilitySets); // 0x0080   (0x0050)  
 	class UFortInputMappingContext*                    InputMappingContext;                                        // 0x00D0   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateBase.MarkStateDone
-	// bool MarkStateDone();                                                                                                 // [0x8fe2758] Native|Public|BlueprintCallable 
+	// bool MarkStateDone();                                                                                                 // [0xae13684] Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateBase.GetPilgrimStateMachine
-	// class UPilgrimQuickplayStateMachine* GetPilgrimStateMachine();                                                        // [0xac316b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPilgrimQuickplayStateMachine* GetPilgrimStateMachine();                                                        // [0xae134a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateBase.GetPilgrimStateId
-	// EPilgrimQuickplayState GetPilgrimStateId();                                                                           // [0x6606480] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EPilgrimQuickplayState GetPilgrimStateId();                                                                           // [0x634794c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateBase.GetPilgrimPlayspace
-	// class APilgrimQuickplayPlayspace* GetPilgrimPlayspace();                                                              // [0xac315a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APilgrimQuickplayPlayspace* GetPilgrimPlayspace();                                                              // [0xae13394] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateBase.GetEventRouter
-	// class UGameplayEventRouterComponent* GetEventRouter();                                                                // [0xac31508] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UGameplayEventRouterComponent* GetEventRouter();                                                                // [0xae132fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateBPFL
@@ -462,9 +462,9 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateBPFL.GetStateTag
-	// FGameplayTag GetStateTag(EPilgrimQuickplayState& State);                                                              // [0xac317ec] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FGameplayTag GetStateTag(EPilgrimQuickplayState& State);                                                              // [0xae135e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateBPFL.GetPilgrimState
-	// EPilgrimQuickplayState GetPilgrimState(FGameplayTag& tag);                                                            // [0xac315e8] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// EPilgrimQuickplayState GetPilgrimState(FGameplayTag& tag);                                                            // [0xae133dc] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine
@@ -477,21 +477,21 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine.TeleportAllPlayers
-	// void TeleportAllPlayers(FGameplayTagContainer& TeleportTagRequirements);                                              // [0xac31ee0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TeleportAllPlayers(FGameplayTagContainer& TeleportTagRequirements);                                              // [0xae13f44] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine.PrepareStageForPlayer
-	// void PrepareStageForPlayer(class AFortPlayerPawn* Pawn, FVector& TeleportLocation, FRotator& TeleportRotation);       // [0x211c0a0] BlueprintAuthorityOnly|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void PrepareStageForPlayer(class AFortPlayerPawn* Pawn, FVector& TeleportLocation, FRotator& TeleportRotation);       // [0x2047e54] BlueprintAuthorityOnly|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine.GetPlayerPawnsInPlayspace
-	// void GetPlayerPawnsInPlayspace(TArray<AFortPlayerPawn*>& PlayerPawns);                                                // [0xac316d4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetPlayerPawnsInPlayspace(TArray<AFortPlayerPawn*>& PlayerPawns);                                                // [0xae134c8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine.GetEventRouter
-	// class UGameplayEventRouterComponent* GetEventRouter();                                                                // [0xac3152c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UGameplayEventRouterComponent* GetEventRouter();                                                                // [0xae13320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine.GetDailyQuests
-	// void GetDailyQuests(TArray<UFortQuestItemDefinition*>& OutDailyQuests);                                               // [0xac3146c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetDailyQuests(TArray<UFortQuestItemDefinition*>& OutDailyQuests);                                               // [0xae13260] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine.GetActivePilgrimStateObject
-	// class UPilgrimQuickplayStateBase* GetActivePilgrimStateObject();                                                      // [0xac31448] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPilgrimQuickplayStateBase* GetActivePilgrimStateObject();                                                      // [0xae1323c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine.GetActivePilgrimStateId
-	// EPilgrimQuickplayState GetActivePilgrimStateId();                                                                     // [0xac31424] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EPilgrimQuickplayState GetActivePilgrimStateId();                                                                     // [0xae13218] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayStateMachine.CleanUpStageForPlayer
-	// void CleanUpStageForPlayer(class AFortPlayerPawn* Pawn);                                                              // [0x211c0a0] BlueprintAuthorityOnly|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void CleanUpStageForPlayer(class AFortPlayerPawn* Pawn);                                                              // [0x2047e54] BlueprintAuthorityOnly|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_Intro
@@ -506,7 +506,7 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_Intro.UpdateCameraWaitTime
-	// void UpdateCameraWaitTime(float NewWaitTime);                                                                         // [0xac32658] Final|Native|Public|BlueprintCallable 
+	// void UpdateCameraWaitTime(float NewWaitTime);                                                                         // [0xae146bc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_Loading
@@ -564,13 +564,13 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongGameplay.OnMusicBattleStoppedEarly
-	// void OnMusicBattleStoppedEarly(EMusicBattleEndReason EndReason);                                                      // [0xac31910] Final|Native|Protected 
+	// void OnMusicBattleStoppedEarly(EMusicBattleEndReason EndReason);                                                      // [0xae1376c] Final|Native|Protected 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongGameplay.OnMusicBattleFinished
-	// void OnMusicBattleFinished(EMusicBattleEndReason EndReason);                                                          // [0xac31890] Final|Native|Protected 
+	// void OnMusicBattleFinished(EMusicBattleEndReason EndReason);                                                          // [0xae136ac] Final|Native|Protected 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongGameplay.GetPilgrimMusicBattleInstances
-	// TArray<APilgrimMusicBattleInstance*> GetPilgrimMusicBattleInstances();                                                // [0xac31574] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TArray<APilgrimMusicBattleInstance*> GetPilgrimMusicBattleInstances();                                                // [0xae13368] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongGameplay.BuildSongResultData
-	// void BuildSongResultData();                                                                                           // [0xac3137c] Final|Native|Protected 
+	// void BuildSongResultData();                                                                                           // [0xae13170] Final|Native|Protected 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongResults
@@ -583,25 +583,25 @@ public:
 	FScalableFloat                                     WaitTimeWithNoMoreSongs;                                    // 0x0108   (0x0028)  
 	FScalableFloat                                     WaitTimeAllPlayersReady;                                    // 0x0130   (0x0028)  
 	FTimerHandle                                       WaitTimerHandle;                                            // 0x0158   (0x0008)  
-	SDK_UNDEFINED(80,14919) /* TSet<TWeakObjectPtr<AFortPlayerStateAthena*>> */ __um(PlayerList);                  // 0x0160   (0x0050)  
-	SDK_UNDEFINED(80,14920) /* TSet<TWeakObjectPtr<AFortPlayerStateAthena*>> */ __um(ReadyPlayers);                // 0x01B0   (0x0050)  
+	SDK_UNDEFINED(80,15014) /* TSet<TWeakObjectPtr<AFortPlayerStateAthena*>> */ __um(PlayerList);                  // 0x0160   (0x0050)  
+	SDK_UNDEFINED(80,15015) /* TSet<TWeakObjectPtr<AFortPlayerStateAthena*>> */ __um(ReadyPlayers);                // 0x01B0   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongResults.ServerSetEndTime
-	// void ServerSetEndTime(float ServerWorldEndTimeSeconds);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ServerSetEndTime(float ServerWorldEndTimeSeconds);                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongResults.ServerRecievedPlayPreviousSongFromClient
-	// void ServerRecievedPlayPreviousSongFromClient(class UPilgrimPlayerControllerComponent* ControllerComponent, EPilgrimStateMachineMessage StateMachineMessage); // [0xac31b80] Final|Native|Protected 
+	// void ServerRecievedPlayPreviousSongFromClient(class UPilgrimPlayerControllerComponent* ControllerComponent, EPilgrimStateMachineMessage StateMachineMessage); // [0xae13ae0] Final|Native|Protected 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongResults.OnRep_ServerEndTime
-	// void OnRep_ServerEndTime();                                                                                           // [0xac31a48] Final|Native|Protected 
+	// void OnRep_ServerEndTime();                                                                                           // [0xae13960] Final|Native|Protected 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongResults.OnPlayerDisconnected
-	// void OnPlayerDisconnected(class AFortPlayerStateAthena* PlayerState, bool bIsDisconnected);                           // [0xac31990] Final|Native|Protected 
+	// void OnPlayerDisconnected(class AFortPlayerStateAthena* PlayerState, bool bIsDisconnected);                           // [0xae1382c] Final|Native|Protected 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongResults.HandleTimerFinished
-	// void HandleTimerFinished();                                                                                           // [0x6497e74] Native|Event|Protected|BlueprintEvent 
+	// void HandleTimerFinished();                                                                                           // [0x61cb31c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongResults.GoToNextState
-	// void GoToNextState();                                                                                                 // [0xac3187c] Final|Native|Public|BlueprintCallable 
+	// void GoToNextState();                                                                                                 // [0xae13670] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplayState_SongResults.ClientUpdateStateEndTime
-	// void ClientUpdateStateEndTime(float ServerWorldEndTimeSeconds);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ClientUpdateStateEndTime(float ServerWorldEndTimeSeconds);                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimQuickplaySuspendHandleComponent
@@ -614,9 +614,9 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplaySuspendHandleComponent.ServerSyncHeartbeatMessageReceived
-	// void ServerSyncHeartbeatMessageReceived(class UPilgrimPlayerControllerComponent* PilgrimPC);                          // [0xac31de0] Final|Native|Protected 
+	// void ServerSyncHeartbeatMessageReceived(class UPilgrimPlayerControllerComponent* PilgrimPC);                          // [0xae13dc4] Final|Native|Protected 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimQuickplaySuspendHandleComponent.ServerOnTimedInputReceived
-	// void ServerOnTimedInputReceived(class UPilgrimPlayerControllerComponent* PilgrimPC, FPilgrimTimedInput& TimedInput);  // [0xac31aa4] Final|Native|Protected|HasOutParms 
+	// void ServerOnTimedInputReceived(class UPilgrimPlayerControllerComponent* PilgrimPC, FPilgrimTimedInput& TimedInput);  // [0xae139bc] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimStandinDirector
@@ -624,23 +624,23 @@ public:
 class UPilgrimStandinDirector : public UFortPlayspaceComponent
 { 
 public:
-	SDK_UNDEFINED(80,14921) /* TMap<ESparksInstrumentType, UFortWeaponItemDefinition*> */ __um(InstrumentToWeaponMap); // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,15016) /* TMap<ESparksInstrumentType, UFortWeaponItemDefinition*> */ __um(InstrumentToWeaponMap); // 0x00F8   (0x0050)  
 	class UClass*                                      AISpawnerData;                                              // 0x0148   (0x0008)  
 	TArray<FPrimaryAssetId>                            Emotes;                                                     // 0x0150   (0x0010)  
-	SDK_UNDEFINED(16,14922) /* TArray<TWeakObjectPtr<AFortPlayerPawnAthena*>> */ __um(SpawnedStandinPawns);        // 0x0160   (0x0010)  
-	SDK_UNDEFINED(16,14923) /* TArray<TWeakObjectPtr<AFortPlayerStateAthena*>> */ __um(SpawnedStandinStates);      // 0x0170   (0x0010)  
+	SDK_UNDEFINED(16,15017) /* TArray<TWeakObjectPtr<AFortPlayerPawnAthena*>> */ __um(SpawnedStandinPawns);        // 0x0160   (0x0010)  
+	SDK_UNDEFINED(16,15018) /* TArray<TWeakObjectPtr<AFortPlayerStateAthena*>> */ __um(SpawnedStandinStates);      // 0x0170   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0180   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimStandinDirector.TeleportSpawnedStandins
-	// void TeleportSpawnedStandins(TArray<AFortPlayerStart*>& Destinations);                                                // [0xac31f98] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TeleportSpawnedStandins(TArray<AFortPlayerStart*>& Destinations);                                                // [0xae13ffc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimStandinDirector.SetupListeners
-	// void SetupListeners(class UGameplayEventRouterComponent* EventRouter);                                                // [0xac31e60] Final|Native|Protected|BlueprintCallable 
+	// void SetupListeners(class UGameplayEventRouterComponent* EventRouter);                                                // [0xae13e84] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimStandinDirector.GetStandinStates
-	// TArray<AFortPlayerStateAthena*> GetStandinStates();                                                                   // [0xac317ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AFortPlayerStateAthena*> GetStandinStates();                                                                   // [0xae135a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimStandinDirector.GetStandinPawns
-	// TArray<AFortPlayerPawnAthena*> GetStandinPawns();                                                                     // [0xac31770] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AFortPlayerPawnAthena*> GetStandinPawns();                                                                     // [0xae13564] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.PilgrimStandinPawnComponent
@@ -654,9 +654,9 @@ public:
 
 	/// Functions
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimStandinPawnComponent.StartInstrumentAnimation
-	// void StartInstrumentAnimation(class APlayerState* PlayerState, class ASparksMusicPlayspace* Playspace);               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void StartInstrumentAnimation(class APlayerState* PlayerState, class ASparksMusicPlayspace* Playspace);               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/PilgrimQuickplayRuntime.PilgrimStandinPawnComponent.SetupListeners
-	// void SetupListeners(class UGameplayEventRouterComponent* EventRouter);                                                // [0xac54b84] Final|Native|Protected|BlueprintCallable 
+	// void SetupListeners(class UGameplayEventRouterComponent* EventRouter);                                                // [0xae36e84] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/PilgrimQuickplayRuntime.BandReplicationGraphNode

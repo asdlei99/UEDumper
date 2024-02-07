@@ -19,7 +19,7 @@
 class UVKEditGameplayAssetsToCook : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(16,15321) /* TArray<TWeakObjectPtr<UObject*>> */ __um(Assets);                                   // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,15417) /* TArray<TWeakObjectPtr<UObject*>> */ __um(Assets);                                   // 0x0030   (0x0010)  
 };
 
 /// Class /Script/VKEditGameplay.PlayspaceComponent_PlaysetRootSpawner
@@ -43,8 +43,8 @@ class AVKEditPlayspace : public AFortPlayspace
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x50];                                      // 0x06C0   (0x0050)  MISSED
-	SDK_UNDEFINED(32,15322) /* TWeakObjectPtr<UClass*> */ __um(EditorOnlyMinigameSettingsMachineClassToSpawn);     // 0x0710   (0x0020)  
-	SDK_UNDEFINED(32,15323) /* TWeakObjectPtr<UClass*> */ __um(EditorOnlyWorldManagerClassToSpawn);                // 0x0730   (0x0020)  
+	SDK_UNDEFINED(32,15418) /* TWeakObjectPtr<UClass*> */ __um(EditorOnlyMinigameSettingsMachineClassToSpawn);     // 0x0710   (0x0020)  
+	SDK_UNDEFINED(32,15419) /* TWeakObjectPtr<UClass*> */ __um(EditorOnlyWorldManagerClassToSpawn);                // 0x0730   (0x0020)  
 	class UFortLevelStreamComponent*                   LevelStreamComponent;                                       // 0x0750   (0x0008)  
 	class UFortProjectEditComponent*                   ProjectEditComponent;                                       // 0x0758   (0x0008)  
 	class UPlayspaceComponent_PlayStopPauseManager*    PlayStopPauseManager;                                       // 0x0760   (0x0008)  
@@ -68,7 +68,7 @@ public:
 
 	/// Functions
 	// Function /Script/VKEditGameplay.VKEditPlayspace.OnClientActivatedContent
-	// void OnClientActivatedContent(FUniqueNetIdRepl& ClientNetId);                                                         // [0xb687914] Final|Native|Private|HasOutParms|Const 
+	// void OnClientActivatedContent(FUniqueNetIdRepl& ClientNetId);                                                         // [0xb9005c4] Final|Native|Private|HasOutParms|Const 
 };
 
 /// Class /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager
@@ -85,8 +85,8 @@ public:
 
 	/// Functions
 	// Function /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager.OnRep_VkEditStatus
-	// void OnRep_VkEditStatus();                                                                                            // [0xb687a28] Final|Native|Protected|Const 
+	// void OnRep_VkEditStatus();                                                                                            // [0xb9006d8] Final|Native|Protected|Const 
 	// Function /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager.OnRep_EditConnections
-	// void OnRep_EditConnections();                                                                                         // [0xb6879e4] Final|Native|Protected|Const 
+	// void OnRep_EditConnections();                                                                                         // [0xb900694] Final|Native|Protected|Const 
 };
 

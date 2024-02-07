@@ -30,9 +30,9 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamControllerComponent.UpdateJamUI
-	// void UpdateJamUI();                                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void UpdateJamUI();                                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/FMJamSystemRuntime.JamControllerComponent.GetControllerOfClass
-	// class AController* GetControllerOfClass(class UClass* ControllerType, bool bMatchChildTypes);                            // [0xb61db70] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class AController* GetControllerOfClass(class UClass* ControllerType, bool bMatchChildTypes);                            // [0xb87e96c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamGlobalControlsWidget
@@ -48,7 +48,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamGlobalControlsWidget.Close
-	// void Close();                                                                                                            // [0x3b255c0] Final|Native|Protected|BlueprintCallable 
+	// void Close();                                                                                                            // [0x6f751d4] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamOnOffSwitchComponent
@@ -68,11 +68,11 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamOnOffSwitchComponent.ShouldApplyJamOnSplitscreenLogic
-	// bool ShouldApplyJamOnSplitscreenLogic(class UObject* WorldContextObject, class APlayerController* ReferenceController);  // [0xb61de54] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// bool ShouldApplyJamOnSplitscreenLogic(class UObject* WorldContextObject, class APlayerController* ReferenceController);  // [0xb87ee14] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/FMJamSystemRuntime.JamOnOffSwitchComponent.OnPlayerStatePawnSet
-	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0xb61dd5c] Final|Native|Protected 
+	// void OnPlayerStatePawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);                       // [0xb87ec58] Final|Native|Protected 
 	// Function /Script/FMJamSystemRuntime.JamOnOffSwitchComponent.OnMutatorUpdated
-	// void OnMutatorUpdated();                                                                                                 // [0xb61dd48] Final|Native|Protected 
+	// void OnMutatorUpdated();                                                                                                 // [0xb87ec44] Final|Native|Protected 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamPlayerPawnComponent
@@ -88,7 +88,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamPlayerPawnComponent.GetPawnOfClass
-	// class APawn* GetPawnOfClass(class UClass* PawnType, bool bMatchChildTypes);                                              // [0xb61dc5c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class APawn* GetPawnOfClass(class UClass* PawnType, bool bMatchChildTypes);                                              // [0xb87ead8] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamQuestComponent
@@ -113,7 +113,7 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamSystemRuntime.JamSystemEmoteBPFL.GetEmoteActionBinding
-	// void GetEmoteActionBinding(FString EmoteTemplateID, FEmoteActionBinding& OutCreatedEmote);                               // [0xac2be4c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetEmoteActionBinding(FString EmoteTemplateID, FEmoteActionBinding& OutCreatedEmote);                               // [0xae0d56c] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/FMJamSystemRuntime.JamVerbProcessor_Jam

@@ -22,13 +22,13 @@ public:
 	float                                              New_Storm_Timeline_RainInt_5E5E494B489306ED044096A143F228CF; // 0x100C   (0x0004)  
 	float                                              New_Storm_Timeline_Lightning_Modulator_5E5E494B489306ED044096A143F228CF; // 0x1010   (0x0004)  
 	float                                              New_Storm_Timeline_Storm_Ramp_In_Value_5E5E494B489306ED044096A143F228CF; // 0x1014   (0x0004)  
-	SDK_UNDEFINED(1,15276) /* TEnumAsByte<ETimelineDirection> */ __um(New_Storm_Timeline__Direction_5E5E494B489306ED044096A143F228CF); // 0x1018   (0x0001)  
+	SDK_UNDEFINED(1,15372) /* TEnumAsByte<ETimelineDirection> */ __um(New_Storm_Timeline__Direction_5E5E494B489306ED044096A143F228CF); // 0x1018   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x1019   (0x0007)  MISSED
 	class UTimelineComponent*                          New_Storm_Timeline;                                         // 0x1020   (0x0008)  
 	float                                              FlashLightning_LightningColorLERP_FA5447C54EBAE729F521C3B243BEC285; // 0x1028   (0x0004)  
 	float                                              FlashLightning_lightning_alpha_FA5447C54EBAE729F521C3B243BEC285; // 0x102C   (0x0004)  
 	float                                              FlashLightning_Lightning_Intensity_FA5447C54EBAE729F521C3B243BEC285; // 0x1030   (0x0004)  
-	SDK_UNDEFINED(1,15277) /* TEnumAsByte<ETimelineDirection> */ __um(FlashLightning__Direction_FA5447C54EBAE729F521C3B243BEC285); // 0x1034   (0x0001)  
+	SDK_UNDEFINED(1,15373) /* TEnumAsByte<ETimelineDirection> */ __um(FlashLightning__Direction_FA5447C54EBAE729F521C3B243BEC285); // 0x1034   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x1035   (0x0003)  MISSED
 	class UTimelineComponent*                          FlashLightning;                                             // 0x1038   (0x0008)  
 	double                                             WindSpeed;                                                  // 0x1040   (0x0008)  
@@ -102,39 +102,39 @@ public:
 
 	/// Functions
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.EmptyTransform
-	// void EmptyTransform(FTransform& Transform);                                                                           // [0x211c0a0] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// void EmptyTransform(FTransform& Transform);                                                                           // [0x2047e54] Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.SetHeavySSAO
-	// void SetHeavySSAO();                                                                                                  // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SetHeavySSAO();                                                                                                  // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.FlashLightning__FinishedFunc
-	// void FlashLightning__FinishedFunc();                                                                                  // [0x211c0a0] BlueprintEvent       
+	// void FlashLightning__FinishedFunc();                                                                                  // [0x2047e54] BlueprintEvent       
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.FlashLightning__UpdateFunc
-	// void FlashLightning__UpdateFunc();                                                                                    // [0x211c0a0] BlueprintEvent       
+	// void FlashLightning__UpdateFunc();                                                                                    // [0x2047e54] BlueprintEvent       
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.New Storm Timeline__FinishedFunc
-	// void New Storm Timeline__FinishedFunc();                                                                              // [0x211c0a0] BlueprintEvent       
+	// void New Storm Timeline__FinishedFunc();                                                                              // [0x2047e54] BlueprintEvent       
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.New Storm Timeline__UpdateFunc
-	// void New Storm Timeline__UpdateFunc();                                                                                // [0x211c0a0] BlueprintEvent       
+	// void New Storm Timeline__UpdateFunc();                                                                                // [0x2047e54] BlueprintEvent       
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.New Storm Timeline__FireOffRain__EventFunc
-	// void New Storm Timeline__FireOffRain__EventFunc();                                                                    // [0x211c0a0] BlueprintEvent       
+	// void New Storm Timeline__FireOffRain__EventFunc();                                                                    // [0x2047e54] BlueprintEvent       
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.StartStorm
-	// void StartStorm();                                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void StartStorm();                                                                                                    // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.OnStormStart
-	// void OnStormStart();                                                                                                  // [0x211c0a0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnStormStart();                                                                                                  // [0x2047e54] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.OnStormEnd
-	// void OnStormEnd();                                                                                                    // [0x211c0a0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnStormEnd();                                                                                                    // [0x2047e54] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.LightningStrike
-	// void LightningStrike();                                                                                               // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void LightningStrike();                                                                                               // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.DisableLightAndFog
-	// void DisableLightAndFog(bool Enable);                                                                                 // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void DisableLightAndFog(bool Enable);                                                                                 // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.EnableHDRRendering
-	// void EnableHDRRendering();                                                                                            // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void EnableHDRRendering();                                                                                            // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.UpdateSSAO
-	// void UpdateSSAO();                                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void UpdateSSAO();                                                                                                    // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/MASTER_TODM.MASTER_TODM_C.ExecuteUbergraph_MASTER_TODM
-	// void ExecuteUbergraph_MASTER_TODM(int32_t EntryPoint);                                                                // [0x211c0a0] Final|HasDefaults    
+	// void ExecuteUbergraph_MASTER_TODM(int32_t EntryPoint);                                                                // [0x2047e54] Final|HasDefaults    
 };
 
 /// Class /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C
@@ -147,20 +147,20 @@ public:
 
 	/// Functions
 	// Function /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C.SetReflectionQualityMPC
-	// void SetReflectionQualityMPC();                                                                                       // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SetReflectionQualityMPC();                                                                                       // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C.SetGlobalIlluminationMPC
-	// void SetGlobalIlluminationMPC();                                                                                      // [0x211c0a0] Public|BlueprintCallable|BlueprintEvent 
+	// void SetGlobalIlluminationMPC();                                                                                      // [0x2047e54] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C.DisableLightAndFog
-	// void DisableLightAndFog(bool Enable);                                                                                 // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void DisableLightAndFog(bool Enable);                                                                                 // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C.Update Scalabilty Settings
-	// void Update Scalabilty Settings();                                                                                    // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void Update Scalabilty Settings();                                                                                    // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C.DebugScalabilitySettings
-	// void DebugScalabilitySettings();                                                                                      // [0x211c0a0] BlueprintCallable|BlueprintEvent 
+	// void DebugScalabilitySettings();                                                                                      // [0x2047e54] BlueprintCallable|BlueprintEvent 
 	// Function /Game/TimeOfDay/TODM/TODM_Disabled.TODM_Disabled_C.ExecuteUbergraph_TODM_Disabled
-	// void ExecuteUbergraph_TODM_Disabled(int32_t EntryPoint);                                                              // [0x211c0a0] Final                
+	// void ExecuteUbergraph_TODM_Disabled(int32_t EntryPoint);                                                              // [0x2047e54] Final                
 };
 

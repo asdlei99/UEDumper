@@ -23,10 +23,10 @@ public:
 
 	/// Functions
 	// Function /Script/JunoRidableRuntime.JunoRidableCheatManager.NativeAddToCheatManager
-	// void NativeAddToCheatManager();                                                                                          // [0x32e4b44] Final|Native|Protected|BlueprintCallable 
+	// void NativeAddToCheatManager();                                                                                          // [0x307d48c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/JunoRidableRuntime.JunoRidableCheatManager.JunoStopRiding
-	// void JunoStopRiding();                                                                                                   // [0x2264518] BlueprintAuthorityOnly|Exec|Native|Public 
+	// void JunoStopRiding();                                                                                                   // [0x20a0030] BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/JunoRidableRuntime.JunoRidableCheatManager.JunoStartRiding
-	// void JunoStartRiding();                                                                                                  // [0x1e093d0] BlueprintAuthorityOnly|Exec|Native|Public 
+	// void JunoStartRiding();                                                                                                  // [0x201202c] BlueprintAuthorityOnly|Exec|Native|Public 
 };
 

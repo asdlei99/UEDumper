@@ -93,7 +93,7 @@ public:
 	ELiveLinkSourceMode                                Mode;                                                       // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0029   (0x0007)  MISSED
 	FLiveLinkSourceBufferManagementSettings            BufferSettings;                                             // 0x0030   (0x0060)  
-	SDK_UNDEFINED(16,2501) /* FString */               __um(ConnectionString);                                     // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,2494) /* FString */               __um(ConnectionString);                                     // 0x0090   (0x0010)  
 	class UClass*                                      Factory;                                                    // 0x00A0   (0x0008)  
 };
 
@@ -101,7 +101,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FLiveLinkCurveConversionSettings
 { 
-	SDK_UNDEFINED(80,2502) /* TMap<FString, FSoftObjectPath> */ __um(CurveConversionAssetMap);                     // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,2495) /* TMap<FString, FSoftObjectPath> */ __um(CurveConversionAssetMap);                     // 0x0000   (0x0050)  
 };
 
 /// Class /Script/LiveLinkInterface.LiveLinkCurveRemapSettings
@@ -229,7 +229,7 @@ struct FLiveLinkWorldTime
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FLiveLinkMetaData
 { 
-	SDK_UNDEFINED(80,2503) /* TMap<FName, FString> */  __um(StringMetaData);                                       // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,2496) /* TMap<FName, FString> */  __um(StringMetaData);                                       // 0x0000   (0x0050)  
 	FQualifiedFrameTime                                SceneTime;                                                  // 0x0050   (0x0010)  
 };
 
@@ -365,7 +365,7 @@ struct FLiveLinkSourcePreset
 { 
 	FGuid                                              Guid;                                                       // 0x0000   (0x0010)  
 	class ULiveLinkSourceSettings*                     Settings;                                                   // 0x0010   (0x0008)  
-	SDK_UNDEFINED(24,2504) /* FText */                 __um(SourceType);                                           // 0x0018   (0x0018)  
+	SDK_UNDEFINED(24,2497) /* FText */                 __um(SourceType);                                           // 0x0018   (0x0018)  
 };
 
 /// Struct /Script/LiveLinkInterface.LiveLinkSubjectKey
@@ -491,7 +491,7 @@ struct FLiveLinkFrameData
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FSubjectMetadata
 { 
-	SDK_UNDEFINED(80,2505) /* TMap<FName, FString> */  __um(StringMetaData);                                       // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,2498) /* TMap<FName, FString> */  __um(StringMetaData);                                       // 0x0000   (0x0050)  
 	FTimecode                                          SceneTimecode;                                              // 0x0050   (0x0014)  
 	FFrameRate                                         SceneFramerate;                                             // 0x0064   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x006C   (0x0004)  MISSED

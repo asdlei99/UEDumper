@@ -12,6 +12,7 @@
 /// dependency: FortniteGame
 /// dependency: GameFeatures
 /// dependency: GameplayAbilities
+/// dependency: GameplayTags
 /// dependency: MotionTrajectory
 /// dependency: PoseSearch
 /// dependency: ProxyTable
@@ -45,19 +46,24 @@ public:
 
 	/// Functions
 	// Function /Script/LocomotionInitiativeRuntime.FortLocomotionLayerMaskDataAsset.ApplyTo
-	// void ApplyTo(FFortLocomotionLayerMaskDataSet& DataAsset);                                                             // [0xb23e2bc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void ApplyTo(FFortLocomotionLayerMaskDataSet& DataAsset);                                                             // [0xb469b60] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingAnimInstance
-/// Size: 0x0000 (0x001620 - 0x001620)
+/// Size: 0x0010 (0x001620 - 0x001630)
 class UFortPlayerMotionMatchingAnimInstance : public UFortPlayerAnimInstanceProxy
 { 
 public:
+	FGameplayTag                                       SwingingTag;                                                // 0x1620   (0x0004)  
+	bool                                               HideWeapon;                                                 // 0x1624   (0x0001)  
+	bool                                               bIsSwinging;                                                // 0x1625   (0x0001)  
+	bool                                               bUseBlendStackLayeringGraph;                                // 0x1626   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x9];                                       // 0x1627   (0x0009)  MISSED
 
 
 	/// Functions
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingAnimInstance.GetProceduralLayeringAnimInstance
-	// class UAnimInstance* GetProceduralLayeringAnimInstance();                                                             // [0xb23e350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAnimInstance* GetProceduralLayeringAnimInstance();                                                             // [0xb469bf4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/LocomotionInitiativeRuntime.MotionMatchingLODConfig
@@ -92,89 +98,90 @@ struct FFortMotionMatchingAngleSpamTracker
 };
 
 /// Class /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance
-/// Size: 0x0450 (0x001620 - 0x001A70)
+/// Size: 0x0460 (0x001620 - 0x001A80)
 class UFortPlayerMotionMatchingLocomotionAnimInstance : public UFortPlayerAnimInstanceProxy
 { 
 public:
-	FCachedAnimStateArray                              IdleStatesData;                                             // 0x1618   (0x0018)  
-	FVector                                            FutureRootMotionVelocity;                                   // 0x1630   (0x0018)  
-	FMotionMatchingLODConfig                           HighEndConfig;                                              // 0x1648   (0x0038)  
-	FMotionMatchingLODConfig                           LowEndConfig;                                               // 0x1680   (0x0038)  
-	FMotionMatchingLODConfig                           CurrentLODConfig;                                           // 0x16B8   (0x0038)  
-	class UAnimSequence*                               SelectedIdleBreak;                                          // 0x16F0   (0x0008)  
-	class UProxyAsset*                                 MotionMatchingLODProxyAsset;                                // 0x16F8   (0x0008)  
-	int32_t                                            MotionMatchingLOD;                                          // 0x1700   (0x0004)  
-	FMotionMatchingBlendInfo                           MotionMatchingBlendInfo;                                    // 0x1704   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x170C   (0x0004)  MISSED
-	class UClass*                                      StopBranchOutWindowNotifyClass;                             // 0x1710   (0x0008)  
-	EFortMotionMatchingLocomotionState                 LocomotionState;                                            // 0x1718   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x1719   (0x0003)  MISSED
-	float                                              StartToLoopSearchDelaySeconds;                              // 0x171C   (0x0004)  
-	float                                              PivotToLoopSearchDelaySeconds;                              // 0x1720   (0x0004)  
-	float                                              PivotSpeedThreshold;                                        // 0x1724   (0x0004)  
-	float                                              PivotDotProductThresholdRun;                                // 0x1728   (0x0004)  
-	float                                              DiagonalDetectionThreshold;                                 // 0x172C   (0x0004)  
-	float                                              PivotDotProductThresholdWalk;                               // 0x1730   (0x0004)  
-	float                                              LocomotionStateTime;                                        // 0x1734   (0x0004)  
-	float                                              VelocityDirection;                                          // 0x1738   (0x0004)  
-	float                                              MotionMatchingWeight;                                       // 0x173C   (0x0004)  
-	EPoseSearchInterruptMode                           DatabaseSearchInterruptMode;                                // 0x1740   (0x0001)  
-	bool                                               bUseOrientationWarping;                                     // 0x1741   (0x0001)  
-	bool                                               bUseFutureForOrientationWarping;                            // 0x1742   (0x0001)  
-	bool                                               bIsLowEnd;                                                  // 0x1743   (0x0001)  
-	bool                                               bUseLocomotionBlendspace;                                   // 0x1744   (0x0001)  
-	bool                                               bShouldPlayIdle;                                            // 0x1745   (0x0001)  
-	bool                                               bShouldPlayIdleBreak;                                       // 0x1746   (0x0001)  
-	bool                                               bShouldExitIdleBreak;                                       // 0x1747   (0x0001)  
-	bool                                               bShouldExitIdleBreakSlow;                                   // 0x1748   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x3];                                       // 0x1749   (0x0003)  MISSED
-	float                                              IdleTransitionTimer;                                        // 0x174C   (0x0004)  
-	float                                              IdleBreakTimer;                                             // 0x1750   (0x0004)  
-	bool                                               bBothHandsIKInHandSpace;                                    // 0x1754   (0x0001)  
-	bool                                               bIsCrouchedTransition;                                      // 0x1755   (0x0001)  
-	bool                                               bWasCrouching;                                              // 0x1756   (0x0001)  
-	bool                                               bShouldPlayStandToCrouchTransition;                         // 0x1757   (0x0001)  
-	bool                                               bShouldPlayCrouchToStandTransition;                         // 0x1758   (0x0001)  
-	bool                                               bShouldExitCrouchTransition;                                // 0x1759   (0x0001)  
-	bool                                               bIsLocallyControlled;                                       // 0x175A   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x1];                                       // 0x175B   (0x0001)  MISSED
-	float                                              CameraSpamYawThreshold;                                     // 0x175C   (0x0004)  
-	float                                              CameraSpamCoolDownSeconds;                                  // 0x1760   (0x0004)  
-	float                                              CameraSpamSearchThrottleTime;                               // 0x1764   (0x0004)  
-	float                                              DefaultSearchThrottleTime;                                  // 0x1768   (0x0004)  
-	float                                              SearchThrottleTime;                                         // 0x176C   (0x0004)  
-	float                                              AdditiveLeanAlpha;                                          // 0x1770   (0x0004)  
-	bool                                               bEnableAdditiveLeans;                                       // 0x1774   (0x0001)  
-	bool                                               bEnableAdditiveRunLeans;                                    // 0x1775   (0x0001)  
-	bool                                               bDisableArcs;                                               // 0x1776   (0x0001)  
-	bool                                               bDisableDiamonds;                                           // 0x1777   (0x0001)  
-	bool                                               bIdleToMotionMatchingNoInertialization;                     // 0x1778   (0x0001)  
-	bool                                               bRelaxedStateChanged;                                       // 0x1779   (0x0001)  
-	bool                                               bIsMelee;                                                   // 0x177A   (0x0001)  
-	bool                                               bUseRelaxedMotionMatchingData;                              // 0x177B   (0x0001)  
-	unsigned char                                      UnknownData04_5[0x4];                                       // 0x177C   (0x0004)  MISSED
-	FPoseSearchQueryTrajectory                         Trajectory;                                                 // 0x1780   (0x0010)  
-	FTrajectorySamplingData                            TrajectorySamplingData;                                     // 0x1790   (0x0020)  
-	FCharacterTrajectoryData                           CharacterTrajectoryData;                                    // 0x17B0   (0x01E0)  
-	float                                              TrajectorySpeedMultiplier;                                  // 0x1990   (0x0004)  
-	float                                              LowFrictionCustomMaxSpeed;                                  // 0x1994   (0x0004)  
-	float                                              LowFrictionCustomBrakingDeceleration;                       // 0x1998   (0x0004)  
-	float                                              LowFrictionCustomFriction;                                  // 0x199C   (0x0004)  
-	FFortMotionMatchingAngleSpamTracker                AccelerationSpamTracker;                                    // 0x19A0   (0x0048)  
-	unsigned char                                      UnknownData05_5[0x80];                                      // 0x19E8   (0x0080)  MISSED
-	bool                                               bIsPlayingInterruptibleStop;                                // 0x1A68   (0x0001)  
-	bool                                               bIsPlayingIdleDatabase;                                     // 0x1A69   (0x0001)  
-	bool                                               bHasReachedIdle;                                            // 0x1A6A   (0x0001)  
-	unsigned char                                      UnknownData06_6[0x5];                                       // 0x1A6B   (0x0005)  MISSED
+	FCachedAnimStateArray                              IdleStatesData;                                             // 0x1620   (0x0018)  
+	FVector                                            FutureRootMotionVelocity;                                   // 0x1638   (0x0018)  
+	FMotionMatchingLODConfig                           HighEndConfig;                                              // 0x1650   (0x0038)  
+	FMotionMatchingLODConfig                           LowEndConfig;                                               // 0x1688   (0x0038)  
+	FMotionMatchingLODConfig                           CurrentLODConfig;                                           // 0x16C0   (0x0038)  
+	class UAnimSequence*                               SelectedIdleBreak;                                          // 0x16F8   (0x0008)  
+	class UProxyAsset*                                 MotionMatchingLODProxyAsset;                                // 0x1700   (0x0008)  
+	int32_t                                            MotionMatchingLOD;                                          // 0x1708   (0x0004)  
+	FMotionMatchingBlendInfo                           MotionMatchingBlendInfo;                                    // 0x170C   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x1714   (0x0004)  MISSED
+	class UClass*                                      StopBranchOutWindowNotifyClass;                             // 0x1718   (0x0008)  
+	EFortMotionMatchingLocomotionState                 LocomotionState;                                            // 0x1720   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x1721   (0x0003)  MISSED
+	float                                              StartToLoopSearchDelaySeconds;                              // 0x1724   (0x0004)  
+	float                                              PivotToLoopSearchDelaySeconds;                              // 0x1728   (0x0004)  
+	float                                              PivotSpeedThreshold;                                        // 0x172C   (0x0004)  
+	float                                              PivotDotProductThresholdRun;                                // 0x1730   (0x0004)  
+	float                                              DiagonalDetectionThreshold;                                 // 0x1734   (0x0004)  
+	float                                              PivotDotProductThresholdWalk;                               // 0x1738   (0x0004)  
+	float                                              LocomotionStateTime;                                        // 0x173C   (0x0004)  
+	float                                              VelocityDirection;                                          // 0x1740   (0x0004)  
+	float                                              MotionMatchingWeight;                                       // 0x1744   (0x0004)  
+	EPoseSearchInterruptMode                           DatabaseSearchInterruptMode;                                // 0x1748   (0x0001)  
+	bool                                               bUseOrientationWarping;                                     // 0x1749   (0x0001)  
+	bool                                               bUseFutureForOrientationWarping;                            // 0x174A   (0x0001)  
+	bool                                               bIsLowEnd;                                                  // 0x174B   (0x0001)  
+	bool                                               bUseLocomotionBlendspace;                                   // 0x174C   (0x0001)  
+	bool                                               bShouldPlayIdle;                                            // 0x174D   (0x0001)  
+	bool                                               bShouldPlayIdleBreak;                                       // 0x174E   (0x0001)  
+	bool                                               bShouldExitIdleBreak;                                       // 0x174F   (0x0001)  
+	bool                                               bShouldExitIdleBreakSlow;                                   // 0x1750   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x3];                                       // 0x1751   (0x0003)  MISSED
+	float                                              IdleTransitionTimer;                                        // 0x1754   (0x0004)  
+	float                                              IdleBreakTimer;                                             // 0x1758   (0x0004)  
+	bool                                               bBothHandsIKInHandSpace;                                    // 0x175C   (0x0001)  
+	bool                                               bIsCrouchedTransition;                                      // 0x175D   (0x0001)  
+	bool                                               bWasCrouching;                                              // 0x175E   (0x0001)  
+	bool                                               bShouldPlayStandToCrouchTransition;                         // 0x175F   (0x0001)  
+	bool                                               bShouldPlayCrouchToStandTransition;                         // 0x1760   (0x0001)  
+	bool                                               bShouldExitCrouchTransition;                                // 0x1761   (0x0001)  
+	bool                                               bIsLocallyControlled;                                       // 0x1762   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x1];                                       // 0x1763   (0x0001)  MISSED
+	float                                              CameraSpamYawThreshold;                                     // 0x1764   (0x0004)  
+	float                                              CameraSpamCoolDownSeconds;                                  // 0x1768   (0x0004)  
+	float                                              CameraSpamSearchThrottleTime;                               // 0x176C   (0x0004)  
+	float                                              DefaultSearchThrottleTime;                                  // 0x1770   (0x0004)  
+	float                                              SearchThrottleTime;                                         // 0x1774   (0x0004)  
+	float                                              AdditiveLeanAlpha;                                          // 0x1778   (0x0004)  
+	bool                                               bEnableAdditiveLeans;                                       // 0x177C   (0x0001)  
+	bool                                               bEnableAdditiveRunLeans;                                    // 0x177D   (0x0001)  
+	bool                                               bDisableArcs;                                               // 0x177E   (0x0001)  
+	bool                                               bDisableDiamonds;                                           // 0x177F   (0x0001)  
+	bool                                               bIdleToMotionMatchingNoInertialization;                     // 0x1780   (0x0001)  
+	bool                                               bRelaxedStateChanged;                                       // 0x1781   (0x0001)  
+	bool                                               bIsMelee;                                                   // 0x1782   (0x0001)  
+	bool                                               bUseRelaxedMotionMatchingData;                              // 0x1783   (0x0001)  
+	unsigned char                                      UnknownData04_5[0x4];                                       // 0x1784   (0x0004)  MISSED
+	FPoseSearchQueryTrajectory                         Trajectory;                                                 // 0x1788   (0x0010)  
+	FTrajectorySamplingData                            TrajectorySamplingData;                                     // 0x1798   (0x0020)  
+	unsigned char                                      UnknownData05_5[0x8];                                       // 0x17B8   (0x0008)  MISSED
+	FCharacterTrajectoryData                           CharacterTrajectoryData;                                    // 0x17C0   (0x01E0)  
+	float                                              TrajectorySpeedMultiplier;                                  // 0x19A0   (0x0004)  
+	float                                              LowFrictionCustomMaxSpeed;                                  // 0x19A4   (0x0004)  
+	float                                              LowFrictionCustomBrakingDeceleration;                       // 0x19A8   (0x0004)  
+	float                                              LowFrictionCustomFriction;                                  // 0x19AC   (0x0004)  
+	FFortMotionMatchingAngleSpamTracker                AccelerationSpamTracker;                                    // 0x19B0   (0x0048)  
+	unsigned char                                      UnknownData06_5[0x80];                                      // 0x19F8   (0x0080)  MISSED
+	bool                                               bIsPlayingInterruptibleStop;                                // 0x1A78   (0x0001)  
+	bool                                               bIsPlayingIdleDatabase;                                     // 0x1A79   (0x0001)  
+	bool                                               bHasReachedIdle;                                            // 0x1A7A   (0x0001)  
+	unsigned char                                      UnknownData07_6[0x5];                                       // 0x1A7B   (0x0005)  MISSED
 
 
 	/// Functions
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.OnUpdateMotionMatchingState
-	// void OnUpdateMotionMatchingState(FAnimUpdateContext& Context, FAnimNodeReference& Node);                              // [0x17ce51c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnUpdateMotionMatchingState(FAnimUpdateContext& Context, FAnimNodeReference& Node);                              // [0x158f6a4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.OnUpdateMotionMatching
-	// void OnUpdateMotionMatching(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                   // [0x17d10e0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnUpdateMotionMatching(FAnimUpdateContext& Context, FAnimNodeReference& Node);                                   // [0x158f4e4] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/LocomotionInitiativeRuntime.FortPlayerMotionMatchingLocomotionAnimInstance.GetMotionMatchingBlendProfile
-	// class UBlendProfile* GetMotionMatchingBlendProfile();                                                                 // [0x28a8f98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UBlendProfile* GetMotionMatchingBlendProfile();                                                                 // [0x2631170] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/LocomotionInitiativeRuntime.LocomotionInitiativeComponent

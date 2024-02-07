@@ -54,11 +54,11 @@ public:
 
 	/// Functions
 	// Function /Script/MassActors.MassActorPoolableInterface.PrepareForPooling
-	// void PrepareForPooling();                                                                                             // [0x30e10d4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PrepareForPooling();                                                                                             // [0x2c50134] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/MassActors.MassActorPoolableInterface.PrepareForGame
-	// void PrepareForGame();                                                                                                // [0x70a6028] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PrepareForGame();                                                                                                // [0x6f7765c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/MassActors.MassActorPoolableInterface.CanBePooled
-	// bool CanBePooled();                                                                                                   // [0x267521c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// bool CanBePooled();                                                                                                   // [0x239d2c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/MassActors.MassActorSpawnerSubsystem
@@ -93,13 +93,13 @@ public:
 
 	/// Functions
 	// Function /Script/MassActors.MassAgentComponent.OnRep_NetID
-	// void OnRep_NetID();                                                                                                   // [0x212f478] Native|Public        
+	// void OnRep_NetID();                                                                                                   // [0x38a9134] Native|Public        
 	// Function /Script/MassActors.MassAgentComponent.KillEntity
-	// void KillEntity(bool bDestroyActor);                                                                                  // [0xa704f04] Final|Native|Public|BlueprintCallable 
+	// void KillEntity(bool bDestroyActor);                                                                                  // [0xa8b5554] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MassActors.MassAgentComponent.Enable
-	// void Enable();                                                                                                        // [0xa704ee0] Final|Native|Public|BlueprintCallable 
+	// void Enable();                                                                                                        // [0xa8b5530] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MassActors.MassAgentComponent.Disable
-	// void Disable();                                                                                                       // [0xa704ebc] Final|Native|Public|BlueprintCallable 
+	// void Disable();                                                                                                       // [0xa8b550c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MassActors.MassAgentSubsystem
@@ -110,10 +110,10 @@ public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0038   (0x0010)  MISSED
 	class UMassSpawnerSubsystem*                       SpawnerSystem;                                              // 0x0048   (0x0008)  
 	class UMassSimulationSubsystem*                    SimulationSystem;                                           // 0x0050   (0x0008)  
-	SDK_UNDEFINED(80,14145) /* TMap<FMassEntityTemplateID, FMassAgentInitializationQueue> */ __um(PendingAgentEntities); // 0x0058   (0x0050)  
-	SDK_UNDEFINED(80,14146) /* TMap<FMassEntityTemplateID, FMassAgentInitializationQueue> */ __um(PendingPuppets); // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,14259) /* TMap<FMassEntityTemplateID, FMassAgentInitializationQueue> */ __um(PendingAgentEntities); // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,14260) /* TMap<FMassEntityTemplateID, FMassAgentInitializationQueue> */ __um(PendingPuppets); // 0x00A8   (0x0050)  
 	class UMassReplicationSubsystem*                   ReplicationSubsystem;                                       // 0x00F8   (0x0008)  
-	SDK_UNDEFINED(80,14147) /* TMap<FMassNetworkID, UMassAgentComponent*> */ __um(ReplicatedAgentComponents);      // 0x0100   (0x0050)  
+	SDK_UNDEFINED(80,14261) /* TMap<FMassNetworkID, UMassAgentComponent*> */ __um(ReplicatedAgentComponents);      // 0x0100   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x30];                                      // 0x0150   (0x0030)  MISSED
 };
 
@@ -256,7 +256,7 @@ struct FMassGuidFragment : FObjectWrapperFragment
 /// Size: 0x000B (0x000001 - 0x00000C)
 struct FMassActorFragment : FObjectWrapperFragment
 { 
-	SDK_UNDEFINED(8,14148) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,14262) /* TWeakObjectPtr<AActor*> */ __um(Actor);                                              // 0x0000   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0008   (0x0004)  MISSED
 };
 

@@ -218,11 +218,11 @@ public:
 };
 
 /// Class /Script/ZoneGraph.ZoneGraphRenderingComponent
-/// Size: 0x0010 (0x000570 - 0x000580)
+/// Size: 0x0010 (0x000500 - 0x000510)
 class UZoneGraphRenderingComponent : public UPrimitiveComponent
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0570   (0x0010)  MISSED
+	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0500   (0x0010)  MISSED
 };
 
 /// Struct /Script/ZoneGraph.ZoneLaneDesc
@@ -293,7 +293,7 @@ struct FZoneGraphLaneRoutingRule
 { 
 	bool                                               bEnabled;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14136) /* FString */              __um(Comment);                                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,14250) /* FString */              __um(Comment);                                              // 0x0008   (0x0010)  
 	FZoneGraphTagFilter                                ZoneTagFilter;                                              // 0x0018   (0x000C)  
 	FZoneLaneProfileRef                                SourceLaneProfile;                                          // 0x0024   (0x0014)  
 	FZoneLaneProfileRef                                DestinationLaneProfile;                                     // 0x0038   (0x0014)  
@@ -395,43 +395,43 @@ struct FZoneShapeConnector
 /// Size: 0x000C (0x000000 - 0x00000C)
 struct FZoneShapeConnection
 { 
-	SDK_UNDEFINED(8,14137) /* TWeakObjectPtr<UZoneShapeComponent*> */ __um(ShapeComponent);                        // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,14251) /* TWeakObjectPtr<UZoneShapeComponent*> */ __um(ShapeComponent);                        // 0x0000   (0x0008)  
 	int32_t                                            ConnectorIndex;                                             // 0x0008   (0x0004)  
 };
 
 /// Class /Script/ZoneGraph.ZoneShapeComponent
-/// Size: 0x0060 (0x000570 - 0x0005D0)
+/// Size: 0x0060 (0x000500 - 0x000560)
 class UZoneShapeComponent : public UPrimitiveComponent
 { 
 public:
-	FZoneLaneProfileRef                                LaneProfile;                                                // 0x0570   (0x0014)  
-	bool                                               bReverseLaneProfile;                                        // 0x0584   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0585   (0x0003)  MISSED
-	TArray<FZoneLaneProfileRef>                        PerPointLaneProfiles;                                       // 0x0588   (0x0010)  
-	TArray<FZoneShapePoint>                            Points;                                                     // 0x0598   (0x0010)  
-	FZoneShapeType                                     ShapeType;                                                  // 0x05A8   (0x0001)  
-	EZoneShapePolygonRoutingType                       PolygonRoutingType;                                         // 0x05A9   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x05AA   (0x0002)  MISSED
-	FZoneGraphTagMask                                  Tags;                                                       // 0x05AC   (0x0004)  
-	TArray<FZoneShapeConnector>                        ShapeConnectors;                                            // 0x05B0   (0x0010)  
-	TArray<FZoneShapeConnection>                       ConnectedShapes;                                            // 0x05C0   (0x0010)  
+	FZoneLaneProfileRef                                LaneProfile;                                                // 0x0500   (0x0014)  
+	bool                                               bReverseLaneProfile;                                        // 0x0514   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0515   (0x0003)  MISSED
+	TArray<FZoneLaneProfileRef>                        PerPointLaneProfiles;                                       // 0x0518   (0x0010)  
+	TArray<FZoneShapePoint>                            Points;                                                     // 0x0528   (0x0010)  
+	FZoneShapeType                                     ShapeType;                                                  // 0x0538   (0x0001)  
+	EZoneShapePolygonRoutingType                       PolygonRoutingType;                                         // 0x0539   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x053A   (0x0002)  MISSED
+	FZoneGraphTagMask                                  Tags;                                                       // 0x053C   (0x0004)  
+	TArray<FZoneShapeConnector>                        ShapeConnectors;                                            // 0x0540   (0x0010)  
+	TArray<FZoneShapeConnection>                       ConnectedShapes;                                            // 0x0550   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetTags
-	// void SetTags(FZoneGraphTagMask NewTags);                                                                              // [0xa6e1ff8] Final|Native|Public|BlueprintCallable 
+	// void SetTags(FZoneGraphTagMask NewTags);                                                                              // [0xa89203c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetShapeType
-	// void SetShapeType(FZoneShapeType Type);                                                                               // [0x62b92fc] Final|Native|Public|BlueprintCallable 
+	// void SetShapeType(FZoneShapeType Type);                                                                               // [0x5fcd8d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetReverseLaneProfile
-	// bool SetReverseLaneProfile(bool bReverse);                                                                            // [0xa6e1f6c] Final|Native|Public|BlueprintCallable 
+	// bool SetReverseLaneProfile(bool bReverse);                                                                            // [0xa891f6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetPolygonRoutingType
-	// void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType);                                                     // [0xa6e1ef0] Final|Native|Public|BlueprintCallable 
+	// void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType);                                                     // [0xa891eac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.IsLaneProfileReversed
-	// bool IsLaneProfileReversed();                                                                                         // [0xa6e1ed8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLaneProfileReversed();                                                                                         // [0xa891e94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.GetTags
-	// FZoneGraphTagMask GetTags();                                                                                          // [0xa6e1ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FZoneGraphTagMask GetTags();                                                                                          // [0x38b85b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.GetShapeType
-	// FZoneShapeType GetShapeType();                                                                                        // [0x62b21b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FZoneShapeType GetShapeType();                                                                                        // [0x38b8c60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/ZoneGraph.ZoneGraphBuilderRegisteredComponent
@@ -472,7 +472,7 @@ struct FZoneShapeComponentBuildData
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FZoneGraphBuildData
 { 
-	SDK_UNDEFINED(80,14138) /* TMap<UZoneShapeComponent*, FZoneShapeComponentBuildData> */ __um(ZoneShapeComponentBuildData); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,14252) /* TMap<UZoneShapeComponent*, FZoneShapeComponentBuildData> */ __um(ZoneShapeComponentBuildData); // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/ZoneGraph.ZoneGraphBuilder
@@ -481,7 +481,7 @@ struct FZoneGraphBuilder
 { 
 	TArray<FZoneGraphBuilderRegisteredComponent>       ShapeComponents;                                            // 0x0000   (0x0010)  
 	TArray<int32_t>                                    ShapeComponentsFreeList;                                    // 0x0010   (0x0010)  
-	SDK_UNDEFINED(80,14139) /* TMap<UZoneShapeComponent*, int32_t> */ __um(ShapeComponentToIndex);                 // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,14253) /* TMap<UZoneShapeComponent*, int32_t> */ __um(ShapeComponentToIndex);                 // 0x0020   (0x0050)  
 	FZoneGraphBuildData                                BuildData;                                                  // 0x0070   (0x0050)  
 	unsigned char                                      UnknownData00_6[0xD8];                                      // 0x00C0   (0x00D8)  MISSED
 };

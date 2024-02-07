@@ -61,7 +61,7 @@ struct FSoundCueCrossfadeInfo
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FSoundCueTemplateQualitySettings
 { 
-	SDK_UNDEFINED(24,13747) /* FText */                __um(DisplayName);                                          // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,13813) /* FText */                __um(DisplayName);                                          // 0x0000   (0x0018)  
 	int32_t                                            MaxConcatenatedVariations;                                  // 0x0018   (0x0004)  
 	int32_t                                            MaxRandomizedVariations;                                    // 0x001C   (0x0004)  
 	int32_t                                            MaxMixVariations;                                           // 0x0020   (0x0004)  

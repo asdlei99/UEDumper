@@ -30,11 +30,11 @@ public:
 
 	/// Functions
 	// Function /Script/Buoyancy.BuoyancyEventInterface.OnSurfaceTouching
-	// void OnSurfaceTouching(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSurfaceTouching(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x2047e54] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/Buoyancy.BuoyancyEventInterface.OnSurfaceTouchEnd
-	// void OnSurfaceTouchEnd(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSurfaceTouchEnd(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x2047e54] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/Buoyancy.BuoyancyEventInterface.OnSurfaceTouchBegin
-	// void OnSurfaceTouchBegin(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnSurfaceTouchBegin(class AWaterBody* WaterBodyActor, class UPrimitiveComponent* WaterComponent, class UPrimitiveComponent* SubmergedComponent, float SubmergedVolume, FVector& SubmergedCenterOfMass, FVector& SubmergedVelocity); // [0x2047e54] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/Buoyancy.BuoyancyRuntimeSettings
@@ -47,7 +47,7 @@ public:
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0032   (0x0002)  MISSED
 	float                                              WaterDensity;                                               // 0x0034   (0x0004)  
 	float                                              WaterDrag;                                                  // 0x0038   (0x0004)  
-	SDK_UNDEFINED(1,12168) /* TEnumAsByte<ECollisionChannel> */ __um(CollisionChannelForWaterObjects);             // 0x003C   (0x0001)  
+	SDK_UNDEFINED(1,12212) /* TEnumAsByte<ECollisionChannel> */ __um(CollisionChannelForWaterObjects);             // 0x003C   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x003D   (0x0003)  MISSED
 	int32_t                                            MaxNumBoundsSubdivisions;                                   // 0x0040   (0x0004)  
 	float                                              MinBoundsSubdivisionVol;                                    // 0x0044   (0x0004)  
@@ -71,6 +71,6 @@ public:
 
 	/// Functions
 	// Function /Script/Buoyancy.BuoyancySubsystem.IsEnabled
-	// bool IsEnabled();                                                                                                     // [0x7d22118] Final|Native|Public|Const 
+	// bool IsEnabled();                                                                                                     // [0x7cddd70] Final|Native|Public|Const 
 };
 

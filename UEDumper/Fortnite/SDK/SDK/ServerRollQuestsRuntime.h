@@ -24,16 +24,16 @@ public:
 
 	/// Functions
 	// Function /Script/ServerRollQuestsRuntime.FortGameStateComponent_ServerRollQuests.PopulateMap
-	// void PopulateMap(class UDataRegistry* ServerRollQuestsRegistry, FGameplayTagContainer& PlaylistContextTags);          // [0xa95147c] Final|Native|Private|HasOutParms 
+	// void PopulateMap(class UDataRegistry* ServerRollQuestsRegistry, FGameplayTagContainer& PlaylistContextTags);          // [0xab21a10] Final|Native|Private|HasOutParms 
 	// Function /Script/ServerRollQuestsRuntime.FortGameStateComponent_ServerRollQuests.HandlePlaylistDataReady
-	// void HandlePlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& GameplayTags); // [0x86d2310] Final|Native|Private|HasOutParms 
+	// void HandlePlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& GameplayTags); // [0x867895c] Final|Native|Private|HasOutParms 
 };
 
 /// Struct /Script/ServerRollQuestsRuntime.ServerRollQuestTableRow
 /// Size: 0x0068 (0x000008 - 0x000070)
 struct FServerRollQuestTableRow : FTableRowBase
 { 
-	SDK_UNDEFINED(16,15148) /* TScriptInterface<Class> */ __um(Quest);                                             // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,15243) /* TScriptInterface<Class> */ __um(Quest);                                             // 0x0008   (0x0010)  
 	FGameplayTag                                       Bucket;                                                     // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	FGameplayTagQuery                                  PlaylistQuery;                                              // 0x0020   (0x0048)  

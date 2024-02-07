@@ -302,7 +302,7 @@ public:
 class UOptimusKernelSource : public UComputeKernelSource
 { 
 public:
-	SDK_UNDEFINED(16,14628) /* FString */              __um(Source);                                               // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,13921) /* FString */              __um(Source);                                               // 0x0098   (0x0010)  
 };
 
 /// Class /Script/OptimusCore.OptimusComponentSource
@@ -338,18 +338,18 @@ public:
 struct FOptimusDataTypeRef
 { 
 	FName                                              TypeName;                                                   // 0x0000   (0x0004)  
-	SDK_UNDEFINED(8,14629) /* TWeakObjectPtr<UObject*> */ __um(TypeObject);                                        // 0x0004   (0x0008)  
+	SDK_UNDEFINED(8,13922) /* TWeakObjectPtr<UObject*> */ __um(TypeObject);                                        // 0x0004   (0x0008)  
 };
 
 /// Struct /Script/OptimusCore.OptimusAnimAttributeDescription
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FOptimusAnimAttributeDescription
 { 
-	SDK_UNDEFINED(16,14630) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13923) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	FName                                              BoneName;                                                   // 0x0010   (0x0004)  
 	FOptimusDataTypeRef                                DataType;                                                   // 0x0014   (0x000C)  
 	class UOptimusValueContainer*                      DefaultValue;                                               // 0x0020   (0x0008)  
-	SDK_UNDEFINED(16,14631) /* FString */              __um(HlslId);                                               // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,13924) /* FString */              __um(HlslId);                                               // 0x0028   (0x0010)  
 	FName                                              PinName;                                                    // 0x0038   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x003C   (0x0004)  MISSED
 };
@@ -424,8 +424,8 @@ class UOptimusCustomComputeKernelDataInterface : public UComputeDataInterface
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0028   (0x0008)  MISSED
-	SDK_UNDEFINED(8,14632) /* TWeakObjectPtr<UOptimusComponentSourceBinding*> */ __um(ComponentSourceBinding);     // 0x0030   (0x0008)  
-	SDK_UNDEFINED(16,14633) /* FString */              __um(NumThreadsExpression);                                 // 0x0038   (0x0010)  
+	SDK_UNDEFINED(8,13925) /* TWeakObjectPtr<UOptimusComponentSourceBinding*> */ __um(ComponentSourceBinding);     // 0x0030   (0x0008)  
+	SDK_UNDEFINED(16,13926) /* FString */              __um(NumThreadsExpression);                                 // 0x0038   (0x0010)  
 	FOptimusConstantIdentifier                         ExecutionDomainConstantIdentifier;                          // 0x0048   (0x000C)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x0054   (0x0004)  MISSED
 };
@@ -489,7 +489,7 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FOptimusGraphVariableDescription
 { 
-	SDK_UNDEFINED(16,14634) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13927) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	FShaderValueTypeHandle                             ValueType;                                                  // 0x0010   (0x0008)  
 	TArray<char>                                       Value;                                                      // 0x0018   (0x0010)  
 	int32_t                                            Offset;                                                     // 0x0028   (0x0004)  
@@ -558,7 +558,7 @@ struct FOptimusDataDomain
 	TArray<FName>                                      DimensionNames;                                             // 0x0008   (0x0010)  
 	int32_t                                            Multiplier;                                                 // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x001C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14635) /* FString */              __um(Expression);                                           // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,13928) /* FString */              __um(Expression);                                           // 0x0020   (0x0010)  
 	TArray<FName>                                      LevelNames;                                                 // 0x0030   (0x0010)  
 };
 
@@ -569,7 +569,7 @@ class UOptimusRawBufferDataInterface : public UOptimusComputeDataInterface
 public:
 	FShaderValueTypeHandle                             ValueType;                                                  // 0x0028   (0x0008)  
 	FOptimusDataDomain                                 DataDomain;                                                 // 0x0030   (0x0040)  
-	SDK_UNDEFINED(8,14636) /* TWeakObjectPtr<UOptimusComponentSourceBinding*> */ __um(ComponentSourceBinding);     // 0x0070   (0x0008)  
+	SDK_UNDEFINED(8,13929) /* TWeakObjectPtr<UOptimusComponentSourceBinding*> */ __um(ComponentSourceBinding);     // 0x0070   (0x0008)  
 	FOptimusConstantIdentifier                         DomainConstantIdentifier;                                   // 0x0078   (0x000C)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0084   (0x0004)  MISSED
 };
@@ -720,25 +720,25 @@ class UOptimusNode : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0028   (0x0008)  MISSED
-	SDK_UNDEFINED(24,14637) /* FText */                __um(DisplayName);                                          // 0x0030   (0x0018)  
+	SDK_UNDEFINED(24,13930) /* FText */                __um(DisplayName);                                          // 0x0030   (0x0018)  
 	FVector2D                                          GraphPosition;                                              // 0x0048   (0x0010)  
 	TArray<class UOptimusNodePin*>                     Pins;                                                       // 0x0058   (0x0010)  
-	SDK_UNDEFINED(80,14638) /* TSet<FName> */          __um(ExpandedPins);                                         // 0x0068   (0x0050)  
+	SDK_UNDEFINED(80,13931) /* TSet<FName> */          __um(ExpandedPins);                                         // 0x0068   (0x0050)  
 	EOptimusDiagnosticLevel                            DiagnosticLevel;                                            // 0x00B8   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x57];                                      // 0x00B9   (0x0057)  MISSED
 
 
 	/// Functions
 	// Function /Script/OptimusCore.OptimusNode.SetGraphPosition
-	// bool SetGraphPosition(FVector2D& InPosition);                                                                         // [0xb2e16a4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool SetGraphPosition(FVector2D& InPosition);                                                                         // [0xb50e1a8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNode.GetNodeName
-	// FName GetNodeName();                                                                                                  // [0xb2e00f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetNodeName();                                                                                                  // [0xb50c7dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNode.GetNodeCategory
-	// FName GetNodeCategory();                                                                                              // [0xb2e00c4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetNodeCategory();                                                                                              // [0xb50c7ac] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNode.GetGraphPosition
-	// FVector2D GetGraphPosition();                                                                                         // [0xb2e006c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetGraphPosition();                                                                                         // [0xb50c754] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNode.GetDisplayName
-	// FText GetDisplayName();                                                                                               // [0xa4f134c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FText GetDisplayName();                                                                                               // [0xa6927b8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/OptimusCore.OptimusNode_DataInterface
@@ -781,7 +781,7 @@ struct FOptimusExecutionDomain
 { 
 	EOptimusExecutionDomainType                        Type;                                                       // 0x0000   (0x0004)  
 	FName                                              Name;                                                       // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,14639) /* FString */              __um(Expression);                                           // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,13932) /* FString */              __um(Expression);                                           // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/OptimusCore.OptimusValidatedName
@@ -815,7 +815,7 @@ public:
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x022C   (0x0004)  MISSED
 	TArray<FOptimusParameterBinding>                   InputBindings;                                              // 0x0230   (0x0010)  
 	TArray<FOptimusParameterBinding>                   OutputBindings;                                             // 0x0240   (0x0010)  
-	SDK_UNDEFINED(16,14640) /* FString */              __um(ShaderSource);                                         // 0x0250   (0x0010)  
+	SDK_UNDEFINED(16,13933) /* FString */              __um(ShaderSource);                                         // 0x0250   (0x0010)  
 };
 
 /// Class /Script/OptimusCore.OptimusNode_ComputeKernelFunction
@@ -870,8 +870,8 @@ struct FOptimusSecondaryInputBindingsGroup
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FOptimusShaderText
 { 
-	SDK_UNDEFINED(16,14641) /* FString */              __um(Declarations);                                         // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14642) /* FString */              __um(ShaderText);                                           // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13934) /* FString */              __um(Declarations);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,13935) /* FString */              __um(ShaderText);                                           // 0x0010   (0x0010)  
 };
 
 /// Class /Script/OptimusCore.OptimusNode_CustomComputeKernel
@@ -919,7 +919,7 @@ class UOptimusNode_ResourceAccessorBase : public UOptimusNode
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0110   (0x0018)  MISSED
-	SDK_UNDEFINED(8,14643) /* TWeakObjectPtr<UOptimusResourceDescription*> */ __um(ResourceDesc);                  // 0x0128   (0x0008)  
+	SDK_UNDEFINED(8,13936) /* TWeakObjectPtr<UOptimusResourceDescription*> */ __um(ResourceDesc);                  // 0x0128   (0x0008)  
 	EOptimusBufferWriteType                            WriteType;                                                  // 0x0130   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0131   (0x0007)  MISSED
 	FOptimusNode_ResourceAccessorBase_DuplicationInfo  DuplicationInfo;                                            // 0x0138   (0x0050)  
@@ -938,7 +938,7 @@ struct FOptimusNode_GetVariable_DuplicationInfo
 { 
 	FName                                              VariableName;                                               // 0x0000   (0x0004)  
 	FOptimusDataTypeRef                                DataType;                                                   // 0x0004   (0x000C)  
-	SDK_UNDEFINED(16,14644) /* FString */              __um(DefaultValue);                                         // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13937) /* FString */              __um(DefaultValue);                                         // 0x0010   (0x0010)  
 };
 
 /// Class /Script/OptimusCore.OptimusNode_GetVariable
@@ -947,7 +947,7 @@ class UOptimusNode_GetVariable : public UOptimusNode
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0110   (0x0010)  MISSED
-	SDK_UNDEFINED(8,14645) /* TWeakObjectPtr<UOptimusVariableDescription*> */ __um(VariableDesc);                  // 0x0120   (0x0008)  
+	SDK_UNDEFINED(8,13938) /* TWeakObjectPtr<UOptimusVariableDescription*> */ __um(VariableDesc);                  // 0x0120   (0x0008)  
 	FOptimusNode_GetVariable_DuplicationInfo           DuplicationInfo;                                            // 0x0128   (0x0020)  
 };
 
@@ -958,7 +958,7 @@ class UOptimusNode_GraphTerminal : public UOptimusNode
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0110   (0x0008)  MISSED
 	EOptimusTerminalType                               TerminalType;                                               // 0x0118   (0x0004)  
-	SDK_UNDEFINED(8,14646) /* TWeakObjectPtr<UOptimusNodeSubGraph*> */ __um(OwningGraph);                          // 0x011C   (0x0008)  
+	SDK_UNDEFINED(8,13939) /* TWeakObjectPtr<UOptimusNodeSubGraph*> */ __um(OwningGraph);                          // 0x011C   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x0124   (0x0004)  MISSED
 };
 
@@ -1012,7 +1012,7 @@ public:
 class UOptimusComputeGraph : public UComputeGraph
 { 
 public:
-	SDK_UNDEFINED(16,14647) /* TArray<TWeakObjectPtr<UOptimusNode*>> */ __um(KernelToNode);                        // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,13940) /* TArray<TWeakObjectPtr<UOptimusNode*>> */ __um(KernelToNode);                        // 0x0090   (0x0010)  
 };
 
 /// Class /Script/OptimusCore.OptimusComponentSourceBindingContainer
@@ -1054,7 +1054,7 @@ struct FOptimusConstantDefinition
 { 
 	FOptimusConstantIdentifier                         ReferencedConstant;                                         // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14648) /* FString */              __um(Expression);                                           // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,13941) /* FString */              __um(Expression);                                           // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/OptimusCore.OptimusConstant
@@ -1074,7 +1074,7 @@ struct FOptimusKernelConstantContainer
 { 
 	TArray<FOptimusConstant>                           InputConstants;                                             // 0x0000   (0x0010)  
 	TArray<FOptimusConstant>                           OutputConstants;                                            // 0x0010   (0x0010)  
-	SDK_UNDEFINED(80,14649) /* TMap<FName, int32_t> */ __um(GroupNameToBindingIndex);                              // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,13942) /* TMap<FName, int32_t> */ __um(GroupNameToBindingIndex);                              // 0x0020   (0x0050)  
 };
 
 /// Struct /Script/OptimusCore.OptimusConstantContainer
@@ -1105,13 +1105,13 @@ public:
 
 	/// Functions
 	// Function /Script/OptimusCore.OptimusDeformer.GetVariables
-	// TArray<UOptimusVariableDescription*> GetVariables();                                                                  // [0xb2e01a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UOptimusVariableDescription*> GetVariables();                                                                  // [0xb50c890] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusDeformer.GetResources
-	// TArray<UOptimusResourceDescription*> GetResources();                                                                  // [0xb2e012c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UOptimusResourceDescription*> GetResources();                                                                  // [0xb50c814] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusDeformer.GetPrimaryComponentBinding
-	// class UOptimusComponentSourceBinding* GetPrimaryComponentBinding();                                                   // [0xb2e010c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UOptimusComponentSourceBinding* GetPrimaryComponentBinding();                                                   // [0xb50c7f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusDeformer.GetComponentBindings
-	// TArray<UOptimusComponentSourceBinding*> GetComponentBindings();                                                       // [0xb2dffcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UOptimusComponentSourceBinding*> GetComponentBindings();                                                       // [0xb50c6b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/OptimusCore.OptimusDeformerInstanceComponentBinding
@@ -1127,7 +1127,7 @@ struct FOptimusDeformerInstanceComponentBinding
 class UOptimusDeformerInstanceSettings : public UMeshDeformerInstanceSettings
 { 
 public:
-	SDK_UNDEFINED(8,14650) /* TWeakObjectPtr<UOptimusDeformer*> */ __um(Deformer);                                 // 0x0028   (0x0008)  
+	SDK_UNDEFINED(8,13943) /* TWeakObjectPtr<UOptimusDeformer*> */ __um(Deformer);                                 // 0x0028   (0x0008)  
 	TArray<FOptimusDeformerInstanceComponentBinding>   Bindings;                                                   // 0x0030   (0x0010)  
 };
 
@@ -1146,33 +1146,33 @@ struct FOptimusDeformerInstanceExecInfo
 class UOptimusDeformerInstance : public UMeshDeformerInstance
 { 
 public:
-	SDK_UNDEFINED(8,14651) /* TWeakObjectPtr<UMeshComponent*> */ __um(MeshComponent);                              // 0x0028   (0x0008)  
-	SDK_UNDEFINED(8,14652) /* TWeakObjectPtr<UOptimusDeformerInstanceSettings*> */ __um(InstanceSettings);         // 0x0030   (0x0008)  
+	SDK_UNDEFINED(8,13944) /* TWeakObjectPtr<UMeshComponent*> */ __um(MeshComponent);                              // 0x0028   (0x0008)  
+	SDK_UNDEFINED(8,13945) /* TWeakObjectPtr<UOptimusDeformerInstanceSettings*> */ __um(InstanceSettings);         // 0x0030   (0x0008)  
 	TArray<FOptimusDeformerInstanceExecInfo>           ComputeGraphExecInfos;                                      // 0x0038   (0x0010)  
 	class UOptimusVariableContainer*                   Variables;                                                  // 0x0048   (0x0008)  
-	SDK_UNDEFINED(16,14653) /* TArray<TWeakObjectPtr<UActorComponent*>> */ __um(WeakBoundComponents);              // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,14654) /* TArray<TWeakObjectPtr<UOptimusComponentSource*>> */ __um(WeakComponentSources);     // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,13946) /* TArray<TWeakObjectPtr<UActorComponent*>> */ __um(WeakBoundComponents);              // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,13947) /* TArray<TWeakObjectPtr<UOptimusComponentSource*>> */ __um(WeakComponentSources);     // 0x0060   (0x0010)  
 	FOptimusConstantContainer                          ConstantContainer;                                          // 0x0070   (0x0010)  
 	unsigned char                                      UnknownData00_6[0xE8];                                      // 0x0080   (0x00E8)  MISSED
 
 
 	/// Functions
 	// Function /Script/OptimusCore.OptimusDeformerInstance.SetVectorVariable
-	// bool SetVectorVariable(FName InVariableName, FVector& InValue);                                                       // [0xb2e1a64] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool SetVectorVariable(FName InVariableName, FVector& InValue);                                                       // [0xb50e660] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusDeformerInstance.SetVector4Variable
-	// bool SetVector4Variable(FName InVariableName, FVector4& InValue);                                                     // [0xb2e1978] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool SetVector4Variable(FName InVariableName, FVector4& InValue);                                                     // [0xb50e538] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusDeformerInstance.SetTransformVariable
-	// bool SetTransformVariable(FName InVariableName, FTransform& InValue);                                                 // [0xb2e1820] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool SetTransformVariable(FName InVariableName, FTransform& InValue);                                                 // [0xb50e3a0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusDeformerInstance.SetIntVariable
-	// bool SetIntVariable(FName InVariableName, int32_t InValue);                                                           // [0xb2e174c] Final|Native|Public|BlueprintCallable 
+	// bool SetIntVariable(FName InVariableName, int32_t InValue);                                                           // [0xb50e250] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusDeformerInstance.SetFloatVariable
-	// bool SetFloatVariable(FName InVariableName, double InValue);                                                          // [0xb2e15dc] Final|Native|Public|BlueprintCallable 
+	// bool SetFloatVariable(FName InVariableName, double InValue);                                                          // [0xb50e054] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusDeformerInstance.SetBoolVariable
-	// bool SetBoolVariable(FName InVariableName, bool InValue);                                                             // [0xb2e1504] Final|Native|Public|BlueprintCallable 
+	// bool SetBoolVariable(FName InVariableName, bool InValue);                                                             // [0xb50df00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusDeformerInstance.GetVariables
-	// TArray<UOptimusVariableDescription*> GetVariables();                                                                  // [0xb2e01c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UOptimusVariableDescription*> GetVariables();                                                                  // [0xb50c8b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusDeformerInstance.EnqueueTriggerGraph
-	// bool EnqueueTriggerGraph(FName InTriggerGraphName);                                                                   // [0xb2dfe50] Final|Native|Public|BlueprintCallable 
+	// bool EnqueueTriggerGraph(FName InTriggerGraphName);                                                                   // [0xb50c4b8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/OptimusCore.OptimusNodeGraph
@@ -1191,67 +1191,67 @@ public:
 
 	/// Functions
 	// Function /Script/OptimusCore.OptimusNodeGraph.RenameGraph
-	// bool RenameGraph(class UOptimusNodeGraph* InGraph, FString InNewName);                                                // [0xb2e0e2c] Final|Native|Public|BlueprintCallable 
+	// bool RenameGraph(class UOptimusNodeGraph* InGraph, FString InNewName);                                                // [0xb50d7a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.RemoveNodes
-	// bool RemoveNodes(TArray<UOptimusNode*>& InNodes);                                                                     // [0xb2e0770] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool RemoveNodes(TArray<UOptimusNode*>& InNodes);                                                                     // [0xb50d0e8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.RemoveNode
-	// bool RemoveNode(class UOptimusNode* InNode);                                                                          // [0xb2e06e0] Final|Native|Public|BlueprintCallable 
+	// bool RemoveNode(class UOptimusNode* InNode);                                                                          // [0xb50d018] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.RemoveLink
-	// bool RemoveLink(class UOptimusNodePin* InNodeOutputPin, class UOptimusNodePin* InNodeInputPin);                       // [0xb2e05c0] Final|Native|Public|BlueprintCallable 
+	// bool RemoveLink(class UOptimusNodePin* InNodeOutputPin, class UOptimusNodePin* InNodeInputPin);                       // [0xb50ce80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.RemoveAllLinks
-	// bool RemoveAllLinks(class UOptimusNodePin* InNodePin);                                                                // [0xb2e0530] Final|Native|Public|BlueprintCallable 
+	// bool RemoveAllLinks(class UOptimusNodePin* InNodePin);                                                                // [0xb50cdb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.MoveGraph
-	// bool MoveGraph(class UOptimusNodeGraph* InGraph, int32_t InInsertBefore);                                             // [0xb2e046c] Final|Native|Public|BlueprintCallable 
+	// bool MoveGraph(class UOptimusNodeGraph* InGraph, int32_t InInsertBefore);                                             // [0xb50cc60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.IsSubGraphReference
-	// bool IsSubGraphReference(class UOptimusNode* InNode);                                                                 // [0xb2e03d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSubGraphReference(class UOptimusNode* InNode);                                                                 // [0xb50cb84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.IsKernelFunction
-	// bool IsKernelFunction(class UOptimusNode* InNode);                                                                    // [0xb2e0348] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsKernelFunction(class UOptimusNode* InNode);                                                                    // [0xb50cab8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.IsFunctionReference
-	// bool IsFunctionReference(class UOptimusNode* InNode);                                                                 // [0xb2e02b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFunctionReference(class UOptimusNode* InNode);                                                                 // [0xb50c9dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.IsFunctionGraph
-	// bool IsFunctionGraph();                                                                                               // [0xb2e0298] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFunctionGraph();                                                                                               // [0xb50c9c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.IsExecutionGraph
-	// bool IsExecutionGraph();                                                                                              // [0xb2e0280] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsExecutionGraph();                                                                                              // [0xb50c9ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.IsCustomKernel
-	// bool IsCustomKernel(class UOptimusNode* InNode);                                                                      // [0xb2e01e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCustomKernel(class UOptimusNode* InNode);                                                                      // [0xb50c8d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.GetGraphType
-	// EOptimusNodeGraphType GetGraphType();                                                                                 // [0x6339b64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EOptimusNodeGraphType GetGraphType();                                                                                 // [0x605a6a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.GetGraphs
-	// TArray<UOptimusNodeGraph*> GetGraphs();                                                                               // [0xb2e0084] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UOptimusNodeGraph*> GetGraphs();                                                                               // [0xb50c76c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.GetGraphIndex
-	// int32_t GetGraphIndex();                                                                                              // [0xb2e0048] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetGraphIndex();                                                                                              // [0xb50c730] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/OptimusCore.OptimusNodeGraph.ExpandCollapsedNodes
-	// TArray<UOptimusNode*> ExpandCollapsedNodes(class UOptimusNode* InFunctionNode);                                       // [0xb2dff2c] Final|Native|Public|BlueprintCallable 
+	// TArray<UOptimusNode*> ExpandCollapsedNodes(class UOptimusNode* InFunctionNode);                                       // [0xb50c5d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.DuplicateNodes
-	// bool DuplicateNodes(TArray<UOptimusNode*>& InNodes, FVector2D& InPosition);                                           // [0xb2df72c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool DuplicateNodes(TArray<UOptimusNode*>& InNodes, FVector2D& InPosition);                                           // [0xb50bd94] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.DuplicateNode
-	// class UOptimusNode* DuplicateNode(class UOptimusNode* InNode, FVector2D& InPosition);                                 // [0xb2df578] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* DuplicateNode(class UOptimusNode* InNode, FVector2D& InPosition);                                 // [0xb50bba0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.ConvertFunctionToCustomKernel
-	// class UOptimusNode* ConvertFunctionToCustomKernel(class UOptimusNode* InKernelFunction);                              // [0xb2df4e8] Final|Native|Public|BlueprintCallable 
+	// class UOptimusNode* ConvertFunctionToCustomKernel(class UOptimusNode* InKernelFunction);                              // [0xb50bad0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.ConvertCustomKernelToFunction
-	// class UOptimusNode* ConvertCustomKernelToFunction(class UOptimusNode* InCustomKernel);                                // [0xb2df458] Final|Native|Public|BlueprintCallable 
+	// class UOptimusNode* ConvertCustomKernelToFunction(class UOptimusNode* InCustomKernel);                                // [0xb50ba00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.CollapseNodesToSubGraph
-	// class UOptimusNode* CollapseNodesToSubGraph(TArray<UOptimusNode*>& InNodes);                                          // [0xb2ded9c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// class UOptimusNode* CollapseNodesToSubGraph(TArray<UOptimusNode*>& InNodes);                                          // [0xb50b344] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.CollapseNodesToFunction
-	// class UOptimusNode* CollapseNodesToFunction(TArray<UOptimusNode*>& InNodes);                                          // [0xb2de6f8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// class UOptimusNode* CollapseNodesToFunction(TArray<UOptimusNode*>& InNodes);                                          // [0xb50aca0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddVariableGetNode
-	// class UOptimusNode* AddVariableGetNode(class UOptimusVariableDescription* InVariableDesc, FVector2D& InPosition);     // [0xb2de5d4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* AddVariableGetNode(class UOptimusVariableDescription* InVariableDesc, FVector2D& InPosition);     // [0xb50ab3c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddValueNode
-	// class UOptimusNode* AddValueNode(FOptimusDataTypeRef InDataTypeRef, FVector2D& InPosition);                           // [0xb2de42c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* AddValueNode(FOptimusDataTypeRef InDataTypeRef, FVector2D& InPosition);                           // [0xb50a9fc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddResourceSetNode
-	// class UOptimusNode* AddResourceSetNode(class UOptimusResourceDescription* InResourceDesc, FVector2D& InPosition);     // [0xb2de308] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* AddResourceSetNode(class UOptimusResourceDescription* InResourceDesc, FVector2D& InPosition);     // [0xb50a898] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddResourceNode
-	// class UOptimusNode* AddResourceNode(class UOptimusResourceDescription* InResourceDesc, FVector2D& InPosition);        // [0xb2de1e4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* AddResourceNode(class UOptimusResourceDescription* InResourceDesc, FVector2D& InPosition);        // [0xb50a734] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddResourceGetNode
-	// class UOptimusNode* AddResourceGetNode(class UOptimusResourceDescription* InResourceDesc, FVector2D& InPosition);     // [0xb2de0c0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* AddResourceGetNode(class UOptimusResourceDescription* InResourceDesc, FVector2D& InPosition);     // [0xb50a5d0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddNode
-	// class UOptimusNode* AddNode(class UClass* InNodeClass, FVector2D& InPosition);                                        // [0xb2ddfbc] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* AddNode(class UClass* InNodeClass, FVector2D& InPosition);                                        // [0xb50a48c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddLink
-	// bool AddLink(class UOptimusNodePin* InNodeOutputPin, class UOptimusNodePin* InNodeInputPin);                          // [0xb2ddef8] Final|Native|Public|BlueprintCallable 
+	// bool AddLink(class UOptimusNodePin* InNodeOutputPin, class UOptimusNodePin* InNodeInputPin);                          // [0xb50a33c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddDataInterfaceNode
-	// class UOptimusNode* AddDataInterfaceNode(class UClass* InDataInterfaceClass, FVector2D& InPosition);                  // [0xb2dde08] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* AddDataInterfaceNode(class UClass* InDataInterfaceClass, FVector2D& InPosition);                  // [0xb50a20c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/OptimusCore.OptimusNodeGraph.AddComponentBindingGetNode
-	// class UOptimusNode* AddComponentBindingGetNode(class UOptimusComponentSourceBinding* InComponentBinding, FVector2D& InPosition); // [0xb2ddd2c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UOptimusNode* AddComponentBindingGetNode(class UOptimusComponentSourceBinding* InComponentBinding, FVector2D& InPosition); // [0xb50a0f4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/OptimusCore.OptimusNodeSubGraph
@@ -1261,8 +1261,8 @@ class UOptimusNodeSubGraph : public UOptimusNodeGraph
 public:
 	TArray<FOptimusParameterBinding>                   InputBindings;                                              // 0x0080   (0x0010)  
 	TArray<FOptimusParameterBinding>                   OutputBindings;                                             // 0x0090   (0x0010)  
-	SDK_UNDEFINED(8,14655) /* TWeakObjectPtr<UOptimusNode_GraphTerminal*> */ __um(EntryNode);                      // 0x00A0   (0x0008)  
-	SDK_UNDEFINED(8,14656) /* TWeakObjectPtr<UOptimusNode_GraphTerminal*> */ __um(ReturnNode);                     // 0x00A8   (0x0008)  
+	SDK_UNDEFINED(8,13948) /* TWeakObjectPtr<UOptimusNode_GraphTerminal*> */ __um(EntryNode);                      // 0x00A0   (0x0008)  
+	SDK_UNDEFINED(8,13949) /* TWeakObjectPtr<UOptimusNode_GraphTerminal*> */ __um(ReturnNode);                     // 0x00A8   (0x0008)  
 };
 
 /// Class /Script/OptimusCore.OptimusFunctionNodeGraph
@@ -1305,7 +1305,7 @@ class UOptimusResourceDescription : public UObject
 public:
 	FName                                              ResourceName;                                               // 0x0028   (0x0004)  
 	FOptimusDataTypeRef                                DataType;                                                   // 0x002C   (0x000C)  
-	SDK_UNDEFINED(8,14657) /* TWeakObjectPtr<UOptimusComponentSourceBinding*> */ __um(ComponentBinding);           // 0x0038   (0x0008)  
+	SDK_UNDEFINED(8,13950) /* TWeakObjectPtr<UOptimusComponentSourceBinding*> */ __um(ComponentBinding);           // 0x0038   (0x0008)  
 	FOptimusDataDomain                                 DataDomain;                                                 // 0x0040   (0x0040)  
 	class UOptimusPersistentBufferDataInterface*       DataInterface;                                              // 0x0080   (0x0008)  
 };
@@ -1316,7 +1316,7 @@ class UOptimusSource : public UComputeSource
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0038   (0x0008)  MISSED
-	SDK_UNDEFINED(16,14658) /* FString */              __um(SourceText);                                           // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,13951) /* FString */              __um(SourceText);                                           // 0x0040   (0x0010)  
 };
 
 /// Class /Script/OptimusCore.OptimusValueContainerGeneratorClass
@@ -1623,11 +1623,11 @@ struct FOptimusDataType
 { 
 	FName                                              TypeName;                                                   // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(24,14659) /* FText */                __um(DisplayName);                                          // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,13952) /* FText */                __um(DisplayName);                                          // 0x0008   (0x0018)  
 	FShaderValueTypeHandle                             ShaderValueType;                                            // 0x0020   (0x0008)  
 	int32_t                                            ShaderValueSize;                                            // 0x0028   (0x0004)  
 	FName                                              TypeCategory;                                               // 0x002C   (0x0004)  
-	SDK_UNDEFINED(8,14660) /* TWeakObjectPtr<UObject*> */ __um(TypeObject);                                        // 0x0030   (0x0008)  
+	SDK_UNDEFINED(8,13953) /* TWeakObjectPtr<UObject*> */ __um(TypeObject);                                        // 0x0030   (0x0008)  
 	bool                                               bHasCustomPinColor;                                         // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0039   (0x0003)  MISSED
 	FLinearColor                                       CustomPinColor;                                             // 0x003C   (0x0010)  
@@ -1642,6 +1642,6 @@ struct FOptimusVariableMetaDataEntry
 { 
 	FName                                              Key;                                                        // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,14661) /* FString */              __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,13954) /* FString */              __um(Value);                                                // 0x0008   (0x0010)  
 };
 

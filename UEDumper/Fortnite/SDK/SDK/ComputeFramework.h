@@ -86,7 +86,7 @@ public:
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FComputeKernelPermutationBool
 { 
-	SDK_UNDEFINED(16,12248) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12293) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	bool                                               Value;                                                      // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0011   (0x0007)  MISSED
 };
@@ -102,8 +102,8 @@ struct FComputeKernelPermutationSet
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FComputeKernelDefinition
 { 
-	SDK_UNDEFINED(16,12249) /* FString */              __um(Symbol);                                               // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,12250) /* FString */              __um(Define);                                               // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,12294) /* FString */              __um(Symbol);                                               // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12295) /* FString */              __um(Define);                                               // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/ComputeFramework.ComputeKernelDefinitionSet
@@ -124,8 +124,8 @@ struct FShaderValueTypeHandle
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FShaderParamTypeDefinition
 { 
-	SDK_UNDEFINED(16,12251) /* FString */              __um(TypeDeclaration);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,12252) /* FString */              __um(Name);                                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,12296) /* FString */              __um(TypeDeclaration);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12297) /* FString */              __um(Name);                                                 // 0x0010   (0x0010)  
 	FShaderValueTypeHandle                             ValueType;                                                  // 0x0020   (0x0008)  
 	uint16_t                                           ArrayElementCount;                                          // 0x0028   (0x0002)  
 	EShaderParamBindingType                            BindingType;                                                // 0x002A   (0x0001)  
@@ -137,7 +137,7 @@ struct FShaderParamTypeDefinition
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FShaderFunctionDefinition
 { 
-	SDK_UNDEFINED(16,12253) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12298) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	TArray<FShaderParamTypeDefinition>                 ParamTypes;                                                 // 0x0010   (0x0010)  
 	bool                                               bHasReturnType;                                             // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
@@ -148,7 +148,7 @@ struct FShaderFunctionDefinition
 class UComputeKernelSource : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,12254) /* FString */              __um(EntryPoint);                                           // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,12299) /* FString */              __um(EntryPoint);                                           // 0x0028   (0x0010)  
 	FIntVector                                         GroupSize;                                                  // 0x0038   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0044   (0x0004)  MISSED
 	FComputeKernelPermutationSet                       PermutationSet;                                             // 0x0048   (0x0010)  
@@ -176,8 +176,8 @@ struct FComputeGraphEdge
 	int32_t                                            DataInterfaceBindingIndex;                                  // 0x000C   (0x0004)  
 	bool                                               bKernelInput;                                               // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0011   (0x0007)  MISSED
-	SDK_UNDEFINED(16,12255) /* FString */              __um(BindingFunctionNameOverride);                          // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,12256) /* FString */              __um(BindingFunctionNamespace);                             // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,12300) /* FString */              __um(BindingFunctionNameOverride);                          // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,12301) /* FString */              __um(BindingFunctionNamespace);                             // 0x0028   (0x0010)  
 };
 
 /// Class /Script/ComputeFramework.ComputeGraph
@@ -212,11 +212,11 @@ public:
 
 	/// Functions
 	// Function /Script/ComputeFramework.ComputeGraphComponent.QueueExecute
-	// void QueueExecute();                                                                                                  // [0xb264328] Final|Native|Public|BlueprintCallable 
+	// void QueueExecute();                                                                                                  // [0xb490c78] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ComputeFramework.ComputeGraphComponent.DestroyDataProviders
-	// void DestroyDataProviders();                                                                                          // [0xb2642f8] Final|Native|Public|BlueprintCallable 
+	// void DestroyDataProviders();                                                                                          // [0xb490c48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ComputeFramework.ComputeGraphComponent.CreateDataProviders
-	// void CreateDataProviders(int32_t InBindingIndex, class UObject* InBindingObject);                                     // [0xb264218] Final|Native|Public|BlueprintCallable 
+	// void CreateDataProviders(int32_t InBindingIndex, class UObject* InBindingObject);                                     // [0xb490ae4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ComputeFramework.ComputeKernel
@@ -249,7 +249,7 @@ public:
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FComputeKernelPermutationVector
 { 
-	SDK_UNDEFINED(80,12257) /* TMap<FString, uint32_t> */ __um(Permutations);                                      // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12302) /* TMap<FString, uint32_t> */ __um(Permutations);                                      // 0x0000   (0x0050)  
 	uint32_t                                           BitCount;                                                   // 0x0050   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0054   (0x0004)  MISSED
 };

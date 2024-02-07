@@ -15,16 +15,16 @@
 class UCosmeticDataComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(80,1961) /* TMap<FGameplayTag, FInstancedStructContainer> */ __um(PropertyContainers);           // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,1282) /* TMap<FGameplayTag, FInstancedStructContainer> */ __um(PropertyContainers);           // 0x00A0   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/CosmeticsFrameworkItems.CosmeticDataComponent.ResetProperties
-	// void ResetProperties();                                                                                               // [0x7aa309c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ResetProperties();                                                                                               // [0x6f1d944] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/CosmeticsFrameworkItems.CosmeticDataComponent.BP_FindProperty
-	// bool BP_FindProperty(FGameplayTag SlotTag, FGameplayTag PropertyTag, FCosmeticPropertyBase& OutProperty);             // [0x7aa2d64] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool BP_FindProperty(FGameplayTag SlotTag, FGameplayTag PropertyTag, FCosmeticPropertyBase& OutProperty);             // [0x6f1d724] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CosmeticsFrameworkItems.CosmeticDataComponent.BP_AddOrOverrideProperty
-	// bool BP_AddOrOverrideProperty(FGameplayTag SlotTag, FCosmeticPropertyBase& Property);                                 // [0x7aa2b10] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool BP_AddOrOverrideProperty(FGameplayTag SlotTag, FCosmeticPropertyBase& Property);                                 // [0x6f1d598] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/CosmeticsFrameworkItems.CosmeticPropertyBase

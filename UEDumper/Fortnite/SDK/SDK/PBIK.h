@@ -130,18 +130,18 @@ struct FPBIKWorkData
 };
 
 /// Struct /Script/PBIK.RigUnit_PBIK
-/// Size: 0x0120 (0x000180 - 0x0002A0)
+/// Size: 0x0120 (0x0001D0 - 0x0002F0)
 struct FRigUnit_PBIK : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              Root;                                                       // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	TArray<FPBIKEffector>                              Effectors;                                                  // 0x0188   (0x0010)  
-	TArray<int32_t>                                    EffectorSolverIndices;                                      // 0x0198   (0x0010)  
-	TArray<FPBIKBoneSetting>                           BoneSettings;                                               // 0x01A8   (0x0010)  
-	TArray<FName>                                      ExcludedBones;                                              // 0x01B8   (0x0010)  
-	FPBIKSolverSettings                                Settings;                                                   // 0x01C8   (0x003C)  
-	FPBIKDebug                                         Debug;                                                      // 0x0204   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x020C   (0x0004)  MISSED
-	FPBIKWorkData                                      WorkData;                                                   // 0x0210   (0x0090)  
+	FName                                              Root;                                                       // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	TArray<FPBIKEffector>                              Effectors;                                                  // 0x01D8   (0x0010)  
+	TArray<int32_t>                                    EffectorSolverIndices;                                      // 0x01E8   (0x0010)  
+	TArray<FPBIKBoneSetting>                           BoneSettings;                                               // 0x01F8   (0x0010)  
+	TArray<FName>                                      ExcludedBones;                                              // 0x0208   (0x0010)  
+	FPBIKSolverSettings                                Settings;                                                   // 0x0218   (0x003C)  
+	FPBIKDebug                                         Debug;                                                      // 0x0254   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x025C   (0x0004)  MISSED
+	FPBIKWorkData                                      WorkData;                                                   // 0x0260   (0x0090)  
 };
 

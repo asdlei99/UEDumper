@@ -152,14 +152,14 @@ public:
 	int32_t                                            PhaseIndexInProgress;                                       // 0x0350   (0x0004)  
 	int32_t                                            SubphaseIndexInProgress;                                    // 0x0354   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0358   (0x0008)  MISSED
-	SDK_UNDEFINED(16,15178) /* TScriptInterface<Class> */ __um(SpawnedTODM);                                       // 0x0360   (0x0010)  
+	SDK_UNDEFINED(16,15273) /* TScriptInterface<Class> */ __um(SpawnedTODM);                                       // 0x0360   (0x0010)  
 	bool                                               bDebug;                                                     // 0x0370   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0371   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEventTODM.OnPhaseActivated
-	// void OnPhaseActivated(class ASpecialEventScript* InSpecialEventScript, class ASpecialEventPhase* InSpecialEventPhase); // [0xb39cc90] Final|Native|Private 
+	// void OnPhaseActivated(class ASpecialEventScript* InSpecialEventScript, class ASpecialEventPhase* InSpecialEventPhase); // [0xb5d26bc] Final|Native|Private 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEventTODM
@@ -171,7 +171,7 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEventTODM.SpecialEventTODM_ToggleDebug
-	// void SpecialEventTODM_ToggleDebug();                                                                                  // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void SpecialEventTODM_ToggleDebug();                                                                                  // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortCheatManager_DestroyActorsAndComponents
@@ -183,16 +183,16 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_DestroyActorsAndComponents.DestroyActorsAndComponentsMutator_SetActorDefinitionsEnabled
-	// void DestroyActorsAndComponentsMutator_SetActorDefinitionsEnabled(FString TagString, bool bEnabled);                  // [0x89e88ec] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void DestroyActorsAndComponentsMutator_SetActorDefinitionsEnabled(FString TagString, bool bEnabled);                  // [0x89c0c34] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_DestroyActorsAndComponents.DestroyActorsAndComponentsMutator_ListActorComponents
-	// void DestroyActorsAndComponentsMutator_ListActorComponents(FString InActorName);                                      // [0x6860530] Final|Exec|Native|Public|Const 
+	// void DestroyActorsAndComponentsMutator_ListActorComponents(FString InActorName);                                      // [0x65b05c8] Final|Exec|Native|Public|Const 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.DestroyActorsAndComponentsMutator_ComponentDefinition
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FDestroyActorsAndComponentsMutator_ComponentDefinition
 { 
-	SDK_UNDEFINED(16,15179) /* FString */              __um(ComponentName);                                        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15274) /* FString */              __um(ComponentName);                                        // 0x0000   (0x0010)  
 	EDestroyActorsAndComponentsMutator_ComponentNameComparisonType NameComparisonType;                             // 0x0010   (0x0001)  
 	bool                                               bDestroyOnServer;                                           // 0x0011   (0x0001)  
 	bool                                               bDestroyOnClient;                                           // 0x0012   (0x0001)  
@@ -205,7 +205,7 @@ struct FDestroyActorsAndComponentsMutator_ComponentDefinition
 struct FDestroyActorsAndComponentsMutator_ActorDefinition
 { 
 	FGameplayTagContainer                              Tags;                                                       // 0x0000   (0x0020)  
-	SDK_UNDEFINED(32,15180) /* TWeakObjectPtr<UClass*> */ __um(SoftActorClass);                                    // 0x0020   (0x0020)  
+	SDK_UNDEFINED(32,15275) /* TWeakObjectPtr<UClass*> */ __um(SoftActorClass);                                    // 0x0020   (0x0020)  
 	bool                                               bStartEnabled;                                              // 0x0040   (0x0001)  
 	bool                                               bDestroyActorOnServer;                                      // 0x0041   (0x0001)  
 	bool                                               bDestroyActorOnClient;                                      // 0x0042   (0x0001)  
@@ -230,15 +230,15 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_DestroyActorsAndComponents.SetActorDefinitionsEnabled
-	// void SetActorDefinitionsEnabled(FGameplayTagContainer& InTags, bool bEnabled);                                        // [0xb39ad44] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetActorDefinitionsEnabled(FGameplayTagContainer& InTags, bool bEnabled);                                        // [0xb5d046c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_DestroyActorsAndComponents.PermanentlyDisableActorDefinitions
-	// void PermanentlyDisableActorDefinitions(FGameplayTagContainer& InTags);                                               // [0x82114bc] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void PermanentlyDisableActorDefinitions(FGameplayTagContainer& InTags);                                               // [0x81a3f9c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_DestroyActorsAndComponents.OnTrackedActorDestroyed
-	// void OnTrackedActorDestroyed(class AActor* DestroyedActor);                                                           // [0xb39d288] Final|Native|Private 
+	// void OnTrackedActorDestroyed(class AActor* DestroyedActor);                                                           // [0xb5d2e38] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_DestroyActorsAndComponents.OnRep_ActorDefinitions
-	// void OnRep_ActorDefinitions(TArray<FDestroyActorsAndComponentsMutator_ActorDefinition>& OldActorDefinitions);         // [0xb39cfa0] Final|Native|Private|HasOutParms 
+	// void OnRep_ActorDefinitions(TArray<FDestroyActorsAndComponentsMutator_ActorDefinition>& OldActorDefinitions);         // [0xb5d2b50] Final|Native|Private|HasOutParms 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_DestroyActorsAndComponents.OnActorSpawned
-	// void OnActorSpawned(class AActor* Actor);                                                                             // [0xb39c61c] Final|Native|Private 
+	// void OnActorSpawned(class AActor* Actor);                                                                             // [0xb5d1e00] Final|Native|Private 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortCheatManager_FakeKillRelevancy
@@ -250,15 +250,15 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_FakeKillRelevancy.FakeKillRelevancyTestAlgorithm
-	// void FakeKillRelevancyTestAlgorithm(int32_t NumPlayers, FString MaxPlayersRemainingAfterPhases, int32_t MinSquadSize, int32_t MaxSquadSize, int32_t Iterations, int32_t LogVerbosity); // [0xb39b64c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void FakeKillRelevancyTestAlgorithm(int32_t NumPlayers, FString MaxPlayersRemainingAfterPhases, int32_t MinSquadSize, int32_t MaxSquadSize, int32_t Iterations, int32_t LogVerbosity); // [0xb5d0ebc] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_FakeKillRelevancy.FakeKillRelevancyStartNextWave
-	// void FakeKillRelevancyStartNextWave();                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void FakeKillRelevancyStartNextWave();                                                                                // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_FakeKillRelevancy.FakeKillRelevancySetUpPhase
-	// void FakeKillRelevancySetUpPhase(int32_t MaxPlayersRemaining, FString ReasonGameplayTagString, int32_t NumWaves, float RelevancyDelay); // [0xb39af18] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void FakeKillRelevancySetUpPhase(int32_t MaxPlayersRemaining, FString ReasonGameplayTagString, int32_t NumWaves, float RelevancyDelay); // [0xb5d0684] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_FakeKillRelevancy.FakeKillRelevancyReset
-	// void FakeKillRelevancyReset();                                                                                        // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void FakeKillRelevancyReset();                                                                                        // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_FakeKillRelevancy.FakeKillRelevancyDebug
-	// void FakeKillRelevancyDebug(float TextScale);                                                                         // [0x6456a9c] Final|Exec|Native|Public 
+	// void FakeKillRelevancyDebug(float TextScale);                                                                         // [0x6189d50] Final|Exec|Native|Public 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.FakeKillRelevancyVictim
@@ -297,7 +297,7 @@ class UFortControllerComponent_FakeKillRelevancy : public UFortControllerCompone
 { 
 public:
 	FFakeKillRelevancyPlayerDataArray                  PlayerDataArray;                                            // 0x00A8   (0x0120)  
-	SDK_UNDEFINED(80,15181) /* TMap<AFortPlayerStateAthena*, EFakeKillRelevancyPlayerKillStep> */ __um(ClientPlayerStateKillStepMap); // 0x01C8   (0x0050)  
+	SDK_UNDEFINED(80,15276) /* TMap<AFortPlayerStateAthena*, EFakeKillRelevancyPlayerKillStep> */ __um(ClientPlayerStateKillStepMap); // 0x01C8   (0x0050)  
 	char                                               ResetCounter;                                               // 0x0218   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0219   (0x0007)  MISSED
 	TArray<class AFortPlayerStateAthena*>              DebugSupergroupPlayerStates;                                // 0x0220   (0x0010)  
@@ -305,19 +305,19 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_FakeKillRelevancy.ResetRelevancy
-	// void ResetRelevancy();                                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Protected 
+	// void ResetRelevancy();                                                                                                // [0x307d48c] Final|BlueprintAuthorityOnly|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_FakeKillRelevancy.PlayKillEffects
-	// void PlayKillEffects(FFakeKillRelevancyPlayerDataEntry& FakeKillData, float RelevancyDelay);                          // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void PlayKillEffects(FFakeKillRelevancyPlayerDataEntry& FakeKillData, float RelevancyDelay);                          // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_FakeKillRelevancy.OnRep_ResetCounter
-	// void OnRep_ResetCounter();                                                                                            // [0xb39d1bc] Final|Native|Private 
+	// void OnRep_ResetCounter();                                                                                            // [0xb5d2d6c] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_FakeKillRelevancy.OnKillEffectsPlayed
-	// void OnKillEffectsPlayed(class AFortPlayerStateAthena* PlayerState);                                                  // [0xb39c89c] Final|BlueprintCosmetic|Native|Protected|BlueprintCallable 
+	// void OnKillEffectsPlayed(class AFortPlayerStateAthena* PlayerState);                                                  // [0xb5d21c4] Final|BlueprintCosmetic|Native|Protected|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_FakeKillRelevancy.GetDeathLocation
-	// FVector GetDeathLocation(class AFortPlayerStateAthena* PlayerState);                                                  // [0xb39c1c0] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetDeathLocation(class AFortPlayerStateAthena* PlayerState);                                                  // [0xb5d1a3c] Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_FakeKillRelevancy.CancelKillEffectsOnServer
-	// void CancelKillEffectsOnServer();                                                                                     // [0x211c0a0] BlueprintAuthorityOnly|Event|Protected|BlueprintEvent 
+	// void CancelKillEffectsOnServer();                                                                                     // [0x2047e54] BlueprintAuthorityOnly|Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_FakeKillRelevancy.CancelKillEffectsOnClient
-	// void CancelKillEffectsOnClient(TArray<AFortPlayerStateAthena*>& PlayerStates);                                        // [0x211c0a0] BlueprintCosmetic|Event|Protected|HasOutParms|BlueprintEvent 
+	// void CancelKillEffectsOnClient(TArray<AFortPlayerStateAthena*>& PlayerStates);                                        // [0x2047e54] BlueprintCosmetic|Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.FakeKillRelevancyPhaseData
@@ -345,13 +345,13 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_FakeKillRelevancy.StartNextKillWave
-	// void StartNextKillWave();                                                                                             // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void StartNextKillWave();                                                                                             // [0x307d48c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_FakeKillRelevancy.SetUpKillPhase
-	// void SetUpKillPhase(int32_t MaxPlayersRemaining, FGameplayTag& Reason, int32_t NumWaves, float RelevancyDelay);       // [0xb39e398] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetUpKillPhase(int32_t MaxPlayersRemaining, FGameplayTag& Reason, int32_t NumWaves, float RelevancyDelay);       // [0xb5d4404] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_FakeKillRelevancy.ResetRelevancy
-	// void ResetRelevancy();                                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ResetRelevancy();                                                                                                // [0x307d48c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_FakeKillRelevancy.EndWave
-	// void EndWave(int32_t EndPhaseNum, int32_t WaveNum);                                                                   // [0x63b6e18] Final|Native|Private 
+	// void EndWave(int32_t EndPhaseNum, int32_t WaveNum);                                                                   // [0x60dfe58] Final|Native|Private 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortAthenaMutator_LoadGameFeature
@@ -359,12 +359,12 @@ public:
 class AFortAthenaMutator_LoadGameFeature : public AFortAthenaMutator
 { 
 public:
-	SDK_UNDEFINED(16,15182) /* FString */              __um(GameFeatureToLoad);                                    // 0x0338   (0x0010)  
+	SDK_UNDEFINED(16,15277) /* FString */              __um(GameFeatureToLoad);                                    // 0x0338   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_LoadGameFeature.OnPlaylistDataReady
-	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb39cd54] Final|Native|Protected|HasOutParms 
+	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb5d27fc] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortAthenaMutator_RemoveGameFeatures
@@ -372,12 +372,12 @@ public:
 class AFortAthenaMutator_RemoveGameFeatures : public AFortAthenaMutator
 { 
 public:
-	SDK_UNDEFINED(16,15183) /* TArray<FString> */      __um(AllowedGameFeatures);                                  // 0x0338   (0x0010)  
+	SDK_UNDEFINED(16,15278) /* TArray<FString> */      __um(AllowedGameFeatures);                                  // 0x0338   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_RemoveGameFeatures.OnPlaylistDataReady
-	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb39ce84] Final|Native|Protected|HasOutParms 
+	// void OnPlaylistDataReady(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, FGameplayTagContainer& PlaylistContextTags); // [0xb5d29b0] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent
@@ -389,55 +389,55 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.UnloadTerrainMaps
-	// void UnloadTerrainMaps(FName MapTag);                                                                                 // [0x86fce54] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void UnloadTerrainMaps(FName MapTag);                                                                                 // [0x86a3a74] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.ToggleDisableParachutes
-	// void ToggleDisableParachutes(bool bIsDisabled);                                                                       // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void ToggleDisableParachutes(bool bIsDisabled);                                                                       // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.TeleportAllPlayers
-	// void TeleportAllPlayers(int32_t SafeZoneIndex);                                                                       // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void TeleportAllPlayers(int32_t SafeZoneIndex);                                                                       // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.StartEventScript
-	// void StartEventScript(int32_t InStartingIndex, float SequenceTimeOffset);                                             // [0xb39e64c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void StartEventScript(int32_t InStartingIndex, float SequenceTimeOffset);                                             // [0xb5d4738] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SpecialEventSetAdditionalViewpoint
-	// void SpecialEventSetAdditionalViewpoint(float X, float Y, float Z);                                                   // [0x8c14b18] Final|Exec|Native|Protected 
+	// void SpecialEventSetAdditionalViewpoint(float X, float Y, float Z);                                                   // [0x8c17b54] Final|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SpecialEventGameUserSettings_ClearDataForAllPlayers
-	// void SpecialEventGameUserSettings_ClearDataForAllPlayers();                                                           // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void SpecialEventGameUserSettings_ClearDataForAllPlayers();                                                           // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SpecialEventClearAdditionalViewpoint
-	// void SpecialEventClearAdditionalViewpoint();                                                                          // [0x32e4b44] Final|Exec|Native|Protected 
+	// void SpecialEventClearAdditionalViewpoint();                                                                          // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.ShrinkSafeZone
-	// void ShrinkSafeZone();                                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void ShrinkSafeZone();                                                                                                // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SetReturnToMainMenuDelay
-	// void SetReturnToMainMenuDelay(float MinDelayReturnToMainMenu, float MaxDelayReturnToMainMenu);                        // [0x81068c4] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void SetReturnToMainMenuDelay(float MinDelayReturnToMainMenu, float MaxDelayReturnToMainMenu);                        // [0x809fc60] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SetMatchTime
-	// void SetMatchTime(int32_t NewMatchTime);                                                                              // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void SetMatchTime(int32_t NewMatchTime);                                                                              // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SetLockingOnFocalPoint
-	// void SetLockingOnFocalPoint(bool bInLockingOnFocalPoint);                                                             // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void SetLockingOnFocalPoint(bool bInLockingOnFocalPoint);                                                             // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SetIsSimulatingDamage
-	// void SetIsSimulatingDamage(bool bIsSimulating);                                                                       // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void SetIsSimulatingDamage(bool bIsSimulating);                                                                       // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SetDestroyVehiclesInStorm
-	// void SetDestroyVehiclesInStorm(bool bDestroyVehiclesInStorm);                                                         // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void SetDestroyVehiclesInStorm(bool bDestroyVehiclesInStorm);                                                         // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.SendToNightNight
-	// void SendToNightNight();                                                                                              // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void SendToNightNight();                                                                                              // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.ResumeWinCondition
-	// void ResumeWinCondition();                                                                                            // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void ResumeWinCondition();                                                                                            // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.ResetWinConditionProgressToZero
-	// void ResetWinConditionProgressToZero();                                                                               // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void ResetWinConditionProgressToZero();                                                                               // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.ResetWinCondition
-	// void ResetWinCondition();                                                                                             // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void ResetWinCondition();                                                                                             // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.ResetSpecialEventAircraft
-	// void ResetSpecialEventAircraft();                                                                                     // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void ResetSpecialEventAircraft();                                                                                     // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.ResetMatchTimeToPrevious
-	// void ResetMatchTimeToPrevious();                                                                                      // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void ResetMatchTimeToPrevious();                                                                                      // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.PlacePlayersInAircraft
-	// void PlacePlayersInAircraft();                                                                                        // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void PlacePlayersInAircraft();                                                                                        // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.PauseWinCondition
-	// void PauseWinCondition(bool bLockScores);                                                                             // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void PauseWinCondition(bool bLockScores);                                                                             // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.CloseParachutes
-	// void CloseParachutes();                                                                                               // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void CloseParachutes();                                                                                               // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.ChangeWinCondition
-	// void ChangeWinCondition(float NewGoalScore);                                                                          // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void ChangeWinCondition(float NewGoalScore);                                                                          // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.AutobalanceTargetScore
-	// void AutobalanceTargetScore();                                                                                        // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void AutobalanceTargetScore();                                                                                        // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCheatManager_SpecialEvent.AddCSVEvent
-	// void AddCSVEvent(FString CSVEventName);                                                                               // [0x8c0e6d0] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void AddCSVEvent(FString CSVEventName);                                                                               // [0x8c1108c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.FortDelayRTMMData
@@ -485,13 +485,13 @@ struct FSpecialEventMapData
 class AFortAthenaMutator_SpecialEvent : public AFortAthenaMutator
 { 
 public:
-	SDK_UNDEFINED(16,15184) /* FMulticastInlineDelegate */ __um(TeleportAllPlayersFinished);                       // 0x0338   (0x0010)  
-	SDK_UNDEFINED(16,15185) /* FMulticastInlineDelegate */ __um(OnPawnLoaded);                                     // 0x0348   (0x0010)  
-	SDK_UNDEFINED(16,15186) /* FMulticastInlineDelegate */ __um(OnInitController);                                 // 0x0358   (0x0010)  
-	SDK_UNDEFINED(16,15187) /* FMulticastInlineDelegate */ __um(OnResumeGame);                                     // 0x0368   (0x0010)  
-	SDK_UNDEFINED(16,15188) /* FMulticastInlineDelegate */ __um(OnSpecialClientEvent);                             // 0x0378   (0x0010)  
-	SDK_UNDEFINED(16,15189) /* FMulticastInlineDelegate */ __um(OnHandleLogout);                                   // 0x0388   (0x0010)  
-	SDK_UNDEFINED(16,15190) /* FMulticastInlineDelegate */ __um(OnClientInitialLoadingFinished);                   // 0x0398   (0x0010)  
+	SDK_UNDEFINED(16,15279) /* FMulticastInlineDelegate */ __um(TeleportAllPlayersFinished);                       // 0x0338   (0x0010)  
+	SDK_UNDEFINED(16,15280) /* FMulticastInlineDelegate */ __um(OnPawnLoaded);                                     // 0x0348   (0x0010)  
+	SDK_UNDEFINED(16,15281) /* FMulticastInlineDelegate */ __um(OnInitController);                                 // 0x0358   (0x0010)  
+	SDK_UNDEFINED(16,15282) /* FMulticastInlineDelegate */ __um(OnResumeGame);                                     // 0x0368   (0x0010)  
+	SDK_UNDEFINED(16,15283) /* FMulticastInlineDelegate */ __um(OnSpecialClientEvent);                             // 0x0378   (0x0010)  
+	SDK_UNDEFINED(16,15284) /* FMulticastInlineDelegate */ __um(OnHandleLogout);                                   // 0x0388   (0x0010)  
+	SDK_UNDEFINED(16,15285) /* FMulticastInlineDelegate */ __um(OnClientInitialLoadingFinished);                   // 0x0398   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x68];                                      // 0x03A8   (0x0068)  MISSED
 	bool                                               bPlayersAreInvincible;                                      // 0x0410   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x27];                                      // 0x0411   (0x0027)  MISSED
@@ -528,7 +528,7 @@ public:
 	FVector                                            AdditionalViewpoint;                                        // 0x0568   (0x0018)  
 	bool                                               bParachutesDisabled;                                        // 0x0580   (0x0001)  
 	unsigned char                                      UnknownData09_5[0x7];                                       // 0x0581   (0x0007)  MISSED
-	SDK_UNDEFINED(16,15191) /* FString */              __um(LastCSVEventName);                                     // 0x0588   (0x0010)  
+	SDK_UNDEFINED(16,15286) /* FString */              __um(LastCSVEventName);                                     // 0x0588   (0x0010)  
 	bool                                               bCanStreamBuildingFoundationsIn;                            // 0x0598   (0x0001)  
 	unsigned char                                      UnknownData10_5[0x3];                                       // 0x0599   (0x0003)  MISSED
 	int32_t                                            AllPlayerTeleportedCount;                                   // 0x059C   (0x0004)  
@@ -545,7 +545,7 @@ public:
 	unsigned char                                      UnknownData13_5[0x7];                                       // 0x0629   (0x0007)  MISSED
 	TArray<FFortSpecialEventOverrideParts>             SpecialEventOverrideParts;                                  // 0x0630   (0x0010)  
 	FFortSpecialEventGEData                            GameplayEffectToApplyOnSwapToDefault;                       // 0x0640   (0x0010)  
-	SDK_UNDEFINED(80,15192) /* TMap<FUniqueNetIdRepl, int32_t> */ __um(OverridePartsArrayIndexMap);                // 0x0650   (0x0050)  
+	SDK_UNDEFINED(80,15287) /* TMap<FUniqueNetIdRepl, int32_t> */ __um(OverridePartsArrayIndexMap);                // 0x0650   (0x0050)  
 	TArray<FFortSpecialEventGEData>                    GameplayEffectsToApplyOnLogin;                              // 0x06A0   (0x0010)  
 	class UClass*                                      ControllerComponentClassOverride;                           // 0x06B0   (0x0008)  
 	TArray<FSpecialEventMapData>                       TerrainMapsToUnload;                                        // 0x06B8   (0x0010)  
@@ -572,143 +572,143 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.WarmUpIslandUpdated
-	// void WarmUpIslandUpdated();                                                                                           // [0xb39ee68] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void WarmUpIslandUpdated();                                                                                           // [0xb5d50d4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.UpdateBackfillStatus
-	// void UpdateBackfillStatus();                                                                                          // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void UpdateBackfillStatus();                                                                                          // [0x307d48c] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.UnloadTerrainMaps
-	// void UnloadTerrainMaps(FGameplayTag& MapTag);                                                                         // [0xb39eda0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void UnloadTerrainMaps(FGameplayTag& MapTag);                                                                         // [0xb5d500c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ToggleHUDs
-	// void ToggleHUDs(bool bHide);                                                                                          // [0xb39ed20] Final|Native|Public|BlueprintCallable 
+	// void ToggleHUDs(bool bHide);                                                                                          // [0xb5d4f48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ToggleDisableWeapons
-	// void ToggleDisableWeapons(bool bDisableWeapons);                                                                      // [0xb39ec38] Final|Native|Public|BlueprintCallable 
+	// void ToggleDisableWeapons(bool bDisableWeapons);                                                                      // [0xb5d4e20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ToggleDisableParachutes
-	// void ToggleDisableParachutes(bool bDisable);                                                                          // [0xb39ebb8] Final|Native|Public|BlueprintCallable 
+	// void ToggleDisableParachutes(bool bDisable);                                                                          // [0xb5d4d5c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ToggleAllPlayersInvincibility
-	// void ToggleAllPlayersInvincibility(bool bInvincible);                                                                 // [0xb39eb38] Final|Native|Public|BlueprintCallable 
+	// void ToggleAllPlayersInvincibility(bool bInvincible);                                                                 // [0xb5d4c98] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.TeleportAllPlayers
-	// void TeleportAllPlayers(FGameplayTagContainer EventTags, int32_t TeleportsPerFrame, int32_t SafeZoneIndex);           // [0xb39e834] Final|Native|Public|BlueprintCallable 
+	// void TeleportAllPlayers(FGameplayTagContainer EventTags, int32_t TeleportsPerFrame, int32_t SafeZoneIndex);           // [0xb5d4a60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SwapBodyParts
-	// void SwapBodyParts(int32_t ArrayIndex, class AFortPlayerController* FortPC);                                          // [0xb39e770] Final|Native|Public|BlueprintCallable 
+	// void SwapBodyParts(int32_t ArrayIndex, class AFortPlayerController* FortPC);                                          // [0xb5d4924] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.StartSafeZoneOverrideForEvent
-	// void StartSafeZoneOverrideForEvent(int32_t SafeZoneIndexForEvent);                                                    // [0xb39e6f0] Final|Native|Public|BlueprintCallable 
+	// void StartSafeZoneOverrideForEvent(int32_t SafeZoneIndexForEvent);                                                    // [0xb5d4864] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ShrinkSafeZone
-	// void ShrinkSafeZone();                                                                                                // [0xb39e5f4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ShrinkSafeZone();                                                                                                // [0xb5d46e0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetWeightForContainerLootRoll
-	// void SetWeightForContainerLootRoll(float Weight);                                                                     // [0xb39e574] Final|Native|Public|BlueprintCallable 
+	// void SetWeightForContainerLootRoll(float Weight);                                                                     // [0xb5d461c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetReturnToMainMenuDelay
-	// void SetReturnToMainMenuDelay(float MinDelayReturnToMainMenu, float MaxDelayReturnToMainMenu);                        // [0xb39e2d4] Final|Native|Public|BlueprintCallable 
+	// void SetReturnToMainMenuDelay(float MinDelayReturnToMainMenu, float MaxDelayReturnToMainMenu);                        // [0xb5d42c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetNamedWeightForContainerLootRoll
-	// void SetNamedWeightForContainerLootRoll(FName WeightName);                                                            // [0xb39e1d8] Final|Native|Public|BlueprintCallable 
+	// void SetNamedWeightForContainerLootRoll(FName WeightName);                                                            // [0xb5d4144] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetMatchTime
-	// void SetMatchTime(int32_t NewMatchTime);                                                                              // [0xb39e108] Final|Native|Public|BlueprintCallable 
+	// void SetMatchTime(int32_t NewMatchTime);                                                                              // [0xb5d4034] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetLockingOnFocalPoint
-	// void SetLockingOnFocalPoint(bool bInLockingOnFocalPoint);                                                             // [0xb39e040] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetLockingOnFocalPoint(bool bInLockingOnFocalPoint);                                                             // [0xb5d3f2c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetIsSimulatingDamage
-	// void SetIsSimulatingDamage(bool bIsSimulating);                                                                       // [0xb39dfc0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetIsSimulatingDamage(bool bIsSimulating);                                                                       // [0xb5d3e68] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetDestroyVehiclesInStorm
-	// void SetDestroyVehiclesInStorm(bool bDestroyVehiclesInStorm);                                                         // [0xb39df04] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetDestroyVehiclesInStorm(bool bDestroyVehiclesInStorm);                                                         // [0xb5d3d68] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetCanStreamBuildingFoundationsIn
-	// void SetCanStreamBuildingFoundationsIn(bool bEnable);                                                                 // [0xb39de3c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetCanStreamBuildingFoundationsIn(bool bEnable);                                                                 // [0xb5d3c60] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SetAdditionalViewpoint
-	// void SetAdditionalViewpoint(FVector WorldLocation);                                                                   // [0xb39d9d8] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetAdditionalViewpoint(FVector WorldLocation);                                                                   // [0xb5d3894] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.SendToNightNight
-	// void SendToNightNight();                                                                                              // [0x32e4b44] Final|Native|Public|BlueprintCallable 
+	// void SendToNightNight();                                                                                              // [0x307d48c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ResumeWinCondition
-	// void ResumeWinCondition();                                                                                            // [0xb39d9c4] Final|Native|Public|BlueprintCallable 
+	// void ResumeWinCondition();                                                                                            // [0xb5d3880] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ResetWinConditionProgressToZero
-	// void ResetWinConditionProgressToZero();                                                                               // [0xb39d9b0] Final|Native|Public|BlueprintCallable 
+	// void ResetWinConditionProgressToZero();                                                                               // [0xb5d386c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ResetWinCondition
-	// void ResetWinCondition();                                                                                             // [0xb39d99c] Final|Native|Public|BlueprintCallable 
+	// void ResetWinCondition();                                                                                             // [0xb5d3858] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ResetSpecialEventAircraft
-	// void ResetSpecialEventAircraft();                                                                                     // [0xb39d960] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ResetSpecialEventAircraft();                                                                                     // [0xb5d381c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ResetSafeZoneOverrideAfterEvent
-	// void ResetSafeZoneOverrideAfterEvent(int32_t MinResetSafeZoneIndex, float MinDelayReturnToMainMenu, float MaxDelayReturnToMainMenu); // [0xb39d868] Final|Native|Public|BlueprintCallable 
+	// void ResetSafeZoneOverrideAfterEvent(int32_t MinResetSafeZoneIndex, float MinDelayReturnToMainMenu, float MaxDelayReturnToMainMenu); // [0xb5d3664] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ResetMatchTimeToPrevious
-	// void ResetMatchTimeToPrevious();                                                                                      // [0xb39d814] Final|Native|Public|BlueprintCallable 
+	// void ResetMatchTimeToPrevious();                                                                                      // [0xb5d3610] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.RemoveFromBlockedNativeActions
-	// void RemoveFromBlockedNativeActions(FGameplayTagContainer& Actions);                                                  // [0x82114bc] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveFromBlockedNativeActions(FGameplayTagContainer& Actions);                                                  // [0x81a3f9c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.PushSpecialEventEmoteInputComponent
-	// void PushSpecialEventEmoteInputComponent();                                                                           // [0xb39d800] Final|Native|Public|BlueprintCallable 
+	// void PushSpecialEventEmoteInputComponent();                                                                           // [0xb5d35fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.PopSpecialEventEmoteInputComponent
-	// void PopSpecialEventEmoteInputComponent();                                                                            // [0xb39d7ec] Final|Native|Public|BlueprintCallable 
+	// void PopSpecialEventEmoteInputComponent();                                                                            // [0xb5d35e8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.PlacePlayersInAircraft
-	// void PlacePlayersInAircraft();                                                                                        // [0xb39d7d8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void PlacePlayersInAircraft();                                                                                        // [0xb5d35d4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.PauseWinCondition
-	// void PauseWinCondition(bool bLockScores);                                                                             // [0xb39d6fc] Final|Native|Public|BlueprintCallable 
+	// void PauseWinCondition(bool bLockScores);                                                                             // [0xb5d34b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.PauseSupplyDrops
-	// void PauseSupplyDrops(bool bPause);                                                                                   // [0xb39d624] Final|Native|Public|BlueprintCallable 
+	// void PauseSupplyDrops(bool bPause);                                                                                   // [0xb5d339c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.PauseStormProgression
-	// void PauseStormProgression(bool bPause);                                                                              // [0xb39d5a4] Final|Native|Public|BlueprintCallable 
+	// void PauseStormProgression(bool bPause);                                                                              // [0xb5d32d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.PauseStormDamage
-	// void PauseStormDamage(bool bPause);                                                                                   // [0xb39d4dc] Final|Native|Public|BlueprintCallable 
+	// void PauseStormDamage(bool bPause);                                                                                   // [0xb5d31cc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnWarmUpTeleportComplete
-	// void OnWarmUpTeleportComplete(class AFortPlayerPawn* PlayerPawn);                                                     // [0xb39d34c] Final|Native|Protected 
+	// void OnWarmUpTeleportComplete(class AFortPlayerPawn* PlayerPawn);                                                     // [0xb5d2f40] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_TerrainMapsToUnload
-	// void OnRep_TerrainMapsToUnload();                                                                                     // [0xb39d1d0] Final|Native|Protected 
+	// void OnRep_TerrainMapsToUnload();                                                                                     // [0xb5d2d80] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_LastCSVEventName
-	// void OnRep_LastCSVEventName();                                                                                        // [0xb39d18c] Final|Native|Protected 
+	// void OnRep_LastCSVEventName();                                                                                        // [0xb5d2d3c] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_GameResumed
-	// void OnRep_GameResumed();                                                                                             // [0xb39d178] Final|Native|Protected 
+	// void OnRep_GameResumed();                                                                                             // [0xb5d2d28] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_DelayPlayersFromReturningToLobbyData
-	// void OnRep_DelayPlayersFromReturningToLobbyData();                                                                    // [0xb39d120] Final|Native|Protected 
+	// void OnRep_DelayPlayersFromReturningToLobbyData();                                                                    // [0xb5d2cd0] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_bPlayersAreInvincible
-	// void OnRep_bPlayersAreInvincible();                                                                                   // [0xb39d274] Final|Native|Protected 
+	// void OnRep_bPlayersAreInvincible();                                                                                   // [0xb5d2e24] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_bLockingOnFocalPoint
-	// void OnRep_bLockingOnFocalPoint();                                                                                    // [0xb39d260] Final|Native|Protected 
+	// void OnRep_bLockingOnFocalPoint();                                                                                    // [0xb5d2e10] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_bDisableHUD
-	// void OnRep_bDisableHUD();                                                                                             // [0xb39d24c] Final|Native|Protected 
+	// void OnRep_bDisableHUD();                                                                                             // [0xb5d2dfc] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_bCanStreamBuildingFoundationsIn
-	// void OnRep_bCanStreamBuildingFoundationsIn();                                                                         // [0xb39d238] Final|Native|Protected 
+	// void OnRep_bCanStreamBuildingFoundationsIn();                                                                         // [0xb5d2de8] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_AllPlayerTeleportedCount
-	// void OnRep_AllPlayerTeleportedCount();                                                                                // [0x669bc64] Final|Native|Protected 
+	// void OnRep_AllPlayerTeleportedCount();                                                                                // [0x63deb88] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_Aircraft
-	// void OnRep_Aircraft();                                                                                                // [0xb39d04c] Final|Native|Protected 
+	// void OnRep_Aircraft();                                                                                                // [0xb5d2bfc] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnRep_AdditionalViewpoint
-	// void OnRep_AdditionalViewpoint();                                                                                     // [0xb39d038] Final|Native|Protected 
+	// void OnRep_AdditionalViewpoint();                                                                                     // [0xb5d2be8] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnGameViewportActivationChanged
-	// void OnGameViewportActivationChanged(bool bHasFocus);                                                                 // [0xb39c81c] Final|Native|Public  
+	// void OnGameViewportActivationChanged(bool bHasFocus);                                                                 // [0xb5d2100] Final|Native|Public  
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnAircraftFlightEnded
-	// void OnAircraftFlightEnded(class AFortAthenaAircraft* FortAthenaAircraft);                                            // [0xb39c79c] Final|Native|Protected 
+	// void OnAircraftFlightEnded(class AFortAthenaAircraft* FortAthenaAircraft);                                            // [0xb5d2040] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnAircraftExitedDropZone
-	// void OnAircraftExitedDropZone(class AFortAthenaAircraft* FortAthenaAircraft);                                         // [0xb39c71c] Final|Native|Protected 
+	// void OnAircraftExitedDropZone(class AFortAthenaAircraft* FortAthenaAircraft);                                         // [0xb5d1f80] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnAircraftEnteredDropZone
-	// void OnAircraftEnteredDropZone(class AFortAthenaAircraft* FortAthenaAircraft);                                        // [0xb39c69c] Final|Native|Protected 
+	// void OnAircraftEnteredDropZone(class AFortAthenaAircraft* FortAthenaAircraft);                                        // [0xb5d1ec0] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnActorSpawned
-	// void OnActorSpawned(class AActor* Actor);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnActorSpawned(class AActor* Actor);                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.OnActorPreSpawnInitialization
-	// void OnActorPreSpawnInitialization(class AActor* Actor);                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnActorPreSpawnInitialization(class AActor* Actor);                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.NotifyClientsGameResumed
-	// void NotifyClientsGameResumed();                                                                                      // [0xb39c5e0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void NotifyClientsGameResumed();                                                                                      // [0xb5d1dc4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.NetMulticast_CheatClearSpecialEventGameUserSettings
-	// void NetMulticast_CheatClearSpecialEventGameUserSettings();                                                           // [0x86d0434] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void NetMulticast_CheatClearSpecialEventGameUserSettings();                                                           // [0x8676248] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.JumpToSafeZonePhase
-	// void JumpToSafeZonePhase(FVector PawnSpawnCenterLocation, float PawnSpawnMinDistance, float PawnSpawnMaxDistance);    // [0xb39c2f8] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void JumpToSafeZonePhase(FVector PawnSpawnCenterLocation, float PawnSpawnMinDistance, float PawnSpawnMaxDistance);    // [0xb5d1bf8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.HandleSpecialEventMannequinDestroyed
-	// void HandleSpecialEventMannequinDestroyed(class AActor* MannequinActor);                                              // [0xb39c278] Final|Native|Protected 
+	// void HandleSpecialEventMannequinDestroyed(class AActor* MannequinActor);                                              // [0xb5d1b38] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.GetScript
-	// class ASpecialEventScript* GetScript();                                                                               // [0xb39c260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ASpecialEventScript* GetScript();                                                                               // [0xb5d1b20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.GetHasInfiniteSafeZonePhase
-	// bool GetHasInfiniteSafeZonePhase();                                                                                   // [0x9342f0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetHasInfiniteSafeZonePhase();                                                                                   // [0x93e25e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ForceSafeZoneFinalLocation
-	// void ForceSafeZoneFinalLocation(FVector NewFinalLocation, float DefaultAircraftOffsetFromMidLine, float MinDefaultMidlineAngle, float MaxDefaultMidlineAngle); // [0xb39bdfc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void ForceSafeZoneFinalLocation(FVector NewFinalLocation, float DefaultAircraftOffsetFromMidLine, float MinDefaultMidlineAngle, float MaxDefaultMidlineAngle); // [0xb5d17f0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.FlushUnhandledPlayerControllers
-	// void FlushUnhandledPlayerControllers();                                                                               // [0xb39bde8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void FlushUnhandledPlayerControllers();                                                                               // [0xb5d17dc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.CloseParachutes
-	// void CloseParachutes();                                                                                               // [0xb39af04] Final|Native|Public|BlueprintCallable 
+	// void CloseParachutes();                                                                                               // [0xb5d0670] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ClearBlockedNativeActions
-	// void ClearBlockedNativeActions();                                                                                     // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ClearBlockedNativeActions();                                                                                     // [0x307d48c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ClearAdditionalViewpoint
-	// void ClearAdditionalViewpoint();                                                                                      // [0xb39aef0] Final|Native|Public|BlueprintCallable 
+	// void ClearAdditionalViewpoint();                                                                                      // [0xb5d065c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.ChangeWinCondition
-	// void ChangeWinCondition(float NewGoalScore);                                                                          // [0xb39ae70] Final|Native|Public|BlueprintCallable 
+	// void ChangeWinCondition(float NewGoalScore);                                                                          // [0xb5d0598] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.AutobalanceTargetScore
-	// void AutobalanceTargetScore();                                                                                        // [0xb39ae5c] Final|Native|Public|BlueprintCallable 
+	// void AutobalanceTargetScore();                                                                                        // [0xb5d0584] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.AddToBlockedNativeActions
-	// void AddToBlockedNativeActions(FGameplayTagContainer& Actions, bool bCancelAbilities);                                // [0xb39ad44] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddToBlockedNativeActions(FGameplayTagContainer& Actions, bool bCancelAbilities);                                // [0xb5d046c] Final|BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.AddCSVEvent
-	// void AddCSVEvent(FString CSVEventName, bool bShouldRepToClient);                                                      // [0xb399fa4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AddCSVEvent(FString CSVEventName, bool bShouldRepToClient);                                                      // [0xb5cf60c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortAthenaMutator_SpecialEvent.AddClientCSVEvent
-	// void AddClientCSVEvent(FString CSVEventName);                                                                         // [0xb39a69c] Final|Native|Public|BlueprintCallable 
+	// void AddClientCSVEvent(FString CSVEventName);                                                                         // [0xb5cfd80] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortCameraMode_SpecialEventFocalPoint
@@ -720,13 +720,13 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortCameraMode_SpecialEventFocalPoint.UpdateCameraBP
-	// void UpdateCameraBP(class AActor* ViewTarget, float DeltaTime, FTViewTarget& OutVT);                                  // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void UpdateCameraBP(class AActor* ViewTarget, float DeltaTime, FTViewTarget& OutVT);                                  // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.FortCameraMode_SpecialEventFocalPoint.SetOverrideTransitionTime
-	// void SetOverrideTransitionTime(float InTransitionTime);                                                               // [0xb39e254] Final|Native|Public|BlueprintCallable 
+	// void SetOverrideTransitionTime(float InTransitionTime);                                                               // [0xb5d4200] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortCameraMode_SpecialEventFocalPoint.OnBecomeInactiveBP
-	// void OnBecomeInactiveBP(class AActor* ViewTarget);                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnBecomeInactiveBP(class AActor* ViewTarget);                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.FortCameraMode_SpecialEventFocalPoint.OnBecomeActiveBP
-	// void OnBecomeActiveBP(class AActor* ViewTarget);                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnBecomeActiveBP(class AActor* ViewTarget);                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.BuffetBubblesReplicatedData
@@ -796,21 +796,21 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutatorComponent.SetBuffetBubblesIntroTargetTransform
-	// void SetBuffetBubblesIntroTargetTransform(FTransform& Transform);                                                     // [0xb39dd04] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetBuffetBubblesIntroTargetTransform(FTransform& Transform);                                                     // [0xb5d3b28] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutatorComponent.SetBuffetBubblesInitialFollowBoxOffsetPercent
-	// void SetBuffetBubblesInitialFollowBoxOffsetPercent(FVector BoxOffsetPercent);                                         // [0xb39dbac] Final|Native|Protected|HasDefaults|BlueprintCallable 
+	// void SetBuffetBubblesInitialFollowBoxOffsetPercent(FVector BoxOffsetPercent);                                         // [0xb5d3a40] Final|Native|Protected|HasDefaults|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutatorComponent.SetBuffetBubblesFollowActor
-	// void SetBuffetBubblesFollowActor(class AActor* Actor);                                                                // [0xb39db18] Final|Native|Protected|BlueprintCallable 
+	// void SetBuffetBubblesFollowActor(class AActor* Actor);                                                                // [0xb5d3968] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutatorComponent.OverrideBuffetFlyingVelocityDirectionInterpSpeed
-	// void OverrideBuffetFlyingVelocityDirectionInterpSpeed(float Value, bool bAsMultiplier);                               // [0x9631518] Final|Native|Protected|BlueprintCallable 
+	// void OverrideBuffetFlyingVelocityDirectionInterpSpeed(float Value, bool bAsMultiplier);                               // [0x9724740] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutatorComponent.OverrideBuffetFlyingMaxSpeed
-	// void OverrideBuffetFlyingMaxSpeed(float Value, bool bAsMultiplier, float InterpSpeed);                                // [0xb39d3f8] Final|Native|Protected|BlueprintCallable 
+	// void OverrideBuffetFlyingMaxSpeed(float Value, bool bAsMultiplier, float InterpSpeed);                                // [0xb5d302c] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutatorComponent.OnRep_BuffetFlyingRicochetReplicatedData
-	// void OnRep_BuffetFlyingRicochetReplicatedData();                                                                      // [0xb39d0b8] Final|Native|Private 
+	// void OnRep_BuffetFlyingRicochetReplicatedData();                                                                      // [0xb5d2c68] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutatorComponent.OnRep_BuffetBubblesFollowActor
-	// void OnRep_BuffetBubblesFollowActor();                                                                                // [0xb39d0a4] Final|Native|Protected 
+	// void OnRep_BuffetBubblesFollowActor();                                                                                // [0xb5d2c54] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutatorComponent.OnMovementModeChanged
-	// void OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb39c91c] Final|Native|Private 
+	// void OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PreviousMovementMode, char PreviousCustomMode); // [0xb5d2284] Final|Native|Private 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutator
@@ -823,7 +823,7 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortCharacterMovementMutator.OnFortPawnChanged
-	// void OnFortPawnChanged(class AFortPawn* NewPawn);                                                                     // [0x604b150] Final|Native|Protected 
+	// void OnFortPawnChanged(class AFortPawn* NewPawn);                                                                     // [0x5d5254c] Final|Native|Protected 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortControllerComponent_GameplayCinematic
@@ -832,23 +832,23 @@ class UFortControllerComponent_GameplayCinematic : public UFortControllerCompone
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00A8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,15193) /* FMulticastInlineDelegate */ __um(BP_OnStartGameplayOutro);                          // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,15194) /* FMulticastInlineDelegate */ __um(BP_OnGameplayIntroFinished);                       // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,15288) /* FMulticastInlineDelegate */ __um(BP_OnStartGameplayOutro);                          // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,15289) /* FMulticastInlineDelegate */ __um(BP_OnGameplayIntroFinished);                       // 0x00E8   (0x0010)  
 	bool                                               bIsReadyForGameplay;                                        // 0x00F8   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00F9   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_GameplayCinematic.ShowCinematicWidget
-	// void ShowCinematicWidget(FName WidgetName);                                                                           // [0xb40ccac] Final|BlueprintCosmetic|Exec|Native|Public|BlueprintCallable 
+	// void ShowCinematicWidget(FName WidgetName);                                                                           // [0xb644b48] Final|BlueprintCosmetic|Exec|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_GameplayCinematic.SetReadyForGameplay
-	// void SetReadyForGameplay(bool bIsReady);                                                                              // [0x60325ec] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetReadyForGameplay(bool bIsReady);                                                                              // [0x5d35ffc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_GameplayCinematic.ServerOnGameplayIntroFinished
-	// void ServerOnGameplayIntroFinished();                                                                                 // [0x80f8ed4] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerOnGameplayIntroFinished();                                                                                 // [0x80910ac] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_GameplayCinematic.OnRep_bIsReadyForGameplay
-	// void OnRep_bIsReadyForGameplay();                                                                                     // [0xb40b1e4] Final|Native|Protected 
+	// void OnRep_bIsReadyForGameplay();                                                                                     // [0xb642d84] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_GameplayCinematic.HideHUDElementsForLoadingScreen
-	// void HideHUDElementsForLoadingScreen(bool bHideElements);                                                             // [0xb40a308] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void HideHUDElementsForLoadingScreen(bool bHideElements);                                                             // [0xb641c08] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortControllerComponent_SpecialEvent
@@ -858,15 +858,15 @@ class UFortControllerComponent_SpecialEvent : public UFortControllerComponent
 public:
 	bool                                               bForceBuildModeInputComponentToNotConsumeInputs;            // 0x00A8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00A9   (0x0003)  MISSED
-	SDK_UNDEFINED(8,15195) /* TWeakObjectPtr<AFortAthenaMutator_SpecialEvent*> */ __um(SpecialEventMutator);       // 0x00AC   (0x0008)  
+	SDK_UNDEFINED(8,15290) /* TWeakObjectPtr<AFortAthenaMutator_SpecialEvent*> */ __um(SpecialEventMutator);       // 0x00AC   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00B4   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_SpecialEvent.ServerHandleSpecialClientEvent
-	// void ServerHandleSpecialClientEvent(FGameplayTag EventTag, int32_t Count);                                            // [0xb40ba18] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerHandleSpecialClientEvent(FGameplayTag EventTag, int32_t Count);                                            // [0xb6435e8] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/SpecialEventGameplayRuntime.FortControllerComponent_SpecialEvent.SendSpecialClientEvent
-	// void SendSpecialClientEvent(FGameplayTag EventTag, int32_t Count);                                                    // [0xb40b80c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SendSpecialClientEvent(FGameplayTag EventTag, int32_t Count);                                                    // [0xb643464] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortCustomTickComponent
@@ -879,11 +879,11 @@ public:
 	FGameplayTag                                       AuthorityQualitySettingsTag;                                // 0x00A4   (0x0004)  
 	FGameplayTag                                       DefaultClientQualitySettingsTag;                            // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00AC   (0x0004)  MISSED
-	SDK_UNDEFINED(80,15196) /* TMap<ECommonPlatformType, FGameplayTag> */ __um(ClientPlatformQualitySettingsTagMap); // 0x00B0   (0x0050)  
-	SDK_UNDEFINED(80,15197) /* TMap<FGameplayTag, FCustomTickComonentQualitySettings> */ __um(QualitySettingsMap); // 0x0100   (0x0050)  
+	SDK_UNDEFINED(80,15291) /* TMap<ECommonPlatformType, FGameplayTag> */ __um(ClientPlatformQualitySettingsTagMap); // 0x00B0   (0x0050)  
+	SDK_UNDEFINED(80,15292) /* TMap<FGameplayTag, FCustomTickComonentQualitySettings> */ __um(QualitySettingsMap); // 0x0100   (0x0050)  
 	float                                              WasRecentlyRenderedTolerance;                               // 0x0150   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0154   (0x0004)  MISSED
-	SDK_UNDEFINED(16,15198) /* FMulticastInlineDelegate */ __um(OnCustomTick);                                     // 0x0158   (0x0010)  
+	SDK_UNDEFINED(16,15293) /* FMulticastInlineDelegate */ __um(OnCustomTick);                                     // 0x0158   (0x0010)  
 	unsigned char                                      UnknownData03_6[0x38];                                      // 0x0168   (0x0038)  MISSED
 };
 
@@ -897,7 +897,7 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortSpecialRelevancyActorSpawner.BP_OnActorSpawnedPerRelevancyGroup
-	// void BP_OnActorSpawnedPerRelevancyGroup(TArray<AActor*>& InSpawnedActors);                                            // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnActorSpawnedPerRelevancyGroup(TArray<AActor*>& InSpawnedActors);                                            // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent
@@ -914,21 +914,21 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent.UpdateTime
-	// void UpdateTime(float NewTime);                                                                                       // [0xb40d330] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateTime(float NewTime);                                                                                       // [0xb645394] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent.UpdateOnset
-	// void UpdateOnset(float Time);                                                                                         // [0xa7fe298] Native|Event|Protected|BlueprintEvent 
+	// void UpdateOnset(float Time);                                                                                         // [0xa9d26f4] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent.UpdateLoudness
-	// void UpdateLoudness(float Time);                                                                                      // [0x6eccdb4] Native|Event|Protected|BlueprintEvent 
+	// void UpdateLoudness(float Time);                                                                                      // [0x6d487ac] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent.UpdateConstantQ
-	// void UpdateConstantQ(float Time);                                                                                     // [0x6ecce38] Native|Event|Protected|BlueprintEvent 
+	// void UpdateConstantQ(float Time);                                                                                     // [0x6d48874] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent.GetOnsetNRT
-	// class UOnsetNRT* GetOnsetNRT();                                                                                       // [0x32c2c44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UOnsetNRT* GetOnsetNRT();                                                                                       // [0x284d108] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent.GetLoudnessNRT
-	// class ULoudnessNRT* GetLoudnessNRT();                                                                                 // [0x6337064] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ULoudnessNRT* GetLoudnessNRT();                                                                                 // [0x60575d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent.GetCurrentNormalizedLoudness
-	// float GetCurrentNormalizedLoudness();                                                                                 // [0x9b7f608] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentNormalizedLoudness();                                                                                 // [0x9ca6c90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioAnalysisBaseComponent.GetConstantQNRT
-	// class UConstantQNRT* GetConstantQNRT();                                                                               // [0x8f4a678] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UConstantQNRT* GetConstantQNRT();                                                                               // [0x8f91428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.SpecialEventAudioHapticsAction
@@ -960,11 +960,11 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioHapticsComponent.StopHaptics
-	// void StopHaptics();                                                                                                   // [0xb40d1e8] Final|Native|Public|BlueprintCallable 
+	// void StopHaptics();                                                                                                   // [0xb645180] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioHapticsComponent.StartHaptics
-	// void StartHaptics();                                                                                                  // [0xb40d1d4] Final|Native|Public|BlueprintCallable 
+	// void StartHaptics();                                                                                                  // [0xb64516c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventAudioHapticsComponent.AreHapticsActive
-	// bool AreHapticsActive();                                                                                              // [0xb406918] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool AreHapticsActive();                                                                                              // [0xb63da64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialEventCinematicCameraMode
@@ -983,7 +983,7 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorInstigatorInterface.SpecialEventCursorTrace
-	// bool SpecialEventCursorTrace(FHitResult& OutHitResult, class USpecialEventCursorPawnComponent* CursorPawnComponent, FGameplayTag& CursorModeTag, class UCameraComponent* CameraComponent, FVector& CursorWorldDirection); // [0xb40cd28] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// bool SpecialEventCursorTrace(FHitResult& OutHitResult, class USpecialEventCursorPawnComponent* CursorPawnComponent, FGameplayTag& CursorModeTag, class UCameraComponent* CameraComponent, FVector& CursorWorldDirection); // [0xb644c08] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.SpecialEventCursorStackEntry
@@ -991,7 +991,7 @@ public:
 struct FSpecialEventCursorStackEntry
 { 
 	FGameplayTag                                       CursorModeTag;                                              // 0x0000   (0x0004)  
-	SDK_UNDEFINED(8,15199) /* TWeakObjectPtr<UObject*> */ __um(InstigatingObject);                                 // 0x0004   (0x0008)  
+	SDK_UNDEFINED(8,15294) /* TWeakObjectPtr<UObject*> */ __um(InstigatingObject);                                 // 0x0004   (0x0008)  
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent
@@ -1000,17 +1000,17 @@ class USpecialEventCursorPawnComponent : public UPawnComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A0   (0x0008)  MISSED
-	SDK_UNDEFINED(16,15200) /* FMulticastInlineDelegate */ __um(OnDesiredVisibilityChanged);                       // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,15295) /* FMulticastInlineDelegate */ __um(OnDesiredVisibilityChanged);                       // 0x00A8   (0x0010)  
 	bool                                               bAllowOnNonOwningClients;                                   // 0x00B8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00B9   (0x0007)  MISSED
 	class APawn*                                       OwningPawn;                                                 // 0x00C0   (0x0008)  
 	class AFortPlayerController*                       OwningController;                                           // 0x00C8   (0x0008)  
 	unsigned char                                      UnknownData02_5[0x10];                                      // 0x00D0   (0x0010)  MISSED
-	SDK_UNDEFINED(16,15201) /* FMulticastInlineDelegate */ __um(OnCursorModeChanged);                              // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,15296) /* FMulticastInlineDelegate */ __um(OnCursorModeChanged);                              // 0x00E0   (0x0010)  
 	FGameplayTag                                       DefaultCursorModeTag;                                       // 0x00F0   (0x0004)  
 	bool                                               bDefaultCursorModeAutoActivate;                             // 0x00F4   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x3];                                       // 0x00F5   (0x0003)  MISSED
-	SDK_UNDEFINED(80,15202) /* TMap<FGameplayTag, FSpecialEventCursorMode> */ __um(CursorModes);                   // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,15297) /* TMap<FGameplayTag, FSpecialEventCursorMode> */ __um(CursorModes);                   // 0x00F8   (0x0050)  
 	TArray<FSpecialEventCursorStackEntry>              CursorStack;                                                // 0x0148   (0x0010)  
 	FSpecialEventCursorStackEntry                      ReplicatedCursorStackEntry;                                 // 0x0158   (0x000C)  
 	unsigned char                                      UnknownData04_5[0x4];                                       // 0x0164   (0x0004)  MISSED
@@ -1023,7 +1023,7 @@ public:
 	class UCommonInputSubsystem*                       CommonInputSubsystem;                                       // 0x0178   (0x0008)  
 	class USpecialEventInputHelperComponent*           InputHelperComponent;                                       // 0x0180   (0x0008)  
 	unsigned char                                      UnknownData06_5[0x40];                                      // 0x0188   (0x0040)  MISSED
-	SDK_UNDEFINED(16,15203) /* FMulticastInlineDelegate */ __um(OnViewportLocationChanged);                        // 0x01C8   (0x0010)  
+	SDK_UNDEFINED(16,15298) /* FMulticastInlineDelegate */ __um(OnViewportLocationChanged);                        // 0x01C8   (0x0010)  
 	FScalableFloat                                     NonOwningInterpSpeed;                                       // 0x01D8   (0x0028)  
 	FScalableFloat                                     MinDeltaToSendWorldLocationToServer;                        // 0x0200   (0x0028)  
 	unsigned char                                      UnknownData07_5[0x8];                                       // 0x0228   (0x0008)  MISSED
@@ -1042,87 +1042,87 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.SetZoomAllowed
-	// void SetZoomAllowed(bool bInZoomAllowed);                                                                             // [0xa2b17d0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetZoomAllowed(bool bInZoomAllowed);                                                                             // [0xb644a88] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.SetAllowOnNonOwningClients
-	// void SetAllowOnNonOwningClients(bool bAllow);                                                                         // [0xb40bdd8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetAllowOnNonOwningClients(bool bAllow);                                                                         // [0xb6438ac] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.SetAdditiveRotationAllowed
-	// void SetAdditiveRotationAllowed(bool bInAdditiveRotationAllowed);                                                     // [0xb40bd58] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetAdditiveRotationAllowed(bool bInAdditiveRotationAllowed);                                                     // [0xb6437ec] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.ServerOnWorldLocationChanged
-	// void ServerOnWorldLocationChanged(FVector WorldLocation);                                                             // [0xb40bc28] Final|Net|Native|Event|Private|NetServer|HasDefaults 
+	// void ServerOnWorldLocationChanged(FVector WorldLocation);                                                             // [0xb64372c] Final|Net|Native|Event|Private|NetServer|HasDefaults 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.PushCursor
-	// void PushCursor(FGameplayTag& CursorModeTag, class UObject* InstigatingObject, bool bActivate);                       // [0xb40b624] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void PushCursor(FGameplayTag& CursorModeTag, class UObject* InstigatingObject, bool bActivate);                       // [0xb64327c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.PopCursor
-	// void PopCursor(FGameplayTag& CursorModeTag, class UObject* InstigatingObject, bool bDeactivateIfStackEmpty);          // [0xb40b450] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void PopCursor(FGameplayTag& CursorModeTag, class UObject* InstigatingObject, bool bDeactivateIfStackEmpty);          // [0xb6430a8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.PopAllCursorsForObject
-	// void PopAllCursorsForObject(class UObject* InstigatingObject, bool bDeactivateIfStackEmpty);                          // [0xb40b388] Final|Native|Public|BlueprintCallable 
+	// void PopAllCursorsForObject(class UObject* InstigatingObject, bool bDeactivateIfStackEmpty);                          // [0xb642f68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.OnRep_ReplicatedWorldLocation
-	// void OnRep_ReplicatedWorldLocation();                                                                                 // [0xb40b0a4] Final|Native|Private 
+	// void OnRep_ReplicatedWorldLocation();                                                                                 // [0xb642c44] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.OnRep_ReplicatedCursorStackEntry
-	// void OnRep_ReplicatedCursorStackEntry(FSpecialEventCursorStackEntry& OldCursorStackEntry);                            // [0xb40b008] Final|Native|Private|HasOutParms 
+	// void OnRep_ReplicatedCursorStackEntry(FSpecialEventCursorStackEntry& OldCursorStackEntry);                            // [0xb642ba8] Final|Native|Private|HasOutParms 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.OnRep_bAllowOnNonOwningClients
-	// void OnRep_bAllowOnNonOwningClients();                                                                                // [0xb40b1d0] Final|Native|Private 
+	// void OnRep_bAllowOnNonOwningClients();                                                                                // [0xb642d70] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.OnLocallyControlledCursorVisibilityChanged
-	// void OnLocallyControlledCursorVisibilityChanged(class USpecialEventCursorPawnComponent* CursorPawnComponent, FGameplayTag& CursorModeTag, bool bShouldBeVisible); // [0xb40ac28] Final|Native|Private|HasOutParms 
+	// void OnLocallyControlledCursorVisibilityChanged(class USpecialEventCursorPawnComponent* CursorPawnComponent, FGameplayTag& CursorModeTag, bool bShouldBeVisible); // [0xb64274c] Final|Native|Private|HasOutParms 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.OnInputMethodChanged
-	// void OnInputMethodChanged(ECommonInputType InputType);                                                                // [0xb40aba8] Final|Native|Private 
+	// void OnInputMethodChanged(ECommonInputType InputType);                                                                // [0xb64268c] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.OnHUDPostRender
-	// void OnHUDPostRender(class AHUD* HUD, class UCanvas* Canvas);                                                         // [0x69b67c4] Final|Native|Private 
+	// void OnHUDPostRender(class AHUD* HUD, class UCanvas* Canvas);                                                         // [0x6714940] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.MoveInputUpdate
-	// void MoveInputUpdate(FVector& InInputVector);                                                                         // [0xb40a6e4] Final|Native|Private|HasOutParms|HasDefaults 
+	// void MoveInputUpdate(FVector& InInputVector);                                                                         // [0xb642068] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.LookInputUpdate
-	// void LookInputUpdate(FVector& InInputVector);                                                                         // [0xb40a534] Final|Native|Private|HasOutParms|HasDefaults 
+	// void LookInputUpdate(FVector& InInputVector);                                                                         // [0xb641eb8] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.IsZoomAllowed
-	// bool IsZoomAllowed();                                                                                                 // [0x97adda8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsZoomAllowed();                                                                                                 // [0xa3dc4bc] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.IsLocallyControlled
-	// bool IsLocallyControlled();                                                                                           // [0x973146c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLocallyControlled();                                                                                           // [0x983d2d8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.IsAdditiveRotationAllowed
-	// bool IsAdditiveRotationAllowed();                                                                                     // [0xb40a51c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAdditiveRotationAllowed();                                                                                     // [0xb641ea0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.InputPressed
-	// void InputPressed(FName& ActionName, bool bPressed);                                                                  // [0xb40a3f8] Final|Native|Private|HasOutParms 
+	// void InputPressed(FName& ActionName, bool bPressed);                                                                  // [0xb641d7c] Final|Native|Private|HasOutParms 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GyroInputUpdate
-	// void GyroInputUpdate(FVector& InInputVector);                                                                         // [0xb40a1c4] Final|Native|Private|HasOutParms|HasDefaults 
+	// void GyroInputUpdate(FVector& InInputVector);                                                                         // [0xb641a84] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetWorldLocationAndDirection
-	// bool GetWorldLocationAndDirection(FVector& OutWorldLocation, FVector& OutWorldDirection);                             // [0xb40a058] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool GetWorldLocationAndDirection(FVector& OutWorldLocation, FVector& OutWorldDirection);                             // [0xb641918] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetViewportSize
-	// bool GetViewportSize(FVector2D& OutViewportSize);                                                                     // [0xb409fc4] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool GetViewportSize(FVector2D& OutViewportSize);                                                                     // [0xb641884] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetViewportLocation
-	// bool GetViewportLocation(FVector2D& OutViewportLocation);                                                             // [0xb409f24] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool GetViewportLocation(FVector2D& OutViewportLocation);                                                             // [0xb6417e4] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetViewportCenter
-	// bool GetViewportCenter(FVector2D& OutViewportCenter);                                                                 // [0xb409e60] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool GetViewportCenter(FVector2D& OutViewportCenter);                                                                 // [0xb641720] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetSpecialEventCursorPawnComponent
-	// class USpecialEventCursorPawnComponent* GetSpecialEventCursorPawnComponent(class APawn* Pawn, FGameplayTag& CursorModeTag, bool bMustBeActive); // [0xb409534] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class USpecialEventCursorPawnComponent* GetSpecialEventCursorPawnComponent(class APawn* Pawn, FGameplayTag& CursorModeTag, bool bMustBeActive); // [0xb640cb4] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetNormalizedLocation
-	// FVector2D GetNormalizedLocation();                                                                                    // [0xb409518] Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetNormalizedLocation();                                                                                    // [0xb640c80] Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetLocalController
-	// class APlayerController* GetLocalController();                                                                        // [0xb4094f4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APlayerController* GetLocalController();                                                                        // [0xb640c5c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetInputType
-	// ECommonInputType GetInputType();                                                                                      // [0x3447584] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ECommonInputType GetInputType();                                                                                      // [0x7faa8f0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetCursorModeTagsForWidget
-	// FGameplayTagContainer GetCursorModeTagsForWidget(class UUserWidget* Widget);                                          // [0xb408aec] Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetCursorModeTagsForWidget(class UUserWidget* Widget);                                          // [0xb64010c] Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetCurrentWidget
-	// class UUserWidget* GetCurrentWidget();                                                                                // [0xb408a94] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UUserWidget* GetCurrentWidget();                                                                                // [0xb6400b4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetCurrentHitResult
-	// bool GetCurrentHitResult(FHitResult& OutHitResult);                                                                   // [0xb40884c] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetCurrentHitResult(FHitResult& OutHitResult);                                                                   // [0xb63fe2c] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetCurrentCursorModeTag
-	// FGameplayTag GetCurrentCursorModeTag();                                                                               // [0x6428958] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetCurrentCursorModeTag();                                                                               // [0x6159458] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetCenteredWidgetLocation
-	// FVector2D GetCenteredWidgetLocation(class UUserWidget* Widget, FVector2D& ViewportLocation);                          // [0xb40867c] Final|RequiredAPI|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetCenteredWidgetLocation(class UUserWidget* Widget, FVector2D& ViewportLocation);                          // [0xb63fc18] Final|RequiredAPI|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.GetCameraComponent
-	// class UCameraComponent* GetCameraComponent();                                                                         // [0xb408658] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCameraComponent* GetCameraComponent();                                                                         // [0xb63fbf4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.ConvertWorldToViewportLocation
-	// bool ConvertWorldToViewportLocation(FVector2D& OutViewportLocation, FVector& WorldLocation);                          // [0xb40747c] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool ConvertWorldToViewportLocation(FVector2D& OutViewportLocation, FVector& WorldLocation);                          // [0xb63e690] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.ConvertWorldToNormalizedLocation
-	// bool ConvertWorldToNormalizedLocation(FVector2D& OutNormalizedLocation, FVector& WorldLocation);                      // [0xb407350] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool ConvertWorldToNormalizedLocation(FVector2D& OutNormalizedLocation, FVector& WorldLocation);                      // [0xb63e564] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.ConvertViewportToWorldLocationAndDirection
-	// bool ConvertViewportToWorldLocationAndDirection(FVector& OutWorldLocation, FVector& OutWorldDirection, FVector2D& ViewportLocation); // [0xb40719c] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool ConvertViewportToWorldLocationAndDirection(FVector& OutWorldLocation, FVector& OutWorldDirection, FVector2D& ViewportLocation); // [0xb63e3b0] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.ConvertViewportToNormalizedLocation
-	// bool ConvertViewportToNormalizedLocation(FVector2D& OutNormalizedLocation, FVector2D& ViewportLocation);              // [0xb4070ac] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool ConvertViewportToNormalizedLocation(FVector2D& OutNormalizedLocation, FVector2D& ViewportLocation);              // [0xb63e2c0] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.ConvertNormalizedToWorldLocationAndDirection
-	// bool ConvertNormalizedToWorldLocationAndDirection(FVector& OutWorldLocation, FVector& OutWorldDirection, FVector2D& NormalizedLocation); // [0xb406ef8] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool ConvertNormalizedToWorldLocationAndDirection(FVector& OutWorldLocation, FVector& OutWorldDirection, FVector2D& NormalizedLocation); // [0xb63e10c] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.ConvertNormalizedToViewportLocation
-	// bool ConvertNormalizedToViewportLocation(FVector2D& OutViewportLocation, FVector2D& NormalizedLocation);              // [0xb406e08] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// bool ConvertNormalizedToViewportLocation(FVector2D& OutViewportLocation, FVector2D& NormalizedLocation);              // [0xb63e01c] Final|BlueprintCosmetic|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorPawnComponent.CanBeVisible
-	// bool CanBeVisible();                                                                                                  // [0xb406d94] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanBeVisible();                                                                                                  // [0xb63dfa8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent
@@ -1131,7 +1131,7 @@ class USpecialEventCursorWeaponComponent : public UFortWeaponComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00A0   (0x0008)  MISSED
-	SDK_UNDEFINED(16,15204) /* FMulticastInlineDelegate */ __um(OnCursorPawnComponentSet);                         // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,15299) /* FMulticastInlineDelegate */ __um(OnCursorPawnComponentSet);                         // 0x00A8   (0x0010)  
 	class UClass*                                      CursorPawnComponentClass;                                   // 0x00B8   (0x0008)  
 	FGameplayTag                                       CursorModeTag;                                              // 0x00C0   (0x0004)  
 	bool                                               bAlignFXToCursor;                                           // 0x00C4   (0x0001)  
@@ -1144,27 +1144,27 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.OnUnEquip
-	// void OnUnEquip(class AFortWeapon* Weapon);                                                                            // [0xb40b308] Final|Native|Private 
+	// void OnUnEquip(class AFortWeapon* Weapon);                                                                            // [0xb642ea8] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.OnRep_CursorPawnComponent
-	// void OnRep_CursorPawnComponent();                                                                                     // [0xb40af58] Final|Native|Protected 
+	// void OnRep_CursorPawnComponent();                                                                                     // [0xb642af8] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.OnPlayImpactFX
-	// void OnPlayImpactFX(class AFortWeapon* Weapon, FHitResult& HitResult, class UFXSystemComponent* FXSystemComponent);   // [0xb40adb4] Final|Native|Private|HasOutParms 
+	// void OnPlayImpactFX(class AFortWeapon* Weapon, FHitResult& HitResult, class UFXSystemComponent* FXSystemComponent);   // [0xb642914] Final|Native|Private|HasOutParms 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.OnGetAimRotOverride
-	// void OnGetAimRotOverride(class AFortWeapon* Weapon, EFortAbilityTargetingSource TargetingSource, FRotator& OutOverride, bool& bOutExecutionResult); // [0xb40aa44] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnGetAimRotOverride(class AFortWeapon* Weapon, EFortAbilityTargetingSource TargetingSource, FRotator& OutOverride, bool& bOutExecutionResult); // [0xb6424bc] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.OnEquip
-	// void OnEquip(class AFortWeapon* Weapon);                                                                              // [0xb40a9c4] Final|Native|Private 
+	// void OnEquip(class AFortWeapon* Weapon);                                                                              // [0xb6423fc] Final|Native|Private 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.OnBeamFired
-	// void OnBeamFired(class AFortWeapon* Weapon, bool bUsePersistentBeam, class UFXSystemComponent* PSC, FVector& BeamOrigin, FVector& HitLocation); // [0xb40a7a8] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnBeamFired(class AFortWeapon* Weapon, bool bUsePersistentBeam, class UFXSystemComponent* PSC, FVector& BeamOrigin, FVector& HitLocation); // [0xb64212c] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.GetSpecialEventCursorPawnComponentForWeapon
-	// class USpecialEventCursorPawnComponent* GetSpecialEventCursorPawnComponentForWeapon(class AFortWeapon* Weapon);       // [0xb409748] Final|Native|Static|Public|BlueprintCallable 
+	// class USpecialEventCursorPawnComponent* GetSpecialEventCursorPawnComponentForWeapon(class AFortWeapon* Weapon);       // [0xb640f48] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.GetSpecialEventCursorPawnComponentForCurrentWeapon
-	// class USpecialEventCursorPawnComponent* GetSpecialEventCursorPawnComponentForCurrentWeapon(class AFortPlayerPawn* Pawn); // [0xb4096b8] Final|Native|Static|Public|BlueprintCallable 
+	// class USpecialEventCursorPawnComponent* GetSpecialEventCursorPawnComponentForCurrentWeapon(class AFortPlayerPawn* Pawn); // [0xb640e78] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.GetCursorPawnComponent
-	// class USpecialEventCursorPawnComponent* GetCursorPawnComponent();                                                     // [0x8f91958] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USpecialEventCursorPawnComponent* GetCursorPawnComponent();                                                     // [0x8fda554] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.GetCurrentSpecialEventCursorWeaponComponent
-	// class USpecialEventCursorWeaponComponent* GetCurrentSpecialEventCursorWeaponComponent(class AFortPlayerPawn* Pawn);   // [0xb408a14] Final|Native|Static|Public|BlueprintCallable 
+	// class USpecialEventCursorWeaponComponent* GetCurrentSpecialEventCursorWeaponComponent(class AFortPlayerPawn* Pawn);   // [0xb63fff4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventCursorWeaponComponent.GetCurrentHitResult
-	// bool GetCurrentHitResult(FHitResult& OutHitResult);                                                                   // [0xb408930] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool GetCurrentHitResult(FHitResult& OutHitResult);                                                                   // [0xb63ff10] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable|Const 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialEventGameplayGlobals
@@ -1183,41 +1183,41 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.StreamOutAllBuildingFoundations
-	// void StreamOutAllBuildingFoundations(class UObject* WorldContextObject);                                              // [0xb40d1fc] Final|Native|Static|Public|BlueprintCallable 
+	// void StreamOutAllBuildingFoundations(class UObject* WorldContextObject);                                              // [0xb645194] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.SetNextLoadingScreen
-	// void SetNextLoadingScreen(class UObject* WorldContextObject, class UAthenaLoadingScreenItemDefinition* LoadingScreenDefinition, bool bCanShowLoadingBar); // [0xb40c820] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void SetNextLoadingScreen(class UObject* WorldContextObject, class UAthenaLoadingScreenItemDefinition* LoadingScreenDefinition, bool bCanShowLoadingBar); // [0xb6444f4] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.SetLODOnLandscapProxies
-	// void SetLODOnLandscapProxies(class UObject* WorldContextObject, bool bForced, int32_t InLODValue);                    // [0xb40c6c0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetLODOnLandscapProxies(class UObject* WorldContextObject, bool bForced, int32_t InLODValue);                    // [0xb644290] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.HideSkydivingShadowProxy
-	// void HideSkydivingShadowProxy(class UObject* WorldContextObject);                                                     // [0xb40a388] Final|Native|Static|Public|BlueprintCallable 
+	// void HideSkydivingShadowProxy(class UObject* WorldContextObject);                                                     // [0xb641ccc] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.GetSpecialEventScript
-	// class ASpecialEventScript* GetSpecialEventScript(class UObject* WorldContextObject);                                  // [0xb409a58] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ASpecialEventScript* GetSpecialEventScript(class UObject* WorldContextObject);                                  // [0xb64139c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.GetSpecialEventPlayerDisplayName
-	// FString GetSpecialEventPlayerDisplayName(class AFortPlayerControllerAthena* LocalController, class AFortPlayerStateAthena* PlayerState); // [0xb409980] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// FString GetSpecialEventPlayerDisplayName(class AFortPlayerControllerAthena* LocalController, class AFortPlayerStateAthena* PlayerState); // [0xb641238] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.GetSpecialEventMutator
-	// class AFortAthenaMutator_SpecialEvent* GetSpecialEventMutator(class UObject* WorldContextObject);                     // [0xb409900] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AFortAthenaMutator_SpecialEvent* GetSpecialEventMutator(class UObject* WorldContextObject);                     // [0xb641178] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.GetHasInfiniteSafeZonePhase
-	// bool GetHasInfiniteSafeZonePhase(class UObject* WorldContextObject);                                                  // [0xb409290] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool GetHasInfiniteSafeZonePhase(class UObject* WorldContextObject);                                                  // [0xb6408f0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.ForceUpdateGrass
-	// void ForceUpdateGrass(class UObject* WorldContextObject, FVector Location);                                           // [0xb4084d0] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void ForceUpdateGrass(class UObject* WorldContextObject, FVector Location);                                           // [0xb63fa8c] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.ForceDestroyComponents
-	// void ForceDestroyComponents(TArray<UActorComponent*>& Components, bool bPromoteChildren, FString LogContext);         // [0xb407c38] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ForceDestroyComponents(TArray<UActorComponent*>& Components, bool bPromoteChildren, FString LogContext);         // [0xb63f1c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.FindSpecialEventComponent
-	// class UFortControllerComponent_SpecialEvent* FindSpecialEventComponent(class AController* Controller);                // [0xb407b84] Final|Native|Static|Public|BlueprintCallable 
+	// class UFortControllerComponent_SpecialEvent* FindSpecialEventComponent(class AController* Controller);                // [0xb63f0c8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.FindGameplayCinematicComponent
-	// class UFortControllerComponent_GameplayCinematic* FindGameplayCinematicComponent(class AController* Controller);      // [0xb4079ac] Final|Native|Static|Public|BlueprintCallable 
+	// class UFortControllerComponent_GameplayCinematic* FindGameplayCinematicComponent(class AController* Controller);      // [0xb63ee6c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.DetachPawnFromComponent
-	// bool DetachPawnFromComponent(class AFortPawn* Pawn, class USceneComponent* Component, EDetachmentRule LocationRule, EDetachmentRule RotationRule, EDetachmentRule ScaleRule); // [0xb407830] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// bool DetachPawnFromComponent(class AFortPawn* Pawn, class USceneComponent* Component, EDetachmentRule LocationRule, EDetachmentRule RotationRule, EDetachmentRule ScaleRule); // [0xb63ebbc] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.DetachPawn
-	// bool DetachPawn(class AFortPawn* Pawn, EDetachmentRule LocationRule, EDetachmentRule RotationRule, EDetachmentRule ScaleRule); // [0xb4076f8] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// bool DetachPawn(class AFortPawn* Pawn, EDetachmentRule LocationRule, EDetachmentRule RotationRule, EDetachmentRule ScaleRule); // [0xb63e988] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.CreateSpecialEventPlayerEliminationWorldMarker
-	// void CreateSpecialEventPlayerEliminationWorldMarker(class AFortPlayerControllerAthena* LocalController, class AFortPlayerStateAthena* VictimPlayerState, FVector& DeathLocation); // [0xb4075a8] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CreateSpecialEventPlayerEliminationWorldMarker(class AFortPlayerControllerAthena* LocalController, class AFortPlayerStateAthena* VictimPlayerState, FVector& DeathLocation); // [0xb63e7bc] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.AttachPawnToComponent
-	// bool AttachPawnToComponent(class AFortPawn* Pawn, class USceneComponent* Component, FName SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies); // [0xb406930] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
+	// bool AttachPawnToComponent(class AFortPawn* Pawn, class USceneComponent* Component, FName SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies); // [0xb63da7c] Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.AddSpecialEventRecentElimination
-	// void AddSpecialEventRecentElimination(FVector& Location, class AFortPlayerStateAthena* PlayerState);                  // [0xb406280] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void AddSpecialEventRecentElimination(FVector& Location, class AFortPlayerStateAthena* PlayerState);                  // [0xb63d570] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameplayLibrary.AddSpecialEventKillFeedEntry
-	// void AddSpecialEventKillFeedEntry(class UObject* WorldContextObject, class AFortPlayerStateAthena* VictimPlayerState, class AFortPlayerStateAthena* KillerPlayerState, FText NonPlayerVictimName, FText NonPlayerKillerName, FGameplayTag& DeathCauseTag, EDeathCauseReason DeathCauseReason, float Distance); // [0xb405f24] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void AddSpecialEventKillFeedEntry(class UObject* WorldContextObject, class AFortPlayerStateAthena* VictimPlayerState, class AFortPlayerStateAthena* KillerPlayerState, FText NonPlayerVictimName, FText NonPlayerKillerName, FGameplayTag& DeathCauseTag, EDeathCauseReason DeathCauseReason, float Distance); // [0xb63d104] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortAsyncAction_GameplayCinematicComponentReady
@@ -1225,13 +1225,13 @@ public:
 class UFortAsyncAction_GameplayCinematicComponentReady : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,15205) /* FMulticastInlineDelegate */ __um(OnReady);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,15300) /* FMulticastInlineDelegate */ __um(OnReady);                                          // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0040   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortAsyncAction_GameplayCinematicComponentReady.FindGameplayCinematicComponentAsync
-	// class UFortAsyncAction_GameplayCinematicComponentReady* FindGameplayCinematicComponentAsync(class AController* Conroller); // [0xb407a38] Final|Native|Static|Public|BlueprintCallable 
+	// class UFortAsyncAction_GameplayCinematicComponentReady* FindGameplayCinematicComponentAsync(class AController* Conroller); // [0xb63ef38] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent
@@ -1239,31 +1239,31 @@ public:
 class USpecialEventGameUserSettingsControllerComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,15206) /* FMulticastInlineDelegate */ __um(OnLoaded);                                         // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,15207) /* FString */              __um(Version);                                              // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,15301) /* FMulticastInlineDelegate */ __um(OnLoaded);                                         // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,15302) /* FString */              __um(Version);                                              // 0x00B0   (0x0010)  
 	float                                              MinTimeBetweenSaves;                                        // 0x00C0   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x24];                                      // 0x00C4   (0x0024)  MISSED
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.SpecialEventGameUserSettings_ToggleDebug
-	// void SpecialEventGameUserSettings_ToggleDebug();                                                                      // [0x32e4b44] Final|BlueprintCosmetic|Exec|Native|Public 
+	// void SpecialEventGameUserSettings_ToggleDebug();                                                                      // [0x307d48c] Final|BlueprintCosmetic|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.SpecialEventGameUserSettings_SetData
-	// void SpecialEventGameUserSettings_SetData(FString Data);                                                              // [0x6860530] Final|BlueprintCosmetic|Exec|Native|Public 
+	// void SpecialEventGameUserSettings_SetData(FString Data);                                                              // [0x65b05c8] Final|BlueprintCosmetic|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.SpecialEventGameUserSettings_LogData
-	// void SpecialEventGameUserSettings_LogData();                                                                          // [0x32e4b44] Final|BlueprintCosmetic|Exec|Native|Public|Const 
+	// void SpecialEventGameUserSettings_LogData();                                                                          // [0x307d48c] Final|BlueprintCosmetic|Exec|Native|Public|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.SpecialEventGameUserSettings_ClearData
-	// void SpecialEventGameUserSettings_ClearData();                                                                        // [0xb40d0d8] Final|BlueprintCosmetic|Exec|Native|Public 
+	// void SpecialEventGameUserSettings_ClearData();                                                                        // [0xb644ff8] Final|BlueprintCosmetic|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.SetSavingBlocked
-	// void SetSavingBlocked(bool bBlocked);                                                                                 // [0xb40cc2c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetSavingBlocked(bool bBlocked);                                                                                 // [0xb6449c4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.SetData
-	// void SetData(FString Data, bool bAllowSave, bool bSaveNow);                                                           // [0xb40be58] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetData(FString Data, bool bAllowSave, bool bSaveNow);                                                           // [0xb643970] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.ParseLoadedData
-	// void ParseLoadedData(FString Data);                                                                                   // [0x211c0a0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void ParseLoadedData(FString Data);                                                                                   // [0x2047e54] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.GetSpecialEventGameUserSettingsControllerComponent
-	// class USpecialEventGameUserSettingsControllerComponent* GetSpecialEventGameUserSettingsControllerComponent(class UObject* WorldContextObject); // [0xb4097c8] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// class USpecialEventGameUserSettingsControllerComponent* GetSpecialEventGameUserSettingsControllerComponent(class UObject* WorldContextObject); // [0xb641008] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventGameUserSettingsControllerComponent.GetData
-	// void GetData(ESpecialEventGameUserSettingsResult& OutResult, FString& OutData);                                       // [0xb408b94] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// void GetData(ESpecialEventGameUserSettingsResult& OutResult, FString& OutData);                                       // [0xb6401f4] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable|Const 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.FortAsyncAction_SpecialEventGameUserSettingsReady
@@ -1271,13 +1271,13 @@ public:
 class UFortAsyncAction_SpecialEventGameUserSettingsReady : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,15208) /* FMulticastInlineDelegate */ __um(OnReady);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,15303) /* FMulticastInlineDelegate */ __um(OnReady);                                          // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0040   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.FortAsyncAction_SpecialEventGameUserSettingsReady.SpecialEventGameUserSettingsReadyAsync
-	// class UFortAsyncAction_SpecialEventGameUserSettingsReady* SpecialEventGameUserSettingsReadyAsync(class UObject* WorldContextObject); // [0xb40d000] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// class UFortAsyncAction_SpecialEventGameUserSettingsReady* SpecialEventGameUserSettingsReadyAsync(class UObject* WorldContextObject); // [0xb644ee0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.SpecialEventPhaseComponentNetModeInfo
@@ -1297,7 +1297,7 @@ public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0290   (0x0018)  MISSED
 	FGameplayTag                                       PhaseTag;                                                   // 0x02A8   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x02AC   (0x0004)  MISSED
-	SDK_UNDEFINED(32,15209) /* TWeakObjectPtr<ULevelSequence*> */ __um(LevelSequence);                             // 0x02B0   (0x0020)  
+	SDK_UNDEFINED(32,15304) /* TWeakObjectPtr<ULevelSequence*> */ __um(LevelSequence);                             // 0x02B0   (0x0020)  
 	float                                              LevelSequenceTime;                                          // 0x02D0   (0x0004)  
 	bool                                               bApplyGameplayEffects;                                      // 0x02D4   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x02D5   (0x0003)  MISSED
@@ -1318,25 +1318,25 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.SetHUDElementVisibility
-	// void SetHUDElementVisibility(FGameplayTagContainer& HUDElementTags, bool bHideElements);                              // [0xb40c57c] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetHUDElementVisibility(FGameplayTagContainer& HUDElementTags, bool bHideElements);                              // [0xb64414c] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.PrePhaseActivation_Server
-	// void PrePhaseActivation_Server();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void PrePhaseActivation_Server();                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.OnRep_PhaseState
-	// void OnRep_PhaseState();                                                                                              // [0xb40afc4] Final|Native|Protected 
+	// void OnRep_PhaseState();                                                                                              // [0xb642b64] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.OnPhaseFinished
-	// void OnPhaseFinished();                                                                                               // [0xb40ada0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void OnPhaseFinished();                                                                                               // [0xb642900] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.OnPhaseDeactivation_Server
-	// void OnPhaseDeactivation_Server();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPhaseDeactivation_Server();                                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.OnPhaseDeactivation_Client
-	// void OnPhaseDeactivation_Client();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPhaseDeactivation_Client();                                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.OnPhaseActivation_Server
-	// void OnPhaseActivation_Server();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPhaseActivation_Server();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.OnPhaseActivation_Client
-	// void OnPhaseActivation_Client();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnPhaseActivation_Client();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.GetPhaseTag
-	// FGameplayTag GetPhaseTag();                                                                                           // [0x651c4fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetPhaseTag();                                                                                           // [0xb640c9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPhase.DebugActivatePhase
-	// void DebugActivatePhase();                                                                                            // [0x32e4b44] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void DebugActivatePhase();                                                                                            // [0x307d48c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialEventPlayerMannequin
@@ -1353,11 +1353,11 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPlayerMannequin.RegisterWithSpecialEventMutator
-	// void RegisterWithSpecialEventMutator();                                                                               // [0xb40b7f8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void RegisterWithSpecialEventMutator();                                                                               // [0xb643450] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPlayerMannequin.HandleOnMutatorAdded
-	// void HandleOnMutatorAdded(class AFortGameplayMutator* NewMutator);                                                    // [0xb40a288] Final|Native|Protected 
+	// void HandleOnMutatorAdded(class AFortGameplayMutator* NewMutator);                                                    // [0xb641b48] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventPlayerMannequin.DestroyUnusedSkeletalMeshComponents
-	// void DestroyUnusedSkeletalMeshComponents();                                                                           // [0xb4076e4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void DestroyUnusedSkeletalMeshComponents();                                                                           // [0xb63e974] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.SpecialEventRewindComponentStateData
@@ -1389,9 +1389,9 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventRewindComponent.TryStartRewinding
-	// bool TryStartRewinding(float duration, float PlaybackSpeed);                                                          // [0xb40d26c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// bool TryStartRewinding(float duration, float PlaybackSpeed);                                                          // [0xb645244] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventRewindComponent.OnRep_StateData
-	// void OnRep_StateData(FSpecialEventRewindComponentStateData& OldStateData);                                            // [0xb40b13c] Final|Native|Private|HasOutParms 
+	// void OnRep_StateData(FSpecialEventRewindComponentStateData& OldStateData);                                            // [0xb642cdc] Final|Native|Private|HasOutParms 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.SpecialEventRewindComponentRecording
@@ -1450,7 +1450,7 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventRewindComponent_PlayerPawn.OnServerLanded
-	// void OnServerLanded(FHitResult& Hit);                                                                                 // [0xb40b234] Final|Native|Private|HasOutParms 
+	// void OnServerLanded(FHitResult& Hit);                                                                                 // [0xb642dd4] Final|Native|Private|HasOutParms 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.PhaseLevelEntryBase
@@ -1472,8 +1472,8 @@ struct FPhaseLevelEntryBase
 /// Size: 0x0070 (0x000060 - 0x0000D0)
 struct FPhaseLevelEntry : FPhaseLevelEntryBase
 { 
-	SDK_UNDEFINED(32,15210) /* TWeakObjectPtr<UWorld*> */ __um(LevelToLoad);                                       // 0x0060   (0x0020)  
-	SDK_UNDEFINED(16,15211) /* FString */              __um(LevelName);                                            // 0x0080   (0x0010)  
+	SDK_UNDEFINED(32,15305) /* TWeakObjectPtr<UWorld*> */ __um(LevelToLoad);                                       // 0x0060   (0x0020)  
+	SDK_UNDEFINED(16,15306) /* FString */              __um(LevelName);                                            // 0x0080   (0x0010)  
 	bool                                               bExcludeFromServerPreload;                                  // 0x0090   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0091   (0x0007)  MISSED
 	FVector                                            Location;                                                   // 0x0098   (0x0018)  
@@ -1515,8 +1515,8 @@ struct FPhaseInfo
 class ASpecialEventScript : public AInfo
 { 
 public:
-	SDK_UNDEFINED(16,15212) /* FMulticastInlineDelegate */ __um(OnSpecialEventPhaseActivated);                     // 0x0290   (0x0010)  
-	SDK_UNDEFINED(16,15213) /* FMulticastInlineDelegate */ __um(OnSpecialEventPhaseDeactivated);                   // 0x02A0   (0x0010)  
+	SDK_UNDEFINED(16,15307) /* FMulticastInlineDelegate */ __um(OnSpecialEventPhaseActivated);                     // 0x0290   (0x0010)  
+	SDK_UNDEFINED(16,15308) /* FMulticastInlineDelegate */ __um(OnSpecialEventPhaseDeactivated);                   // 0x02A0   (0x0010)  
 	TArray<FPhaseInfo>                                 PhaseInfoArray;                                             // 0x02B0   (0x0010)  
 	float                                              DropDeadWindowSizeInSeconds;                                // 0x02C0   (0x0004)  
 	float                                              DelayAfterConentLoad;                                       // 0x02C4   (0x0004)  
@@ -1537,21 +1537,21 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScript.StartEventAtIndex
-	// void StartEventAtIndex(int32_t InStartingIndex, float SequenceTimeOffset);                                            // [0xb40d110] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void StartEventAtIndex(int32_t InStartingIndex, float SequenceTimeOffset);                                            // [0xb645030] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScript.SetLocalPlayersSignificantForSpecialEventSequence
-	// void SetLocalPlayersSignificantForSpecialEventSequence(bool bIsSignificant);                                          // [0xb40c7b8] Final|Native|Public|BlueprintCallable|Const 
+	// void SetLocalPlayersSignificantForSpecialEventSequence(bool bIsSignificant);                                          // [0xb644448] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScript.OnRep_ReplicatedActivePhaseIndex
-	// void OnRep_ReplicatedActivePhaseIndex();                                                                              // [0xb40afec] Final|Native|Protected 
+	// void OnRep_ReplicatedActivePhaseIndex();                                                                              // [0xb642b8c] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScript.GetActivePhaseIndex
-	// int32_t GetActivePhaseIndex();                                                                                        // [0xb408640] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetActivePhaseIndex();                                                                                        // [0xb63fbdc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScript.BP_OnScriptReady
-	// void BP_OnScriptReady();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnScriptReady();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScript.BP_OnScriptFinished
-	// void BP_OnScriptFinished();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnScriptFinished();                                                                                           // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScript.AttemptStartNextPhase
-	// void AttemptStartNextPhase(FGameplayTag CurrentPhaseTag);                                                             // [0xb406c64] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AttemptStartNextPhase(FGameplayTag CurrentPhaseTag);                                                             // [0xb63dee8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScript.AttemptFinishPhase
-	// void AttemptFinishPhase(FGameplayTag PhaseTag);                                                                       // [0xb406b34] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void AttemptFinishPhase(FGameplayTag PhaseTag);                                                                       // [0xb63de28] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialEventScriptMeshActor
@@ -1560,7 +1560,7 @@ class ASpecialEventScriptMeshActor : public AInfo
 { 
 public:
 	FDateTime                                          RootStartTime;                                              // 0x0290   (0x0008)  
-	SDK_UNDEFINED(16,15214) /* FString */              __um(CalendarEventName);                                    // 0x0298   (0x0010)  
+	SDK_UNDEFINED(16,15309) /* FString */              __um(CalendarEventName);                                    // 0x0298   (0x0010)  
 	float                                              CalenderEventOffsetInSeconds;                               // 0x02A8   (0x0004)  
 	float                                              EncryptionKeyDeliveryTimeOffset;                            // 0x02AC   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x02B0   (0x0008)  MISSED
@@ -1569,19 +1569,19 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScriptMeshActor.OnRep_RootStartTime
-	// void OnRep_RootStartTime();                                                                                           // [0xb40b0bc] Final|Native|Protected 
+	// void OnRep_RootStartTime();                                                                                           // [0xb642c5c] Final|Native|Protected 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScriptMeshActor.MeshRootStartEvent
-	// void MeshRootStartEvent();                                                                                            // [0xb40a6d0] Final|Exec|Native|Public 
+	// void MeshRootStartEvent();                                                                                            // [0xb642054] Final|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScriptMeshActor.MeshRootStartCalendarTimerOnly
-	// void MeshRootStartCalendarTimerOnly();                                                                                // [0xb40a648] Final|Exec|Native|Public 
+	// void MeshRootStartCalendarTimerOnly();                                                                                // [0xb641fcc] Final|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScriptMeshActor.MeshRootStartCalendarTimer
-	// void MeshRootStartCalendarTimer();                                                                                    // [0xb40a634] Final|Exec|Native|Public 
+	// void MeshRootStartCalendarTimer();                                                                                    // [0xb641fb8] Final|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScriptMeshActor.MeshRootResetEvent
-	// void MeshRootResetEvent();                                                                                            // [0xb40a620] Final|Exec|Native|Public 
+	// void MeshRootResetEvent();                                                                                            // [0xb641fa4] Final|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScriptMeshActor.MeshRootLogCalendarTimer
-	// void MeshRootLogCalendarTimer();                                                                                      // [0xb40a60c] Final|Exec|Native|Public 
+	// void MeshRootLogCalendarTimer();                                                                                      // [0xb641f90] Final|Exec|Native|Public 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventScriptMeshActor.MeshRootClearCalendarTimer
-	// void MeshRootClearCalendarTimer();                                                                                    // [0xb40a5f8] Final|Exec|Native|Public 
+	// void MeshRootClearCalendarTimer();                                                                                    // [0xb641f7c] Final|Exec|Native|Public 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.SpecialEventStatDefinition
@@ -1620,20 +1620,20 @@ struct FSpecialEventStatArray : FFastArraySerializer
 class USpecialEventStatComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,15215) /* FMulticastInlineDelegate */ __um(OnValueChangedDelegate);                           // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,15310) /* FMulticastInlineDelegate */ __um(OnValueChangedDelegate);                           // 0x00A0   (0x0010)  
 	TArray<FSpecialEventStatDefinition>                StatDefinitions;                                            // 0x00B0   (0x0010)  
 	FSpecialEventStatArray                             StatFastArray;                                              // 0x00C0   (0x0120)  
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventStatComponent.GetStat
-	// FSpecialEventStatArrayEntry GetStat(bool& bOutValid, FGameplayTag LookupTag);                                         // [0xb409cd8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// FSpecialEventStatArrayEntry GetStat(bool& bOutValid, FGameplayTag LookupTag);                                         // [0xb6415f8] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventStatComponent.GetSpecialEventStat
-	// FSpecialEventStatArrayEntry GetSpecialEventStat(bool& bOutValid, class AActor* Actor, FGameplayTag LookupTag);        // [0xb409ad8] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FSpecialEventStatArrayEntry GetSpecialEventStat(bool& bOutValid, class AActor* Actor, FGameplayTag LookupTag);        // [0xb64145c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventStatComponent.AdjustStat
-	// bool AdjustStat(FGameplayTag LookupTag, float Adjustment, bool bLogError);                                            // [0xb406634] Final|Native|Public|BlueprintCallable 
+	// bool AdjustStat(FGameplayTag LookupTag, float Adjustment, bool bLogError);                                            // [0xb63d8a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialEventStatComponent.AdjustSpecialEventStat
-	// void AdjustSpecialEventStat(class AActor* Actor, FGameplayTag LookupTag, float Adjustment);                           // [0xb406400] Final|Native|Static|Public|BlueprintCallable 
+	// void AdjustSpecialEventStat(class AActor* Actor, FGameplayTag LookupTag, float Adjustment);                           // [0xb63d6f0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.DamageRecordEntry
@@ -1651,7 +1651,7 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.DamageRecordEntry.OnRep_DamageTotal
-	// void OnRep_DamageTotal();                                                                                             // [0xb40af6c] Final|Native|Public  
+	// void OnRep_DamageTotal();                                                                                             // [0xb642b0c] Final|Native|Public  
 };
 
 /// Class /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent
@@ -1664,28 +1664,28 @@ public:
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00C9   (0x0003)  MISSED
 	float                                              OwnerMaxHealthCached;                                       // 0x00CC   (0x0004)  
 	TArray<class UDamageRecordEntry*>                  ReplicatedDamageRecords;                                    // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,15216) /* FMulticastInlineDelegate */ __um(OnSpecialRelevancyDeath);                          // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,15217) /* FMulticastInlineDelegate */ __um(OnSpecialRelevancyDamage);                         // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,15311) /* FMulticastInlineDelegate */ __um(OnSpecialRelevancyDeath);                          // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,15312) /* FMulticastInlineDelegate */ __um(OnSpecialRelevancyDamage);                         // 0x00F0   (0x0010)  
 	class AFortAthenaMutator_SpecialRelevancy*         CachedMutator;                                              // 0x0100   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent.OnKilled
-	// void OnKilled(class AFortPlayerState* KillingPlayerState, int32_t RelevancyGroupIndex);                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnKilled(class AFortPlayerState* KillingPlayerState, int32_t RelevancyGroupIndex);                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent.OnDamaged
-	// void OnDamaged(class AFortPlayerState* DamagingPlayerState, int32_t RelevancyGroupIndex, float DealtDamage, float ActualDealtDamage, float TotalDamage, float DealtDamagePercent, float ActualDealtDamagePercent, float TotalDamagePercent, float MaxHealth, bool bKilled); // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnDamaged(class AFortPlayerState* DamagingPlayerState, int32_t RelevancyGroupIndex, float DealtDamage, float ActualDealtDamage, float TotalDamage, float DealtDamagePercent, float ActualDealtDamagePercent, float TotalDamagePercent, float MaxHealth, bool bKilled); // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent.GetHealthPercentFromRelevancyIndex
-	// float GetHealthPercentFromRelevancyIndex(int32_t Index);                                                              // [0xb409464] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealthPercentFromRelevancyIndex(int32_t Index);                                                              // [0xb640b8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent.GetHealthPercent
-	// float GetHealthPercent(class AActor* RelevancyActor);                                                                 // [0xb40931c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealthPercent(class AActor* RelevancyActor);                                                                 // [0xb6409c0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent.GetHealthFromRelevancyIndex
-	// float GetHealthFromRelevancyIndex(int32_t Index);                                                                     // [0xb4093d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealthFromRelevancyIndex(int32_t Index);                                                                     // [0xb640abc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent.GetHealth
-	// float GetHealth(class AActor* RelevancyActor);                                                                        // [0xb40931c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealth(class AActor* RelevancyActor);                                                                        // [0xb6409c0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent.ClientGetHealthPercent
-	// float ClientGetHealthPercent();                                                                                       // [0xb406de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float ClientGetHealthPercent();                                                                                       // [0xb63dff4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SpecialEventGameplayRuntime.SpecialRelevancyHealthComponent.ClientGetHealth
-	// float ClientGetHealth();                                                                                              // [0xb406db8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float ClientGetHealth();                                                                                              // [0xb63dfcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/SpecialEventGameplayRuntime.SpecialClientEvent
@@ -1703,7 +1703,7 @@ struct FSpecialClientEvent
 /// Size: 0x000C (0x000000 - 0x00000C)
 struct FSpecialEventMathEaseData
 { 
-	SDK_UNDEFINED(1,15218) /* TEnumAsByte<EEasingFunc> */ __um(EasingFunc);                                        // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,15313) /* TEnumAsByte<EEasingFunc> */ __um(EasingFunc);                                        // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	float                                              BlendExp;                                                   // 0x0004   (0x0004)  
 	int32_t                                            Steps;                                                      // 0x0008   (0x0004)  
@@ -1773,7 +1773,7 @@ struct FSpecialEventCursorMode
 	FScalableFloat                                     GamepadZoomMoveSpeed;                                       // 0x01C0   (0x0028)  
 	FScalableFloat                                     TouchZoomMoveSpeed;                                         // 0x01E8   (0x0028)  
 	bool                                               bAllowTrace;                                                // 0x0210   (0x0001)  
-	SDK_UNDEFINED(1,15219) /* TEnumAsByte<ECollisionChannel> */ __um(TraceChannel);                                // 0x0211   (0x0001)  
+	SDK_UNDEFINED(1,15314) /* TEnumAsByte<ECollisionChannel> */ __um(TraceChannel);                                // 0x0211   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x6];                                       // 0x0212   (0x0006)  MISSED
 	FScalableFloat                                     SweepRadius;                                                // 0x0218   (0x0028)  
 	FScalableFloat                                     TraceDistance;                                              // 0x0240   (0x0028)  

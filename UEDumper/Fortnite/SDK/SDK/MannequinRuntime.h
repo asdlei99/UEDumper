@@ -27,6 +27,6 @@ public:
 
 	/// Functions
 	// Function /Script/MannequinRuntime.MannequinAnalyticsComponent.FireMannequinAnalytics_Interact
-	// void FireMannequinAnalytics_Interact(class AFortPlayerController* Controller, ECreativeMannequinAnalyticsInteractType InteractType, class UFortItemDefinition* Character, class UFortItemDefinition* BackBling); // [0xb4acda4] Native|Public|BlueprintCallable|Const 
+	// void FireMannequinAnalytics_Interact(class AFortPlayerController* Controller, ECreativeMannequinAnalyticsInteractType InteractType, class UFortItemDefinition* Character, class UFortItemDefinition* BackBling); // [0xb6eb4b0] Native|Public|BlueprintCallable|Const 
 };
 

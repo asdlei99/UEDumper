@@ -26,7 +26,7 @@ class UOptimusSettings : public UDeveloperSettings
 public:
 	EOptimusDefaultDeformerMode                        DefaultMode;                                                // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0031   (0x0007)  MISSED
-	SDK_UNDEFINED(32,14727) /* TWeakObjectPtr<UMeshDeformer*> */ __um(DefaultDeformer);                            // 0x0038   (0x0020)  
-	SDK_UNDEFINED(32,14728) /* TWeakObjectPtr<UMeshDeformer*> */ __um(DefaultRecomputeTangentDeformer);            // 0x0058   (0x0020)  
+	SDK_UNDEFINED(32,14822) /* TWeakObjectPtr<UMeshDeformer*> */ __um(DefaultDeformer);                            // 0x0038   (0x0020)  
+	SDK_UNDEFINED(32,14823) /* TWeakObjectPtr<UMeshDeformer*> */ __um(DefaultRecomputeTangentDeformer);            // 0x0058   (0x0020)  
 };
 

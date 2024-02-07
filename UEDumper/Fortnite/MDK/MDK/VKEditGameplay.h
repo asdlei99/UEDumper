@@ -77,7 +77,7 @@ public:
 
 	/// Functions
 	// Function /Script/VKEditGameplay.VKEditPlayspace.OnClientActivatedContent
-	// void OnClientActivatedContent(FUniqueNetIdRepl& ClientNetId);                                                            // [0xb687914] Final|Native|Private|HasOutParms|Const 
+	// void OnClientActivatedContent(FUniqueNetIdRepl& ClientNetId);                                                            // [0xb9005c4] Final|Native|Private|HasOutParms|Const 
 };
 
 /// Class /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager
@@ -95,8 +95,8 @@ public:
 
 	/// Functions
 	// Function /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager.OnRep_VkEditStatus
-	// void OnRep_VkEditStatus();                                                                                               // [0xb687a28] Final|Native|Protected|Const 
+	// void OnRep_VkEditStatus();                                                                                               // [0xb9006d8] Final|Native|Protected|Const 
 	// Function /Script/VKEditGameplay.PlayspaceComponent_EditConnectionManager.OnRep_EditConnections
-	// void OnRep_EditConnections();                                                                                            // [0xb6879e4] Final|Native|Protected|Const 
+	// void OnRep_EditConnections();                                                                                            // [0xb900694] Final|Native|Protected|Const 
 };
 

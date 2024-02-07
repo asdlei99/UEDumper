@@ -35,7 +35,7 @@ struct FTankWeaponAimingData
 	FScalableFloat                                     AimRotationLerpSpeed;                                       // 0x0008   (0x0028)  
 	FRuntimeFloatCurve                                 AimYawRotationEasingCurve;                                  // 0x0030   (0x0088)  
 	FRuntimeFloatCurve                                 AimPitchRotationEasingCurve;                                // 0x00B8   (0x0088)  
-	SDK_UNDEFINED(1,15266) /* TEnumAsByte<ETankAimingMode> */ __um(AimingMode);                                    // 0x0140   (0x0001)  
+	SDK_UNDEFINED(1,15362) /* TEnumAsByte<ETankAimingMode> */ __um(AimingMode);                                    // 0x0140   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0141   (0x0007)  MISSED
 	FScalableFloat                                     AimingCameraToMuzzleDistanceScalar;                         // 0x0148   (0x0028)  
 	FScalableFloat                                     AimingWhileTargetingCameraToMuzzleDistanceScalar;           // 0x0170   (0x0028)  
@@ -48,8 +48,8 @@ class UFortTankVehicleConfigs : public UFortTreadVehicleConfigs
 { 
 public:
 	TArray<FTankWeaponAimingData>                      TankWeaponAimingData;                                       // 0x0A20   (0x0010)  
-	SDK_UNDEFINED(24,15267) /* FText */                __um(SecondInteractText);                                   // 0x0A30   (0x0018)  
-	SDK_UNDEFINED(1,15268) /* TEnumAsByte<TInteractionType> */ __um(SecondInteractType);                           // 0x0A48   (0x0001)  
+	SDK_UNDEFINED(24,15363) /* FText */                __um(SecondInteractText);                                   // 0x0A30   (0x0018)  
+	SDK_UNDEFINED(1,15364) /* TEnumAsByte<TInteractionType> */ __um(SecondInteractType);                           // 0x0A48   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0A49   (0x0007)  MISSED
 	FScalableFloat                                     SecondInteractDuration;                                     // 0x0A50   (0x0028)  
 };
@@ -72,49 +72,49 @@ struct FServerSocketTransformOverride
 };
 
 /// Class /Script/TankRuntime.FortTankVehicle
-/// Size: 0x0190 (0x001E30 - 0x001FC0)
+/// Size: 0x0190 (0x001EA0 - 0x002030)
 class AFortTankVehicle : public AFortTreadVehicle
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x70];                                      // 0x1E30   (0x0070)  MISSED
-	SDK_UNDEFINED(16,15269) /* FMulticastInlineDelegate */ __um(OnTankRepairedDelegate);                           // 0x1EA0   (0x0010)  
-	FName                                              BarrelSocketName;                                           // 0x1EB0   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x1EB4   (0x0004)  MISSED
-	class UCapsuleComponent*                           BarrelCollision;                                            // 0x1EB8   (0x0008)  
-	class UStaticMeshComponent*                        UnderVehicleCollision;                                      // 0x1EC0   (0x0008)  
-	TArray<FServerSocketTransformOverride>             SocketOverrideArray;                                        // 0x1EC8   (0x0010)  
-	SDK_UNDEFINED(80,15270) /* TMap<FName, FTransform> */ __um(SocketTransformOverrideMap);                        // 0x1ED8   (0x0050)  
-	class USkeletalMeshComponent*                      CachedSkeletalMeshComponent;                                // 0x1F28   (0x0008)  
-	class AFortVehicleAudioController*                 CachedVehicleAudioController;                               // 0x1F30   (0x0008)  
-	EVisibilityBasedAnimTickOption                     DefaultServerVisibilityBasedAnimTickOption;                 // 0x1F38   (0x0001)  
-	bool                                               DefaultServerSkeletalMeshTickEnabled;                       // 0x1F39   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x2];                                       // 0x1F3A   (0x0002)  MISSED
-	FName                                              YawPivotSocketName;                                         // 0x1F3C   (0x0004)  
-	FName                                              PitchPivotSocketName;                                       // 0x1F40   (0x0004)  
-	unsigned char                                      UnknownData03_5[0x4];                                       // 0x1F44   (0x0004)  MISSED
-	class ULegacyCameraShake*                          DriverCameraShakeInstance;                                  // 0x1F48   (0x0008)  
-	class ULegacyCameraShake*                          AcceleratingCameraShakeInstance;                            // 0x1F50   (0x0008)  
-	unsigned char                                      UnknownData04_5[0x8];                                       // 0x1F58   (0x0008)  MISSED
-	class UNiagaraComponent*                           CachedNiagaraComponentRoadAndExhaust;                       // 0x1F60   (0x0008)  
-	SDK_UNDEFINED(16,15271) /* FString */              __um(RoadAndExhaustNiagaraComponentName);                   // 0x1F68   (0x0010)  
-	FName                                              RoadAndExhaustPeelOutLeftName;                              // 0x1F78   (0x0004)  
-	FName                                              RoadAndExhaustPeelOutRightName;                             // 0x1F7C   (0x0004)  
-	FName                                              RoadAndExhaustVehicleSpeedName;                             // 0x1F80   (0x0004)  
-	FName                                              RoadAndExhaustSlideDirectionName;                           // 0x1F84   (0x0004)  
-	float                                              RoadAndExhaustMinSpeedForDust;                              // 0x1F88   (0x0004)  
-	FName                                              RoadAndExhaustDustColorLerpName;                            // 0x1F8C   (0x0004)  
-	float                                              RoadAndExhaustDustColorLerpOffRoad;                         // 0x1F90   (0x0004)  
-	float                                              RoadAndExhaustDustColorLerpOnRoad;                          // 0x1F94   (0x0004)  
-	FName                                              RoadAndExhaustDustAlphaMultiplierName;                      // 0x1F98   (0x0004)  
-	float                                              RoadAndExhaustDustAlphaMultiplierOffRoad;                   // 0x1F9C   (0x0004)  
-	float                                              RoadAndExhaustDustAlphaMultiplierOnRoad;                    // 0x1FA0   (0x0004)  
-	FName                                              RoadAndExhaustDustFrontLeftName;                            // 0x1FA4   (0x0004)  
-	FName                                              RoadAndExhaustDustFrontRightName;                           // 0x1FA8   (0x0004)  
-	FName                                              RoadAndExhaustDustMiddleLeftName;                           // 0x1FAC   (0x0004)  
-	FName                                              RoadAndExhaustDustMiddleRightName;                          // 0x1FB0   (0x0004)  
-	FName                                              RoadAndExhaustDustRearLeftName;                             // 0x1FB4   (0x0004)  
-	FName                                              RoadAndExhaustDustRearRightName;                            // 0x1FB8   (0x0004)  
-	FName                                              RoadAndExhaustIsOnDirtName;                                 // 0x1FBC   (0x0004)  
+	unsigned char                                      UnknownData00_2[0x70];                                      // 0x1EA0   (0x0070)  MISSED
+	SDK_UNDEFINED(16,15365) /* FMulticastInlineDelegate */ __um(OnTankRepairedDelegate);                           // 0x1F10   (0x0010)  
+	FName                                              BarrelSocketName;                                           // 0x1F20   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x1F24   (0x0004)  MISSED
+	class UCapsuleComponent*                           BarrelCollision;                                            // 0x1F28   (0x0008)  
+	class UStaticMeshComponent*                        UnderVehicleCollision;                                      // 0x1F30   (0x0008)  
+	TArray<FServerSocketTransformOverride>             SocketOverrideArray;                                        // 0x1F38   (0x0010)  
+	SDK_UNDEFINED(80,15366) /* TMap<FName, FTransform> */ __um(SocketTransformOverrideMap);                        // 0x1F48   (0x0050)  
+	class USkeletalMeshComponent*                      CachedSkeletalMeshComponent;                                // 0x1F98   (0x0008)  
+	class AFortVehicleAudioController*                 CachedVehicleAudioController;                               // 0x1FA0   (0x0008)  
+	EVisibilityBasedAnimTickOption                     DefaultServerVisibilityBasedAnimTickOption;                 // 0x1FA8   (0x0001)  
+	bool                                               DefaultServerSkeletalMeshTickEnabled;                       // 0x1FA9   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x2];                                       // 0x1FAA   (0x0002)  MISSED
+	FName                                              YawPivotSocketName;                                         // 0x1FAC   (0x0004)  
+	FName                                              PitchPivotSocketName;                                       // 0x1FB0   (0x0004)  
+	unsigned char                                      UnknownData03_5[0x4];                                       // 0x1FB4   (0x0004)  MISSED
+	class ULegacyCameraShake*                          DriverCameraShakeInstance;                                  // 0x1FB8   (0x0008)  
+	class ULegacyCameraShake*                          AcceleratingCameraShakeInstance;                            // 0x1FC0   (0x0008)  
+	unsigned char                                      UnknownData04_5[0x8];                                       // 0x1FC8   (0x0008)  MISSED
+	class UNiagaraComponent*                           CachedNiagaraComponentRoadAndExhaust;                       // 0x1FD0   (0x0008)  
+	SDK_UNDEFINED(16,15367) /* FString */              __um(RoadAndExhaustNiagaraComponentName);                   // 0x1FD8   (0x0010)  
+	FName                                              RoadAndExhaustPeelOutLeftName;                              // 0x1FE8   (0x0004)  
+	FName                                              RoadAndExhaustPeelOutRightName;                             // 0x1FEC   (0x0004)  
+	FName                                              RoadAndExhaustVehicleSpeedName;                             // 0x1FF0   (0x0004)  
+	FName                                              RoadAndExhaustSlideDirectionName;                           // 0x1FF4   (0x0004)  
+	float                                              RoadAndExhaustMinSpeedForDust;                              // 0x1FF8   (0x0004)  
+	FName                                              RoadAndExhaustDustColorLerpName;                            // 0x1FFC   (0x0004)  
+	float                                              RoadAndExhaustDustColorLerpOffRoad;                         // 0x2000   (0x0004)  
+	float                                              RoadAndExhaustDustColorLerpOnRoad;                          // 0x2004   (0x0004)  
+	FName                                              RoadAndExhaustDustAlphaMultiplierName;                      // 0x2008   (0x0004)  
+	float                                              RoadAndExhaustDustAlphaMultiplierOffRoad;                   // 0x200C   (0x0004)  
+	float                                              RoadAndExhaustDustAlphaMultiplierOnRoad;                    // 0x2010   (0x0004)  
+	FName                                              RoadAndExhaustDustFrontLeftName;                            // 0x2014   (0x0004)  
+	FName                                              RoadAndExhaustDustFrontRightName;                           // 0x2018   (0x0004)  
+	FName                                              RoadAndExhaustDustMiddleLeftName;                           // 0x201C   (0x0004)  
+	FName                                              RoadAndExhaustDustMiddleRightName;                          // 0x2020   (0x0004)  
+	FName                                              RoadAndExhaustDustRearLeftName;                             // 0x2024   (0x0004)  
+	FName                                              RoadAndExhaustDustRearRightName;                            // 0x2028   (0x0004)  
+	FName                                              RoadAndExhaustIsOnDirtName;                                 // 0x202C   (0x0004)  
 };
 
 /// Class /Script/TankRuntime.FortTankVehicleAnimInstance
@@ -149,14 +149,14 @@ public:
 	float                                              MIDEngineBoostGlow;                                         // 0x0784   (0x0004)  
 	float                                              MIDEngineHealthRatio;                                       // 0x0788   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x078C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,15272) /* TMap<EVehicleSeats, FTankAnimAimingData> */ __um(AimingData);                       // 0x0790   (0x0050)  
+	SDK_UNDEFINED(80,15368) /* TMap<EVehicleSeats, FTankAnimAimingData> */ __um(AimingData);                       // 0x0790   (0x0050)  
 	FRotator                                           PreviousTurretAimRotation;                                  // 0x07E0   (0x0018)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x07F8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TankRuntime.FortTankVehicleAnimInstance.UpdateMIDEngineProperties
-	// void UpdateMIDEngineProperties(float DeltaSeconds, float EngineHealthRatio);                                          // [0xb246fac] Final|Native|Private|BlueprintCallable 
+	// void UpdateMIDEngineProperties(float DeltaSeconds, float EngineHealthRatio);                                          // [0xb472960] Final|Native|Private|BlueprintCallable 
 };
 
 /// Struct /Script/TankRuntime.TankAudioUpdateContext
@@ -219,13 +219,13 @@ public:
 
 	/// Functions
 	// Function /Script/TankRuntime.FortTankVehicleAudioController.PlayTurningOneShot
-	// void PlayTurningOneShot();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void PlayTurningOneShot();                                                                                            // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/TankRuntime.FortTankVehicleAudioController.PlayDecelOneShot
-	// void PlayDecelOneShot();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void PlayDecelOneShot();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/TankRuntime.FortTankVehicleAudioController.PlayAccelOneShot
-	// void PlayAccelOneShot();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void PlayAccelOneShot();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/TankRuntime.FortTankVehicleAudioController.GetTankVehicleActor
-	// class AFortTankVehicle* GetTankVehicleActor();                                                                        // [0xb246f68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortTankVehicle* GetTankVehicleActor();                                                                        // [0xb47291c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/TankRuntime.TankAnimAimingData

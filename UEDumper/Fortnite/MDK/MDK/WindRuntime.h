@@ -15,13 +15,14 @@
 /// dependency: NetCore
 
 /// Class /Script/WindRuntime.FortPlayerWindTunnelAnimInstance
-/// Size: 0x0000 (0x001620 - 0x001620)
+/// Size: 0x0010 (0x001620 - 0x001630)
 class UFortPlayerWindTunnelAnimInstance : public UFortPlayerAnimInstanceProxy
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5664;
+	static inline constexpr uint64_t __MDKClassSize = 5680;
 
 public:
+	DMember(bool)                                      bApplyWindSlideAdditive                                     OFFSET(get<bool>, {0x1620, 1, 1, 0})
 };
 
 /// Class /Script/WindRuntime.WindCheatManager
@@ -40,9 +41,9 @@ public:
 
 	/// Functions
 	// Function /Script/WindRuntime.WindCheatManager.ReleaseBalloonOnSelf
-	// void ReleaseBalloonOnSelf(int32_t NumBalloons);                                                                          // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
+	// void ReleaseBalloonOnSelf(int32_t NumBalloons);                                                                          // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
 	// Function /Script/WindRuntime.WindCheatManager.InflateBalloonOnSelf
-	// void InflateBalloonOnSelf(int32_t NumBalloons);                                                                          // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
+	// void InflateBalloonOnSelf(int32_t NumBalloons);                                                                          // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Public|Const 
 };
 
 /// Class /Script/WindRuntime.WindField
@@ -63,19 +64,19 @@ public:
 
 	/// Functions
 	// Function /Script/WindRuntime.WindField.SetActive
-	// void SetActive(bool bInIsActive);                                                                                        // [0xb47a3fc] Final|Native|Public|BlueprintCallable 
+	// void SetActive(bool bInIsActive);                                                                                        // [0xb6b53a4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.RemoveIgnoredActor
-	// void RemoveIgnoredActor(class AActor* Actor);                                                                            // [0xb47a2f8] Final|Native|Public|BlueprintCallable 
+	// void RemoveIgnoredActor(class AActor* Actor);                                                                            // [0xb6b525c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.RemoveCollider
-	// void RemoveCollider(class UShapeComponent* ShapeComponent);                                                              // [0xb47a1b0] Final|Native|Public|BlueprintCallable 
+	// void RemoveCollider(class UShapeComponent* ShapeComponent);                                                              // [0xb6b50d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.OnEndOverlap
-	// void OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xb47a05c] Native|Protected     
+	// void OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xb6b4e84] Native|Protected     
 	// Function /Script/WindRuntime.WindField.OnBeginOverlap
-	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb479e24] Native|Protected|HasOutParms 
+	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb6b4b08] Native|Protected|HasOutParms 
 	// Function /Script/WindRuntime.WindField.AddIgnoredActor
-	// void AddIgnoredActor(class AActor* Actor);                                                                               // [0xb479808] Final|Native|Public|BlueprintCallable 
+	// void AddIgnoredActor(class AActor* Actor);                                                                               // [0xb6b44ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/WindRuntime.WindField.AddCollider
-	// void AddCollider(class UShapeComponent* ShapeComponent);                                                                 // [0xb479788] Final|Native|Public|BlueprintCallable 
+	// void AddCollider(class UShapeComponent* ShapeComponent);                                                                 // [0xb6b43ec] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/WindRuntime.LinearWindField
@@ -119,87 +120,87 @@ public:
 };
 
 /// Class /Script/WindRuntime.WindSplineComponent
-/// Size: 0x0DF0 (0x000670 - 0x001460)
+/// Size: 0x0DF0 (0x000600 - 0x0013F0)
 class UWindSplineComponent : public USplineComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5216;
+	static inline constexpr uint64_t __MDKClassSize = 5104;
 
 public:
-	SMember(FScalableFloat)                            DisableSafeZonePhaseIndex                                   OFFSET(getStruct<T>, {0x690, 40, 0, 0})
-	CMember(class UStaticMesh*)                        StaticMesh                                                  OFFSET(get<T>, {0x6B8, 8, 0, 0})
-	CMember(class UStaticMesh*)                        StartStaticMesh                                             OFFSET(get<T>, {0x6C0, 8, 0, 0})
-	CMember(class UStaticMesh*)                        EndStaticMesh                                               OFFSET(get<T>, {0x6C8, 8, 0, 0})
-	CMember(TEnumAsByte<ESplineMeshAxis>)              MeshForwardAxis                                             OFFSET(get<T>, {0x6D0, 1, 0, 0})
-	SMember(FScalableFloat)                            MeshRollVariance                                            OFFSET(getStruct<T>, {0x6D8, 40, 0, 0})
-	SMember(FName)                                     ActiveSectionStartMaterialParamName                         OFFSET(getStruct<T>, {0x700, 4, 0, 0})
-	SMember(FName)                                     ActiveSectionEndMaterialParamName                           OFFSET(getStruct<T>, {0x704, 4, 0, 0})
-	SMember(FScalableFloat)                            TargetingRefreshRate                                        OFFSET(getStruct<T>, {0x708, 40, 0, 0})
-	SMember(FScalableFloat)                            TargetingRadius                                             OFFSET(getStruct<T>, {0x730, 40, 0, 0})
-	CMember(TArray<TEnumAsByte<EObjectTypeQuery>>)     TargetObjectTypes                                           OFFSET(get<T>, {0x758, 16, 0, 0})
-	SMember(FGameplayTagQuery)                         TargetTagQuery                                              OFFSET(getStruct<T>, {0x768, 72, 0, 0})
-	SMember(FGameplayTagQuery)                         BlockageTagQuery                                            OFFSET(getStruct<T>, {0x7B0, 72, 0, 0})
-	SMember(FScalableFloat)                            BlockageSubdivisions                                        OFFSET(getStruct<T>, {0x7F8, 40, 0, 0})
-	CMember(TArray<FWindSplineTargetEffects>)          TargetEffects                                               OFFSET(get<T>, {0x820, 16, 0, 0})
-	CMember(TMap<EFortPhysicsObjectType, FScalableFloat>) ObjectTypeToMaxTargetCount                               OFFSET(get<T>, {0x830, 80, 0, 0})
-	SMember(FScalableFloat)                            MaxTargetCountReachedExpelDuration                          OFFSET(getStruct<T>, {0x880, 40, 0, 0})
-	SMember(FScalableFloat)                            SkydivingLandingAngle                                       OFFSET(getStruct<T>, {0x8A8, 40, 0, 0})
-	SMember(FScalableFloat)                            RampUpSpeed                                                 OFFSET(getStruct<T>, {0x8D0, 40, 0, 0})
-	SMember(FScalableFloat)                            RampDownSpeed                                               OFFSET(getStruct<T>, {0x8F8, 40, 0, 0})
-	SMember(FScalableFloat)                            ForwardForceFallOffStartDistance                            OFFSET(getStruct<T>, {0x920, 40, 0, 0})
-	SMember(FScalableFloat)                            ForwardForceMagnitude                                       OFFSET(getStruct<T>, {0x948, 40, 0, 0})
-	SMember(FScalableFloat)                            ReverseForceMagnitude                                       OFFSET(getStruct<T>, {0x970, 40, 0, 0})
-	SMember(FScalableFloat)                            ForwardForceDistanceFallOffExponent                         OFFSET(getStruct<T>, {0x998, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceInnerRadius                                      OFFSET(getStruct<T>, {0x9C0, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceOuterRadiusAcceleration                          OFFSET(getStruct<T>, {0x9E8, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceInnerRadiusDeceleration                          OFFSET(getStruct<T>, {0xA10, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceInnerRadiusSpeedThreshold                        OFFSET(getStruct<T>, {0xA38, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceOuterRadiusSpeedThreshold                        OFFSET(getStruct<T>, {0xA60, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceMaxReductionFromSteering                         OFFSET(getStruct<T>, {0xA88, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceMaxMultiplierWhenSteering                        OFFSET(getStruct<T>, {0xAB0, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceMaxSteerAngle                                    OFFSET(getStruct<T>, {0xAD8, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceLowVelocityThreshold                             OFFSET(getStruct<T>, {0xB00, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceLowVelocityMinValue                              OFFSET(getStruct<T>, {0xB28, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceSteeringReduceAccelerationPower                  OFFSET(getStruct<T>, {0xB50, 40, 0, 0})
-	SMember(FScalableFloat)                            InwardForceSteeringReduceDecelerationPower                  OFFSET(getStruct<T>, {0xB78, 40, 0, 0})
-	CMember(TMap<EFortPhysicsSimSize, FWindSplineForceModifiers>) SizeForceModifiers                               OFFSET(get<T>, {0xBA0, 80, 0, 0})
-	CMember(TMap<EFortPhysicsObjectType, FWindSplineForceModifiers>) ObjectTypeForceModifiers                      OFFSET(get<T>, {0xBF0, 80, 0, 0})
-	CMember(TArray<FWindSplineTagBasedForceModifiers>) QueryBasedForceModifiers                                    OFFSET(get<T>, {0xC40, 16, 0, 0})
-	SMember(FGameplayTagQuery)                         PawnSkydivingTimeLimitQuery                                 OFFSET(getStruct<T>, {0xC50, 72, 0, 0})
-	SMember(FScalableFloat)                            PawnSkydivingTimeLimit                                      OFFSET(getStruct<T>, {0xC98, 40, 0, 0})
-	SMember(FScalableFloat)                            PawnSkydivingMinDistanceAboveGround                         OFFSET(getStruct<T>, {0xCC0, 40, 0, 0})
-	SMember(FScalableFloat)                            AutoWakeUpPhysicsObjects                                    OFFSET(getStruct<T>, {0xCE8, 40, 0, 0})
-	SMember(FScalableFloat)                            FieldMagnitudeBase                                          OFFSET(getStruct<T>, {0xD10, 40, 0, 0})
-	SMember(FScalableFloat)                            FieldMinMagnitudeAfterFalloff                               OFFSET(getStruct<T>, {0xD38, 40, 0, 0})
-	SMember(FScalableFloat)                            FieldMaxMagnitudeAfterFalloff                               OFFSET(getStruct<T>, {0xD60, 40, 0, 0})
-	CMember(class UClass*)                             PlayerWindAnimationLayer                                    OFFSET(get<T>, {0xD88, 8, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnWindSplineDisabled                                        OFFSET(getStruct<T>, {0xD90, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnWindSplineEnabled                                         OFFSET(getStruct<T>, {0xDA0, 16, 0, 0})
-	SMember(FWindSplineTargetData)                     TargetData                                                  OFFSET(getStruct<T>, {0xDB0, 440, 0, 0})
-	SMember(FWindSplineBlockageArray)                  Blockages                                                   OFFSET(getStruct<T>, {0xF68, 280, 0, 0})
-	CMember(class UFieldSystemComponent*)              FieldSystemComponent                                        OFFSET(get<T>, {0x1080, 8, 0, 0})
-	CMember(class UUniformVector*)                     UniformVector                                               OFFSET(get<T>, {0x1088, 8, 0, 0})
-	CMember(class UBoxFalloff*)                        BoxFalloff                                                  OFFSET(get<T>, {0x1090, 8, 0, 0})
-	CMember(class UOperatorField*)                     BoxOperatorField                                            OFFSET(get<T>, {0x1098, 8, 0, 0})
-	CMember(TArray<FWindSplineMeshData>)               MeshDataArray                                               OFFSET(get<T>, {0x10A0, 16, 0, 0})
-	CMember(TArray<class UFXSystemComponent*>)         FXComponents                                                OFFSET(get<T>, {0x10B0, 16, 0, 0})
+	SMember(FScalableFloat)                            DisableSafeZonePhaseIndex                                   OFFSET(getStruct<T>, {0x620, 40, 0, 0})
+	CMember(class UStaticMesh*)                        StaticMesh                                                  OFFSET(get<T>, {0x648, 8, 0, 0})
+	CMember(class UStaticMesh*)                        StartStaticMesh                                             OFFSET(get<T>, {0x650, 8, 0, 0})
+	CMember(class UStaticMesh*)                        EndStaticMesh                                               OFFSET(get<T>, {0x658, 8, 0, 0})
+	CMember(TEnumAsByte<ESplineMeshAxis>)              MeshForwardAxis                                             OFFSET(get<T>, {0x660, 1, 0, 0})
+	SMember(FScalableFloat)                            MeshRollVariance                                            OFFSET(getStruct<T>, {0x668, 40, 0, 0})
+	SMember(FName)                                     ActiveSectionStartMaterialParamName                         OFFSET(getStruct<T>, {0x690, 4, 0, 0})
+	SMember(FName)                                     ActiveSectionEndMaterialParamName                           OFFSET(getStruct<T>, {0x694, 4, 0, 0})
+	SMember(FScalableFloat)                            TargetingRefreshRate                                        OFFSET(getStruct<T>, {0x698, 40, 0, 0})
+	SMember(FScalableFloat)                            TargetingRadius                                             OFFSET(getStruct<T>, {0x6C0, 40, 0, 0})
+	CMember(TArray<TEnumAsByte<EObjectTypeQuery>>)     TargetObjectTypes                                           OFFSET(get<T>, {0x6E8, 16, 0, 0})
+	SMember(FGameplayTagQuery)                         TargetTagQuery                                              OFFSET(getStruct<T>, {0x6F8, 72, 0, 0})
+	SMember(FGameplayTagQuery)                         BlockageTagQuery                                            OFFSET(getStruct<T>, {0x740, 72, 0, 0})
+	SMember(FScalableFloat)                            BlockageSubdivisions                                        OFFSET(getStruct<T>, {0x788, 40, 0, 0})
+	CMember(TArray<FWindSplineTargetEffects>)          TargetEffects                                               OFFSET(get<T>, {0x7B0, 16, 0, 0})
+	CMember(TMap<EFortPhysicsObjectType, FScalableFloat>) ObjectTypeToMaxTargetCount                               OFFSET(get<T>, {0x7C0, 80, 0, 0})
+	SMember(FScalableFloat)                            MaxTargetCountReachedExpelDuration                          OFFSET(getStruct<T>, {0x810, 40, 0, 0})
+	SMember(FScalableFloat)                            SkydivingLandingAngle                                       OFFSET(getStruct<T>, {0x838, 40, 0, 0})
+	SMember(FScalableFloat)                            RampUpSpeed                                                 OFFSET(getStruct<T>, {0x860, 40, 0, 0})
+	SMember(FScalableFloat)                            RampDownSpeed                                               OFFSET(getStruct<T>, {0x888, 40, 0, 0})
+	SMember(FScalableFloat)                            ForwardForceFallOffStartDistance                            OFFSET(getStruct<T>, {0x8B0, 40, 0, 0})
+	SMember(FScalableFloat)                            ForwardForceMagnitude                                       OFFSET(getStruct<T>, {0x8D8, 40, 0, 0})
+	SMember(FScalableFloat)                            ReverseForceMagnitude                                       OFFSET(getStruct<T>, {0x900, 40, 0, 0})
+	SMember(FScalableFloat)                            ForwardForceDistanceFallOffExponent                         OFFSET(getStruct<T>, {0x928, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceInnerRadius                                      OFFSET(getStruct<T>, {0x950, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceOuterRadiusAcceleration                          OFFSET(getStruct<T>, {0x978, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceInnerRadiusDeceleration                          OFFSET(getStruct<T>, {0x9A0, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceInnerRadiusSpeedThreshold                        OFFSET(getStruct<T>, {0x9C8, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceOuterRadiusSpeedThreshold                        OFFSET(getStruct<T>, {0x9F0, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceMaxReductionFromSteering                         OFFSET(getStruct<T>, {0xA18, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceMaxMultiplierWhenSteering                        OFFSET(getStruct<T>, {0xA40, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceMaxSteerAngle                                    OFFSET(getStruct<T>, {0xA68, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceLowVelocityThreshold                             OFFSET(getStruct<T>, {0xA90, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceLowVelocityMinValue                              OFFSET(getStruct<T>, {0xAB8, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceSteeringReduceAccelerationPower                  OFFSET(getStruct<T>, {0xAE0, 40, 0, 0})
+	SMember(FScalableFloat)                            InwardForceSteeringReduceDecelerationPower                  OFFSET(getStruct<T>, {0xB08, 40, 0, 0})
+	CMember(TMap<EFortPhysicsSimSize, FWindSplineForceModifiers>) SizeForceModifiers                               OFFSET(get<T>, {0xB30, 80, 0, 0})
+	CMember(TMap<EFortPhysicsObjectType, FWindSplineForceModifiers>) ObjectTypeForceModifiers                      OFFSET(get<T>, {0xB80, 80, 0, 0})
+	CMember(TArray<FWindSplineTagBasedForceModifiers>) QueryBasedForceModifiers                                    OFFSET(get<T>, {0xBD0, 16, 0, 0})
+	SMember(FGameplayTagQuery)                         PawnSkydivingTimeLimitQuery                                 OFFSET(getStruct<T>, {0xBE0, 72, 0, 0})
+	SMember(FScalableFloat)                            PawnSkydivingTimeLimit                                      OFFSET(getStruct<T>, {0xC28, 40, 0, 0})
+	SMember(FScalableFloat)                            PawnSkydivingMinDistanceAboveGround                         OFFSET(getStruct<T>, {0xC50, 40, 0, 0})
+	SMember(FScalableFloat)                            AutoWakeUpPhysicsObjects                                    OFFSET(getStruct<T>, {0xC78, 40, 0, 0})
+	SMember(FScalableFloat)                            FieldMagnitudeBase                                          OFFSET(getStruct<T>, {0xCA0, 40, 0, 0})
+	SMember(FScalableFloat)                            FieldMinMagnitudeAfterFalloff                               OFFSET(getStruct<T>, {0xCC8, 40, 0, 0})
+	SMember(FScalableFloat)                            FieldMaxMagnitudeAfterFalloff                               OFFSET(getStruct<T>, {0xCF0, 40, 0, 0})
+	CMember(class UClass*)                             PlayerWindAnimationLayer                                    OFFSET(get<T>, {0xD18, 8, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnWindSplineDisabled                                        OFFSET(getStruct<T>, {0xD20, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnWindSplineEnabled                                         OFFSET(getStruct<T>, {0xD30, 16, 0, 0})
+	SMember(FWindSplineTargetData)                     TargetData                                                  OFFSET(getStruct<T>, {0xD40, 440, 0, 0})
+	SMember(FWindSplineBlockageArray)                  Blockages                                                   OFFSET(getStruct<T>, {0xEF8, 280, 0, 0})
+	CMember(class UFieldSystemComponent*)              FieldSystemComponent                                        OFFSET(get<T>, {0x1010, 8, 0, 0})
+	CMember(class UUniformVector*)                     UniformVector                                               OFFSET(get<T>, {0x1018, 8, 0, 0})
+	CMember(class UBoxFalloff*)                        BoxFalloff                                                  OFFSET(get<T>, {0x1020, 8, 0, 0})
+	CMember(class UOperatorField*)                     BoxOperatorField                                            OFFSET(get<T>, {0x1028, 8, 0, 0})
+	CMember(TArray<FWindSplineMeshData>)               MeshDataArray                                               OFFSET(get<T>, {0x1030, 16, 0, 0})
+	CMember(TArray<class UFXSystemComponent*>)         FXComponents                                                OFFSET(get<T>, {0x1040, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/WindRuntime.WindSplineComponent.OnRep_TargetData
-	// void OnRep_TargetData();                                                                                                 // [0xb47a19c] Final|Native|Protected 
+	// void OnRep_TargetData();                                                                                                 // [0xb6b50c0] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.OnRep_Blockages
-	// void OnRep_Blockages();                                                                                                  // [0xb47a19c] Final|Native|Protected 
+	// void OnRep_Blockages();                                                                                                  // [0xb6b50c0] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.GetWindDataAtLocation
-	// void GetWindDataAtLocation(FVector& InTargetLocation, FVector& OutDirection, float& OutAttenuation);                     // [0xb479c7c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void GetWindDataAtLocation(FVector& InTargetLocation, FVector& OutDirection, float& OutAttenuation);                     // [0xb6b4960] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.GetTargetingRadius
-	// float GetTargetingRadius();                                                                                              // [0xb479c48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTargetingRadius();                                                                                              // [0xb6b492c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.GetClosestActiveLocations
-	// void GetClosestActiveLocations(FVector& InTargetLocation, bool& bIsClosestPointActive, FVector& ClosestPointOnSpline, TArray<FVector>& ClosestActiveLocations); // [0xb479a3c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
+	// void GetClosestActiveLocations(FVector& InTargetLocation, bool& bIsClosestPointActive, FVector& ClosestPointOnSpline, TArray<FVector>& ClosestActiveLocations); // [0xb6b4720] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|Const 
 	// Function /Script/WindRuntime.WindSplineComponent.Enable
-	// void Enable();                                                                                                           // [0xb4799e8] Final|Native|Protected 
+	// void Enable();                                                                                                           // [0xb6b46cc] Final|Native|Protected 
 	// Function /Script/WindRuntime.WindSplineComponent.Disable
-	// void Disable();                                                                                                          // [0xb4799d4] Final|Native|Protected 
+	// void Disable();                                                                                                          // [0xb6b46b8] Final|Native|Protected 
 };
 
 /// Struct /Script/WindRuntime.RootMotionSource_ConstantWindForce

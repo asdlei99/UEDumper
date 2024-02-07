@@ -28,11 +28,11 @@ public:
 
 	/// Functions
 	// Function /Script/MassActors.MassActorPoolableInterface.PrepareForPooling
-	// void PrepareForPooling();                                                                                                // [0x30e10d4] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PrepareForPooling();                                                                                                // [0x2c50134] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/MassActors.MassActorPoolableInterface.PrepareForGame
-	// void PrepareForGame();                                                                                                   // [0x70a6028] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PrepareForGame();                                                                                                   // [0x6f7765c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/MassActors.MassActorPoolableInterface.CanBePooled
-	// bool CanBePooled();                                                                                                      // [0x267521c] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// bool CanBePooled();                                                                                                      // [0x239d2c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/MassActors.MassActorSpawnerSubsystem
@@ -72,13 +72,13 @@ public:
 
 	/// Functions
 	// Function /Script/MassActors.MassAgentComponent.OnRep_NetID
-	// void OnRep_NetID();                                                                                                      // [0x212f478] Native|Public        
+	// void OnRep_NetID();                                                                                                      // [0x38a9134] Native|Public        
 	// Function /Script/MassActors.MassAgentComponent.KillEntity
-	// void KillEntity(bool bDestroyActor);                                                                                     // [0xa704f04] Final|Native|Public|BlueprintCallable 
+	// void KillEntity(bool bDestroyActor);                                                                                     // [0xa8b5554] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MassActors.MassAgentComponent.Enable
-	// void Enable();                                                                                                           // [0xa704ee0] Final|Native|Public|BlueprintCallable 
+	// void Enable();                                                                                                           // [0xa8b5530] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MassActors.MassAgentComponent.Disable
-	// void Disable();                                                                                                          // [0xa704ebc] Final|Native|Public|BlueprintCallable 
+	// void Disable();                                                                                                          // [0xa8b550c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MassActors.MassAgentSubsystem

@@ -69,21 +69,21 @@ struct FRigUnit_ControlRigSplineFromTransforms : FRigUnit_ControlRigSplineBase
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_SetSplinePoints
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetSplinePoints : FRigUnitMutable
 { 
-	TArray<FVector>                                    Points;                                                     // 0x0180   (0x0010)  
-	FControlRigSpline                                  Spline;                                                     // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	TArray<FVector>                                    Points;                                                     // 0x01D0   (0x0010)  
+	FControlRigSpline                                  Spline;                                                     // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_SetSplineTransforms
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetSplineTransforms : FRigUnitMutable
 { 
-	TArray<FTransform>                                 Transforms;                                                 // 0x0180   (0x0010)  
-	FControlRigSpline                                  Spline;                                                     // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	TArray<FTransform>                                 Transforms;                                                 // 0x01D0   (0x0010)  
+	FControlRigSpline                                  Spline;                                                     // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_PositionFromControlRigSpline
@@ -131,13 +131,13 @@ struct FRigUnit_TangentFromControlRigSpline : FRigUnit_ControlRigSplineBase
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_DrawControlRigSpline
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_DrawControlRigSpline : FRigUnitMutable
 { 
-	FControlRigSpline                                  Spline;                                                     // 0x0180   (0x0018)  
-	FLinearColor                                       Color;                                                      // 0x0198   (0x0010)  
-	float                                              Thickness;                                                  // 0x01A8   (0x0004)  
-	int32_t                                            Detail;                                                     // 0x01AC   (0x0004)  
+	FControlRigSpline                                  Spline;                                                     // 0x01D0   (0x0018)  
+	FLinearColor                                       Color;                                                      // 0x01E8   (0x0010)  
+	float                                              Thickness;                                                  // 0x01F8   (0x0004)  
+	int32_t                                            Detail;                                                     // 0x01FC   (0x0004)  
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_GetLengthControlRigSpline
@@ -159,53 +159,53 @@ struct FRigUnit_GetLengthAtParamControlRigSpline : FRigUnit
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_FitChainToSplineCurve
-/// Size: 0x01D0 (0x000180 - 0x000350)
+/// Size: 0x01D0 (0x0001D0 - 0x0003A0)
 struct FRigUnit_FitChainToSplineCurve : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	FControlRigSpline                                  Spline;                                                     // 0x0190   (0x0018)  
-	EControlRigCurveAlignment                          Alignment;                                                  // 0x01A8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01A9   (0x0003)  MISSED
-	float                                              Minimum;                                                    // 0x01AC   (0x0004)  
-	float                                              Maximum;                                                    // 0x01B0   (0x0004)  
-	int32_t                                            SamplingPrecision;                                          // 0x01B4   (0x0004)  
-	FVector                                            PrimaryAxis;                                                // 0x01B8   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x01D0   (0x0018)  
-	FVector                                            PoleVectorPosition;                                         // 0x01E8   (0x0018)  
-	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0200   (0x0010)  
-	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x0210   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0211   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x0214   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0218   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0219   (0x0007)  MISSED
-	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x0220   (0x0090)  
-	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x02B0   (0x0098)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0348   (0x0008)  MISSED
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	FControlRigSpline                                  Spline;                                                     // 0x01E0   (0x0018)  
+	EControlRigCurveAlignment                          Alignment;                                                  // 0x01F8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F9   (0x0003)  MISSED
+	float                                              Minimum;                                                    // 0x01FC   (0x0004)  
+	float                                              Maximum;                                                    // 0x0200   (0x0004)  
+	int32_t                                            SamplingPrecision;                                          // 0x0204   (0x0004)  
+	FVector                                            PrimaryAxis;                                                // 0x0208   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0220   (0x0018)  
+	FVector                                            PoleVectorPosition;                                         // 0x0238   (0x0018)  
+	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0250   (0x0010)  
+	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x0260   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0261   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x0264   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0268   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0269   (0x0007)  MISSED
+	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x0270   (0x0090)  
+	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x0300   (0x0098)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0398   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_FitChainToSplineCurveItemArray
-/// Size: 0x01D0 (0x000180 - 0x000350)
+/// Size: 0x01D0 (0x0001D0 - 0x0003A0)
 struct FRigUnit_FitChainToSplineCurveItemArray : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	FControlRigSpline                                  Spline;                                                     // 0x0190   (0x0018)  
-	EControlRigCurveAlignment                          Alignment;                                                  // 0x01A8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01A9   (0x0003)  MISSED
-	float                                              Minimum;                                                    // 0x01AC   (0x0004)  
-	float                                              Maximum;                                                    // 0x01B0   (0x0004)  
-	int32_t                                            SamplingPrecision;                                          // 0x01B4   (0x0004)  
-	FVector                                            PrimaryAxis;                                                // 0x01B8   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x01D0   (0x0018)  
-	FVector                                            PoleVectorPosition;                                         // 0x01E8   (0x0018)  
-	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0200   (0x0010)  
-	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x0210   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0211   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x0214   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0218   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0219   (0x0007)  MISSED
-	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x0220   (0x0090)  
-	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x02B0   (0x0098)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0348   (0x0008)  MISSED
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	FControlRigSpline                                  Spline;                                                     // 0x01E0   (0x0018)  
+	EControlRigCurveAlignment                          Alignment;                                                  // 0x01F8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F9   (0x0003)  MISSED
+	float                                              Minimum;                                                    // 0x01FC   (0x0004)  
+	float                                              Maximum;                                                    // 0x0200   (0x0004)  
+	int32_t                                            SamplingPrecision;                                          // 0x0204   (0x0004)  
+	FVector                                            PrimaryAxis;                                                // 0x0208   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0220   (0x0018)  
+	FVector                                            PoleVectorPosition;                                         // 0x0238   (0x0018)  
+	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0250   (0x0010)  
+	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x0260   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0261   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x0264   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0268   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0269   (0x0007)  MISSED
+	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x0270   (0x0090)  
+	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x0300   (0x0098)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0398   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_SplineConstraint_WorkData
@@ -220,40 +220,40 @@ struct FRigUnit_SplineConstraint_WorkData
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_SplineConstraint
-/// Size: 0x00B0 (0x000180 - 0x000230)
+/// Size: 0x00B0 (0x0001D0 - 0x000280)
 struct FRigUnit_SplineConstraint : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	FControlRigSpline                                  Spline;                                                     // 0x0190   (0x0018)  
-	EControlRigCurveAlignment                          Alignment;                                                  // 0x01A8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01A9   (0x0003)  MISSED
-	float                                              Minimum;                                                    // 0x01AC   (0x0004)  
-	float                                              Maximum;                                                    // 0x01B0   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01B4   (0x0004)  MISSED
-	FVector                                            PrimaryAxis;                                                // 0x01B8   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x01D0   (0x0018)  
-	bool                                               bPropagateToChildren;                                       // 0x01E8   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x01E9   (0x0007)  MISSED
-	FRigUnit_SplineConstraint_WorkData                 WorkData;                                                   // 0x01F0   (0x0038)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0228   (0x0008)  MISSED
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	FControlRigSpline                                  Spline;                                                     // 0x01E0   (0x0018)  
+	EControlRigCurveAlignment                          Alignment;                                                  // 0x01F8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F9   (0x0003)  MISSED
+	float                                              Minimum;                                                    // 0x01FC   (0x0004)  
+	float                                              Maximum;                                                    // 0x0200   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0204   (0x0004)  MISSED
+	FVector                                            PrimaryAxis;                                                // 0x0208   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0220   (0x0018)  
+	bool                                               bPropagateToChildren;                                       // 0x0238   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0239   (0x0007)  MISSED
+	FRigUnit_SplineConstraint_WorkData                 WorkData;                                                   // 0x0240   (0x0038)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0278   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_FitSplineCurveToChain
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_FitSplineCurveToChain : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	FControlRigSpline                                  Spline;                                                     // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	FControlRigSpline                                  Spline;                                                     // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_FitSplineCurveToChainItemArray
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_FitSplineCurveToChainItemArray : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	FControlRigSpline                                  Spline;                                                     // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	FControlRigSpline                                  Spline;                                                     // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRigSpline.RigUnit_ClosestParameterFromControlRigSpline

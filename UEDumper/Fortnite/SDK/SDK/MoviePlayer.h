@@ -27,6 +27,6 @@ public:
 	bool                                               bWaitForMoviesToComplete;                                   // 0x0028   (0x0001)  
 	bool                                               bMoviesAreSkippable;                                        // 0x0029   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x002A   (0x0006)  MISSED
-	SDK_UNDEFINED(16,14675) /* TArray<FString> */      __um(StartupMovies);                                        // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,14770) /* TArray<FString> */      __um(StartupMovies);                                        // 0x0030   (0x0010)  
 };
 

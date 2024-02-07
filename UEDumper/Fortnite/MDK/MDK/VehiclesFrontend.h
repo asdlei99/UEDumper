@@ -14,11 +14,11 @@
 /// dependency: ModelViewViewModel
 
 /// Class /Script/VehiclesFrontend.DelMarItemDetailsVM
-/// Size: 0x0000 (0x000390 - 0x000390)
+/// Size: 0x0000 (0x0003C0 - 0x0003C0)
 class UDelMarItemDetailsVM : public UAthenaItemDetailsVM
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 912;
+	static inline constexpr uint64_t __MDKClassSize = 960;
 
 public:
 };
@@ -34,23 +34,23 @@ public:
 };
 
 /// Class /Script/VehiclesFrontend.DelMarLockerCategoryConfig
-/// Size: 0x0018 (0x000130 - 0x000148)
+/// Size: 0x0018 (0x000128 - 0x000140)
 class UDelMarLockerCategoryConfig : public UAthenaLockerCategoryConfig
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 328;
+	static inline constexpr uint64_t __MDKClassSize = 320;
 
 public:
-	CMember(class UCosmeticLoadoutSchema*)             VehicleLoadoutSchema                                        OFFSET(get<T>, {0x130, 8, 0, 0})
-	CMember(TArray<FPrimaryAssetType>)                 AllowedAssetTypes                                           OFFSET(get<T>, {0x138, 16, 0, 0})
+	CMember(class UCosmeticLoadoutSchema*)             VehicleLoadoutSchema                                        OFFSET(get<T>, {0x128, 8, 0, 0})
+	CMember(TArray<FPrimaryAssetType>)                 AllowedAssetTypes                                           OFFSET(get<T>, {0x130, 16, 0, 0})
 };
 
 /// Class /Script/VehiclesFrontend.DelMarLockerCategoryVM
-/// Size: 0x0000 (0x000170 - 0x000170)
+/// Size: 0x0000 (0x0001B0 - 0x0001B0)
 class UDelMarLockerCategoryVM : public UAthenaLockerCategoryVM
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 368;
+	static inline constexpr uint64_t __MDKClassSize = 432;
 
 public:
 };

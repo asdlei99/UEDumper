@@ -25,9 +25,9 @@ public:
 
 	/// Functions
 	// Function /BattlePassS28_Quests/Services/BP_VendAISpawner_Base.BP_VendAISpawner_Base_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /BattlePassS28_Quests/Services/BP_VendAISpawner_Base.BP_VendAISpawner_Base_C.ExecuteUbergraph_BP_VendAISpawner_Base
-	// void ExecuteUbergraph_BP_VendAISpawner_Base(int32_t EntryPoint);                                                      // [0x211c0a0] Final|HasDefaults    
+	// void ExecuteUbergraph_BP_VendAISpawner_Base(int32_t EntryPoint);                                                      // [0x2047e54] Final|HasDefaults    
 };
 
 /// Class /BattlePassS28_Quests/Services/BP_VendAISpawner_Nug.BP_VendAISpawner_Nug_C

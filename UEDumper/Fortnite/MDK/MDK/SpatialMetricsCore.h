@@ -50,14 +50,14 @@ public:
 };
 
 /// Class /Script/SpatialMetricsCore.SpatialMetric
-/// Size: 0x0018 (0x000028 - 0x000040)
+/// Size: 0x0030 (0x000028 - 0x000058)
 class USpatialMetric : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 64;
+	static inline constexpr uint64_t __MDKClassSize = 88;
 
 public:
-	SMember(FSpatialMetricProperties)                  Properties                                                  OFFSET(getStruct<T>, {0x28, 24, 0, 0})
+	SMember(FSpatialMetricProperties)                  Properties                                                  OFFSET(getStruct<T>, {0x28, 48, 0, 0})
 };
 
 /// Class /Script/SpatialMetricsCore.SpatialMetricsActorIndexer
@@ -95,15 +95,15 @@ public:
 };
 
 /// Class /Script/SpatialMetricsCore.TestMetric
-/// Size: 0x0080 (0x000040 - 0x0000C0)
+/// Size: 0x0080 (0x000058 - 0x0000D8)
 class UTestMetric : public USpatialMetric
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 192;
+	static inline constexpr uint64_t __MDKClassSize = 216;
 
 public:
-	DMember(int32_t)                                   SamplingDistance                                            OFFSET(get<int32_t>, {0xB4, 4, 0, 0})
-	DMember(float)                                     WorldSamplingFactor                                         OFFSET(get<float>, {0xB8, 4, 0, 0})
+	DMember(int32_t)                                   SamplingDistance                                            OFFSET(get<int32_t>, {0xCC, 4, 0, 0})
+	DMember(float)                                     WorldSamplingFactor                                         OFFSET(get<float>, {0xD0, 4, 0, 0})
 };
 
 /// Struct /Script/SpatialMetricsCore.SpatialValue
@@ -119,37 +119,51 @@ public:
 	DMember(int32_t)                                   Value                                                       OFFSET(get<int32_t>, {0xC, 4, 0, 0})
 };
 
+/// Struct /Script/SpatialMetricsCore.SpatialMetricDescriptor
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FSpatialMetricDescriptor : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	SMember(FName)                                     IdName                                                      OFFSET(getStruct<T>, {0x0, 4, 0, 0})
+	CMember(class UClass*)                             Class                                                       OFFSET(get<T>, {0x8, 8, 0, 0})
+};
+
 /// Struct /Script/SpatialMetricsCore.SpatialMetricProperties
-/// Size: 0x0018 (0x000000 - 0x000018)
+/// Size: 0x0030 (0x000000 - 0x000030)
 class FSpatialMetricProperties : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 24;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
-	SMember(FName)                                     IdName                                                      OFFSET(getStruct<T>, {0x0, 4, 0, 0})
-	DMember(int32_t)                                   MinValue                                                    OFFSET(get<int32_t>, {0x4, 4, 0, 0})
-	DMember(int32_t)                                   MaxValue                                                    OFFSET(get<int32_t>, {0x8, 4, 0, 0})
-	DMember(int32_t)                                   ThresholdValue                                              OFFSET(get<int32_t>, {0xC, 4, 0, 0})
-	DMember(int32_t)                                   SpatialPrecision                                            OFFSET(get<int32_t>, {0x10, 4, 0, 0})
-	CMember(EUnit)                                     Unit                                                        OFFSET(get<T>, {0x14, 1, 0, 0})
+	SMember(FText)                                     Label                                                       OFFSET(getStruct<T>, {0x0, 24, 0, 0})
+	DMember(int32_t)                                   MinValue                                                    OFFSET(get<int32_t>, {0x18, 4, 0, 0})
+	DMember(int32_t)                                   MaxValue                                                    OFFSET(get<int32_t>, {0x1C, 4, 0, 0})
+	DMember(int32_t)                                   ThresholdValue                                              OFFSET(get<int32_t>, {0x20, 4, 0, 0})
+	DMember(int32_t)                                   SpatialPrecision                                            OFFSET(get<int32_t>, {0x24, 4, 0, 0})
+	CMember(EUnit)                                     Unit                                                        OFFSET(get<T>, {0x28, 1, 0, 0})
 };
 
 /// Struct /Script/SpatialMetricsCore.SpatialMetricSample
-/// Size: 0x0048 (0x000000 - 0x000048)
+/// Size: 0x0070 (0x000000 - 0x000070)
 class FSpatialMetricSample : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 72;
+	static inline constexpr uint64_t __MDKClassSize = 112;
 
 public:
-	SMember(FSpatialMetricProperties)                  Properties                                                  OFFSET(getStruct<T>, {0x0, 24, 0, 0})
-	CMember(TArray<FSpatialValue>)                     Values                                                      OFFSET(get<T>, {0x18, 16, 0, 0})
-	SMember(FIntVector)                                BoundsMin                                                   OFFSET(getStruct<T>, {0x28, 12, 0, 0})
-	SMember(FIntVector)                                BoundsMax                                                   OFFSET(getStruct<T>, {0x34, 12, 0, 0})
-	SMember(FDateTime)                                 Timestamp                                                   OFFSET(getStruct<T>, {0x40, 8, 0, 0})
+	SMember(FSpatialMetricDescriptor)                  Source                                                      OFFSET(getStruct<T>, {0x0, 16, 0, 0})
+	SMember(FSpatialMetricProperties)                  Properties                                                  OFFSET(getStruct<T>, {0x10, 48, 0, 0})
+	CMember(TArray<FSpatialValue>)                     Values                                                      OFFSET(get<T>, {0x40, 16, 0, 0})
+	SMember(FIntVector)                                BoundsMin                                                   OFFSET(getStruct<T>, {0x50, 12, 0, 0})
+	SMember(FIntVector)                                BoundsMax                                                   OFFSET(getStruct<T>, {0x5C, 12, 0, 0})
+	SMember(FDateTime)                                 Timestamp                                                   OFFSET(getStruct<T>, {0x68, 8, 0, 0})
 };
 
 /// Struct /Script/SpatialMetricsCore.SpatialMetricSampleImageProperties

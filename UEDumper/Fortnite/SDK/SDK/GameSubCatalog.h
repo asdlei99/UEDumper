@@ -126,8 +126,8 @@ class UMcpCatalogItemsForRandomPlayer : public UObject
 public:
 	uint32_t                                           Percentage;                                                 // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,2345) /* FString */               __um(Salt);                                                 // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,2346) /* TArray<FString> */       __um(CatalogItems);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,2333) /* FString */               __um(Salt);                                                 // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2334) /* TArray<FString> */       __um(CatalogItems);                                         // 0x0040   (0x0010)  
 };
 
 /// Class /Script/GameSubCatalog.McpVerifierModeSelector
@@ -137,32 +137,49 @@ class UMcpVerifierModeSelector : public UObject
 public:
 	uint32_t                                           RangeStart;                                                 // 0x0028   (0x0004)  
 	uint32_t                                           RangeEnd;                                                   // 0x002C   (0x0004)  
-	SDK_UNDEFINED(16,2347) /* FString */               __um(Salt);                                                 // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2335) /* FString */               __um(Salt);                                                 // 0x0030   (0x0010)  
 	EVerifierModeOverride                              VerifierModeOverride;                                       // 0x0040   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0041   (0x0003)  MISSED
 	int32_t                                            ReceiptRefactorVersionOverride;                             // 0x0044   (0x0004)  
+};
+
+/// Struct /Script/GameSubCatalog.AdditionalCheckoutProperty
+/// Size: 0x0020 (0x000000 - 0x000020)
+struct FAdditionalCheckoutProperty
+{ 
+	SDK_UNDEFINED(16,2336) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2337) /* FString */               __um(Value);                                                // 0x0010   (0x0010)  
+};
+
+/// Struct /Script/GameSubCatalog.CatalogCheckoutOptions
+/// Size: 0x0018 (0x000000 - 0x000018)
+struct FCatalogCheckoutOptions
+{ 
+	TArray<FAdditionalCheckoutProperty>                AdditionalCheckoutProperties;                               // 0x0000   (0x0010)  
+	bool                                               bSkipCheckingEntitlementCount;                              // 0x0010   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0011   (0x0007)  MISSED
 };
 
 /// Struct /Script/GameSubCatalog.StoreOfferInfo
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FStoreOfferInfo
 { 
-	SDK_UNDEFINED(16,2348) /* FString */               __um(Storefront);                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2349) /* FString */               __um(StoreId);                                              // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,2350) /* FString */               __um(GroupId);                                              // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,2338) /* FString */               __um(Storefront);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2339) /* FString */               __um(StoreId);                                              // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2340) /* FString */               __um(GroupId);                                              // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/GameSubCatalog.CatalogItemPrice
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FCatalogItemPrice
 { 
-	SDK_UNDEFINED(1,2351) /* TEnumAsByte<EStoreCurrencyType> */ __um(CurrencyType);                                // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,2341) /* TEnumAsByte<EStoreCurrencyType> */ __um(CurrencyType);                                // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2352) /* FString */               __um(CurrencySubType);                                      // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2342) /* FString */               __um(CurrencySubType);                                      // 0x0008   (0x0010)  
 	int32_t                                            RegularPrice;                                               // 0x0018   (0x0004)  
 	int32_t                                            FinalPrice;                                                 // 0x001C   (0x0004)  
-	SDK_UNDEFINED(24,2353) /* FText */                 __um(PriceTextOverride);                                    // 0x0020   (0x0018)  
-	SDK_UNDEFINED(1,2354) /* TEnumAsByte<ECatalogSaleType> */ __um(SaleType);                                      // 0x0038   (0x0001)  
+	SDK_UNDEFINED(24,2343) /* FText */                 __um(PriceTextOverride);                                    // 0x0020   (0x0018)  
+	SDK_UNDEFINED(1,2344) /* TEnumAsByte<ECatalogSaleType> */ __um(SaleType);                                      // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0039   (0x0007)  MISSED
 	FDateTime                                          SaleExpiration;                                             // 0x0040   (0x0008)  
 	EAppStore                                          AppStoreId;                                                 // 0x0048   (0x0001)  
@@ -174,7 +191,7 @@ struct FCatalogItemPrice
 struct FCatalogItemSalePrice
 { 
 	int32_t                                            SalePrice;                                                  // 0x0000   (0x0004)  
-	SDK_UNDEFINED(1,2355) /* TEnumAsByte<ECatalogSaleType> */ __um(SaleType);                                      // 0x0004   (0x0001)  
+	SDK_UNDEFINED(1,2345) /* TEnumAsByte<ECatalogSaleType> */ __um(SaleType);                                      // 0x0004   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
 	FDateTime                                          StartTime;                                                  // 0x0008   (0x0008)  
 	FDateTime                                          EndTime;                                                    // 0x0010   (0x0008)  
@@ -189,31 +206,33 @@ struct FAppStoreCheckoutConfig
 };
 
 /// Struct /Script/GameSubCatalog.CatalogPurchaseAdditionalData
-/// Size: 0x0040 (0x000030 - 0x000070)
+/// Size: 0x0098 (0x000030 - 0x0000C8)
 struct FCatalogPurchaseAdditionalData : FStoreOfferInfo
 { 
-	SDK_UNDEFINED(16,2356) /* FString */               __um(IslandId);                                             // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,2357) /* FString */               __um(IslandTitle);                                          // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,2358) /* FString */               __um(ProductTag);                                           // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,2359) /* FString */               __um(StoreContext);                                         // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,2346) /* FString */               __um(IslandId);                                             // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2347) /* FString */               __um(IslandTitle);                                          // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,2348) /* FString */               __um(ProductTag);                                           // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,2349) /* FString */               __um(StoreContext);                                         // 0x0060   (0x0010)  
+	SDK_UNDEFINED(80,2350) /* TMap<FString, FString> */ __um(CheckoutProperties);                                  // 0x0070   (0x0050)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00C0   (0x0008)  MISSED
 };
 
 /// Struct /Script/GameSubCatalog.CatalogRedeemRealMoneyPurchasesInfo
-/// Size: 0x00D8 (0x000000 - 0x0000D8)
+/// Size: 0x0130 (0x000000 - 0x000130)
 struct FCatalogRedeemRealMoneyPurchasesInfo
 { 
 	EAppStore                                          AppStore;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2360) /* TArray<FString> */       __um(AuthTokens);                                           // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,2361) /* TArray<FString> */       __um(ReceiptIds);                                           // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,2351) /* TArray<FString> */       __um(AuthTokens);                                           // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2352) /* TArray<FString> */       __um(ReceiptIds);                                           // 0x0018   (0x0010)  
 	ERedeemRealMoneyPurchaseRefreshType                RefreshType;                                                // 0x0028   (0x0001)  
 	EVerifierModeOverride                              VerifierModeOverride;                                       // 0x0029   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x002A   (0x0002)  MISSED
 	int32_t                                            ReceiptRefactorVersionOverride;                             // 0x002C   (0x0004)  
-	SDK_UNDEFINED(16,2362) /* TArray<FString> */       __um(CatalogItems);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,2363) /* FString */               __um(PurchaseCorrelationId);                                // 0x0040   (0x0010)  
-	FCatalogPurchaseAdditionalData                     AdditionalData;                                             // 0x0050   (0x0070)  
-	unsigned char                                      UnknownData02_6[0x18];                                      // 0x00C0   (0x0018)  MISSED
+	SDK_UNDEFINED(16,2353) /* TArray<FString> */       __um(CatalogItems);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2354) /* FString */               __um(PurchaseCorrelationId);                                // 0x0040   (0x0010)  
+	FCatalogPurchaseAdditionalData                     AdditionalData;                                             // 0x0050   (0x00C8)  
+	unsigned char                                      UnknownData02_6[0x18];                                      // 0x0118   (0x0018)  MISSED
 };
 
 /// Struct /Script/GameSubCatalog.CatalogReceiptInfo
@@ -222,58 +241,58 @@ struct FCatalogReceiptInfo
 { 
 	EAppStore                                          AppStore;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2364) /* FString */               __um(AppStoreId);                                           // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,2365) /* FString */               __um(ReceiptId);                                            // 0x0018   (0x0010)  
-	SDK_UNDEFINED(16,2366) /* FString */               __um(ReceiptInfo);                                          // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,2367) /* FString */               __um(PurchaseCorrelationId);                                // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,2355) /* FString */               __um(AppStoreId);                                           // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2356) /* FString */               __um(ReceiptId);                                            // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,2357) /* FString */               __um(ReceiptInfo);                                          // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,2358) /* FString */               __um(PurchaseCorrelationId);                                // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0048   (0x0008)  MISSED
 };
 
 /// Struct /Script/GameSubCatalog.CatalogPurchaseInfo
-/// Size: 0x00B0 (0x000000 - 0x0000B0)
+/// Size: 0x0108 (0x000000 - 0x000108)
 struct FCatalogPurchaseInfo
 { 
-	SDK_UNDEFINED(16,2368) /* FString */               __um(OfferId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2359) /* FString */               __um(OfferId);                                              // 0x0000   (0x0010)  
 	int32_t                                            PurchaseQuantity;                                           // 0x0010   (0x0004)  
-	SDK_UNDEFINED(1,2369) /* TEnumAsByte<EStoreCurrencyType> */ __um(Currency);                                    // 0x0014   (0x0001)  
+	SDK_UNDEFINED(1,2360) /* TEnumAsByte<EStoreCurrencyType> */ __um(Currency);                                    // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0015   (0x0003)  MISSED
-	SDK_UNDEFINED(16,2370) /* FString */               __um(CurrencySubType);                                      // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,2361) /* FString */               __um(CurrencySubType);                                      // 0x0018   (0x0010)  
 	int32_t                                            ExpectedTotalPrice;                                         // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,2371) /* FString */               __um(GameContext);                                          // 0x0030   (0x0010)  
-	FCatalogPurchaseAdditionalData                     AdditionalData;                                             // 0x0040   (0x0070)  
+	SDK_UNDEFINED(16,2362) /* FString */               __um(GameContext);                                          // 0x0030   (0x0010)  
+	FCatalogPurchaseAdditionalData                     AdditionalData;                                             // 0x0040   (0x00C8)  
 };
 
 /// Struct /Script/GameSubCatalog.CatalogPurchaseInfoGift
-/// Size: 0x00E0 (0x000000 - 0x0000E0)
+/// Size: 0x0138 (0x000000 - 0x000138)
 struct FCatalogPurchaseInfoGift
 { 
-	SDK_UNDEFINED(16,2372) /* FString */               __um(OfferId);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(1,2373) /* TEnumAsByte<EStoreCurrencyType> */ __um(Currency);                                    // 0x0010   (0x0001)  
+	SDK_UNDEFINED(16,2363) /* FString */               __um(OfferId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(1,2364) /* TEnumAsByte<EStoreCurrencyType> */ __um(Currency);                                    // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0011   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2374) /* FString */               __um(CurrencySubType);                                      // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,2365) /* FString */               __um(CurrencySubType);                                      // 0x0018   (0x0010)  
 	int32_t                                            ExpectedTotalPrice;                                         // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,2375) /* FString */               __um(GameContext);                                          // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,2376) /* TArray<FString> */       __um(ReceiverAccountIds);                                   // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,2377) /* FString */               __um(GiftWrapTemplateId);                                   // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,2378) /* FString */               __um(PersonalMessage);                                      // 0x0060   (0x0010)  
-	FCatalogPurchaseAdditionalData                     AdditionalData;                                             // 0x0070   (0x0070)  
+	SDK_UNDEFINED(16,2366) /* FString */               __um(GameContext);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,2367) /* TArray<FString> */       __um(ReceiverAccountIds);                                   // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,2368) /* FString */               __um(GiftWrapTemplateId);                                   // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,2369) /* FString */               __um(PersonalMessage);                                      // 0x0060   (0x0010)  
+	FCatalogPurchaseAdditionalData                     AdditionalData;                                             // 0x0070   (0x00C8)  
 };
 
 /// Struct /Script/GameSubCatalog.CatalogKeyValue
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FCatalogKeyValue
 { 
-	SDK_UNDEFINED(16,2379) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2380) /* FString */               __um(Value);                                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2370) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2371) /* FString */               __um(Value);                                                // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/GameSubCatalog.CatalogMetaAssetInfo
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FCatalogMetaAssetInfo
 { 
-	SDK_UNDEFINED(16,2381) /* FString */               __um(StructName);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2372) /* FString */               __um(StructName);                                           // 0x0000   (0x0010)  
 	FJsonObjectWrapper                                 Payload;                                                    // 0x0010   (0x0020)  
 };
 
@@ -281,7 +300,7 @@ struct FCatalogMetaAssetInfo
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FItemQuantity
 { 
-	SDK_UNDEFINED(16,2382) /* FString */               __um(TemplateId);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2373) /* FString */               __um(TemplateId);                                           // 0x0000   (0x0010)  
 	int32_t                                            Quantity;                                                   // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
 	FJsonObjectWrapper                                 Attributes;                                                 // 0x0018   (0x0020)  
@@ -297,8 +316,8 @@ struct FCatalogDynamicBundleItem
 	int32_t                                            RegularPrice;                                               // 0x003C   (0x0004)  
 	int32_t                                            DiscountedPrice;                                            // 0x0040   (0x0004)  
 	int32_t                                            AlreadyOwnedPriceReduction;                                 // 0x0044   (0x0004)  
-	SDK_UNDEFINED(24,2383) /* FText */                 __um(Title);                                                // 0x0048   (0x0018)  
-	SDK_UNDEFINED(24,2384) /* FText */                 __um(Description);                                          // 0x0060   (0x0018)  
+	SDK_UNDEFINED(24,2374) /* FText */                 __um(Title);                                                // 0x0048   (0x0018)  
+	SDK_UNDEFINED(24,2375) /* FText */                 __um(Description);                                          // 0x0060   (0x0018)  
 };
 
 /// Struct /Script/GameSubCatalog.CatalogDynamicBundle
@@ -308,10 +327,10 @@ struct FCatalogDynamicBundle
 	int32_t                                            DiscountedBasePrice;                                        // 0x0000   (0x0004)  
 	int32_t                                            RegularBasePrice;                                           // 0x0004   (0x0004)  
 	int32_t                                            FloorPrice;                                                 // 0x0008   (0x0004)  
-	SDK_UNDEFINED(1,2385) /* TEnumAsByte<EStoreCurrencyType> */ __um(CurrencyType);                                // 0x000C   (0x0001)  
+	SDK_UNDEFINED(1,2376) /* TEnumAsByte<EStoreCurrencyType> */ __um(CurrencyType);                                // 0x000C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x000D   (0x0003)  MISSED
-	SDK_UNDEFINED(16,2386) /* FString */               __um(CurrencySubType);                                      // 0x0010   (0x0010)  
-	SDK_UNDEFINED(1,2387) /* TEnumAsByte<ECatalogSaleType> */ __um(DisplayType);                                   // 0x0020   (0x0001)  
+	SDK_UNDEFINED(16,2377) /* FString */               __um(CurrencySubType);                                      // 0x0010   (0x0010)  
+	SDK_UNDEFINED(1,2378) /* TEnumAsByte<ECatalogSaleType> */ __um(DisplayType);                                   // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0021   (0x0007)  MISSED
 	TArray<FCatalogDynamicBundleItem>                  BundleItems;                                                // 0x0028   (0x0010)  
 };
@@ -323,7 +342,7 @@ struct FCatalogOfferRequirement
 	ECatalogRequirementType                            RequirementType;                                            // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	int32_t                                            MinQuantity;                                                // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,2388) /* FString */               __um(RequiredId);                                           // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2379) /* FString */               __um(RequiredId);                                           // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/GameSubCatalog.CatalogGiftInfo
@@ -332,7 +351,7 @@ struct FCatalogGiftInfo
 { 
 	bool                                               bIsEnabled;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2389) /* FString */               __um(ForcedGiftBoxTemplateId);                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2380) /* FString */               __um(ForcedGiftBoxTemplateId);                              // 0x0008   (0x0010)  
 	TArray<FCatalogOfferRequirement>                   PurchaseRequirements;                                       // 0x0018   (0x0010)  
 };
 
@@ -340,8 +359,8 @@ struct FCatalogGiftInfo
 /// Size: 0x0260 (0x000000 - 0x000260)
 struct FCatalogOffer
 { 
-	SDK_UNDEFINED(16,2390) /* FString */               __um(OfferId);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2391) /* FString */               __um(DevName);                                              // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2381) /* FString */               __um(OfferId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2382) /* FString */               __um(DevName);                                              // 0x0010   (0x0010)  
 	TArray<FCatalogKeyValue>                           MetaInfo;                                                   // 0x0020   (0x0010)  
 	ECatalogOfferType                                  OfferType;                                                  // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0031   (0x0007)  MISSED
@@ -351,29 +370,29 @@ struct FCatalogOffer
 	int32_t                                            WeeklyLimit;                                                // 0x0084   (0x0004)  
 	int32_t                                            MonthlyLimit;                                               // 0x0088   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x008C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,2392) /* TArray<FString> */       __um(Categories);                                           // 0x0090   (0x0010)  
-	SDK_UNDEFINED(16,2393) /* FString */               __um(CatalogGroup);                                         // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,2383) /* TArray<FString> */       __um(Categories);                                           // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,2384) /* FString */               __um(CatalogGroup);                                         // 0x00A0   (0x0010)  
 	int32_t                                            CatalogGroupPriority;                                       // 0x00B0   (0x0004)  
 	int32_t                                            SortPriority;                                               // 0x00B4   (0x0004)  
-	SDK_UNDEFINED(24,2394) /* FText */                 __um(Title);                                                // 0x00B8   (0x0018)  
-	SDK_UNDEFINED(24,2395) /* FText */                 __um(ShortDescription);                                     // 0x00D0   (0x0018)  
-	SDK_UNDEFINED(24,2396) /* FText */                 __um(Description);                                          // 0x00E8   (0x0018)  
-	SDK_UNDEFINED(192,2397) /* FString */              __um(AppStoreId);                                           // 0x0100   (0x00C0)  
+	SDK_UNDEFINED(24,2385) /* FText */                 __um(Title);                                                // 0x00B8   (0x0018)  
+	SDK_UNDEFINED(24,2386) /* FText */                 __um(ShortDescription);                                     // 0x00D0   (0x0018)  
+	SDK_UNDEFINED(24,2387) /* FText */                 __um(Description);                                          // 0x00E8   (0x0018)  
+	SDK_UNDEFINED(192,2388) /* FString */              __um(AppStoreId);                                           // 0x0100   (0x00C0)  
 	FCatalogMetaAssetInfo                              MetaAssetInfo;                                              // 0x01C0   (0x0030)  
-	SDK_UNDEFINED(16,2398) /* FString */               __um(DisplayAssetPath);                                     // 0x01F0   (0x0010)  
+	SDK_UNDEFINED(16,2389) /* FString */               __um(DisplayAssetPath);                                     // 0x01F0   (0x0010)  
 	TArray<FItemQuantity>                              ItemGrants;                                                 // 0x0200   (0x0010)  
 	TArray<FCatalogOfferRequirement>                   Requirements;                                               // 0x0210   (0x0010)  
 	FCatalogGiftInfo                                   GiftInfo;                                                   // 0x0220   (0x0028)  
 	bool                                               Refundable;                                                 // 0x0248   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0249   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2399) /* TArray<FString> */       __um(DenyItemTemplateIds);                                  // 0x0250   (0x0010)  
+	SDK_UNDEFINED(16,2390) /* TArray<FString> */       __um(DenyItemTemplateIds);                                  // 0x0250   (0x0010)  
 };
 
 /// Struct /Script/GameSubCatalog.Storefront
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FStorefront
 { 
-	SDK_UNDEFINED(16,2400) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2391) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 	TArray<FCatalogOffer>                              CatalogEntries;                                             // 0x0010   (0x0010)  
 };
 
@@ -409,18 +428,18 @@ struct FMcpProcessedConsumables
 { 
 	EAppStore                                          AppStore;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,2401) /* TArray<FString> */       __um(Ids);                                                  // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2392) /* TArray<FString> */       __um(Ids);                                                  // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/GameSubCatalog.McpInAppPurchases
 /// Size: 0x00E0 (0x000000 - 0x0000E0)
 struct FMcpInAppPurchases
 { 
-	SDK_UNDEFINED(16,2402) /* TArray<FString> */       __um(Receipts);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2403) /* TArray<FString> */       __um(IgnoredReceipts);                                      // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,2404) /* TArray<FString> */       __um(Fulfillments);                                         // 0x0020   (0x0010)  
-	SDK_UNDEFINED(80,2405) /* TMap<FString, int32_t> */ __um(FulfillmentCounts);                                   // 0x0030   (0x0050)  
-	SDK_UNDEFINED(80,2406) /* TMap<EAppStore, FMcpEntitlementRefreshTimerInfo> */ __um(RefreshTimers);             // 0x0080   (0x0050)  
+	SDK_UNDEFINED(16,2393) /* TArray<FString> */       __um(Receipts);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2394) /* TArray<FString> */       __um(IgnoredReceipts);                                      // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2395) /* TArray<FString> */       __um(Fulfillments);                                         // 0x0020   (0x0010)  
+	SDK_UNDEFINED(80,2396) /* TMap<FString, int32_t> */ __um(FulfillmentCounts);                                   // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,2397) /* TMap<EAppStore, FMcpEntitlementRefreshTimerInfo> */ __um(RefreshTimers);             // 0x0080   (0x0050)  
 	TArray<FMcpProcessedConsumables>                   ProcessedConsumables;                                       // 0x00D0   (0x0010)  
 };
 

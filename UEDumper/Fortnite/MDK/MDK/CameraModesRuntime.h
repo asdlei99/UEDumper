@@ -27,14 +27,14 @@ public:
 
 	/// Functions
 	// Function /Script/CameraModesRuntime.CameraModes_FirstPersonCameraController.UpdateFirstPersonFOV
-	// void UpdateFirstPersonFOV(float FOV);                                                                                    // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void UpdateFirstPersonFOV(float FOV);                                                                                    // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CameraModesRuntime.CameraModes_FirstPersonCameraController.SetFovOverride
-	// void SetFovOverride(float FOV, float TransitionTime);                                                                    // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void SetFovOverride(float FOV, float TransitionTime);                                                                    // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CameraModesRuntime.CameraModes_FirstPersonCameraController.OnLocalPlayerVisibilityChanged
-	// void OnLocalPlayerVisibilityChanged(bool bShouldBeVisible);                                                              // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void OnLocalPlayerVisibilityChanged(bool bShouldBeVisible);                                                              // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/CameraModesRuntime.CameraModes_FirstPersonCameraController.HandleWeaponEquipped
-	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb4b5d08] Final|Native|Private 
+	// void HandleWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon);                                  // [0xb6f431c] Final|Native|Private 
 	// Function /Script/CameraModesRuntime.CameraModes_FirstPersonCameraController.ClearFovOverride
-	// void ClearFovOverride(float TransitionTime);                                                                             // [0x211c0a0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void ClearFovOverride(float TransitionTime);                                                                             // [0x2047e54] Event|Protected|BlueprintCallable|BlueprintEvent 
 };
 

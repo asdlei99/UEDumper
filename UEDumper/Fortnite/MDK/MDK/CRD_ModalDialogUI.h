@@ -24,19 +24,19 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogAllowedConversionFunction.GetResponseNone
-	// ECreativeModalDialogViewmodelResponse GetResponseNone(FWidgetEventField Field);                                          // [0xb5ad6b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse GetResponseNone(FWidgetEventField Field);                                          // [0xb7f4840] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogAllowedConversionFunction.GetResponseButton6
-	// ECreativeModalDialogViewmodelResponse GetResponseButton6(FWidgetEventField Field);                                       // [0xb5ad5b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse GetResponseButton6(FWidgetEventField Field);                                       // [0xb7f478c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogAllowedConversionFunction.GetResponseButton5
-	// ECreativeModalDialogViewmodelResponse GetResponseButton5(FWidgetEventField Field);                                       // [0xb5ad4b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse GetResponseButton5(FWidgetEventField Field);                                       // [0xb7f46d8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogAllowedConversionFunction.GetResponseButton4
-	// ECreativeModalDialogViewmodelResponse GetResponseButton4(FWidgetEventField Field);                                       // [0xb5ad3b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse GetResponseButton4(FWidgetEventField Field);                                       // [0xb7f4624] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogAllowedConversionFunction.GetResponseButton3
-	// ECreativeModalDialogViewmodelResponse GetResponseButton3(FWidgetEventField Field);                                       // [0xb5ad2b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse GetResponseButton3(FWidgetEventField Field);                                       // [0xb7f4570] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogAllowedConversionFunction.GetResponseButton2
-	// ECreativeModalDialogViewmodelResponse GetResponseButton2(FWidgetEventField Field);                                       // [0xb5ad1b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse GetResponseButton2(FWidgetEventField Field);                                       // [0xb7f44bc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogAllowedConversionFunction.GetResponseButton1
-	// ECreativeModalDialogViewmodelResponse GetResponseButton1(FWidgetEventField Field);                                       // [0xb5ad0b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse GetResponseButton1(FWidgetEventField Field);                                       // [0xb7f4408] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/CRD_ModalDialogUI.CreativeModalDialogConversionFunction
@@ -51,17 +51,17 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogConversionFunction.TranslateResponse
-	// ECreativeModalDialogViewmodelResponse TranslateResponse(FWidgetEventField Field, ECreativeModalDialogViewmodelResponse Response); // [0xb5ac75c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse TranslateResponse(FWidgetEventField Field, ECreativeModalDialogViewmodelResponse Response); // [0xb7f37e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogConversionFunction.GetRowIndexForButtonFromContentAlignment
-	// int32_t GetRowIndexForButtonFromContentAlignment(ECreativeModalDialogAlignmentOption AlignmentOption, int32_t ButtonIndex, int32_t WideMaxColumns, int32_t TallMaxColumns, int32_t DefaultMaxColumns); // [0xb5ad7ac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetRowIndexForButtonFromContentAlignment(ECreativeModalDialogAlignmentOption AlignmentOption, int32_t ButtonIndex, int32_t WideMaxColumns, int32_t TallMaxColumns, int32_t DefaultMaxColumns); // [0xb7f48e8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogConversionFunction.GetMarginFromContentAlignment
-	// FMargin GetMarginFromContentAlignment(ECreativeModalDialogAlignmentOption AlignmentOption, float TallMarginAmount, float WideMarginAmount, float CenteredFullMarginAmount, float DefaultMarginAmount); // [0xb5acf28] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FMargin GetMarginFromContentAlignment(ECreativeModalDialogAlignmentOption AlignmentOption, float TallMarginAmount, float WideMarginAmount, float CenteredFullMarginAmount, float DefaultMarginAmount); // [0xb7f4144] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogConversionFunction.GetFloatingValueFromContentAlignment
-	// float GetFloatingValueFromContentAlignment(ECreativeModalDialogAlignmentOption AlignmentOption, float TallValue, float WideValue, float CenteredFullValue, float DefaultValue); // [0xb5acd10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetFloatingValueFromContentAlignment(ECreativeModalDialogAlignmentOption AlignmentOption, float TallValue, float WideValue, float CenteredFullValue, float DefaultValue); // [0xb7f3df8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogConversionFunction.GetColumnIndexForButtonFromContentAlignment
-	// int32_t GetColumnIndexForButtonFromContentAlignment(ECreativeModalDialogAlignmentOption AlignmentOption, int32_t ButtonIndex, int32_t WideMaxColumns, int32_t TallMaxColumns, int32_t DefaultMaxColumns); // [0xb5acb90] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetColumnIndexForButtonFromContentAlignment(ECreativeModalDialogAlignmentOption AlignmentOption, int32_t ButtonIndex, int32_t WideMaxColumns, int32_t TallMaxColumns, int32_t DefaultMaxColumns); // [0xb7f3b44] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogConversionFunction.AssignCreativeModalDialogViewmodelResponse
-	// ECreativeModalDialogViewmodelResponse AssignCreativeModalDialogViewmodelResponse(FMVVMEventField Field, ECreativeModalDialogViewmodelResponse Response); // [0xb5ac75c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// ECreativeModalDialogViewmodelResponse AssignCreativeModalDialogViewmodelResponse(FMVVMEventField Field, ECreativeModalDialogViewmodelResponse Response); // [0xb7f37e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel
@@ -102,65 +102,65 @@ public:
 
 	/// Functions
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.ShouldButton6UseFallbackDefaultInputAction
-	// bool ShouldButton6UseFallbackDefaultInputAction();                                                                       // [0xb5adbb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldButton6UseFallbackDefaultInputAction();                                                                       // [0xb7f4e24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.ShouldButton5UseFallbackDefaultInputAction
-	// bool ShouldButton5UseFallbackDefaultInputAction();                                                                       // [0xb5adb88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldButton5UseFallbackDefaultInputAction();                                                                       // [0xb7f4df8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.ShouldButton4UseFallbackDefaultInputAction
-	// bool ShouldButton4UseFallbackDefaultInputAction();                                                                       // [0xb5adb5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldButton4UseFallbackDefaultInputAction();                                                                       // [0xb7f4dcc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.ShouldButton3UseFallbackDefaultInputAction
-	// bool ShouldButton3UseFallbackDefaultInputAction();                                                                       // [0xb5adb30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldButton3UseFallbackDefaultInputAction();                                                                       // [0xb7f4da0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.ShouldButton2UseFallbackDefaultInputAction
-	// bool ShouldButton2UseFallbackDefaultInputAction();                                                                       // [0xb5adb04] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldButton2UseFallbackDefaultInputAction();                                                                       // [0xb7f4d74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.ShouldButton1UseFallbackDefaultInputAction
-	// bool ShouldButton1UseFallbackDefaultInputAction();                                                                       // [0xb5adad8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldButton1UseFallbackDefaultInputAction();                                                                       // [0xb7f4d48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.IsTimerVisible
-	// bool IsTimerVisible();                                                                                                   // [0xb5adaa8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTimerVisible();                                                                                                   // [0xb7f4d18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.IsButton6Visible
-	// bool IsButton6Visible();                                                                                                 // [0xb5ada8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsButton6Visible();                                                                                                 // [0xb7f4cfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.IsButton5Visible
-	// bool IsButton5Visible();                                                                                                 // [0xb5ada70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsButton5Visible();                                                                                                 // [0xb7f4ce0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.IsButton4Visible
-	// bool IsButton4Visible();                                                                                                 // [0xb5ada54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsButton4Visible();                                                                                                 // [0xb7f4cc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.IsButton3Visible
-	// bool IsButton3Visible();                                                                                                 // [0xb5ada38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsButton3Visible();                                                                                                 // [0xb7f4ca8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.IsButton2Visible
-	// bool IsButton2Visible();                                                                                                 // [0xb5ada1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsButton2Visible();                                                                                                 // [0xb7f4c8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.IsButton1Visible
-	// bool IsButton1Visible();                                                                                                 // [0xb5ada00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsButton1Visible();                                                                                                 // [0xb7f4c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetVerticalAlignment
-	// TEnumAsByte<EVerticalAlignment> GetVerticalAlignment();                                                                  // [0xb5ad988] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TEnumAsByte<EVerticalAlignment> GetVerticalAlignment();                                                                  // [0xb7f4bf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetTimerVisibility
-	// ESlateVisibility GetTimerVisibility();                                                                                   // [0xb5ad950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESlateVisibility GetTimerVisibility();                                                                                   // [0xb7f4bc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetTimeoutProgress
-	// float GetTimeoutProgress();                                                                                              // [0xb5ad92c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimeoutProgress();                                                                                              // [0xb7f4b9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetHorizontalAlignment
-	// TEnumAsByte<EHorizontalAlignment> GetHorizontalAlignment();                                                              // [0xb5aceb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TEnumAsByte<EHorizontalAlignment> GetHorizontalAlignment();                                                              // [0xb7f40cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton6Visibility
-	// ESlateVisibility GetButton6Visibility();                                                                                 // [0xb5acb74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESlateVisibility GetButton6Visibility();                                                                                 // [0xb7f3b28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton6TriggeringInputAction
-	// FDataTableRowHandle GetButton6TriggeringInputAction();                                                                   // [0xb5acb38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDataTableRowHandle GetButton6TriggeringInputAction();                                                                   // [0xb7f3aec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton5Visibility
-	// ESlateVisibility GetButton5Visibility();                                                                                 // [0xb5acb1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESlateVisibility GetButton5Visibility();                                                                                 // [0xb7f3ad0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton5TriggeringInputAction
-	// FDataTableRowHandle GetButton5TriggeringInputAction();                                                                   // [0xb5acae0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDataTableRowHandle GetButton5TriggeringInputAction();                                                                   // [0xb7f3a94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton4Visibility
-	// ESlateVisibility GetButton4Visibility();                                                                                 // [0xb5acac4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESlateVisibility GetButton4Visibility();                                                                                 // [0xb7f3a78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton4TriggeringInputAction
-	// FDataTableRowHandle GetButton4TriggeringInputAction();                                                                   // [0xb5aca88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDataTableRowHandle GetButton4TriggeringInputAction();                                                                   // [0xb7f3a3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton3Visibility
-	// ESlateVisibility GetButton3Visibility();                                                                                 // [0xb5aca6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESlateVisibility GetButton3Visibility();                                                                                 // [0xb7f3a20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton3TriggeringInputAction
-	// FDataTableRowHandle GetButton3TriggeringInputAction();                                                                   // [0xb5aca30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDataTableRowHandle GetButton3TriggeringInputAction();                                                                   // [0xb7f39e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton2Visibility
-	// ESlateVisibility GetButton2Visibility();                                                                                 // [0xb5aca14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESlateVisibility GetButton2Visibility();                                                                                 // [0xb7f39c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton2TriggeringInputAction
-	// FDataTableRowHandle GetButton2TriggeringInputAction();                                                                   // [0xb5ac9d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDataTableRowHandle GetButton2TriggeringInputAction();                                                                   // [0xb7f398c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton1Visibility
-	// ESlateVisibility GetButton1Visibility();                                                                                 // [0xb5ac9bc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESlateVisibility GetButton1Visibility();                                                                                 // [0xb7f3970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetButton1TriggeringInputAction
-	// FDataTableRowHandle GetButton1TriggeringInputAction();                                                                   // [0xb5ac980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDataTableRowHandle GetButton1TriggeringInputAction();                                                                   // [0xb7f3934] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CRD_ModalDialogUI.CreativeModalDialogViewmodel.GetBackgroundVisibility
-	// ESlateVisibility GetBackgroundVisibility();                                                                              // [0xb5ac95c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESlateVisibility GetBackgroundVisibility();                                                                              // [0xb7f3910] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CRD_ModalDialogUI.CreativeModalDialogWidget

@@ -35,8 +35,8 @@ public:
 
 	/// Functions
 	// Function /Script/CollectionMapShared.AthenaMapCollectionIcon.SetSecondaryIcon
-	// void SetSecondaryIcon(TWeakObjectPtr<UObject*>& SecondaryIcon);                                                          // [0x211c0a0] RequiredAPI|Event|Public|HasOutParms|BlueprintEvent 
+	// void SetSecondaryIcon(TWeakObjectPtr<UObject*>& SecondaryIcon);                                                          // [0x2047e54] RequiredAPI|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/CollectionMapShared.AthenaMapCollectionIcon.SetIsKnown
-	// void SetIsKnown(bool bIsKnown);                                                                                          // [0x211c0a0] RequiredAPI|Event|Public|BlueprintEvent 
+	// void SetIsKnown(bool bIsKnown);                                                                                          // [0x2047e54] RequiredAPI|Event|Public|BlueprintEvent 
 };
 

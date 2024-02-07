@@ -36,7 +36,7 @@ enum class ERigElementType : uint8_t
 };
 
 /// Enum /Script/ControlRig.ERigHierarchyNotification
-/// Size: 0x17
+/// Size: 0x21
 enum class ERigHierarchyNotification : uint8_t
 {
 	ERigHierarchyNotification__ElementAdded                                          = 0,
@@ -55,7 +55,11 @@ enum class ERigHierarchyNotification : uint8_t
 	ERigHierarchyNotification__InteractionBracketClosed                              = 13,
 	ERigHierarchyNotification__ElementReordered                                      = 14,
 	ERigHierarchyNotification__ConnectorSettingChanged                               = 15,
-	ERigHierarchyNotification__Max                                                   = 16
+	ERigHierarchyNotification__SocketColorChanged                                    = 16,
+	ERigHierarchyNotification__SocketDescriptionChanged                              = 17,
+	ERigHierarchyNotification__SocketDesiredParentChanged                            = 18,
+	ERigHierarchyNotification__HierarchyCopied                                       = 19,
+	ERigHierarchyNotification__Max                                                   = 20
 };
 
 /// Enum /Script/ControlRig.ERigControlTransformChannel
@@ -252,6 +256,20 @@ enum class ECRSimSoftCollisionType : uint8_t
 	ECRSimSoftCollisionType__ECRSimSoftCollisionType_MAX                             = 3
 };
 
+/// Enum /Script/ControlRig.EModularRigNotification
+/// Size: 0x08
+enum class EModularRigNotification : uint8_t
+{
+	EModularRigNotification__ModuleAdded                                             = 0,
+	EModularRigNotification__ModuleRenamed                                           = 1,
+	EModularRigNotification__ModuleRemoved                                           = 2,
+	EModularRigNotification__ModuleReparented                                        = 3,
+	EModularRigNotification__ConnectionChanged                                       = 4,
+	EModularRigNotification__ModuleConfigValueChanged                                = 5,
+	EModularRigNotification__ModuleShortNameChanged                                  = 6,
+	EModularRigNotification__Max                                                     = 7
+};
+
 /// Enum /Script/ControlRig.EControlRigFKRigExecuteMode
 /// Size: 0x04
 enum class EControlRigFKRigExecuteMode : uint8_t
@@ -329,6 +347,26 @@ enum class ERigControlValueType : uint8_t
 	ERigControlValueType__Minimum                                                    = 2,
 	ERigControlValueType__Maximum                                                    = 3,
 	ERigControlValueType__ERigControlValueType_MAX                                   = 4
+};
+
+/// Enum /Script/ControlRig.ERigElementResolveState
+/// Size: 0x05
+enum class ERigElementResolveState : uint8_t
+{
+	ERigElementResolveState__Unknown                                                 = 0,
+	ERigElementResolveState__InvalidTarget                                           = 1,
+	ERigElementResolveState__PossibleTarget                                          = 2,
+	ERigElementResolveState__DefaultTarget                                           = 3,
+	ERigElementResolveState__Max                                                     = 4
+};
+
+/// Enum /Script/ControlRig.EModularRigResolveState
+/// Size: 0x03
+enum class EModularRigResolveState : uint8_t
+{
+	EModularRigResolveState__Success                                                 = 0,
+	EModularRigResolveState__Error                                                   = 1,
+	EModularRigResolveState__Max                                                     = 2
 };
 
 /// Enum /Script/ControlRig.ERigSpaceType
@@ -440,9 +478,9 @@ public:
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRigShapeLibraryLink.SetShapeLibrary
-	// void SetShapeLibrary(class UControlRigShapeLibrary* InShapeLibrary);                                                  // [0x762b584] Final|Native|Public|BlueprintCallable 
+	// void SetShapeLibrary(class UControlRigShapeLibrary* InShapeLibrary);                                                  // [0x7572a28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigShapeLibraryLink.GetShapeLibrary
-	// class UControlRigShapeLibrary* GetShapeLibrary();                                                                     // [0x6ef2534] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UControlRigShapeLibrary* GetShapeLibrary();                                                                     // [0x6d6d47c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/ControlRig.RigHierarchySettings
@@ -476,7 +514,7 @@ struct FRigInfluenceMap
 	FName                                              EventName;                                                  // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
 	TArray<FRigInfluenceEntry>                         Entries;                                                    // 0x0008   (0x0010)  
-	SDK_UNDEFINED(80,12265) /* TMap<FRigElementKey, int32_t> */ __um(KeyToIndex);                                  // 0x0018   (0x0050)  
+	SDK_UNDEFINED(80,12310) /* TMap<FRigElementKey, int32_t> */ __um(KeyToIndex);                                  // 0x0018   (0x0050)  
 };
 
 /// Struct /Script/ControlRig.RigInfluenceMapPerEvent
@@ -484,30 +522,30 @@ struct FRigInfluenceMap
 struct FRigInfluenceMapPerEvent
 { 
 	TArray<FRigInfluenceMap>                           Maps;                                                       // 0x0000   (0x0010)  
-	SDK_UNDEFINED(80,12266) /* TMap<FName, int32_t> */ __um(EventToIndex);                                         // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,12311) /* TMap<FName, int32_t> */ __um(EventToIndex);                                         // 0x0010   (0x0050)  
 };
 
 /// Struct /Script/ControlRig.RigModuleIdentifier
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FRigModuleIdentifier
 { 
-	SDK_UNDEFINED(16,12267) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,12268) /* FString */              __um(Type);                                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,12312) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12313) /* FString */              __um(Type);                                                 // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigConnectionRuleStash
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FRigConnectionRuleStash
 { 
-	SDK_UNDEFINED(16,12269) /* FString */              __um(ScriptStructPath);                                     // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,12270) /* FString */              __um(ExportedText);                                         // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,12314) /* FString */              __um(ScriptStructPath);                                     // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12315) /* FString */              __um(ExportedText);                                         // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigConnectorSettings
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FRigConnectorSettings
 { 
-	SDK_UNDEFINED(16,12271) /* FString */              __um(Description);                                          // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12316) /* FString */              __um(Description);                                          // 0x0000   (0x0010)  
 	EConnectorType                                     Type;                                                       // 0x0010   (0x0001)  
 	bool                                               bOptional;                                                  // 0x0011   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0012   (0x0006)  MISSED
@@ -518,7 +556,7 @@ struct FRigConnectorSettings
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FRigModuleConnector
 { 
-	SDK_UNDEFINED(16,12272) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12317) /* FString */              __um(Name);                                                 // 0x0000   (0x0010)  
 	FRigConnectorSettings                              Settings;                                                   // 0x0010   (0x0028)  
 };
 
@@ -532,85 +570,115 @@ struct FRigModuleSettings
 };
 
 /// Class /Script/ControlRig.ControlRig
-/// Size: 0x07A0 (0x000278 - 0x000A18)
+/// Size: 0x07A8 (0x000278 - 0x000A20)
 class UControlRig : public URigVMHost
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0278   (0x0008)  MISSED
-	ERigExecutionType                                  ExecutionType;                                              // 0x0280   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0281   (0x0003)  MISSED
-	FRigHierarchySettings                              HierarchySettings;                                          // 0x0284   (0x0004)  
-	SDK_UNDEFINED(80,12273) /* TMap<FRigElementKey, FRigControlElementCustomization> */ __um(ControlCustomizations); // 0x0288   (0x0050)  
-	class URigHierarchy*                               DynamicHierarchy;                                           // 0x02D8   (0x0008)  
-	SDK_UNDEFINED(16,12274) /* TArray<TWeakObjectPtr<UControlRigShapeLibrary*>> */ __um(ShapeLibraries);           // 0x02E0   (0x0010)  
-	SDK_UNDEFINED(80,12275) /* TMap<FString, FString> */ __um(ShapeLibraryNameMap);                                // 0x02F0   (0x0050)  
-	unsigned char                                      UnknownData02_5[0x10];                                      // 0x0340   (0x0010)  MISSED
-	FRigVMExtendedExecuteContext                       RigVMExtendedExecuteContext;                                // 0x0350   (0x0228)  
-	unsigned char                                      UnknownData03_5[0x8];                                       // 0x0578   (0x0008)  MISSED
-	class UAnimationDataSourceRegistry*                DataSourceRegistry;                                         // 0x0580   (0x0008)  
-	unsigned char                                      UnknownData04_5[0xA8];                                      // 0x0588   (0x00A8)  MISSED
-	FRigInfluenceMapPerEvent                           Influences;                                                 // 0x0630   (0x0060)  
-	unsigned char                                      UnknownData05_5[0xB8];                                      // 0x0690   (0x00B8)  MISSED
-	SDK_UNDEFINED(80,12276) /* TMap<FName, UDataAssetLink*> */ __um(ExternalVariableDataAssetLinks);               // 0x0748   (0x0050)  
-	unsigned char                                      UnknownData06_5[0xD0];                                      // 0x0798   (0x00D0)  MISSED
-	SDK_UNDEFINED(1,12277) /* FMulticastSparseDelegate */ __um(OnControlSelected_BP);                              // 0x0868   (0x0001)  
-	unsigned char                                      UnknownData07_5[0x17];                                      // 0x0869   (0x0017)  MISSED
-	bool                                               bIsAdditive;                                                // 0x0880   (0x0001)  
-	unsigned char                                      UnknownData08_5[0x13F];                                     // 0x0881   (0x013F)  MISSED
-	FRigModuleSettings                                 RigModuleSettings;                                          // 0x09C0   (0x0048)  
-	SDK_UNDEFINED(16,12278) /* FString */              __um(RigModuleNameSpace);                                   // 0x0A08   (0x0010)  
+	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0278   (0x0010)  MISSED
+	ERigExecutionType                                  ExecutionType;                                              // 0x0288   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0289   (0x0003)  MISSED
+	FRigHierarchySettings                              HierarchySettings;                                          // 0x028C   (0x0004)  
+	SDK_UNDEFINED(80,12318) /* TMap<FRigElementKey, FRigControlElementCustomization> */ __um(ControlCustomizations); // 0x0290   (0x0050)  
+	class URigHierarchy*                               DynamicHierarchy;                                           // 0x02E0   (0x0008)  
+	SDK_UNDEFINED(16,12319) /* TArray<TWeakObjectPtr<UControlRigShapeLibrary*>> */ __um(ShapeLibraries);           // 0x02E8   (0x0010)  
+	SDK_UNDEFINED(80,12320) /* TMap<FString, FString> */ __um(ShapeLibraryNameMap);                                // 0x02F8   (0x0050)  
+	unsigned char                                      UnknownData02_5[0x10];                                      // 0x0348   (0x0010)  MISSED
+	FRigVMExtendedExecuteContext                       RigVMExtendedExecuteContext;                                // 0x0358   (0x0228)  
+	unsigned char                                      UnknownData03_5[0x8];                                       // 0x0580   (0x0008)  MISSED
+	class UAnimationDataSourceRegistry*                DataSourceRegistry;                                         // 0x0588   (0x0008)  
+	unsigned char                                      UnknownData04_5[0xA8];                                      // 0x0590   (0x00A8)  MISSED
+	FRigInfluenceMapPerEvent                           Influences;                                                 // 0x0638   (0x0060)  
+	unsigned char                                      UnknownData05_5[0xB8];                                      // 0x0698   (0x00B8)  MISSED
+	SDK_UNDEFINED(80,12321) /* TMap<FName, UDataAssetLink*> */ __um(ExternalVariableDataAssetLinks);               // 0x0750   (0x0050)  
+	unsigned char                                      UnknownData06_5[0xD0];                                      // 0x07A0   (0x00D0)  MISSED
+	SDK_UNDEFINED(1,12322) /* FMulticastSparseDelegate */ __um(OnControlSelected_BP);                              // 0x0870   (0x0001)  
+	unsigned char                                      UnknownData07_5[0x17];                                      // 0x0871   (0x0017)  MISSED
+	bool                                               bIsAdditive;                                                // 0x0888   (0x0001)  
+	unsigned char                                      UnknownData08_5[0x13F];                                     // 0x0889   (0x013F)  MISSED
+	FRigModuleSettings                                 RigModuleSettings;                                          // 0x09C8   (0x0048)  
+	SDK_UNDEFINED(16,12323) /* FString */              __um(RigModuleNameSpace);                                   // 0x0A10   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRig.SupportsBackwardsSolve
-	// bool SupportsBackwardsSolve();                                                                                        // [0x766c730] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool SupportsBackwardsSolve();                                                                                        // [0x75c1b28] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRig.SetInteractionRigClass
-	// void SetInteractionRigClass(class UClass* InInteractionRigClass);                                                     // [0x634c0a4] Final|Native|Public|BlueprintCallable 
+	// void SetInteractionRigClass(class UClass* InInteractionRigClass);                                                     // [0x606d838] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRig.SetInteractionRig
-	// void SetInteractionRig(class UControlRig* InInteractionRig);                                                          // [0x604b150] Final|Native|Public|BlueprintCallable 
+	// void SetInteractionRig(class UControlRig* InInteractionRig);                                                          // [0x5d5254c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRig.SelectControl
-	// void SelectControl(FName& InControlName, bool bSelect);                                                               // [0x766a210] Native|Public|HasOutParms|BlueprintCallable 
+	// void SelectControl(FName& InControlName, bool bSelect);                                                               // [0x75be720] Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRig.RequestConstruction
-	// void RequestConstruction();                                                                                           // [0x766a1e8] Final|Native|Public|BlueprintCallable 
+	// void RequestConstruction();                                                                                           // [0x75be6f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRig.OnControlSelectedBP__DelegateSignature
-	// void OnControlSelectedBP__DelegateSignature(class UControlRig* Rig, FRigControlElement& Control, bool bSelected);     // [0x211c0a0] MulticastDelegate|Public|Delegate|HasOutParms 
+	// void OnControlSelectedBP__DelegateSignature(class UControlRig* Rig, FRigControlElement& Control, bool bSelected);     // [0x2047e54] MulticastDelegate|Public|Delegate|HasOutParms 
 	// Function /Script/ControlRig.ControlRig.IsControlSelected
-	// bool IsControlSelected(FName& InControlName);                                                                         // [0x7669c08] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsControlSelected(FName& InControlName);                                                                         // [0x75bcf9c] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRig.GetInteractionRigClass
-	// class UClass* GetInteractionRigClass();                                                                               // [0x76699d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetInteractionRigClass();                                                                               // [0x75bcca4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRig.GetInteractionRig
-	// class UControlRig* GetInteractionRig();                                                                               // [0x66a91a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UControlRig* GetInteractionRig();                                                                               // [0x63ec52c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRig.GetHostingActor
-	// class AActor* GetHostingActor();                                                                                      // [0x7669778] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetHostingActor();                                                                                      // [0x75bc934] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRig.GetHierarchy
-	// class URigHierarchy* GetHierarchy();                                                                                  // [0x634bc88] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class URigHierarchy* GetHierarchy();                                                                                  // [0x2f945b0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRig.FindControlRigs
-	// TArray<UControlRig*> FindControlRigs(class UObject* Outer, class UClass* OptionalClass);                              // [0x7668aa8] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<UControlRig*> FindControlRigs(class UObject* Outer, class UClass* OptionalClass);                              // [0x75bb6e8] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRig.CurrentControlSelection
-	// TArray<FName> CurrentControlSelection();                                                                              // [0x766897c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> CurrentControlSelection();                                                                              // [0x75bac48] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRig.CreateTransformableControlHandle
-	// class UTransformableControlHandle* CreateTransformableControlHandle(FName& ControlName);                              // [0x76688e4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class UTransformableControlHandle* CreateTransformableControlHandle(FName& ControlName);                              // [0x75babb0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRig.ClearControlSelection
-	// bool ClearControlSelection();                                                                                         // [0x7668194] Native|Public|BlueprintCallable 
+	// bool ClearControlSelection();                                                                                         // [0x75ba20c] Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/ControlRig.RigModuleInstance
-/// Size: 0x0098 (0x000000 - 0x000098)
+/// Size: 0x0080 (0x000000 - 0x000080)
 struct FRigModuleInstance
 { 
 	FName                                              Name;                                                       // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,12279) /* TWeakObjectPtr<UControlRig*> */ __um(Rig);                                          // 0x0008   (0x0020)  
-	SDK_UNDEFINED(16,12280) /* FString */              __um(ParentPath);                                           // 0x0028   (0x0010)  
-	SDK_UNDEFINED(80,12281) /* TMap<FName, FRigVMExternalVariable> */ __um(VariableBindings);                      // 0x0038   (0x0050)  
-	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0088   (0x0010)  MISSED
+	class UControlRig*                                 RigPtr;                                                     // 0x0008   (0x0008)  
+	SDK_UNDEFINED(16,12324) /* FString */              __um(ParentPath);                                           // 0x0010   (0x0010)  
+	SDK_UNDEFINED(80,12325) /* TMap<FName, FRigVMExternalVariable> */ __um(VariableBindings);                      // 0x0020   (0x0050)  
+	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0070   (0x0010)  MISSED
+};
+
+/// Struct /Script/ControlRig.RigModuleReference
+/// Size: 0x0168 (0x000000 - 0x000168)
+struct FRigModuleReference
+{ 
+	FName                                              Name;                                                       // 0x0000   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
+	SDK_UNDEFINED(16,12326) /* FString */              __um(ShortName);                                            // 0x0008   (0x0010)  
+	bool                                               bShortNameBasedOnPath;                                      // 0x0018   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0019   (0x0007)  MISSED
+	SDK_UNDEFINED(16,12327) /* FString */              __um(ParentPath);                                           // 0x0020   (0x0010)  
+	SDK_UNDEFINED(32,12328) /* TWeakObjectPtr<UClass*> */ __um(Class);                                             // 0x0030   (0x0020)  
+	SDK_UNDEFINED(80,12329) /* TMap<FRigElementKey, FRigElementKey> */ __um(Connections);                          // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,12330) /* TMap<FName, FString> */ __um(ConfigValues);                                         // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,12331) /* TMap<FName, FString> */ __um(Bindings);                                             // 0x00F0   (0x0050)  
+	FName                                              PreviousName;                                               // 0x0140   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0144   (0x0004)  MISSED
+	SDK_UNDEFINED(16,12332) /* FString */              __um(PreviousParentPath);                                   // 0x0148   (0x0010)  
+	unsigned char                                      UnknownData03_6[0x10];                                      // 0x0158   (0x0010)  MISSED
+};
+
+/// Struct /Script/ControlRig.ModularRigModel
+/// Size: 0x0040 (0x000000 - 0x000040)
+struct FModularRigModel
+{ 
+	TArray<FRigModuleReference>                        Modules;                                                    // 0x0000   (0x0010)  
+	unsigned char                                      UnknownData00_5[0x20];                                      // 0x0010   (0x0020)  MISSED
+	class UObject*                                     Controller;                                                 // 0x0030   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0038   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigModuleExecutionElement
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FRigModuleExecutionElement
 { 
-	SDK_UNDEFINED(16,12282) /* FString */              __um(ModulePath);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,12333) /* FString */              __um(ModulePath);                                           // 0x0000   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0010   (0x0008)  MISSED
 	FName                                              EventName;                                                  // 0x0018   (0x0004)  
 	bool                                               bExecuted;                                                  // 0x001C   (0x0001)  
@@ -618,23 +686,24 @@ struct FRigModuleExecutionElement
 };
 
 /// Class /Script/ControlRig.ModularRig
-/// Size: 0x0048 (0x000A18 - 0x000A60)
+/// Size: 0x00D8 (0x000A20 - 0x000AF8)
 class UModularRig : public UControlRig
 { 
 public:
-	TArray<FRigModuleInstance>                         Modules;                                                    // 0x0A18   (0x0010)  
-	unsigned char                                      UnknownData00_5[0x20];                                      // 0x0A28   (0x0020)  MISSED
-	TArray<FRigModuleExecutionElement>                 ExecutionQueue;                                             // 0x0A48   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0A58   (0x0008)  MISSED
+	TArray<FRigModuleInstance>                         Modules;                                                    // 0x0A20   (0x0010)  
+	unsigned char                                      UnknownData00_5[0x20];                                      // 0x0A30   (0x0020)  MISSED
+	FModularRigModel                                   ModularRigModel;                                            // 0x0A50   (0x0040)  
+	TArray<FRigModuleExecutionElement>                 ExecutionQueue;                                             // 0x0A90   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x58];                                      // 0x0AA0   (0x0058)  MISSED
 };
 
 /// Class /Script/ControlRig.RigHierarchy
-/// Size: 0x0478 (0x000028 - 0x0004A0)
+/// Size: 0x0498 (0x000028 - 0x0004C0)
 class URigHierarchy : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0028   (0x0018)  MISSED
-	SDK_UNDEFINED(16,12283) /* FMulticastInlineDelegate */ __um(ModifiedEventDynamic);                             // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,12334) /* FMulticastInlineDelegate */ __um(ModifiedEventDynamic);                             // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x48];                                      // 0x0050   (0x0048)  MISSED
 	uint32_t                                           TopologyVersion;                                            // 0x0098   (0x0004)  
 	uint32_t                                           MetadataVersion;                                            // 0x009C   (0x0004)  
@@ -644,350 +713,363 @@ public:
 	int32_t                                            TransformStackIndex;                                        // 0x01D4   (0x0004)  
 	unsigned char                                      UnknownData03_5[0x70];                                      // 0x01D8   (0x0070)  MISSED
 	class URigHierarchyController*                     HierarchyController;                                        // 0x0248   (0x0008)  
-	unsigned char                                      UnknownData04_5[0x58];                                      // 0x0250   (0x0058)  MISSED
-	SDK_UNDEFINED(80,12284) /* TMap<FRigElementKey, FRigElementKey> */ __um(PreviousNameMap);                      // 0x02A8   (0x0050)  
-	unsigned char                                      UnknownData05_5[0xF0];                                      // 0x02F8   (0x00F0)  MISSED
-	class URigHierarchy*                               HierarchyForCacheValidation;                                // 0x03E8   (0x0008)  
-	unsigned char                                      UnknownData06_6[0xB0];                                      // 0x03F0   (0x00B0)  MISSED
+	unsigned char                                      UnknownData04_5[0x8];                                       // 0x0250   (0x0008)  MISSED
+	class UModularRigRuleManager*                      RuleManager;                                                // 0x0258   (0x0008)  
+	unsigned char                                      UnknownData05_5[0x50];                                      // 0x0260   (0x0050)  MISSED
+	SDK_UNDEFINED(80,12335) /* TMap<FRigElementKey, FRigElementKey> */ __um(PreviousNameMap);                      // 0x02B0   (0x0050)  
+	unsigned char                                      UnknownData06_5[0xF8];                                      // 0x0300   (0x00F8)  MISSED
+	class URigHierarchy*                               HierarchyForCacheValidation;                                // 0x03F8   (0x0008)  
+	unsigned char                                      UnknownData07_6[0xC0];                                      // 0x0400   (0x00C0)  MISSED
 
 
 	/// Functions
 	// Function /Script/ControlRig.RigHierarchy.UnsetCurveValueByIndex
-	// void UnsetCurveValueByIndex(int32_t InElementIndex, bool bSetupUndo);                                                 // [0x762d1c8] Final|Native|Public|BlueprintCallable 
+	// void UnsetCurveValueByIndex(int32_t InElementIndex, bool bSetupUndo);                                                 // [0x7573ccc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.UnsetCurveValue
-	// void UnsetCurveValue(FRigElementKey InKey, bool bSetupUndo);                                                          // [0x762cfa8] Final|Native|Public|BlueprintCallable 
+	// void UnsetCurveValue(FRigElementKey InKey, bool bSetupUndo);                                                          // [0x7573b7c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SwitchToWorldSpace
-	// bool SwitchToWorldSpace(FRigElementKey InChild, bool bInitial, bool bAffectChildren);                                 // [0x762ccb4] Final|Native|Public|BlueprintCallable 
+	// bool SwitchToWorldSpace(FRigElementKey InChild, bool bInitial, bool bAffectChildren);                                 // [0x75739a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SwitchToParent
-	// bool SwitchToParent(FRigElementKey InChild, FRigElementKey InParent, bool bInitial, bool bAffectChildren);            // [0x762c8e0] Final|Native|Public|BlueprintCallable 
+	// bool SwitchToParent(FRigElementKey InChild, FRigElementKey InParent, bool bInitial, bool bAffectChildren);            // [0x7573754] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SwitchToDefaultParent
-	// bool SwitchToDefaultParent(FRigElementKey InChild, bool bInitial, bool bAffectChildren);                              // [0x762c5ec] Final|Native|Public|BlueprintCallable 
+	// bool SwitchToDefaultParent(FRigElementKey InChild, bool bInitial, bool bAffectChildren);                              // [0x7573580] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SortKeys
-	// TArray<FRigElementKey> SortKeys(TArray<FRigElementKey>& InKeys);                                                      // [0x762c524] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> SortKeys(TArray<FRigElementKey>& InKeys);                                                      // [0x75734b8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.SetVectorMetadata
-	// bool SetVectorMetadata(FRigElementKey InItem, FName InMetadataName, FVector InValue);                                 // [0x762c22c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetVectorMetadata(FRigElementKey InItem, FName InMetadataName, FVector InValue);                                 // [0x75732d8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetVectorArrayMetadata
-	// bool SetVectorArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FVector> InValue);                    // [0x762bef0] Final|Native|Public|BlueprintCallable 
+	// bool SetVectorArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FVector> InValue);                    // [0x75730bc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetTransformMetadata
-	// bool SetTransformMetadata(FRigElementKey InItem, FName InMetadataName, FTransform InValue);                           // [0x762bb5c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetTransformMetadata(FRigElementKey InItem, FName InMetadataName, FTransform InValue);                           // [0x7572e58] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetTransformArrayMetadata
-	// bool SetTransformArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FTransform> InValue);              // [0x762b820] Final|Native|Public|BlueprintCallable 
+	// bool SetTransformArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FTransform> InValue);              // [0x7572c3c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetTag
-	// bool SetTag(FRigElementKey InItem, FName InTag);                                                                      // [0x762b604] Final|Native|Public|BlueprintCallable 
+	// bool SetTag(FRigElementKey InItem, FName InTag);                                                                      // [0x7572ae8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetRotatorMetadata
-	// bool SetRotatorMetadata(FRigElementKey InItem, FName InMetadataName, FRotator InValue);                               // [0x762b28c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetRotatorMetadata(FRigElementKey InItem, FName InMetadataName, FRotator InValue);                               // [0x7572848] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetRotatorArrayMetadata
-	// bool SetRotatorArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FRotator> InValue);                  // [0x762af6c] Final|Native|Public|BlueprintCallable 
+	// bool SetRotatorArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FRotator> InValue);                  // [0x7572050] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetRigElementKeyMetadata
-	// bool SetRigElementKeyMetadata(FRigElementKey InItem, FName InMetadataName, FRigElementKey InValue);                   // [0x762ac84] Final|Native|Public|BlueprintCallable 
+	// bool SetRigElementKeyMetadata(FRigElementKey InItem, FName InMetadataName, FRigElementKey InValue);                   // [0x7571e8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetRigElementKeyArrayMetadata
-	// bool SetRigElementKeyArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FRigElementKey> InValue);      // [0x762a964] Final|Native|Public|BlueprintCallable 
+	// bool SetRigElementKeyArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FRigElementKey> InValue);      // [0x7571c8c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetQuatMetadata
-	// bool SetQuatMetadata(FRigElementKey InItem, FName InMetadataName, FQuat InValue);                                     // [0x762a670] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetQuatMetadata(FRigElementKey InItem, FName InMetadataName, FQuat InValue);                                     // [0x7571ab0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetQuatArrayMetadata
-	// bool SetQuatArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FQuat> InValue);                        // [0x762a350] Final|Native|Public|BlueprintCallable 
+	// bool SetQuatArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FQuat> InValue);                        // [0x75718b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetPose_ForBlueprint
-	// void SetPose_ForBlueprint(FRigPose InPose);                                                                           // [0x762a1ac] Final|Native|Public|BlueprintCallable 
+	// void SetPose_ForBlueprint(FRigPose InPose);                                                                           // [0x7571778] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetParentWeightArray
-	// bool SetParentWeightArray(FRigElementKey InChild, TArray<FRigElementWeight> InWeights, bool bInitial, bool bAffectChildren); // [0x7629dac] Final|Native|Public|BlueprintCallable 
+	// bool SetParentWeightArray(FRigElementKey InChild, TArray<FRigElementWeight> InWeights, bool bInitial, bool bAffectChildren); // [0x7570ec0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetParentWeight
-	// bool SetParentWeight(FRigElementKey InChild, FRigElementKey InParent, FRigElementWeight InWeight, bool bInitial, bool bAffectChildren); // [0x76298e4] Final|Native|Public|BlueprintCallable 
+	// bool SetParentWeight(FRigElementKey InChild, FRigElementKey InParent, FRigElementWeight InWeight, bool bInitial, bool bAffectChildren); // [0x7570bd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetNameMetadata
-	// bool SetNameMetadata(FRigElementKey InItem, FName InMetadataName, FName InValue);                                     // [0x7629600] Final|Native|Public|BlueprintCallable 
+	// bool SetNameMetadata(FRigElementKey InItem, FName InMetadataName, FName InValue);                                     // [0x7570a10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetNameArrayMetadata
-	// bool SetNameArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FName> InValue);                        // [0x76292c8] Final|Native|Public|BlueprintCallable 
+	// bool SetNameArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FName> InValue);                        // [0x75707f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetLocalTransformByIndex
-	// void SetLocalTransformByIndex(int32_t InElementIndex, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommands); // [0x7628d28] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLocalTransformByIndex(int32_t InElementIndex, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommands); // [0x7570410] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetLocalTransform
-	// void SetLocalTransform(FRigElementKey InKey, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommands); // [0x76286f4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLocalTransform(FRigElementKey InKey, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommands); // [0x7570024] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetLinearColorMetadata
-	// bool SetLinearColorMetadata(FRigElementKey InItem, FName InMetadataName, FLinearColor InValue);                       // [0x7628404] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SetLinearColorMetadata(FRigElementKey InItem, FName InMetadataName, FLinearColor InValue);                       // [0x756fe50] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetLinearColorArrayMetadata
-	// bool SetLinearColorArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FLinearColor> InValue);          // [0x76280e4] Final|Native|Public|BlueprintCallable 
+	// bool SetLinearColorArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<FLinearColor> InValue);          // [0x756fc50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetInt32Metadata
-	// bool SetInt32Metadata(FRigElementKey InItem, FName InMetadataName, int32_t InValue);                                  // [0x7627e00] Final|Native|Public|BlueprintCallable 
+	// bool SetInt32Metadata(FRigElementKey InItem, FName InMetadataName, int32_t InValue);                                  // [0x756fa90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetInt32ArrayMetadata
-	// bool SetInt32ArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<int32_t> InValue);                     // [0x7627ac8] Final|Native|Public|BlueprintCallable 
+	// bool SetInt32ArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<int32_t> InValue);                     // [0x756f878] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetGlobalTransformByIndex
-	// void SetGlobalTransformByIndex(int32_t InElementIndex, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommand); // [0x7627528] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetGlobalTransformByIndex(int32_t InElementIndex, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommand); // [0x756f490] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetGlobalTransform
-	// void SetGlobalTransform(FRigElementKey InKey, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommand); // [0x7626ef4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetGlobalTransform(FRigElementKey InKey, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommand); // [0x756f0a4] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetFloatMetadata
-	// bool SetFloatMetadata(FRigElementKey InItem, FName InMetadataName, float InValue);                                    // [0x7626c14] Final|Native|Public|BlueprintCallable 
+	// bool SetFloatMetadata(FRigElementKey InItem, FName InMetadataName, float InValue);                                    // [0x756eee4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetFloatArrayMetadata
-	// bool SetFloatArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<float> InValue);                       // [0x76268dc] Final|Native|Public|BlueprintCallable 
+	// bool SetFloatArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<float> InValue);                       // [0x756eccc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetCurveValueByIndex
-	// void SetCurveValueByIndex(int32_t InElementIndex, float InValue, bool bSetupUndo);                                    // [0x76267c8] Final|Native|Public|BlueprintCallable 
+	// void SetCurveValueByIndex(int32_t InElementIndex, float InValue, bool bSetupUndo);                                    // [0x756eb0c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetCurveValue
-	// void SetCurveValue(FRigElementKey InKey, float InValue, bool bSetupUndo);                                             // [0x76264ec] Final|Native|Public|BlueprintCallable 
+	// void SetCurveValue(FRigElementKey InKey, float InValue, bool bSetupUndo);                                             // [0x756e954] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlVisibilityByIndex
-	// void SetControlVisibilityByIndex(int32_t InElementIndex, bool bVisibility);                                           // [0x7626428] Final|Native|Public|BlueprintCallable 
+	// void SetControlVisibilityByIndex(int32_t InElementIndex, bool bVisibility);                                           // [0x756e814] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlVisibility
-	// void SetControlVisibility(FRigElementKey InKey, bool bVisibility);                                                    // [0x7626200] Final|Native|Public|BlueprintCallable 
+	// void SetControlVisibility(FRigElementKey InKey, bool bVisibility);                                                    // [0x756e6b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlValueByIndex
-	// void SetControlValueByIndex(int32_t InElementIndex, FRigControlValue InValue, ERigControlValueType InValueType, bool bSetupUndo, bool bPrintPythonCommands); // [0x7625d78] Final|Native|Public|BlueprintCallable 
+	// void SetControlValueByIndex(int32_t InElementIndex, FRigControlValue InValue, ERigControlValueType InValueType, bool bSetupUndo, bool bPrintPythonCommands); // [0x756e37c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlValue
-	// void SetControlValue(FRigElementKey InKey, FRigControlValue InValue, ERigControlValueType InValueType, bool bSetupUndo, bool bPrintPythonCommands); // [0x7625840] Final|Native|Public|BlueprintCallable 
+	// void SetControlValue(FRigElementKey InKey, FRigControlValue InValue, ERigControlValueType InValueType, bool bSetupUndo, bool bPrintPythonCommands); // [0x756e03c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlShapeTransformByIndex
-	// void SetControlShapeTransformByIndex(int32_t InElementIndex, FTransform InTransform, bool bInitial, bool bSetupUndo); // [0x762547c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlShapeTransformByIndex(int32_t InElementIndex, FTransform InTransform, bool bInitial, bool bSetupUndo); // [0x756dd58] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlShapeTransform
-	// void SetControlShapeTransform(FRigElementKey InKey, FTransform InTransform, bool bInitial, bool bSetupUndo);          // [0x7625014] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlShapeTransform(FRigElementKey InKey, FTransform InTransform, bool bInitial, bool bSetupUndo);          // [0x756da6c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlSettingsByIndex
-	// void SetControlSettingsByIndex(int32_t InElementIndex, FRigControlSettings InSettings, bool bSetupUndo, bool bForce, bool bPrintPythonCommands); // [0x7624bb4] Final|Native|Public|BlueprintCallable 
+	// void SetControlSettingsByIndex(int32_t InElementIndex, FRigControlSettings InSettings, bool bSetupUndo, bool bForce, bool bPrintPythonCommands); // [0x756d764] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlSettings
-	// void SetControlSettings(FRigElementKey InKey, FRigControlSettings InSettings, bool bSetupUndo, bool bForce, bool bPrintPythonCommands); // [0x76246b0] Final|Native|Public|BlueprintCallable 
+	// void SetControlSettings(FRigElementKey InKey, FRigControlSettings InSettings, bool bSetupUndo, bool bForce, bool bPrintPythonCommands); // [0x756d424] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlPreferredRotatorByIndex
-	// void SetControlPreferredRotatorByIndex(int32_t InElementIndex, FRotator& InRotator, bool bInitial, bool bFixEulerFlips); // [0x76244d8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetControlPreferredRotatorByIndex(int32_t InElementIndex, FRotator& InRotator, bool bInitial, bool bFixEulerFlips); // [0x756d214] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlPreferredRotator
-	// void SetControlPreferredRotator(FRigElementKey InKey, FRotator& InRotator, bool bInitial, bool bFixEulerFlips);       // [0x7624138] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetControlPreferredRotator(FRigElementKey InKey, FRotator& InRotator, bool bInitial, bool bFixEulerFlips);       // [0x756cfec] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlPreferredRotationOrderByIndex
-	// void SetControlPreferredRotationOrderByIndex(int32_t InElementIndex, EEulerRotationOrder InRotationOrder);            // [0x7624074] Final|Native|Public|BlueprintCallable 
+	// void SetControlPreferredRotationOrderByIndex(int32_t InElementIndex, EEulerRotationOrder InRotationOrder);            // [0x756ceb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlPreferredRotationOrder
-	// void SetControlPreferredRotationOrder(FRigElementKey InKey, EEulerRotationOrder InRotationOrder);                     // [0x7623e50] Final|Native|Public|BlueprintCallable 
+	// void SetControlPreferredRotationOrder(FRigElementKey InKey, EEulerRotationOrder InRotationOrder);                     // [0x756cd58] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlPreferredEulerAnglesByIndex
-	// void SetControlPreferredEulerAnglesByIndex(int32_t InElementIndex, FVector& InEulerAngles, EEulerRotationOrder InRotationOrder, bool bInitial, bool bFixEulerFlips); // [0x7623bac] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetControlPreferredEulerAnglesByIndex(int32_t InElementIndex, FVector& InEulerAngles, EEulerRotationOrder InRotationOrder, bool bInitial, bool bFixEulerFlips); // [0x756ca90] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlPreferredEulerAngles
-	// void SetControlPreferredEulerAngles(FRigElementKey InKey, FVector& InEulerAngles, EEulerRotationOrder InRotationOrder, bool bInitial, bool bFixEulerFlips); // [0x76236f8] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetControlPreferredEulerAngles(FRigElementKey InKey, FVector& InEulerAngles, EEulerRotationOrder InRotationOrder, bool bInitial, bool bFixEulerFlips); // [0x756c7ac] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlOffsetTransformByIndex
-	// void SetControlOffsetTransformByIndex(int32_t InElementIndex, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommands); // [0x7623158] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlOffsetTransformByIndex(int32_t InElementIndex, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommands); // [0x756c3c4] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetControlOffsetTransform
-	// void SetControlOffsetTransform(FRigElementKey InKey, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommands); // [0x7622b24] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlOffsetTransform(FRigElementKey InKey, FTransform InTransform, bool bInitial, bool bAffectChildren, bool bSetupUndo, bool bPrintPythonCommands); // [0x756bfd8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetConnectorSettingsByIndex
-	// void SetConnectorSettingsByIndex(int32_t InElementIndex, FRigConnectorSettings InSettings, bool bSetupUndo, bool bForce, bool bPrintPythonCommands); // [0x76226f4] Final|Native|Public|BlueprintCallable 
+	// void SetConnectorSettingsByIndex(int32_t InElementIndex, FRigConnectorSettings InSettings, bool bSetupUndo, bool bForce, bool bPrintPythonCommands); // [0x756bcf0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetConnectorSettings
-	// void SetConnectorSettings(FRigElementKey InKey, FRigConnectorSettings InSettings, bool bSetupUndo, bool bForce, bool bPrintPythonCommands); // [0x762222c] Final|Native|Public|BlueprintCallable 
+	// void SetConnectorSettings(FRigElementKey InKey, FRigConnectorSettings InSettings, bool bSetupUndo, bool bForce, bool bPrintPythonCommands); // [0x756ba00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetBoolMetadata
-	// bool SetBoolMetadata(FRigElementKey InItem, FName InMetadataName, bool InValue);                                      // [0x7621f44] Final|Native|Public|BlueprintCallable 
+	// bool SetBoolMetadata(FRigElementKey InItem, FName InMetadataName, bool InValue);                                      // [0x756b840] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SetBoolArrayMetadata
-	// bool SetBoolArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<bool> InValue);                         // [0x7621c10] Final|Native|Public|BlueprintCallable 
+	// bool SetBoolArrayMetadata(FRigElementKey InItem, FName InMetadataName, TArray<bool> InValue);                         // [0x756b62c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.SendAutoKeyEvent
-	// void SendAutoKeyEvent(FRigElementKey InElement, float InOffsetInSeconds, bool bAsynchronous);                         // [0x762192c] Final|Native|Public|BlueprintCallable 
-	// Function /Script/ControlRig.RigHierarchy.RestoreConnectorsFromInfos
-	// TArray<FRigElementKey> RestoreConnectorsFromInfos(TArray<FRigConnectorInfo> InInfos, bool bSetupUndoRedo);            // [0x76217d8] Final|Native|Public|BlueprintCallable 
+	// void SendAutoKeyEvent(FRigElementKey InElement, float InOffsetInSeconds, bool bAsynchronous);                         // [0x756b46c] Final|Native|Public|BlueprintCallable 
+	// Function /Script/ControlRig.RigHierarchy.RestoreSocketsFromStates
+	// TArray<FRigElementKey> RestoreSocketsFromStates(TArray<FRigSocketState> InStates, bool bSetupUndoRedo);               // [0x756b2dc] Final|Native|Public|BlueprintCallable 
+	// Function /Script/ControlRig.RigHierarchy.RestoreConnectorsFromStates
+	// TArray<FRigElementKey> RestoreConnectorsFromStates(TArray<FRigConnectorState> InStates, bool bSetupUndoRedo);         // [0x756b104] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.ResetToDefault
-	// void ResetToDefault();                                                                                                // [0x76217c4] Final|Native|Public|BlueprintCallable 
+	// void ResetToDefault();                                                                                                // [0x756b0f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.ResetPoseToInitial
-	// void ResetPoseToInitial(ERigElementType InTypeFilter);                                                                // [0x7621744] Final|Native|Public|BlueprintCallable 
+	// void ResetPoseToInitial(ERigElementType InTypeFilter);                                                                // [0x756b030] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.ResetCurveValues
-	// void ResetCurveValues();                                                                                              // [0x76216ec] Final|Native|Public|BlueprintCallable 
+	// void ResetCurveValues();                                                                                              // [0x756afd8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.Reset
-	// void Reset();                                                                                                         // [0x76216d8] Final|Native|Public|BlueprintCallable 
+	// void Reset();                                                                                                         // [0x756afc4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.RemoveMetadata
-	// bool RemoveMetadata(FRigElementKey InItem, FName InMetadataName);                                                     // [0x76214b0] Final|Native|Public|BlueprintCallable 
+	// bool RemoveMetadata(FRigElementKey InItem, FName InMetadataName);                                                     // [0x756ae70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.RemoveAllMetadata
-	// bool RemoveAllMetadata(FRigElementKey InItem);                                                                        // [0x7621364] Final|Native|Public|BlueprintCallable 
+	// bool RemoveAllMetadata(FRigElementKey InItem);                                                                        // [0x756ad94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.Num
-	// int32_t Num();                                                                                                        // [0x3b25564] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t Num();                                                                                                        // [0x38b8e5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromVector2D
-	// FRigControlValue MakeControlValueFromVector2D(FVector2D InValue);                                                     // [0x7620ffc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromVector2D(FVector2D InValue);                                                     // [0x756ab00] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromVector
-	// FRigControlValue MakeControlValueFromVector(FVector InValue);                                                         // [0x76211ac] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromVector(FVector InValue);                                                         // [0x756ac44] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromTransformNoScale
-	// FRigControlValue MakeControlValueFromTransformNoScale(FTransformNoScale InValue);                                     // [0x7620e30] Final|Native|Static|Public|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromTransformNoScale(FTransformNoScale InValue);                                     // [0x756a9a4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromTransform
-	// FRigControlValue MakeControlValueFromTransform(FTransform InValue);                                                   // [0x7620c20] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromTransform(FTransform InValue);                                                   // [0x756a7b8] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromRotator
-	// FRigControlValue MakeControlValueFromRotator(FRotator InValue);                                                       // [0x7620a8c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromRotator(FRotator InValue);                                                       // [0x756a690] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromInt
-	// FRigControlValue MakeControlValueFromInt(int32_t InValue);                                                            // [0x7620998] Final|Native|Static|Public|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromInt(int32_t InValue);                                                            // [0x756a55c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromFloat
-	// FRigControlValue MakeControlValueFromFloat(float InValue);                                                            // [0x76208a0] Final|Native|Static|Public|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromFloat(float InValue);                                                            // [0x756a420] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromEulerTransform
-	// FRigControlValue MakeControlValueFromEulerTransform(FEulerTransform InValue);                                         // [0x76206b4] Final|Native|Static|Public|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromEulerTransform(FEulerTransform InValue);                                         // [0x756a2a4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.MakeControlValueFromBool
-	// FRigControlValue MakeControlValueFromBool(bool InValue);                                                              // [0x76205a8] Final|Native|Static|Public|BlueprintCallable 
+	// FRigControlValue MakeControlValueFromBool(bool InValue);                                                              // [0x756a158] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.IsValidIndex
-	// bool IsValidIndex(int32_t InElementIndex);                                                                            // [0x7620514] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidIndex(int32_t InElementIndex);                                                                            // [0x756a080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.IsSelectedByIndex
-	// bool IsSelectedByIndex(int32_t InIndex);                                                                              // [0x7620464] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSelectedByIndex(int32_t InIndex);                                                                              // [0x7569f90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.IsSelected
-	// bool IsSelected(FRigElementKey InKey);                                                                                // [0x7620324] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSelected(FRigElementKey InKey);                                                                                // [0x7569ebc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.IsProcedural
-	// bool IsProcedural(FRigElementKey& InKey);                                                                             // [0x762027c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool IsProcedural(FRigElementKey& InKey);                                                                             // [0x7569e14] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.IsParentedTo
-	// bool IsParentedTo(FRigElementKey InChild, FRigElementKey InParent);                                                   // [0x762005c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsParentedTo(FRigElementKey InChild, FRigElementKey InParent);                                                   // [0x7569cbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.IsCurveValueSetByIndex
-	// bool IsCurveValueSetByIndex(int32_t InElementIndex);                                                                  // [0x761ffd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCurveValueSetByIndex(int32_t InElementIndex);                                                                  // [0x7569bf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.IsCurveValueSet
-	// bool IsCurveValueSet(FRigElementKey InKey);                                                                           // [0x761fe84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCurveValueSet(FRigElementKey InKey);                                                                           // [0x7569b14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.IsControllerAvailable
-	// bool IsControllerAvailable();                                                                                         // [0x761fe6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsControllerAvailable();                                                                                         // [0x7569afc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.HasTag
-	// bool HasTag(FRigElementKey InItem, FName InTag);                                                                      // [0x761fc50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasTag(FRigElementKey InItem, FName InTag);                                                                      // [0x75699a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetVectorMetadata
-	// FVector GetVectorMetadata(FRigElementKey InItem, FName InMetadataName, FVector DefaultValue);                         // [0x761f938] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetVectorMetadata(FRigElementKey InItem, FName InMetadataName, FVector DefaultValue);                         // [0x75697a8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetVectorFromControlValue
-	// FVector GetVectorFromControlValue(FRigControlValue InValue);                                                          // [0x761f7dc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector GetVectorFromControlValue(FRigControlValue InValue);                                                          // [0x75696b4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetVectorArrayMetadata
-	// TArray<FVector> GetVectorArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                  // [0x761f5ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FVector> GetVectorArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                  // [0x756954c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetVector2DFromControlValue
-	// FVector2D GetVector2DFromControlValue(FRigControlValue InValue);                                                      // [0x761f460] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector2D GetVector2DFromControlValue(FRigControlValue InValue);                                                      // [0x7569468] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetTransformNoScaleFromControlValue
-	// FTransformNoScale GetTransformNoScaleFromControlValue(FRigControlValue InValue);                                      // [0x761f29c] Final|Native|Static|Public|BlueprintCallable 
+	// FTransformNoScale GetTransformNoScaleFromControlValue(FRigControlValue InValue);                                      // [0x7569314] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetTransformMetadata
-	// FTransform GetTransformMetadata(FRigElementKey InItem, FName InMetadataName, FTransform DefaultValue);                // [0x761eed0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetTransformMetadata(FRigElementKey InItem, FName InMetadataName, FTransform DefaultValue);                // [0x7569078] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetTransformFromControlValue
-	// FTransform GetTransformFromControlValue(FRigControlValue InValue);                                                    // [0x761ecdc] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetTransformFromControlValue(FRigControlValue InValue);                                                    // [0x7568ef4] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetTransformArrayMetadata
-	// TArray<FTransform> GetTransformArrayMetadata(FRigElementKey InItem, FName InMetadataName);                            // [0x761eaac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FTransform> GetTransformArrayMetadata(FRigElementKey InItem, FName InMetadataName);                            // [0x7568d8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetTags
-	// TArray<FName> GetTags(FRigElementKey InItem);                                                                         // [0x761e954] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetTags(FRigElementKey InItem);                                                                         // [0x7568c9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/ControlRig.RigHierarchy.GetSocketStates
+	// TArray<FRigSocketState> GetSocketStates();                                                                            // [0x7568bfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetSocketKeys
-	// TArray<FRigElementKey> GetSocketKeys(bool bTraverse);                                                                 // [0x761e8ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetSocketKeys(bool bTraverse);                                                                 // [0x7568b10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetSelectedKeys
-	// TArray<FRigElementKey> GetSelectedKeys(ERigElementType InTypeFilter);                                                 // [0x761e808] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetSelectedKeys(ERigElementType InTypeFilter);                                                 // [0x7568a2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/ControlRig.RigHierarchy.GetRuleManager
+	// class UModularRigRuleManager* GetRuleManager(bool bCreateIfNeeded);                                                   // [0x756895c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetRotatorMetadata
-	// FRotator GetRotatorMetadata(FRigElementKey InItem, FName InMetadataName, FRotator DefaultValue);                      // [0x761e4f0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRotator GetRotatorMetadata(FRigElementKey InItem, FName InMetadataName, FRotator DefaultValue);                      // [0x756875c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetRotatorFromControlValue
-	// FRotator GetRotatorFromControlValue(FRigControlValue InValue);                                                        // [0x761e388] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FRotator GetRotatorFromControlValue(FRigControlValue InValue);                                                        // [0x756865c] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetRotatorArrayMetadata
-	// TArray<FRotator> GetRotatorArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                // [0x761e158] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRotator> GetRotatorArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                // [0x7567e98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetRootElementKeys
-	// TArray<FRigElementKey> GetRootElementKeys();                                                                          // [0x761e0f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetRootElementKeys();                                                                          // [0x7567e34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetRigidBodyKeys
-	// TArray<FRigElementKey> GetRigidBodyKeys(bool bTraverse);                                                              // [0x761e04c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetRigidBodyKeys(bool bTraverse);                                                              // [0x7567d48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetRigElementKeyMetadata
-	// FRigElementKey GetRigElementKeyMetadata(FRigElementKey InItem, FName InMetadataName, FRigElementKey DefaultValue);    // [0x761dd54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigElementKey GetRigElementKeyMetadata(FRigElementKey InItem, FName InMetadataName, FRigElementKey DefaultValue);    // [0x7567b78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetRigElementKeyArrayMetadata
-	// TArray<FRigElementKey> GetRigElementKeyArrayMetadata(FRigElementKey InItem, FName InMetadataName);                    // [0x761db24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetRigElementKeyArrayMetadata(FRigElementKey InItem, FName InMetadataName);                    // [0x756799c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetReferenceKeys
-	// TArray<FRigElementKey> GetReferenceKeys(bool bTraverse);                                                              // [0x761da7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetReferenceKeys(bool bTraverse);                                                              // [0x75678b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetQuatMetadata
-	// FQuat GetQuatMetadata(FRigElementKey InItem, FName InMetadataName, FQuat DefaultValue);                               // [0x761d768] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FQuat GetQuatMetadata(FRigElementKey InItem, FName InMetadataName, FQuat DefaultValue);                               // [0x75676b4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetQuatArrayMetadata
-	// TArray<FQuat> GetQuatArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                      // [0x761d538] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FQuat> GetQuatArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                      // [0x75674d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetPreviousParent
-	// FRigElementKey GetPreviousParent(FRigElementKey& InKey);                                                              // [0x761d4a0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FRigElementKey GetPreviousParent(FRigElementKey& InKey);                                                              // [0x7567440] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetPreviousName
-	// FName GetPreviousName(FRigElementKey& InKey);                                                                         // [0x761d40c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FName GetPreviousName(FRigElementKey& InKey);                                                                         // [0x75673ac] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetPose
-	// FRigPose GetPose(bool bInitial, bool bIncludeTransientControls);                                                      // [0x761d304] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigPose GetPose(bool bInitial, bool bIncludeTransientControls);                                                      // [0x7567218] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetParentWeightArray
-	// TArray<FRigElementWeight> GetParentWeightArray(FRigElementKey InChild, bool bInitial);                                // [0x761ce9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementWeight> GetParentWeightArray(FRigElementKey InChild, bool bInitial);                                // [0x7566f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetParentWeight
-	// FRigElementWeight GetParentWeight(FRigElementKey InChild, FRigElementKey InParent, bool bInitial);                    // [0x761cb98] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigElementWeight GetParentWeight(FRigElementKey InChild, FRigElementKey InParent, bool bInitial);                    // [0x7566d3c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetParentTransformByIndex
-	// FTransform GetParentTransformByIndex(int32_t InElementIndex, bool bInitial);                                          // [0x761ca78] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetParentTransformByIndex(int32_t InElementIndex, bool bInitial);                                          // [0x7566ba0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetParentTransform
-	// FTransform GetParentTransform(FRigElementKey InKey, bool bInitial);                                                   // [0x761c810] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetParentTransform(FRigElementKey InKey, bool bInitial);                                                   // [0x7566a00] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetParents
-	// TArray<FRigElementKey> GetParents(FRigElementKey InKey, bool bRecursive);                                             // [0x761d0d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetParents(FRigElementKey InKey, bool bRecursive);                                             // [0x75670ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetNumberOfParents
-	// int32_t GetNumberOfParents(FRigElementKey InKey);                                                                     // [0x761c6cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumberOfParents(FRigElementKey InKey);                                                                     // [0x7566928] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetNullKeys
-	// TArray<FRigElementKey> GetNullKeys(bool bTraverse);                                                                   // [0x761c624] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetNullKeys(bool bTraverse);                                                                   // [0x756683c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetNameMetadata
-	// FName GetNameMetadata(FRigElementKey InItem, FName InMetadataName, FName DefaultValue);                               // [0x761c334] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetNameMetadata(FRigElementKey InItem, FName InMetadataName, FName DefaultValue);                               // [0x7566674] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetNameArrayMetadata
-	// TArray<FName> GetNameArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                      // [0x761c104] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetNameArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                      // [0x756650c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetMetadataType
-	// ERigMetadataType GetMetadataType(FRigElementKey InItem, FName InMetadataName);                                        // [0x761bee8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ERigMetadataType GetMetadataType(FRigElementKey InItem, FName InMetadataName);                                        // [0x75663b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetMetadataNames
-	// TArray<FName> GetMetadataNames(FRigElementKey InItem);                                                                // [0x761bd90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetMetadataNames(FRigElementKey InItem);                                                                // [0x75662d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetLocalTransformByIndex
-	// FTransform GetLocalTransformByIndex(int32_t InElementIndex, bool bInitial);                                           // [0x761bc7c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalTransformByIndex(int32_t InElementIndex, bool bInitial);                                           // [0x7566130] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetLocalTransform
-	// FTransform GetLocalTransform(FRigElementKey InKey, bool bInitial);                                                    // [0x761ba20] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalTransform(FRigElementKey InKey, bool bInitial);                                                    // [0x7565f8c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetLocalIndex_ForBlueprint
-	// int32_t GetLocalIndex_ForBlueprint(FRigElementKey InKey);                                                             // [0x761b8d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetLocalIndex_ForBlueprint(FRigElementKey InKey);                                                             // [0x7565eb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetLocalControlShapeTransformByIndex
-	// FTransform GetLocalControlShapeTransformByIndex(int32_t InElementIndex, bool bInitial);                               // [0x761b7c0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalControlShapeTransformByIndex(int32_t InElementIndex, bool bInitial);                               // [0x7565d10] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetLocalControlShapeTransform
-	// FTransform GetLocalControlShapeTransform(FRigElementKey InKey, bool bInitial);                                        // [0x761b55c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetLocalControlShapeTransform(FRigElementKey InKey, bool bInitial);                                        // [0x7565b70] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetLinearColorMetadata
-	// FLinearColor GetLinearColorMetadata(FRigElementKey InItem, FName InMetadataName, FLinearColor DefaultValue);          // [0x761b260] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FLinearColor GetLinearColorMetadata(FRigElementKey InItem, FName InMetadataName, FLinearColor DefaultValue);          // [0x756598c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetLinearColorArrayMetadata
-	// TArray<FLinearColor> GetLinearColorArrayMetadata(FRigElementKey InItem, FName InMetadataName);                        // [0x761b030] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FLinearColor> GetLinearColorArrayMetadata(FRigElementKey InItem, FName InMetadataName);                        // [0x75657cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetKeys
-	// TArray<FRigElementKey> GetKeys(TArray<int32_t> InElementIndices);                                                     // [0x761aecc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetKeys(TArray<int32_t> InElementIndices);                                                     // [0x7565628] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetKey
-	// FRigElementKey GetKey(int32_t InElementIndex);                                                                        // [0x761ae44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigElementKey GetKey(int32_t InElementIndex);                                                                        // [0x7565560] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetIntFromControlValue
-	// int32_t GetIntFromControlValue(FRigControlValue InValue);                                                             // [0x761ad04] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetIntFromControlValue(FRigControlValue InValue);                                                             // [0x7565490] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetInt32Metadata
-	// int32_t GetInt32Metadata(FRigElementKey InItem, FName InMetadataName, int32_t DefaultValue);                          // [0x761aa20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetInt32Metadata(FRigElementKey InItem, FName InMetadataName, int32_t DefaultValue);                          // [0x75652d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetInt32ArrayMetadata
-	// TArray<int32_t> GetInt32ArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                   // [0x761a7f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<int32_t> GetInt32ArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                   // [0x7565168] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetIndex_ForBlueprint
-	// int32_t GetIndex_ForBlueprint(FRigElementKey InKey);                                                                  // [0x761a6b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetIndex_ForBlueprint(FRigElementKey InKey);                                                                  // [0x7565098] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetGlobalTransformByIndex
-	// FTransform GetGlobalTransformByIndex(int32_t InElementIndex, bool bInitial);                                          // [0x761a5a0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetGlobalTransformByIndex(int32_t InElementIndex, bool bInitial);                                          // [0x7564ef8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetGlobalTransform
-	// FTransform GetGlobalTransform(FRigElementKey InKey, bool bInitial);                                                   // [0x761a344] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetGlobalTransform(FRigElementKey InKey, bool bInitial);                                                   // [0x7564d54] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetGlobalControlShapeTransformByIndex
-	// FTransform GetGlobalControlShapeTransformByIndex(int32_t InElementIndex, bool bInitial);                              // [0x761a230] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetGlobalControlShapeTransformByIndex(int32_t InElementIndex, bool bInitial);                              // [0x7564bb4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetGlobalControlShapeTransform
-	// FTransform GetGlobalControlShapeTransform(FRigElementKey InKey, bool bInitial);                                       // [0x7619fcc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetGlobalControlShapeTransform(FRigElementKey InKey, bool bInitial);                                       // [0x7564a14] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetGlobalControlOffsetTransformByIndex
-	// FTransform GetGlobalControlOffsetTransformByIndex(int32_t InElementIndex, bool bInitial);                             // [0x7619eb8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetGlobalControlOffsetTransformByIndex(int32_t InElementIndex, bool bInitial);                             // [0x7564874] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetGlobalControlOffsetTransform
-	// FTransform GetGlobalControlOffsetTransform(FRigElementKey InKey, bool bInitial);                                      // [0x7619c5c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetGlobalControlOffsetTransform(FRigElementKey InKey, bool bInitial);                                      // [0x75646d0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetFloatMetadata
-	// float GetFloatMetadata(FRigElementKey InItem, FName InMetadataName, float DefaultValue);                              // [0x761997c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloatMetadata(FRigElementKey InItem, FName InMetadataName, float DefaultValue);                              // [0x7564510] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetFloatFromControlValue
-	// float GetFloatFromControlValue(FRigControlValue InValue);                                                             // [0x7619848] Final|Native|Static|Public|BlueprintCallable 
+	// float GetFloatFromControlValue(FRigControlValue InValue);                                                             // [0x756443c] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetFloatArrayMetadata
-	// TArray<float> GetFloatArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                     // [0x7619618] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<float> GetFloatArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                     // [0x75642d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetFirstParent
-	// FRigElementKey GetFirstParent(FRigElementKey InKey);                                                                  // [0x76194dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigElementKey GetFirstParent(FRigElementKey InKey);                                                                  // [0x7564208] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetEulerTransformFromControlValue
-	// FEulerTransform GetEulerTransformFromControlValue(FRigControlValue InValue);                                          // [0x7619310] Final|Native|Static|Public|BlueprintCallable 
+	// FEulerTransform GetEulerTransformFromControlValue(FRigControlValue InValue);                                          // [0x75640ac] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetDefaultParent
-	// FRigElementKey GetDefaultParent(FRigElementKey InKey);                                                                // [0x76191d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigElementKey GetDefaultParent(FRigElementKey InKey);                                                                // [0x7563fe0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetCurveValueByIndex
-	// float GetCurveValueByIndex(int32_t InElementIndex);                                                                   // [0x7619144] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurveValueByIndex(int32_t InElementIndex);                                                                   // [0x7563f10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetCurveValue
-	// float GetCurveValue(FRigElementKey InKey);                                                                            // [0x7618ff8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurveValue(FRigElementKey InKey);                                                                            // [0x7563e34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetCurveKeys
-	// TArray<FRigElementKey> GetCurveKeys();                                                                                // [0x7618fb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetCurveKeys();                                                                                // [0x7563df0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetControlValueByIndex
-	// FRigControlValue GetControlValueByIndex(int32_t InElementIndex, ERigControlValueType InValueType);                    // [0x7618df4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigControlValue GetControlValueByIndex(int32_t InElementIndex, ERigControlValueType InValueType);                    // [0x7563b60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetControlValue
-	// FRigControlValue GetControlValue(FRigElementKey InKey, ERigControlValueType InValueType);                             // [0x7618b78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigControlValue GetControlValue(FRigElementKey InKey, ERigControlValueType InValueType);                             // [0x756399c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetControlPreferredRotatorByIndex
-	// FRotator GetControlPreferredRotatorByIndex(int32_t InElementIndex, bool bInitial);                                    // [0x7618aa0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRotator GetControlPreferredRotatorByIndex(int32_t InElementIndex, bool bInitial);                                    // [0x7563838] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetControlPreferredRotator
-	// FRotator GetControlPreferredRotator(FRigElementKey InKey, bool bInitial);                                             // [0x7618864] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRotator GetControlPreferredRotator(FRigElementKey InKey, bool bInitial);                                             // [0x75636c4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetControlPreferredEulerRotationOrderByIndex
-	// EEulerRotationOrder GetControlPreferredEulerRotationOrderByIndex(int32_t InElementIndex, bool bFromSettings);         // [0x76187a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EEulerRotationOrder GetControlPreferredEulerRotationOrderByIndex(int32_t InElementIndex, bool bFromSettings);         // [0x7563574] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetControlPreferredEulerRotationOrder
-	// EEulerRotationOrder GetControlPreferredEulerRotationOrder(FRigElementKey InKey, bool bFromSettings);                  // [0x761857c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EEulerRotationOrder GetControlPreferredEulerRotationOrder(FRigElementKey InKey, bool bFromSettings);                  // [0x7563418] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetControlPreferredEulerAnglesByIndex
-	// FVector GetControlPreferredEulerAnglesByIndex(int32_t InElementIndex, EEulerRotationOrder InRotationOrder, bool bInitial); // [0x761846c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetControlPreferredEulerAnglesByIndex(int32_t InElementIndex, EEulerRotationOrder InRotationOrder, bool bInitial); // [0x7563244] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetControlPreferredEulerAngles
-	// FVector GetControlPreferredEulerAngles(FRigElementKey InKey, EEulerRotationOrder InRotationOrder, bool bInitial);     // [0x7618168] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetControlPreferredEulerAngles(FRigElementKey InKey, EEulerRotationOrder InRotationOrder, bool bInitial);     // [0x7563054] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetController
-	// class URigHierarchyController* GetController(bool bCreateIfNeeded);                                                   // [0x7618f24] Final|Native|Public|BlueprintCallable 
+	// class URigHierarchyController* GetController(bool bCreateIfNeeded);                                                   // [0x7563d20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.GetControlKeys
-	// TArray<FRigElementKey> GetControlKeys(bool bTraverse);                                                                // [0x76180c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetControlKeys(bool bTraverse);                                                                // [0x7562f68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/ControlRig.RigHierarchy.GetConnectorStates
+	// TArray<FRigConnectorState> GetConnectorStates();                                                                      // [0x7562ec8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetConnectorKeys
-	// TArray<FRigElementKey> GetConnectorKeys(bool bTraverse);                                                              // [0x7618018] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
-	// Function /Script/ControlRig.RigHierarchy.GetConnectorInfos
-	// TArray<FRigConnectorInfo> GetConnectorInfos();                                                                        // [0x7617f78] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetConnectorKeys(bool bTraverse);                                                              // [0x7562ddc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetChildren
-	// TArray<FRigElementKey> GetChildren(FRigElementKey InKey, bool bRecursive);                                            // [0x7617d44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetChildren(FRigElementKey InKey, bool bRecursive);                                            // [0x7562c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetBoolMetadata
-	// bool GetBoolMetadata(FRigElementKey InItem, FName InMetadataName, bool DefaultValue);                                 // [0x7617a5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBoolMetadata(FRigElementKey InItem, FName InMetadataName, bool DefaultValue);                                 // [0x7562ab0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetBoolArrayMetadata
-	// TArray<bool> GetBoolArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                       // [0x761782c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<bool> GetBoolArrayMetadata(FRigElementKey InItem, FName InMetadataName);                                       // [0x7562948] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetBoneKeys
-	// TArray<FRigElementKey> GetBoneKeys(bool bTraverse);                                                                   // [0x7617784] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetBoneKeys(bool bTraverse);                                                                   // [0x756285c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.GetAllKeys_ForBlueprint
-	// TArray<FRigElementKey> GetAllKeys_ForBlueprint(bool bTraverse);                                                       // [0x76176dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FRigElementKey> GetAllKeys_ForBlueprint(bool bTraverse);                                                       // [0x7562770] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.FindNull_ForBlueprintOnly
-	// FRigNullElement FindNull_ForBlueprintOnly(FRigElementKey& InKey);                                                     // [0x76174a8] Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FRigNullElement FindNull_ForBlueprintOnly(FRigElementKey& InKey);                                                     // [0x7562668] Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.FindControl_ForBlueprintOnly
-	// FRigControlElement FindControl_ForBlueprintOnly(FRigElementKey& InKey);                                               // [0x76173c8] Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FRigControlElement FindControl_ForBlueprintOnly(FRigElementKey& InKey);                                               // [0x7562588] Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.FindBone_ForBlueprintOnly
-	// FRigBoneElement FindBone_ForBlueprintOnly(FRigElementKey& InKey);                                                     // [0x76171a8] Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FRigBoneElement FindBone_ForBlueprintOnly(FRigElementKey& InKey);                                                     // [0x756235c] Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchy.CopyPose
-	// void CopyPose(class URigHierarchy* InHierarchy, bool bCurrent, bool bInitial, bool bWeights, bool bMatchPoseInGlobalIfNeeded); // [0x7617004] Final|Native|Public|BlueprintCallable 
+	// void CopyPose(class URigHierarchy* InHierarchy, bool bCurrent, bool bInitial, bool bWeights, bool bMatchPoseInGlobalIfNeeded); // [0x7562090] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.CopyHierarchy
-	// void CopyHierarchy(class URigHierarchy* InHierarchy);                                                                 // [0x7616f84] Final|Native|Public|BlueprintCallable 
+	// void CopyHierarchy(class URigHierarchy* InHierarchy);                                                                 // [0x7561fd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchy.Contains_ForBlueprint
-	// bool Contains_ForBlueprint(FRigElementKey InKey);                                                                     // [0x7616e40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
-	// Function /Script/ControlRig.RigHierarchy.CanConnect_ForBlueprint
-	// bool CanConnect_ForBlueprint(FRigConnectionInfo InConnectionInfo);                                                    // [0x7616ca8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool Contains_ForBlueprint(FRigElementKey InKey);                                                                     // [0x7561efc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+};
+
+/// Class /Script/ControlRig.RigHierarchyProvider
+/// Size: 0x0000 (0x000028 - 0x000028)
+class URigHierarchyProvider : public UInterface
+{ 
+public:
 };
 
 /// Class /Script/ControlRig.TransformableControlHandle
@@ -995,7 +1077,7 @@ public:
 class UTransformableControlHandle : public UTransformableHandle
 { 
 public:
-	SDK_UNDEFINED(32,12285) /* TWeakObjectPtr<UControlRig*> */ __um(ControlRig);                                   // 0x0058   (0x0020)  
+	SDK_UNDEFINED(32,12336) /* TWeakObjectPtr<UControlRig*> */ __um(ControlRig);                                   // 0x0058   (0x0020)  
 	FName                                              ControlName;                                                // 0x0078   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x007C   (0x0004)  MISSED
 };
@@ -1037,130 +1119,130 @@ struct FControlRigComponentMappedElement
 };
 
 /// Class /Script/ControlRig.ControlRigComponent
-/// Size: 0x0160 (0x000570 - 0x0006D0)
+/// Size: 0x0160 (0x000500 - 0x000660)
 class UControlRigComponent : public UPrimitiveComponent
 { 
 public:
-	class UClass*                                      ControlRigClass;                                            // 0x0570   (0x0008)  
-	SDK_UNDEFINED(16,12286) /* FMulticastInlineDelegate */ __um(OnPreInitializeDelegate);                          // 0x0578   (0x0010)  
-	SDK_UNDEFINED(16,12287) /* FMulticastInlineDelegate */ __um(OnPostInitializeDelegate);                         // 0x0588   (0x0010)  
-	SDK_UNDEFINED(16,12288) /* FMulticastInlineDelegate */ __um(OnPreConstructionDelegate);                        // 0x0598   (0x0010)  
-	SDK_UNDEFINED(16,12289) /* FMulticastInlineDelegate */ __um(OnPostConstructionDelegate);                       // 0x05A8   (0x0010)  
-	SDK_UNDEFINED(16,12290) /* FMulticastInlineDelegate */ __um(OnPreForwardsSolveDelegate);                       // 0x05B8   (0x0010)  
-	SDK_UNDEFINED(16,12291) /* FMulticastInlineDelegate */ __um(OnPostForwardsSolveDelegate);                      // 0x05C8   (0x0010)  
-	TArray<FControlRigComponentMappedElement>          UserDefinedElements;                                        // 0x05D8   (0x0010)  
-	TArray<FControlRigComponentMappedElement>          MappedElements;                                             // 0x05E8   (0x0010)  
-	bool                                               bEnableLazyEvaluation;                                      // 0x05F8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x05F9   (0x0003)  MISSED
-	float                                              LazyEvaluationPositionThreshold;                            // 0x05FC   (0x0004)  
-	float                                              LazyEvaluationRotationThreshold;                            // 0x0600   (0x0004)  
-	float                                              LazyEvaluationScaleThreshold;                               // 0x0604   (0x0004)  
-	bool                                               bResetTransformBeforeTick;                                  // 0x0608   (0x0001)  
-	bool                                               bResetInitialsBeforeConstruction;                           // 0x0609   (0x0001)  
-	bool                                               bUpdateRigOnTick;                                           // 0x060A   (0x0001)  
-	bool                                               bUpdateInEditor;                                            // 0x060B   (0x0001)  
-	bool                                               bDrawBones;                                                 // 0x060C   (0x0001)  
-	bool                                               bShowDebugDrawing;                                          // 0x060D   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x060E   (0x0002)  MISSED
-	class UControlRig*                                 ControlRig;                                                 // 0x0610   (0x0008)  
-	unsigned char                                      UnknownData02_6[0xB8];                                      // 0x0618   (0x00B8)  MISSED
+	class UClass*                                      ControlRigClass;                                            // 0x0500   (0x0008)  
+	SDK_UNDEFINED(16,12337) /* FMulticastInlineDelegate */ __um(OnPreInitializeDelegate);                          // 0x0508   (0x0010)  
+	SDK_UNDEFINED(16,12338) /* FMulticastInlineDelegate */ __um(OnPostInitializeDelegate);                         // 0x0518   (0x0010)  
+	SDK_UNDEFINED(16,12339) /* FMulticastInlineDelegate */ __um(OnPreConstructionDelegate);                        // 0x0528   (0x0010)  
+	SDK_UNDEFINED(16,12340) /* FMulticastInlineDelegate */ __um(OnPostConstructionDelegate);                       // 0x0538   (0x0010)  
+	SDK_UNDEFINED(16,12341) /* FMulticastInlineDelegate */ __um(OnPreForwardsSolveDelegate);                       // 0x0548   (0x0010)  
+	SDK_UNDEFINED(16,12342) /* FMulticastInlineDelegate */ __um(OnPostForwardsSolveDelegate);                      // 0x0558   (0x0010)  
+	TArray<FControlRigComponentMappedElement>          UserDefinedElements;                                        // 0x0568   (0x0010)  
+	TArray<FControlRigComponentMappedElement>          MappedElements;                                             // 0x0578   (0x0010)  
+	bool                                               bEnableLazyEvaluation;                                      // 0x0588   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0589   (0x0003)  MISSED
+	float                                              LazyEvaluationPositionThreshold;                            // 0x058C   (0x0004)  
+	float                                              LazyEvaluationRotationThreshold;                            // 0x0590   (0x0004)  
+	float                                              LazyEvaluationScaleThreshold;                               // 0x0594   (0x0004)  
+	bool                                               bResetTransformBeforeTick;                                  // 0x0598   (0x0001)  
+	bool                                               bResetInitialsBeforeConstruction;                           // 0x0599   (0x0001)  
+	bool                                               bUpdateRigOnTick;                                           // 0x059A   (0x0001)  
+	bool                                               bUpdateInEditor;                                            // 0x059B   (0x0001)  
+	bool                                               bDrawBones;                                                 // 0x059C   (0x0001)  
+	bool                                               bShowDebugDrawing;                                          // 0x059D   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x059E   (0x0002)  MISSED
+	class UControlRig*                                 ControlRig;                                                 // 0x05A0   (0x0008)  
+	unsigned char                                      UnknownData02_6[0xB8];                                      // 0x05A8   (0x00B8)  MISSED
 
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRigComponent.Update
-	// void Update(float DeltaTime);                                                                                         // [0x766c760] Final|Native|Public|BlueprintCallable 
+	// void Update(float DeltaTime);                                                                                         // [0x75c22f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetObjectBinding
-	// void SetObjectBinding(class UObject* InObjectToBind);                                                                 // [0x766c34c] Final|Native|Public|BlueprintCallable 
+	// void SetObjectBinding(class UObject* InObjectToBind);                                                                 // [0x75c15ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetMappedElements
-	// void SetMappedElements(TArray<FControlRigComponentMappedElement> NewMappedElements);                                  // [0x766c270] Final|Native|Public|BlueprintCallable 
+	// void SetMappedElements(TArray<FControlRigComponentMappedElement> NewMappedElements);                                  // [0x75c0cec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetInitialSpaceTransform
-	// void SetInitialSpaceTransform(FName SpaceName, FTransform InitialTransform, EControlRigComponentSpace Space);         // [0x766bf80] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetInitialSpaceTransform(FName SpaceName, FTransform InitialTransform, EControlRigComponentSpace Space);         // [0x75c0a20] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetInitialBoneTransform
-	// void SetInitialBoneTransform(FName BoneName, FTransform InitialTransform, EControlRigComponentSpace Space, bool bPropagateToChildren); // [0x766bbbc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetInitialBoneTransform(FName BoneName, FTransform InitialTransform, EControlRigComponentSpace Space, bool bPropagateToChildren); // [0x75c0740] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlVector2D
-	// void SetControlVector2D(FName ControlName, FVector2D Value);                                                          // [0x766b8b4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlVector2D(FName ControlName, FVector2D Value);                                                          // [0x75c03dc] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlTransform
-	// void SetControlTransform(FName ControlName, FTransform Value, EControlRigComponentSpace Space);                       // [0x766b5c4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlTransform(FName ControlName, FTransform Value, EControlRigComponentSpace Space);                       // [0x75c0180] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlScale
-	// void SetControlScale(FName ControlName, FVector Value, EControlRigComponentSpace Space);                              // [0x766b36c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlScale(FName ControlName, FVector Value, EControlRigComponentSpace Space);                              // [0x75bffb8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlRotator
-	// void SetControlRotator(FName ControlName, FRotator Value, EControlRigComponentSpace Space);                           // [0x766b114] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlRotator(FName ControlName, FRotator Value, EControlRigComponentSpace Space);                           // [0x75bfdf0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlRigClass
-	// void SetControlRigClass(class UClass* InControlRigClass);                                                             // [0x766b06c] Final|Native|Public|BlueprintCallable 
+	// void SetControlRigClass(class UClass* InControlRigClass);                                                             // [0x75bfd04] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlPosition
-	// void SetControlPosition(FName ControlName, FVector Value, EControlRigComponentSpace Space);                           // [0x766ae14] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlPosition(FName ControlName, FVector Value, EControlRigComponentSpace Space);                           // [0x75bfb3c] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlOffset
-	// void SetControlOffset(FName ControlName, FTransform OffsetTransform, EControlRigComponentSpace Space);                // [0x766ab24] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetControlOffset(FName ControlName, FTransform OffsetTransform, EControlRigComponentSpace Space);                // [0x75bf8e0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlInt
-	// void SetControlInt(FName ControlName, int32_t Value);                                                                 // [0x766aa24] Final|Native|Public|BlueprintCallable 
+	// void SetControlInt(FName ControlName, int32_t Value);                                                                 // [0x75bf764] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlFloat
-	// void SetControlFloat(FName ControlName, float Value);                                                                 // [0x766a960] Final|Native|Public|BlueprintCallable 
+	// void SetControlFloat(FName ControlName, float Value);                                                                 // [0x75bf628] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetControlBool
-	// void SetControlBool(FName ControlName, bool Value);                                                                   // [0x766a860] Final|Native|Public|BlueprintCallable 
+	// void SetControlBool(FName ControlName, bool Value);                                                                   // [0x75bf4a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetBoneTransform
-	// void SetBoneTransform(FName BoneName, FTransform Transform, EControlRigComponentSpace Space, float Weight, bool bPropagateToChildren); // [0x766a3bc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetBoneTransform(FName BoneName, FTransform Transform, EControlRigComponentSpace Space, float Weight, bool bPropagateToChildren); // [0x75be910] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.SetBoneInitialTransformsFromSkeletalMesh
-	// void SetBoneInitialTransformsFromSkeletalMesh(class USkeletalMesh* InSkeletalMesh);                                   // [0x766a324] Final|Native|Public|BlueprintCallable 
+	// void SetBoneInitialTransformsFromSkeletalMesh(class USkeletalMesh* InSkeletalMesh);                                   // [0x75be834] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.OnPreInitialize
-	// void OnPreInitialize(class UControlRigComponent* Component);                                                          // [0x7669f50] Native|Event|Public|BlueprintEvent 
+	// void OnPreInitialize(class UControlRigComponent* Component);                                                          // [0x75bd3e4] Native|Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigComponent.OnPreForwardsSolve
-	// void OnPreForwardsSolve(class UControlRigComponent* Component);                                                       // [0x7669ecc] Native|Event|Public|BlueprintEvent 
+	// void OnPreForwardsSolve(class UControlRigComponent* Component);                                                       // [0x75bd320] Native|Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigComponent.OnPreConstruction
-	// void OnPreConstruction(class UControlRigComponent* Component);                                                        // [0x7669e48] Native|Event|Public|BlueprintEvent 
+	// void OnPreConstruction(class UControlRigComponent* Component);                                                        // [0x75bd25c] Native|Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigComponent.OnPostInitialize
-	// void OnPostInitialize(class UControlRigComponent* Component);                                                         // [0x7669dc4] Native|Event|Public|BlueprintEvent 
+	// void OnPostInitialize(class UControlRigComponent* Component);                                                         // [0x75bd198] Native|Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigComponent.OnPostForwardsSolve
-	// void OnPostForwardsSolve(class UControlRigComponent* Component);                                                      // [0x635402c] Native|Event|Public|BlueprintEvent 
+	// void OnPostForwardsSolve(class UControlRigComponent* Component);                                                      // [0x60759d4] Native|Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigComponent.OnPostConstruction
-	// void OnPostConstruction(class UControlRigComponent* Component);                                                       // [0x7669d40] Native|Event|Public|BlueprintEvent 
+	// void OnPostConstruction(class UControlRigComponent* Component);                                                       // [0x75bd0d4] Native|Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigComponent.Initialize
-	// void Initialize();                                                                                                    // [0x7669bf4] Final|Native|Public|BlueprintCallable 
+	// void Initialize();                                                                                                    // [0x75bcf88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.GetSpaceTransform
-	// FTransform GetSpaceTransform(FName SpaceName, EControlRigComponentSpace Space);                                       // [0x7669a44] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetSpaceTransform(FName SpaceName, EControlRigComponentSpace Space);                                       // [0x75bcd10] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetInitialSpaceTransform
-	// FTransform GetInitialSpaceTransform(FName SpaceName, EControlRigComponentSpace Space);                                // [0x76698c4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetInitialSpaceTransform(FName SpaceName, EControlRigComponentSpace Space);                                // [0x75bcb08] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetInitialBoneTransform
-	// FTransform GetInitialBoneTransform(FName BoneName, EControlRigComponentSpace Space);                                  // [0x76697b0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetInitialBoneTransform(FName BoneName, EControlRigComponentSpace Space);                                  // [0x75bc96c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetElementNames
-	// TArray<FName> GetElementNames(ERigElementType ElementType);                                                           // [0x766954c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<FName> GetElementNames(ERigElementType ElementType);                                                           // [0x75bc63c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlVector2D
-	// FVector2D GetControlVector2D(FName ControlName);                                                                      // [0x76694b4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector2D GetControlVector2D(FName ControlName);                                                                      // [0x75bc564] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlTransform
-	// FTransform GetControlTransform(FName ControlName, EControlRigComponentSpace Space);                                   // [0x76693a0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetControlTransform(FName ControlName, EControlRigComponentSpace Space);                                   // [0x75bc3c8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlScale
-	// FVector GetControlScale(FName ControlName, EControlRigComponentSpace Space);                                          // [0x76692a0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetControlScale(FName ControlName, EControlRigComponentSpace Space);                                          // [0x75bc24c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlRotator
-	// FRotator GetControlRotator(FName ControlName, EControlRigComponentSpace Space);                                       // [0x7669194] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FRotator GetControlRotator(FName ControlName, EControlRigComponentSpace Space);                                       // [0x75bc0b0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlRig
-	// class UControlRig* GetControlRig();                                                                                   // [0x7669170] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class UControlRig* GetControlRig();                                                                                   // [0x75bc08c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlPosition
-	// FVector GetControlPosition(FName ControlName, EControlRigComponentSpace Space);                                       // [0x7669070] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector GetControlPosition(FName ControlName, EControlRigComponentSpace Space);                                       // [0x75bbf10] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlOffset
-	// FTransform GetControlOffset(FName ControlName, EControlRigComponentSpace Space);                                      // [0x7668f5c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetControlOffset(FName ControlName, EControlRigComponentSpace Space);                                      // [0x75bbd74] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlInt
-	// int32_t GetControlInt(FName ControlName);                                                                             // [0x7668e70] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetControlInt(FName ControlName);                                                                             // [0x75bbc48] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlFloat
-	// float GetControlFloat(FName ControlName);                                                                             // [0x7668de0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float GetControlFloat(FName ControlName);                                                                             // [0x75bbb78] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetControlBool
-	// bool GetControlBool(FName ControlName);                                                                               // [0x7668cf4] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool GetControlBool(FName ControlName);                                                                               // [0x75bba48] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetBoneTransform
-	// FTransform GetBoneTransform(FName BoneName, EControlRigComponentSpace Space);                                         // [0x7668be0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform GetBoneTransform(FName BoneName, EControlRigComponentSpace Space);                                         // [0x75bb8ac] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.GetAbsoluteTime
-	// float GetAbsoluteTime();                                                                                              // [0x7668bb4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAbsoluteTime();                                                                                              // [0x75bb880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigComponent.DoesElementExist
-	// bool DoesElementExist(FName Name, ERigElementType ElementType);                                                       // [0x76689c0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool DoesElementExist(FName Name, ERigElementType ElementType);                                                       // [0x75bb580] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.ClearMappedElements
-	// void ClearMappedElements();                                                                                           // [0x76681bc] Final|Native|Public|BlueprintCallable 
+	// void ClearMappedElements();                                                                                           // [0x75ba234] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.CanExecute
-	// bool CanExecute();                                                                                                    // [0x766815c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool CanExecute();                                                                                                    // [0x75ba1d4] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/ControlRig.ControlRigComponent.AddMappedSkeletalMesh
-	// void AddMappedSkeletalMesh(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FControlRigComponentMappedBone> Bones, TArray<FControlRigComponentMappedCurve> Curves, EControlRigComponentMapDirection InDirection); // [0x76673f4] Final|Native|Public|BlueprintCallable 
+	// void AddMappedSkeletalMesh(class USkeletalMeshComponent* SkeletalMeshComponent, TArray<FControlRigComponentMappedBone> Bones, TArray<FControlRigComponentMappedCurve> Curves, EControlRigComponentMapDirection InDirection); // [0x75b88a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.AddMappedElements
-	// void AddMappedElements(TArray<FControlRigComponentMappedElement> NewMappedElements);                                  // [0x766734c] Final|Native|Public|BlueprintCallable 
+	// void AddMappedElements(TArray<FControlRigComponentMappedElement> NewMappedElements);                                  // [0x75b87c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.AddMappedComponents
-	// void AddMappedComponents(TArray<FControlRigComponentMappedComponent> Components);                                     // [0x7666c48] Final|Native|Public|BlueprintCallable 
+	// void AddMappedComponents(TArray<FControlRigComponentMappedComponent> Components);                                     // [0x75b807c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigComponent.AddMappedCompleteSkeletalMesh
-	// void AddMappedCompleteSkeletalMesh(class USkeletalMeshComponent* SkeletalMeshComponent, EControlRigComponentMapDirection InDirection); // [0x7666b60] Final|Native|Public|BlueprintCallable 
+	// void AddMappedCompleteSkeletalMesh(class USkeletalMeshComponent* SkeletalMeshComponent, EControlRigComponentMapDirection InDirection); // [0x75b7f18] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ControlRig.ControlRigControlActor
@@ -1174,11 +1256,11 @@ public:
 	bool                                               bIsSelectable;                                              // 0x02A1   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x02A2   (0x0006)  MISSED
 	class UMaterialInterface*                          MaterialOverride;                                           // 0x02A8   (0x0008)  
-	SDK_UNDEFINED(16,12292) /* FString */              __um(ColorParameter);                                       // 0x02B0   (0x0010)  
+	SDK_UNDEFINED(16,12343) /* FString */              __um(ColorParameter);                                       // 0x02B0   (0x0010)  
 	bool                                               bCastShadows;                                               // 0x02C0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x02C1   (0x0007)  MISSED
 	class USceneComponent*                             ActorRootComponent;                                         // 0x02C8   (0x0008)  
-	SDK_UNDEFINED(32,12293) /* TWeakObjectPtr<UControlRig*> */ __um(ControlRig);                                   // 0x02D0   (0x0020)  
+	SDK_UNDEFINED(32,12344) /* TWeakObjectPtr<UControlRig*> */ __um(ControlRig);                                   // 0x02D0   (0x0020)  
 	TArray<FName>                                      ControlNames;                                               // 0x02F0   (0x0010)  
 	TArray<FTransform>                                 ShapeTransforms;                                            // 0x0300   (0x0010)  
 	TArray<class UStaticMeshComponent*>                Components;                                                 // 0x0310   (0x0010)  
@@ -1189,11 +1271,11 @@ public:
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRigControlActor.ResetControlActor
-	// void ResetControlActor();                                                                                             // [0x766a1fc] Final|Native|Public|BlueprintCallable 
+	// void ResetControlActor();                                                                                             // [0x75be70c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigControlActor.Refresh
-	// void Refresh();                                                                                                       // [0x766a1c0] Final|Native|Public|BlueprintCallable 
+	// void Refresh();                                                                                                       // [0x75bd718] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigControlActor.Clear
-	// void Clear();                                                                                                         // [0x7668180] Final|Native|Public|BlueprintCallable 
+	// void Clear();                                                                                                         // [0x75ba1f8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ControlRig.ControlRigShapeActor
@@ -1204,7 +1286,7 @@ public:
 	class USceneComponent*                             ActorRootComponent;                                         // 0x0290   (0x0008)  
 	class UStaticMeshComponent*                        StaticMeshComponent;                                        // 0x0298   (0x0008)  
 	uint32_t                                           ControlRigIndex;                                            // 0x02A0   (0x0004)  
-	SDK_UNDEFINED(8,12294) /* TWeakObjectPtr<UControlRig*> */ __um(ControlRig);                                    // 0x02A4   (0x0008)  
+	SDK_UNDEFINED(8,12345) /* TWeakObjectPtr<UControlRig*> */ __um(ControlRig);                                    // 0x02A4   (0x0008)  
 	FName                                              ControlName;                                                // 0x02AC   (0x0004)  
 	FName                                              ShapeName;                                                  // 0x02B0   (0x0004)  
 	FName                                              ColorParameterName;                                         // 0x02B4   (0x0004)  
@@ -1216,33 +1298,33 @@ public:
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRigShapeActor.SetSelected
-	// void SetSelected(bool bInSelected);                                                                                   // [0x766c450] Native|Public|BlueprintCallable 
+	// void SetSelected(bool bInSelected);                                                                                   // [0x75c1774] Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigShapeActor.SetSelectable
-	// void SetSelectable(bool bInSelectable);                                                                               // [0x766c3cc] Native|Public|BlueprintCallable 
+	// void SetSelectable(bool bInSelectable);                                                                               // [0x75c16ac] Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigShapeActor.SetHovered
-	// void SetHovered(bool bInHovered);                                                                                     // [0x766bb38] Native|Public|BlueprintCallable 
+	// void SetHovered(bool bInHovered);                                                                                     // [0x75c0678] Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigShapeActor.SetGlobalTransform
-	// void SetGlobalTransform(FTransform& InTransform);                                                                     // [0x766ba28] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetGlobalTransform(FTransform& InTransform);                                                                     // [0x75c0568] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigShapeActor.SetEnabled
-	// void SetEnabled(bool bInEnabled);                                                                                     // [0x60b64a0] Native|Public|BlueprintCallable 
+	// void SetEnabled(bool bInEnabled);                                                                                     // [0x5dbf660] Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigShapeActor.OnTransformChanged
-	// void OnTransformChanged(FTransform& NewTransform);                                                                    // [0x211c0a0] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnTransformChanged(FTransform& NewTransform);                                                                    // [0x2047e54] Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigShapeActor.OnSelectionChanged
-	// void OnSelectionChanged(bool bIsSelected);                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnSelectionChanged(bool bIsSelected);                                                                            // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigShapeActor.OnManipulatingChanged
-	// void OnManipulatingChanged(bool bIsManipulating);                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnManipulatingChanged(bool bIsManipulating);                                                                     // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigShapeActor.OnHoveredChanged
-	// void OnHoveredChanged(bool bIsSelected);                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnHoveredChanged(bool bIsSelected);                                                                              // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigShapeActor.OnEnabledChanged
-	// void OnEnabledChanged(bool bIsEnabled);                                                                               // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void OnEnabledChanged(bool bIsEnabled);                                                                               // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/ControlRig.ControlRigShapeActor.IsSelectedInEditor
-	// bool IsSelectedInEditor();                                                                                            // [0x65f86c8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSelectedInEditor();                                                                                            // [0x63391d4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigShapeActor.IsHovered
-	// bool IsHovered();                                                                                                     // [0x7669cd0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsHovered();                                                                                                     // [0x75bd064] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigShapeActor.IsEnabled
-	// bool IsEnabled();                                                                                                     // [0x7669ca8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                     // [0x75bd03c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigShapeActor.GetGlobalTransform
-	// FTransform GetGlobalTransform();                                                                                      // [0x76696bc] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetGlobalTransform();                                                                                      // [0x75bc878] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/ControlRig.ControlRigShapeDefinition
@@ -1251,7 +1333,7 @@ struct FControlRigShapeDefinition
 { 
 	FName                                              ShapeName;                                                  // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(32,12295) /* TWeakObjectPtr<UStaticMesh*> */ __um(StaticMesh);                                   // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,12346) /* TWeakObjectPtr<UStaticMesh*> */ __um(StaticMesh);                                   // 0x0008   (0x0020)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0028   (0x0008)  MISSED
 	FTransform                                         Transform;                                                  // 0x0030   (0x0060)  
 	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0090   (0x0010)  MISSED
@@ -1264,8 +1346,8 @@ class UControlRigShapeLibrary : public UObject
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0028   (0x0008)  MISSED
 	FControlRigShapeDefinition                         DefaultShape;                                               // 0x0030   (0x00A0)  
-	SDK_UNDEFINED(32,12296) /* TWeakObjectPtr<UMaterial*> */ __um(DefaultMaterial);                                // 0x00D0   (0x0020)  
-	SDK_UNDEFINED(32,12297) /* TWeakObjectPtr<UMaterial*> */ __um(XRayMaterial);                                   // 0x00F0   (0x0020)  
+	SDK_UNDEFINED(32,12347) /* TWeakObjectPtr<UMaterial*> */ __um(DefaultMaterial);                                // 0x00D0   (0x0020)  
+	SDK_UNDEFINED(32,12348) /* TWeakObjectPtr<UMaterial*> */ __um(XRayMaterial);                                   // 0x00F0   (0x0020)  
 	FName                                              MaterialColorParameter;                                     // 0x0110   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0114   (0x0004)  MISSED
 	TArray<FControlRigShapeDefinition>                 Shapes;                                                     // 0x0118   (0x0010)  
@@ -1278,7 +1360,7 @@ struct FControlRigTestDataVariable
 { 
 	FName                                              Name;                                                       // 0x0000   (0x0004)  
 	FName                                              CPPType;                                                    // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,12298) /* FString */              __um(Value);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,12349) /* FString */              __um(Value);                                                // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.CachedRigElement
@@ -1341,23 +1423,23 @@ public:
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRigTestData.SetupReplay
-	// bool SetupReplay(class UControlRig* InControlRig, bool bGroundTruth);                                                 // [0x766c4d4] Final|Native|Public|BlueprintCallable 
+	// bool SetupReplay(class UControlRig* InControlRig, bool bGroundTruth);                                                 // [0x75c183c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigTestData.ReleaseReplay
-	// void ReleaseReplay();                                                                                                 // [0x766a1d4] Final|Native|Public|BlueprintCallable 
+	// void ReleaseReplay();                                                                                                 // [0x75bd72c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigTestData.Record
-	// bool Record(class UControlRig* InControlRig, double InRecordingDuration);                                             // [0x7669fd4] Final|Native|Public|BlueprintCallable 
+	// bool Record(class UControlRig* InControlRig, double InRecordingDuration);                                             // [0x75bd4a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigTestData.IsReplaying
-	// bool IsReplaying();                                                                                                   // [0x7669d1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsReplaying();                                                                                                   // [0x75bd0b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigTestData.IsRecording
-	// bool IsRecording();                                                                                                   // [0x7669cf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRecording();                                                                                                   // [0x75bd08c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigTestData.GetTimeRange
-	// FVector2D GetTimeRange(bool bInput);                                                                                  // [0x7669b58] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D GetTimeRange(bool bInput);                                                                                  // [0x75bceac] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigTestData.GetPlaybackMode
-	// EControlRigTestDataPlaybackMode GetPlaybackMode();                                                                    // [0x7669a04] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EControlRigTestDataPlaybackMode GetPlaybackMode();                                                                    // [0x75bccd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigTestData.GetFrameIndexForTime
-	// int32_t GetFrameIndexForTime(double InSeconds, bool bInput);                                                          // [0x76695f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetFrameIndexForTime(double InSeconds, bool bInput);                                                          // [0x75bc720] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigTestData.CreateNewAsset
-	// class UControlRigTestData* CreateNewAsset(FString InDesiredPackagePath, FString InBlueprintPathName);                 // [0x76681d0] Final|Native|Static|Public|BlueprintCallable 
+	// class UControlRigTestData* CreateNewAsset(FString InDesiredPackagePath, FString InBlueprintPathName);                 // [0x75ba420] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/ControlRig.ControlRigValidator
@@ -1376,22 +1458,61 @@ class UControlRigValidationPass : public UObject
 public:
 };
 
+/// Class /Script/ControlRig.ModularRigController
+/// Size: 0x0028 (0x000028 - 0x000050)
+class UModularRigController : public UObject
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x28];                                      // 0x0028   (0x0028)  MISSED
+
+
+	/// Functions
+	// Function /Script/ControlRig.ModularRigController.UnBindModuleVariable
+	// bool UnBindModuleVariable(FString InModulePath, FName& InVariableName, bool bSetupUndo);                              // [0x75c1b58] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.SetModuleShortName
+	// bool SetModuleShortName(FString InModulePath, FString InNewShortName, bool bSetupUndo);                               // [0x75c0e08] Final|Native|Public|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.SetConfigValueInModule
+	// bool SetConfigValueInModule(FString InModulePath, FName& InVariableName, FString InValue, bool bSetupUndo);           // [0x75bec74] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.ReparentModule
+	// FString ReparentModule(FString InModulePath, FString InNewParentModulePath, bool bSetupUndo);                         // [0x75bdef8] Final|Native|Public|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.RenameModule
+	// FString RenameModule(FString InModulePath, FName& InNewName, bool bSetupUndo);                                        // [0x75bd740] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.DisconnectConnector
+	// bool DisconnectConnector(FRigElementKey& InConnectorKey, bool bSetupUndo);                                            // [0x75bb3e0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.DeleteModule
+	// bool DeleteModule(FString InModulePath, bool bSetupUndo);                                                             // [0x75bac8c] Final|Native|Public|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.ConnectConnectorToElement
+	// bool ConnectConnectorToElement(FRigElementKey& InConnectorKey, FRigElementKey& InTargetKey, bool bSetupUndo);         // [0x75ba248] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.BindModuleVariable
+	// bool BindModuleVariable(FString InModulePath, FName& InVariableName, FString InSourcePath, bool bSetupUndo);          // [0x75b99a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// Function /Script/ControlRig.ModularRigController.AddModule
+	// FString AddModule(FName& InModuleName, class UClass* InClass, FString InParentModulePath, bool bSetupUndo);           // [0x75b9144] Final|Native|Public|HasOutParms|BlueprintCallable 
+};
+
+/// Class /Script/ControlRig.ModularRigRuleManager
+/// Size: 0x0008 (0x000028 - 0x000030)
+class UModularRigRuleManager : public UObject
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x8];                                       // 0x0028   (0x0008)  MISSED
+};
+
 /// Class /Script/ControlRig.AdditiveControlRig
-/// Size: 0x0010 (0x000A18 - 0x000A28)
+/// Size: 0x0010 (0x000A20 - 0x000A30)
 class UAdditiveControlRig : public UControlRig
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0A18   (0x0010)  MISSED
+	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0A20   (0x0010)  MISSED
 };
 
 /// Class /Script/ControlRig.FKControlRig
-/// Size: 0x0040 (0x000A18 - 0x000A58)
+/// Size: 0x0040 (0x000A20 - 0x000A60)
 class UFKControlRig : public UControlRig
 { 
 public:
-	TArray<bool>                                       IsControlActive;                                            // 0x0A18   (0x0010)  
-	EControlRigFKRigExecuteMode                        ApplyMode;                                                  // 0x0A28   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x2F];                                      // 0x0A29   (0x002F)  MISSED
+	TArray<bool>                                       IsControlActive;                                            // 0x0A20   (0x0010)  
+	EControlRigFKRigExecuteMode                        ApplyMode;                                                  // 0x0A30   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x2F];                                      // 0x0A31   (0x002F)  MISSED
 };
 
 /// Class /Script/ControlRig.RigHierarchyController
@@ -1401,73 +1522,73 @@ class URigHierarchyController : public UObject
 public:
 	bool                                               bReportWarningsAndErrors;                                   // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0029   (0x0003)  MISSED
-	SDK_UNDEFINED(8,12299) /* TWeakObjectPtr<URigHierarchy*> */ __um(Hierarchy);                                   // 0x002C   (0x0008)  
+	SDK_UNDEFINED(8,12350) /* TWeakObjectPtr<URigHierarchy*> */ __um(WeakHierarchy);                               // 0x002C   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x6C];                                      // 0x0034   (0x006C)  MISSED
 
 
 	/// Functions
 	// Function /Script/ControlRig.RigHierarchyController.SetSelection
-	// bool SetSelection(TArray<FRigElementKey>& InKeys, bool bPrintPythonCommand);                                          // [0x76d99c8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool SetSelection(TArray<FRigElementKey>& InKeys, bool bPrintPythonCommand);                                          // [0x762aa2c] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.SetParent
-	// bool SetParent(FRigElementKey InChild, FRigElementKey InParent, bool bMaintainGlobalTransform, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d9528] Final|Native|Public|BlueprintCallable 
+	// bool SetParent(FRigElementKey InChild, FRigElementKey InParent, bool bMaintainGlobalTransform, bool bSetupUndo, bool bPrintPythonCommand); // [0x762a76c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.SetHierarchy
-	// void SetHierarchy(class URigHierarchy* InHierarchy);                                                                  // [0x76d94a8] Final|Native|Public|BlueprintCallable 
+	// void SetHierarchy(class URigHierarchy* InHierarchy);                                                                  // [0x762a6ac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.SetDisplayName
-	// FName SetDisplayName(FRigElementKey InControl, FName InDisplayName, bool bRenameElement, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d9004] Final|Native|Public|BlueprintCallable 
+	// FName SetDisplayName(FRigElementKey InControl, FName InDisplayName, bool bRenameElement, bool bSetupUndo, bool bPrintPythonCommand); // [0x762a3e8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.SetControlSettings
-	// bool SetControlSettings(FRigElementKey InKey, FRigControlSettings InSettings, bool bSetupUndo);                       // [0x76d8cc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool SetControlSettings(FRigElementKey InKey, FRigControlSettings InSettings, bool bSetupUndo);                       // [0x762a1d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchyController.SelectElement
-	// bool SelectElement(FRigElementKey InKey, bool bSelect, bool bClearSelection);                                         // [0x76d89d0] Final|Native|Public|BlueprintCallable 
+	// bool SelectElement(FRigElementKey InKey, bool bSelect, bool bClearSelection);                                         // [0x762a004] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.ReorderElement
-	// bool ReorderElement(FRigElementKey InElement, int32_t InIndex, bool bSetupUndo, bool bPrintPythonCommand);            // [0x76d83b4] Final|Native|Public|BlueprintCallable 
+	// bool ReorderElement(FRigElementKey InElement, int32_t InIndex, bool bSetupUndo, bool bPrintPythonCommand);            // [0x7629a7c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.RenameElement
-	// FRigElementKey RenameElement(FRigElementKey InElement, FName InName, bool bSetupUndo, bool bPrintPythonCommand, bool bClearSelection); // [0x76d7f20] Final|Native|Public|BlueprintCallable 
+	// FRigElementKey RenameElement(FRigElementKey InElement, FName InName, bool bSetupUndo, bool bPrintPythonCommand, bool bClearSelection); // [0x76297c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.RemoveParent
-	// bool RemoveParent(FRigElementKey InChild, FRigElementKey InParent, bool bMaintainGlobalTransform, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d7a80] Final|Native|Public|BlueprintCallable 
+	// bool RemoveParent(FRigElementKey InChild, FRigElementKey InParent, bool bMaintainGlobalTransform, bool bSetupUndo, bool bPrintPythonCommand); // [0x7629508] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.RemoveElement
-	// bool RemoveElement(FRigElementKey InElement, bool bSetupUndo, bool bPrintPythonCommand);                              // [0x76d77a4] Final|Native|Public|BlueprintCallable 
+	// bool RemoveElement(FRigElementKey InElement, bool bSetupUndo, bool bPrintPythonCommand);                              // [0x7629348] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.RemoveAllParents
-	// bool RemoveAllParents(FRigElementKey InChild, bool bMaintainGlobalTransform, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d73dc] Final|Native|Public|BlueprintCallable 
+	// bool RemoveAllParents(FRigElementKey InChild, bool bMaintainGlobalTransform, bool bSetupUndo, bool bPrintPythonCommand); // [0x7629104] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.MirrorElements
-	// TArray<FRigElementKey> MirrorElements(TArray<FRigElementKey> InKeys, FRigVMMirrorSettings InSettings, bool bSelectNewElements, bool bSetupUndo, bool bPrintPythonCommands); // [0x76d6704] Final|Native|Public|BlueprintCallable 
+	// TArray<FRigElementKey> MirrorElements(TArray<FRigElementKey> InKeys, FRigVMMirrorSettings InSettings, bool bSelectNewElements, bool bSetupUndo, bool bPrintPythonCommands); // [0x762849c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.ImportFromText
-	// TArray<FRigElementKey> ImportFromText(FString InContent, bool bReplaceExistingElements, bool bSelectNewElements, bool bSetupUndo, bool bPrintPythonCommands); // [0x76d5f30] Final|Native|Public|BlueprintCallable 
+	// TArray<FRigElementKey> ImportFromText(FString InContent, bool bReplaceExistingElements, bool bSelectNewElements, bool bSetupUndo, bool bPrintPythonCommands); // [0x7627b90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.ImportCurves
-	// TArray<FRigElementKey> ImportCurves(class USkeleton* InSkeleton, FName InNameSpace, bool bSelectCurves, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d5ce0] Final|Native|Public|BlueprintCallable 
+	// TArray<FRigElementKey> ImportCurves(class USkeleton* InSkeleton, FName InNameSpace, bool bSelectCurves, bool bSetupUndo, bool bPrintPythonCommand); // [0x7627810] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.ImportBones
-	// TArray<FRigElementKey> ImportBones(class USkeleton* InSkeleton, FName InNameSpace, bool bReplaceExistingBones, bool bRemoveObsoleteBones, bool bSelectBones, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d5a5c] Final|Native|Public|BlueprintCallable 
+	// TArray<FRigElementKey> ImportBones(class USkeleton* InSkeleton, FName InNameSpace, bool bReplaceExistingBones, bool bRemoveObsoleteBones, bool bSelectBones, bool bSetupUndo, bool bPrintPythonCommand); // [0x76273c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.GetHierarchy
-	// class URigHierarchy* GetHierarchy();                                                                                  // [0x76d5a34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class URigHierarchy* GetHierarchy();                                                                                  // [0x7627398] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchyController.GetControlSettings
-	// FRigControlSettings GetControlSettings(FRigElementKey InKey);                                                         // [0x76d57a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FRigControlSettings GetControlSettings(FRigElementKey InKey);                                                         // [0x76270fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchyController.ExportToText
-	// FString ExportToText(TArray<FRigElementKey> InKeys);                                                                  // [0x76d5090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString ExportToText(TArray<FRigElementKey> InKeys);                                                                  // [0x76269a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchyController.ExportSelectionToText
-	// FString ExportSelectionToText();                                                                                      // [0x76d4a10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString ExportSelectionToText();                                                                                      // [0x7626328] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.RigHierarchyController.DuplicateElements
-	// TArray<FRigElementKey> DuplicateElements(TArray<FRigElementKey> InKeys, bool bSelectNewElements, bool bSetupUndo, bool bPrintPythonCommands); // [0x76d47f4] Final|Native|Public|BlueprintCallable 
+	// TArray<FRigElementKey> DuplicateElements(TArray<FRigElementKey> InKeys, bool bSelectNewElements, bool bSetupUndo, bool bPrintPythonCommands); // [0x762601c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.DeselectElement
-	// bool DeselectElement(FRigElementKey InKey);                                                                           // [0x76d45dc] Final|Native|Public|BlueprintCallable 
+	// bool DeselectElement(FRigElementKey InKey);                                                                           // [0x7625e38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.ClearSelection
-	// bool ClearSelection();                                                                                                // [0x76d45b8] Final|Native|Public|BlueprintCallable 
+	// bool ClearSelection();                                                                                                // [0x7625e14] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddSocket
-	// FRigElementKey AddSocket(FName InName, FRigElementKey InParent, FTransform InTransform, bool bTransformInGlobal, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d4008] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FRigElementKey AddSocket(FName InName, FRigElementKey InParent, FTransform InTransform, bool bTransformInGlobal, FLinearColor& InColor, FString InDescription, bool bSetupUndo, bool bPrintPythonCommand); // [0x762533c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddRigidBody
-	// FRigElementKey AddRigidBody(FName InName, FRigElementKey InParent, FRigRigidBodySettings InSettings, FTransform InLocalTransform, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d3a64] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FRigElementKey AddRigidBody(FName InName, FRigElementKey InParent, FRigRigidBodySettings InSettings, FTransform InLocalTransform, bool bSetupUndo, bool bPrintPythonCommand); // [0x7624f58] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddParent
-	// bool AddParent(FRigElementKey InChild, FRigElementKey InParent, float InWeight, bool bMaintainGlobalTransform, bool bSetupUndo); // [0x76d35c4] Final|Native|Public|BlueprintCallable 
+	// bool AddParent(FRigElementKey InChild, FRigElementKey InParent, float InWeight, bool bMaintainGlobalTransform, bool bSetupUndo); // [0x7624c94] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddNull
-	// FRigElementKey AddNull(FName InName, FRigElementKey InParent, FTransform InTransform, bool bTransformInGlobal, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d3014] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FRigElementKey AddNull(FName InName, FRigElementKey InParent, FTransform InTransform, bool bTransformInGlobal, bool bSetupUndo, bool bPrintPythonCommand); // [0x76248a4] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddCurve
-	// FRigElementKey AddCurve(FName InName, float InValue, bool bSetupUndo, bool bPrintPythonCommand);                      // [0x76d2edc] Final|Native|Public|BlueprintCallable 
+	// FRigElementKey AddCurve(FName InName, float InValue, bool bSetupUndo, bool bPrintPythonCommand);                      // [0x7624670] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddControl_ForBlueprint
-	// FRigElementKey AddControl_ForBlueprint(FName InName, FRigElementKey InParent, FRigControlSettings InSettings, FRigControlValue InValue, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d28d0] Final|Native|Public|BlueprintCallable 
+	// FRigElementKey AddControl_ForBlueprint(FName InName, FRigElementKey InParent, FRigControlSettings InSettings, FRigControlValue InValue, bool bSetupUndo, bool bPrintPythonCommand); // [0x7624234] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddConnector
-	// FRigElementKey AddConnector(FName InName, FRigConnectorSettings InSettings, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d257c] Final|Native|Public|BlueprintCallable 
+	// FRigElementKey AddConnector(FName InName, FRigConnectorSettings InSettings, bool bSetupUndo, bool bPrintPythonCommand); // [0x7623fd4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddBone
-	// FRigElementKey AddBone(FName InName, FRigElementKey InParent, FTransform InTransform, bool bTransformInGlobal, ERigBoneType InBoneType, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d1ee4] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FRigElementKey AddBone(FName InName, FRigElementKey InParent, FTransform InTransform, bool bTransformInGlobal, ERigBoneType InBoneType, bool bSetupUndo, bool bPrintPythonCommand); // [0x7623b68] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ControlRig.RigHierarchyController.AddAnimationChannel_ForBlueprint
-	// FRigElementKey AddAnimationChannel_ForBlueprint(FName InName, FRigElementKey InParentControl, FRigControlSettings InSettings, bool bSetupUndo, bool bPrintPythonCommand); // [0x76d1a74] Final|Native|Public|BlueprintCallable 
+	// FRigElementKey AddAnimationChannel_ForBlueprint(FName InName, FRigElementKey InParentControl, FRigControlSettings InSettings, bool bSetupUndo, bool bPrintPythonCommand); // [0x7623844] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ControlRig.ControlRigLayerInstance
@@ -1535,7 +1656,7 @@ public:
 	FMovieSceneTransformMask                           TransformMask;                                              // 0x01C0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01C4   (0x0004)  MISSED
 	FMovieSceneFloatChannel                            Weight;                                                     // 0x01C8   (0x0110)  
-	SDK_UNDEFINED(80,12300) /* TMap<FName, FChannelMapInfo> */ __um(ControlChannelMap);                            // 0x02D8   (0x0050)  
+	SDK_UNDEFINED(80,12351) /* TMap<FName, FChannelMapInfo> */ __um(ControlChannelMap);                            // 0x02D8   (0x0050)  
 	TArray<FEnumParameterNameAndCurve>                 EnumParameterNamesAndCurves;                                // 0x0328   (0x0010)  
 	TArray<FIntegerParameterNameAndCurve>              IntegerParameterNamesAndCurves;                             // 0x0338   (0x0010)  
 	TArray<FSpaceControlNameAndChannel>                SpaceChannels;                                              // 0x0348   (0x0010)  
@@ -1554,7 +1675,7 @@ public:
 	TArray<class UMovieSceneSection*>                  Sections;                                                   // 0x00E8   (0x0010)  
 	FName                                              TrackName;                                                  // 0x00F8   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00FC   (0x0004)  MISSED
-	SDK_UNDEFINED(80,12301) /* TMap<FName, FControlRotationOrder> */ __um(ControlsRotationOrder);                  // 0x0100   (0x0050)  
+	SDK_UNDEFINED(80,12352) /* TMap<FName, FControlRotationOrder> */ __um(ControlsRotationOrder);                  // 0x0100   (0x0050)  
 	int32_t                                            PriorityOrder;                                              // 0x0150   (0x0004)  
 	unsigned char                                      UnknownData02_6[0x4];                                       // 0x0154   (0x0004)  MISSED
 };
@@ -1655,19 +1776,19 @@ public:
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRigPoseAsset.SelectControls
-	// void SelectControls(class UControlRig* InControlRig, bool bDoMirror);                                                 // [0x76d8908] Final|Native|Public|BlueprintCallable 
+	// void SelectControls(class UControlRig* InControlRig, bool bDoMirror);                                                 // [0x7629ec4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigPoseAsset.SavePose
-	// void SavePose(class UControlRig* InControlRig, bool bUseAll);                                                         // [0x76d8840] Final|Native|Public|BlueprintCallable 
+	// void SavePose(class UControlRig* InControlRig, bool bUseAll);                                                         // [0x7629d84] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigPoseAsset.ReplaceControlName
-	// void ReplaceControlName(FName& CurrentName, FName& NewName);                                                          // [0x76d8768] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ReplaceControlName(FName& CurrentName, FName& NewName);                                                          // [0x7629cac] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigPoseAsset.PastePose
-	// void PastePose(class UControlRig* InControlRig, bool bDoKey, bool bDoMirror);                                         // [0x76d71e4] Final|Native|Public|BlueprintCallable 
+	// void PastePose(class UControlRig* InControlRig, bool bDoKey, bool bDoMirror);                                         // [0x7628e10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigPoseAsset.GetCurrentPose
-	// void GetCurrentPose(class UControlRig* InControlRig, FControlRigControlPose& OutPose);                                // [0x76d5918] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GetCurrentPose(class UControlRig* InControlRig, FControlRigControlPose& OutPose);                                // [0x7627234] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/ControlRig.ControlRigPoseAsset.GetControlNames
-	// TArray<FName> GetControlNames();                                                                                      // [0x76d5758] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetControlNames();                                                                                      // [0x76270b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ControlRig.ControlRigPoseAsset.DoesMirrorMatch
-	// bool DoesMirrorMatch(class UControlRig* ControlRig, FName& ControlName);                                              // [0x76d4724] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool DoesMirrorMatch(class UControlRig* ControlRig, FName& ControlName);                                              // [0x7625f10] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ControlRig.ControlRigPoseMirrorSettings
@@ -1675,10 +1796,10 @@ public:
 class UControlRigPoseMirrorSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,12302) /* FString */              __um(RightSide);                                            // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,12303) /* FString */              __um(LeftSide);                                             // 0x0038   (0x0010)  
-	SDK_UNDEFINED(1,12304) /* TEnumAsByte<EAxis> */    __um(MirrorAxis);                                           // 0x0048   (0x0001)  
-	SDK_UNDEFINED(1,12305) /* TEnumAsByte<EAxis> */    __um(AxisToFlip);                                           // 0x0049   (0x0001)  
+	SDK_UNDEFINED(16,12353) /* FString */              __um(RightSide);                                            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,12354) /* FString */              __um(LeftSide);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(1,12355) /* TEnumAsByte<EAxis> */    __um(MirrorAxis);                                           // 0x0048   (0x0001)  
+	SDK_UNDEFINED(1,12356) /* TEnumAsByte<EAxis> */    __um(AxisToFlip);                                           // 0x0049   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x004A   (0x0006)  MISSED
 };
 
@@ -1701,7 +1822,7 @@ public:
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRigWorkflowOptions.EnsureAtLeastOneRigElementSelected
-	// bool EnsureAtLeastOneRigElementSelected();                                                                            // [0x76d499c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool EnsureAtLeastOneRigElementSelected();                                                                            // [0x76262b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ControlRig.ControlRigTransformWorkflowOptions
@@ -1709,13 +1830,13 @@ public:
 class UControlRigTransformWorkflowOptions : public UControlRigWorkflowOptions
 { 
 public:
-	SDK_UNDEFINED(1,12306) /* TEnumAsByte<ERigTransformType> */ __um(TransformType);                               // 0x00B0   (0x0001)  
+	SDK_UNDEFINED(1,12357) /* TEnumAsByte<ERigTransformType> */ __um(TransformType);                               // 0x00B0   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x00B1   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/ControlRig.ControlRigTransformWorkflowOptions.ProvideWorkflows
-	// TArray<FRigVMUserWorkflow> ProvideWorkflows(class UObject* InSubject);                                                // [0x76d7310] Final|Native|Public  
+	// TArray<FRigVMUserWorkflow> ProvideWorkflows(class UObject* InSubject);                                                // [0x7628ff4] Final|Native|Public  
 };
 
 /// Class /Script/ControlRig.ControlRigNumericalValidationPass
@@ -1881,14 +2002,14 @@ struct FMovieSceneControlRigInstanceData : FMovieSceneSequenceInstanceData
 struct FRigTransformStackEntry
 { 
 	FRigElementKey                                     Key;                                                        // 0x0000   (0x0008)  
-	SDK_UNDEFINED(1,12307) /* TEnumAsByte<ERigTransformStackEntryType> */ __um(EntryType);                         // 0x0008   (0x0001)  
-	SDK_UNDEFINED(1,12308) /* TEnumAsByte<ERigTransformType> */ __um(TransformType);                               // 0x0009   (0x0001)  
+	SDK_UNDEFINED(1,12358) /* TEnumAsByte<ERigTransformStackEntryType> */ __um(EntryType);                         // 0x0008   (0x0001)  
+	SDK_UNDEFINED(1,12359) /* TEnumAsByte<ERigTransformType> */ __um(TransformType);                               // 0x0009   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x000A   (0x0006)  MISSED
 	FTransform                                         OldTransform;                                               // 0x0010   (0x0060)  
 	FTransform                                         NewTransform;                                               // 0x0070   (0x0060)  
 	bool                                               bAffectChildren;                                            // 0x00D0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00D1   (0x0007)  MISSED
-	SDK_UNDEFINED(16,12309) /* TArray<FString> */      __um(Callstack);                                            // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,12360) /* TArray<FString> */      __um(Callstack);                                            // 0x00D8   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x00E8   (0x0008)  MISSED
 };
 
@@ -1954,18 +2075,9 @@ struct FRigReferenceElement : FRigSingleParentElement
 	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0240   (0x0010)  MISSED
 };
 
-/// Struct /Script/ControlRig.RigConnectionInfo
-/// Size: 0x0060 (0x000000 - 0x000060)
-struct FRigConnectionInfo
-{ 
-	SDK_UNDEFINED(80,12310) /* TMap<FRigElementKey, FRigElementKey> */ __um(ConnectionMap);                        // 0x0000   (0x0050)  
-	class URigHierarchy*                               SourceHierarchy;                                            // 0x0050   (0x0008)  
-	class URigHierarchy*                               TargetHierarchy;                                            // 0x0058   (0x0008)  
-};
-
-/// Struct /Script/ControlRig.RigConnectorInfo
+/// Struct /Script/ControlRig.RigConnectorState
 /// Size: 0x0038 (0x000000 - 0x000038)
-struct FRigConnectorInfo
+struct FRigConnectorState
 { 
 	FName                                              Name;                                                       // 0x0000   (0x0004)  
 	FRigElementKey                                     ResolvedTarget;                                             // 0x0004   (0x0008)  
@@ -1980,6 +2092,18 @@ struct FRigConnectorElement : FRigBaseElement
 	FRigConnectorSettings                              Settings;                                                   // 0x0048   (0x0028)  
 };
 
+/// Struct /Script/ControlRig.RigSocketState
+/// Size: 0x0090 (0x000000 - 0x000090)
+struct FRigSocketState
+{ 
+	FName                                              Name;                                                       // 0x0000   (0x0004)  
+	FRigElementKey                                     Parent;                                                     // 0x0004   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
+	FTransform                                         InitialLocalTransform;                                      // 0x0010   (0x0060)  
+	FLinearColor                                       Color;                                                      // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,12361) /* FString */              __um(Description);                                          // 0x0080   (0x0010)  
+};
+
 /// Struct /Script/ControlRig.RigSocketElement
 /// Size: 0x0000 (0x000240 - 0x000240)
 struct FRigSocketElement : FRigSingleParentElement
@@ -1991,7 +2115,7 @@ struct FRigSocketElement : FRigSingleParentElement
 struct FRigHierarchyCopyPasteContentPerElement
 { 
 	FRigElementKey                                     Key;                                                        // 0x0000   (0x0008)  
-	SDK_UNDEFINED(16,12311) /* FString */              __um(Content);                                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,12362) /* FString */              __um(Content);                                              // 0x0008   (0x0010)  
 	TArray<FRigElementKey>                             Parents;                                                    // 0x0018   (0x0010)  
 	TArray<FRigElementWeight>                          ParentWeights;                                              // 0x0028   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0038   (0x0008)  MISSED
@@ -2004,7 +2128,7 @@ struct FRigHierarchyCopyPasteContent
 { 
 	TArray<FRigHierarchyCopyPasteContentPerElement>    Elements;                                                   // 0x0000   (0x0010)  
 	TArray<ERigElementType>                            Types;                                                      // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,12312) /* TArray<FString> */      __um(Contents);                                             // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,12363) /* TArray<FString> */      __um(Contents);                                             // 0x0020   (0x0010)  
 	TArray<FTransform>                                 LocalTransforms;                                            // 0x0030   (0x0010)  
 	TArray<FTransform>                                 GlobalTransforms;                                           // 0x0040   (0x0010)  
 };
@@ -2022,22 +2146,22 @@ struct FRigUnit_DebugBase : FRigUnit
 };
 
 /// Struct /Script/ControlRig.ControlRigExecuteContext
-/// Size: 0x0080 (0x0000F0 - 0x000170)
+/// Size: 0x00D0 (0x0000F0 - 0x0001C0)
 struct FControlRigExecuteContext : FRigVMExecuteContext
 { 
-	unsigned char                                      UnknownData00_1[0x80];                                      // 0x00F0   (0x0080)  MISSED
+	unsigned char                                      UnknownData00_1[0xD0];                                      // 0x00F0   (0x00D0)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnitMutable
-/// Size: 0x0178 (0x000008 - 0x000180)
+/// Size: 0x01C8 (0x000008 - 0x0001D0)
 struct FRigUnitMutable : FRigUnit
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugBaseMutable
-/// Size: 0x0000 (0x000180 - 0x000180)
+/// Size: 0x0000 (0x0001D0 - 0x0001D0)
 struct FRigUnit_DebugBaseMutable : FRigUnitMutable
 { 
 };
@@ -2049,7 +2173,7 @@ struct FRigUnit_HighlevelBase : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_HighlevelBaseMutable
-/// Size: 0x0000 (0x000180 - 0x000180)
+/// Size: 0x0000 (0x0001D0 - 0x0001D0)
 struct FRigUnit_HighlevelBaseMutable : FRigUnitMutable
 { 
 };
@@ -2090,7 +2214,7 @@ struct FAnimNode_ControlRigBase : FAnimNode_CustomProperty
 	TArray<FBoneReference>                             OutputBonesToTransfer;                                      // 0x0080   (0x0010)  
 	TArray<class UAssetUserData*>                      AssetUserData;                                              // 0x0090   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x170];                                     // 0x00A0   (0x0170)  MISSED
-	SDK_UNDEFINED(8,12313) /* TWeakObjectPtr<UNodeMappingContainer*> */ __um(NodeMappingContainer);                // 0x0210   (0x0008)  
+	SDK_UNDEFINED(8,12364) /* TWeakObjectPtr<UNodeMappingContainer*> */ __um(NodeMappingContainer);                // 0x0210   (0x0008)  
 	FControlRigIOSettings                              InputSettings;                                              // 0x0218   (0x0002)  
 	FControlRigIOSettings                              OutputSettings;                                             // 0x021A   (0x0002)  
 	bool                                               bExecute;                                                   // 0x021C   (0x0001)  
@@ -2115,8 +2239,8 @@ struct FAnimNode_ControlRig : FAnimNode_ControlRigBase
 	FName                                              AlphaCurveName;                                             // 0x02B0   (0x0004)  
 	FInputScaleBiasClamp                               AlphaScaleBiasClamp;                                        // 0x02B4   (0x0030)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x02E4   (0x0004)  MISSED
-	SDK_UNDEFINED(80,12314) /* TMap<FName, FName> */   __um(InputMapping);                                         // 0x02E8   (0x0050)  
-	SDK_UNDEFINED(80,12315) /* TMap<FName, FName> */   __um(OutputMapping);                                        // 0x0338   (0x0050)  
+	SDK_UNDEFINED(80,12365) /* TMap<FName, FName> */   __um(InputMapping);                                         // 0x02E8   (0x0050)  
+	SDK_UNDEFINED(80,12366) /* TMap<FName, FName> */   __um(OutputMapping);                                        // 0x0338   (0x0050)  
 	unsigned char                                      UnknownData02_5[0xB0];                                      // 0x0388   (0x00B0)  MISSED
 	int32_t                                            LODThreshold;                                               // 0x0438   (0x0004)  
 	unsigned char                                      UnknownData03_6[0x3C];                                      // 0x043C   (0x003C)  MISSED
@@ -2126,7 +2250,7 @@ struct FAnimNode_ControlRig : FAnimNode_ControlRigBase
 /// Size: 0x0008 (0x000248 - 0x000250)
 struct FAnimNode_ControlRig_ExternalSource : FAnimNode_ControlRigBase
 { 
-	SDK_UNDEFINED(8,12316) /* TWeakObjectPtr<UControlRig*> */ __um(ControlRig);                                    // 0x0248   (0x0008)  
+	SDK_UNDEFINED(8,12367) /* TWeakObjectPtr<UControlRig*> */ __um(ControlRig);                                    // 0x0248   (0x0008)  
 };
 
 /// Struct /Script/ControlRig.ControlRigAnimInstanceProxy
@@ -2338,15 +2462,10 @@ struct FRigTagConnectionRule : FRigConnectionRule
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x000C   (0x0004)  MISSED
 };
 
-/// Struct /Script/ControlRig.RigChainConnectionRule
-/// Size: 0x0018 (0x000008 - 0x000020)
-struct FRigChainConnectionRule : FRigConnectionRule
+/// Struct /Script/ControlRig.RigChildOfPrimaryConnectionRule
+/// Size: 0x0000 (0x000008 - 0x000008)
+struct FRigChildOfPrimaryConnectionRule : FRigConnectionRule
 { 
-	FRigElementKey                                     RootConnector;                                              // 0x0008   (0x0008)  
-	int32_t                                            MinNumBones;                                                // 0x0010   (0x0004)  
-	int32_t                                            MaxNumBones;                                                // 0x0014   (0x0004)  
-	bool                                               bAllowBranches;                                             // 0x0018   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0019   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigControl
@@ -2464,6 +2583,28 @@ struct FRigElementKeyCollection
 struct FRigEventContext
 { 
 	unsigned char                                      UnknownData00_1[0x20];                                      // 0x0000   (0x0020)  MISSED
+};
+
+/// Struct /Script/ControlRig.RigElementResolveResult
+/// Size: 0x0028 (0x000000 - 0x000028)
+struct FRigElementResolveResult
+{ 
+	FRigElementKey                                     Key;                                                        // 0x0000   (0x0008)  
+	ERigElementResolveState                            State;                                                      // 0x0008   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
+	SDK_UNDEFINED(24,12368) /* FText */                __um(Message);                                              // 0x0010   (0x0018)  
+};
+
+/// Struct /Script/ControlRig.ModularRigResolveResult
+/// Size: 0x0048 (0x000000 - 0x000048)
+struct FModularRigResolveResult
+{ 
+	FRigElementKey                                     Connector;                                                  // 0x0000   (0x0008)  
+	TArray<FRigElementResolveResult>                   Matches;                                                    // 0x0008   (0x0010)  
+	TArray<FRigElementResolveResult>                   Excluded;                                                   // 0x0018   (0x0010)  
+	EModularRigResolveState                            State;                                                      // 0x0028   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0029   (0x0007)  MISSED
+	SDK_UNDEFINED(24,12369) /* FText */                __um(Message);                                              // 0x0030   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigBaseMetadata
@@ -2714,7 +2855,7 @@ struct FControlRotationOrder
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FControlRigSettingsPerPinBool
 { 
-	SDK_UNDEFINED(80,12317) /* TMap<FString, bool> */  __um(Values);                                               // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,12370) /* TMap<FString, bool> */  __um(Values);                                               // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/ControlRig.RigDispatchFactory
@@ -2759,7 +2900,7 @@ struct FRigUnit_SphereTraceWorld : FRigUnit
 { 
 	FVector                                            Start;                                                      // 0x0008   (0x0018)  
 	FVector                                            End;                                                        // 0x0020   (0x0018)  
-	SDK_UNDEFINED(1,12318) /* TEnumAsByte<ECollisionChannel> */ __um(Channel);                                     // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,12371) /* TEnumAsByte<ECollisionChannel> */ __um(Channel);                                     // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0039   (0x0003)  MISSED
 	float                                              Radius;                                                     // 0x003C   (0x0004)  
 	bool                                               bHit;                                                       // 0x0040   (0x0001)  
@@ -2775,7 +2916,7 @@ struct FRigUnit_SphereTraceByTraceChannel : FRigUnit
 { 
 	FVector                                            Start;                                                      // 0x0008   (0x0018)  
 	FVector                                            End;                                                        // 0x0020   (0x0018)  
-	SDK_UNDEFINED(1,12319) /* TEnumAsByte<ETraceTypeQuery> */ __um(TraceChannel);                                  // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,12372) /* TEnumAsByte<ETraceTypeQuery> */ __um(TraceChannel);                                  // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0039   (0x0003)  MISSED
 	float                                              Radius;                                                     // 0x003C   (0x0004)  
 	bool                                               bHit;                                                       // 0x0040   (0x0001)  
@@ -2791,7 +2932,7 @@ struct FRigUnit_SphereTraceByObjectTypes : FRigUnit
 { 
 	FVector                                            Start;                                                      // 0x0008   (0x0018)  
 	FVector                                            End;                                                        // 0x0020   (0x0018)  
-	SDK_UNDEFINED(16,12320) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(ObjectTypes);                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,12373) /* TArray<TEnumAsByte<EObjectTypeQuery>> */ __um(ObjectTypes);                         // 0x0038   (0x0010)  
 	float                                              Radius;                                                     // 0x0048   (0x0004)  
 	bool                                               bHit;                                                       // 0x004C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x004D   (0x0003)  MISSED
@@ -2827,15 +2968,14 @@ struct FRigDispatch_GetUserData : FRigDispatchFactory
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetupShapeLibraryFromUserData
-/// Size: 0x0040 (0x000180 - 0x0001C0)
+/// Size: 0x0040 (0x0001D0 - 0x000210)
 struct FRigUnit_SetupShapeLibraryFromUserData : FRigUnitMutable
 { 
-	SDK_UNDEFINED(16,12321) /* FString */              __um(NameSpace);                                            // 0x0180   (0x0010)  
-	SDK_UNDEFINED(16,12322) /* FString */              __um(Path);                                                 // 0x0190   (0x0010)  
-	SDK_UNDEFINED(16,12323) /* FString */              __um(LibraryName);                                          // 0x01A0   (0x0010)  
-	bool                                               ReplaceExisting;                                            // 0x01B0   (0x0001)  
-	bool                                               LogShapeLibraries;                                          // 0x01B1   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xE];                                       // 0x01B2   (0x000E)  MISSED
+	SDK_UNDEFINED(16,12374) /* FString */              __um(NameSpace);                                            // 0x01D0   (0x0010)  
+	SDK_UNDEFINED(16,12375) /* FString */              __um(Path);                                                 // 0x01E0   (0x0010)  
+	SDK_UNDEFINED(16,12376) /* FString */              __um(LibraryName);                                          // 0x01F0   (0x0010)  
+	bool                                               LogShapeLibraries;                                          // 0x0200   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0201   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_ShapeExists
@@ -2882,157 +3022,157 @@ struct FRigUnit_DebugBezierItemSpace : FRigVMFunction_DebugBaseMutable
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugHierarchy
-/// Size: 0x0208 (0x000008 - 0x000210)
+/// Size: 0x0258 (0x000008 - 0x000260)
 struct FRigUnit_DebugHierarchy : FRigVMFunction_DebugBase
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
-	float                                              Scale;                                                      // 0x0180   (0x0004)  
-	FLinearColor                                       Color;                                                      // 0x0184   (0x0010)  
-	float                                              Thickness;                                                  // 0x0194   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0198   (0x0008)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x01A0   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0200   (0x0001)  
-	unsigned char                                      UnknownData02_6[0xF];                                       // 0x0201   (0x000F)  MISSED
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
+	float                                              Scale;                                                      // 0x01D0   (0x0004)  
+	FLinearColor                                       Color;                                                      // 0x01D4   (0x0010)  
+	float                                              Thickness;                                                  // 0x01E4   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x8];                                       // 0x01E8   (0x0008)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x01F0   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x0250   (0x0001)  
+	unsigned char                                      UnknownData02_6[0xF];                                       // 0x0251   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugPose
-/// Size: 0x0278 (0x000008 - 0x000280)
+/// Size: 0x02C8 (0x000008 - 0x0002D0)
 struct FRigUnit_DebugPose : FRigVMFunction_DebugBase
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
-	FRigPose                                           Pose;                                                       // 0x0180   (0x0070)  
-	float                                              Scale;                                                      // 0x01F0   (0x0004)  
-	FLinearColor                                       Color;                                                      // 0x01F4   (0x0010)  
-	float                                              Thickness;                                                  // 0x0204   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0208   (0x0008)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x0210   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0270   (0x0001)  
-	unsigned char                                      UnknownData02_6[0xF];                                       // 0x0271   (0x000F)  MISSED
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
+	FRigPose                                           Pose;                                                       // 0x01D0   (0x0070)  
+	float                                              Scale;                                                      // 0x0240   (0x0004)  
+	FLinearColor                                       Color;                                                      // 0x0244   (0x0010)  
+	float                                              Thickness;                                                  // 0x0254   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0258   (0x0008)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0260   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x02C0   (0x0001)  
+	unsigned char                                      UnknownData02_6[0xF];                                       // 0x02C1   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugLine
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_DebugLine : FRigUnit_DebugBaseMutable
 { 
-	FVector                                            A;                                                          // 0x0180   (0x0018)  
-	FVector                                            B;                                                          // 0x0198   (0x0018)  
-	FLinearColor                                       Color;                                                      // 0x01B0   (0x0010)  
-	float                                              Thickness;                                                  // 0x01C0   (0x0004)  
-	FName                                              Space;                                                      // 0x01C4   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01C8   (0x0008)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x01D0   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0230   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0231   (0x000F)  MISSED
+	FVector                                            A;                                                          // 0x01D0   (0x0018)  
+	FVector                                            B;                                                          // 0x01E8   (0x0018)  
+	FLinearColor                                       Color;                                                      // 0x0200   (0x0010)  
+	float                                              Thickness;                                                  // 0x0210   (0x0004)  
+	FName                                              Space;                                                      // 0x0214   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0218   (0x0008)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0220   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x0280   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0281   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugLineItemSpace
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_DebugLineItemSpace : FRigUnit_DebugBaseMutable
 { 
-	FVector                                            A;                                                          // 0x0180   (0x0018)  
-	FVector                                            B;                                                          // 0x0198   (0x0018)  
-	FLinearColor                                       Color;                                                      // 0x01B0   (0x0010)  
-	float                                              Thickness;                                                  // 0x01C0   (0x0004)  
-	FRigElementKey                                     Space;                                                      // 0x01C4   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01CC   (0x0004)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x01D0   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0230   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0231   (0x000F)  MISSED
+	FVector                                            A;                                                          // 0x01D0   (0x0018)  
+	FVector                                            B;                                                          // 0x01E8   (0x0018)  
+	FLinearColor                                       Color;                                                      // 0x0200   (0x0010)  
+	float                                              Thickness;                                                  // 0x0210   (0x0004)  
+	FRigElementKey                                     Space;                                                      // 0x0214   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x021C   (0x0004)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0220   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x0280   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0281   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugLineStrip
-/// Size: 0x00A0 (0x000180 - 0x000220)
+/// Size: 0x00A0 (0x0001D0 - 0x000270)
 struct FRigUnit_DebugLineStrip : FRigUnit_DebugBaseMutable
 { 
-	TArray<FVector>                                    Points;                                                     // 0x0180   (0x0010)  
-	FLinearColor                                       Color;                                                      // 0x0190   (0x0010)  
-	float                                              Thickness;                                                  // 0x01A0   (0x0004)  
-	FName                                              Space;                                                      // 0x01A4   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01A8   (0x0008)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x01B0   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0210   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0211   (0x000F)  MISSED
+	TArray<FVector>                                    Points;                                                     // 0x01D0   (0x0010)  
+	FLinearColor                                       Color;                                                      // 0x01E0   (0x0010)  
+	float                                              Thickness;                                                  // 0x01F0   (0x0004)  
+	FName                                              Space;                                                      // 0x01F4   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01F8   (0x0008)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0200   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x0260   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0261   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugLineStripItemSpace
-/// Size: 0x00A0 (0x000180 - 0x000220)
+/// Size: 0x00A0 (0x0001D0 - 0x000270)
 struct FRigUnit_DebugLineStripItemSpace : FRigUnit_DebugBaseMutable
 { 
-	TArray<FVector>                                    Points;                                                     // 0x0180   (0x0010)  
-	FLinearColor                                       Color;                                                      // 0x0190   (0x0010)  
-	float                                              Thickness;                                                  // 0x01A0   (0x0004)  
-	FRigElementKey                                     Space;                                                      // 0x01A4   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01AC   (0x0004)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x01B0   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0210   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0211   (0x000F)  MISSED
-};
-
-/// Struct /Script/ControlRig.RigUnit_DebugRectangle
-/// Size: 0x00F0 (0x000180 - 0x000270)
-struct FRigUnit_DebugRectangle : FRigUnit_DebugBaseMutable
-{ 
-	FTransform                                         Transform;                                                  // 0x0180   (0x0060)  
+	TArray<FVector>                                    Points;                                                     // 0x01D0   (0x0010)  
 	FLinearColor                                       Color;                                                      // 0x01E0   (0x0010)  
-	float                                              Scale;                                                      // 0x01F0   (0x0004)  
-	float                                              Thickness;                                                  // 0x01F4   (0x0004)  
-	FName                                              Space;                                                      // 0x01F8   (0x0004)  
+	float                                              Thickness;                                                  // 0x01F0   (0x0004)  
+	FRigElementKey                                     Space;                                                      // 0x01F4   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01FC   (0x0004)  MISSED
 	FTransform                                         WorldOffset;                                                // 0x0200   (0x0060)  
 	bool                                               bEnabled;                                                   // 0x0260   (0x0001)  
 	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0261   (0x000F)  MISSED
 };
 
+/// Struct /Script/ControlRig.RigUnit_DebugRectangle
+/// Size: 0x00F0 (0x0001D0 - 0x0002C0)
+struct FRigUnit_DebugRectangle : FRigUnit_DebugBaseMutable
+{ 
+	FTransform                                         Transform;                                                  // 0x01D0   (0x0060)  
+	FLinearColor                                       Color;                                                      // 0x0230   (0x0010)  
+	float                                              Scale;                                                      // 0x0240   (0x0004)  
+	float                                              Thickness;                                                  // 0x0244   (0x0004)  
+	FName                                              Space;                                                      // 0x0248   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x024C   (0x0004)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0250   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x02B0   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xF];                                       // 0x02B1   (0x000F)  MISSED
+};
+
 /// Struct /Script/ControlRig.RigUnit_DebugRectangleItemSpace
-/// Size: 0x00F0 (0x000180 - 0x000270)
+/// Size: 0x00F0 (0x0001D0 - 0x0002C0)
 struct FRigUnit_DebugRectangleItemSpace : FRigUnit_DebugBaseMutable
 { 
-	FTransform                                         Transform;                                                  // 0x0180   (0x0060)  
-	FLinearColor                                       Color;                                                      // 0x01E0   (0x0010)  
-	float                                              Scale;                                                      // 0x01F0   (0x0004)  
-	float                                              Thickness;                                                  // 0x01F4   (0x0004)  
-	FRigElementKey                                     Space;                                                      // 0x01F8   (0x0008)  
-	FTransform                                         WorldOffset;                                                // 0x0200   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0260   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0261   (0x000F)  MISSED
+	FTransform                                         Transform;                                                  // 0x01D0   (0x0060)  
+	FLinearColor                                       Color;                                                      // 0x0230   (0x0010)  
+	float                                              Scale;                                                      // 0x0240   (0x0004)  
+	float                                              Thickness;                                                  // 0x0244   (0x0004)  
+	FRigElementKey                                     Space;                                                      // 0x0248   (0x0008)  
+	FTransform                                         WorldOffset;                                                // 0x0250   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x02B0   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x02B1   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugArc
-/// Size: 0x0100 (0x000180 - 0x000280)
+/// Size: 0x0100 (0x0001D0 - 0x0002D0)
 struct FRigUnit_DebugArc : FRigUnit_DebugBaseMutable
 { 
-	FTransform                                         Transform;                                                  // 0x0180   (0x0060)  
-	FLinearColor                                       Color;                                                      // 0x01E0   (0x0010)  
-	float                                              Radius;                                                     // 0x01F0   (0x0004)  
-	float                                              MinimumDegrees;                                             // 0x01F4   (0x0004)  
-	float                                              MaximumDegrees;                                             // 0x01F8   (0x0004)  
-	float                                              Thickness;                                                  // 0x01FC   (0x0004)  
-	int32_t                                            Detail;                                                     // 0x0200   (0x0004)  
-	FName                                              Space;                                                      // 0x0204   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0208   (0x0008)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x0210   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0270   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0271   (0x000F)  MISSED
+	FTransform                                         Transform;                                                  // 0x01D0   (0x0060)  
+	FLinearColor                                       Color;                                                      // 0x0230   (0x0010)  
+	float                                              Radius;                                                     // 0x0240   (0x0004)  
+	float                                              MinimumDegrees;                                             // 0x0244   (0x0004)  
+	float                                              MaximumDegrees;                                             // 0x0248   (0x0004)  
+	float                                              Thickness;                                                  // 0x024C   (0x0004)  
+	int32_t                                            Detail;                                                     // 0x0250   (0x0004)  
+	FName                                              Space;                                                      // 0x0254   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0258   (0x0008)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0260   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x02C0   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xF];                                       // 0x02C1   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugArcItemSpace
-/// Size: 0x0100 (0x000180 - 0x000280)
+/// Size: 0x0100 (0x0001D0 - 0x0002D0)
 struct FRigUnit_DebugArcItemSpace : FRigUnit_DebugBaseMutable
 { 
-	FTransform                                         Transform;                                                  // 0x0180   (0x0060)  
-	FLinearColor                                       Color;                                                      // 0x01E0   (0x0010)  
-	float                                              Radius;                                                     // 0x01F0   (0x0004)  
-	float                                              MinimumDegrees;                                             // 0x01F4   (0x0004)  
-	float                                              MaximumDegrees;                                             // 0x01F8   (0x0004)  
-	float                                              Thickness;                                                  // 0x01FC   (0x0004)  
-	int32_t                                            Detail;                                                     // 0x0200   (0x0004)  
-	FRigElementKey                                     Space;                                                      // 0x0204   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x020C   (0x0004)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x0210   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0270   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0271   (0x000F)  MISSED
+	FTransform                                         Transform;                                                  // 0x01D0   (0x0060)  
+	FLinearColor                                       Color;                                                      // 0x0230   (0x0010)  
+	float                                              Radius;                                                     // 0x0240   (0x0004)  
+	float                                              MinimumDegrees;                                             // 0x0244   (0x0004)  
+	float                                              MaximumDegrees;                                             // 0x0248   (0x0004)  
+	float                                              Thickness;                                                  // 0x024C   (0x0004)  
+	int32_t                                            Detail;                                                     // 0x0250   (0x0004)  
+	FRigElementKey                                     Space;                                                      // 0x0254   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x025C   (0x0004)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0260   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x02C0   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xF];                                       // 0x02C1   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugTransform
@@ -3053,36 +3193,36 @@ struct FRigUnit_DebugTransform : FRigUnit_DebugBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugTransformMutable
-/// Size: 0x00F0 (0x000180 - 0x000270)
+/// Size: 0x00F0 (0x0001D0 - 0x0002C0)
 struct FRigUnit_DebugTransformMutable : FRigUnit_DebugBaseMutable
 { 
-	FTransform                                         Transform;                                                  // 0x0180   (0x0060)  
-	ERigUnitDebugTransformMode                         Mode;                                                       // 0x01E0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01E1   (0x0003)  MISSED
-	FLinearColor                                       Color;                                                      // 0x01E4   (0x0010)  
-	float                                              Thickness;                                                  // 0x01F4   (0x0004)  
-	float                                              Scale;                                                      // 0x01F8   (0x0004)  
-	FName                                              Space;                                                      // 0x01FC   (0x0004)  
-	FTransform                                         WorldOffset;                                                // 0x0200   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0260   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xF];                                       // 0x0261   (0x000F)  MISSED
+	FTransform                                         Transform;                                                  // 0x01D0   (0x0060)  
+	ERigUnitDebugTransformMode                         Mode;                                                       // 0x0230   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0231   (0x0003)  MISSED
+	FLinearColor                                       Color;                                                      // 0x0234   (0x0010)  
+	float                                              Thickness;                                                  // 0x0244   (0x0004)  
+	float                                              Scale;                                                      // 0x0248   (0x0004)  
+	FName                                              Space;                                                      // 0x024C   (0x0004)  
+	FTransform                                         WorldOffset;                                                // 0x0250   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x02B0   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xF];                                       // 0x02B1   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugTransformMutableItemSpace
-/// Size: 0x0100 (0x000180 - 0x000280)
+/// Size: 0x0100 (0x0001D0 - 0x0002D0)
 struct FRigUnit_DebugTransformMutableItemSpace : FRigUnit_DebugBaseMutable
 { 
-	FTransform                                         Transform;                                                  // 0x0180   (0x0060)  
-	ERigUnitDebugTransformMode                         Mode;                                                       // 0x01E0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01E1   (0x0003)  MISSED
-	FLinearColor                                       Color;                                                      // 0x01E4   (0x0010)  
-	float                                              Thickness;                                                  // 0x01F4   (0x0004)  
-	float                                              Scale;                                                      // 0x01F8   (0x0004)  
-	FRigElementKey                                     Space;                                                      // 0x01FC   (0x0008)  
-	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0204   (0x000C)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x0210   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0270   (0x0001)  
-	unsigned char                                      UnknownData02_6[0xF];                                       // 0x0271   (0x000F)  MISSED
+	FTransform                                         Transform;                                                  // 0x01D0   (0x0060)  
+	ERigUnitDebugTransformMode                         Mode;                                                       // 0x0230   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0231   (0x0003)  MISSED
+	FLinearColor                                       Color;                                                      // 0x0234   (0x0010)  
+	float                                              Thickness;                                                  // 0x0244   (0x0004)  
+	float                                              Scale;                                                      // 0x0248   (0x0004)  
+	FRigElementKey                                     Space;                                                      // 0x024C   (0x0008)  
+	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0254   (0x000C)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0260   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x02C0   (0x0001)  
+	unsigned char                                      UnknownData02_6[0xF];                                       // 0x02C1   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugTransformArrayMutable_WorkData
@@ -3093,39 +3233,39 @@ struct FRigUnit_DebugTransformArrayMutable_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugTransformArrayMutable
-/// Size: 0x00B0 (0x000180 - 0x000230)
+/// Size: 0x00B0 (0x0001D0 - 0x000280)
 struct FRigUnit_DebugTransformArrayMutable : FRigUnit_DebugBaseMutable
 { 
-	TArray<FTransform>                                 Transforms;                                                 // 0x0180   (0x0010)  
-	ERigUnitDebugTransformMode                         Mode;                                                       // 0x0190   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0191   (0x0003)  MISSED
-	FLinearColor                                       Color;                                                      // 0x0194   (0x0010)  
-	float                                              Thickness;                                                  // 0x01A4   (0x0004)  
-	float                                              Scale;                                                      // 0x01A8   (0x0004)  
-	FName                                              Space;                                                      // 0x01AC   (0x0004)  
-	FTransform                                         WorldOffset;                                                // 0x01B0   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0210   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0211   (0x0007)  MISSED
-	FRigUnit_DebugTransformArrayMutable_WorkData       WorkData;                                                   // 0x0218   (0x0010)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0228   (0x0008)  MISSED
+	TArray<FTransform>                                 Transforms;                                                 // 0x01D0   (0x0010)  
+	ERigUnitDebugTransformMode                         Mode;                                                       // 0x01E0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01E1   (0x0003)  MISSED
+	FLinearColor                                       Color;                                                      // 0x01E4   (0x0010)  
+	float                                              Thickness;                                                  // 0x01F4   (0x0004)  
+	float                                              Scale;                                                      // 0x01F8   (0x0004)  
+	FName                                              Space;                                                      // 0x01FC   (0x0004)  
+	FTransform                                         WorldOffset;                                                // 0x0200   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x0260   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0261   (0x0007)  MISSED
+	FRigUnit_DebugTransformArrayMutable_WorkData       WorkData;                                                   // 0x0268   (0x0010)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0278   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DebugTransformArrayMutableItemSpace
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_DebugTransformArrayMutableItemSpace : FRigUnit_DebugBaseMutable
 { 
-	TArray<FTransform>                                 Transforms;                                                 // 0x0180   (0x0010)  
-	TArray<int32_t>                                    ParentIndices;                                              // 0x0190   (0x0010)  
-	ERigUnitDebugTransformMode                         Mode;                                                       // 0x01A0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01A1   (0x0003)  MISSED
-	FLinearColor                                       Color;                                                      // 0x01A4   (0x0010)  
-	float                                              Thickness;                                                  // 0x01B4   (0x0004)  
-	float                                              Scale;                                                      // 0x01B8   (0x0004)  
-	FRigElementKey                                     Space;                                                      // 0x01BC   (0x0008)  
-	unsigned char                                      UnknownData01_5[0xC];                                       // 0x01C4   (0x000C)  MISSED
-	FTransform                                         WorldOffset;                                                // 0x01D0   (0x0060)  
-	bool                                               bEnabled;                                                   // 0x0230   (0x0001)  
-	unsigned char                                      UnknownData02_6[0xF];                                       // 0x0231   (0x000F)  MISSED
+	TArray<FTransform>                                 Transforms;                                                 // 0x01D0   (0x0010)  
+	TArray<int32_t>                                    ParentIndices;                                              // 0x01E0   (0x0010)  
+	ERigUnitDebugTransformMode                         Mode;                                                       // 0x01F0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F1   (0x0003)  MISSED
+	FLinearColor                                       Color;                                                      // 0x01F4   (0x0010)  
+	float                                              Thickness;                                                  // 0x0204   (0x0004)  
+	float                                              Scale;                                                      // 0x0208   (0x0004)  
+	FRigElementKey                                     Space;                                                      // 0x020C   (0x0008)  
+	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0214   (0x000C)  MISSED
+	FTransform                                         WorldOffset;                                                // 0x0220   (0x0060)  
+	bool                                               bEnabled;                                                   // 0x0280   (0x0001)  
+	unsigned char                                      UnknownData02_6[0xF];                                       // 0x0281   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_StartProfilingTimer
@@ -3140,7 +3280,7 @@ struct FRigUnit_EndProfilingTimer : FRigVMFunction_DebugBaseMutable
 { 
 	int32_t                                            NumberOfMeasurements;                                       // 0x0100   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0104   (0x0004)  MISSED
-	SDK_UNDEFINED(16,12324) /* FString */              __um(Prefix);                                               // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,12377) /* FString */              __um(Prefix);                                               // 0x0108   (0x0010)  
 	float                                              AccumulatedTime;                                            // 0x0118   (0x0004)  
 	int32_t                                            MeasurementsLeft;                                           // 0x011C   (0x0004)  
 	bool                                               bIsInitialized;                                             // 0x0120   (0x0001)  
@@ -3520,35 +3660,35 @@ struct FRigUnit_AimConstraint_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_AimConstraint
-/// Size: 0x0070 (0x000180 - 0x0001F0)
+/// Size: 0x0070 (0x0001D0 - 0x000240)
 struct FRigUnit_AimConstraint : FRigUnitMutable
 { 
-	FName                                              Joint;                                                      // 0x0180   (0x0004)  
-	EAimMode                                           AimMode;                                                    // 0x0184   (0x0001)  
-	EAimMode                                           UpMode;                                                     // 0x0185   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0186   (0x0002)  MISSED
-	FVector                                            AimVector;                                                  // 0x0188   (0x0018)  
-	FVector                                            UpVector;                                                   // 0x01A0   (0x0018)  
-	TArray<FAimTarget>                                 AimTargets;                                                 // 0x01B8   (0x0010)  
-	TArray<FAimTarget>                                 UpTargets;                                                  // 0x01C8   (0x0010)  
-	FRigUnit_AimConstraint_WorkData                    WorkData;                                                   // 0x01D8   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01E8   (0x0008)  MISSED
+	FName                                              Joint;                                                      // 0x01D0   (0x0004)  
+	EAimMode                                           AimMode;                                                    // 0x01D4   (0x0001)  
+	EAimMode                                           UpMode;                                                     // 0x01D5   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x01D6   (0x0002)  MISSED
+	FVector                                            AimVector;                                                  // 0x01D8   (0x0018)  
+	FVector                                            UpVector;                                                   // 0x01F0   (0x0018)  
+	TArray<FAimTarget>                                 AimTargets;                                                 // 0x0208   (0x0010)  
+	TArray<FAimTarget>                                 UpTargets;                                                  // 0x0218   (0x0010)  
+	FRigUnit_AimConstraint_WorkData                    WorkData;                                                   // 0x0228   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0238   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_ApplyFK
-/// Size: 0x00F0 (0x000180 - 0x000270)
+/// Size: 0x00F0 (0x0001D0 - 0x0002C0)
 struct FRigUnit_ApplyFK : FRigUnitMutable
 { 
-	FName                                              Joint;                                                      // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	FTransformFilter                                   Filter;                                                     // 0x01F0   (0x0009)  
-	EApplyTransformMode                                ApplyTransformMode;                                         // 0x01F9   (0x0001)  
-	ETransformSpaceMode                                ApplyTransformSpace;                                        // 0x01FA   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x5];                                       // 0x01FB   (0x0005)  MISSED
-	FTransform                                         BaseTransform;                                              // 0x0200   (0x0060)  
-	FName                                              BaseJoint;                                                  // 0x0260   (0x0004)  
-	unsigned char                                      UnknownData02_6[0xC];                                       // 0x0264   (0x000C)  MISSED
+	FName                                              Joint;                                                      // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	FTransformFilter                                   Filter;                                                     // 0x0240   (0x0009)  
+	EApplyTransformMode                                ApplyTransformMode;                                         // 0x0249   (0x0001)  
+	ETransformSpaceMode                                ApplyTransformSpace;                                        // 0x024A   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x5];                                       // 0x024B   (0x0005)  MISSED
+	FTransform                                         BaseTransform;                                              // 0x0250   (0x0060)  
+	FName                                              BaseJoint;                                                  // 0x02B0   (0x0004)  
+	unsigned char                                      UnknownData02_6[0xC];                                       // 0x02B4   (0x000C)  MISSED
 };
 
 /// Struct /Script/ControlRig.BlendTarget
@@ -3571,46 +3711,46 @@ struct FRigUnit_BlendTransform : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_GetJointTransform
-/// Size: 0x00E0 (0x000180 - 0x000260)
+/// Size: 0x00E0 (0x0001D0 - 0x0002B0)
 struct FRigUnit_GetJointTransform : FRigUnitMutable
 { 
-	FName                                              Joint;                                                      // 0x0180   (0x0004)  
-	ETransformGetterType                               Type;                                                       // 0x0184   (0x0001)  
-	ETransformSpaceMode                                TransformSpace;                                             // 0x0185   (0x0001)  
-	unsigned char                                      UnknownData00_5[0xA];                                       // 0x0186   (0x000A)  MISSED
-	FTransform                                         BaseTransform;                                              // 0x0190   (0x0060)  
-	FName                                              BaseJoint;                                                  // 0x01F0   (0x0004)  
-	unsigned char                                      UnknownData01_5[0xC];                                       // 0x01F4   (0x000C)  MISSED
-	FTransform                                         Output;                                                     // 0x0200   (0x0060)  
+	FName                                              Joint;                                                      // 0x01D0   (0x0004)  
+	ETransformGetterType                               Type;                                                       // 0x01D4   (0x0001)  
+	ETransformSpaceMode                                TransformSpace;                                             // 0x01D5   (0x0001)  
+	unsigned char                                      UnknownData00_5[0xA];                                       // 0x01D6   (0x000A)  MISSED
+	FTransform                                         BaseTransform;                                              // 0x01E0   (0x0060)  
+	FName                                              BaseJoint;                                                  // 0x0240   (0x0004)  
+	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0244   (0x000C)  MISSED
+	FTransform                                         Output;                                                     // 0x0250   (0x0060)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_TwoBoneIKFK
-/// Size: 0x0310 (0x000180 - 0x000490)
+/// Size: 0x0310 (0x0001D0 - 0x0004E0)
 struct FRigUnit_TwoBoneIKFK : FRigUnitMutable
 { 
-	FName                                              StartJoint;                                                 // 0x0180   (0x0004)  
-	FName                                              EndJoint;                                                   // 0x0184   (0x0004)  
-	FVector                                            PoleTarget;                                                 // 0x0188   (0x0018)  
-	float                                              Spin;                                                       // 0x01A0   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01A4   (0x000C)  MISSED
-	FTransform                                         EndEffector;                                                // 0x01B0   (0x0060)  
-	float                                              IKBlend;                                                    // 0x0210   (0x0004)  
-	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0214   (0x000C)  MISSED
-	FTransform                                         StartJointFKTransform;                                      // 0x0220   (0x0060)  
-	FTransform                                         MidJointFKTransform;                                        // 0x0280   (0x0060)  
-	FTransform                                         EndJointFKTransform;                                        // 0x02E0   (0x0060)  
-	float                                              PreviousFKIKBlend;                                          // 0x0340   (0x0004)  
-	unsigned char                                      UnknownData02_5[0xC];                                       // 0x0344   (0x000C)  MISSED
-	FTransform                                         StartJointIKTransform;                                      // 0x0350   (0x0060)  
-	FTransform                                         MidJointIKTransform;                                        // 0x03B0   (0x0060)  
-	FTransform                                         EndJointIKTransform;                                        // 0x0410   (0x0060)  
-	int32_t                                            StartJointIndex;                                            // 0x0470   (0x0004)  
-	int32_t                                            MidJointIndex;                                              // 0x0474   (0x0004)  
-	int32_t                                            EndJointIndex;                                              // 0x0478   (0x0004)  
-	float                                              UpperLimbLength;                                            // 0x047C   (0x0004)  
-	float                                              LowerLimbLength;                                            // 0x0480   (0x0004)  
-	bool                                               bIsInitialized;                                             // 0x0484   (0x0001)  
-	unsigned char                                      UnknownData03_6[0xB];                                       // 0x0485   (0x000B)  MISSED
+	FName                                              StartJoint;                                                 // 0x01D0   (0x0004)  
+	FName                                              EndJoint;                                                   // 0x01D4   (0x0004)  
+	FVector                                            PoleTarget;                                                 // 0x01D8   (0x0018)  
+	float                                              Spin;                                                       // 0x01F0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01F4   (0x000C)  MISSED
+	FTransform                                         EndEffector;                                                // 0x0200   (0x0060)  
+	float                                              IKBlend;                                                    // 0x0260   (0x0004)  
+	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0264   (0x000C)  MISSED
+	FTransform                                         StartJointFKTransform;                                      // 0x0270   (0x0060)  
+	FTransform                                         MidJointFKTransform;                                        // 0x02D0   (0x0060)  
+	FTransform                                         EndJointFKTransform;                                        // 0x0330   (0x0060)  
+	float                                              PreviousFKIKBlend;                                          // 0x0390   (0x0004)  
+	unsigned char                                      UnknownData02_5[0xC];                                       // 0x0394   (0x000C)  MISSED
+	FTransform                                         StartJointIKTransform;                                      // 0x03A0   (0x0060)  
+	FTransform                                         MidJointIKTransform;                                        // 0x0400   (0x0060)  
+	FTransform                                         EndJointIKTransform;                                        // 0x0460   (0x0060)  
+	int32_t                                            StartJointIndex;                                            // 0x04C0   (0x0004)  
+	int32_t                                            MidJointIndex;                                              // 0x04C4   (0x0004)  
+	int32_t                                            EndJointIndex;                                              // 0x04C8   (0x0004)  
+	float                                              UpperLimbLength;                                            // 0x04CC   (0x0004)  
+	float                                              LowerLimbLength;                                            // 0x04D0   (0x0004)  
+	bool                                               bIsInitialized;                                             // 0x04D4   (0x0001)  
+	unsigned char                                      UnknownData03_6[0xB];                                       // 0x04D5   (0x000B)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DrawContainerGetInstruction
@@ -3624,54 +3764,54 @@ struct FRigUnit_DrawContainerGetInstruction : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_DrawContainerSetColor
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_DrawContainerSetColor : FRigUnitMutable
 { 
-	FName                                              InstructionName;                                            // 0x0180   (0x0004)  
-	FLinearColor                                       Color;                                                      // 0x0184   (0x0010)  
-	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0194   (0x000C)  MISSED
+	FName                                              InstructionName;                                            // 0x01D0   (0x0004)  
+	FLinearColor                                       Color;                                                      // 0x01D4   (0x0010)  
+	unsigned char                                      UnknownData00_6[0xC];                                       // 0x01E4   (0x000C)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DrawContainerSetThickness
-/// Size: 0x0010 (0x000180 - 0x000190)
+/// Size: 0x0010 (0x0001D0 - 0x0001E0)
 struct FRigUnit_DrawContainerSetThickness : FRigUnitMutable
 { 
-	FName                                              InstructionName;                                            // 0x0180   (0x0004)  
-	float                                              Thickness;                                                  // 0x0184   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0188   (0x0008)  MISSED
+	FName                                              InstructionName;                                            // 0x01D0   (0x0004)  
+	float                                              Thickness;                                                  // 0x01D4   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01D8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DrawContainerSetTransform
-/// Size: 0x0070 (0x000180 - 0x0001F0)
+/// Size: 0x0070 (0x0001D0 - 0x000240)
 struct FRigUnit_DrawContainerSetTransform : FRigUnitMutable
 { 
-	FName                                              InstructionName;                                            // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
+	FName                                              InstructionName;                                            // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_BeginExecution
-/// Size: 0x0178 (0x000008 - 0x000180)
+/// Size: 0x01C8 (0x000008 - 0x0001D0)
 struct FRigUnit_BeginExecution : FRigUnit
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_PreBeginExecution
-/// Size: 0x0178 (0x000008 - 0x000180)
+/// Size: 0x01C8 (0x000008 - 0x0001D0)
 struct FRigUnit_PreBeginExecution : FRigUnit
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_PostBeginExecution
-/// Size: 0x0178 (0x000008 - 0x000180)
+/// Size: 0x01C8 (0x000008 - 0x0001D0)
 struct FRigUnit_PostBeginExecution : FRigUnit
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_CollectionBase
@@ -3681,7 +3821,7 @@ struct FRigUnit_CollectionBase : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_CollectionBaseMutable
-/// Size: 0x0000 (0x000180 - 0x000180)
+/// Size: 0x0000 (0x0001D0 - 0x0001D0)
 struct FRigUnit_CollectionBaseMutable : FRigUnitMutable
 { 
 };
@@ -3878,18 +4018,18 @@ struct FRigUnit_CollectionItemAtIndex : FRigUnit_CollectionBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_CollectionLoop
-/// Size: 0x01A0 (0x000180 - 0x000320)
+/// Size: 0x01F0 (0x0001D0 - 0x0003C0)
 struct FRigUnit_CollectionLoop : FRigUnit_CollectionBaseMutable
 { 
-	FName                                              BlockToRun;                                                 // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	FRigElementKeyCollection                           Collection;                                                 // 0x0188   (0x0010)  
-	FRigElementKey                                     Item;                                                       // 0x0198   (0x0008)  
-	int32_t                                            Index;                                                      // 0x01A0   (0x0004)  
-	int32_t                                            Count;                                                      // 0x01A4   (0x0004)  
-	float                                              Ratio;                                                      // 0x01A8   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01AC   (0x0004)  MISSED
-	FControlRigExecuteContext                          Completed;                                                  // 0x01B0   (0x0170)  
+	FName                                              BlockToRun;                                                 // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	FRigElementKeyCollection                           Collection;                                                 // 0x01D8   (0x0010)  
+	FRigElementKey                                     Item;                                                       // 0x01E8   (0x0008)  
+	int32_t                                            Index;                                                      // 0x01F0   (0x0004)  
+	int32_t                                            Count;                                                      // 0x01F4   (0x0004)  
+	float                                              Ratio;                                                      // 0x01F8   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01FC   (0x0004)  MISSED
+	FControlRigExecuteContext                          Completed;                                                  // 0x0200   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_CollectionAddItem
@@ -3908,37 +4048,37 @@ struct FRigUnit_DynamicHierarchyBase : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_DynamicHierarchyBaseMutable
-/// Size: 0x0000 (0x000180 - 0x000180)
+/// Size: 0x0000 (0x0001D0 - 0x0001D0)
 struct FRigUnit_DynamicHierarchyBaseMutable : FRigUnitMutable
 { 
 };
 
 /// Struct /Script/ControlRig.RigUnit_AddParent
-/// Size: 0x0010 (0x000180 - 0x000190)
+/// Size: 0x0010 (0x0001D0 - 0x0001E0)
 struct FRigUnit_AddParent : FRigUnit_DynamicHierarchyBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	FRigElementKey                                     Parent;                                                     // 0x0188   (0x0008)  
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	FRigElementKey                                     Parent;                                                     // 0x01D8   (0x0008)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetDefaultParent
-/// Size: 0x0010 (0x000180 - 0x000190)
+/// Size: 0x0010 (0x0001D0 - 0x0001E0)
 struct FRigUnit_SetDefaultParent : FRigUnit_DynamicHierarchyBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	FRigElementKey                                     Parent;                                                     // 0x0188   (0x0008)  
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	FRigElementKey                                     Parent;                                                     // 0x01D8   (0x0008)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SwitchParent
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_SwitchParent : FRigUnit_DynamicHierarchyBaseMutable
 { 
-	ERigSwitchParentMode                               Mode;                                                       // 0x0180   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0181   (0x0003)  MISSED
-	FRigElementKey                                     Child;                                                      // 0x0184   (0x0008)  
-	FRigElementKey                                     Parent;                                                     // 0x018C   (0x0008)  
-	bool                                               bMaintainGlobal;                                            // 0x0194   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xB];                                       // 0x0195   (0x000B)  MISSED
+	ERigSwitchParentMode                               Mode;                                                       // 0x01D0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01D1   (0x0003)  MISSED
+	FRigElementKey                                     Child;                                                      // 0x01D4   (0x0008)  
+	FRigElementKey                                     Parent;                                                     // 0x01DC   (0x0008)  
+	bool                                               bMaintainGlobal;                                            // 0x01E4   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xB];                                       // 0x01E5   (0x000B)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyGetParentWeights
@@ -3960,66 +4100,66 @@ struct FRigUnit_HierarchyGetParentWeightsArray : FRigUnit_DynamicHierarchyBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchySetParentWeights
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_HierarchySetParentWeights : FRigUnit_DynamicHierarchyBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	TArray<FRigElementWeight>                          Weights;                                                    // 0x0188   (0x0010)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0198   (0x0008)  MISSED
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	TArray<FRigElementWeight>                          Weights;                                                    // 0x01D8   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01E8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyReset
-/// Size: 0x0000 (0x000180 - 0x000180)
+/// Size: 0x0000 (0x0001D0 - 0x0001D0)
 struct FRigUnit_HierarchyReset : FRigUnit_DynamicHierarchyBaseMutable
 { 
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyImportFromSkeleton
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_HierarchyImportFromSkeleton : FRigUnit_DynamicHierarchyBaseMutable
 { 
-	FName                                              NameSpace;                                                  // 0x0180   (0x0004)  
-	bool                                               bIncludeCurves;                                             // 0x0184   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0185   (0x0003)  MISSED
-	TArray<FRigElementKey>                             Items;                                                      // 0x0188   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0198   (0x0008)  MISSED
+	FName                                              NameSpace;                                                  // 0x01D0   (0x0004)  
+	bool                                               bIncludeCurves;                                             // 0x01D4   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01D5   (0x0003)  MISSED
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D8   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01E8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyRemoveElement
-/// Size: 0x0010 (0x000180 - 0x000190)
+/// Size: 0x0010 (0x0001D0 - 0x0001E0)
 struct FRigUnit_HierarchyRemoveElement : FRigUnit_DynamicHierarchyBaseMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	bool                                               bSuccess;                                                   // 0x0188   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0189   (0x0007)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	bool                                               bSuccess;                                                   // 0x01D8   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x01D9   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddElement
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_HierarchyAddElement : FRigUnit_DynamicHierarchyBaseMutable
 { 
-	FRigElementKey                                     Parent;                                                     // 0x0180   (0x0008)  
-	FName                                              Name;                                                       // 0x0188   (0x0004)  
-	FRigElementKey                                     Item;                                                       // 0x018C   (0x0008)  
-	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0194   (0x000C)  MISSED
+	FRigElementKey                                     Parent;                                                     // 0x01D0   (0x0008)  
+	FName                                              Name;                                                       // 0x01D8   (0x0004)  
+	FRigElementKey                                     Item;                                                       // 0x01DC   (0x0008)  
+	unsigned char                                      UnknownData00_6[0xC];                                       // 0x01E4   (0x000C)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddBone
-/// Size: 0x0070 (0x0001A0 - 0x000210)
+/// Size: 0x0070 (0x0001F0 - 0x000260)
 struct FRigUnit_HierarchyAddBone : FRigUnit_HierarchyAddElement
 { 
-	FTransform                                         Transform;                                                  // 0x01A0   (0x0060)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0200   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0201   (0x000F)  MISSED
+	FTransform                                         Transform;                                                  // 0x01F0   (0x0060)  
+	ERigVMTransformSpace                               Space;                                                      // 0x0250   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0251   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddNull
-/// Size: 0x0070 (0x0001A0 - 0x000210)
+/// Size: 0x0070 (0x0001F0 - 0x000260)
 struct FRigUnit_HierarchyAddNull : FRigUnit_HierarchyAddElement
 { 
-	FTransform                                         Transform;                                                  // 0x01A0   (0x0060)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0200   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0201   (0x000F)  MISSED
+	FTransform                                         Transform;                                                  // 0x01F0   (0x0060)  
+	ERigVMTransformSpace                               Space;                                                      // 0x0250   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0251   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControl_Settings
@@ -4080,21 +4220,21 @@ struct FRigUnit_HierarchyAddControlFloat_Settings : FRigUnit_HierarchyAddControl
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlElement
-/// Size: 0x0070 (0x0001A0 - 0x000210)
+/// Size: 0x0070 (0x0001F0 - 0x000260)
 struct FRigUnit_HierarchyAddControlElement : FRigUnit_HierarchyAddElement
 { 
-	FTransform                                         OffsetTransform;                                            // 0x01A0   (0x0060)  
-	ERigVMTransformSpace                               OffsetSpace;                                                // 0x0200   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0201   (0x000F)  MISSED
+	FTransform                                         OffsetTransform;                                            // 0x01F0   (0x0060)  
+	ERigVMTransformSpace                               OffsetSpace;                                                // 0x0250   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0251   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlFloat
-/// Size: 0x00D0 (0x000210 - 0x0002E0)
+/// Size: 0x00D0 (0x000260 - 0x000330)
 struct FRigUnit_HierarchyAddControlFloat : FRigUnit_HierarchyAddControlElement
 { 
-	float                                              InitialValue;                                               // 0x0208   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x020C   (0x0004)  MISSED
-	FRigUnit_HierarchyAddControlFloat_Settings         Settings;                                                   // 0x0210   (0x00D0)  
+	float                                              InitialValue;                                               // 0x0258   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x025C   (0x0004)  MISSED
+	FRigUnit_HierarchyAddControlFloat_Settings         Settings;                                                   // 0x0260   (0x00D0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlInteger_LimitSettings
@@ -4122,12 +4262,12 @@ struct FRigUnit_HierarchyAddControlInteger_Settings : FRigUnit_HierarchyAddContr
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlInteger
-/// Size: 0x00D0 (0x000210 - 0x0002E0)
+/// Size: 0x00D0 (0x000260 - 0x000330)
 struct FRigUnit_HierarchyAddControlInteger : FRigUnit_HierarchyAddControlElement
 { 
-	int32_t                                            InitialValue;                                               // 0x0208   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x020C   (0x0004)  MISSED
-	FRigUnit_HierarchyAddControlInteger_Settings       Settings;                                                   // 0x0210   (0x00D0)  
+	int32_t                                            InitialValue;                                               // 0x0258   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x025C   (0x0004)  MISSED
+	FRigUnit_HierarchyAddControlInteger_Settings       Settings;                                                   // 0x0260   (0x00D0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlVector2D_LimitSettings
@@ -4157,12 +4297,12 @@ struct FRigUnit_HierarchyAddControlVector2D_Settings : FRigUnit_HierarchyAddCont
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlVector2D
-/// Size: 0x0110 (0x000210 - 0x000320)
+/// Size: 0x0110 (0x000260 - 0x000370)
 struct FRigUnit_HierarchyAddControlVector2D : FRigUnit_HierarchyAddControlElement
 { 
-	FVector2D                                          InitialValue;                                               // 0x0208   (0x0010)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0218   (0x0008)  MISSED
-	FRigUnit_HierarchyAddControlVector2D_Settings      Settings;                                                   // 0x0220   (0x0100)  
+	FVector2D                                          InitialValue;                                               // 0x0258   (0x0010)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0268   (0x0008)  MISSED
+	FRigUnit_HierarchyAddControlVector2D_Settings      Settings;                                                   // 0x0270   (0x0100)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlVector_LimitSettings
@@ -4194,11 +4334,11 @@ struct FRigUnit_HierarchyAddControlVector_Settings : FRigUnit_HierarchyAddContro
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlVector
-/// Size: 0x0120 (0x000210 - 0x000330)
+/// Size: 0x0120 (0x000260 - 0x000380)
 struct FRigUnit_HierarchyAddControlVector : FRigUnit_HierarchyAddControlElement
 { 
-	FVector                                            InitialValue;                                               // 0x0208   (0x0018)  
-	FRigUnit_HierarchyAddControlVector_Settings        Settings;                                                   // 0x0220   (0x0110)  
+	FVector                                            InitialValue;                                               // 0x0258   (0x0018)  
+	FRigUnit_HierarchyAddControlVector_Settings        Settings;                                                   // 0x0270   (0x0110)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlRotator_LimitSettings
@@ -4229,11 +4369,11 @@ struct FRigUnit_HierarchyAddControlRotator_Settings : FRigUnit_HierarchyAddContr
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlRotator
-/// Size: 0x0120 (0x000210 - 0x000330)
+/// Size: 0x0120 (0x000260 - 0x000380)
 struct FRigUnit_HierarchyAddControlRotator : FRigUnit_HierarchyAddControlElement
 { 
-	FRotator                                           InitialValue;                                               // 0x0208   (0x0018)  
-	FRigUnit_HierarchyAddControlRotator_Settings       Settings;                                                   // 0x0220   (0x0110)  
+	FRotator                                           InitialValue;                                               // 0x0258   (0x0018)  
+	FRigUnit_HierarchyAddControlRotator_Settings       Settings;                                                   // 0x0270   (0x0110)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlTransform_LimitSettings
@@ -4272,11 +4412,11 @@ struct FRigUnit_HierarchyAddControlTransform_Settings : FRigUnit_HierarchyAddCon
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddControlTransform
-/// Size: 0x01E0 (0x000210 - 0x0003F0)
+/// Size: 0x01E0 (0x000260 - 0x000440)
 struct FRigUnit_HierarchyAddControlTransform : FRigUnit_HierarchyAddControlElement
 { 
-	FTransform                                         InitialValue;                                               // 0x0210   (0x0060)  
-	FRigUnit_HierarchyAddControlTransform_Settings     Settings;                                                   // 0x0270   (0x0180)  
+	FTransform                                         InitialValue;                                               // 0x0260   (0x0060)  
+	FRigUnit_HierarchyAddControlTransform_Settings     Settings;                                                   // 0x02C0   (0x0180)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelEmptyLimitSettings
@@ -4287,7 +4427,7 @@ struct FRigUnit_HierarchyAddAnimationChannelEmptyLimitSettings
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelBool
-/// Size: 0x0000 (0x0001A0 - 0x0001A0)
+/// Size: 0x0000 (0x0001F0 - 0x0001F0)
 struct FRigUnit_HierarchyAddAnimationChannelBool : FRigUnit_HierarchyAddElement
 { 
 };
@@ -4300,36 +4440,36 @@ struct FRigUnit_HierarchyAddAnimationChannelSingleLimitSettings : FRigUnit_Hiera
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelFloat
-/// Size: 0x0010 (0x0001A0 - 0x0001B0)
+/// Size: 0x0010 (0x0001F0 - 0x000200)
 struct FRigUnit_HierarchyAddAnimationChannelFloat : FRigUnit_HierarchyAddElement
 { 
-	float                                              InitialValue;                                               // 0x0198   (0x0004)  
-	float                                              MinimumValue;                                               // 0x019C   (0x0004)  
-	float                                              MaximumValue;                                               // 0x01A0   (0x0004)  
-	FRigUnit_HierarchyAddAnimationChannelSingleLimitSettings LimitsEnabled;                                        // 0x01A4   (0x0002)  
-	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01A6   (0x000A)  MISSED
+	float                                              InitialValue;                                               // 0x01E8   (0x0004)  
+	float                                              MinimumValue;                                               // 0x01EC   (0x0004)  
+	float                                              MaximumValue;                                               // 0x01F0   (0x0004)  
+	FRigUnit_HierarchyAddAnimationChannelSingleLimitSettings LimitsEnabled;                                        // 0x01F4   (0x0002)  
+	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01F6   (0x000A)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelScaleFloat
-/// Size: 0x0010 (0x0001A0 - 0x0001B0)
+/// Size: 0x0010 (0x0001F0 - 0x000200)
 struct FRigUnit_HierarchyAddAnimationChannelScaleFloat : FRigUnit_HierarchyAddElement
 { 
-	float                                              InitialValue;                                               // 0x0198   (0x0004)  
-	float                                              MinimumValue;                                               // 0x019C   (0x0004)  
-	float                                              MaximumValue;                                               // 0x01A0   (0x0004)  
-	FRigUnit_HierarchyAddAnimationChannelSingleLimitSettings LimitsEnabled;                                        // 0x01A4   (0x0002)  
-	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01A6   (0x000A)  MISSED
+	float                                              InitialValue;                                               // 0x01E8   (0x0004)  
+	float                                              MinimumValue;                                               // 0x01EC   (0x0004)  
+	float                                              MaximumValue;                                               // 0x01F0   (0x0004)  
+	FRigUnit_HierarchyAddAnimationChannelSingleLimitSettings LimitsEnabled;                                        // 0x01F4   (0x0002)  
+	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01F6   (0x000A)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelInteger
-/// Size: 0x0010 (0x0001A0 - 0x0001B0)
+/// Size: 0x0010 (0x0001F0 - 0x000200)
 struct FRigUnit_HierarchyAddAnimationChannelInteger : FRigUnit_HierarchyAddElement
 { 
-	int32_t                                            InitialValue;                                               // 0x0198   (0x0004)  
-	int32_t                                            MinimumValue;                                               // 0x019C   (0x0004)  
-	int32_t                                            MaximumValue;                                               // 0x01A0   (0x0004)  
-	FRigUnit_HierarchyAddAnimationChannelSingleLimitSettings LimitsEnabled;                                        // 0x01A4   (0x0002)  
-	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01A6   (0x000A)  MISSED
+	int32_t                                            InitialValue;                                               // 0x01E8   (0x0004)  
+	int32_t                                            MinimumValue;                                               // 0x01EC   (0x0004)  
+	int32_t                                            MaximumValue;                                               // 0x01F0   (0x0004)  
+	FRigUnit_HierarchyAddAnimationChannelSingleLimitSettings LimitsEnabled;                                        // 0x01F4   (0x0002)  
+	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01F6   (0x000A)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannel2DLimitSettings
@@ -4341,14 +4481,14 @@ struct FRigUnit_HierarchyAddAnimationChannel2DLimitSettings : FRigUnit_Hierarchy
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelVector2D
-/// Size: 0x0030 (0x0001A0 - 0x0001D0)
+/// Size: 0x0030 (0x0001F0 - 0x000220)
 struct FRigUnit_HierarchyAddAnimationChannelVector2D : FRigUnit_HierarchyAddElement
 { 
-	FVector2D                                          InitialValue;                                               // 0x0198   (0x0010)  
-	FVector2D                                          MinimumValue;                                               // 0x01A8   (0x0010)  
-	FVector2D                                          MaximumValue;                                               // 0x01B8   (0x0010)  
-	FRigUnit_HierarchyAddAnimationChannel2DLimitSettings LimitsEnabled;                                            // 0x01C8   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x01CC   (0x0004)  MISSED
+	FVector2D                                          InitialValue;                                               // 0x01E8   (0x0010)  
+	FVector2D                                          MinimumValue;                                               // 0x01F8   (0x0010)  
+	FVector2D                                          MaximumValue;                                               // 0x0208   (0x0010)  
+	FRigUnit_HierarchyAddAnimationChannel2DLimitSettings LimitsEnabled;                                            // 0x0218   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x021C   (0x0004)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelVectorLimitSettings
@@ -4361,25 +4501,25 @@ struct FRigUnit_HierarchyAddAnimationChannelVectorLimitSettings : FRigUnit_Hiera
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelVector
-/// Size: 0x0050 (0x0001A0 - 0x0001F0)
+/// Size: 0x0050 (0x0001F0 - 0x000240)
 struct FRigUnit_HierarchyAddAnimationChannelVector : FRigUnit_HierarchyAddElement
 { 
-	FVector                                            InitialValue;                                               // 0x0198   (0x0018)  
-	FVector                                            MinimumValue;                                               // 0x01B0   (0x0018)  
-	FVector                                            MaximumValue;                                               // 0x01C8   (0x0018)  
-	FRigUnit_HierarchyAddAnimationChannelVectorLimitSettings LimitsEnabled;                                        // 0x01E0   (0x0006)  
-	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01E6   (0x000A)  MISSED
+	FVector                                            InitialValue;                                               // 0x01E8   (0x0018)  
+	FVector                                            MinimumValue;                                               // 0x0200   (0x0018)  
+	FVector                                            MaximumValue;                                               // 0x0218   (0x0018)  
+	FRigUnit_HierarchyAddAnimationChannelVectorLimitSettings LimitsEnabled;                                        // 0x0230   (0x0006)  
+	unsigned char                                      UnknownData00_6[0xA];                                       // 0x0236   (0x000A)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelScaleVector
-/// Size: 0x0050 (0x0001A0 - 0x0001F0)
+/// Size: 0x0050 (0x0001F0 - 0x000240)
 struct FRigUnit_HierarchyAddAnimationChannelScaleVector : FRigUnit_HierarchyAddElement
 { 
-	FVector                                            InitialValue;                                               // 0x0198   (0x0018)  
-	FVector                                            MinimumValue;                                               // 0x01B0   (0x0018)  
-	FVector                                            MaximumValue;                                               // 0x01C8   (0x0018)  
-	FRigUnit_HierarchyAddAnimationChannelVectorLimitSettings LimitsEnabled;                                        // 0x01E0   (0x0006)  
-	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01E6   (0x000A)  MISSED
+	FVector                                            InitialValue;                                               // 0x01E8   (0x0018)  
+	FVector                                            MinimumValue;                                               // 0x0200   (0x0018)  
+	FVector                                            MaximumValue;                                               // 0x0218   (0x0018)  
+	FRigUnit_HierarchyAddAnimationChannelVectorLimitSettings LimitsEnabled;                                        // 0x0230   (0x0006)  
+	unsigned char                                      UnknownData00_6[0xA];                                       // 0x0236   (0x000A)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelRotatorLimitSettings
@@ -4392,14 +4532,14 @@ struct FRigUnit_HierarchyAddAnimationChannelRotatorLimitSettings : FRigUnit_Hier
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddAnimationChannelRotator
-/// Size: 0x0050 (0x0001A0 - 0x0001F0)
+/// Size: 0x0050 (0x0001F0 - 0x000240)
 struct FRigUnit_HierarchyAddAnimationChannelRotator : FRigUnit_HierarchyAddElement
 { 
-	FRotator                                           InitialValue;                                               // 0x0198   (0x0018)  
-	FRotator                                           MinimumValue;                                               // 0x01B0   (0x0018)  
-	FRotator                                           MaximumValue;                                               // 0x01C8   (0x0018)  
-	FRigUnit_HierarchyAddAnimationChannelRotatorLimitSettings LimitsEnabled;                                       // 0x01E0   (0x0006)  
-	unsigned char                                      UnknownData00_6[0xA];                                       // 0x01E6   (0x000A)  MISSED
+	FRotator                                           InitialValue;                                               // 0x01E8   (0x0018)  
+	FRotator                                           MinimumValue;                                               // 0x0200   (0x0018)  
+	FRotator                                           MaximumValue;                                               // 0x0218   (0x0018)  
+	FRigUnit_HierarchyAddAnimationChannelRotatorLimitSettings LimitsEnabled;                                       // 0x0230   (0x0006)  
+	unsigned char                                      UnknownData00_6[0xA];                                       // 0x0236   (0x000A)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyGetShapeSettings
@@ -4411,21 +4551,25 @@ struct FRigUnit_HierarchyGetShapeSettings : FRigUnit_DynamicHierarchyBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchySetShapeSettings
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_HierarchySetShapeSettings : FRigUnit_DynamicHierarchyBaseMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0188   (0x0008)  MISSED
-	FRigUnit_HierarchyAddControl_ShapeSettings         Settings;                                                   // 0x0190   (0x0080)  
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FRigUnit_HierarchyAddControl_ShapeSettings         Settings;                                                   // 0x01E0   (0x0080)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyAddSocket
-/// Size: 0x0070 (0x0001A0 - 0x000210)
+/// Size: 0x0090 (0x0001F0 - 0x000280)
 struct FRigUnit_HierarchyAddSocket : FRigUnit_HierarchyAddElement
 { 
-	FTransform                                         Transform;                                                  // 0x01A0   (0x0060)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0200   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0201   (0x000F)  MISSED
+	FTransform                                         Transform;                                                  // 0x01F0   (0x0060)  
+	ERigVMTransformSpace                               Space;                                                      // 0x0250   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0251   (0x0003)  MISSED
+	FLinearColor                                       Color;                                                      // 0x0254   (0x0010)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0264   (0x0004)  MISSED
+	SDK_UNDEFINED(16,12378) /* FString */              __um(Description);                                          // 0x0268   (0x0010)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0278   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyBase
@@ -4435,7 +4579,7 @@ struct FRigUnit_HierarchyBase : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchyBaseMutable
-/// Size: 0x0000 (0x000180 - 0x000180)
+/// Size: 0x0000 (0x0001D0 - 0x0001D0)
 struct FRigUnit_HierarchyBaseMutable : FRigUnitMutable
 { 
 };
@@ -4552,29 +4696,29 @@ struct FRigUnit_HierarchyGetPoseItemArray : FRigUnit_HierarchyBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchySetPose
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_HierarchySetPose : FRigUnit_HierarchyBaseMutable
 { 
-	FRigPose                                           Pose;                                                       // 0x0180   (0x0070)  
-	ERigElementType                                    ElementType;                                                // 0x01F0   (0x0001)  
-	ERigVMTransformSpace                               Space;                                                      // 0x01F1   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01F2   (0x0006)  MISSED
-	FRigElementKeyCollection                           ItemsToSet;                                                 // 0x01F8   (0x0010)  
-	float                                              Weight;                                                     // 0x0208   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x020C   (0x0004)  MISSED
+	FRigPose                                           Pose;                                                       // 0x01D0   (0x0070)  
+	ERigElementType                                    ElementType;                                                // 0x0240   (0x0001)  
+	ERigVMTransformSpace                               Space;                                                      // 0x0241   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0242   (0x0006)  MISSED
+	FRigElementKeyCollection                           ItemsToSet;                                                 // 0x0248   (0x0010)  
+	float                                              Weight;                                                     // 0x0258   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x025C   (0x0004)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HierarchySetPoseItemArray
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_HierarchySetPoseItemArray : FRigUnit_HierarchyBaseMutable
 { 
-	FRigPose                                           Pose;                                                       // 0x0180   (0x0070)  
-	ERigElementType                                    ElementType;                                                // 0x01F0   (0x0001)  
-	ERigVMTransformSpace                               Space;                                                      // 0x01F1   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01F2   (0x0006)  MISSED
-	TArray<FRigElementKey>                             ItemsToSet;                                                 // 0x01F8   (0x0010)  
-	float                                              Weight;                                                     // 0x0208   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x020C   (0x0004)  MISSED
+	FRigPose                                           Pose;                                                       // 0x01D0   (0x0070)  
+	ERigElementType                                    ElementType;                                                // 0x0240   (0x0001)  
+	ERigVMTransformSpace                               Space;                                                      // 0x0241   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0242   (0x0006)  MISSED
+	TArray<FRigElementKey>                             ItemsToSet;                                                 // 0x0248   (0x0010)  
+	float                                              Weight;                                                     // 0x0258   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x025C   (0x0004)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_PoseIsEmpty
@@ -4667,36 +4811,36 @@ struct FRigUnit_PoseGetCurve : FRigUnit_HierarchyBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_PoseLoop
-/// Size: 0x02C0 (0x000180 - 0x000440)
+/// Size: 0x0310 (0x0001D0 - 0x0004E0)
 struct FRigUnit_PoseLoop : FRigUnit_HierarchyBaseMutable
 { 
-	FName                                              BlockToRun;                                                 // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	FRigPose                                           Pose;                                                       // 0x0188   (0x0070)  
-	FRigElementKey                                     Item;                                                       // 0x01F8   (0x0008)  
-	FTransform                                         GlobalTransform;                                            // 0x0200   (0x0060)  
-	FTransform                                         LocalTransform;                                             // 0x0260   (0x0060)  
-	float                                              CurveValue;                                                 // 0x02C0   (0x0004)  
-	int32_t                                            Index;                                                      // 0x02C4   (0x0004)  
-	int32_t                                            Count;                                                      // 0x02C8   (0x0004)  
-	float                                              Ratio;                                                      // 0x02CC   (0x0004)  
-	FControlRigExecuteContext                          Completed;                                                  // 0x02D0   (0x0170)  
+	FName                                              BlockToRun;                                                 // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	FRigPose                                           Pose;                                                       // 0x01D8   (0x0070)  
+	FRigElementKey                                     Item;                                                       // 0x0248   (0x0008)  
+	FTransform                                         GlobalTransform;                                            // 0x0250   (0x0060)  
+	FTransform                                         LocalTransform;                                             // 0x02B0   (0x0060)  
+	float                                              CurveValue;                                                 // 0x0310   (0x0004)  
+	int32_t                                            Index;                                                      // 0x0314   (0x0004)  
+	int32_t                                            Count;                                                      // 0x0318   (0x0004)  
+	float                                              Ratio;                                                      // 0x031C   (0x0004)  
+	FControlRigExecuteContext                          Completed;                                                  // 0x0320   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_InteractionExecution
-/// Size: 0x0178 (0x000008 - 0x000180)
+/// Size: 0x01C8 (0x000008 - 0x0001D0)
 struct FRigUnit_InteractionExecution : FRigUnit
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_InverseExecution
-/// Size: 0x0178 (0x000008 - 0x000180)
+/// Size: 0x01C8 (0x000008 - 0x0001D0)
 struct FRigUnit_InverseExecution : FRigUnit
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_IsInteracting
@@ -4718,7 +4862,7 @@ struct FRigUnit_ItemBase : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_ItemBaseMutable
-/// Size: 0x0000 (0x000180 - 0x000180)
+/// Size: 0x0000 (0x0001D0 - 0x0001D0)
 struct FRigUnit_ItemBaseMutable : FRigUnitMutable
 { 
 };
@@ -4793,11 +4937,11 @@ struct FRigUnit_ItemToName : FRigUnit_ItemBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_PrepareForExecution
-/// Size: 0x0178 (0x000008 - 0x000180)
+/// Size: 0x01C8 (0x000008 - 0x0001D0)
 struct FRigUnit_PrepareForExecution : FRigUnit
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_RigModulesBase
@@ -4807,7 +4951,7 @@ struct FRigUnit_RigModulesBase : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_RigModulesBaseMutable
-/// Size: 0x0000 (0x000180 - 0x000180)
+/// Size: 0x0000 (0x0001D0 - 0x0001D0)
 struct FRigUnit_RigModulesBaseMutable : FRigUnitMutable
 { 
 };
@@ -4824,7 +4968,7 @@ struct FRigUnit_ResolveConnector : FRigUnit_RigModulesBase
 /// Size: 0x0010 (0x000008 - 0x000018)
 struct FRigUnit_GetCurrentNameSpace : FRigUnit_RigModulesBase
 { 
-	SDK_UNDEFINED(16,12325) /* FString */              __um(NameSpace);                                            // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,12379) /* FString */              __um(NameSpace);                                            // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_GetItemShortName
@@ -4843,7 +4987,7 @@ struct FRigUnit_GetItemNameSpace : FRigUnit_RigModulesBase
 	FRigElementKey                                     Item;                                                       // 0x0008   (0x0008)  
 	bool                                               HasNameSpace;                                               // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0011   (0x0007)  MISSED
-	SDK_UNDEFINED(16,12326) /* FString */              __um(NameSpace);                                            // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,12380) /* FString */              __um(NameSpace);                                            // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_IsItemInCurrentNameSpace
@@ -4865,29 +5009,29 @@ struct FRigUnit_GetItemsInNameSpace : FRigUnit_RigModulesBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_SequenceExecution
-/// Size: 0x0738 (0x000008 - 0x000740)
+/// Size: 0x08C8 (0x000008 - 0x0008D0)
 struct FRigUnit_SequenceExecution : FRigUnit
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x0170)  
-	FControlRigExecuteContext                          A;                                                          // 0x0180   (0x0170)  
-	FControlRigExecuteContext                          B;                                                          // 0x02F0   (0x0170)  
-	FControlRigExecuteContext                          C;                                                          // 0x0460   (0x0170)  
-	FControlRigExecuteContext                          D;                                                          // 0x05D0   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
+	FControlRigExecuteContext                          A;                                                          // 0x01D0   (0x01C0)  
+	FControlRigExecuteContext                          B;                                                          // 0x0390   (0x01C0)  
+	FControlRigExecuteContext                          C;                                                          // 0x0550   (0x01C0)  
+	FControlRigExecuteContext                          D;                                                          // 0x0710   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_AddBoneTransform
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_AddBoneTransform : FRigUnitMutable
 { 
-	FName                                              bone;                                                       // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	float                                              Weight;                                                     // 0x01F0   (0x0004)  
-	bool                                               bPostMultiply;                                              // 0x01F4   (0x0001)  
-	bool                                               bPropagateToChildren;                                       // 0x01F5   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01F6   (0x0002)  MISSED
-	FCachedRigElement                                  CachedBone;                                                 // 0x01F8   (0x0018)  
+	FName                                              bone;                                                       // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	float                                              Weight;                                                     // 0x0240   (0x0004)  
+	bool                                               bPostMultiply;                                              // 0x0244   (0x0001)  
+	bool                                               bPropagateToChildren;                                       // 0x0245   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0246   (0x0002)  MISSED
+	FCachedRigElement                                  CachedBone;                                                 // 0x0248   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_Item
@@ -4993,64 +5137,64 @@ struct FRigUnit_GetTransformAnimationChannel : FRigUnit_GetAnimationChannelBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetAnimationChannelBase
-/// Size: 0x0170 (0x000020 - 0x000190)
+/// Size: 0x01C0 (0x000020 - 0x0001E0)
 struct FRigUnit_SetAnimationChannelBase : FRigUnit_GetAnimationChannelBase
 { 
-	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0020   (0x0170)  
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0020   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetBoolAnimationChannel
-/// Size: 0x0010 (0x000190 - 0x0001A0)
+/// Size: 0x0010 (0x0001E0 - 0x0001F0)
 struct FRigUnit_SetBoolAnimationChannel : FRigUnit_SetAnimationChannelBase
 { 
-	bool                                               Value;                                                      // 0x0190   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0191   (0x000F)  MISSED
+	bool                                               Value;                                                      // 0x01E0   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x01E1   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetFloatAnimationChannel
-/// Size: 0x0010 (0x000190 - 0x0001A0)
+/// Size: 0x0010 (0x0001E0 - 0x0001F0)
 struct FRigUnit_SetFloatAnimationChannel : FRigUnit_SetAnimationChannelBase
 { 
-	float                                              Value;                                                      // 0x0190   (0x0004)  
-	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0194   (0x000C)  MISSED
+	float                                              Value;                                                      // 0x01E0   (0x0004)  
+	unsigned char                                      UnknownData00_6[0xC];                                       // 0x01E4   (0x000C)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetIntAnimationChannel
-/// Size: 0x0010 (0x000190 - 0x0001A0)
+/// Size: 0x0010 (0x0001E0 - 0x0001F0)
 struct FRigUnit_SetIntAnimationChannel : FRigUnit_SetAnimationChannelBase
 { 
-	int32_t                                            Value;                                                      // 0x0190   (0x0004)  
-	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0194   (0x000C)  MISSED
+	int32_t                                            Value;                                                      // 0x01E0   (0x0004)  
+	unsigned char                                      UnknownData00_6[0xC];                                       // 0x01E4   (0x000C)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetVector2DAnimationChannel
-/// Size: 0x0010 (0x000190 - 0x0001A0)
+/// Size: 0x0010 (0x0001E0 - 0x0001F0)
 struct FRigUnit_SetVector2DAnimationChannel : FRigUnit_SetAnimationChannelBase
 { 
-	FVector2D                                          Value;                                                      // 0x0190   (0x0010)  
+	FVector2D                                          Value;                                                      // 0x01E0   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetVectorAnimationChannel
-/// Size: 0x0020 (0x000190 - 0x0001B0)
+/// Size: 0x0020 (0x0001E0 - 0x000200)
 struct FRigUnit_SetVectorAnimationChannel : FRigUnit_SetAnimationChannelBase
 { 
-	FVector                                            Value;                                                      // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FVector                                            Value;                                                      // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetRotatorAnimationChannel
-/// Size: 0x0020 (0x000190 - 0x0001B0)
+/// Size: 0x0020 (0x0001E0 - 0x000200)
 struct FRigUnit_SetRotatorAnimationChannel : FRigUnit_SetAnimationChannelBase
 { 
-	FRotator                                           Value;                                                      // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FRotator                                           Value;                                                      // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetTransformAnimationChannel
-/// Size: 0x0060 (0x000190 - 0x0001F0)
+/// Size: 0x0060 (0x0001E0 - 0x000240)
 struct FRigUnit_SetTransformAnimationChannel : FRigUnit_SetAnimationChannelBase
 { 
-	FTransform                                         Value;                                                      // 0x0190   (0x0060)  
+	FTransform                                         Value;                                                      // 0x01E0   (0x0060)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_CurveExists
@@ -5291,28 +5435,28 @@ struct FRigDispatch_SetMetadata : FRigDispatch_MetadataBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_RemoveMetadata
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_RemoveMetadata : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	FName                                              Name;                                                       // 0x0188   (0x0004)  
-	bool                                               UseNameSpace;                                               // 0x018C   (0x0001)  
-	bool                                               Removed;                                                    // 0x018D   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x018E   (0x0002)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	FName                                              Name;                                                       // 0x01D8   (0x0004)  
+	bool                                               UseNameSpace;                                               // 0x01DC   (0x0001)  
+	bool                                               Removed;                                                    // 0x01DD   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x01DE   (0x0002)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_RemoveAllMetadata
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_RemoveAllMetadata : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	bool                                               UseNameSpace;                                               // 0x0188   (0x0001)  
-	bool                                               Removed;                                                    // 0x0189   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x018A   (0x0006)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	bool                                               UseNameSpace;                                               // 0x01D8   (0x0001)  
+	bool                                               Removed;                                                    // 0x01D9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01DA   (0x0006)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HasMetadata
@@ -5349,40 +5493,40 @@ struct FRigUnit_GetMetadataTags : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMetadataTag
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetMetadataTag : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	FName                                              tag;                                                        // 0x0188   (0x0004)  
-	bool                                               UseNameSpace;                                               // 0x018C   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x018D   (0x0003)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	FName                                              tag;                                                        // 0x01D8   (0x0004)  
+	bool                                               UseNameSpace;                                               // 0x01DC   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01DD   (0x0003)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMetadataTagArray
-/// Size: 0x0040 (0x000180 - 0x0001C0)
+/// Size: 0x0040 (0x0001D0 - 0x000210)
 struct FRigUnit_SetMetadataTagArray : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	TArray<FName>                                      Tags;                                                       // 0x0188   (0x0010)  
-	bool                                               UseNameSpace;                                               // 0x0198   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0199   (0x0007)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x01A0   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01B8   (0x0008)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	TArray<FName>                                      Tags;                                                       // 0x01D8   (0x0010)  
+	bool                                               UseNameSpace;                                               // 0x01E8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01E9   (0x0007)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x01F0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0208   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_RemoveMetadataTag
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_RemoveMetadataTag : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	FName                                              tag;                                                        // 0x0188   (0x0004)  
-	bool                                               UseNameSpace;                                               // 0x018C   (0x0001)  
-	bool                                               Removed;                                                    // 0x018D   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x018E   (0x0002)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	FName                                              tag;                                                        // 0x01D8   (0x0004)  
+	bool                                               UseNameSpace;                                               // 0x01DC   (0x0001)  
+	bool                                               Removed;                                                    // 0x01DD   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x01DE   (0x0002)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_HasMetadataTag
@@ -5443,56 +5587,56 @@ struct FRigUnit_FilterItemsByMetadataTags : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_OffsetTransformForItem
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_OffsetTransformForItem : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0188   (0x0008)  MISSED
-	FTransform                                         OffsetTransform;                                            // 0x0190   (0x0060)  
-	float                                              Weight;                                                     // 0x01F0   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01F4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01F5   (0x0003)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x01F8   (0x0018)  
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FTransform                                         OffsetTransform;                                            // 0x01E0   (0x0060)  
+	float                                              Weight;                                                     // 0x0240   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0244   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0245   (0x0003)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x0248   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ParentSwitchConstraint
-/// Size: 0x0190 (0x000180 - 0x000310)
+/// Size: 0x0190 (0x0001D0 - 0x000360)
 struct FRigUnit_ParentSwitchConstraint : FRigUnitMutable
 { 
-	FRigElementKey                                     Subject;                                                    // 0x0180   (0x0008)  
-	int32_t                                            ParentIndex;                                                // 0x0188   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	FRigElementKeyCollection                           Parents;                                                    // 0x0190   (0x0010)  
-	FTransform                                         InitialGlobalTransform;                                     // 0x01A0   (0x0060)  
-	float                                              Weight;                                                     // 0x0200   (0x0004)  
-	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0204   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0210   (0x0060)  
-	bool                                               Switched;                                                   // 0x0270   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0271   (0x0007)  MISSED
-	FCachedRigElement                                  CachedSubject;                                              // 0x0278   (0x0018)  
-	FCachedRigElement                                  CachedParent;                                               // 0x0290   (0x0018)  
-	unsigned char                                      UnknownData03_5[0x8];                                       // 0x02A8   (0x0008)  MISSED
-	FTransform                                         RelativeOffset;                                             // 0x02B0   (0x0060)  
+	FRigElementKey                                     Subject;                                                    // 0x01D0   (0x0008)  
+	int32_t                                            ParentIndex;                                                // 0x01D8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	FRigElementKeyCollection                           Parents;                                                    // 0x01E0   (0x0010)  
+	FTransform                                         InitialGlobalTransform;                                     // 0x01F0   (0x0060)  
+	float                                              Weight;                                                     // 0x0250   (0x0004)  
+	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0254   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x0260   (0x0060)  
+	bool                                               Switched;                                                   // 0x02C0   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x02C1   (0x0007)  MISSED
+	FCachedRigElement                                  CachedSubject;                                              // 0x02C8   (0x0018)  
+	FCachedRigElement                                  CachedParent;                                               // 0x02E0   (0x0018)  
+	unsigned char                                      UnknownData03_5[0x8];                                       // 0x02F8   (0x0008)  MISSED
+	FTransform                                         RelativeOffset;                                             // 0x0300   (0x0060)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ParentSwitchConstraintArray
-/// Size: 0x0190 (0x000180 - 0x000310)
+/// Size: 0x0190 (0x0001D0 - 0x000360)
 struct FRigUnit_ParentSwitchConstraintArray : FRigUnitMutable
 { 
-	FRigElementKey                                     Subject;                                                    // 0x0180   (0x0008)  
-	int32_t                                            ParentIndex;                                                // 0x0188   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	TArray<FRigElementKey>                             Parents;                                                    // 0x0190   (0x0010)  
-	FTransform                                         InitialGlobalTransform;                                     // 0x01A0   (0x0060)  
-	float                                              Weight;                                                     // 0x0200   (0x0004)  
-	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0204   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0210   (0x0060)  
-	bool                                               Switched;                                                   // 0x0270   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0271   (0x0007)  MISSED
-	FCachedRigElement                                  CachedSubject;                                              // 0x0278   (0x0018)  
-	FCachedRigElement                                  CachedParent;                                               // 0x0290   (0x0018)  
-	unsigned char                                      UnknownData03_5[0x8];                                       // 0x02A8   (0x0008)  MISSED
-	FTransform                                         RelativeOffset;                                             // 0x02B0   (0x0060)  
+	FRigElementKey                                     Subject;                                                    // 0x01D0   (0x0008)  
+	int32_t                                            ParentIndex;                                                // 0x01D8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	TArray<FRigElementKey>                             Parents;                                                    // 0x01E0   (0x0010)  
+	FTransform                                         InitialGlobalTransform;                                     // 0x01F0   (0x0060)  
+	float                                              Weight;                                                     // 0x0250   (0x0004)  
+	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0254   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x0260   (0x0060)  
+	bool                                               Switched;                                                   // 0x02C0   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x02C1   (0x0007)  MISSED
+	FCachedRigElement                                  CachedSubject;                                              // 0x02C8   (0x0018)  
+	FCachedRigElement                                  CachedParent;                                               // 0x02E0   (0x0018)  
+	unsigned char                                      UnknownData03_5[0x8];                                       // 0x02F8   (0x0008)  MISSED
+	FTransform                                         RelativeOffset;                                             // 0x0300   (0x0060)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ProjectTransformToNewParent
@@ -5516,92 +5660,92 @@ struct FRigUnit_ProjectTransformToNewParent : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_PropagateTransform
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_PropagateTransform : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	bool                                               bRecomputeGlobal;                                           // 0x0188   (0x0001)  
-	bool                                               bApplyToChildren;                                           // 0x0189   (0x0001)  
-	bool                                               bRecursive;                                                 // 0x018A   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x5];                                       // 0x018B   (0x0005)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	bool                                               bRecomputeGlobal;                                           // 0x01D8   (0x0001)  
+	bool                                               bApplyToChildren;                                           // 0x01D9   (0x0001)  
+	bool                                               bRecursive;                                                 // 0x01DA   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x5];                                       // 0x01DB   (0x0005)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SendEvent
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_SendEvent : FRigUnitMutable
 { 
-	ERigEvent                                          Event;                                                      // 0x0180   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0181   (0x0003)  MISSED
-	FRigElementKey                                     Item;                                                       // 0x0184   (0x0008)  
-	float                                              OffsetInSeconds;                                            // 0x018C   (0x0004)  
-	bool                                               bEnable;                                                    // 0x0190   (0x0001)  
-	bool                                               bOnlyDuringInteraction;                                     // 0x0191   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xE];                                       // 0x0192   (0x000E)  MISSED
+	ERigEvent                                          Event;                                                      // 0x01D0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01D1   (0x0003)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D4   (0x0008)  
+	float                                              OffsetInSeconds;                                            // 0x01DC   (0x0004)  
+	bool                                               bEnable;                                                    // 0x01E0   (0x0001)  
+	bool                                               bOnlyDuringInteraction;                                     // 0x01E1   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xE];                                       // 0x01E2   (0x000E)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetBoneInitialTransform
-/// Size: 0x00F0 (0x000180 - 0x000270)
+/// Size: 0x00F0 (0x0001D0 - 0x0002C0)
 struct FRigUnit_SetBoneInitialTransform : FRigUnitMutable
 { 
-	FName                                              bone;                                                       // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	FTransform                                         Result;                                                     // 0x01F0   (0x0060)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0250   (0x0001)  
-	bool                                               bPropagateToChildren;                                       // 0x0251   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x6];                                       // 0x0252   (0x0006)  MISSED
-	FCachedRigElement                                  CachedBone;                                                 // 0x0258   (0x0018)  
+	FName                                              bone;                                                       // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	FTransform                                         Result;                                                     // 0x0240   (0x0060)  
+	ERigVMTransformSpace                               Space;                                                      // 0x02A0   (0x0001)  
+	bool                                               bPropagateToChildren;                                       // 0x02A1   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x6];                                       // 0x02A2   (0x0006)  MISSED
+	FCachedRigElement                                  CachedBone;                                                 // 0x02A8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetBoneRotation
-/// Size: 0x0060 (0x000180 - 0x0001E0)
+/// Size: 0x0060 (0x0001D0 - 0x000230)
 struct FRigUnit_SetBoneRotation : FRigUnitMutable
 { 
-	FName                                              bone;                                                       // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FQuat                                              Rotation;                                                   // 0x0190   (0x0020)  
-	ERigVMTransformSpace                               Space;                                                      // 0x01B0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01B1   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x01B4   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01B8   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x01B9   (0x0007)  MISSED
-	FCachedRigElement                                  CachedBone;                                                 // 0x01C0   (0x0018)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FName                                              bone;                                                       // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FQuat                                              Rotation;                                                   // 0x01E0   (0x0020)  
+	ERigVMTransformSpace                               Space;                                                      // 0x0200   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0201   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x0204   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0208   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0209   (0x0007)  MISSED
+	FCachedRigElement                                  CachedBone;                                                 // 0x0210   (0x0018)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0228   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetBoneTransform
-/// Size: 0x0100 (0x000180 - 0x000280)
+/// Size: 0x0100 (0x0001D0 - 0x0002D0)
 struct FRigUnit_SetBoneTransform : FRigUnitMutable
 { 
-	FName                                              bone;                                                       // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	FTransform                                         Result;                                                     // 0x01F0   (0x0060)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0250   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0251   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x0254   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0258   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0259   (0x0007)  MISSED
-	FCachedRigElement                                  CachedBone;                                                 // 0x0260   (0x0018)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0278   (0x0008)  MISSED
+	FName                                              bone;                                                       // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	FTransform                                         Result;                                                     // 0x0240   (0x0060)  
+	ERigVMTransformSpace                               Space;                                                      // 0x02A0   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x02A1   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x02A4   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x02A8   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x02A9   (0x0007)  MISSED
+	FCachedRigElement                                  CachedBone;                                                 // 0x02B0   (0x0018)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x02C8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetBoneTranslation
-/// Size: 0x0050 (0x000180 - 0x0001D0)
+/// Size: 0x0050 (0x0001D0 - 0x000220)
 struct FRigUnit_SetBoneTranslation : FRigUnitMutable
 { 
-	FName                                              bone;                                                       // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	FVector                                            Translation;                                                // 0x0188   (0x0018)  
-	ERigVMTransformSpace                               Space;                                                      // 0x01A0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01A1   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x01A4   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01A8   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x01A9   (0x0007)  MISSED
-	FCachedRigElement                                  CachedBone;                                                 // 0x01B0   (0x0018)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x01C8   (0x0008)  MISSED
+	FName                                              bone;                                                       // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	FVector                                            Translation;                                                // 0x01D8   (0x0018)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01F0   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01F1   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x01F4   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01F8   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x01F9   (0x0007)  MISSED
+	FCachedRigElement                                  CachedBone;                                                 // 0x0200   (0x0018)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0218   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_GetControlColor
@@ -5615,13 +5759,13 @@ struct FRigUnit_GetControlColor : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlColor
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetControlColor : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	FLinearColor                                       Color;                                                      // 0x0184   (0x0010)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0194   (0x0004)  MISSED
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x0198   (0x0018)  
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	FLinearColor                                       Color;                                                      // 0x01D4   (0x0010)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01E4   (0x0004)  MISSED
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x01E8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_GetControlDrivenList
@@ -5635,25 +5779,25 @@ struct FRigUnit_GetControlDrivenList : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlDrivenList
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetControlDrivenList : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	TArray<FRigElementKey>                             Driven;                                                     // 0x0188   (0x0010)  
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x0198   (0x0018)  
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	TArray<FRigElementKey>                             Driven;                                                     // 0x01D8   (0x0010)  
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x01E8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlOffset
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_SetControlOffset : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FTransform                                         Offset;                                                     // 0x0190   (0x0060)  
-	ERigVMTransformSpace                               Space;                                                      // 0x01F0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x01F1   (0x0007)  MISSED
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x01F8   (0x0018)  
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FTransform                                         Offset;                                                     // 0x01E0   (0x0060)  
+	ERigVMTransformSpace                               Space;                                                      // 0x0240   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0241   (0x0007)  MISSED
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x0248   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_GetShapeTransform
@@ -5668,24 +5812,24 @@ struct FRigUnit_GetShapeTransform : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetShapeTransform
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_SetShapeTransform : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x01F0   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0208   (0x0008)  MISSED
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x0240   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0258   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlBool
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_SetControlBool : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	bool                                               BoolValue;                                                  // 0x0184   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0185   (0x0003)  MISSED
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x0188   (0x0018)  
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	bool                                               BoolValue;                                                  // 0x01D4   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01D5   (0x0003)  MISSED
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x01D8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlBool_Entry
@@ -5698,23 +5842,23 @@ struct FRigUnit_SetMultiControlBool_Entry
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlBool
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_SetMultiControlBool : FRigUnitMutable
 { 
-	TArray<FRigUnit_SetMultiControlBool_Entry>         Entries;                                                    // 0x0180   (0x0010)  
-	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x0190   (0x0010)  
+	TArray<FRigUnit_SetMultiControlBool_Entry>         Entries;                                                    // 0x01D0   (0x0010)  
+	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x01E0   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlFloat
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetControlFloat : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	float                                              Weight;                                                     // 0x0184   (0x0004)  
-	float                                              FloatValue;                                                 // 0x0188   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	float                                              Weight;                                                     // 0x01D4   (0x0004)  
+	float                                              FloatValue;                                                 // 0x01D8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlFloat_Entry
@@ -5726,26 +5870,26 @@ struct FRigUnit_SetMultiControlFloat_Entry
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlFloat
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetMultiControlFloat : FRigUnitMutable
 { 
-	TArray<FRigUnit_SetMultiControlFloat_Entry>        Entries;                                                    // 0x0180   (0x0010)  
-	float                                              Weight;                                                     // 0x0190   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0194   (0x0004)  MISSED
-	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x0198   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	TArray<FRigUnit_SetMultiControlFloat_Entry>        Entries;                                                    // 0x01D0   (0x0010)  
+	float                                              Weight;                                                     // 0x01E0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01E4   (0x0004)  MISSED
+	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x01E8   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlInteger
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetControlInteger : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	int32_t                                            Weight;                                                     // 0x0184   (0x0004)  
-	int32_t                                            IntegerValue;                                               // 0x0188   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x0190   (0x0018)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	int32_t                                            Weight;                                                     // 0x01D4   (0x0004)  
+	int32_t                                            IntegerValue;                                               // 0x01D8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x01E0   (0x0018)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlInteger_Entry
@@ -5757,24 +5901,24 @@ struct FRigUnit_SetMultiControlInteger_Entry
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlInteger
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetMultiControlInteger : FRigUnitMutable
 { 
-	TArray<FRigUnit_SetMultiControlInteger_Entry>      Entries;                                                    // 0x0180   (0x0010)  
-	float                                              Weight;                                                     // 0x0190   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0194   (0x0004)  MISSED
-	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x0198   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	TArray<FRigUnit_SetMultiControlInteger_Entry>      Entries;                                                    // 0x01D0   (0x0010)  
+	float                                              Weight;                                                     // 0x01E0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01E4   (0x0004)  MISSED
+	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x01E8   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlVector2D
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetControlVector2D : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	float                                              Weight;                                                     // 0x0184   (0x0004)  
-	FVector2D                                          Vector;                                                     // 0x0188   (0x0010)  
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x0198   (0x0018)  
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	float                                              Weight;                                                     // 0x01D4   (0x0004)  
+	FVector2D                                          Vector;                                                     // 0x01D8   (0x0010)  
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x01E8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlVector2D_Entry
@@ -5787,38 +5931,38 @@ struct FRigUnit_SetMultiControlVector2D_Entry
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlVector2D
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetMultiControlVector2D : FRigUnitMutable
 { 
-	TArray<FRigUnit_SetMultiControlVector2D_Entry>     Entries;                                                    // 0x0180   (0x0010)  
-	float                                              Weight;                                                     // 0x0190   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0194   (0x0004)  MISSED
-	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x0198   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	TArray<FRigUnit_SetMultiControlVector2D_Entry>     Entries;                                                    // 0x01D0   (0x0010)  
+	float                                              Weight;                                                     // 0x01E0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01E4   (0x0004)  MISSED
+	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x01E8   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlVector
-/// Size: 0x0040 (0x000180 - 0x0001C0)
+/// Size: 0x0040 (0x0001D0 - 0x000210)
 struct FRigUnit_SetControlVector : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	float                                              Weight;                                                     // 0x0184   (0x0004)  
-	FVector                                            Vector;                                                     // 0x0188   (0x0018)  
-	ERigVMTransformSpace                               Space;                                                      // 0x01A0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01A1   (0x0007)  MISSED
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x01A8   (0x0018)  
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	float                                              Weight;                                                     // 0x01D4   (0x0004)  
+	FVector                                            Vector;                                                     // 0x01D8   (0x0018)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01F0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01F1   (0x0007)  MISSED
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x01F8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlRotator
-/// Size: 0x0040 (0x000180 - 0x0001C0)
+/// Size: 0x0040 (0x0001D0 - 0x000210)
 struct FRigUnit_SetControlRotator : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	float                                              Weight;                                                     // 0x0184   (0x0004)  
-	FRotator                                           Rotator;                                                    // 0x0188   (0x0018)  
-	ERigVMTransformSpace                               Space;                                                      // 0x01A0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01A1   (0x0007)  MISSED
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x01A8   (0x0018)  
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	float                                              Weight;                                                     // 0x01D4   (0x0004)  
+	FRotator                                           Rotator;                                                    // 0x01D8   (0x0018)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01F0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01F1   (0x0007)  MISSED
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x01F8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlRotator_Entry
@@ -5833,27 +5977,27 @@ struct FRigUnit_SetMultiControlRotator_Entry
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetMultiControlRotator
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetMultiControlRotator : FRigUnitMutable
 { 
-	TArray<FRigUnit_SetMultiControlRotator_Entry>      Entries;                                                    // 0x0180   (0x0010)  
-	float                                              Weight;                                                     // 0x0190   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0194   (0x0004)  MISSED
-	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x0198   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	TArray<FRigUnit_SetMultiControlRotator_Entry>      Entries;                                                    // 0x01D0   (0x0010)  
+	float                                              Weight;                                                     // 0x01E0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01E4   (0x0004)  MISSED
+	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x01E8   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlTransform
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_SetControlTransform : FRigUnitMutable
 { 
-	FName                                              Control;                                                    // 0x0180   (0x0004)  
-	float                                              Weight;                                                     // 0x0184   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0188   (0x0008)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	ERigVMTransformSpace                               Space;                                                      // 0x01F0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x01F1   (0x0007)  MISSED
-	FCachedRigElement                                  CachedControlIndex;                                         // 0x01F8   (0x0018)  
+	FName                                              Control;                                                    // 0x01D0   (0x0004)  
+	float                                              Weight;                                                     // 0x01D4   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	ERigVMTransformSpace                               Space;                                                      // 0x0240   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0241   (0x0007)  MISSED
+	FCachedRigElement                                  CachedControlIndex;                                         // 0x0248   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_GetControlVisibility
@@ -5867,50 +6011,67 @@ struct FRigUnit_GetControlVisibility : FRigUnit
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetControlVisibility
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_SetControlVisibility : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	SDK_UNDEFINED(16,12327) /* FString */              __um(Pattern);                                              // 0x0188   (0x0010)  
-	bool                                               bVisible;                                                   // 0x0198   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0199   (0x0007)  MISSED
-	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x01A0   (0x0010)  
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	SDK_UNDEFINED(16,12381) /* FString */              __um(Pattern);                                              // 0x01D8   (0x0010)  
+	bool                                               bVisible;                                                   // 0x01E8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01E9   (0x0007)  MISSED
+	TArray<FCachedRigElement>                          CachedControlIndices;                                       // 0x01F0   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetCurveValue
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_SetCurveValue : FRigUnitMutable
 { 
-	FName                                              Curve;                                                      // 0x0180   (0x0004)  
-	float                                              Value;                                                      // 0x0184   (0x0004)  
-	FCachedRigElement                                  CachedCurveIndex;                                           // 0x0188   (0x0018)  
+	FName                                              Curve;                                                      // 0x01D0   (0x0004)  
+	float                                              Value;                                                      // 0x01D4   (0x0004)  
+	FCachedRigElement                                  CachedCurveIndex;                                           // 0x01D8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetRelativeBoneTransform
-/// Size: 0x00B0 (0x000180 - 0x000230)
+/// Size: 0x00B0 (0x0001D0 - 0x000280)
 struct FRigUnit_SetRelativeBoneTransform : FRigUnitMutable
 { 
-	FName                                              bone;                                                       // 0x0180   (0x0004)  
-	FName                                              Space;                                                      // 0x0184   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0188   (0x0008)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	float                                              Weight;                                                     // 0x01F0   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01F4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01F5   (0x0003)  MISSED
-	FCachedRigElement                                  CachedBone;                                                 // 0x01F8   (0x0018)  
-	FCachedRigElement                                  CachedSpaceIndex;                                           // 0x0210   (0x0018)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0228   (0x0008)  MISSED
+	FName                                              bone;                                                       // 0x01D0   (0x0004)  
+	FName                                              Space;                                                      // 0x01D4   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	float                                              Weight;                                                     // 0x0240   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0244   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0245   (0x0003)  MISSED
+	FCachedRigElement                                  CachedBone;                                                 // 0x0248   (0x0018)  
+	FCachedRigElement                                  CachedSpaceIndex;                                           // 0x0260   (0x0018)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0278   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetRelativeTransformForItem
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_SetRelativeTransformForItem : FRigUnitMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	FRigElementKey                                     Parent;                                                     // 0x0188   (0x0008)  
-	bool                                               bParentInitial;                                             // 0x0190   (0x0001)  
-	unsigned char                                      UnknownData00_5[0xF];                                       // 0x0191   (0x000F)  MISSED
-	FTransform                                         Value;                                                      // 0x01A0   (0x0060)  
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	FRigElementKey                                     Parent;                                                     // 0x01D8   (0x0008)  
+	bool                                               bParentInitial;                                             // 0x01E0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0xF];                                       // 0x01E1   (0x000F)  MISSED
+	FTransform                                         Value;                                                      // 0x01F0   (0x0060)  
+	float                                              Weight;                                                     // 0x0250   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0254   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0255   (0x0003)  MISSED
+	FCachedRigElement                                  CachedChild;                                                // 0x0258   (0x0018)  
+	FCachedRigElement                                  CachedParent;                                               // 0x0270   (0x0018)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0288   (0x0008)  MISSED
+};
+
+/// Struct /Script/ControlRig.RigUnit_SetRelativeTranslationForItem
+/// Size: 0x0070 (0x0001D0 - 0x000240)
+struct FRigUnit_SetRelativeTranslationForItem : FRigUnitMutable
+{ 
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	FRigElementKey                                     Parent;                                                     // 0x01D8   (0x0008)  
+	bool                                               bParentInitial;                                             // 0x01E0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01E1   (0x0007)  MISSED
+	FVector                                            Value;                                                      // 0x01E8   (0x0018)  
 	float                                              Weight;                                                     // 0x0200   (0x0004)  
 	bool                                               bPropagateToChildren;                                       // 0x0204   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0205   (0x0003)  MISSED
@@ -5919,165 +6080,148 @@ struct FRigUnit_SetRelativeTransformForItem : FRigUnitMutable
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0238   (0x0008)  MISSED
 };
 
-/// Struct /Script/ControlRig.RigUnit_SetRelativeTranslationForItem
-/// Size: 0x0070 (0x000180 - 0x0001F0)
-struct FRigUnit_SetRelativeTranslationForItem : FRigUnitMutable
-{ 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	FRigElementKey                                     Parent;                                                     // 0x0188   (0x0008)  
-	bool                                               bParentInitial;                                             // 0x0190   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0191   (0x0007)  MISSED
-	FVector                                            Value;                                                      // 0x0198   (0x0018)  
-	float                                              Weight;                                                     // 0x01B0   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01B4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01B5   (0x0003)  MISSED
-	FCachedRigElement                                  CachedChild;                                                // 0x01B8   (0x0018)  
-	FCachedRigElement                                  CachedParent;                                               // 0x01D0   (0x0018)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01E8   (0x0008)  MISSED
-};
-
 /// Struct /Script/ControlRig.RigUnit_SetRelativeRotationForItem
-/// Size: 0x0080 (0x000180 - 0x000200)
+/// Size: 0x0080 (0x0001D0 - 0x000250)
 struct FRigUnit_SetRelativeRotationForItem : FRigUnitMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	FRigElementKey                                     Parent;                                                     // 0x0188   (0x0008)  
-	bool                                               bParentInitial;                                             // 0x0190   (0x0001)  
-	unsigned char                                      UnknownData00_5[0xF];                                       // 0x0191   (0x000F)  MISSED
-	FQuat                                              Value;                                                      // 0x01A0   (0x0020)  
-	float                                              Weight;                                                     // 0x01C0   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01C4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01C5   (0x0003)  MISSED
-	FCachedRigElement                                  CachedChild;                                                // 0x01C8   (0x0018)  
-	FCachedRigElement                                  CachedParent;                                               // 0x01E0   (0x0018)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	FRigElementKey                                     Parent;                                                     // 0x01D8   (0x0008)  
+	bool                                               bParentInitial;                                             // 0x01E0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0xF];                                       // 0x01E1   (0x000F)  MISSED
+	FQuat                                              Value;                                                      // 0x01F0   (0x0020)  
+	float                                              Weight;                                                     // 0x0210   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0214   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0215   (0x0003)  MISSED
+	FCachedRigElement                                  CachedChild;                                                // 0x0218   (0x0018)  
+	FCachedRigElement                                  CachedParent;                                               // 0x0230   (0x0018)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0248   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetSpaceInitialTransform
-/// Size: 0x00F0 (0x000180 - 0x000270)
+/// Size: 0x00F0 (0x0001D0 - 0x0002C0)
 struct FRigUnit_SetSpaceInitialTransform : FRigUnitMutable
 { 
-	FName                                              SpaceName;                                                  // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0xC];                                       // 0x0184   (0x000C)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	FTransform                                         Result;                                                     // 0x01F0   (0x0060)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0250   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0251   (0x0007)  MISSED
-	FCachedRigElement                                  CachedSpaceIndex;                                           // 0x0258   (0x0018)  
+	FName                                              SpaceName;                                                  // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x01D4   (0x000C)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	FTransform                                         Result;                                                     // 0x0240   (0x0060)  
+	ERigVMTransformSpace                               Space;                                                      // 0x02A0   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x02A1   (0x0007)  MISSED
+	FCachedRigElement                                  CachedSpaceIndex;                                           // 0x02A8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetSpaceTransform
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_SetSpaceTransform : FRigUnitMutable
 { 
-	FName                                              Space;                                                      // 0x0180   (0x0004)  
-	float                                              Weight;                                                     // 0x0184   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0188   (0x0008)  MISSED
-	FTransform                                         Transform;                                                  // 0x0190   (0x0060)  
-	ERigVMTransformSpace                               SpaceType;                                                  // 0x01F0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x01F1   (0x0007)  MISSED
-	FCachedRigElement                                  CachedSpaceIndex;                                           // 0x01F8   (0x0018)  
+	FName                                              Space;                                                      // 0x01D0   (0x0004)  
+	float                                              Weight;                                                     // 0x01D4   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FTransform                                         Transform;                                                  // 0x01E0   (0x0060)  
+	ERigVMTransformSpace                               SpaceType;                                                  // 0x0240   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0241   (0x0007)  MISSED
+	FCachedRigElement                                  CachedSpaceIndex;                                           // 0x0248   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetTransform
-/// Size: 0x0090 (0x000180 - 0x000210)
+/// Size: 0x0090 (0x0001D0 - 0x000260)
 struct FRigUnit_SetTransform : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0188   (0x0001)  
-	bool                                               bInitial;                                                   // 0x0189   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x018A   (0x0006)  MISSED
-	FTransform                                         Value;                                                      // 0x0190   (0x0060)  
-	float                                              Weight;                                                     // 0x01F0   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01F4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01F5   (0x0003)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x01F8   (0x0018)  
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01D8   (0x0001)  
+	bool                                               bInitial;                                                   // 0x01D9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01DA   (0x0006)  MISSED
+	FTransform                                         Value;                                                      // 0x01E0   (0x0060)  
+	float                                              Weight;                                                     // 0x0240   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0244   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0245   (0x0003)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x0248   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetTranslation
-/// Size: 0x0050 (0x000180 - 0x0001D0)
+/// Size: 0x0050 (0x0001D0 - 0x000220)
 struct FRigUnit_SetTranslation : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0188   (0x0001)  
-	bool                                               bInitial;                                                   // 0x0189   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x018A   (0x0006)  MISSED
-	FVector                                            Value;                                                      // 0x0190   (0x0018)  
-	float                                              Weight;                                                     // 0x01A8   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01AC   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01AD   (0x0003)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x01B0   (0x0018)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01C8   (0x0008)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01D8   (0x0001)  
+	bool                                               bInitial;                                                   // 0x01D9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01DA   (0x0006)  MISSED
+	FVector                                            Value;                                                      // 0x01E0   (0x0018)  
+	float                                              Weight;                                                     // 0x01F8   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01FC   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01FD   (0x0003)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x0200   (0x0018)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0218   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetRotation
-/// Size: 0x0050 (0x000180 - 0x0001D0)
+/// Size: 0x0050 (0x0001D0 - 0x000220)
 struct FRigUnit_SetRotation : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0188   (0x0001)  
-	bool                                               bInitial;                                                   // 0x0189   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x018A   (0x0006)  MISSED
-	FQuat                                              Value;                                                      // 0x0190   (0x0020)  
-	float                                              Weight;                                                     // 0x01B0   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01B4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01B5   (0x0003)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x01B8   (0x0018)  
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01D8   (0x0001)  
+	bool                                               bInitial;                                                   // 0x01D9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01DA   (0x0006)  MISSED
+	FQuat                                              Value;                                                      // 0x01E0   (0x0020)  
+	float                                              Weight;                                                     // 0x0200   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0204   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0205   (0x0003)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x0208   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetScale
-/// Size: 0x0050 (0x000180 - 0x0001D0)
+/// Size: 0x0050 (0x0001D0 - 0x000220)
 struct FRigUnit_SetScale : FRigUnitMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0188   (0x0001)  
-	bool                                               bInitial;                                                   // 0x0189   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x018A   (0x0006)  MISSED
-	FVector                                            Scale;                                                      // 0x0190   (0x0018)  
-	float                                              Weight;                                                     // 0x01A8   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01AC   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01AD   (0x0003)  MISSED
-	FCachedRigElement                                  CachedIndex;                                                // 0x01B0   (0x0018)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01C8   (0x0008)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01D8   (0x0001)  
+	bool                                               bInitial;                                                   // 0x01D9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01DA   (0x0006)  MISSED
+	FVector                                            Scale;                                                      // 0x01E0   (0x0018)  
+	float                                              Weight;                                                     // 0x01F8   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01FC   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01FD   (0x0003)  MISSED
+	FCachedRigElement                                  CachedIndex;                                                // 0x0200   (0x0018)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0218   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetTransformArray
-/// Size: 0x0040 (0x000180 - 0x0001C0)
+/// Size: 0x0040 (0x0001D0 - 0x000210)
 struct FRigUnit_SetTransformArray : FRigUnitMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0190   (0x0001)  
-	bool                                               bInitial;                                                   // 0x0191   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0192   (0x0006)  MISSED
-	TArray<FTransform>                                 Transforms;                                                 // 0x0198   (0x0010)  
-	float                                              Weight;                                                     // 0x01A8   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01AC   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01AD   (0x0003)  MISSED
-	TArray<FCachedRigElement>                          CachedIndex;                                                // 0x01B0   (0x0010)  
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01E0   (0x0001)  
+	bool                                               bInitial;                                                   // 0x01E1   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01E2   (0x0006)  MISSED
+	TArray<FTransform>                                 Transforms;                                                 // 0x01E8   (0x0010)  
+	float                                              Weight;                                                     // 0x01F8   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01FC   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01FD   (0x0003)  MISSED
+	TArray<FCachedRigElement>                          CachedIndex;                                                // 0x0200   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SetTransformItemArray
-/// Size: 0x0040 (0x000180 - 0x0001C0)
+/// Size: 0x0040 (0x0001D0 - 0x000210)
 struct FRigUnit_SetTransformItemArray : FRigUnitMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	ERigVMTransformSpace                               Space;                                                      // 0x0190   (0x0001)  
-	bool                                               bInitial;                                                   // 0x0191   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0192   (0x0006)  MISSED
-	TArray<FTransform>                                 Transforms;                                                 // 0x0198   (0x0010)  
-	float                                              Weight;                                                     // 0x01A8   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01AC   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01AD   (0x0003)  MISSED
-	TArray<FCachedRigElement>                          CachedIndex;                                                // 0x01B0   (0x0010)  
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	ERigVMTransformSpace                               Space;                                                      // 0x01E0   (0x0001)  
+	bool                                               bInitial;                                                   // 0x01E1   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01E2   (0x0006)  MISSED
+	TArray<FTransform>                                 Transforms;                                                 // 0x01E8   (0x0010)  
+	float                                              Weight;                                                     // 0x01F8   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01FC   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01FD   (0x0003)  MISSED
+	TArray<FCachedRigElement>                          CachedIndex;                                                // 0x0200   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_UnsetCurveValue
-/// Size: 0x0020 (0x000180 - 0x0001A0)
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
 struct FRigUnit_UnsetCurveValue : FRigUnitMutable
 { 
-	FName                                              Curve;                                                      // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	FCachedRigElement                                  CachedCurveIndex;                                           // 0x0188   (0x0018)  
+	FName                                              Curve;                                                      // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	FCachedRigElement                                  CachedCurveIndex;                                           // 0x01D8   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ToWorldSpace_Transform
@@ -6157,42 +6301,42 @@ struct FRigUnit_BoneHarmonics_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_BoneHarmonics
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_BoneHarmonics : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigUnit_BoneHarmonics_BoneTarget>          Bones;                                                      // 0x0180   (0x0010)  
-	FVector                                            WaveSpeed;                                                  // 0x0190   (0x0018)  
-	FVector                                            WaveFrequency;                                              // 0x01A8   (0x0018)  
-	FVector                                            WaveAmplitude;                                              // 0x01C0   (0x0018)  
-	FVector                                            WaveOffset;                                                 // 0x01D8   (0x0018)  
-	FVector                                            WaveNoise;                                                  // 0x01F0   (0x0018)  
-	ERigVMAnimEasingType                               WaveEase;                                                   // 0x0208   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0209   (0x0003)  MISSED
-	float                                              WaveMinimum;                                                // 0x020C   (0x0004)  
-	float                                              WaveMaximum;                                                // 0x0210   (0x0004)  
-	EEulerRotationOrder                                RotationOrder;                                              // 0x0214   (0x0001)  
-	bool                                               bPropagateToChildren;                                       // 0x0215   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0216   (0x0002)  MISSED
-	FRigUnit_BoneHarmonics_WorkData                    WorkData;                                                   // 0x0218   (0x0028)  
+	TArray<FRigUnit_BoneHarmonics_BoneTarget>          Bones;                                                      // 0x01D0   (0x0010)  
+	FVector                                            WaveSpeed;                                                  // 0x01E0   (0x0018)  
+	FVector                                            WaveFrequency;                                              // 0x01F8   (0x0018)  
+	FVector                                            WaveAmplitude;                                              // 0x0210   (0x0018)  
+	FVector                                            WaveOffset;                                                 // 0x0228   (0x0018)  
+	FVector                                            WaveNoise;                                                  // 0x0240   (0x0018)  
+	ERigVMAnimEasingType                               WaveEase;                                                   // 0x0258   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0259   (0x0003)  MISSED
+	float                                              WaveMinimum;                                                // 0x025C   (0x0004)  
+	float                                              WaveMaximum;                                                // 0x0260   (0x0004)  
+	EEulerRotationOrder                                RotationOrder;                                              // 0x0264   (0x0001)  
+	bool                                               bPropagateToChildren;                                       // 0x0265   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0266   (0x0002)  MISSED
+	FRigUnit_BoneHarmonics_WorkData                    WorkData;                                                   // 0x0268   (0x0028)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ItemHarmonics
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_ItemHarmonics : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigUnit_Harmonics_TargetItem>              Targets;                                                    // 0x0180   (0x0010)  
-	FVector                                            WaveSpeed;                                                  // 0x0190   (0x0018)  
-	FVector                                            WaveFrequency;                                              // 0x01A8   (0x0018)  
-	FVector                                            WaveAmplitude;                                              // 0x01C0   (0x0018)  
-	FVector                                            WaveOffset;                                                 // 0x01D8   (0x0018)  
-	FVector                                            WaveNoise;                                                  // 0x01F0   (0x0018)  
-	ERigVMAnimEasingType                               WaveEase;                                                   // 0x0208   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0209   (0x0003)  MISSED
-	float                                              WaveMinimum;                                                // 0x020C   (0x0004)  
-	float                                              WaveMaximum;                                                // 0x0210   (0x0004)  
-	EEulerRotationOrder                                RotationOrder;                                              // 0x0214   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0215   (0x0003)  MISSED
-	FRigUnit_BoneHarmonics_WorkData                    WorkData;                                                   // 0x0218   (0x0028)  
+	TArray<FRigUnit_Harmonics_TargetItem>              Targets;                                                    // 0x01D0   (0x0010)  
+	FVector                                            WaveSpeed;                                                  // 0x01E0   (0x0018)  
+	FVector                                            WaveFrequency;                                              // 0x01F8   (0x0018)  
+	FVector                                            WaveAmplitude;                                              // 0x0210   (0x0018)  
+	FVector                                            WaveOffset;                                                 // 0x0228   (0x0018)  
+	FVector                                            WaveNoise;                                                  // 0x0240   (0x0018)  
+	ERigVMAnimEasingType                               WaveEase;                                                   // 0x0258   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0259   (0x0003)  MISSED
+	float                                              WaveMinimum;                                                // 0x025C   (0x0004)  
+	float                                              WaveMaximum;                                                // 0x0260   (0x0004)  
+	EEulerRotationOrder                                RotationOrder;                                              // 0x0264   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0265   (0x0003)  MISSED
+	FRigUnit_BoneHarmonics_WorkData                    WorkData;                                                   // 0x0268   (0x0028)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ChainHarmonics_Reach
@@ -6260,38 +6404,38 @@ struct FRigUnit_ChainHarmonics_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_ChainHarmonics
-/// Size: 0x02D0 (0x000180 - 0x000450)
+/// Size: 0x02D0 (0x0001D0 - 0x0004A0)
 struct FRigUnit_ChainHarmonics : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              ChainRoot;                                                  // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	FVector                                            Speed;                                                      // 0x0188   (0x0018)  
-	FRigUnit_ChainHarmonics_Reach                      Reach;                                                      // 0x01A0   (0x0048)  
-	FRigUnit_ChainHarmonics_Wave                       Wave;                                                       // 0x01E8   (0x0078)  
-	FRuntimeFloatCurve                                 WaveCurve;                                                  // 0x0260   (0x0088)  
-	FRigUnit_ChainHarmonics_Pendulum                   Pendulum;                                                   // 0x02E8   (0x0058)  
-	bool                                               bDrawDebug;                                                 // 0x0340   (0x0001)  
-	unsigned char                                      UnknownData01_5[0xF];                                       // 0x0341   (0x000F)  MISSED
-	FTransform                                         DrawWorldOffset;                                            // 0x0350   (0x0060)  
-	FRigUnit_ChainHarmonics_WorkData                   WorkData;                                                   // 0x03B0   (0x0098)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0448   (0x0008)  MISSED
+	FName                                              ChainRoot;                                                  // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	FVector                                            Speed;                                                      // 0x01D8   (0x0018)  
+	FRigUnit_ChainHarmonics_Reach                      Reach;                                                      // 0x01F0   (0x0048)  
+	FRigUnit_ChainHarmonics_Wave                       Wave;                                                       // 0x0238   (0x0078)  
+	FRuntimeFloatCurve                                 WaveCurve;                                                  // 0x02B0   (0x0088)  
+	FRigUnit_ChainHarmonics_Pendulum                   Pendulum;                                                   // 0x0338   (0x0058)  
+	bool                                               bDrawDebug;                                                 // 0x0390   (0x0001)  
+	unsigned char                                      UnknownData01_5[0xF];                                       // 0x0391   (0x000F)  MISSED
+	FTransform                                         DrawWorldOffset;                                            // 0x03A0   (0x0060)  
+	FRigUnit_ChainHarmonics_WorkData                   WorkData;                                                   // 0x0400   (0x0098)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0498   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_ChainHarmonicsPerItem
-/// Size: 0x02D0 (0x000180 - 0x000450)
+/// Size: 0x02D0 (0x0001D0 - 0x0004A0)
 struct FRigUnit_ChainHarmonicsPerItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     ChainRoot;                                                  // 0x0180   (0x0008)  
-	FVector                                            Speed;                                                      // 0x0188   (0x0018)  
-	FRigUnit_ChainHarmonics_Reach                      Reach;                                                      // 0x01A0   (0x0048)  
-	FRigUnit_ChainHarmonics_Wave                       Wave;                                                       // 0x01E8   (0x0078)  
-	FRuntimeFloatCurve                                 WaveCurve;                                                  // 0x0260   (0x0088)  
-	FRigUnit_ChainHarmonics_Pendulum                   Pendulum;                                                   // 0x02E8   (0x0058)  
-	bool                                               bDrawDebug;                                                 // 0x0340   (0x0001)  
-	unsigned char                                      UnknownData00_5[0xF];                                       // 0x0341   (0x000F)  MISSED
-	FTransform                                         DrawWorldOffset;                                            // 0x0350   (0x0060)  
-	FRigUnit_ChainHarmonics_WorkData                   WorkData;                                                   // 0x03B0   (0x0098)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0448   (0x0008)  MISSED
+	FRigElementKey                                     ChainRoot;                                                  // 0x01D0   (0x0008)  
+	FVector                                            Speed;                                                      // 0x01D8   (0x0018)  
+	FRigUnit_ChainHarmonics_Reach                      Reach;                                                      // 0x01F0   (0x0048)  
+	FRigUnit_ChainHarmonics_Wave                       Wave;                                                       // 0x0238   (0x0078)  
+	FRuntimeFloatCurve                                 WaveCurve;                                                  // 0x02B0   (0x0088)  
+	FRigUnit_ChainHarmonics_Pendulum                   Pendulum;                                                   // 0x0338   (0x0058)  
+	bool                                               bDrawDebug;                                                 // 0x0390   (0x0001)  
+	unsigned char                                      UnknownData00_5[0xF];                                       // 0x0391   (0x000F)  MISSED
+	FTransform                                         DrawWorldOffset;                                            // 0x03A0   (0x0060)  
+	FRigUnit_ChainHarmonics_WorkData                   WorkData;                                                   // 0x0400   (0x0098)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0498   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_AimBone_Target
@@ -6351,39 +6495,39 @@ struct FRigUnit_AimBoneMath : FRigUnit_HighlevelBase
 };
 
 /// Struct /Script/ControlRig.RigUnit_AimBone
-/// Size: 0x0150 (0x000180 - 0x0002D0)
+/// Size: 0x0150 (0x0001D0 - 0x000320)
 struct FRigUnit_AimBone : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              bone;                                                       // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	FRigUnit_AimBone_Target                            Primary;                                                    // 0x0188   (0x0040)  
-	FRigUnit_AimBone_Target                            Secondary;                                                  // 0x01C8   (0x0040)  
-	float                                              Weight;                                                     // 0x0208   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x020C   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x020D   (0x0003)  MISSED
-	FRigUnit_AimBone_DebugSettings                     DebugSettings;                                              // 0x0210   (0x0070)  
-	FCachedRigElement                                  CachedBoneIndex;                                            // 0x0280   (0x0018)  
-	FCachedRigElement                                  PrimaryCachedSpace;                                         // 0x0298   (0x0018)  
-	FCachedRigElement                                  SecondaryCachedSpace;                                       // 0x02B0   (0x0018)  
-	bool                                               bIsInitialized;                                             // 0x02C8   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x7];                                       // 0x02C9   (0x0007)  MISSED
+	FName                                              bone;                                                       // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	FRigUnit_AimBone_Target                            Primary;                                                    // 0x01D8   (0x0040)  
+	FRigUnit_AimBone_Target                            Secondary;                                                  // 0x0218   (0x0040)  
+	float                                              Weight;                                                     // 0x0258   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x025C   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x025D   (0x0003)  MISSED
+	FRigUnit_AimBone_DebugSettings                     DebugSettings;                                              // 0x0260   (0x0070)  
+	FCachedRigElement                                  CachedBoneIndex;                                            // 0x02D0   (0x0018)  
+	FCachedRigElement                                  PrimaryCachedSpace;                                         // 0x02E8   (0x0018)  
+	FCachedRigElement                                  SecondaryCachedSpace;                                       // 0x0300   (0x0018)  
+	bool                                               bIsInitialized;                                             // 0x0318   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0319   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_AimItem
-/// Size: 0x0160 (0x000180 - 0x0002E0)
+/// Size: 0x0160 (0x0001D0 - 0x000330)
 struct FRigUnit_AimItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	FRigUnit_AimItem_Target                            Primary;                                                    // 0x0188   (0x0048)  
-	FRigUnit_AimItem_Target                            Secondary;                                                  // 0x01D0   (0x0048)  
-	float                                              Weight;                                                     // 0x0218   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x021C   (0x0004)  MISSED
-	FRigUnit_AimBone_DebugSettings                     DebugSettings;                                              // 0x0220   (0x0070)  
-	FCachedRigElement                                  CachedItem;                                                 // 0x0290   (0x0018)  
-	FCachedRigElement                                  PrimaryCachedSpace;                                         // 0x02A8   (0x0018)  
-	FCachedRigElement                                  SecondaryCachedSpace;                                       // 0x02C0   (0x0018)  
-	bool                                               bIsInitialized;                                             // 0x02D8   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x7];                                       // 0x02D9   (0x0007)  MISSED
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	FRigUnit_AimItem_Target                            Primary;                                                    // 0x01D8   (0x0048)  
+	FRigUnit_AimItem_Target                            Secondary;                                                  // 0x0220   (0x0048)  
+	float                                              Weight;                                                     // 0x0268   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x026C   (0x0004)  MISSED
+	FRigUnit_AimBone_DebugSettings                     DebugSettings;                                              // 0x0270   (0x0070)  
+	FCachedRigElement                                  CachedItem;                                                 // 0x02E0   (0x0018)  
+	FCachedRigElement                                  PrimaryCachedSpace;                                         // 0x02F8   (0x0018)  
+	FCachedRigElement                                  SecondaryCachedSpace;                                       // 0x0310   (0x0018)  
+	bool                                               bIsInitialized;                                             // 0x0328   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0329   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_AimConstraint_WorldUp
@@ -6415,26 +6559,26 @@ struct FConstraintParent
 };
 
 /// Struct /Script/ControlRig.RigUnit_AimConstraintLocalSpaceOffset
-/// Size: 0x0150 (0x000180 - 0x0002D0)
+/// Size: 0x0150 (0x0001D0 - 0x000320)
 struct FRigUnit_AimConstraintLocalSpaceOffset : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	bool                                               bMaintainOffset;                                            // 0x0188   (0x0001)  
-	FFilterOptionPerAxis                               Filter;                                                     // 0x0189   (0x0003)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	FVector                                            AimAxis;                                                    // 0x0190   (0x0018)  
-	FVector                                            UpAxis;                                                     // 0x01A8   (0x0018)  
-	FRigUnit_AimConstraint_WorldUp                     WorldUp;                                                    // 0x01C0   (0x0028)  
-	TArray<FConstraintParent>                          Parents;                                                    // 0x01E8   (0x0010)  
-	unsigned char                                      UnknownData01_5[0x8];                                       // 0x01F8   (0x0008)  MISSED
-	FRigUnit_AimConstraint_AdvancedSettings            AdvancedSettings;                                           // 0x0200   (0x0080)  
-	float                                              Weight;                                                     // 0x0280   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0284   (0x0004)  MISSED
-	FCachedRigElement                                  WorldUpSpaceCache;                                          // 0x0288   (0x0018)  
-	FCachedRigElement                                  ChildCache;                                                 // 0x02A0   (0x0018)  
-	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x02B8   (0x0010)  
-	bool                                               bIsInitialized;                                             // 0x02C8   (0x0001)  
-	unsigned char                                      UnknownData03_6[0x7];                                       // 0x02C9   (0x0007)  MISSED
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	bool                                               bMaintainOffset;                                            // 0x01D8   (0x0001)  
+	FFilterOptionPerAxis                               Filter;                                                     // 0x01D9   (0x0003)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	FVector                                            AimAxis;                                                    // 0x01E0   (0x0018)  
+	FVector                                            UpAxis;                                                     // 0x01F8   (0x0018)  
+	FRigUnit_AimConstraint_WorldUp                     WorldUp;                                                    // 0x0210   (0x0028)  
+	TArray<FConstraintParent>                          Parents;                                                    // 0x0238   (0x0010)  
+	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0248   (0x0008)  MISSED
+	FRigUnit_AimConstraint_AdvancedSettings            AdvancedSettings;                                           // 0x0250   (0x0080)  
+	float                                              Weight;                                                     // 0x02D0   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x02D4   (0x0004)  MISSED
+	FCachedRigElement                                  WorldUpSpaceCache;                                          // 0x02D8   (0x0018)  
+	FCachedRigElement                                  ChildCache;                                                 // 0x02F0   (0x0018)  
+	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x0308   (0x0010)  
+	bool                                               bIsInitialized;                                             // 0x0318   (0x0001)  
+	unsigned char                                      UnknownData03_6[0x7];                                       // 0x0319   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_CCDIK_RotationLimit
@@ -6465,65 +6609,65 @@ struct FRigUnit_CCDIK_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_CCDIK
-/// Size: 0x0100 (0x000180 - 0x000280)
+/// Size: 0x0100 (0x0001D0 - 0x0002D0)
 struct FRigUnit_CCDIK : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              StartBone;                                                  // 0x0180   (0x0004)  
-	FName                                              EffectorBone;                                               // 0x0184   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0188   (0x0008)  MISSED
-	FTransform                                         EffectorTransform;                                          // 0x0190   (0x0060)  
-	float                                              Precision;                                                  // 0x01F0   (0x0004)  
-	float                                              Weight;                                                     // 0x01F4   (0x0004)  
-	int32_t                                            MaxIterations;                                              // 0x01F8   (0x0004)  
-	bool                                               bStartFromTail;                                             // 0x01FC   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01FD   (0x0003)  MISSED
-	float                                              BaseRotationLimit;                                          // 0x0200   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0204   (0x0004)  MISSED
-	TArray<FRigUnit_CCDIK_RotationLimit>               RotationLimits;                                             // 0x0208   (0x0010)  
-	bool                                               bPropagateToChildren;                                       // 0x0218   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0219   (0x0007)  MISSED
-	FRigUnit_CCDIK_WorkData                            WorkData;                                                   // 0x0220   (0x0058)  
-	unsigned char                                      UnknownData04_6[0x8];                                       // 0x0278   (0x0008)  MISSED
+	FName                                              StartBone;                                                  // 0x01D0   (0x0004)  
+	FName                                              EffectorBone;                                               // 0x01D4   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FTransform                                         EffectorTransform;                                          // 0x01E0   (0x0060)  
+	float                                              Precision;                                                  // 0x0240   (0x0004)  
+	float                                              Weight;                                                     // 0x0244   (0x0004)  
+	int32_t                                            MaxIterations;                                              // 0x0248   (0x0004)  
+	bool                                               bStartFromTail;                                             // 0x024C   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x024D   (0x0003)  MISSED
+	float                                              BaseRotationLimit;                                          // 0x0250   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0254   (0x0004)  MISSED
+	TArray<FRigUnit_CCDIK_RotationLimit>               RotationLimits;                                             // 0x0258   (0x0010)  
+	bool                                               bPropagateToChildren;                                       // 0x0268   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0269   (0x0007)  MISSED
+	FRigUnit_CCDIK_WorkData                            WorkData;                                                   // 0x0270   (0x0058)  
+	unsigned char                                      UnknownData04_6[0x8];                                       // 0x02C8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_CCDIKPerItem
-/// Size: 0x0100 (0x000180 - 0x000280)
+/// Size: 0x0100 (0x0001D0 - 0x0002D0)
 struct FRigUnit_CCDIKPerItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	FTransform                                         EffectorTransform;                                          // 0x0190   (0x0060)  
-	float                                              Precision;                                                  // 0x01F0   (0x0004)  
-	float                                              Weight;                                                     // 0x01F4   (0x0004)  
-	int32_t                                            MaxIterations;                                              // 0x01F8   (0x0004)  
-	bool                                               bStartFromTail;                                             // 0x01FC   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01FD   (0x0003)  MISSED
-	float                                              BaseRotationLimit;                                          // 0x0200   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0204   (0x0004)  MISSED
-	TArray<FRigUnit_CCDIK_RotationLimitPerItem>        RotationLimits;                                             // 0x0208   (0x0010)  
-	bool                                               bPropagateToChildren;                                       // 0x0218   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0219   (0x0007)  MISSED
-	FRigUnit_CCDIK_WorkData                            WorkData;                                                   // 0x0220   (0x0058)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0278   (0x0008)  MISSED
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	FTransform                                         EffectorTransform;                                          // 0x01E0   (0x0060)  
+	float                                              Precision;                                                  // 0x0240   (0x0004)  
+	float                                              Weight;                                                     // 0x0244   (0x0004)  
+	int32_t                                            MaxIterations;                                              // 0x0248   (0x0004)  
+	bool                                               bStartFromTail;                                             // 0x024C   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x024D   (0x0003)  MISSED
+	float                                              BaseRotationLimit;                                          // 0x0250   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0254   (0x0004)  MISSED
+	TArray<FRigUnit_CCDIK_RotationLimitPerItem>        RotationLimits;                                             // 0x0258   (0x0010)  
+	bool                                               bPropagateToChildren;                                       // 0x0268   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0269   (0x0007)  MISSED
+	FRigUnit_CCDIK_WorkData                            WorkData;                                                   // 0x0270   (0x0058)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x02C8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_CCDIKItemArray
-/// Size: 0x0100 (0x000180 - 0x000280)
+/// Size: 0x0100 (0x0001D0 - 0x0002D0)
 struct FRigUnit_CCDIKItemArray : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	FTransform                                         EffectorTransform;                                          // 0x0190   (0x0060)  
-	float                                              Precision;                                                  // 0x01F0   (0x0004)  
-	float                                              Weight;                                                     // 0x01F4   (0x0004)  
-	int32_t                                            MaxIterations;                                              // 0x01F8   (0x0004)  
-	bool                                               bStartFromTail;                                             // 0x01FC   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01FD   (0x0003)  MISSED
-	float                                              BaseRotationLimit;                                          // 0x0200   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0204   (0x0004)  MISSED
-	TArray<FRigUnit_CCDIK_RotationLimitPerItem>        RotationLimits;                                             // 0x0208   (0x0010)  
-	bool                                               bPropagateToChildren;                                       // 0x0218   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0219   (0x0007)  MISSED
-	FRigUnit_CCDIK_WorkData                            WorkData;                                                   // 0x0220   (0x0058)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0278   (0x0008)  MISSED
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	FTransform                                         EffectorTransform;                                          // 0x01E0   (0x0060)  
+	float                                              Precision;                                                  // 0x0240   (0x0004)  
+	float                                              Weight;                                                     // 0x0244   (0x0004)  
+	int32_t                                            MaxIterations;                                              // 0x0248   (0x0004)  
+	bool                                               bStartFromTail;                                             // 0x024C   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x024D   (0x0003)  MISSED
+	float                                              BaseRotationLimit;                                          // 0x0250   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0254   (0x0004)  MISSED
+	TArray<FRigUnit_CCDIK_RotationLimitPerItem>        RotationLimits;                                             // 0x0258   (0x0010)  
+	bool                                               bPropagateToChildren;                                       // 0x0268   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0269   (0x0007)  MISSED
+	FRigUnit_CCDIK_WorkData                            WorkData;                                                   // 0x0270   (0x0058)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x02C8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DistributeRotation_Rotation
@@ -6547,45 +6691,45 @@ struct FRigUnit_DistributeRotation_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_DistributeRotation
-/// Size: 0x0080 (0x000180 - 0x000200)
+/// Size: 0x0080 (0x0001D0 - 0x000250)
 struct FRigUnit_DistributeRotation : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              StartBone;                                                  // 0x0180   (0x0004)  
-	FName                                              EndBone;                                                    // 0x0184   (0x0004)  
-	TArray<FRigUnit_DistributeRotation_Rotation>       Rotations;                                                  // 0x0188   (0x0010)  
-	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x0198   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0199   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x019C   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01A0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x01A1   (0x0007)  MISSED
-	FRigUnit_DistributeRotation_WorkData               WorkData;                                                   // 0x01A8   (0x0050)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
+	FName                                              StartBone;                                                  // 0x01D0   (0x0004)  
+	FName                                              EndBone;                                                    // 0x01D4   (0x0004)  
+	TArray<FRigUnit_DistributeRotation_Rotation>       Rotations;                                                  // 0x01D8   (0x0010)  
+	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x01E8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01E9   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x01EC   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01F0   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x01F1   (0x0007)  MISSED
+	FRigUnit_DistributeRotation_WorkData               WorkData;                                                   // 0x01F8   (0x0050)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0248   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DistributeRotationForCollection
-/// Size: 0x0080 (0x000180 - 0x000200)
+/// Size: 0x0080 (0x0001D0 - 0x000250)
 struct FRigUnit_DistributeRotationForCollection : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	TArray<FRigUnit_DistributeRotation_Rotation>       Rotations;                                                  // 0x0190   (0x0010)  
-	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x01A0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01A1   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x01A4   (0x0004)  
-	FRigUnit_DistributeRotation_WorkData               WorkData;                                                   // 0x01A8   (0x0050)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	TArray<FRigUnit_DistributeRotation_Rotation>       Rotations;                                                  // 0x01E0   (0x0010)  
+	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x01F0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F1   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x01F4   (0x0004)  
+	FRigUnit_DistributeRotation_WorkData               WorkData;                                                   // 0x01F8   (0x0050)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0248   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_DistributeRotationForItemArray
-/// Size: 0x0080 (0x000180 - 0x000200)
+/// Size: 0x0080 (0x0001D0 - 0x000250)
 struct FRigUnit_DistributeRotationForItemArray : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	TArray<FRigUnit_DistributeRotation_Rotation>       Rotations;                                                  // 0x0190   (0x0010)  
-	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x01A0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01A1   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x01A4   (0x0004)  
-	FRigUnit_DistributeRotation_WorkData               WorkData;                                                   // 0x01A8   (0x0050)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	TArray<FRigUnit_DistributeRotation_Rotation>       Rotations;                                                  // 0x01E0   (0x0010)  
+	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x01F0   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F1   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x01F4   (0x0004)  
+	FRigUnit_DistributeRotation_WorkData               WorkData;                                                   // 0x01F8   (0x0050)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0248   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_FABRIK_WorkData
@@ -6598,53 +6742,53 @@ struct FRigUnit_FABRIK_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_FABRIK
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_FABRIK : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              StartBone;                                                  // 0x0180   (0x0004)  
-	FName                                              EffectorBone;                                               // 0x0184   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0188   (0x0008)  MISSED
-	FTransform                                         EffectorTransform;                                          // 0x0190   (0x0060)  
-	float                                              Precision;                                                  // 0x01F0   (0x0004)  
-	float                                              Weight;                                                     // 0x01F4   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01F8   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01F9   (0x0003)  MISSED
-	int32_t                                            MaxIterations;                                              // 0x01FC   (0x0004)  
-	FRigUnit_FABRIK_WorkData                           WorkData;                                                   // 0x0200   (0x0038)  
-	bool                                               bSetEffectorTransform;                                      // 0x0238   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0239   (0x0007)  MISSED
+	FName                                              StartBone;                                                  // 0x01D0   (0x0004)  
+	FName                                              EffectorBone;                                               // 0x01D4   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FTransform                                         EffectorTransform;                                          // 0x01E0   (0x0060)  
+	float                                              Precision;                                                  // 0x0240   (0x0004)  
+	float                                              Weight;                                                     // 0x0244   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0248   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0249   (0x0003)  MISSED
+	int32_t                                            MaxIterations;                                              // 0x024C   (0x0004)  
+	FRigUnit_FABRIK_WorkData                           WorkData;                                                   // 0x0250   (0x0038)  
+	bool                                               bSetEffectorTransform;                                      // 0x0288   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0289   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_FABRIKPerItem
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_FABRIKPerItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	FTransform                                         EffectorTransform;                                          // 0x0190   (0x0060)  
-	float                                              Precision;                                                  // 0x01F0   (0x0004)  
-	float                                              Weight;                                                     // 0x01F4   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01F8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F9   (0x0003)  MISSED
-	int32_t                                            MaxIterations;                                              // 0x01FC   (0x0004)  
-	FRigUnit_FABRIK_WorkData                           WorkData;                                                   // 0x0200   (0x0038)  
-	bool                                               bSetEffectorTransform;                                      // 0x0238   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0239   (0x0007)  MISSED
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	FTransform                                         EffectorTransform;                                          // 0x01E0   (0x0060)  
+	float                                              Precision;                                                  // 0x0240   (0x0004)  
+	float                                              Weight;                                                     // 0x0244   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0248   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0249   (0x0003)  MISSED
+	int32_t                                            MaxIterations;                                              // 0x024C   (0x0004)  
+	FRigUnit_FABRIK_WorkData                           WorkData;                                                   // 0x0250   (0x0038)  
+	bool                                               bSetEffectorTransform;                                      // 0x0288   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0289   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_FABRIKItemArray
-/// Size: 0x00C0 (0x000180 - 0x000240)
+/// Size: 0x00C0 (0x0001D0 - 0x000290)
 struct FRigUnit_FABRIKItemArray : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	FTransform                                         EffectorTransform;                                          // 0x0190   (0x0060)  
-	float                                              Precision;                                                  // 0x01F0   (0x0004)  
-	float                                              Weight;                                                     // 0x01F4   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01F8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F9   (0x0003)  MISSED
-	int32_t                                            MaxIterations;                                              // 0x01FC   (0x0004)  
-	FRigUnit_FABRIK_WorkData                           WorkData;                                                   // 0x0200   (0x0038)  
-	bool                                               bSetEffectorTransform;                                      // 0x0238   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0239   (0x0007)  MISSED
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	FTransform                                         EffectorTransform;                                          // 0x01E0   (0x0060)  
+	float                                              Precision;                                                  // 0x0240   (0x0004)  
+	float                                              Weight;                                                     // 0x0244   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0248   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0249   (0x0003)  MISSED
+	int32_t                                            MaxIterations;                                              // 0x024C   (0x0004)  
+	FRigUnit_FABRIK_WorkData                           WorkData;                                                   // 0x0250   (0x0038)  
+	bool                                               bSetEffectorTransform;                                      // 0x0288   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0289   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_FitChainToCurve_Rotation
@@ -6687,79 +6831,79 @@ struct FRigUnit_FitChainToCurve_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_FitChainToCurve
-/// Size: 0x0210 (0x000180 - 0x000390)
+/// Size: 0x0210 (0x0001D0 - 0x0003E0)
 struct FRigUnit_FitChainToCurve : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              StartBone;                                                  // 0x0180   (0x0004)  
-	FName                                              EndBone;                                                    // 0x0184   (0x0004)  
-	FRigVMFourPointBezier                              Bezier;                                                     // 0x0188   (0x0060)  
-	EControlRigCurveAlignment                          Alignment;                                                  // 0x01E8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01E9   (0x0003)  MISSED
-	float                                              Minimum;                                                    // 0x01EC   (0x0004)  
-	float                                              Maximum;                                                    // 0x01F0   (0x0004)  
-	int32_t                                            SamplingPrecision;                                          // 0x01F4   (0x0004)  
-	FVector                                            PrimaryAxis;                                                // 0x01F8   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x0210   (0x0018)  
-	FVector                                            PoleVectorPosition;                                         // 0x0228   (0x0018)  
-	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0240   (0x0010)  
-	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x0250   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0251   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x0254   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0258   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0259   (0x0007)  MISSED
-	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x0260   (0x0090)  
-	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x02F0   (0x0098)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0388   (0x0008)  MISSED
+	FName                                              StartBone;                                                  // 0x01D0   (0x0004)  
+	FName                                              EndBone;                                                    // 0x01D4   (0x0004)  
+	FRigVMFourPointBezier                              Bezier;                                                     // 0x01D8   (0x0060)  
+	EControlRigCurveAlignment                          Alignment;                                                  // 0x0238   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0239   (0x0003)  MISSED
+	float                                              Minimum;                                                    // 0x023C   (0x0004)  
+	float                                              Maximum;                                                    // 0x0240   (0x0004)  
+	int32_t                                            SamplingPrecision;                                          // 0x0244   (0x0004)  
+	FVector                                            PrimaryAxis;                                                // 0x0248   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0260   (0x0018)  
+	FVector                                            PoleVectorPosition;                                         // 0x0278   (0x0018)  
+	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0290   (0x0010)  
+	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x02A0   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x02A1   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x02A4   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x02A8   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x02A9   (0x0007)  MISSED
+	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x02B0   (0x0090)  
+	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x0340   (0x0098)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x03D8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_FitChainToCurvePerItem
-/// Size: 0x0220 (0x000180 - 0x0003A0)
+/// Size: 0x0220 (0x0001D0 - 0x0003F0)
 struct FRigUnit_FitChainToCurvePerItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	FRigVMFourPointBezier                              Bezier;                                                     // 0x0190   (0x0060)  
-	EControlRigCurveAlignment                          Alignment;                                                  // 0x01F0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F1   (0x0003)  MISSED
-	float                                              Minimum;                                                    // 0x01F4   (0x0004)  
-	float                                              Maximum;                                                    // 0x01F8   (0x0004)  
-	int32_t                                            SamplingPrecision;                                          // 0x01FC   (0x0004)  
-	FVector                                            PrimaryAxis;                                                // 0x0200   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x0218   (0x0018)  
-	FVector                                            PoleVectorPosition;                                         // 0x0230   (0x0018)  
-	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0248   (0x0010)  
-	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x0258   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0259   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x025C   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0260   (0x0001)  
-	unsigned char                                      UnknownData02_5[0xF];                                       // 0x0261   (0x000F)  MISSED
-	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x0270   (0x0090)  
-	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x0300   (0x0098)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0398   (0x0008)  MISSED
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	FRigVMFourPointBezier                              Bezier;                                                     // 0x01E0   (0x0060)  
+	EControlRigCurveAlignment                          Alignment;                                                  // 0x0240   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0241   (0x0003)  MISSED
+	float                                              Minimum;                                                    // 0x0244   (0x0004)  
+	float                                              Maximum;                                                    // 0x0248   (0x0004)  
+	int32_t                                            SamplingPrecision;                                          // 0x024C   (0x0004)  
+	FVector                                            PrimaryAxis;                                                // 0x0250   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0268   (0x0018)  
+	FVector                                            PoleVectorPosition;                                         // 0x0280   (0x0018)  
+	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0298   (0x0010)  
+	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x02A8   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x02A9   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x02AC   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x02B0   (0x0001)  
+	unsigned char                                      UnknownData02_5[0xF];                                       // 0x02B1   (0x000F)  MISSED
+	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x02C0   (0x0090)  
+	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x0350   (0x0098)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x03E8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_FitChainToCurveItemArray
-/// Size: 0x0220 (0x000180 - 0x0003A0)
+/// Size: 0x0220 (0x0001D0 - 0x0003F0)
 struct FRigUnit_FitChainToCurveItemArray : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	FRigVMFourPointBezier                              Bezier;                                                     // 0x0190   (0x0060)  
-	EControlRigCurveAlignment                          Alignment;                                                  // 0x01F0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01F1   (0x0003)  MISSED
-	float                                              Minimum;                                                    // 0x01F4   (0x0004)  
-	float                                              Maximum;                                                    // 0x01F8   (0x0004)  
-	int32_t                                            SamplingPrecision;                                          // 0x01FC   (0x0004)  
-	FVector                                            PrimaryAxis;                                                // 0x0200   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x0218   (0x0018)  
-	FVector                                            PoleVectorPosition;                                         // 0x0230   (0x0018)  
-	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0248   (0x0010)  
-	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x0258   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0259   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x025C   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0260   (0x0001)  
-	unsigned char                                      UnknownData02_5[0xF];                                       // 0x0261   (0x000F)  MISSED
-	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x0270   (0x0090)  
-	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x0300   (0x0098)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0398   (0x0008)  MISSED
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	FRigVMFourPointBezier                              Bezier;                                                     // 0x01E0   (0x0060)  
+	EControlRigCurveAlignment                          Alignment;                                                  // 0x0240   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0241   (0x0003)  MISSED
+	float                                              Minimum;                                                    // 0x0244   (0x0004)  
+	float                                              Maximum;                                                    // 0x0248   (0x0004)  
+	int32_t                                            SamplingPrecision;                                          // 0x024C   (0x0004)  
+	FVector                                            PrimaryAxis;                                                // 0x0250   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0268   (0x0018)  
+	FVector                                            PoleVectorPosition;                                         // 0x0280   (0x0018)  
+	TArray<FRigUnit_FitChainToCurve_Rotation>          Rotations;                                                  // 0x0298   (0x0010)  
+	ERigVMAnimEasingType                               RotationEaseType;                                           // 0x02A8   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x02A9   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x02AC   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x02B0   (0x0001)  
+	unsigned char                                      UnknownData02_5[0xF];                                       // 0x02B1   (0x000F)  MISSED
+	FRigUnit_FitChainToCurve_DebugSettings             DebugSettings;                                              // 0x02C0   (0x0090)  
+	FRigUnit_FitChainToCurve_WorkData                  WorkData;                                                   // 0x0350   (0x0098)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x03E8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_ModifyBoneTransforms_PerBone
@@ -6785,16 +6929,16 @@ struct FRigUnit_ModifyBoneTransforms_WorkData : FRigUnit_ModifyTransforms_WorkDa
 };
 
 /// Struct /Script/ControlRig.RigUnit_ModifyBoneTransforms
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_ModifyBoneTransforms : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigUnit_ModifyBoneTransforms_PerBone>      BoneToModify;                                               // 0x0180   (0x0010)  
-	float                                              Weight;                                                     // 0x0190   (0x0004)  
-	float                                              WeightMinimum;                                              // 0x0194   (0x0004)  
-	float                                              WeightMaximum;                                              // 0x0198   (0x0004)  
-	EControlRigModifyBoneMode                          Mode;                                                       // 0x019C   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x019D   (0x0003)  MISSED
-	FRigUnit_ModifyBoneTransforms_WorkData             WorkData;                                                   // 0x01A0   (0x0010)  
+	TArray<FRigUnit_ModifyBoneTransforms_PerBone>      BoneToModify;                                               // 0x01D0   (0x0010)  
+	float                                              Weight;                                                     // 0x01E0   (0x0004)  
+	float                                              WeightMinimum;                                              // 0x01E4   (0x0004)  
+	float                                              WeightMaximum;                                              // 0x01E8   (0x0004)  
+	EControlRigModifyBoneMode                          Mode;                                                       // 0x01EC   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01ED   (0x0003)  MISSED
+	FRigUnit_ModifyBoneTransforms_WorkData             WorkData;                                                   // 0x01F0   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ModifyTransforms_PerItem
@@ -6807,16 +6951,16 @@ struct FRigUnit_ModifyTransforms_PerItem
 };
 
 /// Struct /Script/ControlRig.RigUnit_ModifyTransforms
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_ModifyTransforms : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigUnit_ModifyTransforms_PerItem>          ItemToModify;                                               // 0x0180   (0x0010)  
-	float                                              Weight;                                                     // 0x0190   (0x0004)  
-	float                                              WeightMinimum;                                              // 0x0194   (0x0004)  
-	float                                              WeightMaximum;                                              // 0x0198   (0x0004)  
-	EControlRigModifyBoneMode                          Mode;                                                       // 0x019C   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x019D   (0x0003)  MISSED
-	FRigUnit_ModifyTransforms_WorkData                 WorkData;                                                   // 0x01A0   (0x0010)  
+	TArray<FRigUnit_ModifyTransforms_PerItem>          ItemToModify;                                               // 0x01D0   (0x0010)  
+	float                                              Weight;                                                     // 0x01E0   (0x0004)  
+	float                                              WeightMinimum;                                              // 0x01E4   (0x0004)  
+	float                                              WeightMaximum;                                              // 0x01E8   (0x0004)  
+	EControlRigModifyBoneMode                          Mode;                                                       // 0x01EC   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01ED   (0x0003)  MISSED
+	FRigUnit_ModifyTransforms_WorkData                 WorkData;                                                   // 0x01F0   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_MultiFABRIK_WorkData
@@ -6836,20 +6980,20 @@ struct FRigUnit_MultiFABRIK_EndEffector
 };
 
 /// Struct /Script/ControlRig.RigUnit_MultiFABRIK
-/// Size: 0x00A0 (0x000180 - 0x000220)
+/// Size: 0x00A0 (0x0001D0 - 0x000270)
 struct FRigUnit_MultiFABRIK : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              RootBone;                                                   // 0x0180   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0184   (0x0004)  MISSED
-	TArray<FRigUnit_MultiFABRIK_EndEffector>           Effectors;                                                  // 0x0188   (0x0010)  
-	float                                              Precision;                                                  // 0x0198   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x019C   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x019D   (0x0003)  MISSED
-	int32_t                                            MaxIterations;                                              // 0x01A0   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x01A4   (0x0004)  MISSED
-	FRigUnit_MultiFABRIK_WorkData                      WorkData;                                                   // 0x01A8   (0x0068)  
-	bool                                               bIsInitialized;                                             // 0x0210   (0x0001)  
-	unsigned char                                      UnknownData03_6[0xF];                                       // 0x0211   (0x000F)  MISSED
+	FName                                              RootBone;                                                   // 0x01D0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01D4   (0x0004)  MISSED
+	TArray<FRigUnit_MultiFABRIK_EndEffector>           Effectors;                                                  // 0x01D8   (0x0010)  
+	float                                              Precision;                                                  // 0x01E8   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01EC   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01ED   (0x0003)  MISSED
+	int32_t                                            MaxIterations;                                              // 0x01F0   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x01F4   (0x0004)  MISSED
+	FRigUnit_MultiFABRIK_WorkData                      WorkData;                                                   // 0x01F8   (0x0068)  
+	bool                                               bIsInitialized;                                             // 0x0260   (0x0001)  
+	unsigned char                                      UnknownData03_6[0xF];                                       // 0x0261   (0x000F)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SlideChain_WorkData
@@ -6865,38 +7009,38 @@ struct FRigUnit_SlideChain_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_SlideChain
-/// Size: 0x0060 (0x000180 - 0x0001E0)
+/// Size: 0x0060 (0x0001D0 - 0x000230)
 struct FRigUnit_SlideChain : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              StartBone;                                                  // 0x0180   (0x0004)  
-	FName                                              EndBone;                                                    // 0x0184   (0x0004)  
-	float                                              SlideAmount;                                                // 0x0188   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x018C   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x018D   (0x0003)  MISSED
-	FRigUnit_SlideChain_WorkData                       WorkData;                                                   // 0x0190   (0x0048)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FName                                              StartBone;                                                  // 0x01D0   (0x0004)  
+	FName                                              EndBone;                                                    // 0x01D4   (0x0004)  
+	float                                              SlideAmount;                                                // 0x01D8   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01DC   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01DD   (0x0003)  MISSED
+	FRigUnit_SlideChain_WorkData                       WorkData;                                                   // 0x01E0   (0x0048)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0228   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SlideChainPerItem
-/// Size: 0x0060 (0x000180 - 0x0001E0)
+/// Size: 0x0060 (0x0001D0 - 0x000230)
 struct FRigUnit_SlideChainPerItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	float                                              SlideAmount;                                                // 0x0190   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0194   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0195   (0x0003)  MISSED
-	FRigUnit_SlideChain_WorkData                       WorkData;                                                   // 0x0198   (0x0048)  
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	float                                              SlideAmount;                                                // 0x01E0   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01E4   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01E5   (0x0003)  MISSED
+	FRigUnit_SlideChain_WorkData                       WorkData;                                                   // 0x01E8   (0x0048)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_SlideChainItemArray
-/// Size: 0x0060 (0x000180 - 0x0001E0)
+/// Size: 0x0060 (0x0001D0 - 0x000230)
 struct FRigUnit_SlideChainItemArray : FRigUnit_HighlevelBaseMutable
 { 
-	TArray<FRigElementKey>                             Items;                                                      // 0x0180   (0x0010)  
-	float                                              SlideAmount;                                                // 0x0190   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0194   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0195   (0x0003)  MISSED
-	FRigUnit_SlideChain_WorkData                       WorkData;                                                   // 0x0198   (0x0048)  
+	TArray<FRigElementKey>                             Items;                                                      // 0x01D0   (0x0010)  
+	float                                              SlideAmount;                                                // 0x01E0   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x01E4   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01E5   (0x0003)  MISSED
+	FRigUnit_SlideChain_WorkData                       WorkData;                                                   // 0x01E8   (0x0048)  
 };
 
 /// Struct /Script/ControlRig.RegionScaleFactors
@@ -6930,34 +7074,34 @@ struct FSphericalPoseReaderDebugSettings
 };
 
 /// Struct /Script/ControlRig.RigUnit_SphericalPoseReader
-/// Size: 0x0190 (0x000180 - 0x000310)
+/// Size: 0x0190 (0x0001D0 - 0x000360)
 struct FRigUnit_SphericalPoseReader : FRigUnit_HighlevelBaseMutable
 { 
-	float                                              OutputParam;                                                // 0x0180   (0x0004)  
-	FRigElementKey                                     DriverItem;                                                 // 0x0184   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	FVector                                            DriverAxis;                                                 // 0x0190   (0x0018)  
-	FVector                                            RotationOffset;                                             // 0x01A8   (0x0018)  
-	float                                              ActiveRegionSize;                                           // 0x01C0   (0x0004)  
-	FRegionScaleFactors                                ActiveRegionScaleFactors;                                   // 0x01C4   (0x0010)  
-	float                                              FalloffSize;                                                // 0x01D4   (0x0004)  
-	FRegionScaleFactors                                FalloffRegionScaleFactors;                                  // 0x01D8   (0x0010)  
-	bool                                               FlipWidthScaling;                                           // 0x01E8   (0x0001)  
-	bool                                               FlipHeightScaling;                                          // 0x01E9   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01EA   (0x0002)  MISSED
-	FRigElementKey                                     OptionalParentItem;                                         // 0x01EC   (0x0008)  
-	FSphericalPoseReaderDebugSettings                  Debug;                                                      // 0x01F4   (0x0010)  
-	FSphericalRegion                                   InnerRegion;                                                // 0x0204   (0x0014)  
-	FSphericalRegion                                   OuterRegion;                                                // 0x0218   (0x0014)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x022C   (0x0004)  MISSED
-	FVector                                            DriverNormal;                                               // 0x0230   (0x0018)  
-	FVector                                            Driver2D;                                                   // 0x0248   (0x0018)  
-	FCachedRigElement                                  DriverCache;                                                // 0x0260   (0x0018)  
-	FCachedRigElement                                  OptionalParentCache;                                        // 0x0278   (0x0018)  
-	FTransform                                         LocalDriverTransformInit;                                   // 0x0290   (0x0060)  
-	FVector                                            CachedRotationOffset;                                       // 0x02F0   (0x0018)  
-	bool                                               bCachedInitTransforms;                                      // 0x0308   (0x0001)  
-	unsigned char                                      UnknownData03_6[0x7];                                       // 0x0309   (0x0007)  MISSED
+	float                                              OutputParam;                                                // 0x01D0   (0x0004)  
+	FRigElementKey                                     DriverItem;                                                 // 0x01D4   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	FVector                                            DriverAxis;                                                 // 0x01E0   (0x0018)  
+	FVector                                            RotationOffset;                                             // 0x01F8   (0x0018)  
+	float                                              ActiveRegionSize;                                           // 0x0210   (0x0004)  
+	FRegionScaleFactors                                ActiveRegionScaleFactors;                                   // 0x0214   (0x0010)  
+	float                                              FalloffSize;                                                // 0x0224   (0x0004)  
+	FRegionScaleFactors                                FalloffRegionScaleFactors;                                  // 0x0228   (0x0010)  
+	bool                                               FlipWidthScaling;                                           // 0x0238   (0x0001)  
+	bool                                               FlipHeightScaling;                                          // 0x0239   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x023A   (0x0002)  MISSED
+	FRigElementKey                                     OptionalParentItem;                                         // 0x023C   (0x0008)  
+	FSphericalPoseReaderDebugSettings                  Debug;                                                      // 0x0244   (0x0010)  
+	FSphericalRegion                                   InnerRegion;                                                // 0x0254   (0x0014)  
+	FSphericalRegion                                   OuterRegion;                                                // 0x0268   (0x0014)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x027C   (0x0004)  MISSED
+	FVector                                            DriverNormal;                                               // 0x0280   (0x0018)  
+	FVector                                            Driver2D;                                                   // 0x0298   (0x0018)  
+	FCachedRigElement                                  DriverCache;                                                // 0x02B0   (0x0018)  
+	FCachedRigElement                                  OptionalParentCache;                                        // 0x02C8   (0x0018)  
+	FTransform                                         LocalDriverTransformInit;                                   // 0x02E0   (0x0060)  
+	FVector                                            CachedRotationOffset;                                       // 0x0340   (0x0018)  
+	bool                                               bCachedInitTransforms;                                      // 0x0358   (0x0001)  
+	unsigned char                                      UnknownData03_6[0x7];                                       // 0x0359   (0x0007)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_SpringIK_DebugSettings
@@ -6983,32 +7127,32 @@ struct FRigUnit_SpringIK_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_SpringIK
-/// Size: 0x01B0 (0x000180 - 0x000330)
+/// Size: 0x01B0 (0x0001D0 - 0x000380)
 struct FRigUnit_SpringIK : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              StartBone;                                                  // 0x0180   (0x0004)  
-	FName                                              EndBone;                                                    // 0x0184   (0x0004)  
-	float                                              HierarchyStrength;                                          // 0x0188   (0x0004)  
-	float                                              EffectorStrength;                                           // 0x018C   (0x0004)  
-	float                                              EffectorRatio;                                              // 0x0190   (0x0004)  
-	float                                              RootStrength;                                               // 0x0194   (0x0004)  
-	float                                              RootRatio;                                                  // 0x0198   (0x0004)  
-	float                                              Damping;                                                    // 0x019C   (0x0004)  
-	FVector                                            PoleVector;                                                 // 0x01A0   (0x0018)  
-	bool                                               bFlipPolePlane;                                             // 0x01B8   (0x0001)  
-	EControlRigVectorKind                              PoleVectorKind;                                             // 0x01B9   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x01BA   (0x0002)  MISSED
-	FName                                              PoleVectorSpace;                                            // 0x01BC   (0x0004)  
-	FVector                                            PrimaryAxis;                                                // 0x01C0   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x01D8   (0x0018)  
-	bool                                               bLiveSimulation;                                            // 0x01F0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01F1   (0x0003)  MISSED
-	int32_t                                            Iterations;                                                 // 0x01F4   (0x0004)  
-	bool                                               bLimitLocalPosition;                                        // 0x01F8   (0x0001)  
-	bool                                               bPropagateToChildren;                                       // 0x01F9   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x6];                                       // 0x01FA   (0x0006)  MISSED
-	FRigUnit_SpringIK_DebugSettings                    DebugSettings;                                              // 0x0200   (0x0080)  
-	FRigUnit_SpringIK_WorkData                         WorkData;                                                   // 0x0280   (0x00B0)  
+	FName                                              StartBone;                                                  // 0x01D0   (0x0004)  
+	FName                                              EndBone;                                                    // 0x01D4   (0x0004)  
+	float                                              HierarchyStrength;                                          // 0x01D8   (0x0004)  
+	float                                              EffectorStrength;                                           // 0x01DC   (0x0004)  
+	float                                              EffectorRatio;                                              // 0x01E0   (0x0004)  
+	float                                              RootStrength;                                               // 0x01E4   (0x0004)  
+	float                                              RootRatio;                                                  // 0x01E8   (0x0004)  
+	float                                              Damping;                                                    // 0x01EC   (0x0004)  
+	FVector                                            PoleVector;                                                 // 0x01F0   (0x0018)  
+	bool                                               bFlipPolePlane;                                             // 0x0208   (0x0001)  
+	EControlRigVectorKind                              PoleVectorKind;                                             // 0x0209   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x020A   (0x0002)  MISSED
+	FName                                              PoleVectorSpace;                                            // 0x020C   (0x0004)  
+	FVector                                            PrimaryAxis;                                                // 0x0210   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0228   (0x0018)  
+	bool                                               bLiveSimulation;                                            // 0x0240   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0241   (0x0003)  MISSED
+	int32_t                                            Iterations;                                                 // 0x0244   (0x0004)  
+	bool                                               bLimitLocalPosition;                                        // 0x0248   (0x0001)  
+	bool                                               bPropagateToChildren;                                       // 0x0249   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x6];                                       // 0x024A   (0x0006)  MISSED
+	FRigUnit_SpringIK_DebugSettings                    DebugSettings;                                              // 0x0250   (0x0080)  
+	FRigUnit_SpringIK_WorkData                         WorkData;                                                   // 0x02D0   (0x00B0)  
 };
 
 /// Struct /Script/ControlRig.ConstraintTarget
@@ -7027,38 +7171,38 @@ struct FConstraintTarget
 struct FRigUnit_TransformConstraint_WorkData
 { 
 	TArray<FConstraintData>                            ConstraintData;                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(80,12328) /* TMap<int32_t, int32_t> */ __um(ConstraintDataToTargets);                            // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,12382) /* TMap<int32_t, int32_t> */ __um(ConstraintDataToTargets);                            // 0x0010   (0x0050)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_TransformConstraint
-/// Size: 0x00F0 (0x000180 - 0x000270)
+/// Size: 0x00F0 (0x0001D0 - 0x0002C0)
 struct FRigUnit_TransformConstraint : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              bone;                                                       // 0x0180   (0x0004)  
-	ETransformSpaceMode                                BaseTransformSpace;                                         // 0x0184   (0x0001)  
-	unsigned char                                      UnknownData00_5[0xB];                                       // 0x0185   (0x000B)  MISSED
-	FTransform                                         BaseTransform;                                              // 0x0190   (0x0060)  
-	FName                                              BaseBone;                                                   // 0x01F0   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01F4   (0x0004)  MISSED
-	TArray<FConstraintTarget>                          Targets;                                                    // 0x01F8   (0x0010)  
-	bool                                               bUseInitialTransforms;                                      // 0x0208   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0209   (0x0007)  MISSED
-	FRigUnit_TransformConstraint_WorkData              WorkData;                                                   // 0x0210   (0x0060)  
+	FName                                              bone;                                                       // 0x01D0   (0x0004)  
+	ETransformSpaceMode                                BaseTransformSpace;                                         // 0x01D4   (0x0001)  
+	unsigned char                                      UnknownData00_5[0xB];                                       // 0x01D5   (0x000B)  MISSED
+	FTransform                                         BaseTransform;                                              // 0x01E0   (0x0060)  
+	FName                                              BaseBone;                                                   // 0x0240   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0244   (0x0004)  MISSED
+	TArray<FConstraintTarget>                          Targets;                                                    // 0x0248   (0x0010)  
+	bool                                               bUseInitialTransforms;                                      // 0x0258   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0259   (0x0007)  MISSED
+	FRigUnit_TransformConstraint_WorkData              WorkData;                                                   // 0x0260   (0x0060)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_TransformConstraintPerItem
-/// Size: 0x00F0 (0x000180 - 0x000270)
+/// Size: 0x00F0 (0x0001D0 - 0x0002C0)
 struct FRigUnit_TransformConstraintPerItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Item;                                                       // 0x0180   (0x0008)  
-	ETransformSpaceMode                                BaseTransformSpace;                                         // 0x0188   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0189   (0x0007)  MISSED
-	FTransform                                         BaseTransform;                                              // 0x0190   (0x0060)  
-	FRigElementKey                                     BaseItem;                                                   // 0x01F0   (0x0008)  
-	TArray<FConstraintTarget>                          Targets;                                                    // 0x01F8   (0x0010)  
-	bool                                               bUseInitialTransforms;                                      // 0x0208   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0209   (0x0007)  MISSED
-	FRigUnit_TransformConstraint_WorkData              WorkData;                                                   // 0x0210   (0x0060)  
+	FRigElementKey                                     Item;                                                       // 0x01D0   (0x0008)  
+	ETransformSpaceMode                                BaseTransformSpace;                                         // 0x01D8   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01D9   (0x0007)  MISSED
+	FTransform                                         BaseTransform;                                              // 0x01E0   (0x0060)  
+	FRigElementKey                                     BaseItem;                                                   // 0x0240   (0x0008)  
+	TArray<FConstraintTarget>                          Targets;                                                    // 0x0248   (0x0010)  
+	bool                                               bUseInitialTransforms;                                      // 0x0258   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0259   (0x0007)  MISSED
+	FRigUnit_TransformConstraint_WorkData              WorkData;                                                   // 0x0260   (0x0060)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ParentConstraint_AdvancedSettings
@@ -7070,48 +7214,68 @@ struct FRigUnit_ParentConstraint_AdvancedSettings
 };
 
 /// Struct /Script/ControlRig.RigUnit_ParentConstraint
-/// Size: 0x0060 (0x000180 - 0x0001E0)
+/// Size: 0x0060 (0x0001D0 - 0x000230)
 struct FRigUnit_ParentConstraint : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	bool                                               bMaintainOffset;                                            // 0x0188   (0x0001)  
-	FTransformFilter                                   Filter;                                                     // 0x0189   (0x0009)  
-	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0192   (0x0006)  MISSED
-	TArray<FConstraintParent>                          Parents;                                                    // 0x0198   (0x0010)  
-	FRigUnit_ParentConstraint_AdvancedSettings         AdvancedSettings;                                           // 0x01A8   (0x0002)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01AA   (0x0002)  MISSED
-	float                                              Weight;                                                     // 0x01AC   (0x0004)  
-	FCachedRigElement                                  ChildCache;                                                 // 0x01B0   (0x0018)  
-	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x01C8   (0x0010)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01D8   (0x0008)  MISSED
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	bool                                               bMaintainOffset;                                            // 0x01D8   (0x0001)  
+	FTransformFilter                                   Filter;                                                     // 0x01D9   (0x0009)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x01E2   (0x0006)  MISSED
+	TArray<FConstraintParent>                          Parents;                                                    // 0x01E8   (0x0010)  
+	FRigUnit_ParentConstraint_AdvancedSettings         AdvancedSettings;                                           // 0x01F8   (0x0002)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01FA   (0x0002)  MISSED
+	float                                              Weight;                                                     // 0x01FC   (0x0004)  
+	FCachedRigElement                                  ChildCache;                                                 // 0x0200   (0x0018)  
+	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x0218   (0x0010)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0228   (0x0008)  MISSED
+};
+
+/// Struct /Script/ControlRig.RigUnit_ParentConstraintMath_AdvancedSettings
+/// Size: 0x0001 (0x000000 - 0x000001)
+struct FRigUnit_ParentConstraintMath_AdvancedSettings
+{ 
+	EConstraintInterpType                              InterpolationType;                                          // 0x0000   (0x0001)  
+};
+
+/// Struct /Script/ControlRig.RigUnit_ParentConstraintMath
+/// Size: 0x00F8 (0x000008 - 0x000100)
+struct FRigUnit_ParentConstraintMath : FRigUnit_HighlevelBase
+{ 
+	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
+	FTransform                                         Input;                                                      // 0x0010   (0x0060)  
+	TArray<FConstraintParent>                          Parents;                                                    // 0x0070   (0x0010)  
+	FRigUnit_ParentConstraintMath_AdvancedSettings     AdvancedSettings;                                           // 0x0080   (0x0001)  
+	unsigned char                                      UnknownData01_5[0xF];                                       // 0x0081   (0x000F)  MISSED
+	FTransform                                         Output;                                                     // 0x0090   (0x0060)  
+	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x00F0   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_PositionConstraint
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_PositionConstraint : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	bool                                               bMaintainOffset;                                            // 0x0188   (0x0001)  
-	FFilterOptionPerAxis                               Filter;                                                     // 0x0189   (0x0003)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	TArray<FConstraintParent>                          Parents;                                                    // 0x0190   (0x0010)  
-	float                                              Weight;                                                     // 0x01A0   (0x0004)  
-	unsigned char                                      UnknownData01_6[0xC];                                       // 0x01A4   (0x000C)  MISSED
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	bool                                               bMaintainOffset;                                            // 0x01D8   (0x0001)  
+	FFilterOptionPerAxis                               Filter;                                                     // 0x01D9   (0x0003)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	TArray<FConstraintParent>                          Parents;                                                    // 0x01E0   (0x0010)  
+	float                                              Weight;                                                     // 0x01F0   (0x0004)  
+	unsigned char                                      UnknownData01_6[0xC];                                       // 0x01F4   (0x000C)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_PositionConstraintLocalSpaceOffset
-/// Size: 0x0050 (0x000180 - 0x0001D0)
+/// Size: 0x0050 (0x0001D0 - 0x000220)
 struct FRigUnit_PositionConstraintLocalSpaceOffset : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	bool                                               bMaintainOffset;                                            // 0x0188   (0x0001)  
-	FFilterOptionPerAxis                               Filter;                                                     // 0x0189   (0x0003)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	TArray<FConstraintParent>                          Parents;                                                    // 0x0190   (0x0010)  
-	float                                              Weight;                                                     // 0x01A0   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01A4   (0x0004)  MISSED
-	FCachedRigElement                                  ChildCache;                                                 // 0x01A8   (0x0018)  
-	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x01C0   (0x0010)  
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	bool                                               bMaintainOffset;                                            // 0x01D8   (0x0001)  
+	FFilterOptionPerAxis                               Filter;                                                     // 0x01D9   (0x0003)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	TArray<FConstraintParent>                          Parents;                                                    // 0x01E0   (0x0010)  
+	float                                              Weight;                                                     // 0x01F0   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01F4   (0x0004)  MISSED
+	FCachedRigElement                                  ChildCache;                                                 // 0x01F8   (0x0018)  
+	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x0210   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_RotationConstraint_AdvancedSettings
@@ -7123,62 +7287,62 @@ struct FRigUnit_RotationConstraint_AdvancedSettings
 };
 
 /// Struct /Script/ControlRig.RigUnit_RotationConstraint
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_RotationConstraint : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	bool                                               bMaintainOffset;                                            // 0x0188   (0x0001)  
-	FFilterOptionPerAxis                               Filter;                                                     // 0x0189   (0x0003)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	TArray<FConstraintParent>                          Parents;                                                    // 0x0190   (0x0010)  
-	FRigUnit_RotationConstraint_AdvancedSettings       AdvancedSettings;                                           // 0x01A0   (0x0002)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01A2   (0x0002)  MISSED
-	float                                              Weight;                                                     // 0x01A4   (0x0004)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01A8   (0x0008)  MISSED
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	bool                                               bMaintainOffset;                                            // 0x01D8   (0x0001)  
+	FFilterOptionPerAxis                               Filter;                                                     // 0x01D9   (0x0003)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	TArray<FConstraintParent>                          Parents;                                                    // 0x01E0   (0x0010)  
+	FRigUnit_RotationConstraint_AdvancedSettings       AdvancedSettings;                                           // 0x01F0   (0x0002)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01F2   (0x0002)  MISSED
+	float                                              Weight;                                                     // 0x01F4   (0x0004)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_RotationConstraintLocalSpaceOffset
-/// Size: 0x0050 (0x000180 - 0x0001D0)
+/// Size: 0x0050 (0x0001D0 - 0x000220)
 struct FRigUnit_RotationConstraintLocalSpaceOffset : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	bool                                               bMaintainOffset;                                            // 0x0188   (0x0001)  
-	FFilterOptionPerAxis                               Filter;                                                     // 0x0189   (0x0003)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	TArray<FConstraintParent>                          Parents;                                                    // 0x0190   (0x0010)  
-	FRigUnit_RotationConstraint_AdvancedSettings       AdvancedSettings;                                           // 0x01A0   (0x0002)  
-	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01A2   (0x0002)  MISSED
-	float                                              Weight;                                                     // 0x01A4   (0x0004)  
-	FCachedRigElement                                  ChildCache;                                                 // 0x01A8   (0x0018)  
-	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x01C0   (0x0010)  
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	bool                                               bMaintainOffset;                                            // 0x01D8   (0x0001)  
+	FFilterOptionPerAxis                               Filter;                                                     // 0x01D9   (0x0003)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	TArray<FConstraintParent>                          Parents;                                                    // 0x01E0   (0x0010)  
+	FRigUnit_RotationConstraint_AdvancedSettings       AdvancedSettings;                                           // 0x01F0   (0x0002)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x01F2   (0x0002)  MISSED
+	float                                              Weight;                                                     // 0x01F4   (0x0004)  
+	FCachedRigElement                                  ChildCache;                                                 // 0x01F8   (0x0018)  
+	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x0210   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_ScaleConstraint
-/// Size: 0x0030 (0x000180 - 0x0001B0)
+/// Size: 0x0030 (0x0001D0 - 0x000200)
 struct FRigUnit_ScaleConstraint : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	bool                                               bMaintainOffset;                                            // 0x0188   (0x0001)  
-	FFilterOptionPerAxis                               Filter;                                                     // 0x0189   (0x0003)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	TArray<FConstraintParent>                          Parents;                                                    // 0x0190   (0x0010)  
-	float                                              Weight;                                                     // 0x01A0   (0x0004)  
-	unsigned char                                      UnknownData01_6[0xC];                                       // 0x01A4   (0x000C)  MISSED
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	bool                                               bMaintainOffset;                                            // 0x01D8   (0x0001)  
+	FFilterOptionPerAxis                               Filter;                                                     // 0x01D9   (0x0003)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	TArray<FConstraintParent>                          Parents;                                                    // 0x01E0   (0x0010)  
+	float                                              Weight;                                                     // 0x01F0   (0x0004)  
+	unsigned char                                      UnknownData01_6[0xC];                                       // 0x01F4   (0x000C)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_ScaleConstraintLocalSpaceOffset
-/// Size: 0x0050 (0x000180 - 0x0001D0)
+/// Size: 0x0050 (0x0001D0 - 0x000220)
 struct FRigUnit_ScaleConstraintLocalSpaceOffset : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     Child;                                                      // 0x0180   (0x0008)  
-	bool                                               bMaintainOffset;                                            // 0x0188   (0x0001)  
-	FFilterOptionPerAxis                               Filter;                                                     // 0x0189   (0x0003)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	TArray<FConstraintParent>                          Parents;                                                    // 0x0190   (0x0010)  
-	float                                              Weight;                                                     // 0x01A0   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01A4   (0x0004)  MISSED
-	FCachedRigElement                                  ChildCache;                                                 // 0x01A8   (0x0018)  
-	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x01C0   (0x0010)  
+	FRigElementKey                                     Child;                                                      // 0x01D0   (0x0008)  
+	bool                                               bMaintainOffset;                                            // 0x01D8   (0x0001)  
+	FFilterOptionPerAxis                               Filter;                                                     // 0x01D9   (0x0003)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	TArray<FConstraintParent>                          Parents;                                                    // 0x01E0   (0x0010)  
+	float                                              Weight;                                                     // 0x01F0   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01F4   (0x0004)  MISSED
+	FCachedRigElement                                  ChildCache;                                                 // 0x01F8   (0x0018)  
+	TArray<FCachedRigElement>                          ParentCaches;                                               // 0x0210   (0x0010)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_TwistBones_WorkData
@@ -7191,35 +7355,35 @@ struct FRigUnit_TwistBones_WorkData
 };
 
 /// Struct /Script/ControlRig.RigUnit_TwistBones
-/// Size: 0x0080 (0x000180 - 0x000200)
+/// Size: 0x0080 (0x0001D0 - 0x000250)
 struct FRigUnit_TwistBones : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              StartBone;                                                  // 0x0180   (0x0004)  
-	FName                                              EndBone;                                                    // 0x0184   (0x0004)  
-	FVector                                            TwistAxis;                                                  // 0x0188   (0x0018)  
-	FVector                                            PoleAxis;                                                   // 0x01A0   (0x0018)  
-	ERigVMAnimEasingType                               TwistEaseType;                                              // 0x01B8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01B9   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x01BC   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01C0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x01C1   (0x0007)  MISSED
-	FRigUnit_TwistBones_WorkData                       WorkData;                                                   // 0x01C8   (0x0030)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x01F8   (0x0008)  MISSED
+	FName                                              StartBone;                                                  // 0x01D0   (0x0004)  
+	FName                                              EndBone;                                                    // 0x01D4   (0x0004)  
+	FVector                                            TwistAxis;                                                  // 0x01D8   (0x0018)  
+	FVector                                            PoleAxis;                                                   // 0x01F0   (0x0018)  
+	ERigVMAnimEasingType                               TwistEaseType;                                              // 0x0208   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0209   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x020C   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0210   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0211   (0x0007)  MISSED
+	FRigUnit_TwistBones_WorkData                       WorkData;                                                   // 0x0218   (0x0030)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0248   (0x0008)  MISSED
 };
 
 /// Struct /Script/ControlRig.RigUnit_TwistBonesPerItem
-/// Size: 0x0080 (0x000180 - 0x000200)
+/// Size: 0x0080 (0x0001D0 - 0x000250)
 struct FRigUnit_TwistBonesPerItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKeyCollection                           Items;                                                      // 0x0180   (0x0010)  
-	FVector                                            TwistAxis;                                                  // 0x0190   (0x0018)  
-	FVector                                            PoleAxis;                                                   // 0x01A8   (0x0018)  
-	ERigVMAnimEasingType                               TwistEaseType;                                              // 0x01C0   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01C1   (0x0003)  MISSED
-	float                                              Weight;                                                     // 0x01C4   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x01C8   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x01C9   (0x0007)  MISSED
-	FRigUnit_TwistBones_WorkData                       WorkData;                                                   // 0x01D0   (0x0030)  
+	FRigElementKeyCollection                           Items;                                                      // 0x01D0   (0x0010)  
+	FVector                                            TwistAxis;                                                  // 0x01E0   (0x0018)  
+	FVector                                            PoleAxis;                                                   // 0x01F8   (0x0018)  
+	ERigVMAnimEasingType                               TwistEaseType;                                              // 0x0210   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0211   (0x0003)  MISSED
+	float                                              Weight;                                                     // 0x0214   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x0218   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0219   (0x0007)  MISSED
+	FRigUnit_TwistBones_WorkData                       WorkData;                                                   // 0x0220   (0x0030)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_TwoBoneIKSimple_DebugSettings
@@ -7234,69 +7398,69 @@ struct FRigUnit_TwoBoneIKSimple_DebugSettings
 };
 
 /// Struct /Script/ControlRig.RigUnit_TwoBoneIKSimple
-/// Size: 0x01C0 (0x000180 - 0x000340)
+/// Size: 0x01C0 (0x0001D0 - 0x000390)
 struct FRigUnit_TwoBoneIKSimple : FRigUnit_HighlevelBaseMutable
 { 
-	FName                                              BoneA;                                                      // 0x0180   (0x0004)  
-	FName                                              BoneB;                                                      // 0x0184   (0x0004)  
-	FName                                              EffectorBone;                                               // 0x0188   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x018C   (0x0004)  MISSED
-	FTransform                                         Effector;                                                   // 0x0190   (0x0060)  
-	FVector                                            PrimaryAxis;                                                // 0x01F0   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x0208   (0x0018)  
-	float                                              SecondaryAxisWeight;                                        // 0x0220   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0224   (0x0004)  MISSED
-	FVector                                            PoleVector;                                                 // 0x0228   (0x0018)  
-	EControlRigVectorKind                              PoleVectorKind;                                             // 0x0240   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0241   (0x0003)  MISSED
-	FName                                              PoleVectorSpace;                                            // 0x0244   (0x0004)  
-	bool                                               bEnableStretch;                                             // 0x0248   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0249   (0x0003)  MISSED
-	float                                              StretchStartRatio;                                          // 0x024C   (0x0004)  
-	float                                              StretchMaximumRatio;                                        // 0x0250   (0x0004)  
-	float                                              Weight;                                                     // 0x0254   (0x0004)  
-	float                                              BoneALength;                                                // 0x0258   (0x0004)  
-	float                                              BoneBLength;                                                // 0x025C   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0260   (0x0001)  
-	unsigned char                                      UnknownData04_5[0xF];                                       // 0x0261   (0x000F)  MISSED
-	FRigUnit_TwoBoneIKSimple_DebugSettings             DebugSettings;                                              // 0x0270   (0x0070)  
-	FCachedRigElement                                  CachedBoneAIndex;                                           // 0x02E0   (0x0018)  
-	FCachedRigElement                                  CachedBoneBIndex;                                           // 0x02F8   (0x0018)  
-	FCachedRigElement                                  CachedEffectorBoneIndex;                                    // 0x0310   (0x0018)  
-	FCachedRigElement                                  CachedPoleVectorSpaceIndex;                                 // 0x0328   (0x0018)  
+	FName                                              BoneA;                                                      // 0x01D0   (0x0004)  
+	FName                                              BoneB;                                                      // 0x01D4   (0x0004)  
+	FName                                              EffectorBone;                                               // 0x01D8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	FTransform                                         Effector;                                                   // 0x01E0   (0x0060)  
+	FVector                                            PrimaryAxis;                                                // 0x0240   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0258   (0x0018)  
+	float                                              SecondaryAxisWeight;                                        // 0x0270   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0274   (0x0004)  MISSED
+	FVector                                            PoleVector;                                                 // 0x0278   (0x0018)  
+	EControlRigVectorKind                              PoleVectorKind;                                             // 0x0290   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0291   (0x0003)  MISSED
+	FName                                              PoleVectorSpace;                                            // 0x0294   (0x0004)  
+	bool                                               bEnableStretch;                                             // 0x0298   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0299   (0x0003)  MISSED
+	float                                              StretchStartRatio;                                          // 0x029C   (0x0004)  
+	float                                              StretchMaximumRatio;                                        // 0x02A0   (0x0004)  
+	float                                              Weight;                                                     // 0x02A4   (0x0004)  
+	float                                              BoneALength;                                                // 0x02A8   (0x0004)  
+	float                                              BoneBLength;                                                // 0x02AC   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x02B0   (0x0001)  
+	unsigned char                                      UnknownData04_5[0xF];                                       // 0x02B1   (0x000F)  MISSED
+	FRigUnit_TwoBoneIKSimple_DebugSettings             DebugSettings;                                              // 0x02C0   (0x0070)  
+	FCachedRigElement                                  CachedBoneAIndex;                                           // 0x0330   (0x0018)  
+	FCachedRigElement                                  CachedBoneBIndex;                                           // 0x0348   (0x0018)  
+	FCachedRigElement                                  CachedEffectorBoneIndex;                                    // 0x0360   (0x0018)  
+	FCachedRigElement                                  CachedPoleVectorSpaceIndex;                                 // 0x0378   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_TwoBoneIKSimplePerItem
-/// Size: 0x01D0 (0x000180 - 0x000350)
+/// Size: 0x01D0 (0x0001D0 - 0x0003A0)
 struct FRigUnit_TwoBoneIKSimplePerItem : FRigUnit_HighlevelBaseMutable
 { 
-	FRigElementKey                                     ItemA;                                                      // 0x0180   (0x0008)  
-	FRigElementKey                                     ItemB;                                                      // 0x0188   (0x0008)  
-	FRigElementKey                                     EffectorItem;                                               // 0x0190   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0198   (0x0008)  MISSED
-	FTransform                                         Effector;                                                   // 0x01A0   (0x0060)  
-	FVector                                            PrimaryAxis;                                                // 0x0200   (0x0018)  
-	FVector                                            SecondaryAxis;                                              // 0x0218   (0x0018)  
-	float                                              SecondaryAxisWeight;                                        // 0x0230   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0234   (0x0004)  MISSED
-	FVector                                            PoleVector;                                                 // 0x0238   (0x0018)  
-	EControlRigVectorKind                              PoleVectorKind;                                             // 0x0250   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0251   (0x0003)  MISSED
-	FRigElementKey                                     PoleVectorSpace;                                            // 0x0254   (0x0008)  
-	bool                                               bEnableStretch;                                             // 0x025C   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x3];                                       // 0x025D   (0x0003)  MISSED
-	float                                              StretchStartRatio;                                          // 0x0260   (0x0004)  
-	float                                              StretchMaximumRatio;                                        // 0x0264   (0x0004)  
-	float                                              Weight;                                                     // 0x0268   (0x0004)  
-	float                                              ItemALength;                                                // 0x026C   (0x0004)  
-	float                                              ItemBLength;                                                // 0x0270   (0x0004)  
-	bool                                               bPropagateToChildren;                                       // 0x0274   (0x0001)  
-	unsigned char                                      UnknownData04_5[0xB];                                       // 0x0275   (0x000B)  MISSED
-	FRigUnit_TwoBoneIKSimple_DebugSettings             DebugSettings;                                              // 0x0280   (0x0070)  
-	FCachedRigElement                                  CachedItemAIndex;                                           // 0x02F0   (0x0018)  
-	FCachedRigElement                                  CachedItemBIndex;                                           // 0x0308   (0x0018)  
-	FCachedRigElement                                  CachedEffectorItemIndex;                                    // 0x0320   (0x0018)  
-	FCachedRigElement                                  CachedPoleVectorSpaceIndex;                                 // 0x0338   (0x0018)  
+	FRigElementKey                                     ItemA;                                                      // 0x01D0   (0x0008)  
+	FRigElementKey                                     ItemB;                                                      // 0x01D8   (0x0008)  
+	FRigElementKey                                     EffectorItem;                                               // 0x01E0   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01E8   (0x0008)  MISSED
+	FTransform                                         Effector;                                                   // 0x01F0   (0x0060)  
+	FVector                                            PrimaryAxis;                                                // 0x0250   (0x0018)  
+	FVector                                            SecondaryAxis;                                              // 0x0268   (0x0018)  
+	float                                              SecondaryAxisWeight;                                        // 0x0280   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0284   (0x0004)  MISSED
+	FVector                                            PoleVector;                                                 // 0x0288   (0x0018)  
+	EControlRigVectorKind                              PoleVectorKind;                                             // 0x02A0   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x3];                                       // 0x02A1   (0x0003)  MISSED
+	FRigElementKey                                     PoleVectorSpace;                                            // 0x02A4   (0x0008)  
+	bool                                               bEnableStretch;                                             // 0x02AC   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x3];                                       // 0x02AD   (0x0003)  MISSED
+	float                                              StretchStartRatio;                                          // 0x02B0   (0x0004)  
+	float                                              StretchMaximumRatio;                                        // 0x02B4   (0x0004)  
+	float                                              Weight;                                                     // 0x02B8   (0x0004)  
+	float                                              ItemALength;                                                // 0x02BC   (0x0004)  
+	float                                              ItemBLength;                                                // 0x02C0   (0x0004)  
+	bool                                               bPropagateToChildren;                                       // 0x02C4   (0x0001)  
+	unsigned char                                      UnknownData04_5[0xB];                                       // 0x02C5   (0x000B)  MISSED
+	FRigUnit_TwoBoneIKSimple_DebugSettings             DebugSettings;                                              // 0x02D0   (0x0070)  
+	FCachedRigElement                                  CachedItemAIndex;                                           // 0x0340   (0x0018)  
+	FCachedRigElement                                  CachedItemBIndex;                                           // 0x0358   (0x0018)  
+	FCachedRigElement                                  CachedEffectorItemIndex;                                    // 0x0370   (0x0018)  
+	FCachedRigElement                                  CachedPoleVectorSpaceIndex;                                 // 0x0388   (0x0018)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_TwoBoneIKSimpleVectors
@@ -7336,6 +7500,30 @@ struct FRigUnit_TwoBoneIKSimpleTransforms : FRigUnit_HighlevelBase
 	float                                              BoneBLength;                                                // 0x0134   (0x0004)  
 	unsigned char                                      UnknownData03_5[0x8];                                       // 0x0138   (0x0008)  MISSED
 	FTransform                                         Elbow;                                                      // 0x0140   (0x0060)  
+};
+
+/// Struct /Script/ControlRig.RigUnit_GetCandidates
+/// Size: 0x0018 (0x000008 - 0x000020)
+struct FRigUnit_GetCandidates : FRigUnit
+{ 
+	FRigElementKey                                     Connector;                                                  // 0x0008   (0x0008)  
+	TArray<FRigElementKey>                             Candidates;                                                 // 0x0010   (0x0010)  
+};
+
+/// Struct /Script/ControlRig.RigUnit_DiscardMatches
+/// Size: 0x0020 (0x0001D0 - 0x0001F0)
+struct FRigUnit_DiscardMatches : FRigUnitMutable
+{ 
+	TArray<FRigElementKey>                             Excluded;                                                   // 0x01D0   (0x0010)  
+	SDK_UNDEFINED(16,12383) /* FString */              __um(Message);                                              // 0x01E0   (0x0010)  
+};
+
+/// Struct /Script/ControlRig.RigUnit_ConnectorExecution
+/// Size: 0x01C8 (0x000008 - 0x0001D0)
+struct FRigUnit_ConnectorExecution : FRigUnit
+{ 
+	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0008   (0x0008)  MISSED
+	FControlRigExecuteContext                          ExecuteContext;                                             // 0x0010   (0x01C0)  
 };
 
 /// Struct /Script/ControlRig.RigUnit_PointSimulation_DebugSettings

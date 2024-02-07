@@ -41,15 +41,15 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.UpdateAudioData
-	// void UpdateAudioData(class UVehicleAudioCosmeticData* CosmeticData);                                                     // [0xa854368] Final|Native|Public|BlueprintCallable 
+	// void UpdateAudioData(class UVehicleAudioCosmeticData* CosmeticData);                                                     // [0xaa3095c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.HandleEngineAudioItemUpdated
-	// void HandleEngineAudioItemUpdated(TWeakObjectPtr<UVehicleCosmeticsItemDefinition_EngineAudio*> EngineAudioItem);         // [0x32ea5c4] Final|Native|Public  
+	// void HandleEngineAudioItemUpdated(TWeakObjectPtr<UVehicleCosmeticsItemDefinition_EngineAudio*> EngineAudioItem);         // [0xaa306b8] Final|Native|Public  
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.BP_OnUpdateAudioData
-	// void BP_OnUpdateAudioData(class UVehicleAudioCosmeticData* CosmeticData);                                                // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnUpdateAudioData(class UVehicleAudioCosmeticData* CosmeticData);                                                // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.BP_OnAudioDataLoaded
-	// void BP_OnAudioDataLoaded(class USoundBase* sound);                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnAudioDataLoaded(class USoundBase* sound);                                                                      // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioController.BP_OnAudioDataEjected
-	// void BP_OnAudioDataEjected();                                                                                            // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_OnAudioDataEjected();                                                                                            // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager
@@ -71,13 +71,13 @@ public:
 
 	/// Functions
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager.UnregisterVehcle
-	// void UnregisterVehcle(TScriptInterface<Class> Vehicle);                                                                  // [0x33f629c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void UnregisterVehcle(TScriptInterface<Class> Vehicle);                                                                  // [0x1fda454] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager.SetVehicleBudgetOverride
-	// void SetVehicleBudgetOverride(int32_t NewBudget);                                                                        // [0xa8542ec] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetVehicleBudgetOverride(int32_t NewBudget);                                                                        // [0xaa308a0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager.RemoveVehicleBudgetOverride
-	// void RemoveVehicleBudgetOverride();                                                                                      // [0xa8542d0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void RemoveVehicleBudgetOverride();                                                                                      // [0xaa30884] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioManager.RegisterVehicleWithAsset
-	// void RegisterVehicleWithAsset(FVehicleCosmeticLoadRequestInfo& RequestInfo);                                             // [0xa854238] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void RegisterVehicleWithAsset(FVehicleCosmeticLoadRequestInfo& RequestInfo);                                             // [0xaa307ec] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/VehicleCosmeticsAudioRuntime.VehicleCosmeticsAudioUser

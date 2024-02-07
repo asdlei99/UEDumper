@@ -52,9 +52,9 @@ public:
 
 	/// Functions
 	// Function /Script/Qos.QosBeaconClient.ServerQosRequest
-	// void ServerQosRequest(FString InSessionId);                                                                           // [0x741f404] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerQosRequest(FString InSessionId);                                                                           // [0x731cdcc] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/Qos.QosBeaconClient.ClientQosResponse
-	// void ClientQosResponse(EQosResponseType Response);                                                                    // [0x741f380] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientQosResponse(EQosResponseType Response);                                                                    // [0x731cd08] Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Class /Script/Qos.QosBeaconHost
@@ -69,7 +69,7 @@ public:
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FQosPingServerInfo
 { 
-	SDK_UNDEFINED(16,14937) /* FString */              __um(address);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15032) /* FString */              __um(address);                                              // 0x0000   (0x0010)  
 	int32_t                                            Port;                                                       // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0014   (0x0004)  MISSED
 };
@@ -78,8 +78,8 @@ struct FQosPingServerInfo
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FQosDatacenterInfo
 { 
-	SDK_UNDEFINED(16,14938) /* FString */              __um(ID);                                                   // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14939) /* FString */              __um(RegionId);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,15033) /* FString */              __um(ID);                                                   // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,15034) /* FString */              __um(RegionId);                                             // 0x0010   (0x0010)  
 	bool                                               bEnabled;                                                   // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0021   (0x0007)  MISSED
 	TArray<FQosPingServerInfo>                         Servers;                                                    // 0x0028   (0x0010)  
@@ -127,8 +127,8 @@ struct FQosSubspaceComparisonParams
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FQosRegionInfo
 { 
-	SDK_UNDEFINED(24,14940) /* FText */                __um(DisplayName);                                          // 0x0000   (0x0018)  
-	SDK_UNDEFINED(16,14941) /* FString */              __um(RegionId);                                             // 0x0018   (0x0010)  
+	SDK_UNDEFINED(24,15035) /* FText */                __um(DisplayName);                                          // 0x0000   (0x0018)  
+	SDK_UNDEFINED(16,15036) /* FString */              __um(RegionId);                                             // 0x0018   (0x0010)  
 	bool                                               bEnabled;                                                   // 0x0028   (0x0001)  
 	bool                                               bVisible;                                                   // 0x0029   (0x0001)  
 	bool                                               bAutoAssignable;                                            // 0x002A   (0x0001)  
@@ -154,7 +154,7 @@ public:
 	float                                              PingTimeout;                                                // 0x002C   (0x0004)  
 	bool                                               bEnableSubspaceBiasOrder;                                   // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0031   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14942) /* FString */              __um(SubspaceDelimiter);                                    // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,15037) /* FString */              __um(SubspaceDelimiter);                                    // 0x0038   (0x0010)  
 	TArray<FQosRegionInfo>                             RegionDefinitions;                                          // 0x0048   (0x0010)  
 	TArray<FQosDatacenterInfo>                         DatacenterDefinitions;                                      // 0x0058   (0x0010)  
 	FDateTime                                          LastCheckTimestamp;                                         // 0x0068   (0x0008)  
@@ -162,10 +162,10 @@ public:
 	EQosCompletionResult                               QosEvalResult;                                              // 0x0078   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0079   (0x0007)  MISSED
 	TArray<FRegionQosInstance>                         RegionOptions;                                              // 0x0080   (0x0010)  
-	SDK_UNDEFINED(16,14943) /* FString */              __um(ForceRegionId);                                        // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,15038) /* FString */              __um(ForceRegionId);                                        // 0x0090   (0x0010)  
 	bool                                               bRegionForcedViaCommandline;                                // 0x00A0   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x00A1   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14944) /* FString */              __um(SelectedRegionId);                                     // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,15039) /* FString */              __um(SelectedRegionId);                                     // 0x00A8   (0x0010)  
 	unsigned char                                      UnknownData03_6[0x40];                                      // 0x00B8   (0x0040)  MISSED
 };
 

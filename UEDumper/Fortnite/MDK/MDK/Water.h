@@ -15,21 +15,21 @@
 /// dependency: PhysicsCore
 
 /// Class /Script/Water.WaterBodyMeshComponent
-/// Size: 0x0000 (0x000630 - 0x000630)
+/// Size: 0x0000 (0x0005C0 - 0x0005C0)
 class UWaterBodyMeshComponent : public UStaticMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1584;
+	static inline constexpr uint64_t __MDKClassSize = 1472;
 
 public:
 };
 
 /// Class /Script/Water.WaterBodyStaticMeshComponent
-/// Size: 0x0000 (0x000630 - 0x000630)
+/// Size: 0x0000 (0x0005C0 - 0x0005C0)
 class UWaterBodyStaticMeshComponent : public UWaterBodyMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1584;
+	static inline constexpr uint64_t __MDKClassSize = 1472;
 
 public:
 };
@@ -52,17 +52,17 @@ public:
 
 	/// Functions
 	// Function /Script/Water.BuoyancyComponent.OnPontoonExitedWater
-	// void OnPontoonExitedWater(FSphericalPontoon& Pontoon);                                                                   // [0x78a994c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnPontoonExitedWater(FSphericalPontoon& Pontoon);                                                                   // [0x7804234] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Water.BuoyancyComponent.OnPontoonEnteredWater
-	// void OnPontoonEnteredWater(FSphericalPontoon& Pontoon);                                                                  // [0x78a9888] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void OnPontoonEnteredWater(FSphericalPontoon& Pontoon);                                                                  // [0x7804170] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Water.BuoyancyComponent.IsOverlappingWaterBody
-	// bool IsOverlappingWaterBody();                                                                                           // [0x78a9830] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOverlappingWaterBody();                                                                                           // [0x7804118] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.BuoyancyComponent.IsInWaterBody
-	// bool IsInWaterBody();                                                                                                    // [0x78a9814] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInWaterBody();                                                                                                    // [0x78040fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.BuoyancyComponent.GetLastWaterSurfaceInfo
-	// void GetLastWaterSurfaceInfo(FVector& OutWaterPlaneLocation, FVector& OutWaterPlaneNormal, FVector& OutWaterSurfacePosition, float& OutWaterDepth, int32_t& OutWaterBodyIdx, FVector& OutWaterVelocity); // [0x78a8d00] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetLastWaterSurfaceInfo(FVector& OutWaterPlaneLocation, FVector& OutWaterPlaneNormal, FVector& OutWaterSurfacePosition, float& OutWaterDepth, int32_t& OutWaterBodyIdx, FVector& OutWaterVelocity); // [0x780384c] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Water.BuoyancyComponent.GetCurrentWaterBodyComponents
-	// TArray<UWaterBodyComponent*> GetCurrentWaterBodyComponents();                                                            // [0x78a8bd8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UWaterBodyComponent*> GetCurrentWaterBodyComponents();                                                            // [0x7803724] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Water.BuoyancyManager
@@ -78,7 +78,7 @@ public:
 
 	/// Functions
 	// Function /Script/Water.BuoyancyManager.GetBuoyancyComponentManager
-	// bool GetBuoyancyComponentManager(class UObject* WorldContextObject, class ABuoyancyManager*& Manager);                   // [0x78a8a2c] Final|Native|Static|Public|HasOutParms 
+	// bool GetBuoyancyComponentManager(class UObject* WorldContextObject, class ABuoyancyManager*& Manager);                   // [0x78034f8] Final|Native|Static|Public|HasOutParms 
 };
 
 /// Class /Script/Water.EnvQueryTest_InsideWaterBody
@@ -106,7 +106,7 @@ public:
 
 	/// Functions
 	// Function /Script/Water.GerstnerWaterWaveGeneratorBase.GenerateGerstnerWaves
-	// void GenerateGerstnerWaves(TArray<FGerstnerWave>& OutWaves);                                                             // [0x78a88f4] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// void GenerateGerstnerWaves(TArray<FGerstnerWave>& OutWaves);                                                             // [0x7803380] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/Water.GerstnerWaterWaveGeneratorSimple
@@ -189,15 +189,15 @@ public:
 };
 
 /// Class /Script/Water.LakeCollisionComponent
-/// Size: 0x0020 (0x000570 - 0x000590)
+/// Size: 0x0020 (0x000500 - 0x000520)
 class ULakeCollisionComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1424;
+	static inline constexpr uint64_t __MDKClassSize = 1312;
 
 public:
-	CMember(class UBodySetup*)                         CachedBodySetup                                             OFFSET(get<T>, {0x570, 8, 0, 0})
-	SMember(FVector)                                   BoxExtent                                                   OFFSET(getStruct<T>, {0x578, 24, 0, 0})
+	CMember(class UBodySetup*)                         CachedBodySetup                                             OFFSET(get<T>, {0x500, 8, 0, 0})
+	SMember(FVector)                                   BoxExtent                                                   OFFSET(getStruct<T>, {0x508, 24, 0, 0})
 };
 
 /// Class /Script/Water.NiagaraDataInterfaceWater
@@ -223,28 +223,28 @@ public:
 
 	/// Functions
 	// Function /Script/Water.NiagaraWaterFunctionLibrary.SetWaterBodyComponent
-	// void SetWaterBodyComponent(class UNiagaraComponent* NiagaraSystem, FString OverrideName, class UWaterBodyComponent* WaterBodyComponent); // [0x78aa654] Final|Native|Static|Private|BlueprintCallable 
+	// void SetWaterBodyComponent(class UNiagaraComponent* NiagaraSystem, FString OverrideName, class UWaterBodyComponent* WaterBodyComponent); // [0x3069014] Final|Native|Static|Private|BlueprintCallable 
 	// Function /Script/Water.NiagaraWaterFunctionLibrary.SetWaterBody
-	// void SetWaterBody(class UNiagaraComponent* NiagaraSystem, FString OverrideName, class AWaterBody* WaterBody);            // [0x78a9f54] Final|Native|Static|Private|BlueprintCallable 
+	// void SetWaterBody(class UNiagaraComponent* NiagaraSystem, FString OverrideName, class AWaterBody* WaterBody);            // [0x78052b0] Final|Native|Static|Private|BlueprintCallable 
 };
 
 /// Class /Script/Water.OceanCollisionComponent
-/// Size: 0x0040 (0x000570 - 0x0005B0)
+/// Size: 0x0040 (0x000500 - 0x000540)
 class UOceanCollisionComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1456;
+	static inline constexpr uint64_t __MDKClassSize = 1344;
 
 public:
-	CMember(class UBodySetup*)                         CachedBodySetup                                             OFFSET(get<T>, {0x570, 8, 0, 0})
+	CMember(class UBodySetup*)                         CachedBodySetup                                             OFFSET(get<T>, {0x500, 8, 0, 0})
 };
 
 /// Class /Script/Water.OceanBoxCollisionComponent
-/// Size: 0x0000 (0x0005B0 - 0x0005B0)
+/// Size: 0x0000 (0x000540 - 0x000540)
 class UOceanBoxCollisionComponent : public UBoxComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1456;
+	static inline constexpr uint64_t __MDKClassSize = 1344;
 
 public:
 };
@@ -274,33 +274,33 @@ public:
 
 	/// Functions
 	// Function /Script/Water.WaterBody.SetWaterWaves
-	// void SetWaterWaves(class UWaterWavesBase* InWaterWaves);                                                                 // [0x78aae88] Final|Native|Public|BlueprintCallable 
+	// void SetWaterWaves(class UWaterWavesBase* InWaterWaves);                                                                 // [0x7805c1c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBody.SetWaterMaterial
-	// void SetWaterMaterial(class UMaterialInterface* InMaterial);                                                             // [0x78aad64] Final|Native|Public|BlueprintCallable 
+	// void SetWaterMaterial(class UMaterialInterface* InMaterial);                                                             // [0x7805a74] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBody.OnWaterBodyChanged
-	// void OnWaterBodyChanged(bool bShapeOrPositionChanged, bool bWeightmapSettingsChanged);                                   // [0x78a9a10] Final|Native|Public|BlueprintCallable 
+	// void OnWaterBodyChanged(bool bShapeOrPositionChanged, bool bWeightmapSettingsChanged);                                   // [0x78042f8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBody.GetWaterVelocityVectorAtSplineInputKey
-	// FVector GetWaterVelocityVectorAtSplineInputKey(float InKey);                                                             // [0x78a9730] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetWaterVelocityVectorAtSplineInputKey(float InKey);                                                             // [0x7803fc0] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBody.GetWaterVelocityAtSplineInputKey
-	// float GetWaterVelocityAtSplineInputKey(float InKey);                                                                     // [0x78a9600] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWaterVelocityAtSplineInputKey(float InKey);                                                                     // [0x7803e10] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBody.GetWaterSpline
-	// class UWaterSplineComponent* GetWaterSpline();                                                                           // [0x634bca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWaterSplineComponent* GetWaterSpline();                                                                           // [0x606d484] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBody.GetWaterMaterialInstance
-	// class UMaterialInstanceDynamic* GetWaterMaterialInstance();                                                              // [0x78a9254] Final|Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetWaterMaterialInstance();                                                              // [0x7803d98] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBody.GetWaterBodyType
-	// EWaterBodyType GetWaterBodyType();                                                                                       // [0x78a91a4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EWaterBodyType GetWaterBodyType();                                                                                       // [0x7803ce8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBody.GetWaterBodyComponent
-	// class UWaterBodyComponent* GetWaterBodyComponent();                                                                      // [0x32ef30c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWaterBodyComponent* GetWaterBodyComponent();                                                                      // [0x7803cd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBody.GetRiverToOceanTransitionMaterialInstance
-	// class UMaterialInstanceDynamic* GetRiverToOceanTransitionMaterialInstance();                                             // [0x78a90b4] Final|Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetRiverToOceanTransitionMaterialInstance();                                             // [0x7803c00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBody.GetRiverToLakeTransitionMaterialInstance
-	// class UMaterialInstanceDynamic* GetRiverToLakeTransitionMaterialInstance();                                              // [0x78a9084] Final|Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetRiverToLakeTransitionMaterialInstance();                                              // [0x7803bd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBody.GetIslands
-	// TArray<AWaterBodyIsland*> GetIslands();                                                                                  // [0x78a8c80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AWaterBodyIsland*> GetIslands();                                                                                  // [0x78037cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBody.GetExclusionVolumes
-	// TArray<AWaterBodyExclusionVolume*> GetExclusionVolumes();                                                                // [0x78a8bf4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AWaterBodyExclusionVolume*> GetExclusionVolumes();                                                                // [0x7803740] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBody.GetAudioIntensityAtSplineInputKey
-	// float GetAudioIntensityAtSplineInputKey(float InKey);                                                                    // [0x78a8994] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAudioIntensityAtSplineInputKey(float InKey);                                                                    // [0x7803420] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Water.WaterBodyGenerator
@@ -314,96 +314,96 @@ public:
 };
 
 /// Class /Script/Water.WaterBodyComponent
-/// Size: 0x0F90 (0x000570 - 0x001500)
+/// Size: 0x0F90 (0x000500 - 0x001490)
 class UWaterBodyComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5376;
+	static inline constexpr uint64_t __MDKClassSize = 5264;
 
 public:
-	CMember(class UPhysicalMaterial*)                  PhysicalMaterial                                            OFFSET(get<T>, {0x570, 8, 0, 0})
-	DMember(float)                                     TargetWaveMaskDepth                                         OFFSET(get<float>, {0x578, 4, 0, 0})
-	DMember(float)                                     MaxWaveHeightOffset                                         OFFSET(get<float>, {0x57C, 4, 0, 0})
-	SMember(FUnderwaterPostProcessSettings)            UnderwaterPostProcessSettings                               OFFSET(getStruct<T>, {0x580, 1792, 0, 0})
-	SMember(FWaterCurveSettings)                       CurveSettings                                               OFFSET(getStruct<T>, {0xC80, 32, 0, 0})
-	CMember(class UMaterialInterface*)                 WaterMaterial                                               OFFSET(get<T>, {0xCA0, 8, 0, 0})
-	CMember(class UMaterialInterface*)                 WaterHLODMaterial                                           OFFSET(get<T>, {0xCA8, 8, 0, 0})
-	CMember(class UMaterialInterface*)                 WaterStaticMeshMaterial                                     OFFSET(get<T>, {0xCB0, 8, 0, 0})
-	CMember(class UMaterialInterface*)                 UnderwaterPostProcessMaterial                               OFFSET(get<T>, {0xCB8, 8, 0, 0})
-	CMember(class UMaterialInterface*)                 WaterInfoMaterial                                           OFFSET(get<T>, {0xCC0, 8, 0, 0})
-	SMember(FWaterBodyHeightmapSettings)               WaterHeightmapSettings                                      OFFSET(getStruct<T>, {0xCC8, 128, 0, 0})
-	DMember(float)                                     ShapeDilation                                               OFFSET(get<float>, {0xD48, 4, 0, 0})
-	DMember(float)                                     CollisionHeightOffset                                       OFFSET(get<float>, {0xD4C, 4, 0, 0})
-	DMember(bool)                                      bAffectsLandscape                                           OFFSET(get<bool>, {0xD50, 1, 0, 0})
-	SMember(FWaterBodyStaticMeshSettings)              StaticMeshSettings                                          OFFSET(getStruct<T>, {0xD58, 16, 0, 0})
-	DMember(int32_t)                                   WaterBodyIndex                                              OFFSET(get<int32_t>, {0xD68, 4, 0, 0})
-	CMember(class UStaticMesh*)                        WaterMeshOverride                                           OFFSET(get<T>, {0xD70, 8, 0, 0})
-	DMember(bool)                                      bAlwaysGenerateWaterMeshTiles                               OFFSET(get<bool>, {0xD78, 1, 0, 0})
-	DMember(int32_t)                                   OverlapMaterialPriority                                     OFFSET(get<int32_t>, {0xD7C, 4, 0, 0})
-	CMember(class UWaterSplineMetadata*)               WaterSplineMetadata                                         OFFSET(get<T>, {0xD80, 8, 0, 0})
-	CMember(class UMaterialInstanceDynamic*)           WaterMID                                                    OFFSET(get<T>, {0xD88, 8, 0, 0})
-	CMember(class UMaterialInstanceDynamic*)           WaterStaticMeshMID                                          OFFSET(get<T>, {0xD90, 8, 0, 0})
-	CMember(class UMaterialInstanceDynamic*)           UnderwaterPostProcessMID                                    OFFSET(get<T>, {0xD98, 8, 0, 0})
-	CMember(class UMaterialInstanceDynamic*)           WaterInfoMID                                                OFFSET(get<T>, {0xDA0, 8, 0, 0})
-	CMember(TArray<TWeakObjectPtr<AWaterBodyIsland*>>) WaterBodyIslands                                            OFFSET(get<T>, {0xDA8, 16, 0, 0})
-	CMember(TArray<TWeakObjectPtr<AWaterBodyExclusionVolume*>>) WaterBodyExclusionVolumes                          OFFSET(get<T>, {0xDB8, 16, 0, 0})
-	CMember(TWeakObjectPtr<ALandscapeProxy*>)          Landscape                                                   OFFSET(get<T>, {0xDC8, 8, 0, 0})
-	CMember(TWeakObjectPtr<AWaterZone*>)               OwningWaterZone                                             OFFSET(get<T>, {0xDD0, 32, 0, 0})
-	CMember(TWeakObjectPtr<AWaterZone*>)               WaterZoneOverride                                           OFFSET(get<T>, {0xDF0, 32, 0, 0})
-	SMember(FPostProcessSettings)                      CurrentPostProcessSettings                                  OFFSET(getStruct<T>, {0xE10, 1760, 0, 0})
-	CMember(class UClass*)                             WaterNavAreaClass                                           OFFSET(get<T>, {0x14F0, 8, 0, 0})
-	DMember(double)                                    FixedWaterDepth                                             OFFSET(get<double>, {0x14F8, 8, 0, 0})
+	CMember(class UPhysicalMaterial*)                  PhysicalMaterial                                            OFFSET(get<T>, {0x500, 8, 0, 0})
+	DMember(float)                                     TargetWaveMaskDepth                                         OFFSET(get<float>, {0x508, 4, 0, 0})
+	DMember(float)                                     MaxWaveHeightOffset                                         OFFSET(get<float>, {0x50C, 4, 0, 0})
+	SMember(FUnderwaterPostProcessSettings)            UnderwaterPostProcessSettings                               OFFSET(getStruct<T>, {0x510, 1792, 0, 0})
+	SMember(FWaterCurveSettings)                       CurveSettings                                               OFFSET(getStruct<T>, {0xC10, 32, 0, 0})
+	CMember(class UMaterialInterface*)                 WaterMaterial                                               OFFSET(get<T>, {0xC30, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 WaterHLODMaterial                                           OFFSET(get<T>, {0xC38, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 WaterStaticMeshMaterial                                     OFFSET(get<T>, {0xC40, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 UnderwaterPostProcessMaterial                               OFFSET(get<T>, {0xC48, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 WaterInfoMaterial                                           OFFSET(get<T>, {0xC50, 8, 0, 0})
+	SMember(FWaterBodyHeightmapSettings)               WaterHeightmapSettings                                      OFFSET(getStruct<T>, {0xC58, 128, 0, 0})
+	DMember(float)                                     ShapeDilation                                               OFFSET(get<float>, {0xCD8, 4, 0, 0})
+	DMember(float)                                     CollisionHeightOffset                                       OFFSET(get<float>, {0xCDC, 4, 0, 0})
+	DMember(bool)                                      bAffectsLandscape                                           OFFSET(get<bool>, {0xCE0, 1, 0, 0})
+	SMember(FWaterBodyStaticMeshSettings)              StaticMeshSettings                                          OFFSET(getStruct<T>, {0xCE8, 16, 0, 0})
+	DMember(int32_t)                                   WaterBodyIndex                                              OFFSET(get<int32_t>, {0xCF8, 4, 0, 0})
+	CMember(class UStaticMesh*)                        WaterMeshOverride                                           OFFSET(get<T>, {0xD00, 8, 0, 0})
+	DMember(bool)                                      bAlwaysGenerateWaterMeshTiles                               OFFSET(get<bool>, {0xD08, 1, 0, 0})
+	DMember(int32_t)                                   OverlapMaterialPriority                                     OFFSET(get<int32_t>, {0xD0C, 4, 0, 0})
+	CMember(class UWaterSplineMetadata*)               WaterSplineMetadata                                         OFFSET(get<T>, {0xD10, 8, 0, 0})
+	CMember(class UMaterialInstanceDynamic*)           WaterMID                                                    OFFSET(get<T>, {0xD18, 8, 0, 0})
+	CMember(class UMaterialInstanceDynamic*)           WaterStaticMeshMID                                          OFFSET(get<T>, {0xD20, 8, 0, 0})
+	CMember(class UMaterialInstanceDynamic*)           UnderwaterPostProcessMID                                    OFFSET(get<T>, {0xD28, 8, 0, 0})
+	CMember(class UMaterialInstanceDynamic*)           WaterInfoMID                                                OFFSET(get<T>, {0xD30, 8, 0, 0})
+	CMember(TArray<TWeakObjectPtr<AWaterBodyIsland*>>) WaterBodyIslands                                            OFFSET(get<T>, {0xD38, 16, 0, 0})
+	CMember(TArray<TWeakObjectPtr<AWaterBodyExclusionVolume*>>) WaterBodyExclusionVolumes                          OFFSET(get<T>, {0xD48, 16, 0, 0})
+	CMember(TWeakObjectPtr<ALandscapeProxy*>)          Landscape                                                   OFFSET(get<T>, {0xD58, 8, 0, 0})
+	CMember(TWeakObjectPtr<AWaterZone*>)               OwningWaterZone                                             OFFSET(get<T>, {0xD60, 32, 0, 0})
+	CMember(TWeakObjectPtr<AWaterZone*>)               WaterZoneOverride                                           OFFSET(get<T>, {0xD80, 32, 0, 0})
+	SMember(FPostProcessSettings)                      CurrentPostProcessSettings                                  OFFSET(getStruct<T>, {0xDA0, 1760, 0, 0})
+	CMember(class UClass*)                             WaterNavAreaClass                                           OFFSET(get<T>, {0x1480, 8, 0, 0})
+	DMember(double)                                    FixedWaterDepth                                             OFFSET(get<double>, {0x1488, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/Water.WaterBodyComponent.SetWaterZoneOverride
-	// void SetWaterZoneOverride(TWeakObjectPtr<AWaterZone*>& InWaterZoneOverride);                                             // [0x78aaf08] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetWaterZoneOverride(TWeakObjectPtr<AWaterZone*>& InWaterZoneOverride);                                             // [0x7805cdc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.SetWaterStaticMeshMaterial
-	// void SetWaterStaticMeshMaterial(class UMaterialInterface* InMaterial);                                                   // [0x78aade8] Final|Native|Public|BlueprintCallable 
+	// void SetWaterStaticMeshMaterial(class UMaterialInterface* InMaterial);                                                   // [0x7805b38] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.SetWaterMaterial
-	// void SetWaterMaterial(class UMaterialInterface* InMaterial);                                                             // [0x33a7f00] Final|Native|Public|BlueprintCallable 
+	// void SetWaterMaterial(class UMaterialInterface* InMaterial);                                                             // [0x3182ff4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.SetWaterAndUnderWaterPostProcessMaterial
-	// void SetWaterAndUnderWaterPostProcessMaterial(class UMaterialInterface* InWaterMaterial, class UMaterialInterface* InUnderWaterPostProcessMaterial); // [0x78a9e28] Final|Native|Public|BlueprintCallable 
+	// void SetWaterAndUnderWaterPostProcessMaterial(class UMaterialInterface* InWaterMaterial, class UMaterialInterface* InUnderWaterPostProcessMaterial); // [0x7805104] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.SetUnderwaterPostProcessMaterial
-	// void SetUnderwaterPostProcessMaterial(class UMaterialInterface* InMaterial);                                             // [0x78a9d90] Final|Native|Public|BlueprintCallable 
+	// void SetUnderwaterPostProcessMaterial(class UMaterialInterface* InMaterial);                                             // [0x7805028] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.OnWaterBodyChanged
-	// void OnWaterBodyChanged(bool bShapeOrPositionChanged, bool bWeightmapSettingsChanged, bool bUserTriggeredChanged);       // [0x78a9ad4] Final|Native|Public|BlueprintCallable 
+	// void OnWaterBodyChanged(bool bShapeOrPositionChanged, bool bWeightmapSettingsChanged, bool bUserTriggeredChanged);       // [0x7804448] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.GetWaterWaves
-	// class UWaterWavesBase* GetWaterWaves();                                                                                  // [0x78a97d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWaterWavesBase* GetWaterWaves();                                                                                  // [0x78040a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetWaterVelocityAtSplineInputKey
-	// float GetWaterVelocityAtSplineInputKey(float InKey);                                                                     // [0x78a9698] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWaterVelocityAtSplineInputKey(float InKey);                                                                     // [0x7803ee8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetWaterSurfaceInfoAtLocation
-	// void GetWaterSurfaceInfoAtLocation(FVector& InLocation, FVector& OutWaterSurfaceLocation, FVector& OutWaterSurfaceNormal, FVector& OutWaterVelocity, float& OutWaterDepth, bool bIncludeDepth); // [0x78a92a4] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void GetWaterSurfaceInfoAtLocation(FVector& InLocation, FVector& OutWaterSurfaceLocation, FVector& OutWaterSurfaceNormal, FVector& OutWaterVelocity, float& OutWaterDepth, bool bIncludeDepth); // [0x1bbbe78] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetWaterStaticMeshMaterialInstance
-	// class UMaterialInstanceDynamic* GetWaterStaticMeshMaterialInstance();                                                    // [0x78a9204] Final|Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetWaterStaticMeshMaterialInstance();                                                    // [0x7803d48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.GetWaterSpline
-	// class UWaterSplineComponent* GetWaterSpline();                                                                           // [0x78a9280] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWaterSplineComponent* GetWaterSpline();                                                                           // [0x7803dc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetWaterMaterialInstance
-	// class UMaterialInstanceDynamic* GetWaterMaterialInstance();                                                              // [0x21f68fc] Final|Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetWaterMaterialInstance();                                                              // [0x3027df4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.GetWaterMaterial
-	// class UMaterialInterface* GetWaterMaterial();                                                                            // [0x78a923c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMaterialInterface* GetWaterMaterial();                                                                            // [0x7803d80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetWaterLODMaterialInstance
-	// class UMaterialInstanceDynamic* GetWaterLODMaterialInstance();                                                           // [0x78a9204] Final|Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetWaterLODMaterialInstance();                                                           // [0x7803d48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.GetWaterInfoMaterialInstance
-	// class UMaterialInstanceDynamic* GetWaterInfoMaterialInstance();                                                          // [0x78a91cc] Final|Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetWaterInfoMaterialInstance();                                                          // [0x7803d10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.GetWaterBodyActor
-	// class AWaterBody* GetWaterBodyActor();                                                                                   // [0x78a9180] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AWaterBody* GetWaterBodyActor();                                                                                   // [0x7803cac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetUnderwaterPostProcessMaterialInstance
-	// class UMaterialInstanceDynamic* GetUnderwaterPostProcessMaterialInstance();                                              // [0x78a9148] Final|Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetUnderwaterPostProcessMaterialInstance();                                              // [0x3925374] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.GetStandardRenderableComponents
-	// TArray<UPrimitiveComponent*> GetStandardRenderableComponents();                                                          // [0x78a9104] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UPrimitiveComponent*> GetStandardRenderableComponents();                                                          // [0x7803c68] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetRiverToOceanTransitionMaterialInstance
-	// class UMaterialInstanceDynamic* GetRiverToOceanTransitionMaterialInstance();                                             // [0x21f7728] Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetRiverToOceanTransitionMaterialInstance();                                             // [0x2fab900] Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.GetRiverToLakeTransitionMaterialInstance
-	// class UMaterialInstanceDynamic* GetRiverToLakeTransitionMaterialInstance();                                              // [0x21f7700] Native|Public|BlueprintCallable 
+	// class UMaterialInstanceDynamic* GetRiverToLakeTransitionMaterialInstance();                                              // [0x2fab944] Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyComponent.GetMaxWaveHeight
-	// float GetMaxWaveHeight();                                                                                                // [0x78a8ffc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxWaveHeight();                                                                                                // [0x7803b48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetIslands
-	// TArray<AWaterBodyIsland*> GetIslands();                                                                                  // [0x78a8cc4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AWaterBodyIsland*> GetIslands();                                                                                  // [0x7803810] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetExclusionVolumes
-	// TArray<AWaterBodyExclusionVolume*> GetExclusionVolumes();                                                                // [0x78a8c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AWaterBodyExclusionVolume*> GetExclusionVolumes();                                                                // [0x780378c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterBodyComponent.GetCollisionComponents
-	// TArray<UPrimitiveComponent*> GetCollisionComponents(bool bInOnlyEnabledComponents);                                      // [0x78a8b2c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UPrimitiveComponent*> GetCollisionComponents(bool bInOnlyEnabledComponents);                                      // [0x7803638] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Water.CustomMeshGenerator
@@ -428,14 +428,14 @@ public:
 };
 
 /// Class /Script/Water.WaterBodyCustomComponent
-/// Size: 0x0010 (0x001500 - 0x001510)
+/// Size: 0x0010 (0x001490 - 0x0014A0)
 class UWaterBodyCustomComponent : public UWaterBodyComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5392;
+	static inline constexpr uint64_t __MDKClassSize = 5280;
 
 public:
-	CMember(class UStaticMeshComponent*)               MeshComp                                                    OFFSET(get<T>, {0x1500, 8, 0, 0})
+	CMember(class UStaticMeshComponent*)               MeshComp                                                    OFFSET(get<T>, {0x1490, 8, 0, 0})
 };
 
 /// Class /Script/Water.WaterBodyExclusionVolume
@@ -461,14 +461,14 @@ public:
 };
 
 /// Class /Script/Water.WaterBodyInfoMeshComponent
-/// Size: 0x0010 (0x000630 - 0x000640)
+/// Size: 0x0010 (0x0005C0 - 0x0005D0)
 class UWaterBodyInfoMeshComponent : public UWaterBodyMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1600;
+	static inline constexpr uint64_t __MDKClassSize = 1488;
 
 public:
-	DMember(bool)                                      bIsDilatedMesh                                              OFFSET(get<bool>, {0x630, 1, 0, 0})
+	DMember(bool)                                      bIsDilatedMesh                                              OFFSET(get<bool>, {0x5C0, 1, 0, 0})
 };
 
 /// Class /Script/Water.WaterBodyIsland
@@ -484,7 +484,7 @@ public:
 
 	/// Functions
 	// Function /Script/Water.WaterBodyIsland.GetWaterSpline
-	// class UWaterSplineComponent* GetWaterSpline();                                                                           // [0x634bca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWaterSplineComponent* GetWaterSpline();                                                                           // [0x606d484] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Water.LakeGenerator
@@ -511,15 +511,15 @@ public:
 };
 
 /// Class /Script/Water.WaterBodyLakeComponent
-/// Size: 0x0010 (0x001500 - 0x001510)
+/// Size: 0x0010 (0x001490 - 0x0014A0)
 class UWaterBodyLakeComponent : public UWaterBodyComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5392;
+	static inline constexpr uint64_t __MDKClassSize = 5280;
 
 public:
-	CMember(class UStaticMeshComponent*)               LakeMeshComp                                                OFFSET(get<T>, {0x1500, 8, 0, 0})
-	CMember(class ULakeCollisionComponent*)            LakeCollision                                               OFFSET(get<T>, {0x1508, 8, 0, 0})
+	CMember(class UStaticMeshComponent*)               LakeMeshComp                                                OFFSET(get<T>, {0x1490, 8, 0, 0})
+	CMember(class ULakeCollisionComponent*)            LakeCollision                                               OFFSET(get<T>, {0x1498, 8, 0, 0})
 };
 
 /// Class /Script/Water.OceanGenerator
@@ -545,20 +545,20 @@ public:
 };
 
 /// Class /Script/Water.WaterBodyOceanComponent
-/// Size: 0x0060 (0x001500 - 0x001560)
+/// Size: 0x0060 (0x001490 - 0x0014F0)
 class UWaterBodyOceanComponent : public UWaterBodyComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5472;
+	static inline constexpr uint64_t __MDKClassSize = 5360;
 
 public:
-	CMember(TArray<class UOceanBoxCollisionComponent*>) CollisionBoxes                                             OFFSET(get<T>, {0x1500, 16, 0, 0})
-	CMember(TArray<class UOceanCollisionComponent*>)   CollisionHullSets                                           OFFSET(get<T>, {0x1510, 16, 0, 0})
-	SMember(FVector)                                   CollisionExtents                                            OFFSET(getStruct<T>, {0x1520, 24, 0, 0})
-	SMember(FVector2D)                                 OceanExtents                                                OFFSET(getStruct<T>, {0x1538, 16, 0, 0})
-	SMember(FVector2D)                                 SavedZoneLocation                                           OFFSET(getStruct<T>, {0x1548, 16, 0, 0})
-	DMember(bool)                                      bCenterOnWaterZone                                          OFFSET(get<bool>, {0x1558, 1, 0, 0})
-	DMember(float)                                     HeightOffset                                                OFFSET(get<float>, {0x155C, 4, 0, 0})
+	CMember(TArray<class UOceanBoxCollisionComponent*>) CollisionBoxes                                             OFFSET(get<T>, {0x1490, 16, 0, 0})
+	CMember(TArray<class UOceanCollisionComponent*>)   CollisionHullSets                                           OFFSET(get<T>, {0x14A0, 16, 0, 0})
+	SMember(FVector)                                   CollisionExtents                                            OFFSET(getStruct<T>, {0x14B0, 24, 0, 0})
+	SMember(FVector2D)                                 OceanExtents                                                OFFSET(getStruct<T>, {0x14C8, 16, 0, 0})
+	SMember(FVector2D)                                 SavedZoneLocation                                           OFFSET(getStruct<T>, {0x14D8, 16, 0, 0})
+	DMember(bool)                                      bCenterOnWaterZone                                          OFFSET(get<bool>, {0x14E8, 1, 0, 0})
+	DMember(float)                                     HeightOffset                                                OFFSET(get<float>, {0x14EC, 4, 0, 0})
 };
 
 /// Class /Script/Water.RiverGenerator
@@ -583,27 +583,27 @@ public:
 };
 
 /// Class /Script/Water.WaterBodyRiverComponent
-/// Size: 0x0030 (0x001500 - 0x001530)
+/// Size: 0x0030 (0x001490 - 0x0014C0)
 class UWaterBodyRiverComponent : public UWaterBodyComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5424;
+	static inline constexpr uint64_t __MDKClassSize = 5312;
 
 public:
-	CMember(TArray<class USplineMeshComponent*>)       SplineMeshComponents                                        OFFSET(get<T>, {0x1500, 16, 0, 0})
-	CMember(class UMaterialInterface*)                 LakeTransitionMaterial                                      OFFSET(get<T>, {0x1510, 8, 0, 0})
-	CMember(class UMaterialInstanceDynamic*)           LakeTransitionMID                                           OFFSET(get<T>, {0x1518, 8, 0, 0})
-	CMember(class UMaterialInterface*)                 OceanTransitionMaterial                                     OFFSET(get<T>, {0x1520, 8, 0, 0})
-	CMember(class UMaterialInstanceDynamic*)           OceanTransitionMID                                          OFFSET(get<T>, {0x1528, 8, 0, 0})
+	CMember(TArray<class USplineMeshComponent*>)       SplineMeshComponents                                        OFFSET(get<T>, {0x1490, 16, 0, 0})
+	CMember(class UMaterialInterface*)                 LakeTransitionMaterial                                      OFFSET(get<T>, {0x14A0, 8, 0, 0})
+	CMember(class UMaterialInstanceDynamic*)           LakeTransitionMID                                           OFFSET(get<T>, {0x14A8, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 OceanTransitionMaterial                                     OFFSET(get<T>, {0x14B0, 8, 0, 0})
+	CMember(class UMaterialInstanceDynamic*)           OceanTransitionMID                                          OFFSET(get<T>, {0x14B8, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/Water.WaterBodyRiverComponent.SetOceanTransitionMaterial
-	// void SetOceanTransitionMaterial(class UMaterialInterface* InMat);                                                        // [0x78a9cf8] Final|Native|Public|BlueprintCallable 
+	// void SetOceanTransitionMaterial(class UMaterialInterface* InMat);                                                        // [0x7804f4c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyRiverComponent.SetLakeTransitionMaterial
-	// void SetLakeTransitionMaterial(class UMaterialInterface* InMat);                                                         // [0x78a9be0] Final|Native|Public|BlueprintCallable 
+	// void SetLakeTransitionMaterial(class UMaterialInterface* InMat);                                                         // [0x7804dac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterBodyRiverComponent.SetLakeAndOceanTransitionMaterials
-	// void SetLakeAndOceanTransitionMaterials(class UMaterialInterface* InLakeTransition, class UMaterialInterface* InOceanTransition); // [0x35100d8] Final|Native|Public|BlueprintCallable 
+	// void SetLakeAndOceanTransitionMaterials(class UMaterialInterface* InLakeTransition, class UMaterialInterface* InOceanTransition); // [0x32b07f8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Water.WaterBrushActorInterface
@@ -617,27 +617,27 @@ public:
 };
 
 /// Class /Script/Water.WaterMeshComponent
-/// Size: 0x0170 (0x0005B0 - 0x000720)
+/// Size: 0x0170 (0x000540 - 0x0006B0)
 class UWaterMeshComponent : public UMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1824;
+	static inline constexpr uint64_t __MDKClassSize = 1712;
 
 public:
-	DMember(int32_t)                                   ForceCollapseDensityLevel                                   OFFSET(get<int32_t>, {0x5A8, 4, 0, 0})
-	CMember(class UMaterialInterface*)                 FarDistanceMaterial                                         OFFSET(get<T>, {0x5B0, 8, 0, 0})
-	DMember(float)                                     FarDistanceMeshExtent                                       OFFSET(get<float>, {0x5B8, 4, 0, 0})
-	DMember(float)                                     TileSize                                                    OFFSET(get<float>, {0x5BC, 4, 0, 0})
-	SMember(FIntPoint)                                 QuadTreeResolution                                          OFFSET(getStruct<T>, {0x5C0, 8, 0, 0})
-	CMember(TSet<UMaterialInterface*>)                 UsedMaterials                                               OFFSET(get<T>, {0x6B8, 80, 0, 0})
-	DMember(bool)                                      bUseFarMeshWithoutOcean                                     OFFSET(get<bool>, {0x708, 1, 0, 0})
-	DMember(int32_t)                                   TessellationFactor                                          OFFSET(get<int32_t>, {0x718, 4, 0, 0})
-	DMember(float)                                     LODScale                                                    OFFSET(get<float>, {0x71C, 4, 0, 0})
+	DMember(int32_t)                                   ForceCollapseDensityLevel                                   OFFSET(get<int32_t>, {0x538, 4, 0, 0})
+	CMember(class UMaterialInterface*)                 FarDistanceMaterial                                         OFFSET(get<T>, {0x540, 8, 0, 0})
+	DMember(float)                                     FarDistanceMeshExtent                                       OFFSET(get<float>, {0x548, 4, 0, 0})
+	DMember(float)                                     TileSize                                                    OFFSET(get<float>, {0x54C, 4, 0, 0})
+	SMember(FIntPoint)                                 QuadTreeResolution                                          OFFSET(getStruct<T>, {0x550, 8, 0, 0})
+	CMember(TSet<UMaterialInterface*>)                 UsedMaterials                                               OFFSET(get<T>, {0x648, 80, 0, 0})
+	DMember(bool)                                      bUseFarMeshWithoutOcean                                     OFFSET(get<bool>, {0x698, 1, 0, 0})
+	DMember(int32_t)                                   TessellationFactor                                          OFFSET(get<int32_t>, {0x6A8, 4, 0, 0})
+	DMember(float)                                     LODScale                                                    OFFSET(get<float>, {0x6AC, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/Water.WaterMeshComponent.IsEnabled
-	// bool IsEnabled();                                                                                                        // [0x78a97fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEnabled();                                                                                                        // [0x78040e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Water.WaterRuntimeSettings
@@ -661,20 +661,20 @@ public:
 };
 
 /// Class /Script/Water.WaterSplineComponent
-/// Size: 0x0020 (0x000670 - 0x000690)
+/// Size: 0x0020 (0x000600 - 0x000620)
 class UWaterSplineComponent : public USplineComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1680;
+	static inline constexpr uint64_t __MDKClassSize = 1568;
 
 public:
-	SMember(FWaterSplineCurveDefaults)                 WaterSplineDefaults                                         OFFSET(getStruct<T>, {0x670, 16, 0, 0})
-	SMember(FWaterSplineCurveDefaults)                 PreviousWaterSplineDefaults                                 OFFSET(getStruct<T>, {0x680, 16, 0, 0})
+	SMember(FWaterSplineCurveDefaults)                 WaterSplineDefaults                                         OFFSET(getStruct<T>, {0x600, 16, 0, 0})
+	SMember(FWaterSplineCurveDefaults)                 PreviousWaterSplineDefaults                                 OFFSET(getStruct<T>, {0x610, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/Water.WaterSplineComponent.K2_SynchronizeAndBroadcastDataChange
-	// void K2_SynchronizeAndBroadcastDataChange();                                                                             // [0x32e4b44] Final|Native|Public|BlueprintCallable 
+	// void K2_SynchronizeAndBroadcastDataChange();                                                                             // [0x307d48c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Water.WaterSplineMetadata
@@ -710,33 +710,33 @@ public:
 
 	/// Functions
 	// Function /Script/Water.WaterSubsystem.SetOceanFloodHeight
-	// void SetOceanFloodHeight(float InFloodHeight);                                                                           // [0x78a9c78] Final|Native|Public|BlueprintCallable 
+	// void SetOceanFloodHeight(float InFloodHeight);                                                                           // [0x7804e88] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterSubsystem.PrintToWaterLog
-	// void PrintToWaterLog(FString Message, bool bWarning);                                                                    // [0x3a62908] Final|Native|Public|BlueprintCallable 
+	// void PrintToWaterLog(FString Message, bool bWarning);                                                                    // [0x7804618] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterSubsystem.IsWaterRenderingEnabled
-	// bool IsWaterRenderingEnabled();                                                                                          // [0x78a9868] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsWaterRenderingEnabled();                                                                                          // [0x7804150] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterSubsystem.IsUnderwaterPostProcessEnabled
-	// bool IsUnderwaterPostProcessEnabled();                                                                                   // [0x78a984c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUnderwaterPostProcessEnabled();                                                                                   // [0x7804134] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterSubsystem.IsShallowWaterSimulationEnabled
-	// bool IsShallowWaterSimulationEnabled();                                                                                  // [0x3b92e10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsShallowWaterSimulationEnabled();                                                                                  // [0x3927f7c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterSubsystem.GetWaterTimeSeconds
-	// float GetWaterTimeSeconds();                                                                                             // [0x78a95d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWaterTimeSeconds();                                                                                             // [0x7803de8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterSubsystem.GetSmoothedWorldTimeSeconds
-	// float GetSmoothedWorldTimeSeconds();                                                                                     // [0x78a90e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSmoothedWorldTimeSeconds();                                                                                     // [0x7803c48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterSubsystem.GetShallowWaterSimulationRenderTargetSize
-	// int32_t GetShallowWaterSimulationRenderTargetSize();                                                                     // [0x3f12294] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetShallowWaterSimulationRenderTargetSize();                                                                     // [0x7803c30] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Water.WaterSubsystem.GetShallowWaterMaxImpulseForces
-	// int32_t GetShallowWaterMaxImpulseForces();                                                                               // [0x3317540] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetShallowWaterMaxImpulseForces();                                                                               // [0x3174f08] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Water.WaterSubsystem.GetShallowWaterMaxDynamicForces
-	// int32_t GetShallowWaterMaxDynamicForces();                                                                               // [0x32fac00] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetShallowWaterMaxDynamicForces();                                                                               // [0x39c6ce4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Water.WaterSubsystem.GetOceanTotalHeight
-	// float GetOceanTotalHeight();                                                                                             // [0x78a9060] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetOceanTotalHeight();                                                                                             // [0x7803bac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterSubsystem.GetOceanFloodHeight
-	// float GetOceanFloodHeight();                                                                                             // [0x78a9048] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetOceanFloodHeight();                                                                                             // [0x7803b94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterSubsystem.GetOceanBaseHeight
-	// float GetOceanBaseHeight();                                                                                              // [0x78a9024] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetOceanBaseHeight();                                                                                              // [0x7803b70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Water.WaterSubsystem.GetCameraUnderwaterDepth
-	// float GetCameraUnderwaterDepth();                                                                                        // [0x5c148fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCameraUnderwaterDepth();                                                                                        // [0x5905df4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Water.WaterWavesAsset
@@ -786,9 +786,9 @@ public:
 
 	/// Functions
 	// Function /Script/Water.WaterZone.SetFarMeshMaterial
-	// void SetFarMeshMaterial(class UMaterialInterface* InFarMaterial);                                                        // [0x3b8f290] Final|Native|Public|BlueprintCallable 
+	// void SetFarMeshMaterial(class UMaterialInterface* InFarMaterial);                                                        // [0x2881950] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Water.WaterZone.GetWaterZoneIndex
-	// int32_t GetWaterZoneIndex();                                                                                             // [0x3f1227c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetWaterZoneIndex();                                                                                             // [0x78040cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/Water.SphericalPontoon

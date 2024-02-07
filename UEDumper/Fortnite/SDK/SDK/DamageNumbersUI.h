@@ -62,13 +62,13 @@ public:
 
 	/// Functions
 	// Function /Script/DamageNumbersUI.CommonUserWidget_DamageNumbers.UpdateScreenSpacePosition
-	// void UpdateScreenSpacePosition();                                                                                     // [0xb1958f4] Final|Native|Protected|BlueprintCallable 
+	// void UpdateScreenSpacePosition();                                                                                     // [0xb3b45bc] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DamageNumbersUI.CommonUserWidget_DamageNumbers.Reset
-	// void Reset();                                                                                                         // [0xb195898] Final|Native|Protected|BlueprintCallable 
+	// void Reset();                                                                                                         // [0xb3b4560] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DamageNumbersUI.CommonUserWidget_DamageNumbers.OnShieldBreak
-	// void OnShieldBreak(bool bIsOvershield);                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnShieldBreak(bool bIsOvershield);                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DamageNumbersUI.CommonUserWidget_DamageNumbers.OnDamageDealt
-	// void OnDamageDealt(double InDamage, class AActor* InActor, bool bInShield, bool bInCrit, FVector InWorldSpacePos, bool bInEMP); // [0xb194ddc] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void OnDamageDealt(double InDamage, class AActor* InActor, bool bInShield, bool bInCrit, FVector InWorldSpacePos, bool bInEMP); // [0xb3b3950] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/DamageNumbersUI.FortUserWidget_DamageNumbers
@@ -94,17 +94,17 @@ public:
 
 	/// Functions
 	// Function /Script/DamageNumbersUI.FortUserWidget_DamageNumbers.UpdateBinding
-	// void UpdateBinding();                                                                                                 // [0xb1958e0] Final|Native|Protected|BlueprintCallable 
+	// void UpdateBinding();                                                                                                 // [0xb3b45a8] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DamageNumbersUI.FortUserWidget_DamageNumbers.OnShieldBreak
-	// void OnShieldBreak(bool bInOverShield);                                                                               // [0xb195818] Final|Native|Protected 
+	// void OnShieldBreak(bool bInOverShield);                                                                               // [0xb3b449c] Final|Native|Protected 
 	// Function /Script/DamageNumbersUI.FortUserWidget_DamageNumbers.OnPawnSet
-	// void OnPawnSet();                                                                                                     // [0xb1957b0] Final|Native|Protected|BlueprintCallable 
+	// void OnPawnSet();                                                                                                     // [0xb3b4434] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DamageNumbersUI.FortUserWidget_DamageNumbers.OnDamageNumberFinishedAnimating
-	// void OnDamageNumberFinishedAnimating(class UCommonUserWidget_DamageNumbers* Widget);                                  // [0xb19548c] Final|Native|Protected 
+	// void OnDamageNumberFinishedAnimating(class UCommonUserWidget_DamageNumbers* Widget);                                  // [0xb3b40d0] Final|Native|Protected 
 	// Function /Script/DamageNumbersUI.FortUserWidget_DamageNumbers.OnDamageDealt
-	// void OnDamageDealt(double InDamage, bool bInCritical, bool bInFatal, bool bInShield, class AActor* HitActor, FVector HitLocation, FGameplayTagContainer Tags); // [0xb195104] Final|Native|Protected|HasDefaults|BlueprintCallable 
+	// void OnDamageDealt(double InDamage, bool bInCritical, bool bInFatal, bool bInShield, class AActor* HitActor, FVector HitLocation, FGameplayTagContainer Tags); // [0xb3b3cb0] Final|Native|Protected|HasDefaults|BlueprintCallable 
 	// Function /Script/DamageNumbersUI.FortUserWidget_DamageNumbers.ClearBinding
-	// void ClearBinding();                                                                                                  // [0xb194dc8] Final|Native|Protected|BlueprintCallable 
+	// void ClearBinding();                                                                                                  // [0xb3b393c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DamageNumbersUI.FortGameSettingRegistryExtension_DamageNumbers

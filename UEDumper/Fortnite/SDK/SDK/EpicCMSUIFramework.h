@@ -29,7 +29,7 @@ enum class EDateType : uint8_t
 class UEpicCMSImage : public UCommonLazyImage
 { 
 public:
-	SDK_UNDEFINED(16,9368) /* FMulticastInlineDelegate */ __um(OnImageLoadingComplete);                            // 0x03B0   (0x0010)  
+	SDK_UNDEFINED(16,9390) /* FMulticastInlineDelegate */ __um(OnImageLoadingComplete);                            // 0x03B0   (0x0010)  
 	bool                                               bMatchImageSize;                                            // 0x03C0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0xF];                                       // 0x03C1   (0x000F)  MISSED
 	FSlateBrush                                        LoadingFailFallback;                                        // 0x03D0   (0x00C0)  
@@ -40,7 +40,7 @@ public:
 
 	/// Functions
 	// Function /Script/EpicCMSUIFramework.EpicCMSImage.SetMediaURL
-	// void SetMediaURL(FString MediaUrl);                                                                                   // [0x1805bdc] Final|Native|Public|BlueprintCallable 
+	// void SetMediaURL(FString MediaUrl);                                                                                   // [0x7a6521c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/EpicCMSUIFramework.SlotDescription
@@ -78,10 +78,10 @@ public:
 class UEpicCMSScreenBase : public UCommonActivatablePanelLegacy
 { 
 public:
-	SDK_UNDEFINED(16,9369) /* FString */               __um(TileSetFieldName);                                     // 0x0538   (0x0010)  
-	SDK_UNDEFINED(32,9370) /* TWeakObjectPtr<UDataTable*> */ __um(TileTypeToTileClassDataTable);                   // 0x0548   (0x0020)  
-	SDK_UNDEFINED(32,9371) /* TWeakObjectPtr<UClass*> */ __um(LayoutErrorClass);                                   // 0x0568   (0x0020)  
-	SDK_UNDEFINED(32,9372) /* TWeakObjectPtr<UDataTable*> */ __um(LayoutTypeToLayoutClassDataTable);               // 0x0588   (0x0020)  
+	SDK_UNDEFINED(16,9391) /* FString */               __um(TileSetFieldName);                                     // 0x0538   (0x0010)  
+	SDK_UNDEFINED(32,9392) /* TWeakObjectPtr<UDataTable*> */ __um(TileTypeToTileClassDataTable);                   // 0x0548   (0x0020)  
+	SDK_UNDEFINED(32,9393) /* TWeakObjectPtr<UClass*> */ __um(LayoutErrorClass);                                   // 0x0568   (0x0020)  
+	SDK_UNDEFINED(32,9394) /* TWeakObjectPtr<UDataTable*> */ __um(LayoutTypeToLayoutClassDataTable);               // 0x0588   (0x0020)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x05A8   (0x0008)  MISSED
 };
 
@@ -103,8 +103,8 @@ public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x14E0   (0x0008)  MISSED
 	class UClass*                                      DefaultTitleTextStyle;                                      // 0x14E8   (0x0008)  
 	class UClass*                                      FeaturedTitleTextStyle;                                     // 0x14F0   (0x0008)  
-	SDK_UNDEFINED(24,9373) /* FText */                 __um(Title);                                                // 0x14F8   (0x0018)  
-	SDK_UNDEFINED(16,9374) /* FString */               __um(Link);                                                 // 0x1510   (0x0010)  
+	SDK_UNDEFINED(24,9395) /* FText */                 __um(Title);                                                // 0x14F8   (0x0018)  
+	SDK_UNDEFINED(16,9396) /* FString */               __um(Link);                                                 // 0x1510   (0x0010)  
 	bool                                               bDownloadingExternalMedia;                                  // 0x1520   (0x0001)  
 	bool                                               bRefreshingMcpCatalog;                                      // 0x1521   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x1522   (0x0006)  MISSED
@@ -119,7 +119,7 @@ public:
 
 	/// Functions
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileBase.Launch
-	// void Launch();                                                                                                        // [0x7aaecbc] Final|Native|Protected|BlueprintCallable 
+	// void Launch();                                                                                                        // [0x7a6511c] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/EpicCMSUIFramework.EpicCMSTileCarousel
@@ -140,28 +140,28 @@ public:
 
 	/// Functions
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileCarousel.SetCurrentPageByIndex
-	// void SetCurrentPageByIndex(int32_t PageIndex);                                                                        // [0x7aaecf8] Final|Native|Protected|BlueprintCallable 
+	// void SetCurrentPageByIndex(int32_t PageIndex);                                                                        // [0x7a65158] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileCarousel.PreviousPage
-	// void PreviousPage();                                                                                                  // [0x7aaece4] Final|Native|Protected|BlueprintCallable 
+	// void PreviousPage();                                                                                                  // [0x7a65144] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileCarousel.NextPage
-	// void NextPage();                                                                                                      // [0x7aaecd0] Final|Native|Protected|BlueprintCallable 
+	// void NextPage();                                                                                                      // [0x7a65130] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileCarousel.NavigationVisibilityChanged
-	// void NavigationVisibilityChanged(bool bShowNavigation);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void NavigationVisibilityChanged(bool bShowNavigation);                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileCarousel.HandleTilePageAdded
-	// void HandleTilePageAdded(class UWidget* TileWidget);                                                                  // [0x7aaec38] Native|Event|Protected|BlueprintEvent 
+	// void HandleTilePageAdded(class UWidget* TileWidget);                                                                  // [0x7a65058] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileCarousel.GetCurrentPageIndex
-	// int32_t GetCurrentPageIndex();                                                                                        // [0x7aaec10] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentPageIndex();                                                                                        // [0x7a65030] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileCarousel.BeginAutoScrolling
-	// void BeginAutoScrolling();                                                                                            // [0x7aaebdc] Final|Native|Public|BlueprintCallable 
+	// void BeginAutoScrolling();                                                                                            // [0x7a64ffc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EpicCMSUIFramework.EpicCMSTileCarousel.AddTilePage
-	// void AddTilePage(class UWidget* TilePageWidget);                                                                      // [0x7aaea48] Final|Native|Public|BlueprintCallable 
+	// void AddTilePage(class UWidget* TilePageWidget);                                                                      // [0x7a64e28] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/EpicCMSUIFramework.EpicCMSTileTypeMapping
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FEpicCMSTileTypeMapping : FTableRowBase
 { 
-	SDK_UNDEFINED(32,9375) /* TWeakObjectPtr<UClass*> */ __um(TileClass);                                          // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,9397) /* TWeakObjectPtr<UClass*> */ __um(TileClass);                                          // 0x0008   (0x0020)  
 };
 
 /// Struct /Script/EpicCMSUIFramework.EpicCMSPage
@@ -175,23 +175,23 @@ struct FEpicCMSPage
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FEpicCMSLayoutTypeMapping : FTableRowBase
 { 
-	SDK_UNDEFINED(32,9376) /* TWeakObjectPtr<UClass*> */ __um(LayoutType);                                         // 0x0008   (0x0020)  
+	SDK_UNDEFINED(32,9398) /* TWeakObjectPtr<UClass*> */ __um(LayoutType);                                         // 0x0008   (0x0020)  
 };
 
 /// Struct /Script/EpicCMSUIFramework.TileDefinition
 /// Size: 0x0088 (0x000000 - 0x000088)
 struct FTileDefinition
 { 
-	SDK_UNDEFINED(16,9377) /* FString */               __um(TypeString);                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,9378) /* FString */               __um(Title);                                                // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,9379) /* FString */               __um(Subtitle);                                             // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,9380) /* FString */               __um(Eyebrow);                                              // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,9381) /* FString */               __um(Link);                                                 // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,9382) /* FString */               __um(GroupId);                                              // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,9399) /* FString */               __um(TypeString);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,9400) /* FString */               __um(Title);                                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,9401) /* FString */               __um(Subtitle);                                             // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,9402) /* FString */               __um(Eyebrow);                                              // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,9403) /* FString */               __um(Link);                                                 // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,9404) /* FString */               __um(GroupId);                                              // 0x0050   (0x0010)  
 	FDateTime                                          Countdown;                                                  // 0x0060   (0x0008)  
 	EDateType                                          CountdownType;                                              // 0x0068   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0069   (0x0007)  MISSED
-	SDK_UNDEFINED(16,9383) /* FString */               __um(MediaUrl);                                             // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,9405) /* FString */               __um(MediaUrl);                                             // 0x0070   (0x0010)  
 	bool                                               IsVisible;                                                  // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0081   (0x0007)  MISSED
 };

@@ -618,17 +618,18 @@ public:
 };
 
 /// Struct /Script/VkEngineTypes.VkCreateProjectRequest
-/// Size: 0x0050 (0x000000 - 0x000050)
+/// Size: 0x0060 (0x000000 - 0x000060)
 class FVkCreateProjectRequest : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 80;
+	static inline constexpr uint64_t __MDKClassSize = 96;
 
 public:
 	SMember(FString)                                   DesiredProjectId                                            OFFSET(getStruct<T>, {0x0, 16, 0, 0})
 	SMember(FJsonObjectWrapper)                        Meta                                                        OFFSET(getStruct<T>, {0x10, 32, 0, 0})
 	SMember(FJsonObjectWrapper)                        SysMeta                                                     OFFSET(getStruct<T>, {0x30, 32, 0, 0})
+	CMember(TArray<FString>)                           GameFeaturesets                                             OFFSET(get<T>, {0x50, 16, 0, 0})
 };
 
 /// Struct /Script/VkEngineTypes.VkTransferProjectRequest
@@ -660,12 +661,12 @@ public:
 };
 
 /// Struct /Script/VkEngineTypes.VkCreateModuleVersionRequest
-/// Size: 0x00B0 (0x000000 - 0x0000B0)
+/// Size: 0x00C0 (0x000000 - 0x0000C0)
 class FVkCreateModuleVersionRequest : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 176;
+	static inline constexpr uint64_t __MDKClassSize = 192;
 
 public:
 	CMember(TMap<FString, FString>)                    RawFiles                                                    OFFSET(get<T>, {0x0, 80, 0, 0})
@@ -674,6 +675,7 @@ public:
 	SMember(FJsonObjectWrapper)                        Meta                                                        OFFSET(getStruct<T>, {0x70, 32, 0, 0})
 	SMember(FString)                                   Checksum                                                    OFFSET(getStruct<T>, {0x90, 16, 0, 0})
 	SMember(FString)                                   ManifestLink                                                OFFSET(getStruct<T>, {0xA0, 16, 0, 0})
+	CMember(TArray<FString>)                           GameFeaturesets                                             OFFSET(get<T>, {0xB0, 16, 0, 0})
 };
 
 /// Struct /Script/VkEngineTypes.VkContentPackageRequest

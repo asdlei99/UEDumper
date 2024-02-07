@@ -19,18 +19,18 @@ public:
 
 	/// Functions
 	// Function /Script/SideloadedAnimationRuntime.AnimSequenceSideloaded.SideloadData
-	// bool SideloadData(TArray<char>& Memory);                                                                              // [0xab88f18] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// bool SideloadData(TArray<char>& Memory);                                                                              // [0xad66098] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/SideloadedAnimationRuntime.AnimSequenceSideloaded.SetSkeleton
-	// void SetSkeleton(class USkeleton* InSkeleton);                                                                        // [0xab88e98] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetSkeleton(class USkeleton* InSkeleton);                                                                        // [0xad65fd8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SideloadedAnimationRuntime.AnimSequenceSideloaded.LoadDataFromFile
-	// bool LoadDataFromFile(FString Location, TArray<char>& Memory);                                                        // [0xab88198] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|Const 
+	// bool LoadDataFromFile(FString Location, TArray<char>& Memory);                                                        // [0xad65870] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|Const 
 	// Function /Script/SideloadedAnimationRuntime.AnimSequenceSideloaded.GetSideloadUserDataString
-	// FString GetSideloadUserDataString(FString Key);                                                                       // [0xab87ae8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetSideloadUserDataString(FString Key);                                                                       // [0xad6517c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SideloadedAnimationRuntime.AnimSequenceSideloaded.GetSideloadUserDataFloat
-	// float GetSideloadUserDataFloat(FString Key);                                                                          // [0xab87434] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSideloadUserDataFloat(FString Key);                                                                          // [0xad64a88] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/SideloadedAnimationRuntime.AnimSequenceSideloaded.ClearSideloadData
-	// void ClearSideloadData();                                                                                             // [0xab87420] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ClearSideloadData();                                                                                             // [0xad64a74] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/SideloadedAnimationRuntime.AnimSequenceSideloaded.AddMetaData
-	// void AddMetaData(class UAnimMetaData* MetaDataInstance);                                                              // [0xab873a0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void AddMetaData(class UAnimMetaData* MetaDataInstance);                                                              // [0xad649b4] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 

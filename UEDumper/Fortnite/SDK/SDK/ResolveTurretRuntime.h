@@ -12,14 +12,15 @@
 /// dependency: FortniteGame
 
 /// Class /Script/ResolveTurretRuntime.FortPlayerAnimInstance_AntiVehMountedTurret
-/// Size: 0x0030 (0x001620 - 0x001650)
+/// Size: 0x0040 (0x001620 - 0x001660)
 class UFortPlayerAnimInstance_AntiVehMountedTurret : public UFortPlayerAnimInstanceProxy
 { 
 public:
-	FVector                                            HandAttachL;                                                // 0x1618   (0x0018)  
-	FVector                                            HandAttachR;                                                // 0x1630   (0x0018)  
-	FName                                              HandAttachBoneNameL;                                        // 0x1648   (0x0004)  
-	FName                                              HandAttachBoneNameR;                                        // 0x164C   (0x0004)  
+	FVector                                            HandAttachL;                                                // 0x1620   (0x0018)  
+	FVector                                            HandAttachR;                                                // 0x1638   (0x0018)  
+	FName                                              HandAttachBoneNameL;                                        // 0x1650   (0x0004)  
+	FName                                              HandAttachBoneNameR;                                        // 0x1654   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x1658   (0x0008)  MISSED
 };
 
 /// Class /Script/ResolveTurretRuntime.FortVehicleAnimInstance_AntiVehMountedTurret

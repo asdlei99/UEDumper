@@ -76,7 +76,7 @@ class UCommonUIInputData : public UObject
 public:
 	FDataTableRowHandle                                DefaultClickAction;                                         // 0x0028   (0x0010)  
 	FDataTableRowHandle                                DefaultBackAction;                                          // 0x0038   (0x0010)  
-	SDK_UNDEFINED(32,1822) /* TWeakObjectPtr<UClass*> */ __um(DefaultHoldData);                                    // 0x0048   (0x0020)  
+	SDK_UNDEFINED(32,1817) /* TWeakObjectPtr<UClass*> */ __um(DefaultHoldData);                                    // 0x0048   (0x0020)  
 	class UInputAction*                                EnhancedInputClickAction;                                   // 0x0068   (0x0008)  
 	class UInputAction*                                EnhancedInputBackAction;                                    // 0x0070   (0x0008)  
 };
@@ -105,7 +105,7 @@ struct FInputDeviceIdentifierPair
 { 
 	FName                                              InputDeviceName;                                            // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1823) /* FString */               __um(HardwareDeviceIdentifier);                             // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1818) /* FString */               __um(HardwareDeviceIdentifier);                             // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/CommonInput.CommonInputKeyBrushConfiguration
@@ -133,19 +133,19 @@ public:
 	ECommonInputType                                   InputType;                                                  // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	FName                                              GamepadName;                                                // 0x002C   (0x0004)  
-	SDK_UNDEFINED(24,1824) /* FText */                 __um(GamepadDisplayName);                                   // 0x0030   (0x0018)  
-	SDK_UNDEFINED(24,1825) /* FText */                 __um(GamepadCategory);                                      // 0x0048   (0x0018)  
-	SDK_UNDEFINED(24,1826) /* FText */                 __um(GamepadPlatformName);                                  // 0x0060   (0x0018)  
+	SDK_UNDEFINED(24,1819) /* FText */                 __um(GamepadDisplayName);                                   // 0x0030   (0x0018)  
+	SDK_UNDEFINED(24,1820) /* FText */                 __um(GamepadCategory);                                      // 0x0048   (0x0018)  
+	SDK_UNDEFINED(24,1821) /* FText */                 __um(GamepadPlatformName);                                  // 0x0060   (0x0018)  
 	TArray<FInputDeviceIdentifierPair>                 GamepadHardwareIdMapping;                                   // 0x0078   (0x0010)  
-	SDK_UNDEFINED(32,1827) /* TWeakObjectPtr<UTexture2D*> */ __um(ControllerTexture);                              // 0x0088   (0x0020)  
-	SDK_UNDEFINED(32,1828) /* TWeakObjectPtr<UTexture2D*> */ __um(ControllerButtonMaskTexture);                    // 0x00A8   (0x0020)  
+	SDK_UNDEFINED(32,1822) /* TWeakObjectPtr<UTexture2D*> */ __um(ControllerTexture);                              // 0x0088   (0x0020)  
+	SDK_UNDEFINED(32,1823) /* TWeakObjectPtr<UTexture2D*> */ __um(ControllerButtonMaskTexture);                    // 0x00A8   (0x0020)  
 	TArray<FCommonInputKeyBrushConfiguration>          InputBrushDataMap;                                          // 0x00C8   (0x0010)  
 	TArray<FCommonInputKeySetBrushConfiguration>       InputBrushKeySets;                                          // 0x00D8   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/CommonInput.CommonInputBaseControllerData.GetRegisteredGamepads
-	// TArray<FName> GetRegisteredGamepads();                                                                                // [0x7088530] Final|Native|Static|Public 
+	// TArray<FName> GetRegisteredGamepads();                                                                                // [0x6f53ffc] Final|Native|Static|Public 
 };
 
 /// Class /Script/CommonInput.CommonInputPlatformSettings
@@ -160,7 +160,7 @@ public:
 	FName                                              DefaultGamepadName;                                         // 0x0044   (0x0004)  
 	bool                                               bCanChangeGamepadType;                                      // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0049   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1829) /* TArray<TWeakObjectPtr<UClass*>> */ __um(ControllerData);                             // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,1824) /* TArray<TWeakObjectPtr<UClass*>> */ __um(ControllerData);                             // 0x0050   (0x0010)  
 	TArray<class UClass*>                              ControllerDataClasses;                                      // 0x0060   (0x0010)  
 };
 
@@ -169,9 +169,9 @@ public:
 class UCommonInputSettings : public UDeveloperSettings
 { 
 public:
-	SDK_UNDEFINED(32,1830) /* TWeakObjectPtr<UClass*> */ __um(InputData);                                          // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,1825) /* TWeakObjectPtr<UClass*> */ __um(InputData);                                          // 0x0030   (0x0020)  
 	FPerPlatformSettings                               PlatformInput;                                              // 0x0050   (0x0010)  
-	SDK_UNDEFINED(80,1831) /* TMap<FName, FCommonInputPlatformBaseData> */ __um(CommonInputPlatformData);          // 0x0060   (0x0050)  
+	SDK_UNDEFINED(80,1826) /* TMap<FName, FCommonInputPlatformBaseData> */ __um(CommonInputPlatformData);          // 0x0060   (0x0050)  
 	bool                                               bEnableInputMethodThrashingProtection;                      // 0x00B0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00B1   (0x0003)  MISSED
 	int32_t                                            InputMethodThrashingLimit;                                  // 0x00B4   (0x0004)  
@@ -181,7 +181,7 @@ public:
 	bool                                               bEnableDefaultInputConfig;                                  // 0x00C9   (0x0001)  
 	bool                                               bEnableEnhancedInputSupport;                                // 0x00CA   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x5];                                       // 0x00CB   (0x0005)  MISSED
-	SDK_UNDEFINED(32,1832) /* TWeakObjectPtr<UCommonInputActionDomainTable*> */ __um(ActionDomainTable);           // 0x00D0   (0x0020)  
+	SDK_UNDEFINED(32,1827) /* TWeakObjectPtr<UCommonInputActionDomainTable*> */ __um(ActionDomainTable);           // 0x00D0   (0x0020)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x00F0   (0x0008)  MISSED
 	class UClass*                                      InputDataClass;                                             // 0x00F8   (0x0008)  
 	class UCommonInputActionDomainTable*               ActionDomainTablePtr;                                       // 0x0100   (0x0008)  
@@ -189,7 +189,7 @@ public:
 
 	/// Functions
 	// Function /Script/CommonInput.CommonInputSettings.IsEnhancedInputSupportEnabled
-	// bool IsEnhancedInputSupportEnabled();                                                                                 // [0x708855c] Final|Native|Static|Public 
+	// bool IsEnhancedInputSupportEnabled();                                                                                 // [0x6f54028] Final|Native|Static|Public 
 };
 
 /// Class /Script/CommonInput.CommonInputSubsystem
@@ -198,7 +198,7 @@ class UCommonInputSubsystem : public ULocalPlayerSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x38];                                      // 0x0030   (0x0038)  MISSED
-	SDK_UNDEFINED(16,1833) /* FMulticastInlineDelegate */ __um(OnInputMethodChanged);                              // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1828) /* FMulticastInlineDelegate */ __um(OnInputMethodChanged);                              // 0x0068   (0x0010)  
 	int32_t                                            NumberOfInputMethodChangesRecently;                         // 0x0078   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x007C   (0x0004)  MISSED
 	double                                             LastInputMethodChangeTime;                                  // 0x0080   (0x0008)  
@@ -207,7 +207,7 @@ public:
 	ECommonInputType                                   CurrentInputType;                                           // 0x0091   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x0092   (0x0002)  MISSED
 	FName                                              GamepadInputType;                                           // 0x0094   (0x0004)  
-	SDK_UNDEFINED(80,1834) /* TMap<FName, ECommonInputType> */ __um(CurrentInputLocks);                            // 0x0098   (0x0050)  
+	SDK_UNDEFINED(80,1829) /* TMap<FName, ECommonInputType> */ __um(CurrentInputLocks);                            // 0x0098   (0x0050)  
 	unsigned char                                      UnknownData03_5[0x8];                                       // 0x00E8   (0x0008)  MISSED
 	class UCommonInputActionDomainTable*               ActionDomainTable;                                          // 0x00F0   (0x0008)  
 	bool                                               bIsGamepadSimulatedClick;                                   // 0x00F8   (0x0001)  
@@ -216,23 +216,23 @@ public:
 
 	/// Functions
 	// Function /Script/CommonInput.CommonInputSubsystem.ShouldShowInputKeys
-	// bool ShouldShowInputKeys();                                                                                           // [0x7088740] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldShowInputKeys();                                                                                           // [0x6f542cc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonInput.CommonInputSubsystem.SetGamepadInputType
-	// void SetGamepadInputType(FName InGamepadInputType);                                                                   // [0x70886c0] Final|Native|Public|BlueprintCallable 
+	// void SetGamepadInputType(FName InGamepadInputType);                                                                   // [0x6f5420c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonInput.CommonInputSubsystem.SetCurrentInputType
-	// void SetCurrentInputType(ECommonInputType NewInputType);                                                              // [0x7088640] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentInputType(ECommonInputType NewInputType);                                                              // [0x6f5414c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CommonInput.CommonInputSubsystem.IsUsingPointerInput
-	// bool IsUsingPointerInput();                                                                                           // [0x7088610] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUsingPointerInput();                                                                                           // [0x6f5411c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonInput.CommonInputSubsystem.IsInputMethodActive
-	// bool IsInputMethodActive(ECommonInputType InputMethod);                                                               // [0x7088580] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInputMethodActive(ECommonInputType InputMethod);                                                               // [0x6f5404c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonInput.CommonInputSubsystem.GetDefaultInputType
-	// ECommonInputType GetDefaultInputType();                                                                               // [0x7088508] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ECommonInputType GetDefaultInputType();                                                                               // [0x6f53fd4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonInput.CommonInputSubsystem.GetCurrentInputType
-	// ECommonInputType GetCurrentInputType();                                                                               // [0x2db2a24] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ECommonInputType GetCurrentInputType();                                                                               // [0x2c63314] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonInput.CommonInputSubsystem.GetCurrentGamepadName
-	// FName GetCurrentGamepadName();                                                                                        // [0x3b148a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetCurrentGamepadName();                                                                                        // [0x6f53fbc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CommonInput.CommonInputSubsystem.BroadcastInputMethodChanged
-	// void BroadcastInputMethodChanged();                                                                                   // [0x70884f4] Final|Native|Protected 
+	// void BroadcastInputMethodChanged();                                                                                   // [0x6f53fa8] Final|Native|Protected 
 };
 
 /// Struct /Script/CommonInput.CommonInputPlatformBaseData
@@ -248,7 +248,7 @@ struct FCommonInputPlatformBaseData
 	bool                                               bCanChangeGamepadType;                                      // 0x0010   (0x0001)  
 	bool                                               bSupportsTouch;                                             // 0x0011   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x6];                                       // 0x0012   (0x0006)  MISSED
-	SDK_UNDEFINED(16,1835) /* TArray<TWeakObjectPtr<UClass*>> */ __um(ControllerData);                             // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1830) /* TArray<TWeakObjectPtr<UClass*>> */ __um(ControllerData);                             // 0x0018   (0x0010)  
 	TArray<class UClass*>                              ControllerDataClasses;                                      // 0x0028   (0x0010)  
 };
 

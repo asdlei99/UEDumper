@@ -10,16 +10,16 @@
 /// dependency: Engine
 /// dependency: FortniteGame
 
-/// Class /VKPlay/Playlists/VK_Play_MissionGen.VK_Play_MissionGen_C
+/// Class /VKEdit/Playlists/VK_Edit_MissionGen.VK_Edit_MissionGen_C
 /// Size: 0x0000 (0x000830 - 0x000830)
-class UVK_Play_MissionGen_C : public UFortMissionGenerator
+class UVK_Edit_MissionGen_C : public UFortMissionGenerator
 { 
 public:
 };
 
-/// Class /VKEdit/Playlists/VK_Edit_MissionGen.VK_Edit_MissionGen_C
+/// Class /VKPlay/Playlists/VK_Play_MissionGen.VK_Play_MissionGen_C
 /// Size: 0x0000 (0x000830 - 0x000830)
-class UVK_Edit_MissionGen_C : public UFortMissionGenerator
+class UVK_Play_MissionGen_C : public UFortMissionGenerator
 { 
 public:
 };

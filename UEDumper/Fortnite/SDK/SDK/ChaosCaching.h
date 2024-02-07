@@ -71,25 +71,25 @@ public:
 
 	/// Functions
 	// Function /Script/ChaosCaching.ChaosCacheManager.TriggerComponentByCache
-	// void TriggerComponentByCache(FName InCacheName);                                                                      // [0xb0f2200] Final|RequiredAPI|Native|Protected|BlueprintCallable 
+	// void TriggerComponentByCache(FName InCacheName);                                                                      // [0xb2eb578] Final|RequiredAPI|Native|Protected|BlueprintCallable 
 	// Function /Script/ChaosCaching.ChaosCacheManager.TriggerComponent
-	// void TriggerComponent(class UPrimitiveComponent* InComponent);                                                        // [0xb0f2180] Final|RequiredAPI|Native|Protected|BlueprintCallable 
+	// void TriggerComponent(class UPrimitiveComponent* InComponent);                                                        // [0xb2eb4b8] Final|RequiredAPI|Native|Protected|BlueprintCallable 
 	// Function /Script/ChaosCaching.ChaosCacheManager.TriggerAll
-	// void TriggerAll();                                                                                                    // [0xb0f20f8] Final|RequiredAPI|Native|Protected|BlueprintCallable 
+	// void TriggerAll();                                                                                                    // [0xb2eb430] Final|RequiredAPI|Native|Protected|BlueprintCallable 
 	// Function /Script/ChaosCaching.ChaosCacheManager.SetStartTime
-	// void SetStartTime(float InStartTime);                                                                                 // [0xb0f2078] Final|RequiredAPI|Native|Public 
+	// void SetStartTime(float InStartTime);                                                                                 // [0xb2eb36c] Final|RequiredAPI|Native|Public 
 	// Function /Script/ChaosCaching.ChaosCacheManager.SetCurrentTime
-	// void SetCurrentTime(float CurrentTime);                                                                               // [0xb0f2078] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentTime(float CurrentTime);                                                                               // [0xb2eb36c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosCaching.ChaosCacheManager.SetCacheCollection
-	// void SetCacheCollection(class UChaosCacheCollection* InCacheCollection);                                              // [0xb0f1ff8] Final|RequiredAPI|Native|Protected|BlueprintCallable 
+	// void SetCacheCollection(class UChaosCacheCollection* InCacheCollection);                                              // [0xb2eb2ac] Final|RequiredAPI|Native|Protected|BlueprintCallable 
 	// Function /Script/ChaosCaching.ChaosCacheManager.ResetSingleTransform
-	// void ResetSingleTransform(int32_t InIndex);                                                                           // [0xb0f1f24] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ResetSingleTransform(int32_t InIndex);                                                                           // [0xb2eb194] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosCaching.ChaosCacheManager.ResetAllComponentTransforms
-	// void ResetAllComponentTransforms();                                                                                   // [0xb0f1f10] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ResetAllComponentTransforms();                                                                                   // [0xb2eb180] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosCaching.ChaosCacheManager.EnablePlaybackByCache
-	// void EnablePlaybackByCache(FName InCacheName, bool bEnable);                                                          // [0xb0f1e24] Final|RequiredAPI|Native|Protected|BlueprintCallable 
+	// void EnablePlaybackByCache(FName InCacheName, bool bEnable);                                                          // [0xb2eb00c] Final|RequiredAPI|Native|Protected|BlueprintCallable 
 	// Function /Script/ChaosCaching.ChaosCacheManager.EnablePlayback
-	// void EnablePlayback(int32_t Index, bool bEnable);                                                                     // [0xb0f1d54] Final|RequiredAPI|Native|Protected|BlueprintCallable 
+	// void EnablePlayback(int32_t Index, bool bEnable);                                                                     // [0xb2eaeb0] Final|RequiredAPI|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/ChaosCaching.ChaosCachePlayer
@@ -115,7 +115,7 @@ struct FParticleTransformTrack
 struct FPerParticleCacheData
 { 
 	FParticleTransformTrack                            TransformData;                                              // 0x0000   (0x0048)  
-	SDK_UNDEFINED(80,12170) /* TMap<FName, FRichCurve> */ __um(CurveData);                                         // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,12214) /* TMap<FName, FRichCurve> */ __um(CurveData);                                         // 0x0048   (0x0050)  
 };
 
 /// Struct /Script/ChaosCaching.CacheSpawnableTemplate
@@ -138,16 +138,16 @@ public:
 	TArray<int32_t>                                    TrackToParticle;                                            // 0x0030   (0x0010)  
 	TArray<FPerParticleCacheData>                      ParticleTracks;                                             // 0x0040   (0x0010)  
 	TArray<int32_t>                                    ChannelCurveToParticle;                                     // 0x0050   (0x0010)  
-	SDK_UNDEFINED(80,12171) /* TMap<FName, FRichCurves> */ __um(ChannelsTracks);                                   // 0x0060   (0x0050)  
-	SDK_UNDEFINED(80,12172) /* TMap<FName, FCompressedRichCurves> */ __um(CompressedChannelsTracks);               // 0x00B0   (0x0050)  
-	SDK_UNDEFINED(80,12173) /* TMap<FName, FRichCurve> */ __um(CurveData);                                         // 0x0100   (0x0050)  
-	SDK_UNDEFINED(80,12174) /* TMap<FName, FParticleTransformTrack> */ __um(NamedTransformTracks);                 // 0x0150   (0x0050)  
+	SDK_UNDEFINED(80,12215) /* TMap<FName, FRichCurves> */ __um(ChannelsTracks);                                   // 0x0060   (0x0050)  
+	SDK_UNDEFINED(80,12216) /* TMap<FName, FCompressedRichCurves> */ __um(CompressedChannelsTracks);               // 0x00B0   (0x0050)  
+	SDK_UNDEFINED(80,12217) /* TMap<FName, FRichCurve> */ __um(CurveData);                                         // 0x0100   (0x0050)  
+	SDK_UNDEFINED(80,12218) /* TMap<FName, FParticleTransformTrack> */ __um(NamedTransformTracks);                 // 0x0150   (0x0050)  
 	bool                                               bCompressChannels;                                          // 0x01A0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01A1   (0x0003)  MISSED
 	float                                              ChannelsCompressionErrorThreshold;                          // 0x01A4   (0x0004)  
 	float                                              ChannelsCompressionSampleRate;                              // 0x01A8   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x01AC   (0x0004)  MISSED
-	SDK_UNDEFINED(80,12175) /* TMap<FName, FCacheEventTrack> */ __um(EventTracks);                                 // 0x01B0   (0x0050)  
+	SDK_UNDEFINED(80,12219) /* TMap<FName, FCacheEventTrack> */ __um(EventTracks);                                 // 0x01B0   (0x0050)  
 	FCacheSpawnableTemplate                            Spawnable;                                                  // 0x0200   (0x00D0)  
 	FGuid                                              AdapterGuid;                                                // 0x02D0   (0x0010)  
 	int32_t                                            Version;                                                    // 0x02E0   (0x0004)  

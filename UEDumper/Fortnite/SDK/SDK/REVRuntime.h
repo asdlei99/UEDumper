@@ -11,26 +11,26 @@
 /// dependency: Engine
 
 /// Class /Script/REVRuntime.REVComponent
-/// Size: 0x0030 (0x0008F0 - 0x000920)
+/// Size: 0x0030 (0x000880 - 0x0008B0)
 class UREVComponent : public USynthComponent
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x8];                                       // 0x08F0   (0x0008)  MISSED
-	class UREVModel*                                   Model;                                                      // 0x08F8   (0x0008)  
-	class URevSettings*                                SimSettings;                                                // 0x0900   (0x0008)  
-	float                                              PitchMultiplier;                                            // 0x0908   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x14];                                      // 0x090C   (0x0014)  MISSED
+	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0880   (0x0008)  MISSED
+	class UREVModel*                                   Model;                                                      // 0x0888   (0x0008)  
+	class URevSettings*                                SimSettings;                                                // 0x0890   (0x0008)  
+	float                                              PitchMultiplier;                                            // 0x0898   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x14];                                      // 0x089C   (0x0014)  MISSED
 
 
 	/// Functions
 	// Function /Script/REVRuntime.REVComponent.UpdateSimSettings
-	// void UpdateSimSettings();                                                                                             // [0xa7fceec] Final|Native|Public|BlueprintCallable 
+	// void UpdateSimSettings();                                                                                             // [0xa9d04e4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/REVRuntime.REVComponent.UpdateParameters
-	// void UpdateParameters(float InPitch, float InRPM, float InThrottle, float InVelocity, int32_t InGear, bool bInEnableShifting); // [0xa7fcd10] Final|Native|Public|BlueprintCallable 
+	// void UpdateParameters(float InPitch, float InRPM, float InThrottle, float InVelocity, int32_t InGear, bool bInEnableShifting); // [0xa9d0198] Final|Native|Public|BlueprintCallable 
 	// Function /Script/REVRuntime.REVComponent.SetSettings
-	// void SetSettings(class URevSettings* InSettings);                                                                     // [0xa7fcc7c] Final|Native|Public|BlueprintCallable 
+	// void SetSettings(class URevSettings* InSettings);                                                                     // [0xa9d00c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/REVRuntime.REVComponent.SetRevModel
-	// void SetRevModel(class UREVModel* InModel);                                                                           // [0x1b17a3c] Final|Native|Public|BlueprintCallable 
+	// void SetRevModel(class UREVModel* InModel);                                                                           // [0xa9d0000] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/REVRuntime.REVModel
@@ -72,6 +72,6 @@ public:
 
 	/// Functions
 	// Function /Script/REVRuntime.RevSettings.UpdateSettings
-	// void UpdateSettings();                                                                                                // [0xa7fced8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void UpdateSettings();                                                                                                // [0xa9d04d0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 

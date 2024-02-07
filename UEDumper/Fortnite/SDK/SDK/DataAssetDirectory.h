@@ -51,17 +51,17 @@ public:
 class UDataAssetDirectoryTestPODAsset : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1964) /* FString */               __um(AssetName);                                            // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1952) /* FString */               __um(AssetName);                                            // 0x0028   (0x0010)  
 	EDataAssetDirectoryTestEnum                        EnumProperty;                                               // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0039   (0x0003)  MISSED
 	int32_t                                            IntProperty;                                                // 0x003C   (0x0004)  
 	float                                              FloatProperty;                                              // 0x0040   (0x0004)  
 	bool                                               BoolProperty;                                               // 0x0044   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0045   (0x0003)  MISSED
-	SDK_UNDEFINED(16,1965) /* FString */               __um(StringProperty);                                       // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1953) /* FString */               __um(StringProperty);                                       // 0x0048   (0x0010)  
 	FName                                              NameProperty;                                               // 0x0058   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x005C   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1966) /* FText */                 __um(TextProperty);                                         // 0x0060   (0x0018)  
+	SDK_UNDEFINED(24,1954) /* FText */                 __um(TextProperty);                                         // 0x0060   (0x0018)  
 };
 
 /// Struct /Script/DataAssetDirectory.DataAssetDirectoryTestPODStruct
@@ -74,10 +74,10 @@ struct FDataAssetDirectoryTestPODStruct
 	float                                              FloatProperty;                                              // 0x0008   (0x0004)  
 	bool                                               BoolProperty;                                               // 0x000C   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x000D   (0x0003)  MISSED
-	SDK_UNDEFINED(16,1967) /* FString */               __um(StringProperty);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1955) /* FString */               __um(StringProperty);                                       // 0x0010   (0x0010)  
 	FName                                              NameProperty;                                               // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0024   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1968) /* FText */                 __um(TextProperty);                                         // 0x0028   (0x0018)  
+	SDK_UNDEFINED(24,1956) /* FText */                 __um(TextProperty);                                         // 0x0028   (0x0018)  
 };
 
 /// Class /Script/DataAssetDirectory.DataAssetDirectoryTestStructAsset
@@ -117,10 +117,10 @@ public:
 class UDataAssetDirectoryTestMapAsset : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,1969) /* TMap<FString, int32_t> */ __um(StringIntMap);                                        // 0x0028   (0x0050)  
-	SDK_UNDEFINED(80,1970) /* TMap<FString, int32_t> */ __um(ShrinkStringIntMap);                                  // 0x0078   (0x0050)  
-	SDK_UNDEFINED(80,1971) /* TMap<FString, int32_t> */ __um(GrowStringIntMap);                                    // 0x00C8   (0x0050)  
-	SDK_UNDEFINED(80,1972) /* TMap<int32_t, FDataAssetDirectoryTestSimpleStruct> */ __um(IntStructMap);            // 0x0118   (0x0050)  
+	SDK_UNDEFINED(80,1957) /* TMap<FString, int32_t> */ __um(StringIntMap);                                        // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,1958) /* TMap<FString, int32_t> */ __um(ShrinkStringIntMap);                                  // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,1959) /* TMap<FString, int32_t> */ __um(GrowStringIntMap);                                    // 0x00C8   (0x0050)  
+	SDK_UNDEFINED(80,1960) /* TMap<int32_t, FDataAssetDirectoryTestSimpleStruct> */ __um(IntStructMap);            // 0x0118   (0x0050)  
 };
 
 /// Class /Script/DataAssetDirectory.DataAssetDirectoryManager

@@ -11,25 +11,14 @@
 /// dependency: Harmonix
 
 /// Class /Script/HarmonixDsp.FusionPatch
-/// Size: 0x0058 (0x000028 - 0x000080)
+/// Size: 0x0048 (0x000028 - 0x000070)
 class UFusionPatch : public UObject
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
+	static inline constexpr uint64_t __MDKClassSize = 112;
 
 public:
 	SMember(FFusionPatchData)                          FusionPatchData                                             OFFSET(getStruct<T>, {0x30, 40, 0, 0})
-
-
-	/// Functions
-	// Function /Script/HarmonixDsp.FusionPatch.ReleaseLoadedAudio
-	// void ReleaseLoadedAudio();                                                                                               // [0xaa4ffc0] Final|Native|Public|BlueprintCallable 
-	// Function /Script/HarmonixDsp.FusionPatch.LoadAudioForPlayback
-	// void LoadAudioForPlayback(FDelegateProperty OnLoadComplete);                                                             // [0xaa4ff2c] Final|Native|Public|BlueprintCallable 
-	// Function /Script/HarmonixDsp.FusionPatch.IsAudioLoadedForPlayback
-	// bool IsAudioLoadedForPlayback();                                                                                         // [0xaa4ff08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
-	// Function /Script/HarmonixDsp.FusionPatch.CancelAudioLoadRequest
-	// void CancelAudioLoadRequest();                                                                                           // [0xaa4fef4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/HarmonixDsp.StretcherAndPitchShifterConfig

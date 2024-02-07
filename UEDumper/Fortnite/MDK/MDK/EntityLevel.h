@@ -10,15 +10,15 @@
 /// dependency: Engine
 
 /// Class /Script/EntityLevel.CoreEntitySceneComponent
-/// Size: 0x0010 (0x000570 - 0x000580)
+/// Size: 0x0010 (0x000500 - 0x000510)
 class UCoreEntitySceneComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1408;
+	static inline constexpr uint64_t __MDKClassSize = 1296;
 
 public:
-	CMember(class ACoreEntityLevel*)                   EntityLevel                                                 OFFSET(get<T>, {0x570, 8, 0, 0})
-	DMember(bool)                                      bIgnoreAttachmentUponPaste                                  OFFSET(get<bool>, {0x578, 1, 0, 0})
+	CMember(class ACoreEntityLevel*)                   EntityLevel                                                 OFFSET(get<T>, {0x500, 8, 0, 0})
+	DMember(bool)                                      bIgnoreAttachmentUponPaste                                  OFFSET(get<bool>, {0x508, 1, 0, 0})
 };
 
 /// Class /Script/EntityLevel.CoreEntity

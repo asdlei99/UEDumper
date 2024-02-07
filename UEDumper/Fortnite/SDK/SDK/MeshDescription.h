@@ -29,187 +29,187 @@ public:
 
 	/// Functions
 	// Function /Script/MeshDescription.MeshDescriptionBase.SetVertexPosition
-	// void SetVertexPosition(FVertexID VertexID, FVector& Position);                                                        // [0x5b3b968] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVertexPosition(FVertexID VertexID, FVector& Position);                                                        // [0x581d144] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.SetPolygonVertexInstances
-	// void SetPolygonVertexInstances(FPolygonID PolygonID, TArray<FVertexInstanceID>& VertexInstanceIDs);                   // [0x5b3b1c8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPolygonVertexInstances(FPolygonID PolygonID, TArray<FVertexInstanceID>& VertexInstanceIDs);                   // [0x581ca1c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.SetPolygonPolygonGroup
-	// void SetPolygonPolygonGroup(FPolygonID PolygonID, FPolygonGroupID PolygonGroupID);                                    // [0x5b3afbc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetPolygonPolygonGroup(FPolygonID PolygonID, FPolygonGroupID PolygonGroupID);                                    // [0x581c8e0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.ReversePolygonFacing
-	// void ReversePolygonFacing(FPolygonID PolygonID);                                                                      // [0x5b3ae8c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReversePolygonFacing(FPolygonID PolygonID);                                                                      // [0x581c7e8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.ReserveNewVertices
-	// void ReserveNewVertices(int32_t NumberOfNewVertices);                                                                 // [0x5b3ae0c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReserveNewVertices(int32_t NumberOfNewVertices);                                                                 // [0x581c728] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.ReserveNewVertexInstances
-	// void ReserveNewVertexInstances(int32_t NumberOfNewVertexInstances);                                                   // [0x5b3abf4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReserveNewVertexInstances(int32_t NumberOfNewVertexInstances);                                                   // [0x581c410] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.ReserveNewTriangles
-	// void ReserveNewTriangles(int32_t NumberOfNewTriangles);                                                               // [0x5b3ad8c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReserveNewTriangles(int32_t NumberOfNewTriangles);                                                               // [0x581c668] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.ReserveNewPolygons
-	// void ReserveNewPolygons(int32_t NumberOfNewPolygons);                                                                 // [0x5b3ad0c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReserveNewPolygons(int32_t NumberOfNewPolygons);                                                                 // [0x581c5a8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.ReserveNewPolygonGroups
-	// void ReserveNewPolygonGroups(int32_t NumberOfNewPolygonGroups);                                                       // [0x5b3ac74] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReserveNewPolygonGroups(int32_t NumberOfNewPolygonGroups);                                                       // [0x581c4d0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.ReserveNewEdges
-	// void ReserveNewEdges(int32_t NumberOfNewEdges);                                                                       // [0x5b3abf4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ReserveNewEdges(int32_t NumberOfNewEdges);                                                                       // [0x581c410] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsVertexValid
-	// bool IsVertexValid(FVertexID VertexID);                                                                               // [0x5b3aab0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVertexValid(FVertexID VertexID);                                                                               // [0x581c300] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsVertexOrphaned
-	// bool IsVertexOrphaned(FVertexID VertexID);                                                                            // [0x5b3a974] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVertexOrphaned(FVertexID VertexID);                                                                            // [0x581c1ec] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsVertexInstanceValid
-	// bool IsVertexInstanceValid(FVertexInstanceID VertexInstanceID);                                                       // [0x5b3a82c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVertexInstanceValid(FVertexInstanceID VertexInstanceID);                                                       // [0x581c0d8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsTriangleValid
-	// bool IsTriangleValid(FTriangleID TriangleID);                                                                         // [0x5b3a6e4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTriangleValid(FTriangleID TriangleID);                                                                         // [0x581bfc4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsTrianglePartOfNgon
-	// bool IsTrianglePartOfNgon(FTriangleID TriangleID);                                                                    // [0x5b3a5a8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTrianglePartOfNgon(FTriangleID TriangleID);                                                                    // [0x581bef4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsPolygonValid
-	// bool IsPolygonValid(FPolygonID PolygonID);                                                                            // [0x5b3a460] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPolygonValid(FPolygonID PolygonID);                                                                            // [0x581bde0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsPolygonGroupValid
-	// bool IsPolygonGroupValid(FPolygonGroupID PolygonGroupID);                                                             // [0x5b3a318] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPolygonGroupValid(FPolygonGroupID PolygonGroupID);                                                             // [0x581bccc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsEmpty
-	// bool IsEmpty();                                                                                                       // [0x5b3a2f0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEmpty();                                                                                                       // [0x581bca4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsEdgeValid
-	// bool IsEdgeValid(FEdgeID EdgeID);                                                                                     // [0x5b3a1a8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEdgeValid(FEdgeID EdgeID);                                                                                     // [0x581bb90] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsEdgeInternalToPolygon
-	// bool IsEdgeInternalToPolygon(FEdgeID EdgeID, FPolygonID PolygonID);                                                   // [0x5b39f8c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEdgeInternalToPolygon(FEdgeID EdgeID, FPolygonID PolygonID);                                                   // [0x581ba40] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.IsEdgeInternal
-	// bool IsEdgeInternal(FEdgeID EdgeID);                                                                                  // [0x5b39e50] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEdgeInternal(FEdgeID EdgeID);                                                                                  // [0x581b928] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexVertexInstances
-	// void GetVertexVertexInstances(FVertexID VertexID, TArray<FVertexInstanceID>& OutVertexInstanceIDs);                   // [0x5b396b0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexVertexInstances(FVertexID VertexID, TArray<FVertexInstanceID>& OutVertexInstanceIDs);                   // [0x581b1bc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexPosition
-	// FVector GetVertexPosition(FVertexID VertexID);                                                                        // [0x5b39560] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetVertexPosition(FVertexID VertexID);                                                                        // [0x581b0d8] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexPairEdge
-	// FEdgeID GetVertexPairEdge(FVertexID VertexID0, FVertexID VertexID1);                                                  // [0x5b3934c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FEdgeID GetVertexPairEdge(FVertexID VertexID0, FVertexID VertexID1);                                                  // [0x581af90] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexInstanceVertex
-	// FVertexID GetVertexInstanceVertex(FVertexInstanceID VertexInstanceID);                                                // [0x5b39214] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexID GetVertexInstanceVertex(FVertexInstanceID VertexInstanceID);                                                // [0x581ae6c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexInstancePairEdge
-	// FEdgeID GetVertexInstancePairEdge(FVertexInstanceID VertexInstanceID0, FVertexInstanceID VertexInstanceID1);          // [0x5b39000] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FEdgeID GetVertexInstancePairEdge(FVertexInstanceID VertexInstanceID0, FVertexInstanceID VertexInstanceID1);          // [0x581ad24] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexInstanceForTriangleVertex
-	// FVertexInstanceID GetVertexInstanceForTriangleVertex(FTriangleID TriangleID, FVertexID VertexID);                     // [0x5b38dec] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexInstanceID GetVertexInstanceForTriangleVertex(FTriangleID TriangleID, FVertexID VertexID);                     // [0x581abdc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexInstanceForPolygonVertex
-	// FVertexInstanceID GetVertexInstanceForPolygonVertex(FPolygonID PolygonID, FVertexID VertexID);                        // [0x5b38bd8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexInstanceID GetVertexInstanceForPolygonVertex(FPolygonID PolygonID, FVertexID VertexID);                        // [0x581aa94] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexInstanceCount
-	// int32_t GetVertexInstanceCount();                                                                                     // [0x5b38bac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVertexInstanceCount();                                                                                     // [0x581aa68] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexInstanceConnectedTriangles
-	// void GetVertexInstanceConnectedTriangles(FVertexInstanceID VertexInstanceID, TArray<FTriangleID>& OutConnectedTriangleIDs); // [0x5b3840c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexInstanceConnectedTriangles(FVertexInstanceID VertexInstanceID, TArray<FTriangleID>& OutConnectedTriangleIDs); // [0x581a2f8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexInstanceConnectedPolygons
-	// void GetVertexInstanceConnectedPolygons(FVertexInstanceID VertexInstanceID, TArray<FPolygonID>& OutConnectedPolygonIDs); // [0x5b37c6c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexInstanceConnectedPolygons(FVertexInstanceID VertexInstanceID, TArray<FPolygonID>& OutConnectedPolygonIDs); // [0x5819ba0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexCount
-	// int32_t GetVertexCount();                                                                                             // [0x5b37c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVertexCount();                                                                                             // [0x5819b74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexConnectedTriangles
-	// void GetVertexConnectedTriangles(FVertexID VertexID, TArray<FTriangleID>& OutConnectedTriangleIDs);                   // [0x5b374a0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexConnectedTriangles(FVertexID VertexID, TArray<FTriangleID>& OutConnectedTriangleIDs);                   // [0x5819420] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexConnectedPolygons
-	// void GetVertexConnectedPolygons(FVertexID VertexID, TArray<FPolygonID>& OutConnectedPolygonIDs);                      // [0x5b36d00] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexConnectedPolygons(FVertexID VertexID, TArray<FPolygonID>& OutConnectedPolygonIDs);                      // [0x5818ccc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexConnectedEdges
-	// void GetVertexConnectedEdges(FVertexID VertexID, TArray<FEdgeID>& OutEdgeIDs);                                        // [0x5b36560] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexConnectedEdges(FVertexID VertexID, TArray<FEdgeID>& OutEdgeIDs);                                        // [0x581855c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetVertexAdjacentVertices
-	// void GetVertexAdjacentVertices(FVertexID VertexID, TArray<FVertexID>& OutAdjacentVertexIDs);                          // [0x5b35dc0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexAdjacentVertices(FVertexID VertexID, TArray<FVertexID>& OutAdjacentVertexIDs);                          // [0x5817e08] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetTriangleVertices
-	// void GetTriangleVertices(FTriangleID TriangleID, TArray<FVertexID>& OutVertexIDs);                                    // [0x5b35620] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetTriangleVertices(FTriangleID TriangleID, TArray<FVertexID>& OutVertexIDs);                                    // [0x58176e0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetTriangleVertexInstances
-	// void GetTriangleVertexInstances(FTriangleID TriangleID, TArray<FVertexInstanceID>& OutVertexInstanceIDs);             // [0x5b34e80] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetTriangleVertexInstances(FTriangleID TriangleID, TArray<FVertexInstanceID>& OutVertexInstanceIDs);             // [0x5816fb8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetTriangleVertexInstance
-	// FVertexInstanceID GetTriangleVertexInstance(FTriangleID TriangleID, int32_t Index);                                   // [0x5b34c70] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexInstanceID GetTriangleVertexInstance(FTriangleID TriangleID, int32_t Index);                                   // [0x5816e70] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetTrianglePolygonGroup
-	// FPolygonGroupID GetTrianglePolygonGroup(FTriangleID TriangleID);                                                      // [0x5b34b38] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPolygonGroupID GetTrianglePolygonGroup(FTriangleID TriangleID);                                                      // [0x5816d4c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetTrianglePolygon
-	// FPolygonID GetTrianglePolygon(FTriangleID TriangleID);                                                                // [0x5b34a00] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPolygonID GetTrianglePolygon(FTriangleID TriangleID);                                                                // [0x5816c28] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetTriangleEdges
-	// void GetTriangleEdges(FTriangleID TriangleID, TArray<FEdgeID>& OutEdgeIDs);                                           // [0x5b34260] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetTriangleEdges(FTriangleID TriangleID, TArray<FEdgeID>& OutEdgeIDs);                                           // [0x5816500] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetTriangleCount
-	// int32_t GetTriangleCount();                                                                                           // [0x5b34234] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTriangleCount();                                                                                           // [0x58164d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetTriangleAdjacentTriangles
-	// void GetTriangleAdjacentTriangles(FTriangleID TriangleID, TArray<FTriangleID>& OutTriangleIDs);                       // [0x5b33a94] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetTriangleAdjacentTriangles(FTriangleID TriangleID, TArray<FTriangleID>& OutTriangleIDs);                       // [0x5815d7c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonVertices
-	// void GetPolygonVertices(FPolygonID PolygonID, TArray<FVertexID>& OutVertexIDs);                                       // [0x5b332f4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonVertices(FPolygonID PolygonID, TArray<FVertexID>& OutVertexIDs);                                       // [0x5815624] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonVertexInstances
-	// void GetPolygonVertexInstances(FPolygonID PolygonID, TArray<FVertexInstanceID>& OutVertexInstanceIDs);                // [0x5b32b54] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonVertexInstances(FPolygonID PolygonID, TArray<FVertexInstanceID>& OutVertexInstanceIDs);                // [0x5814efc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonTriangles
-	// void GetPolygonTriangles(FPolygonID PolygonID, TArray<FTriangleID>& OutTriangleIDs);                                  // [0x5b323b4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonTriangles(FPolygonID PolygonID, TArray<FTriangleID>& OutTriangleIDs);                                  // [0x581478c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonPolygonGroup
-	// FPolygonGroupID GetPolygonPolygonGroup(FPolygonID PolygonID);                                                         // [0x5b3227c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPolygonGroupID GetPolygonPolygonGroup(FPolygonID PolygonID);                                                         // [0x5814668] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonPerimeterEdges
-	// void GetPolygonPerimeterEdges(FPolygonID PolygonID, TArray<FEdgeID>& OutEdgeIDs);                                     // [0x5b31adc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonPerimeterEdges(FPolygonID PolygonID, TArray<FEdgeID>& OutEdgeIDs);                                     // [0x5813f10] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonInternalEdges
-	// void GetPolygonInternalEdges(FPolygonID PolygonID, TArray<FEdgeID>& OutEdgeIDs);                                      // [0x5b3133c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonInternalEdges(FPolygonID PolygonID, TArray<FEdgeID>& OutEdgeIDs);                                      // [0x58137b8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonGroupPolygons
-	// void GetPolygonGroupPolygons(FPolygonGroupID PolygonGroupID, TArray<FPolygonID>& OutPolygonIDs);                      // [0x5b30b9c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonGroupPolygons(FPolygonGroupID PolygonGroupID, TArray<FPolygonID>& OutPolygonIDs);                      // [0x581304c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonGroupCount
-	// int32_t GetPolygonGroupCount();                                                                                       // [0x5b30b70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPolygonGroupCount();                                                                                       // [0x5813020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonCount
-	// int32_t GetPolygonCount();                                                                                            // [0x5b30b44] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPolygonCount();                                                                                            // [0x5812ff4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetPolygonAdjacentPolygons
-	// void GetPolygonAdjacentPolygons(FPolygonID PolygonID, TArray<FPolygonID>& OutPolygonIDs);                             // [0x5b303a4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonAdjacentPolygons(FPolygonID PolygonID, TArray<FPolygonID>& OutPolygonIDs);                             // [0x581289c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumVertexVertexInstances
-	// int32_t GetNumVertexVertexInstances(FVertexID VertexID);                                                              // [0x5b30268] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumVertexVertexInstances(FVertexID VertexID);                                                              // [0x581277c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumVertexInstanceConnectedTriangles
-	// int32_t GetNumVertexInstanceConnectedTriangles(FVertexInstanceID VertexInstanceID);                                   // [0x5b3012c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumVertexInstanceConnectedTriangles(FVertexInstanceID VertexInstanceID);                                   // [0x581265c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumVertexInstanceConnectedPolygons
-	// int32_t GetNumVertexInstanceConnectedPolygons(FVertexInstanceID VertexInstanceID);                                    // [0x5b2fff0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumVertexInstanceConnectedPolygons(FVertexInstanceID VertexInstanceID);                                    // [0x5812548] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumVertexConnectedTriangles
-	// int32_t GetNumVertexConnectedTriangles(FVertexID VertexID);                                                           // [0x5b2feb4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumVertexConnectedTriangles(FVertexID VertexID);                                                           // [0x5812434] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumVertexConnectedPolygons
-	// int32_t GetNumVertexConnectedPolygons(FVertexID VertexID);                                                            // [0x5b2fd78] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumVertexConnectedPolygons(FVertexID VertexID);                                                            // [0x5812320] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumVertexConnectedEdges
-	// int32_t GetNumVertexConnectedEdges(FVertexID VertexID);                                                               // [0x5b2fc3c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumVertexConnectedEdges(FVertexID VertexID);                                                               // [0x5812200] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumPolygonVertices
-	// int32_t GetNumPolygonVertices(FPolygonID PolygonID);                                                                  // [0x5b2fb00] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumPolygonVertices(FPolygonID PolygonID);                                                                  // [0x58120ec] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumPolygonTriangles
-	// int32_t GetNumPolygonTriangles(FPolygonID PolygonID);                                                                 // [0x5b2f9c4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumPolygonTriangles(FPolygonID PolygonID);                                                                 // [0x5811fcc] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumPolygonInternalEdges
-	// int32_t GetNumPolygonInternalEdges(FPolygonID PolygonID);                                                             // [0x5b2f888] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumPolygonInternalEdges(FPolygonID PolygonID);                                                             // [0x5811ea8] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumPolygonGroupPolygons
-	// int32_t GetNumPolygonGroupPolygons(FPolygonGroupID PolygonGroupID);                                                   // [0x5b2f74c] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumPolygonGroupPolygons(FPolygonGroupID PolygonGroupID);                                                   // [0x5811d88] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumEdgeConnectedTriangles
-	// int32_t GetNumEdgeConnectedTriangles(FEdgeID EdgeID);                                                                 // [0x5b2f610] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumEdgeConnectedTriangles(FEdgeID EdgeID);                                                                 // [0x5811c68] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetNumEdgeConnectedPolygons
-	// int32_t GetNumEdgeConnectedPolygons(FEdgeID EdgeID);                                                                  // [0x5b2f4d4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumEdgeConnectedPolygons(FEdgeID EdgeID);                                                                  // [0x5811b98] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetEdgeVertices
-	// void GetEdgeVertices(FEdgeID EdgeID, TArray<FVertexID>& OutVertexIDs);                                                // [0x5b2ed34] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetEdgeVertices(FEdgeID EdgeID, TArray<FVertexID>& OutVertexIDs);                                                // [0x5811470] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetEdgeVertex
-	// FVertexID GetEdgeVertex(FEdgeID EdgeID, int32_t VertexNumber);                                                        // [0x5b2eb24] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexID GetEdgeVertex(FEdgeID EdgeID, int32_t VertexNumber);                                                        // [0x58112c4] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetEdgeCount
-	// int32_t GetEdgeCount();                                                                                               // [0x5b2eaf8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetEdgeCount();                                                                                               // [0x5811298] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetEdgeConnectedTriangles
-	// void GetEdgeConnectedTriangles(FEdgeID EdgeID, TArray<FTriangleID>& OutConnectedTriangleIDs);                         // [0x5b2e358] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetEdgeConnectedTriangles(FEdgeID EdgeID, TArray<FTriangleID>& OutConnectedTriangleIDs);                         // [0x5810b28] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.GetEdgeConnectedPolygons
-	// void GetEdgeConnectedPolygons(FEdgeID EdgeID, TArray<FPolygonID>& OutConnectedPolygonIDs);                            // [0x5b2dbb8] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetEdgeConnectedPolygons(FEdgeID EdgeID, TArray<FPolygonID>& OutConnectedPolygonIDs);                            // [0x58103d0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MeshDescription.MeshDescriptionBase.Empty
-	// void Empty();                                                                                                         // [0x5b2dba0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void Empty();                                                                                                         // [0x58103b8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.DeleteVertexInstance
-	// void DeleteVertexInstance(FVertexInstanceID VertexInstanceID, TArray<FVertexID>& OrphanedVertices);                   // [0x5b2d400] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeleteVertexInstance(FVertexInstanceID VertexInstanceID, TArray<FVertexID>& OrphanedVertices);                   // [0x580fc60] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.DeleteVertex
-	// void DeleteVertex(FVertexID VertexID);                                                                                // [0x5b2d2d0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void DeleteVertex(FVertexID VertexID);                                                                                // [0x580fb6c] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.DeleteTriangle
-	// void DeleteTriangle(FTriangleID TriangleID, TArray<FEdgeID>& OrphanedEdges, TArray<FVertexInstanceID>& OrphanedVertexInstances, TArray<FPolygonGroupID>& OrphanedPolygonGroupsPtr); // [0x5b2ca68] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeleteTriangle(FTriangleID TriangleID, TArray<FEdgeID>& OrphanedEdges, TArray<FVertexInstanceID>& OrphanedVertexInstances, TArray<FPolygonGroupID>& OrphanedPolygonGroupsPtr); // [0x580f350] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.DeletePolygonGroup
-	// void DeletePolygonGroup(FPolygonGroupID PolygonGroupID);                                                              // [0x5b2c938] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void DeletePolygonGroup(FPolygonGroupID PolygonGroupID);                                                              // [0x580f258] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.DeletePolygon
-	// void DeletePolygon(FPolygonID PolygonID, TArray<FEdgeID>& OrphanedEdges, TArray<FVertexInstanceID>& OrphanedVertexInstances, TArray<FPolygonGroupID>& OrphanedPolygonGroups); // [0x5b2c0d0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeletePolygon(FPolygonID PolygonID, TArray<FEdgeID>& OrphanedEdges, TArray<FVertexInstanceID>& OrphanedVertexInstances, TArray<FPolygonGroupID>& OrphanedPolygonGroups); // [0x580ea3c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.DeleteEdge
-	// void DeleteEdge(FEdgeID EdgeID, TArray<FVertexID>& OrphanedVertices);                                                 // [0x5b2b930] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeleteEdge(FEdgeID EdgeID, TArray<FVertexID>& OrphanedVertices);                                                 // [0x580e2e4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreateVertexWithID
-	// void CreateVertexWithID(FVertexID VertexID);                                                                          // [0x5b2b800] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void CreateVertexWithID(FVertexID VertexID);                                                                          // [0x580e1e8] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreateVertexInstanceWithID
-	// void CreateVertexInstanceWithID(FVertexInstanceID VertexInstanceID, FVertexID VertexID);                              // [0x5b2b5f4] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void CreateVertexInstanceWithID(FVertexInstanceID VertexInstanceID, FVertexID VertexID);                              // [0x580e0ac] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreateVertexInstance
-	// FVertexInstanceID CreateVertexInstance(FVertexID VertexID);                                                           // [0x5b2b4bc] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// FVertexInstanceID CreateVertexInstance(FVertexID VertexID);                                                           // [0x580df98] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreateVertex
-	// FVertexID CreateVertex();                                                                                             // [0x5b2b48c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// FVertexID CreateVertex();                                                                                             // [0x580df68] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreateTriangleWithID
-	// void CreateTriangleWithID(FTriangleID TriangleID, FPolygonGroupID PolygonGroupID, TArray<FVertexInstanceID>& VertexInstanceIDs, TArray<FEdgeID>& NewEdgeIDs); // [0x5b2aba4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreateTriangleWithID(FTriangleID TriangleID, FPolygonGroupID PolygonGroupID, TArray<FVertexInstanceID>& VertexInstanceIDs, TArray<FEdgeID>& NewEdgeIDs); // [0x580d75c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreateTriangle
-	// FTriangleID CreateTriangle(FPolygonGroupID PolygonGroupID, TArray<FVertexInstanceID>& VertexInstanceIDs, TArray<FEdgeID>& NewEdgeIDs); // [0x5b2a39c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// FTriangleID CreateTriangle(FPolygonGroupID PolygonGroupID, TArray<FVertexInstanceID>& VertexInstanceIDs, TArray<FEdgeID>& NewEdgeIDs); // [0x580cfcc] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreatePolygonWithID
-	// void CreatePolygonWithID(FPolygonID PolygonID, FPolygonGroupID PolygonGroupID, TArray<FVertexInstanceID>& VertexInstanceIDs, TArray<FEdgeID>& NewEdgeIDs); // [0x5b29ab4] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreatePolygonWithID(FPolygonID PolygonID, FPolygonGroupID PolygonGroupID, TArray<FVertexInstanceID>& VertexInstanceIDs, TArray<FEdgeID>& NewEdgeIDs); // [0x580c7c0] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreatePolygonGroupWithID
-	// void CreatePolygonGroupWithID(FPolygonGroupID PolygonGroupID);                                                        // [0x5b29984] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void CreatePolygonGroupWithID(FPolygonGroupID PolygonGroupID);                                                        // [0x580c6c0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreatePolygonGroup
-	// FPolygonGroupID CreatePolygonGroup();                                                                                 // [0x5b29954] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// FPolygonGroupID CreatePolygonGroup();                                                                                 // [0x580c690] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreatePolygon
-	// FPolygonID CreatePolygon(FPolygonGroupID PolygonGroupID, TArray<FVertexInstanceID>& VertexInstanceIDs, TArray<FEdgeID>& NewEdgeIDs); // [0x5b2914c] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
+	// FPolygonID CreatePolygon(FPolygonGroupID PolygonGroupID, TArray<FVertexInstanceID>& VertexInstanceIDs, TArray<FEdgeID>& NewEdgeIDs); // [0x580bf00] Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreateEdgeWithID
-	// void CreateEdgeWithID(FEdgeID EdgeID, FVertexID VertexID0, FVertexID VertexID1);                                      // [0x5b28e70] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void CreateEdgeWithID(FEdgeID EdgeID, FVertexID VertexID0, FVertexID VertexID1);                                      // [0x580bd48] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.CreateEdge
-	// FEdgeID CreateEdge(FVertexID VertexID0, FVertexID VertexID1);                                                         // [0x5b28c5c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// FEdgeID CreateEdge(FVertexID VertexID0, FVertexID VertexID1);                                                         // [0x580bc00] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MeshDescription.MeshDescriptionBase.ComputePolygonTriangulation
-	// void ComputePolygonTriangulation(FPolygonID PolygonID);                                                               // [0x5b28b2c] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void ComputePolygonTriangulation(FPolygonID PolygonID);                                                               // [0x580bb08] Final|RequiredAPI|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MeshDescription.MeshDescriptionBaseBulkData

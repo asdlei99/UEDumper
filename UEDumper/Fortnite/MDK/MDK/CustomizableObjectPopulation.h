@@ -25,9 +25,9 @@ public:
 
 	/// Functions
 	// Function /Script/CustomizableObjectPopulation.CustomizableObjectPopulation.RegeneratePopulation
-	// bool RegeneratePopulation(int32_t Seed, TArray<UCustomizableObjectInstance*>& OutInstances, int32_t NumInstancesToGenerate); // [0xa840920] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool RegeneratePopulation(int32_t Seed, TArray<UCustomizableObjectInstance*>& OutInstances, int32_t NumInstancesToGenerate); // [0xaa15364] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CustomizableObjectPopulation.CustomizableObjectPopulation.GeneratePopulation
-	// int32_t GeneratePopulation(TArray<UCustomizableObjectInstance*>& OutInstances, int32_t NumInstancesToGenerate);          // [0xa840184] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GeneratePopulation(TArray<UCustomizableObjectInstance*>& OutInstances, int32_t NumInstancesToGenerate);          // [0xaa14ba8] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CustomizableObjectPopulation.CustomizableObjectPopulationClass

@@ -19,7 +19,7 @@ public:
 
 	/// Functions
 	// Function /Script/DataflowEngine.DataflowBlueprintLibrary.EvaluateTerminalNodeByName
-	// void EvaluateTerminalNodeByName(class UDataflow* Dataflow, FName TerminalNodeName, class UObject* ResultAsset);       // [0x60be384] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// void EvaluateTerminalNodeByName(class UDataflow* Dataflow, FName TerminalNodeName, class UObject* ResultAsset);       // [0x5dcac70] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/DataflowEngine.DataflowEdNode
@@ -48,7 +48,7 @@ public:
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FStringValuePair
 { 
-	SDK_UNDEFINED(16,2412) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,2413) /* FString */               __um(Value);                                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,2403) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,2404) /* FString */               __um(Value);                                                // 0x0010   (0x0010)  
 };
 

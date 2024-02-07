@@ -32,9 +32,9 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamUI.JamUIManagerComponent_SongIndicators.RebuildJamSongIndicatorsForPlayspace
-	// void RebuildJamSongIndicatorsForPlayspace(class AJamPlayspace* Playspace);                                            // [0xb61ebd8] Final|Native|Public|BlueprintCallable 
+	// void RebuildJamSongIndicatorsForPlayspace(class AJamPlayspace* Playspace);                                            // [0xb87fc3c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMJamUI.JamUIManagerComponent_SongIndicators.ClearJamIndicators
-	// void ClearJamIndicators();                                                                                            // [0xb61eb58] Final|Native|Public|BlueprintCallable 
+	// void ClearJamIndicators();                                                                                            // [0xb87fbbc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMJamUI.JamSongIndicator
@@ -47,12 +47,12 @@ public:
 
 	/// Functions
 	// Function /Script/FMJamUI.JamSongIndicator.OnScreenClampChanged
-	// void OnScreenClampChanged(bool bIsClamped);                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnScreenClampChanged(bool bIsClamped);                                                                           // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/FMJamUI.JamSongIndicator.OnInitInfo
-	// void OnInitInfo(class UCatalogData* Song, EFMJamLoopType Type);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnInitInfo(class UCatalogData* Song, EFMJamLoopType Type);                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/FMJamUI.JamSongIndicator.OnDistanceChanged
-	// void OnDistanceChanged(int32_t Distance);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void OnDistanceChanged(int32_t Distance);                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/FMJamUI.JamSongIndicator.GetIndicatedPlayerStateAthena
-	// class AFortPlayerStateAthena* GetIndicatedPlayerStateAthena();                                                        // [0xb61eb6c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFortPlayerStateAthena* GetIndicatedPlayerStateAthena();                                                        // [0xb87fbd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

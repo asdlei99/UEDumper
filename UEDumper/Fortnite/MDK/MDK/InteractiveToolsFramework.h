@@ -21,24 +21,24 @@ public:
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoBaseComponent
-/// Size: 0x0030 (0x000570 - 0x0005A0)
+/// Size: 0x0030 (0x000500 - 0x000530)
 class UGizmoBaseComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1440;
+	static inline constexpr uint64_t __MDKClassSize = 1328;
 
 public:
-	SMember(FLinearColor)                              Color                                                       OFFSET(getStruct<T>, {0x570, 16, 0, 0})
-	DMember(float)                                     HoverSizeMultiplier                                         OFFSET(get<float>, {0x580, 4, 0, 0})
-	DMember(float)                                     PixelHitDistanceThreshold                                   OFFSET(get<float>, {0x584, 4, 0, 0})
-	CMember(class UGizmoViewContext*)                  GizmoViewContext                                            OFFSET(get<T>, {0x590, 8, 0, 0})
+	SMember(FLinearColor)                              Color                                                       OFFSET(getStruct<T>, {0x500, 16, 0, 0})
+	DMember(float)                                     HoverSizeMultiplier                                         OFFSET(get<float>, {0x510, 4, 0, 0})
+	DMember(float)                                     PixelHitDistanceThreshold                                   OFFSET(get<float>, {0x514, 4, 0, 0})
+	CMember(class UGizmoViewContext*)                  GizmoViewContext                                            OFFSET(get<T>, {0x520, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState
-	// void UpdateWorldLocalState(bool bWorldIn);                                                                               // [0xaebad84] Final|Native|Public  
+	// void UpdateWorldLocalState(bool bWorldIn);                                                                               // [0xb0ae2bc] Final|Native|Public  
 	// Function /Script/InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
-	// void UpdateHoverState(bool bHoveringIn);                                                                                 // [0xaebab04] Final|Native|Public  
+	// void UpdateHoverState(bool bHoveringIn);                                                                                 // [0xb0adfe0] Final|Native|Public  
 };
 
 /// Class /Script/InteractiveToolsFramework.InteractiveCommandArguments
@@ -757,50 +757,50 @@ public:
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoArrowComponent
-/// Size: 0x0030 (0x0005A0 - 0x0005D0)
+/// Size: 0x0030 (0x000530 - 0x000560)
 class UGizmoArrowComponent : public UGizmoBaseComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1488;
+	static inline constexpr uint64_t __MDKClassSize = 1376;
 
 public:
-	SMember(FVector)                                   Direction                                                   OFFSET(getStruct<T>, {0x5A0, 24, 0, 0})
-	DMember(float)                                     Gap                                                         OFFSET(get<float>, {0x5B8, 4, 0, 0})
-	DMember(float)                                     Length                                                      OFFSET(get<float>, {0x5BC, 4, 0, 0})
-	DMember(float)                                     Thickness                                                   OFFSET(get<float>, {0x5C0, 4, 0, 0})
+	SMember(FVector)                                   Direction                                                   OFFSET(getStruct<T>, {0x530, 24, 0, 0})
+	DMember(float)                                     Gap                                                         OFFSET(get<float>, {0x548, 4, 0, 0})
+	DMember(float)                                     Length                                                      OFFSET(get<float>, {0x54C, 4, 0, 0})
+	DMember(float)                                     Thickness                                                   OFFSET(get<float>, {0x550, 4, 0, 0})
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoBoxComponent
-/// Size: 0x0060 (0x0005A0 - 0x000600)
+/// Size: 0x0060 (0x000530 - 0x000590)
 class UGizmoBoxComponent : public UGizmoBaseComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1536;
+	static inline constexpr uint64_t __MDKClassSize = 1424;
 
 public:
-	SMember(FVector)                                   Origin                                                      OFFSET(getStruct<T>, {0x5A0, 24, 0, 0})
-	SMember(FQuat)                                     Rotation                                                    OFFSET(getStruct<T>, {0x5C0, 32, 0, 0})
-	SMember(FVector)                                   Dimensions                                                  OFFSET(getStruct<T>, {0x5E0, 24, 0, 0})
-	DMember(float)                                     LineThickness                                               OFFSET(get<float>, {0x5F8, 4, 0, 0})
-	DMember(bool)                                      bRemoveHiddenLines                                          OFFSET(get<bool>, {0x5FC, 1, 0, 0})
-	DMember(bool)                                      bEnableAxisFlip                                             OFFSET(get<bool>, {0x5FD, 1, 0, 0})
+	SMember(FVector)                                   Origin                                                      OFFSET(getStruct<T>, {0x530, 24, 0, 0})
+	SMember(FQuat)                                     Rotation                                                    OFFSET(getStruct<T>, {0x550, 32, 0, 0})
+	SMember(FVector)                                   Dimensions                                                  OFFSET(getStruct<T>, {0x570, 24, 0, 0})
+	DMember(float)                                     LineThickness                                               OFFSET(get<float>, {0x588, 4, 0, 0})
+	DMember(bool)                                      bRemoveHiddenLines                                          OFFSET(get<bool>, {0x58C, 1, 0, 0})
+	DMember(bool)                                      bEnableAxisFlip                                             OFFSET(get<bool>, {0x58D, 1, 0, 0})
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoCircleComponent
-/// Size: 0x0030 (0x0005A0 - 0x0005D0)
+/// Size: 0x0030 (0x000530 - 0x000560)
 class UGizmoCircleComponent : public UGizmoBaseComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1488;
+	static inline constexpr uint64_t __MDKClassSize = 1376;
 
 public:
-	SMember(FVector)                                   Normal                                                      OFFSET(getStruct<T>, {0x5A0, 24, 0, 0})
-	DMember(float)                                     Radius                                                      OFFSET(get<float>, {0x5B8, 4, 0, 0})
-	DMember(float)                                     Thickness                                                   OFFSET(get<float>, {0x5BC, 4, 0, 0})
-	DMember(int32_t)                                   NumSides                                                    OFFSET(get<int32_t>, {0x5C0, 4, 0, 0})
-	DMember(bool)                                      bViewAligned                                                OFFSET(get<bool>, {0x5C4, 1, 0, 0})
-	DMember(bool)                                      bDrawFullCircle                                             OFFSET(get<bool>, {0x5C5, 1, 0, 0})
-	DMember(bool)                                      bOnlyAllowFrontFacingHits                                   OFFSET(get<bool>, {0x5C6, 1, 0, 0})
+	SMember(FVector)                                   Normal                                                      OFFSET(getStruct<T>, {0x530, 24, 0, 0})
+	DMember(float)                                     Radius                                                      OFFSET(get<float>, {0x548, 4, 0, 0})
+	DMember(float)                                     Thickness                                                   OFFSET(get<float>, {0x54C, 4, 0, 0})
+	DMember(int32_t)                                   NumSides                                                    OFFSET(get<int32_t>, {0x550, 4, 0, 0})
+	DMember(bool)                                      bViewAligned                                                OFFSET(get<bool>, {0x554, 1, 0, 0})
+	DMember(bool)                                      bDrawFullCircle                                             OFFSET(get<bool>, {0x555, 1, 0, 0})
+	DMember(bool)                                      bOnlyAllowFrontFacingHits                                   OFFSET(get<bool>, {0x556, 1, 0, 0})
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoElementBase
@@ -1084,9 +1084,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoTransformSource.SetTransform
-	// void SetTransform(FTransform& NewTransform);                                                                             // [0xaeba71c] Native|Public|HasOutParms|HasDefaults 
+	// void SetTransform(FTransform& NewTransform);                                                                             // [0xb0adc40] Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/InteractiveToolsFramework.GizmoTransformSource.GetTransform
-	// FTransform GetTransform();                                                                                               // [0xaeba590] Native|Public|HasDefaults|Const 
+	// FTransform GetTransform();                                                                                               // [0xb0ada74] Native|Public|HasDefaults|Const 
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoAxisSource
@@ -1101,13 +1101,13 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.HasTangentVectors
-	// bool HasTangentVectors();                                                                                                // [0x2a89fe4] Native|Public|Const  
+	// bool HasTangentVectors();                                                                                                // [0x239d258] Native|Public|Const  
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetTangentVectors
-	// void GetTangentVectors(FVector& TangentXOut, FVector& TangentYOut);                                                      // [0xaeba42c] Native|Public|HasOutParms|HasDefaults|Const 
+	// void GetTangentVectors(FVector& TangentXOut, FVector& TangentYOut);                                                      // [0xb0ad910] Native|Public|HasOutParms|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetOrigin
-	// FVector GetOrigin();                                                                                                     // [0xaeba3c4] Native|Public|HasDefaults|Const 
+	// FVector GetOrigin();                                                                                                     // [0xb0ad8a8] Native|Public|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoAxisSource.GetDirection
-	// FVector GetDirection();                                                                                                  // [0xaeba38c] Native|Public|HasDefaults|Const 
+	// FVector GetDirection();                                                                                                  // [0xb0ad870] Native|Public|HasDefaults|Const 
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoClickTarget
@@ -1122,9 +1122,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoClickTarget.UpdateInteractingState
-	// void UpdateInteractingState(bool bInteracting);                                                                          // [0xaebad00] Native|Public        
+	// void UpdateInteractingState(bool bInteracting);                                                                          // [0xb0ae1f8] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickTarget.UpdateHoverState
-	// void UpdateHoverState(bool bHovering);                                                                                   // [0x8161558] Native|Public        
+	// void UpdateHoverState(bool bHovering);                                                                                   // [0x80f1800] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoClickMultiTarget
@@ -1139,11 +1139,11 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateInteractingState
-	// void UpdateInteractingState(bool bInteracting, uint32_t InPartIdentifier);                                               // [0xaebab8c] Native|Public        
+	// void UpdateInteractingState(bool bInteracting, uint32_t InPartIdentifier);                                               // [0xb0ae0a8] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHoverState
-	// void UpdateHoverState(bool bHovering, uint32_t InPartIdentifier);                                                        // [0xaeba990] Native|Public        
+	// void UpdateHoverState(bool bHovering, uint32_t InPartIdentifier);                                                        // [0xb0ade90] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHittableState
-	// void UpdateHittableState(bool bHittable, uint32_t InPartIdentifier);                                                     // [0xaeba81c] Native|Public        
+	// void UpdateHittableState(bool bHittable, uint32_t InPartIdentifier);                                                     // [0xb0add40] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoRenderTarget
@@ -1168,7 +1168,7 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoRenderMultiTarget.UpdateVisibilityState
-	// void UpdateVisibilityState(bool bVisible, uint32_t InPartIdentifier);                                                    // [0xaeba990] Native|Public        
+	// void UpdateVisibilityState(bool bVisible, uint32_t InPartIdentifier);                                                    // [0xb0ade90] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoStateTarget
@@ -1183,9 +1183,9 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoStateTarget.EndUpdate
-	// void EndUpdate();                                                                                                        // [0x3346b94] Native|Public        
+	// void EndUpdate();                                                                                                        // [0x30996e4] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoStateTarget.BeginUpdate
-	// void BeginUpdate();                                                                                                      // [0x30e10d4] Native|Public        
+	// void BeginUpdate();                                                                                                      // [0x2c50134] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoFloatParameterSource
@@ -1200,13 +1200,13 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
-	// void SetParameter(float NewValue);                                                                                       // [0xaeba610] Native|Public        
+	// void SetParameter(float NewValue);                                                                                       // [0xb0adaf4] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
-	// float GetParameter();                                                                                                    // [0x8119d80] Native|Public|Const  
+	// float GetParameter();                                                                                                    // [0x80b5c30] Native|Public|Const  
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.EndModify
-	// void EndModify();                                                                                                        // [0x8ec1414] Native|Public        
+	// void EndModify();                                                                                                        // [0x8f030bc] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoFloatParameterSource.BeginModify
-	// void BeginModify();                                                                                                      // [0x3346b94] Native|Public        
+	// void BeginModify();                                                                                                      // [0x30996e4] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoVec2ParameterSource
@@ -1221,48 +1221,48 @@ public:
 
 	/// Functions
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
-	// void SetParameter(FVector2D& NewValue);                                                                                  // [0xaeba694] Native|Public|HasOutParms|HasDefaults 
+	// void SetParameter(FVector2D& NewValue);                                                                                  // [0xb0adbb8] Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.GetParameter
-	// FVector2D GetParameter();                                                                                                // [0xaeba3fc] Native|Public|HasDefaults|Const 
+	// FVector2D GetParameter();                                                                                                // [0xb0ad8e0] Native|Public|HasDefaults|Const 
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.EndModify
-	// void EndModify();                                                                                                        // [0x8ec1414] Native|Public        
+	// void EndModify();                                                                                                        // [0x8f030bc] Native|Public        
 	// Function /Script/InteractiveToolsFramework.GizmoVec2ParameterSource.BeginModify
-	// void BeginModify();                                                                                                      // [0x3346b94] Native|Public        
+	// void BeginModify();                                                                                                      // [0x30996e4] Native|Public        
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoLineHandleComponent
-/// Size: 0x0040 (0x0005A0 - 0x0005E0)
+/// Size: 0x0040 (0x000530 - 0x000570)
 class UGizmoLineHandleComponent : public UGizmoBaseComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1504;
+	static inline constexpr uint64_t __MDKClassSize = 1392;
 
 public:
-	SMember(FVector)                                   Normal                                                      OFFSET(getStruct<T>, {0x5A0, 24, 0, 0})
-	DMember(float)                                     HandleSize                                                  OFFSET(get<float>, {0x5B8, 4, 0, 0})
-	DMember(float)                                     Thickness                                                   OFFSET(get<float>, {0x5BC, 4, 0, 0})
-	SMember(FVector)                                   Direction                                                   OFFSET(getStruct<T>, {0x5C0, 24, 0, 0})
-	DMember(float)                                     Length                                                      OFFSET(get<float>, {0x5D8, 4, 0, 0})
-	DMember(bool)                                      bImageScale                                                 OFFSET(get<bool>, {0x5DC, 1, 0, 0})
+	SMember(FVector)                                   Normal                                                      OFFSET(getStruct<T>, {0x530, 24, 0, 0})
+	DMember(float)                                     HandleSize                                                  OFFSET(get<float>, {0x548, 4, 0, 0})
+	DMember(float)                                     Thickness                                                   OFFSET(get<float>, {0x54C, 4, 0, 0})
+	SMember(FVector)                                   Direction                                                   OFFSET(getStruct<T>, {0x550, 24, 0, 0})
+	DMember(float)                                     Length                                                      OFFSET(get<float>, {0x568, 4, 0, 0})
+	DMember(bool)                                      bImageScale                                                 OFFSET(get<bool>, {0x56C, 1, 0, 0})
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoRectangleComponent
-/// Size: 0x0050 (0x0005A0 - 0x0005F0)
+/// Size: 0x0050 (0x000530 - 0x000580)
 class UGizmoRectangleComponent : public UGizmoBaseComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1520;
+	static inline constexpr uint64_t __MDKClassSize = 1408;
 
 public:
-	SMember(FVector)                                   DirectionX                                                  OFFSET(getStruct<T>, {0x5A0, 24, 0, 0})
-	SMember(FVector)                                   DirectionY                                                  OFFSET(getStruct<T>, {0x5B8, 24, 0, 0})
-	DMember(bool)                                      bOrientYAccordingToCamera                                   OFFSET(get<bool>, {0x5D0, 1, 0, 0})
-	DMember(float)                                     OffsetX                                                     OFFSET(get<float>, {0x5D4, 4, 0, 0})
-	DMember(float)                                     OffsetY                                                     OFFSET(get<float>, {0x5D8, 4, 0, 0})
-	DMember(float)                                     LengthX                                                     OFFSET(get<float>, {0x5DC, 4, 0, 0})
-	DMember(float)                                     LengthY                                                     OFFSET(get<float>, {0x5E0, 4, 0, 0})
-	DMember(float)                                     Thickness                                                   OFFSET(get<float>, {0x5E4, 4, 0, 0})
-	DMember(char)                                      SegmentFlags                                                OFFSET(get<char>, {0x5E8, 1, 0, 0})
+	SMember(FVector)                                   DirectionX                                                  OFFSET(getStruct<T>, {0x530, 24, 0, 0})
+	SMember(FVector)                                   DirectionY                                                  OFFSET(getStruct<T>, {0x548, 24, 0, 0})
+	DMember(bool)                                      bOrientYAccordingToCamera                                   OFFSET(get<bool>, {0x560, 1, 0, 0})
+	DMember(float)                                     OffsetX                                                     OFFSET(get<float>, {0x564, 4, 0, 0})
+	DMember(float)                                     OffsetY                                                     OFFSET(get<float>, {0x568, 4, 0, 0})
+	DMember(float)                                     LengthX                                                     OFFSET(get<float>, {0x56C, 4, 0, 0})
+	DMember(float)                                     LengthY                                                     OFFSET(get<float>, {0x570, 4, 0, 0})
+	DMember(float)                                     Thickness                                                   OFFSET(get<float>, {0x574, 4, 0, 0})
+	DMember(char)                                      SegmentFlags                                                OFFSET(get<char>, {0x578, 1, 0, 0})
 };
 
 /// Class /Script/InteractiveToolsFramework.GizmoViewContext

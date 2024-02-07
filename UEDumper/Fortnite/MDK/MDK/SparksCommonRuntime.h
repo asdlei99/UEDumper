@@ -10,41 +10,41 @@
 /// dependency: Engine
 
 /// Class /Script/SparksCommonRuntime.SparksCrowdSpawner
-/// Size: 0x0110 (0x000290 - 0x0003A0)
+/// Size: 0x0110 (0x000220 - 0x000330)
 class USparksCrowdSpawner : public USceneComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 928;
+	static inline constexpr uint64_t __MDKClassSize = 816;
 
 public:
-	CMember(TMap<UInstancedStaticMeshComponent*, int32_t>) MeshWeights                                             OFFSET(get<T>, {0x290, 80, 0, 0})
-	DMember(int32_t)                                   TotalMeshWeight                                             OFFSET(get<int32_t>, {0x2E0, 4, 0, 0})
-	SMember(FVector)                                   Area                                                        OFFSET(getStruct<T>, {0x2E8, 24, 0, 0})
-	SMember(FIntPoint)                                 CrowdSize                                                   OFFSET(getStruct<T>, {0x300, 8, 0, 0})
-	SMember(FVector2D)                                 PositionRandomness                                          OFFSET(getStruct<T>, {0x308, 16, 0, 0})
-	SMember(FVector)                                   LookAt                                                      OFFSET(getStruct<T>, {0x318, 24, 0, 0})
-	DMember(float)                                     LookAtRandomness                                            OFFSET(get<float>, {0x330, 4, 0, 0})
-	SMember(FRotator)                                  AdditionalRotation                                          OFFSET(getStruct<T>, {0x338, 24, 0, 0})
-	SMember(FVector2D)                                 ScaleVariance                                               OFFSET(getStruct<T>, {0x350, 16, 0, 0})
-	DMember(int32_t)                                   BatchSize                                                   OFFSET(get<int32_t>, {0x360, 4, 0, 0})
-	CMember(TArray<FCrowdMemberToSpawn>)               CrowdMembersToSpawn                                         OFFSET(get<T>, {0x368, 16, 0, 0})
-	CMember(class UCurveFloat*)                        ParamTransitionCurve                                        OFFSET(get<T>, {0x378, 8, 0, 0})
-	SMember(FTimerHandle)                              TransitionTickTimerHandle                                   OFFSET(getStruct<T>, {0x380, 8, 0, 0})
-	DMember(int32_t)                                   CurrentTransitionParamIndex                                 OFFSET(get<int32_t>, {0x388, 4, 0, 0})
-	DMember(float)                                     ParamValueAtStartOfTransition                               OFFSET(get<float>, {0x38C, 4, 0, 0})
-	DMember(float)                                     CurrentParamValue                                           OFFSET(get<float>, {0x390, 4, 0, 0})
-	DMember(float)                                     CurrentTransitionTarget                                     OFFSET(get<float>, {0x394, 4, 0, 0})
-	DMember(float)                                     CurrentTransitionDuration                                   OFFSET(get<float>, {0x398, 4, 0, 0})
-	DMember(float)                                     TimeElapsedInCurrentTransition                              OFFSET(get<float>, {0x39C, 4, 0, 0})
+	CMember(TMap<UInstancedStaticMeshComponent*, int32_t>) MeshWeights                                             OFFSET(get<T>, {0x220, 80, 0, 0})
+	DMember(int32_t)                                   TotalMeshWeight                                             OFFSET(get<int32_t>, {0x270, 4, 0, 0})
+	SMember(FVector)                                   Area                                                        OFFSET(getStruct<T>, {0x278, 24, 0, 0})
+	SMember(FIntPoint)                                 CrowdSize                                                   OFFSET(getStruct<T>, {0x290, 8, 0, 0})
+	SMember(FVector2D)                                 PositionRandomness                                          OFFSET(getStruct<T>, {0x298, 16, 0, 0})
+	SMember(FVector)                                   LookAt                                                      OFFSET(getStruct<T>, {0x2A8, 24, 0, 0})
+	DMember(float)                                     LookAtRandomness                                            OFFSET(get<float>, {0x2C0, 4, 0, 0})
+	SMember(FRotator)                                  AdditionalRotation                                          OFFSET(getStruct<T>, {0x2C8, 24, 0, 0})
+	SMember(FVector2D)                                 ScaleVariance                                               OFFSET(getStruct<T>, {0x2E0, 16, 0, 0})
+	DMember(int32_t)                                   BatchSize                                                   OFFSET(get<int32_t>, {0x2F0, 4, 0, 0})
+	CMember(TArray<FCrowdMemberToSpawn>)               CrowdMembersToSpawn                                         OFFSET(get<T>, {0x2F8, 16, 0, 0})
+	CMember(class UCurveFloat*)                        ParamTransitionCurve                                        OFFSET(get<T>, {0x308, 8, 0, 0})
+	SMember(FTimerHandle)                              TransitionTickTimerHandle                                   OFFSET(getStruct<T>, {0x310, 8, 0, 0})
+	DMember(int32_t)                                   CurrentTransitionParamIndex                                 OFFSET(get<int32_t>, {0x318, 4, 0, 0})
+	DMember(float)                                     ParamValueAtStartOfTransition                               OFFSET(get<float>, {0x31C, 4, 0, 0})
+	DMember(float)                                     CurrentParamValue                                           OFFSET(get<float>, {0x320, 4, 0, 0})
+	DMember(float)                                     CurrentTransitionTarget                                     OFFSET(get<float>, {0x324, 4, 0, 0})
+	DMember(float)                                     CurrentTransitionDuration                                   OFFSET(get<float>, {0x328, 4, 0, 0})
+	DMember(float)                                     TimeElapsedInCurrentTransition                              OFFSET(get<float>, {0x32C, 4, 0, 0})
 
 
 	/// Functions
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.TransitionCrowdToTargetParamValue
-	// void TransitionCrowdToTargetParamValue(int32_t DataIndex, float TargetValue, float TimeToTransition);                    // [0xab8540c] Final|Native|Public|BlueprintCallable 
+	// void TransitionCrowdToTargetParamValue(int32_t DataIndex, float TargetValue, float TimeToTransition);                    // [0xad62cdc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.SpawnCrowdNow
-	// bool SpawnCrowdNow(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xab84c10] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SpawnCrowdNow(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xad627e8] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/SparksCommonRuntime.SparksCrowdSpawner.SpawnCrowd
-	// bool SpawnCrowd(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, int32_t InBatchSize, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xab8433c] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// bool SpawnCrowd(FVector InArea, FIntPoint InCrowdSize, FVector2D InPositionRandomness, FVector2D InScaleVariance, FVector InLookAt, float InLookAtRandomeness, FRotator InAdditionalRotation, int32_t InBatchSize, TMap<UInstancedStaticMeshComponent*, int32_t> InMeshWeights); // [0xad62274] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/SparksCommonRuntime.SparksCommonAllPlayersReadyEvent

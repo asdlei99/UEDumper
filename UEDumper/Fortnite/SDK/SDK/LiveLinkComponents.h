@@ -15,7 +15,7 @@
 class ULiveLinkComponentSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,14461) /* TMap<UClass*, UClass*> */ __um(DefaultControllerForRole);                           // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,14586) /* TMap<UClass*, UClass*> */ __um(DefaultControllerForRole);                           // 0x0028   (0x0050)  
 };
 
 /// Class /Script/LiveLinkComponents.LiveLinkControllerBase
@@ -61,11 +61,11 @@ class ULiveLinkComponentController : public UActorComponent
 { 
 public:
 	FLiveLinkSubjectRepresentation                     SubjectRepresentation;                                      // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(80,14462) /* TMap<UClass*, ULiveLinkControllerBase*> */ __um(ControllerMap);                     // 0x00B0   (0x0050)  
+	SDK_UNDEFINED(80,14587) /* TMap<UClass*, ULiveLinkControllerBase*> */ __um(ControllerMap);                     // 0x00B0   (0x0050)  
 	bool                                               bUpdateInEditor;                                            // 0x0100   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0101   (0x0007)  MISSED
-	SDK_UNDEFINED(16,14463) /* FMulticastInlineDelegate */ __um(OnLiveLinkUpdated);                                // 0x0108   (0x0010)  
-	SDK_UNDEFINED(16,14464) /* FMulticastInlineDelegate */ __um(OnControllerMapUpdatedDelegate);                   // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,14588) /* FMulticastInlineDelegate */ __um(OnLiveLinkUpdated);                                // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,14589) /* FMulticastInlineDelegate */ __um(OnControllerMapUpdatedDelegate);                   // 0x0118   (0x0010)  
 	bool                                               bDisableEvaluateLiveLinkWhenSpawnable;                      // 0x0128   (0x0001)  
 	bool                                               bEvaluateLiveLink;                                          // 0x0129   (0x0001)  
 	bool                                               bUpdateInPreviewEditor;                                     // 0x012A   (0x0001)  
@@ -74,8 +74,8 @@ public:
 
 	/// Functions
 	// Function /Script/LiveLinkComponents.LiveLinkComponentController.SetSubjectRepresentation
-	// void SetSubjectRepresentation(FLiveLinkSubjectRepresentation InSubjectRepresentation);                                // [0xc0cf90c] Final|Native|Public|BlueprintCallable 
+	// void SetSubjectRepresentation(FLiveLinkSubjectRepresentation InSubjectRepresentation);                                // [0xc428b24] Final|Native|Public|BlueprintCallable 
 	// Function /Script/LiveLinkComponents.LiveLinkComponentController.GetSubjectRepresentation
-	// FLiveLinkSubjectRepresentation GetSubjectRepresentation();                                                            // [0xc0cf8c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FLiveLinkSubjectRepresentation GetSubjectRepresentation();                                                            // [0xc428ae0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

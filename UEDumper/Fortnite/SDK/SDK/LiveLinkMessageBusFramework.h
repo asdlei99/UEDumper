@@ -22,8 +22,8 @@ struct FLiveLinkPingMessage
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FLiveLinkPongMessage
 { 
-	SDK_UNDEFINED(16,14465) /* FString */              __um(ProviderName);                                         // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,14466) /* FString */              __um(MachineName);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,14590) /* FString */              __um(ProviderName);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,14591) /* FString */              __um(MachineName);                                          // 0x0010   (0x0010)  
 	FGuid                                              PollRequest;                                                // 0x0020   (0x0010)  
 	int32_t                                            LiveLinkVersion;                                            // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED

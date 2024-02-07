@@ -26,69 +26,69 @@ public:
 };
 
 /// Class /Script/FMInWorldKnobsRuntime.FabricChildActorComponent
-/// Size: 0x0080 (0x0002E0 - 0x000360)
+/// Size: 0x0080 (0x000270 - 0x0002F0)
 class UFabricChildActorComponent : public UChildActorComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 864;
+	static inline constexpr uint64_t __MDKClassSize = 752;
 
 public:
-	CMember(class UFMDeviceCableModulatorPortComponent*) InWorldKnobModulatorPort                                  OFFSET(get<T>, {0x2F0, 8, 0, 0})
-	DMember(bool)                                      bUseScreenGrid                                              OFFSET(get<bool>, {0x2F8, 1, 0, 0})
-	SMember(FVector2D)                                 ScreenGridPosition                                          OFFSET(getStruct<T>, {0x300, 16, 0, 0})
-	SMember(FModulatorPortSaveData)                    ModulatorPortSaveData                                       OFFSET(getStruct<T>, {0x310, 32, 0, 0})
-	CMember(class UClass*)                             CableManagerClassForModulatorPorts                          OFFSET(get<T>, {0x350, 8, 0, 0})
+	CMember(class UFMDeviceCableModulatorPortComponent*) InWorldKnobModulatorPort                                  OFFSET(get<T>, {0x280, 8, 0, 0})
+	DMember(bool)                                      bUseScreenGrid                                              OFFSET(get<bool>, {0x288, 1, 0, 0})
+	SMember(FVector2D)                                 ScreenGridPosition                                          OFFSET(getStruct<T>, {0x290, 16, 0, 0})
+	SMember(FModulatorPortSaveData)                    ModulatorPortSaveData                                       OFFSET(getStruct<T>, {0x2A0, 32, 0, 0})
+	CMember(class UClass*)                             CableManagerClassForModulatorPorts                          OFFSET(get<T>, {0x2E0, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FMInWorldKnobsRuntime.FabricChildActorComponent.OnModulatorPortDisconnected
-	// void OnModulatorPortDisconnected(class UFMDeviceCablePortComponent* DisconnectedPort);                                   // [0xb59bc3c] Final|Native|Private 
+	// void OnModulatorPortDisconnected(class UFMDeviceCablePortComponent* DisconnectedPort);                                   // [0xb7e2918] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FabricChildActorComponent.OnModulatorPortConnected
-	// void OnModulatorPortConnected(class UFMDeviceCablePortComponent* ConnectedPort);                                         // [0xb59bc3c] Final|Native|Private 
+	// void OnModulatorPortConnected(class UFMDeviceCablePortComponent* ConnectedPort);                                         // [0xb7e2918] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FabricChildActorComponent.GetKnobOptionKey
-	// FString GetKnobOptionKey();                                                                                              // [0xb59842c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetKnobOptionKey();                                                                                              // [0xb7de938] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricChildActorComponent.GetChildActorAsInWorldKnobActorBase
-	// class AFMInWorldKnobActorBase* GetChildActorAsInWorldKnobActorBase();                                                    // [0xb598050] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFMInWorldKnobActorBase* GetChildActorAsInWorldKnobActorBase();                                                    // [0xb7de51c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricChildActorComponent.GetChildActorAsFabricInteractable
-	// TScriptInterface<Class> GetChildActorAsFabricInteractable();                                                             // [0xb59801c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TScriptInterface<Class> GetChildActorAsFabricInteractable();                                                             // [0xb7de4e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricChildActorComponent.GetChildActorAsFabricButton
-	// class AFabricButtonBase* GetChildActorAsFabricButton();                                                                  // [0xb597ff8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AFabricButtonBase* GetChildActorAsFabricButton();                                                                  // [0xb7de4c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricChildActorComponent.CreateModulatorPortIfNeeded
-	// class UFMDeviceCableModulatorPortComponent* CreateModulatorPortIfNeeded();                                               // [0xb597fd4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// class UFMDeviceCableModulatorPortComponent* CreateModulatorPortIfNeeded();                                               // [0xb7de450] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMInWorldKnobsRuntime.FabricScreenComponent
-/// Size: 0x00A0 (0x000290 - 0x000330)
+/// Size: 0x00A0 (0x000220 - 0x0002C0)
 class UFabricScreenComponent : public USceneComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 816;
+	static inline constexpr uint64_t __MDKClassSize = 704;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnWidgetCreated                                             OFFSET(getStruct<T>, {0x290, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnWidgetAdded                                               OFFSET(getStruct<T>, {0x2A0, 16, 0, 0})
-	CMember(TWeakObjectPtr<UFabricScreenWidget*>)      ScreenWidget                                                OFFSET(get<T>, {0x2C8, 8, 0, 0})
-	CMember(class UWidgetComponent*)                   ScreenWidgetComponent                                       OFFSET(get<T>, {0x2D0, 8, 0, 0})
-	CMember(TMap<UFMInWorldKnobActorCopyComponent*, FScreenWidgetLayoutInfo>) CopyComponentsToWidget               OFFSET(get<T>, {0x2D8, 80, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnWidgetCreated                                             OFFSET(getStruct<T>, {0x220, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnWidgetAdded                                               OFFSET(getStruct<T>, {0x230, 16, 0, 0})
+	CMember(TWeakObjectPtr<UFabricScreenWidget*>)      ScreenWidget                                                OFFSET(get<T>, {0x258, 8, 0, 0})
+	CMember(class UWidgetComponent*)                   ScreenWidgetComponent                                       OFFSET(get<T>, {0x260, 8, 0, 0})
+	CMember(TMap<UFMInWorldKnobActorCopyComponent*, FScreenWidgetLayoutInfo>) CopyComponentsToWidget               OFFSET(get<T>, {0x268, 80, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FMInWorldKnobsRuntime.FabricScreenComponent.SnapUnrealLocationToScreenGrid
-	// FVector SnapUnrealLocationToScreenGrid(FVector UnrealPosition);                                                          // [0xb59ce6c] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector SnapUnrealLocationToScreenGrid(FVector UnrealPosition);                                                          // [0xb7e3f08] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricScreenComponent.SetScreenSize
-	// void SetScreenSize(int32_t InWidth, int32_t InHeight);                                                                   // [0xb59cbc4] Final|Native|Public|BlueprintCallable 
+	// void SetScreenSize(int32_t InWidth, int32_t InHeight);                                                                   // [0xb7e3b28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FabricScreenComponent.OnCopiedKnobActorSet
-	// void OnCopiedKnobActorSet(class UFMInWorldKnobActorCopyComponent* CopyComponent, class AFMInWorldKnobActorBase* NewKnobActor); // [0xb599678] Final|Native|Private 
+	// void OnCopiedKnobActorSet(class UFMInWorldKnobActorCopyComponent* CopyComponent, class AFMInWorldKnobActorBase* NewKnobActor); // [0xb7dfed8] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FabricScreenComponent.Initialize
-	// void Initialize(class UWidgetComponent* InScreenWidgetComponent, int32_t InWidth, int32_t InHeight, class UFabricScreenLayoutDataAsset* ScreenLayout); // [0xb599230] Final|Native|Public|BlueprintCallable 
+	// void Initialize(class UWidgetComponent* InScreenWidgetComponent, int32_t InWidth, int32_t InHeight, class UFabricScreenLayoutDataAsset* ScreenLayout); // [0xb7df7dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FabricScreenComponent.GetScreenGridWidth
-	// int32_t GetScreenGridWidth();                                                                                            // [0x8365a70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetScreenGridWidth();                                                                                            // [0xb7df084] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricScreenComponent.GetScreenGridHeight
-	// int32_t GetScreenGridHeight();                                                                                           // [0xb598b1c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetScreenGridHeight();                                                                                           // [0xb7df06c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricScreenComponent.ConvertUnrealLocationToGridPosition
-	// FVector2D ConvertUnrealLocationToGridPosition(FVector UnrealPosition);                                                   // [0xb597df8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector2D ConvertUnrealLocationToGridPosition(FVector UnrealPosition);                                                   // [0xb7de2a4] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricScreenComponent.ConvertGridPositionToUnrealLocation
-	// FVector ConvertGridPositionToUnrealLocation(FVector2D GridPosition);                                                     // [0xb597ca0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector ConvertGridPositionToUnrealLocation(FVector2D GridPosition);                                                     // [0xb7de1b8] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FMInWorldKnobsRuntime.FabricScreenLayoutDataAsset
@@ -150,21 +150,21 @@ public:
 
 	/// Functions
 	// Function /Script/FMInWorldKnobsRuntime.FabricUserOptionSaveComponent.SetSaveSlot
-	// void SetSaveSlot(int32_t SaveSlotIndex);                                                                                 // [0xb59cb44] Final|Native|Public|BlueprintCallable 
+	// void SetSaveSlot(int32_t SaveSlotIndex);                                                                                 // [0xb7e3a68] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FabricUserOptionSaveComponent.SetPreset
-	// void SetPreset(int32_t PresetIndex);                                                                                     // [0xb59cac4] Final|Native|Public|BlueprintCallable 
+	// void SetPreset(int32_t PresetIndex);                                                                                     // [0xb7e39a8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FabricUserOptionSaveComponent.SetMusicClock
-	// void SetMusicClock(class UMusicClockComponent* MusicClockComponent);                                                     // [0xb59c864] Final|Native|Public|BlueprintCallable 
+	// void SetMusicClock(class UMusicClockComponent* MusicClockComponent);                                                     // [0xb7e36c8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FabricUserOptionSaveComponent.OnAnyOptionUpdated
-	// void OnAnyOptionUpdated();                                                                                               // [0xb5994dc] Final|Native|Private 
+	// void OnAnyOptionUpdated();                                                                                               // [0xb7dfc44] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FabricUserOptionSaveComponent.OnActiveOverridesChanged__DelegateSignature
-	// void OnActiveOverridesChanged__DelegateSignature();                                                                      // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnActiveOverridesChanged__DelegateSignature();                                                                      // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMInWorldKnobsRuntime.FabricUserOptionSaveComponent.IsApplyingOverrides
-	// bool IsApplyingOverrides();                                                                                              // [0xb59936c] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsApplyingOverrides();                                                                                              // [0xb7dfa14] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMInWorldKnobsRuntime.FabricUserOptionSaveComponent.HasOverrideForParam
-	// bool HasOverrideForParam(FString Param);                                                                                 // [0xb598b80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasOverrideForParam(FString Param);                                                                                 // [0xb7df0e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FabricUserOptionSaveComponent.GetOverrideForParam
-	// FString GetOverrideForParam(FString Param);                                                                              // [0xb59846c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetOverrideForParam(FString Param);                                                                              // [0xb7de978] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/FMInWorldKnobsRuntime.FMInWorldCableOptionsComponent
@@ -179,13 +179,13 @@ public:
 
 	/// Functions
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldCableOptionsComponent.OnOptionsLoaded
-	// void OnOptionsLoaded();                                                                                                  // [0xb59bcb8] Final|Native|Protected 
+	// void OnOptionsLoaded();                                                                                                  // [0xb7e29d4] Final|Native|Protected 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldCableOptionsComponent.OnCableDisconncted
-	// void OnCableDisconncted(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* DisconnectedPort); // [0xb5995b4] Final|Native|Protected 
+	// void OnCableDisconncted(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* DisconnectedPort); // [0xb7dfd98] Final|Native|Protected 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldCableOptionsComponent.OnCableConnected
-	// void OnCableConnected(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* ConnectedPort);  // [0xb5994f0] Final|Native|Protected 
+	// void OnCableConnected(class UFMDeviceCablePortComponent* SourcePort, class UFMDeviceCablePortComponent* ConnectedPort);  // [0xb7dfc58] Final|Native|Protected 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldCableOptionsComponent.OnAnyOptionChanged
-	// void OnAnyOptionChanged();                                                                                               // [0xb5994b4] Final|Native|Protected 
+	// void OnAnyOptionChanged();                                                                                               // [0xb7dfc1c] Final|Native|Protected 
 };
 
 /// Class /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase
@@ -226,125 +226,127 @@ public:
 
 	/// Functions
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.UpdateInteractableVisuals
-	// void UpdateInteractableVisuals(bool bInteractable);                                                                      // [0xb59d154] Native|Event|Protected|BlueprintEvent 
+	// void UpdateInteractableVisuals(bool bInteractable);                                                                      // [0xb7e424c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.UpdateFocusVisuals
-	// void UpdateFocusVisuals(bool bFocused);                                                                                  // [0xb59d0d0] Native|Event|Protected|BlueprintEvent 
+	// void UpdateFocusVisuals(bool bFocused);                                                                                  // [0xb7e4184] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.UpdateEnabledVisuals
-	// void UpdateEnabledVisuals(bool bEnabled);                                                                                // [0xb59d04c] Native|Event|Protected|BlueprintEvent 
+	// void UpdateEnabledVisuals(bool bEnabled);                                                                                // [0xb7e40bc] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.UpdateDisplayOnlyVisuals
-	// void UpdateDisplayOnlyVisuals(bool bDisplayOnly);                                                                        // [0xb59cfc8] Native|Event|Protected|BlueprintEvent 
+	// void UpdateDisplayOnlyVisuals(bool bDisplayOnly);                                                                        // [0xb7e3ff4] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.StopTrackingInput
-	// void StopTrackingInput();                                                                                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void StopTrackingInput();                                                                                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.StartTrackingInput
-	// void StartTrackingInput(class APlayerController* PlayerController);                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void StartTrackingInput(class APlayerController* PlayerController);                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.SetWidgetViewModel
-	// void SetWidgetViewModel(class UFabricInteractableViewModel* ViewModel);                                                  // [0xb59cdec] Final|Native|Public|BlueprintCallable 
+	// void SetWidgetViewModel(class UFabricInteractableViewModel* ViewModel);                                                  // [0xb7e3e48] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.SetTitle
-	// void SetTitle(FText& Title);                                                                                             // [0xb59cd4c] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void SetTitle(FText& Title);                                                                                             // [0xb7e3da8] Native|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.SetSelectedIndex
-	// void SetSelectedIndex(int32_t Index, bool SnapToSelection);                                                              // [0xb59cc84] Native|Event|Protected|BlueprintEvent 
+	// void SetSelectedIndex(int32_t Index, bool SnapToSelection);                                                              // [0xb7e3c64] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.SetOverrideOptionLabels
-	// void SetOverrideOptionLabels(TArray<FText>& Labels);                                                                     // [0xb59c9e8] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetOverrideOptionLabels(TArray<FText>& Labels);                                                                     // [0xb7e38cc] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.SetNumberOptions
-	// void SetNumberOptions(int32_t NumberOptions);                                                                            // [0xb59c964] Native|Event|Protected|BlueprintEvent 
+	// void SetNumberOptions(int32_t NumberOptions);                                                                            // [0xb7e3808] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.SetKnobEnabled
-	// void SetKnobEnabled(bool bEnabled);                                                                                      // [0xb59c7b4] Final|Native|Public|BlueprintCallable 
+	// void SetKnobEnabled(bool bEnabled);                                                                                      // [0xb7e35d4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.SetKnobDisplayOnly
-	// void SetKnobDisplayOnly(bool bDisplayOnly);                                                                              // [0xb59c734] Final|Native|Public|BlueprintCallable 
+	// void SetKnobDisplayOnly(bool bDisplayOnly);                                                                              // [0xb7e3510] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.SetCurrentKnobPosition
-	// void SetCurrentKnobPosition(float KnobPosition);                                                                         // [0x9130058] Native|Event|Protected|BlueprintEvent 
+	// void SetCurrentKnobPosition(float KnobPosition);                                                                         // [0x917e090] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.ResetToDefaultValue
-	// void ResetToDefaultValue(class APlayerController* PlayerController);                                                     // [0xb59c4a8] Final|Native|Public|BlueprintCallable 
+	// void ResetToDefaultValue(class APlayerController* PlayerController);                                                     // [0xb7e3204] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.ReceiveOnWidgetViewModelSet
-	// void ReceiveOnWidgetViewModelSet();                                                                                      // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveOnWidgetViewModelSet();                                                                                      // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.OnReceiveFloatProvidersFromPort
-	// void OnReceiveFloatProvidersFromPort(TArray<UFabricFloatProviderBase*>& FloatProvider);                                  // [0xb59bce0] Final|Native|Private|HasOutParms 
+	// void OnReceiveFloatProvidersFromPort(TArray<UFabricFloatProviderBase*>& FloatProvider);                                  // [0xb7e29fc] Final|Native|Private|HasOutParms 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.OnKnobIsVisible
-	// void OnKnobIsVisible(bool bInIsVisible);                                                                                 // [0xb59bbbc] Final|Native|Protected 
+	// void OnKnobIsVisible(bool bInIsVisible);                                                                                 // [0xb7e2854] Final|Native|Protected 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.OnFloatProviderFloatUpdated
-	// void OnFloatProviderFloatUpdated(float NewFloat);                                                                        // [0xb59973c] Final|Native|Private 
+	// void OnFloatProviderFloatUpdated(float NewFloat);                                                                        // [0xb7e0018] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.KnobValueChanged
-	// void KnobValueChanged(int32_t NewIndex, bool SnapToSelection, class APlayerController* PlayerController);                // [0xb5993ac] Final|Native|Protected|BlueprintCallable 
+	// void KnobValueChanged(int32_t NewIndex, bool SnapToSelection, class APlayerController* PlayerController);                // [0xb7dfa54] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.IsOverriddenByPort
-	// bool IsOverriddenByPort();                                                                                               // [0xb599384] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOverriddenByPort();                                                                                               // [0xb7dfa2c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.HitComponentUpdated
-	// void HitComponentUpdated(class USceneComponent* NewHitComponent);                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void HitComponentUpdated(class USceneComponent* NewHitComponent);                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.HasActiveFloatProvider
-	// bool HasActiveFloatProvider();                                                                                           // [0xb598b5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasActiveFloatProvider();                                                                                           // [0xb7df0c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetWidgetViewModel
-	// class UFabricInteractableViewModel* GetWidgetViewModel();                                                                // [0xb598b34] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UFabricInteractableViewModel* GetWidgetViewModel();                                                                // [0xb7df09c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetNumberOptions
-	// int32_t GetNumberOptions();                                                                                              // [0x9f9984c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumberOptions();                                                                                              // [0xa0e33b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetInteractingController
-	// class APlayerController* GetInteractingController();                                                                     // [0xb598404] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APlayerController* GetInteractingController();                                                                     // [0xb7de910] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetHitComponent
-	// class USceneComponent* GetHitComponent();                                                                                // [0xa1b8c7c] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class USceneComponent* GetHitComponent();                                                                                // [0xb73c920] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCurrentValueLabel
-	// FText GetCurrentValueLabel();                                                                                            // [0xb5983c0] Final|Native|Protected|BlueprintCallable|BlueprintPure 
+	// FText GetCurrentValueLabel();                                                                                            // [0xb7de8cc] Final|Native|Protected|BlueprintCallable|BlueprintPure 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCurrentValueAsString
-	// FString GetCurrentValueAsString();                                                                                       // [0xb598380] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetCurrentValueAsString();                                                                                       // [0xb7de88c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCurrentValueAsName
-	// FName GetCurrentValueAsName();                                                                                           // [0xb598354] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FName GetCurrentValueAsName();                                                                                           // [0xb7de860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCurrentValueAsInt
-	// int32_t GetCurrentValueAsInt();                                                                                          // [0xb5982f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentValueAsInt();                                                                                          // [0xb7de804] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCurrentValueAsFloat
-	// float GetCurrentValueAsFloat();                                                                                          // [0xb5982d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentValueAsFloat();                                                                                          // [0xb7de7dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCurrentValueAsEnum
-	// char GetCurrentValueAsEnum();                                                                                            // [0xb598254] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// char GetCurrentValueAsEnum();                                                                                            // [0xb7de760] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCurrentValueAsBool
-	// bool GetCurrentValueAsBool();                                                                                            // [0xb598204] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetCurrentValueAsBool();                                                                                            // [0xb7de710] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCurrentOptionIndex
-	// int32_t GetCurrentOptionIndex();                                                                                         // [0xb5981ec] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentOptionIndex();                                                                                         // [0xb7de6f8] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCopyWidgetClassInternal
-	// class UClass* GetCopyWidgetClassInternal();                                                                              // [0xb598168] Native|Event|Public|BlueprintEvent|Const 
+	// class UClass* GetCopyWidgetClassInternal();                                                                              // [0xb7de674] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetCopyClassInternal
-	// class UClass* GetCopyClassInternal();                                                                                    // [0x1699b90] Native|Event|Public|BlueprintEvent|Const 
+	// class UClass* GetCopyClassInternal();                                                                                    // [0x1743040] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.GetConsumeInteractionFromChildInteractable
-	// bool GetConsumeInteractionFromChildInteractable(class APlayerController* PlayerController);                              // [0xb598074] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetConsumeInteractionFromChildInteractable(class APlayerController* PlayerController);                              // [0xb7de540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.EnsureProperCollision
+	// void EnsureProperCollision();                                                                                            // [0xb7de474] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.CopyAttributesFromOtherKnobInternal
-	// void CopyAttributesFromOtherKnobInternal(class AFMInWorldKnobActorBase* OtherKnob);                                      // [0x90d8164] Native|Event|Protected|BlueprintEvent 
+	// void CopyAttributesFromOtherKnobInternal(class AFMInWorldKnobActorBase* OtherKnob);                                      // [0x912733c] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorBase.CopyAttributesFromOtherKnob
-	// void CopyAttributesFromOtherKnob(class AFMInWorldKnobActorBase* OtherKnob);                                              // [0xb597f54] Final|Native|Public|BlueprintCallable 
+	// void CopyAttributesFromOtherKnob(class AFMInWorldKnobActorBase* OtherKnob);                                              // [0xb7de390] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorCopyComponent
-/// Size: 0x0110 (0x000360 - 0x000470)
+/// Size: 0x0110 (0x0002F0 - 0x000400)
 class UFMInWorldKnobActorCopyComponent : public UFabricChildActorComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1136;
+	static inline constexpr uint64_t __MDKClassSize = 1024;
 
 public:
-	SMember(FMulticastInlineDelegate)                  OnModulatedPropertyValueChanged                             OFFSET(getStruct<T>, {0x370, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKnobRuntimeValueChanged                                   OFFSET(getStruct<T>, {0x380, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKnobSerializedValueChanged                                OFFSET(getStruct<T>, {0x390, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnFloatProviderConnectionChanged                            OFFSET(getStruct<T>, {0x3A0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKnobActorSet                                              OFFSET(getStruct<T>, {0x3B0, 16, 0, 0})
-	CMember(class UClass*)                             DefaultKnobActorClass                                       OFFSET(get<T>, {0x3C0, 8, 0, 0})
-	CMember(class AFMInWorldKnobActorBase*)            InWorldKnobActor                                            OFFSET(get<T>, {0x3C8, 8, 0, 0})
-	SMember(FString)                                   OptionKey                                                   OFFSET(getStruct<T>, {0x3D0, 16, 0, 0})
-	SMember(FText)                                     OverriddenTitle                                             OFFSET(getStruct<T>, {0x3E0, 24, 0, 0})
-	DMember(bool)                                      bCanBeModulated                                             OFFSET(get<bool>, {0x3F8, 1, 0, 0})
-	DMember(bool)                                      bKnobEnabled                                                OFFSET(get<bool>, {0x3F9, 1, 0, 0})
-	CMember(class UPlaylistUserOptionBase*)            OuterUserOption                                             OFFSET(get<T>, {0x400, 8, 0, 0})
-	CMember(class UPlaylistUserOptionBase*)            CopiedUserOption                                            OFFSET(get<T>, {0x438, 8, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnModulatedPropertyValueChanged                             OFFSET(getStruct<T>, {0x300, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKnobRuntimeValueChanged                                   OFFSET(getStruct<T>, {0x310, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKnobSerializedValueChanged                                OFFSET(getStruct<T>, {0x320, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnFloatProviderConnectionChanged                            OFFSET(getStruct<T>, {0x330, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKnobActorSet                                              OFFSET(getStruct<T>, {0x340, 16, 0, 0})
+	CMember(class UClass*)                             DefaultKnobActorClass                                       OFFSET(get<T>, {0x350, 8, 0, 0})
+	CMember(class AFMInWorldKnobActorBase*)            InWorldKnobActor                                            OFFSET(get<T>, {0x358, 8, 0, 0})
+	SMember(FString)                                   OptionKey                                                   OFFSET(getStruct<T>, {0x360, 16, 0, 0})
+	SMember(FText)                                     OverriddenTitle                                             OFFSET(getStruct<T>, {0x370, 24, 0, 0})
+	DMember(bool)                                      bCanBeModulated                                             OFFSET(get<bool>, {0x388, 1, 0, 0})
+	DMember(bool)                                      bKnobEnabled                                                OFFSET(get<bool>, {0x389, 1, 0, 0})
+	CMember(class UPlaylistUserOptionBase*)            OuterUserOption                                             OFFSET(get<T>, {0x390, 8, 0, 0})
+	CMember(class UPlaylistUserOptionBase*)            CopiedUserOption                                            OFFSET(get<T>, {0x3C8, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorCopyComponent.SetCopiedInWorldKnob
-	// void SetCopiedInWorldKnob(class UObject* InWorldKnobObject);                                                             // [0xb59c528] Final|Native|Public|BlueprintCallable 
+	// void SetCopiedInWorldKnob(class UObject* InWorldKnobObject);                                                             // [0xb7e32c4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorCopyComponent.OnInWorldKnobSerializedValueChanged
-	// void OnInWorldKnobSerializedValueChanged(FString Value, class UPlaylistUserOptionBase* Option, class APlayerController* PlayerController); // [0xb59b48c] Final|Native|Private 
+	// void OnInWorldKnobSerializedValueChanged(FString Value, class UPlaylistUserOptionBase* Option, class APlayerController* PlayerController); // [0xb7e2068] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorCopyComponent.OnInWorldKnobRuntimeValueChanged
-	// void OnInWorldKnobRuntimeValueChanged(FString Value, class UPlaylistUserOptionBase* Option);                             // [0xb59a668] Final|Native|Private 
+	// void OnInWorldKnobRuntimeValueChanged(FString Value, class UPlaylistUserOptionBase* Option);                             // [0xb7e110c] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorCopyComponent.OnInWorldKnobModulatedPropertyValueChanged
-	// void OnInWorldKnobModulatedPropertyValueChanged(FString Value, class UObject* ModulatorObject);                          // [0xb599880] Final|Native|Private 
+	// void OnInWorldKnobModulatedPropertyValueChanged(FString Value, class UObject* ModulatorObject);                          // [0xb7e022c] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorCopyComponent.OnInWorldKnobFloatProviderConnectionChanged
-	// void OnInWorldKnobFloatProviderConnectionChanged(bool bConnected, class UObject* ModulatorObject);                       // [0xb5997bc] Final|Native|Private 
+	// void OnInWorldKnobFloatProviderConnectionChanged(bool bConnected, class UObject* ModulatorObject);                       // [0xb7e00dc] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorCopyComponent.GetCurrentKnobValueBP
-	// FString GetCurrentKnobValueBP();                                                                                         // [0xb5981a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetCurrentKnobValueBP();                                                                                         // [0xb7de6ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobActorCopyComponent.ClearCopiedInWorldKnob
-	// void ClearCopiedInWorldKnob();                                                                                           // [0xb597c8c] Final|Native|Public|BlueprintCallable 
+	// void ClearCopiedInWorldKnob();                                                                                           // [0xb7de1a4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/FMInWorldKnobsRuntime.InWorldKnobInterface
@@ -385,37 +387,37 @@ public:
 
 	/// Functions
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OwnsInWorldKnobObject
-	// bool OwnsInWorldKnobObject(class UObject* InWorldKnobObject);                                                            // [0xb59c3f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool OwnsInWorldKnobObject(class UObject* InWorldKnobObject);                                                            // [0xb7e310c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnSaveOverridesChanged
-	// void OnSaveOverridesChanged();                                                                                           // [0xb59c3dc] Final|Native|Private 
+	// void OnSaveOverridesChanged();                                                                                           // [0xb7e30f8] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnRep_ReplicatedModulatorPorts
-	// void OnRep_ReplicatedModulatorPorts();                                                                                   // [0xb59c3c8] Final|Native|Private 
+	// void OnRep_ReplicatedModulatorPorts();                                                                                   // [0xb7e30e4] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnRep_ReplicatedInWorldKnobInterfaceObjects
-	// void OnRep_ReplicatedInWorldKnobInterfaceObjects();                                                                      // [0xb59c3b4] Final|Native|Private 
+	// void OnRep_ReplicatedInWorldKnobInterfaceObjects();                                                                      // [0xb7e30d0] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnRep_ReplicatedFabricInteractableObjects
-	// void OnRep_ReplicatedFabricInteractableObjects();                                                                        // [0xb59c3a0] Final|Native|Private 
+	// void OnRep_ReplicatedFabricInteractableObjects();                                                                        // [0xb7e30bc] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnOptionsLoaded
-	// void OnOptionsLoaded();                                                                                                  // [0xb59bccc] Final|Native|Private 
+	// void OnOptionsLoaded();                                                                                                  // [0xb7e29e8] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnInWorldKnobSerializedOptionChanged
-	// void OnInWorldKnobSerializedOptionChanged(FString Value, class UPlaylistUserOptionBase* Option, class APlayerController* PlayerController); // [0xb59ad5c] Final|Native|Private 
+	// void OnInWorldKnobSerializedOptionChanged(FString Value, class UPlaylistUserOptionBase* Option, class APlayerController* PlayerController); // [0xb7e187c] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnInWorldKnobRuntimeOptionChanged
-	// void OnInWorldKnobRuntimeOptionChanged(FString Value, class UPlaylistUserOptionBase* Option);                            // [0xb599f74] Final|Native|Private 
+	// void OnInWorldKnobRuntimeOptionChanged(FString Value, class UPlaylistUserOptionBase* Option);                            // [0xb7e099c] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnInitialKnobValuesLoaded__DelegateSignature
-	// void OnInitialKnobValuesLoaded__DelegateSignature();                                                                     // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnInitialKnobValuesLoaded__DelegateSignature();                                                                     // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnAnyOptionUpdated
-	// void OnAnyOptionUpdated();                                                                                               // [0xb5994c8] Final|Native|Private 
+	// void OnAnyOptionUpdated();                                                                                               // [0xb7dfc30] Final|Native|Private 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnAnyKnobSerializedValueChanged__DelegateSignature
-	// void OnAnyKnobSerializedValueChanged__DelegateSignature();                                                               // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnAnyKnobSerializedValueChanged__DelegateSignature();                                                               // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnAnyKnobRuntimeValueChanged__DelegateSignature
-	// void OnAnyKnobRuntimeValueChanged__DelegateSignature();                                                                  // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnAnyKnobRuntimeValueChanged__DelegateSignature();                                                                  // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.OnAllKnobsLoaded__DelegateSignature
-	// void OnAllKnobsLoaded__DelegateSignature();                                                                              // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void OnAllKnobsLoaded__DelegateSignature();                                                                              // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.CanMakeUserOptionChanges
-	// bool CanMakeUserOptionChanges();                                                                                         // [0xb597c30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanMakeUserOptionChanges();                                                                                         // [0xb7de180] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.AreAllKnobsLoadedForNotify
-	// bool AreAllKnobsLoadedForNotify();                                                                                       // [0xb597c18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool AreAllKnobsLoadedForNotify();                                                                                       // [0xb7de168] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/FMInWorldKnobsRuntime.FMInWorldKnobOptionsComponent.ActorHasValidControllerBP
-	// bool ActorHasValidControllerBP(class AActor* Actor, class AFortPlayerPawn*& OutFortPlayerPawn, class APlayerController*& OutPlayerController); // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// bool ActorHasValidControllerBP(class AActor* Actor, class AFortPlayerPawn*& OutFortPlayerPawn, class APlayerController*& OutPlayerController); // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/FMInWorldKnobsRuntime.PlaylistUserOptionFMOutgoingCableConnection

@@ -48,7 +48,7 @@ enum class EEulerRotationOrder : uint8_t
 class UAnimationDataSourceRegistry : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,1217) /* TMap<FName, TWeakObjectPtr<UObject*>> */ __um(DataSources);                          // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,1219) /* TMap<FName, TWeakObjectPtr<UObject*>> */ __um(DataSources);                          // 0x0028   (0x0050)  
 };
 
 /// Struct /Script/AnimationCore.Axis
@@ -81,7 +81,7 @@ struct FNodeHierarchyData
 { 
 	TArray<FNodeObject>                                Nodes;                                                      // 0x0000   (0x0010)  
 	TArray<FTransform>                                 Transforms;                                                 // 0x0010   (0x0010)  
-	SDK_UNDEFINED(80,1218) /* TMap<FName, int32_t> */  __um(NodeNameToIndexMapping);                               // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,1220) /* TMap<FName, int32_t> */  __um(NodeNameToIndexMapping);                               // 0x0020   (0x0050)  
 };
 
 /// Struct /Script/AnimationCore.NodeHierarchyWithUserData

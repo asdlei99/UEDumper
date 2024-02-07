@@ -35,8 +35,8 @@ public:
 	float                                              MaxGiftRadius;                                              // 0x00BC   (0x0004)  
 	FGameplayTagContainer                              UndesiredTags;                                              // 0x00C0   (0x0020)  
 	FGameplayTagContainer                              DesiredTags;                                                // 0x00E0   (0x0020)  
-	SDK_UNDEFINED(8,15160) /* TWeakObjectPtr<AFortGameModeAthena*> */ __um(CachedGameMode);                        // 0x0100   (0x0008)  
-	SDK_UNDEFINED(8,15161) /* TWeakObjectPtr<UFortGameStateComponent_AffiliationManager*> */ __um(CachedAffiliationManager); // 0x0108   (0x0008)  
+	SDK_UNDEFINED(8,15255) /* TWeakObjectPtr<AFortGameModeAthena*> */ __um(CachedGameMode);                        // 0x0100   (0x0008)  
+	SDK_UNDEFINED(8,15256) /* TWeakObjectPtr<UFortGameStateComponent_AffiliationManager*> */ __um(CachedAffiliationManager); // 0x0108   (0x0008)  
 };
 
 /// Class /Script/SilkWalkerRuntime.FortSilkwalkerComponent_Telemetry
@@ -49,6 +49,6 @@ public:
 
 	/// Functions
 	// Function /Script/SilkWalkerRuntime.FortSilkwalkerComponent_Telemetry.OnGiftThrown
-	// void OnGiftThrown(class AFortPawn* TargetPawn, bool bGood);                                                           // [0xbe688c0] Final|Native|Private|BlueprintCallable 
+	// void OnGiftThrown(class AFortPawn* TargetPawn, bool bGood);                                                           // [0xc1b5824] Final|Native|Private|BlueprintCallable 
 };
 

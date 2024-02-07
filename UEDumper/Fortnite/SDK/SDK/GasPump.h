@@ -26,11 +26,11 @@ public:
 
 	/// Functions
 	// Function /Valet/GasPump/B_GasPump_Valet_Component.B_GasPump_Valet_Component_C.ReceiveBeginPlay
-	// void ReceiveBeginPlay();                                                                                              // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveBeginPlay();                                                                                              // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Valet/GasPump/B_GasPump_Valet_Component.B_GasPump_Valet_Component_C.ReceiveEndPlay
-	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                       // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);                                                       // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Valet/GasPump/B_GasPump_Valet_Component.B_GasPump_Valet_Component_C.ExecuteUbergraph_B_GasPump_Valet_Component
-	// void ExecuteUbergraph_B_GasPump_Valet_Component(int32_t EntryPoint);                                                  // [0x211c0a0] Final                
+	// void ExecuteUbergraph_B_GasPump_Valet_Component(int32_t EntryPoint);                                                  // [0x2047e54] Final                
 };
 
 /// Class /Valet/GasPump/Valet_GasPumpIndicatorManagerV2.Valet_GasPumpIndicatorManagerV2_C
@@ -46,8 +46,8 @@ public:
 
 	/// Functions
 	// Function /Valet/GasPump/Valet_GasPumpIndicatorManagerV2.Valet_GasPumpIndicatorManagerV2_C.RemoveGasPump
-	// void RemoveGasPump(class UB_GasPump_Valet_Component_C* Gas Pump);                                                     // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void RemoveGasPump(class UB_GasPump_Valet_Component_C* Gas Pump);                                                     // [0x2047e54] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Valet/GasPump/Valet_GasPumpIndicatorManagerV2.Valet_GasPumpIndicatorManagerV2_C.AddGasPump
-	// void AddGasPump(class UB_GasPump_Valet_Component_C* Gas Pump);                                                        // [0x211c0a0] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void AddGasPump(class UB_GasPump_Valet_Component_C* Gas Pump);                                                        // [0x2047e54] Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 };
 

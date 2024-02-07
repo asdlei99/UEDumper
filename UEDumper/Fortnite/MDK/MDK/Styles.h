@@ -48,9 +48,29 @@ class U_TextStyle_Body1_C : public UCommonTextStyle
 public:
 };
 
+/// Class /FortUILibrary/Styles/Typography/_TextStyle_Body2._TextStyle_Body2_C
+/// Size: 0x0000 (0x0001A0 - 0x0001A0)
+class U_TextStyle_Body2_C : public UCommonTextStyle
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 416;
+
+public:
+};
+
 /// Class /FortUILibrary/Styles/Typography/_TextStyle_Legal._TextStyle_Legal_C
 /// Size: 0x0000 (0x0001A0 - 0x0001A0)
 class U_TextStyle_Legal_C : public UCommonTextStyle
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 416;
+
+public:
+};
+
+/// Class /FortUILibrary/Styles/Typography/_TextStyle_SubH1._TextStyle_SubH1_C
+/// Size: 0x0000 (0x0001A0 - 0x0001A0)
+class U_TextStyle_SubH1_C : public UCommonTextStyle
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 416;
@@ -68,16 +88,6 @@ class U_TextStyle_TagNormal_C : public UCommonTextStyle
 public:
 };
 
-/// Class /FortUILibrary/Styles/Typography/_TextStyle_SubH4._TextStyle_SubH4_C
-/// Size: 0x0000 (0x0001A0 - 0x0001A0)
-class U_TextStyle_SubH4_C : public UCommonTextStyle
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 416;
-
-public:
-};
-
 /// Class /FortUILibrary/Styles/Typography/_TextStyle_SubH4_Cyan._TextStyle_SubH4_Cyan_C
 /// Size: 0x0000 (0x0001A0 - 0x0001A0)
 class U_TextStyle_SubH4_Cyan_C : public UCommonTextStyle
@@ -88,19 +98,9 @@ class U_TextStyle_SubH4_Cyan_C : public UCommonTextStyle
 public:
 };
 
-/// Class /FortUILibrary/Styles/Typography/_TextStyle_Body2._TextStyle_Body2_C
+/// Class /FortUILibrary/Styles/Typography/_TextStyle_SubH4._TextStyle_SubH4_C
 /// Size: 0x0000 (0x0001A0 - 0x0001A0)
-class U_TextStyle_Body2_C : public UCommonTextStyle
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 416;
-
-public:
-};
-
-/// Class /FortUILibrary/Styles/Typography/_TextStyle_SubH1._TextStyle_SubH1_C
-/// Size: 0x0000 (0x0001A0 - 0x0001A0)
-class U_TextStyle_SubH1_C : public UCommonTextStyle
+class U_TextStyle_SubH4_C : public UCommonTextStyle
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 416;

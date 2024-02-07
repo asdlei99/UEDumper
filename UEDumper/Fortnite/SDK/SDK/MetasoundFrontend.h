@@ -92,37 +92,37 @@ public:
 
 	/// Functions
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.SetTrigger
-	// ESetParamResult SetTrigger(FName ParameterName, bool OnlyIfExists);                                                   // [0x792f0c0] Final|Native|Public|BlueprintCallable 
+	// ESetParamResult SetTrigger(FName ParameterName, bool OnlyIfExists);                                                   // [0x7890030] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.SetString
-	// ESetParamResult SetString(FName ParameterName, FString InValue, bool OnlyIfExists);                                   // [0x792e9b0] Final|Native|Public|BlueprintCallable 
+	// ESetParamResult SetString(FName ParameterName, FString InValue, bool OnlyIfExists);                                   // [0x788f854] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.SetInt
-	// ESetParamResult SetInt(FName ParameterName, int32_t InValue, bool OnlyIfExists);                                      // [0x792e8b4] Final|Native|Public|BlueprintCallable 
+	// ESetParamResult SetInt(FName ParameterName, int32_t InValue, bool OnlyIfExists);                                      // [0x788f698] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.SetFloat
-	// ESetParamResult SetFloat(FName ParameterName, float InValue, bool OnlyIfExists);                                      // [0x792e7b8] Final|Native|Public|BlueprintCallable 
+	// ESetParamResult SetFloat(FName ParameterName, float InValue, bool OnlyIfExists);                                      // [0x788f4dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.SetBool
-	// ESetParamResult SetBool(FName ParameterName, bool InValue, bool OnlyIfExists);                                        // [0x792e6ac] Final|Native|Public|BlueprintCallable 
+	// ESetParamResult SetBool(FName ParameterName, bool InValue, bool OnlyIfExists);                                        // [0x788f310] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.MakeMetasoundParameterPack
-	// class UMetasoundParameterPack* MakeMetasoundParameterPack();                                                          // [0x792e680] Final|Native|Static|Public|BlueprintCallable 
+	// class UMetasoundParameterPack* MakeMetasoundParameterPack();                                                          // [0x788f2e4] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.HasTrigger
-	// bool HasTrigger(FName ParameterName);                                                                                 // [0x792e5e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasTrigger(FName ParameterName);                                                                                 // [0x788f204] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.HasString
-	// bool HasString(FName ParameterName);                                                                                  // [0x792e548] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasString(FName ParameterName);                                                                                  // [0x788f124] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.HasInt
-	// bool HasInt(FName ParameterName);                                                                                     // [0x792e4ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasInt(FName ParameterName);                                                                                     // [0x788f044] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.HasFloat
-	// bool HasFloat(FName ParameterName);                                                                                   // [0x792e410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasFloat(FName ParameterName);                                                                                   // [0x788ef64] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.HasBool
-	// bool HasBool(FName ParameterName);                                                                                    // [0x792e374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasBool(FName ParameterName);                                                                                    // [0x788ee84] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.GetTrigger
-	// bool GetTrigger(FName ParameterName, ESetParamResult& Result);                                                        // [0x792e284] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetTrigger(FName ParameterName, ESetParamResult& Result);                                                        // [0x788ed58] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.GetString
-	// FString GetString(FName ParameterName, ESetParamResult& Result);                                                      // [0x792e18c] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FString GetString(FName ParameterName, ESetParamResult& Result);                                                      // [0x788ec28] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.GetInt
-	// int32_t GetInt(FName ParameterName, ESetParamResult& Result);                                                         // [0x792e0c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetInt(FName ParameterName, ESetParamResult& Result);                                                         // [0x788eb10] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.GetFloat
-	// float GetFloat(FName ParameterName, ESetParamResult& Result);                                                         // [0x792dff0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloat(FName ParameterName, ESetParamResult& Result);                                                         // [0x788e9f4] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MetasoundFrontend.MetasoundParameterPack.GetBool
-	// bool GetBool(FName ParameterName, ESetParamResult& Result);                                                           // [0x792df24] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool GetBool(FName ParameterName, ESetParamResult& Result);                                                           // [0x788e8dc] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/MetasoundFrontend.MetasoundFrontendVersionNumber
@@ -197,7 +197,7 @@ struct FMetasoundFrontendLiteral
 	TArray<bool>                                       AsBoolean;                                                  // 0x0008   (0x0010)  
 	TArray<int32_t>                                    AsInteger;                                                  // 0x0018   (0x0010)  
 	TArray<float>                                      AsFloat;                                                    // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,2602) /* TArray<FString> */       __um(AsString);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,2595) /* TArray<FString> */       __um(AsString);                                             // 0x0038   (0x0010)  
 	TArray<class UObject*>                             AsUObject;                                                  // 0x0048   (0x0010)  
 };
 
@@ -313,7 +313,7 @@ struct FMetasoundFrontendGraphClassPresetOptions
 { 
 	bool                                               bIsPreset;                                                  // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(80,2603) /* TSet<FName> */           __um(InputsInheritingDefault);                              // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,2596) /* TSet<FName> */           __um(InputsInheritingDefault);                              // 0x0008   (0x0050)  
 };
 
 /// Struct /Script/MetasoundFrontend.MetasoundFrontendGraphClass
@@ -331,7 +331,7 @@ struct FMetasoundFrontendDocument
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0000   (0x0010)  MISSED
 	FMetasoundFrontendDocumentMetadata                 MetaData;                                                   // 0x0010   (0x000C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x001C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,2604) /* TSet<FMetasoundFrontendVersion> */ __um(Interfaces);                                 // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,2597) /* TSet<FMetasoundFrontendVersion> */ __um(Interfaces);                                 // 0x0020   (0x0050)  
 	FMetasoundFrontendGraphClass                       RootGraph;                                                  // 0x0070   (0x0108)  
 	TArray<FMetasoundFrontendGraphClass>               Subgraphs;                                                  // 0x0178   (0x0010)  
 	TArray<FMetasoundFrontendClass>                    Dependencies;                                               // 0x0188   (0x0010)  
@@ -479,7 +479,7 @@ struct FMetasoundFrontendClassStyle
 struct FMetaSoundFrontendDocumentBuilder
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
-	SDK_UNDEFINED(16,2605) /* TScriptInterface<Class> */ __um(DocumentInterface);                                  // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,2598) /* TScriptInterface<Class> */ __um(DocumentInterface);                                  // 0x0008   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0018   (0x0020)  MISSED
 };
 

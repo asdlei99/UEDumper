@@ -25,11 +25,11 @@ public:
 };
 
 /// Class /Script/ZoneGraph.ZoneGraphRenderingComponent
-/// Size: 0x0010 (0x000570 - 0x000580)
+/// Size: 0x0010 (0x000500 - 0x000510)
 class UZoneGraphRenderingComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1408;
+	static inline constexpr uint64_t __MDKClassSize = 1296;
 
 public:
 };
@@ -73,39 +73,39 @@ public:
 };
 
 /// Class /Script/ZoneGraph.ZoneShapeComponent
-/// Size: 0x0060 (0x000570 - 0x0005D0)
+/// Size: 0x0060 (0x000500 - 0x000560)
 class UZoneShapeComponent : public UPrimitiveComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1488;
+	static inline constexpr uint64_t __MDKClassSize = 1376;
 
 public:
-	SMember(FZoneLaneProfileRef)                       LaneProfile                                                 OFFSET(getStruct<T>, {0x570, 20, 0, 0})
-	DMember(bool)                                      bReverseLaneProfile                                         OFFSET(get<bool>, {0x584, 1, 0, 0})
-	CMember(TArray<FZoneLaneProfileRef>)               PerPointLaneProfiles                                        OFFSET(get<T>, {0x588, 16, 0, 0})
-	CMember(TArray<FZoneShapePoint>)                   Points                                                      OFFSET(get<T>, {0x598, 16, 0, 0})
-	SMember(FZoneShapeType)                            ShapeType                                                   OFFSET(getStruct<T>, {0x5A8, 1, 0, 0})
-	CMember(EZoneShapePolygonRoutingType)              PolygonRoutingType                                          OFFSET(get<T>, {0x5A9, 1, 0, 0})
-	SMember(FZoneGraphTagMask)                         Tags                                                        OFFSET(getStruct<T>, {0x5AC, 4, 0, 0})
-	CMember(TArray<FZoneShapeConnector>)               ShapeConnectors                                             OFFSET(get<T>, {0x5B0, 16, 0, 0})
-	CMember(TArray<FZoneShapeConnection>)              ConnectedShapes                                             OFFSET(get<T>, {0x5C0, 16, 0, 0})
+	SMember(FZoneLaneProfileRef)                       LaneProfile                                                 OFFSET(getStruct<T>, {0x500, 20, 0, 0})
+	DMember(bool)                                      bReverseLaneProfile                                         OFFSET(get<bool>, {0x514, 1, 0, 0})
+	CMember(TArray<FZoneLaneProfileRef>)               PerPointLaneProfiles                                        OFFSET(get<T>, {0x518, 16, 0, 0})
+	CMember(TArray<FZoneShapePoint>)                   Points                                                      OFFSET(get<T>, {0x528, 16, 0, 0})
+	SMember(FZoneShapeType)                            ShapeType                                                   OFFSET(getStruct<T>, {0x538, 1, 0, 0})
+	CMember(EZoneShapePolygonRoutingType)              PolygonRoutingType                                          OFFSET(get<T>, {0x539, 1, 0, 0})
+	SMember(FZoneGraphTagMask)                         Tags                                                        OFFSET(getStruct<T>, {0x53C, 4, 0, 0})
+	CMember(TArray<FZoneShapeConnector>)               ShapeConnectors                                             OFFSET(get<T>, {0x540, 16, 0, 0})
+	CMember(TArray<FZoneShapeConnection>)              ConnectedShapes                                             OFFSET(get<T>, {0x550, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetTags
-	// void SetTags(FZoneGraphTagMask NewTags);                                                                                 // [0xa6e1ff8] Final|Native|Public|BlueprintCallable 
+	// void SetTags(FZoneGraphTagMask NewTags);                                                                                 // [0xa89203c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetShapeType
-	// void SetShapeType(FZoneShapeType Type);                                                                                  // [0x62b92fc] Final|Native|Public|BlueprintCallable 
+	// void SetShapeType(FZoneShapeType Type);                                                                                  // [0x5fcd8d8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetReverseLaneProfile
-	// bool SetReverseLaneProfile(bool bReverse);                                                                               // [0xa6e1f6c] Final|Native|Public|BlueprintCallable 
+	// bool SetReverseLaneProfile(bool bReverse);                                                                               // [0xa891f6c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.SetPolygonRoutingType
-	// void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType);                                                        // [0xa6e1ef0] Final|Native|Public|BlueprintCallable 
+	// void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType);                                                        // [0xa891eac] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.IsLaneProfileReversed
-	// bool IsLaneProfileReversed();                                                                                            // [0xa6e1ed8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLaneProfileReversed();                                                                                            // [0xa891e94] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.GetTags
-	// FZoneGraphTagMask GetTags();                                                                                             // [0xa6e1ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FZoneGraphTagMask GetTags();                                                                                             // [0x38b85b8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ZoneGraph.ZoneShapeComponent.GetShapeType
-	// FZoneShapeType GetShapeType();                                                                                           // [0x62b21b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FZoneShapeType GetShapeType();                                                                                           // [0x38b8c60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/ZoneGraph.ZoneGraphBuilderRegisteredComponent

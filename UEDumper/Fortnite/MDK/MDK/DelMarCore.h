@@ -19,10 +19,10 @@
 /// dependency: GameFeatures
 /// dependency: GameplayAbilities
 /// dependency: GameplayEventRouter
-/// dependency: GameplayStateMachine
 /// dependency: GameplayTags
+/// dependency: ItemizationCoreRuntime
 /// dependency: LinkId
-/// dependency: McpProfileSysCore
+/// dependency: McpProfileSys
 /// dependency: ModularGameplay
 /// dependency: Niagara
 /// dependency: PlayspaceSystem
@@ -48,9 +48,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarActorMover.OnRep_ServerStartTime
-	// void OnRep_ServerStartTime();                                                                                            // [0xb6ddb50] Final|Native|Protected 
+	// void OnRep_ServerStartTime();                                                                                            // [0xb958e10] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarActorMover.InitializeMovement
-	// void InitializeMovement();                                                                                               // [0xb6dda8c] Final|Native|Protected|BlueprintCallable 
+	// void InitializeMovement();                                                                                               // [0xb958d54] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarAIController
@@ -79,7 +79,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarAIController.HandleGroundedStateChanged
-	// void HandleGroundedStateChanged(TScriptInterface<Class>& VehicleRef, bool bValue);                                       // [0xb6dd508] Final|Native|Protected|HasOutParms 
+	// void HandleGroundedStateChanged(TScriptInterface<Class>& VehicleRef, bool bValue);                                       // [0xb9586c8] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.DelMarAIService
@@ -105,13 +105,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarAIService.HandlePlayerUnregistered
-	// void HandlePlayerUnregistered(class AFortPlayerState* UnregisteredPlayerState, bool bSetAsInactive);                     // [0xb6dd7e0] Final|Native|Protected 
+	// void HandlePlayerUnregistered(class AFortPlayerState* UnregisteredPlayerState, bool bSetAsInactive);                     // [0xb958a00] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarAIService.HandlePlayerRegistered
-	// void HandlePlayerRegistered(class AFortPlayerState* RegisteredPlayerState);                                              // [0xb6dd68c] Final|Native|Protected 
+	// void HandlePlayerRegistered(class AFortPlayerState* RegisteredPlayerState);                                              // [0xb95886c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarAIService.GetRegisteredAIBotControllers
-	// TArray<ADelMarAIController*> GetRegisteredAIBotControllers();                                                            // [0xb6dc450] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// TArray<ADelMarAIController*> GetRegisteredAIBotControllers();                                                            // [0xb95751c] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarCore.DelMarAIService.GetMaxNumberOfPlayers
-	// int32_t GetMaxNumberOfPlayers();                                                                                         // [0x976bf00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxNumberOfPlayers();                                                                                         // [0x98791d8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarAIVehicleCosmeticLibraryData
@@ -124,16 +124,6 @@ class UDelMarAIVehicleCosmeticLibraryData : public UPrimaryDataAsset
 public:
 	CMember(TWeakObjectPtr<UDataTable*>)               PredefineVehiclCosmeticSetsDataTable                        OFFSET(get<T>, {0x30, 32, 0, 0})
 	CMember(TArray<FDelMarAIVehicleCosmeticSlotDataTableInfo>) RandomizedVehicleSlotDataTables                     OFFSET(get<T>, {0x50, 16, 0, 0})
-};
-
-/// Class /Script/DelMarCore.DelMarAudioTakeRecorderExtension
-/// Size: 0x0008 (0x0000A0 - 0x0000A8)
-class UDelMarAudioTakeRecorderExtension : public UActorComponent
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 168;
-
-public:
 };
 
 /// Class /Script/DelMarCore.DriveHazardInfo
@@ -280,11 +270,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarBTTask_DriveTrack.TurboBonusZoneStateChanged
-	// void TurboBonusZoneStateChanged(EDelMarTurboZoneState NewState);                                                         // [0xb6ddc94] Final|Native|Protected 
+	// void TurboBonusZoneStateChanged(EDelMarTurboZoneState NewState);                                                         // [0xb958ee4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarBTTask_DriveTrack.HandleVehicleGroundedStateChanged
-	// void HandleVehicleGroundedStateChanged(TScriptInterface<Class>& VehicleRef, bool bValue);                                // [0xb6dd908] Final|Native|Protected|HasOutParms 
+	// void HandleVehicleGroundedStateChanged(TScriptInterface<Class>& VehicleRef, bool bValue);                                // [0xb958bb0] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarBTTask_DriveTrack.HandleTurboActivated
-	// void HandleTurboActivated();                                                                                             // [0xb6dd8dc] Final|Native|Protected 
+	// void HandleTurboActivated();                                                                                             // [0xb958b84] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarBTTask_RaceCountdown
@@ -359,73 +349,73 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRaceManager.UnregisterPlayerState
-	// void UnregisterPlayerState(class AFortPlayerState* InPlayerState, bool bSetAsInactive);                                  // [0xb792d40] Final|Native|Public|BlueprintCallable 
+	// void UnregisterPlayerState(class AFortPlayerState* InPlayerState, bool bSetAsInactive);                                  // [0xba06ec4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.UnregisterPlayerController
-	// void UnregisterPlayerController(class AController* InController, bool bSetAsInactive);                                   // [0xb792c78] Final|Native|Public|BlueprintCallable 
+	// void UnregisterPlayerController(class AController* InController, bool bSetAsInactive);                                   // [0xba06d84] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.UnregisterAllPlayers
-	// void UnregisterAllPlayers(bool bSetAsInactive);                                                                          // [0xb792bf8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void UnregisterAllPlayers(bool bSetAsInactive);                                                                          // [0xba06cc0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.SetSpectatorAsPlayer
-	// void SetSpectatorAsPlayer(class AFortPlayerState* PlayerState);                                                          // [0x90d8164] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetSpectatorAsPlayer(class AFortPlayerState* PlayerState);                                                          // [0x912733c] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.SetPlayerAsSpectator
-	// void SetPlayerAsSpectator(class AFortPlayerState* PlayerState);                                                          // [0xb792a38] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetPlayerAsSpectator(class AFortPlayerState* PlayerState);                                                          // [0xba06a3c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.SetActiveRaceLevelConfig
-	// void SetActiveRaceLevelConfig(class ADelMarRaceLevelConfig* InRaceLevelConfig);                                          // [0x90d6d68] Native|Public|BlueprintCallable 
+	// void SetActiveRaceLevelConfig(class ADelMarRaceLevelConfig* InRaceLevelConfig);                                          // [0x9125490] Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.ResetRun
-	// void ResetRun(class AFortPlayerState* PlayerState, bool bPlayerTriggered);                                               // [0xb791d74] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ResetRun(class AFortPlayerState* PlayerState, bool bPlayerTriggered);                                               // [0xba05e44] BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.ResetRace
-	// void ResetRace(bool bIsRoundReset);                                                                                      // [0x894c640] Native|Public|BlueprintCallable 
+	// void ResetRace(bool bIsRoundReset);                                                                                      // [0x891b598] Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.RequestStartRace
-	// void RequestStartRace(bool bSkipCountdown);                                                                              // [0xb791cf4] Final|Native|Public|BlueprintCallable 
+	// void RequestStartRace(bool bSkipCountdown);                                                                              // [0xba05d80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.RegisterPlayerState
-	// void RegisterPlayerState(class AFortPlayerState* InPlayerState);                                                         // [0xb791a60] Final|Native|Public|BlueprintCallable 
+	// void RegisterPlayerState(class AFortPlayerState* InPlayerState);                                                         // [0xba05a2c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.RegisterPlayerController
-	// void RegisterPlayerController(class AController* InController);                                                          // [0xb7919e0] Final|Native|Public|BlueprintCallable 
+	// void RegisterPlayerController(class AController* InController);                                                          // [0xba0596c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.OnRep_ActiveRaceLevelConfig
-	// void OnRep_ActiveRaceLevelConfig();                                                                                      // [0xb7915d8] Final|Native|Protected 
+	// void OnRep_ActiveRaceLevelConfig();                                                                                      // [0xba04f68] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarRaceManager.NetMulticast_ResetRun
-	// void NetMulticast_ResetRun(class AFortPlayerState* InPlayerState, bool bPlayerTriggered);                                // [0xb791218] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_ResetRun(class AFortPlayerState* InPlayerState, bool bPlayerTriggered);                                // [0xba04c00] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarRaceManager.NetMulticast_ResetRace
-	// void NetMulticast_ResetRace(bool bNextRound);                                                                            // [0x63acc10] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_ResetRace(bool bNextRound);                                                                            // [0x60d4dac] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarRaceManager.NetMulticast_FinishRace
-	// void NetMulticast_FinishRace(double RaceFinishedTime);                                                                   // [0x7b8444c] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_FinishRace(double RaceFinishedTime);                                                                   // [0x7b3d064] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarRaceManager.IsSpectator
-	// bool IsSpectator(class AFortPlayerState* PlayerState);                                                                   // [0xb790f14] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSpectator(class AFortPlayerState* PlayerState);                                                                   // [0xba048a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.IsActiveRacer
-	// bool IsActiveRacer(class AFortPlayerState* PlayerState);                                                                 // [0xb790e88] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActiveRacer(class AFortPlayerState* PlayerState);                                                                 // [0xba047d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.HandleRegisteredPlayerPawnSet
-	// void HandleRegisteredPlayerPawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);              // [0xb790ce8] Final|Native|Protected 
+	// void HandleRegisteredPlayerPawnSet(class APlayerState* Player, class APawn* NewPawn, class APawn* OldPawn);              // [0xba04570] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetTimeManager
-	// class UDelMarTimeManagerComponent* GetTimeManager();                                                                     // [0x70a4c08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarTimeManagerComponent* GetTimeManager();                                                                     // [0x6f75b74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetSpectators
-	// TArray<AFortPlayerState*> GetSpectators();                                                                               // [0xb790b30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AFortPlayerState*> GetSpectators();                                                                               // [0xba0443c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetRubberbandingManager
-	// class UDelMarRubberbandingManagerComponent* GetRubberbandingManager();                                                   // [0xa856798] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarRubberbandingManagerComponent* GetRubberbandingManager();                                                   // [0xaa36a48] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetRespawnManagerComponent
-	// class UDelMarRespawnManagerComponent* GetRespawnManagerComponent();                                                      // [0xa1ea560] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarRespawnManagerComponent* GetRespawnManagerComponent();                                                      // [0xa38e63c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetRaceConfig
-	// class UDelMarRaceConfigComponent* GetRaceConfig();                                                                       // [0xb790b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarRaceConfigComponent* GetRaceConfig();                                                                       // [0xba0440c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetPositionalTracker
-	// class UDelMarPositionalTrackerComponent* GetPositionalTracker();                                                         // [0xb790ae8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarPositionalTrackerComponent* GetPositionalTracker();                                                         // [0xba043f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetNumInactiveRacers
-	// int32_t GetNumInactiveRacers();                                                                                          // [0xb790a18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumInactiveRacers();                                                                                          // [0xba042e4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetNumberOfLapsForRace
-	// int32_t GetNumberOfLapsForRace();                                                                                        // [0xb790a38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumberOfLapsForRace();                                                                                        // [0xba04304] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetManagedPlayerStatesArray
-	// TArray<AFortPlayerState*> GetManagedPlayerStatesArray();                                                                 // [0xb7909dc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AFortPlayerState*> GetManagedPlayerStatesArray();                                                                 // [0xba042a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetEliminationManagerComponent
-	// class UDelMarEliminationRaceManagerComponent* GetEliminationManagerComponent();                                          // [0xb7909c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarEliminationRaceManagerComponent* GetEliminationManagerComponent();                                          // [0x5fe2b50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetCurrentSpawnMode
-	// EDelMarRaceSpawnMode GetCurrentSpawnMode();                                                                              // [0xb7909a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDelMarRaceSpawnMode GetCurrentSpawnMode();                                                                              // [0xba04288] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetCurrentRaceMode
-	// EDelMarRaceMode GetCurrentRaceMode();                                                                                    // [0xb790980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDelMarRaceMode GetCurrentRaceMode();                                                                                    // [0xba04264] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetActiveRacers
-	// TArray<AFortPlayerState*> GetActiveRacers();                                                                             // [0xb790944] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<AFortPlayerState*> GetActiveRacers();                                                                             // [0xba04228] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.GetActiveRaceLevelConfig
-	// class ADelMarRaceLevelConfig* GetActiveRaceLevelConfig();                                                                // [0xb790920] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarRaceLevelConfig* GetActiveRaceLevelConfig();                                                                // [0xba04204] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceManager.FinishRace
-	// void FinishRace();                                                                                                       // [0x3250c48] Native|Public|BlueprintCallable 
+	// void FinishRace();                                                                                                       // [0x2e61dfc] Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceManager.FinalizeRegisteredPlayerInitialization
-	// void FinalizeRegisteredPlayerInitialization(class AFortPlayerState* PlayerState);                                        // [0xb79089c] Native|Public|BlueprintCallable 
+	// void FinalizeRegisteredPlayerInitialization(class AFortPlayerState* PlayerState);                                        // [0xba04140] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarChallengeRaceManager
@@ -438,77 +428,98 @@ class ADelMarChallengeRaceManager : public ADelMarRaceManager
 public:
 };
 
-/// Class /Script/DelMarCore.DelMarRacerState
-/// Size: 0x0018 (0x000028 - 0x000040)
-class UDelMarRacerState : public UObject
+/// Class /Script/DelMarCore.DelMarStateMachine
+/// Size: 0x0108 (0x0000A0 - 0x0001A8)
+class UDelMarStateMachine : public UActorComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 64;
+	static inline constexpr uint64_t __MDKClassSize = 424;
 
 public:
-	CMember(class UDelMarRacerStateMachineComponent*)  StateMachine                                                OFFSET(get<T>, {0x28, 8, 0, 0})
-	CMember(TWeakObjectPtr<AFortPlayerState*>)         PlayerState                                                 OFFSET(get<T>, {0x30, 8, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0x38, 8, 0, 0})
+	CMember(TArray<FDelMarStateOverride>)              StateOverrides                                              OFFSET(get<T>, {0xA0, 16, 0, 0})
+	CMember(TMap<FGameplayTag, UClass*>)               StateMappings                                               OFFSET(get<T>, {0xB0, 80, 0, 0})
+	SMember(FGameplayTag)                              RequestedStateTag                                           OFFSET(getStruct<T>, {0x100, 4, 0, 0})
+	SMember(FGameplayTag)                              CurrentStateTag                                             OFFSET(getStruct<T>, {0x104, 4, 0, 0})
+	SMember(FGameplayTag)                              DefaultStateTag                                             OFFSET(getStruct<T>, {0x108, 4, 0, 0})
+	CMember(TArray<class UDelMarState*>)               ActiveStates                                                OFFSET(get<T>, {0x110, 16, 0, 0})
+	CMember(TArray<class UDelMarState*>)               ReplicatedStates                                            OFFSET(get<T>, {0x120, 16, 0, 0})
+	SMember(FGameplayTag)                              WaitingForStateReplicationTag                               OFFSET(getStruct<T>, {0x130, 4, 0, 0})
+
+
+	/// Functions
+	// Function /Script/DelMarCore.DelMarStateMachine.RequestState
+	// void RequestState(FGameplayTag StateTag);                                                                                // [0xba3c188] Final|Native|Public|BlueprintCallable 
+	// Function /Script/DelMarCore.DelMarStateMachine.OnRep_RequestedStateTag
+	// void OnRep_RequestedStateTag();                                                                                          // [0xba3bb00] Final|Native|Protected 
+	// Function /Script/DelMarCore.DelMarStateMachine.GetRequestedStateTag
+	// FGameplayTag GetRequestedStateTag();                                                                                     // [0x5ed871c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/DelMarCore.DelMarStateMachine.GetCurrentStateTag
+	// FGameplayTag GetCurrentStateTag();                                                                                       // [0xba3b47c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/DelMarCore.DelMarStateMachine.GetCurrentState
+	// class UDelMarState* GetCurrentState();                                                                                   // [0xba3b428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/DelMarCore.DelMarStateMachine.GetActiveStateByTag
+	// class UDelMarState* GetActiveStateByTag(FGameplayTag GameplayTag);                                                       // [0xba3b000] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+};
+
+/// Class /Script/DelMarCore.DelMarState
+/// Size: 0x0008 (0x000028 - 0x000030)
+class UDelMarState : public UObject
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 48;
+
+public:
+	SMember(FGameplayTag)                              StateTag                                                    OFFSET(getStruct<T>, {0x28, 4, 0, 0})
+};
+
+/// Class /Script/DelMarCore.DelMarRacerState
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UDelMarRacerState : public UDelMarState
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 48;
+
+public:
 };
 
 /// Class /Script/DelMarCore.DelMarRacerState_WithSpectatorTransitionBase
-/// Size: 0x0000 (0x000040 - 0x000040)
+/// Size: 0x0000 (0x000030 - 0x000030)
 class UDelMarRacerState_WithSpectatorTransitionBase : public UDelMarRacerState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 64;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
 };
 
 /// Class /Script/DelMarCore.DelMarChallengeRacerState_RunActive
-/// Size: 0x0000 (0x000040 - 0x000040)
+/// Size: 0x0000 (0x000030 - 0x000030)
 class UDelMarChallengeRacerState_RunActive : public UDelMarRacerState_WithSpectatorTransitionBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 64;
-
-public:
-};
-
-/// Class /Script/DelMarCore.DelMarPlayerStateComponent
-/// Size: 0x0000 (0x0000A0 - 0x0000A0)
-class UDelMarPlayerStateComponent : public UPlayerStateComponent
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 160;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
 };
 
 /// Class /Script/DelMarCore.DelMarRacerStateMachineComponent
-/// Size: 0x0078 (0x0000A0 - 0x000118)
-class UDelMarRacerStateMachineComponent : public UDelMarPlayerStateComponent
+/// Size: 0x0010 (0x0001A8 - 0x0001B8)
+class UDelMarRacerStateMachineComponent : public UDelMarStateMachine
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 280;
+	static inline constexpr uint64_t __MDKClassSize = 440;
 
 public:
-	CMember(TMap<FGameplayTag, UClass*>)               StateMap                                                    OFFSET(get<T>, {0xA0, 80, 0, 0})
-	SMember(FGameplayTag)                              InitialState                                                OFFSET(getStruct<T>, {0xF0, 4, 0, 0})
-	CMember(TWeakObjectPtr<AFortPlayerState*>)         PlayerState                                                 OFFSET(get<T>, {0xF4, 8, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0xFC, 8, 0, 0})
-	SMember(FGameplayTag)                              CurrentState                                                OFFSET(getStruct<T>, {0x104, 4, 0, 0})
-	SMember(FGameplayTag)                              PreviousState                                               OFFSET(getStruct<T>, {0x108, 4, 0, 0})
-	CMember(class UDelMarRacerState*)                  CurrentStateInstance                                        OFFSET(get<T>, {0x110, 8, 0, 0})
-
-
-	/// Functions
-	// Function /Script/DelMarCore.DelMarRacerStateMachineComponent.OnRep_CurrentState
-	// void OnRep_CurrentState(FGameplayTag& PrevState);                                                                        // [0xb6e74ec] Final|Native|Protected|HasOutParms 
+	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0x1A8, 8, 0, 0})
+	SMember(FGameplayTag)                              PreviousStateTag                                            OFFSET(getStruct<T>, {0x1B0, 4, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarChallengeRacerStateMachineComponent
-/// Size: 0x0000 (0x000118 - 0x000118)
+/// Size: 0x0000 (0x0001B8 - 0x0001B8)
 class UDelMarChallengeRacerStateMachineComponent : public UDelMarRacerStateMachineComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 280;
+	static inline constexpr uint64_t __MDKClassSize = 440;
 
 public:
 };
@@ -537,23 +548,23 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.SpectatePrevPlayer
-	// void SpectatePrevPlayer();                                                                                               // [0xb792be4] Final|Native|Protected 
+	// void SpectatePrevPlayer();                                                                                               // [0xba06cac] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.SpectateNextPlayer
-	// void SpectateNextPlayer();                                                                                               // [0xb792bd0] Final|Native|Protected 
+	// void SpectateNextPlayer();                                                                                               // [0xba06c98] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.SetSpectatorTarget
-	// void SetSpectatorTarget(class AFortPlayerState* PlayerState);                                                            // [0xb792ab8] Final|Native|Public|BlueprintCallable 
+	// void SetSpectatorTarget(class AFortPlayerState* PlayerState);                                                            // [0xba06afc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.SetIsLateJoinSpectator
-	// void SetIsLateJoinSpectator(bool bNewLateJoinSpectator);                                                                 // [0xb792938] Final|Native|Public|BlueprintCallable 
+	// void SetIsLateJoinSpectator(bool bNewLateJoinSpectator);                                                                 // [0xba068b8] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.ServerSetSpectatorTarget
-	// void ServerSetSpectatorTarget(class AFortPlayerState* PlayerState);                                                      // [0x811c924] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
+	// void ServerSetSpectatorTarget(class AFortPlayerState* PlayerState);                                                      // [0x80b8a60] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.NetMulticast_FinishSpectating
-	// void NetMulticast_FinishSpectating();                                                                                    // [0x212f900] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
+	// void NetMulticast_FinishSpectating();                                                                                    // [0x1fda954] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.NetMulticast_BeginSpectating
-	// void NetMulticast_BeginSpectating();                                                                                     // [0x14b9e3c] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
+	// void NetMulticast_BeginSpectating();                                                                                     // [0x1c0d610] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.IsLateJoinSpectator
-	// bool IsLateJoinSpectator();                                                                                              // [0x30988e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLateJoinSpectator();                                                                                              // [0x305d8a8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarSpectatorControllerComponent.ExitSpectate
-	// void ExitSpectate();                                                                                                     // [0xb790888] Final|Native|Protected 
+	// void ExitSpectate();                                                                                                     // [0xba0412c] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarChallengeSpectatorControllerComponent
@@ -568,7 +579,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarChallengeSpectatorControllerComponent.ClientUpdateFinishedSpectatorTarget
-	// void ClientUpdateFinishedSpectatorTarget();                                                                              // [0x2af073c] Net|NetReliableNative|Event|Protected|NetClient|BlueprintCallable 
+	// void ClientUpdateFinishedSpectatorTarget();                                                                              // [0x2888030] Net|NetReliableNative|Event|Protected|NetClient|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarCompetitiveRaceManager
@@ -585,37 +596,37 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCompetitiveRaceManager.OnRep_FirstPlayerFinishedTimestamp
-	// void OnRep_FirstPlayerFinishedTimestamp();                                                                               // [0xb6ddaa0] Final|Native|Protected 
+	// void OnRep_FirstPlayerFinishedTimestamp();                                                                               // [0xb958d68] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCompetitiveRaceManager.HandleFinalRacePositionsUpdated
-	// void HandleFinalRacePositionsUpdated(TArray<FDelMarFinalRacePositionEntry>& FinalRacePositions, FDelMarFinalRacePositionEntry& NewPlayerEntry); // [0xb6dcdfc] Final|Native|Protected|HasOutParms 
+	// void HandleFinalRacePositionsUpdated(TArray<FDelMarFinalRacePositionEntry>& FinalRacePositions, FDelMarFinalRacePositionEntry& NewPlayerEntry); // [0xb957fbc] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.DelMarCompetitiveRacerState_RunActive
-/// Size: 0x0000 (0x000040 - 0x000040)
+/// Size: 0x0000 (0x000030 - 0x000030)
 class UDelMarCompetitiveRacerState_RunActive : public UDelMarRacerState_WithSpectatorTransitionBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 64;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
 };
 
 /// Class /Script/DelMarCore.DelMarCompetitiveRacerState_RunFinished
-/// Size: 0x0000 (0x000040 - 0x000040)
+/// Size: 0x0000 (0x000030 - 0x000030)
 class UDelMarCompetitiveRacerState_RunFinished : public UDelMarRacerState_WithSpectatorTransitionBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 64;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
 };
 
 /// Class /Script/DelMarCore.DelMarCompetitiveRacerStateMachineComponent
-/// Size: 0x0000 (0x000118 - 0x000118)
+/// Size: 0x0000 (0x0001B8 - 0x0001B8)
 class UDelMarCompetitiveRacerStateMachineComponent : public UDelMarRacerStateMachineComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 280;
+	static inline constexpr uint64_t __MDKClassSize = 440;
 
 public:
 };
@@ -638,40 +649,41 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarConnectedHintComponent.PassNuxHintTypeToConnectedHintComponent
-	// void PassNuxHintTypeToConnectedHintComponent(FGameplayTag HintTypeTag);                                                  // [0xb6ddb68] Final|Native|Public|BlueprintCallable 
+	// void PassNuxHintTypeToConnectedHintComponent(FGameplayTag HintTypeTag);                                                  // [0xb958e28] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarConnectedHintComponent.HandleVehicleActionPerformed
-	// void HandleVehicleActionPerformed();                                                                                     // [0xb6dd8f0] Final|Native|Protected 
+	// void HandleVehicleActionPerformed();                                                                                     // [0xb958b98] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarConnectedHintComponent.HandleActorEndOverlap
-	// void HandleActorEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                     // [0xb6dcc24] Final|Native|Public  
+	// void HandleActorEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                     // [0xb957d78] Final|Native|Public  
 	// Function /Script/DelMarCore.DelMarConnectedHintComponent.HandleActorBeginOverlap
-	// void HandleActorBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                   // [0xb6dcaf8] Final|Native|Public  
+	// void HandleActorBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                   // [0xb957bc4] Final|Native|Public  
 	// Function /Script/DelMarCore.DelMarConnectedHintComponent.BeginPlay
-	// void BeginPlay();                                                                                                        // [0x8bab8f0] Native|Public        
+	// void BeginPlay();                                                                                                        // [0x8babf44] Native|Public        
 };
 
 /// Class /Script/DelMarCore.DelMarCoreOobTubePositionalRenderingComponent
-/// Size: 0x0000 (0x000110 - 0x000110)
+/// Size: 0x0008 (0x000110 - 0x000118)
 class UDelMarCoreOobTubePositionalRenderingComponent : public UDelMarTrackOobTubePositionalRenderingComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 272;
+	static inline constexpr uint64_t __MDKClassSize = 280;
 
 public:
+	CMember(TWeakObjectPtr<APlayerState*>)             ViewTargetPlayerState                                       OFFSET(get<T>, {0x110, 8, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarCoreSplineMeshComponent
-/// Size: 0x0000 (0x000770 - 0x000770)
+/// Size: 0x0000 (0x000700 - 0x000700)
 class UDelMarCoreSplineMeshComponent : public USplineMeshComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1904;
+	static inline constexpr uint64_t __MDKClassSize = 1792;
 
 public:
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCoreSplineMeshComponent.OnBeginActorOverlap
-	// void OnBeginActorOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb6e1460] Final|Native|Private|HasOutParms 
+	// void OnBeginActorOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb95a440] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.DelMarCosmeticsDatabase
@@ -688,39 +700,39 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCosmeticsDatabase.GetSlotInfos
-	// TArray<FDelMarCosmeticSlotInfo> GetSlotInfos();                                                                          // [0xb6e1260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FDelMarCosmeticSlotInfo> GetSlotInfos();                                                                          // [0xb95a17c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarCosmeticsDatabase.GetItemsForSlot
-	// TArray<UDelMarCosmeticItemDefinition*> GetItemsForSlot(FGameplayTag Slot);                                               // [0xb6e110c] Final|Native|Public|BlueprintCallable 
+	// TArray<UDelMarCosmeticItemDefinition*> GetItemsForSlot(FGameplayTag Slot);                                               // [0xb95a074] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarDeathRacerState_ActiveRace
-/// Size: 0x0010 (0x000040 - 0x000050)
+/// Size: 0x0010 (0x000030 - 0x000040)
 class UDelMarDeathRacerState_ActiveRace : public UDelMarRacerState_WithSpectatorTransitionBase
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 80;
-
-public:
-	CMember(TWeakObjectPtr<ADelMarDeathRaceManager*>)  DeathRaceManager                                            OFFSET(get<T>, {0x40, 8, 0, 0})
-	DMember(bool)                                      bFinishedRound                                              OFFSET(get<bool>, {0x48, 1, 0, 0})
-};
-
-/// Class /Script/DelMarCore.DelMarDeathRacerState_FinishedRace
-/// Size: 0x0000 (0x000040 - 0x000040)
-class UDelMarDeathRacerState_FinishedRace : public UDelMarRacerState_WithSpectatorTransitionBase
 { 
 	friend MDKHandler;
 	static inline constexpr uint64_t __MDKClassSize = 64;
 
 public:
+	CMember(TWeakObjectPtr<ADelMarDeathRaceManager*>)  DeathRaceManager                                            OFFSET(get<T>, {0x30, 8, 0, 0})
+	DMember(bool)                                      bFinishedRound                                              OFFSET(get<bool>, {0x38, 1, 0, 0})
+};
+
+/// Class /Script/DelMarCore.DelMarDeathRacerState_FinishedRace
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UDelMarDeathRacerState_FinishedRace : public UDelMarRacerState_WithSpectatorTransitionBase
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 48;
+
+public:
 };
 
 /// Class /Script/DelMarCore.DelMarDeathRacerStateMachineComponent
-/// Size: 0x0000 (0x000118 - 0x000118)
+/// Size: 0x0000 (0x0001B8 - 0x0001B8)
 class UDelMarDeathRacerStateMachineComponent : public UDelMarRacerStateMachineComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 280;
+	static inline constexpr uint64_t __MDKClassSize = 440;
 
 public:
 };
@@ -773,7 +785,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarDriverInteractionComponent.HandleViewTargetChanged
-	// void HandleViewTargetChanged(class AFortPlayerController* InController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xb6e127c] Final|Native|Protected 
+	// void HandleViewTargetChanged(class AFortPlayerController* InController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xb95a198] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarEvent_FinalFirstPlaceChanged
@@ -845,24 +857,23 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarFlowAnalyticsControllerComponent.TutorialReplay
-	// void TutorialReplay();                                                                                                   // [0xb6e16f0] Final|Native|Public|BlueprintCallable 
+	// void TutorialReplay();                                                                                                   // [0xb95a81c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarFlowAnalyticsControllerComponent.TutorialKeepTraining
-	// void TutorialKeepTraining();                                                                                             // [0xb6e16dc] Final|Native|Public|BlueprintCallable 
+	// void TutorialKeepTraining();                                                                                             // [0xb95a808] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarFlowAnalyticsControllerComponent.TutorialGoRace
-	// void TutorialGoRace();                                                                                                   // [0xb6e16c8] Final|Native|Public|BlueprintCallable 
+	// void TutorialGoRace();                                                                                                   // [0xb95a7f4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarFlowAnalyticsControllerComponent.TutorialComplete
-	// void TutorialComplete();                                                                                                 // [0xb6e16b4] Final|Native|Public|BlueprintCallable 
+	// void TutorialComplete();                                                                                                 // [0xb95a7e0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarGameplayState
-/// Size: 0x0008 (0x000078 - 0x000080)
-class UDelMarGameplayState : public UGameplayState
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UDelMarGameplayState : public UDelMarState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
-	CMember(TWeakObjectPtr<UDelMarStateMachine*>)      CachedOwner                                                 OFFSET(get<T>, {0x78, 8, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarGameUserSettings
@@ -891,11 +902,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarGhostSessionComponent.StopSession
-	// void StopSession();                                                                                                      // [0x212f900] Native|Public|BlueprintCallable 
+	// void StopSession();                                                                                                      // [0x1fda954] Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarGhostSessionComponent.StartSession
-	// void StartSession();                                                                                                     // [0x6e94000] Native|Public|BlueprintCallable 
+	// void StartSession();                                                                                                     // [0x6d0e0b0] Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarGhostSessionComponent.IsSessionActive
-	// bool IsSessionActive();                                                                                                  // [0xab91c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSessionActive();                                                                                                  // [0xad6f994] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarGhostPlaybackSessionComponent
@@ -910,12 +921,12 @@ public:
 	CMember(class UClass*)                             PlaybackActorClass                                          OFFSET(get<T>, {0xD8, 8, 0, 0})
 	DMember(int32_t)                                   CurrentFrame                                                OFFSET(get<int32_t>, {0xE0, 4, 0, 0})
 	CMember(class UDelMarGhostReplayLog*)              PlaybackLog                                                 OFFSET(get<T>, {0xE8, 8, 0, 0})
-	CMember(class AActor*)                             PlaybackActor                                               OFFSET(get<T>, {0xF0, 8, 0, 0})
+	CMember(class AFortPhysicsPawn*)                   PlaybackActor                                               OFFSET(get<T>, {0xF0, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarGhostPlaybackSessionComponent.SetPlaybackLog
-	// void SetPlaybackLog(class UDelMarGhostReplayLog* InLog);                                                                 // [0xb6e33b0] Final|Native|Public|BlueprintCallable 
+	// void SetPlaybackLog(class UDelMarGhostReplayLog* InLog);                                                                 // [0xb95c6cc] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarGhostPlaybackTrigger
@@ -938,11 +949,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarGhostPlaybackTrigger.OnBeginOverlap
-	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb6e278c] Final|Native|Protected|HasOutParms 
+	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb95b648] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarGhostPlaybackTrigger.HandlePlaybackCompleted
-	// void HandlePlaybackCompleted();                                                                                          // [0xb6e264c] Final|Native|Protected 
+	// void HandlePlaybackCompleted();                                                                                          // [0xb95b578] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarGhostPlaybackTrigger.BP_HandlePlaybackCompleted
-	// void BP_HandlePlaybackCompleted(FVector Location);                                                                       // [0x211c0a0] Event|Protected|HasDefaults|BlueprintEvent 
+	// void BP_HandlePlaybackCompleted(FVector Location);                                                                       // [0x2047e54] Event|Protected|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/DelMarCore.DelMarGhostRecordingSessionComponent
@@ -961,7 +972,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarGhostRecordingSessionComponent.SetRecordOffPhysicsDelegate
-	// void SetRecordOffPhysicsDelegate(bool bEnabled);                                                                         // [0xb6e3430] Final|Native|Public|BlueprintCallable 
+	// void SetRecordOffPhysicsDelegate(bool bEnabled);                                                                         // [0xb95c78c] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarGhostReplayLog
@@ -995,11 +1006,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarGlobalLeaderboardControllerComponent.ServerNewPersonalBest
-	// void ServerNewPersonalBest(FDelMarEvent_GlobalLeaderboardNewPersonalBest PersonalBestRetrievedEvent);                    // [0xb6e326c] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerNewPersonalBest(FDelMarEvent_GlobalLeaderboardNewPersonalBest PersonalBestRetrievedEvent);                    // [0xb95c5f4] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/DelMarCore.DelMarGlobalLeaderboardControllerComponent.ClientUpdateLeaderboards
-	// void ClientUpdateLeaderboards();                                                                                         // [0x6e94000] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientUpdateLeaderboards();                                                                                         // [0x6d0e0b0] Net|NetReliableNative|Event|Protected|NetClient 
 	// Function /Script/DelMarCore.DelMarGlobalLeaderboardControllerComponent.ClientNewPersonalBest
-	// void ClientNewPersonalBest(FDelMarEvent_GlobalLeaderboardNewPersonalBest PersonalBestEvent);                             // [0xb6e2334] Net|NetReliableNative|Event|Protected|NetClient 
+	// void ClientNewPersonalBest(FDelMarEvent_GlobalLeaderboardNewPersonalBest PersonalBestEvent);                             // [0xb95b4a0] Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Class /Script/DelMarCore.GuidedZoneRequirement
@@ -1151,17 +1162,17 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarGuidedTutorialZoneActor.OnEndOverlap
-	// void OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xb6e3130] Final|Native|Protected 
+	// void OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0xb95c3c0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarGuidedTutorialZoneActor.OnBeginOverlap
-	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb6e2990] Final|Native|Protected|HasOutParms 
+	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb95b990] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarGuidedTutorialZoneActor.HandleVehicleDemolished
-	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb6e2660] Final|Native|Protected 
+	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb95b58c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarGuidedTutorialZoneActor.BP_OnTutorialZoneStarted
-	// void BP_OnTutorialZoneStarted();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnTutorialZoneStarted();                                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarGuidedTutorialZoneActor.BP_OnTutorialZoneFailed
-	// void BP_OnTutorialZoneFailed();                                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnTutorialZoneFailed();                                                                                          // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarGuidedTutorialZoneActor.BP_OnTutorialZoneComplete
-	// void BP_OnTutorialZoneComplete();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnTutorialZoneComplete();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DelMarCore.DelMarInputModifierHazard
@@ -1183,7 +1194,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarInputModifierHazard.OnBeginOverlap
-	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb6e2d14] Final|Native|Protected|HasOutParms 
+	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb95be5c] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.DelMarInputModifierPitchInversion
@@ -1253,24 +1264,6 @@ public:
 	CMember(TWeakObjectPtr<UTexture2D*>)               LevelBackgroundImage                                        OFFSET(get<T>, {0x60, 32, 0, 0})
 	CMember(TArray<TWeakObjectPtr<UWorld*>>)           Levels                                                      OFFSET(get<T>, {0x80, 16, 0, 0})
 	SMember(FGameplayTagContainer)                     LevelDescriptionTags                                        OFFSET(getStruct<T>, {0x90, 32, 0, 0})
-};
-
-/// Class /Script/DelMarCore.DelMarLoadoutComponent
-/// Size: 0x0008 (0x0000A0 - 0x0000A8)
-class UDelMarLoadoutComponent : public UActorComponent
-{ 
-	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 168;
-
-public:
-	CMember(class AFortPlayerController*)              PC                                                          OFFSET(get<T>, {0xA0, 8, 0, 0})
-
-
-	/// Functions
-	// Function /Script/DelMarCore.DelMarLoadoutComponent.HandleOnVehicleStateChanged
-	// void HandleOnVehicleStateChanged(class AFortPlayerPawn* Pawn, class AActor* NewVehicle, class AActor* OldVehicle);       // [0xb6e2538] Final|Native|Public  
-	// Function /Script/DelMarCore.DelMarLoadoutComponent.HandleOnPlayerPawnPossessed
-	// void HandleOnPlayerPawnPossessed(class APawn* Pawn);                                                                     // [0xb6e2478] Final|Native|Public  
 };
 
 /// Class /Script/DelMarCore.DelMarLoadoutSave
@@ -1524,6 +1517,16 @@ class UDelMarObjectiveProcessor_RunComplete : public UDelMarObjectiveProcessorBa
 public:
 };
 
+/// Class /Script/DelMarCore.DelMarObjectiveProcessor_RunCompleteTest
+/// Size: 0x0000 (0x0000A0 - 0x0000A0)
+class UDelMarObjectiveProcessor_RunCompleteTest : public UDelMarObjectiveProcessorBase
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 160;
+
+public:
+};
+
 /// Class /Script/DelMarCore.DelMarObjectiveProcessor_StartlineBoostActivated
 /// Size: 0x0000 (0x0000A0 - 0x0000A0)
 class UDelMarObjectiveProcessor_StartlineBoostActivated : public UDelMarObjectiveProcessorBase
@@ -1586,7 +1589,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPhysicsRateDevice.SetPhysicsRate
-	// void SetPhysicsRate(EDelMarPhysicsRate PhysicsRate);                                                                     // [0xb6e4c58] Final|Native|Public|BlueprintCallable 
+	// void SetPhysicsRate(EDelMarPhysicsRate PhysicsRate);                                                                     // [0xb95e0f4] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarPhysMatAttribute_SoundTag
@@ -1613,6 +1616,16 @@ public:
 	DMember(bool)                                      bDriveableSurface                                           OFFSET(get<bool>, {0x40, 1, 0, 0})
 };
 
+/// Class /Script/DelMarCore.DelMarPlayerStateComponent
+/// Size: 0x0000 (0x0000A0 - 0x0000A0)
+class UDelMarPlayerStateComponent : public UPlayerStateComponent
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 160;
+
+public:
+};
+
 /// Class /Script/DelMarCore.DelMarPlayerActiveRaceManagerComponent
 /// Size: 0x0020 (0x0000A0 - 0x0000C0)
 class UDelMarPlayerActiveRaceManagerComponent : public UDelMarPlayerStateComponent
@@ -1626,11 +1639,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPlayerActiveRaceManagerComponent.SetActiveRaceManager
-	// void SetActiveRaceManager(class ADelMarRaceManager* RaceManager);                                                        // [0xb6e4bd8] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetActiveRaceManager(class ADelMarRaceManager* RaceManager);                                                        // [0xb95e034] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarPlayerActiveRaceManagerComponent.OnRep_ActiveRaceManager
-	// void OnRep_ActiveRaceManager(class ADelMarRaceManager* PreviousRaceManager);                                             // [0xb6e4b58] Final|Native|Protected 
+	// void OnRep_ActiveRaceManager(class ADelMarRaceManager* PreviousRaceManager);                                             // [0xb95df74] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerActiveRaceManagerComponent.GetActiveRaceManager
-	// class ADelMarRaceManager* GetActiveRaceManager();                                                                        // [0x8f4a678] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarRaceManager* GetActiveRaceManager();                                                                        // [0x8f91428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerAnalyticsComponent
@@ -1652,35 +1665,35 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleWorldBonusSpeedStackGained
-	// void HandleWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                              // [0xb6e494c] Final|Native|Protected 
+	// void HandleWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                              // [0xb95dcf8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleVehicleHitHazard
-	// void HandleVehicleHitHazard();                                                                                           // [0xb6e4920] Final|Native|Protected 
+	// void HandleVehicleHitHazard();                                                                                           // [0xb95dccc] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleVehicleDemolished
-	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb6e458c] Final|Native|Protected 
+	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb95da84] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleUnderthrustPercentChanged
-	// void HandleUnderthrustPercentChanged(float PercentageUnderthrustRemaining);                                              // [0xb6e450c] Final|Native|Protected 
+	// void HandleUnderthrustPercentChanged(float PercentageUnderthrustRemaining);                                              // [0xb95d9c4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleUnderthrustDeactivated
-	// void HandleUnderthrustDeactivated();                                                                                     // [0xb6e44f8] Final|Native|Protected 
+	// void HandleUnderthrustDeactivated();                                                                                     // [0xb95d9b0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleUnderthrustActivated
-	// void HandleUnderthrustActivated();                                                                                       // [0xb6e44e4] Final|Native|Protected 
+	// void HandleUnderthrustActivated();                                                                                       // [0xb95d99c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleTurboChargeUsed
-	// void HandleTurboChargeUsed();                                                                                            // [0xb6e44d0] Final|Native|Protected 
+	// void HandleTurboChargeUsed();                                                                                            // [0xb95d988] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleTurboBonusZoneChanged
-	// void HandleTurboBonusZoneChanged(EDelMarTurboZoneState BonusZoneState);                                                  // [0xb6e4444] Final|Native|Protected 
+	// void HandleTurboBonusZoneChanged(EDelMarTurboZoneState BonusZoneState);                                                  // [0xb95d8b8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleRaceStarted
-	// void HandleRaceStarted();                                                                                                // [0xb6e4414] Final|Native|Protected 
+	// void HandleRaceStarted();                                                                                                // [0xb95d888] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleRaceFinished
-	// void HandleRaceFinished();                                                                                               // [0xb6e4400] Final|Native|Protected 
+	// void HandleRaceFinished();                                                                                               // [0xb95d874] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandlePotentialDriftBoostChanged
-	// void HandlePotentialDriftBoostChanged(float Percent);                                                                    // [0xb6e4380] Final|Native|Protected 
+	// void HandlePotentialDriftBoostChanged(float Percent);                                                                    // [0xb95d7b4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleKickflipActivated
-	// void HandleKickflipActivated(bool bLeft);                                                                                // [0xb6e4300] Final|Native|Protected 
+	// void HandleKickflipActivated(bool bLeft);                                                                                // [0xb95d6f4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleDriftKickActivated
-	// void HandleDriftKickActivated(float DriftDirection, EDelMarVehicleDriftState DriftState);                                // [0xb6e4240] Final|Native|Protected 
+	// void HandleDriftKickActivated(float DriftDirection, EDelMarVehicleDriftState DriftState);                                // [0xb95d5a8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleDriftBoostDeactivated
-	// void HandleDriftBoostDeactivated();                                                                                      // [0xb6e4228] Final|Native|Protected 
+	// void HandleDriftBoostDeactivated();                                                                                      // [0xb95d590] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerAnalyticsComponent.HandleDraftActivated
-	// void HandleDraftActivated();                                                                                             // [0xb6e4214] Final|Native|Protected 
+	// void HandleDraftActivated();                                                                                             // [0xb95d57c] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerIdleComponent
@@ -1693,6 +1706,11 @@ class UDelMarPlayerIdleComponent : public UDelMarPlayerStateComponent
 public:
 	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       CachedRaceManager                                           OFFSET(get<T>, {0xA0, 8, 0, 0})
 	CMember(TWeakObjectPtr<ADelMarVehicle*>)           CachedDelMarVehicle                                         OFFSET(get<T>, {0xA8, 8, 0, 0})
+
+
+	/// Functions
+	// Function /Script/DelMarCore.DelMarPlayerIdleComponent.OnPlayerDisconnected
+	// void OnPlayerDisconnected(class AFortPlayerStateAthena* PlayerState, bool bIsDisconnected);                              // [0xb95de34] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerQuestDistanceTraveledComponent
@@ -1712,7 +1730,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPlayerQuestDistanceTraveledComponent.HandleVehicleDemolished
-	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb6e46bc] Final|Native|Protected 
+	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb95db44] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerQuestMatchInfoComponent
@@ -1730,11 +1748,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPlayerQuestMatchInfoComponent.HandleVehicleHitHazard
-	// void HandleVehicleHitHazard();                                                                                           // [0xb6e4934] Final|Native|Protected 
+	// void HandleVehicleHitHazard();                                                                                           // [0xb95dce0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerQuestMatchInfoComponent.HandleVehicleDemolished
-	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb6e47ec] Final|Native|Protected 
+	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb95dc04] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerQuestMatchInfoComponent.HandleRaceStarted
-	// void HandleRaceStarted();                                                                                                // [0xb6e4428] Final|Native|Protected 
+	// void HandleRaceStarted();                                                                                                // [0xb95d89c] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerStart
@@ -1776,6 +1794,29 @@ class UDelMarPlayspaceComponent_ServerExpiration : public UPlayspaceComponent_Se
 public:
 };
 
+/// Class /Script/DelMarCore.DelMarProxyGhostVisualComponent
+/// Size: 0x0068 (0x0000A0 - 0x000108)
+class UDelMarProxyGhostVisualComponent : public UDelMarPlayerStateComponent
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 264;
+
+public:
+	CMember(TWeakObjectPtr<AFortAthenaVehicle*>)       CachedVehicle                                               OFFSET(get<T>, {0xA0, 8, 0, 0})
+	CMember(TWeakObjectPtr<UVehicleCosmeticsAssembledMeshUserComponent*>) CachedVCAMUC                             OFFSET(get<T>, {0xA8, 8, 0, 0})
+	CMember(class UMaterialInterface*)                 ProxyGhostMaterial                                          OFFSET(get<T>, {0xB0, 8, 0, 0})
+	CMember(TMap<FGameplayTag, FDelMarProxyMeshMaterialInfo>) VehicleMaterialInfoMap                               OFFSET(get<T>, {0xB8, 80, 0, 0})
+
+
+	/// Functions
+	// Function /Script/DelMarCore.DelMarProxyGhostVisualComponent.HandleViewTargetChanged
+	// void HandleViewTargetChanged(class AFortPlayerController* InController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xb9607c8] Final|Native|Protected 
+	// Function /Script/DelMarCore.DelMarProxyGhostVisualComponent.HandleVehicleCosmeticsFinished
+	// void HandleVehicleCosmeticsFinished();                                                                                   // [0xb9607b4] Final|Native|Protected 
+	// Function /Script/DelMarCore.DelMarProxyGhostVisualComponent.HandlePartCustomizationUpdated
+	// void HandlePartCustomizationUpdated(int32_t MeshPartIndex);                                                              // [0xb96057c] Final|Native|Protected 
+};
+
 /// Class /Script/DelMarCore.DelMarRaceManagerComponent
 /// Size: 0x0000 (0x0000A0 - 0x0000A0)
 class UDelMarRaceManagerComponent : public UGameFrameworkComponent
@@ -1799,38 +1840,38 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRaceInfoComponent.HandleRaceStarted
-	// void HandleRaceStarted();                                                                                                // [0xb6e73c8] Final|Native|Protected 
+	// void HandleRaceStarted();                                                                                                // [0xb96078c] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarRaceLevelConfig
-/// Size: 0x0078 (0x000BD8 - 0x000C50)
+/// Size: 0x0080 (0x000BD8 - 0x000C58)
 class ADelMarRaceLevelConfig : public AFortCreativeDeviceProp
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 3152;
+	static inline constexpr uint64_t __MDKClassSize = 3160;
 
 public:
 	CMember(EDelMarRaceMode)                           RaceMode                                                    OFFSET(get<T>, {0xBD8, 1, 0, 0})
 	DMember(int32_t)                                   DefaultNumRequiredLaps                                      OFFSET(get<int32_t>, {0xBDC, 4, 0, 0})
 	DMember(float)                                     ZKillOffsetDistanceFromLowestSplinePoint                    OFFSET(get<float>, {0xBE0, 4, 0, 0})
-	DMember(int32_t)                                   MatchTimeLimitSeconds                                       OFFSET(get<int32_t>, {0xBE4, 4, 0, 0})
-	DMember(bool)                                      bShouldRunAsADelMarExperience                               OFFSET(get<bool>, {0xBE8, 1, 0, 0})
-	DMember(bool)                                      bOverrideTurboChargeRegenRateSeconds                        OFFSET(get<bool>, {0xBE9, 1, 0, 0})
-	DMember(float)                                     TurboChargeRegenRateSeconds                                 OFFSET(get<float>, {0xBEC, 4, 0, 0})
-	DMember(bool)                                      bOverrideTurboRaceStartCharges                              OFFSET(get<bool>, {0xBF0, 1, 0, 0})
-	DMember(float)                                     TurboRaceStartCharges                                       OFFSET(get<float>, {0xBF4, 4, 0, 0})
-	DMember(bool)                                      bOverrideTurboLapCompleteCharges                            OFFSET(get<bool>, {0xBF8, 1, 0, 0})
-	DMember(float)                                     TurboLapCompleteCharges                                     OFFSET(get<float>, {0xBFC, 4, 0, 0})
-	CMember(TMap<EDelMarRaceMode, UClass*>)            RaceManagerClassMap                                         OFFSET(get<T>, {0xC00, 80, 0, 0})
+	DMember(bool)                                      bShouldRunAsADelMarExperience                               OFFSET(get<bool>, {0xBE4, 1, 0, 0})
+	DMember(int32_t)                                   MatchTimeLimitSeconds                                       OFFSET(get<int32_t>, {0xBE8, 4, 0, 0})
+	DMember(bool)                                      bOverrideTurboChargeRegenRateSeconds                        OFFSET(get<bool>, {0xBEC, 1, 0, 0})
+	DMember(float)                                     TurboChargeRegenRateSeconds                                 OFFSET(get<float>, {0xBF0, 4, 0, 0})
+	DMember(bool)                                      bOverrideTurboRaceStartCharges                              OFFSET(get<bool>, {0xBF4, 1, 0, 0})
+	DMember(float)                                     TurboRaceStartCharges                                       OFFSET(get<float>, {0xBF8, 4, 0, 0})
+	DMember(bool)                                      bOverrideTurboLapCompleteCharges                            OFFSET(get<bool>, {0xBFC, 1, 0, 0})
+	DMember(float)                                     TurboLapCompleteCharges                                     OFFSET(get<float>, {0xC00, 4, 0, 0})
+	CMember(TMap<EDelMarRaceMode, UClass*>)            RaceManagerClassMap                                         OFFSET(get<T>, {0xC08, 80, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRaceLevelConfig.SpawnRaceManager
-	// class ADelMarRaceManager* SpawnRaceManager(bool bFireInitializationEvent);                                               // [0xb6e7924] Final|Native|Public|BlueprintCallable 
+	// class ADelMarRaceManager* SpawnRaceManager(bool bFireInitializationEvent);                                               // [0xb9614fc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRaceLevelConfig.GetRaceModeTag
-	// FGameplayTag GetRaceModeTag();                                                                                           // [0xb6e65c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetRaceModeTag();                                                                                           // [0xb95fa4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarRaceLevelConfig.GetRaceManagerClass
-	// class UClass* GetRaceManagerClass();                                                                                     // [0xb6e6590] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UClass* GetRaceManagerClass();                                                                                     // [0xb95fa18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarRaceManagerVerbComponent
@@ -1848,17 +1889,17 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRaceManagerVerbComponent.HandleRaceStarted
-	// void HandleRaceStarted();                                                                                                // [0xb6e73dc] Final|Native|Protected 
+	// void HandleRaceStarted();                                                                                                // [0xb9607a0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarRaceManagerVerbComponent.HandleRaceFinished
-	// void HandleRaceFinished();                                                                                               // [0xb6e73b4] Final|Native|Protected 
+	// void HandleRaceFinished();                                                                                               // [0xb960778] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarRaceManagerVerbComponent.HandlePlayerPositionsChanged
-	// void HandlePlayerPositionsChanged(TArray<AFortPlayerState*>& RacePositions);                                             // [0xb6e7318] Final|Native|Protected|HasOutParms 
+	// void HandlePlayerPositionsChanged(TArray<AFortPlayerState*>& RacePositions);                                             // [0xb9606dc] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarRaceManagerVerbComponent.HandlePlayerLapCompleted
-	// void HandlePlayerLapCompleted(FDelMarEvent_LapComplete& LapCompleteEvent);                                               // [0xb6e7278] Final|Native|Protected|HasOutParms 
+	// void HandlePlayerLapCompleted(FDelMarEvent_LapComplete& LapCompleteEvent);                                               // [0xb96063c] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarRaceManagerVerbComponent.HandleFinalRacePositionsChanged
-	// void HandleFinalRacePositionsChanged(TArray<FDelMarFinalRacePositionEntry>& FinalRacePositions, FDelMarFinalRacePositionEntry& UpdatedPlayerEntry); // [0xb6e6b6c] Final|Native|Protected|HasOutParms 
+	// void HandleFinalRacePositionsChanged(TArray<FDelMarFinalRacePositionEntry>& FinalRacePositions, FDelMarFinalRacePositionEntry& UpdatedPlayerEntry); // [0xb95fe70] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarRaceManagerVerbComponent.HandleCountdownStarted
-	// void HandleCountdownStarted();                                                                                           // [0xb6e6b58] Final|Native|Protected 
+	// void HandleCountdownStarted();                                                                                           // [0xb95fe5c] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarRaceMusicPlaylist
@@ -1884,39 +1925,63 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRaceMusicPlaylistComponent.SetMusicPlaylist
-	// void SetMusicPlaylist(class UDelMarRaceMusicPlaylist* SetPlaylist, bool bEnableMusic);                                   // [0xb6e7858] Native|Protected|BlueprintCallable 
+	// void SetMusicPlaylist(class UDelMarRaceMusicPlaylist* SetPlaylist, bool bEnableMusic);                                   // [0xb9612dc] Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarRacerState_Spectator
-/// Size: 0x0000 (0x000040 - 0x000040)
+/// Size: 0x0000 (0x000030 - 0x000030)
 class UDelMarRacerState_Spectator : public UDelMarRacerState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 64;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
 };
 
 /// Class /Script/DelMarCore.DelMarRacerState_Countdown
-/// Size: 0x0008 (0x000040 - 0x000048)
+/// Size: 0x0008 (0x000030 - 0x000038)
 class UDelMarRacerState_Countdown : public UDelMarRacerState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 72;
+	static inline constexpr uint64_t __MDKClassSize = 56;
 
 public:
-	CMember(TWeakObjectPtr<ADelMarVehicle*>)           Vehicle                                                     OFFSET(get<T>, {0x40, 8, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarVehicle*>)           Vehicle                                                     OFFSET(get<T>, {0x30, 8, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarRacerState_RunFinished
-/// Size: 0x0008 (0x000040 - 0x000048)
+/// Size: 0x0008 (0x000030 - 0x000038)
 class UDelMarRacerState_RunFinished : public UDelMarRacerState_WithSpectatorTransitionBase
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 72;
+	static inline constexpr uint64_t __MDKClassSize = 56;
 
 public:
-	CMember(TWeakObjectPtr<ADelMarVehicle*>)           Vehicle                                                     OFFSET(get<T>, {0x40, 8, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarVehicle*>)           Vehicle                                                     OFFSET(get<T>, {0x30, 8, 0, 0})
+};
+
+/// Class /Script/DelMarCore.DelMarSpeedUpDevice
+/// Size: 0x0018 (0x000BD8 - 0x000BF0)
+class ADelMarSpeedUpDevice : public AFortCreativeDeviceProp
+{ 
+	friend MDKHandler;
+	static inline constexpr uint64_t __MDKClassSize = 3056;
+
+public:
+	DMember(float)                                     SpeedAmount                                                 OFFSET(get<float>, {0xBD8, 4, 0, 0})
+	DMember(float)                                     SpeedEffectDuration                                         OFFSET(get<float>, {0xBDC, 4, 0, 0})
+	DMember(float)                                     MinDotProductAngleValue                                     OFFSET(get<float>, {0xBE0, 4, 0, 0})
+	SMember(FGameplayTag)                              SpeedSourceTag                                              OFFSET(getStruct<T>, {0xBE4, 4, 0, 0})
+	CMember(class UStaticMeshComponent*)               Collider                                                    OFFSET(get<T>, {0xBE8, 8, 0, 0})
+
+
+	/// Functions
+	// Function /Script/DelMarCore.DelMarSpeedUpDevice.ShouldGrantSpeedEffect
+	// bool ShouldGrantSpeedEffect(class AActor* OtherActor);                                                                   // [0xb961424] Native|Event|Protected|BlueprintEvent 
+	// Function /Script/DelMarCore.DelMarSpeedUpDevice.OnBeginOverlap
+	// void OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb960ba8] Final|Native|Protected|HasOutParms 
+	// Function /Script/DelMarCore.DelMarSpeedUpDevice.BP_HandleSpeedEffectGranted
+	// void BP_HandleSpeedEffectGranted();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DelMarCore.DelMarSplineActorMovementComponent
@@ -1943,11 +2008,11 @@ public:
 };
 
 /// Class /Script/DelMarCore.DelMarTimeManagerComponent
-/// Size: 0x0058 (0x0000A0 - 0x0000F8)
+/// Size: 0x0098 (0x0000A0 - 0x000138)
 class UDelMarTimeManagerComponent : public UDelMarRaceManagerComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 248;
+	static inline constexpr uint64_t __MDKClassSize = 312;
 
 public:
 	SMember(FMulticastInlineDelegate)                  OnPlayerCountdownStarted                                    OFFSET(getStruct<T>, {0xA0, 16, 0, 0})
@@ -1961,25 +2026,25 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.StartCountdownForRace
-	// void StartCountdownForRace(double ServerCountdownStartTime, double ServerRunStartTime, double InServerCountdownIntervalTime); // [0xb6e7ac4] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void StartCountdownForRace(double ServerCountdownStartTime, double ServerRunStartTime, double InServerCountdownIntervalTime); // [0xb96179c] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.StartCountdownForPlayer
-	// void StartCountdownForPlayer(class AFortPlayerState* PlayerState, double ServerCountdownStartTime, double ServerRunStartTime); // [0xb6e79b4] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void StartCountdownForPlayer(class AFortPlayerState* PlayerState, double ServerCountdownStartTime, double ServerRunStartTime); // [0xb9615cc] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.OnRep_RaceStartTimeUpdated
-	// void OnRep_RaceStartTimeUpdated();                                                                                       // [0xb6e75b4] Final|Native|Protected 
+	// void OnRep_RaceStartTimeUpdated();                                                                                       // [0xb960fa0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.GetServerRaceStartTime
-	// float GetServerRaceStartTime();                                                                                          // [0xb6e66a4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetServerRaceStartTime();                                                                                          // [0xb95fb2c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.GetServerRaceFinishTime
-	// float GetServerRaceFinishTime();                                                                                         // [0xb6e6684] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetServerRaceFinishTime();                                                                                         // [0xb95fb0c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.GetServerCountdownIntervalTime
-	// float GetServerCountdownIntervalTime();                                                                                  // [0xb6e6664] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetServerCountdownIntervalTime();                                                                                  // [0xb95faec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.GetSecondsSinceRaceStart
-	// float GetSecondsSinceRaceStart();                                                                                        // [0xb6e663c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSecondsSinceRaceStart();                                                                                        // [0xb95fac4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.GetSecondsRemainingTillRaceStart
-	// float GetSecondsRemainingTillRaceStart();                                                                                // [0xb6e6614] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSecondsRemainingTillRaceStart();                                                                                // [0xb95fa9c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.GetRaceTimeRemaining
-	// float GetRaceTimeRemaining();                                                                                            // [0xb6e65ec] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRaceTimeRemaining();                                                                                            // [0xb95fa74] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTimeManagerComponent.ConfigureRaceStart
-	// void ConfigureRaceStart(class AGameStateBase* GameState);                                                                // [0xb6e6384] Final|Native|Protected 
+	// void ConfigureRaceStart(class AGameStateBase* GameState);                                                                // [0xb95f7d0] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarTutorialConfigComponent
@@ -2017,17 +2082,17 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarTutorialInteractableSpline.ResetTriggers
-	// void ResetTriggers();                                                                                                    // [0xb6e7780] Final|Native|Public|BlueprintCallable 
+	// void ResetTriggers();                                                                                                    // [0xb96118c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialInteractableSpline.HandleColliderOverlap
-	// void HandleColliderOverlap(class ADelMarTutorialTriggerActor* InTrigger);                                                // [0xb6e6890] Final|Native|Protected 
+	// void HandleColliderOverlap(class ADelMarTutorialTriggerActor* InTrigger);                                                // [0xb95fd9c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarTutorialInteractableSpline.GetTriggerIndexAsRatio
-	// float GetTriggerIndexAsRatio(class ADelMarTutorialTriggerActor* InTrigger);                                              // [0xb6e678c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTriggerIndexAsRatio(class ADelMarTutorialTriggerActor* InTrigger);                                              // [0xb95fc54] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTutorialInteractableSpline.GetTriggerIndex
-	// int32_t GetTriggerIndex(class ADelMarTutorialTriggerActor* InTrigger);                                                   // [0xb6e66c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTriggerIndex(class ADelMarTutorialTriggerActor* InTrigger);                                                   // [0xb95fb4c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTutorialInteractableSpline.GetHaveAllTriggersCompleted
-	// bool GetHaveAllTriggersCompleted();                                                                                      // [0xb6e656c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetHaveAllTriggersCompleted();                                                                                      // [0xb95f9f4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTutorialInteractableSpline.BP_HandleAllSplineTriggersCompleted
-	// void BP_HandleAllSplineTriggersCompleted(class AActor* FinalCompletedTrigger);                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_HandleAllSplineTriggersCompleted(class AActor* FinalCompletedTrigger);                                           // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DelMarCore.DelMarTutorialRaceManager
@@ -2043,13 +2108,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarTutorialRaceManager.SetCurrentTutorialSection
-	// void SetCurrentTutorialSection(int32_t SectionIndex, class AFortPlayerState* PlayerState);                               // [0xb6e7794] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentTutorialSection(int32_t SectionIndex, class AFortPlayerState* PlayerState);                               // [0xb9611a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialRaceManager.RequestPrevTutorialSection
-	// void RequestPrevTutorialSection(class AFortPlayerState* PlayerState);                                                    // [0xb6e76c0] Final|Native|Public|BlueprintCallable 
+	// void RequestPrevTutorialSection(class AFortPlayerState* PlayerState);                                                    // [0xb9610a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialRaceManager.RequestNextTutorialSection
-	// void RequestNextTutorialSection(class AFortPlayerState* PlayerState);                                                    // [0xb6e7614] Final|Native|Public|BlueprintCallable 
+	// void RequestNextTutorialSection(class AFortPlayerState* PlayerState);                                                    // [0xb960fb4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialRaceManager.NetMulticast_TutorialSectionChanged
-	// void NetMulticast_TutorialSectionChanged(class AFortPlayerState* PlayerState, int32_t SectionIndex, int32_t PrevSectionIndex); // [0xb6e73f0] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_TutorialSectionChanged(class AFortPlayerState* PlayerState, int32_t SectionIndex, int32_t PrevSectionIndex); // [0xb9609ec] Net|NetReliableNative|Event|NetMulticast|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarTutorialTriggerActor
@@ -2065,17 +2130,17 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarTutorialTriggerActor.ResetTrigger
-	// void ResetTrigger();                                                                                                     // [0xb6e776c] Final|Native|Public|BlueprintCallable 
+	// void ResetTrigger();                                                                                                     // [0xb9640b4] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialTriggerActor.HandleColliderOverlap
-	// void HandleColliderOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb6e6910] Final|Native|Protected|HasOutParms 
+	// void HandleColliderOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0xb963300] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarTutorialTriggerActor.CanTriggerActor
-	// bool CanTriggerActor(class AActor* OtherActor);                                                                          // [0xb6e6294] Final|Native|Protected|BlueprintCallable 
+	// bool CanTriggerActor(class AActor* OtherActor);                                                                          // [0xb962a00] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialTriggerActor.BP_HandleColliderTriggered
-	// void BP_HandleColliderTriggered();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_HandleColliderTriggered();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarTutorialTriggerActor.BP_HandleColliderReset
-	// void BP_HandleColliderReset();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_HandleColliderReset();                                                                                           // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarTutorialTriggerActor.BP_CanTriggerActor
-	// bool BP_CanTriggerActor(class AActor* OtherActor);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// bool BP_CanTriggerActor(class AActor* OtherActor);                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DelMarCore.DelMarUIInputControllerComponent
@@ -2097,11 +2162,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarUIInputControllerComponent.HandleToggleQuestList
-	// void HandleToggleQuestList();                                                                                            // [0x32e4b44] Final|Native|Protected 
+	// void HandleToggleQuestList();                                                                                            // [0x307d48c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarUIInputControllerComponent.HandleHudWidgetExpandTriggered
-	// void HandleHudWidgetExpandTriggered();                                                                                   // [0xb6e939c] Final|Native|Protected 
+	// void HandleHudWidgetExpandTriggered();                                                                                   // [0xb9637e4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarUIInputControllerComponent.HandleHudWidgetExpandCompleted
-	// void HandleHudWidgetExpandCompleted();                                                                                   // [0xb6e9388] Final|Native|Protected 
+	// void HandleHudWidgetExpandCompleted();                                                                                   // [0xb9637d0] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleAction
@@ -2127,7 +2192,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleAction_Jump.HandleJump
-	// void HandleJump();                                                                                                       // [0xb6e9370] Final|Native|Public  
+	// void HandleJump();                                                                                                       // [0xb9637b8] Final|Native|Public  
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleAction_Drift
@@ -2142,7 +2207,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleAction_Drift.HandleDrift
-	// void HandleDrift(float DriftDirection, EDelMarVehicleDriftState DriftState);                                             // [0xb6e92b4] Final|Native|Public  
+	// void HandleDrift(float DriftDirection, EDelMarVehicleDriftState DriftState);                                             // [0xb963680] Final|Native|Public  
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleAction_HazardHit
@@ -2157,7 +2222,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleAction_HazardHit.HandleHazardHit
-	// void HandleHazardHit();                                                                                                  // [0xb6e9370] Final|Native|Public  
+	// void HandleHazardHit();                                                                                                  // [0xb9637b8] Final|Native|Public  
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleAction_KickFlip
@@ -2172,7 +2237,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleAction_KickFlip.HandleKickflip
-	// void HandleKickflip(bool bLeftSide);                                                                                     // [0xb6e93b0] Final|Native|Public  
+	// void HandleKickflip(bool bLeftSide);                                                                                     // [0xb9637f8] Final|Native|Public  
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleAction_Turbo
@@ -2187,7 +2252,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleAction_Turbo.HandleTurbo
-	// void HandleTurbo();                                                                                                      // [0xb6e9370] Final|Native|Public  
+	// void HandleTurbo();                                                                                                      // [0xb9637b8] Final|Native|Public  
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleAction_Underthrust
@@ -2202,7 +2267,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleAction_Underthrust.HandleUnderthrust
-	// void HandleUnderthrust();                                                                                                // [0xb6e9370] Final|Native|Public  
+	// void HandleUnderthrust();                                                                                                // [0xb9637b8] Final|Native|Public  
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleAutoInputComponent
@@ -2335,31 +2400,31 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnWorldBonusSpeedStackLost
-	// void OnWorldBonusSpeedStackLost(FGameplayTag Source, int32_t Stacks);                                                    // [0xb6e9a84] Final|Native|Protected 
+	// void OnWorldBonusSpeedStackLost(FGameplayTag Source, int32_t Stacks);                                                    // [0xb963f68] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnWorldBonusSpeedStackGained
-	// void OnWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                                  // [0xb6e9878] Final|Native|Protected 
+	// void OnWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                                  // [0xb963e2c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnTurboDeactivated
-	// void OnTurboDeactivated();                                                                                               // [0xb6e9848] Final|Native|Protected 
+	// void OnTurboDeactivated();                                                                                               // [0xb963dfc] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnTurboBonusZoneStateChanged
-	// void OnTurboBonusZoneStateChanged(EDelMarTurboZoneState ZoneState);                                                      // [0xb6e9790] Final|Native|Protected 
+	// void OnTurboBonusZoneStateChanged(EDelMarTurboZoneState ZoneState);                                                      // [0xb963d04] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnTurboActivated
-	// void OnTurboActivated();                                                                                                 // [0xb6e977c] Final|Native|Protected 
+	// void OnTurboActivated();                                                                                                 // [0xb963cf0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnStartlineBoostDeactivated
-	// void OnStartlineBoostDeactivated();                                                                                      // [0xb6e975c] Final|Native|Protected 
+	// void OnStartlineBoostDeactivated();                                                                                      // [0xb963cd0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnStartlineBoostActivated
-	// void OnStartlineBoostActivated(float StartlineBoostPerc);                                                                // [0xb6e96dc] Final|Native|Protected 
+	// void OnStartlineBoostActivated(float StartlineBoostPerc);                                                                // [0xb963c0c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnDriftKickDeactivated
-	// void OnDriftKickDeactivated();                                                                                           // [0xb6e96b8] Final|Native|Protected 
+	// void OnDriftKickDeactivated();                                                                                           // [0xb963be8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnDriftKickActivated
-	// void OnDriftKickActivated(float DriftDirection, EDelMarVehicleDriftState DriftState);                                    // [0xb6e95f4] Final|Native|Protected 
+	// void OnDriftKickActivated(float DriftDirection, EDelMarVehicleDriftState DriftState);                                    // [0xb963aa8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnDriftBonusDeactivated
-	// void OnDriftBonusDeactivated();                                                                                          // [0xb6e95d4] Final|Native|Protected 
+	// void OnDriftBonusDeactivated();                                                                                          // [0xb963a88] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnDriftBonusActivated
-	// void OnDriftBonusActivated();                                                                                            // [0xb6e95c0] Final|Native|Protected 
+	// void OnDriftBonusActivated();                                                                                            // [0xb963a74] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnAppliedTeleportRotation
-	// void OnAppliedTeleportRotation();                                                                                        // [0xb6e95ac] Final|Native|Protected 
+	// void OnAppliedTeleportRotation();                                                                                        // [0xb963a60] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleCameraMode_V2.OnAirFreestyleDeactivated
-	// void OnAirFreestyleDeactivated();                                                                                        // [0xb6e9594] Final|Native|Protected 
+	// void OnAirFreestyleDeactivated();                                                                                        // [0xb963a48] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleInterface
@@ -2374,145 +2439,145 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleInterface.WheelsOnGround
-	// bool WheelsOnGround();                                                                                                   // [0x8f03da0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool WheelsOnGround();                                                                                                   // [0x8f48654] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsStrafeLeft
-	// bool IsStrafeLeft();                                                                                                     // [0xb6e956c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStrafeLeft();                                                                                                     // [0xb963a20] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsStrafeDisabled
-	// bool IsStrafeDisabled();                                                                                                 // [0x8fbb60c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStrafeDisabled();                                                                                                 // [0x90039cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsStrafeActive
-	// bool IsStrafeActive();                                                                                                   // [0x8fba75c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStrafeActive();                                                                                                   // [0x90029d4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsSkyDiving
-	// bool IsSkyDiving();                                                                                                      // [0xb6e9544] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSkyDiving();                                                                                                      // [0xb9639f8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsReattaching
-	// bool IsReattaching();                                                                                                    // [0x39a3124] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsReattaching();                                                                                                    // [0x8fff4d0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsLosingAppliedBonusSpeed
-	// bool IsLosingAppliedBonusSpeed();                                                                                        // [0xb6e951c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLosingAppliedBonusSpeed();                                                                                        // [0xb9639d0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsKickingWheels
-	// bool IsKickingWheels();                                                                                                  // [0xb6e94f4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsKickingWheels();                                                                                                  // [0xb9639a8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsKickflipSuctionActive
-	// bool IsKickflipSuctionActive();                                                                                          // [0x8fe2de0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsKickflipSuctionActive();                                                                                          // [0xb963980] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsInvulnerabilityActive
-	// bool IsInvulnerabilityActive();                                                                                          // [0xb6e94cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInvulnerabilityActive();                                                                                          // [0xb963958] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsDriftControlled
-	// bool IsDriftControlled();                                                                                                // [0x5bde7c0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDriftControlled();                                                                                                // [0x58c5340] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsBraking
-	// bool IsBraking();                                                                                                        // [0xb6e94a4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBraking();                                                                                                        // [0xb963930] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsAllVehicleInputDisabled
-	// bool IsAllVehicleInputDisabled();                                                                                        // [0xb6e947c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAllVehicleInputDisabled();                                                                                        // [0xb963908] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsAirFreestyling
-	// bool IsAirFreestyling();                                                                                                 // [0x6e939a8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAirFreestyling();                                                                                                 // [0x6d0da80] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.IsAccelerating
-	// bool IsAccelerating();                                                                                                   // [0xb6e9454] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAccelerating();                                                                                                   // [0xb9638e0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.InDriftBoostRange
-	// bool InDriftBoostRange();                                                                                                // [0xb6e942c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool InDriftBoostRange();                                                                                                // [0xb9638b8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.HasValidDraftingTarget
-	// bool HasValidDraftingTarget();                                                                                           // [0x8fe2758] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasValidDraftingTarget();                                                                                           // [0xae13684] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetWorldAppliedBonusSpeed
-	// float GetWorldAppliedBonusSpeed();                                                                                       // [0xb6e9288] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWorldAppliedBonusSpeed();                                                                                       // [0xb9632d4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetVelocity
-	// FVector GetVelocity();                                                                                                   // [0xb6e924c] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetVelocity();                                                                                                   // [0xb963298] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetVehicleForwardState
-	// EDelMarVehicleForwardState GetVehicleForwardState();                                                                     // [0xb6e9224] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDelMarVehicleForwardState GetVehicleForwardState();                                                                     // [0xb963270] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetUnderthrustPercentageTankRemaining
-	// float GetUnderthrustPercentageTankRemaining();                                                                           // [0x651c5cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetUnderthrustPercentageTankRemaining();                                                                           // [0x3993430] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetUnderthrustActiveDuration
-	// float GetUnderthrustActiveDuration();                                                                                    // [0xb6e91f8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetUnderthrustActiveDuration();                                                                                    // [0xb963244] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetTurboBonusZoneBonusSpeed
-	// float GetTurboBonusZoneBonusSpeed();                                                                                     // [0xb6e91cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTurboBonusZoneBonusSpeed();                                                                                     // [0xb963218] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetTurboAppliedBonusSpeed
-	// float GetTurboAppliedBonusSpeed();                                                                                       // [0xb6e91a0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTurboAppliedBonusSpeed();                                                                                       // [0xb9631ec] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetTurboAdditionalActiveSeconds
-	// float GetTurboAdditionalActiveSeconds();                                                                                 // [0x63ceb4c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTurboAdditionalActiveSeconds();                                                                                 // [0x60fa3cc] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetTrackPositionComponent
-	// class UDelMarTrackPositionComponent* GetTrackPositionComponent();                                                        // [0x3c003e8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarTrackPositionComponent* GetTrackPositionComponent();                                                        // [0x39933b4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetTotalTimeSkydiving
-	// float GetTotalTimeSkydiving();                                                                                           // [0xb6e9174] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTotalTimeSkydiving();                                                                                           // [0xb9631c0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetThrottle
-	// float GetThrottle();                                                                                                     // [0xb6e9148] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetThrottle();                                                                                                     // [0xb963194] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetTargetSpeed
-	// float GetTargetSpeed();                                                                                                  // [0xb6e911c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTargetSpeed();                                                                                                  // [0xb963168] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetTargetDriftSide
-	// float GetTargetDriftSide();                                                                                              // [0xb6e90f0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTargetDriftSide();                                                                                              // [0xb96313c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetStrafeCooldownPercentage
-	// float GetStrafeCooldownPercentage();                                                                                     // [0xb6e90c4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStrafeCooldownPercentage();                                                                                     // [0xb963110] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetSteeringAngle
-	// float GetSteeringAngle();                                                                                                // [0xb6e9098] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSteeringAngle();                                                                                                // [0xb9630e4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetSteering
-	// float GetSteering();                                                                                                     // [0xb6e906c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSteering();                                                                                                     // [0xb9630b8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetStartlinePercentageMaxBonusSpeedEarned
-	// float GetStartlinePercentageMaxBonusSpeedEarned();                                                                       // [0xb6e9040] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStartlinePercentageMaxBonusSpeedEarned();                                                                       // [0xb96308c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetStartlineMaxEarnedBonusSpeed
-	// float GetStartlineMaxEarnedBonusSpeed();                                                                                 // [0xb6e9014] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStartlineMaxEarnedBonusSpeed();                                                                                 // [0xb963060] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetStartlineAppliedBonusSpeed
-	// float GetStartlineAppliedBonusSpeed();                                                                                   // [0xb6e8fe8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStartlineAppliedBonusSpeed();                                                                                   // [0xb963034] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetStableSpeed
-	// float GetStableSpeed();                                                                                                  // [0xb6e8fbc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStableSpeed();                                                                                                  // [0xb963008] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetSpeedometerSpeed
-	// float GetSpeedometerSpeed();                                                                                             // [0xb6e8f90] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSpeedometerSpeed();                                                                                             // [0xb962fdc] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetSkeletalMeshComponent
-	// class USkeletalMeshComponent* GetSkeletalMeshComponent();                                                                // [0xb6e8f68] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetSkeletalMeshComponent();                                                                // [0xb962fb4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetSideSpeed
-	// float GetSideSpeed();                                                                                                    // [0xb6e8f3c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSideSpeed();                                                                                                    // [0xb962f88] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetRemainingTurboActiveSeconds
-	// float GetRemainingTurboActiveSeconds();                                                                                  // [0xb6e8f10] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemainingTurboActiveSeconds();                                                                                  // [0xb962f5c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetReattachmentDirection
-	// FVector GetReattachmentDirection();                                                                                      // [0xb6e8ed4] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetReattachmentDirection();                                                                                      // [0xb962f20] Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetQueuedBonusSpeed
-	// float GetQueuedBonusSpeed();                                                                                             // [0xb6e8ea8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetQueuedBonusSpeed();                                                                                             // [0xb962ef4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetPotentialDriftBoostPercentage
-	// float GetPotentialDriftBoostPercentage();                                                                                // [0xb6e8e7c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPotentialDriftBoostPercentage();                                                                                // [0xb962ec8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetPostProcessComponent
-	// class UPostProcessComponent* GetPostProcessComponent();                                                                  // [0xb6e8e54] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPostProcessComponent* GetPostProcessComponent();                                                                  // [0xb962ea0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetPercentageTurboActiveTimeRemaining
-	// float GetPercentageTurboActiveTimeRemaining();                                                                           // [0xb6e8e28] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPercentageTurboActiveTimeRemaining();                                                                           // [0xb962e74] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetOversteerAccumulationPercentage
-	// float GetOversteerAccumulationPercentage();                                                                              // [0xb6e8dfc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetOversteerAccumulationPercentage();                                                                              // [0xb962e48] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetNormalizedForwardSpeed
-	// float GetNormalizedForwardSpeed();                                                                                       // [0xb6e8dd0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetNormalizedForwardSpeed();                                                                                       // [0xb962e1c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetNormalizedBonusSpeed
-	// float GetNormalizedBonusSpeed();                                                                                         // [0xb6e8da4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetNormalizedBonusSpeed();                                                                                         // [0xb962df0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetMaxNumTurboCharges
-	// float GetMaxNumTurboCharges();                                                                                           // [0xb6e8d78] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxNumTurboCharges();                                                                                           // [0xb962dc4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetLandingData
-	// FDelMarVehicleLandingData GetLandingData();                                                                              // [0xb6e8d40] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDelMarVehicleLandingData GetLandingData();                                                                              // [0xb962d8c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetKickflipDuration
-	// float GetKickflipDuration();                                                                                             // [0xb6e8d14] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetKickflipDuration();                                                                                             // [0xb962d60] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetKickflipDistanceToSuctionSurface
-	// float GetKickflipDistanceToSuctionSurface();                                                                             // [0x68db820] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetKickflipDistanceToSuctionSurface();                                                                             // [0x662f1f4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetKickflipActivationCharges
-	// int32_t GetKickflipActivationCharges();                                                                                  // [0xb6e8cec] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetKickflipActivationCharges();                                                                                  // [0xb962d38] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetForwardSpeed
-	// float GetForwardSpeed();                                                                                                 // [0xb6e8cc0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetForwardSpeed();                                                                                                 // [0xb962d0c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetDriftSlipAngleRatio
-	// float GetDriftSlipAngleRatio();                                                                                          // [0xb6e8c94] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDriftSlipAngleRatio();                                                                                          // [0xb962ce0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetDriftDuration
-	// float GetDriftDuration();                                                                                                // [0xb6e8c68] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDriftDuration();                                                                                                // [0xb962cb4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetDriftBoostAppliedBonusSpeed
-	// float GetDriftBoostAppliedBonusSpeed();                                                                                  // [0xb6e8c3c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDriftBoostAppliedBonusSpeed();                                                                                  // [0xb962c88] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetDriftAngle
-	// float GetDriftAngle();                                                                                                   // [0xb6e8c10] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDriftAngle();                                                                                                   // [0xb962c5c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetDraftingState
-	// EDelmarDraftingState GetDraftingState();                                                                                 // [0x6606480] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDelmarDraftingState GetDraftingState();                                                                                 // [0x634794c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetDraftingMaxBonusSpeedPercentage
-	// float GetDraftingMaxBonusSpeedPercentage();                                                                              // [0xa7270b4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDraftingMaxBonusSpeedPercentage();                                                                              // [0xa8dafe0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetCurrentTurboBonusZoneState
-	// EDelMarTurboZoneState GetCurrentTurboBonusZoneState();                                                                   // [0xb6e8be8] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDelMarTurboZoneState GetCurrentTurboBonusZoneState();                                                                   // [0xb962c34] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetCurrentNumTurboCharges
-	// float GetCurrentNumTurboCharges();                                                                                       // [0xb6e8bbc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentNumTurboCharges();                                                                                       // [0xb962c08] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetCosmeticComponent
-	// class UDelMarVehicleCosmeticComponent* GetCosmeticComponent();                                                           // [0xb6e8b94] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarVehicleCosmeticComponent* GetCosmeticComponent();                                                           // [0xb962be0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetBonusSpeed
-	// float GetBonusSpeed();                                                                                                   // [0xb6e8b68] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBonusSpeed();                                                                                                   // [0xb962bb4] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetBaseTargetSpeed
-	// float GetBaseTargetSpeed();                                                                                              // [0xb6e8b3c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBaseTargetSpeed();                                                                                              // [0xb962b88] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetBaseForwardSpeed
-	// float GetBaseForwardSpeed();                                                                                             // [0xb6e8b10] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBaseForwardSpeed();                                                                                             // [0xb962b5c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.GetAcceleration
-	// float GetAcceleration();                                                                                                 // [0xb6e8ae4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAcceleration();                                                                                                 // [0xb962b30] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.CanStrafeBeActivated
-	// bool CanStrafeBeActivated();                                                                                             // [0xb6e8abc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanStrafeBeActivated();                                                                                             // [0xb9629d8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleInterface.AnyWheelsOnGround
-	// bool AnyWheelsOnGround();                                                                                                // [0xb6e8a94] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool AnyWheelsOnGround();                                                                                                // [0xb9629b0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleLoadoutSetup
@@ -2538,241 +2603,242 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleManager.HandleViewTargetChanged
-	// void HandleViewTargetChanged(class AFortPlayerController* InController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xb6ef7a8] Final|Native|Public  
+	// void HandleViewTargetChanged(class AFortPlayerController* InController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xb969358] Final|Native|Public  
 	// Function /Script/DelMarCore.DelMarVehicleManager.HandlePawnPlayerStateSet
-	// void HandlePawnPlayerStateSet(class AFortPlayerPawn* Pawn);                                                              // [0xb6ef264] Final|Native|Public  
+	// void HandlePawnPlayerStateSet(class AFortPlayerPawn* Pawn);                                                              // [0xb968c14] Final|Native|Public  
 	// Function /Script/DelMarCore.DelMarVehicleManager.HandlePawnExitedVehicle
-	// void HandlePawnExitedVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* Pawn, int32_t SeatIndex);                // [0xb6ef008] Final|Native|Public|HasOutParms 
+	// void HandlePawnExitedVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* Pawn, int32_t SeatIndex);                // [0xb96898c] Final|Native|Public|HasOutParms 
 	// Function /Script/DelMarCore.DelMarVehicleManager.HandlePawnEnteredVehicle
-	// void HandlePawnEnteredVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* Pawn, int32_t SeatIndex);               // [0xb6eedac] Final|Native|Public|HasOutParms 
+	// void HandlePawnEnteredVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* Pawn, int32_t SeatIndex);               // [0xb968704] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicle
-/// Size: 0x0C60 (0x001E80 - 0x002AE0)
+/// Size: 0x0C90 (0x001EF0 - 0x002B80)
 class ADelMarVehicle : public AFortAthenaSKVehicle
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 10976;
+	static inline constexpr uint64_t __MDKClassSize = 11136;
 
 public:
-	CMember(TArray<class UClass*>)                     DelMarCameraModes                                           OFFSET(get<T>, {0x1ED0, 16, 0, 0})
-	DMember(bool)                                      bLocalDriverHasReplicatedVehicle                            OFFSET(get<bool>, {0x1EE0, 1, 0, 0})
-	SMember(FFortAthenaVehicleInputState)              PendingDriverInputState                                     OFFSET(getStruct<T>, {0x1EF0, 64, 0, 0})
-	DMember(float)                                     TurboCharges                                                OFFSET(get<float>, {0x1F30, 4, 0, 0})
-	DMember(float)                                     DistanceToPack                                              OFFSET(get<float>, {0x1F34, 4, 0, 0})
-	DMember(float)                                     DistanceFromTrackFinish                                     OFFSET(get<float>, {0x1F38, 4, 0, 0})
-	DMember(bool)                                      ATTR_bVehicleThrottleDisabled                               OFFSET(get<bool>, {0x1F3C, 1, 0, 0})
-	SMember(FDelMarInputAction)                        ThrottleAction                                              OFFSET(getStruct<T>, {0x1F40, 16, 0, 0})
-	SMember(FDelMarInputAction)                        BrakeAction                                                 OFFSET(getStruct<T>, {0x1F50, 16, 0, 0})
-	SMember(FDelMarInputAction)                        SteerAction                                                 OFFSET(getStruct<T>, {0x1F60, 16, 0, 0})
-	SMember(FDelMarInputAction)                        SteerLeftAction                                             OFFSET(getStruct<T>, {0x1F70, 16, 0, 0})
-	SMember(FDelMarInputAction)                        SteerRightAction                                            OFFSET(getStruct<T>, {0x1F80, 16, 0, 0})
-	SMember(FDelMarInputAction)                        PitchAction                                                 OFFSET(getStruct<T>, {0x1F90, 16, 0, 0})
-	SMember(FDelMarInputAction)                        PitchUpAction                                               OFFSET(getStruct<T>, {0x1FA0, 16, 0, 0})
-	SMember(FDelMarInputAction)                        PitchDownAction                                             OFFSET(getStruct<T>, {0x1FB0, 16, 0, 0})
-	SMember(FDelMarInputAction)                        RollAction                                                  OFFSET(getStruct<T>, {0x1FC0, 16, 0, 0})
-	SMember(FDelMarInputAction)                        YawAction                                                   OFFSET(getStruct<T>, {0x1FD0, 16, 0, 0})
-	SMember(FDelMarInputAction)                        DriftAction                                                 OFFSET(getStruct<T>, {0x1FE0, 16, 0, 0})
-	SMember(FDelMarInputAction)                        JumpAction                                                  OFFSET(getStruct<T>, {0x1FF0, 16, 0, 0})
-	SMember(FDelMarInputAction)                        KickFlipAction                                              OFFSET(getStruct<T>, {0x2000, 16, 0, 0})
-	SMember(FDelMarInputAction)                        UnderthrustAction                                           OFFSET(getStruct<T>, {0x2010, 16, 0, 0})
-	SMember(FDelMarInputAction)                        TurboAction                                                 OFFSET(getStruct<T>, {0x2020, 16, 0, 0})
-	SMember(FDelMarInputAction)                        DelMarExitAction                                            OFFSET(getStruct<T>, {0x2030, 16, 0, 0})
-	SMember(FDelMarInputAction)                        ResetRunAction                                              OFFSET(getStruct<T>, {0x2040, 16, 0, 0})
-	SMember(FDelMarInputAction)                        AirFreestyleAction                                          OFFSET(getStruct<T>, {0x2050, 16, 0, 0})
-	SMember(FDelMarInputAction)                        StrafeAction                                                OFFSET(getStruct<T>, {0x2060, 16, 0, 0})
-	SMember(FDelMarInputAction)                        AerialPitchAction                                           OFFSET(getStruct<T>, {0x2070, 16, 0, 0})
-	SMember(FDelMarInputAction)                        DemolishAction                                              OFFSET(getStruct<T>, {0x2080, 16, 0, 0})
-	CMember(class UClass*)                             InputManagerClass                                           OFFSET(get<T>, {0x2090, 8, 0, 0})
-	DMember(float)                                     IdleVelocityLengthThreshold                                 OFFSET(get<float>, {0x20B0, 4, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0x20B4, 8, 0, 0})
-	CMember(class UDelMarVehicleNetworkPhysicsComponent*) NetworkPhysicsComponent                                  OFFSET(get<T>, {0x20C0, 8, 0, 0})
-	CMember(class UDelMarVehicleCosmeticComponent*)    CosmeticComponent                                           OFFSET(get<T>, {0x20C8, 8, 0, 0})
-	CMember(class UDelMarVehicleMovementSet*)          DelMarVehicleMovementSet                                    OFFSET(get<T>, {0x20D8, 8, 0, 0})
-	CMember(class UFortClientSettingsRecord*)          FortSettings                                                OFFSET(get<T>, {0x20E0, 8, 0, 0})
-	CMember(class UClass*)                             TrackPositionComponentClass                                 OFFSET(get<T>, {0x20E8, 8, 0, 0})
-	CMember(class UDelMarTrackPositionComponent*)      TrackPositionComponent                                      OFFSET(get<T>, {0x20F0, 8, 0, 0})
-	CMember(TArray<FDelMarVehicleCachedContact>)       CachedContacts                                              OFFSET(get<T>, {0x20F8, 16, 0, 0})
-	DMember(float)                                     NearbyTrackDistanceThreshold                                OFFSET(get<float>, {0x2108, 4, 0, 0})
-	DMember(float)                                     VisualSteerAngleInterpRate                                  OFFSET(get<float>, {0x217C, 4, 0, 0})
-	CMember(class UDelMarVehicleBodySetup*)            BodySetup                                                   OFFSET(get<T>, {0x2180, 8, 0, 0})
-	CMember(TWeakObjectPtr<UDelMarRaceConfigComponent*>) ActiveRaceConfig                                          OFFSET(get<T>, {0x2188, 8, 0, 0})
-	CMember(TWeakObjectPtr<UDelMarTimeManagerComponent*>) RaceTimeManager                                          OFFSET(get<T>, {0x2190, 8, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleWheelsLeftGround                                   OFFSET(getStruct<T>, {0x21A8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnSpeedometerSpeedChanged                                   OFFSET(getStruct<T>, {0x21B8, 16, 0, 0})
-	DMember(float)                                     MinNoThrottleSpeed                                          OFFSET(get<float>, {0x21C8, 4, 0, 0})
-	DMember(float)                                     SpeedSlowdownSpeedometerSeconds                             OFFSET(get<float>, {0x21CC, 4, 0, 0})
-	CMember(TArray<FGameplayTag>)                      SpeedSlowdownTags                                           OFFSET(get<T>, {0x21D0, 16, 0, 0})
-	CMember(EDelMarInvertSteerMethod)                  InvertSteerMethod                                           OFFSET(get<T>, {0x21E0, 1, 0, 0})
-	DMember(bool)                                      bPitchInverted                                              OFFSET(get<bool>, {0x21E1, 1, 0, 0})
-	DMember(bool)                                      bVerticalKickflipInverted                                   OFFSET(get<bool>, {0x21E2, 1, 0, 0})
-	DMember(bool)                                      bAerialPitchActivationEnabled                               OFFSET(get<bool>, {0x21E3, 1, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnBonusSpeedActivated                                       OFFSET(getStruct<T>, {0x2218, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnBonusSpeedDeactivated                                     OFFSET(getStruct<T>, {0x2228, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnBonusSpeedChanged                                         OFFSET(getStruct<T>, {0x2238, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnAnyWheelsOnGroundChanged                                  OFFSET(getStruct<T>, {0x2248, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnWheelsOnGroundChanged                                     OFFSET(getStruct<T>, {0x2258, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleForwardStateChanged                                OFFSET(getStruct<T>, {0x2268, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDelMarVehicleHitWall                                      OFFSET(getStruct<T>, {0x2338, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDelMarVehicleHitVehicle                                   OFFSET(getStruct<T>, {0x2348, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDelMarVehicleHitByVehicle                                 OFFSET(getStruct<T>, {0x2358, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleLanded                                             OFFSET(getStruct<T>, {0x2368, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnWorldBonusSpeedStackGained                                OFFSET(getStruct<T>, {0x2388, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnWorldBonusSpeedStackLost                                  OFFSET(getStruct<T>, {0x2398, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleStartedSkydiving                                   OFFSET(getStruct<T>, {0x2418, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleStoppedSkydiving                                   OFFSET(getStruct<T>, {0x2428, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftActivated                                            OFFSET(getStruct<T>, {0x2440, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftDeactivated                                          OFFSET(getStruct<T>, {0x2450, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftSlipAngleRatioChanged                                OFFSET(getStruct<T>, {0x2460, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftKickActivated                                        OFFSET(getStruct<T>, {0x2470, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftKickDeactivated                                      OFFSET(getStruct<T>, {0x2480, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftControlChanged                                       OFFSET(getStruct<T>, {0x2490, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftDurationChanged                                      OFFSET(getStruct<T>, {0x24A0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnEnteredDriftBoostRange                                    OFFSET(getStruct<T>, {0x24F0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnExitedDriftBoostRange                                     OFFSET(getStruct<T>, {0x2500, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStartedLosingAppliedDriftBoost                            OFFSET(getStruct<T>, {0x2510, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftBoostActivated                                       OFFSET(getStruct<T>, {0x2520, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDriftBoostDeactivated                                     OFFSET(getStruct<T>, {0x2530, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnMaxPotentialReached                                       OFFSET(getStruct<T>, {0x2540, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnMaxPotentialLost                                          OFFSET(getStruct<T>, {0x2550, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnAllPotentialLost                                          OFFSET(getStruct<T>, {0x2560, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnEarnedDriftBoost                                          OFFSET(getStruct<T>, {0x2570, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnPotentialDriftBoostChanged                                OFFSET(getStruct<T>, {0x2580, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDraftActivated                                            OFFSET(getStruct<T>, {0x25C8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDraftDeactivated                                          OFFSET(getStruct<T>, {0x25D8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDraftStateChanged                                         OFFSET(getStruct<T>, {0x25E8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnReachedMaxBonusSpeed                                      OFFSET(getStruct<T>, {0x25F8, 16, 0, 0})
-	SMember(FDelMarRubberbandingConfig)                RubberbandingConfig                                         OFFSET(getStruct<T>, {0x2634, 40, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStartlineBoostActivated                                   OFFSET(getStruct<T>, {0x2690, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStartlineBoostDeactivated                                 OFFSET(getStruct<T>, {0x26A0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStartlineBoostFailed                                      OFFSET(getStruct<T>, {0x26B0, 16, 0, 0})
-	SMember(FDelMarStartlineBoostData)                 StartlineBoostData                                          OFFSET(getStruct<T>, {0x26C0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStrafeActivated                                           OFFSET(getStruct<T>, {0x26F0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStrafeDeactivated                                         OFFSET(getStruct<T>, {0x2700, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStrafeCooldownChanged                                     OFFSET(getStruct<T>, {0x2710, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStrafeUsabilityChanged                                    OFFSET(getStruct<T>, {0x2720, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnStrafeDisabledChanged                                     OFFSET(getStruct<T>, {0x2730, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnTurboActivated                                            OFFSET(getStruct<T>, {0x2760, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnTurboDeactivated                                          OFFSET(getStruct<T>, {0x2770, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnTurboChargesUpdated                                       OFFSET(getStruct<T>, {0x2780, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnTurboBonusZoneStateChanged                                OFFSET(getStruct<T>, {0x2790, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnTurboChargeUsed                                           OFFSET(getStruct<T>, {0x27A0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKickflipActivated                                         OFFSET(getStruct<T>, {0x27E8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKickflipDeactivated                                       OFFSET(getStruct<T>, {0x27F8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKickflipSuctionActivated                                  OFFSET(getStruct<T>, {0x2808, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKickflipSuctionDeactivated                                OFFSET(getStruct<T>, {0x2818, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKickflipDistanceToSuctionSurfaceChanged                   OFFSET(getStruct<T>, {0x2828, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKickflipDurationChanged                                   OFFSET(getStruct<T>, {0x2838, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnKickflipActivationChargesChanged                          OFFSET(getStruct<T>, {0x2848, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnReattachmentActivated                                     OFFSET(getStruct<T>, {0x28E0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnReattachmentDeactivated                                   OFFSET(getStruct<T>, {0x28F0, 16, 0, 0})
-	SMember(FVector)                                   ForcedReattachmentDirection                                 OFFSET(getStruct<T>, {0x2900, 24, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnUnderthrustActivated                                      OFFSET(getStruct<T>, {0x2940, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnUnderthrustDeactivated                                    OFFSET(getStruct<T>, {0x2950, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnUnderthrustPercentChanged                                 OFFSET(getStruct<T>, {0x2960, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnJumpActivated                                             OFFSET(getStruct<T>, {0x2988, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnJumpDeactivated                                           OFFSET(getStruct<T>, {0x2998, 16, 0, 0})
-	DMember(float)                                     DemolitionRespawnSeconds                                    OFFSET(get<float>, {0x29B0, 4, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleDemolished                                         OFFSET(getStruct<T>, {0x29B8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDemolishPressDurationUpdated                              OFFSET(getStruct<T>, {0x29C8, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnHazardHit                                                 OFFSET(getStruct<T>, {0x29F0, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnInvulnerabilityActivated                                  OFFSET(getStruct<T>, {0x2A00, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnInvulnerabilityDeactivated                                OFFSET(getStruct<T>, {0x2A10, 16, 0, 0})
-	DMember(float)                                     MaxSpawnBroadcastSeconds                                    OFFSET(get<float>, {0x2A24, 4, 0, 0})
-	SMember(FDelMarVehicleSpawnInfo)                   SpawnInfo                                                   OFFSET(getStruct<T>, {0x2A28, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnDelMarVehicleSpawned                                      OFFSET(getStruct<T>, {0x2A38, 16, 0, 0})
-	DMember(bool)                                      bAllowExitingVehicle                                        OFFSET(get<bool>, {0x2A48, 1, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleTeleportEntered                                    OFFSET(getStruct<T>, {0x2A50, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleTeleportExit                                       OFFSET(getStruct<T>, {0x2A60, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnVehicleAppliedTeleportRotation                            OFFSET(getStruct<T>, {0x2A70, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnAirFreestyleActivated                                     OFFSET(getStruct<T>, {0x2A80, 16, 0, 0})
-	SMember(FMulticastInlineDelegate)                  OnAirFreestyleDeactivated                                   OFFSET(getStruct<T>, {0x2A90, 16, 0, 0})
-	CMember(class ADelMarAudioController*)             CachedVehicleAudioController                                OFFSET(get<T>, {0x2AA8, 8, 0, 0})
-	DMember(bool)                                      bVehicleCollisionsEnabled                                   OFFSET(get<bool>, {0x2AB0, 1, 0, 0})
-	DMember(bool)                                      bPawnCollisionsEnabled                                      OFFSET(get<bool>, {0x2AB1, 1, 0, 0})
-	DMember(bool)                                      bUsePredictiveInterpolation                                 OFFSET(get<bool>, {0x2AC0, 1, 0, 0})
-	CMember(class UPostProcessComponent*)              PostProcessComp                                             OFFSET(get<T>, {0x2AC8, 8, 0, 0})
+	CMember(TArray<class UClass*>)                     DelMarCameraModes                                           OFFSET(get<T>, {0x1F40, 16, 0, 0})
+	DMember(bool)                                      bLocalDriverHasReplicatedVehicle                            OFFSET(get<bool>, {0x1F50, 1, 0, 0})
+	SMember(FFortAthenaVehicleInputState)              PendingDriverInputState                                     OFFSET(getStruct<T>, {0x1F60, 64, 0, 0})
+	DMember(float)                                     TurboCharges                                                OFFSET(get<float>, {0x1FA0, 4, 0, 0})
+	DMember(float)                                     DistanceToPack                                              OFFSET(get<float>, {0x1FA4, 4, 0, 0})
+	DMember(float)                                     DistanceFromTrackFinish                                     OFFSET(get<float>, {0x1FA8, 4, 0, 0})
+	DMember(bool)                                      ATTR_bVehicleThrottleDisabled                               OFFSET(get<bool>, {0x1FAC, 1, 0, 0})
+	SMember(FDelMarInputAction)                        ThrottleAction                                              OFFSET(getStruct<T>, {0x1FB0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        BrakeAction                                                 OFFSET(getStruct<T>, {0x1FC0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        SteerAction                                                 OFFSET(getStruct<T>, {0x1FD0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        SteerLeftAction                                             OFFSET(getStruct<T>, {0x1FE0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        SteerRightAction                                            OFFSET(getStruct<T>, {0x1FF0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        PitchAction                                                 OFFSET(getStruct<T>, {0x2000, 16, 0, 0})
+	SMember(FDelMarInputAction)                        PitchUpAction                                               OFFSET(getStruct<T>, {0x2010, 16, 0, 0})
+	SMember(FDelMarInputAction)                        PitchDownAction                                             OFFSET(getStruct<T>, {0x2020, 16, 0, 0})
+	SMember(FDelMarInputAction)                        RollAction                                                  OFFSET(getStruct<T>, {0x2030, 16, 0, 0})
+	SMember(FDelMarInputAction)                        YawAction                                                   OFFSET(getStruct<T>, {0x2040, 16, 0, 0})
+	SMember(FDelMarInputAction)                        DriftAction                                                 OFFSET(getStruct<T>, {0x2050, 16, 0, 0})
+	SMember(FDelMarInputAction)                        JumpAction                                                  OFFSET(getStruct<T>, {0x2060, 16, 0, 0})
+	SMember(FDelMarInputAction)                        KickFlipAction                                              OFFSET(getStruct<T>, {0x2070, 16, 0, 0})
+	SMember(FDelMarInputAction)                        UnderthrustAction                                           OFFSET(getStruct<T>, {0x2080, 16, 0, 0})
+	SMember(FDelMarInputAction)                        TurboAction                                                 OFFSET(getStruct<T>, {0x2090, 16, 0, 0})
+	SMember(FDelMarInputAction)                        DelMarExitAction                                            OFFSET(getStruct<T>, {0x20A0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        ResetRunAction                                              OFFSET(getStruct<T>, {0x20B0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        AirFreestyleAction                                          OFFSET(getStruct<T>, {0x20C0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        StrafeAction                                                OFFSET(getStruct<T>, {0x20D0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        AerialPitchAction                                           OFFSET(getStruct<T>, {0x20E0, 16, 0, 0})
+	SMember(FDelMarInputAction)                        DemolishAction                                              OFFSET(getStruct<T>, {0x20F0, 16, 0, 0})
+	CMember(class UClass*)                             InputManagerClass                                           OFFSET(get<T>, {0x2100, 8, 0, 0})
+	DMember(float)                                     IdleVelocityLengthThreshold                                 OFFSET(get<float>, {0x2120, 4, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0x2124, 8, 0, 0})
+	CMember(class UDelMarVehicleNetworkPhysicsComponent*) NetworkPhysicsComponent                                  OFFSET(get<T>, {0x2130, 8, 0, 0})
+	CMember(class UDelMarVehicleCosmeticComponent*)    CosmeticComponent                                           OFFSET(get<T>, {0x2138, 8, 0, 0})
+	CMember(class UDelMarVehicleMovementSet*)          DelMarVehicleMovementSet                                    OFFSET(get<T>, {0x2148, 8, 0, 0})
+	CMember(class UFortClientSettingsRecord*)          FortSettings                                                OFFSET(get<T>, {0x2150, 8, 0, 0})
+	CMember(class UClass*)                             TrackPositionComponentClass                                 OFFSET(get<T>, {0x2158, 8, 0, 0})
+	CMember(class UDelMarTrackPositionComponent*)      TrackPositionComponent                                      OFFSET(get<T>, {0x2160, 8, 0, 0})
+	CMember(TArray<FDelMarVehicleCachedContact>)       CachedContacts                                              OFFSET(get<T>, {0x2168, 16, 0, 0})
+	DMember(float)                                     NearbyTrackDistanceThreshold                                OFFSET(get<float>, {0x2178, 4, 0, 0})
+	DMember(float)                                     VisualSteerAngleInterpRate                                  OFFSET(get<float>, {0x221C, 4, 0, 0})
+	CMember(class UDelMarVehicleBodySetup*)            BodySetup                                                   OFFSET(get<T>, {0x2220, 8, 0, 0})
+	CMember(TWeakObjectPtr<UDelMarRaceConfigComponent*>) ActiveRaceConfig                                          OFFSET(get<T>, {0x2228, 8, 0, 0})
+	CMember(TWeakObjectPtr<UDelMarTimeManagerComponent*>) RaceTimeManager                                          OFFSET(get<T>, {0x2230, 8, 0, 0})
+	CMember(TWeakObjectPtr<UDelMarGlobalInputDisabler*>) GlobalInputDisabler                                       OFFSET(get<T>, {0x2238, 8, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleWheelsLeftGround                                   OFFSET(getStruct<T>, {0x2250, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnSpeedometerSpeedChanged                                   OFFSET(getStruct<T>, {0x2260, 16, 0, 0})
+	DMember(float)                                     MinNoThrottleSpeed                                          OFFSET(get<float>, {0x2270, 4, 0, 0})
+	DMember(float)                                     SpeedSlowdownSpeedometerSeconds                             OFFSET(get<float>, {0x2274, 4, 0, 0})
+	CMember(TArray<FGameplayTag>)                      SpeedSlowdownTags                                           OFFSET(get<T>, {0x2278, 16, 0, 0})
+	CMember(EDelMarInvertSteerMethod)                  InvertSteerMethod                                           OFFSET(get<T>, {0x2288, 1, 0, 0})
+	DMember(bool)                                      bPitchInverted                                              OFFSET(get<bool>, {0x2289, 1, 0, 0})
+	DMember(bool)                                      bVerticalKickflipInverted                                   OFFSET(get<bool>, {0x228A, 1, 0, 0})
+	DMember(bool)                                      bAerialPitchActivationEnabled                               OFFSET(get<bool>, {0x228B, 1, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnBonusSpeedActivated                                       OFFSET(getStruct<T>, {0x22C0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnBonusSpeedDeactivated                                     OFFSET(getStruct<T>, {0x22D0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnBonusSpeedChanged                                         OFFSET(getStruct<T>, {0x22E0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnAnyWheelsOnGroundChanged                                  OFFSET(getStruct<T>, {0x22F0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnWheelsOnGroundChanged                                     OFFSET(getStruct<T>, {0x2300, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleForwardStateChanged                                OFFSET(getStruct<T>, {0x2310, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDelMarVehicleHitWall                                      OFFSET(getStruct<T>, {0x23E0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDelMarVehicleHitVehicle                                   OFFSET(getStruct<T>, {0x23F0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDelMarVehicleHitByVehicle                                 OFFSET(getStruct<T>, {0x2400, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleLanded                                             OFFSET(getStruct<T>, {0x2410, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnWorldBonusSpeedStackGained                                OFFSET(getStruct<T>, {0x2430, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnWorldBonusSpeedStackLost                                  OFFSET(getStruct<T>, {0x2440, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleStartedSkydiving                                   OFFSET(getStruct<T>, {0x24C0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleStoppedSkydiving                                   OFFSET(getStruct<T>, {0x24D0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftActivated                                            OFFSET(getStruct<T>, {0x24E8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftDeactivated                                          OFFSET(getStruct<T>, {0x24F8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftSlipAngleRatioChanged                                OFFSET(getStruct<T>, {0x2508, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftKickActivated                                        OFFSET(getStruct<T>, {0x2518, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftKickDeactivated                                      OFFSET(getStruct<T>, {0x2528, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftControlChanged                                       OFFSET(getStruct<T>, {0x2538, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftDurationChanged                                      OFFSET(getStruct<T>, {0x2548, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnEnteredDriftBoostRange                                    OFFSET(getStruct<T>, {0x2598, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnExitedDriftBoostRange                                     OFFSET(getStruct<T>, {0x25A8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStartedLosingAppliedDriftBoost                            OFFSET(getStruct<T>, {0x25B8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftBoostActivated                                       OFFSET(getStruct<T>, {0x25C8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDriftBoostDeactivated                                     OFFSET(getStruct<T>, {0x25D8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnMaxPotentialReached                                       OFFSET(getStruct<T>, {0x25E8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnMaxPotentialLost                                          OFFSET(getStruct<T>, {0x25F8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnAllPotentialLost                                          OFFSET(getStruct<T>, {0x2608, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnEarnedDriftBoost                                          OFFSET(getStruct<T>, {0x2618, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnPotentialDriftBoostChanged                                OFFSET(getStruct<T>, {0x2628, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDraftActivated                                            OFFSET(getStruct<T>, {0x2670, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDraftDeactivated                                          OFFSET(getStruct<T>, {0x2680, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDraftStateChanged                                         OFFSET(getStruct<T>, {0x2690, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnReachedMaxBonusSpeed                                      OFFSET(getStruct<T>, {0x26A0, 16, 0, 0})
+	SMember(FDelMarRubberbandingConfig)                RubberbandingConfig                                         OFFSET(getStruct<T>, {0x26DC, 40, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStartlineBoostActivated                                   OFFSET(getStruct<T>, {0x2738, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStartlineBoostDeactivated                                 OFFSET(getStruct<T>, {0x2748, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStartlineBoostFailed                                      OFFSET(getStruct<T>, {0x2758, 16, 0, 0})
+	SMember(FDelMarStartlineBoostData)                 StartlineBoostData                                          OFFSET(getStruct<T>, {0x2768, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStrafeActivated                                           OFFSET(getStruct<T>, {0x2798, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStrafeDeactivated                                         OFFSET(getStruct<T>, {0x27A8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStrafeCooldownChanged                                     OFFSET(getStruct<T>, {0x27B8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStrafeUsabilityChanged                                    OFFSET(getStruct<T>, {0x27C8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnStrafeDisabledChanged                                     OFFSET(getStruct<T>, {0x27D8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnTurboActivated                                            OFFSET(getStruct<T>, {0x2808, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnTurboDeactivated                                          OFFSET(getStruct<T>, {0x2818, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnTurboChargesUpdated                                       OFFSET(getStruct<T>, {0x2828, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnTurboBonusZoneStateChanged                                OFFSET(getStruct<T>, {0x2838, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnTurboChargeUsed                                           OFFSET(getStruct<T>, {0x2848, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKickflipActivated                                         OFFSET(getStruct<T>, {0x2890, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKickflipDeactivated                                       OFFSET(getStruct<T>, {0x28A0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKickflipSuctionActivated                                  OFFSET(getStruct<T>, {0x28B0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKickflipSuctionDeactivated                                OFFSET(getStruct<T>, {0x28C0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKickflipDistanceToSuctionSurfaceChanged                   OFFSET(getStruct<T>, {0x28D0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKickflipDurationChanged                                   OFFSET(getStruct<T>, {0x28E0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnKickflipActivationChargesChanged                          OFFSET(getStruct<T>, {0x28F0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnReattachmentActivated                                     OFFSET(getStruct<T>, {0x2988, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnReattachmentDeactivated                                   OFFSET(getStruct<T>, {0x2998, 16, 0, 0})
+	SMember(FVector)                                   ForcedReattachmentDirection                                 OFFSET(getStruct<T>, {0x29A8, 24, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnUnderthrustActivated                                      OFFSET(getStruct<T>, {0x29E8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnUnderthrustDeactivated                                    OFFSET(getStruct<T>, {0x29F8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnUnderthrustPercentChanged                                 OFFSET(getStruct<T>, {0x2A08, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnJumpActivated                                             OFFSET(getStruct<T>, {0x2A30, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnJumpDeactivated                                           OFFSET(getStruct<T>, {0x2A40, 16, 0, 0})
+	DMember(float)                                     DemolitionRespawnSeconds                                    OFFSET(get<float>, {0x2A58, 4, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleDemolished                                         OFFSET(getStruct<T>, {0x2A60, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDemolishPressDurationUpdated                              OFFSET(getStruct<T>, {0x2A70, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnHazardHit                                                 OFFSET(getStruct<T>, {0x2A98, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnInvulnerabilityActivated                                  OFFSET(getStruct<T>, {0x2AA8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnInvulnerabilityDeactivated                                OFFSET(getStruct<T>, {0x2AB8, 16, 0, 0})
+	DMember(float)                                     MaxSpawnBroadcastSeconds                                    OFFSET(get<float>, {0x2ACC, 4, 0, 0})
+	SMember(FDelMarVehicleSpawnInfo)                   SpawnInfo                                                   OFFSET(getStruct<T>, {0x2AD0, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnDelMarVehicleSpawned                                      OFFSET(getStruct<T>, {0x2AE0, 16, 0, 0})
+	DMember(bool)                                      bAllowExitingVehicle                                        OFFSET(get<bool>, {0x2AF0, 1, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleTeleportEntered                                    OFFSET(getStruct<T>, {0x2AF8, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleTeleportExit                                       OFFSET(getStruct<T>, {0x2B08, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnVehicleAppliedTeleportRotation                            OFFSET(getStruct<T>, {0x2B18, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnAirFreestyleActivated                                     OFFSET(getStruct<T>, {0x2B28, 16, 0, 0})
+	SMember(FMulticastInlineDelegate)                  OnAirFreestyleDeactivated                                   OFFSET(getStruct<T>, {0x2B38, 16, 0, 0})
+	CMember(class ADelMarAudioController*)             CachedVehicleAudioController                                OFFSET(get<T>, {0x2B50, 8, 0, 0})
+	DMember(bool)                                      bVehicleCollisionsEnabled                                   OFFSET(get<bool>, {0x2B58, 1, 0, 0})
+	DMember(bool)                                      bPawnCollisionsEnabled                                      OFFSET(get<bool>, {0x2B59, 1, 0, 0})
+	DMember(bool)                                      bUsePredictiveInterpolation                                 OFFSET(get<bool>, {0x2B68, 1, 0, 0})
+	CMember(class UPostProcessComponent*)              PostProcessComp                                             OFFSET(get<T>, {0x2B70, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicle.VehicleHasTag
-	// bool VehicleHasTag(FGameplayTag InTag);                                                                                  // [0xb7cef38] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool VehicleHasTag(FGameplayTag InTag);                                                                                  // [0xba3cab4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.TryGetFortClientSettings
-	// void TryGetFortClientSettings();                                                                                         // [0xb7cef24] Final|Native|Protected 
+	// void TryGetFortClientSettings();                                                                                         // [0xba3caa0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.TeleportVehicleExited
-	// void TeleportVehicleExited();                                                                                            // [0x846d5f4] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void TeleportVehicleExited();                                                                                            // [0x84053a4] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/DelMarCore.DelMarVehicle.TeleportVehicleEntered
-	// void TeleportVehicleEntered();                                                                                           // [0x9492990] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void TeleportVehicleEntered();                                                                                           // [0x9578f94] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/DelMarCore.DelMarVehicle.SetVehicleMesh
-	// void SetVehicleMesh(class USkeletalMesh* NewMesh, class UPhysicsAsset* PhysicsAsset);                                    // [0xb7cee58] Native|Public|BlueprintCallable 
+	// void SetVehicleMesh(class USkeletalMesh* NewMesh, class UPhysicsAsset* PhysicsAsset);                                    // [0xba3c958] Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarVehicle.SetTeleportRotation
-	// void SetTeleportRotation(FRotator DestRotation);                                                                         // [0xb7ced28] Net|NetReliableNative|Event|Public|HasDefaults|NetClient 
+	// void SetTeleportRotation(FRotator DestRotation);                                                                         // [0xba3c898] Net|NetReliableNative|Event|Public|HasDefaults|NetClient 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerTeleportVehicleExited
-	// void ServerTeleportVehicleExited();                                                                                      // [0x956e0b4] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerTeleportVehicleExited();                                                                                      // [0x965cc04] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerTeleportVehicleEntered
-	// void ServerTeleportVehicleEntered();                                                                                     // [0x956b278] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerTeleportVehicleEntered();                                                                                     // [0x9659fcc] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerSetLocalDriverHasReplicatedTheVehicle
-	// void ServerSetLocalDriverHasReplicatedTheVehicle(bool bNewValue);                                                        // [0xb7ceca4] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerSetLocalDriverHasReplicatedTheVehicle(bool bNewValue);                                                        // [0xba3c7d0] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerRemoveReplicatedGameplayTags
-	// void ServerRemoveReplicatedGameplayTags(FGameplayTagContainer InTags);                                                   // [0xb7ceb58] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerRemoveReplicatedGameplayTags(FGameplayTagContainer InTags);                                                   // [0xba3c6e0] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerRemoveReplicatedGameplayTag
-	// void ServerRemoveReplicatedGameplayTag(FGameplayTag InTag);                                                              // [0xb7cea24] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerRemoveReplicatedGameplayTag(FGameplayTag InTag);                                                              // [0xba3c61c] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerNotifyTurboActivated
-	// void ServerNotifyTurboActivated();                                                                                       // [0x955e698] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerNotifyTurboActivated();                                                                                       // [0x964c518] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerDemolishVehicle
-	// void ServerDemolishVehicle(FGameplayTag InCausedByTag);                                                                  // [0xb7ce8f0] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerDemolishVehicle(FGameplayTag InCausedByTag);                                                                  // [0xba3c558] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerAddReplicatedGameplayTags
-	// void ServerAddReplicatedGameplayTags(FGameplayTagContainer InTags);                                                      // [0xb7ce7a4] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerAddReplicatedGameplayTags(FGameplayTagContainer InTags);                                                      // [0xba3c468] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarVehicle.ServerAddReplicatedGameplayTag
-	// void ServerAddReplicatedGameplayTag(FGameplayTag InTag);                                                                 // [0xb7ce670] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerAddReplicatedGameplayTag(FGameplayTag InTag);                                                                 // [0xba3c3a4] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarVehicle.ResetTrackPosition
-	// void ResetTrackPosition(class ADelMarTrackBase* Track, int32_t TrackSegment);                                            // [0xb7ce5a8] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void ResetTrackPosition(class ADelMarTrackBase* Track, int32_t TrackSegment);                                            // [0xba3c260] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/DelMarCore.DelMarVehicle.ResetRunPressed
-	// void ResetRunPressed();                                                                                                  // [0xb7ce590] Net|NetReliableNative|Event|Public|NetServer 
+	// void ResetRunPressed();                                                                                                  // [0xba3c248] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarVehicle.OnRep_TurboCharges
-	// void OnRep_TurboCharges();                                                                                               // [0xb7cdec4] Final|Native|Public  
+	// void OnRep_TurboCharges();                                                                                               // [0xba3bb40] Final|Native|Public  
 	// Function /Script/DelMarCore.DelMarVehicle.OnRep_StartlineBoostData
-	// void OnRep_StartlineBoostData();                                                                                         // [0xb7cdeac] Final|Native|Private 
+	// void OnRep_StartlineBoostData();                                                                                         // [0xba3bb28] Final|Native|Private 
 	// Function /Script/DelMarCore.DelMarVehicle.OnRep_SpawnInfo
-	// void OnRep_SpawnInfo();                                                                                                  // [0xb7cde98] Final|Native|Private 
+	// void OnRep_SpawnInfo();                                                                                                  // [0xba3bb14] Final|Native|Private 
 	// Function /Script/DelMarCore.DelMarVehicle.OnRep_bVehicleCollisionsEnabled
-	// void OnRep_bVehicleCollisionsEnabled();                                                                                  // [0xb7cdfbc] Final|Native|Protected 
+	// void OnRep_bVehicleCollisionsEnabled();                                                                                  // [0xba3bb74] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.OnRep_bPawnCollisionsEnabled
-	// void OnRep_bPawnCollisionsEnabled();                                                                                     // [0xb7cdfa4] Final|Native|Protected 
+	// void OnRep_bPawnCollisionsEnabled();                                                                                     // [0xba3bb5c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.IsWheelOnGround
-	// bool IsWheelOnGround(EDelMarVehicleWheelIndex WheelIndex);                                                               // [0xb7cda60] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsWheelOnGround(EDelMarVehicleWheelIndex WheelIndex);                                                               // [0xba3b75c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.IsRespawnEffectSignificant
-	// bool IsRespawnEffectSignificant();                                                                                       // [0xb7cda2c] Final|Native|Private|BlueprintCallable|Const 
+	// bool IsRespawnEffectSignificant();                                                                                       // [0xba3b728] Final|Native|Private|BlueprintCallable|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.IsInvulnerabilityActive
-	// bool IsInvulnerabilityActive();                                                                                          // [0xb7cd9fc] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInvulnerabilityActive();                                                                                          // [0xba3b6f8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.HandleThrottleToggleChanged
-	// void HandleThrottleToggleChanged();                                                                                      // [0xb7cd9e8] Final|Native|Protected 
+	// void HandleThrottleToggleChanged();                                                                                      // [0xba3b6e4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.HandleThrottleDeadzoneChanged
-	// void HandleThrottleDeadzoneChanged();                                                                                    // [0xb7cd9d4] Final|Native|Protected 
+	// void HandleThrottleDeadzoneChanged();                                                                                    // [0xba3b6d0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.HandleSteerDeadzoneChanged
-	// void HandleSteerDeadzoneChanged();                                                                                       // [0xb7cd9c0] Final|Native|Protected 
+	// void HandleSteerDeadzoneChanged();                                                                                       // [0xba3b6bc] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.HandlePitchDeadzoneChanged
-	// void HandlePitchDeadzoneChanged();                                                                                       // [0xb7cd9ac] Final|Native|Protected 
+	// void HandlePitchDeadzoneChanged();                                                                                       // [0xba3b6a8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.HandleOnVehicleCosmeticsFinished
-	// void HandleOnVehicleCosmeticsFinished();                                                                                 // [0xb7cd998] Final|Native|Protected 
+	// void HandleOnVehicleCosmeticsFinished();                                                                                 // [0xba3b694] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.HandleAerialThrottleBrakeChanged
-	// void HandleAerialThrottleBrakeChanged();                                                                                 // [0xb7cd904] Final|Native|Protected 
+	// void HandleAerialThrottleBrakeChanged();                                                                                 // [0xba3b5bc] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicle.GetTrackPositionComponent
-	// class UDelMarTrackPositionComponent* GetTrackPositionComponent();                                                        // [0xb7cd8d4] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarTrackPositionComponent* GetTrackPositionComponent();                                                        // [0xba3b58c] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.GetRaceManager
-	// class ADelMarRaceManager* GetRaceManager();                                                                              // [0xb7cd8ac] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarRaceManager* GetRaceManager();                                                                              // [0xba3b564] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.GetNewestStackActiveDurationFromSource
-	// float GetNewestStackActiveDurationFromSource(FGameplayTag Source);                                                       // [0xb7cd76c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetNewestStackActiveDurationFromSource(FGameplayTag Source);                                                       // [0xba3b494] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.GetCosmeticComponent
-	// class UDelMarVehicleCosmeticComponent* GetCosmeticComponent();                                                           // [0xb7cd73c] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarVehicleCosmeticComponent* GetCosmeticComponent();                                                           // [0xba3b3f8] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.GetAudioComponentGroup
-	// class UDelMarAudioComponentGroup* GetAudioComponentGroup();                                                              // [0xb7cd51c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarAudioComponentGroup* GetAudioComponentGroup();                                                              // [0xba3b0d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicle.DemolishVehicle
-	// void DemolishVehicle(FGameplayTag InCausedByTag);                                                                        // [0xb7cd3e8] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void DemolishVehicle(FGameplayTag InCausedByTag);                                                                        // [0xba3af3c] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/DelMarCore.DelMarVehicle.AddWorldBonusSpeedStack
-	// void AddWorldBonusSpeedStack(FDelMarWorldBonusSpeedStack& BonusSpeedStack);                                              // [0xb7cd33c] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddWorldBonusSpeedStack(FDelMarWorldBonusSpeedStack& BonusSpeedStack);                                              // [0xba3ae90] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarVehicle.AddTargetSpeedAdjustment
-	// void AddTargetSpeedAdjustment(FName Source, float Value);                                                                // [0xb7cd274] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
+	// void AddTargetSpeedAdjustment(FName Source, float Value);                                                                // [0xba3ad4c] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleNetworkPhysicsComponent
@@ -2788,9 +2854,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleNetworkPhysicsComponent.OnRep_ReplicatedState
-	// void OnRep_ReplicatedState(FDelMarVehicleReplicatedState& PrevReplicatedState);                                          // [0xb6f0194] Final|Native|Protected|HasOutParms 
+	// void OnRep_ReplicatedState(FDelMarVehicleReplicatedState& PrevReplicatedState);                                          // [0xb969b44] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarVehicleNetworkPhysicsComponent.OnPhysicsStateChanged
-	// void OnPhysicsStateChanged(class UPrimitiveComponent* ChangedComponent, EComponentPhysicsStateChange StateChange);       // [0xb6f00d0] Final|Native|Protected 
+	// void OnPhysicsStateChanged(class UPrimitiveComponent* ChangedComponent, EComponentPhysicsStateChange StateChange);       // [0xb969a04] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleStateTagManagerComponent
@@ -2807,27 +2873,27 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleWorldBonusSpeedStackLost
-	// void HandleWorldBonusSpeedStackLost(FGameplayTag Source, int32_t Stacks);                                                // [0xb6efcb8] Final|Native|Protected 
+	// void HandleWorldBonusSpeedStackLost(FGameplayTag Source, int32_t Stacks);                                                // [0xb96978c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleWorldBonusSpeedStackGained
-	// void HandleWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                              // [0xb6ef8a0] Final|Native|Protected 
+	// void HandleWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                              // [0xb969514] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleTurboDeactivated
-	// void HandleTurboDeactivated();                                                                                           // [0xb6ef638] Final|Native|Protected 
+	// void HandleTurboDeactivated();                                                                                           // [0xb969130] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleTurboChargeUsed
-	// void HandleTurboChargeUsed();                                                                                            // [0xb6ef610] Final|Native|Protected 
+	// void HandleTurboChargeUsed();                                                                                            // [0xb969108] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleDriftDeactivated
-	// void HandleDriftDeactivated();                                                                                           // [0xb6eec64] Final|Native|Protected 
+	// void HandleDriftDeactivated();                                                                                           // [0xb968538] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleDriftBoostDeactivated
-	// void HandleDriftBoostDeactivated();                                                                                      // [0xb6eec3c] Final|Native|Protected 
+	// void HandleDriftBoostDeactivated();                                                                                      // [0xb968510] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleDriftBoostActivated
-	// void HandleDriftBoostActivated();                                                                                        // [0xb6eec14] Final|Native|Protected 
+	// void HandleDriftBoostActivated();                                                                                        // [0xb9684e8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleDriftActivated
-	// void HandleDriftActivated();                                                                                             // [0xb6eec00] Final|Native|Protected 
+	// void HandleDriftActivated();                                                                                             // [0xb9684d4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleDraftDeactivated
-	// void HandleDraftDeactivated();                                                                                           // [0xb6eebec] Final|Native|Protected 
+	// void HandleDraftDeactivated();                                                                                           // [0xb9684c0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleDraftActivated
-	// void HandleDraftActivated();                                                                                             // [0xb6eebc4] Final|Native|Protected 
+	// void HandleDraftActivated();                                                                                             // [0xb968498] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleStateTagManagerComponent.HandleAnyWheelsOnGroundChanged
-	// void HandleAnyWheelsOnGroundChanged(TScriptInterface<Class>& Vehicle, bool bWheelsOnGround);                             // [0xb6ee8bc] Final|Native|Protected|HasOutParms 
+	// void HandleAnyWheelsOnGroundChanged(TScriptInterface<Class>& Vehicle, bool bWheelsOnGround);                             // [0xb968150] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleVerbComponent
@@ -2842,41 +2908,41 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleWorldBonusSpeedStackLost
-	// void HandleWorldBonusSpeedStackLost(FGameplayTag Source, int32_t Stacks);                                                // [0xb6efec4] Final|Native|Protected 
+	// void HandleWorldBonusSpeedStackLost(FGameplayTag Source, int32_t Stacks);                                                // [0xb9698c8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleWorldBonusSpeedStackGained
-	// void HandleWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                              // [0xb6efaac] Final|Native|Protected 
+	// void HandleWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                              // [0xb969650] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleVehicleLanded
-	// void HandleVehicleLanded(float LandingForce, bool bLandedKickflip);                                                      // [0xb6ef6e0] Final|Native|Protected 
+	// void HandleVehicleLanded(float LandingForce, bool bLandedKickflip);                                                      // [0xb969218] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleUnderthrustPercentChanged
-	// void HandleUnderthrustPercentChanged(float PercentageUnderthrustRemaining);                                              // [0xb6ef660] Final|Native|Protected 
+	// void HandleUnderthrustPercentChanged(float PercentageUnderthrustRemaining);                                              // [0xb969158] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleUnderthrustDeactivated
-	// void HandleUnderthrustDeactivated();                                                                                     // [0xb6ef64c] Final|Native|Protected 
+	// void HandleUnderthrustDeactivated();                                                                                     // [0xb969144] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleTurboChargeUsed
-	// void HandleTurboChargeUsed();                                                                                            // [0xb6ef624] Final|Native|Protected 
+	// void HandleTurboChargeUsed();                                                                                            // [0xb96911c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleTurboBonusZoneChanged
-	// void HandleTurboBonusZoneChanged(EDelMarTurboZoneState BonusZoneState);                                                  // [0xb6ef470] Final|Native|Protected 
+	// void HandleTurboBonusZoneChanged(EDelMarTurboZoneState BonusZoneState);                                                  // [0xb968f28] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleStartlineBoostActivated
-	// void HandleStartlineBoostActivated(float BoostPercent);                                                                  // [0xb6ef3f0] Final|Native|Protected 
+	// void HandleStartlineBoostActivated(float BoostPercent);                                                                  // [0xb968e64] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleSpeedometerSpeedChanged
-	// void HandleSpeedometerSpeedChanged(float UpdatedSpeedometerSpeed);                                                       // [0xb6ef370] Final|Native|Protected 
+	// void HandleSpeedometerSpeedChanged(float UpdatedSpeedometerSpeed);                                                       // [0xb968da0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandlePotentialDriftBoostChanged
-	// void HandlePotentialDriftBoostChanged(float Percent);                                                                    // [0xb6ef2e4] Final|Native|Protected 
+	// void HandlePotentialDriftBoostChanged(float Percent);                                                                    // [0xb968cd4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleKickflipped
-	// void HandleKickflipped(bool bLeft);                                                                                      // [0xb6eed2c] Final|Native|Protected 
+	// void HandleKickflipped(bool bLeft);                                                                                      // [0xb968640] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleJumpActivated
-	// void HandleJumpActivated();                                                                                              // [0xb6eed18] Final|Native|Protected 
+	// void HandleJumpActivated();                                                                                              // [0xb96862c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleDriftDurationChanged
-	// void HandleDriftDurationChanged(float duration);                                                                         // [0xb6eec8c] Final|Native|Protected 
+	// void HandleDriftDurationChanged(float duration);                                                                         // [0xb968560] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleDriftDeactivated
-	// void HandleDriftDeactivated();                                                                                           // [0xb6eec78] Final|Native|Protected 
+	// void HandleDriftDeactivated();                                                                                           // [0xb96854c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleDriftBoostDeactivated
-	// void HandleDriftBoostDeactivated();                                                                                      // [0xb6eec50] Final|Native|Protected 
+	// void HandleDriftBoostDeactivated();                                                                                      // [0xb968524] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleDriftBoostActivated
-	// void HandleDriftBoostActivated();                                                                                        // [0xb6eec28] Final|Native|Protected 
+	// void HandleDriftBoostActivated();                                                                                        // [0xb9684fc] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleDraftActivated
-	// void HandleDraftActivated();                                                                                             // [0xb6eebd8] Final|Native|Protected 
+	// void HandleDraftActivated();                                                                                             // [0xb9684ac] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleVerbComponent.HandleAnyWheelsOnGroundChanged
-	// void HandleAnyWheelsOnGroundChanged(TScriptInterface<Class>& Vehicle, bool bWheelsOnGround);                             // [0xb6eea40] Final|Native|Protected|HasOutParms 
+	// void HandleAnyWheelsOnGroundChanged(TScriptInterface<Class>& Vehicle, bool bWheelsOnGround);                             // [0xb9682f4] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.GameFeatureAction_MergeRankedDisplayData
@@ -2903,22 +2969,22 @@ public:
 };
 
 /// Class /Script/DelMarCore.DelMarAudioComponentGroup
-/// Size: 0x0010 (0x000440 - 0x000450)
+/// Size: 0x0010 (0x0003D0 - 0x0003E0)
 class UDelMarAudioComponentGroup : public UAudioComponentGroup
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1104;
+	static inline constexpr uint64_t __MDKClassSize = 992;
 
 public:
-	CMember(class UDelMarAudioMixModifierExtension*)   MixModifierExtension                                        OFFSET(get<T>, {0x438, 8, 0, 0})
-	CMember(class UDelMarSubmixSendExtension*)         SubmixSendExtension                                         OFFSET(get<T>, {0x440, 8, 0, 0})
+	CMember(class UDelMarAudioMixModifierExtension*)   MixModifierExtension                                        OFFSET(get<T>, {0x3C8, 8, 0, 0})
+	CMember(class UDelMarSubmixSendExtension*)         SubmixSendExtension                                         OFFSET(get<T>, {0x3D0, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarAudioComponentGroup.GetSubmixSends
-	// class UDelMarSubmixSendExtension* GetSubmixSends();                                                                      // [0x8839f54] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarSubmixSendExtension* GetSubmixSends();                                                                      // [0xa38e63c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarAudioComponentGroup.GetMixModifiers
-	// class UDelMarAudioMixModifierExtension* GetMixModifiers();                                                               // [0xb70769c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarAudioMixModifierExtension* GetMixModifiers();                                                               // [0x6f75b74] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarAudioController
@@ -2946,13 +3012,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarAudioController.PlaySound
-	// class UAudioComponent* PlaySound(class USoundBase* sound, float InFadeInTime, float InTargetVolume, bool bDisableAttenuation, EAudioFaderCurve InFadeCurve); // [0xb70806c] Final|Native|Public|BlueprintCallable 
+	// class UAudioComponent* PlaySound(class USoundBase* sound, float InFadeInTime, float InTargetVolume, bool bDisableAttenuation, EAudioFaderCurve InFadeCurve); // [0xb984394] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarAudioController.IsVirtualized
-	// bool IsVirtualized();                                                                                                    // [0xb70804c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVirtualized();                                                                                                    // [0xb984374] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarAudioController.HandleVehicleDemolished
-	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb707e78] Final|Native|Public  
+	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb9841d0] Final|Native|Public  
 	// Function /Script/DelMarCore.DelMarAudioController.GetComponentGroup
-	// class UDelMarAudioComponentGroup* GetComponentGroup();                                                                   // [0xa3fcbfc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDelMarAudioComponentGroup* GetComponentGroup();                                                                   // [0xa5d65d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarAudioMixModifierExtension
@@ -2967,11 +3033,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarAudioMixModifierExtension.RemoveMixGroupByName
-	// void RemoveMixGroupByName(FName InName);                                                                                 // [0xb7083b4] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void RemoveMixGroupByName(FName InName);                                                                                 // [0xb9848a8] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarAudioMixModifierExtension.RemoveMixGroup
-	// void RemoveMixGroup(FAudioMixModifierGroup& InMixModifier);                                                              // [0xb708314] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
+	// void RemoveMixGroup(FAudioMixModifierGroup& InMixModifier);                                                              // [0xb984808] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarAudioMixModifierExtension.AddMixGroup
-	// void AddMixGroup(FAudioMixModifierGroup& InMixModifier);                                                                 // [0xb706d40] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddMixGroup(FAudioMixModifierGroup& InMixModifier);                                                                 // [0xb982cbc] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarAudioReverbComponent
@@ -3008,9 +3074,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarSubmixSendExtension.SetSend
-	// void SetSend(class USoundSubmixBase* InSubmix, float InLevel, bool bTrackCount);                                         // [0xb70874c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetSend(class USoundSubmixBase* InSubmix, float InLevel, bool bTrackCount);                                         // [0xb984d40] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarSubmixSendExtension.RemoveSend
-	// void RemoveSend(class USoundSubmixBase* InSubmix);                                                                       // [0xb708438] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void RemoveSend(class USoundSubmixBase* InSubmix);                                                                       // [0xb98496c] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarNuxBlueprintFunctionLibrary
@@ -3025,9 +3091,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarNuxBlueprintFunctionLibrary.GetCurrentRankedInfoForVehicle
-	// FDelMarRankedInfo GetCurrentRankedInfoForVehicle(class ADelMarVehicle* Vehicle);                                         // [0xb707474] Final|Native|Static|Public|BlueprintCallable 
+	// FDelMarRankedInfo GetCurrentRankedInfoForVehicle(class ADelMarVehicle* Vehicle);                                         // [0xb983638] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarNuxBlueprintFunctionLibrary.GetCurrentLapNumber
-	// int32_t GetCurrentLapNumber(class ADelMarVehicle* Vehicle);                                                              // [0xb7073ac] Final|Native|Static|Public|BlueprintCallable 
+	// int32_t GetCurrentLapNumber(class ADelMarVehicle* Vehicle);                                                              // [0xb98352c] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarCheckpoint
@@ -3058,37 +3124,37 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCheckpoint.UpdateCheckpointMesh
-	// void UpdateCheckpointMesh(EDelMarCheckpointMeshType MeshType);                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void UpdateCheckpointMesh(EDelMarCheckpointMeshType MeshType);                                                           // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCheckpoint.OnTriggered
-	// void OnTriggered(class ADelMarVehicle* InDelMarVehicle);                                                                 // [0x889a2c4] Native|Public|BlueprintCallable 
+	// void OnTriggered(class ADelMarVehicle* InDelMarVehicle);                                                                 // [0x884e2d4] Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarCheckpoint.IsAttachedToTrack
-	// bool IsAttachedToTrack();                                                                                                // [0xb707fa8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAttachedToTrack();                                                                                                // [0xb984290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarCheckpoint.HandlePawnEnteredVehicle
-	// void HandlePawnEnteredVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* Pawn, int32_t SeatIndex);               // [0xb707b60] Final|Native|Protected|HasOutParms 
+	// void HandlePawnEnteredVehicle(TScriptInterface<Class>& Vehicle, class AFortPawn* Pawn, int32_t SeatIndex);               // [0xb983f48] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarCheckpoint.GetSpawnTransform
-	// FTransform GetSpawnTransform();                                                                                          // [0xb707924] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FTransform GetSpawnTransform();                                                                                          // [0xb983c54] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarCheckpoint.GetNearestTrackData
-	// FCheckpointTrackDistance GetNearestTrackData();                                                                          // [0xb7076b4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FCheckpointTrackDistance GetNearestTrackData();                                                                          // [0xb983924] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarCheckpoint.GetCheckpointMeshType
-	// EDelMarCheckpointMeshType GetCheckpointMeshType();                                                                       // [0xb7072e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDelMarCheckpointMeshType GetCheckpointMeshType();                                                                       // [0xb983428] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarCheckpoint.GetAttachedToTrack
-	// class ADelMarTrack* GetAttachedToTrack();                                                                                // [0xb7072c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarTrack* GetAttachedToTrack();                                                                                // [0xb983404] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarCheckpoint.ClientSetCheckpointInactive
-	// void ClientSetCheckpointInactive();                                                                                      // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClientSetCheckpointInactive();                                                                                      // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCheckpoint.ClientSetCheckpointActive
-	// void ClientSetCheckpointActive(int32_t CurrentLap, int32_t TotalLaps);                                                   // [0x211c0a0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClientSetCheckpointActive(int32_t CurrentLap, int32_t TotalLaps);                                                   // [0x2047e54] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCheckpoint.BP_RaceReset
-	// void BP_RaceReset();                                                                                                     // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_RaceReset();                                                                                                     // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCheckpoint.BP_RaceFinished
-	// void BP_RaceFinished();                                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_RaceFinished();                                                                                                  // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCheckpoint.BP_LapFinished
-	// void BP_LapFinished(int32_t CompletedLap, int32_t CurrentLap, int32_t TotalLaps);                                        // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_LapFinished(int32_t CompletedLap, int32_t CurrentLap, int32_t TotalLaps);                                        // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCheckpoint.BP_FirstPlaceChanged
-	// void BP_FirstPlaceChanged(bool bValidPrevFirstPlace);                                                                    // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_FirstPlaceChanged(bool bValidPrevFirstPlace);                                                                    // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCheckpoint.BP_DeactivateRift
-	// void BP_DeactivateRift();                                                                                                // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_DeactivateRift();                                                                                                // [0x2047e54] Event|Public|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCheckpoint.BP_ActivateRift
-	// void BP_ActivateRift();                                                                                                  // [0x211c0a0] Event|Public|BlueprintEvent 
+	// void BP_ActivateRift();                                                                                                  // [0x2047e54] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DelMarCore.FortClientPilot_QuickSmokeDelMar
@@ -3113,29 +3179,29 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.SetDelMarTutorialHint
-	// void SetDelMarTutorialHint(class APlayerController* PlayerController, FDelMarEvent_SetTutorialHint& Event);              // [0xb70863c] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetDelMarTutorialHint(class APlayerController* PlayerController, FDelMarEvent_SetTutorialHint& Event);              // [0xb984bf0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.SetDelMarControlsText
-	// void SetDelMarControlsText(class APlayerController* PlayerController, FDelMarEvent_SetControlsText& Event);              // [0xb7084f4] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetDelMarControlsText(class APlayerController* PlayerController, FDelMarEvent_SetControlsText& Event);              // [0xb984a68] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.IsDelMarExperience
-	// bool IsDelMarExperience(bool bEnableCaching);                                                                            // [0xb707fcc] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsDelMarExperience(bool bEnableCaching);                                                                            // [0xb9842b4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.GetTimerDeltaFromServerTime
-	// double GetTimerDeltaFromServerTime(double TimestampSeconds, EDelMarTimerDirection Direction, bool bCapAtZero, bool& bIsPositive, class UObject* WorldContextObject); // [0xb707980] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// double GetTimerDeltaFromServerTime(double TimestampSeconds, EDelMarTimerDirection Direction, bool bCapAtZero, bool& bIsPositive, class UObject* WorldContextObject); // [0xb983cb0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.GetPrimaryPlayerState
-	// class AFortPlayerState* GetPrimaryPlayerState(class UObject* WorldContextObject);                                        // [0xb7078a4] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class AFortPlayerState* GetPrimaryPlayerState(class UObject* WorldContextObject);                                        // [0xb983b94] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.GetPrimaryPlayerController
-	// class AFortPlayerController* GetPrimaryPlayerController(class UObject* WorldContextObject);                              // [0xb7077e8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class AFortPlayerController* GetPrimaryPlayerController(class UObject* WorldContextObject);                              // [0xb983a94] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.GetNetModel
-	// EDelMarNetModel GetNetModel(class UObject* WorldContextObject);                                                          // [0xb7076d0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// EDelMarNetModel GetNetModel(class UObject* WorldContextObject);                                                          // [0xb983940] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.GetDelMarVehicle
-	// class ADelMarVehicle* GetDelMarVehicle(class APlayerController* PlayerController);                                       // [0xb7075a0] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ADelMarVehicle* GetDelMarVehicle(class APlayerController* PlayerController);                                       // [0xb9837e8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.GetDelMarPlayspace
-	// class ADelMarPlayspace* GetDelMarPlayspace(class UObject* WorldContextObject);                                           // [0xb707514] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
+	// class ADelMarPlayspace* GetDelMarPlayspace(class UObject* WorldContextObject);                                           // [0xb983718] Final|RequiredAPI|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.GetClientWorldTimeSeconds
-	// double GetClientWorldTimeSeconds(class UObject* WorldContextObject);                                                     // [0xb707308] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// double GetClientWorldTimeSeconds(class UObject* WorldContextObject);                                                     // [0xb983448] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.DelMarFormatTime
-	// FText DelMarFormatTime(double TimeSeconds, bool bIncludeMilliseconds);                                                   // [0xb706fb8] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FText DelMarFormatTime(double TimeSeconds, bool bIncludeMilliseconds);                                                   // [0xb982f0c] Final|RequiredAPI|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarCore.DelMarBlueprintLibrary.BP_KillAndRespawnVehicle
-	// bool BP_KillAndRespawnVehicle(class AController* Controller, FGameplayTag CausedByTag);                                  // [0xb706ddc] Final|Native|Static|Public|BlueprintCallable 
+	// bool BP_KillAndRespawnVehicle(class AController* Controller, FGameplayTag CausedByTag);                                  // [0xb982d58] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarCheatManager
@@ -3151,185 +3217,185 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarUsePredictiveInterpolation
-	// void DelMarUsePredictiveInterpolation(bool bEnabled, bool bEveryOther);                                                  // [0xa436e38] Final|Exec|Native|Protected 
+	// void DelMarUsePredictiveInterpolation(bool bEnabled, bool bEveryOther);                                                  // [0xa605c08] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarStartTrackScrubberWithViewTarget
-	// void DelMarStartTrackScrubberWithViewTarget(bool bRunCsvProfilerDuringScrub);                                            // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected|Const 
+	// void DelMarStartTrackScrubberWithViewTarget(bool bRunCsvProfilerDuringScrub);                                            // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected|Const 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarStartRace
-	// void DelMarStartRace();                                                                                                  // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarStartRace();                                                                                                  // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarStartQueuedAutoInput
-	// void DelMarStartQueuedAutoInput();                                                                                       // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarStartQueuedAutoInput();                                                                                       // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarStartFollowTrack
-	// void DelMarStartFollowTrack(float Throttle);                                                                             // [0x6456a9c] Final|Exec|Native|Protected 
+	// void DelMarStartFollowTrack(float Throttle);                                                                             // [0x6189d50] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSpectate
-	// void DelMarSpectate();                                                                                                   // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSpectate();                                                                                                   // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSpawnVehicleForSelf
-	// void DelMarSpawnVehicleForSelf();                                                                                        // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSpawnVehicleForSelf();                                                                                        // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSpawnBotsAtSkillLevel
-	// void DelMarSpawnBotsAtSkillLevel(int32_t NumberOfBotsToSpawn, int32_t SkillLevel);                                       // [0x63b6e18] Final|Exec|Native|Protected 
+	// void DelMarSpawnBotsAtSkillLevel(int32_t NumberOfBotsToSpawn, int32_t SkillLevel);                                       // [0x60dfe58] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSpawnBots
-	// void DelMarSpawnBots(int32_t NumberOfBotsToSpawn);                                                                       // [0x6695f1c] Final|Exec|Native|Protected 
+	// void DelMarSpawnBots(int32_t NumberOfBotsToSpawn);                                                                       // [0x63da070] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSkipWaitingForPlayers
-	// void DelMarSkipWaitingForPlayers();                                                                                      // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSkipWaitingForPlayers();                                                                                      // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetVerticalKickflipInverted
-	// void DelMarSetVerticalKickflipInverted(bool InbVerticalKickflipInverted);                                                // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetVerticalKickflipInverted(bool InbVerticalKickflipInverted);                                                // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetVehicleCollisionsOverrideGlobal
-	// void DelMarSetVehicleCollisionsOverrideGlobal(EDelMarVehicleCollisionOverrideSetting NewValue);                          // [0x8106064] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetVehicleCollisionsOverrideGlobal(EDelMarVehicleCollisionOverrideSetting NewValue);                          // [0x809f754] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetVehicleCollisionsOverrideForSelf
-	// void DelMarSetVehicleCollisionsOverrideForSelf(EDelMarVehicleCollisionOverrideSetting NewValue);                         // [0x8106064] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetVehicleCollisionsOverrideForSelf(EDelMarVehicleCollisionOverrideSetting NewValue);                         // [0x809f754] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetTutorialSection
-	// void DelMarSetTutorialSection(int32_t Index);                                                                            // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetTutorialSection(int32_t Index);                                                                            // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetStrafeEnabled
-	// void DelMarSetStrafeEnabled(bool bEnabled);                                                                              // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetStrafeEnabled(bool bEnabled);                                                                              // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetStartlineBoostEnabled
-	// void DelMarSetStartlineBoostEnabled(bool bEnabled);                                                                      // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetStartlineBoostEnabled(bool bEnabled);                                                                      // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetSpawnMode
-	// void DelMarSetSpawnMode(EDelMarRaceSpawnMode SpawnMode);                                                                 // [0x8106064] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetSpawnMode(EDelMarRaceSpawnMode SpawnMode);                                                                 // [0x809f754] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingNumPlayersForPackDistance
-	// void DelMarSetRubberbandingNumPlayersForPackDistance(int32_t InNumPlayersForPackDistance);                               // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingNumPlayersForPackDistance(int32_t InNumPlayersForPackDistance);                               // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingMMR
-	// void DelMarSetRubberbandingMMR(int32_t InMMR);                                                                           // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingMMR(int32_t InMMR);                                                                           // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingMinPackDistance
-	// void DelMarSetRubberbandingMinPackDistance(float InMinPackDistance);                                                     // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingMinPackDistance(float InMinPackDistance);                                                     // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingMinDistanceFromPack
-	// void DelMarSetRubberbandingMinDistanceFromPack(float InMinDistanceFromPack);                                             // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingMinDistanceFromPack(float InMinDistanceFromPack);                                             // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingMaxPackDistanceLostPerSecond
-	// void DelMarSetRubberbandingMaxPackDistanceLostPerSecond(float InMaxPackDistanceLostPerSecond);                           // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingMaxPackDistanceLostPerSecond(float InMaxPackDistanceLostPerSecond);                           // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingMaxPackDistanceGainedPerSecond
-	// void DelMarSetRubberbandingMaxPackDistanceGainedPerSecond(float InMaxPackDistanceGainedPerSecond);                       // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingMaxPackDistanceGainedPerSecond(float InMaxPackDistanceGainedPerSecond);                       // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingMaxPackDistance
-	// void DelMarSetRubberbandingMaxPackDistance(float InMaxPackDistance);                                                     // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingMaxPackDistance(float InMaxPackDistance);                                                     // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingMaxDistanceFromPack
-	// void DelMarSetRubberbandingMaxDistanceFromPack(float InMaxDistanceFromPack);                                             // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingMaxDistanceFromPack(float InMaxDistanceFromPack);                                             // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingMaxBonusSpeedScalar
-	// void DelMarSetRubberbandingMaxBonusSpeedScalar(float InMaxBonusSpeedScalar);                                             // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingMaxBonusSpeedScalar(float InMaxBonusSpeedScalar);                                             // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRubberbandingEnabled
-	// void DelMarSetRubberbandingEnabled(bool bEnabled);                                                                       // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRubberbandingEnabled(bool bEnabled);                                                                       // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRespawnTracesEnabled
-	// void DelMarSetRespawnTracesEnabled(bool bEnabled);                                                                       // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRespawnTracesEnabled(bool bEnabled);                                                                       // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRespawnInvulnerabilitySeconds
-	// void DelMarSetRespawnInvulnerabilitySeconds(float Seconds);                                                              // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRespawnInvulnerabilitySeconds(float Seconds);                                                              // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRespawnInvulnerabilityEnabled
-	// void DelMarSetRespawnInvulnerabilityEnabled(bool bEnabled);                                                              // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRespawnInvulnerabilityEnabled(bool bEnabled);                                                              // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRespawnCollisionProtectionSeconds
-	// void DelMarSetRespawnCollisionProtectionSeconds(float Seconds);                                                          // [0x6456a9c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRespawnCollisionProtectionSeconds(float Seconds);                                                          // [0x6189d50] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetRespawnCollisionProtectionEnabled
-	// void DelMarSetRespawnCollisionProtectionEnabled(bool bEnabled);                                                          // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetRespawnCollisionProtectionEnabled(bool bEnabled);                                                          // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetReplicatedTagEnabledOnSelf
-	// void DelMarSetReplicatedTagEnabledOnSelf(FString InputTag, bool bEnabled);                                               // [0x89e88ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetReplicatedTagEnabledOnSelf(FString InputTag, bool bEnabled);                                               // [0x89c0c34] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetLoadingScreenVisibility
-	// void DelMarSetLoadingScreenVisibility(bool bShouldBeVisible);                                                            // [0xb707200] Final|Exec|Native|Protected 
+	// void DelMarSetLoadingScreenVisibility(bool bShouldBeVisible);                                                            // [0xb983300] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetLapTotal
-	// void DelMarSetLapTotal(int32_t NewTotal);                                                                                // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetLapTotal(int32_t NewTotal);                                                                                // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetLap
-	// void DelMarSetLap(int32_t LapNum);                                                                                       // [0x6695f1c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetLap(int32_t LapNum);                                                                                       // [0x63da070] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetInvertSteerMethod
-	// void DelMarSetInvertSteerMethod(EDelMarInvertSteerMethod InInvertSteerMethod);                                           // [0x8106064] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetInvertSteerMethod(EDelMarInvertSteerMethod InInvertSteerMethod);                                           // [0x809f754] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetInputMappingContextEnabled
-	// void DelMarSetInputMappingContextEnabled(FString InputTag, bool bEnableInput);                                           // [0x89e88ec] Final|Exec|Native|Protected 
+	// void DelMarSetInputMappingContextEnabled(FString InputTag, bool bEnableInput);                                           // [0x89c0c34] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetInfiniteUnderthrustEnabled
-	// void DelMarSetInfiniteUnderthrustEnabled(bool bEnabled);                                                                 // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetInfiniteUnderthrustEnabled(bool bEnabled);                                                                 // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetGlobalInputEnabled
-	// void DelMarSetGlobalInputEnabled(FString InputTag, bool bEnableInput);                                                   // [0x89e88ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetGlobalInputEnabled(FString InputTag, bool bEnableInput);                                                   // [0x89c0c34] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetDraftingEnabled
-	// void DelMarSetDraftingEnabled(bool bEnabled);                                                                            // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetDraftingEnabled(bool bEnabled);                                                                            // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetDemoModeEnabled
-	// void DelMarSetDemoModeEnabled(bool bEnabled);                                                                            // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetDemoModeEnabled(bool bEnabled);                                                                            // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetCollisionDemosEnabled
-	// void DelMarSetCollisionDemosEnabled(bool bEnabled);                                                                      // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetCollisionDemosEnabled(bool bEnabled);                                                                      // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarSetAirFreestyleEnabled
-	// void DelMarSetAirFreestyleEnabled(bool bEnabled);                                                                        // [0x60325ec] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarSetAirFreestyleEnabled(bool bEnabled);                                                                        // [0x5d35ffc] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarReturnToLobby
-	// void DelMarReturnToLobby();                                                                                              // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarReturnToLobby();                                                                                              // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarResumeAllBots
-	// void DelMarResumeAllBots();                                                                                              // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarResumeAllBots();                                                                                              // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarRespawnAtLastCheckpoint_ParallelPath
-	// void DelMarRespawnAtLastCheckpoint_ParallelPath();                                                                       // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarRespawnAtLastCheckpoint_ParallelPath();                                                                       // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarRespawnAtLastCheckpoint
-	// void DelMarRespawnAtLastCheckpoint();                                                                                    // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarRespawnAtLastCheckpoint();                                                                                    // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarResetTutorialSplines
-	// void DelMarResetTutorialSplines();                                                                                       // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarResetTutorialSplines();                                                                                       // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarResetRace
-	// void DelMarResetRace();                                                                                                  // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarResetRace();                                                                                                  // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarResetPreRaceViewTarget
-	// void DelMarResetPreRaceViewTarget();                                                                                     // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarResetPreRaceViewTarget();                                                                                     // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarRenamePlayers
-	// void DelMarRenamePlayers();                                                                                              // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarRenamePlayers();                                                                                              // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarRemoveNumberOfBots
-	// void DelMarRemoveNumberOfBots(int32_t NumberOfBotsToRemove);                                                             // [0x6695f1c] Final|Exec|Native|Protected 
+	// void DelMarRemoveNumberOfBots(int32_t NumberOfBotsToRemove);                                                             // [0x63da070] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarRemoveBotByName
-	// void DelMarRemoveBotByName(FString& BotName);                                                                            // [0x85fa904] Final|Exec|Native|Protected|HasOutParms 
+	// void DelMarRemoveBotByName(FString& BotName);                                                                            // [0x859e374] Final|Exec|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarRemoveAllBots
-	// void DelMarRemoveAllBots();                                                                                              // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarRemoveAllBots();                                                                                              // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarQueueAutoInputThrottle
-	// void DelMarQueueAutoInputThrottle(float Throttle, float duration);                                                       // [0x81068c4] Final|Exec|Native|Protected 
+	// void DelMarQueueAutoInputThrottle(float Throttle, float duration);                                                       // [0x809fc60] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarQueueAutoInputJump
-	// void DelMarQueueAutoInputJump(int32_t Repeat, float Delay);                                                              // [0xb39e64c] Final|Exec|Native|Protected 
+	// void DelMarQueueAutoInputJump(int32_t Repeat, float Delay);                                                              // [0xb5d4738] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarQueueAutoInputDriveThenTurn
-	// void DelMarQueueAutoInputDriveThenTurn(int32_t Repeat, float Throttle, float StraightDuration, float Steer, float TurnDuration); // [0xb7070a4] Final|Exec|Native|Protected 
+	// void DelMarQueueAutoInputDriveThenTurn(int32_t Repeat, float Throttle, float StraightDuration, float Steer, float TurnDuration); // [0xb983074] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarPrintQuestProgress
-	// void DelMarPrintQuestProgress();                                                                                         // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarPrintQuestProgress();                                                                                         // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarPrintLogsToDiagnoseSpinout
-	// void DelMarPrintLogsToDiagnoseSpinout();                                                                                 // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarPrintLogsToDiagnoseSpinout();                                                                                 // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarPrevTutorialSection
-	// void DelMarPrevTutorialSection();                                                                                        // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarPrevTutorialSection();                                                                                        // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarPauseAllBots
-	// void DelMarPauseAllBots();                                                                                               // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarPauseAllBots();                                                                                               // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarNextTutorialSection
-	// void DelMarNextTutorialSection();                                                                                        // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarNextTutorialSection();                                                                                        // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarInitiateReturnToTrackDemoCountdown
-	// void DelMarInitiateReturnToTrackDemoCountdown(float SecondsUntilDemo);                                                   // [0x6456a9c] Final|Exec|Native|Protected 
+	// void DelMarInitiateReturnToTrackDemoCountdown(float SecondsUntilDemo);                                                   // [0x6189d50] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarInitiateMissedCheckpointDemoCountdown
-	// void DelMarInitiateMissedCheckpointDemoCountdown(float SecondsUntilDemo);                                                // [0x6456a9c] Final|Exec|Native|Protected 
+	// void DelMarInitiateMissedCheckpointDemoCountdown(float SecondsUntilDemo);                                                // [0x6189d50] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGrantTurboCharges
-	// void DelMarGrantTurboCharges(float Amount, bool bGrantToEveryone);                                                       // [0x9631518] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarGrantTurboCharges(float Amount, bool bGrantToEveryone);                                                       // [0x9724740] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGrantQuestsInDir
-	// void DelMarGrantQuestsInDir(FString Dir);                                                                                // [0x6860530] Final|Exec|Native|Protected 
+	// void DelMarGrantQuestsInDir(FString Dir);                                                                                // [0x65b05c8] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGiveSelfSomeCompetitiveMMRStats
-	// void DelMarGiveSelfSomeCompetitiveMMRStats(int32_t MyPosition, int32_t TotalNumberOfPlayers, int32_t NumberOfTimesToSendMMRUpdate); // [0x8005c68] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarGiveSelfSomeCompetitiveMMRStats(int32_t MyPosition, int32_t TotalNumberOfPlayers, int32_t NumberOfTimesToSendMMRUpdate); // [0x7a174b4] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGhostStopPlayerRecording
-	// void DelMarGhostStopPlayerRecording();                                                                                   // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarGhostStopPlayerRecording();                                                                                   // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGhostStartPlayerRecording
-	// void DelMarGhostStartPlayerRecording(FString SaveFileName, bool bSaveToFile);                                            // [0x89e88ec] Final|Exec|Native|Protected 
+	// void DelMarGhostStartPlayerRecording(FString SaveFileName, bool bSaveToFile);                                            // [0x89c0c34] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGhostStartPlayerPlayback
-	// void DelMarGhostStartPlayerPlayback();                                                                                   // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarGhostStartPlayerPlayback();                                                                                   // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGhostSetReplayEnabled
-	// void DelMarGhostSetReplayEnabled(bool bEnabled);                                                                         // [0x60325ec] Final|Exec|Native|Protected 
+	// void DelMarGhostSetReplayEnabled(bool bEnabled);                                                                         // [0x5d35ffc] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGhostSetRecordOffPhysics
-	// void DelMarGhostSetRecordOffPhysics(bool bEnabled);                                                                      // [0x60325ec] Final|Exec|Native|Protected 
+	// void DelMarGhostSetRecordOffPhysics(bool bEnabled);                                                                      // [0x5d35ffc] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGhostForcePlayAllTriggers
-	// void DelMarGhostForcePlayAllTriggers();                                                                                  // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarGhostForcePlayAllTriggers();                                                                                  // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarGhostClearPlaybackFile
-	// void DelMarGhostClearPlaybackFile();                                                                                     // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarGhostClearPlaybackFile();                                                                                     // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarForceLoadUEFNIsland
-	// void DelMarForceLoadUEFNIsland(FString IslandCode);                                                                      // [0x6860530] Final|Exec|Native|Protected 
+	// void DelMarForceLoadUEFNIsland(FString IslandCode);                                                                      // [0x65b05c8] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarForceLoadLevel
-	// void DelMarForceLoadLevel(FString LevelName);                                                                            // [0x8c0e6d0] Final|Exec|Native|Protected 
+	// void DelMarForceLoadLevel(FString LevelName);                                                                            // [0x8c1108c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarForceEveryoneToReadyUp
-	// void DelMarForceEveryoneToReadyUp();                                                                                     // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarForceEveryoneToReadyUp();                                                                                     // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarFinishRaceSelf
-	// void DelMarFinishRaceSelf();                                                                                             // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarFinishRaceSelf();                                                                                             // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarFinishRace
-	// void DelMarFinishRace();                                                                                                 // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarFinishRace();                                                                                                 // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarExitVehicle
-	// void DelMarExitVehicle();                                                                                                // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarExitVehicle();                                                                                                // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarEndSpectate
-	// void DelMarEndSpectate();                                                                                                // [0xb706fa4] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarEndSpectate();                                                                                                // [0xb982ef8] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarDestroyTrackScrubbers
-	// void DelMarDestroyTrackScrubbers();                                                                                      // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected|Const 
+	// void DelMarDestroyTrackScrubbers();                                                                                      // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected|Const 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarDemolishSelfWithTag
-	// void DelMarDemolishSelfWithTag(FString DemolishTagString);                                                               // [0x6860530] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarDemolishSelfWithTag(FString DemolishTagString);                                                               // [0x65b05c8] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarDemolishSelf
-	// void DelMarDemolishSelf();                                                                                               // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
+	// void DelMarDemolishSelf();                                                                                               // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarCreateTrackScrubberForProfiling
-	// void DelMarCreateTrackScrubberForProfiling();                                                                            // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Protected|Const 
+	// void DelMarCreateTrackScrubberForProfiling();                                                                            // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Protected|Const 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarClearQueuedAutoInput
-	// void DelMarClearQueuedAutoInput();                                                                                       // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarClearQueuedAutoInput();                                                                                       // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarClearActiveAutoInput
-	// void DelMarClearActiveAutoInput();                                                                                       // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarClearActiveAutoInput();                                                                                       // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarCancelReturnToTrackDemoCountdown
-	// void DelMarCancelReturnToTrackDemoCountdown();                                                                           // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarCancelReturnToTrackDemoCountdown();                                                                           // [0x307d48c] Final|Exec|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCheatManager.DelMarCancelMissedCheckpointDemoCountdown
-	// void DelMarCancelMissedCheckpointDemoCountdown();                                                                        // [0x32e4b44] Final|Exec|Native|Protected 
+	// void DelMarCancelMissedCheckpointDemoCountdown();                                                                        // [0x307d48c] Final|Exec|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarGlobals
@@ -3426,9 +3492,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarStateSequencerFXComponent.HandleEnabledChanged
-	// void HandleEnabledChanged(bool bEnabled);                                                                                // [0xb73ed20] Final|Native|Protected 
+	// void HandleEnabledChanged(bool bEnabled);                                                                                // [0xb9b87e8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarStateSequencerFXComponent.HandleCurrentStateChanged
-	// void HandleCurrentStateChanged(FGameplayTag NewState);                                                                   // [0xb73ebf0] Final|Native|Protected 
+	// void HandleCurrentStateChanged(FGameplayTag NewState);                                                                   // [0xb9b8728] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarTimeDelayedStateSequencer
@@ -3451,32 +3517,33 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarTimeDelayedStateSequencer.SetEnabled
-	// void SetEnabled(bool bEnabled);                                                                                          // [0xb73fb54] Final|Native|Public|BlueprintCallable 
+	// void SetEnabled(bool bEnabled);                                                                                          // [0xb9b93ec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTimeDelayedStateSequencer.OnRep_CurrentStateIndex
-	// void OnRep_CurrentStateIndex();                                                                                          // [0xb73f888] Final|Native|Protected 
+	// void OnRep_CurrentStateIndex();                                                                                          // [0xb9b9288] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarTimeDelayedStateSequencer.OnRep_bIsEnabled
-	// void OnRep_bIsEnabled();                                                                                                 // [0xb73f9b8] Final|Native|Protected 
+	// void OnRep_bIsEnabled();                                                                                                 // [0xb9b92bc] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarTimeDelayedStateSequencer.GetStateTagAtIndex
-	// FGameplayTag GetStateTagAtIndex(int32_t Index);                                                                          // [0xb73ea08] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetStateTagAtIndex(int32_t Index);                                                                          // [0xb9b84fc] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTimeDelayedStateSequencer.GetStateCount
-	// int32_t GetStateCount();                                                                                                 // [0x97317f8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetStateCount();                                                                                                 // [0x983d730] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarTimeDelayedStateSequencer.GetCurrentStateTag
-	// FGameplayTag GetCurrentStateTag();                                                                                       // [0xb73e9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetCurrentStateTag();                                                                                       // [0xb9b84d4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarGhostVehicle
-/// Size: 0x0000 (0x001DF0 - 0x001DF0)
+/// Size: 0x0010 (0x001E60 - 0x001E70)
 class ADelMarGhostVehicle : public AFortAthenaVehicle
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 7664;
+	static inline constexpr uint64_t __MDKClassSize = 7792;
 
 public:
+	CMember(class UMaterial*)                          GhostMaterial                                               OFFSET(get<T>, {0x1E60, 8, 0, 0})
 
 
 	/// Functions
-	// Function /Script/DelMarCore.DelMarGhostVehicle.OnGhostVehicleCustomizationCompleted
-	// void OnGhostVehicleCustomizationCompleted(TArray<UMeshComponent*>& MeshComponents);                                      // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// Function /Script/DelMarCore.DelMarGhostVehicle.HandleVehicleCosmeticsFinished
+	// void HandleVehicleCosmeticsFinished();                                                                                   // [0xb9b899c] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarGlobalInputDisabler
@@ -3492,9 +3559,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarGlobalInputDisabler.SetGlobalInputsEnabled
-	// void SetGlobalInputsEnabled(FGameplayTagContainer InputTags, bool bEnable);                                              // [0xb73fbd4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
-	// Function /Script/DelMarCore.DelMarGlobalInputDisabler.OnRep_DisabledInputTags
-	// void OnRep_DisabledInputTags(FGameplayTagContainer& OldDisabledInputTags);                                               // [0xb73f89c] Final|Native|Protected|HasOutParms 
+	// void SetGlobalInputsEnabled(FGameplayTagContainer InputTags, bool bEnable);                                              // [0xb9b94b0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarCosmeticActorSpawnLogic
@@ -3546,137 +3611,137 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCosmeticActor.GetBodyMeshComponent
-	// class USkeletalMeshComponent* GetBodyMeshComponent();                                                                    // [0xb73e9bc] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetBodyMeshComponent();                                                                    // [0xb9b84b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnWorldBonusSpeedStackLost
-	// void BP_OnWorldBonusSpeedStackLost(FGameplayTag Source, int32_t Stacks);                                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnWorldBonusSpeedStackLost(FGameplayTag Source, int32_t Stacks);                                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnWorldBonusSpeedStackGained
-	// void BP_OnWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnWorldBonusSpeedStackGained(FGameplayTag Source, int32_t Stacks);                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnWheelsOnGroundChanged
-	// void BP_OnWheelsOnGroundChanged(TScriptInterface<Class>& VehicleRef, bool bValue);                                       // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnWheelsOnGroundChanged(TScriptInterface<Class>& VehicleRef, bool bValue);                                       // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnVehicleWheelsLeftGround
-	// void BP_OnVehicleWheelsLeftGround();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnVehicleWheelsLeftGround();                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnVehicleStoppedSkydiving
-	// void BP_OnVehicleStoppedSkydiving();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnVehicleStoppedSkydiving();                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnVehicleStartedSkydiving
-	// void BP_OnVehicleStartedSkydiving();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnVehicleStartedSkydiving();                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnVehicleLanded
-	// void BP_OnVehicleLanded(float LandingForced, bool bLandedKickflip);                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnVehicleLanded(float LandingForced, bool bLandedKickflip);                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnVehicleForwardStateChanged
-	// void BP_OnVehicleForwardStateChanged(EDelMarVehicleForwardState NewForwardState);                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnVehicleForwardStateChanged(EDelMarVehicleForwardState NewForwardState);                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnVehicleDemolished
-	// void BP_OnVehicleDemolished(FGameplayTag CausedByTag);                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnVehicleDemolished(FGameplayTag CausedByTag);                                                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnUnderthrustDeactivated
-	// void BP_OnUnderthrustDeactivated();                                                                                      // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnUnderthrustDeactivated();                                                                                      // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnUnderthrustActivated
-	// void BP_OnUnderthrustActivated();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnUnderthrustActivated();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnTurboDeactivated
-	// void BP_OnTurboDeactivated();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnTurboDeactivated();                                                                                            // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnTurboBonusStateChanged
-	// void BP_OnTurboBonusStateChanged(EDelMarTurboZoneState NewState);                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnTurboBonusStateChanged(EDelMarTurboZoneState NewState);                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnTurboActivated
-	// void BP_OnTurboActivated();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnTurboActivated();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnStrafeUsabilityChanged
-	// void BP_OnStrafeUsabilityChanged(bool bCanActivate);                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnStrafeUsabilityChanged(bool bCanActivate);                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnStrafeDisabledChanged
-	// void BP_OnStrafeDisabledChanged(bool bDisabled);                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnStrafeDisabledChanged(bool bDisabled);                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnStrafeDeactivated
-	// void BP_OnStrafeDeactivated();                                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnStrafeDeactivated();                                                                                           // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnStrafeCooldownChanged
-	// void BP_OnStrafeCooldownChanged(float CooldownPercentage);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnStrafeCooldownChanged(float CooldownPercentage);                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnStrafeActivated
-	// void BP_OnStrafeActivated(bool bLeftSide);                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnStrafeActivated(bool bLeftSide);                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnStartlineBoostFailed
-	// void BP_OnStartlineBoostFailed();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnStartlineBoostFailed();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnStartlineBoostDeactivated
-	// void BP_OnStartlineBoostDeactivated();                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnStartlineBoostDeactivated();                                                                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnStartlineBoostActivated
-	// void BP_OnStartlineBoostActivated(float PercentageMaxBonusSpeedEarned);                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnStartlineBoostActivated(float PercentageMaxBonusSpeedEarned);                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnReattachmentDeactivated
-	// void BP_OnReattachmentDeactivated();                                                                                     // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnReattachmentDeactivated();                                                                                     // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnReattachmentActivated
-	// void BP_OnReattachmentActivated();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnReattachmentActivated();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnReachedMaxDraftBonusSpeed
-	// void BP_OnReachedMaxDraftBonusSpeed();                                                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnReachedMaxDraftBonusSpeed();                                                                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnKickflipSuctionDeactivated
-	// void BP_OnKickflipSuctionDeactivated();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnKickflipSuctionDeactivated();                                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnKickflipSuctionActivated
-	// void BP_OnKickflipSuctionActivated();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnKickflipSuctionActivated();                                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnKickflipDurationChanged
-	// void BP_OnKickflipDurationChanged(float duration);                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnKickflipDurationChanged(float duration);                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnKickflipDistanceToSuctionSurfaceChanged
-	// void BP_OnKickflipDistanceToSuctionSurfaceChanged(float Distance);                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnKickflipDistanceToSuctionSurfaceChanged(float Distance);                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnKickflipDeactivated
-	// void BP_OnKickflipDeactivated();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnKickflipDeactivated();                                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnKickflipActivationChargesChanged
-	// void BP_OnKickflipActivationChargesChanged(int32_t ActivationCharges);                                                   // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnKickflipActivationChargesChanged(int32_t ActivationCharges);                                                   // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnKickflipActivated
-	// void BP_OnKickflipActivated(bool bLeftSide);                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnKickflipActivated(bool bLeftSide);                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnJumpDeactivated
-	// void BP_OnJumpDeactivated();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnJumpDeactivated();                                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnJumpActivated
-	// void BP_OnJumpActivated();                                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnJumpActivated();                                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnInvulnerabilityDeactivated
-	// void BP_OnInvulnerabilityDeactivated();                                                                                  // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnInvulnerabilityDeactivated();                                                                                  // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnInvulnerabilityActivated
-	// void BP_OnInvulnerabilityActivated();                                                                                    // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnInvulnerabilityActivated();                                                                                    // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDriftKickDeactivated
-	// void BP_OnDriftKickDeactivated();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftKickDeactivated();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDriftKickActivated
-	// void BP_OnDriftKickActivated(float DriftDirection, EDelMarVehicleDriftState DriftState);                                 // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftKickActivated(float DriftDirection, EDelMarVehicleDriftState DriftState);                                 // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDriftDurationChanged
-	// void BP_OnDriftDurationChanged(float duration);                                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftDurationChanged(float duration);                                                                          // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDriftDeactivated
-	// void BP_OnDriftDeactivated();                                                                                            // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftDeactivated();                                                                                            // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDriftControlChanged
-	// void BP_OnDriftControlChanged(bool bIsDriftingControlled);                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftControlChanged(bool bIsDriftingControlled);                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDriftBoostDeactivated
-	// void BP_OnDriftBoostDeactivated();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftBoostDeactivated();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDriftBoostActivated
-	// void BP_OnDriftBoostActivated();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftBoostActivated();                                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDriftActivated
-	// void BP_OnDriftActivated();                                                                                              // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDriftActivated();                                                                                              // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDraftStateChanged
-	// void BP_OnDraftStateChanged(EDelmarDraftingState CurrentState);                                                          // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDraftStateChanged(EDelmarDraftingState CurrentState);                                                          // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDelMarVehicleSpawned
-	// void BP_OnDelMarVehicleSpawned(bool bFirstVehicleForPlayer, bool bPrevVehicleDemolished);                                // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDelMarVehicleSpawned(bool bFirstVehicleForPlayer, bool bPrevVehicleDemolished);                                // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDelMarTeleportExited
-	// void BP_OnDelMarTeleportExited();                                                                                        // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDelMarTeleportExited();                                                                                        // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDelMarTeleportEntered
-	// void BP_OnDelMarTeleportEntered();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDelMarTeleportEntered();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnDelMarAppliedTeleportRotation
-	// void BP_OnDelMarAppliedTeleportRotation();                                                                               // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnDelMarAppliedTeleportRotation();                                                                               // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnCosmeticApplied
-	// void BP_OnCosmeticApplied();                                                                                             // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnCosmeticApplied();                                                                                             // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnBonusSpeedDeactivated
-	// void BP_OnBonusSpeedDeactivated();                                                                                       // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnBonusSpeedDeactivated();                                                                                       // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnBonusSpeedChanged
-	// void BP_OnBonusSpeedChanged(float BonusSpeed);                                                                           // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnBonusSpeedChanged(float BonusSpeed);                                                                           // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnBonusSpeedActivated
-	// void BP_OnBonusSpeedActivated();                                                                                         // [0x211c0a0] Event|Protected|BlueprintEvent 
+	// void BP_OnBonusSpeedActivated();                                                                                         // [0x2047e54] Event|Protected|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.BP_OnAnyWheelsOnGroundChanged
-	// void BP_OnAnyWheelsOnGroundChanged(TScriptInterface<Class>& VehicleRef, bool bValue);                                    // [0x211c0a0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void BP_OnAnyWheelsOnGroundChanged(TScriptInterface<Class>& VehicleRef, bool bValue);                                    // [0x2047e54] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/DelMarCore.DelMarCosmeticActor.ApplyCosmetic
-	// void ApplyCosmetic();                                                                                                    // [0xf424fc] Native|Public        
+	// void ApplyCosmetic();                                                                                                    // [0x1ff1b0c] Native|Public        
 };
 
 /// Class /Script/DelMarCore.DelMarCosmeticItemDefinition
-/// Size: 0x0018 (0x0003F8 - 0x000410)
+/// Size: 0x0018 (0x0003B8 - 0x0003D0)
 class UDelMarCosmeticItemDefinition : public UFortAccountItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1040;
+	static inline constexpr uint64_t __MDKClassSize = 976;
 
 public:
-	SMember(FGameplayTag)                              Slot                                                        OFFSET(getStruct<T>, {0x3F8, 4, 0, 0})
-	CMember(TArray<TWeakObjectPtr<UClass*>>)           CosmeticActorClasses                                        OFFSET(get<T>, {0x400, 16, 0, 0})
+	SMember(FGameplayTag)                              Slot                                                        OFFSET(getStruct<T>, {0x3B8, 4, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UClass*>>)           CosmeticActorClasses                                        OFFSET(get<T>, {0x3C0, 16, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleBodyItemDefinition
-/// Size: 0x0000 (0x000410 - 0x000410)
+/// Size: 0x0000 (0x0003D0 - 0x0003D0)
 class UDelMarVehicleBodyItemDefinition : public UDelMarCosmeticItemDefinition
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1040;
+	static inline constexpr uint64_t __MDKClassSize = 976;
 
 public:
 };
@@ -3693,7 +3758,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarMatchmakingComponent.ClientStartMatchmaking
-	// void ClientStartMatchmaking(FOnlineLinkId LinkId);                                                                       // [0xb73e878] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientStartMatchmaking(FOnlineLinkId LinkId);                                                                       // [0xb9b83dc] Net|NetReliableNative|Event|Public|NetClient 
 };
 
 /// Class /Script/DelMarCore.DelMarMutator_AllowSpectateOtherTeams
@@ -3719,7 +3784,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarAsyncPhysicsTickMutator.TryToApplySolverOverrides
-	// void TryToApplySolverOverrides();                                                                                        // [0xb73fe1c] Final|Native|Protected 
+	// void TryToApplySolverOverrides();                                                                                        // [0xb9b9648] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarConsoleVariableMutator
@@ -3774,9 +3839,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCameraInputControllerComponent.HandleInputSettingsChanged
-	// void HandleInputSettingsChanged();                                                                                       // [0xb73edb4] Final|Native|Protected 
+	// void HandleInputSettingsChanged();                                                                                       // [0xb9b88c0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCameraInputControllerComponent.HandleCameraSwivelDeadzoneChanged
-	// void HandleCameraSwivelDeadzoneChanged();                                                                                // [0xb73eb48] Final|Native|Protected 
+	// void HandleCameraSwivelDeadzoneChanged();                                                                                // [0xb9b8680] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarContextualHintComponent
@@ -3796,9 +3861,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarContextualHintComponent.HandleVehicleHazardHit
-	// void HandleVehicleHazardHit();                                                                                           // [0xb73efc0] Final|Native|Private 
+	// void HandleVehicleHazardHit();                                                                                           // [0xb9b8a70] Final|Native|Private 
 	// Function /Script/DelMarCore.DelMarContextualHintComponent.HandleVehicleDemolished
-	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb73ee90] Final|Native|Private 
+	// void HandleVehicleDemolished(FGameplayTag CausedByTag);                                                                  // [0xb9b89b0] Final|Native|Private 
 };
 
 /// Class /Script/DelMarCore.DelMarLocalCheckpointVisibilityControllerComponent
@@ -3817,11 +3882,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarLocalCheckpointVisibilityControllerComponent.HandleViewTargetChanged
-	// void HandleViewTargetChanged(class AFortPlayerController* PlayerController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xb73efd4] Final|Native|Protected 
+	// void HandleViewTargetChanged(class AFortPlayerController* PlayerController, class AActor* OldViewTarget, class AActor* NewViewTarget); // [0xb9b8a84] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarLocalCheckpointVisibilityControllerComponent.HandleLapComplete
-	// void HandleLapComplete(FDelMarEvent_LapComplete& LapEvent);                                                              // [0xb73eddc] Final|Native|Protected|HasOutParms 
+	// void HandleLapComplete(FDelMarEvent_LapComplete& LapEvent);                                                              // [0xb9b88e8] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarLocalCheckpointVisibilityControllerComponent.HandleCheckpointPassed
-	// void HandleCheckpointPassed(FDelMarEvent_CheckpointPassed_ParallelPath& CheckpointEvent);                                // [0xb73eb5c] Final|Native|Protected|HasOutParms 
+	// void HandleCheckpointPassed(FDelMarEvent_CheckpointPassed_ParallelPath& CheckpointEvent);                                // [0xb9b8694] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.DelMarNetworkInputComponent
@@ -3836,7 +3901,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarNetworkInputComponent.ServerSendInputs
-	// void ServerSendInputs(FDelMarNetworkInputPacket InputPacket);                                                            // [0xb73f9cc] Final|Net|Native|Event|Private|NetServer|NetValidate 
+	// void ServerSendInputs(FDelMarNetworkInputPacket InputPacket);                                                            // [0xb9b92d0] Final|Net|Native|Event|Private|NetServer|NetValidate 
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerRaceDataComponent
@@ -3873,23 +3938,23 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.OnRep_ViewingSpectators
-	// void OnRep_ViewingSpectators();                                                                                          // [0xb73f998] Final|Native|Protected 
+	// void OnRep_ViewingSpectators();                                                                                          // [0xb9b929c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.NetMulticast_TeleportEntered
-	// void NetMulticast_TeleportEntered(FDelMarEvent_TeleportEnteredEvent InCheckpointTeleportingEvent);                       // [0xb73f750] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_TeleportEntered(FDelMarEvent_TeleportEnteredEvent InCheckpointTeleportingEvent);                       // [0xb9b91c0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.NetMulticast_SectionCompleted_ParallelPath
-	// void NetMulticast_SectionCompleted_ParallelPath(FDelMarEvent_SectionComplete_ParallelPath InSectionEvent);               // [0xb73f608] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_SectionCompleted_ParallelPath(FDelMarEvent_SectionComplete_ParallelPath InSectionEvent);               // [0xb9b90e4] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.NetMulticast_RaceCompleted
-	// void NetMulticast_RaceCompleted(double RunTime);                                                                         // [0xb73f580] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_RaceCompleted(double RunTime, bool bValidRun);                                                         // [0xb9b8f98] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.NetMulticast_LapCompleted
-	// void NetMulticast_LapCompleted(FDelMarEvent_LapComplete InLapEvent);                                                     // [0xb73f438] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_LapCompleted(FDelMarEvent_LapComplete InLapEvent);                                                     // [0xb9b8ec0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.NetMulticast_CheckpointPassedOutOfOrder_ParallelPath
-	// void NetMulticast_CheckpointPassedOutOfOrder_ParallelPath(FDelMarEvent_CheckpointPassedOutOfOrder_ParallelPath InCheckpointPassedOutOfOrderEvent); // [0xb73f1cc] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_CheckpointPassedOutOfOrder_ParallelPath(FDelMarEvent_CheckpointPassedOutOfOrder_ParallelPath InCheckpointPassedOutOfOrderEvent); // [0xb9b8d34] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.NetMulticast_CheckpointPassed_ParallelPath
-	// void NetMulticast_CheckpointPassed_ParallelPath(FDelMarEvent_CheckpointPassed_ParallelPath CheckpointEvent);             // [0xb73f300] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_CheckpointPassed_ParallelPath(FDelMarEvent_CheckpointPassed_ParallelPath CheckpointEvent);             // [0xb9b8df8] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.GetViewingSpectators
-	// TArray<APlayerState*> GetViewingSpectators();                                                                            // [0xb73eaa4] Final|Native|Public|BlueprintCallable 
+	// TArray<APlayerState*> GetViewingSpectators();                                                                            // [0xb9b85dc] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarPlayerRaceDataComponent.GetNumViewingSpectator
-	// int32_t GetNumViewingSpectator();                                                                                        // [0x64f9694] Final|Native|Public|BlueprintCallable 
+	// int32_t GetNumViewingSpectator();                                                                                        // [0x622b8b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerDeathRaceDataComponent
@@ -3904,18 +3969,17 @@ public:
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerInputManagerComponent
-/// Size: 0x0070 (0x0000A0 - 0x000110)
+/// Size: 0x0068 (0x0000A0 - 0x000108)
 class UDelMarPlayerInputManagerComponent : public UDelMarPlayerStateComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 272;
+	static inline constexpr uint64_t __MDKClassSize = 264;
 
 public:
 	CMember(TMap<FGameplayTag, FDelMarInputMappingContextData>) InputMappingContextMap                             OFFSET(get<T>, {0xA0, 80, 0, 0})
 	CMember(TWeakObjectPtr<AFortPlayerController*>)    CachedController                                            OFFSET(get<T>, {0xF0, 8, 0, 0})
-	CMember(TWeakObjectPtr<UDelMarGlobalInputDisabler*>) CachedGlobalDisabler                                      OFFSET(get<T>, {0xF8, 8, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarVehicle*>)           CachedVehicle                                               OFFSET(get<T>, {0x100, 8, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       CachedRaceManager                                           OFFSET(get<T>, {0x108, 8, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarVehicle*>)           CachedVehicle                                               OFFSET(get<T>, {0xF8, 8, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       CachedRaceManager                                           OFFSET(get<T>, {0x100, 8, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerPreferencesComponent
@@ -3940,25 +4004,25 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.TryGetFortClientSettings
-	// void TryGetFortClientSettings();                                                                                         // [0xb73fe08] Final|Native|Protected 
+	// void TryGetFortClientSettings();                                                                                         // [0xb9b9634] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.ServerUpdatePitchInverted
-	// void ServerUpdatePitchInverted(bool bInPitchInverted);                                                                   // [0x9f08d6c] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerUpdatePitchInverted(bool bInPitchInverted);                                                                   // [0xa044d08] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.ServerUpdateAerialPitchActivation
-	// void ServerUpdateAerialPitchActivation(bool bInAerialPitchActivationEnabled);                                            // [0xa857378] Net|NetReliableNative|Event|Protected|NetServer 
+	// void ServerUpdateAerialPitchActivation(bool bInAerialPitchActivationEnabled);                                            // [0xaa38270] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.ServerSetInvertSteerMethod
-	// void ServerSetInvertSteerMethod(EDelMarInvertSteerMethod InInvertSteerMethod);                                           // [0x95d526c] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerSetInvertSteerMethod(EDelMarInvertSteerMethod InInvertSteerMethod);                                           // [0x96c8b0c] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.HandleLocalFortInputSettingsChanged
-	// void HandleLocalFortInputSettingsChanged();                                                                              // [0xb73ee7c] Final|Native|Protected 
+	// void HandleLocalFortInputSettingsChanged();                                                                              // [0xb9b8988] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.HandleInvertSteerSettingChanged
-	// void HandleInvertSteerSettingChanged();                                                                                  // [0xb73edc8] Final|Native|Protected 
+	// void HandleInvertSteerSettingChanged();                                                                                  // [0xb9b88d4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.HandleIconOnlyNameplatesSettingChanged
-	// void HandleIconOnlyNameplatesSettingChanged();                                                                           // [0xb73eda0] Final|Native|Protected 
+	// void HandleIconOnlyNameplatesSettingChanged();                                                                           // [0xb9b88ac] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.HandleAerialPitchActivationSettingChanged
-	// void HandleAerialPitchActivationSettingChanged();                                                                        // [0xb73eb34] Final|Native|Protected 
+	// void HandleAerialPitchActivationSettingChanged();                                                                        // [0xb9b866c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.GetUseToggleOnExpandableHudWidget
-	// bool GetUseToggleOnExpandableHudWidget();                                                                                // [0xab5e364] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetUseToggleOnExpandableHudWidget();                                                                                // [0xad3a8e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarPlayerPreferencesComponent.GetUseIconOnlyPlayerNameplates
-	// bool GetUseIconOnlyPlayerNameplates();                                                                                   // [0xb73ea8c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetUseIconOnlyPlayerNameplates();                                                                                   // [0xb9b85c4] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarPlayerRespawnComponent
@@ -4025,13 +4089,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPlayerTurboManagerComponent.SetTurboCharges
-	// void SetTurboCharges(float TurboChargeAmount);                                                                           // [0xb792b38] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void SetTurboCharges(float TurboChargeAmount);                                                                           // [0xba06bbc] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarPlayerTurboManagerComponent.ModifyTurboCharges_Delayed
-	// void ModifyTurboCharges_Delayed(float TurboChargeAmount);                                                                // [0xb791034] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ModifyTurboCharges_Delayed(float TurboChargeAmount);                                                                // [0xba04a4c] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarPlayerTurboManagerComponent.ModifyTurboCharges
-	// void ModifyTurboCharges(float TurboChargeAmount);                                                                        // [0xb790fb4] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void ModifyTurboCharges(float TurboChargeAmount);                                                                        // [0xba04988] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarPlayerTurboManagerComponent.HandleTurboChargeUsed
-	// void HandleTurboChargeUsed();                                                                                            // [0xb790e6c] Final|Native|Protected 
+	// void HandleTurboChargeUsed();                                                                                            // [0xba047b8] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarRemoveAthenaMarkerComponent
@@ -4064,41 +4128,41 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerSetPostRaceVote
-	// void ServerSetPostRaceVote(EDelMarPostRaceVote NewVote);                                                                 // [0xb7928b4] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerSetPostRaceVote(EDelMarPostRaceVote NewVote);                                                                 // [0xba067f4] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerSetJoinNextRace
-	// void ServerSetJoinNextRace(bool bInReadyToJoinRace);                                                                     // [0xb792830] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerSetJoinNextRace(bool bInReadyToJoinRace);                                                                     // [0xba0672c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerRequestVehicleSpawn
-	// void ServerRequestVehicleSpawn();                                                                                        // [0x998bfc0] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestVehicleSpawn();                                                                                        // [0x9aa7504] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerRequestSpectatorBecomePlayer
-	// void ServerRequestSpectatorBecomePlayer();                                                                               // [0x2af073c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestSpectatorBecomePlayer();                                                                               // [0x2888030] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerRequestResetRun
-	// void ServerRequestResetRun();                                                                                            // [0xb792568] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestResetRun();                                                                                            // [0xba06528] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerRequestRacerCountdown
-	// void ServerRequestRacerCountdown();                                                                                      // [0x37a15e4] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestRacerCountdown();                                                                                      // [0x205e768] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerRequestMapFromGameplay
-	// void ServerRequestMapFromGameplay(FGameplayTagContainer InMapChoice);                                                    // [0xb79240c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestMapFromGameplay(FGameplayTagContainer InMapChoice);                                                    // [0xba06420] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerRequestMap
-	// void ServerRequestMap(FGameplayTagContainer InMapChoice);                                                                // [0xb7922b0] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestMap(FGameplayTagContainer InMapChoice);                                                                // [0xba06318] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerRequestFinalInitialization
-	// void ServerRequestFinalInitialization();                                                                                 // [0x14b9e3c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestFinalInitialization();                                                                                 // [0x1c0d610] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerRequestBecomeSpectator
-	// void ServerRequestBecomeSpectator();                                                                                     // [0x88dc8a8] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerRequestBecomeSpectator();                                                                                     // [0x888df9c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerReadyUp
-	// void ServerReadyUp(bool bInReadyUp);                                                                                     // [0xb791e40] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void ServerReadyUp(bool bInReadyUp);                                                                                     // [0xba05f8c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerPostRaceReturnToLobbySelected
-	// void ServerPostRaceReturnToLobbySelected();                                                                              // [0x212f900] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
+	// void ServerPostRaceReturnToLobbySelected();                                                                              // [0x1fda954] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.ServerPostRaceNextRaceSelected
-	// void ServerPostRaceNextRaceSelected();                                                                                   // [0x6e94000] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
+	// void ServerPostRaceNextRaceSelected();                                                                                   // [0x6d0e0b0] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.PostRaceReturnToLobbySelected
-	// void PostRaceReturnToLobbySelected();                                                                                    // [0xb791824] Final|Native|Public|BlueprintCallable 
+	// void PostRaceReturnToLobbySelected();                                                                                    // [0xba05180] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.PostRaceNextRaceSelected
-	// void PostRaceNextRaceSelected();                                                                                         // [0xb791810] Final|Native|Public|BlueprintCallable 
+	// void PostRaceNextRaceSelected();                                                                                         // [0xba0516c] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRequestComponent.OnRep_PostRaceVote
-	// void OnRep_PostRaceVote();                                                                                               // [0xb7916d8] Final|Native|Protected|Const 
+	// void OnRep_PostRaceVote();                                                                                               // [0xba05034] Final|Native|Protected|Const 
 	// Function /Script/DelMarCore.DelMarRequestComponent.OnRep_bIsReadyToStartRace
-	// void OnRep_bIsReadyToStartRace();                                                                                        // [0xb7917fc] Final|Native|Protected|Const 
+	// void OnRep_bIsReadyToStartRace();                                                                                        // [0xba05158] Final|Native|Protected|Const 
 	// Function /Script/DelMarCore.DelMarRequestComponent.OnRep_bIsReadyToJoinRace
-	// void OnRep_bIsReadyToJoinRace();                                                                                         // [0xb7917e8] Final|Native|Protected|Const 
+	// void OnRep_bIsReadyToJoinRace();                                                                                         // [0xba05144] Final|Native|Protected|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarRunRecordPlayerComponent
@@ -4118,13 +4182,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRunRecordPlayerComponent.PrintRecords
-	// void PrintRecords(FDelMarRunRecord& RunRecord, FString Name);                                                            // [0xb791838] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void PrintRecords(FDelMarRunRecord& RunRecord, FString Name);                                                            // [0xba05194] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/DelMarCore.DelMarRunRecordPlayerComponent.NetMulticast_SectionRecorded
-	// void NetMulticast_SectionRecorded(FDelMarEvent_SectionRecorded InSectionRecordedEvent);                                  // [0xb791458] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_SectionRecorded(FDelMarEvent_SectionRecorded InSectionRecordedEvent);                                  // [0xba04e54] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarRunRecordPlayerComponent.NetMulticast_RunRecorded
-	// void NetMulticast_RunRecorded(FDelMarEvent_RunRecorded InRunRecordedEvent);                                              // [0xb7912e4] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_RunRecorded(FDelMarEvent_RunRecorded InRunRecordedEvent);                                              // [0xba04d48] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DelMarCore.DelMarRunRecordPlayerComponent.NetMulticast_LapRecorded
-	// void NetMulticast_LapRecorded(FDelMarEvent_LapRecorded InLapRecordedEvent);                                              // [0xb7910bc] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void NetMulticast_LapRecorded(FDelMarEvent_LapRecorded InLapRecordedEvent);                                              // [0xba04b18] Net|NetReliableNative|Event|NetMulticast|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarTutorialPlayerRaceDataComponent
@@ -4152,23 +4216,23 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.TutorialComplete
-	// void TutorialComplete();                                                                                                 // [0xb790b6c] Final|Native|Public|BlueprintCallable|Const 
+	// void TutorialComplete();                                                                                                 // [0xba04478] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.Server_RequestStartRace
-	// void Server_RequestStartRace(bool bSkipCountdown);                                                                       // [0x9f08d6c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void Server_RequestStartRace(bool bSkipCountdown);                                                                       // [0xa044d08] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.Server_RequestSection
-	// void Server_RequestSection(int32_t SectionIndex);                                                                        // [0xa22c474] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void Server_RequestSection(int32_t SectionIndex);                                                                        // [0xa3de818] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.Server_RequestPrevSection
-	// void Server_RequestPrevSection();                                                                                        // [0x998bfc0] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void Server_RequestPrevSection();                                                                                        // [0x9aa7504] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.Server_RequestNextSection
-	// void Server_RequestNextSection();                                                                                        // [0x2af073c] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
+	// void Server_RequestNextSection();                                                                                        // [0x2888030] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.Server_KeepTraining
-	// void Server_KeepTraining();                                                                                              // [0x6e94000] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|Const 
+	// void Server_KeepTraining();                                                                                              // [0x6d0e0b0] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|Const 
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.Replay
-	// void Replay();                                                                                                           // [0xb791ae0] Final|Native|Public|BlueprintCallable 
+	// void Replay();                                                                                                           // [0xba05aec] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.KeepTraining
-	// void KeepTraining();                                                                                                     // [0xb790fa0] Final|Native|Public|BlueprintCallable|Const 
+	// void KeepTraining();                                                                                                     // [0xba04974] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/DelMarCore.DelMarTutorialRequestComponent.GoRace
-	// void GoRace();                                                                                                           // [0xb790b6c] Final|Native|Public|BlueprintCallable|Const 
+	// void GoRace();                                                                                                           // [0xba04478] Final|Native|Public|BlueprintCallable|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarLevelManagerComponent
@@ -4187,9 +4251,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarLevelManagerComponent.ServerRequestLevel
-	// void ServerRequestLevel(FGameplayTagContainer DesiredMap);                                                               // [0xb791ec4] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerRequestLevel(FGameplayTagContainer DesiredMap);                                                               // [0xba06054] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarLevelManagerComponent.RequestLevelLoad
-	// void RequestLevelLoad(FGameplayTagContainer& DesiredMap);                                                                // [0xb791af4] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void RequestLevelLoad(FGameplayTagContainer& DesiredMap);                                                                // [0xba05b00] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarLoadingScreenMutator
@@ -4203,43 +4267,41 @@ public:
 };
 
 /// Class /Script/DelMarCore.DelMarPlayspace
-/// Size: 0x00E8 (0x0006C0 - 0x0007A8)
+/// Size: 0x00D8 (0x0006C0 - 0x000798)
 class ADelMarPlayspace : public AFortPlayspace
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 1960;
+	static inline constexpr uint64_t __MDKClassSize = 1944;
 
 public:
 	CMember(TWeakObjectPtr<UFortPlaylistAthena*>)      MRSPlaylistData                                             OFFSET(get<T>, {0x708, 8, 0, 0})
-	CMember(class UGameplayStateMachineManager*)       StateMachineManager                                         OFFSET(get<T>, {0x710, 8, 0, 0})
-	CMember(class UClass*)                             DelMarRootStateMachineClass                                 OFFSET(get<T>, {0x718, 8, 0, 0})
-	CMember(TWeakObjectPtr<UDelMarStateMachine*>)      CachedPrimaryStateMachine                                   OFFSET(get<T>, {0x720, 8, 0, 0})
-	DMember(bool)                                      bShouldShowLoadingScreen                                    OFFSET(get<bool>, {0x728, 1, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       ActiveRaceManager                                           OFFSET(get<T>, {0x72C, 8, 0, 0})
-	CMember(TWeakObjectPtr<UFortPlaylistAthena*>)      PlaylistData                                                OFFSET(get<T>, {0x734, 8, 0, 0})
-	CMember(TWeakObjectPtr<UDelMarLevelManagerComponent*>) LevelManager                                            OFFSET(get<T>, {0x73C, 8, 0, 0})
-	CMember(class UFortLevelStreamComponent*)          LevelStreamComponent                                        OFFSET(get<T>, {0x748, 8, 0, 0})
-	SMember(FDelMarMapSet)                             MapSet                                                      OFFSET(getStruct<T>, {0x750, 24, 0, 0})
-	SMember(FGameplayTagContainer)                     PlaylistDefinedMapTags                                      OFFSET(getStruct<T>, {0x768, 32, 0, 0})
+	CMember(class UDelMarGameStateMachine*)            PrimaryStateMachine                                         OFFSET(get<T>, {0x710, 8, 0, 0})
+	DMember(bool)                                      bShouldShowLoadingScreen                                    OFFSET(get<bool>, {0x718, 1, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       ActiveRaceManager                                           OFFSET(get<T>, {0x71C, 8, 0, 0})
+	CMember(TWeakObjectPtr<UFortPlaylistAthena*>)      PlaylistData                                                OFFSET(get<T>, {0x724, 8, 0, 0})
+	CMember(TWeakObjectPtr<UDelMarLevelManagerComponent*>) LevelManager                                            OFFSET(get<T>, {0x72C, 8, 0, 0})
+	CMember(class UFortLevelStreamComponent*)          LevelStreamComponent                                        OFFSET(get<T>, {0x738, 8, 0, 0})
+	SMember(FDelMarMapSet)                             MapSet                                                      OFFSET(getStruct<T>, {0x740, 24, 0, 0})
+	SMember(FGameplayTagContainer)                     PlaylistDefinedMapTags                                      OFFSET(getStruct<T>, {0x758, 32, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPlayspace.ShouldShowLoadingScreen
-	// bool ShouldShowLoadingScreen();                                                                                          // [0xb792bb8] Final|Native|Public|BlueprintCallable 
+	// bool ShouldShowLoadingScreen();                                                                                          // [0xba06c80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarPlayspace.SetLoadingScreenVisibiliy
-	// void SetLoadingScreenVisibiliy(bool bInShouldShowLoadingScreen);                                                         // [0xb7929b8] Final|Native|Public|BlueprintCallable 
+	// void SetLoadingScreenVisibiliy(bool bInShouldShowLoadingScreen);                                                         // [0xba06978] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarPlayspace.ServerReturnToSetupWithLinkCode
-	// void ServerReturnToSetupWithLinkCode(FOnlineLinkId OptionalMapToForceLoad);                                              // [0xb7926dc] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerReturnToSetupWithLinkCode(FOnlineLinkId OptionalMapToForceLoad);                                              // [0xba06648] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarPlayspace.ServerReturnToSetup
-	// void ServerReturnToSetup(FGameplayTagContainer OptionalMapToForceLoad);                                                  // [0xb792580] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerReturnToSetup(FGameplayTagContainer OptionalMapToForceLoad);                                                  // [0xba06540] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarPlayspace.ServerRequestLoadingLevelWithLinkCode
-	// void ServerRequestLoadingLevelWithLinkCode(FOnlineLinkId DesiredMap);                                                    // [0xb79215c] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerRequestLoadingLevelWithLinkCode(FOnlineLinkId DesiredMap);                                                    // [0xba06234] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarPlayspace.ServerRequestLoadingLevel
-	// void ServerRequestLoadingLevel(FGameplayTagContainer DesiredMap);                                                        // [0xb792010] Net|NetReliableNative|Event|Public|NetServer 
+	// void ServerRequestLoadingLevel(FGameplayTagContainer DesiredMap);                                                        // [0xba06144] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarPlayspace.RequestNextMapFromMapSet
-	// void RequestNextMapFromMapSet();                                                                                         // [0x2bc0e2c] Net|NetReliableNative|Event|Public|NetServer 
+	// void RequestNextMapFromMapSet();                                                                                         // [0x2918dfc] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/DelMarCore.DelMarPlayspace.OnRep_ActiveRaceManagerUpdated
-	// void OnRep_ActiveRaceManagerUpdated();                                                                                   // [0xb7915ec] Final|Native|Protected 
+	// void OnRep_ActiveRaceManagerUpdated();                                                                                   // [0xba04f7c] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarPreRaceControllerComponent
@@ -4264,7 +4326,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPreRaceControllerComponent.ServerSetViewTarget
-	// void ServerSetViewTarget(class AFortPlayerState* PlayerState);                                                           // [0x811c924] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
+	// void ServerSetViewTarget(class AFortPlayerState* PlayerState);                                                           // [0x80b8a60] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarCheckpointManagerComponent
@@ -4283,9 +4345,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCheckpointManagerComponent.HandleResetRace
-	// void HandleResetRace(FDelMarEvent_ResetRace& Event);                                                                     // [0xb790de0] Final|Native|Private|HasOutParms 
+	// void HandleResetRace(FDelMarEvent_ResetRace& Event);                                                                     // [0xba0472c] Final|Native|Private|HasOutParms 
 	// Function /Script/DelMarCore.DelMarCheckpointManagerComponent.HandleRaceFinished
-	// void HandleRaceFinished(FDelMarEvent_RaceFinished& Event);                                                               // [0xb790c58] Final|Native|Private|HasOutParms 
+	// void HandleRaceFinished(FDelMarEvent_RaceFinished& Event);                                                               // [0xba044e0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DelMarCore.DelMarDeathRaceManager
@@ -4303,9 +4365,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarDeathRaceManager.GetScoreThresholdToEndMatch
-	// int32_t GetScoreThresholdToEndMatch();                                                                                   // [0xb790b18] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetScoreThresholdToEndMatch();                                                                                   // [0xba04424] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarDeathRaceManager.GetPointsAwardForPlacement
-	// int32_t GetPointsAwardForPlacement(int32_t InPlacement);                                                                 // [0xb790a5c] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPointsAwardForPlacement(int32_t InPlacement);                                                                 // [0xba04328] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DelMarCore.DelMarMatchmakeRatingComponentBase
@@ -4347,15 +4409,15 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarPositionalTrackerComponent.OnRep_FinalRacePositions
-	// void OnRep_FinalRacePositions();                                                                                         // [0xb79161c] Final|Native|Protected 
+	// void OnRep_FinalRacePositions();                                                                                         // [0xba04f90] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarRaceConfigComponent
-/// Size: 0x0150 (0x0000A0 - 0x0001F0)
+/// Size: 0x0160 (0x0000A0 - 0x000200)
 class UDelMarRaceConfigComponent : public UDelMarRaceManagerComponent
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 496;
+	static inline constexpr uint64_t __MDKClassSize = 512;
 
 public:
 	DMember(bool)                                      bGhostReplayEnabled                                         OFFSET(get<bool>, {0xA0, 1, 0, 0})
@@ -4367,24 +4429,25 @@ public:
 	DMember(double)                                    DistanceFromTrackBeforeDemoWarning                          OFFSET(get<double>, {0xB8, 8, 0, 0})
 	CMember(TWeakObjectPtr<UClass*>)                   DefaultVehicleClass                                         OFFSET(get<T>, {0xC0, 32, 0, 0})
 	CMember(TArray<class UClass*>)                     ServerPlayerStateComponents                                 OFFSET(get<T>, {0xE0, 16, 0, 0})
-	CMember(TArray<class UClass*>)                     ServerControllerComponents                                  OFFSET(get<T>, {0xF0, 16, 0, 0})
-	CMember(TArray<class UClass*>)                     ClientControllerComponents                                  OFFSET(get<T>, {0x100, 16, 0, 0})
-	CMember(class UClass*)                             SpectatorControllerComponentClass                           OFFSET(get<T>, {0x110, 8, 0, 0})
-	SMember(FDelMarMatchmakingConfig)                  MatchmakingConfig                                           OFFSET(getStruct<T>, {0x118, 20, 0, 0})
-	SMember(FDelMarStartlineConfig)                    StartlineConfig                                             OFFSET(getStruct<T>, {0x130, 40, 0, 0})
-	SMember(FDelMarVehicleRuntimeConfig)               VehicleRuntimeConfig                                        OFFSET(getStruct<T>, {0x158, 20, 0, 0})
-	SMember(FDelMarVehicleAbilityConfig)               VehicleAbilityConfig                                        OFFSET(getStruct<T>, {0x16C, 17, 0, 0})
-	SMember(FDelMarRespawnConfig)                      RespawnConfig                                               OFFSET(getStruct<T>, {0x180, 16, 0, 0})
-	SMember(FDelMarRubberbandingConfig)                DefaultRubberbandingConfig                                  OFFSET(getStruct<T>, {0x190, 40, 0, 0})
-	CMember(TArray<FDelMarRubberbandingMMRConfig>)     RubberbandingMMRConfigs                                     OFFSET(get<T>, {0x1B8, 16, 0, 0})
-	CMember(TArray<FDelMarRubberbandingMMRConfig>)     RubberbandingMMROverrideConfigs                             OFFSET(get<T>, {0x1C8, 16, 0, 0})
+	CMember(TArray<class UClass*>)                     ClientPlayerStateComponents                                 OFFSET(get<T>, {0xF0, 16, 0, 0})
+	CMember(TArray<class UClass*>)                     ServerControllerComponents                                  OFFSET(get<T>, {0x100, 16, 0, 0})
+	CMember(TArray<class UClass*>)                     ClientControllerComponents                                  OFFSET(get<T>, {0x110, 16, 0, 0})
+	CMember(class UClass*)                             SpectatorControllerComponentClass                           OFFSET(get<T>, {0x120, 8, 0, 0})
+	SMember(FDelMarMatchmakingConfig)                  MatchmakingConfig                                           OFFSET(getStruct<T>, {0x128, 20, 0, 0})
+	SMember(FDelMarStartlineConfig)                    StartlineConfig                                             OFFSET(getStruct<T>, {0x140, 40, 0, 0})
+	SMember(FDelMarVehicleRuntimeConfig)               VehicleRuntimeConfig                                        OFFSET(getStruct<T>, {0x168, 20, 0, 0})
+	SMember(FDelMarVehicleAbilityConfig)               VehicleAbilityConfig                                        OFFSET(getStruct<T>, {0x17C, 17, 0, 0})
+	SMember(FDelMarRespawnConfig)                      RespawnConfig                                               OFFSET(getStruct<T>, {0x190, 16, 0, 0})
+	SMember(FDelMarRubberbandingConfig)                DefaultRubberbandingConfig                                  OFFSET(getStruct<T>, {0x1A0, 40, 0, 0})
+	CMember(TArray<FDelMarRubberbandingMMRConfig>)     RubberbandingMMRConfigs                                     OFFSET(get<T>, {0x1C8, 16, 0, 0})
+	CMember(TArray<FDelMarRubberbandingMMRConfig>)     RubberbandingMMROverrideConfigs                             OFFSET(get<T>, {0x1D8, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRaceConfigComponent.OnRep_VehicleAbilityConfig
-	// void OnRep_VehicleAbilityConfig(FDelMarVehicleAbilityConfig& OldConfig);                                                 // [0xb79174c] Final|Native|Protected|HasOutParms 
+	// void OnRep_VehicleAbilityConfig(FDelMarVehicleAbilityConfig& OldConfig);                                                 // [0xba050a8] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarRaceConfigComponent.BroadcastVehicleAbilityConfigUpdated
-	// void BroadcastVehicleAbilityConfigUpdated();                                                                             // [0xb790864] Final|Native|Public|BlueprintCallable 
+	// void BroadcastVehicleAbilityConfigUpdated();                                                                             // [0xba04108] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarRequestTrackerComponent
@@ -4400,7 +4463,7 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRequestTrackerComponent.OnRep_PlayerReadyStates
-	// void OnRep_PlayerReadyStates();                                                                                          // [0xb79166c] Final|Native|Protected 
+	// void OnRep_PlayerReadyStates();                                                                                          // [0xba04fe0] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarRespawnManagerComponent
@@ -4421,9 +4484,9 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRespawnManagerComponent.RequestRespawnVehicleForPawn
-	// class ADelMarVehicle* RequestRespawnVehicleForPawn(class AFortPlayerPawn* InPlayerPawn);                                 // [0xb791c64] Final|Native|Public|BlueprintCallable 
+	// class ADelMarVehicle* RequestRespawnVehicleForPawn(class AFortPlayerPawn* InPlayerPawn);                                 // [0xba05cb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DelMarCore.DelMarRespawnManagerComponent.RequestRespawnPawnAndVehicle
-	// class ADelMarVehicle* RequestRespawnPawnAndVehicle(class AController* InController);                                     // [0xb791bac] Final|Native|Public|BlueprintCallable 
+	// class ADelMarVehicle* RequestRespawnPawnAndVehicle(class AController* InController);                                     // [0xba05bb8] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DelMarCore.DelMarRubberbandingManagerComponent
@@ -4441,153 +4504,147 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarRubberbandingManagerComponent.OnRep_RubberbandingConfig
-	// void OnRep_RubberbandingConfig();                                                                                        // [0xb7916fc] Final|Native|Protected 
+	// void OnRep_RubberbandingConfig();                                                                                        // [0xba05058] Final|Native|Protected 
 };
 
-/// Class /Script/DelMarCore.DelMarStateMachine
-/// Size: 0x0008 (0x0000C8 - 0x0000D0)
-class UDelMarStateMachine : public UGameplayStateMachine
+/// Class /Script/DelMarCore.DelMarGameStateMachine
+/// Size: 0x0000 (0x0001A8 - 0x0001A8)
+class UDelMarGameStateMachine : public UDelMarStateMachine
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 208;
+	static inline constexpr uint64_t __MDKClassSize = 424;
 
 public:
-	SMember(FGameplayTag)                              StateMachineTag_ToLoadingStateTransition                    OFFSET(getStruct<T>, {0xC8, 4, 0, 0})
 };
 
-/// Class /Script/DelMarCore.DelMarStateMachine_Gameplay
-/// Size: 0x0008 (0x0000D0 - 0x0000D8)
-class UDelMarStateMachine_Gameplay : public UDelMarStateMachine
+/// Class /Script/DelMarCore.DelMarState_Gameplay
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UDelMarState_Gameplay : public UDelMarState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 216;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
-
-
-	/// Functions
-	// Function /Script/DelMarCore.DelMarStateMachine_Gameplay.HandlePlayerStateDied
-	// void HandlePlayerStateDied(class APlayerState* GhostPlayerState);                                                        // [0xb790bd8] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarState_Gameplay_ActiveRace
-/// Size: 0x0000 (0x000080 - 0x000080)
+/// Size: 0x0000 (0x000030 - 0x000030)
 class UDelMarState_Gameplay_ActiveRace : public UDelMarGameplayState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 128;
+	static inline constexpr uint64_t __MDKClassSize = 48;
 
 public:
 };
 
 /// Class /Script/DelMarCore.DelMarState_Gameplay_Postrace
-/// Size: 0x0280 (0x000080 - 0x000300)
+/// Size: 0x0280 (0x000030 - 0x0002B0)
 class UDelMarState_Gameplay_Postrace : public UDelMarGameplayState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 768;
+	static inline constexpr uint64_t __MDKClassSize = 688;
 
 public:
-	DMember(float)                                     PostRaceDuration                                            OFFSET(get<float>, {0x80, 4, 0, 0})
-	DMember(double)                                    PostRaceEndServerTime                                       OFFSET(get<double>, {0x88, 8, 0, 0})
-	CMember(TSet<TWeakObjectPtr<AFortPlayerState*>>)   ReadyPlayers                                                OFFSET(get<T>, {0x90, 80, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarPlayspace*>)         CachedPlayspace                                             OFFSET(get<T>, {0xE0, 8, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       CachedRaceManager                                           OFFSET(get<T>, {0xE8, 8, 0, 0})
-	SMember(FString)                                   EliminationList                                             OFFSET(getStruct<T>, {0x120, 16, 0, 0})
+	DMember(float)                                     PostRaceDuration                                            OFFSET(get<float>, {0x30, 4, 0, 0})
+	DMember(double)                                    PostRaceEndServerTime                                       OFFSET(get<double>, {0x38, 8, 0, 0})
+	CMember(TSet<TWeakObjectPtr<AFortPlayerState*>>)   ReadyPlayers                                                OFFSET(get<T>, {0x40, 80, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarPlayspace*>)         CachedPlayspace                                             OFFSET(get<T>, {0x90, 8, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       CachedRaceManager                                           OFFSET(get<T>, {0x98, 8, 0, 0})
+	SMember(FString)                                   EliminationList                                             OFFSET(getStruct<T>, {0xD0, 16, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarState_Gameplay_Postrace.OnRep_PostRaceEndServerTime
-	// void OnRep_PostRaceEndServerTime();                                                                                      // [0xb7916c4] Final|Native|Protected 
+	// void OnRep_PostRaceEndServerTime();                                                                                      // [0xba3bad8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarState_Gameplay_Postrace.OnRep_EliminationList
-	// void OnRep_EliminationList();                                                                                            // [0xb791600] Final|Native|Private 
+	// void OnRep_EliminationList();                                                                                            // [0xba3ba58] Final|Native|Private 
 };
 
 /// Class /Script/DelMarCore.DelMarState_Gameplay_Prerace
-/// Size: 0x0018 (0x000080 - 0x000098)
+/// Size: 0x0018 (0x000030 - 0x000048)
 class UDelMarState_Gameplay_Prerace : public UDelMarGameplayState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 152;
+	static inline constexpr uint64_t __MDKClassSize = 72;
 
 public:
-	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0x80, 8, 0, 0})
-	DMember(double)                                    PreRaceCountdownFinishServerTime                            OFFSET(get<double>, {0x90, 8, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0x30, 8, 0, 0})
+	DMember(double)                                    PreRaceCountdownFinishServerTime                            OFFSET(get<double>, {0x40, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarState_Gameplay_Prerace.OnRep_PreRaceCountdownFinishServerTime
-	// void OnRep_PreRaceCountdownFinishServerTime();                                                                           // [0xb7cde84] Final|Native|Private 
+	// void OnRep_PreRaceCountdownFinishServerTime();                                                                           // [0xba3baec] Final|Native|Private 
 };
 
 /// Class /Script/DelMarCore.DelMarState_Gameplay_WaitingForPlayers
-/// Size: 0x0040 (0x000080 - 0x0000C0)
+/// Size: 0x0040 (0x000030 - 0x000070)
 class UDelMarState_Gameplay_WaitingForPlayers : public UDelMarGameplayState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 192;
+	static inline constexpr uint64_t __MDKClassSize = 112;
 
 public:
-	DMember(int32_t)                                   MinPlayers                                                  OFFSET(get<int32_t>, {0x80, 4, 0, 0})
-	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0x84, 8, 0, 0})
-	SMember(FDelMarEvent_LoadedPlayerStates)           LoadedPlayerStates                                          OFFSET(getStruct<T>, {0x8C, 8, 0, 0})
-	CMember(TWeakObjectPtr<AFortPartyBeaconHost*>)     FortPartyBeacon                                             OFFSET(get<T>, {0x94, 8, 0, 0})
+	DMember(int32_t)                                   MinPlayers                                                  OFFSET(get<int32_t>, {0x30, 4, 0, 0})
+	CMember(TWeakObjectPtr<ADelMarRaceManager*>)       RaceManager                                                 OFFSET(get<T>, {0x34, 8, 0, 0})
+	SMember(FDelMarEvent_LoadedPlayerStates)           LoadedPlayerStates                                          OFFSET(getStruct<T>, {0x3C, 8, 0, 0})
+	CMember(TWeakObjectPtr<AFortPartyBeaconHost*>)     FortPartyBeacon                                             OFFSET(get<T>, {0x44, 8, 0, 0})
 
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarState_Gameplay_WaitingForPlayers.OnRep_LoadedPlayerStates
-	// void OnRep_LoadedPlayerStates();                                                                                         // [0xb7cde1c] Final|Native|Protected 
+	// void OnRep_LoadedPlayerStates();                                                                                         // [0xba3ba74] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarState_LevelSetup
-/// Size: 0x0008 (0x000080 - 0x000088)
+/// Size: 0x0008 (0x000030 - 0x000038)
 class UDelMarState_LevelSetup : public UDelMarGameplayState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 136;
+	static inline constexpr uint64_t __MDKClassSize = 56;
 
 public:
-	DMember(bool)                                      bVehiclesReady                                              OFFSET(get<bool>, {0x80, 1, 0, 0})
-	DMember(bool)                                      bVehiclesSpawned                                            OFFSET(get<bool>, {0x81, 1, 0, 0})
+	DMember(bool)                                      bVehiclesReady                                              OFFSET(get<bool>, {0x30, 1, 0, 0})
+	DMember(bool)                                      bVehiclesSpawned                                            OFFSET(get<bool>, {0x31, 1, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarState_Loading
-/// Size: 0x0038 (0x000080 - 0x0000B8)
+/// Size: 0x0038 (0x000030 - 0x000068)
 class UDelMarState_Loading : public UDelMarGameplayState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 184;
+	static inline constexpr uint64_t __MDKClassSize = 104;
 
 public:
-	DMember(float)                                     DelayBeforeLoadingActuallyStarts                            OFFSET(get<float>, {0x80, 4, 0, 0})
-	SMember(FGameplayTagContainer)                     DesiredMap                                                  OFFSET(getStruct<T>, {0x88, 32, 0, 0})
+	DMember(float)                                     DelayBeforeLoadingActuallyStarts                            OFFSET(get<float>, {0x30, 4, 0, 0})
+	SMember(FGameplayTagContainer)                     DesiredMap                                                  OFFSET(getStruct<T>, {0x38, 32, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarState_Lobby
-/// Size: 0x0008 (0x000080 - 0x000088)
+/// Size: 0x0008 (0x000030 - 0x000038)
 class UDelMarState_Lobby : public UDelMarGameplayState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 136;
+	static inline constexpr uint64_t __MDKClassSize = 56;
 
 public:
-	DMember(bool)                                      bLevelLoadRequested                                         OFFSET(get<bool>, {0x80, 1, 0, 0})
+	DMember(bool)                                      bLevelLoadRequested                                         OFFSET(get<bool>, {0x30, 1, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarState_Setup
-/// Size: 0x0050 (0x000080 - 0x0000D0)
+/// Size: 0x0050 (0x000030 - 0x000080)
 class UDelMarState_Setup : public UDelMarGameplayState
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 208;
+	static inline constexpr uint64_t __MDKClassSize = 128;
 
 public:
-	DMember(bool)                                      bHasRequestedLink                                           OFFSET(get<bool>, {0x80, 1, 0, 0})
-	DMember(bool)                                      bHasRecievedMatchAssignment                                 OFFSET(get<bool>, {0x81, 1, 0, 0})
-	DMember(bool)                                      bRequiresMatchAssignmentToProceed                           OFFSET(get<bool>, {0x82, 1, 0, 0})
-	DMember(bool)                                      bCalledMapRotationService                                   OFFSET(get<bool>, {0x83, 1, 0, 0})
-	SMember(FGameplayTagContainer)                     DebugMapToLoad                                              OFFSET(getStruct<T>, {0x88, 32, 0, 0})
-	SMember(FOnlineLinkId)                             DebugIslandCodeToLoad                                       OFFSET(getStruct<T>, {0xA8, 24, 0, 0})
+	DMember(bool)                                      bHasRequestedLink                                           OFFSET(get<bool>, {0x30, 1, 0, 0})
+	DMember(bool)                                      bHasRecievedMatchAssignment                                 OFFSET(get<bool>, {0x31, 1, 0, 0})
+	DMember(bool)                                      bRequiresMatchAssignmentToProceed                           OFFSET(get<bool>, {0x32, 1, 0, 0})
+	DMember(bool)                                      bCalledMapRotationService                                   OFFSET(get<bool>, {0x33, 1, 0, 0})
+	SMember(FGameplayTagContainer)                     DebugMapToLoad                                              OFFSET(getStruct<T>, {0x38, 32, 0, 0})
+	SMember(FOnlineLinkId)                             DebugIslandCodeToLoad                                       OFFSET(getStruct<T>, {0x58, 24, 0, 0})
 };
 
 /// Class /Script/DelMarCore.DelMarCameraShakeComponent
@@ -4618,17 +4675,17 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarCameraShakeComponent.OnVehicleLanded
-	// void OnVehicleLanded(float LandingForce, bool bLandedKickflip);                                                          // [0xb7ce400] Final|Native|Protected 
+	// void OnVehicleLanded(float LandingForce, bool bLandedKickflip);                                                          // [0xba3bf08] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCameraShakeComponent.OnVehicleHitWall
-	// void OnVehicleHitWall(float Magnitude, FVector WorldLocation, float ForwardRotationDegrees);                             // [0xb7ce1a8] Final|Native|Protected|HasDefaults 
+	// void OnVehicleHitWall(float Magnitude, FVector WorldLocation, float ForwardRotationDegrees);                             // [0xba3bd3c] Final|Native|Protected|HasDefaults 
 	// Function /Script/DelMarCore.DelMarCameraShakeComponent.OnVehicleHitVehicle
-	// void OnVehicleHitVehicle(float Magnitude, FVector WorldLocation);                                                        // [0xb7ce024] Final|Native|Protected|HasDefaults 
+	// void OnVehicleHitVehicle(float Magnitude, FVector WorldLocation);                                                        // [0xba3bbdc] Final|Native|Protected|HasDefaults 
 	// Function /Script/DelMarCore.DelMarCameraShakeComponent.OnJumpActivated
-	// void OnJumpActivated();                                                                                                  // [0xb7cdc6c] Final|Native|Protected 
+	// void OnJumpActivated();                                                                                                  // [0xba3ba30] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCameraShakeComponent.OnHazardHit
-	// void OnHazardHit();                                                                                                      // [0xb7cdc44] Final|Native|Protected 
+	// void OnHazardHit();                                                                                                      // [0xba3ba08] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarCameraShakeComponent.OnCameraShakeIntensitySettingsChanged
-	// void OnCameraShakeIntensitySettingsChanged(class UFortClientSettingsRecord* Settings);                                   // [0xb7cdaf4] Final|Native|Private 
+	// void OnCameraShakeIntensitySettingsChanged(class UFortClientSettingsRecord* Settings);                                   // [0xba3b834] Final|Native|Private 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleConfigs
@@ -4684,13 +4741,13 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleCosmeticComponent.GetCosmeticActors
-	// TArray<ADelMarCosmeticActor*> GetCosmeticActors(class UClass* CosmeticClass, bool bLookForChildClasses);                 // [0xb7cd620] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<ADelMarCosmeticActor*> GetCosmeticActors(class UClass* CosmeticClass, bool bLookForChildClasses);                 // [0xba3b254] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleCosmeticComponent.GetCosmeticActor
-	// class ADelMarCosmeticActor* GetCosmeticActor(class UClass* CosmeticClass, bool bLookForChildClasses);                    // [0xb7cd534] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADelMarCosmeticActor* GetCosmeticActor(class UClass* CosmeticClass, bool bLookForChildClasses);                    // [0xba3b0e8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DelMarCore.DelMarVehicleCosmeticComponent.DelMarOnCosmeticItemSpawned__DelegateSignature
-	// void DelMarOnCosmeticItemSpawned__DelegateSignature(class ADelMarCosmeticActor* CosmeticActor);                          // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void DelMarOnCosmeticItemSpawned__DelegateSignature(class ADelMarCosmeticActor* CosmeticActor);                          // [0x2047e54] MulticastDelegate|Public|Delegate 
 	// Function /Script/DelMarCore.DelMarVehicleCosmeticComponent.DelMarOnAllCosmeticActorsSpawned__DelegateSignature
-	// void DelMarOnAllCosmeticActorsSpawned__DelegateSignature();                                                              // [0x211c0a0] MulticastDelegate|Public|Delegate 
+	// void DelMarOnAllCosmeticActorsSpawned__DelegateSignature();                                                              // [0x2047e54] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleForceFeedbackComponent
@@ -4721,31 +4778,31 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnVehicleLanded
-	// void OnVehicleLanded(float LandingForce, bool bLandedKickflip);                                                          // [0xb7ce4c8] Final|Native|Protected 
+	// void OnVehicleLanded(float LandingForce, bool bLandedKickflip);                                                          // [0xba3c048] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnUnderthrustDeactivated
-	// void OnUnderthrustDeactivated();                                                                                         // [0xb7ce010] Final|Native|Protected 
+	// void OnUnderthrustDeactivated();                                                                                         // [0xba3bbc8] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnUnderthrustActivated
-	// void OnUnderthrustActivated();                                                                                           // [0xb7cdffc] Final|Native|Protected 
+	// void OnUnderthrustActivated();                                                                                           // [0xba3bbb4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnTurboDeactivated
-	// void OnTurboDeactivated();                                                                                               // [0xb7cdfe8] Final|Native|Protected 
+	// void OnTurboDeactivated();                                                                                               // [0xba3bba0] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnTurboActivated
-	// void OnTurboActivated();                                                                                                 // [0xb7cdfd4] Final|Native|Protected 
+	// void OnTurboActivated();                                                                                                 // [0xba3bb8c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnJumpActivated
-	// void OnJumpActivated();                                                                                                  // [0xb7cdc80] Final|Native|Protected 
+	// void OnJumpActivated();                                                                                                  // [0xba3ba44] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnHazardHit
-	// void OnHazardHit();                                                                                                      // [0xb7cdc58] Final|Native|Protected 
+	// void OnHazardHit();                                                                                                      // [0xba3ba1c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnDriftDeactivated
-	// void OnDriftDeactivated();                                                                                               // [0xb7cdc30] Final|Native|Protected 
+	// void OnDriftDeactivated();                                                                                               // [0xba3b9f4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnDriftControlChanged
-	// void OnDriftControlChanged(bool bIsDriftControlled);                                                                     // [0xb7cdbb0] Final|Native|Protected 
+	// void OnDriftControlChanged(bool bIsDriftControlled);                                                                     // [0xba3b930] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnDriftBoostDeactivated
-	// void OnDriftBoostDeactivated();                                                                                          // [0xb7cdb9c] Final|Native|Protected 
+	// void OnDriftBoostDeactivated();                                                                                          // [0xba3b91c] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnDriftBoostActivated
-	// void OnDriftBoostActivated();                                                                                            // [0xb7cdb88] Final|Native|Protected 
+	// void OnDriftBoostActivated();                                                                                            // [0xba3b908] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.OnDriftActivated
-	// void OnDriftActivated();                                                                                                 // [0xb7cdb74] Final|Native|Protected 
+	// void OnDriftActivated();                                                                                                 // [0xba3b8f4] Final|Native|Protected 
 	// Function /Script/DelMarCore.DelMarVehicleForceFeedbackComponent.HandleLoadingScreenVisibilityChanged
-	// void HandleLoadingScreenVisibilityChanged(bool bVisibility);                                                             // [0xb7cd918] Final|Native|Protected 
+	// void HandleLoadingScreenVisibilityChanged(bool bVisibility);                                                             // [0xba3b5d0] Final|Native|Protected 
 };
 
 /// Class /Script/DelMarCore.DelMarVehicleMovementSet
@@ -4763,11 +4820,11 @@ public:
 
 	/// Functions
 	// Function /Script/DelMarCore.DelMarVehicleMovementSet.OnRep_VehicleThrottleDisabled
-	// void OnRep_VehicleThrottleDisabled(FFortGameplayAttributeData& OldInputDisabled);                                        // [0xb7cdee0] Final|Native|Protected|HasOutParms 
+	// void OnRep_VehicleThrottleDisabled(FFortGameplayAttributeData& OldInputDisabled);                                        // [0xba6b14c] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarVehicleMovementSet.OnRep_BonusSpeed
-	// void OnRep_BonusSpeed(FFortGameplayAttributeData& OldBonusSpeed);                                                        // [0xb7cdd58] Final|Native|Protected|HasOutParms 
+	// void OnRep_BonusSpeed(FFortGameplayAttributeData& OldBonusSpeed);                                                        // [0xba6b04c] Final|Native|Protected|HasOutParms 
 	// Function /Script/DelMarCore.DelMarVehicleMovementSet.OnRep_AccelMultiplier
-	// void OnRep_AccelMultiplier(FFortGameplayAttributeData& OldSpeedMultiplier);                                              // [0xb7cdc94] Final|Native|Protected|HasOutParms 
+	// void OnRep_AccelMultiplier(FFortGameplayAttributeData& OldSpeedMultiplier);                                              // [0xba6af4c] Final|Native|Protected|HasOutParms 
 };
 
 /// Struct /Script/DelMarCore.DelMarAIDifficultySpawnInfo
@@ -4905,6 +4962,19 @@ public:
 	CMember(class UObject*)                            EventRouterContextObject                                    OFFSET(get<T>, {0x10, 8, 0, 0})
 };
 
+/// Struct /Script/DelMarCore.DelMarGameplayStateChangedEvent
+/// Size: 0x0008 (0x000000 - 0x000008)
+class FDelMarGameplayStateChangedEvent : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 8;
+
+public:
+	SMember(FGameplayTag)                              PrevStateId                                                 OFFSET(getStruct<T>, {0x0, 4, 0, 0})
+	SMember(FGameplayTag)                              NewStateId                                                  OFFSET(getStruct<T>, {0x4, 4, 0, 0})
+};
+
 /// Struct /Script/DelMarCore.DelMarEvent_ResetRace
 /// Size: 0x0001 (0x000000 - 0x000001)
 class FDelMarEvent_ResetRace : public MDKBase
@@ -4983,12 +5053,12 @@ public:
 };
 
 /// Struct /Script/DelMarCore.DelMarEvent_PlayerFinishedRace
-/// Size: 0x0010 (0x000000 - 0x000010)
+/// Size: 0x0018 (0x000000 - 0x000018)
 class FDelMarEvent_PlayerFinishedRace : public MDKBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 16;
+	static inline constexpr uint64_t __MDKClassSize = 24;
 
 public:
 };
@@ -5495,19 +5565,6 @@ public:
 	DMember(int32_t)                                   CurrentHandleIdx                                            OFFSET(get<int32_t>, {0x28, 4, 0, 0})
 };
 
-/// Struct /Script/DelMarCore.DelMarGameplayStateChangedEvent
-/// Size: 0x0008 (0x000000 - 0x000008)
-class FDelMarGameplayStateChangedEvent : public MDKBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 8;
-
-public:
-	SMember(FGameplayTag)                              PrevStateId                                                 OFFSET(getStruct<T>, {0x0, 4, 0, 0})
-	SMember(FGameplayTag)                              NewStateId                                                  OFFSET(getStruct<T>, {0x4, 4, 0, 0})
-};
-
 /// Struct /Script/DelMarCore.GhostReplayFrame
 /// Size: 0x0050 (0x000000 - 0x000050)
 class FGhostReplayFrame : public MDKBase
@@ -5588,293 +5645,310 @@ public:
 };
 
 /// Struct /Script/DelMarCore.DelMarObjectiveFilterBase
-/// Size: 0x00E8 (0x0000A0 - 0x000188)
+/// Size: 0x00F0 (0x0000A0 - 0x000190)
 class FDelMarObjectiveFilterBase : public FObjectiveFilter
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
-
-public:
-	SMember(FObjectiveSubjectTags)                     LevelDescriptionId                                          OFFSET(getStruct<T>, {0xA0, 72, 0, 0})
-	SMember(FObjectiveSubjectTags)                     GameModeId                                                  OFFSET(getStruct<T>, {0xE8, 72, 0, 0})
-	SMember(FObjectiveSubjectTags)                     VehicleTags                                                 OFFSET(getStruct<T>, {0x130, 72, 0, 0})
-	CMember(TArray<TWeakObjectPtr<UDelMarCosmeticItemDefinition*>>) RequiredCosmetics                              OFFSET(get<T>, {0x178, 16, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_BeatPlayers
-/// Size: 0x0000 (0x000188 - 0x000188)
-class FDelMarObjectiveFilter_BeatPlayers : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_BonusTurboActivated
-/// Size: 0x0000 (0x000188 - 0x000188)
-class FDelMarObjectiveFilter_BonusTurboActivated : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_BoostPadBonusSpeedEnded
-/// Size: 0x0000 (0x000188 - 0x000188)
-class FDelMarObjectiveFilter_BoostPadBonusSpeedEnded : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_BoostPadHit
-/// Size: 0x0000 (0x000188 - 0x000188)
-class FDelMarObjectiveFilter_BoostPadHit : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DistanceTraveled
-/// Size: 0x0000 (0x000188 - 0x000188)
-class FDelMarObjectiveFilter_DistanceTraveled : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DraftActivated
-/// Size: 0x0000 (0x000188 - 0x000188)
-class FDelMarObjectiveFilter_DraftActivated : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DriftBoostActivated
-/// Size: 0x0020 (0x000188 - 0x0001A8)
-class FDelMarObjectiveFilter_DriftBoostActivated : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 424;
-
-public:
-	SMember(FDoubleRange)                              RequiredDriftBoostPercent                                   OFFSET(getStruct<T>, {0x188, 32, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DriftBoostDeactivated
-/// Size: 0x0020 (0x000188 - 0x0001A8)
-class FDelMarObjectiveFilter_DriftBoostDeactivated : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 424;
-
-public:
-	SMember(FDoubleRange)                              RequiredTotalDistance                                       OFFSET(getStruct<T>, {0x188, 32, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DriftComplete
-/// Size: 0x0020 (0x000188 - 0x0001A8)
-class FDelMarObjectiveFilter_DriftComplete : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 424;
-
-public:
-	SMember(FDoubleRange)                              RequiredDriftDuration                                       OFFSET(getStruct<T>, {0x188, 32, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_HighestSpeedUpdated
-/// Size: 0x0020 (0x000188 - 0x0001A8)
-class FDelMarObjectiveFilter_HighestSpeedUpdated : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 424;
-
-public:
-	SMember(FDoubleRange)                              RequiredHighestSpeed                                        OFFSET(getStruct<T>, {0x188, 32, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_InitialTurboActivated
-/// Size: 0x0000 (0x000188 - 0x000188)
-class FDelMarObjectiveFilter_InitialTurboActivated : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_Kickflipped
-/// Size: 0x0008 (0x000188 - 0x000190)
-class FDelMarObjectiveFilter_Kickflipped : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
 	static inline constexpr uint64_t __MDKClassSize = 400;
 
 public:
-	CMember(EDelMarKickflipDirection)                  RequiredKickflipDirection                                   OFFSET(get<T>, {0x188, 1, 0, 0})
+	SMember(FObjectiveSubjectTags)                     LevelDescriptionId                                          OFFSET(getStruct<T>, {0xA0, 72, 0, 0})
+	SMember(FObjectiveSubjectTags)                     GameModeId                                                  OFFSET(getStruct<T>, {0xE8, 72, 0, 0})
+	SMember(FObjectiveSubjectTags)                     VehicleTags                                                 OFFSET(getStruct<T>, {0x130, 72, 0, 0})
+	CMember(EDelMarPlaylistTypeInfo)                   RequiredPlaylistTypeInfo                                    OFFSET(get<T>, {0x178, 1, 0, 0})
+	CMember(TArray<TWeakObjectPtr<UDelMarCosmeticItemDefinition*>>) RequiredCosmetics                              OFFSET(get<T>, {0x180, 16, 0, 0})
 };
 
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_LapComplete
-/// Size: 0x0040 (0x000188 - 0x0001C8)
-class FDelMarObjectiveFilter_LapComplete : public FDelMarObjectiveFilterBase
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_BeatPlayers
+/// Size: 0x0000 (0x000190 - 0x000190)
+class FDelMarObjectiveFilter_BeatPlayers : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 456;
-
-public:
-	SMember(FDoubleRange)                              RequiredLapCompleteTime                                     OFFSET(getStruct<T>, {0x188, 32, 0, 0})
-	SMember(FInt32Range)                               RequiredLapCount                                            OFFSET(getStruct<T>, {0x1A8, 16, 0, 0})
-	SMember(FInt32Range)                               RequiredLapPlacement                                        OFFSET(getStruct<T>, {0x1B8, 16, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_PlacementUpdated
-/// Size: 0x0018 (0x000188 - 0x0001A0)
-class FDelMarObjectiveFilter_PlacementUpdated : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 416;
-
-public:
-	SMember(FInt32Range)                               RequiredCurrentPosition                                     OFFSET(getStruct<T>, {0x188, 16, 0, 0})
-	CMember(EDelMarPositionChangeInfo)                 RequiredPositionChangeInfo                                  OFFSET(get<T>, {0x198, 1, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_PlayedDelMarExperience
-/// Size: 0x0000 (0x000188 - 0x000188)
-class FDelMarObjectiveFilter_PlayedDelMarExperience : public FDelMarObjectiveFilterBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
+	static inline constexpr uint64_t __MDKClassSize = 400;
 
 public:
 };
 
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_RaceFinished
-/// Size: 0x0038 (0x000188 - 0x0001C0)
-class FDelMarObjectiveFilter_RaceFinished : public FDelMarObjectiveFilterBase
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_BonusTurboActivated
+/// Size: 0x0000 (0x000190 - 0x000190)
+class FDelMarObjectiveFilter_BonusTurboActivated : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 448;
+	static inline constexpr uint64_t __MDKClassSize = 400;
 
 public:
-	SMember(FDoubleRange)                              RequiredFinishTime                                          OFFSET(getStruct<T>, {0x188, 32, 0, 0})
-	SMember(FInt32Range)                               RequiredFinalPlacement                                      OFFSET(getStruct<T>, {0x1A8, 16, 0, 0})
-	CMember(EDelMarJellyHazardProcessorInfo)           RequiredJellyHazardInfo                                     OFFSET(get<T>, {0x1B8, 4, 0, 0})
-	CMember(EDelMarDemolishedProcessorInfo)            RequiredDemolishedInfo                                      OFFSET(get<T>, {0x1BC, 4, 0, 0})
 };
 
-/// Struct /Script/DelMarCore.DelMarObjectiveFilter_RankAchieved
-/// Size: 0x0010 (0x000188 - 0x000198)
-class FDelMarObjectiveFilter_RankAchieved : public FDelMarObjectiveFilterBase
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_BoostPadBonusSpeedEnded
+/// Size: 0x0000 (0x000190 - 0x000190)
+class FDelMarObjectiveFilter_BoostPadBonusSpeedEnded : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 400;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_BoostPadHit
+/// Size: 0x0000 (0x000190 - 0x000190)
+class FDelMarObjectiveFilter_BoostPadHit : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 400;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DistanceTraveled
+/// Size: 0x0000 (0x000190 - 0x000190)
+class FDelMarObjectiveFilter_DistanceTraveled : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 400;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DraftActivated
+/// Size: 0x0000 (0x000190 - 0x000190)
+class FDelMarObjectiveFilter_DraftActivated : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 400;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DriftBoostActivated
+/// Size: 0x0020 (0x000190 - 0x0001B0)
+class FDelMarObjectiveFilter_DriftBoostActivated : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 432;
+
+public:
+	SMember(FDoubleRange)                              RequiredDriftBoostPercent                                   OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DriftBoostDeactivated
+/// Size: 0x0020 (0x000190 - 0x0001B0)
+class FDelMarObjectiveFilter_DriftBoostDeactivated : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 432;
+
+public:
+	SMember(FDoubleRange)                              RequiredTotalDistance                                       OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_DriftComplete
+/// Size: 0x0020 (0x000190 - 0x0001B0)
+class FDelMarObjectiveFilter_DriftComplete : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 432;
+
+public:
+	SMember(FDoubleRange)                              RequiredDriftDuration                                       OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_HighestSpeedUpdated
+/// Size: 0x0020 (0x000190 - 0x0001B0)
+class FDelMarObjectiveFilter_HighestSpeedUpdated : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 432;
+
+public:
+	SMember(FDoubleRange)                              RequiredHighestSpeed                                        OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_InitialTurboActivated
+/// Size: 0x0000 (0x000190 - 0x000190)
+class FDelMarObjectiveFilter_InitialTurboActivated : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 400;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_Kickflipped
+/// Size: 0x0008 (0x000190 - 0x000198)
+class FDelMarObjectiveFilter_Kickflipped : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
 	static inline constexpr uint64_t __MDKClassSize = 408;
 
 public:
-	SMember(FInt32Range)                               RequiredRank                                                OFFSET(getStruct<T>, {0x188, 16, 0, 0})
+	CMember(EDelMarKickflipDirection)                  RequiredKickflipDirection                                   OFFSET(get<T>, {0x190, 1, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_LapComplete
+/// Size: 0x0040 (0x000190 - 0x0001D0)
+class FDelMarObjectiveFilter_LapComplete : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 464;
+
+public:
+	SMember(FDoubleRange)                              RequiredLapCompleteTime                                     OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+	SMember(FInt32Range)                               RequiredLapCount                                            OFFSET(getStruct<T>, {0x1B0, 16, 0, 0})
+	SMember(FInt32Range)                               RequiredLapPlacement                                        OFFSET(getStruct<T>, {0x1C0, 16, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_PlacementUpdated
+/// Size: 0x0018 (0x000190 - 0x0001A8)
+class FDelMarObjectiveFilter_PlacementUpdated : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 424;
+
+public:
+	SMember(FInt32Range)                               RequiredCurrentPosition                                     OFFSET(getStruct<T>, {0x190, 16, 0, 0})
+	CMember(EDelMarPositionChangeInfo)                 RequiredPositionChangeInfo                                  OFFSET(get<T>, {0x1A0, 1, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_PlayedDelMarExperience
+/// Size: 0x0000 (0x000190 - 0x000190)
+class FDelMarObjectiveFilter_PlayedDelMarExperience : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 400;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_RaceFinished
+/// Size: 0x0048 (0x000190 - 0x0001D8)
+class FDelMarObjectiveFilter_RaceFinished : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 472;
+
+public:
+	SMember(FDoubleRange)                              RequiredFinishTime                                          OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+	SMember(FInt32Range)                               RequiredFinalPlacement                                      OFFSET(getStruct<T>, {0x1B0, 16, 0, 0})
+	SMember(FInt32Range)                               RequiredPlayerCompetitiveRank                               OFFSET(getStruct<T>, {0x1C0, 16, 0, 0})
+	CMember(EDelMarJellyHazardProcessorInfo)           RequiredJellyHazardInfo                                     OFFSET(get<T>, {0x1D0, 4, 0, 0})
+	CMember(EDelMarDemolishedProcessorInfo)            RequiredDemolishedInfo                                      OFFSET(get<T>, {0x1D4, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_RankAchieved
+/// Size: 0x0010 (0x000190 - 0x0001A0)
+class FDelMarObjectiveFilter_RankAchieved : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 416;
+
+public:
+	SMember(FInt32Range)                               RequiredRank                                                OFFSET(getStruct<T>, {0x190, 16, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarObjectiveFilter_RunComplete
-/// Size: 0x0038 (0x000188 - 0x0001C0)
+/// Size: 0x0038 (0x000190 - 0x0001C8)
 class FDelMarObjectiveFilter_RunComplete : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 448;
+	static inline constexpr uint64_t __MDKClassSize = 456;
 
 public:
-	SMember(FDoubleRange)                              RequiredFinishTime                                          OFFSET(getStruct<T>, {0x188, 32, 0, 0})
-	SMember(FInt32Range)                               RequiredFinalPlacement                                      OFFSET(getStruct<T>, {0x1A8, 16, 0, 0})
-	CMember(EDelMarJellyHazardProcessorInfo)           RequiredJellyHazardInfo                                     OFFSET(get<T>, {0x1B8, 4, 0, 0})
-	CMember(EDelMarDemolishedProcessorInfo)            RequiredDemolishedInfo                                      OFFSET(get<T>, {0x1BC, 4, 0, 0})
+	SMember(FDoubleRange)                              RequiredFinishTime                                          OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+	SMember(FInt32Range)                               RequiredFinalPlacement                                      OFFSET(getStruct<T>, {0x1B0, 16, 0, 0})
+	CMember(EDelMarJellyHazardProcessorInfo)           RequiredJellyHazardInfo                                     OFFSET(get<T>, {0x1C0, 4, 0, 0})
+	CMember(EDelMarDemolishedProcessorInfo)            RequiredDemolishedInfo                                      OFFSET(get<T>, {0x1C4, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarObjectiveFilter_RunCompleteTest
+/// Size: 0x0038 (0x000190 - 0x0001C8)
+class FDelMarObjectiveFilter_RunCompleteTest : public FDelMarObjectiveFilterBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 456;
+
+public:
+	SMember(FDoubleRange)                              RequiredFinishTime                                          OFFSET(getStruct<T>, {0x190, 32, 0, 0})
+	SMember(FInt32Range)                               RequiredFinalPlacement                                      OFFSET(getStruct<T>, {0x1B0, 16, 0, 0})
+	CMember(EDelMarJellyHazardProcessorInfo)           RequiredJellyHazardInfo                                     OFFSET(get<T>, {0x1C0, 4, 0, 0})
+	CMember(EDelMarDemolishedProcessorInfo)            RequiredDemolishedInfo                                      OFFSET(get<T>, {0x1C4, 4, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarObjectiveFilter_StartlineBoostActivated
-/// Size: 0x0020 (0x000188 - 0x0001A8)
+/// Size: 0x0020 (0x000190 - 0x0001B0)
 class FDelMarObjectiveFilter_StartlineBoostActivated : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 424;
+	static inline constexpr uint64_t __MDKClassSize = 432;
 
 public:
-	SMember(FDoubleRange)                              RequiredStartlineBoostPercent                               OFFSET(getStruct<T>, {0x188, 32, 0, 0})
+	SMember(FDoubleRange)                              RequiredStartlineBoostPercent                               OFFSET(getStruct<T>, {0x190, 32, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarObjectiveFilter_UnderthrustDeactivated
-/// Size: 0x0020 (0x000188 - 0x0001A8)
+/// Size: 0x0020 (0x000190 - 0x0001B0)
 class FDelMarObjectiveFilter_UnderthrustDeactivated : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 424;
+	static inline constexpr uint64_t __MDKClassSize = 432;
 
 public:
-	SMember(FDoubleRange)                              RequiredPercentUsed                                         OFFSET(getStruct<T>, {0x188, 32, 0, 0})
+	SMember(FDoubleRange)                              RequiredPercentUsed                                         OFFSET(getStruct<T>, {0x190, 32, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarObjectiveFilter_UnderthrustPercentUsed
-/// Size: 0x0000 (0x000188 - 0x000188)
+/// Size: 0x0000 (0x000190 - 0x000190)
 class FDelMarObjectiveFilter_UnderthrustPercentUsed : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
+	static inline constexpr uint64_t __MDKClassSize = 400;
 
 public:
 };
 
 /// Struct /Script/DelMarCore.DelMarObjectiveFilter_VehicleJumped
-/// Size: 0x0000 (0x000188 - 0x000188)
+/// Size: 0x0000 (0x000190 - 0x000190)
 class FDelMarObjectiveFilter_VehicleJumped : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 392;
+	static inline constexpr uint64_t __MDKClassSize = 400;
 
 public:
 };
 
 /// Struct /Script/DelMarCore.DelMarObjectiveFilter_VehicleLanded
-/// Size: 0x0020 (0x000188 - 0x0001A8)
+/// Size: 0x0020 (0x000190 - 0x0001B0)
 class FDelMarObjectiveFilter_VehicleLanded : public FDelMarObjectiveFilterBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 424;
+	static inline constexpr uint64_t __MDKClassSize = 432;
 
 public:
-	SMember(FDoubleRange)                              RequiredTimeInAir                                           OFFSET(getStruct<T>, {0x188, 32, 0, 0})
+	SMember(FDoubleRange)                              RequiredTimeInAir                                           OFFSET(getStruct<T>, {0x190, 32, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarAnalyticsPlayerRaceData
@@ -5887,6 +5961,18 @@ class FDelMarAnalyticsPlayerRaceData : public MDKBase
 
 public:
 	CMember(class AFortPlayerController*)              DriverPC                                                    OFFSET(get<T>, {0x0, 8, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarProxyMeshMaterialInfo
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FDelMarProxyMeshMaterialInfo : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	CMember(TArray<class UMaterialInstanceDynamic*>)   MaterialArray                                               OFFSET(get<T>, {0x0, 16, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarMusicTrack
@@ -6589,296 +6675,313 @@ public:
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessageBase
-/// Size: 0x00B8 (0x000078 - 0x000130)
+/// Size: 0x00C0 (0x000078 - 0x000138)
 class FDelMarVerbMessageBase : public FVerbMessage
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 304;
+	static inline constexpr uint64_t __MDKClassSize = 312;
 
 public:
 	SMember(FSubjectTagsPair)                          LevelDescriptionId                                          OFFSET(getStruct<T>, {0x78, 56, 0, 0})
 	SMember(FSubjectTagsPair)                          GameModeId                                                  OFFSET(getStruct<T>, {0xB0, 56, 0, 0})
 	SMember(FSubjectTagsPair)                          VehicleTags                                                 OFFSET(getStruct<T>, {0xE8, 56, 0, 0})
-	CMember(TArray<FFortVerb_ObjectWrapper>)           Cosmetics                                                   OFFSET(get<T>, {0x120, 16, 0, 0})
+	CMember(EDelMarPlaylistTypeInfo)                   RankedPlaylistInfo                                          OFFSET(get<T>, {0x120, 1, 0, 0})
+	CMember(TArray<FFortVerb_ObjectWrapper>)           Cosmetics                                                   OFFSET(get<T>, {0x128, 16, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_BeatPlayers
-/// Size: 0x0008 (0x000130 - 0x000138)
+/// Size: 0x0008 (0x000138 - 0x000140)
 class FDelMarVerbMessage_BeatPlayers : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
-
-public:
-	DMember(char)                                      AmountOfPlayersBeat                                         OFFSET(get<char>, {0x130, 1, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_BonusTurboActivated
-/// Size: 0x0000 (0x000130 - 0x000130)
-class FDelMarVerbMessage_BonusTurboActivated : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 304;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_BoostPadBonusSpeedEnded
-/// Size: 0x0000 (0x000130 - 0x000130)
-class FDelMarVerbMessage_BoostPadBonusSpeedEnded : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 304;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_BoostPadHit
-/// Size: 0x0000 (0x000130 - 0x000130)
-class FDelMarVerbMessage_BoostPadHit : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 304;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_DistanceTraveled
-/// Size: 0x0008 (0x000130 - 0x000138)
-class FDelMarVerbMessage_DistanceTraveled : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
-
-public:
-	DMember(float)                                     TotalDistance                                               OFFSET(get<float>, {0x130, 4, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_DraftActivated
-/// Size: 0x0000 (0x000130 - 0x000130)
-class FDelMarVerbMessage_DraftActivated : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 304;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_DriftBoostActivated
-/// Size: 0x0008 (0x000130 - 0x000138)
-class FDelMarVerbMessage_DriftBoostActivated : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
-
-public:
-	DMember(float)                                     DriftBoostPercent                                           OFFSET(get<float>, {0x130, 4, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_DriftBoostDeactivated
-/// Size: 0x0008 (0x000130 - 0x000138)
-class FDelMarVerbMessage_DriftBoostDeactivated : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
-
-public:
-	DMember(float)                                     TotalDistance                                               OFFSET(get<float>, {0x130, 4, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_DriftComplete
-/// Size: 0x0008 (0x000130 - 0x000138)
-class FDelMarVerbMessage_DriftComplete : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
-
-public:
-	DMember(float)                                     DriftDuration                                               OFFSET(get<float>, {0x130, 4, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_HighestSpeedUpdated
-/// Size: 0x0008 (0x000130 - 0x000138)
-class FDelMarVerbMessage_HighestSpeedUpdated : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
-
-public:
-	DMember(float)                                     HighestSpeed                                                OFFSET(get<float>, {0x130, 4, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_InitialTurboActivated
-/// Size: 0x0000 (0x000130 - 0x000130)
-class FDelMarVerbMessage_InitialTurboActivated : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 304;
-
-public:
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_Kickflipped
-/// Size: 0x0008 (0x000130 - 0x000138)
-class FDelMarVerbMessage_Kickflipped : public FDelMarVerbMessageBase
-{ 
-	friend MDKHandler;
-	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
-
-public:
-	CMember(EDelMarKickflipDirection)                  Direction                                                   OFFSET(get<T>, {0x130, 1, 0, 0})
-};
-
-/// Struct /Script/DelMarCore.DelMarVerbMessage_LapComplete
-/// Size: 0x0010 (0x000130 - 0x000140)
-class FDelMarVerbMessage_LapComplete : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
 	static inline constexpr uint64_t __MDKClassSize = 320;
 
 public:
-	DMember(double)                                    LapCompleteTime                                             OFFSET(get<double>, {0x130, 8, 0, 0})
-	DMember(char)                                      LapCount                                                    OFFSET(get<char>, {0x138, 1, 0, 0})
-	DMember(char)                                      LapPlacement                                                OFFSET(get<char>, {0x139, 1, 0, 0})
+	DMember(char)                                      AmountOfPlayersBeat                                         OFFSET(get<char>, {0x138, 1, 0, 0})
 };
 
-/// Struct /Script/DelMarCore.DelMarVerbMessage_PlacementUpdated
-/// Size: 0x0008 (0x000130 - 0x000138)
-class FDelMarVerbMessage_PlacementUpdated : public FDelMarVerbMessageBase
+/// Struct /Script/DelMarCore.DelMarVerbMessage_BonusTurboActivated
+/// Size: 0x0000 (0x000138 - 0x000138)
+class FDelMarVerbMessage_BonusTurboActivated : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
 	static inline constexpr uint64_t __MDKClassSize = 312;
 
 public:
-	DMember(char)                                      CurrentPosition                                             OFFSET(get<char>, {0x130, 1, 0, 0})
-	CMember(EDelMarPositionChangeInfo)                 PositionChangeInfo                                          OFFSET(get<T>, {0x131, 1, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_BoostPadBonusSpeedEnded
+/// Size: 0x0000 (0x000138 - 0x000138)
+class FDelMarVerbMessage_BoostPadBonusSpeedEnded : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 312;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_BoostPadHit
+/// Size: 0x0000 (0x000138 - 0x000138)
+class FDelMarVerbMessage_BoostPadHit : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 312;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_DistanceTraveled
+/// Size: 0x0008 (0x000138 - 0x000140)
+class FDelMarVerbMessage_DistanceTraveled : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+	DMember(float)                                     TotalDistance                                               OFFSET(get<float>, {0x138, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_DraftActivated
+/// Size: 0x0000 (0x000138 - 0x000138)
+class FDelMarVerbMessage_DraftActivated : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 312;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_DriftBoostActivated
+/// Size: 0x0008 (0x000138 - 0x000140)
+class FDelMarVerbMessage_DriftBoostActivated : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+	DMember(float)                                     DriftBoostPercent                                           OFFSET(get<float>, {0x138, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_DriftBoostDeactivated
+/// Size: 0x0008 (0x000138 - 0x000140)
+class FDelMarVerbMessage_DriftBoostDeactivated : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+	DMember(float)                                     TotalDistance                                               OFFSET(get<float>, {0x138, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_DriftComplete
+/// Size: 0x0008 (0x000138 - 0x000140)
+class FDelMarVerbMessage_DriftComplete : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+	DMember(float)                                     DriftDuration                                               OFFSET(get<float>, {0x138, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_HighestSpeedUpdated
+/// Size: 0x0008 (0x000138 - 0x000140)
+class FDelMarVerbMessage_HighestSpeedUpdated : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+	DMember(float)                                     HighestSpeed                                                OFFSET(get<float>, {0x138, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_InitialTurboActivated
+/// Size: 0x0000 (0x000138 - 0x000138)
+class FDelMarVerbMessage_InitialTurboActivated : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 312;
+
+public:
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_Kickflipped
+/// Size: 0x0008 (0x000138 - 0x000140)
+class FDelMarVerbMessage_Kickflipped : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+	CMember(EDelMarKickflipDirection)                  Direction                                                   OFFSET(get<T>, {0x138, 1, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_LapComplete
+/// Size: 0x0010 (0x000138 - 0x000148)
+class FDelMarVerbMessage_LapComplete : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 328;
+
+public:
+	DMember(double)                                    LapCompleteTime                                             OFFSET(get<double>, {0x138, 8, 0, 0})
+	DMember(char)                                      LapCount                                                    OFFSET(get<char>, {0x140, 1, 0, 0})
+	DMember(char)                                      LapPlacement                                                OFFSET(get<char>, {0x141, 1, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_PlacementUpdated
+/// Size: 0x0008 (0x000138 - 0x000140)
+class FDelMarVerbMessage_PlacementUpdated : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 320;
+
+public:
+	DMember(char)                                      CurrentPosition                                             OFFSET(get<char>, {0x138, 1, 0, 0})
+	CMember(EDelMarPositionChangeInfo)                 PositionChangeInfo                                          OFFSET(get<T>, {0x139, 1, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_PlayedDelMarExperience
-/// Size: 0x0000 (0x000130 - 0x000130)
+/// Size: 0x0000 (0x000138 - 0x000138)
 class FDelMarVerbMessage_PlayedDelMarExperience : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 304;
+	static inline constexpr uint64_t __MDKClassSize = 312;
 
 public:
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_RaceFinished
-/// Size: 0x0018 (0x000130 - 0x000148)
+/// Size: 0x0018 (0x000138 - 0x000150)
 class FDelMarVerbMessage_RaceFinished : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 328;
+	static inline constexpr uint64_t __MDKClassSize = 336;
 
 public:
-	DMember(double)                                    FinishTime                                                  OFFSET(get<double>, {0x130, 8, 0, 0})
-	DMember(char)                                      FinalPlacement                                              OFFSET(get<char>, {0x138, 1, 0, 0})
-	CMember(EDelMarJellyHazardProcessorInfo)           JellyHazardInfo                                             OFFSET(get<T>, {0x13C, 4, 0, 0})
-	CMember(EDelMarDemolishedProcessorInfo)            DemolishedInfo                                              OFFSET(get<T>, {0x140, 4, 0, 0})
+	DMember(double)                                    FinishTime                                                  OFFSET(get<double>, {0x138, 8, 0, 0})
+	DMember(char)                                      FinalPlacement                                              OFFSET(get<char>, {0x140, 1, 0, 0})
+	DMember(char)                                      PlayerRank                                                  OFFSET(get<char>, {0x141, 1, 0, 0})
+	CMember(EDelMarJellyHazardProcessorInfo)           JellyHazardInfo                                             OFFSET(get<T>, {0x144, 4, 0, 0})
+	CMember(EDelMarDemolishedProcessorInfo)            DemolishedInfo                                              OFFSET(get<T>, {0x148, 4, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_RankAchieved
-/// Size: 0x0008 (0x000130 - 0x000138)
+/// Size: 0x0008 (0x000138 - 0x000140)
 class FDelMarVerbMessage_RankAchieved : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
+	static inline constexpr uint64_t __MDKClassSize = 320;
 
 public:
-	DMember(int32_t)                                   RankAchieved                                                OFFSET(get<int32_t>, {0x130, 4, 0, 0})
+	DMember(int32_t)                                   RankAchieved                                                OFFSET(get<int32_t>, {0x138, 4, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_RunComplete
-/// Size: 0x0018 (0x000130 - 0x000148)
+/// Size: 0x0018 (0x000138 - 0x000150)
 class FDelMarVerbMessage_RunComplete : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 328;
+	static inline constexpr uint64_t __MDKClassSize = 336;
 
 public:
-	DMember(double)                                    FinishTime                                                  OFFSET(get<double>, {0x130, 8, 0, 0})
-	DMember(char)                                      FinalPlacement                                              OFFSET(get<char>, {0x138, 1, 0, 0})
-	CMember(EDelMarJellyHazardProcessorInfo)           JellyHazardInfo                                             OFFSET(get<T>, {0x13C, 4, 0, 0})
-	CMember(EDelMarDemolishedProcessorInfo)            DemolishedInfo                                              OFFSET(get<T>, {0x140, 4, 0, 0})
+	DMember(double)                                    FinishTime                                                  OFFSET(get<double>, {0x138, 8, 0, 0})
+	DMember(char)                                      FinalPlacement                                              OFFSET(get<char>, {0x140, 1, 0, 0})
+	CMember(EDelMarJellyHazardProcessorInfo)           JellyHazardInfo                                             OFFSET(get<T>, {0x144, 4, 0, 0})
+	CMember(EDelMarDemolishedProcessorInfo)            DemolishedInfo                                              OFFSET(get<T>, {0x148, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarVerbMessage_RunCompleteTest
+/// Size: 0x0018 (0x000138 - 0x000150)
+class FDelMarVerbMessage_RunCompleteTest : public FDelMarVerbMessageBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 336;
+
+public:
+	DMember(double)                                    FinishTime                                                  OFFSET(get<double>, {0x138, 8, 0, 0})
+	DMember(char)                                      FinalPlacement                                              OFFSET(get<char>, {0x140, 1, 0, 0})
+	CMember(EDelMarJellyHazardProcessorInfo)           JellyHazardInfo                                             OFFSET(get<T>, {0x144, 4, 0, 0})
+	CMember(EDelMarDemolishedProcessorInfo)            DemolishedInfo                                              OFFSET(get<T>, {0x148, 4, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_StartlineBoostActivated
-/// Size: 0x0008 (0x000130 - 0x000138)
+/// Size: 0x0008 (0x000138 - 0x000140)
 class FDelMarVerbMessage_StartlineBoostActivated : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
+	static inline constexpr uint64_t __MDKClassSize = 320;
 
 public:
-	DMember(float)                                     StartLineBoostPercent                                       OFFSET(get<float>, {0x130, 4, 0, 0})
+	DMember(float)                                     StartLineBoostPercent                                       OFFSET(get<float>, {0x138, 4, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_UnderthrustDeactivated
-/// Size: 0x0008 (0x000130 - 0x000138)
+/// Size: 0x0008 (0x000138 - 0x000140)
 class FDelMarVerbMessage_UnderthrustDeactivated : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
+	static inline constexpr uint64_t __MDKClassSize = 320;
 
 public:
-	DMember(float)                                     PercentUsed                                                 OFFSET(get<float>, {0x130, 4, 0, 0})
+	DMember(float)                                     PercentUsed                                                 OFFSET(get<float>, {0x138, 4, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_UnderthrustPercentUsed
-/// Size: 0x0008 (0x000130 - 0x000138)
+/// Size: 0x0008 (0x000138 - 0x000140)
 class FDelMarVerbMessage_UnderthrustPercentUsed : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
+	static inline constexpr uint64_t __MDKClassSize = 320;
 
 public:
-	DMember(float)                                     PercentUsed                                                 OFFSET(get<float>, {0x130, 4, 0, 0})
+	DMember(float)                                     PercentUsed                                                 OFFSET(get<float>, {0x138, 4, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_VehicleJumped
-/// Size: 0x0000 (0x000130 - 0x000130)
+/// Size: 0x0000 (0x000138 - 0x000138)
 class FDelMarVerbMessage_VehicleJumped : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 304;
+	static inline constexpr uint64_t __MDKClassSize = 312;
 
 public:
 };
 
 /// Struct /Script/DelMarCore.DelMarVerbMessage_VehicleLanded
-/// Size: 0x0008 (0x000130 - 0x000138)
+/// Size: 0x0008 (0x000138 - 0x000140)
 class FDelMarVerbMessage_VehicleLanded : public FDelMarVerbMessageBase
 { 
 	friend MDKHandler;
 	friend MDKBase;
-	static inline constexpr uint64_t __MDKClassSize = 312;
+	static inline constexpr uint64_t __MDKClassSize = 320;
 
 public:
-	DMember(float)                                     TimeInAir                                                   OFFSET(get<float>, {0x130, 4, 0, 0})
+	DMember(float)                                     TimeInAir                                                   OFFSET(get<float>, {0x138, 4, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.AudioMixModifier
@@ -7222,6 +7325,31 @@ public:
 	DMember(float)                                     DefaultIntervalSeconds                                      OFFSET(get<float>, {0xC, 4, 0, 0})
 	CMember(TArray<FDelMarRandomRange>)                IntervalRanges                                              OFFSET(get<T>, {0x10, 16, 0, 0})
 	DMember(int32_t)                                   CountdownIntervalNum                                        OFFSET(get<int32_t>, {0x20, 4, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarStateOverride
+/// Size: 0x0028 (0x000000 - 0x000028)
+class FDelMarStateOverride : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 40;
+
+public:
+	SMember(FGameplayTag)                              StateTag                                                    OFFSET(getStruct<T>, {0x0, 4, 0, 0})
+	CMember(TWeakObjectPtr<UClass*>)                   StateClass                                                  OFFSET(get<T>, {0x8, 32, 0, 0})
+};
+
+/// Struct /Script/DelMarCore.DelMarStateMachineConfig
+/// Size: 0x0010 (0x000000 - 0x000010)
+class FDelMarStateMachineConfig : public MDKBase
+{ 
+	friend MDKHandler;
+	friend MDKBase;
+	static inline constexpr uint64_t __MDKClassSize = 16;
+
+public:
+	CMember(TArray<FDelMarStateOverride>)              StateOverrides                                              OFFSET(get<T>, {0x0, 16, 0, 0})
 };
 
 /// Struct /Script/DelMarCore.DelMarDynamicCameraShakeEffect
@@ -8037,6 +8165,16 @@ enum EDelMarPositionChangeInfo : uint8_t
 	EDelMarPositionChangeInfo__PassPlayer                                            = 1,
 	EDelMarPositionChangeInfo__PassedByPlayer                                        = 2,
 	EDelMarPositionChangeInfo__EDelMarPositionChangeInfo_MAX                         = 3
+};
+
+/// Enum /Script/DelMarCore.EDelMarPlaylistTypeInfo
+/// Size: 0x04
+enum EDelMarPlaylistTypeInfo : uint8_t
+{
+	EDelMarPlaylistTypeInfo__Any                                                     = 0,
+	EDelMarPlaylistTypeInfo__Casual                                                  = 1,
+	EDelMarPlaylistTypeInfo__Ranked                                                  = 2,
+	EDelMarPlaylistTypeInfo__EDelMarPlaylistTypeInfo_MAX                             = 3
 };
 
 /// Enum /Script/DelMarCore.EDelMarPhysicsRate

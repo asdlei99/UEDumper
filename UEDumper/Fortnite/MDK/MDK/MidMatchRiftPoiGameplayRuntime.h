@@ -21,13 +21,13 @@ public:
 
 	/// Functions
 	// Function /Script/MidMatchRiftPoiGameplayRuntime.MidmatchRiftPoiCheatManager.SpawnMidmatchPoiNearestLocation
-	// void SpawnMidmatchPoiNearestLocation(FVector& Location);                                                                 // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void SpawnMidmatchPoiNearestLocation(FVector& Location);                                                                 // [0x2047e54] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MidMatchRiftPoiGameplayRuntime.MidmatchRiftPoiCheatManager.SpawnMidmatchPoiFurthestLocation
-	// void SpawnMidmatchPoiFurthestLocation(FVector& Location);                                                                // [0x211c0a0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void SpawnMidmatchPoiFurthestLocation(FVector& Location);                                                                // [0x2047e54] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/MidMatchRiftPoiGameplayRuntime.MidmatchRiftPoiCheatManager.MidmatchRiftPoiSpawnNearestToPawnLocation
-	// void MidmatchRiftPoiSpawnNearestToPawnLocation();                                                                        // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void MidmatchRiftPoiSpawnNearestToPawnLocation();                                                                        // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 	// Function /Script/MidMatchRiftPoiGameplayRuntime.MidmatchRiftPoiCheatManager.MidmatchRiftPoiSpawnFurthestFromPawnLocation
-	// void MidmatchRiftPoiSpawnFurthestFromPawnLocation();                                                                     // [0x32e4b44] Final|BlueprintAuthorityOnly|Exec|Native|Public 
+	// void MidmatchRiftPoiSpawnFurthestFromPawnLocation();                                                                     // [0x307d48c] Final|BlueprintAuthorityOnly|Exec|Native|Public 
 };
 
 /// Class /Script/MidMatchRiftPoiGameplayRuntime.MidMatchRiftPoiManagerActor
@@ -47,7 +47,7 @@ public:
 
 	/// Functions
 	// Function /Script/MidMatchRiftPoiGameplayRuntime.MidMatchRiftPoiManagerActor.SetDynamicLandBrush
-	// void SetDynamicLandBrush(FSlateBrush& LandIcon);                                                                         // [0x34e5964] Final|BlueprintCosmetic|Native|Protected|HasOutParms|BlueprintCallable 
+	// void SetDynamicLandBrush(FSlateBrush& LandIcon);                                                                         // [0x328574c] Final|BlueprintCosmetic|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/MidMatchRiftPoiGameplayRuntime.MidmatchRiftPoiSpawnIndicator
@@ -66,8 +66,8 @@ public:
 
 	/// Functions
 	// Function /Script/MidMatchRiftPoiGameplayRuntime.MidmatchRiftPoiSpawnIndicator.TeleportVehicleActor
-	// void TeleportVehicleActor(class AActor* VehicleActor, FVector& TeleportLocation);                                        // [0x91b8390] Final|BlueprintAuthorityOnly|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// void TeleportVehicleActor(class AActor* VehicleActor, FVector& TeleportLocation);                                        // [0x9207054] Final|BlueprintAuthorityOnly|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/MidMatchRiftPoiGameplayRuntime.MidmatchRiftPoiSpawnIndicator.IsActorInDataLayerInstance
-	// bool IsActorInDataLayerInstance(class AActor* Actor, class UDataLayerInstance* DataLayerInstance);                       // [0x99e7340] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActorInDataLayerInstance(class AActor* Actor, class UDataLayerInstance* DataLayerInstance);                       // [0x9b01b10] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 

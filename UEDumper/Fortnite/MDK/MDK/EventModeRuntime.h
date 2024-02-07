@@ -30,25 +30,25 @@ public:
 
 	/// Functions
 	// Function /Script/EventModeRuntime.FortGameFrameworkComponent_EventMode.OnPlayerPawnPossessed
-	// void OnPlayerPawnPossessed(class APawn* PossessedPawn);                                                                  // [0x604b150] Final|Native|Private 
+	// void OnPlayerPawnPossessed(class APawn* PossessedPawn);                                                                  // [0x5d5254c] Final|Native|Private 
 	// Function /Script/EventModeRuntime.FortGameFrameworkComponent_EventMode.OnExitVehicle
-	// void OnExitVehicle();                                                                                                    // [0xb1b81f4] Final|Native|Private 
+	// void OnExitVehicle();                                                                                                    // [0xb3d7c3c] Final|Native|Private 
 	// Function /Script/EventModeRuntime.FortGameFrameworkComponent_EventMode.OnEnterVehicle
-	// void OnEnterVehicle();                                                                                                   // [0xb1b81e0] Final|Native|Private 
+	// void OnEnterVehicle();                                                                                                   // [0xb3d7c28] Final|Native|Private 
 	// Function /Script/EventModeRuntime.FortGameFrameworkComponent_EventMode.GetIsFocusing
-	// bool GetIsFocusing();                                                                                                    // [0xb1b81c8] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsFocusing();                                                                                                    // [0x3480470] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EventModeRuntime.FortGameFrameworkComponent_EventMode.GetIsFocusAvailable
-	// bool GetIsFocusAvailable();                                                                                              // [0x3680688] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsFocusAvailable();                                                                                              // [0x9ef18c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EventModeRuntime.FortGameFrameworkComponent_EventMode.GetIsEventModeActive
-	// bool GetIsEventModeActive();                                                                                             // [0x3301614] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsEventModeActive();                                                                                             // [0x3174f20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/EventModeRuntime.FortWeapon_EventMode
-/// Size: 0x0000 (0x001500 - 0x001500)
+/// Size: 0x0000 (0x001508 - 0x001508)
 class AFortWeapon_EventMode : public AFortWeapon
 { 
 	friend MDKHandler;
-	static inline constexpr uint64_t __MDKClassSize = 5376;
+	static inline constexpr uint64_t __MDKClassSize = 5384;
 
 public:
 };

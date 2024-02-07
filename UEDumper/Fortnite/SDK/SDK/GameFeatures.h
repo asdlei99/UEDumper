@@ -49,10 +49,10 @@ public:
 class UGameFeatureAction_AddCheats : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(16,1264) /* TArray<TWeakObjectPtr<UClass*>> */ __um(CheatManagers);                              // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1266) /* TArray<TWeakObjectPtr<UClass*>> */ __um(CheatManagers);                              // 0x0028   (0x0010)  
 	bool                                               bLoadCheatManagersAsync;                                    // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0xF];                                       // 0x0039   (0x000F)  MISSED
-	SDK_UNDEFINED(16,1265) /* TArray<TWeakObjectPtr<UCheatManagerExtension*>> */ __um(SpawnedCheatManagers);       // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1267) /* TArray<TWeakObjectPtr<UCheatManagerExtension*>> */ __um(SpawnedCheatManagers);       // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0058   (0x0008)  MISSED
 };
 
@@ -67,8 +67,8 @@ public:
 /// Size: 0x0048 (0x000000 - 0x000048)
 struct FGameFeatureComponentEntry
 { 
-	SDK_UNDEFINED(32,1266) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                         // 0x0000   (0x0020)  
-	SDK_UNDEFINED(32,1267) /* TWeakObjectPtr<UClass*> */ __um(ComponentClass);                                     // 0x0020   (0x0020)  
+	SDK_UNDEFINED(32,1268) /* TWeakObjectPtr<UClass*> */ __um(ActorClass);                                         // 0x0000   (0x0020)  
+	SDK_UNDEFINED(32,1269) /* TWeakObjectPtr<UClass*> */ __um(ComponentClass);                                     // 0x0020   (0x0020)  
 	bool                                               bClientComponent : 1;                                       // 0x0040:0 (0x0001)  
 	bool                                               bServerComponent : 1;                                       // 0x0040:1 (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0041   (0x0007)  MISSED
@@ -105,7 +105,7 @@ public:
 class UGameFeatureAction_DataRegistry : public UGameFeatureAction
 { 
 public:
-	SDK_UNDEFINED(16,1268) /* TArray<TWeakObjectPtr<UDataRegistry*>> */ __um(RegistriesToAdd);                     // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1270) /* TArray<TWeakObjectPtr<UDataRegistry*>> */ __um(RegistriesToAdd);                     // 0x0028   (0x0010)  
 	bool                                               bPreloadInEditor;                                           // 0x0038   (0x0001)  
 	bool                                               bPreloadInCommandlets;                                      // 0x0039   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x003A   (0x0006)  MISSED
@@ -120,8 +120,8 @@ struct FDataRegistrySourceToAdd
 	bool                                               bClientSource : 1;                                          // 0x0008:0 (0x0001)  
 	bool                                               bServerSource : 1;                                          // 0x0008:1 (0x0001)  
 	unsigned char                                      UnknownData00_4[0x7];                                       // 0x0009   (0x0007)  MISSED
-	SDK_UNDEFINED(32,1269) /* TWeakObjectPtr<UDataTable*> */ __um(DataTableToAdd);                                 // 0x0010   (0x0020)  
-	SDK_UNDEFINED(32,1270) /* TWeakObjectPtr<UCurveTable*> */ __um(CurveTableToAdd);                               // 0x0030   (0x0020)  
+	SDK_UNDEFINED(32,1271) /* TWeakObjectPtr<UDataTable*> */ __um(DataTableToAdd);                                 // 0x0010   (0x0020)  
+	SDK_UNDEFINED(32,1272) /* TWeakObjectPtr<UCurveTable*> */ __um(CurveTableToAdd);                               // 0x0030   (0x0020)  
 };
 
 /// Class /Script/GameFeatures.GameFeatureAction_DataRegistrySource
@@ -145,7 +145,15 @@ public:
 
 	/// Functions
 	// Function /Script/GameFeatures.GameFeatureData.GetPluginName
-	// void GetPluginName(class UGameFeatureData* GFD, FString& PluginName);                                                 // [0x6d7582c] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetPluginName(class UGameFeatureData* GFD, FString& PluginName);                                                 // [0x6be2240] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+};
+
+/// Class /Script/GameFeatures.GameFeatureOptionalContentInstaller
+/// Size: 0x0108 (0x000028 - 0x000130)
+class UGameFeatureOptionalContentInstaller : public UObject
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x108];                                     // 0x0028   (0x0108)  MISSED
 };
 
 /// Struct /Script/GameFeatures.GameFeaturePluginStateMachineProperties
@@ -186,7 +194,7 @@ public:
 class UGameFeaturesSubsystem : public UEngineSubsystem
 { 
 public:
-	SDK_UNDEFINED(80,1271) /* TMap<FString, UGameFeaturePluginStateMachine*> */ __um(GameFeaturePluginStateMachines); // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,1273) /* TMap<FString, UGameFeaturePluginStateMachine*> */ __um(GameFeaturePluginStateMachines); // 0x0030   (0x0050)  
 	TArray<class UGameFeaturePluginStateMachine*>      TerminalGameFeaturePluginStateMachines;                     // 0x0080   (0x0010)  
 	unsigned char                                      UnknownData00_5[0xA0];                                      // 0x0090   (0x00A0)  MISSED
 	TArray<class UObject*>                             Observers;                                                  // 0x0130   (0x0010)  
@@ -200,9 +208,9 @@ class UGameFeaturesSubsystemSettings : public UDeveloperSettings
 { 
 public:
 	FSoftClassPath                                     GameFeaturesManagerClassName;                               // 0x0030   (0x0018)  
-	SDK_UNDEFINED(16,1272) /* TArray<FString> */       __um(EnabledPlugins);                                       // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,1273) /* TArray<FString> */       __um(DisabledPlugins);                                      // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,1274) /* TArray<FString> */       __um(AdditionalPluginMetadataKeys);                         // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1274) /* TArray<FString> */       __um(EnabledPlugins);                                       // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1275) /* TArray<FString> */       __um(DisabledPlugins);                                      // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,1276) /* TArray<FString> */       __um(AdditionalPluginMetadataKeys);                         // 0x0068   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0078   (0x0020)  MISSED
 };
 
