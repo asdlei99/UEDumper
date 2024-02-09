@@ -141,7 +141,7 @@ void MDKGeneration::generatePackage(std::ofstream& stream, const EngineStructs::
 			std::unordered_map<std::string, int> alreadyDefinedMembers{};
 
 
-			for (const auto& member : struc->cookedMembers)
+			for (const auto& member : struc->definedMembers)
 			{
 				if (member.missed)
 					continue;
