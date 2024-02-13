@@ -1,0 +1,47 @@
+
+/********************************************************
+*                                                       *
+*   Package generated using UEDumper by Spuckwaffel.    *
+*                                                       *
+********************************************************/
+
+#pragma once
+/// dependency: CoreUObject
+/// dependency: Engine
+
+/// Enum /Script/Reflex.EReflexMode
+/// Size: 0x04
+enum class EReflexMode : uint8_t
+{
+	EReflexMode__Disabled                                                            = 0,
+	EReflexMode__Enabled                                                             = 1,
+	EReflexMode__EnabledPlusBoost                                                    = 3,
+	EReflexMode__EReflexMode_MAX                                                     = 4
+};
+
+/// Class /Script/Reflex.ReflexBlueprintLibrary
+/// Size: 0x0000 (0x000028 - 0x000028)
+class UReflexBlueprintLibrary : public UBlueprintFunctionLibrary
+{ 
+public:
+
+
+	/// Functions
+	// Function /Script/Reflex.ReflexBlueprintLibrary.SetReflexMode
+	// void SetReflexMode(EReflexMode Mode);                                                                                 // [0xc559a58] Final|Native|Static|Public|BlueprintCallable 
+	// Function /Script/Reflex.ReflexBlueprintLibrary.SetFlashIndicatorEnabled
+	// void SetFlashIndicatorEnabled(bool bEnabled);                                                                         // [0xc5599a4] Final|Native|Static|Public|BlueprintCallable 
+	// Function /Script/Reflex.ReflexBlueprintLibrary.GetRenderLatencyInMs
+	// float GetRenderLatencyInMs();                                                                                         // [0xc55997c] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// Function /Script/Reflex.ReflexBlueprintLibrary.GetReflexMode
+	// EReflexMode GetReflexMode();                                                                                          // [0xc5598f8] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// Function /Script/Reflex.ReflexBlueprintLibrary.GetReflexAvailable
+	// bool GetReflexAvailable();                                                                                            // [0xc5598d4] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// Function /Script/Reflex.ReflexBlueprintLibrary.GetGameToRenderLatencyInMs
+	// float GetGameToRenderLatencyInMs();                                                                                   // [0xc5598ac] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// Function /Script/Reflex.ReflexBlueprintLibrary.GetGameLatencyInMs
+	// float GetGameLatencyInMs();                                                                                           // [0xc559884] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// Function /Script/Reflex.ReflexBlueprintLibrary.GetFlashIndicatorEnabled
+	// bool GetFlashIndicatorEnabled();                                                                                      // [0xc559800] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+};
+

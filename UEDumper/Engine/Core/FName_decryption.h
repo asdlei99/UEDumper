@@ -29,21 +29,27 @@ static void fname_decrypt(char* inputBuf, int namelength)
 {
     //reversed either by me or credits to the people who post it on uc
 
-    char* v2 = inputBuf;
-    int v4; // ecx
-    unsigned int v5 = namelength;
-    __int64 v6; // rdx
-    char v7; // al
-    v4 = 9;
-    if (v5)
-    {
-        v6 = v5;
-        do
-        {
-            v5 = v4 + ~*v2;
-            v4 += 7947;
-            *v2++ = v5;
-            --v6;
-        } while (v6);
-    }
+	char* v2; // rdi
+	int v4; // ebx
+	__int16 result; // ax
+	int v6; // edx
+	int v7; // ecx
+	int v8; // eax
+	unsigned int v9; // ecx
+
+	v2 = inputBuf;
+	v4 = namelength;
+	v6 = 0;
+	v7 = 24;
+	if (v4)
+	{
+		do
+		{
+			v8 = v6++;
+			v9 = (v8 | 0xB000) + v7;
+			result = v9 ^ ~*v2;
+			v7 = v9 >> 2;
+			*v2++ = result;
+		} while (v6 < v4);
+	}
 }
